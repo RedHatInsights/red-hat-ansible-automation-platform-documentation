@@ -1,0 +1,14 @@
+<title>Catalog Guide</title>
+<productname>Red Hat Hybrid Cloud Management</productname>
+<productnumber>1.0</productnumber>
+<subtitle>Getting Started with Catalog</subtitle>
+<abstract>
+    <para>This guide describes how to get started using the Catalog servince on Red Hat Hybrid Cloud Management.</para>
+</abstract>
+<authorgroup id="Author_Group">
+        <author>
+                <firstname>Catalog</firstname>
+                <surname>Documentation Team</surname>
+                <email>catalog-docs@redhat.com</email>
+        </author>
+</authorgroup>
