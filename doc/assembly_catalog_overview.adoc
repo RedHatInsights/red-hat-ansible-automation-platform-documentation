@@ -1,0 +1,12 @@
+[id='Catalog_overview']
+= Red Hat Hybrid Cloud Management - Catalog Overview
+
+Red Hat's Hybrid Cloud Management - Catalog enables self-service provisioning across hybrid cloud infrastructure. Allows administrators to govern content to users, Catalog also provides multi-level approval using Middleware Decision Manager.
+
+Catalog integrates with existing _platforms_, grouping content and access by _portfolios_, each containing _products_ that users can order.
+
+.How it works
+
+. *Integration:* Catalog connects to a platform and harvests content metadata, discovering available product offerings. 
+. *Grouping:* Portfolios allow administrators to group platform content. This enables application of access control permissions and grouping of hybrid items.
+. *Order:* Users can order products from portfolios they have access to, providing one access point to many platforms. 
