@@ -1,0 +1,7 @@
+[id="Creating_portfolios"]
+= Creating portfolios
+
+. Click *Create portfolio*.
+. Provide a *New Portfolio Name* and *Description*.
+. Choose an *Approval workflow* from the drop-down list. 
+. Click *Save*.
