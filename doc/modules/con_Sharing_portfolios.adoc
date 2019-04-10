@@ -1,0 +1,6 @@
+// Module included in the following assemblies:
+// assembly_Administration_guide.adoc
+[id="Sharing_portfolios"]
+= Sharing portfolios
+
+Catalog allows sharing of portfolios with existing groups, in addition to configuring permissions for the portfolio.
