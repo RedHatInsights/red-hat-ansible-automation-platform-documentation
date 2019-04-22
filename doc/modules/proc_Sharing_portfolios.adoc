@@ -1,5 +1,4 @@
-[id="sharing_portfolios"]
-= Sharing portfolios
+Procedure
 
 . Click *Portfolios*.
 . Click *More Actions* on a porfolio, then click *Share*.
