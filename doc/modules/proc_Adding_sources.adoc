@@ -1,0 +1,13 @@
+Prequisites
+
+* A Red Hat OpenShift Container platform login token. See link:
+
+Procedure
+
+. Navigate to menu:Settings[Catalog Sources].
+. Click *Add source*.
+. Add a *Name* and select a *Type* from the drop-down then click *Next*.
+. Enter the login *Token* and click *Next*.
+. Provide the *URL* and *SSL Certificate* for the OpenShift Container Platform.
+. Check *Verify SSL* and click *Next*.
+. Confirm source details and click *Submit*.
