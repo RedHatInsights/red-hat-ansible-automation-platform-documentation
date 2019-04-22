@@ -1,0 +1,6 @@
+// Module included in the following assemblies:
+// assembly_Administration_guide.adoc
+[id="Adding_sources"]
+= Adding sources
+
+Sources are the platforms Catalog connects to in order to collect information on products available to users to order. To use Catalog, you need to connect the application to at least once source.
