@@ -1,0 +1,12 @@
+// Module included in the following assemblies:
+// assembly_Administration_guide.adoc
+[id="Approval"]
+= Working with approval
+
+Catalog supports multi-level approval workflows, providing the flexibility to create a tiered administrative process that includes selected organizational groups. Administrators can design approval workflows, view request details, approve or deny requests, and monitor status of existing requests. Once created, an approval workflow can be assigned to Catalot portfolios.
+
+== Creating approval workflows
+
+Create approval workflows and assign them to Catalog portfolios.
+
+include::proc_Approval_workflow.adoc[]
