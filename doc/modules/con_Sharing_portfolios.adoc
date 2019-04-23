@@ -3,4 +3,4 @@
 [id="Sharing_portfolios"]
 = Sharing portfolios
 
-Catalog allows sharing of portfolios with existing groups, in addition to configuring permissions for the portfolio. Permissions define the level of access for a group to the portfolio, with options to *edit* and *view*.
+Catalog enables sharing of portfolios with existing groups, in addition to configuring permissions for the portfolio. Permissions define the level of access for a group to the portfolio, with options to *edit* and *view*.
