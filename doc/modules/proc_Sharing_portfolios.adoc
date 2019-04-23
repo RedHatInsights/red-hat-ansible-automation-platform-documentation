@@ -1,0 +1,11 @@
+Procedure
+
+. Click *Portfolios*.
+. Click *More Actions* on a porfolio, then click *Share*.
+. Adding groups:
+.. Under *Invite group* search groups to share the portfolio with.
+.. Select the level of permissions using the drop-down list.
+. Edit sharing settings for existing groups:
+.. Under *Groups with access* adjust permisions using the drop-down for each group.
+.. To stop sharing a portfolio with a group, click icon:[X].
+. Click *Send* when finished.
