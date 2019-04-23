@@ -1,0 +1,7 @@
+Procedure
+
+. Click menu:Approval.
+. Click *Create workflow*.
+. Provide a *Name* and *Description* and click *Continue*.
+. Set *Approval Stages* from the drop-downs and click *Continue*.
+. Review workflow details and click *Submit*. 
