@@ -1,0 +1,8 @@
+[id='portfolios']
+= Working with Portfolios
+
+Create portfolios to group platform content and control user access to it. Share portfolios with groups of users, in addition to governing each portfolio with an approval workflow.
+
+Create a portfolio:
+
+include::proc_Creating_portfolios.adoc[]
