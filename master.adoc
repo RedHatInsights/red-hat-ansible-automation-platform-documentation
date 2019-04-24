@@ -7,15 +7,11 @@
 :compat-mode:
 :experimental:
 
-// Attributes
-include::common/attributes/ims.adoc[]
 
-// :cfme:
 
-// :numbered:
+:hcm:
+:numbered:
 
-// include::doc/assembly_Infrastructure_migration_solution_overview.adoc[leveloffset=+1]
-// include::doc/assembly_Planning.adoc[leveloffset=+1]
-// include::doc/assembly_Preparation.adoc[leveloffset=+1]
-// include::doc/assembly_Migration.adoc[leveloffset=+1]
-// include::doc/assembly_Troubleshooting.adoc[leveloffset=+1]
+include::doc/assembly_catalog_overview.adoc[leveloffset=+1]
+include::doc/assembly_Getting_started.adoc[leveloffset=+1]
+include::doc/assembly_Working_with_approval.adoc[leveloffset=+1]
