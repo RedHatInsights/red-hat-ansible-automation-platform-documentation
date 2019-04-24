@@ -4,3 +4,5 @@
 = Adding sources
 
 Sources are the platforms Catalog connects to in order to collect information on products available to users to order. To use Catalog, you need to connect the application to at least once source.
+
+include::proc_Adding_sources.adoc[]

@@ -4,3 +4,7 @@
 = Sharing portfolios
 
 Catalog enables sharing of portfolios with existing groups, in addition to configuring permissions for the portfolio. Permissions define the level of access for a group to the portfolio, with options to *edit* and *view*.
+
+To share a portfolio:
+
+include::con_Adding_products_to_portfolio.adoc[]
