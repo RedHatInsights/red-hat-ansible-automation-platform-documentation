@@ -1,11 +1,9 @@
-[id="add_products_from_platforms"]
-= Adding products from platforms to a portfolio
+Procedure
 
 . Click *Platforms*.
 . Click on a connected platform.
 . Click *Add to portfolio".
 . Check each product to add to the portfolio and click *Add*.
 . In the *Add products to portfolos* modal that appears, select the portfolios to add products to.
-.. [Optional] Click *Create new portfolio* to create a new portfolio to add products to. 
+.. [Optional] Click *Create new portfolio* to create a new portfolio to add products to.
 . Click *Add*.
-
