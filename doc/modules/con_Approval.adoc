@@ -21,10 +21,10 @@ To approve or deny a request:
 
 include::proc_Approve_deny_request.adoc[]
 
-== Commenting on Requests
+== Commenting on requests
 
 Comment on requests as an administrator or approver. Comments are captured by the system and visible at each stage of approval.
 
 To comment on a request:
 
-include:proc_Comment_on_request.adoc[]
+include::proc_Comment_on_request.adoc[]
