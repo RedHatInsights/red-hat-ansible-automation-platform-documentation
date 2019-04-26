@@ -1,0 +1,6 @@
+Procedure
+
+. Navigate to menu:Approval.
+. Click the *Requests* tab then click image:more_actions.png[More Actions] on a request.
+. Click *Comment*.
+. Add a comment and click *Submit*.
