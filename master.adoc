@@ -14,4 +14,4 @@
 
 include::doc/assembly_catalog_overview.adoc[leveloffset=+1]
 include::doc/assembly_Getting_started.adoc[leveloffset=+1]
-include::doc/assembly_Working_with_approval.adoc[leveloffset=+1]
+include::doc/modules/con_Approval.adoc[leveloffset=+1]

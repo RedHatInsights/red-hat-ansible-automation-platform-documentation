@@ -3,10 +3,28 @@
 [id="Approval"]
 = Working with approval
 
-Catalog supports multi-level approval workflows, providing the flexibility to create a tiered administrative process that includes selected organizational groups. Administrators can design approval workflows, view request details, approve or deny requests, and monitor status of existing requests. Once created, an approval workflow can be assigned to Catalot portfolios.
+Catalog supports multi-level approval workflows, providing the flexibility to create a tiered administrative process that includes selected organizational groups. Administrators can design approval workflows, view request details, approve or deny requests, and monitor status of existing requests. Once created, an approval workflow can be assigned to Catalog portfolios.
 
 == Creating approval workflows
 
 Create approval workflows and assign them to Catalog portfolios.
 
+To create an approval workflow:
+
 include::proc_Approval_workflow.adoc[]
+
+== Approving or denying Requests
+
+Once a user places an order a request is created, which users with approval permissions can approve or deny. Detailed information is provided for each request, with information on the ordered product and its associated requester and project. A stage transcript is also provided. Denied requests require justification and the approver must enter a reason.
+
+To approve or deny a request:
+
+include::proc_Approve_deny_request.adoc[]
+
+== Commenting on Requests
+
+Comment on requests as an administrator or approver. Comments are captured by the system and visible at each stage of approval.
+
+To comment on a request:
+
+include:proc_Comment_on_request.adoc[]
