@@ -1,8 +1,19 @@
-Prequisites
+*Prequisites*
 
-* A Red Hat OpenShift Container platform login token. See link:
+* A Red Hat OpenShift Container platform login token.
 
-Procedure
+To obtain a token:
+
+. Log in to the Red Hat OpenShift Container Platform cluster with an account that has access to the namespace.
+. Run the following command:
++
+-----
+. #oc sa get-token -n management-infra management-admin
+-----
++
+. Copy the token.
+
+To add a source:
 
 . Navigate to menu:Settings[Catalog Sources].
 . Click *Add source*.
