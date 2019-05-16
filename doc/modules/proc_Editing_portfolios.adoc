@@ -1,0 +1,6 @@
+To edit a portfolio:
+
+. Click *Portfolios*.
+. Click image:more_actions.png[More Actions] on a portfolio, then click *Edit*.
+. Update the *Name*, * Description* or *Approval workflow*.
+. Click *Save*.

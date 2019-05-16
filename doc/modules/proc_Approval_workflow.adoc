@@ -1,4 +1,4 @@
-Procedure
+To create an approval workflow:
 
 . Click *Approval*.
 . Click *Create workflow*.

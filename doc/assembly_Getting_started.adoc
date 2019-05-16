@@ -13,7 +13,7 @@ Once the portfolio is created, we can add products to it and share the portfolio
 
 include::modules/con_Adding_products.adoc[]
 
-The final step in this workflow is to share the portfolio with groups of users. Once shared, users will have access to order to products.
+The final step in this workflow is to share the portfolio with groups of users. Once shared, users will have access to order products.
 
 include::modules/con_Sharing_portfolios.adoc[]
 
