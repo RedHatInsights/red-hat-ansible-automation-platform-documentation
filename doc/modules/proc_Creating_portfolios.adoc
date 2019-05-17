@@ -1,4 +1,4 @@
-Procedure
+To create a portfolio:
 
 . Click *Create portfolio*.
 . Provide a *New Portfolio Name* and *Description*.

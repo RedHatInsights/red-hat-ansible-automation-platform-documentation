@@ -1,4 +1,4 @@
-Procedure
+To share a portfolio:
 
 . Click *Portfolios*.
 . Click *More Actions* on a porfolio, then click *Share*.
