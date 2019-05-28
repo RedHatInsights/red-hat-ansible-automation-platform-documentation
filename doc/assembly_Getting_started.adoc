@@ -9,9 +9,13 @@ Now that a source has been added, we can create a portfolio that will group prod
 
 include::modules/con_Portfolios.adoc[]
 
-Once the portfolio is created, we can add products to it and share the portfolio with groups of users.
+Once the portfolio is created, we can add products to it.
 
 include::modules/con_Adding_products.adoc[]
+
+Next we will edit the portfolio, to assign an approval workflow to it.
+
+include:con_Editing_portfolios.adoc[]
 
 The final step in this workflow is to share the portfolio with groups of users. Once shared, users will have access to order products.
 
