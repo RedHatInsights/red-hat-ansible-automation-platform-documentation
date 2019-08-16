@@ -15,11 +15,11 @@ include::modules/con_Adding_products.adoc[]
 
 Next we will edit the portfolio, to assign an approval workflow to it.
 
-include:con_Editing_portfolios.adoc[]
+include::modules/con_Editing_portfolios.adoc[]
 
 Before sharing the portfolio with users, you may need to remove products that aren't relevant to the users who will share access to the portfolio.
 
-include::con_Deleting_products_from_portfolios.adoc[]
+include::modules/con_Deleting_products_from_portfolios.adoc[]
 
 The final step in this workflow is to share the portfolio with groups of users. Once shared, users will have access to order products.
 
