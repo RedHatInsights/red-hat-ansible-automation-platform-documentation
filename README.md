@@ -6,6 +6,7 @@
 This repo contains the documentation for
 
 * [Catalog](http://www.redhat.com/)
+* [Approval](https://github.com/ManageIQ?utf8=%E2%9C%93&q=approval)
 
 ## Contributing
 
