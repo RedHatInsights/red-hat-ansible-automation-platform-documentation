@@ -17,7 +17,7 @@ include::proc_Approval_workflow.adoc[]
 
 == Approving or denying requests
 
-Once a user places an order a request is created, which approval administrators can approve or deny. Each request includes product, portfolio, and requester information, as well as order request parameter details. A stage transcript is also provided. Denied requests require justification and the approver must enter a reason.
+Once a user places an order a request is created, which Approval Administrators or Approval Approvers can approve or deny. Each request includes product, portfolio, and requester information, as well as order request parameter details. A stage transcript is also provided. Denied requests require justification and the approver must enter a reason.
 
 To approve or deny a request:
 
