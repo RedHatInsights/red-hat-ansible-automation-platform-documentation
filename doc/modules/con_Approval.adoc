@@ -3,19 +3,27 @@
 [id="Approval"]
 = Working with approval
 
-Catalog supports multi-level approval workflows, providing the flexibility to create a tiered administrative process that includes selected organizational groups. Administrators can design approval workflows, view request details, approve or deny requests, and monitor status of existing requests. Once created, an approval workflow can be assigned to Catalog portfolios.
+Catalog supports group-based approval processes applied to portfolios, products, and platform inventories, providing the flexibility to include selected organizational groups in approving requests.
+
+Approval administrators can create approval groups and processes, view request details, approve or deny requests, and monitor status of existing requests.
+
+[NOTE]
+====
+To create and list groups when creating Approval processes, the Approval Administrator must also have Organization Administrator privileges.
+====
+
 
 == Creating approval workflows
 
-Create approval workflows and assign them to Catalog portfolios.
+Create approval processes and assign them to Catalog portfolios, products and platform inventories.
 
-To create an approval workflow:
+To create an approval process:
 
 include::proc_Approval_workflow.adoc[]
 
 == Approving or denying requests
 
-Once a user places an order a request is created, which users with approval permissions can approve or deny. Detailed information is provided for each request, with information on the ordered product and its associated requester and project. A stage transcript is also provided. Denied requests require justification and the approver must enter a reason.
+Once a user places an order a request is created, which Approval Administrators or Approval Approvers can approve or deny. Each request includes product, portfolio, and requester information, as well as order request parameter details. A stage transcript is also provided. Denied requests require justification and the approver must enter a reason.
 
 To approve or deny a request:
 
