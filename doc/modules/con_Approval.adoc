@@ -7,6 +7,12 @@ Catalog supports group-based approval processes applied to portfolios, products,
 
 Approval administrators can create approval groups and processes, view request details, approve or deny requests, and monitor status of existing requests.
 
+[NOTE]
+====
+To create and list groups when creating Approval processes, the Approval Administrator must also have Organization Administrator privileges.
+====
+
+
 == Creating approval workflows
 
 Create approval processes and assign them to Catalog portfolios, products and platform inventories.
