@@ -3,10 +3,10 @@
 [id="Adding_sources"]
 == Adding sources
 
-Sources are the platforms [product-title] connects to in order to collect information on products available to users. To use [product-title_short], you need to connect the application to at least one source.
+Sources are the platforms [product-title] connects to in order to collect inventory information used to organize and present products available to users. To use [product-title_short], you need to connect the application to at least one source.
 
 Connect an Ansible Tower instance to [product-title] to create portfolios from its inventory of playbooks and workflows your users can view and order from.
 
 include::proc_Adding_sources.adoc[]
 
-After you connect your Ansbile Tower instance, navigate back to [product-title] to create portfolios and assign approval processes using the Ansible Tower's inventory. 
+After connecting your Ansbile Tower instance, navigate back to [product-title_short] to create portfolios and assign approval processes using the Ansible Tower's inventory.
