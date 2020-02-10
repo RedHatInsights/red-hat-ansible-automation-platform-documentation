@@ -5,6 +5,9 @@
 
 Sources are the platforms [product-title] connects to in order to collect inventory information used to organize and present products available to users. To use [product-title_short], you need to connect the application to at least one source.
 
+
+=== Adding an Ansible Tower source
+
 Connect an Ansible Tower instance to [product-title] to create portfolios from its inventory of playbooks and workflows your users can view and order from.
 
 include::proc_Adding_sources.adoc[]
