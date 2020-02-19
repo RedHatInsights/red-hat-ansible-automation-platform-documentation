@@ -1,8 +1,8 @@
 // Module included in the following assemblies:
 // assembly_Administration_guide.adoc
 [id="Assigning_approval_workflow"]
-= Assigning approval workflows to portfolios
+= Setting approval processes for portfolios
 
-Assign approval workflows, once created, to your portfolios. Each approval workflow will apply to all products in a given portfolio.
+Govern access to products by setting the approval processes for the portfolios in which they are organized. Once approval processes are set for a portfolio, each product ordered in that portfolio will require approval from the groups defined in the process. Approval processes will apply to all products in a given portfolio.
 
 include::proc_Assigning_approval_workflow.adoc[]
