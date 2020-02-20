@@ -2,6 +2,6 @@
 [id="Editing_portfolios"]
 == Editing portfolios
 
-Editing portfolios allows you to change information related to a portfolio's name, description and its approval workflow.
+Editing portfolios allows you to change information related to a portfolio's name and description.
 
 include::proc_Editing_portfolios.adoc[]

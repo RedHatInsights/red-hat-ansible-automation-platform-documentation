@@ -1,6 +1,6 @@
 Procedure
 
 . Navigate to menu:Portfolio.
-. Click image:more_actions.pmg[More Actions] on a portfolio tile and select *Edit*.
-. On the *Edit Portfolio* modal select an *Approval workflow* from the drop-down.
+. Click image:more_actions.pmg[More Actions] on a portfolio tile and select *Set approval*.
+. From the *Select approval process* field, choose those processes to set to the portfolio.
 . Click *Save*.
