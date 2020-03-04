@@ -1,0 +1,5 @@
+// Attributes for Automation Service Catalog
+
+// Product attributes
+:ProductName: Automation Service Catalog
+:ProductNameShort: Catalog
