@@ -1,0 +1,11 @@
+<title>Managing Products in Automation Service Catalog</title>
+<productname>Automation Service Catalog</productname>
+<productnumber>1</productnumber>
+<subtitle></subtitle>
+<abstract>
+    <para>This guide provides walkthroughs for working directly with products in Automation Service Catalog</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
