@@ -1,0 +1,27 @@
+
+[id="concept-surverys_{context}"]
+
+= {productname} survey editing
+
+When ordering a product in {productname}, users may be required to provide additional information to complete the request. This prompt is created by a survey associated with the product. Initially created and edited in Ansible Tower, Catalog Administrators and portfolio users with *update* permissions can edit the survey in {productname}. Once submitted and validated, the surveys pass user-submitted extra variables to the job or workflow template run on Ansible Tower on the execution of an order.
+
+See _Surveys_ in the link:https://docs.ansible.com/ansible-tower/latest/html/userguide/index.html[Ansible Tower User Guide] to learn more creating and editing surveys for job templates.
+
+
+Using the survey properties editor, you can:
+
+* Set *labels*, *helper text* or *placeholders* to enhance the user experience of users providing information
+* Further restrict existing validation parameters.
+* Change validation messages.
+* Hide, disable or set to read-only chosen fields in the survey.
+
+== Survey properties editor
+
+Values for surveys are defined in Ansible Tower and the {productname} *properties editor* allows Catalog Administrators to restrict survey options, such as adjusting default values and removing items from drop-down menus.
+
+Additionally, use the properties editor to hide, disable, or set a fields to read only.
+
+[NOTE]
+====
+Provide an initial value for any required field set to *Hidden* or *Disabled*. This includes `read only` fields. 
+====
