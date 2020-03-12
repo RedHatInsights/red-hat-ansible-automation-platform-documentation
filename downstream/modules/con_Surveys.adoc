@@ -23,5 +23,5 @@ Additionally, use the properties editor to hide, disable, or set a fields to rea
 
 [NOTE]
 ====
-Provide an initial value for any required field set to *Hidden* or *Disabled*.
+Provide an initial value for any required field set to *Hidden* or *Disabled*. This includes `read only` fields. 
 ====
