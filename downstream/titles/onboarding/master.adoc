@@ -16,35 +16,21 @@ Using Automation Service Catalog you can:
 
 
 
-=== Onboarding to Automation Service Catalog
+== Onboarding to Automation Service Catalog
 
-This guide provides instructions to begin using Automation Service Catalog, including prerequisites and procedures for connecting your Ansible Tower provider, as well as configuring users and permissions.
+This guide provides instructions to begin using Automation Service Catalog, including prerequisites and procedures for connecting your Ansible Tower provider, as well as configuring users and permissions. We also provide instructions for working with platforms, portfolios, and products.
 
-After completing the setup described and following the steps in this guide, you will be able to perform the basic tasks associated with Automation Service Catalog.
-
-
-== Planning
-
-When configuring Automation Service Catalog for your needs, consider the scope of your user environments and how those users are grouped.
-
-Determine the required level of access for your users based on the following predefined roles in Automation Service Catalog:
-
-* *Organization Administrator*: a Red Hat account user who can manage users and control their access and permissions.
-* *Approval Administrator*: 	An Approval administrator role that grants create, read, update and destroy permissions.
-* *Approval Approver*: 	An Approval approver role that grants read and create permissions.
-* *Approval User*: An approval user role which grants permissions to read/create a request.
-* *Catalog Administrator*: A catalog administrator roles grants create,read,update, delete and order permissions.
-* *Catalog User*: A catalog user roles grants read and order permissions.
+After completing the setup described and following the steps in this guide, you will have a portfolio of products accessible to users.
 
 
-=== Entitlements
+== Entitlements
 
 To begin using Automation Service Catalog, you need:
 
 At least one Red Hat account user with Organization Administrator entitlements.
 The account number for this Red Hat corporate account.
 
-=== Adding the necessary entitlements for Automation Service Catalog
+=== Adding entitlements for Automation Service Catalog
 
 
 To use Automation Service Catalog as a Lighthouse customer, create a new Red Hat user account:
@@ -63,7 +49,20 @@ To use Automation Service Catalog as a Lighthouse customer, create a new Red Hat
 The account number for your Red Hat corporate account is required to use Automation Service Catalog, but  is not provided automatically to Red Hat staff when creating a new account.
 ====
 
-== Creating groups and users
+The required entitlements are added and you can now access Automation Service Catalog.
+
+== Groups and users
+
+When configuring Automation Service Catalog for your needs, consider the scope of your user environments and how those users are grouped.
+
+Determine the required level of access for your users based on the following predefined roles in Automation Service Catalog:
+
+* *Organization Administrator*: a Red Hat account user who can manage users and control their access and permissions.
+* *Approval Administrator*: 	An Approval administrator role that grants create, read, update and destroy permissions.
+* *Approval Approver*: 	An Approval approver role that grants read and create permissions.
+* *Approval User*: An approval user role which grants permissions to read/create a request.
+* *Catalog Administrator*: A catalog administrator roles grants create, read, update, delete and order permissions.
+* *Catalog User*: A catalog user roles grants read and order permissions.
 
 Only Organization Administrators can create new accounts (including more Organization Administrator accounts).
 
@@ -94,15 +93,28 @@ Create Catalog Administrator group:
 . Select the Catalog Administrator role and press Next
 . Review information and press Confirm to create the group.
 
-=== Adding a source to sharing a portfolio with users
+== Working with platforms, portfolios, and products
 
-This section demonstrates the basic workflows required to get started using Automation Service Catalog. We will walk through adding a source and conclude by having a portfolio populated with products that we can share with a group of users.
+This section demonstrates the basic workflows for platforms, portfolios, and products to get started using Automation Service Catalog.
+
+We will demonstrate how to:
+
+* connect to a source platform
+* create portfolios
+* add products from the source platform into the portfolio
+* set approval processes for the portfolio
+* share the portfolio with users
+
+
+=== Adding a source platform
 
 To begin, we will add an Ansible Tower instance as a source of products.
 
-include::modules/proc_Adding_ansible_tower_source.adoc]
+include::modules/proc_Adding_ansible_tower_source.adoc[]
 
-Now that we have a source for products, we can proceed to create an example portfolio and add a few products from our Ansible Tower to it
+=== Creating a portfolio and adding products to it
+
+Now that we have a source for products, we can proceed to create an example portfolio and add a few products from our Ansible Tower to it.
 
 include::modules/proc_Creating_portfolios.adoc[]
 
@@ -110,9 +122,13 @@ Our initial portfolio is empty, and we can start adding products from this empty
 
 include::modules/proc_Add_products_from_platforms.adoc[]
 
+=== Setting approval processes for the portfolio
+
 We have now created a portfolio and added some products to it. Our next step is to set the approval process for the portfolio. Setting the approval process for our portfolio ensure that specific groups are designated to approve any orders placed by a user.
 
 include::modules/proc_Assigning_approval_workflow.adoc[]
+
+=== Sharing the portfolio with users
 
 The portfolio is now ready to share with groups of users. These designated user groups can order products collected in the portfolio, and their orders are approved or denied using the approval process set for the portfolio.
 
@@ -120,6 +136,16 @@ include::modules/proc_Sharing_portfolios.adoc[]
 
 Our portfolio is now accessible to the groups of users, who can order the products we collected in it.
 
-=== Conclusion
+== Conclusion
 
-In this onboarding workflow we have demonstrated how to perform the basic actions necessary to produce a portfolio of products ready to share with users.
+This onboarding guide demonstrated how to perform the basic actions for platforms, portfolios and products necessary to get started using Automation Service Catalog.
+
+The workflows in this guide demonstrated how to:
+
+* add entitlements to access Automation Service Catalog
+* create the necessary groups and users
+* connect to a source platform
+* create portfolios
+* add products from the source platform into the portfolio
+* set approval processes for the portfolio
+* share the portfolio with users

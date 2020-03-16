@@ -1,7 +1,7 @@
 To share a portfolio:
 
 . Click *Portfolios*.
-. Click *More Actions* on a porfolio, then click *Share*.
+. Click *More Actions* on a portfolio, then click *Share*.
 . Adding groups:
 .. Under *Invite group* search groups to share the portfolio with.
 .. Select the level of permissions using the drop-down list.
