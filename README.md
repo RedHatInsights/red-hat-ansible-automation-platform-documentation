@@ -1,4 +1,4 @@
-# Catalog Documentation
+# Re Hat Automation Services Catalog Documentation
 
 [![Build Status](https://travis-ci.org/ManageIQ/catalog_docs.svg?branch=master)](https://travis-ci.org/ManageIQ/catalog_docs)
 [![Gitter](https://badges.gitter.im/ManageIQ/catalog_docs.svg)](https://gitter.im/ManageIQ/catalog_docs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
