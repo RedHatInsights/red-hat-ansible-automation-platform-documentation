@@ -1,0 +1,7 @@
+
+
+Procedure
+
+. Click *Portfolios*.
+. On the portfolio you wish to delete, click *More Actions* and select *Delete*.
+. Click *Confirm*.
