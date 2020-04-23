@@ -2,7 +2,7 @@
 include::attributes/attributes.adoc[]
 
 [[catalog_support_matrix]]
-= Automation Services Catalog Product Support Matrix
+= Automation Services Catalog product support matrix
 
 This document describes the supported products that Automation Services Catalog is dependent against.
 
