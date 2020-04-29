@@ -1,5 +1,3 @@
-:experimental:
-
 
 [[catalog_support_matrix]]
 = Automation Services Catalog product support matrix
