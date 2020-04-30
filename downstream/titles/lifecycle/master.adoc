@@ -8,8 +8,8 @@ Automation Services Catalog is supplied by Red Hat specifically at cloud.redhat.
 == Maintenance and Updates Statement for Automation Services Catalog
 
 .Glossary 
-*Maintenance* - Security and Application Bug fixes.
-*Update* - Application Feature Enhancements
+* *Maintenance* - Security and Application Bug fixes.
+* *Update* - Application Feature Enhancements
 
 Red Hat will maintain the presentation of the Automation Services Catalog offering. This will include the securing of the service(s) and their dependencies within cloud.redhat.com. Maintenance and Updates will be delivered by Red Hat to the platform.
 
