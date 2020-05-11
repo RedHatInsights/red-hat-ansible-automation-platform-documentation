@@ -3,7 +3,7 @@
 include::attributes/attributes-catalog.adoc[]
 
 [[getting-started]]
-= Getting started {ProductName}
+= Getting started with {ProductName}
 
 
 == About {ProductName}
