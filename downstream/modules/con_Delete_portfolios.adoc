@@ -1,0 +1,6 @@
+[id="removing_products_from_portfolios"]
+== Deleting portfolios
+
+Delete portfolios from Catalog when no longer necessary.
+
+include::proc_Delete_portfolios.adoc[]
