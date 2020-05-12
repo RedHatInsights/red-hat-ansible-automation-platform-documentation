@@ -195,7 +195,15 @@ You can edit the sequence number for an approval process from the Approval proce
 
 The approval process list view will update to reflect the newly sequence.
 
+=== Automatic approval
 
+You can designate products to approve automatically by not setting an approval process at the following levels:
+
+* the inventory hosting the product
+* the portfolio containing it
+* the product itself.
+
+Products without an approval process at any of these levels will approve upon order creation.
 
 == Working with platforms, portfolios, and products
 
