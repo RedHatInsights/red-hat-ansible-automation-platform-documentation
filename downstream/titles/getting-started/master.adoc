@@ -266,7 +266,7 @@ The workflows in this guide demonstrated how to:
 
 When ordering a product in {ProductName}, users may be required to provide additional information to complete the request. This prompt is created by a survey associated with the product. Initially created and edited in Ansible Tower, Catalog Administrators and portfolio users with update permissions can edit the survey in {ProductName}. Once submitted and validated, the surveys pass user-submitted extra variables to the job or workflow template run on Ansible Tower on the execution of an order.
 
-See _Surveys_ in the linkhttps://docs.ansible.com/ansible-tower/latest/html/userguide/index.html[Ansible Tower User Guide] to learn more creating and editing surveys for job templates.
+See _Surveys_ in the link:https://docs.ansible.com/ansible-tower/latest/html/userguide/index.html[Ansible Tower User Guide] to learn more creating and editing surveys for job templates.
 
 Using the survey properties editor, you can:
 
