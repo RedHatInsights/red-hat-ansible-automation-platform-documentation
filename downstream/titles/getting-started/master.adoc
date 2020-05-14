@@ -195,7 +195,15 @@ You can edit the sequence number for an approval process from the Approval proce
 
 The approval process list view will update to reflect the newly sequence.
 
+=== Automatic approval
 
+You can designate products to approve automatically by not setting an approval process at the following levels:
+
+* the inventory hosting the product
+* the portfolio containing it
+* the product itself.
+
+Products without an approval process at any of these levels will approve upon order creation.
 
 == Working with platforms, portfolios, and products
 
@@ -258,7 +266,7 @@ The workflows in this guide demonstrated how to:
 
 When ordering a product in {ProductName}, users may be required to provide additional information to complete the request. This prompt is created by a survey associated with the product. Initially created and edited in Ansible Tower, Catalog Administrators and portfolio users with update permissions can edit the survey in {ProductName}. Once submitted and validated, the surveys pass user-submitted extra variables to the job or workflow template run on Ansible Tower on the execution of an order.
 
-See _Surveys_ in the linkhttps://docs.ansible.com/ansible-tower/latest/html/userguide/index.html[Ansible Tower User Guide] to learn more creating and editing surveys for job templates.
+See _Surveys_ in the link:https://docs.ansible.com/ansible-tower/latest/html/userguide/index.html[Ansible Tower User Guide] to learn more creating and editing surveys for job templates.
 
 Using the survey properties editor, you can:
 
