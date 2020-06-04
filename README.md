@@ -1,12 +1,9 @@
-# Re Hat Automation Services Catalog Documentation
+# Red Hat Automation Services Catalog Documentation
 
 [![Build Status](https://travis-ci.org/ManageIQ/catalog_docs.svg?branch=master)](https://travis-ci.org/ManageIQ/catalog_docs)
 [![Gitter](https://badges.gitter.im/ManageIQ/catalog_docs.svg)](https://gitter.im/ManageIQ/catalog_docs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-This repo contains the documentation for
-
-* [Catalog](http://www.redhat.com/)
-* [Approval](https://github.com/ManageIQ?utf8=%E2%9C%93&q=approval)
+This repo contains the documentation for the [Automation Services Catalog](https://www.ansible.com/products/automation-services-catalog), a service included in the Red Hat Ansible Automation Platform. 
 
 ## Contributing
 
