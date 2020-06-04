@@ -34,9 +34,10 @@ Alternately, if you want to "live edit" the docs, replace the last two steps wit
 
 ## Contacts
 
-For questions or comments about the documentation system, try one of the following:
+For questions or comments about Automation Services Catalog documentation, please contact:
 
-_Coming Soon_
+saas-docs@redhat.com
+
 
 ## License
 
