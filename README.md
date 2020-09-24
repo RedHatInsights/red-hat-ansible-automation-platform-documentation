@@ -1,4 +1,6 @@
-# Red Hat Automation Services Catalog Documentation
+# Red Hat Ansible Automation Platform Documentation
+
+[THIS IS A WORK IN PROGRESS
 
 [![Build Status](https://travis-ci.org/ManageIQ/catalog_docs.svg?branch=master)](https://travis-ci.org/ManageIQ/catalog_docs)
 [![Gitter](https://badges.gitter.im/ManageIQ/catalog_docs.svg)](https://gitter.im/ManageIQ/catalog_docs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
@@ -34,7 +36,7 @@ Alternately, if you want to "live edit" the docs, replace the last two steps wit
 
 ## Contacts
 
-For questions or comments about Automation Services Catalog documentation, please contact:
+For questions or comments about Red Hat Ansible Automation Platform Documentation documentation, please contact:
 
 saas-docs@redhat.com
 
