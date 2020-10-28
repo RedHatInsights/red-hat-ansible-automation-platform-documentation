@@ -1,6 +1,43 @@
 # Red Hat Ansible Automation Platform Documentation
 
-[THIS IS A WORK IN PROGRESS
+[THIS IS A WORK IN PROGRESS]
+
+= Repository Organization
+
+....
+.
+|
+├── community
+├── downstream
+│   ├── assemblies
+│   │   ├── assembly-title-1.adoc
+│   │   ├── assembly-title-2.adoc
+│   │   └── modules -> ../modules/
+│   ├── attributes
+│   ├── images
+│   │   ├── image-1.png
+│   │   └── image-2.png
+│   ├── modules
+│   │   ├── module-title-1.adoc
+│   │   └── module-title-2.adoc
+|   └── titles
+│
+└── README.adoc
+....
+
+Top-level directories are:
+ 
+* community: A directory for upstream-specific modules, assemblies and titles.
+* downstream: A directory that stores downstream modules, assemblies, and titles. 
+
+Lower-level directories are:
+
+* attributes: A common directory for attribute files.
+* assemblies: A directory for all assemblies, each on in its own AsciiDoc file. Assemblies are collections of modules linked together. 
+* images: A directory for all images and other digital content.
+* modules: A directory for all modules, each one in its own AsciiDoc file.
+* titles: A directory for titles (information units, e.g, install guide, user guide). Contains master.adoc files (per guide > per qpc/discovery deliverable) to be called during builds and symbolic links to directories (modules, etc.) that contain .adoc content.
+
 
 [![Build Status](https://travis-ci.org/ManageIQ/catalog_docs.svg?branch=master)](https://travis-ci.org/ManageIQ/catalog_docs)
 [![Gitter](https://badges.gitter.im/ManageIQ/catalog_docs.svg)](https://gitter.im/ManageIQ/catalog_docs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
