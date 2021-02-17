@@ -20,8 +20,10 @@
 │   │   ├── image-1.png
 │   │   └── image-2.png
 │   ├── modules
-│   │   ├── module-title-1.adoc
-│   │   └── module-title-2.adoc
+│   │   ├── platform-component1
+│   │   └── platform-component2
+│   │       ├── module-title-1.adoc
+│   │       └── module-title-2.adoc
 |   ├── titles
 │   │   ├── platform-component1
 │   │   └── platform-component2
