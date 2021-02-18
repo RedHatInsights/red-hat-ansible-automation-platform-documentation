@@ -1,4 +1,0 @@
-:product-title: Red Hat Hybrid Cloud Management - Catalog
-:product-title_short: Catalog
-
-:platform-name: cloud.redhat.com
