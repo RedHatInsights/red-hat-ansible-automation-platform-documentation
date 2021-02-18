@@ -1,0 +1,47 @@
+// Module included in the following assemblies:
+// assembly-evaluating-automation-return.adoc
+
+
+[id="con-automation-calculator_{context}"]
+
+= About Automation Calculator
+
+Use the Automation Calculator to generate graphs, metrics and calculations. You can use these resources to help you determine the total savings on your investment in automated processes.
+
+.Determining automation savings
+
+Determine your return on investment in automation through an analysis of the time and cost of performing a task manually, such as deploying a server, versus the time and cost associated with automating the same task. Automation savings calculations extend across all organizations, clusters, hosts and templates in an environment.
+
+[NOTE]
+====
+The calculation of initial total savings is based on default values for each variable. Include your own estimated costs to produce a more accurate calculation.
+====
+
+.Variables
+Several variables contribute to evaluating costs:
+
+* Manual cost of automation - the approximate cost for a mid-level resource to perform a task or series of tasks.
+* Cost of automation - costs associated with automating tasks as job templates.
+* Automation time - the time required to run a job template.
+* Number of hosts - the number of hosts in inventory the template runs on.
+
+.Automation formula
+
+The following formulas determine your automation savings:
+
+* *Manual cost per template* = (time for a manual run on one host * (sum of all hosts across job runs)) * cost per hour.
+* *Automation cost per template* = cost of automation per hour * sum of total elapsed hours for a template.
+* *Savings* = sum of (manual cost - automation costs) across all templates.
+
+
+.Additional features
+
+You can use features across *Automation Calculator* to produce a more detailed and customized view of how and where your investment in automation is yielding returns.
+
+* To learn more about working with templates, see xref:con-top-templates_{context}[Top templates].
+* To revise and customize savings calculations, see xref:proc-calculating_automation_{context}[Calculating your automation savings].
+
+
+include::con-top-templates.adoc[leveloffset=+1]
+
+include::proc-calculating-automation.adoc[leveloffset=+1]

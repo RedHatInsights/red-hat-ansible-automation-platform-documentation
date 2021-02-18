@@ -1,0 +1,18 @@
+[id="ref-analytics-roles_{context}"]
+
+= Automation Analytics User Roles
+
+Roles provide a defined set of actions each group performs. Determine the required level of access for your users based on the following roles in Automation Analytics:
+
+.Role Reference Table
+[options="header"]
+|====
+| Role | Permissions
+| Analytics Administrators a|
+
+* Create Analytics Dashboards
+* Save persistent data
+* Restrict view permissions for data and dashboards
+|Analytics Users a|
+* View data and dashboards|
+|====

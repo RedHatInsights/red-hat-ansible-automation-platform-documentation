@@ -1,0 +1,11 @@
+:experimental:
+:toclevels: 4
+
+
+:analyticsuseraccess_guide:
+
+[[analyticsuseraccess_guide]]
+
+= Managing user access in Automation Analytics
+
+include::analytics/assembly-user-access.adoc[leveloffset=+1]

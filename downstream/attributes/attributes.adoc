@@ -1,0 +1,6 @@
+// Attributes for Red Hat Automation Analytics service
+
+// Product attributes
+:ProductName: Red Hat Automation Analytics
+:ProductNameShort: Automation Analytics
+:PlatformName: Red Hat Ansible Automation Platform
