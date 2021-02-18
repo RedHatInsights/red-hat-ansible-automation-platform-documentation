@@ -1,7 +1,0 @@
-
-
-Procedure
-
-. Click *Portfolios*.
-. On the portfolio you wish to delete, click image:more_actions.png[] and select *Delete*.
-. Click *Confirm*. 
