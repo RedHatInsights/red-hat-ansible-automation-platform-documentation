@@ -1,6 +1,0 @@
-To edit a portfolio:
-
-. Click *Portfolios*.
-. Click *More Actions* on a portfolio, then click *Edit*.
-. Update the *Name* and/or *Description*.
-. Click *Save*.

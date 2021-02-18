@@ -1,0 +1,41 @@
+// As an admin, I want to view top template details
+// Module included in the following assemblies:
+// assembly-evaluating-automation-return.adoc
+
+
+[id="con-jobs-explorer"]
+
+= Creating a filtered and sorted view of jobs
+
+You can view a list of jobs, filtered by attributes you choose, using the *Job Explorer*.
+
+Filter options include:
+
+* Status
+* Job type
+* Organization
+* Templates
+* Cluster
+* Date
+
+You can also choose to sort results by a set of parameters by selecting *Sort by* from the filter options.
+
+To create a detailed view of your jobs using the *Job Explorer*:
+
+.Procedure
+
+. Navigate to *Automation Analytics*.
+. Click on *Job Explorer*.
+. Click the filter icon and choose a filter to apply.
+. Repeat the previous step for each filter you want to apply.
+. Select *Sort By* to add parameters to sort results by.
+
+The *Job Explorer* view will update and present a list of *Total Jobs* based on the filters you selected, sorted by your chosen criteria.
+
+== Viewing more information about an individual job
+
+You can click on the arrow icon next to the job *Id/Name* field in the *Total Jobs* list to view more details related to that job.
+
+== Reviewing job details on Ansible Tower
+
+Click the link out icon next to the job *Id/Name* field to view the job itself on the Ansible Tower job details page. For more information on viewing job details on Ansible Tower, see _Jobs_ in the Ansible Tower https://docs.ansible.com/ansible-tower/3.4.3/html/userguide/jobs.html[user Guide].

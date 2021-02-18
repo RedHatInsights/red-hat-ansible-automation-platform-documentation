@@ -1,0 +1,17 @@
+// Module included in the following assemblies:
+// assembly-evaluating-automation-return.adoc
+
+
+[id="proc-top-template-job-explorer"]
+= Viewing top templates job details for a specific cluster
+
+You can view job instances for top templates in a cluster to learn more about individual job runs associated with that template or to apply filters to further drill down into the data.
+
+.Procedure
+
+. Navigate to *Clusters*.
+. Select a cluster from the clusters drop-down list. The view will update with that cluster's data.
+. Click on a template name in *Top Templates*.
+. Click *View all jobs* in the modal that appears.
+
+The *Job Explorer* will display all jobs on the chosen cluster associated with that template. The view presented will preserve the contextual information of the template based on the parameters selected in the *Clusters* view.
