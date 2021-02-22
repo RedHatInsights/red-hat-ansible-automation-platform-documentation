@@ -1,0 +1,20 @@
+// Module included in the following assemblies:
+// assembly-user-access.adoc
+
+
+[id="proc-add-user-to-group_{context}"]
+
+= Adding users to existing groups
+
+You can add users to groups when creating a group or by manually adding users to existing groups. This section describes how to add users to an existing group.
+
+.Procedure
+
+. Log in to cloud.redhat.com
+. Click the settings icon
+. Navigate to *User Access* > *Groups*
+. Click the group you want to add users to
+. Navigate to the Members tab, then click *Add member*
+. Select one or more users to add to this group, then click *Add to group*
+
+The selected users will now be added to the group. You can review the users in a group by checking the Members tab.
