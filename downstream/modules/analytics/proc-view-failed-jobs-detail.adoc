@@ -11,16 +11,17 @@ You can view more detail about failed jobs across your organization by drilling 
 
 .Procedure
 
-. Navigate to *Automation Analytics*.
-. Click on *Clusters* and apply filters for clusters and time period of your choosing.
+. Navigate to *Analytics*.
+. Click on *Clusters*.
+. In the filter toolbar, apply filters for clusters and time range of your choosing.
 . Click on a segment on the graph.
 
-The *Job Explorer* view will present a list of successful and failed jobs corresponding to that day on the bar graph.
+You will redirected to the *Job Explorer* view, which will present a list of successful and failed jobs corresponding to that day on the bar graph.
 
 To view only failed jobs:
 
-. Click on *Filter* and select *Status*.
-. Select *Failed*.
+. Click the *Filter by* drop-down menu and select *Status*.
+. Select the *Failed* filter.
 
 The view will update to show only failed jobs run on that day.
 
