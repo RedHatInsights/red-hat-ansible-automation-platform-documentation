@@ -1,0 +1,5 @@
+= Publishing proprietary content collections in Automation Hub
+:imagesdir: images
+:numbered:
+
+include::hub/assembly-managing-private-collections.adoc[leveloffset=+1]

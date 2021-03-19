@@ -1,0 +1,41 @@
+[id="proc-configure-automation-hub-server"]
+= Configuring Red Hat Automation Hub as the primary source for content
+
+You can define Red Hat Automation Hub as the default source for content in the `ansible.cfg` configuration file.
+
+.Prerequisites
+
+* Obtain the API token for the Automation Hub server. See Creating the Automation Hub API token for more information.
+
+.Procedure
+
+. Add the `server_list` option under the `[galaxy]` section and provide one or more server names.
+. Create a new section for each server name:
++
+-----
+[galaxy_server.<server_name>]
+-----
+
+. Set the `url` option if necessary. The community Ansible Galaxy does not require an `auth_url`.
+. Set the `auth_url` option for each server name.
+. Set the API token for the Automation Hub server.
+
+The following `ansible.cfg` example shows how to configure multiple servers in prioritized order, with Automation Hub configured as your primary source and an Ansible Galaxy server as a secondary source:
+
+.ansible.cfg
+-----
+[galaxy]
+server_list = automation_hub, my_org_hub
+
+[galaxy_server.automation_hub]
+url=https://cloud.redhat.com/api/automation-hub/ <1>
+auth_url=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
+
+token=my_ah_token
+
+[galaxy_server.my_org_hub]
+url=https://automation.my_org/
+username=my_user
+password=my_pass
+-----
+<1> A trailing slash */* must follow the server URL.

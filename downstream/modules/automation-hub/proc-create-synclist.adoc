@@ -1,0 +1,22 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-create-synclist"]
+
+= Creating a synclist of Red Hat Certified collections
+
+You can create a synclist of curated Red Hat Certified collections in Automation Hub on cloud.redhat.com. Your synclist repository is located under menu[Automation Hub > Repo Management], which is updated whenever you choose to manage content within Red Hat Certified collections.
+
+By default, all Red Hat Certified collections are included in your initial organization synclist.
+
+.Prerequisites
+
+* You have a valid Ansible Automation Platform subscription.
+* You have Organization Administrator permissions for cloud.redhat.com.
+
+.Procedure
+
+. Log in to cloud.redhat.com.
+. Navigate to *Automation Hub* -> *Collections*.
+. Use the toggle switch on each collection to determine whether to exclude it from your synclist.
+
+When you finish managing collections for your synclist, you can navigate to menu:Automation Hub[Repo Management] to initiate the remote repository sync to your local Automation Hub. If your remote repository is already configured, you can manually sync Red Hat Certified collections to your local Automation Hub to update the collections content that you made available to local users.

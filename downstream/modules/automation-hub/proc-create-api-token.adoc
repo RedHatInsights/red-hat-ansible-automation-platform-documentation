@@ -1,0 +1,24 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-create-api-token"]
+= Creating the Red Hat Automation Hub API token
+
+Before you can interact with Automation Hub by uploading or downloading collections, you need to create an API token. The Automation Hub API token authenticates your `ansible-galaxy` client to the Red Hat Automation Hub server.
+
+You can create an API token using Automation Hub *Token management*.
+
+.Prerequisites
+
+* Valid subscription credentials for Red Hat Ansible Automation Platform.
+
+.Procedure
+
+. Navigate to link:https://cloud.redhat.com/ansible/automation-hub/token/[https://cloud.redhat.com/ansible/automation-hub/token/].
+. Click *Load Token*.
+. Click *copy* icon to copy the API token to the clipboard.
+. Paste the API token into a file and store in a secure location.
+
+[IMPORTANT]
+====
+The API token is a secret token used to protect your content. Store your API token in a secure location.
+====

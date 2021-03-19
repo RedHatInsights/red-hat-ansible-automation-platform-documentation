@@ -1,0 +1,8 @@
+[id="assembly-synclists"]
+= Managing Red Hat Certified collections synclists in Automation Hub
+
+You can use Automation Hub to distribute the relevant Red Hat Certified collections content to your users by creating synclists.
+
+include::automation-hub/con-rh-certified-synclist.adoc[leveloffset=+1]
+
+include::automation-hub/proc-create-synclist.adoc[leveloffset=+1]

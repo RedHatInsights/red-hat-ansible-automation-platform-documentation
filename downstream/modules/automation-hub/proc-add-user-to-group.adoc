@@ -1,0 +1,23 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-add-users-to-group"]
+
+= Adding users to groups
+
+You can add users to groups when creating a group or manually add users to existing groups. This section describes how to add users to an existing group.
+
+.Prerequisites
+
+* You have *groups* permissions and can create and manage group configuration and access in Automation Hub.  See xref:ref-permissions[Automation Hub permissions] for information on system permissions.
+
+
+.Procedure
+
+. Log in to Automation Hub
+. Navigate to *Groups*.
+. Click the *Users* tab.
+. Click *Add*.
+. Select users to add from the list and click *Add*.
+
+
+You have now added the users you selected to the group. These users now have permissions to use Automation Hub assigned to the group.

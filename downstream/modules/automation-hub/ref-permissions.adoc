@@ -1,0 +1,81 @@
+[id="ref-permissions"]
+
+= Automation Hub permissions
+
+Permissions provide a defined set of actions each group performs on a given object. Determine the required level of access for your groups based on the following permissions:
+
+.Permissions Reference Table
+[cols="15%,35%,50%"]
+|===
+| Object | Permission | Description
+
+h| namespace |
+
+Add namespace
+
+Upload to namespace
+
+Change namespace |
+
+Groups with these permissions can create a namespace and upload collections to a namespace.
+
+h| collections |
+
+Modify Ansible repo content |
+
+Groups with this permission can move content between repositories using the Approval feature. Certify or reject features to move content from the *staging* to *published* or *rejected* repositories.
+
+h| user |
+
+View user
+
+Delete user
+
+Add user
+
+Change user |
+
+Groups with these permissions can manage user configuration and access in Automation Hub.
+
+h| groups |
+
+View group
+
+Delete group
+
+Add group
+
+Change group |
+
+Groups with these permissions can manage group configuration and access in Automation Hub.
+
+
+h| remotes |
+
+Change collection remote
+
+View collection remote |
+
+Groups with these permissions can configure remote repository syncing from *Community * or RH Certified* sources under *Repo Management*.
+
+|===
+
+////
+h| distribution |
+
+Change Ansible distribution
+
+View Ansible distribution |
+
+Groups with these permissions can view or modify the remote repository a collections comes from.
+
+h| synclists |
+
+Add synclist
+
+Change synclist
+
+Delete synclist |
+
+Groups with these permissions can create, modify or remove unique synclists created in Automation Hub.
+////

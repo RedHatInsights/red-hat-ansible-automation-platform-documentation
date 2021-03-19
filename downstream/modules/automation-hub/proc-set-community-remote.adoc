@@ -1,0 +1,38 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-set-community-remote"]
+= Configuring the community remote repository and syncing Ansible Galaxy collections.
+
+You can edit the *community* remote repository to sync chosen collections from Ansible Galaxy to your local Automation Hub. By default, your local Automation Hub `community` repository directs to `https://galaxy.ansible.com/api/v2/collections`.
+
+.Prerequisites
+
+* You have *Modify Ansible repo content* permissions. See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.0/html/managing-user-access/index[Managing user access in Automation Hub] for more information on permissions.
+* You have a `requirements.yml` file that identifies those collections to sync from Ansible Galaxy. See example below.
+
+.Requirements.yml example
+-----
+collections:
+  # Install a collection from Ansible Galaxy.
+  - name: geerlingguy.php_roles
+    version: 0.9.3
+    source: https://galaxy.ansible.com
+-----
+
+.Procedure
+. Log in to your local Automation Hub.
+. Navigate to *Repo Management*.
+. Click the *Remotes* tab.
+. In the *community* remote, click image:more_actions.png[More actions] and click *Edit*.
+. In the modal, click *Browse* and locate the `requirements.yml` file on your local machine.
+. Click *Save*.
+
+The modal will close and return you to the *Repo Management* page. You can now sync collections identified in your `requirements.yml` file from Ansible Galaxy to your local Automation Hub.
+
+. Click *Sync* to sync collections from Ansible Galaxy and Automation Hub.
+
+The *Sync status* notification will update to notify you of completion or failure of Ansible Galaxy collections sync to your Automation Hub.
+
+.Verification
+
+You can confirm successful sync by selecting *Community* from the collections content drop-down list.

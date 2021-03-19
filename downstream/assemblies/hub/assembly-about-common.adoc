@@ -1,0 +1,19 @@
+
+[id="assembly-about-common"]
+
+= About Red Hat Automation Hub
+
+Red Hat Automation Hub provides a place for Red Hat subscribers to quickly find and use content that is supported by Red Hat and our technology partners to deliver additional reassurance for the most demanding environments.
+
+At a high level, Automation Hub provides an overview of all partners participating and providing certified, supported content.
+
+From a central view, users can dive deeper into each partner and check out the collections. Additionally, a searchable overview of all available collections is available.
+
+
+.Learn more
+
+To learn more about collections, see the following information:
+
+* xref:con-collections_{context}[What is {ProductNameShort}?]
+
+To learn more about getting started with Automation Hub, see the following information:

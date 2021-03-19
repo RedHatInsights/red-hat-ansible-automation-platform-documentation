@@ -1,0 +1,9 @@
+// Module included in the following assemblies:
+// assembly-running-managing-scans-standard-gui.adoc
+
+
+[id="con-collections_{context}"]
+
+= Collections
+
+Collections are a distribution format for Ansible content that can include playbooks, roles, modules, and plugins. You can install and use collections through Ansible Galaxy.

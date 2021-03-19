@@ -1,0 +1,9 @@
+= Creating Tokens in Red Hat Automation Hub
+:imagesdir: images
+:numbered:
+
+Before you can interact with Automation Hub by uploading or downloading collections, you need to create an API token. The Automation Hub API token authenticates your `ansible-galaxy` client to the Red Hat Automation Hub server.
+
+include::automation-hub/proc-create-api-token.adoc[leveloffset=+1]
+
+The API token is now available to include in the `ANSIBLE_CONFIG` file or when uploading collections using the `ansible-galaxy` command line tool.

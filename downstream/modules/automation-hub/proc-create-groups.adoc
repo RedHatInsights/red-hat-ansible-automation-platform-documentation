@@ -1,0 +1,19 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-create-group"]
+
+= Creating a new group
+
+You can create and assign permissions to a group in Automation Hub that enables users to access specified features in the system. By default, there is an *admins* group in Automation Hub that has all permissions assigned and is available on initial login with credentials created when installing Automation Hub.
+
+.Prerequisites
+
+* You have *groups* permissions and can create and manage group configuration and access in Automation Hub.  See xref:ref-permissions[Automation Hub permissions] for information on system permissions.
+
+.Procedure
+. Log in to your local Automation Hub.
+. Navigate to *Groups*.
+. Click *Create*.
+. Provide a *Name* and click *Create*.
+
+You can now assign permissions and add users on the new group edit page.

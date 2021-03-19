@@ -1,0 +1,12 @@
+[id="assembly-creating-tokens-in-automation-hub"]
+= Configuring Automation Hub remote repositories to sync content from Red Hat Certified and Ansible Galaxy collections
+
+You can configure your local Automation Hub to sync with Red Hat Certified Collections hosted in your organization repository on cloud.redhat.com or to your choice of collections in Ansible Galaxy.
+
+include::automation-hub/con-remote-repos.adoc[leveloffset=+1]
+
+include::automation-hub/proc-obtaining-org-collection-url.adoc[leveloffset=+1]
+
+include::automation-hub/proc-set-rhcertified-remote.adoc[leveloffset=+1]
+
+include::automation-hub/proc-set-community-remote.adoc[leveloffset=+1]
