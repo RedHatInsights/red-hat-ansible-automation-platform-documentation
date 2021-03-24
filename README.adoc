@@ -41,10 +41,10 @@ Lower-level directories are:
 
 * attributes: A common directory for attribute files.
 * assemblies: A directory for all assemblies, each on in its own AsciiDoc file. Assemblies are collections of modules linked together. 
-** Assemblies are grouped by platform component. Create a new subdirectory to orgnize assemblies associated with that component. 
+** Assemblies are grouped by platform component. Create a new subdirectory to organize assemblies associated with that component. 
 * images: A directory for all images and other digital content.
 * modules: A directory for all modules, each one in its own AsciiDoc file.
-** Modules are grouped by platform component. Create a new subdirectory to orgnize modules associated with that component. 
+** Modules are grouped by platform component. Create a new subdirectory to organize modules associated with that component. 
 * titles: A directory for titles (information units, e.g, install guide, user guide). Contains master.adoc files (per guide > per qpc/discovery deliverable) to be called during builds and symbolic links to directories (modules, etc.) that contain .adoc content.
 
 
