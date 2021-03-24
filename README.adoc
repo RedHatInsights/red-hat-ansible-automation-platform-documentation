@@ -1,6 +1,5 @@
 # Red Hat Ansible Automation Platform Documentation
 
-[THIS IS A WORK IN PROGRESS]
 
 = Repository Organization
 
@@ -46,6 +45,8 @@ Lower-level directories are:
 * modules: A directory for all modules, each one in its own AsciiDoc file.
 ** Modules are grouped by platform component. Create a new subdirectory to organize modules associated with that component. 
 * titles: A directory for titles (information units, e.g, install guide, user guide). Contains master.adoc files (per guide > per qpc/discovery deliverable) to be called during builds and symbolic links to directories (modules, etc.) that contain .adoc content.
+** Titles are grouped by platform component or platform-level feature. Create a new subdirectory to organize titles associated with a component. 
+
 
 
 [![Build Status](https://travis-ci.org/ManageIQ/catalog_docs.svg?branch=master)](https://travis-ci.org/ManageIQ/catalog_docs)
