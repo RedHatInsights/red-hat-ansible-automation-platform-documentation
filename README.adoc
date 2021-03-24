@@ -7,7 +7,6 @@
 ....
 .
 |
-├── community
 ├── downstream
 │   ├── assemblies
 │   │   ├── platform-component1
@@ -36,15 +35,16 @@
 
 Top-level directories are:
  
-* community: A directory for upstream-specific modules, assemblies and titles.
 * downstream: A directory that stores downstream modules, assemblies, and titles. 
 
 Lower-level directories are:
 
 * attributes: A common directory for attribute files.
 * assemblies: A directory for all assemblies, each on in its own AsciiDoc file. Assemblies are collections of modules linked together. 
+** Assemblies are grouped by platform component. Create a new subdirectory to orgnize assemblies associated with that component. 
 * images: A directory for all images and other digital content.
 * modules: A directory for all modules, each one in its own AsciiDoc file.
+** Modules are grouped by platform component. Create a new subdirectory to orgnize modules associated with that component. 
 * titles: A directory for titles (information units, e.g, install guide, user guide). Contains master.adoc files (per guide > per qpc/discovery deliverable) to be called during builds and symbolic links to directories (modules, etc.) that contain .adoc content.
 
 
