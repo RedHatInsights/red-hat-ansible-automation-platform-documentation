@@ -9,9 +9,9 @@ The Ansible navigator commands run familiar Ansible CLI commands in passthrough 
 [options="header"]
 |====
 |Ansible navigator command|Ansible CLI command
-|[command]`ansible-navigator collections|[command]`ansible-galaxy collection`
-|[command]`ansible-navigator config|[command]`ansible-config`
-|[command]`ansible-navigator doc|[command]`ansible-doc`
-|[command]`ansible-navigator inventory|[command]`ansible-inventory`
-|[command]`ansible-navigator run|[command]`ansible-playbook`
+|[command]`ansible-navigator collections`|[command]`ansible-galaxy collection`
+|[command]`ansible-navigator config`|[command]`ansible-config`
+|[command]`ansible-navigator doc`|[command]`ansible-doc`
+|[command]`ansible-navigator inventory`|[command]`ansible-inventory`
+|[command]`ansible-navigator run`|[command]`ansible-playbook`
 |====
