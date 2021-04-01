@@ -3,15 +3,15 @@
 = Ansible navigator command comparison
 
 [role="_abstract"]
-The Ansible navigator commands run familiar Ansible CLI commands in passthrough mode. You can use all of the subcommands and options allowed in the related Ansible CLI command. Use [command]`ansible-navigator --help` for details.
+The Ansible navigator commands run familiar Ansible CLI commands in passthrough mode. You can use all of the subcommands and options allowed in the related Ansible CLI command. Use `ansible-navigator --help` for details.
 
 .Comparing Ansible navigator and Ansible CLI commands table
 [options="header"]
 |====
 |Ansible navigator command|Ansible CLI command
-|[command]`ansible-navigator collections`|[command]`ansible-galaxy collection`
-|[command]`ansible-navigator config`|[command]`ansible-config`
-|[command]`ansible-navigator doc`|[command]`ansible-doc`
-|[command]`ansible-navigator inventory`|[command]`ansible-inventory`
-|[command]`ansible-navigator run`|[command]`ansible-playbook`
+|`ansible-navigator collections`|`ansible-galaxy collection`
+|`ansible-navigator config`|`ansible-config`
+|`ansible-navigator doc`|`ansible-doc`
+|`ansible-navigator inventory`|`ansible-inventory`
+|`ansible-navigator run`|`ansible-playbook`
 |====
