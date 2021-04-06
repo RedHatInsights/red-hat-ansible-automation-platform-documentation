@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-You can install Ansible content navigator on Red Hat Enterprise Linux (RHEL) 8 with `pip`.
+You can install Ansible content navigator on Red Hat Enterprise Linux (RHEL) with `pip`.
 
 .Prerequisites
 
