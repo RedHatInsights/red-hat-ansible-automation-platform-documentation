@@ -1,0 +1,38 @@
+
+[id="proc-installing-navigator-rhel-rpm_{context}"]
+
+
+= Installing Ansible navigator on RHEL from an RPM
+
+
+[role="_abstract"]
+
+You can install Ansible content navigator on Red Hat Enterprise Linux (RHEL) from an RPM.
+
+.Prerequisites
+
+* You have installed the prerequisites for RHEL.
+* You have Ansible or an Ansible execution environment installed.
+
+
+.Procedure
+
+. Download the RPM.
+
+. Install Ansible-navigator:
++
+```
+$ rpm -UVH ansible-navigator
+```
++
+
+
+.Verification
+
+* Verify your Ansible-navigator installation:
++
+```
+$ ansible-navigator --help
+```
+
+You should see the help output describing the main functions of Ansible-navigator.
