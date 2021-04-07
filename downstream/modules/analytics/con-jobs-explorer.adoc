@@ -35,4 +35,4 @@ You can click on the arrow icon next to the job *Id/Name* column to view more de
 
 == Reviewing job details on Ansible Tower
 
-Click the job in the *Id/Name* column to view the job itself on the Ansible Tower job details page. For more information on viewing job details on Ansible Tower, see _Jobs_ in the Ansible Tower https://docs.ansible.com/ansible-tower/3.4.3/html/userguide/jobs.html[user Guide].
+Click the job in the *Id/Name* column to view the job itself on the Ansible Tower job details page. For more information on viewing job details on Ansible Tower, see _Jobs_ in the Ansible Tower https://docs.ansible.com/ansible-tower/3.4.3/html/userguide/jobs.html[User Guide].
