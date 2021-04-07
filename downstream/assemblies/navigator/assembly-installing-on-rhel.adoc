@@ -13,7 +13,7 @@ The ID is an anchor that links to the module. Avoid changing it after the module
 [id="assembly-installing_on_rhel_{context}"]
 = Installing Ansible content navigator on RHEL
 
-:context: assembly-keyword
+:context: install-navigator-rhel
 
 ////
 The `context` attribute enables module reuse. Every module ID includes {context}, which ensures that the module has a unique ID so you can include it multiple times in the same guide.
