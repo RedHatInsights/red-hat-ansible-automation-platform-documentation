@@ -1,6 +1,66 @@
-// Attributes for Red Hat Automation Analytics service
+// Attributes for Red Hat Ansible Automation Platform
 
-// Product attributes
-:ProductName: Red Hat Automation Analytics
-:ProductNameShort: Automation Analytics
+// Platform
 :PlatformName: Red Hat Ansible Automation Platform
+
+// Automation services catalog
+:CatalogName: automation services catalog
+:ITSM: ITSM integration
+:returns: product returns
+:leasing: product leasing
+:surveys: dynamic surveys
+:connector: cloud connector for catalog
+
+// Analytics
+:AnalyticsName: Red Hat Insights for Red Hat Ansible Automation Platform
+:explorer: job explorer
+:planner: automation planner
+:email: email notification
+:subscription: subscription watch
+:insights: insights integration
+
+// Automation hub
+:HubName: automation hub
+:PrivateCollections: Ansible private automation hub collection management
+:EEmanagement: Ansible private automation hub EE management
+:HubDatabase: Ansible private automation hub database
+:Hubreadonly: Ansible automation hub "read-only" instance
+:HubCollLife: Ansible automation hub collection lifecycle
+
+// Automation Controller
+:ControllerName: automation controller
+:TaskManager: task manager/scheduler
+:APIinventory: API inventory management
+:APIcredential: API credential management
+:MessageQueue: message queue/cache/KV store
+:MeshConnect: automation mesh connector
+:MeshReceptor: automation mesh receptor
+
+// Automation Mesh
+:MeshName: automation mesh
+:ReceptorRpm: receptor rpm/container
+:RunnerRpm: Ansible-runner rpm/container
+
+// Execution environments
+:ExecEnvName: automation execution environments
+:RHEL8: RHEL 8 UBI
+:Python: Python 3.8
+:Runner: Ansible Runner
+:Role: Role ARG Spec
+
+
+// Ansible developer tools
+:ToolsName: Ansible developer tools
+:Test: Ansible-test
+:Builder: Ansible-builder
+:Navigator: Ansible-navigator
+:IDEplugin: Ansible IDE plugins
+:IDEcollection: Ansible IDE collection explorer
+:IDElanguage: Ansible IDE language server
+
+// Content Collections
+:CertifiedName: Ansible Certified Content Collections
+:ServiceNowColl: Red Hat Ansible Certified Content Collcetion for Service Now
+
+// OpenShift attributes
+:OCP: Red Hat OpenShift Container Platform
