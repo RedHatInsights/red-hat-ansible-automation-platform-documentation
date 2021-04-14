@@ -1,0 +1,9 @@
+// The master.adoc file for The Modular Documentation Reference Guide
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= {PlatformName} Developer Guide
+
+// include::content/<>.adoc[]
