@@ -56,7 +56,7 @@ This repo contains the documentation for the [Automation Services Catalog](https
 
 ## Contributing
 
-The documentation in this repository is built and deployed using [AsciiBinder](http://asciibinder.org).  If you're new to AsciiBinder, head over there and read up on how to contribute documentation.
+The documentation in this repository is built and deployed using [AsciiBinder](http://asciibinder.net).  
 
 Documentation follows a [modular-based content model](https://github.com/redhat-documentation/modular-docs), providing a structure for writing and presenting user-story-based documentation. User-story-based documentation attempts to address the reader's needs more than focusing on feature-based documentation. This is accomplished using a set of templates for concepts, references, procedures and assemblies. 
 
