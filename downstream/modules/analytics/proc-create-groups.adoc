@@ -6,7 +6,7 @@
 
 = Creating new groups
 
-You can create and assign roles to a group that enables users to access specific Automation Analytics features on the platform. By default, the Organization Administrator has all the permissions assigned, including the groups permissions needed to create a group.
+You can create and assign roles to a group that enables users to access specific {AnalyticsShort} features on the platform. By default, the Organization Administrator has all the permissions assigned, including the groups permissions needed to create a group.
 
 .Procedure
 
@@ -26,4 +26,4 @@ Any user in this group will have all the permissions prescribed to each role. Se
 . Select one or more users to add to this group, then click *Next*
 . Review the details, then click *Submit* to create the group
 
-Users in the group can now access features in Automation Analytics associated with their assigned permissions.
+Users in the group can now access features in {AnalyticsShort} associated with their assigned permissions.

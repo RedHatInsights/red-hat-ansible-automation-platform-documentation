@@ -6,6 +6,6 @@
 
 = About user access
 
-User access is based on managing roles to groups, rather than assigning roles individually to specific users. You can assign roles to a group when you create a group. You can then assign users to these groups, granting each user the roles assigned to their group.
+User access is based on managing roles to groups, rather than assigning roles to individual users. You can assign roles to a group when you create a group. You can then assign users to these groups, granting each user the roles assigned to their group.
 
-Groups created in Automation Analytics can range from system administrators responsible for configuring user access to users who can view and share Analytics data.
+Groups created in {AnalyticsShort} can range from system administrators responsible for configuring user access to users who can view and share automation data. 

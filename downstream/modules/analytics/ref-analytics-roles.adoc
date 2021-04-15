@@ -1,25 +1,27 @@
 [id="ref-analytics-roles_{context}"]
 
-= Automation Analytics User Roles
+= {AnalyticsShort} User Roles
 
-Ansible Automation Analytics features and workflows are governed by roles that have specific permissions attached to them. The Automation Analytics Administrator role performs the initial task of assigning roles and adding users.
+{AnalyticsShort} features and workflows are governed by roles that have specific permissions attached to them. The {insightsroleprefix} Administrator role performs the initial task of assigning roles and adding users.
 
 
 .Role Reference Table
 [options="header"]
 |====
 | Role | Permissions
-| Automation Analytics Administrator a|
+| {insightsroleprefix} Administrator a|
+* Assign roles and permissions to users in your organization
+* Create and edit automation savings plans
+* Monitor job statuses using the {explorer}
+* View cluster health notifications
+| {insightsroleprefix} Editor a|
+* Create and edit automation savings plans
+* View and filter data in the *Clusters* and *Organization Statistics* dashboards
+* Monitor job statuses using the {explorer}
+* View cluster health notifications
+| {insightsroleprefix} Viewer a|
+* View and filter data in the *Clusters* and *Organization Statistics* dashboards
+* Monitor job statuses using the {explorer}
 
-* Create Analytics Dashboards
-* Edit and save persistent data
-* Restrict view permissions for data across all dashboards
-* View health notifications
-| Automation Analytics Editor a|
-* Edit and save persistent data
-* View and filter data across dashboards
-* View health notifications
-| Automation Analytics Viewer a|
-* View and filter data across dashboards
-* View health notifications
+* View cluster health notifications
 |====
