@@ -12,7 +12,7 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-As a automation developer, understanding foundational Ansible concepts is integral in successfully writing Ansible playbooks to creating {ExecEnvName}. Review this section before beginning your Ansible development project.
+As a automation developer, review the following Ansible concepts to create successful Ansible playbooks and {ExecEnvName} before beginning your Ansible development project.
 
 == Prerequisites
 
