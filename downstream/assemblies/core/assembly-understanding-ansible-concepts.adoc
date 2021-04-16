@@ -1,0 +1,28 @@
+
+
+ifdef::context[:parent-context: {context}]
+
+//[id="assembly-understanding-ansible-concepts_{context}"]
+
+= Understanding Ansible concepts
+
+
+:context: assembly-introduction
+
+
+[role="_abstract"]
+
+As a automation developer, understanding foundational Ansible concepts is integral in successfully writing Ansible playbooks to creating {ExecEnvName}. Review this section before beginning your Ansible development project.
+
+== Prerequisites
+
+* Ansible is installed. For information about installing Ansible, see <link>.
+
+include::core/con-ansible-playbooks.adoc[leveloffset=+1]
+include::core/con-ansible-roles.adoc[leveloffset=+1]
+include::core/con-content-collections.adoc[leveloffset=+1]
+include::core/con-execution-environments.adoc[leveloffset=+1]
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

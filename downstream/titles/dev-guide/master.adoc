@@ -1,4 +1,7 @@
-// The master.adoc file for The Modular Documentation Reference Guide
+:imagesdir: images
+:numbered:
+:toclevels: 4
+:experimental:
 
 include::attributes/attributes.adoc[]
 
@@ -6,4 +9,4 @@ include::attributes/attributes.adoc[]
 // Book Title
 = {PlatformName} Developer Guide
 
-// include::content/<>.adoc[]
+include::core/assembly-understanding-ansible-concepts.adoc[leveloffset=+1]
