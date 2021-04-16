@@ -33,53 +33,125 @@
 ....
 
 Top-level directories are:
- 
-* downstream: A directory that stores downstream modules, assemblies, and titles. 
+
+* downstream: A directory that stores the Red Hat Ansible Automation platform modules, assemblies, and titles.
 
 Lower-level directories are:
 
 * attributes: A common directory for attribute files.
-* assemblies: A directory for all assemblies, each on in its own AsciiDoc file. Assemblies are collections of modules linked together. 
-** Assemblies are grouped by platform component. Create a new subdirectory to organize assemblies associated with that component. 
+* assemblies: A directory for all assemblies, each on in its own AsciiDoc file. Assemblies are collections of modules linked together.
+** Assemblies are grouped by platform component. Create a new subdirectory to organize assemblies associated with that component.
 * images: A directory for all images and other digital content.
 * modules: A directory for all modules, each one in its own AsciiDoc file.
-** Modules are grouped by platform component. Create a new subdirectory to organize modules associated with that component. 
+** Modules are grouped by platform component. Create a new subdirectory to organize modules associated with that component.
 * titles: A directory for titles (information units, e.g, install guide, user guide). Contains master.adoc files (per guide > per qpc/discovery deliverable) to be called during builds and symbolic links to directories (modules, etc.) that contain .adoc content.
-** Titles are grouped by platform component or platform-level feature. Create a new subdirectory to organize titles associated with a component. 
+** Titles are grouped by platform component or platform-level feature. Create a new subdirectory to organize titles associated with a component.
 
 
-
-[![Build Status](https://travis-ci.org/ManageIQ/catalog_docs.svg?branch=master)](https://travis-ci.org/ManageIQ/catalog_docs)
-[![Gitter](https://badges.gitter.im/ManageIQ/catalog_docs.svg)](https://gitter.im/ManageIQ/catalog_docs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-This repo contains the documentation for the [Automation Services Catalog](https://www.ansible.com/products/automation-services-catalog), a service included in the Red Hat Ansible Automation Platform. 
 
 ## Contributing
 
-The documentation in this repository is built and deployed using [AsciiBinder](http://asciibinder.net).  
+We welcome contributions to the Red Hat Ansible Automation Platform documentation. You can either [open an issue](https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation/issues) for discussion, or submit an update using the steps below. This section describes the workflow and provides resources for Red Hat style and documentation architecture conventions.
 
-Documentation follows a [modular-based content model](https://github.com/redhat-documentation/modular-docs), providing a structure for writing and presenting user-story-based documentation. User-story-based documentation attempts to address the reader's needs more than focusing on feature-based documentation. This is accomplished using a set of templates for concepts, references, procedures and assemblies. 
+### Authoring modularly structured documentation
 
-Templates can be found [here](https://github.com/redhat-documentation/modular-docs/tree/master/modular-docs-manual/files). 
+Documentation follows a [modular-based content model](https://github.com/RedHatInsights/modular-docs), providing a structure for writing and presenting user-story-based documentation. User-story-based documentation attempts to address the reader's needs more than focusing on feature-based documentation. This is accomplished using a set of templates for concepts, references, procedures and assemblies. Templates can be found [here](https://github.com/RedHatInsights/modular-docs/tree/master/modular-docs-manual/files).
+
+### Red Hat Documentation Asciidoc Mark-up Conventions
+
+Red Hat Ansible Automation Platform documentation is written in Asciidoc. See [Red Hat Documentation Asciidoc Mark-up Conventions](https://RedHatInsights.github.io/asciidoc-markup-conventions/) to learn more about implementing Asciidoc in your writing.
+
+### Red Hat product documentation style conventions
+
+The Red Hat Customer Content Services team uses the [Red Hat supplementary style guide for product documentation](https://redhat-documentation.github.io/supplementary-style-guide/) and The IBM Style Guide as its primary sources for technical writing conventions and style guidelines. Refer first to the Red Hat supplementary style guide for product documentation for style guidance and conventions. If a topic is not included there, it means we follow the convention as established in the IBM Style Guide. 
+
+### Submitting an update
+
+These instructions show how to submit an update using the command line. You may also use the GitHub web interface for the update. Whichever method you choose, the update should be submitted as a pull request.
+
+Before you begin:
+
+* You must have a GitHub account.
+* You must have [set up an SSH key for your GitHub account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
+
+The first time you contribute:
+
+1. Fork the repository.
+
+   From the main page of the [GitHub repository](https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation), click **Fork** in the upper right corner.
+
+2. Clone the forked repository locally.
+
+   ```
+   $ git clone git@github.com:<username>/red-hat-ansible-automation-platform-documentation.git
+   ```
+
+   If this command fails, be sure that you have [set up an SSH key for GitHub](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
+
+3. Navigate to the `red-hat-ansible-automation-platform-documentation` directory.
+
+4. Set the upstream remote repository.
+
+   ```
+   $ git remote add -f upstream git@github.com:RedHatInsights/red-hat-ansible-automation-platform-documentation.git
+   ```
+
+To submit an update:
+
+1. Fetch the latest changes.
+
+   ```
+   $ git fetch upstream
+   ```
+
+2. Check out a branch from upstream/master
+
+   ```
+   $ git checkout -b <new-branch> upstream/master
+   ```
+
+3. Make your edits.
+
+   Add or edit files as needed.
+
+4. Stage the changes for each file.
+
+   ```
+   $ git add <file-name>
+   ```
+
+5. Commit the changes.
+
+   ```
+   $ git commit -m "<descriptive-commit-message>"
+   ```
+
+6. Push the changes to your forked repository.
+
+   ```
+   $ git push origin HEAD
+   ```
+
+7. Open a pull request.
+
+   Typically the previous command gives the URL to open a pull request. If not, you can open one from the [Pull requests](https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation/pulls) tab of the GitHub UI.
+
+After you submit a pull request, it will be reviewed by members of this project.
+
+### Building the guide
+
+You must have `asciidoctor` installed. See the [Asciibinder documentation](https://asciibinder.net/) for more information on installing Asciibinder.
+
+1. Navigate to the `red-hat-ansible-automation-platform-documentation` directory.
+2. Use the following command to build the guide:
+
+   ```
+   $ asciidoctor master.adoc
+   ```
+
+This generates a `master.html` file that you can now view in a browser.
 
 
-
-### Quick setup
-
-* Be sure to have Ruby installed with the bundler gem (if you don't have bundler, just run `gem install bundler`)
-* Clone the manageiq_docs repo.
-* `cd` into the new manageiq_docs repo directory.
-* `bundle install`
-* `bundle exec ascii_binder` - This will build the documentation into the _preview directory
-* `open _preview/manageiq/master/welcome/index.html`
-
-Alternately, if you want to "live edit" the docs, replace the last two steps with:
-
-* Install the LiveReload browser extension: http://livereload.com/extensions/
-* `bundle exec ascii_binder watch`
-* `open _preview/manageiq/master/welcome/index.html`
-* Go to the open page in the browser and enable the LiveReload extension for that page.
-* Edit the docs.  When you save, it will auto-build and then the webpage will reload automatically showing your changes.
 
 ## Contacts
 
