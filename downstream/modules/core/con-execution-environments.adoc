@@ -10,7 +10,7 @@ The `context` attribute enables module reuse. Every module ID includes {context}
 
 [role="_abstract"]
 
-{ExecEnvNameStart} are consistent and shareable container images that serve as Ansible control nodes. {ExecEnvNameStart} were introduced to remediate challenges with Ansible content requiring non-default dependencies.
+{ExecEnvNameStart} are consistent and shareable container images that serve as Ansible control nodes. {ExecEnvNameStart} remediates challenges with Ansible content requiring non-default dependencies.
 
 {ExecEnvNameStart} contain:
 
