@@ -75,63 +75,63 @@ Before you begin:
 
 The first time you contribute:
 
-1. Fork the repository.
+. Fork the repository.
 
    From the main page of the link:https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation[GitHub repository], click **Fork** in the upper right corner.
 
-2. Clone the forked repository locally.
+. Clone the forked repository locally.
 
-   -----
-   $ git clone git@github.com:<username>/red-hat-ansible-automation-platform-documentation.git
-   -----
+-----
+$ git clone git@github.com:<username>/red-hat-ansible-automation-platform-documentation.git
+-----
 
    If this command fails, be sure that you have link:https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account[set up an SSH key for GitHub].
 
-3. Navigate to the `red-hat-ansible-automation-platform-documentation` directory.
+. Navigate to the `red-hat-ansible-automation-platform-documentation` directory.
 
-4. Set the upstream remote repository.
+. Set the upstream remote repository.
 
-   -----
-   $ git remote add -f upstream git@github.com:RedHatInsights/red-hat-ansible-automation-platform-documentation.git
-   -----
+ -----
+ $ git remote add -f upstream git@github.com:RedHatInsights/red-hat-ansible-automation-platform-documentation.git
+ -----
 
 To submit an update:
 
-1. Fetch the latest changes.
+. Fetch the latest changes.
 
    -----
    $ git fetch upstream
    -----
 
-2. Check out a branch from upstream/master
+. Check out a branch from upstream/master
 
-   -----
-   $ git checkout -b <new-branch> upstream/master
-   -----
+-----
+$ git checkout -b <new-branch> upstream/master
+-----
 
-3. Make your edits.
+. Make your edits.
 
    Add or edit files as needed.
 
-4. Stage the changes for each file.
+. Stage the changes for each file.
 
-   -----
-   $ git add <file-name>
-   -----
+-----
+ $ git add <file-name>
+-----
 
-5. Commit the changes.
+. Commit the changes.
 
-   -----
+ -----
    $ git commit -m "<descriptive-commit-message>"
-   -----
+ -----
 
-6. Push the changes to your forked repository.
+. Push the changes to your forked repository.
 
-   -----
-   $ git push origin HEAD
-   -----
+-----
+$ git push origin HEAD
+-----
 
-7. Open a pull request.
+. Open a pull request.
 
    Typically the previous command gives the URL to open a pull request. If not, you can open one from the link:https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation/pulls[Pull requests] tab of the GitHub UI.
 
@@ -141,12 +141,12 @@ After you submit a pull request, it will be reviewed by members of this project.
 
 You must have `asciidoctor` installed. See the link:https://asciibinder.net/[Asciibinder documentation] for more information on installing Asciibinder.
 
-1. Navigate to the `red-hat-ansible-automation-platform-documentation` directory.
-2. Use the following command to build the guide:
+. Navigate to the `red-hat-ansible-automation-platform-documentation` directory.
+. Use the following command to build the guide:
 
-   -----
-   $ asciidoctor master.adoc
-   -----
+-----
+$ asciidoctor master.adoc
+-----
 
 This generates a `master.html` file that you can now view in a browser.
 
