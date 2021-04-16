@@ -6,6 +6,8 @@
 
 [[analyticsuseraccess_guide]]
 
+include::attributes/attributes.adoc[]
+
 = Managing user access in Automation Analytics
 
 include::analytics/assembly-user-access.adoc[leveloffset=+1]

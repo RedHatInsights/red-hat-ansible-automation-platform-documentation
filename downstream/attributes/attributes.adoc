@@ -14,6 +14,7 @@
 // Analytics
 :AnalyticsName: Red Hat Insights for Red Hat Ansible Automation Platform
 :AnalyticsShort: Insights for Ansible Automation Platform
+:insightsroleprefix: TBD
 :calculator: automation calculator
 :explorer: job explorer
 :planner: automation planner
