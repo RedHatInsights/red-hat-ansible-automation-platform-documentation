@@ -1,0 +1,37 @@
+
+[id="con-execution-environments_{context}"]
+
+////
+The `context` attribute enables module reuse. Every module ID includes {context}, which ensures that the module has a unique ID so you can include it multiple times in the same guide.
+////
+
+= About Execution Environments
+
+
+[role="_abstract"]
+
+{ExecEnvNameStart} are consistent and shareable container images that serve as Ansible control nodes. {ExecEnvNameStart} remediates challenges with Ansible content requiring non-default dependencies.
+
+{ExecEnvNameStart} contain:
+
+* Ansible
+* Ansible Runner
+* Ansible Collections
+* Python and/or system dependencies
+** modules/plugins in collections
+** content in `ansible-base`
+** custom user needs
+
+You can define and create an {ExecEnvNameStart} using {Builder}.
+
+////
+[role="_additional-resources"]
+.Additional resources
+
+ CONSIDER FOR USE TO LINK TO BUILDER DOCS
+
+* A bulleted list of links to other material closely related to the contents of the concept module.
+* Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.
+* For more details on writing concept modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+////
