@@ -8,4 +8,4 @@
 
 Playbooks are files written in YAML that contain specific sets of human-readable instructions, or “plays”, that you send to run on a single target or groups of targets.
 
-Playbooks can be used to manage configurations of and deployments to remote machines, as well as sequence multi-tier rollouts involving rolling updates. They are able to delegate actions to other hosts, interacting with monitoring servers and load balancers along the way. Once written, playbooks can be used again and again across your enterprise for automation.
+Playbooks can be used to manage configurations of and deployments to remote machines, as well as sequence multi-tier rollouts involving rolling updates. Use playbooks to delegate actions to other hosts, interacting with monitoring servers and load balancers along the way. Once written, playbooks can be used repeatedly across your enterprise for automation.
