@@ -1,8 +1,8 @@
 [id="ref-analytics-roles_{context}"]
 
-= {AnalyticsShort} User Roles
+= {InsightsShort} User Roles
 
-{AnalyticsShort} features and workflows are governed by roles that have specific permissions attached to them. The Analytics Administrator role performs the initial task of assigning roles and adding users.
+{InsightsShort} features and workflows are governed by roles that have specific permissions attached to them. The Analytics Administrator role performs the initial task of assigning roles and adding users.
 
 
 .Role Reference Table

@@ -8,6 +8,6 @@
 
 include::attributes/attributes.adoc[]
 
-= Managing user access in Automation Analytics
+= Managing user access in {InsightsName}
 
 include::analytics/assembly-user-access.adoc[leveloffset=+1]

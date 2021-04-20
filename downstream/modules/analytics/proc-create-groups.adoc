@@ -6,13 +6,13 @@
 
 = Creating new groups
 
-You can create and assign roles to a group that enables users to access specific {AnalyticsShort} features on the platform. By default, the Organization Administrator has all the permissions assigned, including the groups permissions needed to create a group.
+You can create and assign roles to a group that enables users to access specific {InsightsShort} features on the platform. By default, the Organization Administrator has all the permissions assigned, including the groups permissions needed to create a group.
 
 .Procedure
 
 . Log in to cloud.redhat.com
-. Click image:images/cog.png[] for settings.
-. Navigate to *User Access* > *Groups*.
+. Click image:images/cog.png[] > *Settings*.
+. From the sidebar, navigate to *User Access* > *Groups*.
 . Click *Create group*.
 . A setup wizard will now appear. Enter a group name and description, then click *Next*.
 . Select one or more roles to add to this group, then click *Next*.
@@ -26,4 +26,4 @@ Any user in this group will have all the permissions prescribed to each role. Se
 . Select one or more users to add to this group, then click *Next*.
 . Review the details, then click *Submit* to create the group.
 
-Users in the group can now access features in {AnalyticsShort} associated with their assigned permissions.
+Users in the group can now access features in {InsightsShort} associated with their assigned permissions.
