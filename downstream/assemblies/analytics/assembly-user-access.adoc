@@ -8,8 +8,6 @@ ifdef::context[:parent-context: {context}]
 
 = Configuring user access for {AnalyticsName}
 
-Manage user access to specific content and features in {AnalyticsName} by assigning users to groups that grant specific permissions.
-
 include::analytics/con-about-user-access.adoc[leveloffset=+1]
 
 The following sections outline the workflow to manage your user’s access to {AnalyticsShort}, providing them with the required access and permissions to reach their goals. See the role reference table for a full list of all roles available to {AnalyticsShort}.
