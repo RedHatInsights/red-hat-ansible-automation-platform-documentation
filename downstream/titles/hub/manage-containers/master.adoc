@@ -1,0 +1,12 @@
+:imagesdir: images
+:numbered:
+:toclevels: 4
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= {PlatformName} Developer Guide
+
+include::core/assembly-understanding-ansible-concepts.adoc[leveloffset=+1]
