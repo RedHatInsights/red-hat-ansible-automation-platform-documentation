@@ -8,12 +8,8 @@ ifdef::context[:parent-context: {context}]
 :context: intro-ansible-navigator
 
 [role="_abstract"]
-Ansible content navigator (Ansible-navigator) is a tool that produces consistent and portable artifacts that describe the outcome of your automation tasks. You can use Ansible-navigator on local development machines, Execution Environments or the Ansible Automation Platform, with seamless and predictable results across them all.
 
-
-////
-The following include statements pull in the module files that comprise the assembly. Include any combination of concept, procedure, or reference modules required to cover the user story. You can also include other assemblies.
-////
+As a content developer, you can use {Navigator} to develop Ansible playbooks, collections, and roles that are compatible with the {PlatformName}. You can use {Navigator} on local development machines, {ExecEnvNameStart} or the {PlatformName}, with seamless and predictable results across them all. {Navigator} also produces an artifact file you can use to review the results of your playbook runs and troubleshoot problem areas.
 
 include::navigator/con-about-ansible-navigator.adoc[leveloffset=+1]
 include::navigator/con-navigator-modes.adoc[leveloffset=+1]
