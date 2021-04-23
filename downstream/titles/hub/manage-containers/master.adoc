@@ -1,0 +1,12 @@
+:imagesdir: images
+:numbered:
+:toclevels: 4
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Managing containers in private automation hub
+
+//include::core/assembly-understanding-ansible-concepts.adoc[leveloffset=+1]
