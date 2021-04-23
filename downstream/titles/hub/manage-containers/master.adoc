@@ -7,6 +7,6 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= {PlatformName} Developer Guide
+= Managing containers in private automation hub
 
-include::core/assembly-understanding-ansible-concepts.adoc[leveloffset=+1]
+//include::core/assembly-understanding-ansible-concepts.adoc[leveloffset=+1]

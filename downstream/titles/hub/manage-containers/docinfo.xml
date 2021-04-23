@@ -1,7 +1,7 @@
-<title>Red Hat Ansible Automation Platform Developer Guide</title>
+<title>Managing containers in private automation hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.0</productnumber>
-<subtitle>This guide is intended for developers looking to learn how to use Ansible in creating content for automation.</subtitle>
+<subtitle>Administrator workflows and processes for configuring private automation hub container registry and repositories.</subtitle>
 <abstract>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
     <para> If you have a suggestion to improve this documentation, or find an error, create an issue at <link xlink:href="https://issues.redhat.com(issues.redhat.com)">http://issues.redhat.com</link>. Select the <emphasis role="strong">Ansible Automation Platform</emphasis> project and use the <emphasis role="strong">Documentation</emphasis>component.</para>
