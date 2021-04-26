@@ -2,26 +2,29 @@
 
 = {InsightsShort} User Roles
 
-{InsightsShort} features and workflows are governed by roles that have specific permissions attached to them. The Analytics Administrator role performs the initial task of assigning roles and adding users.
+{InsightsShort} features and workflows are governed by roles that have specific permissions attached to them. The Automation Analytics Administrator role performs the initial task of assigning roles and adding users.
 
 
 .Role Reference Table
 [options="header"]
 |====
 | Role | Permissions
-| Analytics Administrator a|
+| Automation Analytics Administrator a|
 * Assign roles and permissions to users in your organization
 * Create and edit automation savings plans
+* View and filter data in the *Clusters* and *Organization Statistics* dashboards
 * Monitor job statuses using the {explorer}
 * View cluster health notifications
-| Analytics Editor a|
+* Calculate automation costs using the {calculator}
+| Automation Analytics Editor a|
 * Create and edit automation savings plans
 * View and filter data in the *Clusters* and *Organization Statistics* dashboards
 * Monitor job statuses using the {explorer}
 * View cluster health notifications
-| Analytics Viewer a|
+* Calculate automation costs using the {calculator}
+| Automation Analytics Viewer a|
 * View and filter data in the *Clusters* and *Organization Statistics* dashboards
 * Monitor job statuses using the {explorer}
-
 * View cluster health notifications
+* Calculate automation costs using the {calculator}
 |====

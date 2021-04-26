@@ -6,7 +6,7 @@
 
 = Creating new groups
 
-You can create and assign roles to a group that enables users to access specific {InsightsShort} features on the platform. By default, the Organization Administrator has all the permissions assigned, including the groups permissions needed to create a group.
+You can create and assign roles to a group that enables users to access specific {InsightsShort} features on the platform. By default, the Automation Analytics Administrator has all the permissions assigned, including the groups permissions needed to create a group.
 
 .Procedure
 
