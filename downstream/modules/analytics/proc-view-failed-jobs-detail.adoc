@@ -11,8 +11,7 @@ You can view more detail about failed jobs across your organization by drilling 
 
 .Procedure
 
-. Navigate to *Analytics*.
-. Click on *Clusters*.
+. Navigate to *Insights* > *Clusters*.
 . In the filter toolbar, apply filters for clusters and time range of your choosing.
 . Click on a segment on the graph.
 

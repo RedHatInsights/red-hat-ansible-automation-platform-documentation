@@ -21,8 +21,7 @@ You can sort results by a set of parameters by using the *Sort by* options from 
 
 .Procedure
 
-. Navigate to *Analytics*.
-. Click on *Job Explorer*.
+. Navigate to *Insights* > *Job Explorer*.
 . In the filter toolbar, click the *Filter by* drop-down menu and select *Job*.
 . In that same toolbar, select a time range. Job Explorer will now display jobs within that time range.
 . To further refine results, return to the filter toolbar and select a different attribute to filter results by, including job status, cluster, or organization.
