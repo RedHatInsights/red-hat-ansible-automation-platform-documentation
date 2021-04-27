@@ -23,6 +23,7 @@
 * View cluster health notifications
 * Calculate automation costs using the {calculator}
 | Automation Analytics Viewer a|
+* View automation savings plans
 * View and filter data in the *Clusters* and *Organization Statistics* dashboards
 * Monitor job statuses using the {explorer}
 * View cluster health notifications
