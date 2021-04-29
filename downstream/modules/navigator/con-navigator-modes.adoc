@@ -1,9 +1,9 @@
 
 [id="con-navigator-mode_{context}"]
 
-= Ansible content navigator modes
+= {Navigator} modes
 
-Ansible-navigator operates in two modes:
+{Navigator} operates in two modes:
 
 [role="_abstract"]
 
@@ -12,7 +12,7 @@ textual user interface mode:: Provides an interactive, text-based interface to t
 
 == Passthrough mode
 
-Passthrough mode uses the familiar Ansible commands, such as `ansible-playbook` within an Execution Environment, or on your local development environment. This mode allows you to continue using commands you are familiar with for quick tasks.
+Passthrough mode uses the familiar Ansible commands, such as `ansible-playbook` within {ExecEnvName}, or on your local development environment. This mode allows you to continue using commands you are familiar with for quick tasks.
 
 ----
 $ ansible-navigator --help
@@ -73,7 +73,7 @@ subcommands:
 
 == Textual user interface mode
 
-The Textual user interface mode provides enhanced interaction with the execution environment, collections, playbooks, and inventory. This mode is compatible with integrated development environments (IDE), such as Visual Studio Code.
+The Textual user interface mode provides enhanced interaction with {ExecEnvName}, collections, playbooks, and inventory. This mode is compatible with integrated development environments (IDE), such as Visual Studio Code.
 
 ----
 ## Welcome
