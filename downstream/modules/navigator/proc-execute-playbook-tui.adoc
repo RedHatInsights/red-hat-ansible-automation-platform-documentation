@@ -1,0 +1,106 @@
+
+[id="proc-execute-playbook-clitui_{context}"]
+
+
+
+= Executing a playbook from the {Navigator} textual user interface
+
+[role="_abstract"]
+
+You can run Ansible playbooks with the {Navigator} textual user interface to follow the execution of the tasks and delve into the results of each task.
+
+.Prerequisites
+
+* A playbook.
+* A valid inventory file if not using `localhost` or an inventory plugin.
+
+.Procedure
+
+. Start {Navigator}
++
+```
+$ ansible-navigator
+```
+
+. Run the playbook.
++
+```
+$ :run simple_playbook.yml -m interactive
+```
+
+. Verify or add the inventory and any other command line parameters.
++
+```
+      INVENTORY OR PLAYBOOK NOT FOUND, PLEASE CONFIRM THE FOLLOWING
+      ──────────────────────────────────────────────────────────────────────────────────────────────────────
+                       Path to playbook: /home/ansible-navigator_demo/simple_playbook.yml
+                       Inventory source: Please enter a valid path or leave blank
+      Additional command line parameters: Please provide a value (optional)
+      ──────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                               Submit Cancel
+```
+
+. Tab to `Submit` and hit Enter. You should see the tasks executing.
++
+```
+  PLAY NAME   OK  CHANGED   UNREACHABLE   FAILED  SKIPPED   IGNORED   IN PROGRESS   TASK COUNT            % COMPLETED
+0│localhost    3        0             0        0        0         0             0            3       100% ▇▇▇▇▇▇▇▇▇▇▇
+```
+
+. Type the number next to a play to step into the play results.
++
+```
+  RESULT  HOST       NUMBER  CHANGED  TASK                                TASK ACTION                      DURATION
+0│OK      localhost       0    False  Gathering Facts                     gather_facts                           0s
+1│OK      localhost       1    False  Gather the package facts            ansible.builtin.package_facts          1s
+2│OK      localhost       2    False  Check whether make is installed     ansible.builtin.debug                  0s
+```
+
+. Type the number next to a task to review the task results.
++
+```
+PLAY [localhost:2] ***************************************************************************************************
+TASK [Check whether make is installed] *******************************************************************************
+OK: [localhost] 1 versions of make are installed!                                                                     
+ 0│---
+ 1│duration: 0.076167
+ 2│end: '2021-04-29T20:39:29.240341'
+ 3│event_loop: null
+ 4│host: localhost
+ 5│play: localhost
+ 6│play_pattern: localhost
+ 7│playbook: /home/samccann/ansible-navigator_demo/simple_playbook.yml
+ 8│remote_addr: 127.0.0.1
+ 9│res:
+10│  _ansible_no_log: false
+11│  _ansible_verbose_always: true
+12│  changed: false
+13│  msg: 1 versions of make are installed!
+14│start: '2021-04-29T20:39:29.164174'
+15│task: Check whether make is installed
+16│task_action: ansible.builtin.debug
+17│task_args: ''
+18│task_path: /home/samccann/ansible-navigator_demo/simple_playbook.yml:12
+```
+. Optionally, type `:doc` bring up the documentation for the module or plugin used in the task.
++
+```
+0│---                                                                                              ▒
+ 1│doc:                                                                                             ▒
+ 2│  author:                                                                                        ▒
+ 3│  - Dag Wieers (@dagwieers)                                                                      ▒
+ 4│  - Michael DeHaan                                                                               ▒
+ 5│  collection: ansible.builtin                                                                    ▒
+ 6│  description:                                                                                   ▒
+ 7│  - This module prints statements during execution and can be useful for debugging               ▒
+ 8│    variables or expressions without necessarily halting the playbook.
+ 9│  - Useful for debugging together with the 'when:' directive.
+10│  - This module is also supported for Windows targets.
+<... output truncated ...>
+```
+
+[role="_additional-resources"]
+.Additional resources
+
+* https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook].
+* https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html[Introduction to Ansible playbooks].
