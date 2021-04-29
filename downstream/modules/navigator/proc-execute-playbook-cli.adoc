@@ -1,0 +1,53 @@
+
+[id="proc-execute-playbook-cli_{context}"]
+
+
+
+= Executing a playbook from the {Navigator} CLI
+
+[role="_abstract"]
+
+You can run Ansible playbooks with the {Navigator} CLI to follow the execution of the tasks and review the output. The `ansible-navigator run` command uses the same syntax as the `ansible-playbook` command.
+
+.Prerequisites
+
+* A playbook.
+* A valid inventory file if not using `localhost` or an inventory plugin.
+
+.Procedure
+
+* Run the playbook.
++
+```
+$ ansible-navigator run simple_playbook.yml
+```
+
+.Verification
+
+*  Review the playbook output.
+
++
+```
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [Gather the package facts] ************************************************
+ok: [localhost]
+
+TASK [Check whether make is installed] *****************************************
+ok: [localhost] => {
+    "changed": false,
+    "msg": "1 versions of make are installed!"
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
+```
+
+[role="_additional-resources"]
+.Additional resources
+
+* https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook].
+* https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html[Introduction to Ansible playbooks].
