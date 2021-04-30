@@ -13,6 +13,7 @@ As a content developer, you can execute your Ansible playbooks with {Navigator} 
 
 include::navigator/proc-execute-playbook-cli.adoc[leveloffset=+1]
 include::navigator/proc-execute-playbook-tui.adoc[leveloffset=+1]
+include::navigator/proc-review-artifact.adoc[leveloffset=+1]
 
 
 ifdef::parent-context[:context: {parent-context}]
