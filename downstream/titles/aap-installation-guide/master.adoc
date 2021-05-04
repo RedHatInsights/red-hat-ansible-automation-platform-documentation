@@ -1,0 +1,13 @@
+:imagesdir: images
+:numbered:
+:toclevels: 4
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= {PlatformName} Installation Guide
+
+
+include::platform/assembly-single-machine-scenarios.adoc[leveloffset=+1]

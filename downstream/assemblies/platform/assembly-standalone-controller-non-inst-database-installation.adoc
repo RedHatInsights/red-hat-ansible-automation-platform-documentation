@@ -1,0 +1,36 @@
+
+ifdef::context[:parent-context: {context}]
+
+// [id="assembly-standalone-controller-non-inst-database_{context}"]
+= Installing {ControllerName} with a database on the same node
+
+:context: assembly-single-node
+
+[role="_abstract"]
+You can use these instructions to install a standalone instance of {ControllerName} with a database on the same node, or a non-installer managed database. This scenario includes installation of {ControllerName}, including the web frontend, REST API backend, and database on a single machine. It installs PostgreSQL, and configures the {ControllerName} to use that as its database. This is considered the standard {ControllerName} installation scenario.
+
+
+////
+== Prerequisites
+
+* A bulleted list of conditions that must be satisfied before the user starts following this assembly.
+* You can also link to other modules or assemblies the user must follow before starting this assembly.
+* Delete the section title and bullets if the assembly has no prerequisites.
+* X is installed. For information about installing X, see <link>.
+* You can log in to X with administrator privileges.
+////
+
+
+
+include::platform/ref-system-requirements.adoc[leveloffset=+1]
+include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=3]
+include::platform/ref-platform-install-settings.adoc[leveloffset=3]
+include::platform/proc-editing-inventory-file.adoc[leveloffset=3]
+include::platform/ref-single-node-inventory.adoc[leveloffset=3]
+include::platform/ref-setup-script-args.adoc[leveloffset=3]
+include::platform/proc-running-setup-script.adoc[leveloffset=3]
+include::platform/proc-verify-controller-installation.adoc[leveloffset=3]
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

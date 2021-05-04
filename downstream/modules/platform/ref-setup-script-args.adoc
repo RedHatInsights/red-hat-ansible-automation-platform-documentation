@@ -1,0 +1,34 @@
+
+
+// [id="ref-reference-material_{context}"]
+
+= {PlatformName} setup script arguments
+
+
+[role="_abstract"]
+You can pass the following arguments when running the {PlatformName} setup script:
+
+.Installation script arguments
+[options="header"]
+|====
+|Argument|Description
+|`-h`|Show this help message and exit
+|`-i INVENTORY_FILE`|Path to Ansible inventory file (default: `inventory`)
+|`-e EXTRA_VARS`|Set additional Ansible variables as key=value or YAML/JSON
+|`-b`|Perform a database backup in lieu of installing
+|`-r`|Perform a database restore in lieu of installing
+|====
+
+[NOTE]
+====
+* When passing `-r` to perform a database restore default restore path is used unless EXTRA_VARS are provided with a non-default path. See the example below that passed an EXTRA_VAR specifying the restore path:
++
+----
+./setup.sh -e 'restore_backup_file=/path/to/nondefault/location' -r
+----
+* You can force an online installation by passing `-e bundle_install=false`:
++
+----
+$ ./setup.sh -e bundle_install=false
+----
+====

@@ -1,0 +1,32 @@
+
+
+[id="ref-external-database-needs-installation-inventory_{context}"]
+
+= Example inventory file for installing {PlatformName} with an existing external database
+
+
+[role="_abstract"]
+This example describes how you can populate the inventory file to deploy an installation of {PlatformName} with an existing external database.
+
+[IMPORTANT]
+====
+Do not use special characters for `pg_password`. It may cause the setup to fail.
+====
+
+-----
+[tower]
+node.example.com ansible_connection=local
+
+[database]
+
+[all:vars]
+admin_password='password'
+pg_password='password'
+
+
+pg_host='database.example.com'
+pg_port='5432'
+
+pg_database='awx'
+pg_username='awx'
+-----

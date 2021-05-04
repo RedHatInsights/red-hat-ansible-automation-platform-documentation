@@ -1,0 +1,27 @@
+
+
+// [id="proc-editing-installer-inventory-file_{context}"]
+
+
+= Editing the {PlatformName} installer inventory file
+
+[role="_abstract"]
+You can use the {PlatformName} installer inventory file to specify your installation scenario.
+
+.Procedure
+
+. Navigate to the installer
+.. [bundled installer]
++
+-----
+$ cd ansible-automation-platform-setup-bundle-<latest-version>
+-----
++
+.. [online installer]
++
+-----
+$ cd ansible-automation-platform-setup-<latest-version>
+-----
++
+. Open the `inventory` file with a text editor.
+. Edit `inventory` file parameters to specify your installation scenario. Follow the example below.

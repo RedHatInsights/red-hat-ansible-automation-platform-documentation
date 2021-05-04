@@ -22,6 +22,7 @@
 :insights: insights integration
 
 // Automation hub
+:HubNameStart: Automation hub
 :HubName: automation hub
 :PrivateCollections: Ansible private automation hub collection management
 :EEmanagement: Ansible private automation hub EE management
@@ -67,3 +68,6 @@
 
 // OpenShift attributes
 :OCP: Red Hat OpenShift Container Platform
+
+// RHEL attributes
+:RHEL: Red Hat Enterprise Linux

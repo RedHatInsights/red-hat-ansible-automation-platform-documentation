@@ -1,0 +1,36 @@
+
+
+[id="ref-multi-node-cluster-inventory_{context}"]
+
+= Example {PlatformName} multi-node inventory file
+
+
+[role="_abstract"]
+This example describes how you can populate the inventory file for a multi-node cluter installation of {ControllerName}.
+
+[IMPORTANT]
+====
+Do not use special characters for `pg_password`. It may cause the setup to fail.
+====
+
+-----
+[tower]
+  clusternode1.example.com
+  clusternode2.example.com
+  clusternode3.example.com
+
+  [database]
+  dbnode.example.com
+
+  [all:vars]
+  ansible_become=true
+
+  admin_password='password'
+
+  pg_host='dbnode.example.com'
+  pg_port='5432'
+
+  pg_database='tower'
+  pg_username='tower'
+  pg_password='password'
+-----
