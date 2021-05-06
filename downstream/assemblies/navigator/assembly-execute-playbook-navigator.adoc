@@ -9,7 +9,7 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-As a content developer, you can execute your Ansible playbooks with {Navigator} and interactively delve into the results of each play and task to verify or troubleshoot the playbook.
+As a content developer, you can execute your Ansible playbooks with {Navigator} and interactively delve into the results of each play and task to verify or troubleshoot the playbook. You can also execute your Ansible playbooks inside an execution environment and without an execution environment to compare and troubleshoot any problems.
 
 include::navigator/proc-execute-playbook-cli.adoc[leveloffset=+1]
 include::navigator/proc-execute-playbook-tui.adoc[leveloffset=+1]

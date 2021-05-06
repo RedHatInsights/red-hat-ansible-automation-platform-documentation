@@ -19,7 +19,7 @@ You can run Ansible playbooks with the {Navigator} CLI to follow the execution o
 * Run the playbook.
 +
 ```
-$ ansible-navigator run simple_playbook.yml
+$ ansible-navigator run simple_playbook.yml -m stdout
 ```
 
 .Verification
