@@ -11,9 +11,9 @@
 :surveys: dynamic surveys
 :connector: cloud connector for catalog
 
-// Analytics
-:AnalyticsName: Red Hat Insights for Red Hat Ansible Automation Platform
-:AnalyticsShort: Insights for Ansible Automation Platform
+// Insights
+:InsightsName: Red Hat Insights for Red Hat Ansible Automation Platform
+:InsightsShort: Insights for Ansible Automation Platform
 :calculator: automation calculator
 :explorer: job explorer
 :planner: automation planner

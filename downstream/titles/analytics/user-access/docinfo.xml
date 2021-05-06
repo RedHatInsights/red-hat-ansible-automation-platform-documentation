@@ -1,9 +1,9 @@
-<title>Managing user access in Automation Analytics</title>
+<title>Managing user access in {InsightsName} </title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>1.2</productnumber>
-<subtitle>Review jobs and templates in greater detail by applying filters and sorting by attributes.</subtitle>
+<subtitle>Configure user roles and permissions to get started using {InsightsShort}</subtitle>
 <abstract>
-    <para>Use the Job Explorer to drill deeper into the information from your Ansible Tower automation initiatives. Explore the details behind visualziations to evalute contextual data and link out to jobs and templates on your Ansible Tower clusters.</para>
+    <para>Manage user access to specific content and features in {InsightsName} by assigning users to groups that grant specific permissions. </para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services</orgname>
