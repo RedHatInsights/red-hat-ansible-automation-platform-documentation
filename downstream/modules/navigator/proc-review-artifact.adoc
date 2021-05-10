@@ -1,0 +1,38 @@
+
+[id="proc-review-artifact_{context}"]
+
+
+
+= Reviewing playbook results with a {Navigator} artifact file
+
+[role="_abstract"]
+
+{Navigator} saves the results of the playbook run in a JSON artifact file. You can use this file to share the playbook results with someone else, save it for security or compliance reasons, or review and troubleshoot later. You only need the artifact file to review the playbook run. You do not need access to the playbook itself or inventory access.
+
+.Prerequisites
+
+* A {Navigator} artifact JSON file from a playbook run.
+
+
+.Procedure
+
+* Start {Navigator} with the artifact file
++
+```
+$ ansible-navigator load simple_playbook_artifact.json
+```
+
+. Review the playbook results that match when the playbook ran.
++
+```
+  PLAY NAME   OK  CHANGED   UNREACHABLE   FAILED  SKIPPED   IGNORED   IN PROGRESS   TASK COUNT            % COMPLETED
+0│localhost    3        0             0        0        0         0             0            3       100% ▇▇▇▇▇▇▇▇▇▇▇
+```
+
+You can now type the number next to the plays and tasks to step into each to review the results, as you would after executing the playbook.
+
+[role="_additional-resources"]
+.Additional resources
+
+* https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook].
+* https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html[Introduction to Ansible playbooks].
