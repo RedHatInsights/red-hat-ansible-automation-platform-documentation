@@ -1,0 +1,28 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: proc-doing-procedure-a.adoc
+* ID: [id="doing-procedure-a_{context}"]
+* Title: = Doing procedure A
+
+The ID is an anchor that links to the module. Avoid changing it after the module has been published to ensure existing links are not broken.
+////
+
+[id="proc-configuring-discovery_{context}"]
+
+////
+The `context` attribute enables module reuse. Every module ID includes {context}, which ensures that the module has a unique ID even if it is reused multiple times in a guide.
+////
+
+= Configuring automatic discovery of other {ControllerName} nodes
+
+
+[role="_abstract"]
+You can configure websocket connections to enable {ControllerName} to automatically handle discovery of other {ControllerName} nodes through the Instance record in the database.
+
+* Edit {ControllerName} websocket information for port, protocol, and whether or not to verify certificates when establishing the websocket connections.
++
+-----
+BROADCAST_WEBSOCKET_PROTOCOL = 'http'
+BROADCAST_WEBSOCKET_PORT = 80
+BROADCAST_WEBSOCKET_VERIFY_CERT = False
+-----

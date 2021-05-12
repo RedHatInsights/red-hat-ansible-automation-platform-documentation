@@ -1,0 +1,26 @@
+
+ifdef::context[:parent-context: {context}]
+
+
+
+// [id="assembly-platform-install-scenario_{context}"]
+= Installing {PlatformName}
+
+
+:context: assembly-platform
+
+[role="_abstract"]
+{PlatformName} installation involves deploying {ControllerName} and {HubName}.
+
+[IMPORTANT]
+====
+The {PlatformNameShort} installer allows you to deploy *only one* {HubName} per inventory. You can use the {PlatformNameShort} installer for a standalone instance of {HubName} and run the installer any number of times with any number of different inventories to deploy multiple {HubName} nodes.
+====
+
+This installation option includes two supported scenarios:
+
+include::assembly-platform-non-inst-database.adoc[leveloffset=+1]
+include::assembly-platform-ext-database-install.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

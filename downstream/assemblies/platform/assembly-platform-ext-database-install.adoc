@@ -2,12 +2,12 @@
 ifdef::context[:parent-context: {context}]
 
 // [id="assembly-standalone-controller-non-inst-database_{context}"]
-= Installing {ControllerName} with a database on the same node
+= Installing {PlatformName} with an external managed database
 
-:context: assembly-single-node
+:context: assembly-standalone-hub
 
 [role="_abstract"]
-You can use these instructions to install a standalone instance of {ControllerName} with a database on the same node, or a non-installer managed database. This scenario includes installation of {ControllerName}, including the web frontend, REST API backend, and database on a single machine. It installs PostgreSQL, and configures the {ControllerName} to use that as its database. This is considered the standard {ControllerName} installation scenario.
+You can use these instructions to install {PlatformName} (both {ControllerName} and {HubName}) with an external managed database.
 
 
 == Prerequisites
@@ -15,8 +15,9 @@ You can use these instructions to install a standalone instance of {ControllerNa
 * You chose and obtained a platform installer
 * You are installing on a machine that meets base system requirements.
 
+include::platform/ref-platform-install-settings.adoc[leveloffset=3]
 include::platform/proc-editing-inventory-file.adoc[leveloffset=3]
-include::platform/ref-single-node-inventory.adoc[leveloffset=3]
+include::platform/ref-example-platform-ext-database-inventory.adoc[leveloffset=3]
 include::platform/ref-setup-script-args.adoc[leveloffset=3]
 include::platform/proc-running-setup-script.adoc[leveloffset=3]
 include::platform/proc-verify-controller-installation.adoc[leveloffset=3]

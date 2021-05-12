@@ -4,8 +4,3 @@
 
 [role="_abstract"]
 This scenario includes installation of the {HubName} server on a single machine, and installs a remote PostgreSQL database, managed by the {PlatformName} installer.
-
-[NOTE]
-====
-Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from Private Automation Hub from a different node.
-====

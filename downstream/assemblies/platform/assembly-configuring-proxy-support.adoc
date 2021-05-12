@@ -1,0 +1,23 @@
+
+
+ifdef::context[:parent-context: {context}]
+
+
+
+// [id="assembly-configuring-proxy-support_{context}"]
+= Configuring proxy support for {PlatformName}
+
+:context: assembly-proxy
+
+[role="_abstract"]
+You can configure {PlatformName} to communicate with traffic using a proxy. This section describes the supported proxy configurations and how to set them up.
+
+
+include::assembly-configure-known-proxies.adoc[leveloffset=+1]
+
+include::platform/proc-configuring-reverse-proxy.adoc[leveloffset=+1]
+
+include::assembly-configuring-websockets.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

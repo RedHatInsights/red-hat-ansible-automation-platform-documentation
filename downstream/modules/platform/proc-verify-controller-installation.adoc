@@ -10,7 +10,7 @@
 Once the installation completes, you can verify your {ControllerName} has been installed successfully by logging in with the admin credentials you inserted into the `inventory` file.
 
 .Procedure
-. Navigate to your {ControllerName}
+. Navigate to the IP address specified for the {ControllerName} node in the `inventory` file.
 . Log in with the Admin credentials you set in the `inventory` file.
 
 Your {ControllerName} is now ready for initial configuration. See the following administration guides for more:

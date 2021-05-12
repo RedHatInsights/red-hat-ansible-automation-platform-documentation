@@ -4,8 +4,3 @@
 
 [role="_abstract"]
 This scenario includes installation of {HubName}, including the web frontend, REST API backend, and database on a single machine. It installs PostgreSQL, and configures the {HubName} to use that as its database.
-
-[NOTE]
-====
-Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from Private Automation Hub from a different node.
-====

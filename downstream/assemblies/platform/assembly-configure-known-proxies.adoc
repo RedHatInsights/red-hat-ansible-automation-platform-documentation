@@ -1,0 +1,22 @@
+
+
+ifdef::context[:parent-context: {context}]
+
+
+
+// [id="assembly-configuring-known-proxies_{context}"]
+= Configuring known proxies
+
+:context: assembly-known-proxies
+
+
+[role="_abstract"]
+You can configure a list of known proxies that are allowed to reach your {ControllerName}. Load balancers and hosts that are not on the list will result in a rejected request.
+
+include::platform/con-known-proxies.adoc[leveloffset=+1]
+
+
+include::platform/proc-configure-known-proxies.adoc[leveloffset=+2]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

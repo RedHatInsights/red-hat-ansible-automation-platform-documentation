@@ -10,27 +10,35 @@ This example describes how you can populate the inventory file for a multi-node 
 
 [IMPORTANT]
 ====
-Do not use special characters for `pg_password`. It may cause the setup to fail.
+* You cannot install {ControllerName} and {HubName} on the same node.
+* Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from Private Automation Hub from a different node.
+* Do not use special characters for `pg_password`. It may cause the setup to fail.
 ====
+
+
 
 -----
 [tower]
-  clusternode1.example.com
-  clusternode2.example.com
-  clusternode3.example.com
+host1
+host11
+host12
 
-  [database]
-  dbnode.example.com
 
-  [all:vars]
-  ansible_become=true
+[automationhub]
+host2
 
-  admin_password='password'
+[database]
+host3
 
-  pg_host='dbnode.example.com'
-  pg_port='5432'
+[all:vars]
+ansible_become=true
 
-  pg_database='tower'
-  pg_username='tower'
-  pg_password='password'
+admin_password='password'
+
+pg_host='dbnode.example.com'
+pg_port='5432'
+
+pg_database='tower'
+pg_username='tower'
+pg_password='password'
 -----

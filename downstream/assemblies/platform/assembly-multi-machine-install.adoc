@@ -1,0 +1,27 @@
+
+ifdef::context[:parent-context: {context}]
+
+// [id="assembly-multi-machine-install_{context}"]
+= Installing {PlatformName} with an external managed database
+
+:context: assembly-cluster-install
+
+[role="_abstract"]
+You can use these instructions to install {PlatformName} as multiple {ControllerName} nodes and {HubName}) with an external managed database.
+
+
+== Prerequisites
+
+* You chose and obtained a platform installer
+* You are installing on a machine that meets base system requirements.
+
+include::platform/ref-platform-install-settings.adoc[leveloffset=3]
+include::platform/proc-editing-inventory-file.adoc[leveloffset=3]
+include::platform/ref-multi-node-cluster-installation.adoc[leveloffset=3]
+include::platform/ref-setup-script-args.adoc[leveloffset=3]
+include::platform/proc-running-setup-script.adoc[leveloffset=3]
+include::platform/proc-verify-controller-installation.adoc[leveloffset=3]
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

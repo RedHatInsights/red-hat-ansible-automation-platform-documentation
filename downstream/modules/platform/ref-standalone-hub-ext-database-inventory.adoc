@@ -1,6 +1,6 @@
 
 
-[id="ref-standlone-hub-inventory_{context}"]
+[id="ref-standlone-hub-ext-database-inventory_{context}"]
 
 = Example standalone {HubName} inventory file
 
@@ -19,6 +19,9 @@ This example describes how you can populate the inventory file to deploy a stand
 
 [automationhub]
 127.0.0.1 ansible_connection=local
+
+[database]
+host2
 
 [all:vars]
 automationhub_admin_password= <PASSWORD>

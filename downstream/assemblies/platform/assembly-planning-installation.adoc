@@ -1,0 +1,34 @@
+
+ifdef::context[:parent-context: {context}]
+
+
+
+// [id="assembly-planning-installation_{context}"]
+= Planning your {PlatformName} installation
+
+
+:context: assembly-planning
+
+[role="_abstract"]
+You can use this section to help plan your {PlatformName} installation. Before installation, review information on the setup installer, system requirements, and supported installation scenarios.
+
+include::platform/ref-system-requirements.adoc[leveloffset=+1]
+
+include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
+
+== Supported installation scenarios
+
+Red Hat supports the following installations scenarios for {PlatformName}
+
+include::platform/con-SM-standalone-contr-non-inst-database.adoc[leveloffset=+2]
+include::platform/con-SM-standalone-contr-ext-database.adoc[leveloffset=+2]
+include::platform/con-SM-standalone-hub-non-inst-database.adoc[leveloffset=+2]
+include::platform/con-SM-standalone-hub-ext-database.adoc[leveloffset=+2]
+include::platform/con-platform-non-inst-database.adoc[leveloffset=+2]
+include::platform/con-platform-ext-database.adoc[leveloffset=+2]
+include::platform/con-cluster-platform-ext-database.adoc[leveloffset=+2]
+
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

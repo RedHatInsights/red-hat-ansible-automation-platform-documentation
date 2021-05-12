@@ -1,7 +1,7 @@
 
 [id="con-cluster-platform-ext-database_{context}"]
 
-= Mutli-machine cluster {PlatformName} installation with an external managed database
+= Mutli-machine cluster installation with an external managed database
 
 [role="_abstract"]
 This scenario includes installation of multiple {ControllerName} nodes and an {HubName} instance and configures communication with a remote PostgreSQL instance as its database. This remote PostgreSQL can be a server you manage, or can be provided by a cloud service such as Amazon RDS. In this scenario, all {ControllerName} are active and can execute jobs, and any node can receive HTTP requests.

@@ -1,25 +1,29 @@
 
 
-[id="ref-standlone-platform-inventory_{context}"]
+[id="ref-standlone-platform-ext-database-inventory_{context}"]
 
-= Example {PlatformName} inventory file
+= Example {PlatformName} inventory file with an external managed database
 
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to install {PlatformName}. This installation inventory file inludes both {ControllerName} and {HubName}.
+This example describes how you can populate the inventory file to install {PlatformName}. This installation inventory file includes both {ControllerName} and {HubName} with an external managed database.
 
 [IMPORTANT]
 ====
-You cannot install {ControllerName} and {HubName} on the same node.
+* You cannot install {ControllerName} and {HubName} on the same node.
+* Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from Private Automation Hub from a different node.
 ====
 
 -----
 [tower]
 tower.acme.org
+
 [automationhub]
 automationhub.acme.org
+
 [database]
 database-01.acme.org
+
 [all:vars]
 admin_password='<password>'
 pg_host='database-01.acme.org'
@@ -28,6 +32,7 @@ pg_database='awx'
 pg_username='awx'
 pg_password='<password>'
 pg_sslmode='prefer'  # set to 'verify-full' for client-side enforced SSL
+
 # Automation Hub Configuration
 #
 automationhub_admin_password='<password>'
@@ -37,6 +42,7 @@ automationhub_pg_database='automationhub'
 automationhub_pg_username='automationhub'
 automationhub_pg_password='<password>'
 automationhub_pg_sslmode='prefer'
+
 # The default install will deploy a TLS enabled Automation Hub.
 # If for some reason this is not the behavior wanted one can
 # disable TLS enabled deployment.
