@@ -2,22 +2,22 @@
 [id="proc-installing-navigator-rhel-pip_{context}"]
 
 
-= Installing Ansible navigator on RHEL with pip
+= Installing {Navigator} on RHEL with pip
 
 
 [role="_abstract"]
 
-You can install Ansible content navigator on Red Hat Enterprise Linux (RHEL) with `pip`.
+You can install {Navigator} on Red Hat Enterprise Linux (RHEL) with `pip`.
 
 .Prerequisites
 
 * You have installed the prerequisites for RHEL.
-* You have Ansible or an Ansible execution environment installed.
+* You have Ansible or {ExecEnvNameStart} installed.
 
 
 .Procedure
 
-. Install Ansible-navigator:
+. Install {Navigator}:
 +
 ```
 $ pip install ansible-navigator
@@ -25,7 +25,7 @@ $ pip install ansible-navigator
 +
 
 . Alternately, for offline access:
-.. Download Ansible-navigator and copy the package to the offline system:
+.. Download {Navigator} and copy the package to the offline system:
 +
 ```
 $ pip3 download ansible-navigator -d
@@ -42,10 +42,10 @@ $ pip3 install --no-index --find-links /<install path>/ansible-navigator-x.y.z.t
 
 .Verification
 
-* Verify your Ansible-navigator installation:
+* Verify your {Navigator} installation:
 +
 ```
 $ ansible-navigator --help
 ```
 
-You should see the help output describing the main functions of Ansible-navigator.
+You should see the help output describing the main functions of {Navigator}.

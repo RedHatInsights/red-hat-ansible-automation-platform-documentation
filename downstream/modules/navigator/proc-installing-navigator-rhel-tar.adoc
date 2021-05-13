@@ -2,24 +2,24 @@
 [id="proc-installing-navigator-rhel-tar_{context}"]
 
 
-= Installing Ansible navigator on RHEL from a tarball
+= Installing {Navigator} on RHEL from a tarball
 
 
 [role="_abstract"]
 
-You can install Ansible content navigator on Red Hat Enterprise Linux (RHEL) from a tarball.
+You can install {Navigator} on Red Hat Enterprise Linux (RHEL) from a tarball.
 
 .Prerequisites
 
 * You have installed the prerequisites for RHEL.
-* You have Ansible or an Ansible execution environment installed.
+* You have Ansible or {ExecEnvNameStart} installed.
 
 
 .Procedure
 
 . Download the tarball.
 
-. Install Ansible-navigator:
+. Install {Navigator}:
 +
 ```
 $ tar -zxvf  ansible-navigator
@@ -29,10 +29,10 @@ $ tar -zxvf  ansible-navigator
 
 .Verification
 
-* Verify your Ansible-navigator installation:
+* Verify your {Navigator} installation:
 +
 ```
 $ ansible-navigator --help
 ```
 
-You should see the help output describing the main functions of Ansible-navigator.
+You should see the help output describing the main functions of {Navigator}.
