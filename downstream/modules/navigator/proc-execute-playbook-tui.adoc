@@ -47,7 +47,7 @@ $ :run simple_playbook.yml -m interactive
 0│localhost    3        0             0        0        0         0             0            3       100% ▇▇▇▇▇▇▇▇▇▇▇
 ```
 
-. Type the number next to a play to step into the play results.
+. Type the number next to a play to step into the play results, or type `:<number>` for numbers above 9.
 +
 ```
   RESULT  HOST       NUMBER  CHANGED  TASK                                TASK ACTION                      DURATION
@@ -56,7 +56,7 @@ $ :run simple_playbook.yml -m interactive
 2│OK      localhost       2    False  Check whether make is installed     ansible.builtin.debug                  0s
 ```
 
-. Type the number next to a task to review the task results.
+. Type the number next to a task to review the task results, or type `:<number>` for numbers above 9.
 +
 ```
 PLAY [localhost:2] ***************************************************************************************************
