@@ -19,6 +19,17 @@ You can review Ansible inventories with the {Navigator} CLI. The `ansible-naviga
 +
 ```
 $ ansible-navigator inventory -i simple_inventory.yml --graph -m stdout
+
+@all:
+  |--@general:
+  |  |--infra-0
+  |  |--lb-0
+  |  |--master-0
+  |--@nodes:
+  |  |--node-0
+  |  |--node-1
+  |  |--node-2
+  |--@ungrouped:
 ```
 
 * Optionally, delve into a host to review details.
