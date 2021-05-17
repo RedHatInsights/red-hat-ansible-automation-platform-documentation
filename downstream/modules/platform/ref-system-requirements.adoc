@@ -14,7 +14,7 @@ Your system must meet the following minimum system requirements to install and r
 
 h| Subscription | Valid Red Hat Ansible Automation Platform
 
-h| OS | Red Hat Enterprise Linux 7.7 or later 64-bit (x86) or 8.2 or later 64-bit (x86)
+h| OS | Red Hat Enterprise Linux 8.2 or later 64-bit (x86)
 
 h| Ansible | version 2.9 required
 

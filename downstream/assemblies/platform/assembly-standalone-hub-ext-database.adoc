@@ -1,13 +1,12 @@
 ifdef::context[:parent-context: {context}]
 
-// [id="assembly-standalone-hub-non-inst-database_{context}"]
-= Installing {HubName} with a database on the same node
+// [id="assembly-standalone-hub-ext-database_{context}"]
+= Installing {HubName} with an external database
 
 :context: assembly-standalone-hub-ext
 
 [role="_abstract"]
 You can use these instructions to install a standalone instance of {HubName} with an external managed database. This installs the {HubNam} server on a single machine and installs a remote PostgreSQL database using the {PlatformNameShort} installer.
-
 
 
 == Prerequisites

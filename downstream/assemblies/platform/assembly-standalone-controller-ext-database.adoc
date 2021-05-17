@@ -19,3 +19,10 @@ include::platform/ref-single-node-inventory.adoc[leveloffset=3]
 include::platform/ref-setup-script-args.adoc[leveloffset=3]
 include::platform/proc-running-setup-script.adoc[leveloffset=3]
 include::platform/proc-verify-controller-installation.adoc[leveloffset=3]
+
+[role="_additional-resources"]
+==  Next steps
+
+* Review xref:assembly-configuring-proxy-support.adoc if setting up {ControllerName} with a proxy server.
+* See the link:https://docs.ansible.com/ansible-tower/latest/html/quickstart/index.html[Ansible Tower Quick Setup Guide] to learn more about using {ControllerName}.
+* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].

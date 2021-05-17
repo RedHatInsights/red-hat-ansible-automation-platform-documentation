@@ -4,13 +4,13 @@ ifdef::context[:parent-context: {context}]
 
 
 // [id="assembly-single-machine-scenario_{context}"]
-= Installing {PlatformName} on a single machine
+= Installing {PlatformName} components on a single machine
 
 
 :context: assembly-single-machine
 
 [role="_abstract"]
-You can install {PlatformName} on a single machine in one of the following supported scenarios.
+You can install {PlatformName} components on a single machine in one of the following supported scenarios.
 
 
 include::assembly-standalone-controller-non-inst-database-installation.adoc[leveloffset=+1]
