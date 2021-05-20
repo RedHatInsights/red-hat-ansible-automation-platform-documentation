@@ -19,7 +19,7 @@
 * Start {Navigator} with the artifact file
 +
 ```
-$ ansible-navigator load simple_playbook_artifact.json
+$ ansible-navigator replay simple_playbook_artifact.json
 ```
 
 . Review the playbook results that match when the playbook ran.
