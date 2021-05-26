@@ -5,7 +5,7 @@ ifdef::context[:parent-context: {context}]
 [id="assembly-review-ee-navigator_{context}"]
 = Review {ExecEnvNameStart} with {Navigator}
 
-:context: review ee-navigator
+:context: review-ee-navigator
 
 [role="_abstract"]
 

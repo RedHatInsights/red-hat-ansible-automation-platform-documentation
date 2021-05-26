@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-You can review your {ExecEnvNameStart} with the {Navigator} CLI. 
+You can review your {ExecEnvNameStart} with the {Navigator} CLI.
 
 .Prerequisites
 
@@ -15,7 +15,7 @@ You can review your {ExecEnvNameStart} with the {Navigator} CLI.
 
 .Procedure
 
-* Review the {ExecEnvName} included in your {Navigator} configuration.
+. Review the {ExecEnvName} included in your {Navigator} configuration.
 +
 ```
 $ ansible-navigator ee-details -m stdout
@@ -104,11 +104,11 @@ ok: [execution-environment] => {
 }
 
 PLAY RECAP ******************************************************************************************************************************************
-execution-environment      : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+execution-environment      : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
 ```
 
-* Optionally, pass in the {ExecEnvName} you want to review.
+. Optionally, pass in the {ExecEnvName} you want to review.
 +
 ```
 $ ansible-navigator ee-details --eei  quay.io/ansible/network-ee  -m stdout
@@ -197,7 +197,7 @@ ok: [execution-environment] => {
         "python_version": "3.6.8"
     }
 }
- 
+
 ```
 
 You can review the packages and versions of each installed, as well as any collections included in the {ExecEnvName}.
@@ -293,9 +293,3 @@ ok: [execution-environment] => {
     }
 }
 ```
-
-[role="_additional-resources"]
-.Additional resources
-
-* https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html[ansible-inventory].
-* https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html[Introduction to Ansible inventories].
