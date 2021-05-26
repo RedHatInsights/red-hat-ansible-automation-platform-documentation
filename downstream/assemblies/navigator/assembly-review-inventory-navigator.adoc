@@ -1,6 +1,7 @@
 
 ifdef::context[:parent-context: {context}]
 
+include::attributes/attributes.adoc[]
 
 [id="assembly-review-inventory-navigator_{context}"]
 = Review inventories with {Navigator}

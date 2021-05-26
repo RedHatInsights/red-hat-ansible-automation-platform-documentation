@@ -1,6 +1,8 @@
 
 ifdef::context[:parent-context: {context}]
 
+include::attributes/attributes.adoc[]
+
 
 [id="assembly-execute-playbooks-navigator_{context}"]
 = Execute Ansible playbooks with {Navigator}
