@@ -1,6 +1,7 @@
 
 ifdef::context[:parent-context: {context}]
 
+include::attributes/attributes.adoc[]
 
 [id="assembly-review-ee-navigator_{context}"]
 = Review {ExecEnvNameStart} with {Navigator}
