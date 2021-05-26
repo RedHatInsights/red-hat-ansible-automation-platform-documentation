@@ -1,0 +1,114 @@
+
+[id="proc-review-config-cli_{context}"]
+
+
+
+= Reviewing Ansible configuration from the {Navigator} CLI
+
+[role="_abstract"]
+
+You can review your Ansible configuration with the {Navigator} CLI. The `ansible-navigator config` command uses the same syntax as the `ansible-config` command.
+
+.Prerequisites
+
+* An Ansible configuration file.
+
+.Procedure
+
+* Review the configuration file.
++
+```
+$ ansible-navigator config view -m stdout
+
+# Example config file for ansible -- https://ansible.com/
+# =======================================================
+
+# Nearly all parameters can be overridden in ansible-playbook
+# or with command line flags. Ansible will read ANSIBLE_CONFIG,
+# ansible.cfg in the current working directory, .ansible.cfg in
+# the home directory, or /etc/ansible/ansible.cfg, whichever it
+# finds first
+
+# For a full list of available options, run ansible-config list or see the
+# documentation: https://docs.ansible.com/ansible/latest/reference_appendices/config.html.
+
+[defaults]
+#inventory       = /etc/ansible/hosts
+#library         = ~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules
+#module_utils    = ~/.ansible/plugins/module_utils:/usr/share/ansible/plugins/module_utils
+#remote_tmp      = ~/.ansible/tmp
+#local_tmp       = ~/.ansible/tmp
+#forks           = 5:
+
+<...output truncated..>
+```
+
+* Optionally, dump just the changes in your configuration file.
++
+```
+$ ansible-navigator config dump --only-changed -m stdout
+
+CACHE_PLUGIN(env: ANSIBLE_CACHE_PLUGIN) = jsonfile
+CACHE_PLUGIN_CONNECTION(env: ANSIBLE_CACHE_PLUGIN_CONNECTION) = /runner/artifacts/67d0c83e-b442-42dd-98a7-bb43f0583a97/fact_cache
+DEFAULT_CALLBACK_PLUGIN_PATH(env: ANSIBLE_CALLBACK_PLUGINS) = ['/usr/lib/python3.8/site-packages/ansible_runner/callbacks']
+DEFAULT_STDOUT_CALLBACK(env: ANSIBLE_STDOUT_CALLBACK) = awx_display
+HOST_KEY_CHECKING(env: ANSIBLE_HOST_KEY_CHECKING) = False
+RETRY_FILES_ENABLED(env: ANSIBLE_RETRY_FILES_ENABLED) = False
+```
+
+* Optionally, show a list of all configuration options in Ansible and scan the output for the details on a configuration option.
++
+```
+$ ansible-navigator config list -m stdout
+
+<...output truncated...>
+CACHE_PLUGIN:
+  default: memory
+  description: Chooses which cache plugin to use, the default 'memory' is ephemeral.
+  env:
+  - name: ANSIBLE_CACHE_PLUGIN
+  ini:
+  - key: fact_caching
+    section: defaults
+  name: Persistent Cache plugin
+  yaml:
+    key: facts.cache.plugin
+
+<... output truncated...>
+```
+
+.Verification
+
+*  Review the configuration output.
+
++
+```
+
+# Example config file for ansible -- https://ansible.com/
+# =======================================================
+
+# Nearly all parameters can be overridden in ansible-playbook
+# or with command line flags. Ansible will read ANSIBLE_CONFIG,
+# ansible.cfg in the current working directory, .ansible.cfg in
+# the home directory, or /etc/ansible/ansible.cfg, whichever it
+# finds first
+
+# For a full list of available options, run ansible-config list or see the
+# documentation: https://docs.ansible.com/ansible/latest/reference_appendices/config.html.
+
+[defaults]
+#inventory       = /etc/ansible/hosts
+#library         = ~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules
+#module_utils    = ~/.ansible/plugins/module_utils:/usr/share/ansible/plugins/module_utils
+#remote_tmp      = ~/.ansible/tmp
+#local_tmp       = ~/.ansible/tmp
+#forks           = 5:
+
+<...output truncated..>
+```
+
+[role="_additional-resources"]
+.Additional resources
+
+* https://docs.ansible.com/ansible/latest/cli/ansible-config.html[ansible-config].
+* https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html[Introduction to Ansible configuration].
