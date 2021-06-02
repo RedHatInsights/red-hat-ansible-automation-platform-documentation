@@ -2,10 +2,10 @@
 ifdef::context[:parent-context: {context}]
 
 
-// [id="assembly-configuring-websockets_{context}"]
+[id="assembly-configuring-websockets"]
 = Configuring {ControllerName} websocket connections
 
-:context: assembly-websockets
+:context: configuring-websockets
 
 [role="_abstract"]
 You can configure {ControllerName} in order to align the websocket configuration with your nginx or load balancer configuration.

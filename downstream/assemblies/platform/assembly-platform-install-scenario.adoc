@@ -3,11 +3,11 @@ ifdef::context[:parent-context: {context}]
 
 
 
-// [id="assembly-platform-install-scenario_{context}"]
+[id="assembly-platform-install-scenario"]
 = Installing {PlatformName}
 
 
-:context: assembly-platform
+:context: platform-install-scenario
 
 [role="_abstract"]
 {PlatformName} installation involves deploying {ControllerName} and {HubName}.

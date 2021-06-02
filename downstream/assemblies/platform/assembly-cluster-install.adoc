@@ -1,10 +1,10 @@
 
 ifdef::context[:parent-context: {context}]
 
-// [id="assembly-standalone-controller-non-inst-database_{context}"]
+[id="assembly-standalone-controller-non-inst-database"]
 = Installing multi-machine clustered {PlatformName}
 
-:context: assembly-cluster
+:context: standalone-controller-non-inst-database
 
 [role="_abstract"]
 You can use these instructions to install {ControllerName} on multiple nodes and {HubName}) with an external managed database.

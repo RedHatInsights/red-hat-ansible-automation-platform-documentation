@@ -1,0 +1,49 @@
+
+
+[id="proc-attaching-subscriptions_{context}"]
+
+= Attaching your {PlatformName} subscription
+
+[role="_abstract"]
+You *must* have valid subscriptions attached before installing {PlatformName}. Attaching an {PlatformNameShort} subscription enables {HubName} repositories.
+
+A valid subscription needs to be attached to the {HubName} node only. Other nodes do not need to have a valid subscription attached, even if the `[automationhub]` group is blank, given this is done at the `repos_el` role level and that this role is run on both `[automationcontroller] and `[automationhub]` hosts.
+
+
+.Procedure
+
+. Obtain the `pool_id` for your {PlatformName} subscription:
++
+-----
+# subscription-manager list --available --all | grep "Ansible Automation Platform" -B 3 -A 6
+-----
++
+The command returns the following:
++
+-----
+Subscription Name: Red Hat Ansible Automation, Premium (5000 Managed Nodes)
+  Provides: Red Hat Ansible Engine
+  Red Hat Ansible Automation Platform
+  SKU: MCT3695
+  Contract: ````
+  Pool ID: ``````````
+  Provides Management: No
+  Available: 4999
+  Suggested: 1
+-----
++
+. Attach the subscription:
++
+-----
+# subscription-manager attach --pool=<pool_id>
+-----
+
+All nodes will have {PlatformName} attached and find the {HubName} repositories.
+
+.Verification
+
+. Verify the subscription was successfully attached:
+
+-----
+# subscription-manager list --consumed
+-----

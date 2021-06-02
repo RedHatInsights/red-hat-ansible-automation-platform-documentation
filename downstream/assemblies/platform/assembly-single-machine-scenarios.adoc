@@ -3,11 +3,11 @@ ifdef::context[:parent-context: {context}]
 
 
 
-// [id="assembly-single-machine-scenario_{context}"]
+[id="single-machine-scenario"]
 = Installing {PlatformName} components on a single machine
 
 
-:context: assembly-single-machine
+:context: single-machine-scenario
 
 [role="_abstract"]
 You can install {PlatformName} components on a single machine in one of the following supported scenarios.

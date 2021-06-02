@@ -4,10 +4,10 @@ ifdef::context[:parent-context: {context}]
 
 
 
-// [id="assembly-configuring-known-proxies_{context}"]
+[id="assembly-configuring-known-proxies"]
 = Configuring known proxies
 
-:context: assembly-known-proxies
+:context: known-proxies
 
 
 [role="_abstract"]

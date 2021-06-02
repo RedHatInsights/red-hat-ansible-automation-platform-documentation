@@ -4,30 +4,101 @@
 
 = {PlatformName} system requirements
 
-
+Use this information when planning your {PlatformName} installations. Each installed {PlatformNameShort} component - {HubName} and {ControllerName} has the following requirements.
 [role="_abstract"]
+
 Your system must meet the following minimum system requirements to install and run {PlatformName}.
 
-[cols="a,a"]
+.Red Hat Ansible Automation Platform system requirements
+
+[cols="a,a,a"]
 |===
-|  | Required
+|  | Required | Notes
 
-h| Subscription | Valid Red Hat Ansible Automation Platform
+h| Subscription | Valid Red Hat Ansible Automation Platform |
 
-h| OS | Red Hat Enterprise Linux 8.2 or later 64-bit (x86)
+h| OS | Red Hat Enterprise Linux 8.2 or later 64-bit (x86) |
 
-h| Ansible | version 2.9 required
+h| Ansible | version 2.9 required |
 
-h| RAM | 4Gb minimum
+h| RAM | 4Gb minimum |
 
-h| CPUs | 2 minimum
+* 4 GB RAM (minimum and recommended for Vagrant trial installations)
+* 4 GB RAM (minimum for external standalone PostgreSQL databases)
+* For capacity based on forks in your configuration, see additional resources
 
-h| Disk | 20Gb dedicated hard disk space
+h| CPUs | 2 minimum |
 
-Dependent on size of collections stored
+* For capacity based on forks in your configuration, see additional resources
 
-h| Browser | A currently supported version of Mozilla FireFox or Google Chrome
+h| Disk: service node | 20Gb dedicated hard disk space |
+
+* *{ControllerName}*: dedicate 10 GB to `/var/` for file and working directory storage
+* Storage volume should be rated for a minimum baseline of 750 IOPS.
+* See the note below for more information on {ControllerName} storage
+
+h| Disk: database node| 20Gb dedicated hard disk space |
+
+* 150 GB+ recommended
+* Storage volume should be rated for a high baseline IOPS (1000 or more).
+
+
+
+h| Browser | A currently supported version of Mozilla FireFox or Google Chrome |
 
 h| Database | PostgreSQL version 10 |
 
 |===
+
+[NOTE]
+====
+* All {ControllerName} data is stored in the database. Database storage increases with the number of hosts managed, number of jobs run, number of facts stored in the fact cache, and number of tasks in any individual job.
+For example, a playbook run every hour (24 times a day) across 250, hosts, with 20 tasks will store over 800000 events in the database every week.
+
+* If not enough space is reserved in the database, old job runs and facts will need cleaned on a regular basis. Refer to :ref:`Management Jobs <ag_management_jobs>` in the |ata| for more information
+====
+
+
+.Amazon EC2
+
+* Instance size of m4.large or larger
+* An instance size of m4.xlarge or larger if there are more than 100 hosts
+
+.Additional notes for {PlatformName} requirements
+
+* Actual RAM requirements vary based on how many hosts {ControllerName} will manage simultaneously (which is controlled by the ``forks`` parameter in the job template or the system ``ansible.cfg`` file). To avoid possible resource conflicts, Ansible recommends 1 GB of memory per 10 forks + 2GB reservation for {ControllerName}, see the :ref:`capacity algorithm <userguide:ug_job_concurrency>` for further details. If ``forks`` is set to 400, 40 GB of memory is recommended.
+* A larger number of hosts can of course be addressed, though if the fork number is less than the total host count, more passes across the hosts are required. These RAM limitations are avoided when using rolling updates or when using the provisioning callback system built into {ControllerName}, where each system requesting configuration enters a queue and is processed as quickly as possible; or in cases where {ControllerName} is producing or deploying images such as AMIs. All of these are great approaches to managing larger environments. For further questions, please contact Ansible via the Red Hat Customer portal at https://access.redhat.com/.
+* The requirements for systems managed by {PlatformNameShort} are the same as for Ansible at: http://docs.ansible.com/intro_getting_started.html
+
+.Notable PostgreSQL changes
+
+{PlatformName} uses PostgreSQL 10, which is an SCL package on RHEL 7 and an app stream on RHEL8. Some changes worth noting when upgrading to PostgreSQL 10 are:
+
+* PostgreSQL user passwords will now be hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
+* You will no longer need to provide a ``pg_hashed_password`` in your inventory file at the time of installation because PostgreSQL 10 can now store the user's password more securely. If users supply a password in the inventory file for the installer (``pg_password``), that password will be SCRAM-SHA-256 hashed by PostgreSQL as part of the installation process. **DO NOT** use special characters in ``pg_password`` as it may cause the setup to fail.
+* Since {ControllerName} and {HubName} are using a Software Collections version of PostgreSQL in 3.8, the `rh-postgresql10` scl must be enabled in order to access the database.  Administrators can use the ``awx-manage dbshell`` command, which will automatically enable the PostgreSQL SCL.
+* If you just need to determine if your {ControllerName} instance has access to the database, you can do so with the command, ``awx-manage check_db``.
+
+
+.PostgreSQL Configurations
+
+Optionally, you can configure the PostgreSQL database as separate nodes that are not managed by the {PlatformName} installer. When the {PlatformNameShort} installer manages the database server, it configures the server with defaults that are generally recommended for most workloads. However, you can adjust these PostgreSQL settings for standalone database server node where ``ansible_memtotal_mb`` is the total memory size of the database server:
+
+-----
+max_connections == 1024
+shared_buffers == ansible_memtotal_mb*0.3
+work_mem == ansible_memtotal_mb*0.03
+maintenance_work_mem == ansible_memtotal_mb*0.04
+-----
+
+Refer to the link:https://wiki.postgresql.org/wiki/Main_Page[PostgreSQL documentation] for more detail on tuning your PostgreSQL server.
+
+.Ansible software requirements
+
+While {PlatformName} depends on Ansible Playbooks and requires the installation of the latest stable version of Ansible before installing {ControllerName}, manual installations of Ansible are no longer required.
+
+Upon new installations, {ControllerName} installs the latest release package of Ansible 2.9.
+
+If performing a bundled {PlatformNameShort} installation, the installation program attempts to install Ansible (and its dependencies) from the bundle for you.
+
+If you choose to install Ansible on your own, the {PlatformNameShort} installation program will detect that Ansible has been installed and will not attempt to reinstall it. Note that you must install Ansible using a package manager like ``yum`` and that the latest stable version must be installed for {PlatformName} to work properly. Ansible version 2.9 is required for |at| versions 3.8 and later.

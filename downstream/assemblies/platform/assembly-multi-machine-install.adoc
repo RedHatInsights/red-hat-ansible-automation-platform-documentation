@@ -1,10 +1,10 @@
 
 ifdef::context[:parent-context: {context}]
 
-// [id="assembly-multi-machine-install_{context}"]
-= Installing {PlatformName} with an external managed database
+[id="assembly-multi-machine-install"]
+= Installing a multi-node {PlatformName} with an external managed database
 
-:context: assembly-cluster-install
+:context: multi-machine
 
 [role="_abstract"]
 You can use these instructions to install {PlatformName} as multiple {ControllerName} nodes and {HubName}) with an external managed database.
@@ -22,6 +22,15 @@ include::platform/ref-setup-script-args.adoc[leveloffset=3]
 include::platform/proc-running-setup-script.adoc[leveloffset=3]
 include::platform/proc-verify-controller-installation.adoc[leveloffset=3]
 
+
+[role="_additional-resources"]
+==  Next steps
+
+
+* Review _Configuring proxy support for {PlatformName}_ if setting up {ControllerName} with a proxy server.
+* See _Managing usability analytics and data collection from {ControllerName}_ for information on controlling what information you share with Red Hat.
+* See the link:https://docs.ansible.com/ansible-tower/latest/html/quickstart/index.html[Ansible Tower Quick Setup Guide] to learn more about using {ControllerName}.
+* For complete {HubName} configuration documentation, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/[Ansible Automation Platform] product documentation.
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

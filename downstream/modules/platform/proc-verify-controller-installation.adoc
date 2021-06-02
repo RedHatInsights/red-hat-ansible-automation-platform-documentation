@@ -13,7 +13,22 @@ Once the installation completes, you can verify your {ControllerName} has been i
 . Navigate to the IP address specified for the {ControllerName} node in the `inventory` file.
 . Log in with the Admin credentials you set in the `inventory` file.
 
-Your {ControllerName} is now ready for initial configuration. See the following administration guides for more:
+[NOTE]
+====
+The {ControllerName} server is accessible from port 80 (*https://<TOWER_SERVER_NAME>/*) but will redirect to port 443 so 443 needs to be available also.
+====
 
-* https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/managing_user_access_in_private_automation_hub/index[Managing user access in Private Automation Hub]
-* https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/managing_red_hat_certified_and_ansible_galaxy_collections_in_automation_hub/index[Managing Red Hat Certified and Ansible Galaxy collections in Automation Hub]
+[IMPORTANT]
+====
+If the installation of Tower fails and you are a customer who has purchased a valid license for {PlatformName}, please contact Ansible via the Red Hat Customer portal at https://access.redhat.com/.
+====
+
+Your {ControllerName} is now ready for initial configuration.
+
+
+[role="_additional-resources"]
+== Next steps
+
+* See link:https://docs.ansible.com/ansible-tower/latest/html/administration/index.html[Automation Controller Administration Guide] for administration through customer scripts, management jobs, and more.
+* For quick setup of {ControllerName}, see the link:https://docs.ansible.com/ansible-tower/latest/html/quickstart/index.html[Automation Controller Quick Setup Guide].
+* Review {ControllerName} functionality in the link:https://docs.ansible.com/ansible-tower/latest/html/userguide/index.html[Automation Controller User Guide].
