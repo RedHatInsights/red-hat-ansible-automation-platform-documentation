@@ -1,0 +1,77 @@
+
+[id="proc-browse-collections-tui_{context}"]
+
+
+
+= Browsing collections from the {Navigator} textual user interface
+
+[role="_abstract"]
+
+You can browse Ansible collections with the {Navigator} textual user interface in interactive mode and delve into groups and hosts for more details.
+
+.Prerequisites
+
+* A valid collection file or an collection plugin.
+
+.Procedure
+
+
+. Start {Navigator}
++
+```
+$ ansible-navigator
+```
+
+* browse the collection.
++
+```
+ :collection -i simple_collection.yml
+
+   TITLE            DESCRIPTION
+0│Browse groups    Explore each collection group and group members members
+1│Browse hosts     Explore the collection with a list of all hosts
+```
+
+* Type `0` to brows the groups.
++
+```
+  NAME                                          TAXONOMY                                 TYPE
+0│general                                       all                                      group
+1│nodes                                         all                                      group
+2│ungrouped                                     all                                      group
+```
+
+* Type the number corresponding to the group you want to delve into.
++
+```
+  NAME                                TAXONOMY                                            TYPE
+0│node-0                              all▸nodes                                           host
+1│node-1                              all▸nodes                                           host
+2│node-2                              all▸nodes                                           host
+```
+
+* Type the number corresponding to the host you want to delve into, or type `:<number>` for numbers greater than 9.
++
+```
+[node-1]
+0│---
+1│ansible_host: node-1.example.com
+2│collection_hostname: node-1
+```
+
+.Verification
+
+*  browse the collection output.
+
++
+```
+  TITLE                  DESCRIPTION
+0│Browse groups          Explore each collection group and group members members
+1│Browse hosts           Explore the collection with a list of all hosts
+```
+
+[role="_additional-resources"]
+.Additional resources
+
+* https://docs.ansible.com/ansible/latest/cli/ansible-collection.html[ansible-collection].
+* https://docs.ansible.com/ansible/latest/user_guide/intro_collection.html[Introduction to Ansible inventories].
