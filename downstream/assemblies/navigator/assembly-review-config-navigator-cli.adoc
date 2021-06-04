@@ -11,7 +11,6 @@ ifdef::context[:parent-context: {context}]
 
 As a content developer, you can review your Ansible configuration with {Navigator} and interactively delve into settings.
 
-include::navigator/proc-review-config-cli.adoc[leveloffset=+1]
 include::navigator/proc-review-config-tui.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]

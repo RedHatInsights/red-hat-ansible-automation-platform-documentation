@@ -22,32 +22,33 @@ You can review your Ansible configuration with the {Navigator} textual user inte
 $ ansible-navigator
 ```
 
-* Review the Ansible configuration.
+. Review the Ansible configuration.
 +
 ```
  :config
-    OPTION                                  DEFAULT SOURCE  VIA                             CURRENT VALUE
-  0│ACTION_WARNINGS                            True default default                         True
-  1│AGNOSTIC_BECOME_PROMPT                     True default default                         True
-  2│ALLOW_WORLD_READABLE_TMPFILES              True default default                         False
-  3│ANSIBLE_CONNECTION_PATH                    True default default                         None
-  4│ANSIBLE_COW_ACCEPTLIST                     True default default                         ['bud-frogs', 'bunny', 'cheese', 'daemon', 'default', 'dragon', 'elephant-in-snake', 'elephant',
-  5│ANSIBLE_COW_PATH                           True default default                         None
-  6│ANSIBLE_COW_SELECTION                      True default default                         default
-  7│ANSIBLE_FORCE_COLOR                        True default default                         False
-  8│ANSIBLE_NOCOLOR                            True default default                         False
-  9│ANSIBLE_NOCOWS                             True default default                         False
- 10│ANSIBLE_PIPELINING                         True default default                         False
- 11│ANY_ERRORS_FATAL                           True default default                         False
- 12│BECOME_ALLOW_SAME_USER                     True default default                         False
- 13│BECOME_PLUGIN_PATH                         True default default                         ['/home/runner/.ansible/plugins/become', '/usr/share/ansible/plugins/become']
- 14│CACHE_PLUGIN                              False env     ANSIBLE_CACHE_PLUGIN            jsonfile
- 15│CACHE_PLUGIN_CONNECTION                   False env     ANSIBLE_CACHE_PLUGIN_CONNECTION /runner/artifacts/9eed8afa-48ab-45e0-bc71-8945c3a25766/fact_cache
- 16│CACHE_PLUGIN_PREFIX                        True default default                         ansible_facts
+
+ OPTION                                  DEFAULT SOURCE  VIA                             CURRENT VALUE
+  0│ACTION_WARNINGS                      True default default                         True
+  1│AGNOSTIC_BECOME_PROMPT               True default default                         True
+  2│ALLOW_WORLD_READABLE_TMPFILES        True default default                         False
+  3│ANSIBLE_CONNECTION_PATH              True default default                         None
+  4│ANSIBLE_COW_ACCEPTLIST               False env    ANSIBLE_COW_ACCEPTLIST          ['bud-frogs', 'dragon']
+  5│ANSIBLE_COW_PATH                     True default default                         None
+  6│ANSIBLE_COW_SELECTION                True default default                         default
+  7│ANSIBLE_FORCE_COLOR                  True default default                         False
+  8│ANSIBLE_NOCOLOR                      True default default                         False
+  9│ANSIBLE_NOCOWS                       True default default                         False
+ 10│ANSIBLE_PIPELINING                   True default default                         False
+ 11│ANY_ERRORS_FATAL                     True default default                         False
+ 12│BECOME_ALLOW_SAME_USER               True default default                         False
+ 13│BECOME_PLUGIN_PATH                   True default default                         ['/home/runner/.ansible/plugins/become', '/usr/share/ansible/plugins/become']
+ 14│CACHE_PLUGIN                         False env    ANSIBLE_CACHE_PLUGIN            jsonfile
+ 15│CACHE_PLUGIN_CONNECTION              False env   ANSIBLE_CACHE_PLUGIN_CONNECTION /runner/artifacts/d2e5510d-b518-4625-8067-5a4da2a1d32c/fact_cac
+ 16│CACHE_PLUGIN_PREFIX                  True default default                         ansible_facts
 
 ```
 
-* Type the number corresponding to the setting you want to delve into, or type `:<number>` for numbers greater than 9.
+. Type the number corresponding to the setting you want to delve into, or type `:<number>` for numbers greater than 9.
 +
 ```
 CACHE PLUGIN (current: jsonfile)  (default: memory)
@@ -67,11 +68,10 @@ CACHE PLUGIN (current: jsonfile)  (default: memory)
 13│yaml:
 14│  key: facts.cache.plugin
 
-
-
 ^f/PgUp page up     ^b/PgDn page down     ↑↓ scroll     esc back     - previous     + next     [0-9] goto     :help help
 
 ```
+The output shows the current setting as well as the default.
 
 .Verification
 
@@ -80,13 +80,13 @@ CACHE PLUGIN (current: jsonfile)  (default: memory)
 ```
  :config
     OPTION                                  DEFAULT SOURCE  VIA                             CURRENT VALUE
-  0│ACTION_WARNINGS                            True default default                         True
-  1│AGNOSTIC_BECOME_PROMPT                     True default default                         True
-  2│ALLOW_WORLD_READABLE_TMPFILES              True default default                         False
-  3│ANSIBLE_CONNECTION_PATH                    True default default                         None
-  4│ANSIBLE_COW_ACCEPTLIST                     True default default                         ['bud-frogs', 'bunny', 'cheese', 'daemon', 'default', 'dragon', 'elephant-in-snake', 'elephant',
-  5│ANSIBLE_COW_PATH                           True default default                         None
-  6│ANSIBLE_COW_SELECTION                      True default default                         default
+  0│ACTION_WARNINGS                          True default default                         True
+  1│AGNOSTIC_BECOME_PROMPT                   True default default                         True
+  2│ALLOW_WORLD_READABLE_TMPFILES            True default default                         False
+  3│ANSIBLE_CONNECTION_PATH                  True default default                         None
+  4│ANSIBLE_COW_ACCEPTLIST                   False env    ANSIBLE_COW_ACCEPTLIST          ['bud-frogs', 'dragon']
+  5│ANSIBLE_COW_PATH                         True default default                         None
+  6│ANSIBLE_COW_SELECTION                    True default default                         default
 
   <...output truncated...>
 
