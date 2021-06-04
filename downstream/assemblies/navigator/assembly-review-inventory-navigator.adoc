@@ -9,9 +9,8 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-As a content developer, you can review your Ansible inventory with {Navigator} and interactively delve into the groups and hosts.
+As a content creator, you can review your Ansible inventory with {Navigator} and interactively delve into the groups and hosts.
 
-include::navigator/proc-review-inventory-cli.adoc[leveloffset=+1]
 include::navigator/proc-review-inventory-tui.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]

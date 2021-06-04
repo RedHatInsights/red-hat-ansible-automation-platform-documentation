@@ -3,7 +3,7 @@
 = {Navigator} command comparison
 
 [role="_abstract"]
-The {Navigator} commands run familiar Ansible CLI commands in passthrough mode. You can use all of the subcommands and options allowed in the related Ansible CLI command. Use `ansible-navigator --help` for details.
+The {Navigator} commands run familiar Ansible CLI commands in `-m stdout` mode. You can use all of the subcommands and options allowed in the related Ansible CLI command. Use `ansible-navigator --help` for details.
 
 .Comparing {Navigator} and Ansible CLI commands table
 [options="header"]

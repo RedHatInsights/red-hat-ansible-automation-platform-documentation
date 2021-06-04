@@ -6,12 +6,12 @@
 
 [role="_abstract"]
 
-{Navigator} is a command line, developer-focused tool with a textual user interface that allows you to:
+{Navigator} is a command line, content creator focused tool with a text-based user interface that allows you to:
 
 * Launch and watch jobs and playbooks.
 * Share stored, completed playbook and job run artifacts in JSON format.
 * Browse, introspect, and update multiple {ExecEnvName}.
-* Browse your file-based inventory. 
+* Browse your file-based inventory.
 * Render Ansible module documentation and extract examples you can use in your playbooks.
 
 == Why use {Navigator}?

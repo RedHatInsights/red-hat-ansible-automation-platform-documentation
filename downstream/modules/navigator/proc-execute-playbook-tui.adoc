@@ -3,11 +3,11 @@
 
 
 
-= Executing a playbook from the {Navigator} textual user interface
+= Executing a playbook from the {Navigator} text-based user interface
 
 [role="_abstract"]
 
-You can run Ansible playbooks with the {Navigator} textual user interface to follow the execution of the tasks and delve into the results of each task.
+You can run Ansible playbooks with the {Navigator} text-based user interface to follow the execution of the tasks and delve into the results of each task.
 
 .Prerequisites
 
@@ -21,11 +21,13 @@ You can run Ansible playbooks with the {Navigator} textual user interface to fol
 ```
 $ ansible-navigator
 ```
++
+You can optionally type `ansible-navigator run simple-playbook.yml` to directly run the playbook.
 
 . Run the playbook.
 +
 ```
-$ :run simple_playbook.yml -m interactive
+$ :run simple_playbook.yml
 ```
 
 . Verify or add the inventory and any other command line parameters.
@@ -61,7 +63,7 @@ $ :run simple_playbook.yml -m interactive
 ```
 PLAY [localhost:2] ***************************************************************************************************
 TASK [Check whether make is installed] *******************************************************************************
-OK: [localhost] 1 versions of make are installed!                                                                     
+OK: [localhost] 1 versions of make are installed!
  0│---
  1│duration: 0.076167
  2│end: '2021-04-29T20:39:29.240341'
@@ -85,14 +87,14 @@ OK: [localhost] 1 versions of make are installed!
 . Optionally, type `:doc` bring up the documentation for the module or plugin used in the task.
 +
 ```
-0│---                                                                                              ▒
- 1│doc:                                                                                             ▒
- 2│  author:                                                                                        ▒
- 3│  - Dag Wieers (@dagwieers)                                                                      ▒
- 4│  - Michael DeHaan                                                                               ▒
- 5│  collection: ansible.builtin                                                                    ▒
- 6│  description:                                                                                   ▒
- 7│  - This module prints statements during execution and can be useful for debugging               ▒
+0│---
+ 1│doc:
+ 2│  author:
+ 3│  - Dag Wieers (@dagwieers)
+ 4│  - Michael DeHaan
+ 5│  collection: ansible.builtin
+ 6│  description:
+ 7│  - This module prints statements during execution and can be useful for debugging  
  8│    variables or expressions without necessarily halting the playbook.
  9│  - Useful for debugging together with the 'when:' directive.
 10│  - This module is also supported for Windows targets.
