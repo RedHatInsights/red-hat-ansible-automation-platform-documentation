@@ -3,11 +3,11 @@
 
 
 
-= Reviewing inventory from the {Navigator} textual user interface
+= Reviewing inventory from the {Navigator} text-based user interface
 
 [role="_abstract"]
 
-You can review Ansible inventories with the {Navigator} textual user interface in interactive mode and delve into groups and hosts for more details.
+You can review Ansible inventories with the {Navigator} text-based user interface in interactive mode and delve into groups and hosts for more details.
 
 .Prerequisites
 
@@ -21,6 +21,8 @@ You can review Ansible inventories with the {Navigator} textual user interface i
 ```
 $ ansible-navigator
 ```
++
+You can optionally type `ansible-navigator inventory -i simple_inventory.yml` from the command line to directly view the inventory.
 
 * Review the inventory.
 +
@@ -53,7 +55,7 @@ $ ansible-navigator
 * Type the number corresponding to the host you want to delve into, or type `:<number>` for numbers greater than 9.
 +
 ```
-[node-1]                                                                                                             
+[node-1]
 0│---
 1│ansible_host: node-1.example.com
 2│inventory_hostname: node-1
