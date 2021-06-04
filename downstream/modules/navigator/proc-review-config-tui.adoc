@@ -3,15 +3,12 @@
 
 
 
-= Reviewing your Ansible configuration from the {Navigator} textual user interface
+= Reviewing your Ansible configuration from the {Navigator} text-based user interface
 
 [role="_abstract"]
 
-You can review your Ansible configuration with the {Navigator} textual user interface in interactive mode and delve into the settings.
+You can review your Ansible configuration with the {Navigator} text-base user interface in interactive mode and delve into the settings. {Navigator} pulls in the results from an accessible Ansible configuration file, or returns the defaults if no configuration file is present.
 
-.Prerequisites
-
-* A valid Ansible configuration file.
 
 .Procedure
 
@@ -21,6 +18,8 @@ You can review your Ansible configuration with the {Navigator} textual user inte
 ```
 $ ansible-navigator
 ```
++
+You can optionally type `ansible-navigator config` from the command line to directly access the Ansible configuration settings.
 
 . Review the Ansible configuration.
 +
@@ -47,6 +46,8 @@ $ ansible-navigator
  16│CACHE_PLUGIN_PREFIX                  True default default                         ansible_facts
 
 ```
++
+Some values reflect settings from within the {ExecEnvName} needed for the {ExecEnvName} to function.  These display as non-default settings you cannot set in your Ansible configuration file.
 
 . Type the number corresponding to the setting you want to delve into, or type `:<number>` for numbers greater than 9.
 +

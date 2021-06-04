@@ -9,7 +9,7 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-As a content developer, you can review your Ansible configuration with {Navigator} and interactively delve into settings.
+As a content creator, you can review your Ansible configuration with {Navigator} and interactively delve into settings.
 
 include::navigator/proc-review-config-tui.adoc[leveloffset=+1]
 
