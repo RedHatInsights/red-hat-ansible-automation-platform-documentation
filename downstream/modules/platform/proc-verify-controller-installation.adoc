@@ -20,7 +20,7 @@ The {ControllerName} server is accessible from port 80 (*https://<TOWER_SERVER_N
 
 [IMPORTANT]
 ====
-If the installation of Tower fails and you are a customer who has purchased a valid license for {PlatformName}, please contact Ansible via the Red Hat Customer portal at https://access.redhat.com/.
+If the installation fails and you are a customer who has purchased a valid license for {PlatformName}, please contact Ansible via the Red Hat Customer portal at https://access.redhat.com/.
 ====
 
 Your {ControllerName} is now ready for initial configuration.

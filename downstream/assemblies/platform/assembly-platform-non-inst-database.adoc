@@ -21,12 +21,13 @@ include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=3]
 include::platform/ref-setup-script-args.adoc[leveloffset=3]
 include::platform/proc-running-setup-script.adoc[leveloffset=3]
 include::platform/proc-verify-controller-installation.adoc[leveloffset=3]
+include::platform/proc-verify-hub-installation.adoc[leveloffset=3]
 
 [role="_additional-resources"]
 ==  Next steps
 
-* Review xref:assembly-configuring-proxy-support.adoc if setting up {ControllerName} with a proxy server.
-* See xref:assembly-controlling-data-collection.adoc to manage {ControllerName} data analytics you share with Red Hat.
+* Review _Configuring proxy support for {PlatformName}_ if setting up {ControllerName} with a proxy server.
+* See _Managing usability analytics and data collection from {ControllerName}_ for information on controlling what information you share with Red Hat.
 * See the link:https://docs.ansible.com/ansible-tower/latest/html/quickstart/index.html[Ansible Tower Quick Setup Guide] to learn more about using {ControllerName}.
 * For complete {HubName} configuration documentation, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/[Ansible Automation Platform] product documentation.
 
