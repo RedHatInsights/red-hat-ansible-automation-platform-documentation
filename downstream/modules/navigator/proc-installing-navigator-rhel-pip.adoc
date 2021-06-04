@@ -1,0 +1,119 @@
+
+[id="proc-installing-navigator-rhel-pip_{context}"]
+
+
+= Installing {Navigator} on RHEL with pip
+
+
+[role="_abstract"]
+
+You can install {Navigator} on Red Hat Enterprise Linux (RHEL) with `pip`.
+
+.Prerequisites
+
+* You have installed the prerequisites for RHEL.
+* You have Ansible or {ExecEnvNameStart} installed.
+
+
+.Procedure
+
+. Install {Navigator}:
++
+```
+$ pip install ansible-navigator
+```
++
+
+. Alternately, for offline access:
+.. Download {Navigator} and copy the package to the offline system:
++
+```
+$ pip3 download ansible-navigator -d .
+
+ansible-navigator-demo](main)$ pip3 download ansible-navigator -d .
+Collecting ansible-navigator
+ Using cached ansible_navigator-0.7.0-py3-none-any.whl (197 kB)
+Collecting onigurumacffi
+ Using cached onigurumacffi-1.1.0-cp36-abi3-manylinux1_x86_64.whl (536 kB)
+Collecting pyyaml
+ Using cached PyYAML-5.4.1-cp39-cp39-manylinux1_x86_64.whl (630 kB)
+Collecting ansible-runner<3,>=2a
+ Using cached ansible_runner-2.0.0a4-py3-none-any.whl (98 kB)
+Collecting jinja2
+ Using cached Jinja2-3.0.1-py3-none-any.whl (133 kB)
+Collecting pexpect>=4.5
+ Using cached pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+Collecting python-daemon
+ Using cached python_daemon-2.3.0-py2.py3-none-any.whl (35 kB)
+Collecting six
+ Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting ptyprocess>=0.5
+ Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting MarkupSafe>=2.0
+ Using cached MarkupSafe-2.0.1-cp39-cp39-manylinux2010_x86_64.whl (30 kB)
+Collecting cffi>=1
+ Using cached cffi-1.14.5-cp39-cp39-manylinux1_x86_64.whl (406 kB)
+Collecting pycparser
+ Using cached pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Collecting setuptools
+ Using cached setuptools-57.0.0-py3-none-any.whl (821 kB)
+Collecting lockfile>=0.10
+ Using cached lockfile-0.12.2-py2.py3-none-any.whl (13 kB)
+Collecting docutils
+ Using cached docutils-0.17.1-py2.py3-none-any.whl (575 kB)
+Saved ./ansible_navigator-0.7.0-py3-none-any.whl
+Saved ./ansible_runner-2.0.0a4-py3-none-any.whl
+Saved ./pexpect-4.8.0-py2.py3-none-any.whl
+Saved ./ptyprocess-0.7.0-py2.py3-none-any.whl
+Saved ./Jinja2-3.0.1-py3-none-any.whl
+Saved ./MarkupSafe-2.0.1-cp39-cp39-manylinux2010_x86_64.whl
+Saved ./onigurumacffi-1.1.0-cp36-abi3-manylinux1_x86_64.whl
+Saved ./cffi-1.14.5-cp39-cp39-manylinux1_x86_64.whl
+Saved ./pycparser-2.20-py2.py3-none-any.whl
+Saved ./python_daemon-2.3.0-py2.py3-none-any.whl
+Saved ./lockfile-0.12.2-py2.py3-none-any.whl
+Saved ./docutils-0.17.1-py2.py3-none-any.whl
+Saved ./PyYAML-5.4.1-cp39-cp39-manylinux1_x86_64.whl
+Saved ./six-1.16.0-py2.py3-none-any.whl
+Saved ./setuptools-57.0.0-py3-none-any.whl
+Successfully downloaded ansible-navigator ansible-runner pexpect ptyprocess jinja2 MarkupSafe
+ onigurumacffi cffi pycparser python-daemon lockfile docutils pyyaml six setuptools
+```
++
+
+.. Install on the offline system:
++
+```
+$ pip3 install ./ansible_navigator-0.7.0-py3-none-any.whl
+
+Defaulting to user installation because normal site-packages is not writeable
+Processing ./ansible_navigator-0.7.0-py3-none-any.whl
+Requirement already satisfied: ansible-runner<3,>=2a in /home/samccann/.local/lib/python3.9/site-packages (from ansible-navigator==0.7.0) (2.0.0a4)
+Requirement already satisfied: jinja2 in /home/samccann/.local/lib/python3.9/site-packages (from ansible-navigator==0.7.0) (2.11.3)
+Requirement already satisfied: pyyaml in /home/samccann/.local/lib/python3.9/site-packages (from ansible-navigator==0.7.0) (5.4.1)
+Requirement already satisfied: onigurumacffi in /home/samccann/.local/lib/python3.9/site-packages (from ansible-navigator==0.7.0) (1.1.0)
+Requirement already satisfied: python-daemon in /home/samccann/.local/lib/python3.9/site-packages (from ansible-runner<3,>=2a->ansible-navigator==0.7.0) (2.3.0)
+Requirement already satisfied: six in /usr/lib/python3.9/site-packages (from ansible-runner<3,>=2a->ansible-navigator==0.7.0) (1.15.0)
+Requirement already satisfied: pexpect>=4.5 in /usr/lib/python3.9/site-packages (from ansible-runner<3,>=2a->ansible-navigator==0.7.0) (4.8.0)
+Requirement already satisfied: MarkupSafe>=0.23 in /usr/lib64/python3.9/site-packages (from jinja2->ansible-navigator==0.7.0) (1.1.1)
+Requirement already satisfied: cffi>=1 in /usr/lib64/python3.9/site-packages (from onigurumacffi->ansible-navigator==0.7.0) (1.14.5)
+Requirement already satisfied: pycparser in /usr/lib/python3.9/site-packages (from cffi>=1->onigurumacffi->ansible-navigator==0.7.0) (2.20)
+Requirement already satisfied: ply==3.11 in /usr/lib/python3.9/site-packages (from pycparser->cffi>=1->onigurumacffi->ansible-navigator==0.7.0) (3.11)
+Requirement already satisfied: setuptools in /home/samccann/.local/lib/python3.9/site-packages (from python-daemon->ansible-runner<3,>=2a->ansible-navigator==0.7.0) (56.2.0)
+Requirement already satisfied: docutils in /home/samccann/.local/lib/python3.9/site-packages (from python-daemon->ansible-runner<3,>=2a->ansible-navigator==0.7.0) (0.17.1)
+Requirement already satisfied: lockfile>=0.10 in /home/samccann/.local/lib/python3.9/site-packages (from python-daemon->ansible-runner<3,>=2a->ansible-navigator==0.7.0) (0.12.2)
+Installing collected packages: ansible-navigator
+Successfully installed ansible-navigator-0.7.0
+```
++
+
+
+.Verification
+
+* Verify your {Navigator} installation:
++
+```
+$ ansible-navigator --help
+```
+
+You should see the help output describing the main functions of {Navigator}.
