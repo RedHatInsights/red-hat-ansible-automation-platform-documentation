@@ -2,7 +2,7 @@
 ifdef::context[:parent-context: {context}]
 
 
-[id="assembly-ansible-navigator_{context}"]
+[id="assembly-intro-navigator_{context}"]
 = Ansible content navigator
 
 :context: intro-ansible-navigator
