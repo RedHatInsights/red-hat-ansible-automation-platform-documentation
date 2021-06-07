@@ -5,7 +5,7 @@ ifdef::context[:parent-context: {context}]
 [id="assembly-review-inventory-navigator_{context}"]
 = Review inventories with {Navigator}
 
-:context: review inventory-navigator
+:context: review-inventory-navigator
 
 [role="_abstract"]
 
