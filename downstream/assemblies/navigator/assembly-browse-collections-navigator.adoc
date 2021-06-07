@@ -9,8 +9,9 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-As a content creator, you can browse your Ansible collections with {Navigator} and interactively delve into each collection developed locally or within {ExecEnvNameStart}. 
+As a content creator, you can browse your Ansible collections with {Navigator} and interactively delve into each collection developed locally or within {ExecEnvNameStart}.
 
+include::navigator/con-navigator-collections.adoc[leveloffset=+1]
 include::navigator/proc-browse-collections-tui.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]
