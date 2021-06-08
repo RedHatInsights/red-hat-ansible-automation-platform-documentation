@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-You can browse Ansible collections with the {Navigator} text-base user interface in interactive mode and delve into each collection. {Navigator} shows collections within the current project directory and those available in the {ExecEnvName}
+You can browse Ansible collections with the {Navigator} text-based user interface in interactive mode and delve into each collection. {Navigator} shows collections within the current project directory and those available in the {ExecEnvName}
 
 .Prerequisites
 
