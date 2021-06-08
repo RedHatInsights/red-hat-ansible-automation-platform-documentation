@@ -3,7 +3,7 @@
 
 
 
-= Reviewing inventory from the {Navigator} text-based user interface
+= Reviewing inventory from {Navigator}
 
 [role="_abstract"]
 

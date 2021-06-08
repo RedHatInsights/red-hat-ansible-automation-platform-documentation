@@ -3,7 +3,7 @@
 
 
 
-= Executing a playbook from the {Navigator} text-based user interface
+= Executing a playbook from {Navigator}
 
 [role="_abstract"]
 
@@ -94,7 +94,7 @@ OK: [localhost] 1 versions of make are installed!
  4│  - Michael DeHaan
  5│  collection: ansible.builtin
  6│  description:
- 7│  - This module prints statements during execution and can be useful for debugging  
+ 7│  - This module prints statements during execution and can be useful for debugging
  8│    variables or expressions without necessarily halting the playbook.
  9│  - Useful for debugging together with the 'when:' directive.
 10│  - This module is also supported for Windows targets.

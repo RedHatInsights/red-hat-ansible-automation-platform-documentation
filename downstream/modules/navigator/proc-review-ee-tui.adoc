@@ -3,11 +3,11 @@
 
 
 
-= Reviewing {ExecEnvNameStart} from the {Navigator} textual user interface
+= Reviewing {ExecEnvNameStart} from {Navigator}
 
 [role="_abstract"]
 
-You can review your {ExecEnvNameStart} with the {Navigator} textual user interface.
+You can review your {ExecEnvNameStart} with the {Navigator} text-based user interface.
 
 .Prerequisites
 
