@@ -3,11 +3,11 @@
 
 
 
-= Reviewing your Ansible configuration from the {Navigator} text-based user interface
+= Reviewing your Ansible configuration from {Navigator}
 
 [role="_abstract"]
 
-You can review your Ansible configuration with the {Navigator} text-base user interface in interactive mode and delve into the settings. {Navigator} pulls in the results from an accessible Ansible configuration file, or returns the defaults if no configuration file is present.
+You can review your Ansible configuration with the {Navigator} text-based user interface in interactive mode and delve into the settings. {Navigator} pulls in the results from an accessible Ansible configuration file, or returns the defaults if no configuration file is present.
 
 
 .Procedure
