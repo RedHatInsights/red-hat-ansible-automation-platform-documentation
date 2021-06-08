@@ -22,10 +22,9 @@ You can browse Ansible collections with the {Navigator} text-base user interface
 $ ansible-navigator
 ```
 
-. browse the collection. Alternately, you can type `ansible-navigator collections` to directly browse the collections.
+. Browse the collection. Alternately, you can type `ansible-navigator collections` to directly browse the collections.
 +
-[source,bash]
-----
+```
  :collection
  NAME                         VERSION  SHADOWED   TYPE        PATH
  0│amazon.aws                   1.4.1       False   contained   /usr/share/ansible/collections/ansible_collections/amazon/aws/
@@ -36,7 +35,7 @@ $ ansible-navigator
  5│ansible.windows              1.5.0       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/windows/
  6│arista.eos                   2.0.1       False   contained   /usr/share/ansible/collections/ansible_collections/arista/eos/
  < ... output truncated ...>
-----
+```
 
 . Type the number of the collection you want to explore.
 +
