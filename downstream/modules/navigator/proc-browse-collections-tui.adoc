@@ -3,15 +3,15 @@
 
 
 
-= Browsing collections from the {Navigator} textual user interface
+= Browsing collections from {Navigator}
 
 [role="_abstract"]
 
-You can browse Ansible collections with the {Navigator} textual user interface in interactive mode and delve into each collection.
+You can browse Ansible collections with the {Navigator} text-based user interface in interactive mode and delve into each collection. {Navigator} shows collections within the current project directory and those available in the {ExecEnvName}
 
 .Prerequisites
 
-* A locally accessible collection or installed {ExecEnvNam}.
+* A locally accessible collection or installed {ExecEnvName}.
 
 .Procedure
 
@@ -22,7 +22,7 @@ You can browse Ansible collections with the {Navigator} textual user interface i
 $ ansible-navigator
 ```
 
-. browse the collection.
+. Browse the collection. Alternately, you can type `ansible-navigator collections` to directly browse the collections.
 +
 ```
  :collection
