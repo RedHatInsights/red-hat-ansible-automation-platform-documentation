@@ -1,6 +1,6 @@
 
 ifdef::context[:parent-context: {context}]
-
+:imagesdir: images
 
 [id="assembly-review-ee-navigator_{context}"]
 = Review {ExecEnvNameStart} with {Navigator}
