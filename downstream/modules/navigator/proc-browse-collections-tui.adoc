@@ -18,122 +18,83 @@ You can browse Ansible collections with the {Navigator} text-based user interfac
 
 . Start {Navigator}
 +
-```
+----
 $ ansible-navigator
-```
+----
 
 . Browse the collection. Alternately, you can type `ansible-navigator collections` to directly browse the collections.
 +
-```
- :collection
- NAME                         VERSION  SHADOWED   TYPE        PATH
- 0│amazon.aws                   1.4.1       False   contained   /usr/share/ansible/collections/ansible_collections/amazon/aws/
- 1│ansible.netcommon            2.0.2       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/netcommon/
- 2│ansible.posix                1.2.0       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/posix/
- 3│ansible.tower                3.8.2       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/tower/
- 4│ansible.utils                2.1.0       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/utils/
- 5│ansible.windows              1.5.0       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/windows/
- 6│arista.eos                   2.0.1       False   contained   /usr/share/ansible/collections/ansible_collections/arista/eos/
- < ... output truncated ...>
-```
+image::navigator-collection-list.png[]
 
 . Type the number of the collection you want to explore.
 +
-```
+----
 :4
-
-ANSIBLE.UTILS  TYPE         ADDED  DEPRECATED  DESCRIPTION
-0│cli_parse      module       1.0.0       False  Parse cli output or text using a variety of parsers
-1│fact_diff      module       1.0.0       False  Find the difference between currently set facts
-2│from_xml       filter       2.0.2       False  Convert given XML string to native python dictionary.
-3│get_path       lookup       1.0.0       False  Retrieve the value in a variable using a path
-4│get_path       filter       1.0.0       False  Retrieve the value in a variable using a path
-5│index_of       lookup       1.0.0       False  Find the indices of items in a list matching some criteria
-6│index_of       filter       1.0.0       False  Find the indices of items in a list matching some criteria
-7│json           sub_plugins  1.0.0       False  Define configurable options for B(json) sub-plugin of M(ansible.utils.cli_parse) module
-20│xml            sub_plugins  1.0.0       False  Define configurable options for C(xml) sub-plugin of M(ansible.utils.cli_parse) module
-< ... output truncated ...>
-
-```
+----
++
+image::navigator-plugin-list.png[]
 
 . Type the number corresponding to the module you want to delve into.
 +
-```
-:1
-
-ANSIBLE.UTILS.FACT_DIFF: Find the difference between currently set facts
-  0│---
-  1│additional_information: {}
-  2│collection_info:
-  3│  authors:
-  4│  - Ansible Community
-  5│  dependencies: {}
-  6│  description: Ansible Collection with utilities to ease the management, manipulation,
-  7│    and validation of data within a playbook
-  8│  documentation: null
-  9│  homepage: null
- 10│  issues: null
- 11│  license: []
- 12│  license_file: LICENSE
- 13│  name: ansible.utils
- 14│  namespace: ansible
- 15│  path: /usr/share/ansible/collections/ansible_collections/ansible/utils/
- 16│  readme: README.md
- 17│  repository: https://github.com/ansible-collections/ansible.utils
- 18│  shadowed_by: []
- 19│  tags:
- 20│  - linux
- 21│  - networking
- < ... output truncated ...>
-
-```
+----
+ANSIBLE.UTILS.IP_ADDRESS: Test if something in an IP address
+ 0│---
+ 1│additional_information: {}
+ 2│collection_info:
+ 3│  authors:
+ 4│  - Ansible Community
+ 5│  dependencies: {}
+ 6│  description: Ansible Collection with utilities to ease the management, manipulation,
+ 7│    and validation of data within a playbook
+ 8│  documentation: null
+ 9│  homepage: null
+10│  issues: null
+11│  license: []
+12│  license_file: LICENSE
+13│  name: ansible.utils
+14│  namespace: ansible
+15│  path:/usr/share/ansible/collections/ansible_collections/ansible/utils/
+16│  readme: README.md
+<... output truncated...>
+----
 
 . Optionally, jump to the documentation examples for this module.
 +
-```
+----
 :{{ examples }}
 
 0│
- 1│- ansible.builtin.set_fact:
- 2│    before:
- 3│      a:
- 4│        b:
- 5│          c:
- 6│            d:
- 7│            - 0
- 8│            - 1
- 9│    after:
-10│      a:
-11│        b:
-12│          c:
-13│            d:
-14│            - 2
-15│            - 3
-```
+1│
+2│#### Simple examples
+3│
+4│- name: Check if 10.1.1.1 is a valid IP address
+5│  ansible.builtin.set_fact:
+6│    data: "{{ '10.1.1.1' is ansible.utils.ip_address }}"
+7│
+8│# TASK [Check if 10.1.1.1 is a valid IP address] *********************
+9│# ok: [localhost] => {
+10│#     "ansible_facts": {
+11│#         "data": true
+12│#     },
+13│#     "changed": false
+14│# }
+15│
+----
 
 . Optionally, open the example in your editor to copy it into a playbook.
-
-```
++
+----
 :open
-```
-
+----
++
+image::navigator-vscode-example.png[]
 
 .Verification
 
-*  browse the collection output.
-
+*  Browse the collection list.
 +
-```
-NAME                         VERSION  SHADOWED   TYPE        PATH
-0│amazon.aws                   1.4.1       False   contained   /usr/share/ansible/collections/ansible_collections/amazon/aws/
-1│ansible.netcommon            2.0.2       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/netcommon/
-2│ansible.posix                1.2.0       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/posix/
-3│ansible.tower                3.8.2       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/tower/
-4│ansible.utils                2.1.0       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/utils/
-5│ansible.windows              1.5.0       False   contained   /usr/share/ansible/collections/ansible_collections/ansible/windows/
-6│arista.eos                   2.0.1       False   contained   /usr/share/ansible/collections/ansible_collections/arista/eos/
-< ... output truncated ...>
-```
+image::navigator-collection-list.png[]
+
 
 [role="_additional-resources"]
 .Additional resources
