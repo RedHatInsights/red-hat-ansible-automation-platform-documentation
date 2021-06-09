@@ -18,59 +18,59 @@ You can review Ansible inventories with the {Navigator} text-based user interfac
 
 . Start {Navigator}
 +
-```
+----
 $ ansible-navigator
-```
+----
 +
 You can optionally type `ansible-navigator inventory -i simple_inventory.yml` from the command line to directly view the inventory.
 
 * Review the inventory.
 +
-```
+----
  :inventory -i simple_inventory.yml
 
    TITLE            DESCRIPTION
 0│Browse groups    Explore each inventory group and group members members
 1│Browse hosts     Explore the inventory with a list of all hosts
-```
+----
 
 * Type `0` to brows the groups.
 +
-```
-  NAME                                          TAXONOMY                                 TYPE
-0│general                                       all                                      group
-1│nodes                                         all                                      group
-2│ungrouped                                     all                                      group
-```
+----
+  NAME               TAXONOMY                      TYPE
+0│general            all                           group
+1│nodes              all                           group
+2│ungrouped          all                           group
+----
 
 * Type the number corresponding to the group you want to delve into.
 +
-```
-  NAME                                TAXONOMY                                            TYPE
-0│node-0                              all▸nodes                                           host
-1│node-1                              all▸nodes                                           host
-2│node-2                              all▸nodes                                           host
-```
+----
+  NAME              TAXONOMY                        TYPE
+0│node-0            all▸nodes                       host
+1│node-1            all▸nodes                       host
+2│node-2            all▸nodes                       host
+----
 
 * Type the number corresponding to the host you want to delve into, or type `:<number>` for numbers greater than 9.
 +
-```
+----
 [node-1]
 0│---
 1│ansible_host: node-1.example.com
 2│inventory_hostname: node-1
-```
+----
 
 .Verification
 
 *  Review the inventory output.
 
 +
-```
-  TITLE                  DESCRIPTION
-0│Browse groups          Explore each inventory group and group members members
-1│Browse hosts           Explore the inventory with a list of all hosts
-```
+----
+  TITLE            DESCRIPTION
+0│Browse groups   Explore each inventory group and group members members
+1│Browse hosts    Explore the inventory with a list of all hosts
+----
 
 [role="_additional-resources"]
 .Additional resources
