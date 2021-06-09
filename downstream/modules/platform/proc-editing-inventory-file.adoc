@@ -20,7 +20,7 @@ You can use the {PlatformName} installer inventory file to specify your installa
 * For *clustered installations*: If you are creating a clustered setup, you must replace `localhost` with the hostname or IP address of all instances. All nodes/instances must be able to reach any others using this hostname or address. In other words, you cannot use the `localhost ansible_connection=local` on one of the nodes AND all of the nodes should use the same format for the host names.
 ====
 
-[IMPORTNANT]
+[IMPORTANT]
 ====
 Root access to remote machines is required. With Ansible, this can be achieved in different ways:
 * `ansible_user=root ansible_ssh_pass=”your_password_here”` inventory host or group variables
