@@ -21,9 +21,9 @@ You can install {Navigator} on Red Hat Enterprise Linux (RHEL) from a tarball.
 
 . Install {Navigator}:
 +
-```
+----
 $ tar -zxvf  ansible-navigator
-```
+----
 +
 
 
@@ -31,8 +31,8 @@ $ tar -zxvf  ansible-navigator
 
 * Verify your {Navigator} installation:
 +
-```
+----
 $ ansible-navigator --help
-```
+----
 
 You should see the help output describing the main functions of {Navigator}.
