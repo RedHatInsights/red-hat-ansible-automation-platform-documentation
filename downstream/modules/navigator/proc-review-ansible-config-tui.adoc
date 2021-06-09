@@ -1,0 +1,68 @@
+
+[id="proc-review-config-tui_{context}"]
+
+
+
+= Reviewing your Ansible configuration from {Navigator}
+
+[role="_abstract"]
+
+You can review your Ansible configuration with the {Navigator} text-based user interface in interactive mode and delve into the settings. {Navigator} pulls in the results from an accessible Ansible configuration file, or returns the defaults if no configuration file is present.
+
+
+.Procedure
+
+
+. Start {Navigator}
++
+----
+$ ansible-navigator
+----
++
+You can optionally type `ansible-navigator config` from the command line to directly access the Ansible configuration settings.
+
+. Review the Ansible configuration.
++
+----
+ :config
+----
++
+image::navigator-ansible-config.png[]
++
+Some values reflect settings from within the {ExecEnvName} needed for the {ExecEnvName} to function.  These display as non-default settings you cannot set in your Ansible configuration file.
+
+. Type the number corresponding to the setting you want to delve into, or type `:<number>` for numbers greater than 9.
++
+----
+CACHE PLUGIN (current: jsonfile)  (default: memory)
+ 0│---
+ 1│current: jsonfile
+ 2│default: memory
+ 3│description: Chooses which cache plugin to use, the default 'memory' is
+     ephemeral.
+ 4│env:
+ 5│- name: ANSIBLE_CACHE_PLUGIN
+ 6│ini:
+ 7│- key: fact_caching
+ 8│  section: defaults
+ 9│name: Persistent Cache plugin
+10│option: CACHE_PLUGIN
+11│source: env
+12│via: ANSIBLE_CACHE_PLUGIN
+13│yaml:
+14│  key: facts.cache.plugin
+----
+
+The output shows the current `setting` as well as the `default`. Note the `source` in this example is `env` since the setting comes from the {ExecEnvName}.
+
+.Verification
+
+*  Review the configuration output.
++
+image::navigator-ansible-config.png[]
+
+[role="_additional-resources"]
+.Additional resources
+
+* https://docs.ansible.com/ansible/latest/cli/ansible-config.html[ansible-config].
+* https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html[Introduction to Ansible configuration].

@@ -3,7 +3,7 @@
 
 
 
-= Reviewing playbook results with a {Navigator} artifact file
+= Reviewing playbook results with an {Navigator} artifact file
 
 [role="_abstract"]
 
@@ -18,16 +18,13 @@
 
 * Start {Navigator} with the artifact file
 +
-```
+----
 $ ansible-navigator replay simple_playbook_artifact.json
-```
+----
 
 . Review the playbook results that match when the playbook ran.
 +
-```
-  PLAY NAME   OK  CHANGED   UNREACHABLE   FAILED  SKIPPED   IGNORED   IN PROGRESS   TASK COUNT            % COMPLETED
-0│localhost    3        0             0        0        0         0             0            3       100% ▇▇▇▇▇▇▇▇▇▇▇
-```
+image::navigator-artifact-replay.png[]
 
 You can now type the number next to the plays and tasks to step into each to review the results, as you would after executing the playbook.
 
