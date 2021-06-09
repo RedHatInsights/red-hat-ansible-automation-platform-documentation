@@ -1,0 +1,13 @@
+// Module included in the following assemblies:
+// assembly-automation-savings-planner.adoc
+
+
+[id="proc-link-plan-job-template_{context}"]
+
+= Link a savings plan to a job template
+
+You can associate a job template to a savings plan to allow {InsightsShort} to provide a more accurate time and cost savings estimate for completing this savings plan.
+
+. Navigate to *Red Hat Insights* > *Savings Planner*.
+. Click image:images/ellipsis.png[More,10,25] > *Link Template*.
+. Click *Save*.
