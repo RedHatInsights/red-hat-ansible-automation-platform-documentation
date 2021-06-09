@@ -1,0 +1,21 @@
+// The master.adoc file for The Modular Documentation Reference Guide
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= EARLY ACCESS Ansible Navigator Creator Guide
+
+include::navigator/assembly-intro-navigator.adoc[]
+
+include::navigator/assembly-installing-on-rhel.adoc[]
+
+include::navigator/assembly-review-ee-navigator.adoc[]
+
+include::navigator/assembly-browse-collections-navigator.adoc[]
+
+include::navigator/assembly-review-inventory-navigator.adoc[]
+
+include::navigator/assembly-execute-playbook-navigator.adoc[]
+
+include::navigator/assembly-review-config-navigator.adoc[]
