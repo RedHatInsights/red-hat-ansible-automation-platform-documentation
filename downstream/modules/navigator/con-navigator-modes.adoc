@@ -14,90 +14,10 @@ text-based user interface mode:: Provides an interactive, text-based interface t
 
 If you use the `-m stdout` subcommand, {Navigator} uses the familiar Ansible commands, such as `ansible-playbook` within {ExecEnvName}, or on your local development environment. This mode allows you to continue using commands you are familiar with for quick tasks.
 
-----
-$ ansible-navigator --help
-usage: ansible-navigator [-h] [--version] [--cdcp COLLECTION_DOC_CACHE_PATH] [--ce CONTAINER_ENGINE] [--dc DISPLAY_COLOR] [--ecmd EDITOR_COMMAND]
-                         [--econ EDITOR_CONSOLE] [--ee EXECUTION_ENVIRONMENT] [--eei EXECUTION_ENVIRONMENT_IMAGE]
-                         [--eev EXECUTION_ENVIRONMENT_VOLUME_MOUNTS [EXECUTION_ENVIRONMENT_VOLUME_MOUNTS ...]] [--la LOG_APPEND] [--lf LOG_FILE]
-                         [--ll LOG_LEVEL] [-m MODE] [--osc4 OSC4] [--penv PASS_ENVIRONMENT_VARIABLE [PASS_ENVIRONMENT_VARIABLE ...]]
-                         [--pp PULL_POLICY] [--senv SET_ENVIRONMENT_VARIABLE [SET_ENVIRONMENT_VARIABLE ...]]
-                         {subcommand} --help ...
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --version             show program's version number and exit
-  --cdcp COLLECTION_DOC_CACHE_PATH, --collection-doc-cache-path COLLECTION_DOC_CACHE_PATH
-                        The path to collection doc cache (default: '/home/samccann/.cache/ansible-navigator/collection_doc_cache.db')
-  --ce CONTAINER_ENGINE, --container-engine CONTAINER_ENGINE
-                        Specify the container engine (auto=podman then docker) (choices: 'auto', 'podman' or 'docker') (default: 'auto')
-  --dc DISPLAY_COLOR, --display-color DISPLAY_COLOR
-                        Enable the use of color in the display (choices: 'true' or 'false') (default: 'true')
-  --ecmd EDITOR_COMMAND, --editor-command EDITOR_COMMAND
-                        Specify the editor command (default: '/usr/bin/nano {filename}')
-  --econ EDITOR_CONSOLE, --editor-console EDITOR_CONSOLE
-                        Specify if the editor is console based (choices: 'true' or 'false') (default: 'true')
-  --ee EXECUTION_ENVIRONMENT, --execution-environment EXECUTION_ENVIRONMENT
-                        Enable or disable the use of an execution environment (choices: 'true' or 'false') (default: 'true')
-  --eei EXECUTION_ENVIRONMENT_IMAGE, --execution-environment-image EXECUTION_ENVIRONMENT_IMAGE
-                        Specify the name of the execution environment image (default: 'quay.io/ansible/ansible-runner:devel')
-  --eev EXECUTION_ENVIRONMENT_VOLUME_MOUNTS [EXECUTION_ENVIRONMENT_VOLUME_MOUNTS ...], --execution-environment-volume-mounts EXECUTION_ENVIRONMENT_VOLUME_MOUNTS [EXECUTION_ENVIRONMENT_VOLUME_MOUNTS ...]
-                        Specify volume to be bind mounted within an execution environment (--eev /home/user/test:/home/user/test:Z)
-  --la LOG_APPEND, --log-append LOG_APPEND
-                        Specify if log messages should be appended to an existing log file, otherwise a new log file will be created per session
-                        (choices: 'true' or 'false') (default: 'true')
-  --lf LOG_FILE, --log-file LOG_FILE
-                        Specify the full path for the ansible-navigator log file (default: '/home/samccann/ansible-navigator-demo/ansible-
-                        navigator.log')
-  --ll LOG_LEVEL, --log-level LOG_LEVEL
-                        Specify the ansible-navigator log level (choices: 'debug', 'info', 'warning', 'error' or 'critical') (default: 'warning')
-  -m MODE, --mode MODE  Specify the user-interface mode (choices: 'stdout' or 'interactive') (default: 'interactive')
-  --osc4 OSC4, --osc4 OSC4
-                        Enable or disable terminal color changing support with OSC 4 (choices: 'true' or 'false') (default: 'true')
-  --penv PASS_ENVIRONMENT_VARIABLE [PASS_ENVIRONMENT_VARIABLE ...], --pass-environment-variable PASS_ENVIRONMENT_VARIABLE [PASS_ENVIRONMENT_VARIABLE ...]
-                        Specify an exiting environment variable to be passed through to and set within the execution environment (--penv MY_VAR)
-  --pp PULL_POLICY, --pull-policy PULL_POLICY
-                        Specify the image pull policy. always:Always pull the image, missing:Pull if not locally available, never:Never pull the
-                        image, tag:if the image tag is 'latest', always pull the image, otherwise pull if not locally available (choices: 'always',
-                        'missing', 'never' or 'tag') (default: 'tag')
-  --senv SET_ENVIRONMENT_VARIABLE [SET_ENVIRONMENT_VARIABLE ...], --set-environment-variable SET_ENVIRONMENT_VARIABLE [SET_ENVIRONMENT_VARIABLE ...]
-                        Specify an environment variable and a value to be set within the execution environment (--senv MY_VAR=42)
-
-Subcommands:
-  {subcommand} --help
-    collections         Explore available collections
-    config              Explore the current ansible configuration
-    doc                 Review documentation for a module or plugin
-    images              Explore execution environment images
-    inventory           Explore an inventory
-    replay              Explore a previous run using a playbook artifact
-    run                 Run a playbook
-    welcome             Start at the welcome page
-----
-
+image::navigator-stdout.png[]
 
 == Text-based user interface mode
 
 The text-based user interface mode provides enhanced interaction with {ExecEnvName}, collections, playbooks, and inventory. This mode is compatible with integrated development environments (IDE), such as Visual Studio Code.
 
-```
-0│## Welcome
- 1│----------------------------------------------------------------------------------------------------------
- 2│
- 3│Some things you can try from here:
- 4│- `:collections`                                          Explore available collections
- 5│- `:config`                                               Explore the current ansible configuration
- 6│- `:doc <plugin>`                                         Review documentation for a module or plugin
- 7│- `:help`                                                 Show the main help page
- 8│- `:images`                                               Explore execution environment images
- 9│- `:inventory -i <inventory>`                             Explore an inventory
-10│- `:log`                                                  Review the application log
-11│- `:open`                                                 Open current page in the editor
-12│- `:replay`                                               Explore a previous run using a playbook artifact
-13│- `:run <playbook> -i <inventory>`                        Run a playbook in interactive mode
-14│- `:quit`                                                 Quit the application
-15│
-16│happy automating,
-17│
-18│-winston
-
-```
+image::navigator-welcome.png[]

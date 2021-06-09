@@ -1,7 +1,6 @@
 
 ifdef::context[:parent-context: {context}]
-
-
+:imagesdir: images
 [id="assembly-execute-playbooks-navigator_{context}"]
 = Execute Ansible playbooks with {Navigator}
 
