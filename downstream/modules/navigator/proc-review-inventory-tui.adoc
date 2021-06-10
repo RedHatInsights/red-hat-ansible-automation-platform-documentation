@@ -24,7 +24,7 @@ $ ansible-navigator
 +
 You can optionally type `ansible-navigator inventory -i simple_inventory.yml` from the command line to directly view the inventory.
 
-* Review the inventory.
+. Review the inventory.
 +
 ----
  :inventory -i simple_inventory.yml
@@ -34,7 +34,7 @@ You can optionally type `ansible-navigator inventory -i simple_inventory.yml` fr
 1│Browse hosts     Explore the inventory with a list of all hosts
 ----
 
-* Type `0` to brows the groups.
+. Type `0` to brows the groups.
 +
 ----
   NAME               TAXONOMY                      TYPE
@@ -43,7 +43,7 @@ You can optionally type `ansible-navigator inventory -i simple_inventory.yml` fr
 2│ungrouped          all                           group
 ----
 
-* Type the number corresponding to the group you want to delve into.
+. Type the number corresponding to the group you want to delve into.
 +
 ----
   NAME              TAXONOMY                        TYPE
@@ -52,7 +52,7 @@ You can optionally type `ansible-navigator inventory -i simple_inventory.yml` fr
 2│node-2            all▸nodes                       host
 ----
 
-* Type the number corresponding to the host you want to delve into, or type `:<number>` for numbers greater than 9.
+. Type the number corresponding to the host you want to delve into, or type `:<number>` for numbers greater than 9.
 +
 ----
 [node-1]

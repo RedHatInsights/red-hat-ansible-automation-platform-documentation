@@ -34,23 +34,17 @@ Some values reflect settings from within the {ExecEnvName} needed for the {ExecE
 . Type the number corresponding to the setting you want to delve into, or type `:<number>` for numbers greater than 9.
 +
 ----
-CACHE PLUGIN (current: jsonfile)  (default: memory)
+ANSIBLE COW ACCEPTLIST (current: ['bud-frogs', 'bunny', 'cheese']) (default: 
  0│---
- 1│current: jsonfile
- 2│default: memory
- 3│description: Chooses which cache plugin to use, the default 'memory' is
-     ephemeral.
- 4│env:
- 5│- name: ANSIBLE_CACHE_PLUGIN
- 6│ini:
- 7│- key: fact_caching
- 8│  section: defaults
- 9│name: Persistent Cache plugin
-10│option: CACHE_PLUGIN
-11│source: env
-12│via: ANSIBLE_CACHE_PLUGIN
-13│yaml:
-14│  key: facts.cache.plugin
+ 1│current:
+ 2│- bud-frogs
+ 3│- bunny
+ 4│- cheese
+ 5│default:
+ 6│- bud-frogs
+ 7│- bunny
+ 8│- cheese
+ 9│- daemon
 ----
 
 The output shows the current `setting` as well as the `default`. Note the `source` in this example is `env` since the setting comes from the {ExecEnvName}.
