@@ -1,0 +1,36 @@
+
+[id="proc-configuring-known-proxies_{context}"]
+
+= Configuring known proxies
+
+
+[role="_abstract"]
+You can configure a list of "known proxies" that are allowed using the `PROXY_IP_WHITELIST` setting via the settings API. Load balancers and hosts that are not on the list will result in a rejected request.
+
+
+[IMPORTANT]
+====
+* `PROXY_IP_WHITELIST` requires proxies in the list are properly sanitizing header input and correctly setting an ``X-Forwarded-For`` value equal to the real source IP of the client. {ControllerNameStart} can rely on the IP addresses and hostnames in `PROXY_IP_WHITELIST` to provide non-spoofed values for the `X-Forwarded-For` field.
+* Do not configure `HTTP_X_FORWARDED_FOR` as an item in `REMOTE_HOST_HEADERS`unless *all* of the following conditions are satisfied:
+** You are using a proxied environment with ssl termination;
+** The proxy provides sanitization or validation of the `X-Forwarded-For` header to prevent client spoofing;
+** `/etc/tower/conf.d/remote_host_headers.py` defines `PROXY_IP_WHITELIST` that contains only the originating IP addresses of trusted proxies or load balancers.
+====
+
+
+
+.Procedure
+
+. On the {ControllerName} node, open `/etc/tower/conf.d/remote_host_headers.py` using a text editor.
+
+
+
+[role="_additional-resources"]
+.Additional resources
+////
+Optional. Delete if not used.
+////
+* A bulleted list of links to other material closely related to the contents of the procedure module.
+* Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.
+* For more details on writing procedure modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
