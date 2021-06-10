@@ -1,0 +1,44 @@
+
+
+[id="ref-multi-node-cluster-inventory_{context}"]
+
+= Example {PlatformName} multi-node inventory file
+
+
+[role="_abstract"]
+This example describes how you can populate the inventory file for a multi-node cluter installation of {ControllerName}.
+
+[IMPORTANT]
+====
+* You cannot install {ControllerName} and {HubName} on the same node.
+* Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from Private Automation Hub from a different node.
+* Do not use special characters for `pg_password`. It may cause the setup to fail.
+====
+
+
+
+-----
+[tower]
+host1
+host11
+host12
+
+
+[automationhub]
+host2
+
+[database]
+host3
+
+[all:vars]
+ansible_become=true
+
+admin_password='password'
+
+pg_host='dbnode.example.com'
+pg_port='5432'
+
+pg_database='tower'
+pg_username='tower'
+pg_password='password'
+-----

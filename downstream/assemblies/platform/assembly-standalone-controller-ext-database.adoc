@@ -1,0 +1,32 @@
+
+ifdef::context[:parent-context: {context}]
+
+[id="assembly-standalone-controller-ext-database"]
+= Installing {ControllerName} with an external managed database
+
+:context: standalone-controller-ext-database
+
+[role="_abstract"]
+You can use these instructions to install a standalone {ControllerName} server on a single machine configured to communicate with a remote PostgreSQL instance as its database. This remote PostgreSQL can be a server you manage, or can be provided by a cloud service such as Amazon RDS.
+
+== Prerequisites
+
+* You chose and obtained a platform installer
+* You are installing on a machine that meets base system requirements.
+
+include::platform/proc-editing-inventory-file.adoc[leveloffset=3]
+include::platform/ref-single-node-inventory.adoc[leveloffset=3]
+include::platform/ref-setup-script-args.adoc[leveloffset=3]
+include::platform/proc-running-setup-script.adoc[leveloffset=3]
+include::platform/proc-verify-controller-installation.adoc[leveloffset=3]
+
+[role="_additional-resources"]
+==  Next steps
+
+* Review _Configuring proxy support for {PlatformName}_ if setting up {ControllerName} with a proxy server.
+* See _Managing usability analytics and data collection from {ControllerName}_ for information on controlling what information you share with Red Hat.
+* See the link:https://docs.ansible.com/ansible-tower/latest/html/quickstart/index.html[Ansible Tower Quick Setup Guide] to learn more about using {ControllerName}.
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

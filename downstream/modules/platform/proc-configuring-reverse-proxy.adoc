@@ -1,0 +1,25 @@
+
+
+[id="proc-configuring-reverse-proxy_{context}"]
+
+
+
+= Configuring a reverse proxy
+
+[role="_abstract"]
+You can support a reverse proxy server configuring using a header field for `HTTP_X_FORWARDED_FOR`. The ``X-Forwarded-For`` (XFF) HTTP header field identifies the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.
+
+
+.Procedure
+
+. On the {ControllerName} node, open  `remote_host_headers.py` in a text editor:
++
+-----
+$ vi /etc/tower/conf.d/remote_host_headers.py`
+-----
++
+. Setup `REMOTE_HOST_HEADERS` as follows:
++
+-----
+`REMOTE_HOST_HEADERS = ['HTTP_X_FORWARDED_FOR', 'REMOTE_ADDR', 'REMOTE_HOST']`
+-----
