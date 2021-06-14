@@ -1,9 +1,9 @@
 <title>Planning your automation jobs using the automation savings planner</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>1.3</productnumber>
+<productnumber>1.2</productnumber>
 <subtitle>Plan your organization's automation initiatives, and get an accurate estimation of your time and monetary savings when switching to automation.</subtitle>
 <abstract>
-    <para>The automation savings planner is a tool where users can track their automation effort by creating automation savings plans, each with a defined set of tasks needed to complete the job. Users can also view an accurate estimation of their cost savings by automation these tasks.</para>
+    <para>If you have a suggestion to improve this documentation, or find an error, create an issue at <link xlink:href="https://issues.redhat.com(issues.redhat.com)">http://issues.redhat.com</link>. Select the <emphasis role="strong">Ansible Automation Platform</emphasis> project and use the <emphasis role="strong">Documentation</emphasis> component.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services</orgname>
