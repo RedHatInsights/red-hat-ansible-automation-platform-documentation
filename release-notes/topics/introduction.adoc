@@ -1,0 +1,4 @@
+[[introduction]]
+= Introduction
+
+Red Hat Automation Analytics give you analytics and real-time feedback about your automation deployments through insights and governance which allow you to view information about automation health, usage, and performance across your enterprise.

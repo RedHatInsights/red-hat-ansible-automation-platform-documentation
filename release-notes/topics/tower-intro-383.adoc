@@ -1,0 +1,30 @@
+[[tower-382-intro]]
+= Ansible Tower 3.8.3
+
+Ansible Tower helps teams centralize and control your IT infrastructure with
+a visual dashboard, role-based access control, job scheduling, integrated
+notifications and graphical inventory management.  Easily embed Ansible
+Automation into existing tools and processes with REST API and CLI.
+
+.Bux fixes 
+
+* Analytics collection no longer cause lost job events when Tower is under load
+
+* Analytics collection now handles null characters in job event output
+
+* Pending jobs in /api/v2/metrics show correct counts
+
+* Project updates are no longer delayed when projects contain large files
+
+* Status for hosts are properly counted in notification payloads
+
+* SAML organization creation now properly assigns a default Galaxy credential
+
+* SAML configuration now properly denotes required SAML contact fields
+
+* Fixed a race condition in settings updates that previously lead to incorrect behavior
+
+* Log messages are updated to be more clear when rsyslog is unresponsive
+
+
+See https://docs.ansible.com/ansible-tower/latest/html/release-notes/index.html[Ansible Tower Release Notes v3.8.3] for a full list of new features and enhancements.

@@ -1,0 +1,91 @@
+= Red Hat Ansible Automation Platform Release Notes
+
+include::topics/platform-intro.adoc[leveloffset=+1]
+
+include::topics/upgrading.adoc[leveloffset=+1]
+
+[[anchor-may-2021-release]]
+== May 2021 release
+
+=== Red Hat Ansible Automation Platform 1.2.3
+
+The latest version of Red Hat Automation Platform includes the following:
+
+include::topics/tower-intro-383.adoc[leveloffset=+3]
+
+include::topics/hub-423.adoc[leveloffset=+3]
+
+[[anchor-mar-2021-release]]
+== March 2021 release
+
+=== Red Hat Ansible Automation Platform 1.2.2
+
+The latest version of Red Hat Automation Platform includes the following:
+
+include::topics/tower-intro-382.adoc[leveloffset=+3]
+
+include::topics/hub-422.adoc[leveloffset=+3]
+
+[[anchor-jan-2021-release]]
+== January 2021 release
+
+=== Red Hat Ansible Automation Platform 1.2.1
+
+The latest version of Red Hat Automation Platform includes the following:
+
+include::topics/platform-installer-121.adoc[leveloffset=+3]
+
+include::topics/tower-intro-381.adoc[leveloffset=+3]
+
+include::topics/hub-421.adoc[leveloffset=+3]
+
+
+[[anchor-nov-2020-release]]
+== November 2020 release
+
+=== Red Hat Ansible Automation Platform 1.2.0
+
+The latest version of Red Hat Automation Platform includes the following:
+
+include::topics/tower-intro-38.adoc[leveloffset=+3]
+
+include::topics/hub-42.adoc[leveloffset=+3]
+
+include::topics/catalog-11-2020.adoc[leveloffset=+3]
+
+
+
+
+[[anchor-oct-2020-release]]
+== October 2020 release
+
+include::topics/introduction.adoc[leveloffset=+2]
+
+// include::topics/changelog-022020.adoc[leveloffset=+1]
+
+include::topics/new-features-oct-2020.adoc[leveloffset=+2]
+
+include::topics/enhancements-102020.adoc[leveloffset=+2]
+
+include::topics/bugfixes-102020.adoc[leveloffset=+2]
+
+////
+[[anchor-may-2020-release]]
+== May 2020 release
+
+include::topics/new-features-may-2020.adoc[leveloffset=+2]
+
+include::topics/enhancements-052020.adoc[leveloffset=+2]
+
+include::topics/bugfixes-052020.adoc[leveloffset=+2]
+
+
+[[anchor-february-2020-release]]
+== February 2020 release
+
+include::topics/new-features-feb-2020.adoc[leveloffset=+2]
+
+include::topics/enhancements.adoc[leveloffset=+2]
+
+include::topics/bugfixes-022020.adoc[leveloffset=+2]
+////
