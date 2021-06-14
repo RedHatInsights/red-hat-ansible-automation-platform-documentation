@@ -1,0 +1,59 @@
+[id="ref-navigator-inventory-settings_{context}"]
+
+= {Navigator} `inventory` subcommand settings
+
+[role="_abstract"]
+
+The following table describes each parameter and setting options for the  {Navigator} `inventory` subcommand.
+
+.{Navigator} `inventory` subcommand parameters settings table
+[options="header"]
+[cols='1,1a,1a']
+|====
+|Parameter | Description|Setting options
+|help-inventory
+|Help options for the  `ansible-inventory` command in `stdout` mode.
+| *Choices:* `True` or `False`
+
+*Default:* `False`
+
+*CLI:* `--hi` or `--help-inventory`
+
+*ENV:* `ANSIBLE_NAVIGATOR_INVENTORY_DOC`
+
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  help-inventory:
+----
+
+|inventory
+|Specify an inventory file path or comma separated host list.
+|*Default:* no default value set
+
+*CLI:* `--i` or `--inventory`
+
+*ENV:* `ANSIBLE_NAVIGATOR_INVENTORIES`
+
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  inventories:
+----
+
+|inventory-column
+|Specify a host attribute to show in the inventory view.
+| *Default:* No default value set
+
+*CLI:* `--ic` or `--inventory-column`
+
+*ENV:** `ANSIBLE_NAVIGATOR_INVENTORY_COLUMNS`
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  inventory-columns:
+----
+|====
