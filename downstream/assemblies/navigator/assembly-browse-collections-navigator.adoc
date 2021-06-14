@@ -3,7 +3,7 @@ ifdef::context[:parent-context: {context}]
 :imagesdir: images
 
 [id="assembly-review-collections-navigator_{context}"]
-= Browsing collections with {Navigator}
+= Browse collections with {Navigator}
 
 :context: browse-collections-navigator
 

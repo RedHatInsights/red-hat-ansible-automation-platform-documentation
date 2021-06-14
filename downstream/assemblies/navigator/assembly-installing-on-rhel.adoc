@@ -7,7 +7,7 @@ ifdef::context[:parent-context: {context}]
 :context: install-navigator-rhel
 
 [role="_abstract"]
-You can install {Navigator} on Red Hat Enterprise Linux (RHEL) 8 with`pip`.
+You can install {Navigator} on Red Hat Enterprise Linux (RHEL) 8 with `pip`.
 
 == Prerequisites
 
