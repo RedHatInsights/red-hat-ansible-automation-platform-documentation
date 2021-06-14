@@ -4,7 +4,7 @@
 
 [id="proc-filter-plans_{context}"]
 
-= Filter and soft plans on the list view page
+= Filter and sort plans on the list view page
 
 Find specific types of automation savings plans by filtering or sorting your savings planner list view.
 

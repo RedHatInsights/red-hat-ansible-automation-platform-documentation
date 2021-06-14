@@ -4,7 +4,7 @@
 
 [id="proc-edit-savings-plan_{context}"]
 
-= Edit an existing savings plans
+= Edit an existing savings plan
 
 Edit any information about an existing savings plan by clicking on it from the savings planner list view.
 

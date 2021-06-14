@@ -34,4 +34,4 @@ The task list is for your planning purposes only, and does not currently factor 
 [start=5]
 . Select a template to link to this plan, then click *Save*.
 
-Your new savings plan is now created and is displayed on the {planner} list view along with your other savings plans.
+Your new savings plan is now created and is displayed on the {planner} list view along with any other savings plans.
