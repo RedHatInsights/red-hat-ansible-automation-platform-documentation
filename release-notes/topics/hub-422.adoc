@@ -1,0 +1,15 @@
+[[hub-422-intro]]
+= Automation Hub 4.2.2
+
+Automation Hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible Automation Hub, you can discover and manage Ansible Collections which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.
+
+.Automation Hub bug fixes and enhancements 
+
+* Fixed the `galaxy-importer` check for max size of docs files 
+* Removed ability for uses to delete themselves
+* Prevented users with `delete-user` permissions from deleting admin users 
+* Obfuscated token and password on the API docs for `/sync/config`
+* Split the `proxy_url` into 3 fields: `username`, `password`, and `address`
+* Fixed ability to remove credentials from advanced options for repository sync
+* Added a new component to indicate when a secret field is set or not
+

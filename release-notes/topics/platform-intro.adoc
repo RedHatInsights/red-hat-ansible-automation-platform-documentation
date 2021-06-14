@@ -1,0 +1,15 @@
+[[platform-introduction]]
+= Overview
+
+Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
+
+[[whats-included]]
+== What's included in Ansible Automation Platform
+
+[cols="a,a,a,a,a"]
+|===
+| Ansible Automation Platform | Ansible Tower | Automation Hub | Automation Services Catalog | Automation Analytics
+
+|1.2.0 | 3.8.0 | 4.2.0 | hosted service | hosted service
+
+|===
