@@ -1,0 +1,47 @@
+[id="ref-navigator-config-settings_{context}"]
+
+= {Navigator} `config` subcommand settings
+
+[role="_abstract"]
+
+The following table describe each parameter and setting options for the  {Navigator} `config` subcommand.
+
+.{Navigator} `config` subcommand parameters settings table
+[options="header"]
+[cols='1,1a,1a']
+|====
+|Parameter | Description|Setting options
+|config
+|Specify the path to the Ansible configuration file.
+| *Default:* No default value set
+
+*CLI:* `-c` or `--config`
+
+*ENV:* `ANSIBLE_CONFIG`
+
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  ansible:
+    config:
+----
+
+|help-config
+|Help options for the `ansible-config` command in `stdout` mode.
+| *Choices:** `True` or `False`
+
+*Default:* `False`
+
+*CLI:* `--hc` or `--help-config`
+
+*ENV:* `ANSIBLE_NAVIGATOR_HELP_CONFIG`
+
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  help-config:
+----
+
+|====
