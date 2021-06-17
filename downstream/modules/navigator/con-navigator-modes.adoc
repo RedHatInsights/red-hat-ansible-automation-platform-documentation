@@ -17,7 +17,7 @@ If you use the `-m stdout` subcommand, {Navigator} uses the familiar Ansible com
 {Navigator} also provides extensive help in this mode:
 
 `--help`:: Accessible from `ansible-navigator` command or from any subcommand, such as `ansible-navigator config --help`.
-subcommand help:: Accessible from the subcommand, for example `ansible-navigator config --help-config`. This subcommand specific help brings in the details of all the paramters supported from the related Ansible command, in this example, `ansible-config`.
+subcommand help:: Accessible from the subcommand, for example `ansible-navigator config --help-config`. This subcommand specific help brings in the details of all the parameters supported from the related Ansible command, in this example, `ansible-config`.
 
 
 image::navigator-stdout.png[]
@@ -33,4 +33,4 @@ This mode includes a number of helpful user interface options:
 colon commands:: You can access all the {Navigator} commands with a colon, such as `:run` or `:collections`
 navigating the text-based interface:: The screen shows how to page up or down, scroll, escape to a prior screen or access `:help`.
 output by line number:: You can access any line number in the displayed output by preceding it with a colon, for example `:12`.
-color-coded output:: With colors enabled, {Navigator} displays items such as deprecated modules in red. 
+color-coded output:: With colors enabled, {Navigator} displays items such as deprecated modules in red.
