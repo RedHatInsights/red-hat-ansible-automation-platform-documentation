@@ -1,0 +1,65 @@
+[id="assembly-order-process"]
+
+= Defining sequential actions in ITSM integration using order processes
+
+Order processes are the primary Automation Services Catalog feature by which you integrate user-ordered products with your ITSM system. Order processes are comprised of products in Automation Services Catalog that are intended to execute job templates that perform actions in your ITSM system. These processes are comprised of *Before order* and *After order* actions. You define your order processes as those products designed to run before and after a product your users order, so that information is passed across the sequence of orders.
+
+.Example sequence
+
+* *before order* - a product that creates a ticket in the ITSM system.
+* *product order* -  a web server.
+* *after order* - a product that closes the ticket in the ITSM system.
+
+You define the sequence and what products are run by creating an order process that you apply to either your products or at the portfolio level.
+
+For this example workflow, we need to create a order processes and attach them to our *before order*, *product order*, and *after order*.
+
+
+== Creating an order process
+
+As a catalog administrator, create order processes to allow you to execute your Ansible Tower playbooks before and after a product is ordered.
+
+.Prerequisites
+
+* To create an order process with your Ansible Tower playbooks, you must have an Ansible Tower cluster added as a source.
+
+.Procedure
+
+. Select *Order Processes* from the main navigation.
+
+. Click *Create*.
+
+. Provide an order process name and description.
+
+. From the drop-down menus, select actions that will occur before and after an order provision.
+
++
+NOTE: The drop-down menus will display playbooks pulled from your Ansible Tower source. Only one Before and After action is supported for each order process.
+
+. Review the new Order Process details, then click *Create*.
+
+
+== Setting an order process for a product
+
+Set an order process that will apply to a single product.
+
+.Procedure
+
+. Select *Products* from the main navigation, then select a product.
+
+. Click *More actions* and select *Set order processes*.
+
+. Expand the drop-down menu and select an order process.
+
++
+NOTE: Ansible Automation Platform currently only supports one order process per product provision.
+
+. Click *Save*.
+
+
+
+// include::modules/proc_Create_order_process.adoc[leveloffset=+1]
+
+
+
+// include::modules/proc-Set_order_process_product.adoc[leveloffset=+1]

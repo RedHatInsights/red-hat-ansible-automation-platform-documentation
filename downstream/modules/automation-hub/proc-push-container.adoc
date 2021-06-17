@@ -1,0 +1,39 @@
+
+
+[id="push-containers"]
+
+
+= Pushing a container image to private {HubName}
+
+
+[role="_abstract"]
+You can push your container images to private {HubName} to create new containers and populate the container registry.
+
+.Prerequisites
+
+* You have permissions to create new containers.
+* You have the FQDN or IP address of the {HubName} instance.
+
+.Procedure
+
+. Log in to Podman using your {HubName} location and credentials:
++
+-----
+$ podman login -u=[username] -p=[password] [automation-hub-url]
+-----
++
+. Push your container image to your {HubName} container registry:
++
+-----
+$ podman push [automation-hub-url]/[container image name]
+-----
+
+
+.Verification
+
+
+. Log in to your {HubName}.
+
+. Navigate to *Container Registry*.
+
+. Locate the container in the container repository list.

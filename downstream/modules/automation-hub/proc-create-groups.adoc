@@ -8,7 +8,7 @@ You can create and assign permissions to a group in Automation Hub that enables 
 
 .Prerequisites
 
-* You have *groups* permissions and can create and manage group configuration and access in Automation Hub.  See xref:ref-permissions[Automation Hub permissions] for information on system permissions.
+* You have *groups* permissions and can create and manage group configuration and access in Automation Hub.
 
 .Procedure
 . Log in to your local Automation Hub.

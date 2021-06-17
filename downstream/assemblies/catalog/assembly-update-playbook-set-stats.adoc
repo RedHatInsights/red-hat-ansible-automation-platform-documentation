@@ -1,0 +1,7 @@
+[id="assembly-update-playbook-set-stats"]
+
+= Updating your playbook `set_stats` fields to support integration with Automation Services Catalog
+
+You can update your playbooks to pass information to Automation Services Catalog and support substitutable variables across the product in your order process workflow.
+
+include::catalog/proc-edit-set-stats.adoc[leveloffset=+1]

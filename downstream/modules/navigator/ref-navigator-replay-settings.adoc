@@ -1,0 +1,29 @@
+[id="ref-navigator-replay-settings_{context}"]
+
+= {Navigator} `replay` subcommand settings
+
+[role="_abstract"]
+
+The following table describes each parameter and setting options for the  {Navigator} `replay` subcommand.
+
+.{Navigator} `replay` subcommand parameters settings table
+[options="header"]
+[cols='1,1a,1a']
+|====
+|Parameter | Description|Setting options
+|playbook-artifact-replay
+|Specify the path for the playbook artifact to replay.
+|*Default:* No default value set
+
+*CLI:* positional
+
+*ENV:* `ANSIBLE_NAVIGATOR_PLAYBOOK_ARTIFACT_REPLAY`
+
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  playbook-artifact:
+    replay:
+----
+|====

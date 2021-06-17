@@ -1,0 +1,41 @@
+[id="assembly-working-with-platforms-portfolios-products"]
+
+= Working with platforms, portfolios, and products
+
+This section demonstrates the basic workflows for platforms, portfolios, and products to get started using {ProductName}.
+
+We will demonstrate how to:
+
+* connect to a source platform
+* create portfolios
+* add products from the source platform into the portfolio
+* set approval processes for the portfolio
+* share the portfolio with users
+
+include::catalog/con_Adding_sources.adoc[leveloffset=+1]
+include::catalog/proc_Adding_ansible_tower_source.adoc[leveloffset=+1]
+include::catalog/proc_Creating_portfolios.adoc[leveloffset=+1]
+
+Our initial portfolio is empty, and we can start adding products from this empty state.
+
+include::catalog/proc_Add_products_from_platforms.adoc[leveloffset=+1]
+include::catalog/proc_Assigning_approval_workflow.adoc[leveloffset=+1]
+include::catalog/con_Sharing_portfolios.adoc[leveloffset=+1]
+include::catalog/con_Copying_portfolios.adoc[leveloffset=+1]
+include::catalog/proc_Copy_portfolio.adoc[leveloffset=+2]
+include::catalog/con_Copying_products.adoc[leveloffset=+1]
+include::catalog/proc_Copy_products.adoc[leveloffset=+2]
+
+== Workflows summary
+
+The workflows in this section of the guide demonstrated how to perform the basic actions for platforms, portfolios and products necessary to get started using {ProductName}:
+
+* add entitlements to access Automation Service Catalog;
+* create the necessary groups and users;
+* connect to a source platform;
+* create portfolios;
+* add products from the source platform into the portfolio;
+* set approval processes for the portfolio;
+* share the portfolio with users;
+* make a copy of our existing portfolio to share with different users;
+* copy products from one portfolio to another.

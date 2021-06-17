@@ -1,0 +1,17 @@
+[id="con-approval-processes_{context}"]
+== Approval Processes
+
+Approval processes consist of one or many groups required to approve a request. Each group is notified through the email address associated with that user when requests are created that require approval.
+
+Approval administrators can design approval processes for a product to execute in serial or parallel when set to a portfolio. Simple serial and parallel approval processes are described below:
+
+Set approval processes at the platform, portfolio, or product level. Approval processes set to a platform will apply to all products originating from that platform.
+
+* *Serial process* - a product has multiple approval processes that must execute in a hierarchical sequence. If two approval processes are assigned to a product in serial, the approval group in the first approval process must approve the request before notification is sent to the second approval group. Priority of approval process execution is based on its position on the approval process list view. Approval processes at the top of the list will execute before the processes below it.
+
+* *Parallel process* -  a product has one approval process containing multiple groups. All groups are notified simultaneously when a request is created and the order is not granted until all groups approve it. Any group that declines the request ends the process and the user is notified the order has been denied.
+
+[NOTE]
+====
+To create and list groups when creating Approval processes, the Approval Administrator must also have Organization Administrator privileges.
+====

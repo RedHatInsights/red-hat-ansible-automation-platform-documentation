@@ -8,7 +8,7 @@ You can assign permissions to groups in Automation Hub that enable users to acce
 
 .Prerequisites
 
-* You have *Change group* permissions and can edit group permissions in Automation Hub. See xref:ref-permissions[Automation Hub permissions] for information on system permissions.
+* You have *Change group* permissions and can edit group permissions in Automation Hub.
 
 .Procedure
 . Log in to your local Automation Hub.

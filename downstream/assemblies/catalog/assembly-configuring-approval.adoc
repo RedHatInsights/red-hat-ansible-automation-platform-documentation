@@ -1,0 +1,14 @@
+[id="assembly-configuring-approval"]
+
+= Configuring Approval
+
+{ProductName} supports group-based approval processes applied to portfolios, products, and platform inventories, providing the flexibility to include selected organizational groups in approving requests utilizing the Approval service.
+
+As an approval administrator, you can create approval groups and processes, view request details, approve or deny requests, and monitor the status of existing requests.
+
+include::catalog/con_Approval_requests.adoc[leveloffset=+1]
+include::catalog/con_Approval_processes.adoc[leveloffset=+1]
+include::catalog/proc_Create_approval_process.adoc[leveloffset=+2]
+include::catalog/con_Approval_process_sequence.adoc[leveloffset=+1]
+include::catalog/proc_Editing_approval_process_sequence.adoc[leveloffset=+2]
+include::catalog/con_Automatic_approval.adoc[leveloffset=+1]
