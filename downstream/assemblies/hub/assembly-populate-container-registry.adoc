@@ -1,0 +1,25 @@
+
+
+ifdef::context[:parent-context: {context}]
+
+[id="populate-container-registry"]
+= Populating your private {HubName} container registry
+
+
+:context: populate-container-registry
+
+
+[role="_abstract"]
+By default, private {HubName} does not include container images. In order to populate your container registry, you need to push a container image to it.
+
+== Prerequisites
+
+* You have permissions to create new containers and push containers to private {HubName}.
+
+
+include::automation-hub/proc-push-container.adoc[leveloffset=+1]
+
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
