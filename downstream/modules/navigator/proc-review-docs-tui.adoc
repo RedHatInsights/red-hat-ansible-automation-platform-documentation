@@ -80,7 +80,8 @@ ANSIBLE.UTILS.IP_ADDRESS: Test if something in an IP address
 ----
 +
 image::navigator-vscode-example.png[]
-
++
+See xref:ref-navigator-general-settings_settings-navigator[] for details on how to set up your editor.
 
 [role="_additional-resources"]
 .Additional resources
