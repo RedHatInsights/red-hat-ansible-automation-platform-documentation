@@ -1,0 +1,11 @@
+<title>Automation Services Catalog product support matrix</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>1.2</productnumber>
+<subtitle>Supported products for Automation Services Catalog</subtitle>
+<abstract>
+    <para></para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

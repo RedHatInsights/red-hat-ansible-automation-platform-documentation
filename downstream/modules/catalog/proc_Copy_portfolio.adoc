@@ -1,0 +1,13 @@
+[id="proc-copying-portfolios"]
+
+= Copying Portfolios
+
+You can copy portfolios from the *Portfolios* list view.
+
+.Procedure
+
+. Click *Portfolios*.
+. Locate the portfolio and click image:images/actions.png[More Actions].
+. Select *Copy*.
+
+The new copy will appear in the *Portfolios* list view with the default name: *Copy of {Portfolio Name}*. You can edit the portfolio to assign a new name and share with users. You can also copy products from one portfolio to other portfolios.

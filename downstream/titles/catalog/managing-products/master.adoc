@@ -1,0 +1,12 @@
+:toc:
+:toclevels: 4
+:numbered:
+include::attributes/attributes-catalog.adoc[]
+
+:catalog_managing_products_guide:
+
+[[managing_products_guide]]
+= Managing Products in Automation Service Catalog
+
+// Contents
+include::modules/con_Surveys.adoc[]

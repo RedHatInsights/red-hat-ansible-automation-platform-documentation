@@ -1,0 +1,170 @@
+[id="assembly-installing-catalog-receptor"]
+
+= About the Automation Services Catalog Receptor
+
+The Automation Services Catalog Receptor is a plug-in that allows you to connect an instance of Ansible Tower to the Automation Services Catalog service on cloud.redhat.com. The Ansible Role `catalog_receptor_installer` installs the receptor and plug-in components, and registers the Ansible Tower as a source for Automation Services Catalog.
+
+= Automation Services Catalog Receptor installation workflow
+
+The workflow described in the following sections will run both the `install.sh` script to update the environment and the `install_receptor.yml` Ansible playbook to install and configure the Receptor. Configuring the `install_receptor.yml` playbook requires an application token created in your Ansible Tower instance, which is described below.
+
+Completing the Automation Services Catalog Receptor installation workflow in this guide will result in:
+
+* Registering and updating your RHEL environment to include the required versions of Ansible and Python.
+* Adding your Ansible Tower as a Source in cloud.redhat.com.
+* Adding an end point for the receptor node.
+* Adding Automation Services Catalog as a valid application for the Source.
+* Triggering an availability check on the source, which will cause an inventory refresh to run.
+
+== Prerequisites
+
+The below tables list the requirements to complete an installation of the Automation Services Catalog Receptor. Ensure you have the required level of access to cloud.redhat.com, Ansible Tower, and a RHEL system that meets the specified requirements.
+
+[NOTE]
+====
+* For RHEL 8 systems, registering with Red Hat Insights *is not required* to successfully complete the Receptor installation.
+
+* You can run the `install.sh` script to register your system and install required versions of Ansible and Python.
+====
+
+.Required permissions
+
+[cols="50%,50%"]
+|===
+| Platform | Permissions
+
+| Ansible Tower|
+
+System Administrator
+
+| cloud.redhat.com |
+
+Organization Administrator
+
+|===
+
+.Red Hat Enterprise Linux physical or virtual machine requirements
+
+[cols="50%,50%"]
+|===
+| System  | Requirements
+
+| Red Hat Enterprise Linux |
+
+ Red Hat Enterprise Linux (RHEL) 7
+
+ Red Hat Enterprise Linux (RHEL) 8
+
+ A valid subscription is required.
+
+| Ansible * |
+
+Ansible 2.9 or devel
+
+| Python * |
+
+Python 3.6 or higher
+
+|===
+
+
+
+include::modules/proc_Generate-ansible-token.adoc[leveloffset=+1]
+
+== Retrieving the Automation Services Catalog Receptor installation script and playbook
+
+Use the `install.sh` script and `install_receptor.yml` playbook to install the Receptor plug-in.
+
+You can retrieve the `install.sh` script and `install_receptor.yml` playbook from the following locations:
+
+-----
+$ curl -O https://raw.githubusercontent.com/mkanoor/receptor_catalog_installer_scripts/master/install.sh
+$ curl -O https://raw.githubusercontent.com/mkanoor/receptor_catalog_installer_scripts/master/sample_playbooks/install_receptor.yml
+-----
+
+== Setting environmental variables for use with the `install.sh` script
+
+You can use the included `install.sh` to register your system through Red Hat Subscription Manager and install required versions of Ansible, Python, and the Ansible Role.
+
+.Prerequisites
+The `install.sh` script requires a valid Red Hat username and password. See https://access.redhat.com/documentation/en-us/red_hat_subscription_management/1/[Red Hat Subscription Management] documentation for more information on registering a system.
+
+[NOTE]
+====
+If your RHEL 8 system is already registered with Red Hat Subscription Management run `subscription-manager clean` before running `install.sh`.
+====
+
+.Procedure
+
+. Log in as `root` user.
+. Set environmental variables for your username:
++
+-----
+# export RHN_USER=<yourusername>
+-----
++
+. Set the environmental variable for your password:
++
+-----
+# export RHN_PASSWORD=<yourpassword>
+-----
++
+. (Optional) Set the Red Hat Subscription Management environment URL if you are using a development or testing environment:
++
+-----
+# export RHSM_URL=your_rhsm_url
+-----
+
+You have updated the environmental variables for your username, password and RHSM URL that the `install.sh` will use to register your RHEL system.
+
+== Configuring the `install_receptor.yml` playbook
+
+You can install Receptor by running the `install_receptor.yml` file. Configure the playbook to include the application token you created and the location of the Ansible Tower. Include a display name for the Ansible Tower, so you can locate it as a source on cloud.redhat.com.
+
+.Procedure
+
+. Open the `install_receptor.yml` Ansible playbook in a text editor:
++
+-----
+$ vim install_receptor.yml
+-----
++
+. Update the following `vars` parameters:
++
+------
+vars:
+  tower_url: ansible_tower_url
+  tower_token: n87FNA7Fajhghag76gkd
+  source_display_name: My Ansible Tower
+------
+
+
+== Running the update and installation
+
+You can run the script and playbook once you have finished setting required parameters.
+
+.Procedure
+
+Run the `install.sh` script  and the `install_receptor.yml` playbook:
+
+-----
+# ./install.sh sample_playbooks/install_receptor.yml
+-----
+
+The `install.sh` will register the system and update Ansible and Python, and the `install_receptor.yml` playbook will install the Receptor and connect your Ansible Tower to cloud.redhat.com. The script will then add the Ansible Tower as a platform source for Automation Services Catalog. Once completed, the script will initiate a refresh of inventory. This may take a few minutes to complete.
+
+== Verifying the Receptor installation
+
+You can verify that the installation and configuration completed successfully by accessing your account on cloud.redhat.com and reviewing sources and inventory.
+
+.Procedure
+
+. Log in to cloud.redhat.com.
+. Navigate to image:images/cog.png[Settings,40,40] > *Sources* and refresh the browser.
+.. Your newly added Ansible Tower will appear with the *Name* provided in the `install_receptor.yml` playbook.
+. Verify that the *Status* is *Available*.
+. Navigate to Automation Services Catalog > Platforms.
+. Click on your newly added Ansible Tower.
+. Verify that *Templates* and *Inventories* from the Ansible Tower are present.
+
+include::modules/proc_Updating-application-token.adoc[leveloffset=+1]
