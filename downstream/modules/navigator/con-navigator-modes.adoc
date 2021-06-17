@@ -14,6 +14,12 @@ text-based user interface mode:: Provides an interactive, text-based interface t
 
 If you use the `-m stdout` subcommand, {Navigator} uses the familiar Ansible commands, such as `ansible-playbook` within {ExecEnvName}, or on your local development environment. This mode allows you to continue using commands you are familiar with for quick tasks.
 
+{Navigator} also provides extensive help in this mode:
+
+`--help`:: Accessible from `ansible-navigator` command or from any subcommand, such as `ansible-navigator config --help`.
+subcommand help:: Accessible from the subcommand, for example `ansible-navigator config --help-config`. This subcommand specific help brings in the details of all the paramters supported from the related Ansible command, in this example, `ansible-config`.
+
+
 image::navigator-stdout.png[]
 
 == Text-based user interface mode
@@ -21,3 +27,10 @@ image::navigator-stdout.png[]
 The text-based user interface mode provides enhanced interaction with {ExecEnvName}, collections, playbooks, and inventory. This mode is compatible with integrated development environments (IDE), such as Visual Studio Code.
 
 image::navigator-welcome.png[]
+
+This mode includes a number of helpful user interface options:
+
+colon commands:: You can access all the {Navigator} commands with a colon, such as `:run` or `:collections`
+navigating the text-based interface:: The screen shows how to page up or down, scroll, escape to a prior screen or access `:help`.
+output by line number:: You can access any line number in the displayed output by preceding it with a colon, for example `:12`.
+color-coded output:: With colors enabled, {Navigator} displays items such as deprecated modules in red. 
