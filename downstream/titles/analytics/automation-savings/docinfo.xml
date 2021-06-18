@@ -1,6 +1,6 @@
 <title>Using the Automation Calculator</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>1.2</productnumber>
+<productnumber>2.0</productnumber>
 <subtitle>Evaluate costs and automated processes that determine the return on investment automation brings to your organization.</subtitle>
 <abstract>
     <para>Evaluate how automation is deployed across your environments and the savings associated with it. The Automation Calculator produces a total savings based on default values, but allows you to tune your cost analysis based on real numbers.</para>
