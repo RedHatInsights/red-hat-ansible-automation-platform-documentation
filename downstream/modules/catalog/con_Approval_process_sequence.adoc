@@ -1,0 +1,5 @@
+[id="proc-con-approval-process-sequence_{context}"]
+== Approval Process Sequences
+
+Arrange the sequence of approval processes to determine the priority in which it executes during a serial approval process. In serial processes where multiple approval processes are required, approval processes are prioritized based on its positioning on the approval process list view.
+

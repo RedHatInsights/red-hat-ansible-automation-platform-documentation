@@ -1,0 +1,11 @@
+<title>Integrating Automation Services Catalog with your IT Service Management (ITSM) systems</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>1.2</productnumber>
+<subtitle>Incorporate Automation Services Catalog into your IT Service Management system toolchain using a workflow defined by order processes and substitutable variables.</subtitle>
+<abstract>
+    <para>This guide describes the workflows for how to use order processes and substitutable variables to pass data from job templates in you Ansible Automation Platfrom to an IT Service Management (ITM) system.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

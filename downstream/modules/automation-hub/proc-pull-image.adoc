@@ -1,0 +1,32 @@
+
+
+[id="pulling-image"]
+
+////
+The `context` attribute enables module reuse. Every module ID includes {context}, which ensures that the module has a unique ID even if it is reused multiple times in a guide.
+////
+
+= Pulling an image
+
+
+[role="_abstract"]
+You can pull images from the {HubName} container registry to make a copy to your local machine. {HubNameStart} provides the `podman pull` command for each `latest` image in the container repository.
+
+.Prerequisites
+
+* You can view and pull images from a private container.
+
+.Procedure
+
+. Navigate to *Container Registry*.
+
+. Select your container repository.
+. Click *Copy to clipboard*.
+. Paste and run the command in your terminal.
+
+
+
+.Verification
+
+
+. Run `podman images` to view images on your local machine.

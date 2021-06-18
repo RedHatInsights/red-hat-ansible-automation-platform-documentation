@@ -8,8 +8,7 @@ You can create a user in Automation Hub and add them to groups that can access f
 
 .Prerequisites
 
-* You have *user* permissions and can create users in Automation Hub.  See xref:ref-permissions[Automation Hub permissions] for information on system permissions.
-
+* You have *user* permissions and can create users in Automation Hub.  
 
 .Procedure
 . Log in to your local Automation Hub.
