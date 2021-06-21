@@ -1,6 +1,6 @@
 <title>Managing containers in private automation hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.0</productnumber>
+<productnumber>2.0-ea</productnumber>
 <subtitle>Administrator workflows and processes for configuring private automation hub container registry and repositories.</subtitle>
 <abstract>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
