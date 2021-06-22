@@ -2,7 +2,7 @@
 [id="proc-installing-navigator-rhel-rpm_{context}"]
 
 
-= Installing {Navigator}r on RHEL from an RPM
+= Installing {Navigator} on RHEL from an RPM
 
 
 [role="_abstract"]
@@ -13,16 +13,22 @@ You can install {Navigator} on Red Hat Enterprise Linux (RHEL) from an RPM.
 
 * You have installed the prerequisites for RHEL.
 * You have Ansible or {ExecEnvNameStart} installed.
+* You registered your system with Red Hat Subscription Manager.
 
 
 .Procedure
 
-. Download the RPM.
-
-. Install {Navigator}:
+. Enable the repository for RHEL 8.
 +
 ----
-$ rpm -UVH ansible-navigator
+$ sudo subscription-manager repos --enable ansible-navigator-1.0.0.el8ap.noarch.rpm
+----
+
+
+. Install {Navigator}.
++
+----
+$ dnf install ansible-navigator
 ----
 +
 

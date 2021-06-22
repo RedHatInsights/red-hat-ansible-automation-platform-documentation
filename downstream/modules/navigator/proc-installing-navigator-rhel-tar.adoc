@@ -13,6 +13,7 @@ You can install {Navigator} on Red Hat Enterprise Linux (RHEL) from a tarball.
 
 * You have installed the prerequisites for RHEL.
 * You have Ansible or {ExecEnvNameStart} installed.
+* You registered your system with Red Hat Subscription Manager.
 
 
 .Procedure
