@@ -6,7 +6,7 @@
 
 = Review savings calculations for your automation plans
 
-The {planner} offers a calculation of how much time and money you can save by automating a job. {InsightsName} takes data from the plan details and the associated job template to provide you an accurate projection of your cost savings when you complete this savings plan.
+The {planner} offers a calculation of how much time and money you can save by automating a job. {InsightsName} takes data from the plan details and the associated job template to provide you with an accurate projection of your cost savings when you complete this savings plan.
 
 To do so, navigate to your savings planner page, click the name of an existing plan, then navigate to the *Statistics* tab.
 

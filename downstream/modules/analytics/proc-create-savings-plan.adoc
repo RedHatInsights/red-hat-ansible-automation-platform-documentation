@@ -8,19 +8,16 @@
 
 Create an automation savings plan by defining the tasks needed to complete an automation job using the {planner}.
 
+* The details you provide when creating a savings plan, namely the number of hosts and the manual duration, will be used to calculate your savings from automating this plan. See <<con-review-savings-calculations_{context},this section>> for more information.
+
+.Procedure
+
 . Navigate to *Red Hat Insights* > *Savings Planner*.
 . Click *Add Plan*.
-. Provide information about your automation job using the provided form:
+. Provide some information about your automation job:
 .. Enter descriptive information, such as a name, description, and type of automation.
 .. Enter technical information, such as the number of hosts, the duration to manually complete this job, and how often you complete this job.
 .. Click *Next*.
-
-[NOTE]
-====
-The information inputted in this form, namely the number of hosts, manual duration, and frequency, will be used to calculate your automation savings.
-====
-
-[start=4]
 . In the tasks section, list the tasks needed to complete this plan:
 .. Enter each task in the field, then *Add*.
 .. Rearrange tasks by dragging the item up/down the tasks list.
@@ -34,4 +31,4 @@ The task list is for your planning purposes only, and does not currently factor 
 [start=5]
 . Select a template to link to this plan, then click *Save*.
 
-Your new savings plan is now created and is displayed on the {planner} list view along with any other savings plans.
+Your new savings plan is now created and displayed on the {planner} list view.

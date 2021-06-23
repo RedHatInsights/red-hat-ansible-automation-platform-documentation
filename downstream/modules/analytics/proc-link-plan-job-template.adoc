@@ -8,6 +8,7 @@
 
 You can associate a job template to a savings plan to allow {InsightsShort} to provide a more accurate time and cost savings estimate for completing this savings plan.
 
+.Procedure
 . Navigate to *Red Hat Insights* > *Savings Planner*.
 . Click image:images/ellipsis.png[More,10,25] > *Link Template*.
 . Click *Save*.
