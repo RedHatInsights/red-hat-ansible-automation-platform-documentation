@@ -8,5 +8,6 @@
 
 Find specific types of automation savings plans by filtering or sorting your savings planner list view.
 
+.Procedure
 . Navigate to *Red Hat Insights* > *Savings Planner*.
 . To filter your saving plans based on type, or sort your savings plans by a certain order, select a filter option on the horizontal toolbar.
