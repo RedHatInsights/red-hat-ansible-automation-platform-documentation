@@ -1,0 +1,36 @@
+
+ifdef::context[:parent-context: {context}]
+
+
+
+[id="operator-install-planning"]
+= Planning your {PlatformName} operator installation on {OCP}
+
+
+:context: operator-install-planning
+
+[role="_abstract"]
+OpenShift operators help install and automate day-2 operations of complex, distributed software on OpenShift.
+
+You can use this section to help plan your {PlatformName} operator installation. Before installing, review the individual scenarios to determine which meets your requirements.
+
+== Supported installation scenarios for {OCP}
+
+You can install the {PlatformName} operator following one of the below workflows:
+
+* {ControllerNameStart} and customer resources first, then {HubName} and customer resources;
+* {HubNameStart} and customer resources first, then {ControllerName} and customer resources;
+* {ControllerNameStart} and customer resources;
+* {HubNameStart} and custom resources.
+
+== Custom resources
+
+You can define custom resources for each primary installation workflows.
+[role="_additional-resources"]
+== Additional resources
+
+* See link:https://docs.openshift.com/container-platform/4.7/operators/understanding/olm-understanding-operatorhub.html#olm-understanding-operatorhub[Understanding OperatorHub] to learning more OpenShift Container Platform OperatorHub.
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

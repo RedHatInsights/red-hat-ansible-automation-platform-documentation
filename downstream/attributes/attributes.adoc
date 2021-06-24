@@ -2,9 +2,11 @@
 
 // Platform
 :PlatformName: Red Hat Ansible Automation Platform
+:PlatformNameShort: Ansible Automation Platform
 
 // Automation services catalog
 :CatalogName: automation services catalog
+:CatalogNameStart: Automation services catalog
 :ITSM: ITSM integration
 :returns: product returns
 :leasing: product leasing
@@ -22,6 +24,7 @@
 :insights: insights integration
 
 // Automation hub
+:HubNameStart: Automation hub
 :HubName: automation hub
 :PrivateCollections: Ansible private automation hub collection management
 :EEmanagement: Ansible private automation hub EE management
@@ -30,6 +33,7 @@
 :HubCollLife: Ansible automation hub collection lifecycle
 
 // Automation Controller
+:ControllerNameStart: Automation controller
 :ControllerName: automation controller
 :TaskManager: task manager/scheduler
 :APIinventory: API inventory management
