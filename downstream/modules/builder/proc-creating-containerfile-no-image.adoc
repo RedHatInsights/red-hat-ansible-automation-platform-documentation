@@ -1,0 +1,9 @@
+[id="proc-creating-containerfile-no-image_{context}"]
+
+= Creating a Containerfile without building an image
+
+To create a shareable `Containerfile` without building an image from it, run:
+
+----
+$ ansible-builder create
+----
