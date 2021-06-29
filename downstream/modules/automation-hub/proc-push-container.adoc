@@ -7,7 +7,7 @@
 
 
 [role="_abstract"]
-You can push your container images to private {HubName} to create new containers and populate the container registry.
+You can push tagged container images to private {HubName} to create new containers and populate the container registry.
 
 .Prerequisites
 

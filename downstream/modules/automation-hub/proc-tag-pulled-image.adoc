@@ -1,0 +1,34 @@
+
+
+[id="tag-pulled-images"]
+
+
+= Tagging images for use in {HubName}
+
+
+[role="_abstract"]
+After you pull images from a registry, tag them for use in your private {HubName} container registry.
+
+.Prerequisites
+
+* You have pulled a container image from an external registry.
+
+.Procedure
+
+. Tag a local image with the {HubName} container repository
++
+-----
+podman tag registry.redhat.io/[container image name]:[tag] [automation hub URL]/[container image name]
+-----
+
+
+.Verification
+
+
+. List the images in local storage:
++
+-----
+$ podman images
+-----
++
+. Verify that the image you recently tagged with your {HubName} information is contained in the list.
