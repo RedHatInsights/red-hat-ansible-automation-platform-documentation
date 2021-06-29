@@ -1,4 +1,4 @@
-[id="proc-push-execenv-to-hub_{context}"]
+[id="proc-push-execenv-to-hub"]
 
 = Pushing an execution environment container image to {HubName}
 

@@ -1,4 +1,4 @@
-[id="con-definition-dependencies_{context}"]
+[id="con-definition-dependencies"]
 
 = Dependencies
 

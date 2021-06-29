@@ -1,4 +1,4 @@
-[id="ref-build-args-base-image_{context}"]
+[id="ref-build-args-base-image"]
 
 = Build args and base image
 

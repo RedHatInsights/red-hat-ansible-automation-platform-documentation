@@ -1,4 +1,4 @@
-[id="con-optional-build-command-arguments_{context}"]
+[id="con-optional-build-command-arguments"]
 
 = Optional build command arguments
 

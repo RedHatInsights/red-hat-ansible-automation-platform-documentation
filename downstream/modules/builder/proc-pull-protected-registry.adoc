@@ -1,4 +1,4 @@
-[id="proc-pull-protected-registry_{context}"]
+[id="proc-pull-protected-registry"]
 
 = Pulling from a protected registry
 

@@ -1,4 +1,4 @@
-[id="con-pip-based-req_{context}"]
+[id="con-pip-based-req"]
 
 = Note for `pip`-based requirements
 

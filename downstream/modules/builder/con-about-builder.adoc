@@ -5,8 +5,7 @@ Base the file name and the ID on the module title. For example:
 * Title: = My concept module A
 ////
 
-
-[id="con-about-builder_{context}"]
+[id="con-about-builder"]
 
 = About {Builder}
 

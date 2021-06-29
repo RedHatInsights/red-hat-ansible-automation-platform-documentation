@@ -1,4 +1,4 @@
-[id="con-why-builder_{context}"]
+[id="con-why-builder"]
 
 = Why use {Builder}?
 

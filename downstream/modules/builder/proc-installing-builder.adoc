@@ -1,4 +1,4 @@
-[id="proc-installing-builder_{context}"]
+[id="proc-installing-builder"]
 
 = Installing {Builder}
 
