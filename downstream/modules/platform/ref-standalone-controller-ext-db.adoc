@@ -1,0 +1,33 @@
+
+
+[id="standalone-controller-ext-db_{context}"]
+
+= Example inventory file for a standalone automation controller with an external managed database
+
+
+[role="_abstract"]
+This example describes how you can populate the inventory file to deploy an installation of {ControllerName} with an external database.
+
+[IMPORTANT]
+====
+Do not use special characters for `pg_password`. It may cause the setup to fail.
+====
+
+-----
+[automationcontroller]
+127.0.0.1 ansible_connection=local
+
+
+[database]
+database.example.com
+
+[all:vars]
+admin_password='password'
+pg_password='password'
+
+pg_host='database.example.com'
+pg_port='5432'
+
+pg_database='awx'
+pg_username='awx'
+-----

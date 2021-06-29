@@ -8,7 +8,7 @@ This scenario includes installation of multiple {ControllerName} nodes and an {H
 
 [NOTE]
 ====
-* Running in a cluster setup requires any database that Tower uses to be external--PostgreSQL must be installed on a machine that is not one of the primary or secondary tower nodes. When in a redundant setup, the remote PostgreSQL version requirements is *PostgreSQL 10*.
+* Running in a cluster setup requires any database that {ControllerName} uses to be external--PostgreSQL must be installed on a machine that is not one of the primary or secondary tower nodes. When in a redundant setup, the remote PostgreSQL version requirements is *PostgreSQL 12*.
 ** See link:https://docs.ansible.com/ansible-tower/3.8.2/html/administration/clustering.html#ag-clustering[Clustering] for more information on configuring a clustered setup.
 * Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from Private Automation Hub from a different node.
 ====

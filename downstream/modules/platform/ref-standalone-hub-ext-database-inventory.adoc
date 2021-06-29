@@ -14,7 +14,7 @@ This example describes how you can populate the inventory file to deploy a stand
 * Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` host to ensure users can sync and install content from {HubName} from a different node. Do not use 'localhost'.
 ====
 -----
-[tower]
+[automationcontroller]
 
 
 [automationhub]

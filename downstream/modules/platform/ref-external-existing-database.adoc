@@ -14,7 +14,7 @@ Do not use special characters for `pg_password`. It may cause the setup to fail.
 ====
 
 -----
-[tower]
+[automationcontroller]
 tower.acme.org
 
 [database]
