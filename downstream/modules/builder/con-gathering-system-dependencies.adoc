@@ -1,4 +1,4 @@
-[id="con-gathering-system-dependencies_{context}"]
+[id="con-gathering-system-dependencies"]
 
 = Gathering system-level dependencies
 

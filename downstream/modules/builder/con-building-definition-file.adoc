@@ -1,4 +1,4 @@
-[id="con-building-definition-file_{context}"]
+[id="con-building-definition-file"]
 
 = Building a definition file
 

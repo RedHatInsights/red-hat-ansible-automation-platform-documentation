@@ -1,4 +1,4 @@
-[id="proc-executing-build_{context}"]
+[id="proc-executing-build"]
 
 = Executing the build and creating commands
 

@@ -1,4 +1,4 @@
-[id="con-additional-custom-build-steps_{context}"]
+[id="con-additional-custom-build-steps"]
 
 = Additional custom build steps
 

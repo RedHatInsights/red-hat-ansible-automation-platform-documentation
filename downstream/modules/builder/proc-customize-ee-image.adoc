@@ -1,4 +1,4 @@
-[id="proc-customize-ee-image_{context}"]
+[id="proc-customize-ee-image"]
 
 = Customizing an existing execution environment image
 
