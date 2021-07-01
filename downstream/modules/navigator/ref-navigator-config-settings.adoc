@@ -4,7 +4,7 @@
 
 [role="_abstract"]
 
-The following table describe each parameter and setting options for the  {Navigator} `config` subcommand.
+The following table describes each parameter and setting options for the  {Navigator} `config` subcommand.
 
 .{Navigator} `config` subcommand parameters settings table
 [options="header"]
