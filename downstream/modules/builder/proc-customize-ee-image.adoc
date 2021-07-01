@@ -4,7 +4,7 @@
 
 Ansible Controller ships with three default execution environments:
 
-* `Ansible 2.9` - no collections are installed other than controller modules
+* `Ansible 2.9` - no collections are installed other than Controller modules
 * `Minimal` - contains the latest Ansible 2.11 release along with Ansible Runner, but contains no collections or other additional content
 * `EE Supported` - contains all Red Hat-supported content
 
@@ -46,7 +46,7 @@ dependencies:
 ----
 ====
 +
-NOTE: Since this exampleuses the community version of `kubernetes.core` and not a certified collection from {HubName}, we do not need to create an `ansible.cfg` nor reference that in our definition file.
+NOTE: Since this example uses the community version of `kubernetes.core` and not a certified collection from {HubName}, we do not need to create an `ansible.cfg` nor reference that in our definition file.
 . Build the new {ExecEnvShort} image using the following command:
 +
 [subs=+quotes]
@@ -73,6 +73,6 @@ $ podman push quay.io/[username]/new-ee
 .. Navigate to automation controller
 .. From the side-navigational bar, click *Administration* > *Execution Environments*.
 .. Click *Add*.
-.. From the "Pull" dropdown list, select your new container image.
+.. Enter the appropriate information then hit *Save* to pull in the new image.
 +
-NOTE: if your instance of Automation Hub is password or token protected, ensure that you have the appropriate container registry credential set up.
+NOTE: if your instance of {HubName} is password or token protected, ensure that you have the appropriate container registry credential set up.

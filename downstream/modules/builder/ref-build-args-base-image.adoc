@@ -19,6 +19,6 @@ The `build_arg_defaults` section of the definition file is a dictionary whose ke
 | Specifies the image used for compiling-type tasks
 |===
 
-The values given inside `build_arg_defaults` will be harded-coded into the `Containerfile`, so these values will persist if `podman build` is called manually.
+The values given inside `build_arg_defaults` will be hard-coded into the `Containerfile`, so these values will persist if `podman build` is called manually.
 
 NOTE: If the same variable is specified in the CLI `--build-arg` flag, the CLI value will take higher precedence.
