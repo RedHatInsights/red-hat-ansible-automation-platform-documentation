@@ -11,7 +11,7 @@ With your {HubName} URL on hand, run the following command to log in to Podman, 
 
 [subs=+quotes]
 ----
-$ podman login -u=_username_ -p=_password_ --tlsverify=false _automation-hub-url_
+$ podman login -u=_username_ -p=_password_ --tls-verify=false _automation-hub-url_
 ----
 
 Once you’re logged in to Podman, run the following command to push your container image to the container registry on {HubName}:
