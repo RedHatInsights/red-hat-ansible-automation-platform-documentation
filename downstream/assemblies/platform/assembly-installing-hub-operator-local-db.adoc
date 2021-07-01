@@ -13,10 +13,14 @@ ifdef::context[:parent-context: {context}]
 
 :context: installing-hub-operator-local
 
+[NOTE]
+====
+Default installation settings include storage of 50GB and `ReadWriteMany` access.
+====
 
 
 [role="_abstract"]
-You can use these instructions to install the {HubName} operator on {OCP} and instantiate an instance.
+You can use these instructions to install the {HubName} operator on {OCP} and instantiate an instance with routed web traffic using the advanced configuration options in the *Form View*.
 
 
 // mirrors AWX operator flow
@@ -25,33 +29,55 @@ You can use these instructions to install the {HubName} operator on {OCP} and in
 
 * You have installed the catalog containing the {PlatformName} operators
 
-.Installing the {PlatformNameShort} operator
+== Installing the {PlatformNameShort} operator
 
 . Log in to {OCP}.
 . Navigate to *Operators* -> *Operator Hub*.
 . Locate the {PlatformName} catalog and click on it.
+. Choose your *Installation Mode*.
+. Choose a *Namespace* from the drop-down menu.
+. Select an *Approval Strategy*
 . Click *Install*
 
-.Instantiating an instance of {HubName}
+The installation process will begin. When installation is complete a modal will appear notifying you the operated is installed in the specified namespace.
+
+* Click *View Operator* to view your newly installed operator.
+
+== Instantiating an instance of {HubName}
 
 [NOTE]
 ====
 {OCP} clusters running on AWS do not support ReadWriteMany without adding NFS or other storage.
 ====
 
+.Prodecure
+
 . Navigate to *Operators* -> *Installed Operators*.
 . Locate the {HubName} operator and click on it.
 . Click *Create Instance*.
-. Use either the *Form View* or *YAML view* to configure the instance.
-.. Click *Advanced Configuration* to enter additional resource information.
+. Select the *Form View* to configure the operator instance.
+. Click *Advanced Configuration* to enter additional resource information. Use this option to supply *Admin password secret*, *Database configuration secret* and other parameters.
+. Select *Route* from the *Ingress Type* drop-down menu.
+.. Input the *Route DNS host* to specify the DNS to use to point to the instance.
+.. Select a *Route TLS termination mechanism* option from the drop-down menu.
+.. Select a *Route TLS credential secret* to choose a secret where the TLS related credentials are stored.
+. Select a *Storage Type* from the options in the drop-down menu.
+.. Choose a *Storage Secret* based on the storage type you are using.
+. Click *Create*.
 
-/////
-include::modules/TEMPLATE_CONCEPT_explaining_a_concept.adoc[leveloffset=+1]
+{OCP} will create the pods. This may take a few minutes.
+
+* View progress by navigating to *Workloads* -> *Pods* and locating the newly created instance.
 
 
-include::modules/TEMPLATE_PROCEDURE_doing_one_procedure.adoc[leveloffset=+2]
-include::modules/TEMPLATE_PROCEDURE_reference-material.adoc[leveloffset=2]
-/////
+== Accessing the {HubName} user interface
+
+You can access the {HubName} interface once all pods have successfully launched.
+
+. Navigate to *Networking* -> *Routes*.
+. Under *Location*, click on the URL for your {HubName} instance.
+
+The {HubName} user interface will launch, You can sign in with the admin credentials specified during the operator configuration process.
 
 [role="_additional-resources"]
 == Additional resources
