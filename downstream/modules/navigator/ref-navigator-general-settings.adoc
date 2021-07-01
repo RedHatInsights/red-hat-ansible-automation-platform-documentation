@@ -52,7 +52,7 @@ ansible-navigator:
 *ENV:* `ANSIBLE_NAVIGATOR_ANSIBLE_RUNNER_TIMEOUT`
 
 *Settings file:*
-[sourc,yaml]
+[source,yaml]
 ----
 ansible-navigator:
   ansible-runner:
