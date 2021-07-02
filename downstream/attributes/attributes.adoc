@@ -2,6 +2,7 @@
 
 // Platform
 :PlatformName: Red Hat Ansible Automation Platform
+:PlatformNameShort: Ansible Automation Platform
 
 // Automation services catalog
 :CatalogName: automation services catalog

@@ -1,0 +1,14 @@
+
+[id="con-architecture-overview_introduction"]
+
+
+= About content workflows
+
+
+[role="_abstract"]
+The following list shows the possible arrangements and uses of tools that will be available on the {PlatformNameShort} 2.0, along with how they can be utilized:
+
+* {{Navigator}} only -- can be used today in {PlatformNameShort} 1.2
+* {Navigator} + downloaded {ExecEnvName} — used directly on laptop/workstation
+* {Navigator} + downloaded {ExecEnvName} + {ControllerName} — for pushing/executing locally → remotely
+* {Navigator} + {ControllerName} + {Builder} + Layered custom EE — provides even more control over utilized content for how to execute automation jobs

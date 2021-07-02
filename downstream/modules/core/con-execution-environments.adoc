@@ -19,10 +19,10 @@ The `context` attribute enables module reuse. Every module ID includes {context}
 * Ansible Collections
 * Python and/or system dependencies
 ** modules/plugins in collections
-** content in `ansible-base`
+** content in `ansible-core`
 ** custom user needs
 
-You can define and create an {ExecEnvNameStart} using {Builder}.
+You can define and create an {ExecEnvName} using {Builder}.
 
 ////
 [role="_additional-resources"]
