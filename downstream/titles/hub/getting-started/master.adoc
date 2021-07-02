@@ -1,4 +1,4 @@
-= Getting started with Red Hat Ansible Automation Hub
+= Getting started with automation hub
 :imagesdir: images
 // :numbered:
 
@@ -8,11 +8,11 @@ The Ansible Galaxy client, `ansible-galaxy`, manages roles and collections from 
 
 This guide walks you through the steps required to configure your `ansible.cfg` file to use Red Hat Automation Hub as the default source for certified Ansible collections content.
 
-include::assemblies/hub/proc-create-api-token.adoc[leveloffset=+1]
+include::automation-hub/proc-create-api-token.adoc[leveloffset=+1]
 
 The API token is now available to use to configure Automation Hub as your default collections server or when uploading collections using the `ansible-galaxy` command line tool.
 
-include::assemblies/hub/proc-configure-automation-hub-server.adoc[leveloffset=+1]
+include::automation-hub/proc-configure-automation-hub-server.adoc[leveloffset=+1]
 
 You have now configured Automation Hub as your default server and can proceed to download and install supported collections.
 
