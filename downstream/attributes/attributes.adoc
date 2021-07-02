@@ -16,7 +16,7 @@
 :InsightsShort: Insights for Ansible Automation Platform
 :calculator: automation calculator
 :explorer: job explorer
-:planner: automation planner
+:planner: automation savings planner
 :email: email notification
 :subscription: subscription watch
 :insights: insights integration
@@ -56,7 +56,7 @@
 :ToolsName: Ansible developer tools
 :Test: Ansible-test
 :Builder: Ansible-builder
-:Navigator: Ansible-navigator
+:Navigator: Automation content navigator
 :IDEplugin: Ansible IDE plugins
 :IDEcollection: Ansible IDE collection explorer
 :IDElanguage: Ansible IDE language server

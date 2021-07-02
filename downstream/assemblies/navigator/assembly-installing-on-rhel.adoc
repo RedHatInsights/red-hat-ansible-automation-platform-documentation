@@ -7,18 +7,15 @@ ifdef::context[:parent-context: {context}]
 :context: install-navigator-rhel
 
 [role="_abstract"]
-You can install {Navigator} on Red Hat Enterprise Linux (RHEL) 8 with `pip`.
+As a content creator, you can install {Navigator} on Red Hat Enterprise Linux (RHEL) 8.
 
 == Prerequisites
 
 * You have installed RHEL 8 or later.
 
 include::navigator/proc-installing-navigator-rhel-pip.adoc[leveloffset=+1]
-////
- - only pip supported for now
-include::navigator/proc-installing-navigator-rhel-tar.adoc[leveloffset=+1]
 include::navigator/proc-installing-navigator-rhel-rpm.adoc[leveloffset=+1]
-////
+include::navigator/proc-installing-navigator-rhel-tar.adoc[leveloffset=+1]
 
 You have now installed  {Navigator} and can use this tool to evaluate your playbooks, view your collections and inventories, and delve into the module-level documentation.
 

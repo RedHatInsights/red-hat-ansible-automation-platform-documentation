@@ -6,7 +6,7 @@ We welcome contributions to the Red Hat Ansible Automation Platform documentatio
 
 ### Authoring modularly structured documentation
 
-Documentation follows a link:https://github.com/RedHatInsights/modular-docs[modular-based content model], providing a structure for writing and presenting user-story-based documentation. User-story-based documentation attempts to address the reader's needs more than focusing on feature-based documentation. This is accomplished using a set of templates for concepts, references, procedures and assemblies. Templates can be found link:https://github.com/RedHatInsights/modular-docs/tree/master/modular-docs-manual/files[here].
+Documentation follows a link:https://redhat-documentation.github.io/modular-docs/[modular-based content model], providing a structure for writing and presenting user-story-based documentation. User-story-based documentation attempts to address the reader's needs more than focusing on feature-based documentation. This is accomplished using a set of templates for concepts, references, procedures and assemblies. Templates can be found link:https://github.com/redhat-documentation/modular-docs/tree/master/modular-docs-manual/files[here].
 
 
 = Repository Organization
@@ -58,7 +58,7 @@ Lower-level directories are:
 
 ### Red Hat Documentation Asciidoc Mark-up Conventions
 
-Red Hat Ansible Automation Platform documentation is written in Asciidoc. See link:https://RedHatInsights.github.io/asciidoc-markup-conventions/[Red Hat Documentation Asciidoc Mark-up Conventions] to learn more about implementing Asciidoc in your writing.
+Red Hat Ansible Automation Platform documentation is written in Asciidoc. See link:https://redhat-documentation.github.io/asciidoc-markup-conventions/[Red Hat Documentation Asciidoc Mark-up Conventions] to learn more about implementing Asciidoc in your writing.
 
 ### Red Hat product documentation style conventions
 
