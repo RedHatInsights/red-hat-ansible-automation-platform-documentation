@@ -5,6 +5,7 @@
 
 // Automation services catalog
 :CatalogName: automation services catalog
+:CatalogNameStart: Automation services catalog
 :ITSM: ITSM integration
 :returns: product returns
 :leasing: product leasing
