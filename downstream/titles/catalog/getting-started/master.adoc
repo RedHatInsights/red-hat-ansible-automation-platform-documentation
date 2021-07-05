@@ -1,17 +1,17 @@
 :experimental:
 :toclevels: 4
-include::attributes/attributes-catalog.adoc[]
+include::attributes/attributes.adoc[]
 
 [[getting-started]]
 = Getting started with Automation Services Catalog
 
 
-== About {ProductName}
+== About {CatalogName}
 
-{ProductName} is a service within the Red Hat Ansible Automation Platform.
-{ProductName} allows customers to organize and govern product catalog sources on Ansible Tower across various environments.
+{CatalogNameStart} is a service within the Red Hat Ansible Automation Platform.
+{CatalogNameStart} allows customers to organize and govern product catalog sources on Ansible Tower across various environments.
 
-Using {ProductName} you can:
+Using {CatalogName} you can:
 
 * Apply multi-level approval to individual platform inventories
 * Organize content in the form of products from your platforms into portfolios
@@ -19,9 +19,9 @@ Using {ProductName} you can:
 * Set boundaries around values driving execution of user requests
 
 
-== Getting started with {ProductName}
+== Getting started with {CatalogName}
 
-This guide provides instructions to begin using {ProductName}, including prerequisites and procedures for connecting your Ansible Tower provider, as well as configuring users and permissions. We also provide instructions for working with platforms, portfolios, and products.
+This guide provides instructions to begin using {CatalogName}, including prerequisites and procedures for connecting your Ansible Tower provider, as well as configuring users and permissions. We also provide instructions for working with platforms, portfolios, and products.
 
 After completing the setup described and following the steps in this guide, you will have a portfolio of products, governed by an approval process, accessible to users.
 
@@ -35,17 +35,17 @@ At least one Red Hat account user with Organization Administrator entitlements.
 The account number for this Red Hat corporate account.
 ====
 
-== User access for {ProductName}
+== User access for {CatalogName}
 
-When configuring {ProductName} for your organization, consider the scope of your user environments, how those users are grouped, and the roles to assign. You can manage this workflow through *User Access*.
+When configuring {CatalogName} for your organization, consider the scope of your user environments, how those users are grouped, and the roles to assign. You can manage this workflow through *User Access*.
 
-{ProductName} features and workflows are governed by *groups* that have specific *roles* attached to them. The *Organization Administrator* role performs the initial creation of groups, assigns roles, and adds users.
+{CatalogNameStart} features and workflows are governed by *groups* that have specific *roles* attached to them. The *Organization Administrator* role performs the initial creation of groups, assigns roles, and adds users.
 
 .Groups
-Groups are user-defined and flexible to include many users and have multiple roles.  Create new groups based on your organization’s requirements for working with {ProductName}.
+Groups are user-defined and flexible to include many users and have multiple roles.  Create new groups based on your organization’s requirements for working with {CatalogName}.
 
 .Roles
-Roles provide a defined set of actions each group performs. Determine the required level of access for your users based on the following roles {ProductName} uses:
+Roles provide a defined set of actions each group performs. Determine the required level of access for your users based on the following roles {CatalogName} uses:
 
 .Role Reference Table
 [cols="a,a,a"]
@@ -99,7 +99,7 @@ Due of potential security implications, limit the number of users in cloud.redha
 
 === Creating administrator groups
 
-The Organization Administrator can create new groups of administrators and users in {ProductName}. Catalog and Approval administrators are required to perform initial workflows in configuring {ProductName}. In this section, we will create groups for both Catalog and Approval administrators.
+The Organization Administrator can create new groups of administrators and users in {CatalogName}. Catalog and Approval administrators are required to perform initial workflows in configuring {CatalogName}. In this section, we will create groups for both Catalog and Approval administrators.
 
 ==== Creating a Catalog Administrator group
 
@@ -136,7 +136,7 @@ The new group of Approval Administrators has been created. Approval Administrato
 
 ==== Creating Approval Approver Groups
 
-The Approval Approver is a role that grants create and read permissions to users who will approve or deny requests generated when a {ProductName} user orders a product.
+The Approval Approver is a role that grants create and read permissions to users who will approve or deny requests generated when a {CatalogName} user orders a product.
 
 To create an Approval Approver group:
 
@@ -167,7 +167,7 @@ A message will appear notifying you if the member was added successfully.
 
 == Configuring Approval
 
-{ProductName} supports group-based approval processes applied to portfolios, products, and platform inventories, providing the flexibility to include selected organizational groups in approving requests utilizing the *Approval* service.
+{CatalogNameStart} supports group-based approval processes applied to portfolios, products, and platform inventories, providing the flexibility to include selected organizational groups in approving requests utilizing the *Approval* service.
 
 Approval administrators can create approval groups and processes, view request details, approve or deny requests, and monitor the status of existing requests.
 
@@ -202,7 +202,7 @@ To create and list groups when creating Approval processes, the Approval Adminis
 
 ==== Creating an approval process
 
-Creating an approval process designates specific groups required to approve product orders placed by {ProductName} users.
+Creating an approval process designates specific groups required to approve product orders placed by {CatalogName} users.
 
 You can create an approval process from the *Approval processes* list view.
 
@@ -225,7 +225,7 @@ You can edit the sequence number for an approval process from the Approval proce
 
 . Select *Approval* from the main navigation.
 . Click the *Approval processes* tab.
-. Navigate to the approval process, then click image:images/actions.png[More actions].
+. Navigate to the approval process, then click image:images/ellipsis.png[More actions,10,25].
 . Click *Edit*.
 . Enter the desired sequence number under *Enter sequence*.
 . Click *Save*.
@@ -245,63 +245,92 @@ Products without an approval process at any of these levels will approve upon or
 
 == Working with platforms, portfolios, and products
 
-This section demonstrates the basic workflows for platforms, portfolios, and products to get started using {ProductName}
+This section demonstrates the basic workflows for platforms, portfolios, and products to get started using {CatalogName}
 
 We will demonstrate how to:
 
-* connect to a source platform
+
 * create portfolios
 * add products from the source platform into the portfolio
 * set approval processes for the portfolio
 * share the portfolio with users
 
+/////
 === Adding sources
 
-Sources are the platforms {ProductName} connects to in order to collect inventory information used to organize and present products available to users. To use {ProductName}, you need to connect the application to at least one source.
-
-=== Adding Ansible Tower as a source platform
-
-Connect an Ansible Tower instance to {ProductName} to create products from its inventory of playbooks and workflows your users can view and order from.
-
-To begin, we will add an Ansible Tower instance as a source of products.
-
-include::modules/proc_Adding_ansible_tower_source.adoc[]
+See link:
+/////
 
 === Creating a portfolio and adding products to it
 
-Now that we have a source for products, we can proceed to create an example portfolio and add a few products from our Ansible Tower to it.
+To create a portfolio:
 
-include::modules/proc_Creating_portfolios.adoc[]
+. Click *Create portfolio*.
+. Provide a *New Portfolio Name* and *Description*.
+. Choose an *Approval workflow* from the drop-down list.
+. Click *Save*.
+
 
 Our initial portfolio is empty, and we can start adding products from this empty state.
 
-include::modules/proc_Add_products_from_platforms.adoc[]
+To add a product from a platform:
+
+. Click in the *Filter by Platform* field to view connected platforms.
+. Select a platform. The screen will populate with products from that platform.
+. Check each product to add to the portfolio.
+. Click *Add*.
+
 
 === Setting approval processes for the portfolio
 
 We have now created a portfolio and added some products to it. Our next step is to set the approval process for the portfolio. Setting the approval process for our portfolio ensure that specific groups are designated to approve any orders placed by a user.
 
-include::modules/proc_Assigning_approval_workflow.adoc[]
+To set an approval processes for the portfolio:
+
+. Navigate to *Portfolios*.
+. Click image:images/ellipsis.png[More actions,10,25] on a portfolio tile and select *Set approval*.
+. From the *Set approval process* drop-down menu, select an approval processes to set to the portfolio.
+. Click *Save*.
+
 
 
 === Sharing the portfolio with users
 
 The portfolio is now ready to share with groups of users. These designated user groups can order products collected in the portfolio, and their orders are approved or denied using the approval process set for the portfolio.
 
-include::modules/proc_Sharing_portfolios.adoc[]
+To share a portfolio:
+
+. Click *Portfolios*.
+. Click image:images/ellipsis.png[More actions,10,25] on a portfolio, then click *Share*. The icon:[Y] indicates a shared portfolio.
+. Adding groups:
+.. Under *Invite group* search groups to share the portfolio with.
+.. Select the level of permissions using the drop-down list.
+. Edit sharing settings for existing groups:
+.. Under *Groups with access* adjust permissions using the drop-down for each group.
+.. To stop sharing a portfolio with a group, click icon:[X].
+. Click *Send* when finished.
 
 Our portfolio is now accessible to the groups of users, who can order the products we collected in it. We can now duplicate this portfolio, change its name and add new products, to share with different user groups.
 
-include::modules/con_Copying_portfolios.adoc[leveloffset=+1]
+=== Copying existing portfolios to edit and share with new groups
+
+Copying portfolios allows you to quickly duplicate an already organized portfolio to offer to different groups of users. Once a copy is created, you can add or remove products, share with new groups, and apply new approval processes to meet organizational requirements.
+
+
+Copying portfolios allows you to quickly duplicate an already organized portfolio to offer to different groups of users. Once a copy is created, you can add or remove products, share with new groups, and apply new approval processes to meet organizational requirements.
+
 
 We can also copy products from various portfolios to additional portfolios.
 
-include::modules/con_Copying_products.adoc[leveloffset=+1]
+=== Copying products to different portfolios
+
+You can copy products from one portfolio to another as part of developing new portfolios to meet group needs. Once a product is copied you can edit its basic fields, update its survey, and apply different approval processes.
+
 
 
 === Workflows summary
 
-The workflows in this section of the guide demonstrated how to perform the basic actions for platforms, portfolios and products necessary to get started using {ProductName}:
+The workflows in this section of the guide demonstrated how to perform the basic actions for platforms, portfolios and products necessary to get started using {CatalogName}:
 
 * add entitlements to access Automation Service Catalog;
 * create the necessary groups and users;
@@ -318,7 +347,7 @@ In the next section, we will describe working with the survey editor, and provid
 
 == Using the survey editor
 
-When ordering a product in {ProductName}, users may be required to provide additional information to complete the request. This prompt is created by a survey associated with the product. Initially created and edited in Ansible Tower, Catalog Administrators and portfolio users with update permissions can edit the survey in {ProductName}. Once submitted and validated, the surveys pass user-submitted extra variables to the job or workflow template run on Ansible Tower on the execution of an order.
+When ordering a product in {CatalogName}, users may be required to provide additional information to complete the request. This prompt is created by a survey associated with the product. Initially created and edited in Ansible Tower, Catalog Administrators and portfolio users with update permissions can edit the survey in {CatalogName}. Once submitted and validated, the surveys pass user-submitted extra variables to the job or workflow template run on Ansible Tower on the execution of an order.
 
 See _Surveys_ in the link:https://docs.ansible.com/ansible-tower/latest/html/userguide/index.html[Ansible Tower User Guide] to learn more creating and editing surveys for job templates.
 
@@ -331,7 +360,7 @@ Using the survey properties editor, you can:
 
 === Survey properties editor
 
-Values for surveys are defined in Ansible Tower and the {ProductName} properties editor allows Catalog Administrators to restrict survey options, such as adjusting default values and removing items from drop-down menus.
+Values for surveys are defined in Ansible Tower and the {CatalogName} properties editor allows Catalog Administrators to restrict survey options, such as adjusting default values and removing items from drop-down menus.
 
 Additionally, use the properties editor to hide, disable, or set a field to read only.
 
@@ -350,7 +379,7 @@ The product has an associated survey, created in Ansible Tower.
 .Procedure
 . Click *Products*.
 . Locate the product and click on its title.
-. Click image:images/actions.png[More actions] and select *Edit survey*.
+. Click image:images/ellipsis.png[More actions,10,25] and select *Edit survey*.
 . Select a field in the survey. The *Properties* editor will appear.
 . Click *Properties* to view the elements to edit for that field.
 . Select *Validation* to configure the validator types used to validate user input.
@@ -385,7 +414,7 @@ To comment on a request:
 
 == Conclusion
 
-In the previous sections of this guide we walked through the primary workflows necessary to get started using {ProductName}.
+In the previous sections of this guide we walked through the primary workflows necessary to get started using {CatalogName}.
 
 
 Following these workflows you have:
