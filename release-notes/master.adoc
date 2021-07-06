@@ -4,8 +4,8 @@ include::topics/platform-intro.adoc[leveloffset=+1]
 
 include::topics/upgrading.adoc[leveloffset=+1]
 
-[[anchor-june-2021-release]]
-== June 2021 release
+[[anchor-july-2021-release]]
+== July 2021 release
 
 === Red Hat Insights for Red Hat Ansible Automation Platform
 
