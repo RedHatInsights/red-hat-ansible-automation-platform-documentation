@@ -34,5 +34,6 @@ colon commands:: You can access all the {Navigator} commands with a colon, such 
 navigating the text-based interface:: The screen shows how to page up or down, scroll, escape to a prior screen or access `:help`.
 output by line number:: You can access any line number in the displayed output by preceding it with a colon, for example `:12`.
 color-coded output:: With colors enabled, {Navigator} displays items such as deprecated modules in red.
+pagination and scrolling:: You can traverse and scroll each results screen by using the keyboard shortcuts displayed at the bottom of any {Navigator} screen.
 
 You cannot switch between modes once {Navigator} is running.
