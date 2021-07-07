@@ -24,6 +24,10 @@ $ ansible-navigator
 
 . Browse the collection. Alternately, you can type `ansible-navigator collections` to directly browse the collections.
 +
+----
+$ :collections
+----
++
 image::navigator-collection-list.png[]
 
 . Type the number of the collection you want to explore.
