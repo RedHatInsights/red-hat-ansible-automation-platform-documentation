@@ -1,0 +1,19 @@
+[id="con-gathering-system-dependencies_{context}"]
+
+= Gathering system-level dependencies
+
+The `bindep` format provides a way of specifying cross-platform requirements. A minimum expectation is that the collection(s) specify necessary requirements for `[platform:rpm]`.
+
+Below is an example of content from a valid `bindep.txt` file:
+
+.A `bindep.txt` file
+====
+----
+python38-devel [platform:rpm compile]
+subversion [platform:rpm]
+subversion [platform:dpkg]
+git-lfs [platform:rpm]
+----
+====
+
+Entries from multiple collections will be combined into a single file. This will be processed by `bindep` and then passed to `dnf`. Only requirements with no profiles or no runtime requirements will be installed to the image.

@@ -1,0 +1,6 @@
+[id="assembly-publishing-exec-env"]
+
+= Publishing an {ExecEnvNameSing}
+
+include::builder/proc-push-execenv-to-hub.adoc[leveloffset=+1]
+include::builder/proc-pull-protected-registry.adoc[leveloffset=+1]

@@ -1,0 +1,38 @@
+[id="con-building-definition-file_{context}"]
+
+= Building a definition file
+
+Once you have {Builder} installed, we will need to create a definition file which {Builder} will use to create your {ExecEnvNameSing} image. The high level process to build an {ExecEnvNameSing} image is for {Builder} to read and validate your definition file, then create a `Continerfile`, and finally pass the `Containerfile` to Podman which then packages and creates your {ExecEnvNameSing} image. The definition file we will create for {Builder} is in `yaml` format and contains different sections which we will discuss in further detail.
+
+The following is an example of a definition file:
+
+.A definition file
+====
+----
+version: 1
+
+build_arg_defaults: <1>
+  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: “-c”
+
+ansible_config: 'ansible.cfg' <2>
+
+dependencies: <3>
+  galaxy: requirements.yml
+  python: requirements.txt
+  system: bindep.txt
+
+additional_build_steps: <4>
+  prepend: |
+    RUN whoami
+    RUN cat /etc/os-release
+  append:
+    - RUN echo This is a post-install command!
+    - RUN ls -la /etc
+
+----
+====
+
+<1> Lists default values for build arguments
+<2> Specifies the `ansible.cfg` file path
+<3> Specifies the location of various requirements files
+<4> Commands for additional custom build steps

@@ -1,0 +1,68 @@
+[id="con-definition-dependencies_{context}"]
+
+= Dependencies
+
+== Galaxy
+The `galaxy` entry points to a valid requirements file for the `ansible-galaxy collection install -r ...` command.
+
+The entry `requirements.yml` may be a relative path from the directory of the {ExecEnvNameSing} definition’s folder, or an absolute path.
+
+The content of a `requirements.yml` file may look like the following:
+
+.A `requirements.yml` file for Galaxy
+[example]
+====
+----
+---
+collections:
+  - geerlingguy.java
+  - kubernetes.core
+----
+====
+
+== Python
+
+The `python` entry in the definition file points to a valid requirements file for the `pip install -r ...` command.
+
+The entry `requirements.txt` is a file that installs extra Python requirements on top of what the Collections already list as their Python dependencies. It may be listed as a relative path from the directory of the {ExecEnvNameSing} definition’s folder, or an absolute path. The contents of a `requirements.txt` file should be formatted like the following example, similar to the standard output from a `pip freeze` command:
+
+.A `requirements.yml` file for Python
+[example]
+====
+----
+boto>=2.49.0
+botocore>=1.12.249
+pytz
+python-dateutil>=2.7.0
+awxkit
+packaging
+requests>=2.4.2
+xmltodict
+azure-cli-core==2.11.1
+python_version >= '2.7'
+collection community.vmware
+google-auth
+openshift>=0.6.2
+requests-oauthlib
+openstacksdk>=0.13
+ovirt-engine-sdk-python>=4.4.10
+----
+====
+
+== System
+
+The `system` entry in the definition points to a https://docs.opendev.org/opendev/bindep/latest/readme.html[bindep] requirements file, which will install system-level dependencies that are outside of what the collections already include as their dependencies. It may be listed as a relative path from the directory of the {ExecEnvNameSing} definition’s folder, or an absolute path.
+
+To demonstrate this, the following is an example `bindep.txt` file that adds the `libxml2` and `subversion` packages to a container:
+
+.A `bindep.txt` file
+[example]
+====
+----
+libxml2-dev [platform:dpkg]
+libxml2-devel [platform:rpm]
+libxml2-utils [platform:dpkg]
+subversion [platform:rpm]
+subversion [platform:dpkg]
+----
+====
