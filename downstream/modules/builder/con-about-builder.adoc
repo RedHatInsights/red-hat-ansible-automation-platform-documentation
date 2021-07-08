@@ -5,23 +5,10 @@ Base the file name and the ID on the module title. For example:
 * Title: = My concept module A
 ////
 
-
-[id="con-about-builder_{context}"]
+[id="con-about-builder"]
 
 = About {Builder}
 
 [role="_abstract"]
 
-{Builder} is a command line tool that aids in the creation of {ExecEnvName} containers. It automates the container-building process by using the schemas and tooling defined both by the user and in various Ansible Content Collections.
-
-
-////
-Consider adding a link to future Builder docs here
-[role="_additional-resources"]
-.Additional resources
-
-* A bulleted list of links to other material closely related to the contents of the concept module.
-* Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.
-* For more details on writing concept modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-////
+{Builder} is a command line tool that automates the process of building {ExecEnvName} by using the metadata defined in various Ansible Collections, as well as by the user.

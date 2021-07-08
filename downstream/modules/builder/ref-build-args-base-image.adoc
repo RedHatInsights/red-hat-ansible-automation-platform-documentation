@@ -1,0 +1,24 @@
+[id="ref-build-args-base-image"]
+
+= Build args and base image
+
+The `build_arg_defaults` section of the definition file is a dictionary whose keys can provide default values for arguments to {Builder}. See the following table for a list of values that can be used in `default_build_args`:
+
+[cols="a,a"]
+|===
+| Value | Description
+
+| `ANSIBLE_GALAXY_CLI_COLLECTION_OPTS`
+| * Allows the user to pass the `–pre` flag to enable the installation of pre-releases collections
+* `-c` is the equivalent of setting `verify_ssl` to `false`
+
+| `EE_BASE_IMAGE`
+| Specifies the parent image for the {ExecEnvNameSing}, enabling a new image to be built that is based off of an already-existing image
+
+| `EE_BUILDER_IMAGE`
+| Specifies the image used for compiling-type tasks
+|===
+
+The values given inside `build_arg_defaults` will be hard-coded into the `Containerfile`, so these values will persist if `podman build` is called manually.
+
+NOTE: If the same variable is specified in the CLI `--build-arg` flag, the CLI value will take higher precedence.

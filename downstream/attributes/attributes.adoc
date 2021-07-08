@@ -46,6 +46,8 @@
 // Execution environments
 :ExecEnvNameStart: Automation execution environments
 :ExecEnvName: automation execution environments
+:ExecEnvNameSing: automation execution environment
+:ExecEnvShort: execution environment
 :RHEL8: RHEL 8 UBI
 :Python: Python 3.8
 :Runner: Ansible Runner
@@ -55,7 +57,7 @@
 // Ansible developer tools
 :ToolsName: Ansible developer tools
 :Test: Ansible-test
-:Builder: Ansible-builder
+:Builder: Ansible Builder
 :Navigator: Automation content navigator
 :IDEplugin: Ansible IDE plugins
 :IDEcollection: Ansible IDE collection explorer
@@ -63,7 +65,7 @@
 
 // Content Collections
 :CertifiedName: Ansible Certified Content Collections
-:ServiceNowColl: Red Hat Ansible Certified Content Collcetion for Service Now
+:ServiceNowColl: Red Hat Ansible Certified Content Collection for Service Now
 
 // OpenShift attributes
 :OCP: Red Hat OpenShift Container Platform

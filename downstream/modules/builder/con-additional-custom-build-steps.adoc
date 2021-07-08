@@ -1,0 +1,29 @@
+[id="con-additional-custom-build-steps"]
+
+= Additional custom build steps
+
+The `prepend` and `append` commands may be specified in the `additional_build_steps section`. These will add commands to the `Containerfile` which will run either before or after the main build steps are executed.
+
+The syntax for `additional_build_steps` must be one of the following:
+
+* a multi-line string
++
+.A multi-line string entry
+[example]
+====
+----
+RUN whoami
+RUN cat /etc/os-release
+----
+====
+
+* a list
++
+.A list entry
+[example]
+====
+----
+- RUN echo This is a post-install command!
+- RUN ls -la /etc
+----
+====
