@@ -15,7 +15,7 @@ The `build_arg_defaults` section of the definition file is a dictionary whose ke
 | `EE_BASE_IMAGE`
 | Specifies the parent image for the {ExecEnvNameSing}, enabling a new image to be built that is based off of an already-existing image
 
-| `PYTHON_BUILDER_IMAGE`
+| `EE_BUILDER_IMAGE`
 | Specifies the image used for compiling-type tasks
 |===
 

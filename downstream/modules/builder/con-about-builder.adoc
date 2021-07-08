@@ -11,4 +11,4 @@ Base the file name and the ID on the module title. For example:
 
 [role="_abstract"]
 
-{Builder} is a command line tool that automates the process of building {ExecEnvName} by using the schemas and tooling defined in various Ansible Collections, as well as by the user.
+{Builder} is a command line tool that automates the process of building {ExecEnvName} by using the metadata defined in various Ansible Collections, as well as by the user.

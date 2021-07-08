@@ -59,10 +59,7 @@ To demonstrate this, the following is an example `bindep.txt` file that adds the
 [example]
 ====
 ----
-libxml2-dev [platform:dpkg]
 libxml2-devel [platform:rpm]
-libxml2-utils [platform:dpkg]
 subversion [platform:rpm]
-subversion [platform:dpkg]
 ----
 ====

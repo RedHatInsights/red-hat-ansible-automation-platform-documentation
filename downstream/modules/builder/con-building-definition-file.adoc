@@ -12,7 +12,7 @@ The following is an example of a definition file:
 version: 1
 
 build_arg_defaults: <1>
-  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: “-c”
+  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: "-v"
 
 ansible_config: 'ansible.cfg' <2>
 

@@ -2,12 +2,12 @@
 
 = Installing {Builder}
 
-You can install {Builder} from the https://pypi.org/project/ansible-builder/[Python Package Index (PyPI)]. In your terminal, run the following command:
-----
-$ pip install ansible-builder
-----
-
-You can also install {Builder} using Red Hat Subscription Management to register and attach to your {PlatformName} subscription. To install with this setup, run:
+You can install {Builder} using Red Hat Subscription Management to register and attach to your {PlatformName} subscription. In your terminal, run the following command:
 ----
 $ dnf install ansible-builder
+----
+
+You can also install {Builder} from the https://pypi.org/project/ansible-builder/[Python Package Index (PyPI)]. To install with this setup, run:
+----
+$ pip install ansible-builder
 ----

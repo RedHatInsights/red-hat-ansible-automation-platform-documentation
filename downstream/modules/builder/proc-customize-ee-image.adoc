@@ -39,7 +39,7 @@ collections:
 version: 1
 
 build_arg_defaults:
-  EE_BASE_IMAGE: ‘quay.io/aap/ansible-automation-platform-20-ee-minimal-rhel8’
+  EE_BASE_IMAGE: 'example.registry.com/my-base-ee'
 
 dependencies:
   galaxy: requirements.yml
