@@ -1,0 +1,38 @@
+
+
+[id="select-custom-venv-export"]
+
+
+
+= Viewing objects associated with a custom virtual environment
+
+
+[role="_abstract"]
+Select the custom virtual environment you wish to export using `awx-manage export_custom_venv` command.
+
+
+.Procedure
+
+. SSH into your {ControllerName} instance and run:
++
+-----
+$ awx-manage export_custom_venv /path/to/venv
+-----
+
+
+The output from this command will show a `pip freeze` of what is in the specified virtual environment. This information can be copied into a `requirements.txt` file for {Builder} to use for creating a new {ExecEnvName} image
+
+-----
+numpy==1.20.2
+pandas==1.2.4
+python-dateutil==2.8.1
+pytz==2021.1
+six==1.16.0
+
+To list all available custom virtual environments run:
+awx-manage list_custom_venvs
+-----
+[NOTE]
+====
+Pass the `-q` flag when running `awx-manage list_custom_venvs`to reduce output. 
+====

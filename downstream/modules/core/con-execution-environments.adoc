@@ -22,7 +22,7 @@ The `context` attribute enables module reuse. Every module ID includes {context}
 ** content in `ansible-core`
 ** custom user needs
 
-You can define and create an {ExecEnvName} using {Builder}.
+You can define and create an automation execution environment using {Builder}.
 
 ////
 [role="_additional-resources"]

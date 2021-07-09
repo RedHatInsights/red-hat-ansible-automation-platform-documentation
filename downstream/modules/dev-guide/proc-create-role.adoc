@@ -1,0 +1,42 @@
+[id="creating-roles"]
+
+
+
+= Creating roles
+
+[role="_abstract"]
+Using the `ansible-galaxy` command line tool that comes bundled with Ansible, you can create a role with the `init` command.
+
+As an example, the following command will create a role directory structure called `role_name` in the current working directory:
+
+-----
+$ ansible-galaxy init role_name
+-----
+
+ The `role_name` directory will contain the following:
+
+-----
+.travis.yml
+README.md
+defaults/
+    main.yml
+files/
+handlers/
+    main.yml
+meta/
+    main.yml
+tasks/
+    main.yml
+templates/
+tests/
+    inventory
+    test.yml
+vars/
+    main.yml
+
+-----
+
+[role="_additional-resources"]
+.Additional resources
+
+* For more information on creating roles, see link:https://galaxy.ansible.com/docs/contributing/creating_role.html[Creating roles] in the Ansible Galaxy documentation.

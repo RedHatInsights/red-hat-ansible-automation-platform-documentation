@@ -14,13 +14,13 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 Learn more about the {PlatformName} tools and components you will use in creating {ExecEnvName}.
 
-// include::builder/con-about-builder.adoc[leveloffset=+1]
+include::builder/con-about-builder.adoc[leveloffset=+1]
 
-include::navigator/con-about-ansible-navigator.adoc.adoc[leveloffset=+1]
+include::navigator/con-about-ansible-navigator.adoc[leveloffset=+1]
 
-include::automation-hub/con-about-automation-hub.adoc.adoc[leveloffset=+1]
+include::automation-hub/con-about-automation-hub.adoc[leveloffset=+1]
 
-include::core/con-about-ansible-cli.adoc.adoc[leveloffset=+1]
+include::core/con-about-ansible-cli.adoc[leveloffset=+1]
 
 
 
