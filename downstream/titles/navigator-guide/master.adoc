@@ -7,7 +7,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Early Access Ansible Navigator Creator Guide
+= Ansible Navigator Creator Guide
 
 include::navigator/assembly-intro-navigator.adoc[leveloffset=+1]
 include::navigator/assembly-installing-on-rhel.adoc[leveloffset=+1]
