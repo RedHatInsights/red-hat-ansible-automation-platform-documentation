@@ -1,15 +1,15 @@
 [[configuring-your-tower-infrastructure-to-communicate-with-catalog]]
 = Integrating Automation Services Catalog with your IT Service Management (ITSM) systems
 
-You can use the order process features of Automation Services Catalog to integrate with an Information Technology Service Management (ITSM) systems such as ServiceNow. 
+You can use the order process features of Automation Services Catalog to integrate with an Information Technology Service Management (ITSM) systems such as ServiceNow.
 
-include::assemblies/assembly-planning-ITSM-integration.adoc[leveloffset=+1]
+include::catalog/assembly-planning-ITSM-integration.adoc[leveloffset=+1]
 
-include::assemblies/assembly-update-playbook-set-stats.adoc[leveloffset=+1]
+include::catalog/assembly-update-playbook-set-stats.adoc[leveloffset=+1]
 
-include::assemblies/assembly-order-process.adoc[leveloffset=+1]
+include::catalog/assembly-order-process.adoc[leveloffset=+1]
 
-include::assemblies/assembly-itsm-substitution.adoc[leveloffset=+1]
+include::catalog/assembly-itsm-substitution.adoc[leveloffset=+1]
 
 
 
