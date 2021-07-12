@@ -1,0 +1,24 @@
+[id="proc-push-execenv-to-hub"]
+
+= Pushing an execution environment container image to {HubName}
+
+.Prerequisite
+* You have {ExecEnvShort} permissions in {HubName} allowing you to create new containers or push to an existing container.
+
+A container registry is a repository for storing container images. Once you have built an {ExecEnvNameSing} image, you’ll be ready to push that container image to the registry portion of your instance of {HubName}.
+
+With your {HubName} URL on hand, run the following command to log in to Podman, substituting your username, password, and {HubName} URL:
+
+[subs=+quotes]
+----
+$ podman login -u=_username_ -p=_password_ _automation-hub-url_
+----
+
+Once you’re logged in to Podman, run the following command to push your container image to the container registry on {HubName}:
+
+[subs=+quotes]
+----
+$ podman push _automation-hub-url_/_ee-image-name_
+----
+
+NOTE: The {ExecEnvNameSing} image name is specified by the `-t` argument to the `ansible-builder build` command. If you did not specify a custom image name using the `-t` flag, the default image tag is `ansible-execution-env:latest`.

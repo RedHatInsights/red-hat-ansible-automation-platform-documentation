@@ -9,7 +9,11 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-As a content developer, you can review your {ExecEnvNameStart} with {Navigator} and display the packages and collections included in the {ExecEnvName}. {Navigator} runs a playbook to extract and display the results.
+As a content developer, you can review your {ExecEnvName} with {Navigator} and display the packages and collections included in the {ExecEnvName}. {Navigator} runs a playbook to extract and display the results.
+
+== Prerequisites
+
+* You have authenticated to the Red Hat registry if you need to access additional {ExenEnvName}. See https://access.redhat.com/RegistryAuthentication[Red Hat Container Registry Authentication] for details.
 
 include::navigator/proc-review-ee-tui.adoc[leveloffset=+1]
 

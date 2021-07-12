@@ -1,0 +1,21 @@
+[id="con-ansible-config-file-path"]
+
+= Ansible config file path
+When using an `ansible.cfg` file to pass a token and other settings for a private account to an {HubName} server, list the config file path (relative to where the definition file is located) as a string to enable it as a build argument in the initial phase of the build.
+
+The `ansible.cfg` file should be formatted like the following example:
+
+.An `ansible.cfg` file
+====
+----
+[galaxy]
+server_list = automation_hub
+
+[galaxy_server.automation_hub]
+url=https://cloud.redhat.com/api/automation-hub/
+auth_url=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
+token=my_ah_token
+----
+====
+
+For more information on how to download a collection from {HubName}, please see the related Ansible documentation page.
