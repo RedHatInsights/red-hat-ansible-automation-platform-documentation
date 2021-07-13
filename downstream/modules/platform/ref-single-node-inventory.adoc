@@ -14,8 +14,8 @@ Do not use special characters for `pg_password`. It may cause the setup to fail.
 ====
 
 -----
-[tower]
-localhost ansible_connection=local
+[automationcontroller]
+127.0.0.1 ansible_connection=local
 
 [database]
 

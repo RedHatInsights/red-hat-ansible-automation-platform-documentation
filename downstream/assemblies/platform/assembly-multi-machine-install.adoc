@@ -7,7 +7,7 @@ ifdef::context[:parent-context: {context}]
 :context: multi-machine
 
 [role="_abstract"]
-You can use these instructions to install {PlatformName} as multiple {ControllerName} nodes and {HubName}) with an external managed database.
+You can use these instructions to install {PlatformName} as multiple {ControllerName} nodes and {HubName} with an external managed database.
 
 
 == Prerequisites

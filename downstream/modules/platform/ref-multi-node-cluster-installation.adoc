@@ -6,7 +6,7 @@
 
 
 [role="_abstract"]
-This example describes how you can populate the inventory file for a multi-node cluter installation of {ControllerName}.
+This example describes how you can populate the inventory file for a multi-node cluster installation of {ControllerName}.
 
 [IMPORTANT]
 ====
@@ -18,7 +18,7 @@ This example describes how you can populate the inventory file for a multi-node 
 
 
 -----
-[tower]
+[automationcontroller]
 host1
 host11
 host12
