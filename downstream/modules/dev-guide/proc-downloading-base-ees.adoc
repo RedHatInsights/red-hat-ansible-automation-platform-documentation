@@ -1,0 +1,28 @@
+
+
+[id="downloading-base-ees"]
+
+
+
+= Downloading base {ExecEnvName}
+
+[role="_abstract"]
+Base images that ship with AAP 2.0 are hosted on the Red Hat Ecosystem Catalog (registry.redhat.io).
+
+.Prerequisites
+
+* You have a valid {PlatformName} subscription.
+
+.Procedure
+
+. Log in to registry.redhat.io
++
+-----
+$ podman login registry.redhat.com
+-----
++
+. Pull the base images from the registry
++
+-----
+$ podman pull registry.redhat.io/aap/<image name>
+-----

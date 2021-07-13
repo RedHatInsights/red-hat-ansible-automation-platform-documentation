@@ -31,4 +31,4 @@ An Ansible Content Collection is a ready-to-use toolkit for automation. It inclu
 └── tests
 ....
 
-In Red Hat Ansible Automation Platform, Automation Hub serves as the source for Ansible Certified Content Collections.
+In {PlatformName}, {HubName} serves as the source for Ansible Certified Content Collections.

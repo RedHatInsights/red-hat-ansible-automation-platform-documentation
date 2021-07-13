@@ -1,0 +1,28 @@
+
+
+ifdef::context[:parent-context: {context}]
+
+
+
+[id="assembly-introduction"]
+=  Introduction to content creator workflows and {ExecEnvName}
+
+
+:context: introduction
+
+
+[role="_abstract"]
+
+
+
+include::dev-guide/con-content-workflows.adoc[leveloffset=+1]
+
+
+include::dev-guide/con-architecture-overview.adoc[leveloffset=+1]
+
+
+
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
