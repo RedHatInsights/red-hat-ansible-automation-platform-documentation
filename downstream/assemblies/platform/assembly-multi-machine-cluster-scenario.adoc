@@ -10,7 +10,7 @@ ifdef::context[:parent-context: {context}]
 :context: cluster-scenario
 
 [role="_abstract"]
-You can install {PlatformNameShort} as clustered {ControllerName} with {HubName} with an external managed database. In this mode, multiple {ControllerName} nodes are installed and active. Any node can receive HTTP requests and all nodes can execute jobs. This installs the {PlatformNameShort} server on a single machine and configures it to talk to a remote instance of PostgreSQL as its database. This remote PostgreSQL can be a server you manage, or can be provided by a cloud service such as Amazon RDS.
+You can install {PlatformNameShort} as clustered {ControllerName} with {HubName} with an external managed database. In this mode, multiple {ControllerName} nodes are installed and active. Any node can receive HTTP requests and all nodes can execute jobs. This installs the {PlatformNameShort} server in a cluster and configures it to talk to a remote instance of PostgreSQL as its database. This remote PostgreSQL can be a server you manage, or can be provided by a cloud service such as Amazon RDS.
 
 [IMPORTANT]
 ====

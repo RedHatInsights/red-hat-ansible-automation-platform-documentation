@@ -15,7 +15,7 @@ This example describes how you can populate the inventory file to install {Platf
 ====
 
 -----
-[tower]
+[automationcontroller]
 tower.acme.org
 
 [automationhub]

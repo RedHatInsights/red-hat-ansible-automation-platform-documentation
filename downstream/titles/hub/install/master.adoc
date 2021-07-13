@@ -93,7 +93,7 @@ $ cd ansible-automation-platform-setup-<latest-version>
 +
 . Open the `inventory` file with a text editor.
 . Edit `inventory` file parameters to specify an installation of Automaton Hub host only. Follow the example below.
-.. Leave `[tower]` inventory information *empty*.
+.. Leave `[automationcontroller]` inventory information *empty*.
 .. Add `[automationhub]` group host information.
 +
 [NOTE]
@@ -105,7 +105,7 @@ Provide a reachable IP address for the `[automationhub]` host to ensure users ca
 +
 .Example
 -----
-[tower]
+[automationcontroller]
 
 
 [automationhub]
