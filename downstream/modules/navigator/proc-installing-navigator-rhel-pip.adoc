@@ -9,11 +9,6 @@
 
 You can install {Navigator} on Red Hat Enterprise Linux (RHEL) with `pip`.
 
-.Prerequisites
-
-* You have installed the prerequisites for RHEL.
-* You have Ansible or {ExecEnvNameStart} installed.
-
 
 .Procedure
 
