@@ -1,10 +1,10 @@
-= Managing Red Hat Certified and Ansible Galaxy collections in Automation Hub
+= Managing Red Hat Certified and Ansible Galaxy collections in automation hub
 :numbered:
 :experimental:
 
-You can sync Automation Hub to use the Red Hat Certified Collections available through your Ansible Automation Platform subscription or community collections available through Ansible Galaxy.
+You can sync your private automation hub to use the Red Hat Certified Collections available through your Ansible Automation Platform subscription or community collections available through Ansible Galaxy.
 
-Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the Automation Hub service hosted on cloud.redhat.com.
+Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the automation hub service hosted on cloud.redhat.com.
 
 include::hub/assembly-synclists.adoc[leveloffset=+1]
 
@@ -12,6 +12,6 @@ include::hub/assembly-syncing-to-cloud-repo.adoc[leveloffset=+1]
 
 == Conclusion
 
-Upon completing the above procedures, you will have created a synclist for Red Hat Certified collections content, synced that content to your local Automation Hub, and designated community collections from Ansible Galaxy to distribute to your users.
+Upon completing the above procedures, you will have created a synclist for Red Hat Certified collections content, synced that content to your private automation hub, and designated community collections from Ansible Galaxy to distribute to your users.
 
-Users can now view and download collections content from your local Automation Hub.
+Users can now view and download collections content from your private automation hub.

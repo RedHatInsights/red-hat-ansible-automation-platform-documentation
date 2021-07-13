@@ -1,4 +1,4 @@
-= Publishing proprietary content collections in Automation Hub
+= Publishing proprietary content collections in automation hub
 :imagesdir: images
 :numbered:
 
