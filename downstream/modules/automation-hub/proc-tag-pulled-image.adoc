@@ -15,10 +15,10 @@ After you pull images from a registry, tag them for use in your private {HubName
 
 .Procedure
 
-. Tag a local image with the {HubName} container repository
+* Tag a local image with the {HubName} container repository
 +
 -----
-podman tag registry.redhat.io/[container image name]:[tag] [automation hub URL]/[container image name]
+$ podman tag registry.redhat.io/[container image name]:[tag] [automation hub URL]/[container image name]
 -----
 
 

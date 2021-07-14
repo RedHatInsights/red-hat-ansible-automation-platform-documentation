@@ -10,7 +10,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-By default, private {HubName} does not include container images. In order to populate your container registry, you need to push a container image to it. You can follow the procedures in this section to learn to pull images from the Red Hat Ecosystem Catalog (registry.redhat.io), tag them, and push them to your private {HubName} container registry.
+By default, private {HubName} does not include container images. To populate your container registry, you need to push a container image to it. The procedures in this section describe how to pull images from the Red Hat Ecosystem Catalog (registry.redhat.io), tag them, and push them to your private {HubName} container registry.
 
 == Prerequisites
 

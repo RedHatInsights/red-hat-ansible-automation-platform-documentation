@@ -18,14 +18,14 @@ Before you can push container images to your private {HubName}, you must first p
 . Log in to Podman using your registry.redhat.io credentials:
 +
 -----
-$ podman login `registry.redhat.io`
+$ podman login registry.redhat.io
 -----
 +
 . Enter your username and password at the prompts.
 . Pull a container image:
 +
 -----
-$ podman pull registry.redhat.io/[container image name]:[tag]
+$ podman pull registry.redhat.io/<container image name>:<tag>
 -----
 
 
@@ -39,6 +39,7 @@ $ podman images
 -----
 +
 . Verify that the image you recently pulled is contained in the list.
+. Verify that the tag is correct.
 
 [role="_additional-resources"]
 .Additional resources
