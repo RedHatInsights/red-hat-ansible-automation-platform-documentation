@@ -1,0 +1,50 @@
+[id="creating-collections"]
+
+
+
+= Creating collections
+
+[role="_abstract"]
+You can create your own Collections locally with the Ansible Galaxy CLI tool. All of the Collection-specific commands can be activated by using the `collection` subcommand.
+
+
+.Prerequisites
+
+* You have Ansible version 2.9 or newer installed in your development environment.
+
+
+.Procedure
+
+. In your terminal, navigate to where you want your namespace root directory to be.
+. Run the following command, replacing `my_namespace` and `my_collection_name` with the values you choose:
++
+-----
+$ ansible-galaxy collection init <my_namespace>.<my_collection_name>
+-----
++
+[NOTE]
+====
+Make sure you have the proper permissions to upload to a namespace by checking under the "My Content" tab on galaxy.ansible.com or cloud.redhat.com/ansible/automation-hub
+====
+
+The above command will create a directory named from the namespace argument above (if one does not already exist) and then create a directory under that with the Collection name. Inside of that directory will be the default or "skeleton" Collection. This is where you can add your roles or plugins and start working on developing your own Collection.
+
+In relation to execution environments, Collection developers can declare requirements for their content by providing the appropriate metadata via Ansible Builder.
+
+Requirements from a Collection can be recognized in these ways:
+
+* A file `meta/execution-environment.yml` references the Python and/or `bindep` requirements files
+* A file named `requirements.txt`, which contains information on the Python dependencies and can sometimes be found at the root level of the Collection
+* A file named `bindep.txt`, which contains system-level dependencies and can be sometimes found in the root level of the Collection
+* If any of these files are in the `build_ignore` of the Collection, Ansible Builder will not pick up on these since this section is used to filter any files or directories that should not be included in the build artifact 
+
+Collection maintainers can verify that ansible-builder recognizes the requirements they expect by using the introspect command:
+
+-----
+$ ansible-builder introspect --sanitize ~/.ansible/collections/
+-----
+
+[role="_additional-resources"]
+.Additional resources
+
+* For more information on creating collections, see link:https://docs.ansible.com/ansible/latest/dev_guide/developing_collections.html#creating-collections[Creating collections] in the Ansible _Developer Guide_.

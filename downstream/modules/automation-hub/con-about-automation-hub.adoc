@@ -13,13 +13,3 @@
  From a central view, users can dive deeper into each partner and check out the collections.
 
  Additionally, a searchable overview of all available collections is available.
-
-// .Additional resources
-// * A bulleted list of links to other material closely related to the contents of the procedure module.
-// * Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.
-
-// Topics from AsciiDoc conversion that were used as source for this topic:
-// con-working-with-scans.adoc
-// con-qpc-scan-works.adoc
-// con-scans-and-scan-jobs.adoc (inspected but redundant with other info)
-// con-working-scan-jobs.adoc (inspected but redundant with other info)
