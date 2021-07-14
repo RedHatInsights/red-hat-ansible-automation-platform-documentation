@@ -9,7 +9,7 @@ ifdef::context[:parent-context: {context}]
 :context: managing-container-registry
 
 [role="_abstract"]
-Manage container image repositories in your {PlatfomNameShort} infrastructure using the {HubName} container registry. {HubNameStart} provides features to govern who can access individual container repositories, change tags on images, view activity and image layers, and provide additional information related to each container repository.
+Manage container image repositories in your {PlatformNameShort} infrastructure using the {HubName} container registry. {HubNameStart} provides features to govern who can access individual container repositories, change tags on images, view activity and image layers, and provide additional information related to each container repository.
 
 
 

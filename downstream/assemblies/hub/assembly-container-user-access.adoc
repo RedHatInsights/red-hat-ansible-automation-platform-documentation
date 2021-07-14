@@ -9,7 +9,7 @@ ifdef::context[:parent-context: {context}]
 :context: configuring-user-access-containers
 
 [role="_abstract"]
-Configure user access for container repositories in your private {HubName} to provide permissions that determine who can access and manage images in your {PlatfomNameShort}.
+Configure user access for container repositories in your private {HubName} to provide permissions that determine who can access and manage images in your {PlatformNameShort}.
 
 == Prerequisites
 
