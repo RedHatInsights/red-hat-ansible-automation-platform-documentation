@@ -24,6 +24,7 @@
 
 // Automation hub
 :HubName: automation hub
+:HubNameStart: Automation hub
 :PrivateCollections: Ansible private automation hub collection management
 :EEmanagement: Ansible private automation hub EE management
 :HubDatabase: Ansible private automation hub database
