@@ -14,7 +14,7 @@ You can follow the procedures in this section to set up your development environ
 
 
 
-// include::builder/proc-installing-builder.adoc[leveloffset=+1]
+include::builder/proc-installing-builder.adoc[leveloffset=+1]
 
 include::navigator/proc-installing-navigator-rhel-rpm.adoc[leveloffset=+1]
 
