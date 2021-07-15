@@ -13,8 +13,8 @@ You can sync Red Hat certified collections curated by your organization from clo
 
 . Log in to cloud.redhat.com as an Organization Administrator.
 . Navigate to *Automation Hub* -> *Repo Management*.
-. Locate the *Sync URL* and click image:images/copy.png[Copy to clipboard]. Paste the *Sync URL* in a file to use when configuring the rh-certified remote.
-. Click image:images/more_actions.png[More actions] and click *Get token*.
+. Locate the *Sync URL* and click image:images/copy.png[Copy to clipboard,10,25]. Paste the *Sync URL* in a file to use when configuring the rh-certified remote.
+. Click image:images/more_actions.png[More,10,25] and click *Get token*.
 . On the *Token management* page, click *Load token*.
 . Click *Copy to clipboard* to copy the API token.
 . Paste the API token into a file and store in a secure location.
