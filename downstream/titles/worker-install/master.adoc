@@ -1,0 +1,19 @@
+:imagesdir: images
+:numbered:
+:toclevels: 1
+
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Installing the automation services catalog worker
+
+You can extend Red Hat Ansible Automation Platform to connect with Automation Services Catalog on cloud.redhat.com using the Ansible Automation Platform 2.0 Setup or Setup Bundle Installer.
+
+This is a Day 2 activity and requires setup of a *service account that has write permissions* on all basic resources/objects in automation controller: organizations, users, projects, job templates and inventories.
+
+The Catalog worker requires a set of variables assigned to hosts in your Red Hat Ansible Automation Platform network. Running the Catalog worker will create an application and an application token, install the necessary packages, and start the service.
+
+include::catalog/assembly-installing-catalog-worker.adoc[leveloffset=+1]
