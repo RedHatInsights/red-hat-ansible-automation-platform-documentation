@@ -21,7 +21,7 @@ You can install {Navigator} on Red Hat Enterprise Linux (RHEL) from an RPM.
 . Enable the repository for RHEL 8.
 +
 ----
-$ sudo subscription-manager repos --enable automation-platform-2.0-for-rhel-8-x86_64-rpms
+$ sudo subscription-manager repos --enable ansible-automation-platform-2.0-early-access-for-rhel-8-x86_64-rpms
 ----
 
 
