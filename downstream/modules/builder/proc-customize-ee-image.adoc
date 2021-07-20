@@ -11,13 +11,13 @@ Ansible Controller ships with three default execution environments:
 While these environments cover many automation use cases, you can add additional items to customize these containers for your specific needs. The following procedure adds the `kubernetes.core` collection to the `ee-minimal` default image:
 
 .Procedure
-. Log in to `quay.io` via Podman:
+. Log in to `registry.redhat.io` via Podman:
 +
 ----
-$ podman login -u="[username]" -p="[token/hash]" quay.io
+$ podman login -u="[username]" -p="[token/hash]" registry.redhat.io
 ----
 . Verify that you have access to pull the base image that you want to use.
-.. For example, to pull a `ee-minimal` image, check that you have access to https://quay.io/repository/aap/ansible-automation-platform-20-ee-minimal-rhel8[this repository].
+.. For example, to pull a `ee-minimal` image, check that you have access to https://catalog.redhat.com/software/containers/ansible-automation-platform-20-early-access/ee-minimal-rhel8/60e4bd0fdb72db7d0fadcf31[this repository].
 . Configure your {Builder} files to specify any additional content to add to the new {ExecEnvShort} image which is based off of `ee-minimal`.
 .. For example, to add the https://galaxy.ansible.com/kubernetes/core[Kubernetes Core Collection from Galaxy] to the image, fill out the `requirements.yml` file as such:
 +
@@ -51,7 +51,7 @@ NOTE: Since this example uses the community version of `kubernetes.core` and not
 +
 [subs=+quotes]
 ----
-$ ansible-builder build -t quay.io/_[username]_/_new-ee_
+$ ansible-builder build -t registry.redhat.io/_[username]_/_new-ee_
 ----
 where `[username]` specifies your username, and `new-ee` specifies the name of your new container image.
 .. Use the `podman images` command to confirm that your new container image is indeed in that list:
@@ -64,10 +64,10 @@ localhost/new-ee    latest  f5509587efbb  3 minutes ago  769 MB
 ----
 ====
 . Verify your newly-created {ExecEnvShort} image via Ansible Navigator
-. Push your image to the container registry {HubName}:
+. Push your image to the container registry in {HubName}:
 +
 ----
-$ podman push quay.io/[username]/new-ee
+$ podman push [automation-hub-IP-address]/_[username]_/_new-ee_
 ----
 . Pull your new image in your automation controller instance:
 .. Navigate to automation controller
