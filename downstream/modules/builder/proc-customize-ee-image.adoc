@@ -64,10 +64,10 @@ localhost/new-ee    latest  f5509587efbb  3 minutes ago  769 MB
 ----
 ====
 . Verify your newly-created {ExecEnvShort} image via Ansible Navigator
-. Push your image to the container registry {HubName}:
+. Push your image to the container registry in {HubName}:
 +
 ----
-$ podman push registry.redhat.io/[username]/new-ee
+$ podman push [automation-hub-IP-address]/_[username]_/_new-ee_
 ----
 . Pull your new image in your automation controller instance:
 .. Navigate to automation controller
