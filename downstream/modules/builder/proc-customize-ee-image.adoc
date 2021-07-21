@@ -23,7 +23,6 @@ $ podman login -u="[username]" -p="[token/hash]" registry.redhat.io
 +
 ====
 ----
----
 collections:
   - kubernetes.core
 ----
@@ -35,7 +34,6 @@ collections:
 [example]
 ====
 ----
----
 version: 1
 
 build_arg_defaults:

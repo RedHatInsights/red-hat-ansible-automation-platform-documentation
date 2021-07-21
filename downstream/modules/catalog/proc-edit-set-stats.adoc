@@ -13,7 +13,6 @@ Use the playbook examples below to learn now about `set_stats` values and to pas
 This *before order* playbook returns to Automation Services Catalog `set_stats` values for a favorite color:
 
 -----
----
 # This playbook prints a simple debug message and set_stats
 - name: Echo Hello, world!
   hosts: localhost
@@ -31,7 +30,6 @@ This *before order* playbook returns to Automation Services Catalog `set_stats` 
 This playbook passes a substitutable value back to Automation Services Catalog as an artifact value.
 
 -----
----
 # This playbook prints a simple debug message with given information
 - name: Echo Hello, world!
   hosts: localhost
@@ -48,7 +46,6 @@ This playbook passes a substitutable value back to Automation Services Catalog a
 The after order playbook example below includes the artifact `after_data` value that was passed by the product playbook.
 
 -----
----
 # This playbook prints a simple debug message with given information
 - name: Echo Hello, world!
   hosts: localhost

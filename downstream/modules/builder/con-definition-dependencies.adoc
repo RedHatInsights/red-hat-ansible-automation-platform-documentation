@@ -13,7 +13,6 @@ The content of a `requirements.yml` file may look like the following:
 [example]
 ====
 ----
----
 collections:
   - geerlingguy.java
   - kubernetes.core

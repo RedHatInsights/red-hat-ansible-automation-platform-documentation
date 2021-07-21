@@ -17,7 +17,6 @@ In this section we will demonstrate how to align data you expose to Automation S
 .Example playbook `before_order.yml` for *before order* process
 
 -----
----
 # This playbook prints a simple debug message and set_stats
 - name: Echo Hello, world!
   hosts: localhost
@@ -40,7 +39,6 @@ This example product playbook accepts a substituted variable for {{favorite_colo
 .Example playbook `product_order.yml`
 
 -----
----
 # This playbook prints a simple debug message with given information
 - name: Echo Hello, world!
   hosts: localhost
@@ -83,7 +81,6 @@ Use surveys to pass the 'product_order.yml' artifact `after_data` to `after_orde
 .Example playbook `after_order.yml` for *after order* product
 
 -----
----
 # This playbook prints a simple debug message with given information
 - name: Echo Hello, world!
   hosts: localhost

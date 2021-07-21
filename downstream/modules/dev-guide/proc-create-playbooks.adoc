@@ -5,7 +5,7 @@
 = Creating playbooks
 
 [role="_abstract"]
-Playbooks start with the three YAML dashes (---) followed by:
+Playbooks contain one or more plays. A basic play contains the following sections:
 
 * Name: a brief description of the overall function of the playbook, which assists in keeping it readable and organized for all users.
 * Hosts: identifies the target(s) for Ansible to run against.
@@ -15,7 +15,6 @@ Playbooks start with the three YAML dashes (---) followed by:
 .Example playbook
 
 -----
----
 - name: Set Up a Project and Job Template
   hosts: host.name.ip
   become: true
