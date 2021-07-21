@@ -9,8 +9,8 @@ Playbooks contain one or more plays. A basic play contains the following section
 
 * Name: a brief description of the overall function of the playbook, which assists in keeping it readable and organized for all users.
 * Hosts: identifies the target(s) for Ansible to run against.
-* Become statements: this optional statement can be set to `true`/`yes` to activate privilege escalation (e.g., sudo, su, pfexec, doas, pbrun, dzdo, ksu, etc.).
-* Tasks: this is where actions that get executed via a call to an Ansible module get listed.
+* Become statements: this optional statement can be set to `true`/`yes` to enable privilege escalation using a become plugin (such as `sudo`, `su`, `pfexec`, `doas`, `pbrun`, `dzdo`, `ksu`).
+* Tasks: this is the list actions that get executed against each host in the play.
 
 .Example playbook
 
