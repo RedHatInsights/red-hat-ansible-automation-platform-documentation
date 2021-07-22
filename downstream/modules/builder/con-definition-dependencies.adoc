@@ -26,7 +26,7 @@ The `python` entry in the definition file points to a valid requirements file fo
 
 The entry `requirements.txt` is a file that installs extra Python requirements on top of what the Collections already list as their Python dependencies. It may be listed as a relative path from the directory of the {ExecEnvNameSing} definition’s folder, or an absolute path. The contents of a `requirements.txt` file should be formatted like the following example, similar to the standard output from a `pip freeze` command:
 
-.A `requirements.yml` file for Python
+.A `requirements.txt` file for Python
 [example]
 ====
 ----
