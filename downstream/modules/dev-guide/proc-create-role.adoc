@@ -5,36 +5,48 @@
 = Creating roles
 
 [role="_abstract"]
-Using the `ansible-galaxy` command line tool that comes bundled with Ansible, you can create a role with the `init` command.
+You can create roles using the Ansible Galaxy CLI tool. Role-specific commands can be accessed from the `roles` subcommand.
 
-As an example, the following command will create a role directory structure called `role_name` in the current working directory:
+Standalone roles outside of Collections are still supported, but new roles should be created inside of a Collection to take advantage of all the features {PlatformNameShort} has to offer.
+
+.Procedure
+
+. In your terminal, navigate to the `roles` directory inside a collection.
+. As an example, the following command will create a role directory structure called `role_name` inside the collection created previously:
+
++
+-----
+$ ansible-galaxy role init my_role
+-----
++
+
+The `my_role` directory will contain the following:
 
 -----
-$ ansible-galaxy init role_name
+~/.ansible/collections/ansible_collections/<my_namespace>/<my_collection_name>
+...
+└── roles/
+    └── my_role/
+        ├── .travis.yml
+        ├── README.md
+        ├── defaults/
+        │   └── main.yml
+        ├── files/
+        ├── handlers/
+        │   └── main.yml
+        ├── meta/
+        │   └── main.yml
+        ├── tasks/
+        │   └── main.yml
+        ├── templates/
+        ├── tests/
+        │   ├── inventory
+        │   └── test.yml
+        └── vars/
+            └── main.yml
 -----
 
- The `role_name` directory will contain the following:
-
------
-.travis.yml
-README.md
-defaults/
-    main.yml
-files/
-handlers/
-    main.yml
-meta/
-    main.yml
-tasks/
-    main.yml
-templates/
-tests/
-    inventory
-    test.yml
-vars/
-    main.yml
-
------
+A custom role skeleton can be supplied using the `--role-skeleton [PATH]` argument. This allows organizations to create standardized templates for new roles to suit their needs.
 
 [role="_additional-resources"]
 .Additional resources
