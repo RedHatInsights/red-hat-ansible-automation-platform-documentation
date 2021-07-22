@@ -22,10 +22,12 @@ In this section we will demonstrate how to align data you expose to Automation S
   hosts: localhost
   gather_facts: yes
   tasks:
-  - debug: msg="Hello, world!"
-  - set_stats:
-      data:
-        expose_to_cloud_redhat_com_favorite_color: "orange"
+    - debug:
+        msg: "Hello, world!"
+
+    - set_stats:
+        data:
+          expose_to_cloud_redhat_com_favorite_color: "orange"
 
 -----
 
@@ -44,10 +46,12 @@ This example product playbook accepts a substituted variable for {{favorite_colo
   hosts: localhost
   gather_facts: yes
   tasks:
-  - debug: msg="Hello, {{favorite_color}} world!"
-  - set_stats:
-      data:
-        expose_to_cloud_redhat_com_after_data: "{{favorite_color}}"
+    - debug:
+        msg: "Hello, {{favorite_color}} world!"
+
+    - set_stats:
+        data:
+          expose_to_cloud_redhat_com_after_data: "{{favorite_color}}"
 
 -----
 
@@ -86,7 +90,8 @@ Use surveys to pass the 'product_order.yml' artifact `after_data` to `after_orde
   hosts: localhost
   gather_facts: yes
   tasks:
-  - debug: msg="{{after_data}}"
+    - debug:
+        msg: "{{after_data}}"
 
 -----
 

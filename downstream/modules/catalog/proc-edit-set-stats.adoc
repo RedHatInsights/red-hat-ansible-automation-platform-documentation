@@ -18,10 +18,12 @@ This *before order* playbook returns to Automation Services Catalog `set_stats` 
   hosts: localhost
   gather_facts: yes
   tasks:
-  - debug: msg="Hello, world!"
-  - set_stats:
-      data:
-        expose_to_cloud_redhat_com_favorite_color: "orange"
+    - debug:
+        msg: "Hello, world!"
+
+    - set_stats:
+        data:
+          expose_to_cloud_redhat_com_favorite_color: "orange"
 
 -----
 
@@ -35,10 +37,12 @@ This playbook passes a substitutable value back to Automation Services Catalog a
   hosts: localhost
   gather_facts: yes
   tasks:
-  - debug: msg="Hello, {{favorite_color}} world!"
-  - set_stats:
-      data:
-        expose_to_cloud_redhat_com_after_data: "{{favorite_color}}"
+    - debug:
+        msg: "Hello, {{favorite_color}} world!"
+
+    - set_stats:
+        data:
+          expose_to_cloud_redhat_com_after_data: "{{favorite_color}}"
 -----
 
 .Example after order playbook
@@ -51,7 +55,8 @@ The after order playbook example below includes the artifact `after_data` value 
   hosts: localhost
   gather_facts: yes
   tasks:
-  - debug: msg="{{after_data}}"
+    - debug:
+        msg: "{{after_data}}"
 ~
 
 -----
