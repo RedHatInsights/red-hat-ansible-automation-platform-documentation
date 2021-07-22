@@ -54,7 +54,7 @@ NOTE: Since this example uses the community version of `kubernetes.core` and not
 $ ansible-builder build -t quay.io/_[username]_/_new-ee_
 ----
 where `[username]` specifies your username, and `new-ee` specifies the name of your new container image.
-.. Use the `podman images` command to confirm that your new container image is indeed in that list:
+.. Use the `podman images` command to confirm that your new container image is in that list:
 +
 .Output of a `podman images` command with the image `new-ee`
 ====
@@ -69,8 +69,8 @@ localhost/new-ee    latest  f5509587efbb  3 minutes ago  769 MB
 ----
 $ podman push quay.io/[username]/new-ee
 ----
-. Pull your new image in your automation controller instance:
-.. Navigate to automation controller
+. Pull your new image into your {ControllerName} instance:
+.. Navigate to {ControllerName}
 .. From the side-navigational bar, click *Administration* > *Execution Environments*.
 .. Click *Add*.
 .. Enter the appropriate information then hit *Save* to pull in the new image.

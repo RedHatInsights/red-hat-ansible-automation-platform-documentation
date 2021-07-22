@@ -2,7 +2,7 @@
 
 = Build args and base image
 
-The `build_arg_defaults` section of the definition file is a dictionary whose keys can provide default values for arguments to {Builder}. See the following table for a list of values that can be used in `default_build_args`:
+The `build_arg_defaults` section of the definition file is a dictionary whose keys can provide default values for arguments to {Builder}. See the following table for a list of values that can be used in `build_arg_defaults`:
 
 [cols="a,a"]
 |===
