@@ -30,8 +30,6 @@ $ ansible-galaxy install ansible_security.acl_manager
 . Using CLI, create a new playbook with the acl_manger role and set the parameters (e.g., source object, destination object, access rule between the two objects):
 +
 ----
----
-
 - name: delete block list entry
   hosts: checkpoint
   connection: httpapi
