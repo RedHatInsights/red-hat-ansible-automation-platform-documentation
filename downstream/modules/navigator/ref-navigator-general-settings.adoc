@@ -178,7 +178,7 @@ ansible-navigator:
 ----
 
 |execution-environment
-|Enable or disable the use of an {ExecEnvName}.
+|Enable or disable the use of an {ExecEnvNameSing}.
 |*Choices:* `True` or `False`
 
 *Default:* `True`
@@ -196,7 +196,7 @@ ansible-navigator:
 ----
 
 |execution-environment-image
-|Specify the name of the{ExecEnvName} image.
+|Specify the name of the {ExecEnvNameSing} image.
 |*Default:* `quay.io/ansible/ansible-runner:devel`
 
 *CLI:* `--eei` or `--execution-environment-image`
@@ -212,7 +212,7 @@ ansible-navigator:
 ----
 
 |execution-environment-volume-mounts
-|Specify volume to be bind mounted within an {ExecEnvName} (`--eev /home/user/test:/home/user/test:Z`)
+|Specify volume to be bind mounted within an {ExecEnvNameSing} (`--eev /home/user/test:/home/user/test:Z`)
 |*Default:* No default value set
 
 *CLI:* `--eev` or `--execution-environment-volume-mounts`
@@ -315,7 +315,7 @@ ansible-navigator:
 ----
 
 |pass-environment-variable
-|Specify an exiting environment variable to be passed through to and set within the {ExecEnvName} (`--penv MY_VAR`)
+|Specify an exiting environment variable to be passed through to and set within the {ExecEnvNameSing} (`--penv MY_VAR`)
 |*Default:* No default value set
 
 *CLI:* `--penv` or `--pass-environment-variable`
@@ -359,7 +359,7 @@ ansible-navigator:
 ----
 
 |set-environment-variable
-|Specify an environment variable and a value to be set within the {EnvExecName} `(--senv MY_VAR=42`)
+|Specify an environment variable and a value to be set within the {ExecEnvNameSing} `(--senv MY_VAR=42`)
 |*Default:* No default value set
 
 *CLI:* `--senv` or `--set-environment-variable`
