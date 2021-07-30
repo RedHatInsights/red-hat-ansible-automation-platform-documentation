@@ -2,11 +2,11 @@
 [id="con-about-ansible-navigator_{context}"]
 
 
-= About {Navigator}
+= Uses for {Navigator}
 
 [role="_abstract"]
 
-{Navigator} is a command line, content creator focused tool with a text-based user interface that allows you to:
+{Navigator} is a command line, content-creator-focused tool with a text-based user interface. You can use {Navigator} to:
 
 * Launch and watch jobs and playbooks.
 * Share stored, completed playbook and job run artifacts in JSON format.
@@ -14,9 +14,7 @@
 * Browse your file-based inventory.
 * Render Ansible module documentation and extract examples you can use in your playbooks.
 
-== Why use {Navigator}?
-
-Currently, the Ansible commands that are part of Ansible core, such as the `ansible-playbook` command, cannot execute in containers. To fill this need, {Navigator} enables a set of these Ansible CLI commands within {ExecEnvName}. {Navigator} includes a more detailed output within its text-based user interface.
+You cannot execute Ansible commands that are part of Ansible core, such as `ansible-playbook`, in containers such as {ExecEnvName}. Use {Navigator} which includes a set of the Ansible CLI commands that are compatible with {ExecEnvName}. {Navigator} also includes a more detailed output within its text-based user interface.
 
 //// 
 comment outfor now:

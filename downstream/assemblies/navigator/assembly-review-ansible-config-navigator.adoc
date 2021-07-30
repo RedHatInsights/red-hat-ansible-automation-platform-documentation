@@ -3,7 +3,7 @@ ifdef::context[:parent-context: {context}]
 :imagesdir: images
 
 [id="assembly-review-config-navigator_{context}"]
-= Review your Ansible configuration with {Navigator}
+= Reviewing your Ansible configuration with {Navigator}
 
 :context: review-config-navigator
 
