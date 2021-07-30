@@ -8,7 +8,7 @@
 {Navigator} displays information about your collections with the following details for each collection:
 
 SHADOWED:: Indicates that an additional copy of the collection is higher in the search order, and playbooks prefer that collection.
-TYPE:: Shows if the collection is contained within an {ExecEnvName} or volume mounted on onto the {ExecEnvName} as a `bind_mount`.
-PATH:: Reflects the collections location within the {ExecEnvName} or local file system based on the collection TYPE field.
+TYPE:: Shows if the collection is contained within an {ExecEnvNameSing} or volume mounted on onto the {ExecEnvNameSing} as a `bind_mount`.
+PATH:: Reflects the collections location within the {ExecEnvNameSing} or local file system based on the collection TYPE field.
 
 image::navigator-collections-shadow.png[]
