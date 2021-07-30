@@ -16,6 +16,12 @@ You can install {Navigator} on Red Hat Enterprise Linux (RHEL) from an RPM.
 
 .Procedure
 
+. Attach the {PlatformName} SKU.
++
+----
+$ subscription-manager attach --pool=<sku-pool-id>
+----
+
 . Enable the repository for RHEL 8.
 +
 ----
