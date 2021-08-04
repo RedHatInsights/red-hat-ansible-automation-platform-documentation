@@ -78,14 +78,14 @@ servicescatalog_controller_user: marketing_sa
 servicescatalog_controller_password: password
 -----
 +
-. Save each file
+. Save each file.
 . Open the `inventory` file in the {PlatformNameShort} installer:
 +
 -----
 # vi inventory
 -----
 +
-. Add the `host_vars` for each host under `[servicecatalog_workers]`
+. Add the `host_vars` for each host under `[servicecatalog_workers]`:
 +
 ----
 [servicecatalog_workers]
