@@ -36,38 +36,38 @@ h| servicescatalog_no_proxy |
 
 . Navigate to the {PlatformNameShort} setup or setup bundle installer directory.
 +
-=====
+-----
 # cd ansible-automation-platform-setup-<latest>
-=====
+-----
 +
 . Create a new directory called `host_vars`:
 +
-====
+-----
 # mkdir host_vars
-====
+-----
 . Create a file for each required host. Examples with parameters for two hosts are included below.
 .. Service account on `localhost`:
 +
-====
+-----
 # touch finance
-====
+-----
 +
-====
+-----
 ansible_connection: local
 
 servicescatalog_controller_name: Finance
 
 servicescatalog_controller_user: finance_sa
 servicescatalog_controller_password: <password>
-====
+-----
 +
 .. Service account on an additional host:
 +
-====
+-----
 # touch marketing
-====
+-----
 +
-====
+-----
 ansible_host: IP address
 ansible_user: [User should have sudo access to install packages and write to system-level configuration files]
 ansible_become: true
@@ -76,15 +76,16 @@ servicescatalog_controller_name: Marketing
 
 servicescatalog_controller_user: marketing_sa
 servicescatalog_controller_password: password
-====
-. Save each file
+-----
++
+. Save each file.
 . Open the `inventory` file in the {PlatformNameShort} installer:
 +
-====
+-----
 # vi inventory
-====
+-----
 +
-. Add the `host_vars` for each host under `[servicecatalog_workers]`
+. Add the `host_vars` for each host under `[servicecatalog_workers]`:
 +
 ----
 [servicecatalog_workers]
@@ -100,9 +101,9 @@ You can now proceed to run the installer.
 
 * Run the {PlatformNameShort} setup script:
 +
-====
+-----
 # ./setup.sh
-====
+-----
 
 Running the automation services catalog worker will create an application and an application token, install the necessary packages, connect to cloud.redhat.com, and start the service.
 
@@ -121,14 +122,3 @@ You are a Catalog Administrator and can create portfolios and add products to th
 . Locate the platforms associated with the hosts you created for your `host_vars`.
 . Click on a platform.
 . Verify that *inventory* and *templates* from your automation controller are included.
-
-
-[role="_additional-resources"]
-.Additional resources
-////
-Optional. Delete if not used.
-////
-* A bulleted list of links to other material closely related to the contents of the procedure module.
-* Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.
-* For more details on writing procedure modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
