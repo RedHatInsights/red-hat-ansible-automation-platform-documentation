@@ -4,6 +4,12 @@
 :PlatformName: Red Hat Ansible Automation Platform
 :PlatformNameShort: Ansible Automation Platform
 
+// Operators
+:OperatorPlatform: Ansible Automation Platform Operator
+:OperatorHub: OpenShift private automation hub operator 
+:OperatorController: OpenShift automation controller operator
+:OperatorResource: OpenShift Ansible Automation Platform resource operator
+
 // Automation services catalog
 :CatalogName: automation services catalog
 :CatalogNameStart: Automation services catalog
