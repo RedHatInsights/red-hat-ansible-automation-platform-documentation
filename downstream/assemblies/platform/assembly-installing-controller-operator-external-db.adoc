@@ -37,7 +37,7 @@ You can use these instructions to install the {ControllerName} operator on {OCP}
 .Optional - Configure your {ControllerName} operator route options
 . Click *Advanced configuration*.
 . Under “Tower Ingress type”, click the dropdown menu and select *Route*.
-. Under “Route DNS host”, enter a common host name that the route answers for
+. Under “Route DNS host”, enter a common host name that the route answers to.
 . Under “Route TLS termination mechanism”, click the dropdown menu and select *Edge* or *Passthrough*.
 . Under “Route TLS credential secret”, click the dropdown menu and select a secret from the list.
 
