@@ -21,32 +21,36 @@ You can use these instructions to install the {ControllerName} operator on {OCP}
 
 == Prerequisites
 
-* You have installed the catalog containing the {PlatformName} operators
+* You have installed the :PlatformName: catalog in Operator Hub.
 
 == Installing the {ControllerName} operator
 
 . Log in to {OCP}.
 . Navigate to *Operators* -> *Operator Hub*.
-. Locate the {PlatformName} catalog and click *Create Instance*.
-
+. Locate the {PlatformName} operator and click *Create Instance*.
++
 [NOTE]
 ====
 {OCP} clusters running on AWS do not support ReadWriteMany without adding NFS or other storage.
 ====
++
+. Upon successful installation of the platform operator, click on the *View operator* button on the installation confirmation message.
+.. You may also find the installed operator by navigating to *Operators* -> *Installed Operators*
+. Locate the {ControllerName} operator and click *Create instance*.
 
 .Optional - Configure your {ControllerName} operator route options
 . Click *Advanced configuration*.
-. Under “Tower Ingress type”, click the dropdown menu and select *Route*.
-. Under “Route DNS host”, enter a common host name that the route answers to.
-. Under “Route TLS termination mechanism”, click the dropdown menu and select *Edge* or *Passthrough*.
-. Under “Route TLS credential secret”, click the dropdown menu and select a secret from the list.
+. Under *Tower Ingress type*, click the drop-down menu and select *Route*.
+. Under *Route DNS host*, enter a common host name that the route answers to.
+. Under *Route TLS termination mechanism*, click the drop-down menu and select *Edge* or *Passthrough*.
+. Under *Route TLS credential secret*, click the drop-down menu and select a secret from the list.
 
 
 .Optional - Configure the Ingress type for your {ControllerName} operator
 . Click *Advanced Configuration*.
-. Under “Tower Ingress type”, click the dropdown menu and select *Ingress*.
-. Under “Tower Ingress annotations”, enter any annotations to add to the ingress.
-. Under “Tower Ingress TLS secret”, click the dropdown menu and select a secret from the list.
+. Under *Tower Ingress type*, click the drop-down menu and select *Ingress*.
+. Under *Tower Ingress annotations*, enter any annotations to add to the ingress.
+. Under *Tower Ingress TLS secret*, click the drop-down menu and select a secret from the list.
 
 Once you have configured your {ControllerName} operator, click *Create* at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
 
