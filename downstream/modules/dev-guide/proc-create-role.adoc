@@ -7,12 +7,16 @@
 [role="_abstract"]
 You can create roles using the Ansible Galaxy CLI tool. Role-specific commands can be accessed from the `roles` subcommand.
 
+-----
+ansible-galaxy role init <role_name>
+-----
+
 Standalone roles outside of Collections are still supported, but new roles should be created inside of a Collection to take advantage of all the features {PlatformNameShort} has to offer.
 
 .Procedure
 
 . In your terminal, navigate to the `roles` directory inside a collection.
-. As an example, the following command will create a role directory structure called `role_name` inside the collection created previously:
+. Create a role called `role_name` inside the collection created previously:
 
 +
 -----
@@ -20,33 +24,36 @@ $ ansible-galaxy role init my_role
 -----
 +
 
-The `my_role` directory will contain the following:
+The collection now contains a role named `my_role` inside the `roles` directory:
 
------
-~/.ansible/collections/ansible_collections/<my_namespace>/<my_collection_name>
-...
-└── roles/
-    └── my_role/
-        ├── .travis.yml
-        ├── README.md
-        ├── defaults/
-        │   └── main.yml
-        ├── files/
-        ├── handlers/
-        │   └── main.yml
-        ├── meta/
-        │   └── main.yml
-        ├── tasks/
-        │   └── main.yml
-        ├── templates/
-        ├── tests/
-        │   ├── inventory
-        │   └── test.yml
-        └── vars/
-            └── main.yml
------
+    ~/.ansible/collections/ansible_collections/<my_namespace>/<my_collection_name>
+    ...
+    └── roles/
+        └── my_role/
+            ├── .travis.yml
+            ├── README.md
+            ├── defaults/
+            │   └── main.yml
+            ├── files/
+            ├── handlers/
+            │   └── main.yml
+            ├── meta/
+            │   └── main.yml
+            ├── tasks/
+            │   └── main.yml
+            ├── templates/
+            ├── tests/
+            │   ├── inventory
+            │   └── test.yml
+            └── vars/
+                └── main.yml
 
-A custom role skeleton can be supplied using the `--role-skeleton [PATH]` argument. This allows organizations to create standardized templates for new roles to suit their needs.
+. A custom role skeleton directory can be supplied using the `--role-skeleton` argument. This allows organizations to create standardized templates for new roles to suit their needs.
+
+    ansible-galaxy role init my_role --role-skeleton ~/role_skeleton
+
+This will create a role named `my_role` by copying the contents of `~/role_skeleton` into `my_role`. The contents of `role_skeleton` can be any files or folders that are valid inside a role directory.
+
 
 [role="_additional-resources"]
 .Additional resources
