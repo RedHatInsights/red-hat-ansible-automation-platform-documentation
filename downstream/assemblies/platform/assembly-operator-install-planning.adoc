@@ -10,9 +10,19 @@ ifdef::context[:parent-context: {context}]
 :context: operator-install-planning
 
 [role="_abstract"]
-OpenShift operators help install and automate day-2 operations of complex, distributed software on OpenShift.
+{PlatformName} is supported on both Red Hat Enterprise Linux 8 and Red Hat Openshift.
 
-You can use this section to help plan your {PlatformName} operator installation. Before installing, review the individual scenarios to determine which meets your requirements.
+OpenShift operators help install and automate day-2 operations of complex, distributed software on {OCP}. The {OperatorPlatform} enables you to deploy and manage {PlatformNameShort} components on {OCP}.
+
+You can use this section to help plan {PlatformName} installation on your {OCP} environment. Before installing, review the individual scenarios to determine which meets your requirements.
+
+== About {OperatorPlatform}
+
+The {OperatorPlatform} provides cloud-native, push-button deployment of new {PlatformNameShort} instances in your OpenShift environment. 
+The {OperatorPlatform} includes resource types to deploy and manage instances of {ControllerNameStart} and Private Automation hub. It also includes {ControllerName} job resources for defining and launching jobs inside your {ControllerName} deployments. 
+You can install the {OperatorPlatform} from the Red Hat Operators catalog in OperatorHub.
+
+Deploying {PlatformNameShort} instances with a Kubernetes native operator offers advantages over launching instances from a playbook deployed on {OCP}. The {OperatorPlatform} supports upgrades and provides full lifecycle support for your {PlatformName} deployments. 
 
 == Supported installation scenarios for {OCP}
 
