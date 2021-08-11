@@ -14,7 +14,7 @@ ifdef::context[:parent-context: {context}]
 
 OpenShift operators help install and automate day-2 operations of complex, distributed software on {OCP}. The {OperatorPlatform} enables you to deploy and manage {PlatformNameShort} components on {OCP}.
 
-You can use this section to help plan {PlatformName} installation on your {OCP} environment. Before installing, review the supported installation scenarios to determine which meets your requirements.
+You can use this section to help plan your {PlatformName} installation on your {OCP} environment. Before installing, review the supported installation scenarios to determine which meets your requirements.
 
 == About {OperatorPlatform}
 
