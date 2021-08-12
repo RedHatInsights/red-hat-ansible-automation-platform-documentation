@@ -10,17 +10,16 @@ The `context` attribute enables module reuse. Every module ID includes {context}
 
 [role="_abstract"]
 
-{ExecEnvNameStart} are consistent and shareable container images that serve as Ansible control nodes. {ExecEnvNameStart} remediates challenges with Ansible content requiring non-default dependencies.
+{ExecEnvNameStart} are consistent and shareable container images that serve as Ansible control nodes. {ExecEnvNameStart} reduce the challenge of sharing Ansible content that has external dependencies.
 
 {ExecEnvNameStart} contain:
 
-* Ansible
+* Ansible Core
 * Ansible Runner
 * Ansible Collections
-* Python and/or system dependencies
-** modules/plugins in collections
-** content in `ansible-core`
-** custom user needs
+* Python libraries
+* System dependencies
+* Custom user needs
 
 You can define and create an automation execution environment using {Builder}.
 
