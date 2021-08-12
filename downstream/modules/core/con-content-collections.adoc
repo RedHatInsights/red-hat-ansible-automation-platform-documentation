@@ -8,27 +8,35 @@
 
 [role="_abstract"]
 
-An Ansible Content Collection is a ready-to-use toolkit for automation. It includes multiple types of content such as playbooks, roles, modules, and plugins all in one place. The diagram below shows the basic structure of collections:
+An Ansible Content Collection is a ready-to-use toolkit for automation. It includes multiple types of content such as playbooks, roles, modules, and plugins all in one place. The diagram below shows the basic structure of a collection:
 
 ....
-
-├── docs
+collection/
+├── docs/
 ├── galaxy.yml
-├── playbooks
-│   ├── files
-│   ├── tasks
-│   ├── templates
-│   └── vars
-├── plugins
-│   ├── modules
-│   │   ├── module1.py
-│   │   └── module2.py
-│   ├── lookups
-│   └── filters
-├── titles
-│   ├── role1
-│   └── role2
-└── tests
+├── meta/
+│   └── runtime.yml
+├── plugins/
+│   ├── modules/
+│   │   └── module1.py
+│   ├── inventory/
+│   ├── lookup/
+│   ├── filter/
+│   └── .../
+├── README.md
+├── roles/
+│   ├── role1/
+│   ├── role2/
+│   └── .../
+├── playbooks/
+│   ├── files/
+│   ├── vars/
+│   ├── templates/
+│   ├── playbook1.yml
+│   └── tasks/
+└── tests/
+    ├── integration/
+    └── unit/
 ....
 
 In {PlatformName}, {HubName} serves as the source for Ansible Certified Content Collections.
