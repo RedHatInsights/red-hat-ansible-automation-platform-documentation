@@ -1,0 +1,10 @@
+[id="con-ocp-supported-install_{context}"]
+
+= Supported installation scenarios for {OCP}
+
+You can install the {PlatformName} operator following one of the below workflows:
+
+* {ControllerNameStart} and customer resources first, then {HubName} and customer resources;
+* {HubNameStart} and customer resources first, then {ControllerName} and customer resources;
+* {ControllerNameStart} and customer resources;
+* {HubNameStart} and custom resources.
