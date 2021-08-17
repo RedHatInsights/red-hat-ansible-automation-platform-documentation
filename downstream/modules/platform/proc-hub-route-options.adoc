@@ -1,0 +1,11 @@
+[id="proc-hub-route-options_{context}"]
+
+= Configure your {HubName} operator route options
+
+The {PlatformName} operator installation form allows you to further configure your {HubName} operator route options under *Advanced configuration*.
+
+. Click *Advanced configuration*.
+. Under *Ingress type*, click the drop-down menu and select *Route*.
+. Under *Route DNS host*, enter a common host name that the route answers to.
+. Under *Route TLS termination mechanism*, click the drop-down menu and select *Edge* or *Passthrough*.
+. Under *Route TLS credential secret*, click the drop-down menu and select a secret from the list.
