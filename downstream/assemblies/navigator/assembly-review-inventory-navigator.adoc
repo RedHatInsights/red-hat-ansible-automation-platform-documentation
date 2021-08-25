@@ -1,9 +1,9 @@
 
 ifdef::context[:parent-context: {context}]
-
+:imagesdir: images
 
 [id="assembly-review-inventory-navigator_{context}"]
-= Review inventories with {Navigator}
+= Reviewing inventories with {Navigator}
 
 :context: review-inventory-navigator
 

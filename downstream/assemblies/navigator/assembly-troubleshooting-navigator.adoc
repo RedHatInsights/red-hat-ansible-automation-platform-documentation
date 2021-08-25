@@ -1,8 +1,9 @@
 
 ifdef::context[:parent-context: {context}]
 :imagesdir: images
+
 [id="assembly-troubleshooting-navigator_{context}"]
-= Troubleshoot Ansible content with {Navigator}
+= Troubleshooting Ansible content with {Navigator}
 
 :context: troubleshooting-navigator
 

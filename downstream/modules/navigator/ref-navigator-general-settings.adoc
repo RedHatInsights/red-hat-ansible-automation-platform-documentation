@@ -6,7 +6,7 @@
 
 The following table describes each general parameter and setting options for {Navigator}.
 
-.{Navigator} general parameters settings table
+.{Navigator} general parameters settings
 [options="header"]
 [cols='1,1a,1a']
 |====
