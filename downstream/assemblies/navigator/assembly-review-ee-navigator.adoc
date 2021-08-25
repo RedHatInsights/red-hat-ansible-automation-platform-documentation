@@ -3,17 +3,13 @@ ifdef::context[:parent-context: {context}]
 :imagesdir: images
 
 [id="assembly-review-ee-navigator_{context}"]
-= Review {ExecEnvNameStart} with {Navigator}
+= Reviewing {ExecEnvNameStart} with {Navigator}
 
 :context: review-ee-navigator
 
 [role="_abstract"]
 
 As a content developer, you can review your {ExecEnvNameSing} with {Navigator} and display the packages and collections included in the {ExecEnvName}. {Navigator} runs a playbook to extract and display the results.
-
-== Prerequisites
-
-* You have authenticated to the Red Hat registry if you need to access additional {ExecEnvName}. See https://access.redhat.com/RegistryAuthentication[Red Hat Container Registry Authentication] for details.
 
 include::navigator/proc-review-ee-tui.adoc[leveloffset=+1]
 

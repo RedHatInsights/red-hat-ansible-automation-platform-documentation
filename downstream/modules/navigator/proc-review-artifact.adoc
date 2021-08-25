@@ -16,7 +16,7 @@
 
 .Procedure
 
-* Start {Navigator} with the artifact file
+* Start {Navigator} with the artifact file.
 +
 ----
 $ ansible-navigator replay simple_playbook_artifact.json

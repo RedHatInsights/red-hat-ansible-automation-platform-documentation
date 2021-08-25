@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-You can install {Navigator} on Red Hat Enterprise Linux (RHEL) from a tarball.
+You can install {Navigator} on Red Hat Enterprise Linux (RHEL) from a tar file.
 
 .Prerequisites
 
@@ -33,5 +33,3 @@ $ pip install <ansible-navigator-tarball>
 ----
 $ ansible-navigator --help
 ----
-
-You should see the help output describing the main functions of {Navigator}.

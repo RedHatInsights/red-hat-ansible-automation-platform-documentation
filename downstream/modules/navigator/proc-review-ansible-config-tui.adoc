@@ -9,6 +9,9 @@
 
 You can review your Ansible configuration with the {Navigator} text-based user interface in interactive mode and delve into the settings. {Navigator} pulls in the results from an accessible Ansible configuration file, or returns the defaults if no configuration file is present.
 
+.Prerequisites
+
+* You have authenticated to the Red Hat registry if you need to access additional {ExecEnvName}. See https://access.redhat.com/RegistryAuthentication[Red Hat Container Registry Authentication] for details.
 
 .Procedure
 
@@ -19,7 +22,7 @@ You can review your Ansible configuration with the {Navigator} text-based user i
 $ ansible-navigator
 ----
 +
-You can optionally type `ansible-navigator config` from the command line to directly access the Ansible configuration settings.
+Optional: type `ansible-navigator config` from the command line to access the Ansible configuration settings.
 
 . Review the Ansible configuration.
 +
