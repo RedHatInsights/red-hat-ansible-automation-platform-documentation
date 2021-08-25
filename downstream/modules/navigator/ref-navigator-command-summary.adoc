@@ -5,7 +5,7 @@
 [role="_abstract"]
 The {Navigator} commands run familiar Ansible CLI commands in `-m stdout` mode. You can use all the subcommands and options from the related Ansible CLI command. Use `ansible-navigator --help` for details.
 
-.{Navigator} command table
+.{Navigator} commands
 [options="header"]
 |====
 |Command|Description|CLI example

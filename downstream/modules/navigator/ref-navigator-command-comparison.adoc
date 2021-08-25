@@ -1,11 +1,11 @@
 [id="ref-navigator-command-comparison_{context}"]
 
-= Relationshipt between Ansible and {Navigator} commands
+= Relationship between Ansible and {Navigator} commands
 
 [role="_abstract"]
-The {Navigator} commands run familiar Ansible CLI commands in `-m stdout` mode. You can use all of the subcommands and options allowed in the related Ansible CLI command. Use `ansible-navigator --help` for details.
+The {Navigator} commands run familiar Ansible CLI commands in `-m stdout` mode. You can use all the subcommands and options available in the related Ansible CLI command. Use `ansible-navigator --help` for details.
 
-.Comparing {Navigator} and Ansible CLI commands
+.Comparison of {Navigator} and Ansible CLI commands
 [options="header"]
 |====
 |Ansible navigator command|Ansible CLI command

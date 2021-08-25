@@ -62,7 +62,7 @@ ANSIBLE.UTILS.IP_ADDRESS: Test if something in an IP address
 <... output truncated...>
 ----
 
-. Optionally, jump to the documentation examples for this module.
+. Optional: jump to the documentation examples for this module.
 +
 ----
 :{{ examples }}
@@ -85,7 +85,7 @@ ANSIBLE.UTILS.IP_ADDRESS: Test if something in an IP address
 15│
 ----
 
-. Optionally, open the example in your editor to copy it into a playbook.
+. Optional: open the example in your editor to copy it into a playbook.
 +
 ----
 :open

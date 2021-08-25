@@ -16,13 +16,13 @@ You can review Ansible inventories with the {Navigator} text-based user interfac
 .Procedure
 
 
-. Start {Navigator}
+. Start {Navigator}.
 +
 ----
 $ ansible-navigator
 ----
 +
-You can optionally type `ansible-navigator inventory -i simple_inventory.yml` from the command line to directly view the inventory.
+Optional: type `ansible-navigator inventory -i simple_inventory.yml` from the command line to view the inventory.
 
 . Review the inventory.
 +

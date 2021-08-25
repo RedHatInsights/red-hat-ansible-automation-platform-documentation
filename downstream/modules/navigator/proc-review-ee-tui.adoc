@@ -27,10 +27,10 @@ image::navigator-images-list.png[]
 +
 image::navigator-image-details.png[]
 +
-You can review the packages and versions of each installed {ExecEnvNameSing} as well as the Ansible version any included collections.
+You can review the packages and versions of each installed {ExecEnvNameSing} and the Ansible version any included collections.
 
 
-. Optionally, you can pass in the {ExecEnvNameSing} you want to use. This becomes the primary and is the {ExecEnvNameSing} that {Navigator} uses.
+. Optional: pass in the {ExecEnvNameSing} that you want to use. This becomes the primary and is the {ExecEnvNameSing} that {Navigator} uses.
 +
 ----
 $ ansible-navigator images --eei  registry.example.com/example-enterprise-ee:latest
