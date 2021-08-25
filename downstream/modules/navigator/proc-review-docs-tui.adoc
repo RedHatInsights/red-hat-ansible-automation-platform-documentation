@@ -22,7 +22,7 @@ You can review Ansible documentation for collections and plugins with the {Navig
 $ ansible-navigator
 ----
 
-. Review the module you are interested in. Alternately, you can type `ansible-navigator doc` to directly access the documentation.
+. Review the module you are interested in. Alternately, you can type `ansible-navigator doc` to access the documentation.
 +
 ----
 :doc ansible.utils.ip_address
@@ -73,7 +73,7 @@ ANSIBLE.UTILS.IP_ADDRESS: Test if something in an IP address
 15│
 ----
 
-. Optionally, open the example in your editor to copy it into a playbook.
+. Optional: open the example in your editor to copy it into a playbook.
 +
 ----
 :open

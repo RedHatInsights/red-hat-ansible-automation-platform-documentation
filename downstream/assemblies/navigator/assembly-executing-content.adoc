@@ -1,6 +1,5 @@
 
 ifdef::context[:parent-context: {context}]
-
 :imagesdir: images
 
 [id="executing-content-navigator"]
