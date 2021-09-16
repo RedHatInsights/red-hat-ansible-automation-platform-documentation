@@ -5,5 +5,5 @@ Automation Hub allows you to discover and utilize new certified automation conte
 
 .Automation Hub bug fixes
 
-* Implemented filters for state and keywords on imports API.
+* Implemented filters for state and keywords on imports API
 * Create 'inbound-namespaces' whenever a namespace is created.
