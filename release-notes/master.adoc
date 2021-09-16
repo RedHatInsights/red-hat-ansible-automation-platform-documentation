@@ -4,6 +4,22 @@ include::topics/platform-intro.adoc[leveloffset=+1]
 
 include::topics/upgrading.adoc[leveloffset=+1]
 
+[[anchor-september-2021-release]]
+== September 2021 release
+
+include::topics/platform-intro-125.adoc[leveloffset=+2]
+
+include::topics/tower-intro-384.adoc[leveloffset=+2]
+
+include::topics/hub-426.adoc[leveloffset=+2]
+
+[[anchor-july-2021-release]]
+== July 2021 release
+
+include::topics/platform-intro-124.adoc[leveloffset=+2]
+
+include::topics/hub-424.adoc[leveloffset=+2]
+
 [[anchor-june-2021-release]]
 == June 2021 release
 
