@@ -1,5 +1,7 @@
 [[insights-062021]]
 
+= Insights for Ansible Automation Platform
+
 Insights for Ansible Automation Platform gives you feedback about your automation deployments through insights and governance which allow you to view information about automation health, usage, and performance across your enterprise.
 
 This release introduces the automation savings planner to Insights for Ansible Automation Platform. The automation savings planner is a tool where users can track their automation efforts by creating automation savings plans, each with a defined set of tasks needed to complete their plans. Users can also view a calculation of their cost savings from automating these tasks.
