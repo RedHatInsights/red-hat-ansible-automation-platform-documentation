@@ -1,0 +1,98 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: proc-doing-procedure-a.adoc
+* ID: [id="doing-procedure-a_{context}"]
+* Title: = Doing procedure A
+
+The ID is an anchor that links to the module. Avoid changing it after the module has been published to ensure existing links are not broken.
+////
+
+[id="proc-creating-ids-rule_{context}"]
+
+= Creating a new IDS rule
+
+Use the `ids_rule` role to manage your rules and signatures for IDS. For example, you can set a new rule that looks for a certain pattern aligning with a previous attack on your firewall.
+
+[NOTE]
+====
+Currently, the `ids_rule` role only supports Snort IDS.
+====
+
+.Prerequisites
+
+* You need `root` privileges to make any changes on the Snort server.
+
+.Procedure
+
+. Install the `ids_rule` role using the ansible-galaxy command:
++
+----
+$ ansible-galaxy install ansible_security.ids_rule
+----
+
+. Create a new playbook file titled `add_snort_rule.yml`. Set the following parameters:
++
+----
+- name: Add Snort rule
+  hosts: snort
+----
+
+. Add the `become` flag to ensure that Ansible handles privilege escalation.
++
+----
+- name: Add Snort rule
+  hosts: snort
+  become: true
+----
+. Specify the name of your IDS provider by adding the following variables:
++
+----
+- name: Add Snort rule
+  hosts: snort
+  become: true
+
+  vars:
+    ids_provider: snort
+----
+
+. Add the following tasks and task-specific variables (e.g., rules, Snort rules file, and the state of the rule - present or absent) to the playbook:
++
+----
+- name: Add Snort rule
+  hosts: snort
+  become: true
+
+  vars:
+    ids_provider: snort
+
+  tasks:
+    -  name: Add snort password attack rule
+       include_role:
+         name: "ansible_security.ids_rule"
+       vars:
+         ids_rule: 'alert tcp any any -> any any (msg:"Attempted /etc/passwd Attack"; uricontent:"/etc/passwd"; classtype:attempted-user; sid:99000004; priority:1; rev:1;)'
+         ids_rules_file: '/etc/snort/rules/local.rules'
+         ids_rule_state: present
+----
++
+Tasks are components that make changes on the target machine. Since you are using a role that defines these tasks, the `include_role` is the only entry you need.
++
+The `ids_rules_file` variable specifies a defined location for the `local.rules` file, while the `ids_rule_state` variable indicates if the rule should be created if it does not already exist.
+
+. Run the playbook by executing the following command:
++
+----
+$ ansible-navigator run add_snort_rule.ym --mode stdout
+----
++
+Once you run the playbook, all of your tasks will be executed in addition to your newly created rules. Your playbook output will confirm your PLAY, TASK, RUNNING HANDLER, and PLAY RECAP.
+
+
+.Verification
+
+To verify that your IDS rules were successfully created, SSH to the Snort server and look for the content of the ``/etc/snort/rules/local.rules` file.
+
+////
+[role="_additional-resources"]
+.Additional resources
+////
