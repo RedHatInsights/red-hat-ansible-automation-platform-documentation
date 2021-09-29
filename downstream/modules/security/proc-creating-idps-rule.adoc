@@ -9,13 +9,13 @@ The ID is an anchor that links to the module. Avoid changing it after the module
 
 [id="proc-creating-ids-rule_{context}"]
 
-= Creating a new IDS rule
+= Creating a new IDPS rule
 
-Use the `ids_rule` role to manage your rules and signatures for IDS. For example, you can set a new rule that looks for a certain pattern aligning with a previous attack on your firewall.
+Use the `ids_rule` role to manage your rules and signatures for IDPS. For example, you can set a new rule that looks for a certain pattern aligning with a previous attack on your firewall.
 
 [NOTE]
 ====
-Currently, the `ids_rule` role only supports Snort IDS.
+Currently, the `ids_rule` role only supports Snort IDPS.
 ====
 
 .Prerequisites
@@ -44,7 +44,7 @@ $ ansible-galaxy install ansible_security.ids_rule
   hosts: snort
   become: true
 ----
-. Specify the name of your IDS provider by adding the following variables:
+. Specify the name of your IDPS provider by adding the following variables:
 +
 ----
 - name: Add Snort rule
@@ -90,7 +90,7 @@ Once you run the playbook, all of your tasks will be executed in addition to you
 
 .Verification
 
-To verify that your IDS rules were successfully created, SSH to the Snort server and view the content of the `/etc/snort/rules/local.rules` file.
+To verify that your IDPS rules were successfully created, SSH to the Snort server and view the content of the `/etc/snort/rules/local.rules` file.
 
 ////
 [role="_additional-resources"]
