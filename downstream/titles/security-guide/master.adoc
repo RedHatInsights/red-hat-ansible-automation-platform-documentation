@@ -11,4 +11,4 @@ include::attributes/attributes.adoc[]
 
 include::security/assembly-firewall-policy-manage.adoc[leveloffset=+1]
 
-include::security/assembly-intrusion-detection-system.adoc[leveloffset=+1]
+include::security/assembly-idps.adoc[leveloffset=+1]

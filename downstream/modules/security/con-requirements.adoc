@@ -14,12 +14,12 @@ Base the file name and the ID on the module title. For example:
 Write a short introductory paragraph that provides an overview of the module. The text that immediately follows the `[role="_abstract"]` tag is used for search metadata.
 ////
 
-Before you begin automating your IDS with Ansible, ensure that you have the proper installations and configurations necessary to successfully manage your IDS.
+Before you begin automating your IDPS with Ansible, ensure that you have the proper installations and configurations necessary to successfully manage your IDPS.
 
 * You have installed Ansible 2.9 or later.
 * SSH connection and keys are configured.
-* IDS software (Snort) is installed and configured.
-* You have access to the IDS server (Snort) to enforce new policies.
+* IDPS software (Snort) is installed and configured.
+* You have access to the IDPS server (Snort) to enforce new policies.
 
 [role="_additional-resources"]
 .Additional resources

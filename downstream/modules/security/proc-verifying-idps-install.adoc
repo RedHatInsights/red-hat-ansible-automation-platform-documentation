@@ -9,7 +9,7 @@ The ID is an anchor that links to the module. Avoid changing it after the module
 
 [id="proc-verifying-ids-install_{context}"]
 
-= Verifying your IDS installation
+= Verifying your IDPS installation
 
 To verify that Snort has been configured successfully, call it via `sudo` and ask for the version:
 
