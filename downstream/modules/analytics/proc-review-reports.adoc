@@ -1,0 +1,17 @@
+// Module included in the following assemblies:
+// assembly-insights-reports.adoc
+
+
+[id="proc-review-reports"]
+
+= Reviewing your reports
+
+To view a report about your Ansible automation environment, log in to the {PlatformName} and proceed with the following steps:
+
+.Procedure
+. Click *Reports* on the side navigation panel on the {PlatformName}.
+. Select a report from the results to view it.
+
+Each report presents data to monitor your Ansible automation environment. Use the filter toolbar on each report to adjust your graph view.
+
+NOTE: We are constantly adding new reports to the system. If you have ideas for new reports that would be helpful for your team, please contact your account representative or log a feature enhancement for {InsightsShort}.
