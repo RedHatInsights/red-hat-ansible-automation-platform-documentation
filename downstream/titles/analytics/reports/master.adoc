@@ -1,0 +1,11 @@
+:experimental:
+:toclevels: 4
+
+:insights_reports:
+include::attributes/attributes.adoc[]
+
+[[insights_reports]]
+= Viewing reports about your Ansible automation environment
+
+// Contents
+include::analytics/assembly-insights-reports.adoc[leveloffset=+1]
