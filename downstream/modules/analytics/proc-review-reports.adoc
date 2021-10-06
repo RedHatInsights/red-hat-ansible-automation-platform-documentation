@@ -6,10 +6,11 @@
 
 = Reviewing your reports
 
-To view a report about your Ansible automation environment, log in to the {PlatformName} and proceed with the following steps:
+To view reports about your Ansible automation environment, proceed with the following steps:
 
 .Procedure
-. Click *Reports* on the side navigation panel on the {PlatformName}.
+. Log in to https://console.redhat.com[console.redhat.com] and navigate to the {PlatformNameShort}.
+. Click *Reports* on the side navigation panel.
 . Select a report from the results to view it.
 
 Each report presents data to monitor your Ansible automation environment. Use the filter toolbar on each report to adjust your graph view.
