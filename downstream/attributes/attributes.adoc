@@ -2,9 +2,17 @@
 
 // Platform
 :PlatformName: Red Hat Ansible Automation Platform
+:PlatformNameShort: Ansible Automation Platform
+
+// Operators
+:OperatorPlatform: Ansible Automation Platform Operator
+:OperatorHub: OpenShift private automation hub operator
+:OperatorController: OpenShift automation controller operator
+:OperatorResource: OpenShift Ansible Automation Platform resource operator
 
 // Automation services catalog
 :CatalogName: automation services catalog
+:CatalogNameStart: Automation services catalog
 :ITSM: ITSM integration
 :returns: product returns
 :leasing: product leasing
@@ -22,7 +30,9 @@
 :insights: insights integration
 
 // Automation hub
+:HubNameStart: Automation hub
 :HubName: automation hub
+:HubNameStart: Automation hub
 :PrivateCollections: Ansible private automation hub collection management
 :EEmanagement: Ansible private automation hub EE management
 :HubDatabase: Ansible private automation hub database
@@ -30,6 +40,7 @@
 :HubCollLife: Ansible automation hub collection lifecycle
 
 // Automation Controller
+:ControllerNameStart: Automation controller
 :ControllerName: automation controller
 :TaskManager: task manager/scheduler
 :APIinventory: API inventory management
@@ -46,6 +57,8 @@
 // Execution environments
 :ExecEnvNameStart: Automation execution environments
 :ExecEnvName: automation execution environments
+:ExecEnvNameSing: automation execution environment
+:ExecEnvShort: execution environment
 :RHEL8: RHEL 8 UBI
 :Python: Python 3.8
 :Runner: Ansible Runner
@@ -55,15 +68,15 @@
 // Ansible developer tools
 :ToolsName: Ansible developer tools
 :Test: Ansible-test
-:Builder: Ansible-builder
-:Navigator: Ansible-navigator
+:Builder: Ansible Builder
+:Navigator: Automation content navigator
 :IDEplugin: Ansible IDE plugins
 :IDEcollection: Ansible IDE collection explorer
 :IDElanguage: Ansible IDE language server
 
 // Content Collections
 :CertifiedName: Ansible Certified Content Collections
-:ServiceNowColl: Red Hat Ansible Certified Content Collcetion for Service Now
+:ServiceNowColl: Red Hat Ansible Certified Content Collection for Service Now
 
 // OpenShift attributes
 :OCP: Red Hat OpenShift Container Platform
