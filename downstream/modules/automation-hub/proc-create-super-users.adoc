@@ -4,14 +4,14 @@
 
 = Creating a super user
 
-You can create a superuser in Automation Hub and spread administration work across your team. 
+You can create a super user in automation hub and spread administration work across your team. 
 
 .Prerequisites
 
-* You have *Super user* permissions and can create users in Automation Hub.  
+* You have *Super user* permissions and can create users in automation hub.  
 
 .Procedure
-. Log in to your local Automation Hub.
+. Log in to your local automation hub.
 . Navigate to *User Access*.
 . Click *Users*.
 . Select the user you want to be a super user to see the User details page.
