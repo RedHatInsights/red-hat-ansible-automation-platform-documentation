@@ -1,0 +1,41 @@
+// Module included in the following assemblies:
+// assembly-deploying-high-availability-hub.adoc
+
+
+[id="con-required-changes-ha"]
+
+= Required changes to the inventory file
+
+Before you run the {PlatformNameShort} installer using `./setup.sh`, ensure that you have made the following configuration changes on your inventory file:
+
+.Specify database host IP
+
+Specify the IP address for your database host, using the `automation_pg_host` and `automation_pg_port fields`. For example:
+
+-----
+automationhub_pg_host='10.0.154.72'
+automationhub_pg_port='5432'
+-----
+
+also specify the IP address for your database host in the [database] section, using the value in the `automationhub_pg_port` field:
+-----
+[database]
+10.0.154.72
+-----
+
+.List all instances in a clustered setup
+If installing a clustered setup, replace `localhost ansible_connection=local` in the [automationhub] section with the hostname or IP of all instances. For example:
+-----
+[automationhub]
+automationhub1.testing.ansible.com ansible_user=cloud-user ansible_host=10.0.154.109
+automationhub2.testing.ansible.com ansible_user=cloud-user ansible_host=10.0.152.35
+automationhub3.testing.ansible.com ansible_user=cloud-user ansible_host=10.0.155.160
+-----
+
+.Red Hat Single Sign-On requirements
+If you are implementing Red Hat Single Sign-On on your {HubName} environment, specify the main {HubName} URL that clients will connect to, using the `automationhub_main_url` field. For example:
+-----
+automationhub_main_url = 'https://automationhub.ansible.com'
+-----
+[NOTE]
+If `automationhub_main_url` is not specified, the first node in the [automationhub] group will be used as default.

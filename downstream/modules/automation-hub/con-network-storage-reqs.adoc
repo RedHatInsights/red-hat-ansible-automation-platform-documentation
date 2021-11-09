@@ -1,0 +1,32 @@
+// Module included in the following assemblies:
+// assembly-deploying-high-availability-hub.adoc
+
+
+[id="con-network-storage-reqs"]
+
+= Network Storage Installation Requirements
+
+If you intend to install a HA {HubName} using a network storage on the {HubName} nodes itself, you must first install and use _firewalld_ to open the necessary ports as required by your shared storage system before running the {PlatformNameShort} installer.
+
+Install and configure _firewalld_ by executing the following commands:
+
+. Install the _firewalld_ daemon:
++
+-----
+$ dnf install firewalld
+-----
++
+. Add your network storage under <service> using the following command:
++
+-----
+$ firewall-cmd --permanent --add-service=<service>
+-----
+[NOTE]
+For a list of supported services, run `$ firewall-cmd --get-services`
++
+. Reload to apply the configuration:
++
+-----
+$ firewall-cmd --reload
+-----
++
