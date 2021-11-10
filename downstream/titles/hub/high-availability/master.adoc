@@ -1,0 +1,13 @@
+:imagesdir: images
+:numbered:
+include::attributes/attributes.adoc[]
+
+= Deploying a high availability automation hub
+
+This guide provides an overview of the requirements and procedures for a high availability deployment of your {HubName}.
+
+A high availability (HA) configuration prepares your system for damage mitigation, where a failure in a primary cluster prompts a standby cluster to take over, resulting in no downtime for the customer. HA provides a reliable and scalable solution that minimizes downtime for your Ansible automation environment. In the case of {HubName}, you can set up high availability by configuring your {HubName} deployment to do so using the {PlatformName} (AAP) installer.
+
+Please note that this guide covers deployment of a HA {HubName} application stack only. Other HA components, such as database and file system HA, or setting up DNS load balancing, are out of scope for this guide.
+
+include::hub/assembly-deploying-high-availability-hub.adoc[leveloffset=+1]]
