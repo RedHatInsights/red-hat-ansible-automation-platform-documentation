@@ -6,11 +6,11 @@
 
 = Network Storage Installation Requirements
 
-If you intend to install a HA {HubName} using a network storage on the {HubName} nodes itself, you must first install and use _firewalld_ to open the necessary ports as required by your shared storage system before running the {PlatformNameShort} installer.
+If you intend to install a HA {HubName} using a network storage on the {HubName} nodes itself, you must first install and use `firewalld` to open the necessary ports as required by your shared storage system before running the {PlatformNameShort} installer.
 
-Install and configure _firewalld_ by executing the following commands:
+Install and configure `firewalld` by executing the following commands:
 
-. Install the _firewalld_ daemon:
+. Install the `firewalld` daemon:
 +
 -----
 $ dnf install firewalld
@@ -22,7 +22,7 @@ $ dnf install firewalld
 $ firewall-cmd --permanent --add-service=<service>
 -----
 [NOTE]
-For a list of supported services, run `$ firewall-cmd --get-services`
+For a list of supported services, use the `*$ firewall-cmd --get-services*` command
 +
 . Reload to apply the configuration:
 +
