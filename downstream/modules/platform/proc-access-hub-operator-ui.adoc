@@ -1,0 +1,10 @@
+[id="proc-access-hub-operator-ui_{context}"]
+
+= Accessing the {HubName} user interface
+
+You can access the {HubName} interface once all pods have successfully launched.
+
+. Navigate to *Networking* -> *Routes*.
+. Under *Location*, click on the URL for your {HubName} instance.
+
+The {HubName} user interface will launch, You can sign in with the admin credentials specified during the operator configuration process.

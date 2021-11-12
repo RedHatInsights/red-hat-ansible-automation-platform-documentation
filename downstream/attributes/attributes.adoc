@@ -9,9 +9,10 @@
 
 // Operators
 :OperatorPlatform: Ansible Automation Platform Operator
-:OperatorHub: OpenShift private automation hub operator
-:OperatorController: OpenShift automation controller operator
-:OperatorResource: OpenShift Ansible Automation Platform resource operator
+:OperatorHub: Ansible Automation Platform Hub Operator
+:OperatorController: Ansible Automation Platform Controller Operator
+:OperatorResource: Ansible Automation Platform Resource Operator
+
 
 // Automation services catalog
 :CatalogName: automation services catalog
