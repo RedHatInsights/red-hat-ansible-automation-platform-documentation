@@ -3,10 +3,13 @@
 // Platform
 :PlatformName: Red Hat Ansible Automation Platform
 :PlatformNameShort: Ansible Automation Platform
+:AAPCentralAuth: Ansible Automation Platform Central Authentication
+:CentralAuthStart: Central authentication
+:CentralAuth: central authentication
 
 // Operators
 :OperatorPlatform: Ansible Automation Platform Operator
-:OperatorHub: OpenShift private automation hub operator 
+:OperatorHub: OpenShift private automation hub operator
 :OperatorController: OpenShift automation controller operator
 :OperatorResource: OpenShift Ansible Automation Platform resource operator
 
