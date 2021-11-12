@@ -1,0 +1,11 @@
+[id="proc-running-aap-install"]
+
+= Running the {PlatformName} installer
+
+With the inventory file updated, run the installer using the `setup.sh` playbook found in the installer package.
+
+. Run the `setup.sh` playbook:
++
+-----
+$ ./setup.sh -e aw_repo_url=https://releases.ansible.com/ansible-automation-platform-21-v9nabP7HPgI5K27U/ -e gpgcheck=0
+-----

@@ -3,12 +3,16 @@
 // Platform
 :PlatformName: Red Hat Ansible Automation Platform
 :PlatformNameShort: Ansible Automation Platform
+:AAPCentralAuth: Ansible Automation Platform Central Authentication
+:CentralAuthStart: Central authentication
+:CentralAuth: central authentication
 
 // Operators
 :OperatorPlatform: Ansible Automation Platform Operator
 :OperatorHub: Ansible Automation Platform Hub Operator
 :OperatorController: Ansible Automation Platform Controller Operator
 :OperatorResource: Ansible Automation Platform Resource Operator
+
 
 // Automation services catalog
 :CatalogName: automation services catalog

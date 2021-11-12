@@ -1,0 +1,9 @@
+[id="assembly-deploying-high-availability-hub"]
+
+= Requirements for a high availability {HubName}
+
+Ensure that the following requirements are met as you configure the {PlatformNameShort} installer. Before you run the {PlatformNameShort} installer, you will need to make several changes to the inventory file found in the {PlatformNameShort} installer, as well as set up other components necessary to deploy in HA. For more information about installing automation hub using the {PlatformNameShort} installer, please see https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1#[the {PlatformNameShort} installation guides].
+
+include::automation-hub/con-required-shared-filesystem.adoc[leveloffset=+2]]
+include::automation-hub/con-network-storage-reqs.adoc[leveloffset=+2]]
+include::automation-hub/con-required-changes-ha.adoc[leveloffset=+2]]

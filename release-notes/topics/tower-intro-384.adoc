@@ -1,0 +1,26 @@
+[[tower-384-intro]]
+= Ansible Tower 3.8.4
+
+Ansible Tower helps teams centralize and control your IT infrastructure with
+a visual dashboard, role-based access control, job scheduling, integrated
+notifications and graphical inventory management.  Easily embed Ansible
+Automation into existing tools and processes with REST API and CLI.
+
+
+.Bux fixes
+
+* Running inventories of ~60k hosts no longer takes a very long time for events to show up
+
+* Removed `artifact_data` from data sent to analytics as part of `playbook_on_stats`, since `artifact_data` can contain PII or sensitive data
+
+* Updated Django version to 2.2.20
+
+* Regular users are no longer experiencing longer load times than a superuser when clicking to edit a job template
+
+* Updated password validation support to allow modifying password complexity requirements using some Django configurations
+
+* Fixed AWS inventory tags filtering to support the `OR` condition
+
+* Fixed a python-urllib3 vulnerability (CVE-2021-33503)
+
+See https://docs.ansible.com/ansible-tower/latest/html/release-notes/index.html[Ansible Tower Release Notes v3.8.4] for a full list of new features and enhancements.

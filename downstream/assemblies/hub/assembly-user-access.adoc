@@ -11,6 +11,8 @@ include::automation-hub/proc-assigning-permissions.adoc[leveloffset=+1]
 
 include::automation-hub/proc-create-users.adoc[leveloffset=+1]
 
+include::automation-hub/proc-create-super-users.adoc[leveloffset=+1]
+
 include::automation-hub/proc-add-user-to-group.adoc[leveloffset=+1]
 
 include::automation-hub/proc-create-content-developers.adoc[leveloffset=+1]

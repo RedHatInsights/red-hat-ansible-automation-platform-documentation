@@ -1,0 +1,8 @@
+// Module included in the following assemblies:
+// assembly-deploying-high-availability-hub.adoc
+
+[id="con-required-shared-filesystem"]
+
+= Required shared filesystem
+
+A high availability {HubName} requires you to have a shared file system already set up in your environment. Before you run the {PlatformName} installer, verify that the `/var/lib/pulp` directory exists across your cluster as a result of your shared file system installation. The {PlatformName} installer will return an error if `/var/lib/pulp` is not detected in one of your nodes, causing your HA {HubName} setup to fail.
