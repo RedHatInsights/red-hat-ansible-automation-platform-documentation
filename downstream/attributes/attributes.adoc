@@ -7,6 +7,10 @@
 :CentralAuthStart: Central authentication
 :CentralAuth: central authentication
 
+// Automation Mesh
+:AutomationMesh: automation mesh
+:AutomationMeshStart: Automation mesh
+
 // Operators
 :OperatorPlatform: Ansible Automation Platform Operator
 :OperatorHub: Ansible Automation Platform Hub Operator

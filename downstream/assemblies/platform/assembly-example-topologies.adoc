@@ -1,0 +1,24 @@
+
+ifdef::context[:parent-context: {context}]
+
+[id="assembly-standalone-controller-non-inst-database"]
+= {AutomationMeshStart} design patterns
+
+:context: standalone-controller-non-inst-database
+
+[role="_abstract"]
+The automation mesh topologies in this setion are intended to provide examples you can use to design a mesh deployment in your environment. Examples range from a single, hydrid node deployment to a complex pattern that deploys numerous {ControllerName}s, employing several execution and hop nodes.
+
+== Prerequisites
+* You reviewed conceptual information on node types and relationsips
+
+include::platform/ref-single-hybrid-node-only.adoc[leveloffset=3]
+include::platform/ref-multiple-hybrid-nodes.adoc[leveloffset=3]
+include::platform/ref-single-node-control-plane-single-execution-node.adoc[leveloffset=3]
+include::platform/ref-control-plane-execution-nodes-fully-connected.adoc[leveloffset=3]
+include::platform/ref-control-plane-with-single-egress.adoc[leveloffset=3]
+include::platform/ref-control-plane-execution-topo-hop-nodes.adoc[leveloffset=3]
+include::platform/ref-complex-mesh-topology.adoc[leveloffset=3]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

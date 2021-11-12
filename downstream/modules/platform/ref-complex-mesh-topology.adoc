@@ -1,0 +1,64 @@
+
+
+[id="ref-complex-mesh-topology"]
+
+= Complex automation mesh design pattern example Three controllers, 2 exec nodes + multi hops with exec nodes
+
+
+[role="_abstract"]
+This example inventory demonstrates a complex automation mesh design pattern that uses groups to associate nodes of the same type in order to reduce noise in the installer configuration. It deploys three {AutomaionController}s, 2 execution nodes and multi hops with execution nodes.
+
+[NOTE]
+====
+* The control plane contains only *control* nodes, which are auto-peered together.
+* `[automationcontroller:vars]` peers the controllers to the _disconnected_ execution nodes group `[instance_group_disconnected]`, ignoring the hop nodes in `[execution_nodes]`.
+* All execution node types are defined in `[execution nodes]`, as well as which execution nodes need a hop. Hop nodes are also defined in this group.
+* The `instance_grouo_prefix` automatically adds nodes into the {ControllerName} user interface as an instance group after running the {PlatformName} installer.
+* The `[local_hop]` group peers to the `[automationcontoller]` group.
+* The `[remote_hop]` group peers to the `[local_hop]` group.
+====
+
+.Inventory file
+
+-----
+[automationcontroller]
+aapc1.local ansible_connection=local
+aapc2.local
+aapc3.local
+
+[automationcontroller:vars]
+peers=instance_group_directconnected
+node_type=control
+
+[execution_nodes]
+aape1.local
+aape2.local
+aape3.local peers=local_hop
+aape4.local peers=remote_hop
+aaph1.local node_type=hop
+aaph2.local node_type=hop
+aaph3.local node_type=hop
+
+[instance_group_directconnected]
+aape1.local
+aape2.local
+
+[instance_group_localhop]
+aape3.local
+
+[instance_group_multihop]
+aape4.local
+
+[local_hop]
+aaph1.local
+aaph2.local
+
+[local_hop:vars]
+peers=automationcontroller
+
+[remote_hop]
+aaph3.local
+
+[remote_hop:vars]
+peers=local_hop
+-----
