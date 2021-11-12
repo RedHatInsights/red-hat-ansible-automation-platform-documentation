@@ -1,0 +1,14 @@
+[id="proc-install-aap-operator{context}"]
+
+. Log in to {OCP}.
+. Navigate to *Operators* -> *Operator Hub*.
+. Locate the {PlatformName} operator and click on it.
+> Click *Install*.
++
+
+[NOTE]
+====
+{OCP} clusters running on AWS do not support ReadWriteMany without adding NFS or other storage.
+====
+. Upon successful installation of the platform operator, click on the *View operator* button on the installation confirmation message.
+.. You may also find the installed operator by navigating to *Operators* -> *Installed Operators*

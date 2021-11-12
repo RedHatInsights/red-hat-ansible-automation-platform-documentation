@@ -10,26 +10,16 @@ ifdef::context[:parent-context: {context}]
 :context: operator-install-planning
 
 [role="_abstract"]
-OpenShift operators help install and automate day-2 operations of complex, distributed software on OpenShift.
+{PlatformName} is supported on both Red Hat Enterprise Linux 8 and Red Hat Openshift.
 
-You can use this section to help plan your {PlatformName} operator installation. Before installing, review the individual scenarios to determine which meets your requirements.
+OpenShift operators help install and automate day-2 operations of complex, distributed software on {OCP}. The {OperatorPlatform} enables you to deploy and manage {PlatformNameShort} components on {OCP}.
 
-== Supported installation scenarios for {OCP}
+You can use this section to help plan your {PlatformName} installation on your {OCP} environment. Before installing, review the supported installation scenarios to determine which meets your requirements.
 
-You can install the {PlatformName} operator following one of the below workflows:
-
-* {ControllerNameStart} and customer resources first, then {HubName} and customer resources;
-* {HubNameStart} and customer resources first, then {ControllerName} and customer resources;
-* {ControllerNameStart} and customer resources;
-* {HubNameStart} and custom resources.
-
-== Custom resources
-
-You can define custom resources for each primary installation workflows.
-[role="_additional-resources"]
-== Additional resources
-
-* See link:https://docs.openshift.com/container-platform/4.7/operators/understanding/olm-understanding-operatorhub.html#olm-understanding-operatorhub[Understanding OperatorHub] to learning more OpenShift Container Platform OperatorHub.
+include::platform/con-about-operator.adoc[leveloffset=2]
+include::platform/con-ocp-supported-install.adoc[leveloffset=2]
+include::platform/con-operator-custom-resources.adoc[leveloffset=2]
+include::platform/con-operator-additional-resources.adoc[leveloffset=2]
 
 
 ifdef::parent-context[:context: {parent-context}]

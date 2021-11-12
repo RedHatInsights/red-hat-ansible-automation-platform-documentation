@@ -1,0 +1,18 @@
+[id="assembly-assign-hub-admin-permissions"]
+
+= Assigning {HubName} administrator permissions
+
+Hub administrative users will need to be assigned the role of _hubadmin_ in order to manage user permissions and groups. You can assign the role of _hubadmin_ to a user through the {AAPCentralAuth} client.
+
+.Prerequisites
+* A user storage provider (e.g., LDAP) has been added to your {CentralAuth}
+
+.Procedure
+. Navigate to the `ansible-automation-platform` realm on your SSO client.
+. Under the _Manage_ section on the side navigation bar, click *Users*.
+. Select a user from the list by clicking their ID.
+. Click the *Role Mappings* tab.
+. Using the dropdown menu under _Client Roles_, select *automation-hub*.
+. Click *hubadmin* from the _Available Roles_ field, then click *Add selected >*.
+
+The user is now a _hubadmin_. Repeat steps 3-6 to assign any additional users the _hubadmin_ role.
