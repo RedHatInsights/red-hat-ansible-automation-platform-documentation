@@ -1,6 +1,6 @@
 <title>Getting started with Automation Services Catalog</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>1.2</productnumber>
+<productnumber>2.1</productnumber>
 <subtitle>Initial configurations and workflows</subtitle>
 <abstract>
     <para>This guide provides instructions to begin using Automation Services Catalog, including prerequisites and procedures for connecting your Ansible Tower provider, as well as configuring users and permissions. We also provide instructions for working with platforms, portfolios, and products.</para>
