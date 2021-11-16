@@ -1,6 +1,6 @@
 <title>Getting started with automation hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.0-ea</productnumber>
+<productnumber>2.1</productnumber>
 <subtitle>Configuring Red Hat Automation Hub as your default server for Ansible collections content</subtitle>
 <abstract>
     <para>This guide walks you through the initial steps required to use Red Hat Automation Hub as the default source for certified Ansible collections content.</para>
