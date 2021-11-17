@@ -2,7 +2,7 @@
 
 [id="ref-complex-mesh-topology"]
 
-= Complex automation mesh design pattern example Three controllers, 2 exec nodes + multi hops with exec nodes
+= Complex automation mesh design example
 
 
 [role="_abstract"]
@@ -22,42 +22,42 @@ This example inventory demonstrates a complex automation mesh design pattern tha
 
 -----
 [automationcontroller]
-aapc1.local ansible_connection=local
-aapc2.local
-aapc3.local
+control-plane-1.example.com ansible_connection=local
+control-plane-2.example.com
+control-plane-3.example.com
 
 [automationcontroller:vars]
 peers=instance_group_directconnected
 node_type=control
 
 [execution_nodes]
-aape1.local
-aape2.local
-aape3.local peers=local_hop
-aape4.local peers=remote_hop
-aaph1.local node_type=hop
-aaph2.local node_type=hop
-aaph3.local node_type=hop
+execution-node-1.example.com
+execution-node-2.example.com
+execution-node-2.example.com peers=local_hop
+execution-node-4.example.com peers=remote_hop
+hop-node-1.example.com node_type=hop
+hop-node-2.example.com node_type=hop
+hop-node-3.example.com node_type=hop
 
 [instance_group_directconnected]
-aape1.local
-aape2.local
+execution-node-1.example.com
+execution-node-2.example.com
 
 [instance_group_localhop]
-aape3.local
+execution-node-3.example.com
 
 [instance_group_multihop]
-aape4.local
+execution-node-4.example.com
 
 [local_hop]
-aaph1.local
-aaph2.local
+hop-node-1.example.com
+hop-node-2.example.com
 
 [local_hop:vars]
 peers=automationcontroller
 
 [remote_hop]
-aaph3.local
+hop-node-3.example.com
 
 [remote_hop:vars]
 peers=local_hop
