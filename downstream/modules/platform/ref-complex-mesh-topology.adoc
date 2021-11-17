@@ -6,7 +6,7 @@
 
 
 [role="_abstract"]
-This example inventory demonstrates a complex automation mesh design pattern that uses groups to associate nodes of the same type in order to reduce noise in the installer configuration. It deploys three {AutomaionController}s, 2 execution nodes and multi hops with execution nodes.
+This example inventory demonstrates a complex automation mesh design pattern that uses groups to associate nodes of the same type in order to reduce noise in the installer configuration. It deploys three {ControllerName}s, two execution nodes and multiple hops with execution nodes.
 
 [NOTE]
 ====
