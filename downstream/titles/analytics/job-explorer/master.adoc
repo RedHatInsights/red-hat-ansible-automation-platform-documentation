@@ -5,7 +5,7 @@
 :analytics_automation_savings:
 
 [[analytics_automation_savings]]
-= Evaluating your Ansible Tower job runs using the Job Explorer
+= Evaluating your Automation controller job runs using the Job Explorer
 
 // Contents
 include::analytics/assembly-using-job-explorer.adoc[leveloffset=+1]
