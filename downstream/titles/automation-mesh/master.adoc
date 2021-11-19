@@ -19,3 +19,5 @@ include::platform/assembly-planning-mesh.adoc[leveloffset=+1]
 include::platform/assembly-example-topologies.adoc[leveloffset=+1]
 
 include::platform/assembly-deprovisioning-mesh.adoc[leveloffset=+1]
+
+include::platform/assembly-installing-automation-mesh.adoc[leveloffset=+1]
