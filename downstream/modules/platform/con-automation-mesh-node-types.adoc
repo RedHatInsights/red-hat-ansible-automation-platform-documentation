@@ -16,7 +16,7 @@ The *control plane* consists of hybrid and control nodes. Instances in the contr
 
 == Execution plane
 
-The *execution plane* consists of execution nodes that execute automation on behalf of the control plane and have no control functions and hop nodes to communicate. Nodes in the *execution plane* only run user-space jobs, and may be geographically separated, with high latency, from the control plane.
+The *execution plane* consists of execution nodes that execute automation on behalf of the control plane and have no control functions. Hop nodes serve to communicate. Nodes in the *execution plane* only run user-space jobs, and may be geographically separated, with high latency, from the control plane.
 
 * *Execution nodes* -  Execution nodes run jobs under `ansible-runner` with `podman` isolation. This node type is similar to isolated nodes.
 
