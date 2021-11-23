@@ -85,10 +85,10 @@ servicescatalog_controller_password: password
 # vi inventory
 -----
 +
-. Add the `host_vars` for each host under `[servicecatalog_workers]`:
+. Add the `host_vars` for each host under `[servicescatalog_workers]`:
 +
 ----
-[servicecatalog_workers]
+[servicescatalog_workers]
 finance
 marketing
 ----
