@@ -2,7 +2,7 @@
 // obtaining-token/master.adoc
 [id="proc-create-namespace"]
 
-= Creating a namespace
+= Creating a namespaces
 
 You can create a namespace to use to group collections your developers upload to Automation Hub. When creating a namespace, you can assign a group in Automation Hub as owners of that namespace.
 
