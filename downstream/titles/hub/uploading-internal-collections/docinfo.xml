@@ -1,6 +1,6 @@
 <title>Curating collections using namespaces in Automation Hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.1</productnumber>
+<productnumber>2.0-ea</productnumber>
 <subtitle>Use namespaces to organize the collections created by automation developers in your organization. Create namespaces, upload collections and add additional information and resources that help your end users in their automation tasks.</subtitle>
 <abstract>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
