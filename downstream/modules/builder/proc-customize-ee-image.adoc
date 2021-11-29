@@ -16,8 +16,12 @@ While these environments cover many automation use cases, you can add additional
 ----
 $ podman login -u="[username]" -p="[token/hash]" registry.redhat.io
 ----
-. Verify that you have access to pull the base image that you want to use.
-.. For example, to pull a `ee-minimal` image, check that you have access to https://catalog.redhat.com/software/containers/ansible-automation-platform-20-early-access/ee-minimal-rhel8/60e4bd0fdb72db7d0fadcf31[this repository].
+. Pull an Automation Execution Environment image
++
+-----
+podman pull registry.redhat.io/ansible-automation-platform-20-early-access/ee-minimal-rhel8:2.0.1-8
+-----
++
 . Configure your {Builder} files to specify any additional content to add to the new {ExecEnvShort} image which is based off of `ee-minimal`.
 .. For example, to add the https://galaxy.ansible.com/kubernetes/core[Kubernetes Core Collection from Galaxy] to the image, fill out the `requirements.yml` file as such:
 +
@@ -62,11 +66,29 @@ localhost/new-ee    latest  f5509587efbb  3 minutes ago  769 MB
 ----
 ====
 . Verify your newly-created {ExecEnvShort} image via Ansible Navigator
+. Tag the image for use in your {HubName}:
++
+-----
+$ podman tag registry.redhat.io/_[username]_/_new-ee_ [automation-hub-IP-address]/_[username]_/_new-ee_
+-----
++
+. Log in to your {HubName} using Podman:
++
+[NOTE]
+=====
+You must have `admin` or appropriate container repository permissions for {HubName} to push a container. See _Managing containers in private automation hub_ in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform[Red Hat Ansible Automation Platform documentation] for more information.
+=====
++
+-----
+$ podman login -u="[username]" -p="[token/hash]" [automation-hub-IP-address]
+-----
++
 . Push your image to the container registry in {HubName}:
 +
 ----
 $ podman push [automation-hub-IP-address]/_[username]_/_new-ee_
 ----
++
 . Pull your new image into your {ControllerName} instance:
 .. Navigate to {ControllerName}
 .. From the side-navigational bar, click *Administration* > *Execution Environments*.
