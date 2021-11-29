@@ -1,5 +1,5 @@
 [id="proc-upload-collection"]
-= Uploading a collection to Automation Hub
+= Uploading a collection to {HubName}
 
 .Prerequisites
 

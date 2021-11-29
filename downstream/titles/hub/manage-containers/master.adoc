@@ -18,3 +18,5 @@ include::hub/assembly-populate-container-registry.adoc[leveloffset=+1]
 include::hub/assembly-setup-container-repository.adoc[leveloffset=+1]
 
 include::hub/assembly-pull-image.adoc[leveloffset=+1]
+
+include::hub/assembly-delete-container.adoc[leveloffset=+1]
