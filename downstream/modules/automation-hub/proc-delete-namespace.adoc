@@ -16,6 +16,6 @@ You can delete unwanted namespaces to manage storage on your {hubname} server. T
 . Click the namespace to be deleted.
 . Click image:images/more_actions.png[], then click *Delete namespace*
 +
-NOTE: If the *Delete namespace* button is disabled, it means that this namespace contains a collection with dependencies. Review the collections in this namespace and delete any dependencies to proceed with the namespace deletion. See _Managing collections on automation hub_ in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform[Red Hat Ansible Automation Platform documentation] for more information.
+NOTE: If the *Delete namespace* button is disabled, it means that this namespace contains a collection with dependencies. Review the collections in this namespace and delete any dependencies to proceed with the namespace deletion. See _Managing collections on automation hub_ in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform[Red Hat Ansible Automation Platform documentation] for information about deleting collections.
 
 The deleted namespace, as well as its associated collections, will now be deleted and removed from the namespace list view.

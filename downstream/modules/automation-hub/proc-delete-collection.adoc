@@ -17,6 +17,6 @@ You can further manage your collections by deleting unwanted  collections, provi
 .. *Delete entire collection* to delete all versions in this collection.
 .. *Delete version [number]* to delete the current version of this collection. You can change versions using the *Version* dropdown menu.
 +
-NOTE: If the selected collection has any dependencies with other collections, these actions will be unavailable to you until you delete those dependencies. Click the *Dependencies* tab to see a list of dependencies.
+NOTE: If the selected collection has any dependencies with other collections, these actions will be unavailable to you until you delete those dependencies. Click the *Dependencies* tab to see a list of dependencies to delete before you proceed.
 +
 . When the confirmation window appears, verify that the collection or version number is correct, then click the checkbox -> *Delete*.

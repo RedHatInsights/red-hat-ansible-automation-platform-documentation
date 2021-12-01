@@ -1,8 +1,6 @@
-:imagesdir: images
 :numbered:
 :toclevels: 4
 :experimental:
-
 include::attributes/attributes.adoc[]
 
 
