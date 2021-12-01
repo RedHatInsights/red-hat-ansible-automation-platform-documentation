@@ -4,12 +4,16 @@
 
 = {PlatformName} system requirements
 
-Use this information when planning your {PlatformName} installations. Each installed {PlatformNameShort} component - {HubName} and {ControllerName} has the following requirements.
+Use this information when planning your {PlatformName} installations and designing {AutomationMesh} topologies that fit your use case.
+
+
 [role="_abstract"]
 
 Your system must meet the following minimum system requirements to install and run {PlatformName}.
 
 .Red Hat Ansible Automation Platform system requirements
+
+.Base system
 
 [cols="a,a,a"]
 |===
@@ -17,14 +21,95 @@ Your system must meet the following minimum system requirements to install and r
 
 h| Subscription | Valid Red Hat Ansible Automation Platform |
 
-h| OS | Red Hat Enterprise Linux 8.2 or later 64-bit (x86) |
+h| OS | Red Hat Enterprise Linux 8.4 or later 64-bit (x86) |
 
-h| Ansible | version 2.9 required |
+h| Ansible | version 2.11 required | If Ansible is not already present on the system, the setup playbook will install `ansible-core` 2.12.
+|===
 
-h| RAM | 4Gb minimum |
 
-* 4 GB RAM (minimum and recommended for Vagrant trial installations)
-* 4 GB RAM (minimum for external standalone PostgreSQL databases)
+
+.Automation controller
+
+[NOTE]
+=====
+* {ControllerNameStart} is a distributed system, where different software components can be colocated or distributed across multiple compute nodes. In the installer, node types of control, hybrid, execution, and hop are provided as abstractions to help the user design the topology appropriate for their use case. Recommendations for node sizing are provided in this following table.
+=====
+
+[cols="a,a,a"]
+|===
+
+
+
+| Execution nodes| Required | Notes
+
+h| RAM | 16Gb  |
+
+
+h| CPUs | 4|
+
+* Runs automation. Increase memory and CPU to increase capacity for running more forks
+
+
+
+|Control nodes | Required | Notes
+
+h| RAM | 16Gb  |
+
+
+h| CPUs | 4|
+
+* Processes events and runs cluster jobs including project updates and cleanup jobs. Increasing CPU and memory can help with job event processing.
+
+
+
+| Hybrid nodes| Required | Notes
+
+h| RAM | 16Gb  |
+
+
+h| CPUs | 4|
+* Runs both automation and cluster jobs, comments for both execution and control nodes apply to this node type.
+
+
+
+|Hop nodes| Required | Notes
+
+h| RAM | 16Gb  |
+
+
+h| CPUs | 4|
+
+* Serves to route traffic from one part of the Automation Mesh to another (for example, could be a bastion host into another network). RAM could affect throughput, CPU activity is low. Network bandwidth and latency generally a more important factor than either RAM/CPU.
+
+h| Disk: service node | 40Gb dedicated hard disk space |
+
+* *{ControllerName}*: dedicate a minimum of 20 GB to `/var/` for file and working directory storage
+* Storage volume should be rated for a minimum baseline of 1500 IOPS.
+* Projects are stored on control and hybrid, and for the duration of jobs, also on execution nodes. If the cluster has many large projects, consider having twice the GB in /var/lib/awx/projects, to avoid disk space errors.
+
+h| Disk: database node| 20Gb dedicated hard disk space |
+
+* 150 GB+ recommended
+* Storage volume should be rated for a high baseline IOPS (1500 or more).
+
+
+
+h| Browser | A currently supported version of Mozilla FireFox or Google Chrome |
+
+h| Database | PostgreSQL version 12 |
+
+|===
+
+.Automation hub
+
+[cols="a,a,a"]
+|===
+| | Required | Notes
+
+h| RAM | 8Gb minimum |
+
+* 8 GB RAM (minimum and recommended for Vagrant trial installations)
+* 8 GB RAM (minimum for external standalone PostgreSQL databases)
 * For capacity based on forks in your configuration, see additional resources
 
 h| CPUs | 2 minimum |
@@ -33,16 +118,12 @@ h| CPUs | 2 minimum |
 
 h| Disk: service node | 40Gb dedicated hard disk space |
 
-* *{ControllerName}*: dedicate a minimum of 20 GB to `/var/` for file and working directory storage
-* Storage volume should be rated for a minimum baseline of 750 IOPS.
-* See the note below for more information on {ControllerName} storage
+* Storage volume should be rated for a minimum baseline of 1500 IOPS.
 
 h| Disk: database node| 20Gb dedicated hard disk space |
 
 * 150 GB+ recommended
-* Storage volume should be rated for a high baseline IOPS (1000 or more).
-
-
+* Storage volume should be rated for a high baseline IOPS (1500 or more).
 
 h| Browser | A currently supported version of Mozilla FireFox or Google Chrome |
 
@@ -61,7 +142,7 @@ For example, a playbook run every hour (24 times a day) across 250, hosts, with 
 
 .Amazon EC2
 
-* Instance size of m4.large or larger
+* Instance size of m5.large or larger
 * An instance size of m4.xlarge or larger if there are more than 100 hosts
 
 .Additional notes for {PlatformName} requirements
@@ -97,7 +178,7 @@ Refer to the link:https://wiki.postgresql.org/wiki/Main_Page[PostgreSQL document
 
 While {PlatformName} depends on Ansible Playbooks and requires the installation of the latest stable version of Ansible before installing {ControllerName}, manual installations of Ansible are no longer required.
 
-Upon new installations, {ControllerName} installs the latest release package of Ansible 2.9.
+Upon new installations, {ControllerName} installs the latest release package of Ansible 2.11.
 
 If performing a bundled {PlatformNameShort} installation, the installation program attempts to install Ansible (and its dependencies) from the bundle for you.
 
