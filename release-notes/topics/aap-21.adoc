@@ -5,9 +5,9 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 .Enhancements
 
-* Added separate execution capacity and update your cluster without downtime with Automation Mesh that connects the cluster with a flexible communication method using receptor
+* Automation Mesh introduces separate execution capacity and update your cluster without downtime with Automation Mesh that connects the cluster with a flexible communication method using receptor
 * The platform installer can deploy a Highly Available (HA) Automation Hub cluster
-* Automation Hub connects instances to external Red Hat SSO instances
+* Automation Hub connects instances to external Red Hat SSO instances and for the installer to deploy Red Hat SSO
 * Bundle installer provides the execution environment as part of the bundle
 * In the platform installer, rsync is not required anymore
 * The platform installer supports both with rsync and without rsync environment
