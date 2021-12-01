@@ -19,3 +19,5 @@ Once a namespace is created, groups with permissions to upload to it can start a
 include::automation-hub/proc-uploading-collections.adoc[leveloffset=+1]
 
 include::automation-hub/proc-review-collection-imports.adoc[leveloffset=+1]
+
+include::automation-hub/proc-delete-namespace.adoc[leveloffset=+1]

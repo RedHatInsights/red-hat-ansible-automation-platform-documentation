@@ -1,0 +1,21 @@
+// Module included in the following assemblies:
+// assembly-working-with-namespaces.adoc
+[id="proc-delete-namespace"]
+
+= Deleting a namespace
+
+You can delete unwanted namespaces to manage storage on your {hubname} server. To do so, ensure that the namespace does not contain a collection with dependencies.
+
+.Prerequisites
+* The namespace being deleted does not have a collection with dependencies.
+* You have *Delete namespace* permissions.
+
+.Procedure
+. Log in to your local {hubname}.
+. Navigate to *Collections* -> *Namespaces*
+. Click the namespace to be deleted.
+. Click image:images/more_actions.png[], then click *Delete namespace*
++
+NOTE: If the *Delete namespace* button is disabled, it means that this namespace contains a collection with dependencies. Review the collections in this namespace and delete any dependencies to proceed with the namespace deletion. See _Managing collections on automation hub_ in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform[Red Hat Ansible Automation Platform documentation] for information about deleting collections.
+
+The deleted namespace, as well as its associated collections, will now be deleted and removed from the namespace list view.

@@ -1,0 +1,13 @@
+
+//[id="delete-container"]
+
+= Deleting a container repository
+
+.Prerequisites
+* You have permissions to manage repositories.
+
+.Procedure
+. Navigate to *Container Repository*.
+. Select the container repository you would like to delete.
+. Click image:images/more_actions.png[more actions] > *Delete*.
+. When presented with the confirmation message, click the checkbox then click *Delete*.
