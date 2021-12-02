@@ -2,7 +2,14 @@
 
 = Requirements for a high availability {HubName}
 
-Ensure that the following requirements are met as you configure the {PlatformNameShort} installer. Before you run the {PlatformNameShort} installer, you will need to make several changes to the inventory file found in the {PlatformNameShort} installer, as well as set up other components necessary to deploy in HA. For more information about installing automation hub using the {PlatformNameShort} installer, please see https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1#[the {PlatformNameShort} installation guides].
+Before you deploy HA hub using the installer, make sure your configuration satisfies the following requirements:
+
+.Prerequisites
+* You have installed a shared file system.
+* You have configured your network storage system, if applicable.
+* You have configured the inventory file found on the {PlatformNameShort} installer.
+
+The following sections expand on these requirements in greater detail. Once you meet these requirements, proceed with the {PlatformNameShort} installation with these steps.
 
 include::automation-hub/con-required-shared-filesystem.adoc[leveloffset=+2]]
 include::automation-hub/con-network-storage-reqs.adoc[leveloffset=+2]]
