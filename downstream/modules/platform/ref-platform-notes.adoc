@@ -36,6 +36,6 @@ For more details, see: https://access.redhat.com/solutions/1519083
 
 * PackageKit can frequently interfere with the installation/update mechanism. Consider disabling or removing PackageKit if installed prior to running the setup process.
 * Only the "targeted" SELinux policy is supported. The targeted policy can be set to disabled, permissive, or enforcing.
-* When performing a bundled install, refer to :ref:`bundled_install` for more information.
+* When performing a bundled install, refer to _Choosing and obtaining a {PlatformName} installer_ for more information.
 * When installing {ControllerName}, you only need to run `setup.sh`, any repositories needed by Tower are installed automatically.
 * The latest version of Ansible is installed automatically during the setup process. No additional installation or configuration is required.
