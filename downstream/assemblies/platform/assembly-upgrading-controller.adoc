@@ -42,7 +42,7 @@ If the upgrade of Tower fails or if you need assistance, please contact Ansible 
 All upgrades should be no more than two major versions behind what you are currently upgrading to. For example, in order to upgrade to |at| 2.0.x, you must first be on version 3.8.x; i.e., there is no direct upgrade path from version 3.7.x. Refer to the `recommended upgrade path article link:https://access.redhat.com/articles/4098921[recommended upgrade path article] off the Red Hat customer portal.
 ====
 
-Subscriptions from Red Hat Satellite can be applied to a {ControllerName} instance by providing a Satellite username and password with access to subscriptions. To take advantage of this, you must register your {ControllerName} node with Satellite by installing the Katello RPM *before* upgrading to Tower 3.8.x.  See :ref:`ir_platform_specific_notes_satellite` for more information.
+Subscriptions from Red Hat Satellite can be applied to a {ControllerName} instance by providing a Satellite username and password with access to subscriptions. To take advantage of this, you must register your {ControllerName} node with Satellite by installing the Katello RPM *before* upgrading to Tower 3.8.x..
 ==
 
 
