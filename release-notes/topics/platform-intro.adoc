@@ -8,8 +8,8 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 [cols="a,a,a,a,a"]
 |===
-| Ansible Automation Platform | Ansible Tower | Automation Hub | Automation Services Catalog | Insights for Ansible Automation Platform
+| Ansible Automation Platform | Automation controller | Automation hub | Automation services catalog | Insights for Ansible Automation Platform
 
-|1.2.0 | 3.8.0 | 4.2.0 | hosted service | hosted service
+|2.1.0 | 4.1.0 | 4.4.0 | hosted service | hosted service
 
 |===
