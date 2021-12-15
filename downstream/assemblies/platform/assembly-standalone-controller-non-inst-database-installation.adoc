@@ -14,6 +14,7 @@ You can use these instructions to install a standalone instance of {ControllerNa
 
 * You chose and obtained a platform installer
 * You are installing on a machine that meets base system requirements.
+* You have created a Red Hat Registry Service Account, following the instructions in the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
 
 include::platform/proc-editing-inventory-file.adoc[leveloffset=3]
 include::platform/ref-single-node-inventory.adoc[leveloffset=3]
