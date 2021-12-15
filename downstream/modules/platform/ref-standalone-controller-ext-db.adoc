@@ -11,7 +11,7 @@ This example describes how you can populate the inventory file to deploy an inst
 [IMPORTANT]
 ====
 * Do not use special characters for `pg_password`. It may cause the setup to fail.
-* Enter your Red Hat customer account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry. You can also replace the url in `registry_url` with a different container registry, provided that the registry has execution environment images.
+* Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
 ====
 
 -----
@@ -33,6 +33,6 @@ pg_database='awx'
 pg_username='awx'
 
 registry_url='registry.redhat.io'
-registry_username='<username>'
-registry_password='<password>'
+registry_username='<registry username>'
+registry_password='<registry password>'
 -----

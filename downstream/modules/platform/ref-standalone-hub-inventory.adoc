@@ -12,7 +12,7 @@ This example describes how you can populate the inventory file to deploy a stand
 ====
 * For {PlatformName} or {HubName}: Add an {HubName} host in the `[automationhub]` group. You cannot install {ControllerName} and {HubName} on the same node.
 * Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` host to ensure users can sync and install content from {HubName} from a different node. Do not use 'localhost'.
-* Enter your Red Hat customer account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry. You can also replace the url in `registry_url` with a different container registry, provided that the registry has execution environment images.
+* Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
 ====
 -----
 [automationcontroller]
@@ -23,8 +23,8 @@ This example describes how you can populate the inventory file to deploy a stand
 
 [all:vars]
 registry_url='registry.redhat.io'
-registry_username='<username>'
-registry_password='<password>'
+registry_username='<registry username>'
+registry_password='<registry password>'
 
 automationhub_admin_password= <PASSWORD>
 
