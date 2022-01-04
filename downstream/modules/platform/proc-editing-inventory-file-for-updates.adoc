@@ -1,0 +1,27 @@
+
+
+[id="proc-editing-inventory-file-for-updates_{context}"]
+
+
+= Setting up the inventory file
+
+To upgrade using the {PlatformName} installer, edit the inventory file found in the installer using the same parameters as used in your previous {PlatformName} setup.
+
+NOTE: To review information about the inventory file requirements for your specific intsallation scenario, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#supported_installation_scenarios[{PlatformName} Installation Guide].
+
+.Procedure
+. Navigate to the installer:
+Bundled installer::
++
+-----
+$ cd ansible-automation-platform-setup-bundle-<latest-version>
+-----
++
+Online installer::
++
+-----
+$ cd ansible-automation-platform-setup-<latest-version>
+-----
++
+. Open the `inventory` file with a text editor.
+. Edit the `inventory` file parameters to match the `inventory` file in your previous version of {PlatformName}.
