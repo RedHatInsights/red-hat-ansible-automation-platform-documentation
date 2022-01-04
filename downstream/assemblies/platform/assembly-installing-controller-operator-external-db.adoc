@@ -39,7 +39,7 @@ Once you have configured your {ControllerName} operator, click *Create* at the b
 [role="_additional-resources"]
 == Additional resources
 
-* For more information on running operators on OpenShift Container Platform, navigate to the link:https://access.redhat.com/documentation/en-us/openshift_container_platform/[OpenShift Container Platform product documentation] and click the `Operators - Working with Operators in OpenShift Container Platform` guide.
+* For more information on running operators on OpenShift Container Platform, navigate to the link:https://access.redhat.com/documentation/en-us/openshift_container_platform/[OpenShift Container Platform product documentation] and click the _Operators - Working with Operators in OpenShift Container Platform_ guide.
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
