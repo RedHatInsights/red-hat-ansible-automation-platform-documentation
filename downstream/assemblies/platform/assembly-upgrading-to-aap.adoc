@@ -31,43 +31,8 @@ In order to run {ControllerName} 4.0, you must also have Ansible 2.10.
 
 include::platform/con-upgrade-planning.adoc[leveloffset=+1]
 include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
-
-== Setting up the inventory file
-
-To upgrade using the {PlatformName} installer, edit the inventory file found in the installer using the same parameters as used in your previous {PlatformName} setup.
-
-NOTE: To review information about the inventory file requirements for your specific intsallation scenario, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#supported_installation_scenarios[{PlatformName} Installation Guide].
-
-.Procedure
-. Navigate to the installer
-.. [bundled installer]
-+
------
-$ cd ansible-automation-platform-setup-bundle-<latest-version>
------
-+
-.. [online installer]
-+
------
-$ cd ansible-automation-platform-setup-<latest-version>
------
-+
-. Open the `inventory` file with a text editor.
-. Edit the `inventory` file parameters to match the `inventory` file in your previous version of {PlatformName}.
-
-== Running the {PlatformName} installer setup script
-
-You can run the setup script once you have finished updating the `inventory` file to match your previous {PlatformNameShort} installation.
-
-.Procedure
-
-. Run the `setup.sh` script
-+
------
-$ ./setup.sh
------
-
-The installation will begin.
+include::platform/proc-editing-inventory-file-for-updates.adoc[leveloffset=+1]
+include::platform/proc-running-setup-script-for-updates.adoc[leveloffset=+1]
 
 
 ////
