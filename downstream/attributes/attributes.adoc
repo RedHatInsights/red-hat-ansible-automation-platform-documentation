@@ -7,6 +7,12 @@
 :CentralAuthStart: Central authentication
 :CentralAuth: central authentication
 
+// AAP on Clouds
+:AoCName: Red Hat Ansible Automation Platform on Clouds
+:AoCNameShort: Ansible Automation Platform on Clouds
+:AzureName: Red Hat Ansible Automation Platform on Microsoft Azure
+:AzureNameShort: Ansible Automation Platform on Microsoft Azure
+
 // Automation Mesh
 :AutomationMesh: automation mesh
 :AutomationMeshStart: Automation mesh
