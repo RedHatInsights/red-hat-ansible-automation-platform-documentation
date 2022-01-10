@@ -37,6 +37,7 @@ $ ./setup.sh -e bundle_install=false
 [options="header"]
 |====
 |Variable|Description|Default
+|`GALAXY_ENABLE_API_ACCESS_LOG` | When set to `True`, creates a log file at `/var/log/galaxy_api_access.log` that logs all user actions made to the platform, including their username and IP address  | `False`
 |`upgrade_ansible_with_tower`|When installing {ControllerName} make sure Ansible is also up to date|`False`
 |`create_preload_data`|When installing Tower also create the Demo Org, project, credential, Job Template, etc.|`True`
 |`bundle_install_folder`|When installing from a bundle where to put the bundled repos|`var/lib/tower-bundle`
