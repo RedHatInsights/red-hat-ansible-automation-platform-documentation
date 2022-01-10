@@ -1,0 +1,5 @@
+[id="con-why-aap-on-clouds"]
+
+= Why use {CloudNameShort}?
+
+You can deploy {CloudNameShort} directly from your cloud platform.
