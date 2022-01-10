@@ -1,14 +1,9 @@
-
-
 // [id="ref-reference-material_{context}"]
 
-= Flags and extra vars
-
+= Setup script flags and extra variables
 
 [role="_abstract"]
-You can pass flags and extra variables when installing {ControllerName}.
-
-:
+You can also pass flags and extra variables when running the setup script to install {ControllerName}:
 
 .Flags
 [options="header"]
@@ -69,8 +64,4 @@ $ ./setup.sh -e bundle_install=false
 * To specify a non-default path when restoring from a backup file:
 -----
 ./setup.sh -e 'restore_backup_file=/path/to/nondefault/location' -r
------
-*
------
-To override an inventory file used by passing it as an argument to the setup script:
 -----
