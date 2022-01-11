@@ -1,9 +1,9 @@
 [id="assembly-intro-to-aap-on-clouds"]
 
-= Introduction to {CloudName}
+= Introduction to {AAPonAzureNameShort}
 
-include::aap-on-clouds/con-about-aap-on-clouds.adoc[leveloffset=+1]
-include::aap-on-clouds/con-why-aap-on-clouds.adoc[leveloffset=+2]
+include::aap-on-azure/con-about-aap-on-azure.adoc[leveloffset=+1]
+include::aap-on-azure/con-why-aap-on-azure.adoc[leveloffset=+2]
 
 ////
 Consider adding a link to future Builder docs here

@@ -8,10 +8,10 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= {AoCName}
+= {AAPonAzureName}
 
 Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
 
-This guide helps you to understand the installation and use of {PlatformNameShort} apps on cloud platforms. This document has been updated to include information for the latest release of {PlatformNameShort}.
+This guide helps you to understand the installation and use of {AAPonAzureNameShort} apps on cloud platforms. This document has been updated to include information for the latest release of {AAPonAzureNameShort}.
  
-include::aap-on-clouds/assembly-intro-to-aap-on-cloud.adoc[leveloffset=+1]
+include::aap-on-azure/assembly-intro-to-aap-on-azure.adoc[leveloffset=+1]

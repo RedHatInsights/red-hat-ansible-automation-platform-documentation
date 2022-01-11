@@ -5,10 +5,10 @@ Base the file name and the ID on the module title. For example:
 * Title: = My concept module A
 ////
 
-[id="con-about-aap-on-clouds"]
+[id="con-about-aap-on-azure"]
 
-= About {CloudNameShort}
+= About {AAPonAzureNameShort}
 
 [role="_abstract"]
 
-{CloudNameShort} refers to Ansible on Clouds.
+{AAPonAzureNameShort} refers to Ansible on Azure.

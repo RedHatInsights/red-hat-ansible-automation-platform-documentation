@@ -1,0 +1,5 @@
+[id="con-why-aap-on-azure"]
+
+= Why use {AAPonAzureNameShort}?
+
+You can deploy {AAPonAzureNameShort} directly from Microsoft Azure.
