@@ -9,8 +9,8 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 
 
-include::aap-on-azure/con-about-aap-on-azure.adoc[leveloffset=1]
-include::aap-on-azure/con-why-aap-on-azure.adoc[leveloffset=2]
+include::aap-on-azure/con-about-aap-on-azure.adoc[leveloffset=+1]
+include::aap-on-azure/con-why-aap-on-azure.adoc[leveloffset=+2]
 
 ////
 Consider adding a link to future Builder docs here
