@@ -1,0 +1,26 @@
+
+= Additional inventory file variables
+
+[role="_abstract"]
+You can further configure your {PlatformName} installation by including additional variables to the inventory file. These configurations add various optional features for managing your {PlatformName}. Add these variables by editing the `inventory` file using a text editor.
+
+
+.Additional inventory file variables
+[options="header"]
+|====
+|Variable|Description|Default
+|`GALAXY_ENABLE_API_ACCESS_LOG` | When set to `True`, creates a log file at `/var/log/galaxy_api_access.log` that logs all user actions made to the platform, including their username and IP address  | `False`
+|====
+
+.Example
+
+* To enable the api access log, add the variable to the inventory and flag as `true`:
+-----
+[all:vars:]
+admin_password = 'password'
+
+pg_host=''
+pg_port=''
+
+GALAXY_ENABLE_API_ACCESS_LOG=true
+-----

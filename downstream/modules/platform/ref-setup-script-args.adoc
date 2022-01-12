@@ -1,14 +1,9 @@
-
-
 // [id="ref-reference-material_{context}"]
 
-= Flags and extra vars
-
+= Setup script flags and extra variables
 
 [role="_abstract"]
-You can pass flags and extra variables when installing {ControllerName}.
-
-:
+You can also pass flags and extra variables when running the setup script to install {ControllerName}:
 
 .Flags
 [options="header"]
@@ -42,6 +37,7 @@ $ ./setup.sh -e bundle_install=false
 [options="header"]
 |====
 |Variable|Description|Default
+|`GALAXY_ENABLE_API_ACCESS_LOG` | When set to `True`, creates a log file at `/var/log/galaxy_api_access.log` that logs all user actions made to the platform, including their username and IP address  | `False`
 |`upgrade_ansible_with_tower`|When installing {ControllerName} make sure Ansible is also up to date|`False`
 |`create_preload_data`|When installing Tower also create the Demo Org, project, credential, Job Template, etc.|`True`
 |`bundle_install_folder`|When installing from a bundle where to put the bundled repos|`var/lib/tower-bundle`
@@ -69,8 +65,4 @@ $ ./setup.sh -e bundle_install=false
 * To specify a non-default path when restoring from a backup file:
 -----
 ./setup.sh -e 'restore_backup_file=/path/to/nondefault/location' -r
------
-*
------
-To override an inventory file used by passing it as an argument to the setup script:
 -----
