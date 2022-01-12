@@ -1,0 +1,7 @@
+
+[id="con-controller-temp"]
+
+= Placeholder concept module for Controller
+
+[role="_abstract"]
+This concept module is a placeholder. Delete this when writing the controller docs.
