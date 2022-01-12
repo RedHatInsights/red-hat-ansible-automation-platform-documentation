@@ -14,5 +14,5 @@ Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commerci
 
 This guide helps you to understand {ControllerNameStart}. This document has been updated to include information for the latest release of {PlatformNameShort}.
  
-include::controller/assembly-controller-tempassembly-controller-temp.adoc[leveloffset=+1]
+include::controller/assembly-controller-temp.adoc[leveloffset=+1]
 
