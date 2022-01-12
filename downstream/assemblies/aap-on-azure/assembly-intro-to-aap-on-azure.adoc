@@ -1,9 +1,16 @@
-[id="assembly-intro-to-aap-on-clouds"]
+ifdef::context[:parent-context: {context}]
 
+
+[id="assembly-intro-to-aap-on-azure"]
 = Introduction to {AAPonAzureNameShort}
 
-include::aap-on-azure/con-about-aap-on-azure.adoc[leveloffset=+1]
-include::aap-on-azure/con-why-aap-on-azure.adoc[leveloffset=+2]
+:context: aap-azure-intro
+
+[role="_abstract"]
+
+
+include::aap-on-azure/con-about-aap-on-azure.adoc[leveloffset=1]
+include::aap-on-azure/con-why-aap-on-azure.adoc[leveloffset=2]
 
 ////
 Consider adding a link to future Builder docs here

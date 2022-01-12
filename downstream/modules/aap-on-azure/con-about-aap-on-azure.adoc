@@ -11,4 +11,4 @@ Base the file name and the ID on the module title. For example:
 
 [role="_abstract"]
 
-{AAPonAzureNameShort} refers to Ansible on Azure.
+{AAPonAzureNameShort} is a managed application  fully supported by Red Hat.

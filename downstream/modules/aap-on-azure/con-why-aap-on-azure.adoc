@@ -2,4 +2,4 @@
 
 = Why use {AAPonAzureNameShort}?
 
-You can deploy {AAPonAzureNameShort} directly from Microsoft Azure.
+You can deploy {AAPonAzureNameShort} directly from Microsoft Azure to run in your Azure cloud.
