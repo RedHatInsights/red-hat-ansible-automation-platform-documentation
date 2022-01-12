@@ -2,7 +2,7 @@
 = Additional inventory file variables
 
 [role="_abstract"]
-You can further configure your {PlatformName} installation by including additional variables to the inventory file. These configurations adds various optional features for managing your {PlatformName}. Add these variables by editing the `inventory` file using a text editor.
+You can further configure your {PlatformName} installation by including additional variables to the inventory file. These configurations add various optional features for managing your {PlatformName}. Add these variables by editing the `inventory` file using a text editor.
 
 
 .Additional inventory file variables
