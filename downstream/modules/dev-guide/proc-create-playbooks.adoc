@@ -21,14 +21,14 @@ Playbooks contain one or more plays. A basic play contains the following section
 
   tasks:
     - name: Create a Project
-      awx.awx.project:
+      ansible.controller.project:
         name: Job Template Test Project
         state: present
         scm_type: git
         scm_url: https://github.com/ansible/ansible-tower-samples.git
 
     - name: Create a Job Template
-      awx.awx.job_template:
+      ansible.controller.job_template:
         name: my-job-1
         project: Job Template Test Project
         inventory: Demo Inventory
