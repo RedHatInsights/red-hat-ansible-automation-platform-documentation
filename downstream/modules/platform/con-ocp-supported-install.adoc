@@ -5,7 +5,7 @@
 
 You can use the OperatorHub on the {OCP} web console to install {OperatorPlatform}.
 
-Alternatively, you can install {OperatorPlatform} from the CLI, using the `oc` command.
+Alternatively, you can install {OperatorPlatform} from the {OCPShort} command-line interface (CLI), `oc`.
 
 Follow one of the workflows below to install the {OperatorPlatform} and use it to install the components of {PlatformNameShort} that you require.
 
