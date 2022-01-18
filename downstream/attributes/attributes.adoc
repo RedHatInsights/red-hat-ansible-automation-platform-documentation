@@ -93,3 +93,4 @@
 // OpenShift attributes
 :OCP: Red Hat OpenShift Container Platform
 :OCPShort: OpenShift Container Platform
+:OCPLatest: 4.9
