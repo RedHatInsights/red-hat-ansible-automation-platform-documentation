@@ -1,0 +1,85 @@
+// Used in 
+// assemblies/platform/assembly-installing-aap-operator-cli.adoc
+// titles/aap-operator-installation/
+
+[id="proc-install-cli-aap-operator{context}"]
+
+= Subscribing a namespace to an operator using the {OCPShort} CLI
+
+. Create a project for the operator
++
+-----
+oc new-project ansible-automation-platform
+-----
++
+. Create a file called `sub.yaml`.
+. Add the following YAML code to the `sub.yaml` file.
++
+-----
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    openshift.io/cluster-monitoring: "true"
+  name: ansible-automation-platform
+---
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: ansible-automation-platform-operator
+  namespace: ansible-automation-platform
+spec:
+  targetNamespaces:
+    - ansible-automation-platform
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: ansible-automation-platform
+  namespace: ansible-automation-platform
+spec:
+  channel: 'stable-2.1'
+  installPlanApproval: Automatic
+  name: ansible-automation-platform-operator
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+---
+apiVersion: automationcontroller.ansible.com/v1beta1
+kind: AutomationController
+metadata:
+  name: example
+  namespace: ansible-automation-platform
+spec:
+  create_preload_data: true
+  route_tls_termination_mechanism: Edge
+  garbage_collect_secrets: false
+  loadbalancer_port: 80
+  image_pull_policy: IfNotPresent
+  projects_storage_size: 8Gi
+  task_privileged: false
+  projects_storage_access_mode: ReadWriteMany
+  projects_persistence: false
+  replicas: 1
+  admin_user: admin
+  loadbalancer_protocol: http
+  nodeport_port: 30080 
+
+-----
++
+This file creates a `Subscription` object that subscribes the `ansible-automation-platform` namespace to the `ansible-automation-platform-operator` Operator. 
++
+It then creates an `AutomationController` object called `example` in the `ansible-automation-platform` namespace. To use a different name, modify the value for the `name` field in the `metadata` block of the `AutomationController` object.
+. Run the `oc apply` command to create the objects specified in the `sub.yaml` file:
+-----
+oc apply -f sub.yaml
+-----
+
+To verify that the namespace has been successfully subscribed to the `ansible-automation-platform-operator` Operator, run the `oc get subs` command:
+
+-----
+$ oc get subs -n ansible-automation-platform
+-----
+
+For further information about subscribing namespaces to operators, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.9/html/operators/user-tasks#olm-installing-operator-from-operatorhub-using-cli_olm-installing-operators-in-namespace[Installing from OperatorHub using the CLI] in the {OCP} _Operators_ guide.
+

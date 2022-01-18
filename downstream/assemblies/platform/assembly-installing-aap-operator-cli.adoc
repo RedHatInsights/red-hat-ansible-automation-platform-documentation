@@ -20,27 +20,23 @@ Use these instructions to install the {OperatorPlatform} on {OCP} from the {OCPS
 == Prerequisites
 
 * Access to {OCP} using an account with operator installation permissions.
-* The {OCPShort} CLI `oc` command is installed on your local system.
+* The {OCPShort} CLI `oc` command is installed on your local system. Refer to link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.9/html/cli_tools/openshift-cli-oc#installing-openshift-cli[Installing the OpenShift CLI] in the {OCP} product documentation for further information.
 
 
 == Installing the {HubName} operator
 
-include::platform/proc-install-aap-operator.adoc[leveloffset=+1]
+include::platform/proc-install-cli-aap-operator.adoc[leveloffset=+1]
 
-With the {PlatformName} operator installed, locate the *Automation hub* entry and click *Create instance*.
-
-include::platform/proc-hub-route-options.adoc[leveloffset=+2]
-include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
-
-Once you have configured your {HubName} operator, click *Create* at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
-
-* View progress by navigating to *Workloads* -> *Pods* and locating the newly created instance.
-
-include::platform/proc-access-hub-operator-ui.adoc[leveloffset=+1]
-
-
-
-
+// With the {PlatformName} operator installed, locate the *Automation hub* entry and click *Create instance*.
+// 
+// include::platform/proc-hub-route-options.adoc[leveloffset=+2]
+// include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
+// 
+// Once you have configured your {HubName} operator, click *Create* at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
+// 
+// * View progress by navigating to *Workloads* -> *Pods* and locating the newly created instance.
+// 
+// include::platform/proc-access-hub-operator-ui.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
 == Additional resources
