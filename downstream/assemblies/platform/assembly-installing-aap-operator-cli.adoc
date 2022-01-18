@@ -26,7 +26,7 @@ include::platform/proc-install-cli-aap-operator.adoc[leveloffset=+1]
 
 You can use the {OCPShort} CLI to fetch the web address and the password of the {ControllerNameStart} that you created. 
 
-include::platform/proc-cli-get-controller-pwd.adoc[leveloffset=+2]
+include::platform/proc-cli-get-controller-pwd.adoc[leveloffset=+1]
 
 
 [role="_additional-resources"]
