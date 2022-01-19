@@ -1,4 +1,4 @@
-// Used in 
+// Used in
 // assemblies/platform/assembly-installing-aap-operator-cli.adoc
 // titles/aap-operator-installation/
 
@@ -20,7 +20,7 @@ Use the following command to fetch the routes:
 oc get routes
 -----
 
-In the following example, the value for `name` in the `AutomationController` YAML definition is `example`.
+In the following example, the value for _name_ in the `AutomationController` YAML definition is `_example_`.
 
 -----
 $ oc get routes
@@ -29,22 +29,22 @@ NAME      HOST/PORT                                              PATH   SERVICES
 example   example-ansible-automation-platform.apps-crc.testing          example-service   http   edge/Redirect   None
 -----
 
-The address for the {ControllerName} instance is example-ansible-automation-platform.apps-crc.testing.
+The address for the {ControllerName} instance is `example-ansible-automation-platform.apps-crc.testing`.
 
 == Fetching the {ControllerName} password
 
-The YAML block for the {ControllerName} instance assigns values to the `name` and `admin_user` keys.
+The YAML block for the {ControllerName} instance assigns values to the _name_ and _admin_user_ keys.
 Use these values in the following command to fetch the password for the {ControllerName} instance.
 
 -----
-oc get secret/<controller_name>-<admin_user>-password -o yaml 
+oc get secret/<controller_name>-<admin_user>-password -o yaml
 -----
 
 
-In the following example, the value for `name` is `example` and the value assigned to the `admin_user` key is `admin`.
+In the following example, the value for _name_ is `_example_` and the value assigned to the _admin_user_ key is `_admin_`.
 
 -----
-oc get secret/example-admin-password -o yaml 
+oc get secret/example-admin-password -o yaml
 -----
 
 The password for the {ControllerName} instance is listed in the `metadata` field in the output:

@@ -14,17 +14,17 @@ ifdef::context[:parent-context: {context}]
 :context: installing-aap-operator-cli
 
 [role="_abstract"]
-Use these instructions to install the {OperatorPlatform} on {OCP} from the {OCPShort} command-line interface (CLI), `oc`.
+Use these instructions to install the {OperatorPlatform} on {OCP} from the {OCPShort} command-line interface (CLI) using the `*oc*` command.
 
 == Prerequisites
 
 * Access to {OCP} using an account with operator installation permissions.
-* The {OCPShort} CLI `oc` command is installed on your local system. Refer to link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/cli_tools/openshift-cli-oc#installing-openshift-cli[Installing the OpenShift CLI] in the {OCP} product documentation for further information.
+* The {OCPShort} CLI `*oc*` command is installed on your local system. Refer to link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/cli_tools/openshift-cli-oc#installing-openshift-cli[Installing the OpenShift CLI] in the {OCP} product documentation for further information.
 
 
 include::platform/proc-install-cli-aap-operator.adoc[leveloffset=+1]
 
-You can use the {OCPShort} CLI to fetch the web address and the password of the {ControllerNameStart} that you created. 
+You can use the {OCPShort} CLI to fetch the web address and the password of the {ControllerNameStart} that you created.
 
 include::platform/proc-cli-get-controller-pwd.adoc[leveloffset=+1]
 
