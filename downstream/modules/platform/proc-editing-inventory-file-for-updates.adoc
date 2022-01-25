@@ -5,9 +5,7 @@
 
 = Setting up the inventory file
 
-To upgrade using the {PlatformName} installer, edit the inventory file found in the installer using the same parameters as used in your previous {PlatformName} setup.
-
-NOTE: To review information about the inventory file requirements for your specific intsallation scenario, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#supported_installation_scenarios[{PlatformName} Installation Guide].
+To upgrade using the {PlatformName} installer, edit the `inventory` file found in the installer to match your desired configuration. When editing the `inventory` file, you can use the `inventory` file parameters from your previous {PlatformNameShort} setup to keep the same configuration as before. You can also enable any new parameters in the `inventory` file that was introduced in the new version of the {PlatformName}.
 
 .Procedure
 . Navigate to the installer:
@@ -25,3 +23,8 @@ $ cd ansible-automation-platform-setup-<latest-version>
 +
 . Open the `inventory` file with a text editor.
 . Edit the `inventory` file parameters to match the `inventory` file in your previous version of {PlatformName}.
++
+NOTE: To review information about the inventory file requirements for your specific intsallation scenario, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#supported_installation_scenarios[{PlatformName} Installation Guide].
+. Optional: Edit the `inventory` file parameters to enable any new features introduced in the new version of the {PlatformName}.
++
+NOTE: For more information about any new features and how to enable them, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[Product Documentation for {PlatformName}] to search for specific features and their configurations. Review the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_release_notes/index[{PlatformName} Release Notes] for a full list of features in each version release.

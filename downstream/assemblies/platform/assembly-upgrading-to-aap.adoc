@@ -5,7 +5,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="upgrading-platform"]
-= Upgrading to {PlatformName}
+= Upgrading your {PlatformName}
 
 
 :context: upgrading-platform
@@ -13,23 +13,11 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-{HubNameStart} acts as a content provider for {ControllerName}, which requires both an {ControllerName} deployment and an {HubName} deployment running alongside each other. The {PlatformName} installer contains both of these. This section covers each component of the upgrading process:
 
-* Upgrade planning
-* Obtaining the installer
-* Setting up the inventory file
-* Running the setup playbook
-* Migrating from virtual environments to {ExecEnvName}
+To upgrade your {PlatformName} to the later version, download the desired version of the {PlatformNameShort} installer. Configure it with the same parameters you have used in previous installations, configure any new parameters, then run the installer.
 
-[NOTE]
-====
-All upgrades should be no more than two major versions behind what you are currently upgrading to. For example, in order to upgrade to {ControllerName} 4.0, you must first be on version 3.8.x. There is no direct upgrade path from version 3.7.x or earlier. Refer to the article, link:https://access.redhat.com/articles/4098921[Recommended upgrade path] on the Red Hat customer portal for more information.
+The following guide describes these steps in more detail.
 
-In order to run {ControllerName} 4.0, you must also have Ansible 2.10.
-====
-
-
-include::platform/con-upgrade-planning.adoc[leveloffset=+1]
 include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
 include::platform/proc-editing-inventory-file-for-updates.adoc[leveloffset=+1]
 include::platform/proc-running-setup-script-for-updates.adoc[leveloffset=+1]
