@@ -5,7 +5,7 @@
 
 = Setting up the inventory file
 
-To upgrade using the {PlatformName} installer, edit the `inventory` file found in the installer to match your desired configuration. When editing the `inventory` file, you can use the same `inventory` file parameters from your previous {PlatformNameShort} setup to keep the same configuration as before. You can also enable any new parameters in the `inventory` file that was introduced in the new version of the {PlatformName}.
+To upgrade using the {PlatformName} installer, edit the `inventory` file found in the installer to match your desired configuration. When editing the `inventory` file, you can use the `inventory` file parameters from your previous {PlatformNameShort} setup to keep the same configuration as before. You can also enable any new parameters in the `inventory` file that was introduced in the new version of the {PlatformName}.
 
 .Procedure
 . Navigate to the installer:
