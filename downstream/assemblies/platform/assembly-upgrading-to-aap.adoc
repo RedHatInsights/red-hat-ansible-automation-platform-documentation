@@ -14,7 +14,7 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-To upgrade your {PlatformName} to the later version, download the desired version of the {PlatformNameShort} installer and configure it with the same parameters you have used in previous installations, configure any new parameters, then run the installer.
+To upgrade your {PlatformName} to the later version, download the desired version of the {PlatformNameShort} installer. Configure it with the same parameters you have used in previous installations, configure any new parameters, then run the installer.
 
 The following guide details these steps in more detail.
 
