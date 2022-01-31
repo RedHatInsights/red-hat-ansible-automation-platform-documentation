@@ -12,8 +12,8 @@
 oc new-project ansible-automation-platform
 -----
 +
-. Create a file called `sub.yaml`.
-. Add the following YAML code to the `sub.yaml` file.
+. Create a file called [filename]`sub.yaml`.
+. Add the following YAML code to the [filename]`sub.yaml` file.
 +
 -----
 ---
@@ -67,16 +67,27 @@ spec:
 
 -----
 +
-This file creates a `_Subscription_` object that subscribes the `ansible-automation-platform` namespace to the `ansible-automation-platform-operator` Operator.
+This file creates a `Subscription` object called `_ansible-automation-platform_` that subscribes the `ansible-automation-platform` namespace to the `ansible-automation-platform-operator` operator.
 +
-It then creates an `AutomationController` object called `_example_` in the `ansible-automation-platform` namespace. To use a different name, modify the value for the _name_ key in the `metadata` block of the `AutomationController` object.
-. Run the `*oc apply*` command to create the objects specified in the `sub.yaml` file:
+It then creates an `AutomationController` object called `_example_` in the `ansible-automation-platform` namespace.
++
+To change the Automation controller name from `_example_`, edit the _name_ field in the `kind: AutomationController` section of [filename]`sub.yaml` and replace `_<automation_controller_name>_` with the name you want to use:
++   
+[subs="+quotes"]
+-----
+apiVersion: automationcontroller.ansible.com/v1beta1
+kind: AutomationController
+metadata:
+  name: __<automation_controller_name>__
+  namespace: ansible-automation-platform
+-----
+. Run the [command]`*oc apply*` command to create the objects specified in the [filename]`sub.yaml` file:
 +
 -----
 oc apply -f sub.yaml
 -----
 
-To verify that the namespace has been successfully subscribed to the `ansible-automation-platform-operator` Operator, run the `*oc get subs*` command:
+To verify that the namespace has been successfully subscribed to the `ansible-automation-platform-operator` operator, run the [command]`*oc get subs*` command:
 
 -----
 $ oc get subs -n ansible-automation-platform

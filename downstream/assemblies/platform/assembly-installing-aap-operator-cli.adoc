@@ -14,12 +14,12 @@ ifdef::context[:parent-context: {context}]
 :context: installing-aap-operator-cli
 
 [role="_abstract"]
-Use these instructions to install the {OperatorPlatform} on {OCP} from the {OCPShort} command-line interface (CLI) using the `*oc*` command.
+Use these instructions to install the {OperatorPlatform} on {OCP} from the {OCPShort} command-line interface (CLI) using the [command]`oc` command.
 
 == Prerequisites
 
 * Access to {OCP} using an account with operator installation permissions.
-* The {OCPShort} CLI `*oc*` command is installed on your local system. Refer to link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/cli_tools/openshift-cli-oc#installing-openshift-cli[Installing the OpenShift CLI] in the {OCP} product documentation for further information.
+* The {OCPShort} CLI [command]`oc` command is installed on your local system. Refer to link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/cli_tools/openshift-cli-oc#installing-openshift-cli[Installing the OpenShift CLI] in the {OCP} product documentation for further information.
 
 
 include::platform/proc-install-cli-aap-operator.adoc[leveloffset=+1]
