@@ -1,5 +1,6 @@
 ifdef::context[:parent-context: {context}]
 
+
 [id="assembly-intro-to-aap-on-azure"]
 = Introduction to {AAPonAzureNameShort}
 
@@ -8,12 +9,11 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 
 
-con-aap-azure-architecture.adoc
-
-include::aap-on-azure/con-aap-azure-about.adoc[leveloffset=+1]
-include::aap-on-azure/con-aap-azure-architecture.adoc.adoc[leveloffset=+2]
+include::aap-on-azure/con-about-aap-on-azure.adoc[leveloffset=+1]
+include::aap-on-azure/con-why-aap-on-azure.adoc[leveloffset=+2]
 
 ////
+Consider adding a link to future Builder docs here
 [role="_additional-resources"]
 .Additional resources
 
