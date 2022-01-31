@@ -5,10 +5,12 @@ Base the file name and the ID on the module title. For example:
 * Title: = My concept module A
 ////
 
-[id="con-about-aap-on-azure"]
+[id="con-aap-azure-about"]
 
-= About {AAPonAzureNameShort}
+= About {AAPonAzureName}
 
 [role="_abstract"]
 
-{AAPonAzureNameShort} is a managed application  fully supported by Red Hat.
+{AAPonAzureName} is a managed application that you can deploy from the link:https://azure.microsoft.com/en-us/marketplace/[Azure Marketplace] portal to a subscription in your Azure tenant.
+{AAPonAzureNameShort} provides access to a library of Ansible content collections, and it is integrated with key Azure services, so you can start deploying, configuring, and managing infrastructure and applications quickly.
+

@@ -2,10 +2,7 @@
 
 = {AAPonAzureNameShort} Architecture
 
-The infrastructure and operation of the {AAPonAzureNameShort} managed application is managed entirely by Red Hat.
-The managed application  resource group is completely separate from other customer resource groups.
-Red Hat only has access to the managed application resource group, with no visibility into other tenant resources.
-You can deploy {AAPonAzureNameShort} directly from Microsoft Azure to run in your Azure cloud.
+The infrastructure and operation of the {AAPonAzureNameShort} managed application is managed entirely by Red Hat. The managed application  resource group is completely separate from other customer resource groups. Red Hat only has access to the managed application resource group, with no visibility into other tenant resources.You can deploy {AAPonAzureNameShort} directly from Microsoft Azure to run in your Azure cloud.
 
 image::aap-on-azure-architecture.png[]
 
