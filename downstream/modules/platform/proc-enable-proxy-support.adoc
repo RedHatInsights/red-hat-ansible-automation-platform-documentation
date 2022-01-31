@@ -1,0 +1,23 @@
+
+[id="proc-enable-proxy-support_{context}"]
+
+= Enable proxy support
+
+To provide proxy server support, {ControllerName} handles proxied requests (such as ALB, NLB , HAProxy, Squid, Nginx and tinyproxy in front of {ControllerName}) via the *REMOTE_HOST_HEADERS* list variable in the {ControllerName} settings. By default *REMOTE_HOST_HEADERS* is set to `["REMOTE_ADDR", "REMOTE_HOST"]`.
+
+To enable proxy server support, edit the *REMOTE_HOST_HEADERS* field in the settings page for your {ControllerName}:
+
+.Procedure
+
+. On your {ControllerName}, navigate to *Settings* > *Miscellaneous System*.
+. In the *REMOTE_HOST_HEADERS* field, enter the following values:
++
+----
+[
+  "HTTP_X_FORWARDED_FOR",
+  "REMOTE_ADDR",
+  "REMOTE_HOST"
+]
+----
+
+{ControllerNameStart} determines the remote host’s IP address by searching through the list of headers in *REMOTE_HOST_HEADERS* until the first IP address is located.
