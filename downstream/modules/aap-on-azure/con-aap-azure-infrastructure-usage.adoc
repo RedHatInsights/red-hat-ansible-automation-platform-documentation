@@ -1,14 +1,29 @@
-[id="con-aap-azure-architecture"]
+[id="con-aap-azure-infrastructure-usage"]
 
-= {AAPonAzureNameShort} Architecture
-
-The infrastructure and operation of the {AAPonAzureNameShort} managed application is managed entirely by Red Hat. The managed application  resource group is completely separate from other customer resource groups. Red Hat only has access to the managed application resource group, with no visibility into other tenant resources.You can deploy {AAPonAzureNameShort} directly from Microsoft Azure to run in your Azure cloud.
+= {AAPonAzureNameShort} Infrastructure usage
 
 image::aap-on-azure-architecture.png[]
 
-{AAPonAzureNameShort} uses two resource groups:
+{AAPonAzureNameShort} Infrastructure usage
 
-* A resource group in your tenant. This resource group will include a single resource referring to the {AAPonAzureNameShort} managed app deployment. 
-Red Hat has access to this managed app to perform support, maintenance, and upgrades.
-* A multi-tenant managed resource group that contains all the infrastructure needed to operate {AAPonAzureNameShort}. This multi-tenant resource group is shared between the Red Hat tenant and your tenant. Red Hat has full administrative control and you have read-only access to the resource group.
+////
+The Azure infrastructure will be deployed as part of the {AAPonAzureNameShort} managed application in order to project the infrastructure costs that the application will incur as it is deployed in the Azure tenancy.
+- Infrastructure diagrams of the Azure components deployed in AoC
+- Description of infrastructure scaling models (i.e. autoscaling policies, etc.)
+
+Private preview infrastructure usage:
+Kubernetes Cluster
+VM Shape: Standard_D4s_v3
+Autoscaling Min Nodes: 1
+Autoscaling Max Nodes: 20
+Azure Database Service (Postgres Database)
+128 GB Storage Allocation
+Storage
+1 Storage Account: StorageV2 - Standard_LRS
+Networking
+1 VNET
+Secrets
+1 Vault
+
+////
 

@@ -1,16 +1,18 @@
 ifdef::context[:parent-context: {context}]
 
-
 [id="assembly-intro-to-aap-on-azure"]
 = Introduction to {AAPonAzureNameShort}
 
 :context: aap-azure-intro
 
-[role="_abstract"]
-
+// [role="_abstract"]
 
 include::aap-on-azure/con-aap-azure-about.adoc[leveloffset=+1]
 include::aap-on-azure/con-aap-azure-architecture.adoc[leveloffset=+1]
+include::aap-on-azure/con-aap-azure-infrastructure-usage.adoc[leveloffset=+2]
+include::aap-on-azure/con-aap-azure-lifecycle.adoc[leveloffset=+2]
+include::aap-on-azure/con-aap-azure-scaling.adoc[leveloffset=+2]
+include::aap-on-azure/con-aap-azure-migration.adoc[leveloffset=+2]
 
 ////
 Consider adding a link to future Builder docs here

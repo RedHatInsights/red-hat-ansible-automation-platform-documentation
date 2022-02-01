@@ -1,14 +1,19 @@
-[id="con-aap-azure-architecture"]
+[id="con-aap-azure-scaling"]
 
-= {AAPonAzureNameShort} Architecture
+= {AAPonAzureNameShort} scaling
 
-The infrastructure and operation of the {AAPonAzureNameShort} managed application is managed entirely by Red Hat. The managed application  resource group is completely separate from other customer resource groups. Red Hat only has access to the managed application resource group, with no visibility into other tenant resources.You can deploy {AAPonAzureNameShort} directly from Microsoft Azure to run in your Azure cloud.
+{AAPonAzureNameShort} allows autoscaling.
 
-image::aap-on-azure-architecture.png[]
+////
+From architecture doc:
+AKS should be configured to allow autoscaling with a customer selected machine-set configuration.
+The current thought around pool autoscaling is to set an upper bound of 20 AKS worker VMs with scale down set to 1.
 
-{AAPonAzureNameShort} uses two resource groups:
+This is the current configuration; a min of 1 node and a max of 20. Will find the application profile that describes when nodes are created or destroyed.
 
-* A resource group in your tenant. This resource group will include a single resource referring to the {AAPonAzureNameShort} managed app deployment. 
-Red Hat has access to this managed app to perform support, maintenance, and upgrades.
-* A multi-tenant managed resource group that contains all the infrastructure needed to operate {AAPonAzureNameShort}. This multi-tenant resource group is shared between the Red Hat tenant and your tenant. Red Hat has full administrative control and you have read-only access to the resource group.
+There's some discussion of this in the slack channel.  But, in short, we basically use the MSFT autoscaler and its defaults currently.  https://docs.microsoft.com/en-us/azure/aks/cluster-autoscaler#about-the-cluster-autoscaler
+
+There will be some work to change this over time, but I would suggest that we link to this doc for now until we have differentiation in the scaling policy.
+
+////
 
