@@ -20,3 +20,5 @@ include::platform/assembly-operator-install-planning.adoc[leveloffset=+1]
 include::platform/assembly-installing-hub-operator-external-db.adoc[leveloffset=+1]
 
 include::platform/assembly-installing-controller-operator-external-db.adoc[leveloffset=+1]
+
+include::platform/assembly-installing-aap-operator-cli.adoc[leveloffset=+1]

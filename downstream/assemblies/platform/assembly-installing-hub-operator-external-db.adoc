@@ -8,7 +8,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="installing-hub-operator-external"]
-= Installing {HubName} on {OCP} with an external database
+= Installing {HubName} on {OCP} web console with an external database
 
 :context: installing-hub-operator-external
 
