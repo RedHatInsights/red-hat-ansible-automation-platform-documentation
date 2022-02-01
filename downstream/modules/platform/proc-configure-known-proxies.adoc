@@ -5,7 +5,7 @@
 
 [role="_abstract"]
 
-To configure a list of known proxies for your {ControllerName}, add the proxy ip addresses to the *PROXY_IP_ALLOWED_LIST* field in the settings page for your {ControllerName}.
+To configure a list of known proxies for your {ControllerName}, add the proxy IP addresses to the *PROXY_IP_ALLOWED_LIST* field in the settings page for your {ControllerName}.
 
 .Procedure
 
