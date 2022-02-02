@@ -7,7 +7,7 @@ You can edit the *community* remote repository to sync chosen collections from A
 
 .Prerequisites
 
-* You have *Modify Ansible repo content* permissions. See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.0/html/managing-user-access/index[Managing user access in Automation Hub] for more information on permissions.
+* You have *Modify Ansible repo content* permissions. See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.0/html/managing_user_access_in_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
 * You have a `requirements.yml` file that identifies those collections to sync from Ansible Galaxy. See example below.
 
 .Requirements.yml example
