@@ -27,7 +27,7 @@ include::aap-on-azure/proc-azure-locate-aap-marketplace.adoc[leveloffset=+2]
 include::aap-on-azure/proc-azure-provisioning-aap.adoc[leveloffset=+2]
 
 include::aap-on-azure/proc-azure-accessing-aap.adoc[leveloffset=+1]
-// include::aap-on-azure/proc-azure-license-association.adoc[leveloffset=+2]
+include::aap-on-azure/proc-azure-license-association.adoc[leveloffset=+2]
 include::aap-on-azure/proc-azure-configure-ad-sso.adoc[leveloffset=+2]
 // include::aap-on-azure/[leveloffset=+2]
 

@@ -9,7 +9,7 @@ Base the file name and the ID on the module title. For example:
 
 = License association
 
-[role="_abstract"]
-{PlatformName}
-{AAPonAzureName}
+Red Hat provided a specific subscription entitlement manifest when you subscribed to {AAPonAzureName}.
+ 
+When asked to submit information about your license, select your license manifest file that you obtained from access.redhat.com.
 

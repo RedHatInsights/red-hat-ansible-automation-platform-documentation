@@ -5,17 +5,17 @@
 When you install {AAPonAzureNameShort}, the following infrastructure is deployed into your Azure subscription:
 
 * Kubernetes Cluster
-  * VM Shape: Standard_D4s_v3
-  * Autoscaling Min Nodes: 1
-  * Autoscaling Max Nodes: 20
+** VM Shape: Standard_D4s_v3
+** Autoscaling Min Nodes: 1
+** Autoscaling Max Nodes: 20
 * Azure Database Service (Postgres Database)
-  * 128 GB Storage Allocation
+** 128 GB Storage Allocation
 * Storage
-  * 1 Storage Account: StorageV2 - Standard_LRS
+** 1 Storage Account: StorageV2 - Standard_LRS
 * Networking
-  * 1 VNET
+** 1 VNET
 * Secrets
-  * 1 Vault
+** 1 Vault
 
 Exact infrastructure usage depends on the length of time that the managed application is deployed in your tenancy and the automation requirements that may cause the Kubernetes cluster to autoscale to meet the demands of your workload. 
 
