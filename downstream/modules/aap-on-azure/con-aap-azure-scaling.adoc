@@ -2,18 +2,7 @@
 
 = {AAPonAzureNameShort} scaling
 
-{AAPonAzureNameShort} allows autoscaling.
-
-////
-From architecture doc:
-AKS should be configured to allow autoscaling with a customer selected machine-set configuration.
-The current thought around pool autoscaling is to set an upper bound of 20 AKS worker VMs with scale down set to 1.
-
-This is the current configuration; a min of 1 node and a max of 20. Will find the application profile that describes when nodes are created or destroyed.
-
-There's some discussion of this in the slack channel.  But, in short, we basically use the MSFT autoscaler and its defaults currently.  https://docs.microsoft.com/en-us/azure/aks/cluster-autoscaler#about-the-cluster-autoscaler
-
-There will be some work to change this over time, but I would suggest that we link to this doc for now until we have differentiation in the scaling policy.
-
-////
+{AAPonAzureNameShort} default configuration of link:https://docs.microsoft.com/en-us/azure/aks/cluster-autoscaler#about-the-cluster-autoscaler[Microsoft Azure cluster autoscaler] for autoscaling, with the following settings to limit the number of nodes:
+Minimum Nodes: 1
+Maximum Nodes: 20
 

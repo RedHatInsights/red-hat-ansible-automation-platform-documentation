@@ -1,17 +1,35 @@
 ifdef::context[:parent-context: {context}]
 
-[id="assembly-intro-to-aap-on-azure"]
-= Introduction to {AAPonAzureNameShort}
+[id="assembly-aap-azure-install"]
+= Installing {AAPonAzureName}
 
-:context: aap-azure-intro
+:context: aap-azure-install
 
-[role="_abstract"]
+// [role="_abstract"]
+// You can use these instructions to install 
 
+== Prerequisites
 
-con-aap-azure-architecture.adoc
+Prerequisites
+To install {AAPonAzureNameShort}, you must have a subscription for Microsoft Azure, Contributor or Administrator access to that Azure subscription, and access to the Azure CLI.
 
-include::aap-on-azure/con-aap-azure-about.adoc[leveloffset=+1]
-include::aap-on-azure/con-aap-azure-architecture.adoc.adoc[leveloffset=+2]
+You also need a Red Hat account on the Red Hat Customer Portal (link:access.redhat.com[access.redhat.com]) as well as a specific subscription entitlement for Red Hat Ansible Automation Platform.  
+
+// Prerequisites for Azure tenancies (tenancy resource limits, use of Azure private features, etc.). Link to Infradtructure modules
+
+include::aap-on-azure/proc-fetch-rh-account-id.adoc[leveloffset=+2]
+include::aap-on-azure/proc-verify-rh-credentials.adoc[leveloffset=+2]
+
+include::aap-on-azure/proc-azure-create-service-principal.adoc[leveloffset=+1]
+
+include::aap-on-azure/proc-azure-deploy-aap.adoc[leveloffset=+1]
+include::aap-on-azure/proc-azure-locate-aap-marketplace.adoc[leveloffset=+2]
+include::aap-on-azure/proc-azure-provisioning-aap.adoc[leveloffset=+2]
+
+include::aap-on-azure/proc-azure-accessing-aap.adoc[leveloffset=+1]
+// include::aap-on-azure/proc-azure-license-association.adoc[leveloffset=+2]
+include::aap-on-azure/proc-azure-configure-ad-sso.adoc[leveloffset=+2]
+// include::aap-on-azure/[leveloffset=+2]
 
 ////
 [role="_additional-resources"]
@@ -22,3 +40,4 @@ include::aap-on-azure/con-aap-azure-architecture.adoc.adoc[leveloffset=+2]
 * For more details on writing concept modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
 * Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
 ////
+

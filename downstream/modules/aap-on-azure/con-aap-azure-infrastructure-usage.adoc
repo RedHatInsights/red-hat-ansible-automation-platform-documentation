@@ -2,28 +2,20 @@
 
 = {AAPonAzureNameShort} Infrastructure usage
 
-image::aap-on-azure-architecture.png[]
+When you install {AAPonAzureNameShort}, the following infrastructure is deployed into your Azure subscription:
 
-{AAPonAzureNameShort} Infrastructure usage
+* Kubernetes Cluster
+  * VM Shape: Standard_D4s_v3
+  * Autoscaling Min Nodes: 1
+  * Autoscaling Max Nodes: 20
+* Azure Database Service (Postgres Database)
+  * 128 GB Storage Allocation
+* Storage
+  * 1 Storage Account: StorageV2 - Standard_LRS
+* Networking
+  * 1 VNET
+* Secrets
+  * 1 Vault
 
-////
-The Azure infrastructure will be deployed as part of the {AAPonAzureNameShort} managed application in order to project the infrastructure costs that the application will incur as it is deployed in the Azure tenancy.
-- Infrastructure diagrams of the Azure components deployed in AoC
-- Description of infrastructure scaling models (i.e. autoscaling policies, etc.)
-
-Private preview infrastructure usage:
-Kubernetes Cluster
-VM Shape: Standard_D4s_v3
-Autoscaling Min Nodes: 1
-Autoscaling Max Nodes: 20
-Azure Database Service (Postgres Database)
-128 GB Storage Allocation
-Storage
-1 Storage Account: StorageV2 - Standard_LRS
-Networking
-1 VNET
-Secrets
-1 Vault
-
-////
+Exact infrastructure usage depends on the length of time that the managed application is deployed in your tenancy and the automation requirements that may cause the Kubernetes cluster to autoscale to meet the demands of your workload. 
 
