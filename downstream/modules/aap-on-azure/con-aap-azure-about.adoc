@@ -24,5 +24,8 @@ The following Red Hat Automation Platform components are available on Ansible Au
 * Automation Execution Environment
 * Ansible content tools, including access to Red Hat Insights for the Ansible Automation Platform
 
-Automation mesh is not available on Ansible Automation Platform for Azure.
 
+[NOTE]
+====
+Automation mesh is not available on Ansible Automation Platform for Azure.
+====
