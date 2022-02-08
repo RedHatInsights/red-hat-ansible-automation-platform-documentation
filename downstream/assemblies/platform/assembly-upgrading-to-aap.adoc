@@ -16,7 +16,7 @@ ifdef::context[:parent-context: {context}]
 
 To upgrade your {PlatformName} to the later version, download the desired version of the {PlatformNameShort} installer. Configure it with the same parameters you have used in previous installations, configure any new parameters, then run the installer.
 
-In same cases, you may need to configure other settings if you plan on upgrading other components of your {PlatformNameShort}, such as {ControllerName}. The following sections describes these steps in further detail.
+In some cases, you may need to configure other settings if you plan on upgrading other components of your {PlatformNameShort}, such as {ControllerName}. The following sections describes these steps in further detail.
 
 include::platform/con-upgrade-planning.adoc[leveloffset=+1]
 
