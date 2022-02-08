@@ -23,6 +23,6 @@ Depending on your installation, there may be several changes to consider as you 
 .Upgrading {ControllerName}
 If you plan on upgrading your {ControllerName} instance along with your {PlatformNameShort}, review the following information:
 
-- Even if you already have a valid license from a previous version, you must still provide your credentials or a subscriptions manifest again upon upgrading to the latest version of {ControllerName}. See link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html[Import a subscription] in the Automation Controller User Guide.
+- Even if you already have a valid license from a previous version, you still must provide your credentials or a subscriptions manifest upon upgrading to the latest version of {ControllerName}. See link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html[Import a subscription] in the Automation Controller User Guide.
 - If you need to upgrade Red Hat Enterprise Linux and {ControllerName}, you will need to do a backup and restore of your {ControllerName} data. Refer to link:https://docs.ansible.com/automation-controller/latest/html/administration/backup_restore.html#ag-backup-restore[Back up and restoring Tower] for further detail.
 - Clustered upgrades require special attention to instance and instance groups prior to starting the upgrade. See link:https://docs.ansible.com/automation-controller/latest/html/administration/clustering.html#ag-clustering[Clustering] for details.

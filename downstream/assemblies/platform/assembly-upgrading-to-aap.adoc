@@ -20,7 +20,7 @@ In some cases, you may need to configure other settings if you plan on upgrading
 
 include::platform/con-upgrade-planning.adoc[leveloffset=+1]
 
-Once you have necessary changes during upgrade planning, proceed by downloading the desired version of the {PlatformNameShort} installer.
+Once you have completed the necessary changes during upgrade planning, proceed by downloading the desired version of the {PlatformNameShort} installer.
 
 include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
 include::platform/proc-editing-inventory-file-for-updates.adoc[leveloffset=+1]
