@@ -9,6 +9,7 @@ You *must* have valid subscriptions attached before installing {PlatformName}. A
 
 A valid subscription needs to be attached to the {HubName} node only. Other nodes do not need to have a valid subscription attached, even if the `[automationhub]` group is blank, given this is done at the `repos_el` role level and that this role is run on both `[automationcontroller] and `[automationhub]` hosts.
 
+NOTE: Attaching a subscription is unnecessary if you have enabled link:https://access.redhat.com/articles/simple-content-access[Simple Content Access Mode] on your Red Hat account. Once enabled, you will need to register your systems to either Red Hat Subscription Management (RHSM) or Satellite before installing the {PlatformNameShort}. See link:https://access.redhat.com/articles/simple-content-access[Simple Content Access Mode] for more information.
 
 .Procedure
 
