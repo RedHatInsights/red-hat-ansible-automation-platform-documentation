@@ -39,13 +39,13 @@ To register the {ControllerName} instance in Azure, you must supply the _Azure A
 .Creating a registered application in Azure AD
 
 . In a web browser, open the Azure portal.
-. Check that you are using the tenant where you deployed Ansible Automation Platform.
+. Ensure that you are using the tenant where you deployed Ansible Automation Platform.
 . Type `Azure Active Directory` in the search bar.
 . Select *Azure Active Directory* from the search results.
 . Under *Manage* in the menu options, click *App registrations*.
 . In the *App registrations* page, click *+ New registration*.
 . Configure the new registration as follows:
-  * In the *Nam*e field, enter the same name that you used for the deployed application.
+  * In the *Name* field, enter the same name that you used for the deployed application.
   * Select the default value for *Supported account types*.
   * Select *Web* for *Redirect URI (optional)*.
   * In the *Redirect URI (optional)* field, enter the _Azure AD OAuth2 Callback URL_ value that you fetched from {ControllerName}.
@@ -85,7 +85,7 @@ Add the key _(Application (client) ID)_ and value (_Value_) of the secret that y
 
 .Adding Azure Credentials to Automation controller
 
-. Open the {ControllerName}in a web browser.
+. Open the {ControllerName} in a web browser.
 . Under *Resources*, click *Credentials*.
 . Click *Add* to open the *Create New Credentials* page.
 . Enter a name for the new credential and select *Azure Resource Manager* for the credential type.

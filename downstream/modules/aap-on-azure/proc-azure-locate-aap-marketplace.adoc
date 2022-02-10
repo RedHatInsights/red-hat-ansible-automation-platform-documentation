@@ -16,5 +16,5 @@ Base the file name and the ID on the module title. For example:
 . Click *Private Products* from the menu on the left of the screen.
 . Search for {PlatformName}.
 . Click the card that is returned in the search. Be sure to select the official offering from Red Hat.
-. Click *Get it Now*, then *Continue*, then *Create* to initiate the deployment process.
+. Click *Get it Now*, *Continue*, and then *Create* to initiate the deployment process.
 

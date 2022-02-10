@@ -16,8 +16,8 @@ Complete the form to provision {PlatformName} infrastructure and resources into 
 . In a web browser, navigate to *Managed Applications* in the Azure console.
 . Select the instance of {AAPonAzureName} that you deployed.
 . Select *Parameters and Outputs* in the *Settings* section in the left navigation menu.
-. Copy the URL links for {ControllerName} and {HubName} and save them. The names for the links are _automationControllerUrl_ and _automationHubUrl_.
-. In a browser, navigate to the {ControllerName} URL and log in using the following credentials:
+. Copy the URL links for {ControllerName} and {HubName}, and then save them. The names for the links are _automationControllerUrl_ and _automationHubUrl_.
+. In a browser, navigate to the {ControllerName} URL, and then log in using the following credentials:
   * *Username*: `admin` 
   * *Password*: Use the _Administrator password_ you provided when you deployed the AAP application.
 
