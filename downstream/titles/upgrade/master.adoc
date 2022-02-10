@@ -10,4 +10,4 @@ include::attributes/attributes.adoc[]
 = Red Hat Ansible Automation Platform Upgrade and Migration Guide
 
 include::platform/assembly-upgrading-to-aap.adoc[leveloffset=+1]
-//include::platform/assembly-migrate-legacy-venv-to-ee.adoc[leveloffset=+1]
+include::platform/assembly-migrate-legacy-venv-to-ee.adoc[leveloffset=+1]
