@@ -23,7 +23,8 @@ Customers are expected to upgrade their Automation Hub environments to the most 
 |===
 | Red Hat Automation Hub Release | General Availability | Full support ends |Maintenance Support 1 ends | End of Life
 
-|4.4.0 | November, 18, 2020 | May 17, 2021 | November 18, 2021 | November 18, 2022
+|4.4 | December 2, 2021 | June 2, 2022 | December 2, 2022 | June 2, 2023
+|4.2 | November, 18, 2020 | May 17, 2021 | November 18, 2021 | November 18, 2022
 
 |===
 
