@@ -33,7 +33,7 @@ include::dev-guide/assembly-virt-env-to-ee.adoc[leveloffset=+1]
 [role="_additional-resources"]
 == Additional resources
 
-* See the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.0-ea/html-single/red_hat_ansible_automation_platform_creator_guide/index?lb_target=production[Red Hat Ansible Automation Platform Creator Guide] for more information of migrating to {ExecEnvName}.
+* See the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html-single/red_hat_ansible_automation_platform_creator_guide/index?lb_target=production[Red Hat Ansible Automation Platform Creator Guide] for more information of migrating to {ExecEnvName}.
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
