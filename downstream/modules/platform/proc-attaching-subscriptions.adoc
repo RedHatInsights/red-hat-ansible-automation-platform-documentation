@@ -5,10 +5,9 @@
 = Attaching your {PlatformName} subscription
 
 [role="_abstract"]
-You *must* have valid subscriptions attached before installing {PlatformName}. Attaching an {PlatformNameShort} subscription enables {HubName} repositories.
+You *must* have valid subscriptions attached on all nodes before installing {PlatformName}. Attaching your {PlatformNameShort} subscription allows you to access subcription-only resources, such as {HubName} repositories.
 
-A valid subscription needs to be attached to the {HubName} node only. Other nodes do not need to have a valid subscription attached, even if the `[automationhub]` group is blank, given this is done at the `repos_el` role level and that this role is run on both `[automationcontroller] and `[automationhub]` hosts.
-
+To attach subscriptions to all your {PlatformNameShort} nodes, start by obtaining the `pool_id` of your Red Hat subscription, then run the `*subscription-manager attach*` command.
 
 .Procedure
 
@@ -18,7 +17,8 @@ A valid subscription needs to be attached to the {HubName} node only. Other node
 # subscription-manager list --available --all | grep "Ansible Automation Platform" -B 3 -A 6
 -----
 +
-The command returns the following:
+.Example
+An example output of the `*subsciption-manager list*` command. Obtain the `pool_id` as seen in the `Pool ID:` section:
 +
 -----
 Subscription Name: Red Hat Ansible Automation, Premium (5000 Managed Nodes)
@@ -26,7 +26,7 @@ Subscription Name: Red Hat Ansible Automation, Premium (5000 Managed Nodes)
   Red Hat Ansible Automation Platform
   SKU: MCT3695
   Contract: ````
-  Pool ID: ``````````
+  Pool ID: <pool_id>
   Provides Management: No
   Available: 4999
   Suggested: 1
@@ -38,12 +38,20 @@ Subscription Name: Red Hat Ansible Automation, Premium (5000 Managed Nodes)
 # subscription-manager attach --pool=<pool_id>
 -----
 
-All nodes will have {PlatformName} attached and find the {HubName} repositories.
+You have now attached your {PlatformName} subscriptions to all nodes.
 
 .Verification
 
-. Verify the subscription was successfully attached:
+* Verify the subscription was successfully attached:
 
 -----
 # subscription-manager list --consumed
 -----
+
+.Troubleshooting
+
+* If you are unable to locate certain packages that came bundled with the {PlatformNameShort} installer, or if you are seeing a `_Repositories disabled by configuration_` message, try enabling the repository using the command:
++
+----
+subscription-manager repos --enable ansible-automation-platform-2.1-for-rhel-8-x86_64-rpms
+----
