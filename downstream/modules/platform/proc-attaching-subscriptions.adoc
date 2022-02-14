@@ -7,8 +7,6 @@
 [role="_abstract"]
 You *must* have valid subscriptions attached on all nodes before installing {PlatformName}. Attaching your {PlatformNameShort} subscription allows you to access subcription-only resources, such as {HubName} repositories.
 
-To attach subscriptions to all your {PlatformNameShort} nodes, start by obtaining the `pool_id` of your Red Hat subscription, then run the `*subscription-manager attach*` command.
-
 .Procedure
 
 . Obtain the `pool_id` for your {PlatformName} subscription:
