@@ -7,6 +7,8 @@
 [role="_abstract"]
 You *must* have valid subscriptions attached on all nodes before installing {PlatformName}. Attaching your {PlatformNameShort} subscription allows you to access subcription-only resources necessary to proceed with the installation.
 
+NOTE: Attaching a subscription is unnecessary if you have enabled link:https://access.redhat.com/articles/simple-content-access[Simple Content Access Mode] on your Red Hat account. Once enabled, you will need to register your systems to either Red Hat Subscription Management (RHSM) or Satellite before installing the {PlatformNameShort}. See link:https://access.redhat.com/articles/simple-content-access[Simple Content Access Mode] for more information.
+
 .Procedure
 
 . Obtain the `pool_id` for your {PlatformName} subscription:
