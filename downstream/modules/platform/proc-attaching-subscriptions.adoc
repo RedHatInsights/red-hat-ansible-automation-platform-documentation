@@ -5,7 +5,7 @@
 = Attaching your {PlatformName} subscription
 
 [role="_abstract"]
-You *must* have valid subscriptions attached on all nodes before installing {PlatformName}. Attaching your {PlatformNameShort} subscription allows you to access subcription-only resources, such as {HubName} repositories.
+You *must* have valid subscriptions attached on all nodes before installing {PlatformName}. Attaching your {PlatformNameShort} subscription allows you to access subcription-only resources necessary to proceed with the installation.
 
 .Procedure
 
