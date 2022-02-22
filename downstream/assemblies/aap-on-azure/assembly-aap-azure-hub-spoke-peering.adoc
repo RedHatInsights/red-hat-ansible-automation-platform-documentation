@@ -1,0 +1,33 @@
+ifdef::context[:parent-context: {context}]
+
+[id="assembly-aap-azure-hub-spoke-peering"]
+= Hub-and-spoke peering (Transit routes)
+
+:context: aap-azure-hub-spoke-peering
+
+// [role="_abstract"]
+// You can use these instructions to install 
+
+Ansible Automation Platform on Azure is deployed into an independent managed resource group with its own Azure virtual network (VNET). 
+
+When initially deployed, Ansible Automation Platform on Azure’s VNET can only send requests to external networks through the public internet.
+
+You can configure your Azure VNETs to allow private communication between multiple Azure VNETs as well as private transit routing between Azure VNETs and external VPN routed networks. These VPN networks can be on-premises or on other clouds.
+
+[NOTE]
+====
+Updating route tables incorrectly can break your network. Only execute the steps in these procedures if you are confident that you can reverse any unexpected network behavior.
+====
+
+== Prerequisites
+
+* You have deployed Ansible Automation Platform on Microsoft Azure
+* You have configured and tested an Azure VNET hub-and-spoke implementation in your Azure tenant
+* You have configured transit routing between your spoke networks, including your VPNs.
+* You have identified the following:
+** The CIDR block(s) of your existing VNETs (including VPNs & direct connects) that will need access to Ansible Automation Platform on Azure UIs
+** The CIDR block(s) of your existing VNETs (including VPNs & direct connects) that will contain hosts or endpoints for Ansible automation
+** The CIDR blocks of the Ansible Automation Platform Kubernetes network from the managed resource group of the application. Refer to Finding the CIDR block of the managed application kubernetes cluster for instructions.
+
+//include::aap-on-azure/proc-azure-accessing-aap.adoc[leveloffset=+1]
+

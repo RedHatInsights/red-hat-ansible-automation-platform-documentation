@@ -1,0 +1,20 @@
+ifdef::context[:parent-context: {context}]
+
+[id="assembly-aap-azure-direct-peering"]
+= Direct peering
+
+:context: aap-azure-direct-peering
+
+// [role="_abstract"]
+// You can use these instructions to install 
+
+== Prerequisites
+
+Before peering any networks, ensure that there is no network address space overlap between your private VNETs and your Ansible Automation Platform on Azure network.
+
+* A subscription for Microsoft Azure.
+* Contributor or Administrator access to that Azure subscription.
+* Access to the Azure CLI.
+
+//include::aap-on-azure/proc-azure-accessing-aap.adoc[leveloffset=+1]
+

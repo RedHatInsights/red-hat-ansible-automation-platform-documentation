@@ -1,0 +1,38 @@
+ifdef::context[:parent-context: {context}]
+
+[id="assembly-aap-azure-network-peering"]
+= Private network peering
+
+:context: aap-azure-install
+
+// [role="_abstract"]
+// You can use these instructions to install 
+
+Ansible Automation Platform on Azure is deployed into an independent managed resource group with its own Azure virtual network (VNET). 
+
+When initially deployed, Ansible Automation Platform on Azure’s VNET can only send requests to external networks through the public internet.
+
+You can configure your Azure VNETs to allow private communication between multiple Azure VNETs as well as private transit routing between Azure VNETs and external VPN routed networks. These VPN networks can be on-premises or on other clouds.
+
+[NOTE]
+====
+While every effort has been made to align with Microsoft’s documentation for this content, there may be drift in accuracy over time.
+link:https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview[Microsoft’s documentation] is the source of truth for information about networking topics for Azure.
+====
+
+Azure offers different ways to peer private networks. These are typically divided into two categories:
+
+* **Hub-and-spoke peering**: There is a centralized hub VNET that other virtual networks peer with.  This hub network has mechanisms to route traffic through transit routing. Cloud networks, including VPN/Express Connect connections with on-premises and other cloud networks, can communicate through the hub VNET.
+* **Direct peering**: Private networks are individually connected to one another with no routing hops between them. This is a simpler peering model: it is useful when you only want to connect  a few networks.
+
+
+== Prerequisites
+
+Before peering any networks, ensure that there is no network address space overlap between your private VNETs and your Ansible Automation Platform on Azure network.
+
+* A subscription for Microsoft Azure.
+* Contributor or Administrator access to that Azure subscription.
+* Access to the Azure CLI.
+
+//include::aap-on-azure/proc-azure-accessing-aap.adoc[leveloffset=+1]
+

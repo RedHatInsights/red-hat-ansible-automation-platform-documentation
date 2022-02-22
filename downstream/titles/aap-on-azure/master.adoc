@@ -16,4 +16,7 @@ This guide helps you to understand the installation and use of {AAPonAzureNameSh
 
 include::aap-on-azure/assembly-aap-azure-intro.adoc[leveloffset=+1]
 include::aap-on-azure/assembly-aap-azure-install.adoc[leveloffset=+1]
+include::aap-on-azure/assembly-aap-azure-network-peering.adoc[leveloffset=+1]
+include::aap-on-azure/assembly-aap-azure-hub-spoke-peering.adoc[leveloffset=+2]
+include::aap-on-azure/assembly-aap-azure-direct-peering.adoc[leveloffset=+2]
  
