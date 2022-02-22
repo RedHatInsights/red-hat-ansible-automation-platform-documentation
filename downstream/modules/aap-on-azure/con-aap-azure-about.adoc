@@ -11,7 +11,7 @@ Base the file name and the ID on the module title. For example:
 
 [role="_abstract"]
 
-{AAPonAzureName} is a managed application that you can deploy from the link:https://azure.microsoft.com/en-us/marketplace/[Azure Marketplace] portal to a subscription in your Azure tenant.
+{AAPonAzureName} is a managed application that you can deploy from the link:https://azure.microsoft.com/en-us/marketplace/[Azure Marketplace] portal to a resource group in your Azure tenant.
 {AAPonAzureNameShort} provides access to a library of Ansible content collections, and it is integrated with key Azure services, so you can start deploying, configuring, and managing infrastructure and applications quickly.
 
 The following Red Hat Automation Platform components are available on Ansible Automation Platform for Azure:
