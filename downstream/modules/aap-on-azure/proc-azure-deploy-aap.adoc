@@ -5,10 +5,9 @@ Base the file name and the ID on the module title. For example:
 * Title: = My concept module A
 ////
 
-[id="con-about-aap-on-azure"]
+[id="proc-azure-proc-azure-deploy-aap"]
 
-= About {AAPonAzureNameShort}
+= Deploying {PlatformNameShort} from Azure Marketplace
 
-[role="_abstract"]
+// [role="_abstract"]
 
-{AAPonAzureNameShort} is a managed application  fully supported by Red Hat.
