@@ -24,9 +24,9 @@ Updating route tables incorrectly can break your network. Only execute the steps
 ** The CIDR blocks of the Ansible Automation Platform Kubernetes network from the managed resource group of the application. Refer to Finding the CIDR block of the managed application kubernetes cluster for instructions.
 
 include::aap-on-azure/proc-azure-hub-spoke-peering.adoc[leveloffset=+1]
-include::aap-on-azure/proc-azure-find-cluster-cidr.adoc[leveloffset=+1]
-include::aap-on-azure/proc-azure-nw-peering-aap-subnet.adoc[leveloffset=+1]
-include::aap-on-azure/proc-azure-update-route-tables.adoc[leveloffset=+1]
+include::aap-on-azure/proc-azure-find-cluster-cidr.adoc[leveloffset=+2]
+include::aap-on-azure/proc-azure-nw-peering-aap-subnet.adoc[leveloffset=+2]
+include::aap-on-azure/proc-azure-update-route-tables.adoc[leveloffset=+2]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

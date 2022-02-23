@@ -13,12 +13,14 @@ Within the Azure console, the Azure virtual network is known as _this virtual ne
 
 In the *Virtual Networks* page in the Azure portal, use the following settings to configure the Azure network and the VNET that you want to peer with the {AAPonAzureNameShort} app:
 
-* Under *This virtual network*, select settings for traffic from the VNET to the {PlatformNameShort} subnet:
+* Under *This virtual network*, select settings for the {AAPonAzureNameShort} virtual network:
+** *Peering link name*: `hub_to_aap` or another memorable name
 ** *Traffic to remote virtual network*: _Allow_
 ** *Traffic forwarded from remove virtual network*: _Allow_
 ** *Virtual network gateway or Route Server*: _Use this network’s gateway or Route server_
 
-* Under *Remote virtual network*, select settings for traffic from the Ansible Automation Platform subnet to your VNET:
+* Under *Remote virtual network*, select settings for the virtual network that you want to peer with Azure:
+** *Peering link name*: `aap_to_hub` or another memorable name
 ** *Traffic to remote virtual network*: _Allow_
 ** *Traffic forwarded from remote virtual network*: _Allow_
 ** *Virtual network gateway or Route Server*: _Use the remote virtual network’s gateway or Route server_
