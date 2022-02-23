@@ -1,0 +1,27 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="proc-azure-nw-direct-peering"]
+
+= Configuring Network Peering
+
+You can configure network peering between your Azure network and your VNET in the **Virtual Networks** page of the Azure Portal. 
+Within the Azure console, the Azure virtual network is known as “this network”, and the virtual network that you want to peer with is known as “remote virtual network”.
+
+. Log in to the Azure Portal. 
+. Navigate to the **Virtual Networks** page.
+. Select the following settings in the **This virtual network** section to configure the {AAPonAzureNameShort} virtual network:
+** **Traffic** to remote virtual network: _Allow_
+** **Traffic** forwarded from remove virtual network: _Allow_
+** **Virtual network gateway or Route Server**: _Use this network’s gateway or Route server_
+. Select the following settings in the **Remote virtual network** section to configure the virtual network that you want to peer with Azure:
+** **Traffic to remote virtual network**: _Allow_
+** **Traffic forwarded from remote virtual network**: _Allow_
+** **Virtual network gateway or Route Server**: _Use the remote virtual network’s gateway or Route server_
+
+For more detailed instructions on direct peering, refer to link:https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview[Virtual network peering] in the Microsoft Azure _Virtual network_ guide.
+

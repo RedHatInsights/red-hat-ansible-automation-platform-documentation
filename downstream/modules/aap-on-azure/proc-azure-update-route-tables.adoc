@@ -1,0 +1,48 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="proc-azure-update-route-tables"]
+
+= Updating the route tables
+
+[#routing-to-aap]
+.Routing to {AAPonAzureNameShort}
+
+. Navigate to **Route** Tables in the Azure portal.
+. As part of your hub-and-spoke configuration, you created one or more route tables to define the routes between the networks. Click on one of these route tables.
+. From the route table menu bar, click **Routes** > **Add**.
+. Configure routes from your existing networks to send traffic to {PlatformNameShort}. You must configure routes for any network requesting {PlatformNameShort} user interfaces and for any network that will have automation performed against its resources.
+For each route that you add, enter the following information:
+** **Route name**: Enter a route name for the {PlatformNameShort} managed application network
+** **Address Prefix**: The CIDR block of the managed application kubernetes cluster
+** **Next Hop Type**: _Virtual network gateway_
+. Click **OK** to save the new route to the route list.
+
+Repeat this procedure for all other route tables where you want to route traffic to {PlatformNameShort}.
+
+[#routing-to-private-nw]
+.Routing to Your VNETs
+
+Add a route for each spoke network that you would like {PlatformNameShort} to communicate with, for automation or for accessing the user interfaces.
+
+. Navigate to **Route** Tables in the Azure portal.
+. In the Route Tables list, select the route table for the {AAPonAzureNameShort} managed application.
+The name of the {PlatformNameShort} route table uses the following convention:
+aks-agentpool-<numbers>-routetable
+. From the route table menu bar, click **Routes** > **Add**.
+. Configure routing to Your VNETs for each spoke network that you would like {PlatformNameShort} to communicate with, for both automation or accessing the user interfaces.
+. For each route that you add, enter the following information:
+** **Route name**: Enter a route name for the spoke network that you want {PlatformNameShort} to route to
+** **Address Prefix**: The CIDR block of the spoke network
+** **Next Hop Type**: _Virtual network gateway_
+. Click **OK** to save the new route to the route list.
+
+
+Once you have configured the routing rules, traffic is routed to and from {PlatformNameShort} on Azure entirely though your private network.
+
+For further information about adding routes to a route table in Azure, refer to link:https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table#create-a-route[Create a route] in the Microsoft Azure _Virtual network_ guide.
+

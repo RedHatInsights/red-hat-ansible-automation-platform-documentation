@@ -1,0 +1,19 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="proc-azure-hub-spoke-peering"]
+
+= Procedure
+
+. Find the CIDR Block for the {AAPonAzureNameShort} managed application Kubernetes cluster. See xref:proc-azure-find-cluster-cidr[Finding the CIDR Block of the managed application Kubernetes cluster].
+. Configure Network Peering with the {PlatformNameShort} Subnet. See xref:proc-azure-nw-peering-aap-subnet[Configuring Network Peering with the {PlatformNameShort} Subnet].
+. Update the route tables:
+.. Configure route tables from your existing networks to send traffic to the managed application CIDR. You must add routes to the routing tables of every network requesting {PlatformNameShort} user interfaces and of every network that will have automation performed against its resources.
+See xref:routing-to-aap[Routing to {AAPonAzureNameShort}].
+.. Configure routing to your VNETs for each spoke network that you would like PlatformNameShortAnsible Automation Platform to communicate with, for automation or for accessing the user interfaces.
+See xref:routing-to-private-nw[Routing to your VNETs].
+
