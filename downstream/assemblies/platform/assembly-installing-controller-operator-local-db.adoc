@@ -15,7 +15,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-You can use these instructions to install the {HubName} operator on {OCP} with an external PostgreSQL 12 database and route, as well as specify customer resources.
+You can use these instructions to install the {HubName} operator on {OCP} with routed web traffic using the advanced configuration options in the *Form View*.
 
 // mirrors AWX operator flow
 
