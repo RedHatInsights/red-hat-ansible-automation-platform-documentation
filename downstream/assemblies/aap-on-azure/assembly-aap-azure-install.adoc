@@ -47,3 +47,6 @@ include::aap-on-azure/proc-azure-configure-ad-sso.adoc[leveloffset=+2]
 * Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
 ////
 
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
+
