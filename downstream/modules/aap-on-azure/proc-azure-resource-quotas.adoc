@@ -1,0 +1,46 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="proc-azure-resource-quotas"]
+
+= Azure Resource Quotas and Infrastructure Limits
+
+Microsoft imposes resource limits within each Azure region. The limit for CPU is the most likely to impact Red Hat Ansible Automation Platform on Microsoft Azure.
+
+Before you install Ansible Automation Platform for Azure, ensure that you have capacity to deploy the managed application into your desired region.
+Refer to xref:con-aap-azure-infrastructure-usage[Azure Infrastructure Usage] for infrastructure requirements.
+
+== Regional vCPU Limits
+
+The Azure resources used during the deployment of the managed application temporarily exceed the resource requirements in xref:con-aap-azure-infrastructure-usage[Azure Infrastructure Usage]. The `Total Regional vCPUs` quota is temporarily consumed when deploying the managed application.
+
+Every Azure region has a separate `Total Regional vCPUs` quota. To prevent installation failure, ensure that you have at least 8 available vCPUs in the Azure region where you want to deploy the managed application.
+
+The following steps describe how to view the resource quotas for your subscription the Azure console:
+
+. In the Azure console, search for *Quotas* and open the *My Quotas* page.
+. Select the region where you wish to deploy the managed application to view your allocation and usage metrics for that region.
++
+Ensure that you have selected a single region. Viewing all regions at once will not show the limitations of a single Azure region.
+
+== Regional StandardCore Limits
+The `StandardCore` limit is a compute metric for the resources that are temporarily consumed when deploying the managed application.
+
+It is possible that the Ansible Automation Platform for Azure will deploy without hitting the `StandardCore` limit. However, some deployments do hit this limit and therefore fail.
+
+The `StandardCore` metric is not displayed in the Quotas page. To request the value of your regional limit, contact Microsoft directly.
+
+If your deployments fail because the consumed resources reach this limit, you must submit a resource increase request for `StandardCore` to Microsoft.
+Only submit a quota increase request if you encounter a deployment failure due to this issue.
+
+Use the following information to respond to questions from Microsoft support:
+
+Will the container groups be run in Linux or Windows?:: Linux	
+What will the core and memory be in your Container Group instance?:: Red Hat recommends 20 cores, 16 GB	
+When will you create all the Container Group Instances?:: During managed application deployment of Red Hat Ansible Automation Platform on Microsoft Azure	
+How frequent will you create/delete the container groups?:: Only during managed application deployment of Red Hat Ansible Automation Platform on Microsoft Azure	
+

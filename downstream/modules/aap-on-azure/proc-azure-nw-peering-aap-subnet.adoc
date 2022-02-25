@@ -9,9 +9,9 @@ Base the file name and the ID on the module title. For example:
 
 = Configuring Network Peering with the {PlatformNameShort} Subnet
 
-Within the Azure console, the Azure virtual network is known as _this virtual network_, and the VNet that you want to peer with is known as _remote virtual network_.
+Within the Azure console, the Azure virtual network (VNet) is known as _this virtual network_, and the VNet that you want to peer with is known as _remote virtual network_.
 
-In the *Virtual Networks* page in the Azure portal, use the following settings to configure the Azure network and the VNet that you want to peer with the {AAPonAzureNameShort} app:
+In the *Virtual Networks* page in the Azure portal, use the following settings to configure peering between the Azure VNet and the VNet that you want to peer with the {AAPonAzureNameShort} app:
 
 * Under *This virtual network*, select settings for the {AAPonAzureNameShort} virtual network:
 ** *Peering link name*: _<hub_to_aap_peering_link_name>_

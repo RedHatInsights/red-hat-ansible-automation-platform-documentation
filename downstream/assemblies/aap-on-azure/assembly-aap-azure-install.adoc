@@ -25,6 +25,7 @@ ifdef::context[:parent-context: {context}]
 
 include::aap-on-azure/proc-fetch-rh-account-id.adoc[leveloffset=+2]
 include::aap-on-azure/proc-verify-rh-credentials.adoc[leveloffset=+2]
+include::aap-on-azure/proc-azure-resource-quotas.adoc[leveloffset=+2]
 
 include::aap-on-azure/proc-azure-create-service-principal.adoc[leveloffset=+1]
 

@@ -9,6 +9,8 @@ Base the file name and the ID on the module title. For example:
 
 = Updating the route tables
 
+Before you update the route tables, confirm that you satisfy the xref:proc-azure-hub-spoke-peering[prerequisites] for the hub-and-spoke peering process.
+
 [#routing-to-aap]
 .Routing to {AAPonAzureNameShort}
 
