@@ -9,11 +9,4 @@ include::hub/assembly-user-access.adoc[leveloffset=+1]
 
 include::hub/assembly-view-only-access.adoc[leveloffset=+1]
 
-== Conclusion
 
-Following the procedures above, you can:
-
-* Create a group and add permissions to it;
-* Create users;
-* Add those users to your groups;
-* Enable view-only mode for unauthorized users.
