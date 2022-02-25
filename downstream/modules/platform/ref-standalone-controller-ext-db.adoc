@@ -23,8 +23,8 @@ This example describes how you can populate the inventory file to deploy an inst
 database.example.com
 
 [all:vars]
-admin_password='password'
-pg_password='password'
+admin_password='<password>'
+pg_password='<password>'
 
 pg_host='database.example.com'
 pg_port='5432'
