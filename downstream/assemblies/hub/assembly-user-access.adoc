@@ -1,4 +1,4 @@
-[id="assembly-creating-tokens-in-automation-hub"]
+[id="assembly-user-access"]
 = Configuring user access for your local Automation Hub
 
 include::automation-hub/con-user-access.adoc[leveloffset=+1]
