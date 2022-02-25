@@ -4,7 +4,10 @@
 
 [id="con-enable-view-only"]
 
-To enable view-only access for your private {HubName}, edit the inventory file found on your {PlatformName} installer, following the instructions below:
+Enable view-only access for your private {HubName} by editing the inventory file found on your {PlatformName} installer.
+
+* If you are installing a new instance of {PlatformNameShort}, follow these steps to add the `GALAXY_ENABLE_UNAUTHENTICATED_COLLECTION_ACCESS` parameter to your `inventory` file along with your other installation configurations:
+* If you are updating an existing {PlatformNameShort} installation to include view-only access, add the `GALAXY_ENABLE_UNAUTHENTICATED_COLLECTION_ACCESS` parameter to your `inventory` file then run the `setup.sh` script to apply the updates:
 
 .Procedure
 . Navigate to the installer.
