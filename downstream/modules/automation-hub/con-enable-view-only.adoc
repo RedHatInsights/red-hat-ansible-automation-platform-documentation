@@ -4,7 +4,7 @@
 
 [id="con-enable-view-only"]
 
-To enable view-only access for your private {HubName}, you will need to edit the inventory file found on your {PlatformName} installer, following the instructions below:
+To enable view-only access for your private {HubName}, edit the inventory file found on your {PlatformName} installer, following the instructions below:
 
 .Procedure
 . Navigate to the installer.
