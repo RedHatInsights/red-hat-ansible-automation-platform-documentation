@@ -12,7 +12,6 @@ This example describes how you can populate the inventory file to install {Platf
 ====
 * You cannot install {ControllerName} and {HubName} on the same node.
 * Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from Private Automation Hub from a different node.
-* Enter your Red Hat customer account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry. You can also replace the url in `registry_url` with a different container registry, provided that the registry has execution environment images.
 ====
 
 -----
@@ -33,10 +32,6 @@ pg_database='awx'
 pg_username='awx'
 pg_password='<password>'
 pg_sslmode='prefer'  # set to 'verify-full' for client-side enforced SSL
-
-registry_url='registry.redhat.io'
-registry_username='<username>'
-registry_password='<password>'
 
 # Automation Hub Configuration
 #

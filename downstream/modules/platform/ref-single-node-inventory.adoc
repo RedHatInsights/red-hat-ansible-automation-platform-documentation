@@ -10,9 +10,7 @@ This example describes how you can populate the inventory file for a single node
 
 [IMPORTANT]
 ====
-* Do not use special characters for `pg_password`. It may cause the setup to fail.
-
-* Enter your Red Hat customer account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry. You can also replace the url in `registry_url` with a different container registry, provided that the registry has execution environment images.
+Do not use special characters for `pg_password`. It may cause the setup to fail.
 ====
 
 -----
@@ -22,16 +20,12 @@ This example describes how you can populate the inventory file for a single node
 [database]
 
 [all:vars]
-admin_password='<password>'
+admin_password='password'
 
 pg_host=''
 pg_port=''
 
 pg_database='awx'
 pg_username='awx'
-pg_password='<password>'
-
-registry_url='registry.redhat.io'
-registry_username='<username>'
-registry_password='<password>'
+pg_password='password'
 -----
