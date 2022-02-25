@@ -34,14 +34,13 @@ host3
 [all:vars]
 ansible_become=true
 
-admin_password='password'
+admin_password='<password>'
 
 pg_host='dbnode.example.com'
 pg_port='5432'
 
 pg_database='tower'
 pg_username='tower'
-pg_password='password'
 pg_password='<password>'
 
 registry_url='registry.redhat.io'
