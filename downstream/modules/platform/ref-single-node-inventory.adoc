@@ -21,7 +21,7 @@ This example describes how you can populate the inventory file for a single node
 [database]
 
 [all:vars]
-admin_password='password'
+admin_password='<password>'
 
 pg_host=''
 pg_port=''
