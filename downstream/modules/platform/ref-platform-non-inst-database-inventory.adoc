@@ -12,6 +12,7 @@ This example describes how you can populate the inventory file to install {Platf
 ====
 * You cannot install {ControllerName} and {HubName} on the same node.
 * Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from Private Automation Hub from a different node.
+* Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
 ====
 
 -----
@@ -29,6 +30,10 @@ pg_database='awx'
 pg_username='awx'
 pg_password='<password>'
 pg_sslmode='prefer'  # set to 'verify-full' for client-side enforced SSL
+
+registry_url='registry.redhat.io'
+registry_username='<registry username>'
+registry_password='<registry password>'
 
 # Automation Hub Configuration
 #
@@ -50,9 +55,6 @@ automationhub_pg_sslmode='prefer'
 # and automationhub_ssl_key, one should toggle that value to True.
 #
 # automationhub_ssl_validate_certs = False
-# Isolated Tower nodes automatically generate an RSA key for authentication;
-# To disable this behavior, set this value to false
-# isolated_key_generation=true
 # SSL-related variables
 # If set, this will install a custom CA certificate to the system trust store.
 # custom_ca_cert=/path/to/ca.crt

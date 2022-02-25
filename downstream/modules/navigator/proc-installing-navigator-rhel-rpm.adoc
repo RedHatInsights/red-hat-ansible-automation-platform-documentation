@@ -26,7 +26,7 @@ $ subscription-manager attach --pool=<sku-pool-id>
 . Enable the repository for RHEL 8.
 +
 ----
-$ sudo subscription-manager repos --enable ansible-automation-platform-2.0-early-access-for-rhel-8-x86_64-rpms
+$ sudo subscription-manager repos --enable ansible-automation-platform-2.1-for-rhel-8-x86_64-rpms
 ----
 
 

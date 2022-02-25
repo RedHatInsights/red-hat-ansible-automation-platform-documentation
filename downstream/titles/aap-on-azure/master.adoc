@@ -1,0 +1,19 @@
+:imagesdir: images
+:numbered:
+:toclevels: 1
+
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= {AAPonAzureName} guide
+
+Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
+
+This guide helps you to understand the installation and use of {AAPonAzureNameShort} apps on cloud platforms. This document has been updated to include information for the latest release of {AAPonAzureNameShort}.
+
+include::aap-on-azure/assembly-aap-azure-intro.adoc[leveloffset=+1]
+include::aap-on-azure/assembly-aap-azure-install.adoc[leveloffset=+1]
+ 

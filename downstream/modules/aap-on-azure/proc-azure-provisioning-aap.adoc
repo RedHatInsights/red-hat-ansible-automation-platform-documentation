@@ -1,0 +1,42 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="proc-azure-provisioning-aap"]
+
+= Provisioning {AAPonAzureName}
+
+[role="_abstract"]
+When you initiate the deployment of the {PlatformName} managed app from Azure marketplace, a form is displayed in the *Create Red Hat Ansible Automation Platform on Microsoft Azure* window. 
+Complete the form to provision {PlatformName} infrastructure and resources into your Azure tenant.
+
+. Enter values for your deployment in the following fields in the form:
+  * *Resource Group*: Create or select a resource group where you want to deploy the managed application.
+  * *Region*: The Azure region where the application will be deployed.
+  * *Automation Platform Cluster Name*: A unique name for the Kubernetes cluster.
+  * *Administrator Password*: Create an adminstrator password for your deployment.
++
+The _Administrator Password_ must contain at least 8 characters, and must include uppercase letters, lowercase letters, and numbers.
+  * *Confirm Administrator Password*: Confirm the _Administrator Password_.
+  * *Registry Username*: Your Red Hat SSO username.  The _Registry Username_ is the Red Hat account that will be used to pull the container images from registry.redhat.io.
+  * *Registry Password*: Your Red Hat SSO password.
+  * *Confirm Password*: Confirm your Red Hat SSO password.
+  * *Application Name*: A unique name for the managed application.
+  * *Managed Resource Group*: A resource group for the managed application infrastructure..
++
+Keep this resource groups isolated from other resource groups, including the _Resource Group_ where you will deploy the managed application.
+. Store the information that you entered in the form in a secure place. You will need to provide the _Administrator password_ to access {ControllerName} and private {HubName}.  
+. Click *Review + Create*.  
+. If the information you entered in the form is valid, the window displays *Validation Passed*.
+. Select *I agree*  to accept the Co-Admin Access Permissions terms and conditions.
+. Click *Create* to begin the provisioning process for the application.
+
+The application will begin provisioning.
+
+It may take 30 minutes or longer for the infrastructure and software to fully provision.
+
+Once provisioning is complete, you can access and login to your new {PlatformNameShort} instance and launch {ControllerName} and {HubName}.
+
