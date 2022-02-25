@@ -8,13 +8,13 @@ To enable view-only access for your private {HubName}, you will need to edit the
 
 .Procedure
 . Navigate to the installer.
-.. [bundled installer]
+Bundled installer::
 +
 -----
 $ cd ansible-automation-platform-setup-bundle-<latest-version>
 -----
 +
-.. [online installer]
+Online installer::
 +
 -----
 $ cd ansible-automation-platform-setup-<latest-version>
