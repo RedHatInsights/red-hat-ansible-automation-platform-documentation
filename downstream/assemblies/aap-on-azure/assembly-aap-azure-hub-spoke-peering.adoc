@@ -1,6 +1,6 @@
 ifdef::context[:parent-context: {context}]
 
-[id="assembly-aap-azure-hub-spoke-peering"]
+[id="aap-azure-hub-spoke-peering"]
 = Hub-and-spoke peering (Transit routes)
 
 :context: aap-azure-hub-spoke-peering
@@ -15,13 +15,13 @@ Updating route tables incorrectly can break your network. Only execute the steps
 
 == Prerequisites
 
-* You have deployed Ansible Automation Platform on Microsoft Azure
-* You have configured and tested an Azure VNET hub-and-spoke implementation in your Azure tenant
+* You have deployed Ansible Automation Platform on Microsoft Azure.
+* You have configured and tested an Azure VNet hub-and-spoke implementation in your Azure tenant.
 * You have configured transit routing between your spoke networks, including your VPNs.
 * You have identified the following:
-** The CIDR block(s) of your existing VNETs (including VPNs & direct connects) that will need access to Ansible Automation Platform on Azure UIs
-** The CIDR block(s) of your existing VNETs (including VPNs & direct connects) that will contain hosts or endpoints for Ansible automation
-** The CIDR blocks of the Ansible Automation Platform Kubernetes network from the managed resource group of the application. Refer to Finding the CIDR block of the managed application kubernetes cluster for instructions.
+** The CIDR block(s) of your existing VNets (including VPNs & direct connects) that will need access to Ansible Automation Platform on Azure UIs.
+** The CIDR block(s) of your existing VNets (including VPNs & direct connects) that will contain hosts or endpoints for Ansible automation.
+** The CIDR blocks of the Ansible Automation Platform Kubernetes network from the managed resource group of the application. Refer to xref:proc-azure-find-cluster-cidr[Finding the CIDR Block of the managed application Kubernetes cluster] for instructions.
 
 include::aap-on-azure/proc-azure-hub-spoke-peering.adoc[leveloffset=+1]
 include::aap-on-azure/proc-azure-find-cluster-cidr.adoc[leveloffset=+2]

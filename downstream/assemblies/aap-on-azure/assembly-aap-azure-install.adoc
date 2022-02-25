@@ -1,6 +1,6 @@
 ifdef::context[:parent-context: {context}]
 
-[id="assembly-aap-azure-install"]
+[id="aap-azure-install"]
 = Installing {AAPonAzureName}
 
 :context: aap-azure-install

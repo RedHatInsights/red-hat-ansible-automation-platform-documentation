@@ -1,6 +1,6 @@
 ifdef::context[:parent-context: {context}]
 
-[id="assembly-intro-to-aap-on-azure"]
+[id="intro-to-aap-on-azure"]
 = Introduction to {AAPonAzureNameShort}
 
 :context: aap-azure-intro

@@ -25,7 +25,7 @@ For each route that you add, enter the following information:
 Repeat this procedure for all other route tables where you want to route traffic to {PlatformNameShort}.
 
 [#routing-to-private-nw]
-.Routing to Your VNETs
+.Routing to your VNets
 
 Add a route for each spoke network that you would like {PlatformNameShort} to communicate with, for automation or for accessing the user interfaces.
 
@@ -38,7 +38,7 @@ The name of the {PlatformNameShort} route table uses the following convention:
 aks-agentpool-<numbers>-routetable
 ----
 . From the route table menu bar, click *Routes* > *Add*.
-. Configure routing to Your VNETs for each spoke network that you would like {PlatformNameShort} to communicate with, for both automation or accessing the user interfaces.
+. Configure routing to your VNets for each spoke network that you would like {PlatformNameShort} to communicate with, for both automation or accessing the user interfaces.
 . For each route that you add, enter the following information:
 ** *Route name*: Enter a route name for the spoke network that you want {PlatformNameShort} to route to
 ** *Address Prefix*: The CIDR block of the spoke network

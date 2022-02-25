@@ -9,14 +9,14 @@ Base the file name and the ID on the module title. For example:
 
 = Finding the CIDR Block of the managed application Kubernetes cluster
 
-. Open the **Virtual Networks** page in the Azure portal to list your VNETs.
+. Open the **Virtual Networks** page in the Azure portal to list your VNets.
 +
-The VNET name for the AKS cluster of your managed application deployment follows the format: `aks-vnet-<digits>`.
-. Select a VNET to view its settings in the **Overview** page.
+The VNet name for the AKS cluster of your managed application deployment follows the format: `aks-vnet-<digits>`.
+. Select a VNet to view its settings in the **Overview** page.
 +
 The CIDR block of the cluster is displayed in the **Address Space**.
 
-If there are multiple VNET names with the `aks-vnet-<digits>` format, open the **Overview** page for each VNET until you find the network within your {AAPonAzureNameShort} managed application resource group.
+If there are multiple VNet names with the `aks-vnet-<digits>` format, open the **Overview** page for each VNet until you find the network within your {AAPonAzureNameShort} managed application resource group.
 
 For further information, refer to link:https://docs.microsoft.com/en-us/azure/virtual-network/manage-virtual-network#view-virtual-networks-and-settings[View virtual networks and settings] in the Microsoft Azure _Virtual network_ guide.
 
