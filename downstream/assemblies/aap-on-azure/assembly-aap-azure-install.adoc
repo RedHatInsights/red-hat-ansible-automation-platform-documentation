@@ -23,7 +23,6 @@ ifdef::context[:parent-context: {context}]
 
 // Prerequisites for Azure tenancies (tenancy resource limits, use of Azure private features, etc.). Link to Infrastructure modules
 
-include::aap-on-azure/proc-fetch-rh-account-id.adoc[leveloffset=+2]
 include::aap-on-azure/proc-verify-rh-credentials.adoc[leveloffset=+2]
 include::aap-on-azure/proc-azure-resource-quotas.adoc[leveloffset=+2]
 

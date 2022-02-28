@@ -28,11 +28,26 @@ The following steps describe how to view the resource quotas for your subscripti
 Ensure that you have selected a single region. Viewing all regions at once will not show the limitations of a single Azure region.
 
 == Regional StandardCore Limits
+
 The `StandardCore` limit is a compute metric for the resources that are temporarily consumed when deploying the managed application.
 
-It is possible that the Ansible Automation Platform for Azure will deploy without hitting the `StandardCore` limit. However, some deployments do hit this limit and therefore fail.
+It is possible that the Ansible Automation Platform for Azure will deploy without hitting the `StandardCore` limit.
+When a deployment fails because the consumed resources hit the `StandardCore` limit, the error message includes `container group quota 'StandardCores' exceeded`:
 
-The `StandardCore` metric is not displayed in the Quotas page. To request the value of your regional limit, contact Microsoft directly.
+----
+code: DeploymentFailed
+message:
+  At least one resource deployment operation failed. Please list deployment operations for details. 
+  Please see https://aka.ms/DeployOperations for usage details.
+details:
+  - code: DeploymentScriptContainerGroupInvalidSettings
+    message:
+      Resource type 'Microsoft.ContainerInstance/containerGroups' 
+      container group quota 'StandardCores' exceeded in region 'eastus'.
+      Limit: '10', Usage: '10' Requested: '1'.
+----
+
+The `StandardCore` metric is not displayed in the *My Quotas* page. To request the value of your regional limit, contact Microsoft directly.
 
 If your deployments fail because the consumed resources reach this limit, you must submit a resource increase request for `StandardCore` to Microsoft.
 Only submit a quota increase request if you encounter a deployment failure due to this issue.
