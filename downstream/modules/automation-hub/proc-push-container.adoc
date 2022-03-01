@@ -28,7 +28,9 @@ $ podman login -u=[username] -p=[password] [automation-hub-url]
 $ podman push [automation-hub-url]/[container image name] --remove-signatures
 -----
 +
-NOTE: The `--remove-signatures` flag is required when signed images from registry.redhat.io are pushed to the {HubName} container registry. The `push` operation re-compresses image layers during the upload, which is not guaranteed to be reproducible and is client implementation dependent. The `--remove-signatures` flag prevents possible image-layer digest changes during the `push` operation that will cause the operation to fail.
+NOTE: The `--remove-signatures` flag is required when signed images from registry.redhat.io are pushed to the {HubName} container registry. The `push` operation re-compresses image layers during the upload, which is not guaranteed to be reproducible and is client implementation dependent. This may lead to image-layer digest changes and a failed push operation, resulting in `Error: Copying this image requires changing layer representation, which is not possible (image is signed or the destination specifies a digest)`.
+
+
 
 .Verification
 
