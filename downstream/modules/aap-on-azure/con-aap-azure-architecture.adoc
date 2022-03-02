@@ -8,7 +8,7 @@ Red Hat manages both the underlying Azure resources and the software running on 
 The managed application  resource group is completely separate from other resource groups in your tenant.
 Red Hat only has access to the managed application resource group, with no visibility into other tenant resources.
 
-For information about how this works and how resources and access are isolated from the rest of your Azure resources, refer to link:https://docs.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/overview[Azure managed applications overview] in the Microsoft Azure documentation.
+For information about how this works and how resources and access are isolated from the rest of your Azure resources, refer to link:https://docs.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/overview[Azure managed applications overview] in the Microsoft _Azure managed applications_ guide.
 
 {AAPonAzureNameShort} uses two resource groups:
 

@@ -1,6 +1,6 @@
 ifdef::context[:parent-context: {context}]
 
-[id="assembly-intro-to-aap-on-azure"]
+[id="intro-to-aap-on-azure"]
 = Introduction to {AAPonAzureNameShort}
 
 :context: aap-azure-intro
@@ -14,13 +14,6 @@ include::aap-on-azure/con-aap-azure-lifecycle.adoc[leveloffset=+2]
 include::aap-on-azure/con-aap-azure-scaling.adoc[leveloffset=+2]
 include::aap-on-azure/con-aap-azure-migration.adoc[leveloffset=+2]
 
-////
-Consider adding a link to future Builder docs here
-[role="_additional-resources"]
-.Additional resources
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
 
-* A bulleted list of links to other material closely related to the contents of the concept module.
-* Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.
-* For more details on writing concept modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-////

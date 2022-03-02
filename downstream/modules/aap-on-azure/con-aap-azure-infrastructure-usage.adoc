@@ -1,6 +1,6 @@
 [id="con-aap-azure-infrastructure-usage"]
 
-= {AAPonAzureNameShort} Infrastructure usage
+= {AAPonAzureNameShort} infrastructure usage
 
 When you install {AAPonAzureNameShort}, the following infrastructure is deployed into your Azure subscription:
 
@@ -13,7 +13,7 @@ When you install {AAPonAzureNameShort}, the following infrastructure is deployed
 * Storage
 ** 1 Storage Account: StorageV2 - Standard_LRS
 * Networking
-** 1 VNET
+** 1 VNet
 * Secrets
 ** 1 Vault
 
