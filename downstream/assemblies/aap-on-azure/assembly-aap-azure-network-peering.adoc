@@ -17,7 +17,7 @@ You can configure your Azure VNets to allow private communication between multip
 [NOTE]
 ====
 While every effort has been made to align with Microsoft’s documentation for this content, there may be drift in accuracy over time.
-link:https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview[Microsoft’s documentation] is the source of truth for information about networking topics for Azure.
+link:https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview[Microsoft’s documentation] is the definitive source for information about networking topics for Azure.
 ====
 
 Azure offers different ways to peer private networks. These are typically divided into two categories:
