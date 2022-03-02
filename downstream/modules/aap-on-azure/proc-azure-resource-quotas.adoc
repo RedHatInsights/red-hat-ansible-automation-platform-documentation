@@ -9,7 +9,7 @@ Base the file name and the ID on the module title. For example:
 
 = Azure resource quotas and infrastructure limits
 
-Microsoft imposes resource limits within each Azure region. The limit for CPU is the most likely to impact Red Hat Ansible Automation Platform on Microsoft Azure.
+Microsoft imposes resource limits within each Azure region. The CPU limit is the most likely to impact Red Hat Ansible Automation Platform on Microsoft Azure.
 
 Before you install Ansible Automation Platform for Azure, ensure that you have capacity to deploy the managed application into your desired region.
 Refer to xref:con-aap-azure-infrastructure-usage[Azure infrastructure usage] for infrastructure requirements.
@@ -24,7 +24,6 @@ The following steps describe how to view the resource quotas for your subscripti
 
 . In the Azure console, search for *Quotas* and open the *My Quotas* page.
 . Select the region where you wish to deploy the managed application to view your allocation and usage metrics for that region.
-+
 Ensure that you have selected a single region. Viewing all regions at once will not show the limitations of a single Azure region.
 
 == Regional StandardCore limits
@@ -46,6 +45,8 @@ details:
       container group quota 'StandardCores' exceeded in region 'eastus'.
       Limit: '10', Usage: '10' Requested: '1'.
 ----
+
+.Requesting StandardCore limit increase 
 
 The `StandardCore` metric is not displayed in the *My Quotas* page in the Azure console. To request the value of your regional limit, contact Microsoft directly.
 

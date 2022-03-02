@@ -1,6 +1,6 @@
 [id="con-aap-azure-infrastructure-usage"]
 
-= {AAPonAzureNameShort} Infrastructure usage
+= {AAPonAzureNameShort} infrastructure usage
 
 When you install {AAPonAzureNameShort}, the following infrastructure is deployed into your Azure subscription:
 

@@ -7,7 +7,7 @@ Base the file name and the ID on the module title. For example:
 
 [id="proc-azure-nw-peering-aap-subnet"]
 
-= Configuring Network Peering with the {PlatformNameShort} Subnet
+= Configuring network peering with the {PlatformNameShort} subnet
 
 Within the Azure console, the Azure virtual network (VNet) is known as _this virtual network_, and the VNet that you want to peer with is known as _remote virtual network_.
 
