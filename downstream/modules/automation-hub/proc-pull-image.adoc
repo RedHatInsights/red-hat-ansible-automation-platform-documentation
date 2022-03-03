@@ -18,15 +18,11 @@ You can pull images from the {HubName} container registry to make a copy to your
 
 .Procedure
 
-. Navigate to *Container Registry*.
-
+. Navigate to *Execution Environments*.
 . Select your container repository.
-. Click *Copy to clipboard*.
+. In the *Pull this image* entry, click *Copy to clipboard*.
 . Paste and run the command in your terminal.
 
 
-
 .Verification
-
-
 . Run `podman images` to view images on your local machine.
