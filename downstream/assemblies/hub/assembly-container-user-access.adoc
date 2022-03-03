@@ -18,6 +18,11 @@ Configure user access for container repositories in your private {HubName} to pr
 include::automation-hub/ref-container-permissions.adoc[leveloffset=+1]
 include::automation-hub/proc-create-groups.adoc[leveloffset=+1]
 include::automation-hub/proc-assigning-permissions.adoc[leveloffset=+1]
+
+.Additional resources
+
+* See <<container-registry-group-permissions, Container registry group permissions>> to learn more about specific permissions.
+
 include::automation-hub/proc-add-user-to-group.adoc[leveloffset=+1]
 
 

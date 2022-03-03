@@ -9,21 +9,18 @@ Tag images to add an additional name to images stored in your {HubName} containe
 
 .Prerequisites
 
-* You have `change image tags` permissions.
+* You have *change image tags* permissions.
 
 .Procedure
 
-. Navigate to *Container Registry*.
-
+. Navigate to *Execution Environments*.
 . Select your container repository.
 . Click the *Images* tab.
-. Click *More actions* > *Edit tags*.
+. Click image:images/more_actions.png[more actions] > *Manage tags*.
 . Add a new tag in the text field and click *Add*.
-. [Optional] Remove *current tags* by clicking the *x* on any of the tags for that image.
+** Optional: Remove *current tags* by clicking the *x* on any of the tags for that image.
 . Click *Save*.
 
 
 .Verification
-
-
 . Click the *Activity* tab and review the latest changes.
