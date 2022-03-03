@@ -12,7 +12,7 @@ You can create and assign permissions to a group in Automation Hub that enables 
 
 .Procedure
 . Log in to your local Automation Hub.
-. Navigate to *Groups*.
+. Navigate to *User Access* > *Groups*.
 . Click *Create*.
 . Provide a *Name* and click *Create*.
 

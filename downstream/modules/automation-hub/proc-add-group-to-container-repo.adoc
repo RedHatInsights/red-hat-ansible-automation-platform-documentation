@@ -20,19 +20,19 @@ Provide access to your container repository to users who need to work the images
 
 .Prerequisites
 
-* You have *change container namespace permissions*.
+* You have *change container namespace* permissions.
 
 .Procedure
 
-. Navigate to *Container Registry*.
-. Locate your container repository.
+. Navigate to *Execution Environments*.
+. Select your container repository.
 . Click *Edit*.
 . Under *Groups with access*, select a group or groups to grant access to.
-. [Optional] Add or remove permissions for a specific group using the drop down under that group name.
+** Optional: Add or remove permissions for a specific group using the drop down under that group name.
 . Click *Save*.
 
 
 [role="_additional-resources"]
 .Additional resources
 
-* See _Container registry group permissions_ to learn more about specific permissions.
+* See <<container-registry-group-permissions, Container registry group permissions>> to learn more about specific permissions.
