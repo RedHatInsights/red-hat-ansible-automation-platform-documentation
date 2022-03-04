@@ -24,8 +24,9 @@ $ podman login registry.redhat.io
 . Enter your username and password at the prompts.
 . Pull a container image:
 +
+[subs="+quotes"]
 -----
-$ podman pull registry.redhat.io/<container image name>:<tag>
+$ podman pull registry.redhat.io/__<container_image_name>__:__<tag>__
 -----
 
 
