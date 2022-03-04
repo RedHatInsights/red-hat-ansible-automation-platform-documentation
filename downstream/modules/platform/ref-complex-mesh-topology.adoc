@@ -33,7 +33,7 @@ node_type=control
 [execution_nodes]
 execution-node-1.example.com
 execution-node-2.example.com
-execution-node-2.example.com peers=local_hop
+execution-node-3.example.com peers=local_hop
 execution-node-4.example.com peers=remote_hop
 hop-node-1.example.com node_type=hop
 hop-node-2.example.com node_type=hop
