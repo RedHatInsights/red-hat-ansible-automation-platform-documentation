@@ -26,7 +26,7 @@ Provide access to your container repository to users who need to work the images
 
 . Navigate to *Execution Environments*.
 . Select your container repository.
-. Click *Edit*.
+. Click *Edit* at the top right of your window.
 . Under *Groups with access*, select a group or groups to grant access to.
 ** Optional: Add or remove permissions for a specific group using the drop down under that group name.
 . Click *Save*.
