@@ -15,17 +15,21 @@ Add namespace
 
 Upload to namespace
 
-Change namespace |
+Change namespace
 
-Groups with these permissions can create a namespace and upload collections to a namespace.
+Delete namespace |
+
+Groups with these permissions can create, upload collections, or delete a namespace.
 
 h| collections |
 
-Modify Ansible repo content |
+Modify Ansible repo content
 
-Groups with this permission can move content between repositories using the Approval feature. Certify or reject features to move content from the *staging* to *published* or *rejected* repositories.
+Delete collections |
 
-h| user |
+Groups with this permission can move content between repositories using the Approval feature, certify or reject features to move content from the *staging* to *published* or *rejected* repositories, abd delete collections.
+
+h| users |
 
 View user
 
@@ -35,7 +39,7 @@ Add user
 
 Change user |
 
-Groups with these permissions can manage user configuration and access in Automation Hub.
+Groups with these permissions can manage user configuration and access in {HubName}.
 
 h| groups |
 
@@ -47,17 +51,52 @@ Add group
 
 Change group |
 
-Groups with these permissions can manage group configuration and access in Automation Hub.
+Groups with these permissions can manage group configuration and access in {HubName}.
 
 
-h| remotes |
+h| collection remotes |
 
 Change collection remote
 
 View collection remote |
 
-Groups with these permissions can configure remote repository syncing from *Community * or RH Certified* sources under *Repo Management*.
+Groups with these permissions can configure remote repository under *Collections* > *Repo Management*.
 
+h| containers |
+
+Change container namespace permissions
+
+Change containers
+
+Change image tags
+
+Create new containers
+
+Push to existing containers
+
+Delete container repository |
+
+Groups with these permissions can manage container repositories in {HubName}.
+
+h| remote registries |
+
+Add remote registry
+
+Change remote registry
+
+Delete remote registry |
+
+Groups with these permissions can add, change, or delete remote registries added to {HubName}.
+
+h| task management |
+
+Change task
+
+Delete task
+
+View all tasks |
+
+Groups with these permissions can manage tasks added to *Task Management* in {HubName}.
 |===
 
 ////
