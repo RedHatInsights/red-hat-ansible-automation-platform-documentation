@@ -4,6 +4,15 @@ include::topics/platform-intro.adoc[leveloffset=+1]
 
 include::topics/upgrading.adoc[leveloffset=+1]
 
+[[anchor-february-2022-release]]
+== February 2022 release
+
+include::topics/aap-211.adoc[leveloffset=+2]
+
+include::topics/hub-441.adoc[leveloffset=+2]
+
+include::topics/controller-411.adoc[leveloffset=+2]
+
 [[anchor-december-2021-release]]
 == December 2021 release
 
