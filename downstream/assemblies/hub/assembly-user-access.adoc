@@ -18,3 +18,6 @@ include::automation-hub/proc-add-user-to-group.adoc[leveloffset=+1]
 include::automation-hub/proc-create-content-developers.adoc[leveloffset=+1]
 
 include::automation-hub/ref-permissions.adoc[leveloffset=+1]
+
+include::automation-hub/proc-delete-user.adoc[leveloffset=+1]
+
