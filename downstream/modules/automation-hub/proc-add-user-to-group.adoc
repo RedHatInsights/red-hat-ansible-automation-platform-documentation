@@ -8,15 +8,15 @@ You can add users to groups when creating a group or manually add users to exist
 
 .Prerequisites
 
-* You have *groups* permissions and can create and manage group configuration and access in Automation Hub.  
+* You have *groups* permissions and can create and manage group configuration and access in Automation Hub.
 
 
 .Procedure
 
 . Log in to Automation Hub
-. Navigate to *Groups*.
-. Click the *Users* tab.
-. Click *Add*.
+. Navigate to *User Access* > *Groups*.
+. Click on a Group name.
+. Navigate to the *Users* tab, then click *Add*.
 . Select users to add from the list and click *Add*.
 
 
