@@ -1,15 +1,13 @@
-[[platform-introduction]]
-= Overview
+[[aap-2.1.1-intro]]
+= Ansible Automation Platform 2.1.1
 
 Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
 
-[[whats-included]]
-== What's included in Ansible Automation Platform
+.Enhancements and bug fixes
 
-[cols="a,a,a,a,a"]
-|===
-| Ansible Automation Platform | Automation controller | Automation hub | Automation services catalog | Insights for Ansible Automation Platform
-
-|2.1.1 | 4.1.1 | 4.4.1 | hosted service | hosted service
-
-|===
+* Added OCP 4.10 compatibility
+* Added support for HTTP proxy when pushing execution environment images
+* Added ability to configure nginx headers on Controller
+* Changed the setup.log file to no longer be world readable
+* Fixed an issue during controller deployment where the web-container will fail to start up, resulting in a failed installation
+* Fixed a Server Error 500 that occurs after an Operator upgrade on OCP
