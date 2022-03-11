@@ -7,10 +7,7 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 * Added OCP 4.10 compatibility
 * Added support for HTTP proxy when pushing execution environment images
-* Added changes to the billing operator to be cluster-scoped
 * Added ability to configure nginx headers on Controller
 * Changed the setup.log file to no longer be world readable
-* Fixed an imagePullBackoff error when pulling execution environment images during a Controller install on OCP
-* Fixed a bug where the installer loads incorrect bundles instead of the proper ee-supported-rhel8:latest bundle
 * Fixed an issue during controller deployment where the web-container will fail to start up, resulting in a failed installation
 * Fixed a Server Error 500 that occurs after an Operator upgrade on OCP
