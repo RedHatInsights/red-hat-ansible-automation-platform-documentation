@@ -1,6 +1,7 @@
 = Curating collections using namespaces in Automation Hub
 :numbered:
 :experimental:
+include::attributes/attributes.adoc[]
 
 Curate collections developed in your organization using namespaces in Automation Hub.
 
