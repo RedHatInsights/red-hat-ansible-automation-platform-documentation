@@ -11,4 +11,6 @@ Do not use `yum update` to run upgrades.
 
 Refer to the table in xref:whats-included[What's included in Ansible Automation Platform] for information on maintenance releases of Ansible Automation Platform.
 
-See https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html[Ansible Automation Platform Quick Installation Guide] for procedures on using the Ansible Automation Platform installer.
+See the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[Red Hat Ansible Automation Platform Upgrade Guide] for information on upgrading your Ansible Automation Platform.
+
+See the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide] for procedures on using the Ansible Automation Platform installer.
