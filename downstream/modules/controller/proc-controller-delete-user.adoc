@@ -14,5 +14,5 @@ When you delete a user account, the name and email of the user are permanently r
 . Expand the *Access* menu.
 . Click *Users* to display a list of the current users.
 . Select the check box for the user that you want to remove and click *Delete*.
-. Click *Delete* in the warning message to permenently delete the user.
+. Click *Delete* in the warning message to permanently delete the user.
 
