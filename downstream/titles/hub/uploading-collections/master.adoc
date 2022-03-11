@@ -1,6 +1,7 @@
 = Uploading content to Red Hat Automation Hub
-:imagesdir: images
 :numbered:
+:experimental:
+include::attributes/attributes.adoc[]
 
 Red Hat Automation Hub distributes certified, supported collections from partners to customers. Each collection includes content such as modules, roles, plugins and documentation. The first time you upload a collection to Automation Hub, our Partner Engineering team will start reviewing it for certification.
 
