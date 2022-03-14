@@ -3,7 +3,7 @@
 
 = Deleting a user from {ControllerName}
 
-When you delete a user account, the name and email of the user are permanently removed from {ControllerName}.
+When you delete a user account, the user's name and email are permanently removed from {ControllerName}.
 
 .Prerequisites
 
@@ -13,6 +13,6 @@ When you delete a user account, the name and email of the user are permanently r
 . Log in to {ControllerName}.
 . Expand the *Access* menu.
 . Click *Users* to display a list of the current users.
-. Select the check box for the user that you want to remove and click *Delete*.
+. Select the checkbox for the user that you want to remove and click *Delete*.
 . Click *Delete* in the warning message to permanently delete the user.
 
