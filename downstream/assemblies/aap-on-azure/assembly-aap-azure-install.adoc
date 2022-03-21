@@ -1,0 +1,52 @@
+ifdef::context[:parent-context: {context}]
+
+[id="aap-azure-install"]
+= Installing {AAPonAzureName}
+
+:context: aap-azure-install
+
+// [role="_abstract"]
+// You can use these instructions to install 
+
+== Prerequisites
+
+. Azure requirements
+
+* A subscription for Microsoft Azure.
+* Contributor or Administrator access to that Azure subscription.
+* Access to the Azure CLI.
+
+. {PlatformNameShort} requirements
+
+* An account on the Red Hat Red Hat Customer Portal (link:access.redhat.com[access.redhat.com]).
+* A specific subscription entitlement for Red Hat Ansible Automation Platform.
+
+// Prerequisites for Azure tenancies (tenancy resource limits, use of Azure private features, etc.). Link to Infrastructure modules
+
+include::aap-on-azure/proc-verify-rh-credentials.adoc[leveloffset=+2]
+include::aap-on-azure/proc-azure-resource-quotas.adoc[leveloffset=+2]
+
+include::aap-on-azure/proc-azure-create-service-principal.adoc[leveloffset=+1]
+
+include::aap-on-azure/proc-azure-deploy-aap.adoc[leveloffset=+1]
+include::aap-on-azure/proc-azure-locate-aap-marketplace.adoc[leveloffset=+2]
+include::aap-on-azure/proc-azure-provisioning-aap.adoc[leveloffset=+2]
+
+include::aap-on-azure/proc-azure-accessing-aap.adoc[leveloffset=+1]
+include::aap-on-azure/proc-azure-license-association.adoc[leveloffset=+2]
+include::aap-on-azure/proc-azure-configure-ad-sso.adoc[leveloffset=+2]
+// include::aap-on-azure/[leveloffset=+2]
+
+////
+[role="_additional-resources"]
+.Additional resources
+
+* A bulleted list of links to other material closely related to the contents of the concept module.
+* Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.
+* For more details on writing concept modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+////
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
+
