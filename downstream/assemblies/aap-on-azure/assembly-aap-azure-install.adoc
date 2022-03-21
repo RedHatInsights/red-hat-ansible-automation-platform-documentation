@@ -10,13 +10,13 @@ ifdef::context[:parent-context: {context}]
 
 == Prerequisites
 
-. Azure requirements
+.Azure requirements
 
 * A subscription for Microsoft Azure.
 * Contributor or Administrator access to that Azure subscription.
 * Access to the Azure CLI.
 
-. {PlatformNameShort} requirements
+.{PlatformNameShort} requirements
 
 * An account on the Red Hat Red Hat Customer Portal (link:access.redhat.com[access.redhat.com]).
 * A specific subscription entitlement for Red Hat Ansible Automation Platform.
