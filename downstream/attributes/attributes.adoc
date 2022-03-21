@@ -7,6 +7,10 @@
 :CentralAuthStart: Central authentication
 :CentralAuth: central authentication
 
+// AAP on Clouds
+:AAPonAzureName: Red Hat Ansible Automation Platform on Microsoft Azure
+:AAPonAzureNameShort: Ansible Automation Platform on Microsoft Azure
+
 // Automation Mesh
 :AutomationMesh: automation mesh
 :AutomationMeshStart: Automation mesh
@@ -88,3 +92,5 @@
 
 // OpenShift attributes
 :OCP: Red Hat OpenShift Container Platform
+:OCPShort: OpenShift Container Platform
+:OCPLatest: 4.9
