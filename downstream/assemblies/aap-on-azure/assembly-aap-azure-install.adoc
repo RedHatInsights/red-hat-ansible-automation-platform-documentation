@@ -18,7 +18,7 @@ ifdef::context[:parent-context: {context}]
 
 .{PlatformNameShort} requirements
 
-* An account on the Red Hat Red Hat Customer Portal (link:access.redhat.com[access.redhat.com]).
+* An account on the Red Hat Red Hat Customer Portal (link:https://access.redhat.com/[access.redhat.com]).
 * A specific subscription entitlement for Red Hat Ansible Automation Platform.
 
 // Prerequisites for Azure tenancies (tenancy resource limits, use of Azure private features, etc.). Link to Infrastructure modules
