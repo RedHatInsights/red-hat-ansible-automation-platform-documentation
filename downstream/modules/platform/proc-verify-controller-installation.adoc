@@ -1,7 +1,3 @@
-
-
-
-
 // [id="proc-verify-controller-installation_{context}"]
 
 = Verifying {ControllerName} installation
@@ -23,12 +19,4 @@ The {ControllerName} server is accessible from port 80 (*https://<TOWER_SERVER_N
 If the installation fails and you are a customer who has purchased a valid license for {PlatformName}, please contact Ansible via the Red Hat Customer portal at https://access.redhat.com/.
 ====
 
-Your {ControllerName} is now ready for initial configuration.
-
-
-[role="_additional-resources"]
-== Next steps
-
-* See link:https://docs.ansible.com/ansible-tower/latest/html/administration/index.html[Automation Controller Administration Guide] for administration through customer scripts, management jobs, and more.
-* For quick setup of {ControllerName}, see the link:https://docs.ansible.com/ansible-tower/latest/html/quickstart/index.html[Automation Controller Quick Setup Guide].
-* Review {ControllerName} functionality in the link:https://docs.ansible.com/ansible-tower/latest/html/userguide/index.html[Automation Controller User Guide].
+Upon a successful login to {ControllerName}, your installation of {PlatformName} {PlatformVers} is now complete.

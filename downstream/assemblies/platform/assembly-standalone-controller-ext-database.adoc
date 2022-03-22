@@ -21,13 +21,9 @@ include::platform/ref-additional-inv-configs.adoc[leveloffset=3]
 include::platform/ref-setup-script-args.adoc[leveloffset=3]
 include::platform/proc-running-setup-script.adoc[leveloffset=3]
 include::platform/proc-verify-controller-installation.adoc[leveloffset=3]
+include::platform/ref-controller-configs.adoc[leveloffset=4]
 
-[role="_additional-resources"]
-==  Next steps
-
-* Review _Configuring proxy support for {PlatformName}_ if setting up {ControllerName} with a proxy server.
-* See _Managing usability analytics and data collection from {ControllerName}_ for information on controlling what information you share with Red Hat.
-* See the link:https://docs.ansible.com/automation-controller/latest/html/quickstart/index.html[Ansible Tower Quick Setup Guide] to learn more about using {ControllerName}.
+include::assembly-platform-configs.adoc[leveloffset=3]
 
 
 ifdef::parent-context[:context: {parent-context}]

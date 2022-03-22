@@ -1,0 +1,10 @@
+
+// [id="con-why-content-navigator_{context}"]
+
+= Create and execute automation tasks using automation {NavigatorShort}
+
+As an content creator looking to develop, share, and run automation tasks, automation {NavigatorShort} enables you to manage automation with ease from a single command-line application. `ansible-navigator` replaces Ansible Core commands such as `ansible-playbook` to provide a more detailed text-based user interface better suited for content creators.
+
+image::navigator-help.png[]
+
+For more information about installing and developing content using {NavigatorShort}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html-single/ansible_navigator_creator_guide/index[Ansible Navigator Creator Guide].
