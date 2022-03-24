@@ -8,7 +8,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="installing-controller-operator-external"]
-= Installing {ControllerName} on {OCP} with an external database
+= Installing {ControllerName} on {OCP} web console with an external database
 
 
 :context: installing-contr-operator-external
