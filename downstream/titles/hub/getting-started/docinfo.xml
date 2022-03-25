@@ -3,6 +3,7 @@
 <productnumber>2.0-ea</productnumber>
 <subtitle>Configuring Red Hat Automation Hub as your default server for Ansible collections content</subtitle>
 <abstract>
+    <para>This guide walks you through the initial steps required to use Red Hat Automation Hub as the default source for certified Ansible collections content.</para>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
     <para> If you have a suggestion to improve this documentation, or find an error, please contact technical support at <link xlink:href="https://access.redhat.com"></link> to create an issue on the <emphasis role="strong">Ansible Automation Platform</emphasis> Jira project using the <emphasis role="strong">Docs</emphasis> component.</para>
 </abstract>
