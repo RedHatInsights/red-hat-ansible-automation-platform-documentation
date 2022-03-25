@@ -3,7 +3,7 @@
 . Log in to {OCP}.
 . Navigate to *Operators* -> *Operator Hub*.
 . Locate the {PlatformName} operator and click on it.
-> Click *Install*.
+. Click *Install*.
 +
 
 [NOTE]
