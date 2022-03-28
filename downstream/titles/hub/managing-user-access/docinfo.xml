@@ -4,7 +4,7 @@
 <subtitle>Configure Automation Hub to support your organization by creating groups for your users and providing them with the level of system access they require.</subtitle>
 <abstract>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
-    <para> If you have a suggestion to improve this documentation, or find an error, create an issue at <link xlink:href="https://issues.redhat.com(issues.redhat.com)">http://issues.redhat.com</link>. Select the <emphasis role="strong">Automation Hub (AAH)</emphasis> project and use the <emphasis role="strong">Documentation</emphasis> component.</para>
+    <para> If you have a suggestion to improve this documentation, or find an error, please contact technical support at <link xlink:href="https://access.redhat.com"></link> to create an issue on the <emphasis role="strong">Ansible Automation Platform</emphasis> Jira project using the <emphasis role="strong">Docs</emphasis> component.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>
