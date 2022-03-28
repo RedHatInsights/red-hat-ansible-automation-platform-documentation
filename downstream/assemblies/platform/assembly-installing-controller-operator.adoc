@@ -8,14 +8,14 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="installing-controller-operator"]
-= Installing {ControllerName} on {OCP} web console
+= Installing and configuring {ControllerName} on {OCP} web console
 
 
 :context: installing-contr-operator
 
 
 [role="_abstract"]
-You can use these instructions to install the {ControllerName} operator on {OCP}, as well as specify customer resources.
+You can use these instructions to install the {ControllerName} operator on {OCP}, specify custom resources, as well as deploying {PlatformNameShort} with an external database.
 
 // mirrors AWX operator flow
 
@@ -25,9 +25,10 @@ You can use these instructions to install the {ControllerName} operator on {OCP}
 
 == Installing the {ControllerName} operator
 
-include::platform/proc-install-aap-operator.adoc[leveloffset=+1]
+. Navigate to *Operators* > *Installed Operators*, then click on the *Ansible Automation Platform* operator.
+. Locate the *Automation controller* tab, then click *Create instance*.
 
-With the {PlatformName} operator installed, locate the *Automation controller* entry and click *Create instance*.
+You can proceed to configure the instance using either the Form View or YAML view.
 
 include::platform/proc-controller-route-options.adoc[leveloffset=+2]
 include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
@@ -35,6 +36,8 @@ include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
 Once you have configured your {ControllerName} operator, click *Create* at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
 
 * View progress by navigating to *Workloads* -> *Pods* and locating the newly created instance.
+
+include::platform/proc-operator-external-db-controller.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
 == Additional resources

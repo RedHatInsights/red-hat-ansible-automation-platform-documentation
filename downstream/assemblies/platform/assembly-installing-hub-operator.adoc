@@ -8,24 +8,23 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="installing-hub-operator"]
-= Installing {HubName} on {OCP} web console
+= Installing and configuring {HubName} on {OCP} web console
 
 :context: installing-hub-operator
 
 [role="_abstract"]
-You can use these instructions to install the {HubName} operator on {OCP}, as well as specify customer resources.
+You can use these instructions to install the {HubName} operator on {OCP}, specify custom resources, as well as deploying {PlatformNameShort} with an external database.
 
 // mirrors AWX operator flow
 
 == Prerequisites
 
-* You have installed the {PlatformName} catalog in Operator Hub.
+* You have installed the {PlatformName} operator in Operator Hub.
 
 == Installing the {HubName} operator
 
-include::platform/proc-install-aap-operator.adoc[leveloffset=+1]
-
-With the {PlatformName} operator installed, locate the *Automation hub* entry and click *Create instance*.
+. Navigate to *Operators* > *Installed Operators*
+. Locate the *Automation hub* entry, then click *Create instance*.
 
 include::platform/proc-hub-route-options.adoc[leveloffset=+2]
 include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
@@ -35,6 +34,8 @@ Once you have configured your {HubName} operator, click *Create* at the bottom o
 * View progress by navigating to *Workloads* -> *Pods* and locating the newly created instance.
 
 include::platform/proc-access-hub-operator-ui.adoc[leveloffset=+1]
+
+include::platform/proc-operator-external-db-hub.adoc[leveloffset=+1]
 
 
 
