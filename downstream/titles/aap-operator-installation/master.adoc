@@ -19,11 +19,11 @@ include::platform/assembly-operator-install-planning.adoc[leveloffset=+1]
 
 include::platform/assembly-install-aap-operator.adoc[leveloffset=+1]
 
+include::platform/assembly-installing-controller-operator.adoc[leveloffset=+1]
+
 include::platform/assembly-installing-hub-operator.adoc[leveloffset=+1]
 
 // include::platform/assembly-installing-hub-operator-local-db.adoc[leveloffset=+1]
-
-include::platform/assembly-installing-controller-operator.adoc[leveloffset=+1]
 
 // include::platform/assembly-installing-controller-operator-local-db.adoc[leveloffset=+1]
 
