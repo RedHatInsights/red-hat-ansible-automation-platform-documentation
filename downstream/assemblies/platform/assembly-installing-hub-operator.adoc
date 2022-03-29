@@ -13,7 +13,7 @@ ifdef::context[:parent-context: {context}]
 :context: installing-hub-operator
 
 [role="_abstract"]
-You can use these instructions to install the {HubName} operator on {OCP}, specify custom resources, as well as deploying {PlatformNameShort} with an external database.
+You can use these instructions to install the {HubName} operator on {OCP}, specify custom resources, and deploy {PlatformNameShort} with an external database.
 
 // mirrors AWX operator flow
 
@@ -23,7 +23,7 @@ You can use these instructions to install the {HubName} operator on {OCP}, speci
 
 == Installing the {HubName} operator
 
-. Navigate to *Operators* > *Installed Operators*
+. Navigate to *Operators* > *Installed Operators*.
 . Locate the *Automation hub* entry, then click *Create instance*.
 
 include::platform/proc-hub-route-options.adoc[leveloffset=+2]

@@ -11,7 +11,7 @@ By default, the {PlatformName} operator automatically creates and configures a m
 .Prerequisite
 The external database must be a PostgreSQL database that is the version supported by the current release of {PlatformNameShort}.
 
-NOTE: {PlatformNameShort} 2.0 and 2.1 supports PostgreSQL 12
+NOTE: {PlatformNameShort} 2.0 and 2.1 supports PostgreSQL 12.
 
 .Procedure
 
@@ -35,9 +35,9 @@ stringData:
   type: unmanaged
 type: Opaque
 ----
-<1> Namespace to create the secret in. This should be the same namespace you wish to deploy to
-<2> The resolvable hostname for your database node
-<3> External port defaults to `5432`
+<1> Namespace to create the secret in. This should be the same namespace you wish to deploy to.
+<2> The resolvable hostname for your database node.
+<3> External port defaults to `5432`.
 <4> Value for variable `password` should not contain single or double quotes (', ") or backslashes (\) to avoid any issues during deployment, backup or restoration.
 <5> The variable `sslmode` is valid for `external` databases only. The allowed values are: `*prefer*`, `*disable*`, `*allow*`, `*require*`, `*verify-ca*`, and `*verify-full*`.
 . Apply `external-postgres-configuration-secret.yml` to your cluster using the `oc create` command.

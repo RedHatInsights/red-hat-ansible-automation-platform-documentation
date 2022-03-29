@@ -11,6 +11,6 @@
 . Select an *Installation Mode*, *Installed Namespace*, and *Approval Strategy*.
 . Click *Install*.
 
-The installation process will begin. When installation is complete a modal will appear notifying you that the {PlatformName} operator is installed in the specified namespace.
+The installation process will begin. When installation is complete, a modal will appear notifying you that the {PlatformName} operator is installed in the specified namespace.
 
 * Click *View Operator* to view your newly installed {PlatformName} operator.

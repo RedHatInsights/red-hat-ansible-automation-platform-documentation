@@ -15,7 +15,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-You can use these instructions to install the {ControllerName} operator on {OCP}, specify custom resources, as well as deploying {PlatformNameShort} with an external database.
+You can use these instructions to install the {ControllerName} operator on {OCP}, specify custom resources, and deploy {PlatformNameShort} with an external database.
 
 // mirrors AWX operator flow
 
@@ -28,7 +28,7 @@ You can use these instructions to install the {ControllerName} operator on {OCP}
 . Navigate to *Operators* > *Installed Operators*, then click on the *Ansible Automation Platform* operator.
 . Locate the *Automation controller* tab, then click *Create instance*.
 
-You can proceed to configure the instance using either the Form View or YAML view.
+You can proceed with configuring the instance using either the Form View or YAML view.
 
 include::platform/proc-controller-route-options.adoc[leveloffset=+2]
 include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
