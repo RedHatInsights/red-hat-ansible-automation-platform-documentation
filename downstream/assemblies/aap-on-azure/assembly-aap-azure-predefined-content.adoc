@@ -1,0 +1,28 @@
+ifdef::context[:parent-context: {context}]
+
+[id="aap-azure-predefined-content"]
+= Predefined content
+
+:context: aap-azure-predefined-content
+
+[role="_abstract"]
+Red Hat provides predefined projects and job templates that you can deploy from {ControllerName} on an execution environment.
+The preconfigured content enables you to automate the management of resources in your Azure subscription.
+
+This chapter describes what the predefined content does, and how to view and use it, so that you can build similar automations.
+
+include::aap-on-azure/proc-azure-predef-discover.adoc[leveloffset=+1]
+include::aap-on-azure/con-azure-predef-about-webapp.adoc[leveloffset=+2]
+include::aap-on-azure/con-azure-predef-about-migrate.adoc[leveloffset=+2]
+include::aap-on-azure/proc-azure-predef-explore-repo.adoc[leveloffset=+1]
+include::aap-on-azure/proc-azure-predef-explore-webapp-template.adoc[leveloffset=+1]
+include::aap-on-azure/proc-azure-predef-launch-webapp-templates.adoc[leveloffset=+1]
+include::aap-on-azure/proc-azure-predef-working-with-templates.adoc[leveloffset=+1]
+include::aap-on-azure/proc-azure-predef-build-automations.adoc[leveloffset=+1]
+
+// include::aap-on-azure/ZZZ[leveloffset=+1]
+// include::aap-on-azure/ZZZ[leveloffset=+2]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
+
