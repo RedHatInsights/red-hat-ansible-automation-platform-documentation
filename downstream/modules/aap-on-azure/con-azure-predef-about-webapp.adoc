@@ -1,0 +1,52 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="con-azure-predef-about-webapp"]
+
+= About the webapp job template
+
+// [role="_abstract"]
+
+The webapp job template in Ansible Automation Platform creates a web application on Azure. The deployment includes a load balancer to distribute the traffic among virtual machines.
+The template executes the webapp.yml playbook from the cloud.azure_roles git repository. 
+
+
+Prerequisites
+An Azure credential (Link to Configuration of an Azure credential)
+Access to the azure.azcollection, from GitHub or from Pprivate Aautomation Hhub.
+Variables required before launching the webapp template
+List the variables required for deployment.
+Describe the implications of changing the values.
+
+Resources deployed by the webapp template
+The webapp.yml playbook deploys a web application in Azure and creates the following resources to support the application:
+A resource group
+A load balancer
+A bastion host
+Insert architecture diagram
+
+The following list shows the sequence in which the resources are generated, and links to the roles and tasks that deploy them:
+The webapp.yml playbook invokes the scale_virtual_machine role, specifying the create operation. 
+This role executes the create.yml task, which implements the following:
+Creates a resource group using the resource_group role.
+Creates a network security group by invoking the azure.azcollection azure_rm_securitygroup module. 
+Creates an Azure networking stack using the networking_stack role in cloud.azure_roles.
+Creates a load balancer with a public IP address by invoking the azure.azcollection azure_rm_loadbalancer module.
+Creates a bastion host with a public IP address, and adds it to the inventory. The create_bastion.yml task invokes the azure_rm_publicipaddress, azure_rm_virtualmachine, and azure_rm_networkinterface modules from the azure.azcollection.
+Creates a virtual machine scale set by invoking the azure_rm_virtualmachinescaleset module from the azure.azcollection.
+Adds the bastion host to the inventory by invoking the ansible.builtin.add_host module.
+Creates a PostgreSQL database if one does not exist, by invoking the managed_postgresql role from cloud.azure_roles.
+Installs Ansible on the bastion host.
+Copies the deploy_app.yml playbook to play.yml on the bastion host.
+Deploys the app from the bastion host by executing a shell command on the bastion host to run the play.yml playbook.
+
+Destroying the web application
+Once you have finished working with a web application, you can destroy the resource group to delete all deployed resources so that you do not incur costs for the resources deployed by its preconfigured templates.
+Documentation for the roles used in the webapp.yml playbook
+For information about roles from the public cloud.azure_roles git repository, navigate to the readme.md file in the subdirectory for the role in the /roles directory. 
+For information about modules from the azure.azcollection collection in Ansible Galaxy, refer to Collections in the Azure namespace in the Ansible community documentation Reference and Appendices.
+

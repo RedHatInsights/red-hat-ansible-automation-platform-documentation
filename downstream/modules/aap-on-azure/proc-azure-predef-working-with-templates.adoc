@@ -1,0 +1,20 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="proc-azure-predef-working-with-templates"]
+
+= Working with the predefined templates
+
+// [role="_abstract"]
+The following workflow can be used to test the pre-seeded templates on your Azure instance:
+Configure and deploy a web application from Ansible Automation Platform on Azure, using the webapp template.
+Using the Azure console, verify that the resources have been created.
+Configure and launch the template to move your web application from one region to another, using Ansible Automation Platform.
+In the Azure console, verify that the resources have been deleted from the original region and have been created in the destination region.
+Delete the Azure resource group for the web application.
+
+

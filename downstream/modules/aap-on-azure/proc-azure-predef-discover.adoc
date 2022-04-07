@@ -1,0 +1,43 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="proc-azure-predef-discover"]
+
+= Discovering pre-seeded content
+
+The predefined content is hosted in a public GitHub repository called `cloud.azure roles`:
+link:https://github.com/ansible-collections/cloud.azure_roles[https://github.com/ansible-collections/cloud.azure_roles].
+
+Red Hat does not provide support for the content in the `cloud.azure_roles` repository.
+Content on the `cloud.azure_roles` repository will not be published to Ansible Galaxy.
+
+Within the repository, a group of Ansible playbooks is stored in the [filename]`/playbooks` directory.
+The playbooks invoke roles from the `[filename]/roles` directory.
+The roles and the playbooks use modules from the `azure.azcollection in Ansible Galaxy.
+The `azure.azcollection` is listed as a dependency in the [filename]`galaxy.yml` file. 
+
+Within the Ansible Automation platform, a project is a group of Ansible playbooks.
+The `cloud.azure_roles` repository appears as a preconfigured project in your instance of automation controller.
+A credential is not required to access `cloud.azure_roles`, as it is a public repository.
+Each job template within the platform executes one playbook from the project repository using an execution environment. 
+
+Red Hat has configured the following templates in {AAPonAzureName} to deploy playbooks from the `cloud.azure_roles` repository:
+
+* The `webapp` template executes the [filename]`webapp.yml` playbook to deploy an app in your Azure instance.
+* The `vmss_migrate` template executes the [filename]`vmss_migrate.yml` playbook to move an app from one resource group to another, typically between Azure regions.
+// * Destroying resources
+
+The job templates based on the `cloud.azure_roles` project create and modify resources on your Azure subscription.
+You must add your Azure credential to the template configuration to allow access to the Azure subscription that the jobs will be run against. 
+
+The playbooks use modules from the `azure.azcollection` Ansible Collection.
+The collection is hosted in a public GitHub repository, link:https://github.com/ansible-collections/azure[https://github.com/ansible-collections/azure], so you do not need to create a credential to use the modules from `azure.azcollection`.
+
+// The playbooks use modules from the `azure.azcollection` in Ansible Galaxy. Access to Ansible Galaxy is preconfigured in Ansible Automation platform, so you do not need to create a credential to use the modules in azure.collection.
+
+Red Hat provides the `ee-cloud-services` execution environment to run the templates. 
+

@@ -1,0 +1,36 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="proc-azure-predef-build-automations"]
+
+= Building your own automations based on predefined templates
+
+//[role="_abstract"]
+
+To get started building your own automations, begin by creating copies of the pre-seeded content:
+Make a copy of the templates you want to work with:
+Navigate to the Templates page and click Copy Template next to the template that you want to copy.
+Click Edit to rename the template and edit the content.
+Make a copy of the project you want to work with:
+Navigate to the Projects page and click Copy Project next to the project that you want to copy.
+Click Edit to rename the template and edit the content.
+Make a copy of the playbooks and roles by forking the cloud.azure_roles Git repository. 
+Once you have copied the content, you must configure credentials so that you can use your forked repository in your project:
+Create a personal access token in GitHub. Refer to Creating a personal access token in the GitHub documentation.
+Create a credential in automation controller to use the personal access token. Refer to GitHub Personal access token in the Automation Controller User Guide.
+Configure your playbook to pull playbooks from your forked repository. Refer to SCM Types - Git in the Automation Controller User Guide for further information.
+Navigate to your copy of the project and click Edit.
+Modify the project configuration as follows:
+Source Control URL: Enter the URL for your GitHub fork.
+ Source Control Credential: Select the credential you created for your GitHub personal access token.
+Source Control Credential type: Select Git.
+Configure your copy of the template to use your project:
+Navigate to your copy of the template and click Edit.
+From the Project list, select your copy of the project.
+You have not modified any of the playbooks, so launching your template achieves the same results as launching the job template provided by Red Hat.
+
+

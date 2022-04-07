@@ -16,7 +16,7 @@ include::aap-on-azure/con-azure-predef-about-webapp.adoc[leveloffset=+2]
 include::aap-on-azure/con-azure-predef-about-migrate.adoc[leveloffset=+2]
 include::aap-on-azure/proc-azure-predef-explore-repo.adoc[leveloffset=+1]
 include::aap-on-azure/proc-azure-predef-explore-webapp-template.adoc[leveloffset=+1]
-include::aap-on-azure/proc-azure-predef-launch-webapp-templates.adoc[leveloffset=+1]
+include::aap-on-azure/proc-azure-predef-launch-webapp-template.adoc[leveloffset=+1]
 include::aap-on-azure/proc-azure-predef-working-with-templates.adoc[leveloffset=+1]
 include::aap-on-azure/proc-azure-predef-build-automations.adoc[leveloffset=+1]
 
