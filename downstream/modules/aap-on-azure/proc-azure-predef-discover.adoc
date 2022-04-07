@@ -16,7 +16,7 @@ Red Hat does not provide support for the content in the `cloud.azure_roles` repo
 Content on the `cloud.azure_roles` repository will not be published to Ansible Galaxy.
 
 Within the repository, a group of Ansible playbooks is stored in the [filename]`/playbooks` directory.
-The playbooks invoke roles from the `[filename]/roles` directory.
+The playbooks invoke roles from the [filename]`/roles` directory.
 The roles and the playbooks use modules from the `azure.azcollection in Ansible Galaxy.
 The `azure.azcollection` is listed as a dependency in the [filename]`galaxy.yml` file.
 
