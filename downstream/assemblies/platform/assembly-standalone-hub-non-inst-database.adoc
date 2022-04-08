@@ -23,13 +23,9 @@ include::platform/ref-additional-inv-configs.adoc[leveloffset=3]
 include::platform/ref-setup-script-args.adoc[leveloffset=3]
 include::platform/proc-running-setup-script.adoc[leveloffset=3]
 include::platform/proc-verify-hub-installation.adoc[leveloffset=3]
+include::platform/ref-hub-configs.adoc[leveloffset=4]
 
-[role="_additional-resources"]
-==  Next steps
-
-* To configure user access for {HubName}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/managing_user_access_in_private_automation_hub/index[Managing user access in private {HubName}].
-* See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/managing_red_hat_certified_and_ansible_galaxy_collections_in_automation_hub/index[Managing Red Hat Certified and Ansiblre Galaxy collections in {HubName}] to learn how to add content to your {HubName}.
-* Learn more about publishing internally developed collections in your {HubName} in link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/publishing_proprietary_content_collections_in_automation_hub/index[Publishing proprietary content collections in {Hub Name}].
+include::assembly-platform-whats-next.adoc[leveloffset=3]
 
 
 ifdef::parent-context[:context: {parent-context}]

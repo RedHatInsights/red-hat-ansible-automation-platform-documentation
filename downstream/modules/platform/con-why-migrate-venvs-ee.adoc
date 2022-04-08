@@ -1,0 +1,7 @@
+// [id="con-why-migrate-venvs-ee_{context}"]
+
+= Migrating from legacy virtual environments (venvs) to {ExecEnvName}
+
+{PlatformNameShort} {PlatformVers} moves users away from custom Python virtual environments (venvs) in favor of automation execution environments - containerized images that packages the necessary components needed to execute and scale your Ansible automation, including Ansible Core, Ansible Content Collections, Python dependencies, Red Hat Enterprise Linux UBI 8, and any additional package dependencies.
+
+Platform administrators who are looking to migrate their venvs to execution environments will (1) need to use the `awx-manage` command to list and export a list of venvs from your original instance, then (2) use `ansible-builder` to create execution environments. For more information, see the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/upgrading-to-ees[Upgrading to Automation Execution Environments guide] and the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/ansible_builder_guide/index[Ansible Builder Guide].
