@@ -11,19 +11,22 @@ Base the file name and the ID on the module title. For example:
 
 // [role="_abstract"]
 
-Log in to automation controller.
-Expand the Resources menu.
-Click Projects to display the Projects page. This page lists all the projects configured in automation controller.
-Click the cloud_azure_roles project to view the Details page for the project.
-Click the Job Templates tab to view a list of links to the job templates that execute playbooks from this project. 
-Click the Details tab to display the following information about the project:
-Source Control URL displays the URL of the GitHub repository for the project.
-Click the link next to Organizations to view the organization associated with this project:
-The Galaxy Credentials field displays the credentials assigned to the organization. 
-The playbooks in this project have a dependency to azure.azcollection in Ansible Galaxy. Credentials are assigned to organizations, so the organization associated with the cloud.azure_roles project requires a credential for Ansible Galaxy.
-Click the back button on your web browser to navigate back to the project. Alternatively, click Projects in the navigation pane and select the azure.azcollection project.
+. Log in to automation controller.
+. Expand the *Resources* menu.
+. Click *Projects* to display the *Projects* page. This page lists all the projects configured in automation controller.
+. Click the *cloud_azure_roles* project to view the *Details* page for the project.
 
-For more information about projects in automation controller, refer to https://docs.ansible.com/automation-controller/latest/html/userguide/projects.html in the Automation Controller User Guide.
-To learn more about organizations in automation controller, refer to https://docs.ansible.com/automation-controller/latest/html/userguide/organizations.html in the Automation Controller User Guide.
+Click the *Job Templates* tab to view a list of links to the job templates that execute playbooks from this project. 
+Click the *Details* tab to display the following information about the project:
+*Source Control URL* displays the URL of the GitHub repository for the project.
+Click the link next to *Organizations* to view the organization associated with this project:
+The *Galaxy Credentials* field displays the credentials assigned to the organization. 
+The playbooks in this project have a dependency to `azure.azcollection`.
+
+// Credentials are assigned to organizations, so the organization associated with the cloud.azure_roles project requires a credential for Ansible Galaxy.
+// Click the back button on your web browser to navigate back to the project. Alternatively, click *Projects* in the navigation pane and select the `azure.azcollection` project.
+
+* For more information about projects in automation controller, refer to https://docs.ansible.com/automation-controller/latest/html/userguide/projects.html in the Automation Controller User Guide.
+* To learn more about organizations in automation controller, refer to https://docs.ansible.com/automation-controller/latest/html/userguide/organizations.html in the Automation Controller User Guide.
 
 

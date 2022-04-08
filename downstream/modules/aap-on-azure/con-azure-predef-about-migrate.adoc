@@ -38,16 +38,12 @@ The list below shows the sequence in which the resources are generated in the de
 * Copies the link:https://github.com/ansible-collections/cloud.azure_roles/blob/main/playbooks/files/deploy-app.yml[`deploy_app.yml`] playbook to [filename]`play.yml` on the bastion host.
 * Deploys the app from the bastion host by executing a shell command on the bastion host to run the [filename]`play.yml` playbook.
 * Invokes the link:https://github.com/ansible-collections/cloud.azure_roles/tree/main/playbooks/roles/scale_virtual_machine[`scale_virtual_machine`] role, specifying the `delete` operation, to delete the resource group for the application from the source Azure region.
-* Deletes the bastion host from the source region by setting the azure_rm_virtualmachine module to the absent state.
+* Deletes the bastion host from the source region by setting the link:https://docs.ansible.com/ansible/latest/collections/azure/azcollection/azure_rm_virtualmachine_module.html#ansible-collections-azure-azcollection-azure-rm-virtualmachine-module[`azure_rm_virtualmachine`] module to the `absent` state.
 * Deletes the virtual machine scale set from the source region by setting the azure_rm_virtualmachinescaleset module to the absent state.
-* Deletes the virtual network set from the source region by setting the azure_rm_virtualnetwork module to the absent state.
-* Deletes the subnet from the source region by setting the azure_rm_subnet module to the absent state.
-* Deletes the load balancer from the source region by setting the azure_rm_loadbalancer module to the absent state.
-* Deletes the public IP address for the load balancer in the source region by setting the azure_rm_publicipaddress module to the absent state.
-* Deletes the networking security group from the source region by setting the azure_rm_securitygroup module to the absent state.
+* Deletes the virtual network set from the source region by setting the link:http://azure_rm_virtualnetwork[`azure_rm_virtualnetwork`] module to the `absent` state.
+* Deletes the subnet from the source region by setting the link:https://docs.ansible.com/ansible/latest/collections/azure/azcollection/azure_rm_subnet_module.html#ansible-collections-azure-azcollection-azure-rm-subnet-module[`azure_rm_subnet`] module to the `absent` state.
+* Deletes the load balancer from the source region by setting the link:https://docs.ansible.com/ansible/latest/collections/azure/azcollection/azure_rm_loadbalancer_module.html#ansible-collections-azure-azcollection-azure-rm-loadbalancer-module[`azure_rm_loadbalancer`] module to the `absent` state.
+* Deletes the public IP address for the load balancer in the source region by setting the link:https://docs.ansible.com/ansible/latest/collections/azure/azcollection/azure_rm_publicipaddress_module.html#ansible-collections-azure-azcollection-azure-rm-publicipaddress-module[`azure_rm_publicipaddress`] module to the `absent` state.
+* Deletes the networking security group from the source region by setting the link:https://docs.ansible.com/ansible/latest/collections/azure/azcollection/azure_rm_securitygroup_module.html#ansible-collections-azure-azcollection-azure-rm-securitygroup-module[`azure_rm_securitygroup`] module to the `absent` state.
 * Prints a message displaying the URL for the application in the destination region.
-
-
-
-
 
