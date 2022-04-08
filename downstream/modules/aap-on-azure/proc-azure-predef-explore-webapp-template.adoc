@@ -9,14 +9,16 @@ Base the file name and the ID on the module title. For example:
 
 = Exploring the webapp job template
 
-Log in to automation controller.
-Expand the Resources menu.
-Click Templates to display the Templates page. This page displays all the job templates configured in automation controller
-Click the webapp project to view the Details page for the template.
-Click the Details tab to display the following information about the job template:
-Inventory displays the inventory that this job template will be executed against.
-Project displays the project that contains the playbook for this template.
-Playbook points to the YML file for this playbook within the project.
-Execution Environment displays the execution environment for this template. Setting an execution environment in the template overrides an execution environment set in the project.
-Organization links to the organization associated with the project for this template.
+. Log in to automation controller.
+. Expand the *Resources* menu.
+. Click *Templates* to display the *Templates* page. This page displays all the job templates configured in automation controller
+. Click the *webapp* project to view the *Details* page for the template.
+
+Click the *Details* tab to display the following information about the job template:
+
+* *Inventory* displays the inventory that this job template will be executed against.
+* *Project* displays the project that contains the playbook for this template.
+* *Playbook* points to the YML file for this playbook within the project.
+* *Execution* Environment displays the execution environment for this template. Setting an execution environment in the template overrides an execution environment set in the project.
+* *Organization* links to the organization associated with the project for this template.
 
