@@ -9,13 +9,14 @@ Base the file name and the ID on the module title. For example:
 
 = Launching a cloud.azure_roles job template
 
-Log in to automation controller.
-Configure the variables
-Expand the Resources menu.
-Click Templates to display all the job templates configured in automation controller.
-Click the launch icon next to the template that you want to run.
-The Output page displays the progress of the job.
-To view the output of the process, expand the Views menu and click Jobs.
+* Log in to automation controller.
+* Configure the variables
+* Expand the *Resources* menu.
+* Click *Templates* to display all the job templates configured in automation controller.
+* Click the *Launch* icon next to the template that you want to run.
++
+The *Output* page displays the progress of the job.
+* To view the output of the process, expand the *Views* menu and click *Jobs*.
 
-For further information on running templates, refer to https://docs.ansible.com/automation-controller/latest/html/userguide/job_templates.html#launch-a-job-template in the Automation Controller User Guide. 
+For further information on running templates, refer to link:https://docs.ansible.com/automation-controller/latest/html/userguide/job_templates.html#launch-a-job-template[_Launch a Job Template_] in the _Automation Controller User Guide_. 
 
