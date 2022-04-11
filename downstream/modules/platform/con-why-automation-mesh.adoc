@@ -8,4 +8,4 @@ When upgrading from version 1.x to the latest version of the {PlatformNameShort}
 
 For instructions on how to migrate from isolated nodes to execution nodes, see the *upgrade & migration guide*.
 
-For information about automation mesh and the ways you can design your automation mesh for your environment, see the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[Red Hat Ansible Automation Platform automation mesh guide].
+For information about automation mesh and the various ways to design your automation mesh for your environment, see the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[Red Hat Ansible Automation Platform automation mesh guide].
