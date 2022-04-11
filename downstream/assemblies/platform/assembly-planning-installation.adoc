@@ -23,31 +23,31 @@ Red Hat supports the following installations scenarios for {PlatformName}
 
 include::platform/con-SM-standalone-contr-non-inst-database.adoc[leveloffset=+2]
 
-See "Installing {ControllerName} with a database on the same node" in _Installing {PlatformName} components on a single machine_ to get started.
+See xref:standalone-controller-non-inst-database[Installing {ControllerName} with a database on the same node] in _Installing {PlatformName} components on a single machine_ to get started.
 
 include::platform/con-SM-standalone-contr-ext-database.adoc[leveloffset=+2]
 
-See "Installing {ControllerName} with an external managed database" in _Installing {PlatformName} components on a single machine_ to get started.
+See xref:assembly-standalone-controller-ext-database[Installing {ControllerName} with an external managed database] in _Installing {PlatformName} components on a single machine_ to get started.
 
 include::platform/con-SM-standalone-hub-non-inst-database.adoc[leveloffset=+2]
 
-See "Installing {HubName} with a database on the same node" in _Installing {PlatformName} components on a single machine_ to get started.
+See xref:assembly-standalone-hub-non-inst-database[Installing {HubName} with a database on the same node] in _Installing {PlatformName} components on a single machine_ to get started.
 
 include::platform/con-SM-standalone-hub-ext-database.adoc[leveloffset=+2]
 
-See "Installing {HubName} with an external database" in _Installing {PlatformName} components on a single machine_ to get started.
+See xref:assembly-standalone-hub-ext-database[Installing {HubName} with an external database] in _Installing {PlatformName} components on a single machine_ to get started.
 
 include::platform/con-platform-non-inst-database.adoc[leveloffset=+2]
 
-See "Installing {PlatformName} with a database on the {ControllerName} node or non-installer managed database" in _Installing {PlatformName}_ to get started.
+See xref:assembly-platform-non-inst-database[Installing {PlatformName} with a database on the {ControllerName} node or non-installer managed database] in _Installing {PlatformName}_ to get started.
 
 include::platform/con-platform-ext-database.adoc[leveloffset=+2]
 
-See "Installing {PlatformName} with an external managed database" in _Installing {PlatformName}_ to get started.
+See xref:assembly-platform-ext-database[Installing {PlatformName} with an external managed database] in _Installing {PlatformName}_ to get started.
 
 include::platform/con-cluster-platform-ext-database.adoc[leveloffset=+2]
 
-See "Installing a multi-node {PlatformName} with an external managed database" in _Multi-machine cluster intallation_ to get started.
+See xref:assembly-multi-machine-cluster-scenario[Installing a multi-node {PlatformName} with an external managed database] in _Multi-machine cluster intallation_ to get started.
 
 
 
