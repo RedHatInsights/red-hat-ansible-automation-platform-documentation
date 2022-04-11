@@ -4,7 +4,7 @@ ifdef::context[:parent-context: {context}]
 = What's next with {PlatformNameShort} {PlatformVers}
 
 [role="_abstract"]
-Whether you are a new {PlatformNameShort} user looking to start automating, or an existing administrator looking to migrate old Ansible content to your latest installed version of {PlatformName}, explore the next steps to start leveraging the new features of {PlatformNameShort} {PlatformVers}:
+Whether you are a new {PlatformNameShort} user looking to start automating, or an existing administrator looking to migrate old Ansible content to your latest installed version of {PlatformName}, explore the next steps to begin leveraging the new features of {PlatformNameShort} {PlatformVers}:
 
 //isolated node migration
 //playbooks to download
