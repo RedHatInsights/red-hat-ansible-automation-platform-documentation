@@ -16,8 +16,13 @@ You can define Red Hat Automation Hub as the default source for content in the `
 [galaxy_server.<server_name>]
 -----
 
-. Set the `url` option if necessary. The community Ansible Galaxy does not require an `auth_url`.
-. Set the `auth_url` option for each server name.
+. Set the `url` option for each server name. The server URL must take the form:
++
+[subs="+quotes"]
+-----
+https://__<server_domain_name>__/api/galaxy/
+-----
+. Set the `auth_url` option if necessary. The community Ansible Galaxy does not require an `auth_url`.
 . Set the API token for the Automation Hub server.
 
 The following `ansible.cfg` example shows how to configure multiple servers in prioritized order, with Automation Hub configured as your primary source and an Ansible Galaxy server as a secondary source:
