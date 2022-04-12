@@ -1,0 +1,8 @@
+[id="ref-operator-ocp-version_{context}"]
+
+= {OCPShort} version compatibility
+
+[role="_abstract"]
+
+The {OperatorPlatform} for {PlatformNameShort} version 2.1 requires {OCPShort} version 4.7 or later.
+
