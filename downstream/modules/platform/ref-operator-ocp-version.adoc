@@ -4,5 +4,5 @@
 
 [role="_abstract"]
 
-The {OperatorPlatform} for {PlatformNameShort} version 2.1 requires {OCPShort} version 4.7 or later.
+The {OperatorPlatform} to install {PlatformNameShort} 2.1 is available on {OCPShort} 4.7 and later versions.
 
