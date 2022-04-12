@@ -1,12 +1,7 @@
 <title>Getting started with automation hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<<<<<<< HEAD
 <productnumber>2.1</productnumber>
 <subtitle>Configuring Red Hat Automation Hub as your default server for Ansible collections content</subtitle>
-=======
-<productnumber>2.0-ea</productnumber>
-<subtitle>Configuring Red Hat automation hub as your default server for Ansible collections content</subtitle>
->>>>>>> 115725b... AAP-3018 Specify subdirectory in server URL for PAH (#296)
 <abstract>
     <para>This guide walks you through the initial steps required to use Red Hat automation hub as the default source for certified Ansible collections content.</para>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
