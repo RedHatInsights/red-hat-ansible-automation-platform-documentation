@@ -1,11 +1,11 @@
 [id="proc-configure-automation-hub-server"]
-= Configuring Red Hat Automation Hub as the primary source for content
+= Configuring Red Hat {HubName} as the primary source for content
 
-You can define Red Hat Automation Hub as the default source for content in the `ansible.cfg` configuration file.
+You can define Red Hat {HubName} as the default source for content in the `ansible.cfg` configuration file.
 
 .Prerequisites
 
-* Obtain the API token for the Automation Hub server. See Creating the Automation Hub API token for more information.
+* Obtain the API token for the {HubName} server. See Creating the {HubName} API token for more information.
 
 .Procedure
 
@@ -23,9 +23,9 @@ You can define Red Hat Automation Hub as the default source for content in the `
 https://__<server_fully_qualified_domain_name>__/api/galaxy/
 -----
 . Set the `auth_url` option if necessary. The community Ansible Galaxy does not require an `auth_url`.
-. Set the API token for the Automation Hub server.
+. Set the API token for the {HubName} server.
 
-The following `ansible.cfg` example shows how to configure multiple servers in prioritized order, with Automation Hub configured as your primary source and an Ansible Galaxy server as a secondary source:
+The following `ansible.cfg` example shows how to configure multiple servers in prioritized order, with {HubName} configured as your primary source and an Ansible Galaxy server as a secondary source:
 
 .ansible.cfg
 -----
@@ -39,10 +39,11 @@ auth_url=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-conn
 token=my_ah_token
 
 [galaxy_server.my_org_hub]
-url=https://automation.my_org/
+url=https://automation.my_org/api/galaxy/ <3>
 username=my_user
 password=my_pass
 -----
 <1> A trailing slash */* must follow the server URL.
-<2> Include the `/api/galaxy/` subdirectory in the server URL.
+<2> Include the `/api/galaxy/` subdirectory in the Galaxy server URL.
+<3> Include the `/api/galaxy/` subdirectory in the {HubName} server URL.
 
