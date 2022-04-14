@@ -1,0 +1,22 @@
+[id="proc-new-aap-instance-upgrade_{context}"]
+
+= Deploy a new instance for a side-by-side upgrade
+
+To proceed with the side-by-side upgrade process, deploy a second instance of Ansible Tower 3.8.x with the same instance groups configurations. This new instance will receive the content and configuration from your original instance, and will later be upgraded to {PlatformName} {PlatformVers}.
+
+== Deploy a new instance of Ansible Tower
+
+
+== Recreate instance groups in the new instance
+
+Log in to your new instance of Ansible Tower and configure the instance groups to match the same instance group configuration as your old instance.
+
+NOTE: Make note of all instance groups from your original Tower instance. You will need to recreate these groups in your new instance.
+
+.Procedure
+. Log in to your new instance of Tower.
+. On the side panel, navigate to Administration > *Instance groups*.
+. Recreate instance groups from your original instance:
+.. Click *+* > *Create instance group*.
+.. Enter a Name that matches an instance group from your original instance, then click *Save*.
+.. Repeat until all instance groups from your original instance have been recreated.

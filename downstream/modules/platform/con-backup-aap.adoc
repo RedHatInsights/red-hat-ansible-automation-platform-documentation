@@ -1,0 +1,14 @@
+[id="con-backup-aap_{context}"]
+
+= Back up your {PlatformNameShort} instance
+
+. Navigate to your `ansible-tower-setup-latest` directory
+. Back up the content and configuration of your current {PlatformNameShort} instance by running the `./setup.sh` script following the example below:
++
+----
+$ ./setup.sh -e ‘backup_dest=/ansible/mybackup’ -e ‘use_compression=True’ @credentials.yml -b
+----
+<1> `backup_dest` specifies a directory to save your backup to
+<2> `@credentials.yml` passes the password variables and their values encrypted via `ansible-vault`
+
+With a successful backup, a backup file will be created at `/ansible/mybackup/tower-backup-latest.tar.gz` .

@@ -1,0 +1,19 @@
+[id="proc-restore-aap-backup_{context}"]
+
+= Restore backup to new instance
+
+Running the `./setup.sh` script with the `restore_backup_file` flag will migrate content from the backup file of your original instance to the new instance, effectively migrating all job histories, templates, and other {PlatformNameShort} related content.
+
+. Run the following command:
++
+----
+./setup.sh -r -e ‘restore_backup_file=/mybackup/tower-backup-latest.tar.gz’ -e ‘user_compression=True’ -e @credentials.yml -r -- --ask-vault-pass
+----
+<1> `restore_backup_file` specifies the location of the {PlatformNameShort} backup database
+<2> `use_compression` is set to `True` due to compression being used during the backup process
+<3> `-r` sets the restore database option to `True`
+. Log in to your new RHEL 8 Tower 3.8 instance and check if the content from your original instance content have been successfully restored:
+.. Navigate to *Administration* > *Instance groups*. The recreated instance groups should now contain the *Total Jobs* from your original instance.
+.. Using the side navigation panel, check that your content has been imported from your original instance, including Jobs, Templates, Inventories, Credentials, and Users.
+
+You now have a new instance of Ansible Tower with all the Ansible content from your original instance. 
