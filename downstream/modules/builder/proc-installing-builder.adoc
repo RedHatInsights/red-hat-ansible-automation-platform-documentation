@@ -20,4 +20,4 @@ You can also install {Builder} from the https://pypi.org/project/ansible-builder
 $ pip install ansible-builder
 ----
 +
-NOTE: If you encounter issues while installing from PyPI, please install and reproduce on a Supported installation.
+NOTE: If you encounter issues while installing from PyPI, please install and reproduce on a supported installation.
