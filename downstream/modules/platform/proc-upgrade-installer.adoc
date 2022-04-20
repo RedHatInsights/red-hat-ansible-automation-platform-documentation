@@ -4,6 +4,7 @@
 
 To upgrade your new instance of {PlatformNameShort} to {PlatformNameShort} {PlatformVers}, start by copying the `inventory` file from your original instance to your new instance, then running the installer. The {PlatformName} installer will detect a pre-{PlatformVers} and offer an upgraded `inventory` file for you to continue with the upgrade process:
 
+.Procedure
 . Download the latest installer for {PlatformName} here: https://access.redhat.com/downloads/content/480
 . Extract the files:
 +

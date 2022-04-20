@@ -112,7 +112,7 @@ Configure the firewall settings on all the nodes used in the upgraded {PlatformN
 ----
 
 
-== {PlatformNameShort} Configuration requirements
+== {PlatformNameShort} configuration requirements
 
 .Configuring firewall settings for execution and hop nodes
 

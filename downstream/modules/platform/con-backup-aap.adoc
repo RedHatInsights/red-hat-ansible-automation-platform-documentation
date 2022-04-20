@@ -2,8 +2,11 @@
 
 = Back up your {PlatformNameShort} instance
 
+Back up an existing {PlatformNameShort} instance by running the `.setup.sh` script with the `backup_dir` flag, which saves the content and configuration of your current environment:
+
+.Procedure
 . Navigate to your `ansible-tower-setup-latest` directory
-. Back up the content and configuration of your current {PlatformNameShort} instance by running the `./setup.sh` script following the example below:
+. Run the `./setup.sh` script following the example below:
 +
 ----
 $ ./setup.sh -e ‘backup_dir=/ansible/mybackup’ -e ‘use_compression=True’ @credentials.yml -b <1><2>

@@ -4,6 +4,7 @@
 
 Running the `./setup.sh` script with the `restore_backup_file` flag will migrate content from the backup file of your original 1.x instance to the new instance, effectively migrating all job histories, templates, and other {PlatformNameShort} related content.
 
+.Procedure
 . Run the following command:
 +
 ----
