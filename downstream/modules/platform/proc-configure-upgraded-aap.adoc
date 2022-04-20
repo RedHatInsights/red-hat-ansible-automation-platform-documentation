@@ -1,8 +1,10 @@
-[id="proc-configure-upgraded-controller_{context}"]
+[id="proc-configure-upgraded-aap_{context}"]
 
-= Configure your upgraded Controller instance and instance groups
+= Configuring your upgraded {PlatformNameShort}
 
-With an upgraded {PlatformName} instance, associate your original instances to its corresponding instance groups by configuring the {ControllerName} settings:
+== Configuring {ControllerName} instance groups
+
+After upgrading your {PlatformName} instance, associate your original instances to its corresponding instance groups by configuring settings in the {ControllerName} UI:
 
 . Log in to new Controller instance
 . Content from old instance, such as credentials, jobs, inventories should now be visible on your Controller instance
