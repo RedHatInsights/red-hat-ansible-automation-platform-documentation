@@ -6,8 +6,8 @@
 
 Enable view-only access for your private {HubName} by editing the inventory file found on your {PlatformName} installer.
 
-* If you are installing a new instance of {PlatformNameShort}, follow these steps to add the `GALAXY_ENABLE_UNAUTHENTICATED_COLLECTION_ACCESS` parameter to your `inventory` file along with your other installation configurations:
-* If you are updating an existing {PlatformNameShort} installation to include view-only access, add the `GALAXY_ENABLE_UNAUTHENTICATED_COLLECTION_ACCESS` parameter to your `inventory` file then run the `setup.sh` script to apply the updates:
+* If you are installing a new instance of {PlatformNameShort}, follow these steps to add the `automationhub_enable_unauthenticated_collection_access` parameter to your `inventory` file along with your other installation configurations:
+* If you are updating an existing {PlatformNameShort} installation to include view-only access, add the `automationhub_enable_unauthenticated_collection_access` parameter to your `inventory` file then run the `setup.sh` script to apply the updates:
 
 .Procedure
 . Navigate to the installer.
@@ -24,12 +24,12 @@ $ cd ansible-automation-platform-setup-<latest-version>
 -----
 +
 . Open the `inventory` file with a text editor.
-. Add the `GALAXY_ENABLE_UNAUTHENTICATED_COLLECTION_ACCESS` parameter to the inventory file and set to `TRUE`, following the example below:
+. Add the `automationhub_enable_unauthenticated_collection_access` parameter to the inventory file and set to `True`, following the example below:
 +
 ----
 [all:vars]
 
-GALAXY_ENABLE_UNAUTHENTICATED_COLLECTION_ACCESS = True
+automationhub_enable_unauthenticated_collection_access = True
 ----
 . Run the `setup.sh` script. The installer will now enable view-only access to your {HubName}.
 
