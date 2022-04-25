@@ -15,7 +15,7 @@ The following specifications is required for the nodes involved in the {Platform
 . Red Hat Enterprise Linux 8 or later 64-bit (x86) installed for all nodes
 . Chrony configured for all nodes
 
-== {ControllerNameStart} Configuration requirements
+== {ControllerNameStart} configuration requirements
 
 .Configuring NTP server using Chrony
 
