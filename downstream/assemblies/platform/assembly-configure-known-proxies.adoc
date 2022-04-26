@@ -11,9 +11,9 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-include::platform/con-known-proxies.adoc[leveloffset=+2]
+include::platform/con-known-proxies.adoc[leveloffset=+1]
 
-include::platform/proc-configure-known-proxies.adoc[leveloffset=+2]
+include::platform/proc-configure-known-proxies.adoc[leveloffset=+1]
 
 
 

@@ -21,7 +21,7 @@ This example describes how you can populate the inventory file to deploy a stand
 
 
 [automationhub]
-<__IP_address_or_FQDN__> ansible_connection=local
+<__IP_address__> ansible_connection=local
 
 [database]
 host2
