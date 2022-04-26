@@ -7,7 +7,7 @@
 Enable view-only access for your private {HubName} by editing the inventory file found on your {PlatformName} installer.
 
 * If you are installing a new instance of {PlatformNameShort}, follow these steps to add the `automationhub_enable_unauthenticated_collection_access` and `automationhub_enable_unauthenticated_collection_download` parameters to your `inventory` file along with your other installation configurations:
-* If you are updating an existing {PlatformNameShort} installation to include view-only access, add the `automationhub_enable_unauthenticated_collection_access` and the `automationhub_enable_unauthenticated_collection_download` parameters to your `inventory` file then run the `setup.sh` script to apply the updates:
+* If you are updating an existing {PlatformNameShort} installation to include view-only access, add the `automationhub_enable_unauthenticated_collection_access` and `automationhub_enable_unauthenticated_collection_download` parameters to your `inventory` file then run the `setup.sh` script to apply the updates:
 
 .Procedure
 . Navigate to the installer.
