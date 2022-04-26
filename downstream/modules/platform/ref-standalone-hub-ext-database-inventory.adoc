@@ -14,12 +14,14 @@ This example describes how you can populate the inventory file to deploy a stand
 * Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` host to ensure users can sync and install content from {HubName} from a different node. Do not use 'localhost'.
 * Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
 ====
+
+[subs="+quotes"]
 -----
 [automationcontroller]
 
 
 [automationhub]
-127.0.0.1 ansible_connection=local
+<__IP_address_or_FQDN__> ansible_connection=local
 
 [database]
 host2

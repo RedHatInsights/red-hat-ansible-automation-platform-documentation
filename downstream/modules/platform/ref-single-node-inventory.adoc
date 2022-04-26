@@ -14,9 +14,10 @@ This example describes how you can populate the inventory file for a single node
 * Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
 ====
 
+[subs="+quotes"]
 -----
 [automationcontroller]
-127.0.0.1 ansible_connection=local
+<__IP_address__> ansible_connection=local
 
 [database]
 
