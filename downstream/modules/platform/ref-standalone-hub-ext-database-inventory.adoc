@@ -10,7 +10,7 @@ This example describes how you can populate the inventory file to deploy a stand
 
 [IMPORTANT]
 ====
-* For {PlatformName} or {HubName}: Add an {HubName} host in the `[automationhub] group. You cannot install {ControllerName} and {HubName} on the same node.
+* For {PlatformName} or {HubName}: Add an {HubName} host in the `[automationhub]` group. You cannot install {ControllerName} and {HubName} on the same node.
 * Provide a fully qualified domain name (FDQN) for the `[automationhub]` host to ensure users can sync and install content from {HubName} from a different node. Do not use 'localhost'.
 * Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
 ====
@@ -21,7 +21,6 @@ This example describes how you can populate the inventory file to deploy a stand
 
 
 [automationhub]
-<__IP_address__> ansible_connection=local
 <__automation_hub_FQDN__>
 
 [database]
