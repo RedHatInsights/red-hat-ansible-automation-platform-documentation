@@ -17,7 +17,7 @@ This example describes how you can populate the inventory file to deploy an inst
 [subs="+quotes"]
 -----
 [automationcontroller]
-<__IP_address__> ansible_connection=local
+<__automation_controller_FQDN__>
 
 
 [database]
