@@ -1,9 +1,10 @@
 // Module included in the following assemblies:
 // obtaining-token/master.adoc
 [id="proc-set-community-remote"]
-= Configuring the community remote repository and syncing Ansible Galaxy collections.
+= Configuring the community remote repository and syncing Ansible Galaxy collections
 
-You can edit the *community* remote repository to sync chosen collections from Ansible Galaxy to your local Automation Hub. By default, your local Automation Hub `community` repository directs to `https://galaxy.ansible.com/api/v2/collections`.
+You can edit the *community* remote repository to sync chosen collections from Ansible Galaxy to your local Automation Hub.
+By default, your local Automation Hub `community` repository directs to `https://galaxy.ansible.com/api/`.
 
 .Prerequisites
 
