@@ -8,7 +8,7 @@ Running the `./setup.sh` script with the `restore_backup_file` flag will migrate
 . Run the following command:
 +
 ----
-$ ./setup.sh -r -e ‘restore_backup_file=/mybackup/tower-backup-latest.tar.gz’ -e ‘user_compression=True’ -e @credentials.yml -r -- --ask-vault-pass <1><2><3>
+$ ./setup.sh -r -e ‘restore_backup_file=/ansible/mybackup/tower-backup-latest.tar.gz’ -e ‘use_compression=True’ -e @credentials.yml -r -- --ask-vault-pass <1><2><3>
 ----
 <1> `restore_backup_file` specifies the location of the {PlatformNameShort} backup database
 <2> `use_compression` is set to `True` due to compression being used during the backup process

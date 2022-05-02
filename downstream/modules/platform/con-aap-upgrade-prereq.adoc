@@ -72,8 +72,13 @@ The following examples uses `ansible` to name this user. On all nodes used in th
 . Set a password for your user:
 +
 ----
-# passwd <password>
+# passwd ansible <1>
+Changing password for ansible.
+Old Password:
+New Password:
+Retype New Password:
 ----
+<1> Replace `ansible` with the non-root user from step 1, if using a different name
 . Generate an `ssh` key as the user:
 +
 ----
@@ -108,7 +113,7 @@ Configure the firewall settings on all the nodes used in the upgraded {PlatformN
 . Enable the `firewalld` service:
 +
 ----
-# systemctl enable firewalld
+# systemctl enable --now firewalld
 ----
 
 
