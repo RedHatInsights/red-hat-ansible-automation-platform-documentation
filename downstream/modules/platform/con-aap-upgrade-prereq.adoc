@@ -4,22 +4,22 @@
 
 == Node requirements
 
-The following specifications is required for the nodes involved in the {PlatformNameShort} upgrade process:
+The following specifications are required for the nodes involved in the {PlatformNameShort} upgrade process:
 
-. 16 GB of RAM for controller nodes, database node, execution nodes and hop nodes
-. 4 CPUs for controller nodes, database nodes, execution nodes and hop nodes
-. 150 GB+ disk space for database node
-. 40 GB+ disk space for non-database nodes
-. DHCP reservations use infinite leases to deploy the cluster with static IP addresses.
-. DNS records for all nodes
-. Red Hat Enterprise Linux 8 or later 64-bit (x86) installed for all nodes
-. Chrony configured for all nodes
+* 16 GB of RAM for controller nodes, database node, execution nodes and hop nodes.
+* 4 CPUs for controller nodes, database nodes, execution nodes, and hop nodes.
+* 150 GB+ disk space for database node.
+* 40 GB+ disk space for non-database nodes.
+* DHCP reservations use infinite leases to deploy the cluster with static IP addresses.
+* DNS records for all nodes.
+* Red Hat Enterprise Linux 8 or later 64-bit (x86) installed for all nodes.
+* Chrony configured for all nodes.
 
 == {ControllerNameStart} configuration requirements
 
 .Configuring NTP server using Chrony
 
-Each {PlatformNameShort} node in the cluster must have access to an NTP server. Use the `chronyd` to synchronize the system clock with NTP servers. This ensures that when cluster nodes use SSL certificates that require validation, they don’t fail if the date and time between the nodes are not in sync.
+Each {PlatformNameShort} node in the cluster must have access to an NTP server. Use the `chronyd` to synchronize the system clock with NTP servers. This ensures that when cluster nodes use SSL certificates that require validation, they do not fail if the date and time between the nodes are not in sync.
 
 This is required for all nodes used in the upgraded {PlatformNameShort} cluster:
 
@@ -28,7 +28,7 @@ This is required for all nodes used in the upgraded {PlatformNameShort} cluster:
 ----
 # dnf install chrony --assumeyes
 ----
-. Open `/etc/chrony.conf` using a text editor
+. Open `/etc/chrony.conf` using a text editor.
 . Locate the public server pool section and modify it to include the appropriate NTP server addresses. Only one server is required, but three is recommended. The `iburst` option is added to speed up the time that it takes to properly sync with the servers:
 +
 ----
@@ -36,8 +36,8 @@ This is required for all nodes used in the upgraded {PlatformNameShort} cluster:
 # Please consider joining the pool (http://www.pool.ntp.org/join.html).
 server <ntp-server-address> iburst
 ----
-. Save changes within the `/etc/chrony.conf` file
-. Start the host and enable the chronyd daemon:
+. Save changes within the `/etc/chrony.conf` file.
+. Start the host and enable the `chronyd` daemon:
 +
 ----
 # systemctl --now enable chronyd.service
@@ -58,9 +58,9 @@ If there is not a Red Hat subscription attached to the node, see the https://acc
 .Creating non-root user with sudo privileges
 Prior to your upgrade of {PlatformNameShort}, it is recommended to create a non-root user with sudo privileges for the deployment process. This user is used for:
 
-* SSH connectivity
-* passwordless authentication during installation
-* Privilege escalation (sudo) permissions
+* SSH connectivity.
+* Passwordless authentication during installation.
+* Privilege escalation (sudo) permissions.
 
 The following examples uses `ansible` to name this user. On all nodes used in the upgraded {PlatformNameShort} cluster, create a non-root user named `ansible` and generate an ssh key:
 
@@ -121,7 +121,7 @@ Configure the firewall settings on all the nodes used in the upgraded {PlatformN
 
 .Configuring firewall settings for execution and hop nodes
 
-After upgrading your {PlatformName} instance, add the automation mesh port on the mesh nodes(execution and hop nodes) to enable automation mesh functionality. The default port used for the mesh networks on all the nodes is set to `27199/tcp`, however it can also be configured to use a different port by specifying `receptor_listener_port` as each node’s variable within your `inventory` file.
+After upgrading your {PlatformName} instance, add the automation mesh port on the mesh nodes (execution and hop nodes) to enable automation mesh functionality. The default port used for the mesh networks on all the nodes is set to `27199/tcp`, however it can also be configured to use a different port by specifying `receptor_listener_port` as each node’s variable within your `inventory` file.
 
 Within your hop and execution node set the `firewalld` port to be used for installation.
 
@@ -130,7 +130,7 @@ Within your hop and execution node set the `firewalld` port to be used for insta
 ----
 $ sudo systemctl status firewalld
 ----
-. Add the `firewalld` port to your controller database node (e.g. port 27199)":
+. Add the `firewalld` port to your controller database node (e.g. port 27199):
 +
 ----
 $ sudo firewall-cmd --permanent --zone=public --add-port=27199/tcp

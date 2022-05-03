@@ -8,7 +8,6 @@ To proceed with the side-by-side upgrade process, deploy a second instance of An
 
 Start by downloading the Tower installer version that matches your original Tower instance version, then running the installer:
 
-.Procedure
 . Download the Tower installer version that matches your original Tower instance by navigating to this link: https://releases.ansible.com/ansible-tower/setup/
 . Navigate to the installer, then open the `inventory` file using a text editor to configure the `inventory` file for a Tower installation:
 .. In addition to any Tower configurations, remove any fields containing `isolated_group` or `instance_group`.
@@ -24,10 +23,9 @@ Log in to your new instance of Ansible Tower and configure the instance groups t
 
 NOTE: Make note of all instance groups from your original Tower instance. You will need to recreate these groups in your new instance.
 
-.Procedure
 . Log in to your new instance of Tower.
-. On the side panel, navigate to Administration > *Instance groups*.
+. On the side panel, navigate to *Administration* > *Instance groups*.
 . Recreate instance groups from your original instance:
 .. Click *+* > *Create instance group*.
-.. Enter a Name that matches an instance group from your original instance, then click *Save*.
+.. Enter a *Name* that matches an instance group from your original instance, then click *Save*.
 .. Repeat until all instance groups from your original instance have been recreated.

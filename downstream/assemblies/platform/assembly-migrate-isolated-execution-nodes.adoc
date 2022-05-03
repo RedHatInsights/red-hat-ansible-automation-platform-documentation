@@ -10,15 +10,15 @@ To do so, this guide outlines the steps to perform a side-by-side migration. Thi
 
 Below is a summary of steps needed to complete the migration process:
 
-. Verify upgrade configurations
-. Backup original instance
-. Deploy new instance for a side-by-side upgrade
-.. Recreate instance groups in the new instance using Ansible Tower
-. Restore original backup to new instance
-. Set up execution nodes and upgrade instance to {PlatformName} {PlatformVers}
-. Configure upgraded Controller instance
+. Verify upgrade configurations.
+. Backup original instance.
+. Deploy new instance for a side-by-side upgrade.
+. Recreate instance groups in the new instance using ansible controller.
+. Restore original backup to new instance.
+. Set up execution nodes and upgrade instance to {PlatformName} {PlatformVers}.
+. Configure upgraded controller instance.
 
-Before the migration process, please review the following prerequisites:
+Before the migration process, please review the prerequisites described in the following section.
 
 include::platform/con-aap-upgrade-prereq.adoc[leveloffset=+1]
 

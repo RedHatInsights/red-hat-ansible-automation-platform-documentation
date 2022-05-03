@@ -2,9 +2,8 @@
 
 = Upgrading to {PlatformNameShort} {PlatformVers}
 
-To upgrade your new instance of {PlatformNameShort} to {PlatformNameShort} {PlatformVers}, start by copying the `inventory` file from your original instance to your new instance, then running the installer. The {PlatformName} installer will detect a pre-{PlatformVers} and offer an upgraded `inventory` file for you to continue with the upgrade process:
+To upgrade your instance of Ansible Tower to {PlatformNameShort} {PlatformVers}, start by copying the `inventory` file from your original Tower instance to your new instance, then running the installer. The {PlatformName} installer will detect a pre-{PlatformVers} and offer an upgraded `inventory` file for you to continue with the upgrade process:
 
-.Procedure
 . Download the latest installer for {PlatformName} here: https://access.redhat.com/downloads/content/480
 . Extract the files:
 +
@@ -62,7 +61,7 @@ node_type=execution
 ----
 <1> Specifies a control node that run project and inventory updates and system jobs, but not regular jobs. Execution capabilities are disabled on these nodes.
 <2> Specifies peer relationships for node-to-node connections in the `[execution_nodes]` group.
-<3> Specifies hop nodes, which routes traffic to other execution nodes. Hop nodes cannot execute automation.
+<3> Specifies hop nodes, which route traffic to other execution nodes. Hop nodes cannot execute automation.
 . Once you have finished configuring your `inventory.new.ini` for automation mesh, run the setup script using `inventory.new.ini`:
 +
 ----
