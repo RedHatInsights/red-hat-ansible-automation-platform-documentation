@@ -1,0 +1,18 @@
+[[catalog-05-2022]]
+= Automation Services Catalog
+
+Automation Services Catalog provides lifecycle management, provisioning, retirement and cataloging of your automation resources. It works across multiple Ansible Automation Platform clusters allowing holistic analytics of automation across your entire infrastructure. It provides access to automation content in physical, virtual, cloud and container environments. Use this catalog when you need to control, organize, govern, and share automation content as well as when you must meet security and compliance requirements regarding the use of content.
+
+.Enhancements
+
+* Private Automation Services Catalog can now be installed on a physical/virtual instance
+* Red Hat Single Sign On can now be installed on a separate physical/virtual instance
+* Added role-based access for users and groups
+* Added ability to order products that contain job templates or workflows within portfolios
+* Extended metadata to describe products
+* Added functionality for an admin to share Portfolios to users
+* Added functionality to copy products and portfolios
+* Added option for multi-level approval process before a product can be executed
+* Added the approver role, who can approve, deny, or memo approval requests in a queue
+* Added ability to email approval requests
+* Added rebranding functionality to allow customers to change the default product icons/logos to match their organization

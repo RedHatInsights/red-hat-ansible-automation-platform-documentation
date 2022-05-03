@@ -1,0 +1,15 @@
+[[aap-2.2-intro]]
+= Ansible Automation Platform 2.2
+
+Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
+
+.Enhancements
+
+* Added the Automation Services Catalog as a component for the Ansible Automation Platform
+* Added support for RHEL 9 for automation controller, private automation hub, and private services catalog
+* Components of the Ansible Automation Platform now run with python 3.9 runtime
+* Ansible Automation Platform now deploys with PostgreSQL 13, Nginx 1.20 and Redis 6
+* The Ansible Automation Platform installer will now use certificates signed by a common certificate authority (CA) when certificates are not provided
+* The Ansible Automation Platform installer is now provided as a package in the automation platform channels, allowing users to retrieve the installer without leaving their server using the `dnf install` command
+* Added Korean localization in the UI for automation controller, automation hub, and services catalog
+* Added ansible-core 2.13 to the ee-minimal and ee-supported containers

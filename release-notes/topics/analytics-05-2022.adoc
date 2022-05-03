@@ -1,0 +1,9 @@
+[[analytics-05-2022]]
+= Automation Analytics
+
+Red Hat Automation Analytics give you analytics and real-time feedback about your automation deployments through insights and governance which allow you to view information about automation health, usage, and performance across your enterprise.
+
+.Enhancements
+
+* Added several new reports regarding Ansible modules usage, including most used modules, modules usage by organization, job template, and task
+* Enhanced the automation calculator report to include savings of costs, as well as updated graph and tables
