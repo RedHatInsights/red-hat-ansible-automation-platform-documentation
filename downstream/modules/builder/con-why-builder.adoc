@@ -6,4 +6,4 @@ Before {Builder} was developed, Automation Platform users would potentially run 
 
 Through the use of an easily customizable definition file, {Builder} installs Ansible, specified Collections and any of its dependencies so that all of the necessary requirements to get jobs running are fulfilled behind the scenes.
 
-NOTE: If the end user chooses to provide their own container image when building execution environments, they will not be supported by Red Hat.
+NOTE: Red Hat currently does not support users who choose to provide their own container images when building automation execution environments.
