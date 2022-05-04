@@ -21,7 +21,7 @@ This example describes how you can populate the inventory file to deploy a stand
 
 
 [automationhub]
-<__automation_hub_FQDN__>
+<__automation_hub_FQDN__> ansible_python_interpreter=/usr/bin/python3
 
 [database]
 host2
