@@ -1,0 +1,30 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="con-aap-aws-about"]
+
+= About {AAPonAzureName}
+
+[role="_abstract"]
+
+{AAPonAWSNameShort} provides access to a library of Ansible content collections so you can start deploying, configuring, and managing infrastructure and applications quickly.
+
+The following {PlatformName} components are available on {AAPonAWSNameShort}:
+
+* Automation Controller
+* Automation Hub
+* Private Automation Hub
+* Automation Service Catalog
+* Ansible Content Collections
+* Automation Execution Environment
+* Ansible content tools, including access to {InsightsName}
+
+
+[NOTE]
+====
+Automation mesh is not available on {AAPonAWSNameShort}.
+====
