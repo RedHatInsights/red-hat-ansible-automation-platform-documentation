@@ -7,7 +7,7 @@ Base the file name and the ID on the module title. For example:
 
 [id="con-aap-aws-about"]
 
-= About {AAPonAzureName}
+= About {AAPonAWSName}
 
 [role="_abstract"]
 
