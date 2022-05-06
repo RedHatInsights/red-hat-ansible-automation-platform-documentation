@@ -11,6 +11,8 @@
 // AAP on Clouds
 :AAPonAzureName: Red Hat Ansible Automation Platform on Microsoft Azure
 :AAPonAzureNameShort: Ansible Automation Platform on Microsoft Azure
+:AAPonAWSName: Red Hat Ansible Automation Platform on AWS
+:AAPonAWSNameShort: Ansible Automation Platform on AWS
 
 // Automation Mesh
 :AutomationMesh: automation mesh
