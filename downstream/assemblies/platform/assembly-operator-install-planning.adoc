@@ -17,6 +17,7 @@ OpenShift operators help install and automate day-2 operations of complex, distr
 You can use this section to help plan your {PlatformName} installation on your {OCP} environment. Before installing, review the supported installation scenarios to determine which meets your requirements.
 
 include::platform/con-about-operator.adoc[leveloffset=2]
+include::platform/ref-operator-ocp-version.adoc[leveloffset=2]
 include::platform/con-ocp-supported-install.adoc[leveloffset=2]
 include::platform/con-operator-custom-resources.adoc[leveloffset=2]
 include::platform/con-operator-additional-resources.adoc[leveloffset=2]
