@@ -6,7 +6,7 @@ include::topics/upgrading.adoc[leveloffset=+1]
 
 [[anchor-may-2022-release]]
 == May 2022 release
-This release includes a number of enhancements, additions and fixes that have been implemented in the Red Hat Ansible Automation Platform.
+This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
 
 include::topics/aap-22.adoc[leveloffset=+2]
 
@@ -16,7 +16,7 @@ include::topics/analytics-05-2022.adoc[leveloffset=+2]
 
 include::topics/catalog-05-2022.adoc[leveloffset=+2]
 
-include::topics/controller-412.adoc[leveloffset=+2]
+include::topics/controller-420.adoc[leveloffset=+2]
 
 [[anchor-february-2022-release]]
 == February 2022 release

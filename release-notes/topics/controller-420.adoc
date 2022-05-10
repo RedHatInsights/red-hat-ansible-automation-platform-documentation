@@ -1,5 +1,5 @@
-[[controller-412-intro]]
-= Automation controller 4.1.2
+[[controller-420-intro]]
+= Automation Controller 4.2.0
 
 Automation controller replaces Ansible Tower.
 Automation controller introduces a distributed, modular architecture with a decoupled control and execution plane.
@@ -16,4 +16,4 @@ Automation controller provides a standardized way to define, operate and delegat
 * Added ability to flag users as superusers and auditors in SAML integration
 * Automation controller now uses Python 3.9
 
-See https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[automation controller Release Notes for 4.x] for a full list of new features and enhancements.
+See link:https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[automation controller Release Notes for 4.x] for a full list of new features and enhancements.

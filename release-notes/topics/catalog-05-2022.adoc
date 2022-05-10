@@ -6,7 +6,7 @@ Automation Services Catalog provides lifecycle management, provisioning, retirem
 .Enhancements
 
 * Private Automation Services Catalog can now be installed on a physical/virtual instance
-* Red Hat Single Sign On can now be installed on a separate physical/virtual instance
+* Red Hat Single Sign-On can now be installed on a separate physical/virtual instance
 * Added role-based access for users and groups
 * Added ability to order products that contain job templates or workflows within portfolios
 * Extended metadata to describe products
