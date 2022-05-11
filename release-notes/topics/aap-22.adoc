@@ -5,14 +5,16 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 .Enhancements
 
-* Added the Automation Services Catalog as an on-prem component for the Ansible Automation Platform
-* Added support for RHEL 9 for automation controller, private automation hub, and private services catalog
-* Components of the Ansible Automation Platform now run with python 3.9 runtime
-* Ansible Automation Platform now deploys with PostgreSQL 13, Nginx 1.20 and Redis 6
-* The Ansible Automation Platform installer will now use certificates signed by a common certificate authority (CA) when certificates are not provided
-* The Ansible Automation Platform installer is now provided as a package in the automation platform channels, allowing users to retrieve the installer without leaving their server using the `dnf install` command
-* Added Korean localization in the UI for automation controller, automation hub, and services catalog
-* Added ansible-core 2.13 to the ee-minimal and ee-supported containers
+* Added the Automation Services Catalog as an on-prem component for the Ansible Automation Platform. Automation Services Catalog is is a Technology Preview supported feature in Ansible Automation Platform 2.2.
+* Added support for RHEL 9 for automation controller, private automation hub, and private services catalog.
+* Components of the Ansible Automation Platform now run with python 3.9 runtime.
+* Ansible Automation Platform now deploys with PostgreSQL 13, Nginx 1.20 and Redis 6.
+* The Ansible Automation Platform installer will now use certificates signed by a common certificate authority (CA) when certificates are not provided.
+* The Ansible Automation Platform installer is now provided as a package in the automation platform channels, allowing users to retrieve the installer without leaving their server using the `dnf install` command.
+* Added Korean localization in the UI for automation controller, automation hub, and services catalog.
+* Added ansible-core 2.13 to the ee-minimal and ee-supported containers.
+* Added collection signing and verification as Technology Preview supported features in Ansible Automation hub.
+* Added support for the advisor, drift, and policies features of Red Hat Insights.
 
 Other noteworthy developer tooling updates include the following:
 

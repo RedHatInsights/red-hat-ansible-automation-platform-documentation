@@ -5,5 +5,7 @@ Red Hat Automation Analytics give you analytics and real-time feedback about you
 
 .Enhancements
 
-* Added several new reports regarding Ansible modules usage, including most used modules, modules usage by organization, job template, and task
-* Enhanced the automation calculator report to include savings of costs, as well as updated graph and tables
+* Added several new reports regarding Ansible modules usage, including most used modules, modules usage by organization, job template, and task.
+* Enhanced the automation calculator report to include savings of costs, as well as updated graph and tables.
+* Added the ability to save reports as PDF.
+* Added the ability to email reports to external recipients.

@@ -10,7 +10,7 @@ This release includes a number of enhancements, additions, and fixes that have b
 
 include::topics/aap-22.adoc[leveloffset=+2]
 
-include::topics/hub-442.adoc[leveloffset=+2]
+include::topics/hub-450.adoc[leveloffset=+2]
 
 include::topics/analytics-05-2022.adoc[leveloffset=+2]
 
