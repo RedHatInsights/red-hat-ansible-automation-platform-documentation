@@ -12,12 +12,12 @@ Base the file name and the ID on the module title. For example:
 .Prerequisites
 
 * You have deployed Ansible Automation Platform on Microsoft Azure.
-* You have configured and tested an Azure VNet hub-and-spoke implementation in your Azure tenant.
+* You have configured and tested an Azure VNet hub-and-spoke implementation in your Azure tenant. This prerequisite requires many Azure resources to be configured, including a Virtual Network Gateway.
 * You have configured transit routing between your spoke networks, including your VPNs. Refer to link:https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-peering-gateway-transit[Configure VPN gateway transit for virtual network peering] in the Microsoft Azure documentation for instructions.
 * You have identified the following:
 ** The CIDR block(s) of your existing VNets (including VPNs & direct connects) that will need access to Ansible Automation Platform on Azure UIs.
 ** The CIDR block(s) of your existing VNets (including VPNs & direct connects) that will contain hosts or endpoints for Ansible automation.
-** The CIDR blocks of the Ansible Automation Platform Kubernetes network from the managed resource group of the application. Refer to xref:proc-azure-find-cluster-cidr[Finding the CIDR Block of the managed application Kubernetes cluster] for instructions.
+** The CIDR blocks of the Ansible Automation Platform VNET from the managed resource group of the application. Refer to xref:proc-azure-find-cluster-cidr[Finding the CIDR Block of the managed resource group] for instructions.
 
 Before peering any networks, ensure that there is no network address space overlap between your private VNets and your Ansible Automation Platform on Azure network.
 
