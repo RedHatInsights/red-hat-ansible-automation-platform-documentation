@@ -50,7 +50,7 @@ The installation process will begin. When installation is complete a modal will 
 {OCP} clusters running on AWS do not support ReadWriteMany without adding NFS or other storage.
 ====
 
-.Prodecure
+.Procedure
 
 . Navigate to *Operators* -> *Installed Operators*.
 . Locate the {HubName} operator and click on it.

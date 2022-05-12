@@ -14,7 +14,7 @@ As an Ansible Tower system administrator, you can create the application token l
 .Creating a new application for Automation Services Catalog
 
 . Log in to your Ansible Tower instance.
-. Navigate to *Adminstration* -> *Applications*.
+. Navigate to *Administration* -> *Applications*.
 . Click image:images/plus_icon.png[Add,40,40].
 . Enter or select the following in the required fields for the *New Application*:
 .. *Name*: Automation Services Catalog.

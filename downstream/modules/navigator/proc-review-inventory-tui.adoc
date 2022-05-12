@@ -43,7 +43,7 @@ Optional: type `ansible-navigator inventory -i simple_inventory.yml` from the co
 2│ungrouped          all                           group
 ----
 +
-The `TAXONOMY` field details the heirarchy of groups the selected group or node belongs to.
+The `TAXONOMY` field details the hierarchy of groups the selected group or node belongs to.
 
 . Type the number corresponding to the group you want to delve into.
 +
