@@ -11,7 +11,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-Use the following sections learn how to use the `awx-manage` commmand to assist with additional steps in the migration process once you have upgraded to {PlatformName} 2.0 and {ControllerName} 4.0. Additionally, learn more about migrating between versions of Ansible.
+Use the following sections learn how to use the `awx-manage` command to assist with additional steps in the migration process once you have upgraded to {PlatformName} 2.0 and {ControllerName} 4.0. Additionally, learn more about migrating between versions of Ansible.
 
 
 include::assembly-virt-env-to-ee.adoc[leveloffset=+1]
