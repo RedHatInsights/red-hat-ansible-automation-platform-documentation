@@ -48,7 +48,7 @@ Order of operations:
 
 Playbook Inventory:
 1. if customers want to use any of the before objects the ansible tower operator needs to set stats with whatever value they want to expose to c.rh.c
-2.. The post_set_Stats playbook will gather all the substitued fields and use them in executing the job.
+2.. The post_set_Stats playbook will gather all the substituted fields and use them in executing the job.
 
 Tower:
 2. In the playbook used to run as the before, edit the survey to include one of the variables that gets passed back to ASC

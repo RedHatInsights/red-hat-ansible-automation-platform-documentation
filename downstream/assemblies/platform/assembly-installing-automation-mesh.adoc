@@ -10,7 +10,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-You can install an {AutomationMesh} using the instructions found in the {PlatformName} Installation Guide. {PlatformNameShort} installations are seperated into unique scenarios based on the components deployed. You can incorporate {AutomationMesh} designs based on which platform components you intend to deploy in your environment. Review the systems requirements for each component and {AutomationMesh} node type before proceeding with your installation.
+You can install an {AutomationMesh} using the instructions found in the {PlatformName} Installation Guide. {PlatformNameShort} installations are separated into unique scenarios based on the components deployed. You can incorporate {AutomationMesh} designs based on which platform components you intend to deploy in your environment. Review the systems requirements for each component and {AutomationMesh} node type before proceeding with your installation.
 
 
 [role="_additional-resources"]
