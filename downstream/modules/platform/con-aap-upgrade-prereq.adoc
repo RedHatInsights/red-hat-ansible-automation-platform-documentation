@@ -2,6 +2,8 @@
 
 = Prerequisites for upgrading {PlatformNameShort}
 
+Before you begin to upgrade {PlatformNameShort}, ensure your environment meets the following node and configuration requirements.
+
 == Node requirements
 
 The following specifications are required for the nodes involved in the {PlatformNameShort} upgrade process:
@@ -16,10 +18,11 @@ The following specifications are required for the nodes involved in the {Platfor
 * Chrony configured for all nodes.
 
 == {ControllerNameStart} configuration requirements
+The following {ControllerName} configurations are required before you proceed with the {PlatformNameShort} upgrade process:
 
 .Configuring NTP server using Chrony
 
-Each {PlatformNameShort} node in the cluster must have access to an NTP server. Use the `chronyd` to synchronize the system clock with NTP servers. This ensures that when cluster nodes use SSL certificates that require validation, they do not fail if the date and time between the nodes are not in sync.
+Each {PlatformNameShort} node in the cluster must have access to an NTP server. Use the `chronyd` to synchronize the system clock with NTP servers. This ensures that cluster nodes using SSL certificates that require validation do not fail if the date and time between nodes are not in sync.
 
 This is required for all nodes used in the upgraded {PlatformNameShort} cluster:
 
@@ -29,7 +32,7 @@ This is required for all nodes used in the upgraded {PlatformNameShort} cluster:
 # dnf install chrony --assumeyes
 ----
 . Open `/etc/chrony.conf` using a text editor.
-. Locate the public server pool section and modify it to include the appropriate NTP server addresses. Only one server is required, but three is recommended. The `iburst` option is added to speed up the time that it takes to properly sync with the servers:
+. Locate the public server pool section and modify it to include the appropriate NTP server addresses. Only one server is required, but three are recommended. Add the 'iburst' option to speed up the time it takes to properly sync with the servers:
 +
 ----
 # Use public servers from the pool.ntp.org project.
@@ -49,20 +52,20 @@ server <ntp-server-address> iburst
 ----
 
 .Attaching Red Hat subscription on all nodes
-{PlatformName} requires that you have valid subscriptions attached to all nodes. You can verify if your current node has a Red Hat subscription by running the following command:
+{PlatformName} requires you to have valid subscriptions attached to all nodes. You can verify that your current node has a Red Hat subscription by running the following command:
 ----
 # subscription-manager list --consumed
 ----
-If there is not a Red Hat subscription attached to the node, see the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#proc-attaching-subscriptions_planning[attaching your {PlatformNameShort} subscription] guide on how to do so.
+If there is not a Red Hat subscription attached to the node, see https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#proc-attaching-subscriptions_planning[attaching your {PlatformNameShort} subscription] for more information.
 
 .Creating non-root user with sudo privileges
-Prior to your upgrade of {PlatformNameShort}, it is recommended to create a non-root user with sudo privileges for the deployment process. This user is used for:
+Before you upgrade {PlatformNameShort}, it is recommended to create a non-root user with sudo privileges for the deployment process. This user is used for:
 
 * SSH connectivity.
 * Passwordless authentication during installation.
 * Privilege escalation (sudo) permissions.
 
-The following examples uses `ansible` to name this user. On all nodes used in the upgraded {PlatformNameShort} cluster, create a non-root user named `ansible` and generate an ssh key:
+The following example uses `ansible` to name this user. On all nodes used in the upgraded {PlatformNameShort} cluster, create a non-root user named `ansible` and generate an ssh key:
 
 . Create a non-root user:
 +
@@ -91,11 +94,11 @@ $ ssh-keygen -t rsa
 ----
 
 .Copying SSH keys to all nodes
-WIth the `ansible` user created, copy the `ssh` key to all the nodes used in the upgraded {PlatformNameShort} cluster. This ensures that when the {PlatformNameShort} installation runs, it can `ssh` to all the nodes without a password:
+With the `ansible` user created, copy the `ssh` key to all the nodes used in the upgraded {PlatformNameShort} cluster. This ensures that when the {PlatformNameShort} installation runs, it can `ssh` to all the nodes without a password:
 ----
 $ ssh-copy-id ansible@node-1.example.com
 ----
-NOTE: If running within a cloud provider, you may need to instead create an `~/.ssh/authorized_keys` file containing the public key for the `ansible` user on all your nodes and set the permissions to the `authorized_keys` file to only the owner (`ansible`) having read and write access (permissions 600).
+NOTE: If running within a cloud provider, you might need to instead create an `~/.ssh/authorized_keys` file containing the public key for the `ansible` user on all your nodes and set the permissions to the `authorized_keys` file to only the owner (`ansible`) having read and write access (permissions 600).
 
 .Configuring firewall settings
 Configure the firewall settings on all the nodes used in the upgraded {PlatformNameShort} cluster to permit access to the appropriate services and ports for a successful {PlatformNameShort} upgrade. For Red Hat Enterprise Linux 8 or later, enable the `firewalld` daemon to enable the access needed for all nodes:
@@ -118,10 +121,11 @@ Configure the firewall settings on all the nodes used in the upgraded {PlatformN
 
 
 == {PlatformNameShort} configuration requirements
+The following {PlatformNameShort} configurations are required before you proceed with the {PlatformNameShort} upgrade process:
 
 .Configuring firewall settings for execution and hop nodes
 
-After upgrading your {PlatformName} instance, add the automation mesh port on the mesh nodes (execution and hop nodes) to enable automation mesh functionality. The default port used for the mesh networks on all the nodes is set to `27199/tcp`, however it can also be configured to use a different port by specifying `receptor_listener_port` as each node’s variable within your `inventory` file.
+After upgrading your {PlatformName} instance, add the automation mesh port on the mesh nodes (execution and hop nodes) to enable automation mesh functionality. The default port used for the mesh networks on all nodes is `27199/tcp`. You can configure the mesh network to use a different port by specifying `recptor_listener_port` as the variable for each node within your inventory file.
 
 Within your hop and execution node set the `firewalld` port to be used for installation.
 

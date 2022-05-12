@@ -4,11 +4,11 @@ ifdef::context[:parent-context: {context}]
 = Upgrading isolated nodes to execution nodes
 
 [role="_abstract"]
-When upgrading from version 1.x to the latest version of the {PlatformName}, platform administrators will need to migrate the data from their legacy isolated nodes into execution nodes, which will be necessary to deploy automation mesh.
+Upgrading from version 1.x to the latest version of the {PlatformName} requires platform administrations to migrate data from isolated legacy nodes to execution nodes. This migration is necessary to deploy the automation mesh.
 
-To do so, this guide outlines the steps to perform a side-by-side migration. This migration involves duplicating your original {PlatformName} instance with all its data and nodes, then performing an upgrade on the duplicate instance. This ensures that the data on your original automation environment will remain untouched while performing your upgrade and migration process.
+This guide explains how to perform a side-by-side migration. This ensures that the data on your original automation environment remains untouched during the migration process.
 
-Below is a summary of steps needed to complete the migration process:
+The migration process involves the following steps:
 
 . Verify upgrade configurations.
 . Backup original instance.
@@ -17,8 +17,6 @@ Below is a summary of steps needed to complete the migration process:
 . Restore original backup to new instance.
 . Set up execution nodes and upgrade instance to {PlatformName} {PlatformVers}.
 . Configure upgraded controller instance.
-
-Before the migration process, please review the prerequisites described in the following section.
 
 include::platform/con-aap-upgrade-prereq.adoc[leveloffset=+1]
 

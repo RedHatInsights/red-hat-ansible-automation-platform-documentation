@@ -18,9 +18,9 @@ include::platform/con-why-ee.adoc[leveloffset=+1]
 
 == About migrating legacy venvs to {ExecEnvName}
 
-If upgrading from older versions of {ControllerName} to 4.0 or later, the controller has the ability to detect previous versions of virtual environments associated with Organizations, Inventory, and Job Templates; and inform you that you will need to migrate to the new {ExecEnvName} model. A brand new installation of {ControllerName} creates two virtualenvs during installation--one is used to run the controller itself, while the other is used to run Ansible. Like legacy virtual environments, {ExecEnvName} allow the controller to run in a stable environment, while allowing you to add or update modules to your {ExecEnvName} as necessary to run your playbooks.
+When upgrading from older versions of {ControllerName} to version 4.0 or later, the controller can detect previous versions of virtual environments associated with Organizations, Inventory and Job Templates and informs you to migrate to the new {ExecEnvName} model. A new installation of {ControllerName} creates two virtualenvs during the installation; one runs the controller and the other runs Ansible. Like legacy virtual environments, {ExecEnvName} allow the controller to run in a stable environment, while allowing you to add or update modules to your {ExecEnvName} as necessary to run your playbooks.
 
-You can have the exact same setup in an {ExecEnvNameSing} that you had in a prior custom virtual environment by migrating them to the new {ExecEnvNameSing}. Use the `awx-manage` commands in this section to:
+You can duplicate your setup in an {ExecEnvNameSing} from a previous custom virtual environment by migrating them to the new {ExecEnvNameSing}. Use the `awx-manage` commands in this section to:
 
 * list of all the current custom virtual environments and their paths (`list_custom_venvs`)
 * view the resources that rely a particular custom virtual environment (`custom_venv_associations`)

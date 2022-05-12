@@ -14,4 +14,4 @@ By including these elements, Ansible provides platform administrators a standard
 
 Due to the new {ExecEnvNameSing}, it is no longer necessary for administrators to create custom plugins and automation content. Administrators can now spin up smaller {ExecEnvName} in less time to create their content.
 
-All custom dependencies are now defined at the development phase and are no longer defined at the administration/deployment phase. Decoupling from the control plane enables faster development cycles, scalability, reliability, and portability across environments. {ExecEnvNameStart} have enabled the {PlatformNameShort} to move to a distributed architecture, so administrators can scale automation across their organization.
+All custom dependencies are now defined in the development phase instead of the administration and deployment phase. Decoupling from the control plane enables faster development cycles, scalability, reliability, and portability across environments. {ExecEnvNameStart} enables the {PlatformNameShort} to move to a distributed architecture allowing administrators to scale automation across their organization.
