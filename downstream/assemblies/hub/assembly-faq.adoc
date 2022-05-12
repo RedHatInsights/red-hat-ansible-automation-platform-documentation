@@ -7,7 +7,7 @@ The Ansible Certification Program is a shared statement of support for Certified
 
 === How does the certification process work?
 
-Please visit Ansible.com/partners and review the Ansible certification policy guide to learn more about the certifcation process.
+Please visit Ansible.com/partners and review the Ansible certification policy guide to learn more about the certification process.
 
 === Why should I publish my collection to Automation Hub?
 

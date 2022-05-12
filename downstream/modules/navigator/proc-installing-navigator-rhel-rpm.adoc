@@ -46,6 +46,6 @@ $ dnf install ansible-navigator
 $ ansible-navigator --help
 ----
 
-The following example demostrates a successful installation:
+The following example demonstrates a successful installation:
 
 image::navigator-stdout.png[]
