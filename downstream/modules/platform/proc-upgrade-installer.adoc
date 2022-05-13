@@ -1,0 +1,74 @@
+[id="proc-upgrade-installer_{context}"]
+
+= Upgrading to {PlatformNameShort} {PlatformVers}
+
+To upgrade your instance of Ansible Tower to {PlatformNameShort} {PlatformVers}, copy the `inventory` file from your original Tower instance to your new Tower instance and run the installer. The {PlatformName} installer detects a pre-{PlatformVers} and offers an upgraded inventory file to continue with the upgrade process:
+
+. Download the latest installer for {PlatformName} from the link:https://access.redhat.com/downloads/content/480[Red Hat Customer Portal].
+. Extract the files:
++
+----
+$ tar xvzf ansible-automation-platform-setup-<latest-version>.tar.gz
+----
+. Navigate into your {PlatformNameShort} installation directory:
++
+----
+$ cd ansible-automation-platform-setup-<latest-version>/
+----
+. Copy the `inventory` file from your original instance into the directory of the latest installer:
++
+----
+$ cp ansible-tower-setup-3.8.x.x/inventory ansible-automation-platform-setup-<latest-version>
+----
+. Run the `setup.sh` script:
++
+----
+$ ./setup.sh
+----
++
+The setup script pauses and indicates that a "pre-2.x" inventory file was detected, but offers a new file called `inventory.new.ini` allowing you to continue to upgrade your original instance.
+
+. Open `inventory.new.ini` with a text editor.
++
+NOTE: By running the setup script, the Installer modified a few fields from your original inventory file, such as renaming [tower] to [automationcontroller].
+. Modify the newly generated `inventory.new.ini` file to configure your automation mesh by assigning relevant variables, nodes, and relevant node-to-node peer connections:
++
+NOTE: The design of your automation mesh topology depends on the automation needs of your environment. The example below offers one possible scenario for automation mesh design, and the design of your automation mesh topology depends on the automation needs of your environment. Review the full https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[{PlatformNameShort} automation mesh guide] for information on designing it for your needs.
++
+.Example inventory file with a standard control plane consisting of three nodes utilizing hop nodes:
+----
+[automationcontroller]
+control-plane-1.example.com
+control-plane-2.example.com
+control-plane-3.example.com
+
+[automationcontroller:vars]
+node_type=control <1>
+peers=execution_nodes <2>
+
+
+[execution_nodes]
+execution-node-1.example.com peers=execution-node-2.example.com
+execution-node-2.example.com peers=execution-node-3.example.com
+execution-node-3.example.com peers=execution-node-4.example.com
+execution-node-4.example.com peers=execution-node-5.example.com node_type=hop
+execution-node-5.example.com peers=execution-node-6.example.com node_type=hop <3>
+execution-node-6.example.com peers=execution-node-7.example.com
+execution-node-7.example.com
+
+[execution_nodes:vars]
+node_type=execution
+----
+<1> Specifies a control node that runs project and inventory updates and system jobs, but not regular jobs. Execution capabilities are disabled on these nodes.
+<2> Specifies peer relationships for node-to-node connections in the `[execution_nodes]` group.
+<3> Specifies hop nodes that route traffic to other execution nodes. Hop nodes cannot execute automation.
+. Once you have finished configuring your `inventory.new.ini` for automation mesh, run the setup script using `inventory.new.ini`:
++
+----
+$ ./setup.sh -i inventory.new.ini -e @credentials.yml -- --ask-vault-pass
+----
+. Once the installation completes, verify that your {PlatformNameShort} has been installed successfully by logging in to the {PlatformNameShort} dashboard UI across all automation controller nodes.
+
+.Additional resources
+* For general information on using the {PlatformNameShort} installer, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} installation guide].
+* For more information about automation mesh, see the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[{PlatformNameShort} automation mesh guide]
