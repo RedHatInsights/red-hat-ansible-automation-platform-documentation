@@ -4,7 +4,7 @@
 
 == Configuring {ControllerName} instance groups
 
-After upgrading your {PlatformName} instance, associate your original instances to its corresponding instance groups by configuring settings in the {ControllerName} UI:
+After upgrading your {PlatformName} instance, associate your original instance with its corresponding instance groups by configuring settings in the {ControllerName} UI:
 
 . Log into the new Controller instance.
 . Content from old instance, such as credentials, jobs, inventories should now be visible on your Controller instance.
