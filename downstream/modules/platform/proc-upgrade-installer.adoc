@@ -2,7 +2,7 @@
 
 = Upgrading to {PlatformNameShort} {PlatformVers}
 
-To upgrade your instance of Ansible Tower to {PlatformNameShort} {PlatformVers}, copy the `inventory` file from your original Tower instance to your new Tower instance and run the installer. The {PlatformName} installer detects a pre-{PlatformVers} and offers an upgraded inventory file to continue with the upgrade process:
+To upgrade your instance of Ansible Tower to {PlatformNameShort} {PlatformVers}, copy the `inventory` file from your original Tower instance to your new Tower instance and run the installer. The {PlatformName} installer detects a pre-{PlatformVers} inventory file and offers an upgraded inventory file to continue with the upgrade process:
 
 . Download the latest installer for {PlatformName} from the link:https://access.redhat.com/downloads/content/480[Red Hat Customer Portal].
 . Extract the files:
