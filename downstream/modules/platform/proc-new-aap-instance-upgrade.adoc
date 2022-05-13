@@ -1,0 +1,30 @@
+[id="proc-new-aap-instance-upgrade_{context}"]
+
+= Deploy a new instance for a side-by-side upgrade
+
+To proceed with the side-by-side upgrade process, deploy a second instance of Ansible Tower 3.8.x with the same instance group configurations. This new instance will receive the content and configuration from your original instance, and will later be upgraded to {PlatformName} {PlatformVers}.
+
+== Deploy a new instance of Ansible Tower
+
+To deploy a new Ansible Tower instance, do the following:
+
+. Download the Tower installer version that matches your original Tower instance by navigating to the link:https://releases.ansible.com/ansible-tower/setup/[Ansible Tower installer page].
+. Navigate to the installer, then open the `inventory` file using a text editor to configure the `inventory` file for a Tower installation:
+.. In addition to any Tower configurations, remove any fields containing `isolated_group` or `instance_group`.
++
+NOTE: For more information about installing Tower using the {PlatformNameShort} installer, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformNameShort} Installation Guide] for your specific installation scenario.
+. Run the `setup.sh` script to begin the installation.
+
+Once the new instance is installed, configure the Tower settings to match the instance groups from your original Tower instance.
+
+== Recreate instance groups in the new instance
+
+To recreate your instance groups in the new instance, do the following:
+
+NOTE: Make note of all instance groups from your original Tower instance. You will need to recreate these groups in your new instance.
+
+. Log in to your new instance of Tower.
+. On the side panel, navigate to menu:Administration[Instance groups].
+. Click the + button, then click btn:[Create instance group].
+. Enter a *Name* that matches an instance group from your original instance, then click btn:[Save].
+. Repeat until all instance groups from your original instance have been recreated.

@@ -1,0 +1,17 @@
+// [id="con-why-ee_{context}"]
+
+= Why upgrade to {ExecEnvName}?
+
+{PlatformName} {PlatformVers} introduces {ExecEnvName}. {ExecEnvNameStart} are container images that allow for easier administration of Ansible by including everything needed to run Ansible automation within a single container. Automation execution environments include:
+
+* RHEL UBI 8
+* Ansible 2.9 or Ansible Core 2.11
+* Python 3.8
+* Any Ansible Content Collections
+* Collection python or binary dependencies
+
+By including these elements, Ansible provides platform administrators a standardized way to define, build, and distribute the environments the automation runs in.
+
+Due to the new {ExecEnvNameSing}, it is no longer necessary for administrators to create custom plugins and automation content. Administrators can now spin up smaller {ExecEnvName} in less time to create their content.
+
+All custom dependencies are now defined in the development phase instead of the administration and deployment phase. Decoupling from the control plane enables faster development cycles, scalability, reliability, and portability across environments. {ExecEnvNameStart} enables the {PlatformNameShort} to move to a distributed architecture allowing administrators to scale automation across their organization.

@@ -34,5 +34,5 @@ awx-manage list_custom_venvs
 -----
 [NOTE]
 ====
-Pass the `-q` flag when running `awx-manage list_custom_venvs`to reduce output.
+Pass the `-q` flag when running `awx-manage list_custom_venvs` to reduce output.
 ====

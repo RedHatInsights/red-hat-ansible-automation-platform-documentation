@@ -1,0 +1,14 @@
+[id="proc-configure-upgraded-aap_{context}"]
+
+= Configuring your upgraded {PlatformNameShort}
+
+== Configuring {ControllerName} instance groups
+
+After upgrading your {PlatformName} instance, associate your original instance with its corresponding instance groups by configuring settings in the {ControllerName} UI:
+
+. Log into the new Controller instance.
+. Content from the old instance, such as credentials, jobs, inventories should now be visible on your Controller instance.
+. Navigate to menu:Administration[Instance Groups].
+. Associate execution nodes by clicking on an instance group, then click the *Instances* tab.
+. Click btn:[Associate]. Select the node(s) to associate to this instance group, then click btn:[Save].
+. You can also modify the default instance to disassociate your new execution nodes.
