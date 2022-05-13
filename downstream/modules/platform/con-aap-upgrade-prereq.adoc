@@ -32,7 +32,7 @@ This is required for all nodes used in the upgraded {PlatformNameShort} cluster:
 # dnf install chrony --assumeyes
 ----
 . Open `/etc/chrony.conf` using a text editor.
-. Locate the public server pool section and modify it to include the appropriate NTP server addresses. Only one server is required, but three are recommended. Add the 'iburst' option to speed up the time it takes to properly sync with the servers:
+. Locate the public server pool section and modify it to include the appropriate NTP server addresses. Only one server is required, but three are recommended. Add the `iburst` option to speed up the time it takes to properly sync with the servers:
 +
 ----
 # Use public servers from the pool.ntp.org project.
