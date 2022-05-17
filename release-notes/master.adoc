@@ -12,8 +12,6 @@ include::topics/aap-22.adoc[leveloffset=+2]
 
 include::topics/hub-450.adoc[leveloffset=+2]
 
-include::topics/analytics-05-2022.adoc[leveloffset=+2]
-
 include::topics/catalog-05-2022.adoc[leveloffset=+2]
 
 include::topics/controller-420.adoc[leveloffset=+2]
