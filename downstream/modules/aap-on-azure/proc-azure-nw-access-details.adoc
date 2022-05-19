@@ -9,12 +9,8 @@ Base the file name and the ID on the module title. For example:
 
 = Access details
 
-.Prerequisites
+Regardless of the deployment type that is selected when {PlatformNameShort} is deployed, a set of DNS records are always created.
+The DNS records are created so that {PlatformNameShort} can be issued a valid TLS certificate for your deployment and to enable easy access.
 
-* You have deployed Ansible Automation Platform on Microsoft Azure.
-
-.Procedure
-
-.. Configure routing to your VNets for each spoke network that you would like PlatformNameShortAnsible Automation Platform to communicate with, for automation or for accessing the user interfaces.
-See xref:routing-to-private-nw[Routing to your VNets].
+To view the URLs for the {PlatformNameShort} applications, navigate to the *Parameters and Outputs* page of the Azure Marketplace managed application listing for your deployment.
 

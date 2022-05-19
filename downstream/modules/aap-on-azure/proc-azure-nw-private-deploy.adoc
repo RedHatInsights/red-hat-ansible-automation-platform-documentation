@@ -7,14 +7,19 @@ Base the file name and the ID on the module title. For example:
 
 [id="proc-azure-nw-private-deploy"]
 
-= Access details
+= Private deployments
 
-.Prerequisites
+If private access was selected when {AAPonAzureNameShort} was deployed, then you will likely need to take action after creating network peering as mentioned above.
+The DNS record issued to the public application will point to a private Class C network address 192.168.0.68. This IP address will not be accessible to your browser without further configuration.
 
-* You have deployed Ansible Automation Platform on Microsoft Azure.
+The access method and configuration that your organization chooses to connect to {AAPonAzureNameShort} will likely depend on how your organization manages Azure infrastructure; your Azure administrators will need to determine the right model for your organization and configure the setup for you.
+A few of the most common options are:
 
-.Procedure
+* Azure hosted virtual machine
+* VPN
+* SSH tunnel
 
-.. Configure routing to your VNets for each spoke network that you would like PlatformNameShortAnsible Automation Platform to communicate with, for automation or for accessing the user interfaces.
-See xref:routing-to-private-nw[Routing to your VNets].
+xref:proc-azure-nw-private-deploy-az-hosted-vm[Azure hosted virtual machine]
+xref:proc-azure-nw-private-deploy-vpn[VPN]
+xref:proc-azure-nw-private-deploy-ssh-tunnel[SSH tunnel]
 
