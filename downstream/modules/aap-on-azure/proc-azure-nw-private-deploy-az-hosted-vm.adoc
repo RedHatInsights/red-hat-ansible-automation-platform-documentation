@@ -9,11 +9,11 @@ Base the file name and the ID on the module title. For example:
 
 = Azure hosted virtual machine
 
-Likely, the easiest way to configure access for a small set of users is to create a jump box in a DMZ VNET where users can remote into from the public internet to gain access to private network resources on Azure networks.
-The VM would need to have workstation features (a GUI and browser installed in the case of Linux) since users will leverage the browser on this machine in order to navigate to Ansible Automation Platform web UIs.  
-
-The DMZ would be connected to other Azure VNETs through network peering with routing rules established to send network traffic for 192.168.0.0/24 to the Ansible Automation Platform VNET.  
-
+A straightforward way to configure access for a small set of users to private network resources on Azure networks is to create a jump box in a DMZ VNet that users can remotely log into from the public internet.
 PCs from office locations can remote into the publicly accessible virtual machine through VNC, RDP, or other screen-sharing protocols.
-Then, using a browser on the virtual machine, you may enter the Ansible Automation Platform URLs to access the platform on the private network.
+The VM requires workstation features such as a GUI and browser. Users navigate to {PlatformNameShort} web UIs using the browser on this VM.
+
+The DMZ VNet is connected to other Azure VNets through network peering, with routing rules established to send network traffic for 192.168.0.0/24 to the {PlatformNameShort} VNet.
+
+Then, using a browser on the virtual machine, you may enter the {PlatformNameShort} URLs to access the platform on the private network.
 

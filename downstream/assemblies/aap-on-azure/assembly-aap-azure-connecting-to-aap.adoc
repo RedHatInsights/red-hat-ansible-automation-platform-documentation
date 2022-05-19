@@ -6,7 +6,7 @@ ifdef::context[:parent-context: {context}]
 :context: aap-azure-connecting-to-aap
 
 [role="_abstract"]
-Once network peering is performed and your Azure routing configuration is established, you can choose how your team will access the software through your Azure network configuration.
+Once network peering is performed and your Azure routing configuration is established, you can choose how your team will access {PlatformNameShort} through your Azure network configuration.
 
 include::aap-on-azure/proc-azure-nw-access-details.adoc[leveloffset=+1]
 include::aap-on-azure/proc-azure-nw-public-deploy.adoc[leveloffset=+1]
