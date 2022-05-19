@@ -19,7 +19,7 @@ Example playbook with FQCN:
   run_once: true
 ----
 
-If you are using ansible-core modules and are not calling a module from a different Collection, you should use the FQCN. In this case, you will use `ansible.builtin.copy` instead of `copy`.
+If you are using ansible-core modules and are not calling a module from a different Collection, you should use the FQCN `ansible.builtin.copy`.
 
 Example module with FQCN:
 
