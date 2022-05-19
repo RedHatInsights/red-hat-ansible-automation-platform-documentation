@@ -15,6 +15,7 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Added ansible-core 2.13 to the ee-minimal and ee-supported containers.
 * Added collection signing and verification as Technology Preview supported features in Ansible Automation hub.
 * Ansible Builder now supports the verification of signatures in collection content when building execution environments (Technology Preview)
+
 Other noteworthy developer tooling updates include the following:
 
 * `ansible-lint` is available as a technology preview. It is a command-line tool that further enhances the content creation experience by proven practices, patterns, and behaviors. See link:https://github.com/ansible/ansible-navigator/releases/tag/v2.0.0[New features and changes for ansible-navigator] for more information.
