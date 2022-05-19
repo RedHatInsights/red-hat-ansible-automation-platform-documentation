@@ -6,7 +6,7 @@
 
 [role="_abstract"]
 
-When you are migrating from non collection-based content to collection-based content, you should use Fully Qualified Collection Names (FQCN) when using Ansible content collections in playbooks and roles. If the collection name is not defined, you may encounter behavioral changes within your environment.
+When you are migrating from non collection-based content to collection-based content, you should use the Fully Qualified Collection Names (FQCN) in playbooks and roles to avoid unexpected behavior.
 
 Example playbook with FQCN:
 
