@@ -1,0 +1,20 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="proc-azure-nw-public-deploy"]
+
+= Access details
+
+.Prerequisites
+
+* You have deployed Ansible Automation Platform on Microsoft Azure.
+
+.Procedure
+
+.. Configure routing to your VNets for each spoke network that you would like PlatformNameShortAnsible Automation Platform to communicate with, for automation or for accessing the user interfaces.
+See xref:routing-to-private-nw[Routing to your VNets].
+
