@@ -19,6 +19,6 @@ Red Hat has access to this managed app to perform support, maintenance, and upgr
 When you install {AAPonAzureNameShort}, you choose whether the deployment is public or private.
 This affects how users can access the {PlatformNameShort} user interfaces.
 
-Regardless of whether you choose a public or private deployment, you must configure network peering for outbound communication from {PlatformNameShort} to the networks of the resources that you want to automate against.
+Regardless of whether you choose a public or private deployment, you must configure network peering for outbound communication from {PlatformNameShort} to the private networks that contain resources that you want to automate against.
 You can configure network peering from {AAPonAzureNameShort} to your private Azure VNets and to on-premises or multi-cloud networks where transit routing with Azure exists.
 
