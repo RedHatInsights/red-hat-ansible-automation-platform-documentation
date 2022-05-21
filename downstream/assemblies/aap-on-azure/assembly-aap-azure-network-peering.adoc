@@ -8,22 +8,31 @@ ifdef::context[:parent-context: {context}]
 // [role="_abstract"]
 // You can use these instructions to install 
 
-Ansible Automation Platform on Azure is deployed into an independent managed resource group with its own Azure virtual network (VNet). 
+{AAPonAzureNameShort} is deployed into an independent managed resource group with its own Azure virtual network (VNet). 
 
-When initially deployed, Ansible Automation Platform on Azure’s VNet can only send requests to external networks through the public internet.
+When initially deployed, {AAPonAzureNameShort}’s VNet can only send requests to external networks through the public internet.
+
+To enable {AAPonAzureNameShort} to access resources in an internet-gapped deployment, when access to resources has to happen over private networks, you must configure Azure network peering between your private Virtual Networks and {AAPonAzureName}’s managed application VNet.
 
 You can configure your Azure VNets to allow private communication between multiple Azure VNets as well as private transit routing between Azure VNets and external VPN routed networks. These VPN networks can be on-premises or on other clouds.
 
 [NOTE]
 ====
+Network peering must be configured by Azure administrators in your organizaion who are familiar with Azure networking.
+Configuring network changes to your Azure account can cause outages or other disruptions.
+
+The network peering procedures described in this document are not supported by Red Hat, as the processes and services are controlled and managed by Microsoft Azure.
+Contact Microsoft for assistance in peering Azure networks.
+
 While every effort has been made to align with Microsoft’s documentation for this content, there may be drift in accuracy over time.
 link:https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview[Microsoft’s documentation] is the definitive source for information about networking topics for Azure.
 ====
 
 Azure offers different ways to peer private networks. These are typically divided into two categories:
 
-* **Hub-and-spoke peering**: In this topology, there is a centralized hub VNet that other virtual networks peer with.  This hub network has mechanisms to route traffic through transit routing. Cloud networks, including VPN/Express Connect connections with on-premises and other cloud networks, can communicate through the hub VNet.
-* **Direct peering**: Private networks are individually connected to one another with no routing hops between them. This is a simpler peering model: it is useful when you only want to connect  a few networks.
+* **Hub-and-spoke peering**: In this topology, there is a centralized hub VNet that other virtual networks peer with.
+This hub network has mechanisms to route traffic through transit routing. Cloud networks, including VPN/Express Connect connections with on-premises and other cloud networks, can communicate through the hub VNet.
+* **Direct peering**: Private networks are individually connected to one another with no routing hops between them. This is a simpler peering model: it is useful when you only want to connect a few networks.
 
 
 //include::aap-on-azure/proc-azure-accessing-aap.adoc[leveloffset=+1]
