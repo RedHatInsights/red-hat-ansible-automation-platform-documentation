@@ -18,7 +18,7 @@ Refer to xref:con-aap-azure-infrastructure-usage[Azure infrastructure usage] for
 
 The Azure resources used during the deployment of the managed application temporarily exceed the resource requirements in xref:con-aap-azure-infrastructure-usage[Azure infrastructure usage]. The `Total Regional vCPUs` quota is temporarily consumed when deploying the managed application.
 
-Every Azure region has a separate `Total Regional vCPUs` quota. To prevent installation failure, ensure that you have at least 8 available vCPUs in the Azure region where you want to deploy the managed application.
+Every Azure region has a separate `Total Regional vCPUs` quota. To prevent installation failure, ensure that you have at least 80 DS2_V3 vCPUs available in the Azure region where you want to deploy the managed application.
 
 The following steps describe how to view the resource quotas for your subscription the Azure console:
 
