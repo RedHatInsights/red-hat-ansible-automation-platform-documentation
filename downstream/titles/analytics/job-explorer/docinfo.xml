@@ -1,6 +1,6 @@
 <title>Evaluating your Ansible Tower job runs using the Job Explorer</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>1.2</productnumber>
+<productnumber>2.2</productnumber>
 <subtitle>Review jobs and templates in greater detail by applying filters and sorting by attributes.</subtitle>
 <abstract>
     <para>Use the Job Explorer to drill deeper into the information from your Ansible Tower automation initiatives. Explore the details behind visualizations to evaluate contextual data and link out to jobs and templates on your Ansible Tower clusters.</para>

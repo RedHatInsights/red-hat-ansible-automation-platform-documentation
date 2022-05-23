@@ -6,7 +6,7 @@
 :AAPCentralAuth: Ansible Automation Platform Central Authentication
 :CentralAuthStart: Central authentication
 :CentralAuth: central authentication
-:PlatformVers: 2.1
+:PlatformVers: 2.2
 
 // AAP on Clouds
 :AAPonAzureName: Red Hat Ansible Automation Platform on Microsoft Azure
