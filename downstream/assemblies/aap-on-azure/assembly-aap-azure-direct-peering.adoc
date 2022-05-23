@@ -11,7 +11,7 @@ When two networks are peered, Azure updates routes between them so that traffic 
 
 The direct peering method is easier to configure than the hub-and-spoke model.
 However, the number of direct network peerings is limited.
-Direct peering becomes difficult to manage as the number of virtual networks grows.
+Direct peering becomes difficult to manage as the number of virtual networks grows, because each new network requires peering to all other networks.
 
 include::aap-on-azure/proc-azure-nw-direct-peering.adoc[leveloffset=+1]
 
