@@ -9,9 +9,9 @@ Base the file name and the ID on the module title. For example:
 
 = SSH tunnel
 
-When VPN isn’t an option and your local users are more technical, the SSH tunnel approach can offer a secure alternative that allows users to still use their local browser to access {PlatformNameShort}.  This approach is usually easiest on Linux and macOS host machines, but can be accomplished on Windows as well.
-In this model, a lightweight linux SSH server can be placed into a DMZ network similar to the Azure Hosted Virtual Machine method.  However, no workstation features are required for the server.  This server will simply act as a proxy between a user’s local machine and {AAPonAzureNameShort}.
-Each user would need to be configured as an SSH user on the server.  Once completed, the users would be able to establish an SSH tunnel from their local machine to the SSH server to route traffic for {AAPonAzureNameShort}.
+When VPN isn’t an option and your local users are more technical, the SSH tunnel approach can offer a secure alternative that allows users to still use their local browser to access {PlatformNameShort}. This approach is usually easiest on Linux and macOS host machines, but can be accomplished on Windows as well.
+In this model, a lightweight linux SSH server can be placed into a DMZ network similar to the Azure Hosted Virtual Machine method. However, no workstation features are required for the server. This server will simply act as a proxy between a user’s local machine and {AAPonAzureNameShort}.
+Each user would need to be configured as an SSH user on the server. Once completed, the users would be able to establish an SSH tunnel from their local machine to the SSH server to route traffic for {AAPonAzureNameShort}.
 The first step would be to update your local hosts file so that the {PlatformNameShort} URL(s) route traffic to your local host (your PC) instead of the private IP that DNS records are configured with.
 
 ----
@@ -19,7 +19,7 @@ The first step would be to update your local hosts file so that the {PlatformNam
 # Host Database
 #
 # localhost is used to configure the loopback interface
-# when the system is booting.  Do not change this entry.
+# when the system is booting. Do not change this entry.
 ##
 127.0.0.1	localhost
 255.255.255.255	broadcasthost
@@ -29,12 +29,12 @@ The first step would be to update your local hosts file so that the {PlatformNam
 ----
 
 Note: The line highlighted in bold is what you would add to your hosts file.
-Next, you can establish the SSH tunnel.  In the example below, the IP address is the address of the SSH server in your DMZ.  The -L flag will tell your local system to route traffic for the {ControllerName} URL over port 443 (HTTPs).
+Next, you can establish the SSH tunnel. In the example below, the IP address is the address of the SSH server in your DMZ. The -L flag will tell your local system to route traffic for the {ControllerName} URL over port 443 (HTTPs).
 
 ----
 sudo ssh azureuser@20.231.60.123 -i ~/.ssh/id_ssh_key -N -f -L 443:controller.aapusb7en3awafew.az.ansiblecloud.com:443
 ----
 
-Note: At this time, port 443 must be used on both sides of the routing path.  Using a different port on the local machine will cause some AAP features to not function properly.  This does require root access on the local machine.
+Note: At this time, port 443 must be used on both sides of the routing path. Using a different port on the local machine will cause some AAP features to not function properly. This does require root access on the local machine.
 If the SSH tunnel establishes and your Azure routing is configured properly, then you should be able to access the {ControllerName} URL in your local browser at https://controller.aapusb7en3awafew.az.ansiblecloud.com.
 

@@ -25,7 +25,7 @@ Follow the procedures below to configure SSO with Azure Active Directory (Azure 
 
 .Configuring authentication for Ansible Automation Platform
 
-To set up enterprise authentication for Microsoft Azure Active Directory (Azure AD), you must obtain an OAuth2 key and secret by registering your {PlatformNameShort} deployment in Azure. 
+To set up enterprise authentication for Microsoft Azure Active Directory (Azure AD), you must obtain an OAuth2 key and secret by registering your {PlatformNameShort} deployment in Azure.
 
 To register the {ControllerName} instance in Azure, you must supply the _Azure AD OAuth2 Callback URL_ from the {ControllerName} settings.
 
@@ -60,12 +60,12 @@ When registration is complete, the registration page for the Automation Controll
 You will use this value for the _Azure AD OAuth2 Key_ in the Ansible Automation Platform settings.
 . Under *Manage*, click *Certificates & secrets*.
 . Click *Client secrets* and then *+ New client secret*.
-. Provide a description for the new secret. 
+. Provide a description for the new secret.
 +
 It is not possible to automatically renew a certificate or identify when it is about to expire.
 +
 It is useful to include the date in the description, for example: AAP Client Secret <Today's Date in YYYY-MM-DD format>.
-. Provide an expiration date for the new secret. 
+. Provide an expiration date for the new secret.
 +
 The maximum lifetime for the certificate is 2 years. Unless you have specific security needs that prevent the creation of a long term certificate, select an expiration date of *24 months*.
 . Save the secret _Value_ to a location on your local machine. Once you navigate away from this page it will be hidden and no longer retrievable.
@@ -77,7 +77,7 @@ Add the key _(Application (client) ID)_ and value (_Value_) of the secret that y
 
 . Open the {ControllerName} console in a web browser.
 . Click menu:Settings[Azure AD settings].
-. Click *Edit*. 
+. Click *Edit*.
 . Enter the information for the secret that you generated in Azure AD:
   . In *Azure AD OAuth2 Key*, paste the _Application (client) ID_.
   . In *Azure AD OAuth2 Secret*, paste the secret _Value_.

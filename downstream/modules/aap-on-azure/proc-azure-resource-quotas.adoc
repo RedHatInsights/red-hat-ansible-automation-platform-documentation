@@ -36,17 +36,17 @@ When a deployment fails because the consumed resources hit the `StandardCore` li
 ----
 code: DeploymentFailed
 message:
-  At least one resource deployment operation failed. Please list deployment operations for details. 
+  At least one resource deployment operation failed. Please list deployment operations for details.
   Please see https://aka.ms/DeployOperations for usage details.
 details:
   - code: DeploymentScriptContainerGroupInvalidSettings
     message:
-      Resource type 'Microsoft.ContainerInstance/containerGroups' 
+      Resource type 'Microsoft.ContainerInstance/containerGroups'
       container group quota 'StandardCores' exceeded in region 'eastus'.
       Limit: '10', Usage: '10' Requested: '1'.
 ----
 
-.Requesting StandardCore limit increase 
+.Requesting StandardCore limit increase
 
 The `StandardCore` metric is not displayed in the *My Quotas* page in the Azure console. To request the value of your regional limit, contact Microsoft directly.
 
