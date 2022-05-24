@@ -10,6 +10,10 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 |===
 | Ansible Automation Platform | Automation controller | Automation hub | Automation services catalog | Insights for Ansible Automation Platform
 
-|2.1.1 | 4.1.1 | 4.4.1 | hosted service | hosted service
+|2.2 | 4.2 | 4.4.1 a|
+* 4.5
+* hosted service a|
+* 1.0 private (Technology Preview)
+* hosted service (Retired)
 
 |===
