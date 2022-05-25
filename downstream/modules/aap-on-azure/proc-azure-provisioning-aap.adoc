@@ -29,7 +29,7 @@ Complete the form to provision {PlatformName} infrastructure and resources into 
 The _Administrator Password_ must contain at least 8 characters, and must include uppercase letters, lowercase letters, and numbers.
   * *Confirm Administrator Password*: Confirm the _Administrator Password_.
   * *Access*: Choose whether your deployment will be public or private.
-  * *Managed Resource Group*: A resource group for the managed application infrastructure..
+  * *Managed Resource Group*: A resource group for the managed application infrastructure.
 +
 Keep this resource group isolated from other resource groups, including the _Resource Group_ where you will deploy the managed application.
 . Store the information that you entered in the form in a secure place. You will need to provide the _Administrator password_ to access {ControllerName} and private {HubName}.

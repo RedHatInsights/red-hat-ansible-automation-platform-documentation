@@ -4,18 +4,18 @@
 
 When you install {AAPonAzureNameShort}, the following infrastructure is deployed into your Azure subscription:
 
-Azure Kubernetes service (AKS):: Kubernetes cluster used to deploy Ansible Automation Platform applications and services.
+Azure Kubernetes service (AKS):: The Kubernetes cluster used to deploy {PlatformNameShort} applications and services.
 +
 **Service Shape:**
 +
 * Compute nodes: Standard_D4s_v3 ((4 vCPUs x 16 GiB)
-* Autoscaling Min Nodes: 1
-* Autoscaling Max Nodes: 20
-Managed identity:: The Azure service used to allow for Ansible components to communicate with other Azure services (such as database, DNS, storage, and other services).
-Key vault:: A secure key vault used to store secrets that are unique to the Ansible Automation Platform deployment.
-Log Analytics Workspace:: The Azure service that allows for Red Hat SREs to inspect the operations of Ansible Automation Platform on Azure.
-Private DNS Zone:: Manages local DNS requests for the services used by the Ansible Automation Platform on Azure.
-Azure Database for PostgreSQL:: The Azure database service used for Ansible Automation Platform’s PostgreSQL database.
+* Autoscaling min nodes: 3
+* Autoscaling max nodes: 20
+Managed identity:: An Azure service that allows {PlatformNameShort} components to communicate with other Azure services such as database, DNS, storage, and other services.
+Key vault:: A secure key vault used to store secrets that are unique to the {PlatformNameShort} deployment.
+Log Analytics Workspace:: An Azure service that allows Red Hat site reliability engineers to inspect the operations of {AAPonAzureNameShort}.
+Private DNS Zone:: Manages local DNS requests for the services used by {AAPonAzureNameShort}.
+Azure Database for PostgreSQL:: An Azure database service used for {PlatformNameShort}’s PostgreSQL database.
 +
 **Service Shape:** 1 TB
 Storage account:: The Azure service is used for file and block storage for local storage of projects, containers, etc.

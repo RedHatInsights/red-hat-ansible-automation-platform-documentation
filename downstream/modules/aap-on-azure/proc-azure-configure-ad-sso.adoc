@@ -10,9 +10,9 @@ Base the file name and the ID on the module title. For example:
 = Azure Active Directory (Azure AD) SSO configuration
 
 [role="_abstract"]
-Follow the procedures below to configure SSO with Azure Active Directory (Azure AD). If your organization does not use Azure AD for application authorization, you can create users in the user management system in Ansible Automation Platform.
+Follow the procedures below to configure SSO with Azure Active Directory (Azure AD). If your organization does not use Azure AD for application authorization, you can create users in the user management system in {PlatformNameShort}.
 
-.Configuring the base URL for the Ansible Automation Platform deployment
+.Configuring the base URL for the {PlatformNameShort} deployment
 
 . In a browser, navigate to the Automation controller URL and log in using the following credentials:
   * Username: `admin`
@@ -23,7 +23,7 @@ Follow the procedures below to configure SSO with Azure Active Directory (Azure 
 . Click *Save*.
 
 
-.Configuring authentication for Ansible Automation Platform
+.Configuring authentication for {PlatformNameShort}
 
 To set up enterprise authentication for Microsoft Azure Active Directory (Azure AD), you must obtain an OAuth2 key and secret by registering your {PlatformNameShort} deployment in Azure.
 
@@ -39,7 +39,7 @@ To register the {ControllerName} instance in Azure, you must supply the _Azure A
 .Creating a registered application in Azure AD
 
 . In a web browser, open the Azure portal.
-. Ensure that you are using the tenant where you deployed Ansible Automation Platform.
+. Ensure that you are using the tenant where you deployed {PlatformNameShort}.
 . Type `Azure Active Directory` in the search bar.
 . Select *Azure Active Directory* from the search results.
 . Under *Manage* in the menu options, click *App registrations*.
@@ -57,7 +57,7 @@ When registration is complete, the registration page for the Automation Controll
 
 . In the *Automation controller application registration page* on Azure, copy and save the value of _Application (client) ID_.
 +
-You will use this value for the _Azure AD OAuth2 Key_ in the Ansible Automation Platform settings.
+You will use this value for the _Azure AD OAuth2 Key_ in the {PlatformNameShort} settings.
 . Under *Manage*, click *Certificates & secrets*.
 . Click *Client secrets* and then *+ New client secret*.
 . Provide a description for the new secret.
@@ -70,10 +70,10 @@ It is useful to include the date in the description, for example: AAP Client Sec
 The maximum lifetime for the certificate is 2 years. Unless you have specific security needs that prevent the creation of a long term certificate, select an expiration date of *24 months*.
 . Save the secret _Value_ to a location on your local machine. Once you navigate away from this page it will be hidden and no longer retrievable.
 
-.Adding secrets to Ansible Automation Platform settings
+.Adding secrets to {PlatformNameShort} settings
 
 [role="_abstract"]
-Add the key _(Application (client) ID)_ and value (_Value_) of the secret that you generated in Azure to your Ansible Automation Platform instance.
+Add the key _(Application (client) ID)_ and value (_Value_) of the secret that you generated in Azure to your {PlatformNameShort} instance.
 
 . Open the {ControllerName} console in a web browser.
 . Click menu:Settings[Azure AD settings].

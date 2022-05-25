@@ -7,14 +7,7 @@ Base the file name and the ID on the module title. For example:
 
 [id="proc-azure-nw-public-deploy"]
 
-= Access details
+= Public Deployments
 
-.Prerequisites
-
-* You have deployed Ansible Automation Platform on Microsoft Azure.
-
-.Procedure
-
-.. Configure routing to your VNets for each spoke network that you would like PlatformNameShortAnsible Automation Platform to communicate with, for automation or for accessing the user interfaces.
-See xref:routing-to-private-nw[Routing to your VNets].
+If you selected public access when you deployed {AAPonAzureNameShort}, you can access the {PlatformNameShort} application URLs over the public internet from a browser.
 
