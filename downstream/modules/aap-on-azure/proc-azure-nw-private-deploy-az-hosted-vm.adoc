@@ -9,11 +9,12 @@ Base the file name and the ID on the module title. For example:
 
 = Azure hosted virtual machine
 
-A straightforward way to configure access for a small set of users to private network resources on Azure networks is to create a jump box in a DMZ VNet that users can remotely log into from the public internet.
-PCs from office locations can remote into the publicly accessible virtual machine through VNC, RDP, or other screen-sharing protocols.
-The VM requires workstation features such as a GUI and browser. Users navigate to {PlatformNameShort} web UIs using the browser on this VM.
+A straightforward way to configure access for a small set of users to private network resources on Azure networks is to create a jumpbox VM in a perimeter network (DMZ VNet) that users can remotely log into from the public internet.
+The jumpbox VM requires workstation features such as a GUI and browser.
+
+Users can remotely log into the publicly accessible virtual machine from on-premises machines through VNC, RDP, or other screen-sharing protocols.
+
+To access the {PlatformNameShort} web UIs on the Azure private network, users navigate to the URLs using the browser on the jumpbox VM.
 
 The DMZ VNet is connected to other Azure VNets through network peering, with routing rules established to send network traffic for 192.168.0.0/24 to the {PlatformNameShort} VNet.
-
-Then, using a browser on the virtual machine, you may enter the {PlatformNameShort} URLs to access the platform on the private network.
 
