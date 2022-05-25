@@ -10,8 +10,8 @@ Base the file name and the ID on the module title. For example:
 = Creating a service principal
 
 [role="_abstract"]
-To allow the {PlatformNameShort} application to access and manage Azure resources, you must provide authorization credentials.
-The Microsoft Azure collection supports service principal authentication after deployment.
+To allow the {PlatformNameShort} application to access and manage Azure resources, you must provide authorization credentials after deployment.
+The Microsoft Azure collection supports service principal authentication.
 
 To create a service principal, you must have administrator privileges with tenancy-wide permissions on your Azure tenant.
 Your {AAPonAzureNameShort} deployment will be provisioned in the same Subscription ID as the service principal created in this step.
