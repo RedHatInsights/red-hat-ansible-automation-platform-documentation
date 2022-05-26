@@ -18,3 +18,5 @@ To access the {PlatformNameShort} web UIs on the Azure private network, users na
 
 The DMZ VNet is connected to other Azure VNets through network peering, with routing rules established to send network traffic for 192.168.0.0/24 to the {PlatformNameShort} VNet.
 
+image::aap-on-azure-private-nw-access-vm.png[]
+

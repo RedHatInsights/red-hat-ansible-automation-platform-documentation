@@ -51,3 +51,4 @@ Port 443 must be used on both sides of the routing path. Using a different port 
 
 Once the SSH tunnel establishes and your Azure routing is configured properly, you can access the {ControllerName} URL in your local browser at https://controller.aapusb7en3awafew.az.ansiblecloud.com.
 
+image::aap-on-azure-private-nw-access-ssh.png[]

@@ -16,3 +16,5 @@ The VNet connected to the Virtual Network Gateway would be connected to other Az
 
 With this configuration, users can access {PlatformNameShort} through the application URLs as if they were using the public access approach.
 
+image::aap-on-azure-private-nw-access-vpn.png[]
+
