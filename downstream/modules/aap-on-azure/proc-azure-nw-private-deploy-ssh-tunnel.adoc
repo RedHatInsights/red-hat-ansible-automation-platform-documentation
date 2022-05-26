@@ -1,19 +1,26 @@
-////
-Base the file name and the ID on the module title. For example:
-* file name: con-my-concept-module-a.adoc
-* ID: [id="con-my-concept-module-a_{context}"]
-* Title: = My concept module A
-////
-
 [id="proc-azure-nw-private-deploy-ssh-tunnel"]
 
 = SSH tunnel
 
-When VPN isn’t an option and your local users are more technical, the SSH tunnel approach can offer a secure alternative that allows users to still use their local browser to access {PlatformNameShort}. This approach is usually easiest on Linux and macOS host machines, but can be accomplished on Windows as well.
-In this model, a lightweight linux SSH server can be placed into a DMZ network similar to the Azure Hosted Virtual Machine method. However, no workstation features are required for the server. This server will simply act as a proxy between a user’s local machine and {AAPonAzureNameShort}.
-Each user would need to be configured as an SSH user on the server. Once completed, the users would be able to establish an SSH tunnel from their local machine to the SSH server to route traffic for {AAPonAzureNameShort}.
-The first step would be to update your local hosts file so that the {PlatformNameShort} URL(s) route traffic to your local host (your PC) instead of the private IP that DNS records are configured with.
+When VPN is not an option and your local users are more technical, the SSH tunnel approach is a secure alternative that allows users to access {PlatformNameShort} from a browser on a local machine.
 
+In this model, a lightweight linux SSH server is created in a DMZ network, similar to the Azure Hosted Virtual Machine method.  However, no workstation features are required for the server.
+The SSH server acts as a proxy between a user’s local machine and {AAPonAzureNameShort}.
+
+Each user must be configured as an SSH user on the server.
+Users can then establish an SSH tunnel from the local machine to the SSH server to route traffic for {AAPonAzureNameShort}.
+
+This approach is easier to implement on Linux and macOS host machines, but can be accomplished on Windows.
+
+. Update your local hosts file so that the {PlatformNameShort} URLs route traffic to your local machine rather than the private IP that DNS records are configured with.
+Add the following line to your hosts file:
++
+----
+127.0.0.1 controller.aapusb7en3awafew.az.ansiblecloud.com
+----
++
+The following example shows the line in a hosts file:
++
 ----
 ##
 # Host Database
@@ -28,13 +35,19 @@ The first step would be to update your local hosts file so that the {PlatformNam
 127.0.0.1 controller.aapusb7en3awafew.az.ansiblecloud.com
 ----
 
-Note: The line highlighted in bold is what you would add to your hosts file.
-Next, you can establish the SSH tunnel. In the example below, the IP address is the address of the SSH server in your DMZ. The -L flag will tell your local system to route traffic for the {ControllerName} URL over port 443 (HTTPs).
+. Run an `ssh` command to establish the SSH tunnel.
++
+In the example below, the IP address is the address of the SSH server in your DMZ. The `-L` flag directs your local system to route traffic for the {ControllerName} URL over port 443 (HTTPs).
 
++
 ----
 sudo ssh azureuser@20.231.60.123 -i ~/.ssh/id_ssh_key -N -f -L 443:controller.aapusb7en3awafew.az.ansiblecloud.com:443
 ----
++
+[NOTE]
+====
+Port 443 must be used on both sides of the routing path. Using a different port on the local machine will cause some {PlatformNameShort} features to not function properly. This requires root access on the local machine.
+====
 
-Note: At this time, port 443 must be used on both sides of the routing path. Using a different port on the local machine will cause some AAP features to not function properly. This does require root access on the local machine.
-If the SSH tunnel establishes and your Azure routing is configured properly, then you should be able to access the {ControllerName} URL in your local browser at https://controller.aapusb7en3awafew.az.ansiblecloud.com.
+Once the SSH tunnel establishes and your Azure routing is configured properly, you can access the {ControllerName} URL in your local browser at https://controller.aapusb7en3awafew.az.ansiblecloud.com.
 

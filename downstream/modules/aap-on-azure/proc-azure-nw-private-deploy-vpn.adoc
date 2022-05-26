@@ -9,10 +9,10 @@ Base the file name and the ID on the module title. For example:
 
 = VPN
 
-If your organization requires that many users connect to {PlatformNameShort} over a private connection, or if your organization already uses VPNs or Direct Connections with Azure, then this approach is likely suitable for your needs.
+If your organization requires that many users access {PlatformNameShort} over a private connection, or if your organization already uses VPNs or direct connections with Azure, then this approach might be suitable.
 
-In this case, your on-premises infrastructure is connected to Azure through a Network Application Gateway and has routing rules that can enable access to {PlatformNameShort} to any connected computer on the local network.
-The VNET connected to the Virtual Network Gateway would be connected to other Azure VNETs through network peering with routing rules established to send network traffic for 192.168.0.0/24 to the {PlatformNameShort} VNET.
+In this configuration, your on-premises infrastructure is connected to Azure through a Network Application Gateway and has routing rules that can enable access to {PlatformNameShort} to any connected computer on the local network.
+The VNet connected to the Virtual Network Gateway would be connected to other Azure VNets through network peering with routing rules established to send network traffic for 192.168.0.0/24 to the {PlatformNameShort} VNet.
 
-With this configuration, users would not need to perform any extra configuration; they would be able to access {PlatformNameShort} through the application URLs as if they were using the public access approach.
+With this configuration, users can access {PlatformNameShort} through the application URLs as if they were using the public access approach.
 
