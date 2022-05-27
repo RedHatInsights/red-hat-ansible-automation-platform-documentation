@@ -785,9 +785,6 @@ spec:
 <li>
 <p>You have installed the Red Hat Ansible Automation Platform operator in Operator Hub.</p>
 </li>
-<li>
-<p>You have</p>
-</li>
 </ul>
 </div>
 </div>
@@ -804,7 +801,27 @@ spec:
 </ol>
 </div>
 <div class="sect3 Role ARG Spec">
-<h4 id="proc-hub-route-options_installing-hub-operator">4.2.1. Configure your automation hub operator route options</h4>
+<h4 id="con_storage-options-for-operator-installation-on-ocp_installing-hub-operator">4.2.1. Storage options for Ansible Automation Platform Operator installation on Red Hat OpenShift Container Platform</h4>
+<div class="paragraph Role ARG Spec">
+<p>If your installation scenario includes automation hub, you must ensure that your storage option for Ansible Automation Platform Operator has been set to <code class="Role ARG Spec">ReadWriteMany</code>.</p>
+</div>
+<div class="paragraph Role ARG Spec">
+<p>Automation hub requires <code class="Role ARG Spec">ReadWriteMany</code> storage for operation or Azure Blob storage or an S3-compliant storage because multiple pods responsible for upload and download of content (for example, collections) need access to the same content. Otherwise, multiple pods are not guaranteed to have access to the same permanent virtual circuit (PVC)  unless it is <code class="Role ARG Spec">ReadWriteMany</code>.</p>
+</div>
+<div class="paragraph Role ARG Spec">
+<p>In addition, OpenShift Data Foundation provides either or both a ReadWriteMany or s3-compliant implementation. Also, an NFS storage configuration can be setup to support <code class="Role ARG Spec">ReadWriteMany</code> and is often the simplest approach. This however, introduces the NFS server as a potential single point of failure.</p>
+</div>
+<div class="ulist _additional-resources">
+<div class="title">Additional resources</div>
+<ul>
+<li>
+<p>IBM&#8217;s <a href="https://www.ibm.com/support/pages/how-do-i-create-storage-class-nfs-dynamic-storage-provisioning-openshift-environment" class="Role ARG Spec">How do I create a storage class for NFS dynamic storage provisioning in an OpenShift environment?</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3 Role ARG Spec">
+<h4 id="proc-hub-route-options_installing-hub-operator">4.2.2. Configure your automation hub operator route options</h4>
 <div class="paragraph Role ARG Spec">
 <p>The Red Hat Ansible Automation Platform operator installation form allows you to further configure your automation hub operator route options under <strong class="Role ARG Spec">Advanced configuration</strong>.</p>
 </div>
@@ -826,43 +843,6 @@ spec:
 <p>Under <strong class="Role ARG Spec">Route TLS credential secret</strong>, click the drop-down menu and select a secret from the list.</p>
 </li>
 </ol>
-</div>
-</div>
-<div class="sect3 Role ARG Spec">
-<h4 id="con_storage-options-for-operator-installation-on-ocp_installing-hub-operator">4.2.2. Storage options for Ansible Automation Platform Operator installation on Red Hat OpenShift Container Platform</h4>
-<div class="paragraph Role ARG Spec">
-<p>If your installation scenario includes automation hub, you must ensure that your storage option for Ansible Automation Platform Operator has been set to <code class="Role ARG Spec">ReadWriteMany</code>.</p>
-</div>
-<div class="paragraph Role ARG Spec">
-<p>Automation hub requires <code class="Role ARG Spec">ReadWriteMany</code> storage for operation or Azure Blob storage or an S3-compliant storage because multiple pods responsible for upload and download of content (for example, collections) need access to the same content. Otherwise, multiple pods are not guaranteed to have access to the same permanent virtual circuit (PVC)  unless it is <code class="Role ARG Spec">ReadWriteMany</code>.</p>
-</div>
-<div class="paragraph Role ARG Spec">
-<p>In addition, OpenShift Data Foundation provides either or both a ReadWriteMany or s3-compliant implementation. Also, an NFS storage configuration can be setup to support <code class="Role ARG Spec">ReadWriteMany</code> and is often the simplest approach. This however, introduces the NFS server as a potential single point of failure.</p>
-</div>
-<div class="ulist _additional-resources">
-<div class="title">Additional resources</div>
-<ul>
-<li>
-<p>IBM&#8217;s <a href="https://www.ibm.com/support/pages/how-do-i-create-storage-class-nfs-dynamic-storage-provisioning-openshift-environment" class="Role ARG Spec">How do I create a storage class for NFS dynamic storage provisioning in an OpenShift environment?</a></p>
-</li>
-</ul>
-</div>
-<div class="sect4 Role ARG Spec">
-<h5 id="proc_provision-ocp-storage-with-readwritemany-access-mode_installing-hub-operator">Provisioning OCP storage with <code class="Role ARG Spec">ReadWriteMany</code> access mode (optional)</h5>
-<div class="paragraph Role ARG Spec">
-<p>To set your storage type from the default setting <code class="Role ARG Spec">ReadWriteOnce</code> to <code class="Role ARG Spec">ReadWriteMany</code> access mode, complete the following steps to ensure successful installation of Ansible Automation Platform Operator.</p>
-</div>
-<div class="olist arabic Role ARG Spec">
-<div class="title">Procedure</div>
-<ol class="arabic">
-<li>
-<p>In your automation hub instance, click the <strong class="Role ARG Spec">File for Storage Type</strong> drop-down list and select <code class="Role ARG Spec">ReadWriteMany</code>.</p>
-</li>
-<li>
-<p>Click <strong class="Role ARG Spec">Create</strong>.</p>
-</li>
-</ol>
-</div>
 </div>
 </div>
 <div class="sect3 Role ARG Spec">

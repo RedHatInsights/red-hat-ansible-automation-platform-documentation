@@ -27,6 +27,7 @@ You can use these instructions to install the {HubName} operator on {OCP}, speci
 . Locate the *Automation hub* entry, then click *Create instance*.
 
 include::platform/con_storage-options-for-operator-installation-on-ocp.adoc[leveloffset=+2]
+include::platform/proc_provision-ocp-storage-with-readwritemany-access-mode.adoc[leveloffset=+3]
 include::platform/proc-hub-route-options.adoc[leveloffset=+2]
 include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
 
