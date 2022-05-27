@@ -1,0 +1,13 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="proc-azure-nw-public-deploy"]
+
+= Public Deployments
+
+If you selected public access when you deployed {AAPonAzureNameShort}, you can access the {PlatformNameShort} application URLs over the public internet from a browser.
+

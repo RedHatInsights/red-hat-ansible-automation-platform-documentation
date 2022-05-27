@@ -23,9 +23,13 @@ In the *Virtual Networks* page in the Azure portal, use the following settings t
 
 * Under *Remote virtual network*, select settings for the virtual network that you want to peer with Azure:
 ** *Peering link name*: _<aap_to_hub_peering_link_name>_
+** *Subscription*: Select the subscription where {AAPonAzureNameShort} has been deployed
+** *Virtual network*: Select the {AAPonAzureNameShort} virtual network: vnet-<aap_identifier>-<region>
 ** *Traffic to remote virtual network*: _Allow_
 ** *Traffic forwarded from remote virtual network*: _Allow_
 ** *Virtual network gateway or Route Server*: _Use the remote virtual network’s gateway or Route server_
+
+After you have configured direct network peering, traffic routes between {AAPonAzureNameShort} and private hosts and IPs on your Vnet.
 
 For more detailed instructions for configuring peering, refer to link:https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering#create-a-peering[Create a peering] in the Microsoft Azure _Virtual network_ guide.
 
