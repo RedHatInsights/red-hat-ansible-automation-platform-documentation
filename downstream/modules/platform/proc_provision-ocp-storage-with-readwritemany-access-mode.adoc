@@ -3,10 +3,10 @@
 
 = Provisioning OCP storage with `ReadWriteMany` access mode (optional)
 
-Since {HubName} uses multiple pods to upload and download content (for example, collections), you must reset your storage type from the default setting `ReadWriteOnce`  to `ReadWriteMany` access mode to ensure successful installation of {OperatorPlatform}.
+To set your storage type from the default setting `ReadWriteOnce` to `ReadWriteMany` access mode, complete the following steps to ensure successful installation of {OperatorPlatform}.
 
 .Procedure
 
-. In your {HubName} instance, click *File for Storage Type* and select `ReadWriteMany` from the drop-down list.
+. In your {HubName} instance, click the *File for Storage Type* drop-down list and select `ReadWriteMany`.
 
 . Click *Create*.
