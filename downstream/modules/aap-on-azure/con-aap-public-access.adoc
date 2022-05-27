@@ -2,7 +2,7 @@
 
 = Public deployment
 
-Public deployments allow ingress to the {AAPonAzureNameShort} user interfaces over the public internet.
+Public deployments permit ingress to the {AAPonAzureNameShort} user interfaces over the public internet.
 Upon deployment, a domain name is issued to the {AAPonAzureNameShort} instance.
 No configuration is required to access {PlatformNameShort}.
 Users can navigate to the domain from the public internet and log in to the user interfaces.

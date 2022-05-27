@@ -12,7 +12,7 @@ For information about how this works and how resources and access are isolated f
 
 {AAPonAzureNameShort} uses two resource groups:
 
-* A resource group in your tenant. This resource group includes a single resource referring to the {AAPonAzureNameShort} managed app deployment.
+* A resource group in your tenant. This resource group includes a single resource referring to the {AAPonAzureNameShort} managed application deployment.
 Red Hat has access to this managed app to perform support, maintenance, and upgrades.
 * A multi-tenant managed resource group that contains all the infrastructure needed to operate {AAPonAzureNameShort}. This multi-tenant resource group is shared between the Red Hat tenant and your tenant. Red Hat has full administrative control and you have read-only access to the resource group.
 

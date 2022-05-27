@@ -30,7 +30,7 @@ Ensure that you have selected a single region. Viewing all regions at once will 
 
 The `StandardCore` limit is a compute metric for the resources that are temporarily consumed when deploying the managed application.
 
-It is possible that the {AAPonAzureNameShort} will deploy without hitting the `StandardCore` limit.
+It is possible that the {AAPonAzureNameShort} can deploy without hitting the `StandardCore` limit.
 When a deployment fails because the consumed resources hit the `StandardCore` limit, the error message includes `container group quota 'StandardCores' exceeded`:
 
 ----
