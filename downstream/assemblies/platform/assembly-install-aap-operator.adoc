@@ -11,7 +11,7 @@ ifdef::context[:parent-context: {context}]
 
 .Prerequisites
 * You have installed the {PlatformName} catalog in Operator Hub.
-* You have provisioned storage in {OCP} with `ReadWriteMany` access mode by following instructions on Setting your File for Storage Type.
+
 
 include::platform/proc-install-aap-operator.adoc[leveloffset=+2]
 
