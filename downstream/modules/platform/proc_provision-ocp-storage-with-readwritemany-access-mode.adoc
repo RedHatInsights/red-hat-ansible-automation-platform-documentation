@@ -1,9 +1,9 @@
 [id="proc_provision-ocp-storage-with-readwritemany-access-mode_{context}"]
 
 
-= Provisioning OCP storage with `ReadWriteMany` access mode (optional)
+= Provisioning OCP storage with `ReadWriteMany` access mode
 
-To set your storage type from the default setting `ReadWriteOnce` to `ReadWriteMany` access mode, complete the following steps to ensure successful installation of {OperatorPlatform}.
+To ensure successful installation of {OperatorPlatform}, set the storage type for {HubName} to `ReadWriteMany` access mode by completing the following steps.
 
 .Procedure
 
