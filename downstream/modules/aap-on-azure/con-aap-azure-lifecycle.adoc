@@ -2,6 +2,6 @@
 
 = Lifecycle management
 
-Red Hat Ansible is responsible for the monitoring, health, and maintenance of the underlying services and {Ansible Automation Platform} core systems as well as the operation of {AAPonAzureNameShort} itself.
+Red Hat Ansible is responsible for the monitoring, health, and maintenance of the underlying services and {AAPonAzureNameShort} core systems as well as the operation of {AAPonAzureNameShort} itself.
 This includes lifecycle management of the components.
 
