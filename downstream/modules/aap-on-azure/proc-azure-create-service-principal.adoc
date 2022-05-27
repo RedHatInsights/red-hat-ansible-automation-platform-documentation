@@ -10,11 +10,11 @@ Base the file name and the ID on the module title. For example:
 = Creating a service principal
 
 [role="_abstract"]
-To allow the Ansible Automation Platform application to access and manage Azure resources, you must provide authorization credentials.  
+To enable the {PlatformNameShort} application to access and manage Azure resources, you must provide authorization credentials after deployment.
 The Microsoft Azure collection supports service principal authentication.
 
 To create a service principal, you must have administrator privileges with tenancy-wide permissions on your Azure tenant.
-Your Ansible on Azure deployment will be provisioned in the same Subscription ID as the service principal created in this step. 
+Your {AAPonAzureNameShort} deployment will be provisioned in the same Subscription ID as the service principal created in this step.
 
 . Navigate to the Azure portal and click the link:https://docs.microsoft.com/en-us/azure/cloud-shell/overview[Cloud Shell] icon to open a bash Cloud Shell in your browser.
 . Set the Azure CLI to use the subscription that you intend to use for automating Azure services. Run the following command from the shell:
@@ -43,7 +43,9 @@ The output displays the _appID_ and _tenant_ keys for the service principal:
 
 == Maintaining your service principals
 
-Service principal credentials have a limited lifetime that is set in your Azure AD configuration. Track the lifespan of the service principal if you intend to automate against Azure for an extended period of time. You can create a new one when needed. 
+Service principal credentials have a limited lifetime that is set in your Azure AD configuration.
+Track the lifespan of the service principal if you intend to automate against Azure for an extended period of time.
+You can create a new one when needed.
 
 To view records of updated or deleted service principles, run the following Azure CLI command:
 

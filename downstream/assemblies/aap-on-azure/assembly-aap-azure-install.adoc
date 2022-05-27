@@ -19,11 +19,10 @@ ifdef::context[:parent-context: {context}]
 .{PlatformNameShort} requirements
 
 * An account on the Red Hat Red Hat Customer Portal (link:https://access.redhat.com/[access.redhat.com]).
-* A specific subscription entitlement for Red Hat Ansible Automation Platform.
+* A specific subscription entitlement for {PlatformName}.
 
 // Prerequisites for Azure tenancies (tenancy resource limits, use of Azure private features, etc.). Link to Infrastructure modules
 
-include::aap-on-azure/proc-verify-rh-credentials.adoc[leveloffset=+2]
 include::aap-on-azure/proc-azure-resource-quotas.adoc[leveloffset=+2]
 
 include::aap-on-azure/proc-azure-create-service-principal.adoc[leveloffset=+1]
