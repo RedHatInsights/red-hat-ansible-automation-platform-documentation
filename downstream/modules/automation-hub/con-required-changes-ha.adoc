@@ -6,7 +6,7 @@
 
 = Required changes to the inventory file
 
-Before you run the {PlatformNameShort} installer using `./setup.sh`, ensure that you have made the following configuration changes on your inventory file:
+Before you run the {PlatformNameShort} installer using `./setup.sh`, make the following changes to the inventory file:
 
 .Specify database host IP
 
