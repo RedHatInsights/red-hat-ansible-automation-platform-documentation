@@ -11,7 +11,7 @@ Base the file name and the ID on the module title. For example:
 
 [role="_abstract"]
 When you initiate the deployment of the {PlatformName} managed app from Azure marketplace, a form is displayed in the *Create Red Hat Ansible Automation Platform on Microsoft Azure* window.
-Complete the form to provision {PlatformName} infrastructure and resources into your Azure tenant.
+Complete the form to provision {PlatformNameShort} infrastructure and resources into your Azure tenant.
 
 . In a web browser, navigate to *Managed Applications* in the Azure console.
 . Select the instance of {AAPonAzureName} that you deployed.
@@ -19,7 +19,7 @@ Complete the form to provision {PlatformName} infrastructure and resources into 
 . Copy the URL links for {ControllerName} and {HubName}, and then save them. The names for the links are _automationControllerUrl_ and _automationHubUrl_.
 . In a browser, navigate to the {ControllerName} URL, and then log in using the following credentials:
   * *Username*: `admin`
-  * *Password*: Use the _Administrator password_ you provided when you deployed the AAP application.
+  * *Password*: Use the _Administrator password_ you provided when you deployed the {PlatformNameShort} application.
 
 The first time you login to {AAPonAzureNameShort}, you must configure a subscription and agree to the terms and conditions.
 
