@@ -4,18 +4,29 @@
 
 When you install {AAPonAzureNameShort}, the following infrastructure is deployed into your Azure subscription:
 
-* Kubernetes Cluster
-** VM Shape: Standard_D4s_v3
-** Autoscaling Min Nodes: 1
-** Autoscaling Max Nodes: 20
-* Azure Database Service (Postgres Database)
-** 128 GB Storage Allocation
-* Storage
-** 1 Storage Account: StorageV2 - Standard_LRS
-* Networking
-** 1 VNet
-* Secrets
-** 1 Vault
+Azure Kubernetes service (AKS):: The Kubernetes cluster used to deploy {PlatformNameShort} applications and services.
++
+**Service Shape:**
++
+* Compute nodes: Standard_D4s_v3 ((4 vCPUs x 16 GiB)
+* Autoscaling min nodes: 3
+* Autoscaling max nodes: 20
+Managed identity:: An Azure service that enables {PlatformNameShort} components to communicate with other Azure services such as database, DNS, storage, and other services.
+Key vault:: A secure key vault used to store secrets that are unique to the {PlatformNameShort} deployment.
+Log Analytics Workspace:: An Azure service that enables Red Hat site reliability engineers to inspect the operations of {AAPonAzureNameShort}.
+Private DNS Zone:: Manages local DNS requests for the services used by {AAPonAzureNameShort}.
+Azure Database for PostgreSQL:: An Azure database service used for {PlatformNameShort}’s PostgreSQL database.
++
+**Service Shape:** 1 TB
+Storage account:: The Azure service is used for file and block storage for local storage of projects, containers, etc.
++
+**Service Shape:** StorageV2 - Standard_LRS
+Virtual network:: The Azure service is used to manage all internal networking and dependent services such as the Azure Application Gateway.
++
+**Service Shape:** 1 TB
 
-Exact infrastructure usage depends on the length of time that the managed application is deployed in your tenancy and the automation requirements that may cause the Kubernetes cluster to autoscale to meet the demands of your workload. 
+Exact infrastructure usage depends on the length of time that the managed application is deployed in your tenancy and the automation requirements that might cause the Kubernetes cluster to autoscale to meet the demands of your workload.
+
+You can use the link:https://azure.com/e/d12a08795a4942c1801c610810791764
+[Azure cost estimator] to tune kubernetes expected auto scaling variables based on your organization’s workloads.
 
