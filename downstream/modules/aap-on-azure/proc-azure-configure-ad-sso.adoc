@@ -16,12 +16,11 @@ Follow the procedures below to configure SSO with Azure Active Directory (Azure 
 
 . In a browser, navigate to the Automation controller URL and log in using the following credentials:
   * Username: `admin`
-  * Password: Use the _Administrator password_ you provided when you deployed the AAP application.
+  * Password: Use the _Administrator password_ you provided when you deployed the {PlatformNameShort} application.
 . In the Automation controller console, click *Settings* in the menu options.
 . Click *Miscellaneous System settings* under the *System* settings.
 . Click *Edit*. Enter the Automation controller URL in the Base URl of the service field.
 . Click *Save*.
-
 
 .Configuring authentication for {PlatformNameShort}
 
@@ -64,7 +63,7 @@ You will use this value for the _Azure AD OAuth2 Key_ in the {PlatformNameShort}
 +
 It is not possible to automatically renew a certificate or identify when it is about to expire.
 +
-It is useful to include the date in the description, for example: AAP Client Secret <Today's Date in YYYY-MM-DD format>.
+It is useful to include the date in the description, for example: _AAP Client Secret <Today's Date in YYYY-MM-DD format>_.
 . Provide an expiration date for the new secret.
 +
 The maximum lifetime for the certificate is 2 years. Unless you have specific security needs that prevent the creation of a long term certificate, select an expiration date of *24 months*.
