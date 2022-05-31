@@ -25,7 +25,7 @@ Virtual network:: The Azure service is used to manage all internal networking an
 +
 **Service Shape:** Application Gateway: WAF_v2
 
-Exact infrastructure usage depends on the length of time that the managed application is deployed in your tenancy and the automation requirements that might cause the Kubernetes cluster to autoscale to meet the demands of your workload.
+Exact infrastructure usage depends on the length of time that the managed application is deployed in your tenancy, and the automation requirements that might cause the Kubernetes cluster to autoscale to meet the demands of your workload.
 
 Microsoft provides a link:https://azure.microsoft.com/en-us/pricing/calculator/[Pricing calculator] to estimate your costs for Azure products and services.
 Red Hat has configured an example scenario in the pricing calculator: use the link:https://azure.com/e/d12a08795a4942c1801c610810791764[Red Hat Ansible Automation Platform on Azure Infrastructure Estimate] to tune Kubernetes expected auto scaling variables based on your organization’s workloads.
