@@ -23,7 +23,7 @@ Storage account:: The Azure service is used for file and block storage for local
 **Service Shape:** StorageV2 - Standard_LRS
 Virtual network:: The Azure service is used to manage all internal networking and dependent services such as the Azure Application Gateway.
 +
-**Service Shape:** 1 TB
+**Service Shape:** Application Gateway: WAF_v2
 
 Exact infrastructure usage depends on the length of time that the managed application is deployed in your tenancy and the automation requirements that might cause the Kubernetes cluster to autoscale to meet the demands of your workload.
 
