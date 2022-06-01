@@ -14,6 +14,7 @@ Documentation follows a link:https://redhat-documentation.github.io/modular-docs
 ....
 .
 |
+├── common
 ├── downstream
 │   ├── assemblies
 │   │   ├── platform-component1
@@ -36,25 +37,27 @@ Documentation follows a link:https://redhat-documentation.github.io/modular-docs
 │   │        ├── title-1.adoc
 │   │        ├── title-2.adoc
 │   │        └── modules -> ../modules/
-│   └── release-notes
+├── release-notes
 └── README.adoc
 ....
 
 Top-level directories are:
 
-* downstream: A directory that stores the Red Hat Ansible Automation platform modules, assemblies, and titles.
+* `common`: Contains modules and attributes that are shared across Red Hat Ansible Automation branches.
+You should modify content in the `common` folder on the `main` branch only.
 
-Lower-level directories are:
+* `downstream`: Contains Red Hat Ansible Automation platform modules, assemblies, and titles in these sub-folders:
 
-* attributes: A common directory for attribute files.
-* assemblies: A directory for all assemblies, each on in its own AsciiDoc file. Assemblies are collections of modules linked together.
-** Assemblies are grouped by platform component. Create a new subdirectory to organize assemblies associated with that component.
-* images: A directory for all images and other digital content.
-* modules: A directory for all modules, each one in its own AsciiDoc file.
-** Modules are grouped by platform component. Create a new subdirectory to organize modules associated with that component.
-* titles: A directory for titles (information units, e.g, install guide, user guide). Contains master.adoc files to be called during builds and symbolic links to directories (modules, etc.) that contain .adoc content.
-** Titles are grouped by platform component or platform-level feature. Create a new subdirectory to organize titles associated with a component.
+** `attributes`: A common directory for attribute files.
+** `assemblies`: A directory for all assemblies, each on in its own AsciiDoc file. Assemblies are collections of modules linked together.
+*** Assemblies are grouped by platform component. Create a new subdirectory to organize assemblies associated with that component.
+** `images`: A directory for all images and other digital content.
+** `modules`: A directory for all modules, each one in its own AsciiDoc file.
+*** Modules are grouped by platform component. Create a new subdirectory to organize modules associated with that component.
+** `titles`: A directory for titles (information units, e.g, install guide, user guide). Contains master.adoc files to be called during builds and symbolic links to directories (modules, etc.) that contain .adoc content.
+*** Titles are grouped by platform component or platform-level feature. Create a new subdirectory to organize titles associated with a component.
 
+* `release-notes`: Contains release note content.
 
 ### Red Hat Documentation Asciidoc Mark-up Conventions
 
@@ -62,7 +65,7 @@ Red Hat Ansible Automation Platform documentation is written in Asciidoc. See li
 
 ### Red Hat product documentation style conventions
 
-The Red Hat Customer Content Services team uses the link:https://redhat-documentation.github.io/supplementary-style-guide/[Red Hat supplementary style guide for product documentation] and The IBM Style Guide as its primary sources for technical writing conventions and style guidelines. Refer first to the Red Hat supplementary style guide for product documentation for style guidance and conventions. If a topic is not included there, it means we follow the convention as established in the IBM Style Guide. 
+The Red Hat Customer Content Services team uses the link:https://redhat-documentation.github.io/supplementary-style-guide/[Red Hat supplementary style guide for product documentation] and The IBM Style Guide as its primary sources for technical writing conventions and style guidelines. Refer first to the Red Hat supplementary style guide for product documentation for style guidance and conventions. If a topic is not included there, it means we follow the convention as established in the IBM Style Guide.
 
 ### Submitting an update
 
@@ -163,4 +166,3 @@ saas-docs@redhat.com
 
 
 This work is licensed under a link:http://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International License].
-
