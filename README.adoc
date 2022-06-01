@@ -46,16 +46,18 @@ Top-level directories are:
 * `common`: Contains modules and attributes that are shared across Red Hat Ansible Automation branches.
 You should modify content in the `common` folder on the `main` branch only.
 
-* `downstream`: Contains Red Hat Ansible Automation platform modules, assemblies, and titles in these sub-folders:
+* `downstream`: Contains Red Hat Ansible Automation Platform modules, assemblies, and titles in these sub-folders:
 
 ** `attributes`: A common directory for attribute files.
-** `assemblies`: A directory for all assemblies, each in its own AsciiDoc file. Assemblies are collections of modules linked together.
-*** Assemblies are grouped by platform component. Create a new subdirectory to organize assemblies associated with that component.
+** `assemblies`: A directory for all assemblies, each in its own AsciiDoc file.
+Assemblies are collections of modules linked together.
+Platform assemblies are grouped by component.
 ** `images`: A directory for all images and other digital content.
 ** `modules`: A directory for all modules, each one in its own AsciiDoc file.
-*** Modules are grouped by platform component. Create a new subdirectory to organize modules associated with that component.
-** `titles`: A directory for titles (information units, e.g, install guide, user guide). Contains master.adoc files to be called during builds and symbolic links to directories (modules, etc.) that contain .adoc content.
-*** Titles are grouped by platform component or platform-level feature. Create a new subdirectory to organize titles associated with a component.
+Platform modules are grouped by component.
+** `titles`: A directory for titles (information units, e.g, install guide, user guide).
+Contains `master.adoc` files that and symbolic links to the `assemblies` and `modules` directories.
+Platform titles are grouped by component or feature.
 
 * `release-notes`: Contains release note content.
 
