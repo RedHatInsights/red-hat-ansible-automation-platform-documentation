@@ -1,13 +1,14 @@
 [id="con_storage-options-for-operator-installation-on-ocp_{context}"]
 = Storage options for {OperatorPlatform} installation on {OCP}
 
-If your installation scenario includes {HubName}, you must ensure that your storage option for {OperatorPlatform} has been set to `ReadWriteMany`.
+If you are using file-based storage and your installation scenario includes {HubName}, you must ensure that your storage option for {OperatorPlatform} has been set to `ReadWriteMany`.
 
-{HubNameStart} requires `ReadWriteMany` storage for operation or Azure Blob storage or an S3-compliant storage because multiple pods responsible for upload and download of content (for example, collections) need access to the same content. Otherwise, multiple pods are not guaranteed to have access to the same permanent virtual circuit (PVC)  unless it is `ReadWriteMany`.
+{HubNameStart} requires `ReadWriteMany` storage for operation or Azure Blob storage or an S3-compliant storage because multiple pods responsible for upload and download of content (for example, collections) need access to the same content. Otherwise, multiple pods are not guaranteed to have access to the same persistent volume claim (PVC)  unless it is `ReadWriteMany`.
 
-In addition, OpenShift Data Foundation provides either or both a ReadWriteMany or s3-compliant implementation. Also, an NFS storage configuration can be setup to support `ReadWriteMany` and is often the simplest approach. This however, introduces the NFS server as a potential single point of failure.
+In addition, OpenShift Data Foundation provides a `ReadWriteMany` or s3-compliant implementation. Also, an NFS storage configuration can be setup to support `ReadWriteMany` and is often the simplest approach. This, however, introduces the NFS server as a potential single point of failure.
 
 [role="_additional-resources"]
 .Additional resources
 
+* link:https://docs.openshift.com/container-platform/4.10/storage/persistent_storage/persistent-storage-nfs.html[Persistent storage using NFS]
 * IBM's link:https://www.ibm.com/support/pages/how-do-i-create-storage-class-nfs-dynamic-storage-provisioning-openshift-environment[How do I create a storage class for NFS dynamic storage provisioning in an OpenShift environment?]
