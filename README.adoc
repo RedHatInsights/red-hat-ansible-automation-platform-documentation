@@ -49,7 +49,7 @@ You should modify content in the `common` folder on the `main` branch only.
 * `downstream`: Contains Red Hat Ansible Automation platform modules, assemblies, and titles in these sub-folders:
 
 ** `attributes`: A common directory for attribute files.
-** `assemblies`: A directory for all assemblies, each on in its own AsciiDoc file. Assemblies are collections of modules linked together.
+** `assemblies`: A directory for all assemblies, each in its own AsciiDoc file. Assemblies are collections of modules linked together.
 *** Assemblies are grouped by platform component. Create a new subdirectory to organize assemblies associated with that component.
 ** `images`: A directory for all images and other digital content.
 ** `modules`: A directory for all modules, each one in its own AsciiDoc file.
