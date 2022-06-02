@@ -161,7 +161,7 @@ This generates a `master.html` file that you can now view in a browser.
 
 For questions or comments about Red Hat Ansible Automation Platform Documentation documentation, please contact:
 
-saas-docs@redhat.com
+mailto:ccs-ansible-docs@redhat.com[ccs-ansible-docs@redhat.com]
 
 
 ## License
