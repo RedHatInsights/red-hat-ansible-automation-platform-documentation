@@ -6,7 +6,7 @@ include::attributes/attributes.adoc[]
 
 This guide provides an overview of the requirements and procedures for a high availability deployment of your {HubName}.
 
-A high availability (HA) configuration provides a reliable and scalable solution that minimizes downtime for your Ansible automation environment.
+A high availability (HA) configuration increases reliability and scalablility for {HubName} deployments.
 
 To set up a HA deployment of {HubName}, configure your system so that multiple nodes run the same service simultaneously with workload being distributed by a load balancer (i.e., an "active-active" configuration), thereby eliminating the single point of failure and minimizing downtime for the customer. You can configure your
 Ansible automation environment for a high availability deployment by editing and running the {PlatformName} installer.
