@@ -3,6 +3,8 @@
 
 You can use the order process features of Automation Services Catalog to integrate with an Information Technology Service Management (ITSM) systems such as ServiceNow.
 
+include::../../../../common/making-open-source-more-inclusive.adoc[]
+
 include::catalog/assembly-planning-ITSM-integration.adoc[leveloffset=+1]
 
 include::catalog/assembly-update-playbook-set-stats.adoc[leveloffset=+1]

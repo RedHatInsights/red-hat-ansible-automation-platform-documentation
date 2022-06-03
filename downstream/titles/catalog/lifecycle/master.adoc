@@ -1,14 +1,16 @@
 [[catalog_lifecycle]]
 = Automation Services Catalog life cycle
 
+include::../../../../common/making-open-source-more-inclusive.adoc[]
+
 == Overview
 
-This document describes the maintenance schedule for security patches and feature enhancements that Red Hat will provide for the Automation Services Catalog. 
+This document describes the maintenance schedule for security patches and feature enhancements that Red Hat will provide for the Automation Services Catalog.
 Automation Services Catalog is supplied by Red Hat specifically at cloud.redhat.com. Red Hat owns the process of upgrading and maintaining the presentation of cloud.redhat.com.
 
 == Maintenance and Updates Statement for Automation Services Catalog
 
-.Glossary 
+.Glossary
 * *Maintenance* - Security and Application Bug fixes.
 * *Update* - Application Feature Enhancements
 

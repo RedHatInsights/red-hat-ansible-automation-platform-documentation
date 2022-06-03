@@ -1,5 +1,6 @@
 = Automation Service Catalog Onboarding
 
+include::../../../../common/making-open-source-more-inclusive.adoc[]
 
 == About Automation Service Catalog
 
@@ -110,29 +111,29 @@ We will demonstrate how to:
 
 To begin, we will add an Ansible Tower instance as a source of products.
 
-include::modules/proc_Adding_ansible_tower_source.adoc[]
+include::../../../modules/catalog/proc_Adding_ansible_tower_source.adoc[]
 
 === Creating a portfolio and adding products to it
 
 Now that we have a source for products, we can proceed to create an example portfolio and add a few products from our Ansible Tower to it.
 
-include::modules/proc_Creating_portfolios.adoc[]
+include::../../../modules/catalog/proc_Creating_portfolios.adoc[]
 
 Our initial portfolio is empty, and we can start adding products from this empty state.
 
-include::modules/proc_Add_products_from_platforms.adoc[]
+include::../../../modules/catalog/proc_Add_products_from_platforms.adoc[]
 
 === Setting approval processes for the portfolio
 
 We have now created a portfolio and added some products to it. Our next step is to set the approval process for the portfolio. Setting the approval process for our portfolio ensure that specific groups are designated to approve any orders placed by a user.
 
-include::modules/proc_Assigning_approval_workflow.adoc[]
+include::../../../modules/catalog/proc_Assigning_approval_workflow.adoc[]
 
 === Sharing the portfolio with users
 
 The portfolio is now ready to share with groups of users. These designated user groups can order products collected in the portfolio, and their orders are approved or denied using the approval process set for the portfolio.
 
-include::modules/proc_Sharing_portfolios.adoc[]
+include::../../../modules/catalog/proc_Sharing_portfolios.adoc[]
 
 Our portfolio is now accessible to the groups of users, who can order the products we collected in it.
 

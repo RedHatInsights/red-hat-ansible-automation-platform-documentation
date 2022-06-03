@@ -1,7 +1,7 @@
 :toc:
 :toclevels: 4
 :numbered:
-include::attributes/attributes-catalog.adoc[]
+include::../../../attributes/attributes.adoc[]
 
 :catalog_managing_products_guide:
 
@@ -9,4 +9,6 @@ include::attributes/attributes-catalog.adoc[]
 = Managing Products in Automation Service Catalog
 
 // Contents
-include::modules/con_Surveys.adoc[]
+include::../../../../common/making-open-source-more-inclusive.adoc[]
+
+include::../../../modules/catalog/con_Surveys.adoc[]

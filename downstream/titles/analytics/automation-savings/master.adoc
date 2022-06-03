@@ -10,4 +10,6 @@
 = Using the Automation Calculator
 
 // Contents
+include::../../../../common/making-open-source-more-inclusive.adoc[]
+
 include::analytics/assembly-evaluating-automation-return.adoc[leveloffset=+1]

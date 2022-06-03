@@ -4,4 +4,6 @@
 
 Red Hat Ansible Automation Platform provides a supported automation platform for partners to build upon through the Red Hat Ansible Automation Certification Program. The following section provides answers to commonly asked questions about certification of collections. To learn more about the Red Hat Ansible Automation Platform Partners program, please visit ansible.com/partners.
 
-include::assemblies/assembly-faq.adoc[]
+include::../../../../common/making-open-source-more-inclusive.adoc[]
+
+include::../../../assemblies/hub/assembly-faq.adoc[]

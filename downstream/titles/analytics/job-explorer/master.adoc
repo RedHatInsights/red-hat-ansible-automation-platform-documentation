@@ -8,4 +8,6 @@
 = Evaluating your Automation controller job runs using the Job Explorer
 
 // Contents
+include::../../../../common/making-open-source-more-inclusive.adoc[]
+
 include::analytics/assembly-using-job-explorer.adoc[leveloffset=+1]

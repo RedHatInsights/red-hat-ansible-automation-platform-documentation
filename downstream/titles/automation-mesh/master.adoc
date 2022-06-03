@@ -14,6 +14,8 @@ Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commerci
 
 This guide helps you to understand the installation requirements and processes behind installing {PlatformNameShort}. This document has been updated to include information for the latest release of {PlatformNameShort}.
 
+include::../../../common/making-open-source-more-inclusive.adoc[]
+
 include::platform/assembly-planning-mesh.adoc[leveloffset=+1]
 
 include::platform/assembly-example-topologies.adoc[leveloffset=+1]
@@ -21,4 +23,3 @@ include::platform/assembly-example-topologies.adoc[leveloffset=+1]
 include::platform/assembly-deprovisioning-mesh.adoc[leveloffset=+1]
 
 include::platform/assembly-installing-automation-mesh.adoc[leveloffset=+1]
-

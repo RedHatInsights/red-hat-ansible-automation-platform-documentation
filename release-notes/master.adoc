@@ -1,5 +1,7 @@
 = Red Hat Ansible Automation Platform Release Notes
 
+include::../common/making-open-source-more-inclusive.adoc[]
+
 include::topics/platform-intro.adoc[leveloffset=+1]
 
 include::topics/upgrading.adoc[leveloffset=+1]

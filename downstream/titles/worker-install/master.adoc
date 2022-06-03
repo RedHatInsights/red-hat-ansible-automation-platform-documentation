@@ -16,4 +16,6 @@ This is a Day 2 activity and requires setup of a *service account that has write
 
 The Catalog worker requires a set of variables assigned to hosts in your Red Hat Ansible Automation Platform network. Running the Catalog worker will create an application and an application token, install the necessary packages, and start the service.
 
+include::../../../common/making-open-source-more-inclusive.adoc[]
+
 include::catalog/assembly-installing-catalog-worker.adoc[leveloffset=+1]

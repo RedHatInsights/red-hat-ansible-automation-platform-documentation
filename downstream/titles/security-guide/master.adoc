@@ -9,6 +9,8 @@ include::attributes/attributes.adoc[]
 // Book Title
 = Red Hat Ansible Security Automation Guide
 
+include::../../../common/making-open-source-more-inclusive.adoc[]
+
 include::security/assembly-firewall-policy-manage.adoc[leveloffset=+1]
 
 include::security/assembly-idps.adoc[leveloffset=+1]
