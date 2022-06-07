@@ -6,7 +6,14 @@
 [role="_abstract"]
 For users who prefer to deploy {PlatformNameShort} with an external database, they can do so by configuring a secret with instance credentials and connection information, then applying it to their cluster using the `oc create` command.
 
-By default, the {PlatformName} operator automatically creates and configures a managed PostgreSQL pod in the same namespace as your {PlatformNameShort} deployment. A user may instead choose to use an external database if they prefer to use a dedicated node to ensure dedicated resources or to manually manage backups, upgrades, or performance tweaks. The following section outlines the steps to configure an external database for your {HubName} on a {PlatformNameShort} operator.
+By default, the {PlatformName} operator automatically creates and configures a managed PostgreSQL pod in the same namespace as your {PlatformNameShort} deployment. A user may instead choose to use an external database if they prefer to use a dedicated node to ensure dedicated resources or to manually manage backups, upgrades, or performance tweaks.
+
+[NOTE]
+====
+The same external database (PostgreSQL instance) can be used for both {HubName} and {ControllerName} as long as the database names are different. In other words, you can have multiple databases with different names inside a single PostgreSQL instance.
+====
+
+The following section outlines the steps to configure an external database for your {HubName} on a {PlatformNameShort} operator.
 
 .Prerequisite
 The external database must be a PostgreSQL database that is the version supported by the current release of {PlatformNameShort}.
@@ -26,13 +33,13 @@ metadata:
   name: external-postgres-configuration
   namespace: <target_namespace> <1>
 stringData:
-  host: <external_ip_or_url_resolvable_by_the_cluster> <2>
-  port: <external_port> <3>
-  database: <desired_database_name>
-  username: <username_to_connect_as>
-  password: <password_to_connect_with> <4>
-  sslmode: prefer <5>
-  type: unmanaged
+  host: "<external_ip_or_url_resolvable_by_the_cluster>" <2>
+  port: "<external_port>" <3>
+  database: "<desired_database_name>"
+  username: "<username_to_connect_as>"
+  password: "<password_to_connect_with>" <4>
+  sslmode: "prefer" <5>
+  type: "unmanaged"
 type: Opaque
 ----
 <1> Namespace to create the secret in. This should be the same namespace you wish to deploy to.
