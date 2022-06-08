@@ -5,7 +5,7 @@ include::attributes/attributes.adoc[]
 
 Configure user access in Automation Hub to provide the appropriate level of system permissions to groups in your organization, or provide view-only access to unauthorized users.
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::hub/assembly-user-access.adoc[leveloffset=+1]
 

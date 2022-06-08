@@ -5,7 +5,7 @@ include::attributes/attributes.adoc[]
 [[getting-started]]
 = Getting started with Automation Services Catalog
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 == About {CatalogName}
 

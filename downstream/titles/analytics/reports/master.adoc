@@ -8,6 +8,6 @@ include::attributes/attributes.adoc[]
 = Viewing reports about your Ansible automation environment
 
 // Contents
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::analytics/assembly-insights-reports.adoc[leveloffset=+1]

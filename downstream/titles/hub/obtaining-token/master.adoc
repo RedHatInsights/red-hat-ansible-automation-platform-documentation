@@ -4,7 +4,7 @@
 
 Before you can interact with Automation Hub by uploading or downloading collections, you need to create an API token. The Automation Hub API token authenticates your `ansible-galaxy` client to the Red Hat Automation Hub server.
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::automation-hub/proc-create-api-token.adoc[leveloffset=+1]
 

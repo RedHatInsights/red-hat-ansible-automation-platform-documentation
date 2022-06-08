@@ -2,7 +2,7 @@
 [[catalog_support_matrix]]
 = Automation Services Catalog product support matrix
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 This document describes the supported products that Automation Services Catalog is dependent against.
 

@@ -9,7 +9,7 @@ To ensure that `ansible-galaxy` uses certified, supported Ansible collections wh
 
 Optionally, you can configure Ansible Galaxy as a secondary source of content.
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::../../../modules/automation-hub/proc-configure-automation-hub-server.adoc[leveloffset=+1]
 

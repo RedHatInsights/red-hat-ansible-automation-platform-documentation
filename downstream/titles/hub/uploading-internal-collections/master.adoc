@@ -5,7 +5,7 @@ include::attributes/attributes.adoc[]
 
 Curate collections developed in your organization using namespaces in Automation Hub.
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::hub/assembly-working-with-namespaces.adoc[leveloffset=+1]
 

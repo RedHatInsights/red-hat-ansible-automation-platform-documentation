@@ -8,7 +8,7 @@ include::attributes/attributes.adoc[]
 
 You can manage your collections by uploading or deleting collections using the {HubName} user interface or the `ansible-galaxy` client.
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::automation-hub/proc-upload-collection.adoc[leveloffset=+1]
 

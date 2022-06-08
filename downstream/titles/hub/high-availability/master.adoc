@@ -10,6 +10,6 @@ A high availability (HA) configuration provides a reliable and scalable solution
 
 Please note that this guide covers deployment of a HA {HubName} application stack only. Other HA components, such as database and file system HA, or setting up DNS load balancing, are out of scope for this guide.
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::hub/assembly-deploying-high-availability-hub.adoc[leveloffset=+1]

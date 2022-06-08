@@ -1,6 +1,6 @@
 = Automation Service Catalog Onboarding
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 == About Automation Service Catalog
 

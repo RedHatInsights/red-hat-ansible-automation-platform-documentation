@@ -8,6 +8,6 @@
 = Content Migration Guide
 
 // Contents
-include::../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 //include::analytics/assembly-using-job-explorer.adoc[leveloffset=+1]

@@ -9,6 +9,6 @@ include::../../../attributes/attributes.adoc[]
 = Managing Products in Automation Service Catalog
 
 // Contents
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::../../../modules/catalog/con_Surveys.adoc[]

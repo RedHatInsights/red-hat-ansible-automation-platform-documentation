@@ -1,7 +1,7 @@
 [[catalog_lifecycle]]
 = Automation Services Catalog life cycle
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 == Overview
 

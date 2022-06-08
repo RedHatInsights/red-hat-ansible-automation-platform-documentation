@@ -17,7 +17,7 @@ include::attributes/attributes.adoc[]
 
 You can use Execution Environments as reproducible, portable, consistent and shareable container images. They control all of the dependencies of an Ansible Automation Platform job’s runtime environment from system dependencies, Python dependencies, Ansible versions, and Ansible content in the form of Collections.
 
-include::../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::dev-guide/assembly-introduction.adoc[leveloffset=+1]
 include::core/assembly-understanding-ansible-concepts.adoc[leveloffset=+1]

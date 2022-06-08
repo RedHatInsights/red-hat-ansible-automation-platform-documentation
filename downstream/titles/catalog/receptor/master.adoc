@@ -3,7 +3,7 @@
 
 You can connect your on-premise Ansible Tower infrastructure to communicate with Automation Services Catalog by installing the Receptor plug-in.
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::../../../assemblies/catalog/assembly-tech-preview.adoc[leveloffset=+1]
 

@@ -14,6 +14,6 @@ Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commerci
 
 This guide helps you to understand {ControllerNameStart}. This document has been updated to include information for the latest release of {PlatformNameShort}.
 
-include::../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::controller/assembly-controller-temp.adoc[leveloffset=+1]

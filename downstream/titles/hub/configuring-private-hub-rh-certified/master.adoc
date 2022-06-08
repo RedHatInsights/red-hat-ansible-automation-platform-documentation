@@ -6,7 +6,7 @@ You can sync Automation Hub to use the Red Hat Certified Collections available t
 
 Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the Automation Hub service hosted on cloud.redhat.com.
 
-include::../../../../common/making-open-source-more-inclusive.adoc[]
+include::common/making-open-source-more-inclusive.adoc[]
 
 include::hub/assembly-synclists.adoc[leveloffset=+1]
 
