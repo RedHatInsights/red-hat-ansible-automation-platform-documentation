@@ -1,0 +1,39 @@
+
+
+[id="proc-deprovisioning-isolated-nodes"]
+
+= Deprovisioning isolated nodes or groups using the deprovisioning tool
+
+[role="_abstract"]
+You can use the `awx-manage` deprovisioning utility to deprovision isolated nodes or instance groups (i.e., nodes or instances that have not migrated to execution nodes).
+
+NOTE: This option is available for users who are managing isolated nodes or instance groups outside of their automation mesh architecture. To deprovision execution nodes, use the installer methods instead.
+
+== Deprovisioning isolated nodes using the deprovisioning tool
+Before running the deprovisioning command, shut down all services on the controller instance first before running the command from any other instance:
+
+.Procedure
+
+. Shut down the instance:
++
+----
+$ automation-controller-service stop
+----
+. Run the deprovision command from another instance to remove it from the cluster registry:
++
+----
+$ awx-manage deprovision_instance --hostname=<host_name_in_inventory>
+----
+
+.Example
+
+This example command deprovisions the node named `hostB` from a cluster.
+----
+$ awx-manage deprovision_instance --hostname=hostB
+----
+
+== Deprovisioning isolated instance groups using the deprovisioning tool
+Some unused instance groups may still appear in API endpoints or stats monitoring. To fully remove these isolated instance groups, run the following command:
+----
+awx-manage unregister_queue --queuename=<name>
+----
