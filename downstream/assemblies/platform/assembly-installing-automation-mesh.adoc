@@ -3,20 +3,24 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="installing-automation-mesh"]
-= Installing {AutomationMesh}
+= Installing and configuring {AutomationMesh}
 
 
 :context: installing-automation-mesh
 
 
 [role="_abstract"]
-You can install an {AutomationMesh} using the instructions found in the {PlatformName} Installation Guide. {PlatformNameShort} installations are separated into unique scenarios based on the components deployed. You can incorporate {AutomationMesh} designs based on which platform components you intend to deploy in your environment. Review the systems requirements for each component and {AutomationMesh} node type before proceeding with your installation.
+You can install {AutomationMesh} using the instructions found in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} Installation Guide]. {PlatformNameShort} installations are separated into unique scenarios based on the components deployed. You can incorporate {AutomationMesh} designs based on which platform components you intend to deploy in your environment. Review the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#red_hat_ansible_automation_platform_system_requirements[{PlatformName} System Requirements] for each component and {AutomationMesh} node type before proceeding with your installation.
+
+The following sections provide options for you to configure your {AutomationMesh}, including an option to import your own CA certificate.
+
+include::platform/proc-import-mesh-ca.adoc[leveloffset=+1]
 
 
 [role="_additional-resources"]
-== Additional resources
+.Additional resources
 
-* See the {PlatformName} Reference Architecture for additional information before installing.
+* Review the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#red_hat_ansible_automation_platform_system_requirements[{PlatformName} System Requirements] for additional information before installing.
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
