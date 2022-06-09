@@ -36,3 +36,22 @@ peers=connected_nodes
 100-addr.tatu.home ansible_host=192.168.111.100 peers=110-addr.tatu.home node_type=hop
 
 -----
+
+== Deprovisioning isolated nodes
+You have the option to manually remove any isolated nodes using the `awx-manage` deprovisioning utility.
+
+WARNING: Only use the deprovisioning command to remove isolated nodes that have not migrated to execution nodes. To deprovision execution nodes from your {AutomationMesh} architecture, use the <<proc-deprovisioning-nodes, installer method>> instead.
+
+.Procedure
+
+. Shut down the instance:
++
+----
+$ automation-controller-service stop
+----
+. Run the deprovision command from another instance, replacing `__host_name__` with the name of the node as listed in the inventory file:
+[subs="+quotes"]
++
+----
+$ awx-manage deprovision_instance --hostname=__<host_name>__
+----
