@@ -6,7 +6,9 @@
 [role="_abstract"]
 For users who prefer to deploy {PlatformNameShort} with an external database, they can do so by configuring a secret with instance credentials and connection information, then applying it to their cluster using the `oc create` command.
 
-By default, the {PlatformName} operator automatically creates and configures a managed PostgreSQL pod in the same namespace as your {PlatformNameShort} deployment. A user may instead choose to use an external database if they prefer to use a dedicated node to ensure dedicated resources or to manually manage backups, upgrades, or performance tweaks.
+By default, the {PlatformName} operator automatically creates and configures a managed PostgreSQL pod in the same namespace as your {PlatformNameShort} deployment. You can deploy {PlatformNameShort} with an external database instead of the managed PostgreSQL pod that the {PlatformName} operator automatically creates.
+
+Using an external database lets you share and reuse resources and manually manage backups, upgrades, and performance optimizations.
 
 [NOTE]
 ====
