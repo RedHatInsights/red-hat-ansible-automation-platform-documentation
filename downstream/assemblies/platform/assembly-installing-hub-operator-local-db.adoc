@@ -15,7 +15,7 @@ ifdef::context[:parent-context: {context}]
 
 [NOTE]
 ====
-Default installation settings include storage of 50GB and `ReadWriteMany` access.
+Default installation settings include storage of 50 GB and `ReadWriteMany` access.
 ====
 
 
