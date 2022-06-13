@@ -34,6 +34,7 @@ Azure offers different ways to peer private networks. These are typically divide
 
 * **Hub-and-spoke peering**: In this topology, there is a centralized hub VNet that other virtual networks peer with.
 This hub network has mechanisms to route traffic through transit routing. Cloud networks, including VPN/Express Connect connections with on-premises and other cloud networks, can communicate through the hub VNet.
+* **Azure Virtual WAN (VWAN)**: Azure Virtual WAN is a networking service that attempts to simplify hub-and-spoke network modeling across Azure, on-premises, and other VPN/Direct Connect networks. For more about VWAN, refer to Microsoft's link:https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about[Virtual WAN documentation].
 * **Direct peering**: Private networks are individually connected to one another with no routing hops between them. This is a simpler peering model: it is useful when you only want to connect a few networks.
 
 Refer to link:https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/vnet-peering[Choose between virtual network peering and VPN gateways] in the Microsoft _Application architecture fundamentals guide_ to determine the correct peering approach for your organization.
