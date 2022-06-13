@@ -1,4 +1,4 @@
-[id="con-aap-azure-infrastructure-usage"]
+[id="con-aap-azure-infrastructure-usage_{context}"]
 
 = {AAPonAzureNameShort} infrastructure usage
 
