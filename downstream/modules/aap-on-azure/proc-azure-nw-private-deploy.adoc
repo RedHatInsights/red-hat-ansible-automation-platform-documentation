@@ -1,11 +1,4 @@
-////
-Base the file name and the ID on the module title. For example:
-* file name: con-my-concept-module-a.adoc
-* ID: [id="con-my-concept-module-a_{context}"]
-* Title: = My concept module A
-////
-
-[id="proc-azure-nw-private-deploy"]
+[id="proc-azure-nw-private-deploy_{context}"]
 
 = Private deployments
 
@@ -19,7 +12,7 @@ Your Azure administrators must determine the right model for your organization a
 
 The following are the most common options:
 
-* xref:proc-azure-nw-private-deploy-az-hosted-vm[Azure hosted virtual machine]
-* xref:proc-azure-nw-private-deploy-vpn[VPN]
-* xref:proc-azure-nw-private-deploy-ssh-tunnel[SSH tunnel]
+* xref:proc-azure-nw-private-deploy-az-hosted-vm_aap-azure-connecting-to-aap[Azure hosted virtual machine]
+* xref:proc-azure-nw-private-deploy-vpn_aap-azure-connecting-to-aap[VPN]
+* xref:proc-azure-nw-private-deploy-ssh-tunnel_aap-azure-connecting-to-aap[SSH tunnel]
 

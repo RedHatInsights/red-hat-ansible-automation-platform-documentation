@@ -1,4 +1,4 @@
-[id="con-aap-azure-lifecycle"]
+[id="con-aap-azure-lifecycle_{context}"]
 
 = Lifecycle management
 
