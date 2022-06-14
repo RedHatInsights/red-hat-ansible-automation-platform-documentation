@@ -12,9 +12,14 @@ To import your own CA certificate, it must meet the following requirements:
 * asdasd
 
 .Procedure
-* In the `inventory` file, add the following variables and specify a path to both the certificate file (`.crt`) and the private RSA key (`.key`), following the example below:
+
+. Open the `inventory` file for editing.
+. Add the `mesh_ca_keyfile` variable and specify the full path to the CA certificate file (.crt).
+. Add the `mesh_ca_certfile` variable and specify the full path to the private RSA key (.key).
+. Save the changes to the inventory file.
+
+.Example
 [subs="+quotes"]
-+
 ----
 [all:vars]
 mesh_ca_keyfile=/tmp/__<mesh_CA>__.key

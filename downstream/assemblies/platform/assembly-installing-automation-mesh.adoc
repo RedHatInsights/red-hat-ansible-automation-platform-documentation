@@ -10,7 +10,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-You can install {AutomationMesh} using the instructions found in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} Installation Guide]. {PlatformNameShort} installations are separated into unique scenarios based on the components deployed. You can incorporate {AutomationMesh} designs based on which platform components you intend to deploy in your environment. Review the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#red_hat_ansible_automation_platform_system_requirements[{PlatformName} System Requirements] for each component and {AutomationMesh} node type before proceeding with your installation.
+You can install {AutomationMesh} using the instructions found in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} Installation Guide]. {PlatformNameShort} installations are separated into unique scenarios based on the components deployed. You can incorporate {AutomationMesh} designs based on which platform components you intend to deploy in your environment.
 
 The following sections provide options for you to configure your {AutomationMesh}, including an option to import your own CA certificate.
 
