@@ -21,11 +21,11 @@ h| OS | Red Hat Enterprise Linux 7.7 or later 64-bit (x86) or 8.2 or later 64-bi
 
 h| Ansible | version 2.9 required
 
-h| RAM | 4Gb minimum
+h| RAM | 4 GB minimum
 
 h| CPUs | 2 minimum
 
-h| Disk | 20Gb dedicated hard disk space
+h| Disk | 20 GB dedicated hard disk space
 
 Dependent on size of collections stored
 
