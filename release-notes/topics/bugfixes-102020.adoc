@@ -1,6 +1,0 @@
-[[bugfixes-102020]]
-= Bug Fixes
-
-This release of Red Hat Automation Analytics includes the following bug fixes:
-
-* Scaling on the Automation Calculator is corrected. 

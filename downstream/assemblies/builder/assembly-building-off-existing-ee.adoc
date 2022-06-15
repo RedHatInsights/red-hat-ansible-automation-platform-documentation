@@ -1,7 +1,0 @@
-[id="assembly-building-off-existing-ee"]
-
-= Building off of existing base EEs provided by {PlatformName}
-
-include::builder/con-gathering-system-dependencies.adoc[leveloffset=+1]
-include::builder/con-pip-based-req.adoc[leveloffset=+1]
-include::builder/proc-customize-ee-image.adoc[leveloffset=+1]

@@ -1,9 +1,0 @@
-To create an approval workflow:
-
-. Click *Approval*.
-. Click *Create workflow*.
-. Provide a *Name* and *Description* and click *Continue*.
-. Under *Set groups* click *Add a group*.
-. Select a group from the drop-down menu.
-. Click *Add another group* to continue to add groups. Click *Next* when finished.
-. Review workflow details and click *Confirm*.

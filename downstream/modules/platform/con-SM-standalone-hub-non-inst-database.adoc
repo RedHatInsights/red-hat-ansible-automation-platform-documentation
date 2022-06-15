@@ -1,6 +1,0 @@
-[id="con-SM-standalone-hub-non-inst-database_{context}"]
-
-= Standalone {HubName} with a database on the same node, or a non-installer managed database
-
-[role="_abstract"]
-This scenario includes installation of {HubName}, including the web frontend, REST API backend, and database on a single machine. It installs PostgreSQL, and configures the {HubName} to use that as its database.

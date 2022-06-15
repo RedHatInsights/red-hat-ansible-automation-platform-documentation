@@ -1,5 +1,0 @@
-[id="con-operator-custom-resources_{context}"]
-
-= Custom resources
-
-You can define custom resources for each primary installation workflows.
