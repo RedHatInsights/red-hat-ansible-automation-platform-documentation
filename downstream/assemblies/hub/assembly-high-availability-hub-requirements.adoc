@@ -1,4 +1,4 @@
-[id="assembly-deploying-high-availability-hub"]
+[id="assembly-high-availability-hub-requirements"]
 
 = Requirements for a high availability {HubName}
 
@@ -11,6 +11,6 @@ Before you deploy HA hub using the installer, make sure your configuration satis
 
 The following sections expand on these requirements in greater detail. Once you meet these requirements, proceed with the {PlatformNameShort} installation with these steps.
 
-include::automation-hub/con-required-shared-filesystem.adoc[leveloffset=+2]]
-include::automation-hub/con-network-storage-reqs.adoc[leveloffset=+2]]
-include::automation-hub/con-required-changes-ha.adoc[leveloffset=+2]]
+include::automation-hub/con-required-shared-filesystem.adoc[leveloffset=+1]
+include::automation-hub/con-network-storage-reqs.adoc[leveloffset=+1]
+include::automation-hub/con-required-changes-ha.adoc[leveloffset=+1]

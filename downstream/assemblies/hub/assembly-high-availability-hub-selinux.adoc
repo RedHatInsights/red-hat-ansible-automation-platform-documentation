@@ -1,0 +1,88 @@
+[id="assembly-high-availability-hub-selinux"]
+
+= Setting up a high availability automation hub on SELinux
+
+.Prerequisites
+* ???
+
+To set up a high availability (HA) deployment of {HubName} on SELinux, you will need to create two mount points, one for `/var/lib/pulp` and one for `/var/lib/pulp/pulpcore_static`, before you run the installer.
+
+.Pre-installation procedure
+. Install the `nfs-utils` package:
++
+----
+$ yum install nfs-utils
+----
+. Create a mount point at `/var/lib/pulp`:
++
+----
+$ mkdir -p /var/lib/pulp/
+----
+. Open `/etc/fstab` using a text editor, then add the following values:
++
+----
+srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev 0 0
+srv_rhel8:/data/pulpcore_static /var/lib/pulp/pulpcore_static nfs defaults,_netdev 0 0
+----
+. Run the mount command:
++
+----
+$ mount -a
+----
+. With the mount points set up, run the {PlatformNameShort} installer:
++
+----
+$ setup.sh -- -b --become-user root
+----
+
+Once the installation is complete, unmount the two mount points then add the appropriate SELinux contexts.
+
+.Post-installation procedure
+. Shut down the Pulp service:
++
+----
+$ systemctl stop pulpcore.service
+----
+. Unmount `/var/lib/pulp/pulpcore_static`:
++
+----
+$ umount /var/lib/pulp/pulpcore_static
+----
+. Unmount `/var/lib/pulp/`:
++
+----
+$ umount /var/lib/pulp
+----
+. Open `/etc/fstab` using a text editor, then add the following contexts to each mount point:
++
+----
+srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev,context="system_u:object_r:pulpcore_var_lib_t:s0" 0 0
+srv_rhel8:/data/pulpcore_static /var/lib/pulp/pulpcore_static nfs defaults,_netdev,context="system_u:object_r:httpd_sys_content_rw_t:s0" 0 0
+----
+. Run the mount command:
++
+----
+$ mount -a
+----
+. Edit `pulpcore.service` and add the following entry to ???:
++
+----
+[Unit]
+After=network.target var-lib-pulp.mount
+----
+. Enable `remote-fs.target`:
++
+----
+$ systemctl enable remote-fs.target
+----
+. Reboot the system:
++
+----
+$ reboot
+----
+
+.Verification (draft)
+* yum install setroubleshoot-server
+* service auditd rotate
+* upload collection to Automation Hub
+* sealert -a /var/log/audit/audit
