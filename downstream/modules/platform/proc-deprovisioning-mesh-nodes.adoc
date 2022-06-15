@@ -40,7 +40,7 @@ peers=connected_nodes
 == Deprovisioning isolated nodes
 You have the option to manually remove any isolated nodes using the `awx-manage` deprovisioning utility.
 
-WARNING: Only use the deprovisioning command to remove isolated nodes that have not migrated to execution nodes. To deprovision execution nodes from your {AutomationMesh} architecture, use the <<proc-deprovisioning-nodes, installer method>> instead.
+WARNING: Use the deprovisioning command to remove only isolated nodes that have not migrated to execution nodes. To deprovision execution nodes from your {AutomationMesh} architecture, use the <<proc-deprovisioning-nodes, installer method>> instead.
 
 .Procedure
 
