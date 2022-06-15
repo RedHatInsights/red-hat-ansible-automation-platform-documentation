@@ -37,7 +37,7 @@ node_state=deprovision
 == Deprovisioning isolated instance groups
 You have the option to manually remove any isolated instance groups using the `awx-manage` deprovisioning utility.
 
-WARNING: Only use the deprovisioning command to remove isolated instance groups. To deprovision instance groups from your {AutomationMesh} architecture, use the <<proc-deprovisioning-groups, installer method>> instead.
+WARNING: Use the deprovisioning command to only remove isolated instance groups. To deprovision instance groups from your {AutomationMesh} architecture, use the <<proc-deprovisioning-groups, installer method>> instead.
 
 .Procedure
 
