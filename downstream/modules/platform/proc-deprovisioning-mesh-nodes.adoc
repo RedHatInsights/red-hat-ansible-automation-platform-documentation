@@ -5,7 +5,7 @@
 = Deprovisioning individual nodes using the installer
 
 [role="_abstract"]
-You can deprovision nodes from your {AutomationMesh} using the {PlatformNameShort} installer. Edit the `inventory` file to mark the nodes to deprovision, then run the installer. Running the installer will also remove all configuration files and logs attached to the node.
+You can deprovision nodes from your {AutomationMesh} using the {PlatformNameShort} installer. Edit the `inventory` file to mark the nodes to deprovision, then run the installer. Running the installer also removes all configuration files and logs attached to the node.
 
 [NOTE]
 ====
