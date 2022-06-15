@@ -10,7 +10,7 @@ You can deprovision entire groups from your {AutomationMesh} using the {Platform
 
 [NOTE]
 ====
-You can deprovision any of your inventory’s hosts in a group except for the first host specified in the `[automationcontroller]` group.
+You can deprovision any hosts in your inventory except for the first host specified in the `[automationcontroller]` group.
 ====
 
 
