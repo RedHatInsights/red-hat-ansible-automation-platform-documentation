@@ -9,5 +9,8 @@
 [[analytics_automation_savings]]
 = Using the Automation Calculator
 
+//Downstream only content
+//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
 // Contents
 include::analytics/assembly-evaluating-automation-return.adoc[leveloffset=+1]
