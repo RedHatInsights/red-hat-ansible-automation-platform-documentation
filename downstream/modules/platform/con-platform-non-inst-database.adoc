@@ -1,7 +1,0 @@
-
-[id="con-platform-non-inst-database_{context}"]
-
-= Platform installation with a database on the {ControllerName} node, or non-installer managed database
-
-[role="_abstract"]
-This scenario includes installation of {ControllerName} and {HubName} with a database on the {ControllerName} node, or a non-installer managed database.

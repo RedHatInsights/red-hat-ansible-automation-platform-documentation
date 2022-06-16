@@ -1,4 +1,0 @@
-[id="Adding_sources"]
-= Adding sources
-
-Sources are the platforms {ProductName} connects to in order to collect inventory information used to organize and present products available to users. To use {ProductNameShort}, you need to connect the application to at least one source.

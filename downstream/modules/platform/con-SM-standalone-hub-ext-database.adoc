@@ -1,6 +1,0 @@
-[id="con-SM-standalone-hub-external-database_{context}"]
-
-= Standalone {HubName} with an external managed database
-
-[role="_abstract"]
-This scenario includes installation of the {HubName} server on a single machine, and installs a remote PostgreSQL database, managed by the {PlatformName} installer.

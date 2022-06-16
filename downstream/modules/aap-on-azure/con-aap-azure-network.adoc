@@ -1,8 +1,0 @@
-[id="con-aap-azure-network"]
-
-= Network
-
-{AAPonAzureNameShort} deploys its infrastructure into a Class C network range 192.168.0.0/24.
-You cannot change this range.
-To ensure successful network peering and communication between {AAPonAzureNameShort} and your existing networks, your enterprise network ranges must not overlap with this network range.
-

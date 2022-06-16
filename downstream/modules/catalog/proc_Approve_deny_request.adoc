@@ -1,6 +1,0 @@
-To approve or deny a request:
-
-. Navigate to menu:Approval.
-. Click the *Requests* tab and then click image:arrow.png[] on a request to expand it to detailed view.
-. Click *Approve* or *Deny*. Provide a *Reason* when denying a request.
-. Click *Submit*.

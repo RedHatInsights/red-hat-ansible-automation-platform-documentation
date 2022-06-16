@@ -1,7 +1,0 @@
-
-[id="con-platform-ext-database_{context}"]
-
-= Platform installation with an external managed database
-
-[role="_abstract"]
-This scenario includes installation of {ControllerName} and {HubName} and configures communication with a remote PostgreSQL instance as its database. This remote PostgreSQL can be a server you manage, or can be provided by a cloud service such as Amazon RDS.

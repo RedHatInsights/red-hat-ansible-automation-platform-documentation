@@ -1,5 +1,0 @@
-[id="copying-products"]
-
-= Copying products to different portfolios
-
-You can copy products from one portfolio to another as part of developing new portfolios to meet group needs. Once a product is copied you can edit its basic fields, update its survey, and apply different approval processes.
