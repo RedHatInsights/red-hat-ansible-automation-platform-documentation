@@ -1,4 +1,4 @@
-[id="proc_provision-ocp-storage-with-readwritemany-access-mode_{context}"]
+[id="proc-provision-ocp-storage-with-readwritemany-access-mode_{context}"]
 
 
 = Provisioning OCP storage with `ReadWriteMany` access mode
