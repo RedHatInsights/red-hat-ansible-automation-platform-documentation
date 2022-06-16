@@ -5,7 +5,6 @@ include::attributes/attributes.adoc[]
 [[getting-started]]
 = Getting started with Automation Services Catalog
 
-
 == About {CatalogName}
 
 {CatalogNameStart} is a service within the Red Hat Ansible Automation Platform.
