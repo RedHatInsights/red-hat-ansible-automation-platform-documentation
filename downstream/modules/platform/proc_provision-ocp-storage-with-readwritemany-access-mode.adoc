@@ -3,10 +3,10 @@
 
 = Provisioning OCP storage with `ReadWriteMany` access mode
 
-To ensure successful installation of {OperatorPlatform}, set the storage type for {HubName} to `ReadWriteMany` access mode by completing the following steps.
+To ensure successful installation of {OperatorPlatform}, you must provision your storage type for {HubName} initially to `ReadWriteMany` access mode.
 
 .Procedure
 
-. In your {HubName} instance, click the *File for Storage Type* drop-down list and select `ReadWriteMany`.
-
-. Click *Create*.
+. Click the following: link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.10/html-single/storage/index#persistent-storage-nfs-provisioning_persistent-storage-nfs[Provisioning].
+. In the first provisioning step, update the `accessModes` from the default `ReadWriteOnce` to `ReadWriteMany`.
+. Complete the additional steps in this section to create the persistent volume claim. 

@@ -3,9 +3,9 @@
 
 If you are using file-based storage and your installation scenario includes {HubName}, ensure that you change the `ReadWriteOnce` default storage option for {OperatorPlatform} to `ReadWriteMany`.
 
-{HubNameStart} requires `ReadWriteMany` storage, Azure Blob storage, or an s3-compliant storage for operation because multiple pods responsible for upload and download of content (for example, collections) need access to the same content. Multiple pods can have access to the same persistent volume claim (PVC) as long as you select the `ReadWriteMany` storage option.
+{HubNameStart} requires `ReadWriteMany` file-based storage, Azure Blob storage, or Amazon s3-compliant storage for operation so that multiple pods can access shared content, such as collections.
 
-In addition, OpenShift Data Foundation provides a `ReadWriteMany` or S3-compliant implementation. Also, an NFS storage configuration can be setup to support `ReadWriteMany` and is often the simplest approach. This, however, introduces the NFS server as a potential single point of failure.
+In addition, {ODFShort} provides a `ReadWriteMany` or S3-compliant implementation. Also, you can set up NFS storage configuration to support `ReadWriteMany`. This, however, introduces the NFS server as a potential, single point of failure.
 
 [role="_additional-resources"]
 .Additional resources
