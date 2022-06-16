@@ -4,7 +4,8 @@
 
 When VPN is not an option and your local users are more technical, the SSH tunnel approach is a secure alternative that enables users to access {PlatformNameShort} from a browser on a local machine.
 
-In this model, a lightweight linux SSH server is created in a DMZ network, similar to the Azure Hosted Virtual Machine method.  However, no workstation features are required for the server.
+In this model, a lightweight linux SSH server is created in a DMZ network, similar to the Azure Hosted Virtual Machine method.
+However, no workstation features are required for the server.
 The SSH server simply acts as a proxy between a user’s local machine and {AAPonAzureNameShort}.
 
 Each user must be configured as an SSH user on the server.
@@ -15,12 +16,14 @@ This approach is easier to implement on Linux and macOS host machines, but can b
 . Update your local hosts file so that the {PlatformNameShort} URLs route traffic to your local machine rather than the private IP that DNS records are configured with.
 Add the following line to your hosts file:
 +
+[subs="+quotes"]
 ----
-127.0.0.1 controller.aapusb7en3awafew.az.ansiblecloud.com
+127.0.0.1 controller.<__your_AAPonAzure_instance__>.az.ansiblecloud.com
 ----
 +
 The following example shows the line in a hosts file:
 +
+[subs="+normal"]
 ----
 ##
 # Host Database
@@ -32,12 +35,14 @@ The following example shows the line in a hosts file:
 255.255.255.255	broadcasthost
 ::1             localhost
 
-127.0.0.1 controller.aapusb7en3awafew.az.ansiblecloud.com
+127.0.0.1 controller.<__your_AAPonAzure_instance__>.az.ansiblecloud.com
 ----
 
 . Run an `ssh` command to establish the SSH tunnel.
 +
-In the example below, the IP address is the address of the SSH server in your DMZ. The `-L` flag makes your local system route traffic for the {ControllerName} URL over port 443 (HTTPs).
+In the example below, the IP address is the address of the SSH server in your DMZ.
+Change this IP address for your SSH tunnel.
+The `-L` flag makes your local system route traffic for the {ControllerName} URL over port 443 (HTTPs).
 
 +
 ----
