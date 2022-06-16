@@ -813,10 +813,10 @@ spec:
 <p>If you are using file-based storage and your installation scenario includes automation hub, ensure that you change the <code>ReadWriteOnce</code> default storage option for Ansible Automation Platform Operator to <code>ReadWriteMany</code>.</p>
 </div>
 <div class="paragraph">
-<p>Automation hub requires <code>ReadWriteMany</code> storage, Azure Blob storage, or an s3-compliant storage for operation because multiple pods responsible for upload and download of content (for example, collections) need access to the same content. Multiple pods can have access to the same persistent volume claim (PVC) as long as you select the <code>ReadWriteMany</code> storage option.</p>
+<p>Automation hub requires <code>ReadWriteMany</code> file-based storage, Azure Blob storage, or Amazon s3-compliant storage for operation so that multiple pods can access shared content, such as collections.</p>
 </div>
 <div class="paragraph">
-<p>In addition, OpenShift Data Foundation provides a <code>ReadWriteMany</code> or S3-compliant implementation. Also, an NFS storage configuration can be setup to support <code>ReadWriteMany</code> and is often the simplest approach. This, however, introduces the NFS server as a potential single point of failure.</p>
+<p>In addition, OpenShift Data Foundation provides a <code>ReadWriteMany</code> or S3-compliant implementation. Also, you can set up NFS storage configuration to support <code>ReadWriteMany</code>. This, however, introduces the NFS server as a potential, single point of failure.</p>
 </div>
 <div class="ulist _additional-resources">
 <div class="title">Additional resources</div>
@@ -832,16 +832,19 @@ spec:
 <div class="sect4">
 <h5 id="proc_provision-ocp-storage-with-readwritemany-access-mode_installing-hub-operator">Provisioning OCP storage with <code>ReadWriteMany</code> access mode</h5>
 <div class="paragraph">
-<p>To ensure successful installation of Ansible Automation Platform Operator, set the storage type for automation hub to <code>ReadWriteMany</code> access mode by completing the following steps.</p>
+<p>To ensure successful installation of Ansible Automation Platform Operator, you must provision your storage type for automation hub initially to <code>ReadWriteMany</code> access mode.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>In your automation hub instance, click the <strong>File for Storage Type</strong> drop-down list and select <code>ReadWriteMany</code>.</p>
+<p>Click the following: <a href="https://access.redhat.com/documentation/en-us/openshift_container_platform/4.10/html-single/storage/index#persistent-storage-nfs-provisioning_persistent-storage-nfs">Provisioning</a>.</p>
 </li>
 <li>
-<p>Click <strong>Create</strong>.</p>
+<p>In the first provisioning step, update the <code>accessModes</code> from the default <code>ReadWriteOnce</code> to <code>ReadWriteMany</code>.</p>
+</li>
+<li>
+<p>Complete the additional steps in this section to create the persistent volume claim.</p>
 </li>
 </ol>
 </div>
