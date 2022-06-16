@@ -1,5 +1,5 @@
 [preface]
-[id="making-open-source-more-inclusive_{context}"]
+[id="making-open-source-more-inclusive"]
 = Making open source more inclusive
 
 Red Hat is committed to replacing problematic language in our code, documentation, and web properties.
