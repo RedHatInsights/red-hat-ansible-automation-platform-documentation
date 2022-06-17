@@ -1,32 +1,32 @@
 [id="proc-peer-vwan-hub-to-aap"]
 
-= Peering VWAN Hub to the {AAPonAzureNameShort} Network
+= Peering a VWAN Hub to the {AAPonAzureNameShort} Network
 
 .Prerequisites
 
 * A pre-configured Azure VWAN that is already tested and working.
-* One (or more) of the following connectivity options to the VWAN
-** A DMZ network that contains Azure virtual machines that your employees will use to access Ansible Automation Platform on Azure.
-** A DMZ network that contains an Azure virtual machine that can be used with SSH tunneling to access Ansible Automation Platform on Azure.
-** A VPN or Direct Connect service to your local network that is operational so that PCs from your local network can route traffic to Ansible Automation Platform on Azure.
+* One or more of the following connectivity options to the VWAN:
+** A DMZ network that contains Azure virtual machines that users will use to access {AAPonAzureNameShort}.
+** A DMZ network that contains an Azure virtual machine that can be used with SSH tunneling to access {AAPonAzureNameShort}.
+** A VPN or Direct Connect service to your local network that is operational so that PCs from your local network can route traffic to {AAPonAzureNameShort}.
 
-Peering the Ansible Automation Platform on Azure VNET to your VWAN is the same as peering to any other VNET or network that you can connect to a VWAN.
-In the Azure console, open the VWAN that you plan to peer with your instance of Ansible Automation Platform.
-Click the “Virtual Network Connections” link on the left menu.
-There should be at least one “hub” listed (since you meet the prerequisites listed at the start of this section).
-Click the “Add Connection” button.
-Fill out the form with the following information:
-Connection Name: AnsibleAutomationPlatformConnection (or a name of your choosing).
-Hubs: Select one or more VWAN hub networks that the managed application VNET will peer with.
-Subscription: The subscription that contains the managed application.
-Resource group: The managed resource group of the managed application.  It will typically be prefixed with “mrg-”.
-Virtual network: The VNET of the managed application.  There should only be one to select from in the managed resource group.
-Propagate to none: No
-Associate Route Table: Select the default route table or the appropriate route table that your organization has configured for VWAN. 
-Propagate to Route Tables: Select the default route table(s) or the appropriate route table that your organization has configured for VWAN. 
-Propagate to labels: This can be selected based on your organization’s use of labels.  It may be left blank if unused.
-Static routes: These should be left blank.
-Click “Create” at the bottom of the form.
-After peering completes then traffic should successfully route traffic to-and-from Ansible Automation Platform on Azure though your VWAN hub network.
+Peering the {{AAPonAzureNameShort} VNET to your VWAN is the same as peering to any other VNET or network that you can connect to a VWAN.
 
+. In the Azure console, open the VWAN that you plan to peer with your instance of {PlatformNameShort}.
+. Click *Virtual Network Connections* to view your VWAN hubs.
+. Click the *Add Connection* button.
+. Fill out the form with the following information:
+** *Connection Name*: _<Ansible_Automation_Platform_connection_name>_
+** *Hubs*: Select one or more VWAN hub networks that the managed application VNET will peer with.
+** *Subscription*: Select the subscription where {AAPonAzureNameShort} has been deployed.
+** *Resource group*: The managed resource group of the managed application. It will typically be prefixed with “mrg-”.
+** *Virtual network*: The VNET of the managed application. There is only one VNET in the managed resource group.
+** *Propagate to none*: _No_
+** *Associate Route Table*: Select the default route table or the appropriate route table that your organization has configured for VWAN. 
+** *Propagate to Route Tables*: Select one or more default route tables or the appropriate route table that your organization has configured for VWAN. 
+** *Propagate to labels*: Select labels if your organization uses them.
+** *Static routes*: Do not complete this field.
+. Click *Create*.
+
+After peering completes, traffic routes to and from {AAPonAzureNameShort} though your VWAN hub network.
 
