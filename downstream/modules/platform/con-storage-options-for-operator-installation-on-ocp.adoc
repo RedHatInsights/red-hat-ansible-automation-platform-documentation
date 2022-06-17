@@ -1,0 +1,14 @@
+[id="con-storage-options-for-operator-installation-on-ocp_{context}"]
+= Storage options for {OperatorPlatform} installation on {OCP}
+
+If you are using file-based storage and your installation scenario includes {HubName}, ensure that you change the `ReadWriteOnce` default storage option for {OperatorPlatform} to `ReadWriteMany`.
+
+{HubNameStart} requires `ReadWriteMany` file-based storage, Azure Blob storage, or Amazon S3-compliant storage for operation so that multiple pods can access shared content, such as collections.
+
+In addition, {ODFShort} provides a `ReadWriteMany` or S3-compliant implementation. Also, you can set up NFS storage configuration to support `ReadWriteMany`. This, however, introduces the NFS server as a potential, single point of failure.
+
+[role="_additional-resources"]
+.Additional resources
+
+* link:https://docs.openshift.com/container-platform/{OCPLatest}/storage/persistent_storage/persistent-storage-nfs.html[Persistent storage using NFS] in the {OCPShort} _Storage_ guide
+* IBM's link:https://www.ibm.com/support/pages/how-do-i-create-storage-class-nfs-dynamic-storage-provisioning-openshift-environment[How do I create a storage class for NFS dynamic storage provisioning in an OpenShift environment?]
