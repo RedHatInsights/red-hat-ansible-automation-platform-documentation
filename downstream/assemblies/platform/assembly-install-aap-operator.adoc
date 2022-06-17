@@ -12,6 +12,7 @@ ifdef::context[:parent-context: {context}]
 .Prerequisites
 * You have installed the {PlatformName} catalog in Operator Hub.
 
+
 include::platform/proc-install-aap-operator.adoc[leveloffset=+2]
 
 
