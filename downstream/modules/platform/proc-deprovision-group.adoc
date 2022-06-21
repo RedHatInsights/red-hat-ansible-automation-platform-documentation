@@ -10,7 +10,7 @@ You can deprovision entire groups from your {AutomationMesh} using the {Platform
 
 [NOTE]
 ====
-You can deprovision any of your inventory’s hosts in a group except for the first host specified in the ‘[automationcontroller]`group.
+You can deprovision any hosts in your inventory except for the first host specified in the `[automationcontroller]` group.
 ====
 
 
@@ -32,4 +32,18 @@ execution-node-7.example.com
 
 [execution_nodes:vars]
 node_state=deprovision
+----
+
+== Deprovisioning isolated instance groups
+You have the option to manually remove any isolated instance groups using the `awx-manage` deprovisioning utility.
+
+WARNING: Use the deprovisioning command to only remove isolated instance groups. To deprovision instance groups from your {AutomationMesh} architecture, use the <<proc-deprovisioning-groups, installer method>> instead.
+
+.Procedure
+
+* Run the following command, replacing `__<name>__` with the name of the instance group:
++
+[subs="+quotes"]
+----
+$ awx-manage unregister_queue --queuename=__<name>__
 ----
