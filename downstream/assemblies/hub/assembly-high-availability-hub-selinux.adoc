@@ -2,17 +2,9 @@
 
 = Setting up a high availability automation hub on SELinux
 
-.Prerequisites
-* ???
-
 To set up a high availability (HA) deployment of {HubName} on SELinux, you will need to create two mount points, one for `/var/lib/pulp` and one for `/var/lib/pulp/pulpcore_static`, before you run the installer.
 
 .Pre-installation procedure
-. Install the `nfs-utils` package:
-+
-----
-$ yum install nfs-utils
-----
 . Create a mount point at `/var/lib/pulp`:
 +
 ----
@@ -64,7 +56,12 @@ srv_rhel8:/data/pulpcore_static /var/lib/pulp/pulpcore_static nfs defaults,_netd
 ----
 $ mount -a
 ----
-. Edit `pulpcore.service` and add the following entry to ???:
+. Edit `pulpcore.service` using `systemctl`:
++
+----
+$ systemctl edit pulpcore.service
+----
+. Add the following entry to `pulpcore.service` to ensure that {HubName} services only starts after starting the network and mounting the remote mount points:
 +
 ----
 [Unit]
@@ -81,8 +78,5 @@ $ systemctl enable remote-fs.target
 $ reboot
 ----
 
-.Verification (draft)
-* yum install setroubleshoot-server
-* service auditd rotate
-* upload collection to Automation Hub
-* sealert -a /var/log/audit/audit
+.Additional Resources
+* See the link:https://docs.pulpproject.org/en/2.16/user-guide/scaling.html#selinux-requirements[SELinux Requirements on the Pulp Project documentation] for a list of SELinux contexts.
