@@ -1,15 +1,10 @@
 [id="proc-import-mesh-ca_{context}"]
 
 = Importing a Certificate Authority (CA) certificate
+
 A Certificate Authority (CA) is used to certify and sign execution nodes in an {AutomationMesh} environment. Users who wish to provide their own CA can do so by specifying the path to the certificate and the private RSA key file in the `inventory` file of their {PlatformName} installer.
 
 NOTE: Users are not required to have a CA prior to their {AutomationMesh} installation. Users without a CA can proceed with their {PlatformNameShort} installation where the installer will generate a CA for the user using OpenSSL.
-
-.Prerequisites
-To import your own CA certificate, it must meet the following requirements:
-
-* asdasd
-* asdasd
 
 .Procedure
 
@@ -25,6 +20,8 @@ To import your own CA certificate, it must meet the following requirements:
 mesh_ca_keyfile=/tmp/__<mesh_CA>__.key
 mesh_ca_certfile=/tmp/__<mesh_CA>__.crt
 ----
+
+With the CA files added to the inventory file, run the installer to apply the CA. This process copies and stores the CA on each control node on your network. By default, the certfile and keyfile will be added to `/etc/receptor/tls/ca/`.
 
 .Optional: Assigning CA certificates to individual nodes
 Users can also assign CA certificates to individual nodes by adding the `mesh_node_certfile=` and `mesh_node_keyfile=` fields to each node, following the example below:
