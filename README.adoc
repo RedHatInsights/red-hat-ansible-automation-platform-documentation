@@ -56,7 +56,7 @@ Platform assemblies are grouped by component.
 ** `modules`: A directory for all modules, each one in its own AsciiDoc file.
 Platform modules are grouped by component.
 ** `titles`: A directory for titles (information units, e.g, install guide, user guide).
-Contains `master.adoc` files that and symbolic links to the `assemblies` and `modules` directories.
+Contains main assembly files and symbolic links to the `assemblies` and `modules` directories.
 Platform titles are grouped by component or feature.
 
 * `release-notes`: Contains release note content.
@@ -142,20 +142,24 @@ $ git push origin HEAD
 
 After you submit a pull request, it will be reviewed by members of this project.
 
-### Building the guide
+### Building titles and user stories
 
-You must have `asciidoctor` installed. See the link:https://asciibinder.net/[Asciibinder documentation] for more information on installing Asciibinder.
+Render asciidoc as HTML before reviewing content or to check for formatting and markup issues.
 
-. Navigate to the `red-hat-ansible-automation-platform-documentation` directory.
-. Use the following command to build the guide:
+. Install `asciidoctor` if necessary.
+. Build titles and user stories as follows:
 
 -----
-$ asciidoctor master.adoc
+$ asciidoctor path/to/master.adoc
 -----
 
-This generates a `master.html` file that you can now view in a browser.
+-----
+$ asciidoctor path/to/<title_name>.asciidoc
+-----
 
-
+-----
+$ asciidoctor path/to/assembly-<story_name>.adoc
+-----
 
 ## Contacts
 
