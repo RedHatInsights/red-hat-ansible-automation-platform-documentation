@@ -14,7 +14,7 @@ $ mkdir -p /var/lib/pulp/
 +
 ----
 srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev 0 0
-srv_rhel8:/data/pulpcore_static /var/lib/pulp/pulpcore_static nfs defaults,_netdev 0 0
+srv_rhel8:/data/pulpcore_static /var/lib/pulp/pulpcore_static nfs defaults,_netdev,context="system_u:object_r:httpd_sys_content_rw_t:s0" 0 0
 ----
 . Run the mount command:
 +
@@ -35,21 +35,15 @@ Once the installation is complete, unmount the two mount points then add the app
 ----
 $ systemctl stop pulpcore.service
 ----
-. Unmount `/var/lib/pulp/pulpcore_static`:
-+
-----
-$ umount /var/lib/pulp/pulpcore_static
-----
 . Unmount `/var/lib/pulp/`:
 +
 ----
 $ umount /var/lib/pulp
 ----
-. Open `/etc/fstab` using a text editor, then add the following contexts to each mount point:
+. Open `/etc/fstab` using a text editor, then add the following context to the `/var/lib/pulp/` mount point:
 +
 ----
-srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev,context="system_u:object_r:pulpcore_var_lib_t:s0" 0 0
-srv_rhel8:/data/pulpcore_static /var/lib/pulp/pulpcore_static nfs defaults,_netdev,context="system_u:object_r:httpd_sys_content_rw_t:s0" 0 0
+srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev,nosharecache,context="system_u:object_r:pulpcore_var_lib_t:s0" 0 0
 ----
 . Run the mount command:
 +
