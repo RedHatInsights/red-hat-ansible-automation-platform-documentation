@@ -12,14 +12,15 @@ Before you can peer a VWAN with the {AAPonAzureNameShort} VNET, you must have co
 ** A DMZ network that contains an Azure virtual machine that can be used with SSH tunneling to access {AAPonAzureNameShort}.
 ** A VPN or Direct Connect service to your local network that routes traffic from machines on your local network to {AAPonAzureNameShort}.
 
-Peering the {AAPonAzureNameShort} VNET to your VWAN follows the same approach as peering any other VNET or network with a VWAN.
+
+.Procedure
 
 . Navigate to the *Virtual Network Connections* page for the VWAN that you want to peer with your {PlatformNameShort} instance.
-. Use the following settings to create a connection between the VWAN hub and your {PlatformNameShort} instance:
+. To create a connection between the VWAN hub and your {PlatformNameShort} instance, use the following settings:
 ** *Connection Name*: _<Ansible_Automation_Platform_connection_name>_
 ** *Hubs*: Select one or more VWAN hub networks that the managed application VNET will peer with.
 ** *Subscription*: Select the subscription where {AAPonAzureNameShort} has been deployed.
-** *Resource group*: The managed resource group of the managed application. It will typically be prefixed with “mrg-”.
+** *Resource group*: The managed resource group of the managed application. It is typically prefixed with “mrg-”.
 ** *Virtual network*: The VNET of the managed application. There is only one VNET in the managed resource group.
 ** *Propagate to none*: _No_
 ** *Associate Route Table*: Select the default route table or the appropriate route table that your organization has configured for VWAN. 
@@ -29,5 +30,7 @@ Peering the {AAPonAzureNameShort} VNET to your VWAN follows the same approach as
 
 When network peering completes, traffic routes to and from {AAPonAzureNameShort} though your VWAN hub network.
 
-For further information on connecting a VNET to a VWAN, refer to link:https://docs.microsoft.com/en-us/azure/virtual-wan/howto-connect-vnet-hub[Connect a virtual network to a Virtual WAN hub - portal] in the Microsoft Azure Virtual WAN documentation.
+.Additional resources
+
+* link:https://docs.microsoft.com/en-us/azure/virtual-wan/howto-connect-vnet-hub[Connect a virtual network to a Virtual WAN hub - portal] (Microsoft Azure Virtual WAN documentation)
 
