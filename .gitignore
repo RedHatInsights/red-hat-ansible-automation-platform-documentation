@@ -11,5 +11,5 @@ html/
 */.DS_Store
 *.zip
 emender/results/*
-downstream/titles/*/master.html
-downstream/titles/*/*/master.html
+downstream/titles/*/*.html
+downstream/titles/*/*/*.html
