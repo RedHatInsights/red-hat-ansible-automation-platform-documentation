@@ -7,5 +7,8 @@
 [[analytics_automation_savings]]
 = Evaluating your Automation controller job runs using the Job Explorer
 
+//Downstream only content
+//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
 // Contents
 include::analytics/assembly-using-job-explorer.adoc[leveloffset=+1]
