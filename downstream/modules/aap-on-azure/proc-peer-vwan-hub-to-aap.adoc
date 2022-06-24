@@ -1,17 +1,16 @@
-[id="proc-peer-vwan-hub-to-aap"]
+[id="proc-peer-vwan-hub-to-aap_{context}"]
 
 = Peering a VWAN Hub to the {AAPonAzureNameShort} Network
 
-Before peering, you must connect a hub network and at least one spoke network to the hub network of the Azure VWAN that you intend to connect {AAPonAzureNameShort} to.
+Before peering, you must connect a hub network, and at least one spoke network, to the hub network of the Azure VWAN to which you intend to connect {AAPonAzureNameShort}.
 
 .Prerequisites
 
-* A pre-configured Azure VWAN that is already tested and working.
+* A pre-configured Azure VWAN.
 * One or more of the following connections to the VWAN:
-** A DMZ network that contains Azure virtual machines that users will use to access {AAPonAzureNameShort}.
-** A DMZ network that contains an Azure virtual machine that can be used with SSH tunneling to access {AAPonAzureNameShort}.
-** A VPN or Direct Connect service to your local network that routes traffic from machines on your local network to {AAPonAzureNameShort}.
-
+** A DMZ network that contains Azure virtual machines that users can remotely log into to access {AAPonAzureNameShort}.
+** A DMZ network that contains an Azure virtual machine that local machines can connect to with SSH tunneling to access {AAPonAzureNameShort}.
+** A VPN or Direct Connect service to your local network that routes traffic from local machines to {AAPonAzureNameShort}.
 
 .Procedure
 
