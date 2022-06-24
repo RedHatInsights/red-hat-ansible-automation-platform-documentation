@@ -2,7 +2,7 @@
 
 = Peering a VWAN Hub to the {AAPonAzureNameShort} Network
 
-Before you can peer a VWAN with the {AAPonAzureNameShort} VNET, you must have connected a hub network and at least one spoke network to the hub network of the Azure VWAN that you intend to connect {AAPonAzureNameShort} to.
+Before peering, you must connect a hub network and at least one spoke network to the hub network of the Azure VWAN that you intend to connect {AAPonAzureNameShort} to.
 
 .Prerequisites
 
