@@ -2,9 +2,17 @@
 
 = Setting up a high availability automation hub on SELinux
 
-To set up a high availability (HA) deployment of {HubName} on SELinux, you will need to create two mount points, one for `/var/lib/pulp` and one for `/var/lib/pulp/pulpcore_static`, before you run the installer.
+To set up a high availability (HA) deployment of {HubName} on SELinux, create a mount point for `/var/lib/pulp` and one for `/var/lib/pulp/pulpcore_static`. There are several considerations depending on your version of the pulp_installer:
 
-.Pre-installation procedure
+* Users running pulp_installer 3.18 or later will add the correct SELinux context for `/var/lib/pulp/pulpcore_static`.
+* Users running pulp_installer 3.17 or earlier will add contexts for both `/var/lib/pulp` and `/var/lib/pulp/pulpcore_static`.
+
+The following instructions detail the steps for both scenarios. 
+
+.Prerequisites
+* You have already configured a NFS export on your server.
+
+.Procedure
 . Create a mount point at `/var/lib/pulp`:
 +
 ----
@@ -13,23 +21,62 @@ $ mkdir -p /var/lib/pulp/
 . Open `/etc/fstab` using a text editor, then add the following values:
 +
 ----
-srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev 0 0
-srv_rhel8:/data/pulpcore_static /var/lib/pulp/pulpcore_static nfs defaults,_netdev,context="system_u:object_r:httpd_sys_content_rw_t:s0" 0 0
+srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev,nosharecache 0 0
+srv_rhel8:/data/pulpcore_static /var/lib/pulp/pulpcore_static nfs defaults,_netdev,nosharecache,context="system_u:object_r:httpd_sys_content_rw_t:s0" 0 0
 ----
-. Run the mount command:
+. Run the mount command for the `/var/lib/pulp/` mount point:
 +
 ----
-$ mount -a
+$ mount /var/lib/pulp
+----
+. Create a mount point at `/var/lib/pulp/pulpcore_static`:
++
+----
+$ mkdir -p /var/lib/pulp/pulpcore_static
+----
+. Run the mount command for the `/var/lib/pulp/pulpcore_static` mount point:
++
+----
+$ mount /var/lib/pulp/pulpcore_static
 ----
 . With the mount points set up, run the {PlatformNameShort} installer:
 +
 ----
 $ setup.sh -- -b --become-user root
 ----
+. Once the installation completes, shut down the Pulp service to configure `pulpcore.service`:
++
+----
+$ systemctl stop pulpcore.service
+----
+. Edit `pulpcore.service` using `systemctl`:
++
+----
+$ systemctl edit pulpcore.service
+----
+. Add the following entry to `pulpcore.service` to ensure that {HubName} services starts only after starting the network and mounting the remote mount points:
++
+----
+[Unit]
+After=network.target var-lib-pulp.mount
+----
+. Enable `remote-fs.target`:
++
+----
+$ systemctl enable remote-fs.target
+----
+. Reboot the system:
++
+----
+$ reboot
+----
 
-Once the installation is complete, unmount the two mount points then add the appropriate SELinux contexts.
+By executing these procedures on pulp_installer 3.18 or later, the installer automatically modifies `/etc/fstab/` with the appropriate contexts and remounts the mount point. You have now set up a HA {HubName} with the appropriate contexts on SELinux.
 
-.Post-installation procedure
+For users running versions pulp_installer 3.17 or older, manually add the appropriate contexts in `/etc/fstab/` using the following procedure.
+
+.Additional steps for pulp_installer 3.17 or older
+
 . Shut down the Pulp service:
 +
 ----
@@ -50,22 +97,6 @@ srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev,nosharecache,context="system_
 ----
 $ mount -a
 ----
-. Edit `pulpcore.service` using `systemctl`:
-+
-----
-$ systemctl edit pulpcore.service
-----
-. Add the following entry to `pulpcore.service` to ensure that {HubName} services only starts after starting the network and mounting the remote mount points:
-+
-----
-[Unit]
-After=network.target var-lib-pulp.mount
-----
-. Enable `remote-fs.target`:
-+
-----
-$ systemctl enable remote-fs.target
-----
 . Reboot the system:
 +
 ----
@@ -73,7 +104,7 @@ $ reboot
 ----
 
 .Troubleshooting
-Currently, a bug in the pulpcore SELinux policies can cause the token authentication public/private keys in `etc/pulp/certs/` to not have the proper SELinux labels, causing the pulp process to fail. When this occurs, run the following command to temporarily attach the proper labels:
+A bug in the pulpcore SELinux policies can cause the token authentication public/private keys in `etc/pulp/certs/` to not have the proper SELinux labels, causing the pulp process to fail. When this occurs, run the following command to temporarily attach the proper labels:
 ----
 chcon system_u:object_r:pulpcore_etc_t:s0 /etc/pulp/certs/token_{private,public}_key.pem
 ----
