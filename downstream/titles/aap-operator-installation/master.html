@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.15">
+<meta name="generator" content="Asciidoctor 2.0.14">
 <title>Red Hat Ansible Automation Platform Operator Installation Guide</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -590,6 +590,20 @@ The Ansible Automation Platform Operator includes resource types to deploy and m
 <div class="paragraph _abstract">
 <p>You can use these instructions to install the automation controller operator on Red Hat OpenShift Container Platform, specify custom resources, and deploy Ansible Automation Platform with an external database.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When an instance of automation controller is removed, the associated PVCs are not automatically deleted. This can cause issues during migration if the new deployment has the same name as the previous one. Therefore, it is recommended that you manually remove old PVCs before deploying a new automation controller instance in the same namespace. See <a href="#xref:proc-find-delete-PVCs_installing-contr-operator">Finding and deleting PVCs</a> for more information.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="sect2">
 <h3 id="_prerequisites">3.1. Prerequisites</h3>
 <div class="ulist">
@@ -767,14 +781,44 @@ spec:
 </ol>
 </div>
 </div>
-<div class="sect2 _additional-resources">
-<h3 id="_additional_resources">3.4. Additional resources</h3>
+<div class="sect2">
+<h3 id="proc-find-delete-PVCs_installing-contr-operator">3.4. Finding and deleting PVCs</h3>
+<div class="paragraph">
+<p>A persistant volume claim (PVC) is a storage volume that stores data that automation hub and automation controller applications use. These PVCs are independent from the applications and remain even when the application is deleted. If you are confident that you no longer need a PVC, or have backed it up elsewhere, you can manually delete them.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>List the existing PVCs in your deployment namespace:</p>
+<div class="listingblock">
+<div class="content">
+<pre>oc get pvc -n &lt;namespace&gt;</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Identify the PVC associated with your previous deployment by comparing the old deployment name and the PVC name.</p>
+</li>
+<li>
+<p>Delete the old PVC:</p>
+<div class="listingblock">
+<div class="content">
+<pre>oc delete pvc -n &lt;namespace&gt; &lt;pvc-name&gt;</pre>
+</div>
+</div>
+<div class="paragraph _additional-resources">
+<p>== Additional resources</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
 <p>For more information on running operators on OpenShift Container Platform, navigate to the <a href="https://access.redhat.com/documentation/en-us/openshift_container_platform/">OpenShift Container Platform product documentation</a> and click the <em>Operators - Working with Operators in OpenShift Container Platform</em> guide.</p>
 </li>
 </ul>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -784,6 +828,20 @@ spec:
 <div class="sectionbody">
 <div class="paragraph _abstract">
 <p>You can use these instructions to install the automation hub operator on Red Hat OpenShift Container Platform, specify custom resources, and deploy Ansible Automation Platform with an external database.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When an instance of automation hub is removed, the PVCs are not automatically deleted. This can cause issues during migration if the new deployment has the same name as the previous one. Therefore, it is recommended that you manually remove old PVCs before deploying a new automation hub instance in the same namespace. See <a href="#xref:proc-find-delete-PVCs_installing-hub-operator">Finding and deleting PVCs</a> for more information.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_prerequisites_2">4.1. Prerequisites</h3>
@@ -808,12 +866,12 @@ spec:
 </ol>
 </div>
 <div class="sect3">
-<h4 id="con_storage-options-for-operator-installation-on-ocp_installing-hub-operator">4.2.1. Storage options for Ansible Automation Platform Operator installation on Red Hat OpenShift Container Platform</h4>
+<h4 id="con-storage-options-for-operator-installation-on-ocp_installing-hub-operator">4.2.1. Storage options for Ansible Automation Platform Operator installation on Red Hat OpenShift Container Platform</h4>
 <div class="paragraph">
 <p>If you are using file-based storage and your installation scenario includes automation hub, ensure that you change the <code>ReadWriteOnce</code> default storage option for Ansible Automation Platform Operator to <code>ReadWriteMany</code>.</p>
 </div>
 <div class="paragraph">
-<p>Automation hub requires <code>ReadWriteMany</code> file-based storage, Azure Blob storage, or Amazon s3-compliant storage for operation so that multiple pods can access shared content, such as collections.</p>
+<p>Automation hub requires <code>ReadWriteMany</code> file-based storage, Azure Blob storage, or Amazon S3-compliant storage for operation so that multiple pods can access shared content, such as collections.</p>
 </div>
 <div class="paragraph">
 <p>In addition, OpenShift Data Foundation provides a <code>ReadWriteMany</code> or S3-compliant implementation. Also, you can set up NFS storage configuration to support <code>ReadWriteMany</code>. This, however, introduces the NFS server as a potential, single point of failure.</p>
@@ -830,7 +888,7 @@ spec:
 </ul>
 </div>
 <div class="sect4">
-<h5 id="proc_provision-ocp-storage-with-readwritemany-access-mode_installing-hub-operator">Provisioning OCP storage with <code>ReadWriteMany</code> access mode</h5>
+<h5 id="proc-provision-ocp-storage-with-readwritemany_installing-hub-operator">Provisioning OCP storage with <code>ReadWriteMany</code> access mode</h5>
 <div class="paragraph">
 <p>To ensure successful installation of Ansible Automation Platform Operator, you must provision your storage type for automation hub initially to <code>ReadWriteMany</code> access mode.</p>
 </div>
@@ -838,13 +896,13 @@ spec:
 <div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>Click the following: <a href="https://access.redhat.com/documentation/en-us/openshift_container_platform/4.10/html-single/storage/index#persistent-storage-nfs-provisioning_persistent-storage-nfs">Provisioning</a>.</p>
+<p>Click <a href="https://access.redhat.com/documentation/en-us/openshift_container_platform/4.10/html-single/storage/index#persistent-storage-nfs-provisioning_persistent-storage-nfs">Provisioning</a> to update the access mode.</p>
 </li>
 <li>
-<p>In the first provisioning step, update the <code>accessModes</code> from the default <code>ReadWriteOnce</code> to <code>ReadWriteMany</code>.</p>
+<p>In the first step, update the <code>accessModes</code> from the default <code>ReadWriteOnce</code> to <code>ReadWriteMany</code>.</p>
 </li>
 <li>
-<p>Complete the additional steps in this section to create the persistent volume claim.</p>
+<p>Complete the additional steps in this section to create the persistent volume claim (PVC).</p>
 </li>
 </ol>
 </div>
@@ -1021,14 +1079,44 @@ spec:
 </ol>
 </div>
 </div>
-<div class="sect2 _additional-resources">
-<h3 id="_additional_resources_2">4.5. Additional resources</h3>
+<div class="sect2">
+<h3 id="proc-find-delete-PVCs_installing-hub-operator">4.5. Finding and deleting PVCs</h3>
+<div class="paragraph">
+<p>A persistant volume claim (PVC) is a storage volume that stores data that automation hub and automation controller applications use. These PVCs are independent from the applications and remain even when the application is deleted. If you are confident that you no longer need a PVC, or have backed it up elsewhere, you can manually delete them.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>List the existing PVCs in your deployment namespace:</p>
+<div class="listingblock">
+<div class="content">
+<pre>oc get pvc -n &lt;namespace&gt;</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Identify the PVC associated with your previous deployment by comparing the old deployment name and the PVC name.</p>
+</li>
+<li>
+<p>Delete the old PVC:</p>
+<div class="listingblock">
+<div class="content">
+<pre>oc delete pvc -n &lt;namespace&gt; &lt;pvc-name&gt;</pre>
+</div>
+</div>
+<div class="paragraph _additional-resources">
+<p>== Additional resources</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
 <p>For more information on running operators on OpenShift Container Platform, navigate to the <a href="https://access.redhat.com/documentation/en-us/openshift_container_platform/">OpenShift Container Platform product documentation</a> and click the <em>Operators - Working with Operators in OpenShift Container Platform</em> guide.</p>
 </li>
 </ul>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -1255,7 +1343,7 @@ metadata:
 </div>
 </div>
 <div class="sect2 _additional-resources">
-<h3 id="_additional_resources_3">5.4. Additional resources</h3>
+<h3 id="_additional_resources">5.4. Additional resources</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1269,7 +1357,7 @@ metadata:
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-05-19 07:54:28 -0400
+Last updated 2022-06-24 14:53:18 -0600
 </div>
 </div>
 </body>

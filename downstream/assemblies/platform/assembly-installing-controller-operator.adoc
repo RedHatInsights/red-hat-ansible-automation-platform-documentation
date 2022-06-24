@@ -17,6 +17,12 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 You can use these instructions to install the {ControllerName} operator on {OCP}, specify custom resources, and deploy {PlatformNameShort} with an external database.
 
+[NOTE]
+====
+When an instance of {ControllerName} is removed, the associated PVCs are not automatically deleted. This can cause issues during migration if the new deployment has the same name as the previous one. Therefore, it is recommended that you manually remove old PVCs before deploying a new {ControllerName} instance in the same namespace. See xref:proc-find-delete-PVCs_{context}[Finding and deleting PVCs] for more information.
+====
+
+
 // mirrors AWX operator flow
 
 == Prerequisites
@@ -38,6 +44,8 @@ Once you have configured your {ControllerName} operator, click *Create* at the b
 * View progress by navigating to *Workloads* -> *Pods* and locating the newly created instance.
 
 include::platform/proc-operator-external-db-controller.adoc[leveloffset=+1]
+
+include::platform/proc-find-delete-PVCs.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
 == Additional resources
