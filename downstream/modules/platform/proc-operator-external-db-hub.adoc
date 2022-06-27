@@ -13,7 +13,7 @@ The external database must be a PostgreSQL database that is the version supporte
 
 [NOTE]
 ====
-{PlatformNameShort} 2.0 or later supports PostgreSQL 12.
+{PlatformNameShort} 2.2 supports PostgreSQL 12.
 ====
 
 .Procedure
