@@ -24,6 +24,8 @@ h| Subscription | Valid Red Hat Ansible Automation Platform |
 h| OS | Red Hat Enterprise Linux 8.4 or later 64-bit (x86) |
 
 h| Ansible | version 2.11 required | If Ansible is not already present on the system, the setup playbook will install `ansible-core` 2.12.
+
+h| Python | Python 3.8 or later |
 |===
 
 
