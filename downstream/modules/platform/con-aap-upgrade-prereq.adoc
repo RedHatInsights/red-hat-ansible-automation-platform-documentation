@@ -16,7 +16,7 @@ The following specifications are required for the nodes involved in the {Platfor
 * DNS records for all nodes.
 * Red Hat Enterprise Linux 8 or later 64-bit (x86) installed for all nodes.
 * Chrony configured for all nodes.
-* Python 3.8 or later for all contnt dependencies.
+* Python 3.8 or later for all content dependencies.
 
 == {ControllerNameStart} configuration requirements
 The following {ControllerName} configurations are required before you proceed with the {PlatformNameShort} upgrade process:
