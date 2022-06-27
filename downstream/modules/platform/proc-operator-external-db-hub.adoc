@@ -11,7 +11,10 @@ By default, the {PlatformName} operator automatically creates and configures a m
 .Prerequisite
 The external database must be a PostgreSQL database that is the version supported by the current release of {PlatformNameShort}.
 
-NOTE: {PlatformNameShort} 2.0 and 2.1 supports PostgreSQL 12.
+[NOTE]
+====
+{PlatformNameShort} 2.0 or later supports PostgreSQL 12.
+====
 
 .Procedure
 
