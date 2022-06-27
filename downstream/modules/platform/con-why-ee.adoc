@@ -6,7 +6,7 @@
 
 * RHEL UBI 8
 * Ansible 2.9 or Ansible Core 2.11
-* Python 3.8
+* Python 3.8 or later.
 * Any Ansible Content Collections
 * Collection python or binary dependencies
 
