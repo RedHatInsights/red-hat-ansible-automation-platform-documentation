@@ -21,4 +21,4 @@ mesh_ca_keyfile=/tmp/__<mesh_CA>__.key
 mesh_ca_certfile=/tmp/__<mesh_CA>__.crt
 ----
 
-With the CA files added to the inventory file, run the installer to apply the CA. This process copies the CA on each control and execution node on your mesh network. By default, the certfile and keyfile will be added to `/etc/receptor/tls/ca/`.
+With the CA files added to the inventory file, run the installation program to apply the CA. This process copies the CA to the to `/etc/receptor/tls/ca/` directory on each control and execution node on your mesh network..
