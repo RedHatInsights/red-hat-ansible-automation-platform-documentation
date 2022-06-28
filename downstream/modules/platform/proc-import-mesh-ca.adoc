@@ -4,7 +4,7 @@
 
 A Certificate Authority (CA) verifies and signs individual node certificates in an {AutomationMesh} environment. You can provide your own CA by specifying the path to the certificate and the private RSA key file in the `inventory` file of your {PlatformName} installer.
 
-NOTE: NOTE: The {PlatformNameShort} installation program generates a CA if you do not provide one.
+NOTE: The {PlatformNameShort} installation program generates a CA if you do not provide one.
 
 .Procedure
 
