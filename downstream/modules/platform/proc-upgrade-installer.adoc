@@ -71,4 +71,5 @@ $ ./setup.sh -i inventory.new.ini -e @credentials.yml -- --ask-vault-pass
 
 .Additional resources
 * For general information on using the {PlatformNameShort} installer, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} installation guide].
-* For more information about automation mesh, see the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[{PlatformNameShort} automation mesh guide]
+// Remove comments once 2.2 version of the docs are published.
+//* For more information about automation mesh, see the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[{PlatformNameShort} automation mesh guide]
