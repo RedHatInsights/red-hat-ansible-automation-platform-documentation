@@ -12,7 +12,7 @@ To deploy a new Ansible Tower instance, do the following:
 . Navigate to the installer, then open the `inventory` file using a text editor to configure the `inventory` file for a Tower installation:
 .. In addition to any Tower configurations, remove any fields containing `isolated_group` or `instance_group`.
 +
-NOTE: For more information about installing Tower using the {PlatformNameShort} installer, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformNameShort} Installation Guide] for your specific installation scenario.
+NOTE: For more information about installing Tower using the {PlatformNameShort} installer, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformNameShort} Installation Guide] for your specific installation scenario.
 . Run the `setup.sh` script to begin the installation.
 
 Once the new instance is installed, configure the Tower settings to match the instance groups from your original Tower instance.
