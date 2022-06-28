@@ -21,6 +21,8 @@ h| OS | Red Hat Enterprise Linux 8.3 or later 64-bit (x86) |
 
 h| Ansible | version 2.9 required |
 
+h| Python | 3.8 or later |
+
 h| RAM | 4Gb minimum |
 
 * 4 GB RAM (minimum and recommended for Vagrant trial installations)
