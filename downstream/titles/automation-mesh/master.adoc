@@ -19,8 +19,8 @@ This guide helps you to understand the installation requirements and processes b
 
 include::platform/assembly-planning-mesh.adoc[leveloffset=+1]
 
-include::platform/assembly-set-up-automation-mesh.adoc[leveloffset=+1]
+include::platform/assembly-setting-up-automation-mesh.adoc[leveloffset=+1]
 
-include::platform/assembly-example-topologies.adoc[leveloffset=+1]
+include::platform/assembly-mesh-design-patterns.adoc[leveloffset=+1]
 
 include::platform/assembly-deprovisioning-mesh.adoc[leveloffset=+1]
