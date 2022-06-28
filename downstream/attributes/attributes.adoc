@@ -98,3 +98,5 @@
 :OCP: Red Hat OpenShift Container Platform
 :OCPShort: OpenShift Container Platform
 :OCPLatest: 4.9
+:ODF: Red Hat OpenShift Data Foundation
+:ODFShort: OpenShift Data Foundation
