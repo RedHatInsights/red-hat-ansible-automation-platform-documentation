@@ -34,7 +34,7 @@ include::dev-guide/assembly-virt-env-to-ee.adoc[leveloffset=+1]
 // Remove comments once 2.2 version of the docs are published.
 //== Additional resources
 
-//* See the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/PlatformVers/html/ansible_navigator_creator_guide/index[Red Hat Ansible Automation Platform Creator Guide] for more information on migrating to {ExecEnvName}.
+//* See the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/ansible_navigator_creator_guide/index[Red Hat Ansible Automation Platform Creator Guide] for more information on migrating to {ExecEnvName}.
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
