@@ -23,6 +23,8 @@ h| Ansible | version 2.9 required |
 
 h| RAM | 4Gb minimum |
 
+h| Python | 3.8 or later |
+
 * 4 GB RAM (minimum and recommended for Vagrant trial installations)
 * 4 GB RAM (minimum for external standalone PostgreSQL databases)
 * For capacity based on forks in your configuration, see additional resources
