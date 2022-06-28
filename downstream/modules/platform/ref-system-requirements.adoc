@@ -23,7 +23,7 @@ h| Subscription | Valid Red Hat Ansible Automation Platform |
 
 h| OS | Red Hat Enterprise Linux 8.4 or later 64-bit (x86) |
 
-h| Ansible | version 2.11 required | If Ansible is not already present on the system, the setup playbook will install `ansible-core` 2.12.
+h| Ansible | version 2.2 required | If Ansible is not already present on the system, the setup playbook will install `ansible-core` 2.13.
 
 h| Python | 3.8 or later |
 |===
@@ -98,7 +98,7 @@ h| Disk: database node| 20 GB dedicated hard disk space |
 
 h| Browser | A currently supported version of Mozilla FireFox or Google Chrome |
 
-h| Database | PostgreSQL version 12 |
+h| Database | PostgreSQL version 13 |
 
 |===
 
@@ -129,7 +129,7 @@ h| Disk: database node| 20 GB dedicated hard disk space |
 
 h| Browser | A currently supported version of Mozilla FireFox or Google Chrome |
 
-h| Database | PostgreSQL version 12 |
+h| Database | PostgreSQL version 13 |
 
 |===
 
@@ -155,10 +155,10 @@ For example, a playbook run every hour (24 times a day) across 250, hosts, with 
 
 .Notable PostgreSQL changes
 
-{PlatformName} uses PostgreSQL 12.
+{PlatformName} uses PostgreSQL 13.
 
 * PostgreSQL user passwords will now be hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
-* You will no longer need to provide a `pg_hashed_password` in your inventory file at the time of installation because PostgreSQL 12 can now store the user's password more securely. If users supply a password in the inventory file for the installer (``pg_password``), that password will be SCRAM-SHA-256 hashed by PostgreSQL as part of the installation process. **DO NOT** use special characters in ``pg_password`` as it may cause the setup to fail.
+* You will no longer need to provide a `pg_hashed_password` in your inventory file at the time of installation because PostgreSQL 13 can now store the user's password more securely. If users supply a password in the inventory file for the installer (``pg_password``), that password will be SCRAM-SHA-256 hashed by PostgreSQL as part of the installation process. **DO NOT** use special characters in ``pg_password`` as it may cause the setup to fail.
 * Since {ControllerName} and {HubName} are using a Software Collections version of PostgreSQL in 3.8, the `rh-postgresql10` scl must be enabled in order to access the database.  Administrators can use the ``awx-manage dbshell`` command, which will automatically enable the PostgreSQL SCL.
 * If you just need to determine if your {ControllerName} instance has access to the database, you can do so with the command, ``awx-manage check_db``.
 
@@ -176,11 +176,9 @@ maintenance_work_mem == ansible_memtotal_mb*0.04
 
 Refer to the link:https://wiki.postgresql.org/wiki/Main_Page[PostgreSQL documentation] for more detail on tuning your PostgreSQL server.
 
-.Ansible software requirements
-
 While {PlatformName} depends on Ansible Playbooks and requires the installation of the latest stable version of Ansible before installing {ControllerName}, manual installations of Ansible are no longer required.
 
-Upon new installations, {ControllerName} installs the latest release package of Ansible 2.11.
+Upon new installations, {ControllerName} installs the latest release package of Ansible 2.2.
 
 If performing a bundled {PlatformNameShort} installation, the installation program attempts to install Ansible (and its dependencies) from the bundle for you.
 
