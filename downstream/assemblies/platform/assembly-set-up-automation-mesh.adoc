@@ -1,0 +1,25 @@
+
+ifdef::context[:parent-context: {context}]
+
+
+[id="set-up-automation-mesh"]
+= Setting up {AutomationMesh}
+
+
+:context: set-up-automation-mesh
+
+
+[role="_abstract"]
+The following sections provide information on how to set up automation mesh for your Ansible environment by configuring the {PlatformNameShort} installer, as well as an option to import your own Certificate Authority (CA) certificate.
+
+include::platform/con-install-mesh.adoc[leveloffset=+1]
+include::platform/proc-import-mesh-ca.adoc[leveloffset=+1]
+
+
+[role="_additional-resources"]
+.Additional resources
+
+* Review the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#red_hat_ansible_automation_platform_system_requirements[{PlatformName} System Requirements] for additional information before installing.
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

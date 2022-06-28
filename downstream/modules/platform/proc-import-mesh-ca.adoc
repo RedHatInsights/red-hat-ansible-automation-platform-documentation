@@ -2,15 +2,15 @@
 
 = Importing a Certificate Authority (CA) certificate
 
-A Certificate Authority (CA) is used to verify and sign individual node certificates in an {AutomationMesh} environment. Users who wish to provide their own CA can do so by specifying the path to the certificate and the private RSA key file in the `inventory` file of their {PlatformName} installer.
+A Certificate Authority (CA) is used to verify and sign individual node certificates in an {AutomationMesh} environment. You can provide your own CA by specifying the path to the certificate and the private RSA key file in the `inventory` file of your {PlatformName} installer.
 
 NOTE: Users are not required to have a CA prior to their {AutomationMesh} installation. Users without a CA can proceed with their {PlatformNameShort} installation where the installer will generate a CA for the user.
 
 .Procedure
 
 . Open the `inventory` file for editing.
-. Add the `mesh_ca_keyfile` variable and specify the full path to the CA certificate file (.crt).
-. Add the `mesh_ca_certfile` variable and specify the full path to the private RSA key (.key).
+. Add the `mesh_ca_keyfile` variable and specify the full path to the CA certificate file (`.crt`).
+. Add the `mesh_ca_certfile` variable and specify the full path to the private RSA key (`.key`).
 . Save the changes to the inventory file.
 
 .Example

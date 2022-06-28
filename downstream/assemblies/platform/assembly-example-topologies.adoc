@@ -1,10 +1,10 @@
 
 ifdef::context[:parent-context: {context}]
 
-[id="assembly-standalone-controller-non-inst-database"]
+[id="assembly-example-topologies"]
 = {AutomationMeshStart} design patterns
 
-:context: standalone-controller-non-inst-database
+:context: assembly-example-topologies
 
 [role="_abstract"]
 The automation mesh topologies in this section are intended to provide examples you can use to design a mesh deployment in your environment. Examples range from a single, hydrid node deployment to a complex pattern that deploys numerous {ControllerName}s, employing several execution and hop nodes.

@@ -1,0 +1,9 @@
+[id="con-install-mesh_{context}"]
+
+= Installing {AutomationMesh}
+
+You can install {AutomationMesh} using the {PlatformNameShort} installer found here. The installer contains an `inventory` file where you can define the nodes, groups, and peer relationships that make up your mesh network. Users looking to upgrade to {AutomationMesh} can run the latest version of the {PlatformNameShort} installer after configuring their {AutomationMesh} network on the `inventory` file.
+
+.Additional Resources
+* Learn how to use the {PlatformNameShort} installer by reviewing the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} Installation Guide].
+* Learn about the ways you can design your {AutomationMesh} network by reviewing <<assembly-example-topologies, Automation Mesh Design Patterns.>>

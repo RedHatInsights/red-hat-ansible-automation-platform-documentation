@@ -42,7 +42,7 @@ execution-node-1.example.com node_type=hop
 -----
 
 .Peer connections
-Create node-to-node connections using the `peers=` host variable. In the example below, we connect `control-plane-1.example.com` to `execution-node-1.example.com`, and `execution-node-1.example.com` to `execution-node-2.example.com `
+Create node-to-node connections using the `peers=` host variable. In the example below, we connect `control-plane-1.example.com` to `execution-node-1.example.com`, and `execution-node-1.example.com` to `execution-node-2.example.com`.
 
 -----
 [automationcontroller]
