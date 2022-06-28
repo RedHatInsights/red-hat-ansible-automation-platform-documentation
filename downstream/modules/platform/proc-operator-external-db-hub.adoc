@@ -20,7 +20,10 @@ The following section outlines the steps to configure an external database for y
 .Prerequisite
 The external database must be a PostgreSQL database that is the version supported by the current release of {PlatformNameShort}.
 
-NOTE: {PlatformNameShort} 2.0 and 2.1 supports PostgreSQL 12.
+[NOTE]
+====
+{PlatformNameShort} 2.2 supports PostgreSQL 13.
+====
 
 .Procedure
 
