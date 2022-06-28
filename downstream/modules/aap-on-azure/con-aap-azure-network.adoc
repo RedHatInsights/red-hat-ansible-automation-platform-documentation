@@ -1,4 +1,4 @@
-[id="con-aap-azure-network"]
+[id="con-aap-azure-network_{context}"]
 
 = Network
 

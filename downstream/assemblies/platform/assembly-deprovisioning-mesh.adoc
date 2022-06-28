@@ -5,7 +5,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="assembly-deprovisioning-mesh"]
-= Deprovisioning
+= Deprovisioning individual nodes or groups
 
 :context: deprovisioning
 

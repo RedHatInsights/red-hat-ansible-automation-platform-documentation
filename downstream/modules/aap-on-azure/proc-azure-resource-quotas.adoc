@@ -1,24 +1,19 @@
-////
-Base the file name and the ID on the module title. For example:
-* file name: con-my-concept-module-a.adoc
-* ID: [id="con-my-concept-module-a_{context}"]
-* Title: = My concept module A
-////
-
-[id="proc-azure-resource-quotas"]
+[id="proc-azure-resource-quotas_{context}"]
 
 = Azure resource quotas and infrastructure limits
 
 Microsoft imposes resource limits within each Azure region. The CPU limit is the most likely to impact {AAPonAzureName}.
 
 Before you install {AAPonAzureNameShort}, ensure that you have capacity to deploy the managed application into your desired region.
-Refer to xref:con-aap-azure-infrastructure-usage[Azure infrastructure usage] for infrastructure requirements.
+Refer to xref:con-aap-azure-infrastructure-usage_aap-azure-intro[Azure infrastructure usage] for infrastructure requirements.
 
 == Regional vCPU limits
 
-The Azure resources used during the deployment of the managed application temporarily exceed the resource requirements in xref:con-aap-azure-infrastructure-usage[Azure infrastructure usage]. The `Total Regional vCPUs` quota is temporarily consumed when deploying the managed application.
+The Azure resources used during the deployment of the managed application temporarily exceed the resource requirements in xref:con-aap-azure-infrastructure-usage_aap-azure-intro[Azure infrastructure usage].
+The `Total Regional vCPUs` quota is temporarily consumed when deploying the managed application.
 
-Every Azure region has a separate `Total Regional vCPUs` quota. To prevent installation failure, ensure that you have at least 80 DS2_V3 vCPUs available in the Azure region where you want to deploy the managed application.
+Every Azure region has a separate `Total Regional vCPUs` quota.
+To prevent installation failure, ensure that you have at least 80 DS2_V3 vCPUs available in the Azure region where you want to deploy the managed application.
 
 The following steps describe how to view the resource quotas for your subscription the Azure console:
 

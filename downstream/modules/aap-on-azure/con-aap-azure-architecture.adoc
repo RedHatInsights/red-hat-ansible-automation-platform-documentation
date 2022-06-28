@@ -1,4 +1,4 @@
-[id="con-aap-azure-architecture"]
+[id="con-aap-azure-architecture_{context}"]
 
 = Application Architecture
 
