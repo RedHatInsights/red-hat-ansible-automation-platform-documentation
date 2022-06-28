@@ -57,7 +57,7 @@ server <ntp-server-address> iburst
 ----
 # subscription-manager list --consumed
 ----
-If there is not a Red Hat subscription attached to the node, see https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#proc-attaching-subscriptions_planning[attaching your {PlatformNameShort} subscription] for more information.
+If there is not a Red Hat subscription attached to the node, see https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#proc-attaching-subscriptions_planning[attaching your {PlatformNameShort} subscription] for more information.
 
 .Creating non-root user with sudo privileges
 Before you upgrade {PlatformNameShort}, it is recommended to create a non-root user with sudo privileges for the deployment process. This user is used for:
