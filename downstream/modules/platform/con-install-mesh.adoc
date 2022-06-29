@@ -1,0 +1,11 @@
+[id="install-mesh_{context}"]
+
+= {AutomationMesh} Installation
+
+You use the {PlatformNameShort} installation program to set up {AutomationMesh} or to upgrade to {AutomationMesh}.
+To provide {PlatformNameShort} with details about the nodes, groups, and peer relationships in your mesh network, you define them in an the `inventory` file in the installer bundle.
+
+[role="_additional-resources"]
+.Additional Resources
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} Installation Guide]
+* <<design-patterns, Automation Mesh Design Patterns>>
