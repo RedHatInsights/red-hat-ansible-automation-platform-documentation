@@ -1,9 +1,5 @@
 [id="proc-install-aap-operator"]
 
-[NOTE]
-====
-{OCP} clusters running on AWS do not support ReadWriteMany without adding NFS or other storage.
-====
 .Procedure
 . Log in to {OCP}.
 . Navigate to *Operators* -> *OperatorHub*.
