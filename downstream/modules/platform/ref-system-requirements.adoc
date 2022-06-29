@@ -158,7 +158,7 @@ For example, a playbook run every hour (24 times a day) across 250, hosts, with 
 {PlatformName} uses PostgreSQL 13.
 
 * PostgreSQL user passwords will now be hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
-* You will no longer need to provide a `pg_hashed_password` in your inventory file at the time of installation because PostgreSQL 13 can now store the user's password more securely. If users supply a password in the inventory file for the installer (``pg_password``), that password will be SCRAM-SHA-256 hashed by PostgreSQL as part of the installation process. **DO NOT** use special characters in ``pg_password`` as it may cause the setup to fail.
+* You no longer need to provide a `pg_hashed_password` in your inventory file at the time of installation because PostgreSQL 13 can now store user passwords more securely. If users supply a password in the inventory file for the installer (``pg_password``), PostgreSQL uses the SCRAM-SHA-256 hash to secure that password as part of the installation process. **DO NOT** use special characters in ``pg_password`` because they can cause the setup to fail.
 * Since {ControllerName} and {HubName} are using a Software Collections version of PostgreSQL in 3.8, the `rh-postgresql10` scl must be enabled in order to access the database.  Administrators can use the ``awx-manage dbshell`` command, which will automatically enable the PostgreSQL SCL.
 * If you just need to determine if your {ControllerName} instance has access to the database, you can do so with the command, ``awx-manage check_db``.
 
