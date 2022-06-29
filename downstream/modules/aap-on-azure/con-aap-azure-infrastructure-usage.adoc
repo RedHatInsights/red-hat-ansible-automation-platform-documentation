@@ -8,9 +8,9 @@ Azure Kubernetes service (AKS):: The Kubernetes cluster used to deploy {Platform
 +
 **Service Shape:**
 +
-* Compute nodes: Standard_D4s_v3 ((4 vCPUs x 16 GiB)
-* Autoscaling min nodes: 3
-* Autoscaling max nodes: 20
+* Compute nodes: Standard_D4s_v3 (4 vCPUs x 16 GiB)
+* Autoscaling minimum nodes: 2
+* Autoscaling maximum nodes: 20
 Managed identity:: An Azure service that enables {PlatformNameShort} components to communicate with other Azure services such as database, DNS, storage, and other services.
 Key vault:: A secure key vault used to store secrets that are unique to the {PlatformNameShort} deployment.
 Log Analytics Workspace:: An Azure service that enables Red Hat site reliability engineers to inspect the operations of {AAPonAzureNameShort}.
