@@ -93,7 +93,7 @@ $ systemctl enable remote-fs.target
 . Reboot the system:
 +
 ----
-$ reboot
+$ systemctl reboot
 ----
 
 .Troubleshooting
