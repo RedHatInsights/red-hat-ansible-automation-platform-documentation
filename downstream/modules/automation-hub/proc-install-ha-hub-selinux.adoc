@@ -10,12 +10,17 @@ To set up a high availability (HA) deployment of {HubName} on SELinux, create tw
 . Create a mount point at `/var/lib/pulp`:
 +
 ----
-$ mkdir -p /var/lib/pulp/
+$ mkdir /var/lib/pulp/
+----
+. Run the mount command for `/var/lib/pulp`:
++
+----
+$ mount /var/lib/pulp
 ----
 . Create a mount point at `/var/lib/pulp/pulpcore_static`:
 +
 ----
-$ mkdir -p /var/lib/pulp/pulpcore_static
+$ mkdir /var/lib/pulp/pulpcore_static
 ----
 . Open `/etc/fstab` using a text editor, then add the following values:
 +
@@ -47,7 +52,7 @@ $ systemctl stop pulpcore.service
 ----
 $ umount /var/lib/pulp/
 ----
-. Open `/etc/fstab` using a text editor, then add the following values:
+. Open `/etc/fstab` using a text editor, then replace the existing value for `var/lib/pulp` with the following:
 +
 ----
 srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev,nosharecache,context="system_u:object_r:pulpcore_var_lib_t:s0" 0 0
