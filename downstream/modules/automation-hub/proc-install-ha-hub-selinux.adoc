@@ -101,7 +101,7 @@ A bug in the pulpcore SELinux policies can cause the token authentication public
 ----
 $ chcon system_u:object_r:pulpcore_etc_t:s0 /etc/pulp/certs/token_{private,public}_key.pem
 ----
-NOTE: Repeat this command whenever you relabel your system to reattach the proper SELiux labels.
+NOTE: You must repeat this command to reattach the proper SELinux labels whenever you relabel your system.
 
 .Additional Resources
 * See the link:https://docs.pulpproject.org/en/2.16/user-guide/scaling.html#selinux-requirements[SELinux Requirements on the Pulp Project documentation] for a list of SELinux contexts.
