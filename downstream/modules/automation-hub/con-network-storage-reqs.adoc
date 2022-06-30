@@ -29,4 +29,3 @@ For a list of supported services, use the `*$ firewall-cmd --get-services*` comm
 -----
 $ firewall-cmd --reload
 -----
-+

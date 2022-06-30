@@ -1,16 +1,9 @@
-[id="assembly-high-availability-hub-requirements"]
+[id="high-availability-requirements"]
 
 = Requirements for a high availability {HubName}
 
-Before you deploy HA hub using the installer, make sure your configuration satisfies the following requirements:
-
-.Prerequisites
-* You have installed a shared file system.
-* You have configured your network storage system, if applicable.
-* You have configured the inventory file found on the {PlatformNameShort} installer.
-
-The following sections expand on these requirements in greater detail. Once you meet these requirements, proceed with the {PlatformNameShort} installation with these steps.
+[role="_abstract"]
+Before deploying a high availability (HA) {HubName}, ensure that you have a shared filesystem installed in your environment and that you have configured your network storage system, if applicable.
 
 include::automation-hub/con-required-shared-filesystem.adoc[leveloffset=+1]
 include::automation-hub/con-network-storage-reqs.adoc[leveloffset=+1]
-include::automation-hub/con-required-changes-ha.adoc[leveloffset=+1]
