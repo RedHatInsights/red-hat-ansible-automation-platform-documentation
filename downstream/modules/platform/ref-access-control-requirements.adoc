@@ -5,7 +5,7 @@
 
 [role="_abstract"]
 
-{PlatformName} uses a number of ports to communicate with its services. These ports must be open and available for incoming connection to the {PlatformName} server in order for it to work. Ensure that these ports are available and are not being blocked by a firewall.
+{PlatformName} uses a number of ports to communicate with its services. Ensure that these ports are open and available in the firewall settings to allow for incoming connection to the {PlatformName} server.
 
 The following tables provide the default {PlatformName} destination ports required for each application.
 
