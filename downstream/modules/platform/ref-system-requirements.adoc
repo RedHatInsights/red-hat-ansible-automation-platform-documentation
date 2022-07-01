@@ -32,9 +32,9 @@ h| Python | 3.8 or later |
 
 == Automation controller
 
-{ControllerNameStart} is a distributed system, where different software components can be colocated or distributed across multiple compute nodes.
+{ControllerNameStart} is a distributed system, where different software components can be co-located or deployed across multiple compute nodes.
 In the installer, node types of control, hybrid, execution, and hop are provided as abstractions to help the user design the topology appropriate for their use case.
-Recommendations for node sizing are provided in the following table.
+The following table provides recommendations for node sizing:
 
 [NOTE]
 ====
