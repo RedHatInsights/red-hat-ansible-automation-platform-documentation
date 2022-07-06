@@ -1,11 +1,11 @@
 
 
-[id="proc-editing-inventory-file-for-updates_{context}"]
+[id="editing-inventory-file-for-updates_{context}"]
 
 
 = Setting up the inventory file
 
-To upgrade using the {PlatformName} installer, edit the `inventory` file found in the installer to match your desired configuration. When editing the `inventory` file, you can use the `inventory` file parameters from your previous {PlatformNameShort} setup to keep the same configuration as before. You can also enable any new parameters in the `inventory` file that was introduced in the new version of the {PlatformName}.
+To upgrade using the {PlatformName} installer, edit the `inventory` file found in the installer to match your desired configuration. Edit the `inventory` with the same file parameters from your previous {PlatformNameShort} setup to keep the same configuration as before. Alternatively, update the `inventory` file to make changes to your {PlatformNameShort} during the upgrade process.
 
 .Procedure
 . Navigate to the installer:
@@ -21,10 +21,39 @@ Online installer::
 $ cd ansible-automation-platform-setup-<latest-version>
 -----
 +
-. Open the `inventory` file with a text editor.
-. Edit the `inventory` file parameters to match the `inventory` file in your previous version of {PlatformName}.
+. Edit the `inventory` file using a file editor. For a basic upgrade with no changes, use the same inventory file parameters from your previous {PlatformNameShort} setup.
 +
-NOTE: To review information about the inventory file requirements for your specific intsallation scenario, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#supported_installation_scenarios[{PlatformName} Installation Guide].
-. Optional: Edit the `inventory` file parameters to enable any new features introduced in the new version of the {PlatformName}.
+NOTE: To review information about the inventory file requirements for your specific installation scenario, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#supported_installation_scenarios[{PlatformName} Installation Guide].
+. If performing an upgrade with changes to your {PlatformNameShort}, add these changes to the inventory file before you run the installer. See the following scenarios for changes to the {PlatformNameShort} during an upgrade:
+
+.Inventory file setup scenarios
+* When provisioning new nodes in a clustered setup, add new nodes alongside existing nodes in the `inventory` file:
 +
-NOTE: For more information about any new features and how to enable them, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[Product Documentation for {PlatformName}] to search for specific features and their configurations. Review the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_release_notes/index[{PlatformName} Release Notes] for a full list of features in each version release.
+----
+[controller]
+clusternode1.example.com
+clusternode2.example.com
+clusternode3.example.com
+
+[all:vars]
+admin_password='password'
+
+pg_host=''
+pg_port=''
+
+pg_database='awx'
+pg_username='awx'
+pg_password='password'
+----
+* When deprovisioning nodes or groups on an existing cluster, append `node_state-deprovision` to the node or group before running the installer. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/assembly-deprovisioning-mesh[Deprovisioning individual nodes or groups] for more details.
+* When importing an existing `automationhub_api_token`, add the following flag to the `inventory` file:
++
+----
+automationhub_api_token=<api_token>
+----
+* When generating a new `automationhub_api_token`, add the following flag to the `inventory` file:
++
+----
+generate_automationhub_token= <1>
+----
+<1> Generating a new token will invalidate any existing tokens.
