@@ -1,6 +1,6 @@
 
 
-[id="aap-upgrade-plannin_{context}"]
+[id="aap-upgrade-planning_{context}"]
 
 = Upgrade planning
 

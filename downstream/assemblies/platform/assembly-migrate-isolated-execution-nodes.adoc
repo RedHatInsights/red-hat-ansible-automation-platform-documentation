@@ -1,6 +1,6 @@
 ifdef::context[:parent-context: {context}]
 
-[id="assembly-migrate-isolated-execution-nodes"]
+[id="migrate-isolated-execution-nodes"]
 = Upgrading isolated nodes to execution nodes
 
 [role="_abstract"]

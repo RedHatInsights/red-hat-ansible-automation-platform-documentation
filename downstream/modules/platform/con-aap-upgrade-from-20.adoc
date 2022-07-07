@@ -1,0 +1,14 @@
+
+
+[id="aap-upgrade-from-20_{context}"]
+
+= Upgrading from {PlatformNameShort} 1.2 or 2.0
+
+Upgrade from {PlatformNameShort} version 1.2 or 2.0 to version {PlatformVers} by following all the procedures in these sections:
+
+* <<migrate-isolated-execution-nodes,Migrate isolated nodes to execution nodes>>
+**  Migrate data from isolated legacy nodes to execution nodes by performing a side-by-side upgrade to be compatible with the latest automation mesh features
+* <<upgrading-to-ees,Migrate virtual environments to automation execution environments>>
+** Duplicate your previous custom virtual environments into new automation execution environments using the `awx-manage` command.
+* <<content-migration,Migrate Ansible content>>
+** Reconfigure your Ansible content to include Fully Qualified Collection Names (FQCN) to be compatible with `ansible-core` 2.13.
