@@ -1,7 +1,9 @@
 [id="assembly-intro-to-builder"]
 
-= Introduction to {Builder}
+= Introduction to {ExecEnvNameStart}
 
+include::builder/con-about-ee.adoc[leveloffset=+1]
+include::builder/con-why-ee.adoc[leveloffset=+2]
 include::builder/con-about-builder.adoc[leveloffset=+1]
 include::builder/con-why-builder.adoc[leveloffset=+2]
 
