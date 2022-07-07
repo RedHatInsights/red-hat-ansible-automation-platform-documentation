@@ -14,6 +14,6 @@ include::attributes/attributes.adoc[]
 
 include::platform/assembly-aap-upgrade-to-latest.adoc[leveloffset=+1]
 include::platform/assembly-aap-basic-upgrade.adoc[leveloffset=+1]
-include::platform/assembly-migrate-isolated-execution-nodes.adoc[leveloffset=+1]
 include::platform/assembly-migrate-legacy-venv-to-ee.adoc[leveloffset=+1]
+include::platform/assembly-migrate-isolated-execution-nodes.adoc[leveloffset=+1]
 include::platform/assembly-content-migration.adoc[leveloffset=+1]

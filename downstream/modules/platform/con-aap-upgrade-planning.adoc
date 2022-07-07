@@ -14,4 +14,4 @@ Before you begin the upgrade process, review the following considerations to pla
 * Clustered upgrades require special attention to instance and instance groups prior to starting the upgrade. See link:https://docs.ansible.com/automation-controller/latest/html/administration/clustering.html#ag-clustering[Clustering] for details.
 
 .Upgrading {HubName}
-* When upgrading to AAP 2.1 or later, you have the option to add an existing {HubName} API token or generate a new one using the {PlatformNameShort} installer. See <<editing-inventory-file-for-updates_{context}, Setting up the inventory file >> for details.
+* When upgrading to AAP 2.2, you have the option to add an existing {HubName} API token or generate a new one using the {PlatformNameShort} installer. See <<editing-inventory-file-for-updates_{context}, Setting up the inventory file >> for details.

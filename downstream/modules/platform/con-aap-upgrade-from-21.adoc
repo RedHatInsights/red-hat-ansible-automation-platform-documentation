@@ -7,4 +7,5 @@
 Upgrade from {PlatformNameShort} version 2.1 to version {PlatformVers} by following all the procedures in these sections:
 
 * <<aap-basic-upgrade,Perform a basic upgrade to {PlatformVers}>>
-** Your current Ansible environment is compatible with the latest features and enhancements in {PlatformNameShort} {PlatformVers}. Perform a basic upgrade by downloading and running the {PlatformVers} installer version over your current {PlatformNameShort} intallation.
+** Perform a basic upgrade by downloading and running the {PlatformVers} installer version over your current {PlatformNameShort} intallation.
+** Import or generate a new {HubName} API token
