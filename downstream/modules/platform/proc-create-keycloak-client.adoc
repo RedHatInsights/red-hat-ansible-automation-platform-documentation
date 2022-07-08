@@ -8,7 +8,7 @@ Use the following procedure to create the Client.
 . Navigate to menu:Operator[Installed Operators].
 . Select the Red Hat Single Sign-On Operator project.
 . Select the *Keycloak Client* tab and click btn:[Create Keycloak Client].
-On the Keycloak Realm form, select YAML view.
+On the Keycloak Realm form, select btn:[YAML view].
 Replace the default YAML file with the following:
 +
 [options="nowrap" subs="+quotes"]
