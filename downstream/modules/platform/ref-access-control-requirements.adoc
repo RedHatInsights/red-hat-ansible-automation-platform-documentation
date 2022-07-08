@@ -1,0 +1,166 @@
+
+[id="ref-access-control-requirements_{context}"]
+
+= Access control requirements
+
+[role="_abstract"]
+
+{PlatformName} uses a number of ports to communicate with its services. These ports must be open and available for incoming connection to the {PlatformName} server in order for it to work. Ensure that these ports are available and are not being blocked by a firewall.
+
+The following tables provide the default {PlatformName} destination ports required for each application.
+
+.PostgreSQL
+[options="header"]
+|===
+|Port |Protocol |Service |Required for
+|22
+|TCP
+|SSH
+|Remote access during installation
+|5432
+|TCP
+|Postgres
+a|Default port
+
+ALLOW connections from controller(s) to database port
+|===
+
+.{ControllerNameStart}
+[options="header"]
+|===
+|Port |Protocol |Service |Required for
+|22
+|TCP
+|SSH
+|Installation
+
+|80
+|TCP
+|HTTP
+|UI/API
+
+|443
+|TCP
+|HTTPS
+|UI/API
+
+|5432
+|TCP
+|PostgreSQL
+a|Open *only* if the internal database is being used along with another component. Otherwise, this port should not be opened
+
+Hybrid mode in a cluster
+
+|27199
+|TCP
+|Receptor
+|ALLOW receptor port across all controllers (for mandatory & automatic control plane peering)
+|===
+
+.Hop Nodes
+[options="header"]
+|===
+|Port |Protocol |Service |Required for
+|22
+|TCP
+|SSH
+|Installation
+
+|27199
+|TCP
+|Receptor
+a|Mesh
+
+ALLOW connection from controller(s) to receptor port
+|===
+
+.Execution Nodes
+[options="header"]
+|===
+|Port |Protocol |Service |Required for
+|22
+|TCP
+|SSH
+|Installation
+
+|27199
+|TCP
+|Receptor
+a|Mesh - Nodes directly peered to controllers. No hop nodes involved. 27199 is bidirectional for the execution nodes
+
+ALLOW connections from controller(s) to receptor port (for non-hop connected nodes)
+
+ALLOW connections from hop node(s) to receptor port (if relayed through hop nodes)
+
+|===
+
+.{HubNameStart}
+[options="header"]
+|===
+|Port |Protocol |Service |Required for
+|22
+|TCP
+|SSH
+|Installation
+
+|80
+|TCP
+|HTTP
+|User interface
+|443
+|TCP
+|HTTPS
+|User interface
+|5432
+|TCP
+|PostgreSQL
+a|Open *only* if the internal database is being used along with another component. Otherwise, this port should not be opened
+|===
+
+.Services Catalog
+[options="header"]
+|===
+|Port |Protocol |Service |Required for
+|22
+|TCP
+|SSH
+|Installation
+|443
+|TCP
+|HTTPS
+|Access to Service Catalog user interface
+|5432
+|TCP
+|PostgreSQL
+a|Open *only* if the internal database is being used. Otherwise, this port should not be opened
+|===
+
+.{InsightsName}
+[options="header"]
+|===
+|URL |Required for
+|link:http://api.access.redhat.com:443[http://api.access.redhat.com:443] |General account services, subscriptions
+|link:https://cert-api.access.redhat.com:443[https://cert-api.access.redhat.com:443] |Insights data upload
+|link:https://cert.cloud.redhat.com:443[https://cert.cloud.redhat.com:443] |Inventory upload and Cloud Connector connection
+|link:https://cloud.redhat.com[https://cloud.redhat.com] |Access to Insights dashboard
+|===
+
+.Automation Hub
+[options="header"]
+|===
+|URL |Required for
+|link:https://console.redhat.com:443[https://console.redhat.com:443] |General account services, subscriptions
+|link:https://sso.redhat.com:443[https://sso.redhat.com:443] |TCP
+|link:https://automation-hub-prd.s3.amazonaws.com[https://automation-hub-prd.s3.amazonaws.com] |
+|link:https://galaxy.ansible.com[https://galaxy.ansible.com] |Ansible Community curated Ansible content
+|link:https://ansible-galaxy.s3.amazonaws.com[https://ansible-galaxy.s3.amazonaws.com] |
+|link:https://registry.redhat.io:44[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
+|link:https://cert.cloud.redhat.com:443[https://cert.cloud.redhat.com:443] |Red Hat and partner curated Ansible Collections
+|===
+
+.Execution Environments (EE)
+[options="header"]
+|===
+|URL |Required for
+|link:https://registry.redhat.io:44[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
+|===
