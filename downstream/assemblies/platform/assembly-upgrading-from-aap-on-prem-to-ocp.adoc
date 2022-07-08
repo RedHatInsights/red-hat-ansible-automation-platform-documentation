@@ -34,8 +34,6 @@ Optional. Delete if not used.
 * For more details on writing assemblies, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
 * Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
 
-////
-Restore the context to what it was before this assembly.
-////
+
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
