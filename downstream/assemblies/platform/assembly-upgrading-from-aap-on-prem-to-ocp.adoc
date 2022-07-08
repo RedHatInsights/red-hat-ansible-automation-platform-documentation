@@ -25,14 +25,8 @@ To perform this task successfully, you must:
 //include::modules/TEMPLATE_PROCEDURE_reference-material.adoc[leveloffset=2]
 ////
 
-[role="_additional-resources"]
-== Additional resources (or Next steps)
-////
-Optional. Delete if not used.
-////
-* A bulleted list of links to other closely-related material. These links can include `link:` and `xref:` macros.
-* For more details on writing assemblies, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+
+
 
 
 ifdef::parent-context[:context: {parent-context}]
