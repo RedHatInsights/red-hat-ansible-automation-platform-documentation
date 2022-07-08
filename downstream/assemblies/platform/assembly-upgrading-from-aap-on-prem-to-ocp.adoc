@@ -2,11 +2,11 @@
 ifdef::context[:parent-context: {context}]
 
 
-[id="assembly_upgrading-from-aap-on-prem-to-aap-operator-on-ocp_{context}"]
+[id="assembly_upgrading-from-aap-on-prem-to-ocp_{context}"]
 = Upgrading from {PlatformName} 1.2 on-prem to {PlatformName} 2.x operator on {OCP}
 
 
-:context: assembly_upgrading-from-aap-on-prem-to-aap-operator-on-ocp
+:context: assembly_upgrading-from-aap-on-prem-to-ocp
 
 [role="_abstract"]
 
