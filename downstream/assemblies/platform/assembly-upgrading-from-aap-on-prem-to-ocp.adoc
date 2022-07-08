@@ -23,9 +23,6 @@ To perform this task successfully, you must:
 //include::modules/.adoc[leveloffset=+2]
 
 //include::modules/TEMPLATE_PROCEDURE_reference-material.adoc[leveloffset=2]
-////
-
-
 
 
 
