@@ -1,11 +1,15 @@
 
 
-[id="aap-upgrade-from-21_{context}"]
+[id="aap-upgrades_{context}"]
 
-= Upgrading from {PlatformNameShort} 2.1
+= {PlatformNameShort} upgrades
 
-Upgrade from {PlatformNameShort} version 2.1 to version {PlatformVers} by following all the procedures in these sections:
+Upgrading to version {PlatformVers} from {PlatformNameShort} 2.1 or later involves downloading the installation package and then performing the following steps:
 
+* Set up your inventory to match your installation environment.
+* Run the {PlatformVers} installation program over your current {PlatformNameShort} installation.
+* Import or generate a new {HubName} API token.
+
+[role="_additional-resources"]
+.Additional resources
 * <<aap-basic-upgrade,Perform a basic upgrade to {PlatformVers}>>
-** Perform a basic upgrade by downloading and running the {PlatformVers} installer version over your current {PlatformNameShort} intallation.
-** Import or generate a new {HubName} API token

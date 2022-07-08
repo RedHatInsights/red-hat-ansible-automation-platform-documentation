@@ -2,16 +2,30 @@
 
 [id="aap-upgrade-planning_{context}"]
 
-= Upgrade planning
+= {PlatformNameShort} upgrade planning
 
 [role="_abstract"]
-Before you begin the upgrade process, review the following considerations to plan and prepare your {PlatformNameShort} for the new version:
+Before you begin the upgrade process, review the following considerations to plan and prepare your {PlatformNameShort} deployment:
 
-.Upgrading {ControllerName}
+[discrete]
+== ControllerName}
 
-* Even if you already have a valid license from a previous version, you still must provide your credentials or a subscriptions manifest upon upgrading to the latest version of {ControllerName}. See link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html[Import a subscription] in the Automation Controller User Guide.
-* If you need to upgrade Red Hat Enterprise Linux and {ControllerName}, you will need to do a backup and restore of your {ControllerName} data. See link:https://docs.ansible.com/automation-controller/latest/html/administration/backup_restore.html#ag-backup-restore[Back up and restoring Controller] for details.
-* Clustered upgrades require special attention to instance and instance groups prior to starting the upgrade. See link:https://docs.ansible.com/automation-controller/latest/html/administration/clustering.html#ag-clustering[Clustering] for details.
+* Even if you have a valid license from a previous version, you must provide your credentials or a subscriptions manifest upon upgrading to the latest version of {ControllerName}. +
+See _Import a subscription_ in the Automation Controller User Guide.
+* If you need to upgrade Red Hat Enterprise Linux and {ControllerName}, you must first backup and restore of your {ControllerName} data. +
+See _Back up and restore Controller_.
+* Clustered upgrades require special attention to instance and instance groups before upgrading. +
+See _Clustering_.
 
-.Upgrading {HubName}
-* When upgrading to AAP 2.2, you have the option to add an existing {HubName} API token or generate a new one using the {PlatformNameShort} installer. See <<editing-inventory-file-for-updates_{context}, Setting up the inventory file >> for details.
+[discrete]
+== {HubName}
+
+* When upgrading to {PlatformNameShort} {PlatformVers}, you can either add an existing {HubName} API token or generate a new one and invalidate any existing tokens. +
+See _Setting up the inventory file_ for details.
+
+[role="_additional-resources"]
+.Additional resources
+* link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html[Import a subscription]
+* link:https://docs.ansible.com/automation-controller/latest/html/administration/backup_restore.html#ag-backup-restore[Back up and restoring Controller]
+* link:https://docs.ansible.com/automation-controller/latest/html/administration/clustering.html#ag-clustering[Clustering]
+* <<editing-inventory-file-for-updates_{context}, Setting up the inventory file >>

@@ -8,7 +8,9 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-The process of upgrading to {PlatformName} {PlatformVers} will differ depending on the version of {PlatformNameShort} you are upgrading from. Upgrade from an older version of {PlatformNameShort} (version 2.0 or earlier) by migrating legacy Ansible content to be compatible with the latest features of {PlatformNameShort} {PlatformVers}. Otherwise, upgrade to {PlatformName} {PlatformVers} by performing a basic upgrade.
+Upgrade to {PlatformName} {PlatformVers} by setting up your inventory and running the installation script.
+Ansible then upgrades your deployment to {PlatformVers}.
+If you plan to upgrade from {PlatformNameShort} 2.0 or earlier, you first need to migrate Ansible content for compatibility with {PlatformVers}.
 
 include::platform/con-aap-upgrade-from-20.adoc[leveloffset=+1]
 include::platform/con-aap-upgrade-from-21.adoc[leveloffset=+1]
