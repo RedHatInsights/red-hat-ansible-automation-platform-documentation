@@ -1,0 +1,68 @@
+[id="proc-installing-hub-using-operator_{context}"]
+
+= Installing {HubName} using the Operator
+
+Use the following procedure to install {HubName} using the operator.
+
+.Procedure
+
+. Navigate to menu:Operator[Installed Operators].
+. Select the {PlatformNameShort}.
+. Select {HubNameStart} tab and click btn:[Create {HubNameStart}].
+. Select btn:[YAML view].
+The YAML should be similar to:
++
+[options="nowrap" subs="+quotes"]
+----
+apiVersion: automationhub.ansible.com/v1beta1
+kind: AutomationHub
+metadata:
+  name: private-ah                              <1>
+  namespace: ansible-automation-platform
+spec:
+  sso_secret: automation-hub-sso                <2>
+  pulp_settings:
+    verify_ssl: false
+  route_tls_termination_mechanism: Edge
+  ingress_type: Route
+  loadbalancer_port: 80
+  file_storage_size: 100Gi
+  image_pull_policy: IfNotPresent
+  web:
+    replicas: 1
+  file_storage_access_mode: ReadWriteMany
+  content:
+    log_level: INFO
+    replicas: 2
+  postgres_storage_requirements:
+    limits:
+      storage: 50Gi
+    requests:
+      storage: 8Gi
+  api:
+    log_level: INFO
+    replicas: 1
+  postgres_resource_requirements:
+    limits:
+      cpu: 1000m
+      memory: 8Gi
+    requests:
+      cpu: 500m
+      memory: 2Gi
+  loadbalancer_protocol: http
+  resource_manager:
+    replicas: 1
+  worker:
+    replicas: 2
+----
++
+<1> Set this to the name to use for the instance.
+<2> Set this to the name of the secret created in xref:proc-creating-a-secret_{context}[Creating a Secret to hold the Red Hat Single Sign On connection details].
++
+[Note]
+====
+This YAML turns off SSL verification (`ssl_verify: false`).
+If you are not using self-signed certificates for OpenShift this setting can be removed.
+====
+
+. Click btn:[Create] and wait for the process to complete.

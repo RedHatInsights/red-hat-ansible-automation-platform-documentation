@@ -1,0 +1,38 @@
+[id="proc-update-rhsso-client_{context}"]
+
+= Updating the RH-SSO client
+
+When {HubName} is installed and you know the URL of the instance, the RH-SSO client must be updated to set the Valid Redirect URIs and Web Origins settings.
+
+.Procedure
+
+. Navigate to menu:Operator[Installed Operators].
+. Select the RH-SSO project.
+. Click btn:[Red Hat Single Sign-On Operator].
+. Select btn:[Keycloak Client].
+. Click on the automation-hub-client-secret client.
+. Select btn:[YAML].
+Update the Client YAML to add the Valid Redirect URIs and Web Origins settings.
++
+[options="nowrap" subs="+quotes"]
+----
+redirectUris:
+  - 'https://private-ah-ansible-automation-platform.apps-crc.testing/*'
+webOrigins:
+  - 'https://private-ah-ansible-automation-platform.apps-crc.testing'
+----
++
+[cols="20% 40%",options="header]
+|====
+| *Field* | *Description*
+| `redirectURIs`| This is the location determined in xref:proc-determine-hub-route_{context}[Determine Automation Hub Route].
+Be sure to add the /* to the end of the `redirectUris` setting.
+| `webOrigins` | This is the location determined in xref:proc-determine-hub-route_{context}[Determine Automation Hub Route].
+|====
++
+[NOTE]
+====
+Ensure the indentation is correct when entering these settings.
+====
+
+. Click btn:[Save].

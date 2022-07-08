@@ -1,0 +1,9 @@
+[id="proc-verify-connectivity_{context}"]
+
+= Verifying Connectivity
+
+.Procedure
+
+. Navigate to the {HubName} route.
+. Enter the `hub_admin` user credentials and sign in.
+. Red Hat Single Sign On processes the authentication and redirects back to {HubName}.
