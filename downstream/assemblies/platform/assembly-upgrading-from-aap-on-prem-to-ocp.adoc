@@ -20,22 +20,6 @@ To perform this task successfully, you must:
 * Install {PlatformName} operator from {OperatorHub} and use the your previous database key when deploying a new {ControllerName}.
 
 
-include::modules/.adoc[leveloffset=+2]
+//include::modules/.adoc[leveloffset=+2]
 
-include::modules/TEMPLATE_PROCEDURE_reference-material.adoc[leveloffset=2]
-////
-
-[role="_additional-resources"]
-== Additional resources (or Next steps)
-////
-Optional. Delete if not used.
-////
-* A bulleted list of links to other closely-related material. These links can include `link:` and `xref:` macros.
-* For more details on writing assemblies, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-
-////
-Restore the context to what it was before this assembly.
-////
-ifdef::parent-context-of-assembly_upgrading-from-aap-on-prem-to-aap-operator-on-ocp[:context: {parent-context-of-assembly_upgrading-from-aap-on-prem-to-aap-operator-on-ocp}]
-ifndef::parent-context-of-assembly_upgrading-from-aap-on-prem-to-aap-operator-on-ocp[:!context:]
+//include::modules/TEMPLATE_PROCEDURE_reference-material.adoc[leveloffset=2]
