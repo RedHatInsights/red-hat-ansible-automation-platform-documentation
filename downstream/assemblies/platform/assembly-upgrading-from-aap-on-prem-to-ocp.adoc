@@ -37,5 +37,5 @@ Optional. Delete if not used.
 ////
 Restore the context to what it was before this assembly.
 ////
-ifdef::parent-context-of-assembly_upgrading-from-aap-on-prem-to-aap-operator-on-ocp[:context: {parent-context-of-assembly_upgrading-from-aap-on-prem-to-aap-operator-on-ocp}]
-ifndef::parent-context-of-assembly_upgrading-from-aap-on-prem-to-aap-operator-on-ocp[:!context:]
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
