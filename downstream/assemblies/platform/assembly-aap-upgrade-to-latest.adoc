@@ -10,10 +10,10 @@ ifdef::context[:parent-context: {context}]
 
 Upgrade to {PlatformName} {PlatformVers} by setting up your inventory and running the installation script.
 Ansible then upgrades your deployment to {PlatformVers}.
-If you plan to upgrade from {PlatformNameShort} 2.0 or earlier, you first need to migrate Ansible content for compatibility with {PlatformVers}.
+If you plan to upgrade from {PlatformNameShort} 2.0 or earlier, you need to migrate Ansible content for compatibility with {PlatformVers}.
 
-include::platform/con-aap-upgrade-from-20.adoc[leveloffset=+1]
-include::platform/con-aap-upgrade-from-21.adoc[leveloffset=+1]
+include::platform/con-aap-upgrades.adoc[leveloffset=+1]
+include::platform/con-aap-upgrades-legacy.adoc[leveloffset=+1]
 
 
 ifdef::parent-context[:context: {parent-context}]

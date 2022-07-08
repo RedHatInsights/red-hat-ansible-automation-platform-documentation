@@ -1,9 +1,9 @@
 ifdef::context[:parent-context: {context}]
 
-[id="aap-basic-upgrade"]
-= Performing a basic upgrade to {PlatformName} {PlatformVers}
+[id="aap-upgrading-platform"]
+= Upgrading to {PlatformName} {PlatformVers}
 
-:context: upgrading-platform
+:context: aap-upgrading-platform
 
 [role="_abstract"]
 

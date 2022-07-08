@@ -4,7 +4,7 @@
 
 = {PlatformNameShort} legacy upgrades
 
-Upgrading to version {PlatformVers} from {PlatformNameShort} 1.2 or earlier requires you to migrate Ansible content for compatibility.
+Upgrading to version {PlatformVers} from {PlatformNameShort} 2.0 or earlier requires you to migrate Ansible content for compatibility.
 
 The following steps provide an overview of the legacy upgrade process:
 
