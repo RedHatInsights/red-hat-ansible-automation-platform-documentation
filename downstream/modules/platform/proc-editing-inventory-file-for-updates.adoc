@@ -29,8 +29,7 @@ $ cd ansible-automation-platform-setup-<latest-version>
 . Modify the `inventory` file to provision new nodes, deprovision nodes or groups, and import or generate {HubName} API tokens.
 +
 You can use the same `inventory` file from an existing {PlatformNameShort} 2.1 installation if there are no changes to the environment.
-+
-NOTE: See the _Installation Guide_ to review information about `inventory` file requirements.
+
 
 .Provisioning new nodes in a cluster
 
@@ -43,21 +42,20 @@ include::ini/clustered-nodes.ini[]
 
 .Deprovisioning nodes or groups in a cluster
 
-* Append `node_state-deprovision` to the node or group as follows:
-+
-For more information, see _Deprovisioning individual nodes or groups_.
+* Append `node_state-deprovision` to the node or group within the `inventory` file.
 
-. Importing and generating API tokens
+.Importing and generating API tokens
 
 * Import an existing API token with the `automationhub_api_token` flag as follows:
 +
-[source,options="nowrap",subs=attributes+]
+[options="nowrap",subs="+quotes"]
 ----
-automationhub_api_token=<api_token>
+automationhub_api_token=__<api_token>__
 ----
 
 * Generate a new API token, and invalidate any existing tokens, with the `generate_automationhub_token` flag as follows:
 +
+[options="nowrap",subs="+quotes"]
 ----
 generate_automationhub_token=
 ----
@@ -65,4 +63,4 @@ generate_automationhub_token=
 [role="_additional-resources"]
 .Additional resources
 * link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#supported_installation_scenarios[{PlatformName} Installation Guide]
-* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/assembly-deprovisioning-mesh[Deprovisioning individual nodes or groups]
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/assembly-deprovisioning-mesh[Deprovisioning individual nodes or instance groups]

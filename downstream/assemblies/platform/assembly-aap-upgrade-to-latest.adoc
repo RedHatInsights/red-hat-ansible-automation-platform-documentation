@@ -2,7 +2,7 @@
 ifdef::context[:parent-context: {context}]
 
 [id="aap-upgrade-to-latest"]
-= Upgrading to {PlatformName} {PlatformVers}
+= {PlatformName} {PlatformVers} Upgrades
 
 :context: aap-upgrade-to-latest
 

@@ -7,7 +7,7 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-To perform a basic upgrade of your {PlatformName} to a later version, download the desired version of the {PlatformNameShort} installer. Configure the `inventory` file with the same parameters you have used in previous installations and add new parameters to enable any new features, then run the installer.
+To perform a upgrade of your {PlatformName} to a later version, download the desired version of the {PlatformNameShort} installer. Configure the `inventory` file with the same parameters you have used in previous installations and add new parameters to enable any new features, then run the installer.
 
 include::platform/con-aap-upgrade-planning.adoc[leveloffset=+1]
 

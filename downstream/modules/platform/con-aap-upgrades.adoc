@@ -12,4 +12,4 @@ Upgrading to version {PlatformVers} from {PlatformNameShort} 2.1 or later involv
 
 [role="_additional-resources"]
 .Additional resources
-* <<aap-basic-upgrade,Perform an upgrade to {PlatformVers}>>
+* <<aap-upgrade-to-latest,Upgrading to {PlatformName} {PlatformVers}>>

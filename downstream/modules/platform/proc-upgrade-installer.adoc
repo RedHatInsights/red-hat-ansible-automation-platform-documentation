@@ -7,18 +7,21 @@ To upgrade your instance of Ansible Tower to {PlatformNameShort} {PlatformVers},
 . Download the latest installer for {PlatformName} from the link:https://access.redhat.com/downloads/content/480[Red Hat Customer Portal].
 . Extract the files:
 +
+[subs="+quotes"]
 ----
-$ tar xvzf ansible-automation-platform-setup-<latest-version>.tar.gz
+$ tar xvzf ansible-automation-platform-setup-__<latest_version__>.tar.gz
 ----
 . Navigate into your {PlatformNameShort} installation directory:
 +
+[subs="+quotes"]
 ----
-$ cd ansible-automation-platform-setup-<latest-version>/
+$ cd ansible-automation-platform-setup-__<latest_version__>/
 ----
 . Copy the `inventory` file from your original instance into the directory of the latest installer:
 +
+[subs="+quotes"]
 ----
-$ cp ansible-tower-setup-3.8.x.x/inventory ansible-automation-platform-setup-<latest-version>
+$ cp ansible-tower-setup-3.8.x.x/inventory ansible-automation-platform-setup-__<latest_version__>
 ----
 . Run the `setup.sh` script:
 +
