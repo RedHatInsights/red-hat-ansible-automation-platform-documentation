@@ -8,7 +8,6 @@ Upgrading to version {PlatformVers} from {PlatformNameShort} 2.1 or later involv
 
 * Set up your inventory to match your installation environment.
 * Run the {PlatformVers} installation program over your current {PlatformNameShort} installation.
-* Import or generate a new {HubName} API token.
 
 [role="_additional-resources"]
 .Additional resources
