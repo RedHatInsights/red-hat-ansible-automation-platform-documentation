@@ -13,4 +13,12 @@ Base the file name and the ID on the module title. For example:
 
 {ExecEnvNameStart} are container images on which all automation in {PlatformName} is run. {ExecEnvName} create a common language for communicating automation dependencies, and provide a standard way to build and distribute the automation environment.
 
-With {ExecEnvName}, {PlatformName} has transitioned to a distributed architecture. Keeping automation execution independent of the control plane results in faster development cycles and improves scalability, reliability, and portability across environments. {PlatformName} also includes access to Ansible content tools, making it easy to build and manage {ExecEnvName}.
+An {ExecEnvName} is expected to contain the following:
+
+* Ansible
+* Ansible Runner
+* Ansible Collections
+* Python and/or system dependencies of:
+** modules/plugins in collections
+** content in ansible-base
+** custom user needs

@@ -3,7 +3,8 @@
 = Introduction to {Builder}
 
 include::builder/con-about-builder.adoc[leveloffset=+1]
-include::builder/con-why-builder.adoc[leveloffset=+2]
+
+//include::builder/con-why-builder.adoc[leveloffset=+2]
 
 ////
 Consider adding a link to future Builder docs here
