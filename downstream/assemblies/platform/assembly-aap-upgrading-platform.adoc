@@ -11,7 +11,7 @@ To perform a upgrade of your {PlatformName} to a later version, download the des
 
 include::platform/con-aap-upgrade-planning.adoc[leveloffset=+1]
 
-Once you have completed the necessary upgrade planning, proceed by downloading the desired version of the {PlatformNameShort} installer.
+After you have completed the necessary upgrade planning, proceed by downloading the desired version of the {PlatformNameShort} installer.
 
 include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
 include::platform/proc-editing-inventory-file-for-updates.adoc[leveloffset=+1]

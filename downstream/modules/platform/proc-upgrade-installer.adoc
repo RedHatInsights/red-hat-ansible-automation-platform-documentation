@@ -15,13 +15,13 @@ $ tar xvzf ansible-automation-platform-setup-__<latest_version__>.tar.gz
 +
 [subs="+quotes"]
 ----
-$ cd ansible-automation-platform-setup-__<latest_version__>/
+$ cd ansible-automation-platform-setup-__<latest_version>__/
 ----
 . Copy the `inventory` file from your original instance into the directory of the latest installer:
 +
 [subs="+quotes"]
 ----
-$ cp ansible-tower-setup-3.8.x.x/inventory ansible-automation-platform-setup-__<latest_version__>
+$ cp ansible-tower-setup-3.8.x.x/inventory ansible-automation-platform-setup-__<latest_version>__
 ----
 . Run the `setup.sh` script:
 +
@@ -74,14 +74,14 @@ node_type=execution
 <3> Specifies hop nodes that route traffic to other execution nodes. Hop nodes cannot execute automation.
 . Import or generate a {HubName} API token.
 +
-Import an existing API token with the `automationhub_api_token` flag:
+* Import an existing API token with the `automationhub_api_token` flag:
 +
 [source,options="nowrap",subs=attributes+]
 ----
 automationhub_api_token=<api_token>
 ----
 +
-Generate a new API token, and invalidate any existing tokens, with the `generate_automationhub_token` flag:
+* Generate a new API token, and invalidate any existing tokens, with the `generate_automationhub_token` flag:
 +
 [source,options="nowrap",subs=attributes+]
 ----

@@ -1,7 +1,7 @@
 ifdef::context[:parent-context: {context}]
 
 [id="migrate-isolated-execution-nodes"]
-= Upgrading isolated nodes to execution nodes
+= Migrating isolated nodes to execution nodes
 
 [role="_abstract"]
 Upgrading from version 1.x to the latest version of the {PlatformName} requires platform administrations to migrate data from isolated legacy nodes to execution nodes. This migration is necessary to deploy the automation mesh.

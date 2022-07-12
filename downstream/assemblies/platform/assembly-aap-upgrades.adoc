@@ -1,16 +1,16 @@
 
 ifdef::context[:parent-context: {context}]
 
-[id="aap-upgrade-to-latest"]
-= {PlatformName} {PlatformVers} Upgrades
+[id="aap-upgrades"]
+= {PlatformName} {PlatformVers} upgrades
 
-:context: aap-upgrade-to-latest
+:context: aap-upgrades
 
 [role="_abstract"]
 
 Upgrade to {PlatformName} {PlatformVers} by setting up your inventory and running the installation script.
 Ansible then upgrades your deployment to {PlatformVers}.
-If you plan to upgrade from {PlatformNameShort} 2.0 or earlier, you need to migrate Ansible content for compatibility with {PlatformVers}.
+If you plan to upgrade from {PlatformNameShort} 2.0 or earlier, you must migrate Ansible content for compatibility with {PlatformVers}.
 
 include::platform/con-aap-upgrades.adoc[leveloffset=+1]
 include::platform/con-aap-upgrades-legacy.adoc[leveloffset=+1]
