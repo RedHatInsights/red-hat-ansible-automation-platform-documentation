@@ -9,5 +9,5 @@ Use the following procedure to determine the hub route.
 . Navigate to menu:Networking[Routes].
 . Select the project you used for the install.
 . Copy the location of the `private-ah-web-svc` service.
-Note that the name of the service is different if you used a different name when creating the {HubName} instance.
-This will be used later to update the RH-SSO client.
+The name of the service is different if you used a different name when creating the {HubName} instance.
+This is used later to update the RH-SSO client.

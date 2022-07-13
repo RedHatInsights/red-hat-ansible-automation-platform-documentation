@@ -6,22 +6,23 @@ ifdef::context[:parent-context: {context}]
 
 = Using a Red Hat Single Sign On Operator with {HubName}
 
-The _{PlatformName}_ (AAP) _{PrivateHubNameStart}_ (PAH) uses Red Hat Single Sign-On (RH-SSO) for external authentication.
+The _{PlatformName}_ (AAP) _{PrivateHubNameStart}_ (PAH) uses Red Hat Single Sign-On (RH-SSO) for authentication.
 
-The Red Hat Single Sign-On Operator automates Red Hat Single Sign-On administration in Openshift.
-Use this Operator to create custom resources, which automate administrative tasks.
+The _Red Hat Single Sign-On_ (RH-SSO) Operator creates and manages resources.
+Use this Operator to create custom resources to automate Red Hat Single Sign-On administration in Openshift.
 
-When installing AAP on VMs the installer can automatically install and configure RH-SSO for use with PAH.
-RH-SSO integration has not been implemented when installing AAP on _{OCP}_ (OCP) using the AAP Operator.
+When installing AAP on _Virtual Machines_ (VMs) the installer can automatically install and configure RH-SSO for use with PAH.
+When installing AAP on _{OCP}_ (OCP) you must install Single Sign-On seperately.
 This chapter describes the process to configure RH-SSO and integrate it with PAH when AAP is installed on {OCPShort}.
 
 For more information on running operators on {OCPShort}, see Operators - Working with Operators in {OCPShort} in the {OCPShort} product documentation.
 
 .Prerequisites
 * You have access to {OCP} using an account with operator installation permissions.
-* You have installed the catalog containing the {PlatformName} operators
+* You have installed the catalog containing the {PlatformName} operators.
+* You have installed the Red Hat Single Sign-On Operator.
+To install the Single Sign-On Operator, follow the procedure in link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.6/html/server_installation_and_configuration_guide/operator#doc-wrapper[ Installing Red Hat Single Sign-On using a custom resource] in the Red Hat Single Sign-On documentation.
 
-include::platform/proc-install-rh-sso-operator.adoc[leveloffset=2]
 include::platform/proc-create-keycloak-instance.adoc[leveloffset=2]
 include::platform/proc-create-keycloak-realm.adoc[leveloffset=2]
 include::platform/proc-create-keycloak-client.adoc[leveloffset=2]
@@ -31,7 +32,6 @@ include::platform/proc-creating-a-secret.adoc[leveloffset=2]
 include::platform/proc-installing-hub-using-operator.adoc[leveloffset=2]
 include::platform/proc-determine-hub-route.adoc[leveloffset=2]
 include::platform/proc-update-rhsso-client.adoc[leveloffset=2]
-include::platform/proc-verify-connectivity.adoc[leveloffset=2]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

@@ -36,3 +36,9 @@ Ensure the indentation is correct when entering these settings.
 ====
 
 . Click btn:[Save].
+
+.To verify connectivity
+
+. Navigate to the {HubName} route.
+. Enter the `hub_admin` user credentials and sign in.
+. Red Hat Single Sign-On processes the authentication and redirects back to {HubName}.
