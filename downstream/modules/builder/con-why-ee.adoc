@@ -1,0 +1,13 @@
+[id="con-why-builder"]
+
+= Why use {ExecEnvName}?
+
+With {ExecEnvName}, {PlatformName} has transitioned to a distributed architecture by separating the control plane from the execution plan. Keeping automation execution independent of the control plane results in faster development cycles and improves scalability, reliability, and portability across environments. {PlatformName} also includes access to Ansible content tools, making it easy to build and manage {ExecEnvName}.
+
+In addition to speed, portability and flexibility, {ExecEnvName} provide the following benefits:
+
+* They ensure that automation runs consistently across multiple platforms and make it possible to incorporate system-level dependencies and collection-based content.
+* They give {PlatformName} administrators the ability to provide and manage automation environments to meet the needs of different teams.
+* They allow automation to be easily scaled and shared between teams by providing a standard way of building and distributing the automation environment.
+* They enable automation teams to define, build, and update their automation environments themselves. 
+* {ExecEnvNameStart} provide a common language to communicate automation dependencies.

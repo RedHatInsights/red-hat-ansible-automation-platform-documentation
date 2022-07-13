@@ -1,0 +1,24 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="con-about-ee"]
+
+= About {ExecEnvName}
+
+[role="_abstract"]
+
+{ExecEnvNameStart} are container images on which all automation in {PlatformName} is run. {ExecEnvName} create a common language for communicating automation dependencies, and provide a standard way to build and distribute the automation environment.
+
+An {ExecEnvName} is expected to contain the following:
+
+* Ansible
+* Ansible Runner
+* Ansible Collections
+* Python and/or system dependencies of:
+** modules/plugins in collections
+** content in ansible-base
+** custom user needs
