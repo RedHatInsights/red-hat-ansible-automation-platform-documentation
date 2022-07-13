@@ -56,12 +56,12 @@ $ oc get secret/example-admin-password -o yaml
 
 apiVersion: v1
 data:
-  password: ODhLSzJVanByTXVtVEdmUmVQMzdxZXJXazByT3VYUDM=
+  password: ODzLODzLODzLODzLODzLODzLODzLODzLODzLODzLODzL
 kind: Secret
 metadata:
   annotations:
-    kubectl.kubernetes.io/last-applied-configuration: '{"apiVersion":"v1","kind":"Secret","metadata":{"labels":{"app.kubernetes.io/component":"automationcontroller","app.kubernetes.io/managed-by":"automationcontroller-operator","app.kubernetes.io/name":"example","app.kubernetes.io/operator-version":"","app.kubernetes.io/part-of":"example"},"name":"example-admin-password","namespace":"ansible-automation-platform"},"stringData":{"password":"88KK2UjprMumTGfReP37qerWk0rOuXP3"}}'
-  creationTimestamp: "2021-12-03T00:02:24Z"
+    kubectl.kubernetes.io/last-applied-configuration: '{"apiVersion":"v1","kind":"Secret","metadata":{"labels":{"app.kubernetes.io/component":"automationcontroller","app.kubernetes.io/managed-by":"automationcontroller-operator","app.kubernetes.io/name":"example","app.kubernetes.io/operator-version":"","app.kubernetes.io/part-of":"example"},"name":"example-admin-password","namespace":"ansible-automation-platform"},"stringData":{"password":"88TG88TG88TG88TG88TG88TG88TG88TG"}}'
+  creationTimestamp: "2021-11-03T00:02:24Z"
   labels:
     app.kubernetes.io/component: automationcontroller
     app.kubernetes.io/managed-by: automationcontroller-operator
@@ -70,9 +70,9 @@ metadata:
     app.kubernetes.io/part-of: example
   name: example-admin-password
   namespace: ansible-automation-platform
-  resourceVersion: "185013"
-  uid: 391b22f0-52a2-4240-b942-665f1f589359
+  resourceVersion: "185185"
+  uid: 39393939-5252-4242-b929-665f665f665f
 
 -----
 
-For this example, the password is `88KK2UjprMumTGfReP37qerWk0rOuXP3`.
+For this example, the password is `88TG88TG88TG88TG88TG88TG88TG88TG`.
