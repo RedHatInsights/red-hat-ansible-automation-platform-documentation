@@ -1,8 +1,8 @@
-[id="con-why-builder"]
+[id="con-why-ee"]
 
 = Why use {ExecEnvName}?
 
-With {ExecEnvName}, {PlatformName} has transitioned to a distributed architecture by separating the control plane from the execution plan. Keeping automation execution independent of the control plane results in faster development cycles and improves scalability, reliability, and portability across environments. {PlatformName} also includes access to Ansible content tools, making it easy to build and manage {ExecEnvName}.
+With {ExecEnvName}, {PlatformName} has transitioned to a distributed architecture by separating the control plane from the execution plane. Keeping automation execution independent of the control plane results in faster development cycles and improves scalability, reliability, and portability across environments. {PlatformName} also includes access to Ansible content tools, making it easy to build and manage {ExecEnvName}.
 
 In addition to speed, portability and flexibility, {ExecEnvName} provide the following benefits:
 

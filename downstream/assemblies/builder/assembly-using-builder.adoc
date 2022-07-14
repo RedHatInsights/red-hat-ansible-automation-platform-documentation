@@ -2,10 +2,13 @@
 
 = Using {Builder}
 
+{Builder} is a command line tool that automates the process of building {ExecEnvName} by using metadata defined in various Ansible Collections or created by the user.
+
+include::builder/con-why-builder.adoc[leveloffset=+1]
 include::builder/proc-installing-builder.adoc[leveloffset=+1]
 include::builder/con-building-definition-file.adoc[leveloffset=+1]
 
-For more information about these definition file parameters, please see <<assembly-definition-file-breakdown,this section>>.
+For more information about these definition file parameters, see xref:assembly-definition-file-breakdown[Breakdown of definition file content].
 
 include::builder/proc-executing-build.adoc[leveloffset=+1]
 

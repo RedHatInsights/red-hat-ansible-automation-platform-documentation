@@ -2,10 +2,14 @@
 
 = Introduction to {ExecEnvNameStart}
 
+Using Ansible content that depends on non-default dependencies can be complicated because the packages must be installed on each node, interact with other software installed on the host system, and be kept in sync.
+
+{ExecEnvNameStart} help simplify this process and can easily be created with {Builder}.
+
 include::builder/con-about-ee.adoc[leveloffset=+1]
 include::builder/con-why-ee.adoc[leveloffset=+2]
-include::builder/con-about-builder.adoc[leveloffset=+1]
-include::builder/con-why-builder.adoc[leveloffset=+2]
+//include::builder/con-about-builder.adoc[leveloffset=+1]
+//include::builder/con-why-builder.adoc[leveloffset=+2]
 
 ////
 Consider adding a link to future Builder docs here
