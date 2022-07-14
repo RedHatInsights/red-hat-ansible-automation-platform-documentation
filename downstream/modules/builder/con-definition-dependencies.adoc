@@ -1,6 +1,7 @@
 [id="con-definition-dependencies"]
 
 = Dependencies
+To avoid issues with your {ExecEnvNameSing} image, make sure your definition file adheres to all Galaxy, Python and system dependency requirements.
 
 == Galaxy
 The `galaxy` entry points to a valid requirements file for the `ansible-galaxy collection install -r ...` command.
