@@ -17,7 +17,7 @@ Before you begin the upgrade process, review the following considerations to pla
 [role="_additional-resources"]
 .Additional resources
 * link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html[Import a subscription]
-* link:https://docs.ansible.com/automation-controller/latest/html/administration/backup_restore.html#ag-backup-restore[Back up and restoring Controller]
+* link:https://docs.ansible.com/automation-controller/latest/html/administration/backup_restore.html#ag-backup-restore[Backing up and restoring Controller]
 * link:https://docs.ansible.com/automation-controller/latest/html/administration/clustering.html#ag-clustering[Clustering]
 
 [discrete]

@@ -81,11 +81,11 @@ node_type=execution
 automationhub_api_token=<api_token>
 ----
 +
-* Generate a new API token, and invalidate any existing tokens, with the `generate_automationhub_token` flag:
+* Generate a new API token, and invalidate any existing tokens, by setting the `generate_automationhub_token` flag to `True`:
 +
 [source,options="nowrap",subs=attributes+]
 ----
-generate_automationhub_token=
+generate_automationhub_token=True
 ----
 . Once you have finished configuring your `inventory.new.ini` for automation mesh, run the setup script using `inventory.new.ini`:
 +
