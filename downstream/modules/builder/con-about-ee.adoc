@@ -15,10 +15,7 @@ Base the file name and the ID on the module title. For example:
 
 An {ExecEnvName} is expected to contain the following:
 
-* Ansible
-* Ansible Runner
-* Ansible Collections
-* Python and/or system dependencies of:
-** modules/plugins in collections
-** content in ansible-base
-** custom user needs
+* Ansible 2.9 or Ansible Core 2.11
+* Python 3.8
+* Content collections
+* Collection, Python, or system dependencies
