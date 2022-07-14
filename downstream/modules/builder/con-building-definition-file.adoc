@@ -2,7 +2,7 @@
 
 = Building a definition file
 
-Once you have {Builder} installed, we will need to create a definition file which {Builder} will use to create your {ExecEnvNameSing} image. The high level process to build an {ExecEnvNameSing} image is for {Builder} to read and validate your definition file, then create a `Containerfile`, and finally pass the `Containerfile` to Podman which then packages and creates your {ExecEnvNameSing} image. The definition file we will create for {Builder} is in `yaml` format and contains different sections which we will discuss in further detail.
+Once you have {Builder} installed, you can create a definition file that {Builder} uses to create your {ExecEnvNameSing} image. The high level process to build an {ExecEnvNameSing} image is for {Builder} to read and validate your definition file, then create a `Containerfile`, and finally pass the `Containerfile` to Podman which then packages and creates your {ExecEnvNameSing} image. The definition file created is in `yaml` format and contains different sections. For more information about the definition file content, see xref:assembly-definition-file-breakdown[Breakdown of definition file content].
 
 The following is an example of a definition file:
 

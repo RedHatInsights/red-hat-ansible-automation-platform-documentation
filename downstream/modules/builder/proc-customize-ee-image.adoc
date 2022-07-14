@@ -1,6 +1,6 @@
 [id="proc-customize-ee-image"]
 
-= Customizing an existing execution environment image
+= Customizing an existing {ExecEnvName} image
 
 Ansible Controller ships with three default execution environments:
 
@@ -23,7 +23,7 @@ podman pull registry.redhat.io/ansible-automation-platform-22/ee-minimal-rhel8:l
 -----
 +
 . Configure your {Builder} files to specify any additional content to add to the new {ExecEnvShort} image which is based off of `ee-minimal`.
-.. For example, to add the https://galaxy.ansible.com/kubernetes/core[Kubernetes Core Collection from Galaxy] to the image, fill out the `requirements.yml` file as such:
+.. For example, to add the link:https://galaxy.ansible.com/kubernetes/core[Kubernetes Core Collection from Galaxy] to the image, fill out the `requirements.yml` file as follows:
 +
 ====
 ----
@@ -91,8 +91,8 @@ $ podman push [automation-hub-IP-address]/_[username]_/_new-ee_
 +
 . Pull your new image into your {ControllerName} instance:
 .. Navigate to {ControllerName}
-.. From the side-navigational bar, click *Administration* > *Execution Environments*.
-.. Click *Add*.
+.. From the side-navigational bar, click menu:Administration[Execution Environments].
+.. Click btn:[Add].
 .. Enter the appropriate information then hit *Save* to pull in the new image.
 +
 NOTE: if your instance of {HubName} is password or token protected, ensure that you have the appropriate container registry credential set up.
