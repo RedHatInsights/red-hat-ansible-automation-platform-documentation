@@ -2,7 +2,7 @@
 
 = Updating the RH-SSO client
 
-When {HubName} is installed and you know the URL of the instance, the RH-SSO client must be updated to set the Valid Redirect URIs and Web Origins settings.
+When {HubName} is installed and you know the URL of the instance, you must update the Red Hat Single Sign-On to set the Valid Redirect URIs and Web Origins settings.
 
 .Procedure
 

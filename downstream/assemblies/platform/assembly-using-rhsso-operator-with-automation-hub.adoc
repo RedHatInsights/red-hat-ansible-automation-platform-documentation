@@ -6,16 +6,18 @@ ifdef::context[:parent-context: {context}]
 
 = Using a Red Hat Single Sign On Operator with {HubName}
 
-The _{PlatformName}_ (AAP) _{PrivateHubNameStart}_ (PAH) uses Red Hat Single Sign-On (RH-SSO) for authentication.
+{PrivateHubNameStart} uses Red Hat Single Sign-On for authentication.
 
-The _Red Hat Single Sign-On_ (RH-SSO) Operator creates and manages resources.
+The Red Hat Single Sign-On Operator creates and manages resources.
 Use this Operator to create custom resources to automate Red Hat Single Sign-On administration in Openshift.
 
-When installing AAP on _Virtual Machines_ (VMs) the installer can automatically install and configure RH-SSO for use with PAH.
-When installing AAP on _{OCP}_ (OCP) you must install Single Sign-On seperately.
-This chapter describes the process to configure RH-SSO and integrate it with PAH when AAP is installed on {OCPShort}.
+* When installing {PlatformNameShort} on _Virtual Machines_ (VMs) the installer can automatically install and configure Red Hat Single Sign-On for use with {PrivateHubName}.
 
-For more information on running operators on {OCPShort}, see Operators - Working with Operators in {OCPShort} in the {OCPShort} product documentation.
+* When installing {PlatformNameShort} on {OCP} you must install Single Sign-On seperately.
+
+This chapter describes the process to configure Red Hat Single Sign-On and integrate it with {PrivateHubName} when {PlatformNameShort} is installed on {OCPShort}.
+
+For more information on running operators on {OCPShort}, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.10/html/operators/index[Working with Operators in {OCPShort}] in the {OCPShort} product documentation.
 
 .Prerequisites
 * You have access to {OCP} using an account with operator installation permissions.

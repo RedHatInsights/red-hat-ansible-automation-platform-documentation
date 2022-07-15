@@ -49,4 +49,4 @@ spec:
 
 When a user is created, the Operator creates a Secret containing both the username and password using the following naming pattern: `credential-<realm name>-<username>-<namespace>`.
 In this example the credential is called `credential-ansible-automation-platform-hub-admin-rh-sso`.
-When a user is created the operator does not update the user's password and password changes will not be reflected in the Secret.
+When a user is created the Operator does not update the user's password and password changes will not be reflected in the Secret.

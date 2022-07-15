@@ -4,7 +4,7 @@
 
 Use the following procedure to determine the hub route.
 
-. Procedure
+.Procedure
 
 . Navigate to menu:Networking[Routes].
 . Select the project you used for the install.

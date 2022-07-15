@@ -8,7 +8,7 @@ Use the following procedure to install {HubName} using the operator.
 
 . Navigate to menu:Operator[Installed Operators].
 . Select the {PlatformNameShort}.
-. Select {HubNameStart} tab and click btn:[Create {HubNameStart}].
+. Select the {HubNameStart} tab and click btn:[Create {HubNameStart}].
 . Select btn:[YAML view].
 The YAML should be similar to:
 +
@@ -56,8 +56,8 @@ spec:
     replicas: 2
 ----
 +
-<1> Set this to the name to use for the instance.
-<2> Set this to the name of the secret created in xref:proc-creating-a-secret_{context}[Creating a Secret to hold the Red Hat Single Sign On connection details].
+<1> Set metadata.name to the name to use for the instance.
+<2> Set spec.sso_secret to the name of the secret created in xref:proc-creating-a-secret_{context}[Creating a Secret to hold the Red Hat Single Sign On connection details].
 +
 [Note]
 ====

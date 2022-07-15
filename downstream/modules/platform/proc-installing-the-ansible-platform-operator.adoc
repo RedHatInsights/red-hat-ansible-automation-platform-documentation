@@ -10,9 +10,9 @@ Use the following procedure to install the {PlatformNameShort} Operator.
 . Click on the Operator tile.
 . Click btn:[Install].
 . Select a Project to install the Operator into.
-Ansible recommends using the Operator recommended Namespace name.
+Red Hat recommends using the Operator recommended Namespace name.
 .. If  you want to install the Operator into a project other than the recommended one, select *Create Project* from the drop down menu.
 .. Enter the Project name.
 .. Click btn:[Create].
-.. Click btn:[Install].
-When the Operator has been installed, click btn:[View Operator].
+. Click btn:[Install].
+. When the Operator has been installed, click btn:[View Operator].
