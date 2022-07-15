@@ -13,11 +13,3 @@ NOTE: You must have valid subscriptions attached on the host before installing `
 ----
 $ dnf install ansible-builder
 ----
-+
-You can also install {Builder} from the https://pypi.org/project/ansible-builder/[Python Package Index (PyPI)]. To install with this setup, run:
-+
-----
-$ pip install ansible-builder
-----
-+
-NOTE: If you encounter issues while installing from PyPI, please install and reproduce on a supported installation.
