@@ -1,9 +1,0 @@
-[id="con-pip-based-req"]
-
-= Note for `pip`-based requirements
-
-Python requirements files are combined into a single file using the `requirements-parser` library in order to support complex syntax. Entries from separate collections that give the same package name will be combined into the same entry, with the constraints combined.
-
-There are several package names which are specifically ignored by `ansible-builder`; if a collection lists these, they will not be included in the combined file. These include test packages and packages that provide Ansible itself.
-
-The full list can be found in `EXCLUDE_REQUIREMENTS` in the https://github.com/ansible/ansible-builder/blob/devel/ansible_builder/requirements.py[ansible_builder.requirements.py] module.
