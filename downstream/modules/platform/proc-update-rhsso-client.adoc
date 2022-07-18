@@ -12,7 +12,7 @@ When {HubName} is installed and you know the URL of the instance, you must updat
 . Select btn:[Keycloak Client].
 . Click on the automation-hub-client-secret client.
 . Select btn:[YAML].
-Update the Client YAML to add the Valid Redirect URIs and Web Origins settings.
+. Update the Client YAML to add the Valid Redirect URIs and Web Origins settings.
 +
 [options="nowrap" subs="+quotes"]
 ----

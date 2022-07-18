@@ -4,7 +4,7 @@ ifdef::context[:parent-context: {context}]
 
 :context: using-a-rhsso-operator
 
-= Using a Red Hat Single Sign On Operator with {HubName}
+= Using Red Hat Single Sign-On Operator with {HubName}
 
 {PrivateHubNameStart} uses Red Hat Single Sign-On for authentication.
 
@@ -13,7 +13,7 @@ Use this Operator to create custom resources to automate Red Hat Single Sign-On 
 
 * When installing {PlatformNameShort} on _Virtual Machines_ (VMs) the installer can automatically install and configure Red Hat Single Sign-On for use with {PrivateHubName}.
 
-* When installing {PlatformNameShort} on {OCP} you must install Single Sign-On seperately.
+* When installing {PlatformNameShort} on {OCP} you must install Single Sign-On separately.
 
 This chapter describes the process to configure Red Hat Single Sign-On and integrate it with {PrivateHubName} when {PlatformNameShort} is installed on {OCPShort}.
 
