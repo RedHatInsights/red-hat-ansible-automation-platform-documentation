@@ -1,10 +1,10 @@
 ifdef::context[:parent-context: {context}]
 
-[id="assembly-migrate-isolated-execution-nodes"]
-= Upgrading isolated nodes to execution nodes
+[id="migrate-isolated-execution-nodes"]
+= Migrating isolated nodes to execution nodes
 
 [role="_abstract"]
-Upgrading from version 1.x to the latest version of the {PlatformName} requires platform administrations to migrate data from isolated legacy nodes to execution nodes. This migration is necessary to deploy the automation mesh.
+Upgrading from version 1.x to the latest version of the {PlatformName} requires platform administrators to migrate data from isolated legacy nodes to execution nodes. This migration is necessary to deploy the automation mesh.
 
 This guide explains how to perform a side-by-side migration. This ensures that the data on your original automation environment remains untouched during the migration process.
 
