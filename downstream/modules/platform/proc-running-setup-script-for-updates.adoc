@@ -3,7 +3,7 @@
 = Running the {PlatformName} installer setup script
 
 [role="_abstract"]
-You can run the setup script once you have finished updating the `inventory` file to match your previous {PlatformNameShort} installation.
+You can run the setup script once you have finished updating the `inventory` file.
 
 .Procedure
 

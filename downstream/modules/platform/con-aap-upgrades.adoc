@@ -1,0 +1,14 @@
+
+
+[id="aap-upgrades_{context}"]
+
+= {PlatformNameShort} upgrades
+
+Upgrading to version {PlatformVers} from {PlatformNameShort} 2.1 or later involves downloading the installation package and then performing the following steps:
+
+* Set up your inventory to match your installation environment.
+* Run the {PlatformVers} installation program over your current {PlatformNameShort} installation.
+
+[role="_additional-resources"]
+.Additional resources
+* <<aap-upgrading-platform,Upgrading to {PlatformName} {PlatformVers}>>

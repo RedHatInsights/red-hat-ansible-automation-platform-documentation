@@ -1,0 +1,30 @@
+
+
+[id="aap-upgrade-planning_{context}"]
+
+= {PlatformNameShort} upgrade planning
+
+[role="_abstract"]
+Before you begin the upgrade process, review the following considerations to plan and prepare your {PlatformNameShort} deployment:
+
+[discrete]
+== {ControllerNameStart}
+
+* Even if you have a valid license from a previous version, you must provide your credentials or a subscriptions manifest upon upgrading to the latest version of {ControllerName}.
+* If you need to upgrade Red Hat Enterprise Linux and {ControllerName}, you must first backup and restore your {ControllerName} data.
+* Clustered upgrades require special attention to instance and instance groups before upgrading.
+
+[role="_additional-resources"]
+.Additional resources
+* link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html[Import a subscription]
+* link:https://docs.ansible.com/automation-controller/latest/html/administration/backup_restore.html#ag-backup-restore[Backing up and restoring Controller]
+* link:https://docs.ansible.com/automation-controller/latest/html/administration/clustering.html#ag-clustering[Clustering]
+
+[discrete]
+== {HubNameStart}
+
+* When upgrading to {PlatformNameShort} {PlatformVers}, you can either add an existing {HubName} API token or generate a new one and invalidate any existing tokens.
+
+[role="_additional-resources"]
+.Additional resources
+* <<editing-inventory-file-for-updates_{context}, Setting up the inventory file >>
