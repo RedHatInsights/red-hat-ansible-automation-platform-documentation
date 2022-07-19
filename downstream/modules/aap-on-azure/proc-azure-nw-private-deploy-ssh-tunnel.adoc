@@ -39,14 +39,14 @@ The following example shows the line in a hosts file:
 ----
 . As a user with root privileges, run the `ssh` command to establish an SSH tunnel.
 +
-In the example below, the IP address is the address of the SSH server in your DMZ.
-Change this IP address for your SSH tunnel.
-The `-L` flag makes your local system route traffic for the {ControllerName} URL over port 443 (HTTPs).
+In the example below, `_SSH_server_IP_` represents the IP address of the SSH server in your DMZ.
 +
 [subs="+quotes"]
 ----
-sudo ssh azureuser@20.231.60.123 -i ~/.ssh/id_ssh_key -N -f -L 443:controller.<__your_AAPonAzure_instance__>.az.ansiblecloud.com:443
+sudo ssh azureuser@<__SSH_server_IP__> -i ~/.ssh/id_ssh_key -N -f -L 443:controller.<__your_AAPonAzure_instance__>.az.ansiblecloud.com:443
 ----
++
+The `-L` flag makes your local system route traffic for the {ControllerName} URL over port 443 (HTTPs).
 +
 [NOTE]
 ====
