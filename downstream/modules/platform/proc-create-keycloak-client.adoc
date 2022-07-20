@@ -1,6 +1,6 @@
 [id="proc-create-keycloak-client_{context}"]
 
-= Creating a client
+= Creating a Keycloak client
 
 Clients are entities that can request Keycloak to authenticate a user.
 Clients can also be entities that request identity information or an access token to securely invoke other services on the network that are secured by Keycloak.

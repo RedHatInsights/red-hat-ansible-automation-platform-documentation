@@ -1,8 +1,8 @@
 [id="proc-create-a-user_{context}"]
 
-= Creating a Keycloak User
+= Creating a Keycloak user
 
-Users are entities that are able to log into your system. 
+Users are entities that are able to log into your system.
 They can be assigned group membership and have specific roles assigned to them.
 This procedure creates a Keycloak user, with the `hubadmin` role, that can log in to {HubName} with Super Administration privileges.
 
@@ -48,4 +48,5 @@ spec:
 
 When a user is created, the Operator creates a Secret containing both the username and password using the following naming pattern: `credential-<realm name>-<username>-<namespace>`.
 In this example the credential is called `credential-ansible-automation-platform-hub-admin-rh-sso`.
-When a user is created the Operator does not update the user's password and password changes will not be reflected in the Secret.
+When a user is created the Operator does not update the user's password.
+Password changes are not reflected in the Secret.
