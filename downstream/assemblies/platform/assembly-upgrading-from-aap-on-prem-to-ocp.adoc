@@ -1,0 +1,30 @@
+
+ifdef::context[:parent-context: {context}]
+
+
+[id="assembly_upgrading-from-aap-on-prem-to-aap-operator-on-ocp"]
+= Upgrading {PlatformName} 1.2 on-prem to {PlatformName} 2.x operator on {OCP}
+
+
+:context: assembly_upgrading-from-aap-on-prem-to-aap-operator-on-ocp
+
+[role="_abstract"]
+
+If you want to upgrade from {PlatformName} 1.2 on prem or on virtual machines, you must upgrade to the {PlatformName} 2.x operator on {OCP} {OCPLatest} in order to easily deploy and manage {PlatformNameShort} components on {OCPShort} for efficient automation of application development and IT management for your organization.
+
+To perform this task successfully, you must:
+
+* Set up secret key files.
+* Create a database secret key.
+* Expose the host as an external IP.
+* Install {PlatformName} operator from {OperatorHub} and use the your previous database key when deploying a new {ControllerName}.
+
+
+//include::modules/.adoc[leveloffset=+2]
+
+//include::modules/TEMPLATE_PROCEDURE_reference-material.adoc[leveloffset=2]
+
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
