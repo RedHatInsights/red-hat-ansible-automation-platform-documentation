@@ -2,9 +2,8 @@
 
 = Installing the {PlatformNameShort} Operator
 
-Use the following procedure to install the {PlatformNameShort} Operator.
-
 .Procedure
+
 . Navigate to menu:Operator[Operator Hub] and search for the {PlatformNameShort} Operator.
 . Select the {PlatformNameShort} Operator project.
 . Click on the Operator tile.

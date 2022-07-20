@@ -17,7 +17,7 @@ Use this Operator to create custom resources to automate Red Hat Single Sign-On 
 
 This chapter describes the process to configure Red Hat Single Sign-On and integrate it with {PrivateHubName} when {PlatformNameShort} is installed on {OCPShort}.
 
-For more information on running operators on {OCPShort}, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.10/html/operators/index[Working with Operators in {OCPShort}] in the {OCPShort} product documentation.
+For more information on running operators on {OCPShort}, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/operators/index[Working with Operators in {OCPShort}] in the {OCPShort} product documentation.
 
 .Prerequisites
 * You have access to {OCP} using an account with operator installation permissions.

@@ -2,14 +2,16 @@
 
 = Creating a client
 
-Use the following procedure to create the Client.
+Clients are entities that can request Keycloak to authenticate a user.
+Clients can also be entities that request identity information or an access token to securely invoke other services on the network that are secured by Keycloak.
 
 .Procedure
+
 . Navigate to menu:Operator[Installed Operators].
 . Select the Red Hat Single Sign-On Operator project.
 . Select the *Keycloak Client* tab and click btn:[Create Keycloak Client].
-On the Keycloak Realm form, select btn:[YAML view].
-Replace the default YAML file with the following:
+. On the Keycloak Realm form, select btn:[YAML view].
+. Replace the default YAML file with the following:
 +
 [options="nowrap" subs="+quotes"]
 ----
@@ -29,7 +31,7 @@ spec:
   client:
     name: Automation Hub
     clientId: automation-hub
-    secret: client-secret                        <1>
+    secret: <client-secret>                        <1>
     clientAuthenticatorType: client-secret
     description: Client for {HubNameStart}
     attributes:
@@ -97,7 +99,7 @@ spec:
           access.token.claim: "true"
           claim.name: preferred_username
           jsonType.label: String
-        name: username
+        name: <username>
         protocol: openid-connect
         protocolMapper: oidc-usermodel-property-mapper
         consentRequired: false
@@ -138,6 +140,6 @@ spec:
 
 . Click btn:[Create] and wait for the process to complete.
 
-When {HubName} is deployed the client must be updated with the “Valid Redirect URIs” and “Web Origins”.
+When {HubName} is deployed, you must update the client with the “Valid Redirect URIs” and “Web Origins” as described in xref:proc-update-rhsso-client_{context}[Updating the Red Hat Single Sign-On client]
 Additionally, the client comes pre-configured with token mappers, however, if your authentication provider does not provide group data to Red Hat SSO, then the group mapping must be updated to reflect how that information is passed.
 This is commonly by user attribute.

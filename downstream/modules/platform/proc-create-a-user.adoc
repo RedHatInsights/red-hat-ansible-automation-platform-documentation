@@ -1,11 +1,10 @@
 [id="proc-create-a-user_{context}"]
 
-= Creating a User
+= Creating a Keycloak User
 
-This procedure creates a user that can be used to log in to {HubName}.
-As the `hubadmin` role is assigned, this user has Super Administration privileges when logged in.
-
-Use the following procedure to create a Keycloak User.
+Users are entities that are able to log into your system. 
+They can be assigned group membership and have specific roles assigned to them.
+This procedure creates a Keycloak user, with the `hubadmin` role, that can log in to {HubName} with Super Administration privileges.
 
 .Procedure
 
@@ -13,7 +12,7 @@ Use the following procedure to create a Keycloak User.
 . Select the Red Hat Single Sign-On Operator project.
 . Select the *Keycloak Realm* tab and click btn:[Create Keycloak User].
 . On the Keycloak User form, select btn:[YAML view].
-Replace the default YAML file with the following:
+. Replace the default YAML file with the following:
 +
 [options="nowrap" subs="+quotes"]
 ----
@@ -39,7 +38,7 @@ spec:
     emailVerified: false
     credentials:
       - type: password
-        value: ch8ngeme
+        value: <ch8ngeme>
     clientRoles:
       automation-hub:
         - hubadmin

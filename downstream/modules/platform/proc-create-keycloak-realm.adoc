@@ -2,9 +2,12 @@
 
 = Creating a Keycloak Realm for {PlatformNameShort}
 
-Use the following procedure to create the Keycloak Realm.
+Create a realm to manage a set of users, credentials, roles, and groups.
+A user belongs to and logs into a realm.
+Realms are isolated from one another and can only manage and authenticate the users that they control.
 
 .Procedure
+
 . Navigate to menu:Operator[Installed Operators].
 . Select the *Red Hat Single Sign-On Operator* project.
 . Select the *Keycloak Realm* tab and click btn:[Create Keycloak Realm].
