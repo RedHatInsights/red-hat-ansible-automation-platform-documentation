@@ -2,8 +2,6 @@
 
 = Creating a Keycloak user
 
-Users are entities that are able to log into your system.
-They can be assigned group membership and have specific roles assigned to them.
 This procedure creates a Keycloak user, with the `hubadmin` role, that can log in to {HubName} with Super Administration privileges.
 
 .Procedure

@@ -2,8 +2,9 @@
 
 = Creating a Keycloak client
 
-Clients are entities that can request Keycloak to authenticate a user.
-Clients can also be entities that request identity information or an access token to securely invoke other services on the network that are secured by Keycloak.
+Keycloak clients authenticate hub users with Red Hat Single Sign-On.
+When a user authenticates the request goes through the Keycloak client.
+When Single Sign-On validates or issues the `OAuth` token, the client provides the resonse to {HubName} and the user can log in.
 
 .Procedure
 

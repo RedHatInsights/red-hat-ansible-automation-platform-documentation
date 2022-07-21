@@ -17,13 +17,12 @@ Use this Operator to create custom resources to automate Red Hat Single Sign-On 
 
 This chapter describes the process to configure Red Hat Single Sign-On and integrate it with {PrivateHubName} when {PlatformNameShort} is installed on {OCPShort}.
 
-For more information on running operators on {OCPShort}, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/operators/index[Working with Operators in {OCPShort}] in the {OCPShort} product documentation.
 
 .Prerequisites
 * You have access to {OCP} using an account with operator installation permissions.
 * You have installed the catalog containing the {PlatformName} operators.
 * You have installed the Red Hat Single Sign-On Operator.
-To install the Single Sign-On Operator, follow the procedure in link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.6/html/server_installation_and_configuration_guide/operator#doc-wrapper[ Installing Red Hat Single Sign-On using a custom resource] in the Red Hat Single Sign-On documentation.
+To install the Single Sign-On Operator, follow the procedure in link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.6/html/server_installation_and_configuration_guide/operator#doc-wrapper[Installing Red Hat Single Sign-On using a custom resource] in the Red Hat Single Sign-On documentation.
 
 include::platform/proc-create-keycloak-instance.adoc[leveloffset=2]
 include::platform/proc-create-keycloak-realm.adoc[leveloffset=2]
@@ -34,6 +33,11 @@ include::platform/proc-creating-a-secret.adoc[leveloffset=2]
 include::platform/proc-installing-hub-using-operator.adoc[leveloffset=2]
 include::platform/proc-determine-hub-route.adoc[leveloffset=2]
 include::platform/proc-update-rhsso-client.adoc[leveloffset=2]
+
+== Additional resources
+
+* For more information on running operators on {OCPShort}, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/operators/index[Working with Operators in {OCPShort}] in the {OCPShort} product documentation.
+
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
