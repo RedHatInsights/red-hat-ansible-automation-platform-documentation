@@ -12,12 +12,13 @@ By default, all Red Hat Certified collections are included in your initial organ
 
 * You have a valid Ansible Automation Platform subscription.
 * You have Organization Administrator permissions for cloud.redhat.com.
-* Ensure that the following domain names are part of either the firewall or the proxy's allowlist for successful connection and download of collections from Automation hub or Galaxy server:
+* Ensure that the following domain names are part of either the firewall or the proxy's allowlist for successful connection and download of collections from {HubName} or Galaxy server:
 ** `galaxy.ansible.com`
 ** `cloud.redhat.com`
 ** `console.redhat.com`
 ** `sso.redhat.com`
-* The contents of the Automation Hub are stored in `S3`, ensure the following domain name is also part of the allow list:
+* {HubNameStart} resources are stored in Amazon Simple Storage.
+Add the following domain name to the allow list:
 ** `automation-hub-prd.s3.us-east-2.amazonaws.com`
 * SSL inspection must be disabled either when using self signed certificates or for the Red Hat domains.
 

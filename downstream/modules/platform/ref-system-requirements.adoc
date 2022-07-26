@@ -30,7 +30,7 @@ h| Python | 3.8 or later |
 
 The following are necessary for you to work with project updates and collections:
 
-* Ensure that the following domain names are part of the either the firewall or the proxy's allowlist for successful connection and download of collections from Automation hub or Galaxy server:
+* Ensure that the following domain names are part of either the firewall or the proxy's allowlist for successful connection and download of collections from {HubName} or Galaxy server:
 ** `galaxy.ansible.com`
 ** `cloud.redhat.com`
 ** `console.redhat.com`
