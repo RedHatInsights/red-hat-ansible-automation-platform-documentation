@@ -28,7 +28,14 @@ h| Ansible | version 2.2 required | If Ansible is not already present on the sys
 h| Python | 3.8 or later |
 |===
 
+The following are necessary for you to work with project updates and collections:
 
+* Ensure that the following domain names are part of either the firewall or the proxy's allowlist for successful connection and download of collections from {HubName} or Galaxy server:
+** `galaxy.ansible.com`
+** `cloud.redhat.com`
+** `console.redhat.com`
+** `sso.redhat.com`
+* SSL inspection must be disabled either when using self signed certificates or for the Red Hat domains.
 
 == Automation controller
 
