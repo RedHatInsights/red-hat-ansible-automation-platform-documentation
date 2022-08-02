@@ -104,3 +104,4 @@
 
 // Red Hat products
 :RHSSO: Red Hat Single Sign-On
+:RHSSOOperator: Red Hat Single Sign-On Operator
