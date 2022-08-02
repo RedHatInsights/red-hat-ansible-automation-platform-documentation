@@ -1,0 +1,13 @@
+[id="proc-determine-hub-route_{context}"]
+
+= Determining the {HubName} Route
+
+Use the following procedure to determine the hub route.
+
+.Procedure
+
+. Navigate to menu:Networking[Routes].
+. Select the project you used for the install.
+. Copy the location of the `private-ah-web-svc` service.
+The name of the service is different if you used a different name when creating the {HubName} instance.
+This is used later to update the RH-SSO client.
