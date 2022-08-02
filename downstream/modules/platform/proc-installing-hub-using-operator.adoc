@@ -59,7 +59,7 @@ spec:
 <1> Set metadata.name to the name to use for the instance.
 <2> Set spec.sso_secret to the name of the secret created in xref:proc-creating-a-secret_{context}[Creating a Secret to hold the Red Hat Single Sign On connection details].
 +
-[Note]
+[NOTE]
 ====
 This YAML turns off SSL verification (`ssl_verify: false`).
 If you are not using self-signed certificates for OpenShift this setting can be removed.
