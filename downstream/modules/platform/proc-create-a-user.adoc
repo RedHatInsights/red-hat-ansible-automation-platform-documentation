@@ -1,0 +1,50 @@
+[id="proc-create-a-user_{context}"]
+
+= Creating a Keycloak user
+
+This procedure creates a Keycloak user, with the `hubadmin` role, that can log in to {HubName} with Super Administration privileges.
+
+.Procedure
+
+. Navigate to menu:Operator[Installed Operators].
+. Select the Red Hat Single Sign-On Operator project.
+. Select the *Keycloak Realm* tab and click btn:[Create Keycloak User].
+. On the Keycloak User form, select btn:[YAML view].
+. Replace the default YAML file with the following:
++
+[options="nowrap" subs="+quotes"]
+----
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakUser
+metadata:
+  name: hubadmin-user
+  labels:
+    app: sso
+    realm: ansible-automation-platform
+  namespace: rh-sso
+spec:
+  realmSelector:
+    matchLabels:
+      app: sso
+      realm: ansible-automation-platform
+  user:
+    username: hub_admin
+    firstName: Hub
+    lastName: Admin
+    email: hub_admin@example.com
+    enabled: true
+    emailVerified: false
+    credentials:
+      - type: password
+        value: <ch8ngeme>
+    clientRoles:
+      automation-hub:
+        - hubadmin
+----
+
+. Click btn:[Create] and wait for the process to complete.
+
+When a user is created, the Operator creates a Secret containing both the username and password using the following naming pattern: `credential-<realm name>-<username>-<namespace>`.
+In this example the credential is called `credential-ansible-automation-platform-hub-admin-rh-sso`.
+When a user is created the Operator does not update the user's password.
+Password changes are not reflected in the Secret.

@@ -1,0 +1,51 @@
+[id="proc-create-keycloak-realm_{context}"]
+
+= Creating a Keycloak realm for {PlatformNameShort}
+
+Create a realm to manage a set of users, credentials, roles, and groups.
+A user belongs to and logs into a realm.
+Realms are isolated from one another and can only manage and authenticate the users that they control.
+
+.Procedure
+
+. Navigate to menu:Operator[Installed Operators].
+. Select the *Red Hat Single Sign-On Operator* project.
+. Select the *Keycloak Realm* tab and click btn:[Create Keycloak Realm].
+. On the Keycloak Realm form, select btn:[YAML view].
+Edit the YAML file as follows:
++
+[options="nowrap" subs="+quotes"]
+----
+kind: KeycloakRealm
+apiVersion: keycloak.org/v1alpha1
+metadata:
+  name: ansible-automation-platform-keycloakrealm
+  namespace: rh-sso
+  labels:
+    app: sso
+    realm: ansible-automation-platform
+spec:
+  realm:
+    id: ansible-automation-platform
+    realm: ansible-automation-platform
+    enabled: true
+    displayName: {PlatformNameShort}
+  instanceSelector:
+    matchLabels:
+      app: sso
+----
++
+
+[cols="30% 60%",options="header]
+|====
+| *Field* | *Description*
+| metadata.name: | Set a unique value in metadata for the name of the configuration resource (CR).
+| metadata.namespace: | Set a unique value in metadata for the name of the configuration resource (CR).
+| metadata.labels.app: |Set labels to a unique value. This is used when creating the client CR.
+| metadata.labels.realm: | Set labels to a unique value. This is used when creating the client CR.
+| spec.realm.id: | Set the realm name and id. These must be the same.
+| spec.realm.realm | Set the realm name and id. These must be the same.
+| spec.realm.displayname: | Set the name to display.
+|====
+
+. Click btn:[Create] and wait for the process to complete.
