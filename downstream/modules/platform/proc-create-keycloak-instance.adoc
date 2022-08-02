@@ -1,0 +1,39 @@
+[id="proc-create-keycloak-instance_{context}"]
+
+= Creating a Keycloak instance
+
+When the SSO operator is installed you can create a Keycloak instance for use with {PlatformNameShort}.
+
+From here you provide an external Postgres or one will be created for you.
+
+.Procedure
+
+. Navigate to menu:Operator[Installed Operators].
+. Select the `rh-sso` project.
+. Select the *Red Hat Single Sign-On Operator*.
+. On the Red Hat Single Sign-On Operator details page select btn:[Keycloak].
+. Click btn:[Create instance].
+. Click btn:[YAML view].
++
+The default Keycloak custom resource is as follows:
++
+[options="nowrap" subs="+quotes"]
+----
+apiVersion: keycloak.org/v1alpha1
+kind: Keycloak
+metadata:
+  name: example-keycloak
+  labels:
+	app: sso
+  namespace: aap
+spec:
+  externalAccess:
+	enabled: true
+  instances: 1
+----
++
+. Click btn:[Create]
+
+. When deployment is complete, you can use this credential to login to the administrative console.
+
+. You can find the credentials for the administrator in the `credential-<custom-resource>` (example keycloak) secret in the namespace.
