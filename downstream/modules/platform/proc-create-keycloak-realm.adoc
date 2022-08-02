@@ -36,16 +36,16 @@ spec:
 ----
 +
 
-[cols="30% 30% 30%",options="header]
+[cols="30% 60%",options="header]
 |====
-| *Field* | *Value* | *Description*
-| metadata | name: | Set a unique value in metadata for the name of the configuration resource (CR).
-| metadata | namespace: | Set a unique value in metadata for the name of the configuration resource (CR).
-| labels | app: |Set labels to a unique value. This is used when creating the client CR.
-| labels | realm: | Set labels to a unique value. This is used when creating the client CR.
-| realm | id: | Set the realm name and id. These must be the same.
-| realm | realm | Set the realm name and id. These must be the same.
-| realm | displayname: | Set the name to display.
+| *Field* | *Description*
+| metadata.name: | Set a unique value in metadata for the name of the configuration resource (CR).
+| metadata.namespace: | Set a unique value in metadata for the name of the configuration resource (CR).
+| metadata.labels.app: |Set labels to a unique value. This is used when creating the client CR.
+| metadata.labels.realm: | Set labels to a unique value. This is used when creating the client CR.
+| spec.realm.id: | Set the realm name and id. These must be the same.
+| spec.realm.realm | Set the realm name and id. These must be the same.
+| spec.realm.displayname: | Set the name to display.
 |====
 
 . Click btn:[Create] and wait for the process to complete.
