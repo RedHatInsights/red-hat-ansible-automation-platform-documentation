@@ -1,6 +1,6 @@
 [id="proc-create-keycloak-realm_{context}"]
 
-= Creating a Keycloak Realm for {PlatformNameShort}
+= Creating a Keycloak realm for {PlatformNameShort}
 
 Create a realm to manage a set of users, credentials, roles, and groups.
 A user belongs to and logs into a realm.

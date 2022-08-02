@@ -1,6 +1,6 @@
 [id="proc-create-keycloak-instance_{context}"]
 
-= Creating a Keycloak Instance
+= Creating a Keycloak instance
 
 When the SSO operator is installed you can create a Keycloak instance for use with {PlatformNameShort}.
 
@@ -15,7 +15,7 @@ From here you provide an external Postgres or one will be created for you.
 . Click btn:[Create instance].
 . Click btn:[YAML view].
 +
-The default Keycloak customer resource is as follows:
+The default Keycloak custom resource is as follows:
 +
 [options="nowrap" subs="+quotes"]
 ----
