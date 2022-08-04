@@ -2,6 +2,8 @@
 :numbered:
 :experimental:
 
+include::attributes/attributes.adoc[]
+
 You can sync Automation Hub to use the Red Hat Certified Collections available through your Ansible Automation Platform subscription or community collections available through Ansible Galaxy.
 
 Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the Automation Hub service hosted on cloud.redhat.com.
