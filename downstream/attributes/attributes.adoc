@@ -100,3 +100,7 @@
 :OCPLatest: 4.9
 :ODF: Red Hat OpenShift Data Foundation
 :ODFShort: OpenShift Data Foundation
+
+// Red Hat products
+:RHSSO: Red Hat Single Sign-On
+:OperatorRHSSO: Red Hat Single Sign-On Operator
