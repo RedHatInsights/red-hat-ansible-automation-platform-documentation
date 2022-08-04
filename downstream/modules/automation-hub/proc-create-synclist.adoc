@@ -12,11 +12,22 @@ By default, all Red Hat Certified collections are included in your initial organ
 
 * You have a valid Ansible Automation Platform subscription.
 * You have Organization Administrator permissions for cloud.redhat.com.
+* Ensure that the following domain names are part of either the firewall or the proxy's allowlist for successful connection and download of collections from {HubName} or Galaxy server:
+** `galaxy.ansible.com`
+** `cloud.redhat.com`
+** `console.redhat.com`
+** `sso.redhat.com`
+* {HubNameStart} resources are stored in Amazon Simple Storage.
+Add the following domain name to the allow list:
+** `automation-hub-prd.s3.us-east-2.amazonaws.com`
+* SSL inspection must be disabled either when using self signed certificates or for the Red Hat domains.
+
 
 .Procedure
 
 . Log in to cloud.redhat.com.
 . Navigate to *Automation Hub* -> *Collections*.
 . Use the toggle switch on each collection to determine whether to exclude it from your synclist.
+
 
 When you finish managing collections for your synclist, you can navigate to menu:Automation Hub[Repo Management] to initiate the remote repository sync to your local Automation Hub. If your remote repository is already configured, you can manually sync Red Hat Certified collections to your local Automation Hub to update the collections content that you made available to local users.
