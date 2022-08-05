@@ -4,4 +4,4 @@
 
 [role="_abstract"]
 
-The {OperatorPlatform} to install {PlatformNameShort} 2.2 is available on {OCPShort} 4.7 and later versions.
+The {OperatorPlatform} to install {PlatformNameShort} 2.2 is available on {OCPShort} 4.8 and later versions.
