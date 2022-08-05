@@ -18,7 +18,7 @@ This installation inventory file includes both {ControllerName} and {HubName} wi
 
 -----
 [automationcontroller]
-tower.acme.org
+controller.acme.org
 
 [automationhub]
 automationhub.acme.org
@@ -39,7 +39,7 @@ registry_password='<registry password>'
 # Automation Hub Configuration
 #
 automationhub_admin_password='<password>'
-automationhub_pg_host='tower.acme.org'
+automationhub_pg_host='controller.acme.org'
 automationhub_pg_port='5432'
 automationhub_pg_database='automationhub'
 automationhub_pg_username='automationhub'
