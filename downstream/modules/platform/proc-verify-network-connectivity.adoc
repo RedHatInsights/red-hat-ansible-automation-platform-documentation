@@ -1,0 +1,51 @@
+[id="verify-network-connectivity_{context}"]
+
+= Verifying network connectivity
+
+[role=_abstract]
+
+To ensure successful migration of your data, verify that you have network connectivity from your new operator deployment to your old deployment database.
+
+.Prerequisites
+Take note of the host and port information from your existing deployment. This information is located in the postgres.py file located in the conf.d directory.
+
+.Procedure
+
+. Create a yaml file to verify the connection between your new deployment and your old deployment database:
++
+-----
+api.Version: v1
+kind: Pod
+metadata:
+    name: dbchecker
+    namespace: <namespace>
+spec:
+    -name: postgres
+    image: registry.redhat.io/rhel8/postgresql-12:latest
+-----
+. Apply the connection checker yaml file to your new project deployment:
++
+-----
+oc project ansible-automation-platform
+oc apply -f connetion_checker.yaml
+-----
+. Verify that the connection checker pod is running:
++
+-----
+oc get pods
+-----
+. Connect to a pod shell:
++
+-----
+oc rsh dbchecker
+-----
+. Once the shell session opens in the pod, verify that the new project can connect to your old project cluster:
++
+-----
+pg_isready -h <old-host-address> -p <old-port-number> -U awx
+-----
++
+.Example
+-----
+<old-host-address>:<old-port-number> - accepting connections
+-----

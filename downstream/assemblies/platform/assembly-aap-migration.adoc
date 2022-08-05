@@ -1,0 +1,26 @@
+
+ifdef::context[:parent-context: {context}]
+
+[id="aap-migration"]
+= Migrating {PlatformName} to {OperatorPlatform}
+
+:context: aap-migration
+
+[role="_abstract"]
+
+Migrating your {PlatformName} deployment to the {OperatorPlatform} allows you to take advantage of the benefits provided by a Kubernetes native operator, including simplified upgrades and full lifecycle support for your {PlatformName} deployments.
+
+include::platform/con-aap-migration-considerations.adoc[leveloffset=+1]
+include::platform/con-aap-migration-prepare.adoc[leveloffset=+1]
+include::platform/con-aap-migration-prereqs.adoc[leveloffset=+2]
+include::platform/proc-aap-migration-backup.adoc[leveloffset=+2]
+include::platform/proc-create-secret-key-secret.adoc[leveloffset=+2]
+include::platform/proc-create-postresql-secret.adoc[leveloffset=+2]
+include::platform/proc-verify-network-connectivity.adoc[leveloffset=+2]
+include::platform/proc-aap-migration.adoc[leveloffset=+1]
+include::platform/proc-post-migration-cleanup.adoc[leveloffset=+1]
+
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

@@ -1,0 +1,7 @@
+[id="aap-migration-prepare"]
+
+= Preparing for migration
+
+
+[role="_abstract"]
+Before migrating your current {PlatformNameShort} deployment to {OperatorPlatform}, you need to backup your existing data, create secret keys, and create a postresql configuration secret for migration.

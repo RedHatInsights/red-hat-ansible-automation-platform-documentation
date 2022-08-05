@@ -1,0 +1,9 @@
+[id="operator-upgrade-prereq_{context}"]
+
+= Prerequisites
+
+
+[role="_abstract"]
+To upgrade to a newer version of {OperatorPlatform}, you must have the following:
+
+* TBD
