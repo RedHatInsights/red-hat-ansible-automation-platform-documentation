@@ -27,7 +27,8 @@ cp -r $source/downstream/assemblies/aap-on-aws/*.adoc $target/aap-on-aws/
 cp -r $source/downstream/assemblies/aap-on-azure/*.adoc $target/aap-on-azure/
 
 # Modify the include directive in assemblies for a flat directory structure.
-sed -i -e 's/include::aap-on-aws\\//include::/g' -e 's/include::aap-on-azure\\//include::/g' $target/*/*.adoc
+
+sed -i -e 's/include::aap-on-aws\//include::/g' -e 's/include::aap-on-azure\//include::/g' $target/*/*.adoc
 
 # Copy the modules to the target directories.
 cp -r $source/downstream/modules/aap-on-aws/*.adoc $target/aap-on-aws/
