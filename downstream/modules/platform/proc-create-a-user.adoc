@@ -7,9 +7,9 @@ This procedure creates a Keycloak user, with the `hubadmin` role, that can log i
 .Procedure
 
 . Navigate to menu:Operator[Installed Operators].
-. Select the Red Hat Single Sign-On Operator project.
+. Select the {OperatorRHSSO} project.
 . Select the *Keycloak Realm* tab and click btn:[Create Keycloak User].
-. On the Keycloak User form, select btn:[YAML view].
+. On the *Keycloak User* form, select btn:[YAML view].
 . Replace the default YAML file with the following:
 +
 [options="nowrap" subs="+quotes"]
