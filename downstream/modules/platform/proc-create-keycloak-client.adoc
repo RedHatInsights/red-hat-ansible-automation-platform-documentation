@@ -2,14 +2,14 @@
 
 = Creating a Keycloak client
 
-Keycloak clients authenticate hub users with Red Hat Single Sign-On.
+Keycloak clients authenticate hub users with {RHSSO}.
 When a user authenticates the request goes through the Keycloak client.
 When Single Sign-On validates or issues the `OAuth` token, the client provides the resonse to {HubName} and the user can log in.
 
 .Procedure
 
 . Navigate to menu:Operator[Installed Operators].
-. Select the Red Hat Single Sign-On Operator project.
+. Select the {OperatorRHSSO} project.
 . Select the *Keycloak Client* tab and click btn:[Create Keycloak Client].
 . On the Keycloak Realm form, select btn:[YAML view].
 . Replace the default YAML file with the following:
@@ -141,6 +141,6 @@ spec:
 
 . Click btn:[Create] and wait for the process to complete.
 
-When {HubName} is deployed, you must update the client with the “Valid Redirect URIs” and “Web Origins” as described in xref:proc-update-rhsso-client_{context}[Updating the Red Hat Single Sign-On client]
+When {HubName} is deployed, you must update the client with the “Valid Redirect URIs” and “Web Origins” as described in xref:proc-update-rhsso-client_{context}[Updating the {RHSSO} client]
 Additionally, the client comes pre-configured with token mappers, however, if your authentication provider does not provide group data to Red Hat SSO, then the group mapping must be updated to reflect how that information is passed.
 This is commonly by user attribute.
