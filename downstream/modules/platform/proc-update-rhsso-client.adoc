@@ -2,7 +2,7 @@
 
 = Updating the Red Hat Single Sign-On client
 
-When {HubName} is installed and you know the URL of the instance, you must update the Red Hat Single Sign-On to set the Valid Redirect URIs and Web Origins settings.
+When {HubName} is installed and you know the URL of the instance, you must update the {RHSSO} to set the Valid Redirect URIs and Web Origins settings.
 
 .Procedure
 
@@ -41,4 +41,4 @@ Ensure the indentation is correct when entering these settings.
 
 . Navigate to the {HubName} route.
 . Enter the `hub_admin` user credentials and sign in.
-. Red Hat Single Sign-On processes the authentication and redirects back to {HubName}.
+. {RHSSO} processes the authentication and redirects back to {HubName}.
