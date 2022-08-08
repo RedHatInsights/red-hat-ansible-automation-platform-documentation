@@ -4,25 +4,25 @@ ifdef::context[:parent-context: {context}]
 
 :context: using-a-rhsso-operator
 
-= Using Red Hat Single Sign-On Operator with {HubName}
+= Using {OperatorRHSSO} with {HubName}
 
-{PrivateHubNameStart} uses Red Hat Single Sign-On for authentication.
+{PrivateHubNameStart} uses {RHSSO} for authentication.
 
-The Red Hat Single Sign-On Operator creates and manages resources.
-Use this Operator to create custom resources to automate Red Hat Single Sign-On administration in Openshift.
+The {OperatorRHSSO} creates and manages resources.
+Use this Operator to create custom resources to automate {RHSSO} administration in Openshift.
 
-* When installing {PlatformNameShort} on _Virtual Machines_ (VMs) the installer can automatically install and configure Red Hat Single Sign-On for use with {PrivateHubName}.
+* When installing {PlatformNameShort} on _Virtual Machines_ (VMs) the installer can automatically install and configure {RHSSO} for use with {PrivateHubName}.
 
 * When installing {PlatformNameShort} on {OCP} you must install Single Sign-On separately.
 
-This chapter describes the process to configure Red Hat Single Sign-On and integrate it with {PrivateHubName} when {PlatformNameShort} is installed on {OCPShort}.
+This chapter describes the process to configure {RHSSO} and integrate it with {PrivateHubName} when {PlatformNameShort} is installed on {OCPShort}.
 
 
 .Prerequisites
 * You have access to {OCP} using an account with operator installation permissions.
 * You have installed the catalog containing the {PlatformName} operators.
-* You have installed the Red Hat Single Sign-On Operator.
-To install the Single Sign-On Operator, follow the procedure in link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.6/html/server_installation_and_configuration_guide/operator#doc-wrapper[Installing Red Hat Single Sign-On using a custom resource] in the Red Hat Single Sign-On documentation.
+* You have installed the {OperatorRHSSO}.
+To install the {OperatorRHSSO}, follow the procedure in link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.6/html/server_installation_and_configuration_guide/operator#doc-wrapper[Installing {RHSSO} using a custom resource] in the {RHSSO} documentation.
 
 include::platform/proc-create-keycloak-instance.adoc[leveloffset=2]
 include::platform/proc-create-keycloak-realm.adoc[leveloffset=2]
