@@ -4,7 +4,8 @@
 
 = Creating a synclist of Red Hat Certified collections
 
-You can create a synclist of curated Red Hat Certified collections in Automation Hub on cloud.redhat.com. Your synclist repository is located under menu[Automation Hub > Repo Management], which is updated whenever you choose to manage content within Red Hat Certified collections.
+You can create a synclist of curated Red Hat Certified collections in Automation Hub on cloud.redhat.com.
+Your synclist repository is located under menu:Automation Hub[Repo Management], which is updated whenever you choose to manage content within Red Hat Certified collections.
 
 By default, all Red Hat Certified collections are included in your initial organization synclist.
 
