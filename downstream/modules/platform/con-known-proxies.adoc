@@ -1,7 +1,7 @@
 
 [id="con-known-proxies_{context}"]
 
-= About known proxies
+= Known proxies
 
 
 [role="_abstract"]
