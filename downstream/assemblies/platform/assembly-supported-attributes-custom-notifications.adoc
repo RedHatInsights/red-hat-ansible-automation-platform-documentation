@@ -211,7 +211,8 @@ In addition to the job attributes, there are some other variables that can be ad
  'finished': False,
  'credential': 'Stub credential',
  'created_by': 'admin'}
- -----
+-----
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
+
