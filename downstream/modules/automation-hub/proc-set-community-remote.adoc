@@ -8,15 +8,10 @@ By default, your local {HubName} `community` repository directs to `https://gala
 
 .Prerequisites
 
-<<<<<<< HEAD
-* You have *Modify Ansible repo content* permissions. See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.0/html/managing-user-access/index[Managing user access in Automation Hub] for more information on permissions.
-* You have a `requirements.yml` file that identifies those collections to sync from Ansible Galaxy. See example below.
-=======
 * You have *Modify Ansible repo content* permissions.
 See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
 * You have a `requirements.yml` file that identifies those collections to sync from Ansible Galaxy.
 See example below.
->>>>>>> d4cf972 (Update broken hub link (#470))
 
 .Requirements.yml example
 -----
