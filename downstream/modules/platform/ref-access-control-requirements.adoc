@@ -9,17 +9,24 @@
 
 The following tables provide the default {PlatformName} destination ports required for each application.
 
+[NOTE]
+The default destination ports and installer inventory listed below are configurable. If you choose to configure them to suit your environment, you may experience a change in behavior.
+
+
+
 .PostgreSQL
 [options="header"]
 |===
-|Port |Protocol |Service |Required for
+|Port |Protocol |Service |Installer Inventory Variable |Required for
 |22
 |TCP
 |SSH
+|pg_port
 |Remote access during installation
 |5432
 |TCP
 |Postgres
+|pg_port
 a|Default port
 
 ALLOW connections from controller(s) to database port
@@ -28,25 +35,29 @@ ALLOW connections from controller(s) to database port
 .{ControllerNameStart}
 [options="header"]
 |===
-|Port |Protocol |Service |Required for
+|Port |Protocol |Service |Installer Inventory Variable |Required for
 |22
 |TCP
 |SSH
+|ansible_port
 |Installation
 
 |80
 |TCP
 |HTTP
+|nginx_http_port
 |UI/API
 
 |443
 |TCP
 |HTTPS
+|nginx_https_port
 |UI/API
 
 |5432
 |TCP
 |PostgreSQL
+|pg_port
 a|Open *only* if the internal database is being used along with another component. Otherwise, this port should not be opened
 
 Hybrid mode in a cluster
@@ -54,21 +65,24 @@ Hybrid mode in a cluster
 |27199
 |TCP
 |Receptor
+|receptor_listener_port
 |ALLOW receptor port across all controllers (for mandatory & automatic control plane peering)
 |===
 
 .Hop Nodes
 [options="header"]
 |===
-|Port |Protocol |Service |Required for
+|Port |Protocol |Service |Installer Inventory Variable |Required for
 |22
 |TCP
 |SSH
+|ansible_port
 |Installation
 
 |27199
 |TCP
 |Receptor
+|receptor_listener_port
 a|Mesh
 
 ALLOW connection from controller(s) to receptor port
@@ -77,61 +91,69 @@ ALLOW connection from controller(s) to receptor port
 .Execution Nodes
 [options="header"]
 |===
-|Port |Protocol |Service |Required for
+|Port |Protocol |Service |Installer Inventory Variable |Required for
 |22
 |TCP
 |SSH
+|ansible_port
 |Installation
 
 |27199
 |TCP
 |Receptor
+|receptor_listener_port
 a|Mesh - Nodes directly peered to controllers. No hop nodes involved. 27199 is bidirectional for the execution nodes
 
 ALLOW connections from controller(s) to receptor port (for non-hop connected nodes)
 
 ALLOW connections from hop node(s) to receptor port (if relayed through hop nodes)
-
 |===
 
 .{HubNameStart}
 [options="header"]
 |===
-|Port |Protocol |Service |Required for
+|Port |Protocol |Service |Installer Inventory Variable |Required for
 |22
 |TCP
 |SSH
+|ansible_port
 |Installation
 
 |80
 |TCP
 |HTTP
+|nginx_http_port
 |User interface
 |443
 |TCP
 |HTTPS
+|nginx_https_port
 |User interface
 |5432
 |TCP
 |PostgreSQL
+|pg_port
 a|Open *only* if the internal database is being used along with another component. Otherwise, this port should not be opened
 |===
 
 .Services Catalog
 [options="header"]
 |===
-|Port |Protocol |Service |Required for
+|Port |Protocol |Service |Installer Inventory Variable |Required for
 |22
 |TCP
 |SSH
+|ansible_port
 |Installation
 |443
 |TCP
 |HTTPS
+|nginx_https_port
 |Access to Service Catalog user interface
 |5432
 |TCP
 |PostgreSQL
+|pg_port
 a|Open *only* if the internal database is being used. Otherwise, this port should not be opened
 |===
 
