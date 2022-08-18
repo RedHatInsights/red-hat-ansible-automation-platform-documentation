@@ -58,5 +58,7 @@ Add routes in the {PlatformNameShort} route table for outbound traffic from the 
 * You must also allow traffic from your firewall to any other external domain or IP address that you want {PlatformNameShort} to run automation jobs against.
 Otherwise, your firewall will block connectivity between {PlatformNameShort} and destinations for automation.
 
+== Additional resources
+
 For further information about adding routes to a route table in Azure, refer to link:https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table#create-a-route[Create a route] in the Microsoft Azure _Virtual network_ guide.
 
