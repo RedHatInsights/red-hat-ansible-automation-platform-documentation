@@ -3,13 +3,15 @@
 [id="proc-set-community-remote"]
 = Configuring the community remote repository and syncing Ansible Galaxy collections
 
-You can edit the *community* remote repository to sync chosen collections from Ansible Galaxy to your local Automation Hub.
-By default, your local Automation Hub `community` repository directs to `https://galaxy.ansible.com/api/`.
+You can edit the *community* remote repository to sync chosen collections from Ansible Galaxy to your local {HubName}.
+By default, your local {HubName} `community` repository directs to `https://galaxy.ansible.com/api/`.
 
 .Prerequisites
 
-* You have *Modify Ansible repo content* permissions. See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
-* You have a `requirements.yml` file that identifies those collections to sync from Ansible Galaxy. See example below.
+* You have *Modify Ansible repo content* permissions.
+See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
+* You have a `requirements.yml` file that identifies those collections to sync from Ansible Galaxy.
+See example below.
 
 .Requirements.yml example
 -----
@@ -21,19 +23,19 @@ collections:
 -----
 
 .Procedure
-. Log in to your local Automation Hub.
-. Navigate to menu:Repo Management[]].
+. Log in to your local {HubName}.
+. Navigate to menu:Repo Management[].
 . Click the *Remotes* tab.
 . In the *community* remote, click image:more_actions.png[More actions] and click btn:[Edit].
 . In the modal, click btn:[Browse] and locate the `requirements.yml` file on your local machine.
 . Click btn:[Save].
 
-The modal closes and returns you to the *Repo Management* page. 
-You can now sync collections identified in your `requirements.yml` file from Ansible Galaxy to your local Automation Hub.
+The modal closes and returns you to the *Repo Management* page.
+You can now sync collections identified in your `requirements.yml` file from Ansible Galaxy to your local {HubName}.
 
-. Click btn:[Sync] to sync collections from Ansible Galaxy and Automation Hub.
+. Click btn:[Sync] to sync collections from Ansible Galaxy and {HubName}.
 
-The *Sync status* notification updates to notify you of completion or failure of Ansible Galaxy collections sync to your Automation Hub.
+The *Sync status* notification updates to notify you of completion or failure of Ansible Galaxy collections sync to your {HubName}.
 
 .Verification
 
