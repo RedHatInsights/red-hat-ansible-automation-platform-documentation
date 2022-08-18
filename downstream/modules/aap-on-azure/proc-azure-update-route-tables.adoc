@@ -47,17 +47,16 @@ After you have configured the routing rules, traffic is routed to and from {Plat
 
 .Outbound routing through virtual appliances
 
-Your organization may use Azure firewall services or third-party firewall appliances through a Virtual Appliance connection.
-When configuring outbound routes within the route table for {AAPonAzureNameShort}, you will need to take into account expected outbound traffic that {AAPonAzureNameShort} will require in order to be managed by Red Hat properly including upgrades and security patching.
+If your organization uses Azure firewall services or third-party firewall appliances through a Virtual Appliance connection, you must configure routes to enable application management and automation against external resources.
 
-When configuring virtual appliance firewalls, you will need to allow outbound traffic from the CIDR block (i.e. 192.168.0.0/24) of the {AAPonAzureNameShort} managed application to the following domains.
-The entire CIDR block of the managed application is required since any machine in the AKS cluster could submit a request to the domains in order to pull updates for containers used by {PlatformNameShort}.
+* For Red Hat to manage and upgrade {AAPonAzureNameShort} and execute security patching, any machine in the Azure Kubernetes service (AKS) cluster must be allowed to submit a request to pull updates for containers used by {PlatformNameShort}.
+Add routes in the {PlatformNameShort} route table for outbound traffic from the full CIDR block (`192.168.0.0/24`) of the {AAPonAzureNameShort} managed application to the following domains:
 
-* registry.redhat.io
-* quay.io
+** `registry.redhat.io`
+** `quay.io`
 
-You will also need to allow traffic from your firewall to any other external domain or IP address that {PlatformNameShort} would need to run automation jobs against.
-Otherwise, your firewall will block connectivity between Ansible Automation Platform and destinations for automation.
+* You must also allow traffic from your firewall to any other external domain or IP address that you want {PlatformNameShort} to run automation jobs against.
+Otherwise, your firewall will block connectivity between {PlatformNameShort} and destinations for automation.
 
 For further information about adding routes to a route table in Azure, refer to link:https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table#create-a-route[Create a route] in the Microsoft Azure _Virtual network_ guide.
 
