@@ -47,10 +47,14 @@ After you have configured the routing rules, traffic is routed to and from {Plat
 
 .Outbound routing through virtual appliances
 
-If your organization uses Azure firewall services or third-party firewall appliances through a Virtual Appliance connection, you must configure routes to enable application management and automation against external resources.
+If your organization uses Azure firewall services or third-party firewall appliances through a Virtual Appliance connection, you must configure outbound connectivity from the managed application, to enable Red Hat to maintain your application and to enable automation against external resources.
+
+The easiest way to implement this is to create a firewall rule that allows all outbound traffic from port 443.
+
+If you choose not to allow all outbound traffic from  port 443, you must configure routes.
 
 * For Red Hat to manage and upgrade {AAPonAzureNameShort} and execute security patching, any machine in the Azure Kubernetes service (AKS) cluster must be allowed to submit a request to pull updates for containers used by {PlatformNameShort}.
-Add routes in the {PlatformNameShort} route table for outbound traffic from the full CIDR block (`192.168.0.0/24`) of the {AAPonAzureNameShort} managed application to the following domains:
+Add routes in the {PlatformNameShort} route table for outbound traffic from the full CIDR range of the {AAPonAzureNameShort} managed application to the following domains:
 
 ** `registry.redhat.io`
 ** `quay.io`
