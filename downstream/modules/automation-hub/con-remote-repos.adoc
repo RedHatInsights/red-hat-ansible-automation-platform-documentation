@@ -2,7 +2,7 @@
 
 = About remote repositories
 
-You can configure your local {HubName} to sync with Red Hat Certified Collections hosted in your organization repository on console.redhat.com and to your choice of collections in Ansible Galaxy by configuring remote repositories.
+You can configure your local {HubName} to sync with Red Hat Certified Collections hosted in your organization repository on console.redhat.com and to your choice of collections in {Galaxy} by configuring remote repositories.
 
 Each remote repository located in menu:Repo Management[Remote] provides information for both *community* and *rh-certified* about when the repo was *last updated* and when content was *last synced*. 
 You can add new content to {HubName} at any time using the *Edit* and *Sync* features included on the menu:Repo Management[Remote] page.

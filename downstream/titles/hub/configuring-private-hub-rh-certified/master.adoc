@@ -4,7 +4,7 @@
 
 include::attributes/attributes.adoc[]
 
-You can sync {HubName} to use the Red Hat Certified Collections available through your {PlatformNameShort} subscription or community collections available through Ansible Galaxy.
+You can sync {HubName} to use the Red Hat Certified Collections available through your {PlatformNameShort} subscription or community collections available through {Galaxy}.
 
 Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the {HubName} service hosted on console.redhat.com.
 
@@ -18,6 +18,6 @@ When the above procedures are complete, you will have:
 
 * created a synclist for Red Hat Certified collections content,
 * synced that content to your local {HubName}, and
-* designated community collections from Ansible Galaxy to distribute to your users.
+* designated community collections from {Galaxy} to distribute to your users.
 
 Users can now view and download collections content from your local {HubName}.
