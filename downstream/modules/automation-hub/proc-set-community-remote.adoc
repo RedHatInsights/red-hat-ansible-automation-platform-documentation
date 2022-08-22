@@ -16,7 +16,7 @@ See example below.
 .Requirements.yml example
 -----
 collections:
-  # Install a collection from {Galaxy}.
+  # Install a collection from Ansible Galaxy.
   - name: geerlingguy.php_roles
     version: 0.9.3
     source: https://galaxy.ansible.com
@@ -26,7 +26,7 @@ collections:
 . Log in to your local {HubName}.
 . Navigate to menu:Repo Management[].
 . Click the *Remotes* tab.
-. In the *community* remote, click image:more_actions.png[More actions] and click btn:[Edit].
+. In the *community* remote, click the btn:[More Actions] icon image:more_actions.png[More, 10,25] and click btn:[Edit].
 . In the modal, click btn:[Browse] and locate the `requirements.yml` file on your local machine.
 . Click btn:[Save].
 
