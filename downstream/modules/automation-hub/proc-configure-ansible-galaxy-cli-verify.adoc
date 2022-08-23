@@ -4,14 +4,14 @@
 
 You can configure Ansible-Galaxy CLI to verify collections. This assures that collections you download are approved by your organization and have not been changed after it was uploaded to  {HubName}.
 
+If a collection has been signed by the Galaxy server, the server provides ASCII armored, detached signatures to verify the authenticity of the MANIFEST.json before using it to verify the collection’s contents. You must opt into signature verification by link:https://docs.ansible.com/ansible/devel/reference_appendices/config.html#galaxy-gpg-keyring[configuring a keyring] for `ansible-galaxy` or providing the path with the `--keyring` option.
+
 .Prerequisites
 
 * Signed and certified collections have been published to {HubName}.
 * Public key for verification has been added to the local system keyring.
 
 .Procedure
-
-If a collection has been signed by the Galaxy server, the server provides ASCII armored, detached signatures to verify the authenticity of the MANIFEST.json before using it to verify the collection’s contents. You must opt into signature verification by link:https://docs.ansible.com/ansible/devel/reference_appendices/config.html#galaxy-gpg-keyring[configuring a keyring] for `ansible-galaxy` or providing the path with the `--keyring` option.
 
 . To import a public key into a keyring for use with `ansible-galaxy`, run the following command.
 +
@@ -46,5 +46,6 @@ collections:
 
 ansible-galaxy collection verify -r requirements.yml --keyring ~/.ansible/pubring.kbx
 ----
+
 When you install a collection from a Galaxy server, the signatures provided by the server are saved along with the installed collections to verify the collection’s authenticity.
 . (Optional) If you need to verify the internal consistency of your collection again without querying the Galaxy server, run the same command you used previously using the `--offline` option.
