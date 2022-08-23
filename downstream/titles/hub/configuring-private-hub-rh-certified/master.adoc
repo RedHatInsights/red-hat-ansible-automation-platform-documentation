@@ -12,6 +12,8 @@ include::hub/assembly-synclists.adoc[leveloffset=+1]
 
 include::hub/assembly-syncing-to-cloud-repo.adoc[leveloffset=+1]
 
+include::hub/assembly-collections-and-content-signing-in-pah.adoc[leveloffset=+1]
+
 == Conclusion
 
 When the above procedures are complete, you will have:
