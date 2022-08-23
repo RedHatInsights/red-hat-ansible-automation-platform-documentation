@@ -9,8 +9,8 @@ NOTE: The {PlatformNameShort} installation program generates a CA if you do not 
 .Procedure
 
 . Open the `inventory` file for editing.
-. Add the `mesh_ca_keyfile` variable and specify the full path to the CA certificate file (`.crt`).
-. Add the `mesh_ca_certfile` variable and specify the full path to the private RSA key (`.key`).
+. Add the `mesh_ca_keyfile` variable and specify the full path to the private RSA key (`.key`).
+. Add the `mesh_ca_certfile` variable and specify the full path to the CA certificate file (`.crt`).
 . Save the changes to the inventory file.
 
 .Example
