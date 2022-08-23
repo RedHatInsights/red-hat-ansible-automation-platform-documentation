@@ -64,8 +64,8 @@ After you deploy a {PrivateHubName} with signing enabled to your {PlatformNameSh
 .
 .
 automationhub_create_default_collection_signing_service = True
-automationhub_auto_sign_collections = True
-automationhub_require_content_approval = True
+*automationhub_auto_sign_collections = True*
+*automationhub_require_content_approval = True*
 automationhub_collection_signing_service_key = /abs/path/to/galaxy_signing_service.gpg
 automationhub_collection_signing_service_script = /abs/path/to/collection_signing.sh
 ----
