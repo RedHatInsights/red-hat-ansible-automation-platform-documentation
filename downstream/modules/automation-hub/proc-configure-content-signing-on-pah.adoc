@@ -57,7 +57,7 @@ After you deploy a {PrivateHubName} with signing enabled to your {PlatformNameSh
 
 . Review the output from the installer that begins with `automationhub_*``.
 +
-[source,highlight=6-8]
+[source,highlight=6;7]
 ----
 [all:vars]
 .
