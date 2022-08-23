@@ -1,4 +1,4 @@
-[id="proc-configure-ansible-galaxy-cli-verify_{context}"]
+[id="proc-configure-ansible-galaxy-cli-verify"]
 
 = Configuring Ansible-Galaxy CLI to verify collections
 

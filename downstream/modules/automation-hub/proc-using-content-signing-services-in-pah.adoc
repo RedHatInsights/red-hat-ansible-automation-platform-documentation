@@ -1,4 +1,4 @@
-[id="proc-using-content-signing-services-in-pah_{context}"]
+[id="proc-using-content-signing-services-in-pah"]
 
 = Using content signing services in private automation hub
 
