@@ -55,7 +55,7 @@ fi
 +
 After you deploy a {PrivateHubName} with signing enabled to your {PlatformNameShort} cluster, new UI additions display when you interact with collections.
 
-. Review the output from the installer that begins with `automationhub_*``.
+. Review the output from the installer that begins with `automationhub_*`.
 +
 [source,highlight=6;7]
 ----
