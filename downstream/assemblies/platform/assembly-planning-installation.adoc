@@ -15,8 +15,8 @@ You can use this section to help plan your {PlatformName} installation. Before i
 include::platform/ref-system-requirements.adoc[leveloffset=+1]
 include::platform/ref-access-control-requirements.adoc[leveloffset=+1]
 
-include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
 include::platform/proc-attaching-subscriptions.adoc[leveloffset=+1]
+include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
 
 == Supported installation scenarios
 
