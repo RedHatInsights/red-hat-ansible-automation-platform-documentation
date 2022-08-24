@@ -10,11 +10,25 @@ Red Hat only has access to the managed application resource group, with no visib
 
 For information about how this works and how resources and access are isolated from the rest of your Azure resources, refer to link:https://docs.microsoft.com/en-us/azure/azure-resource-manager/managed-applications/overview[Azure managed applications overview] in the Microsoft _Azure managed applications_ guide.
 
-{AAPonAzureNameShort} uses two resource groups:
+{AAPonAzureNameShort} uses the following resource groups:
 
-* A resource group in your tenant. This resource group includes a single resource referring to the {AAPonAzureNameShort} managed application deployment.
-Red Hat has access to this managed app to perform support, maintenance, and upgrades.
-* A multi-tenant managed resource group that contains all the infrastructure needed to operate {AAPonAzureNameShort}. This multi-tenant resource group is shared between the Red Hat tenant and your tenant. Red Hat has full administrative control and you have read-only access to the resource group.
+* A new or existing resource group (RG) in your tenant.
+This resource group includes a single resource referring to the {AAPonAzureNameShort} managed application deployment.
+Red Hat has access to the managed app to perform support, maintenance, and upgrades, but the resource group is outside of Red Hat's management.
+* A multi-tenant managed resource group (MRG) that contains all the infrastructure needed to operate {AAPonAzureNameShort}.
+This multi-tenant resource group is shared between the Red Hat tenant and your tenant. Red Hat has full administrative control and you have read-only access to the resource group.
+* An AKS node pool resource group (NPRG).
+Microsoft requires the NPRG for AKS deployments. It contains resources that AKS uses to function.
+It is created on deployment, and it is outside of Red Hat's management.
+Refer to link:https://docs.microsoft.com/en-us/azure/aks/faq#why-are-two-resource-groups-created-with-aks[Microsoft's AKS documentation] for more information about NPRGs.
+
+[NOTE]
+====
+Do not interact with any resources in the node pool resource group (NPRG) unless explicitly directed to by the {AAPonAzureName} SRE team.
+Changes to resources in the NPRG cannot be protected by Red Hat and can cause irrecoverable damage to the application.
+
+Red Hat cannot restrict your ability to change or delete resources in the NPRG.
+====
 
 When you install {AAPonAzureNameShort}, you choose whether the deployment is public or private.
 This affects how users can access the {PlatformNameShort} user interfaces.
