@@ -70,4 +70,4 @@ automationhub_collection_signing_service_key = /abs/path/to/galaxy_signing_servi
 automationhub_collection_signing_service_script = /abs/path/to/collection_signing.sh
 ----
 +
-The two new keys in the deployment highlighted in the previous example demonstrate that the collections must be signed and require approval after they are uploaded to {PrivateHubName}.
+The two new keys (*automationhub_auto_sign_collections* and *automationhub_require_content_approval*) in the previous example demonstrate that the collections must be signed and require approval after they are uploaded to {PrivateHubName}.
