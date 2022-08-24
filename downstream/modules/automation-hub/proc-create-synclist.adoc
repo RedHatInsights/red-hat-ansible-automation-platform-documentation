@@ -4,10 +4,10 @@
 
 = Creating a synclist of Red Hat Certified collections
 
-You can create a synclist of curated Red Hat Certified collections in {HubName} on console.redhat.com. 
-Your synclist repository is located under menu:Automation Hub[Repo Management], which is updated whenever you choose to manage content within Red Hat Certified collections.
+You can create a synclist of curated Red Hat Certified and Vaidated Collections in {HubName} on console.redhat.com. 
+Your synclist repository is located under menu:Automation Hub[Repo Management], which is updated whenever you choose to manage content within Red Hat Certified or Validated Collections.
 
-By default, all Red Hat Certified collections are included in your initial organization synclist.
+By default, all Red Hat Certified and and Validated Collections are included in your initial organization synclist.
 
 .Prerequisites
 
@@ -32,4 +32,4 @@ Add the following domain name to the allow list:
 
 
 When you finish managing collections for your synclist, you can navigate to menu:Automation Hub[Repo Management] to initiate the remote repository sync to your local {HubName}. 
-If your remote repository is already configured, you can manually sync Red Hat Certified collections to your local {HubName} to update the collections content that you made available to local users.
+If your remote repository is already configured, you can manually sync Red Hat Certified and Validated Collections to your local {HubName} to update the collections content that you made available to local users.

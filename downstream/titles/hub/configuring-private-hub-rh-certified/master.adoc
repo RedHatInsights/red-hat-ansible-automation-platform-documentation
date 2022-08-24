@@ -5,9 +5,9 @@
 
 include::attributes/attributes.adoc[]
 
-You can sync {HubName} to use the Red Hat Certified Collections available through your {PlatformNameShort} subscription or community collections available through {Galaxy}.
+You can sync {HubName} to use the Red Hat Certified aand Validated Collections available through your {PlatformNameShort} subscription or community collections available through {Galaxy}.
 
-Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the {HubName} service hosted on console.redhat.com.
+Your organization can access and curate into a unique set of collections from all Red Hat Certified and Validated content in the {HubName} service hosted on console.redhat.com.
 
 You can also configure private {HubName} for signing and publishing Ansible content collections tailored to meet your organization's unique needs.
 
@@ -30,4 +30,4 @@ When you complete all of the previous procedures, you will have:
 * signed and approved collections for your organization's specific needs.
 * configured Ansible-Galaxy CLI to verify collections before signing them.
 
-Users can now view and download collections content from your local {HubName}.
+Users can now view and download collections content from your {PrivateHubName}.

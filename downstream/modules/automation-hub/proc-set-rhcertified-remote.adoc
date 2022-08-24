@@ -20,10 +20,10 @@ See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_pla
 . In the *rh-certified* remote, click image:more_actions.png[More actions] and click btn:[Edit].
 . In the modal, paste the Sync URL and Token you acquired from cloud.redhat.com.
 . Click btn:[Save].
-
++
 The modal closes and returns you to the *Repo Management* page.
 You can now sync collections between your organization synclist on cloud.redhat.com and your local {HubName}.
-
++
 . Click btn:[Sync] to sync collections.
 
 The *Sync status* notification updates to notify you of completion of Red Hat Certified collections sync.
