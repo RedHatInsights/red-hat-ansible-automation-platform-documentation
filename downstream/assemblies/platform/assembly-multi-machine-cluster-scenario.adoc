@@ -4,7 +4,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="assembly-multi-machine-cluster-scenario"]
-= Multi-machine cluster intallation
+= Multi-machine cluster installation
 
 
 :context: cluster-scenario
