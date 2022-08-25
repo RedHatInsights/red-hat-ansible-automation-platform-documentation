@@ -15,7 +15,9 @@ A valid Red Hat customer account is required to access {PlatformName} installer 
 
 .Installing with internet access
 
-Choose the {PlatformName} installer if your Red Hat Enterprise Linux environment is connected to the internet. Installing with internet access will retrieve the latest required repositories, packages, and dependencies.
+Choose the {PlatformName} (AAP) installer if your Red Hat Enterprise Linux environment is connected to the internet. Installing with internet access retrieves the latest required repositories, packages, and dependencies. Choose one of the following ways to set up your AAP installer.
+
+*Tarball install*
 
 . Navigate to https://access.redhat.com/downloads/content/480
 . Click *Download Now* for the *Ansible Automation Platform <latest-version> Setup*.
@@ -25,10 +27,28 @@ Choose the {PlatformName} installer if your Red Hat Enterprise Linux environment
 $ tar xvzf ansible-automation-platform-setup-<latest-version>.tar.gz
 -----
 
+*RPM install*
+
+. Install Ansible Automation Platform Installer Package
++
+v.2.2 for RHEL 8 for x86_64
++
+----
+$ sudo dnf install --enablerepo=ansible-automation-platform-2.2-for-rhel-8-x86_64-rpm ansible-automation-platform-installer
+----
++
+v.2.2 for RHEL 9 for x86-64
++
+----
+$ sudo dnf install --enablerepo=ansible-automation-platform-2.2-for-rhel-9-x86_64-rpm ansible-automation-platform-installer
+----
+
+[NOTE]
+`dnf install` enables the repo as the repo is disabled by default.
 
 .Installing without internet access
 
-Use the {PlatformName} *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. Access to Red Hat Enterprise Linux repositories is still needed. All other dependencies are included in the tar archive.
+Use the {PlatformName} (AAP) *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. Access to Red Hat Enterprise Linux repositories is still needed. All other dependencies are included in the tar archive.
 
 . Navigate to https://access.redhat.com/downloads/content/480
 . Click *Download Now* for the *Ansible Automation Platform <latest-version> Setup Bundle*.
