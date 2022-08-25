@@ -47,7 +47,7 @@ See xref:assembly-platform-ext-database[Installing {PlatformName} with an extern
 
 include::platform/con-cluster-platform-ext-database.adoc[leveloffset=+2]
 
-See xref:assembly-multi-machine-cluster-scenario[Installing a multi-node {PlatformName} with an external managed database] in _Multi-machine cluster intallation_ to get started.
+See xref:assembly-multi-machine-cluster-scenario[Installing a multi-node {PlatformName} with an external managed database] in _Multi-machine cluster installation_ to get started.
 
 
 
