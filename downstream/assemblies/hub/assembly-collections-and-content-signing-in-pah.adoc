@@ -2,7 +2,9 @@
 
 = Collections and content signing in {PrivateHubName}
 
-As an automation creator, you can configure your private automation hub to successfully sign and publish your own content collections while still maintaining access to Red Hat Certified Collections available through your Ansible Automation Platform subscription or community collections available through Ansible Galaxy. In addition, you can configure Ansible-Galaxy CLI to verify collections to ensure that your collections are approved by your organization and have not been changed after it was uploaded to your automation hub.
+As an automation administrator for your organization, you can configure private automation hub for signing and publishing Ansible content collections from different groups within your organization.
+
+For additional security, automation creators can configure Ansible-Galaxy CLI to verify these collections to ensure they have not been changed after they were uploaded to automation hub.
 
 
 include::automation-hub/proc-configure-content-signing-on-pah.adoc[leveloffset=+1]

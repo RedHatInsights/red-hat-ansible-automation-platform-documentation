@@ -8,7 +8,8 @@ If a collection has been signed by the Galaxy server, the server provides ASCII 
 
 .Prerequisites
 
-* Signed and certified collections have been published to {HubName}.
+* Signed collections are available in {HubName} to verify signature.
+* Certified collections can be signed by approved roles within your organization.
 * Public key for verification has been added to the local system keyring.
 
 .Procedure
@@ -24,7 +25,7 @@ gpg --import --no-default-keyring --keyring ~/.ansible/pubring.kbx my-public-key
 In addition to any signatures provided by the Galaxy server, signature sources can also be provided in the requirements file and on the command line. Signature sources should be URIs.
 ====
 +
-. Use the --signature option to verify collection name(s) provided on the CLI with an additional signature.
+. Use the `--signature` option to verify the collection name provided on the CLI with an additional signature.
 +
 ----
 ansible-galaxy collection install namespace.collection

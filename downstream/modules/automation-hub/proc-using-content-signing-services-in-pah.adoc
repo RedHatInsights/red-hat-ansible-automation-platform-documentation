@@ -13,19 +13,7 @@ Content signing on {PrivateHubName} provides solutions for the following scenari
 
 .Procedure
 
-. In the `automationhub-terminal`, run the following command to publish your collections:
-+
-----
-ansible-galaxy collection publish <ansible-test_collection-1.0.0.tar.gz> -c
-----
-+
-[NOTE]
-====
-The `-c` option is used to ignore SSL certificate errors.
-====
 . Log in to your {PrivateHubName} instance in the {HubName} UI.
-
-. Use an unnumbered bullet (*) if the procedure includes only one step.
 
 . In the left navigation, click *Collections > Approval*.
 The Approval dashboard is displayed with a list of collections.
