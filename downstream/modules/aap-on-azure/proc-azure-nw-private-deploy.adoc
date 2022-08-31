@@ -3,7 +3,7 @@
 = Private deployments
 
 If you selected private access when deploying {AAPonAzureNameShort},
-then the DNS record issued to the {AAPonAzureName} application points to a private Class C network address: 192.168.0.68.
+then the DNS record issued to the {AAPonAzureName} application points to a private address within the CIDR block selected when the managed application was deployed.
 You must configure access to this address after you have created network peering.
 // This address is not accessible from external sources
 
