@@ -8,6 +8,7 @@ No configuration is required to access {PlatformNameShort}.
 Users can navigate to the domain from the public internet and log in to the user interfaces.
 
 The following diagram outlines the application resources and architecture that are deployed into the managed application resource group on a public deployment of {AAPonAzureNameShort} into your Azure subscription.
+The IP ranges change based on the networking address range you set on deployment.
 
 image::aap-on-azure-public-deployment.png[]
 
