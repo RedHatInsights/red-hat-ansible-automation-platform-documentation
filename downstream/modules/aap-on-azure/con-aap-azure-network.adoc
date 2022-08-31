@@ -2,7 +2,35 @@
 
 = Network
 
-{AAPonAzureNameShort} deploys its infrastructure into a Class C network range 192.168.0.0/24.
-You cannot change this range.
-To ensure successful network peering and communication between {AAPonAzureNameShort} and your existing networks, your enterprise network ranges must not overlap with this network range.
+You can configure the networking address range (CIDR block) for the VNet that your {AAPonAzureNameShort} application uses.
+You set the CIDR block for the application in a network configuration form when you deploy {AAPonAzureNameShort}.
+Plan your networking configuration before you deploy the {AAPonAzureNameShort} application, because you cannot change it after deployment.
+
+When you are planning your network configuration, bear the following in mind:
+
+* The managed application requires at least a /24 Vnet that is divided into four subnets. The subnets have minimum address spacing.
++
+[cols="a,a"]
+|===
+|Networking entity |Minimum CIDR Block
+
+|VNet |/24
+
+|Cluster subnet |/26
+
+|Gateway subnet |/28
+
+|Database subnet |/28
+
+|Private link subnet |/28
+|===
+
+* Ensure that the VNet range you configure does not intersect with the default CIDR block for AKS clusters (10.0.0.0/16).
+The Azure user interface does not prevent you entering this range, but using the default AKS CIDR block for your VNet causes networking issues.
+* To ensure successful network peering and communication between {AAPonAzureNameShort} and your existing networks, your enterprise network ranges must not overlap with the VNet network range.
+* If you do not have any existing Azure VNets, the Azure user interface suggests a default CIDR block and range for the VNet.
+Do not accept these defaults. Instead, use the network configuration that you have planned.
+
+For information about planning the network address range and completing the networking configuration form on deployment, refer to
+link:https://access.redhat.com/articles/6973251[Red Hat Ansible Automation Platform on Microsoft Azure VNet Preparation].
 
