@@ -10,7 +10,7 @@ Before you fill in the form, decide whether you want to create a public or priva
 * Public deployments allow ingress to the {AAPonAzureNameShort} user interfaces over the public internet. No configuration is required to access the application URLs.
 * Private deployments are created in an isolated Azure VNet that blocks access from the public internet. To access {AAPonAzureNameShort} user interfaces, you must configure network peering and routing.
 
-You create the network configuration for the {AAPonAzureNameShort} VNET when you initiate the deployment.
+You create the network configuration for the {AAPonAzureNameShort} VNet when you initiate the deployment.
 Refer to your network configuration plan before deploying the managed application. For information about planning your network configuration, see xref:con-aap-azure-network_aap-azure-intro[Networking configuration].
 
 Complete the form to provision {PlatformName} infrastructure and resources into your Azure tenant.
@@ -30,7 +30,7 @@ The _Administrator Password_ must contain at least 8 characters, and must includ
 Keep this resource group isolated from other resource groups, including the _Resource Group_ where you will deploy the managed application.
 . Store the information that you entered in the form in a secure place. You will need to provide the _Administrator password_ to access {ControllerName} and private {HubName}.
 . Click btn:[Next]
-. Follow the steps in link:https://access.redhat.com/articles/6973251[Red Hat Ansible Automation Platform on Microsoft Azure VNET Preparation] to configure your network configuration.
+. Follow the steps in link:https://access.redhat.com/articles/6973251[Red Hat Ansible Automation Platform on Microsoft Azure VNet Preparation] to configure your network configuration.
 . Click btn:[Review + Create].
 . If the information you entered in the form is valid, the window displays *Validation Passed*.
 . Select *I agree* to accept the Co-Admin Access Permissions terms and conditions.
