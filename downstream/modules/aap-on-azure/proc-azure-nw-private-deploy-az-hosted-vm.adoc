@@ -9,13 +9,13 @@ Users can remotely log into the publicly accessible virtual machine from on-prem
 
 To access the {PlatformNameShort} web UIs on the Azure private network, users navigate to the URLs using the browser on the jumpbox VM.
 
-The DMZ VNet is connected to other Azure VNets through network peering, with routing rules established to send network traffic for 192.168.0.0/24 to the {PlatformNameShort} VNet.
+The DMZ VNet is connected to other Azure VNets through network peering, with routing rules established to send network traffic to the {PlatformNameShort} VNet.
 
 The following diagram shows the topology for an example configuration of private network access via an Azure virtual machine.
 
 image::aap-on-azure-private-nw-access-vm.png[]
 
-* For more information about perimeter (DMZ) networks, refer to link:https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/perimeter-networks[Perimenter Networks] in the Microsoft _Azure Cloud Adoption Framework_ documentation.
+* For more information about perimeter (DMZ) networks, refer to link:https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/perimeter-networks[Perimeter Networks] in the Microsoft _Azure Cloud Adoption Framework_ documentation.
 
 * For more information about jumpboxes, refer to
 link:https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/connect-to-environments-privately#about-azure-bastion-host-and-jumpboxes[About Azure bastion host and jumpboxes]
