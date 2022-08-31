@@ -2,7 +2,7 @@
 
 = About Red Hat Certified collections synclists
 
-A synclist is a curated group of Red Hat Certified and Validated Collections that is assembled by your organization administrator that syncs to your local {HubName}. 
+A synclist is a curated group of Red Hat Certified and validated collections that is assembled by your organization administrator that syncs to your local {HubName}. 
 Use synclists to manage only the content that you want and exclude unnecessary collections.
 You can design and manage your synclist from the content available as part of Red Hat Certified and Validated Collections on console.redhat.com
 
