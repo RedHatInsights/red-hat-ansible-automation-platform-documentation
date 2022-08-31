@@ -3,15 +3,15 @@
 [id="proc-set-rhcertified-remote"]
 = Configuring the rh-certified remote repository and syncing Red Hat Certified collections.
 
-You can edit the *rh-certified* remote repository to sync collections from {HubName} hosted on cloud.redhat.com to your local {HubName}.
-By default, your local {HubName} `rh-certified` repository includes the URL for the entire group of Red Hat Certified Collections available on cloud.redhat.com.
+You can edit the *rh-certified* remote repository to sync collections from {HubName} hosted on console.redhat.com to your local {HubName}.
+By default, your local {HubName} `rh-certified` repository includes the URL for the entire group of Red Hat Certified Collections available on console.redhat.com.
 To use only those collections specified by your organization, you must include a unique URL.
 
 .Prerequisites
 
 * You have *Modify Ansible repo content* permissions.
 See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
-* You have retrieved the Sync URL and API Token from the {HubName} hosted service on cloud.redhat.com.
+* You have retrieved the Sync URL and API Token from the {HubName} hosted service on console.redhat.com.
 
 .Procedure
 . Log in to your local {HubName}.
@@ -22,7 +22,7 @@ See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_pla
 . Click btn:[Save].
 +
 The modal closes and returns you to the *Repo Management* page.
-You can now sync collections between your organization synclist on cloud.redhat.com and your local {HubName}.
+You can now sync collections between your organization synclist on console.redhat.com and your local {HubName}.
 +
 . Click btn:[Sync] to sync collections.
 
