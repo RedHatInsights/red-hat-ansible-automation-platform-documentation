@@ -15,7 +15,7 @@ The following diagram shows the topology for an example configuration of private
 
 image::aap-on-azure-private-nw-access-vm.png[]
 
-* For more information about perimeter (DMZ) networks, refer to link:https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/perimeter-networks[Perimenter Networks] in the Microsoft _Azure Cloud Adoption Framework_ documentation.
+* For more information about perimeter (DMZ) networks, refer to link:https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/perimeter-networks[Perimeter Networks] in the Microsoft _Azure Cloud Adoption Framework_ documentation.
 
 * For more information about jumpboxes, refer to
 link:https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/connect-to-environments-privately#about-azure-bastion-host-and-jumpboxes[About Azure bastion host and jumpboxes]
