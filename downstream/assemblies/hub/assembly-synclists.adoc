@@ -1,5 +1,5 @@
 [id="assembly-synclists"]
-= Managing Red Hat Certified Collections or Validated cContent synclists in {HubName}
+= Managing Red Hat Certified Content Collections or Ansible validated content synclists in {HubName}
 
 You can use {HubName} to distribute the relevant Red Hat Certified collections or Validated Content to your users by creating synclists.
 
