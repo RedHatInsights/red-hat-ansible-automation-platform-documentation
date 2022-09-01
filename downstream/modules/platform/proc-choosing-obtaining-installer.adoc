@@ -46,6 +46,8 @@ $ sudo dnf install --enablerepo=ansible-automation-platform-2.2-for-rhel-9-x86_6
 [NOTE]
 `dnf install` enables the repo as the repo is disabled by default.
 
+When you use the RPM installer, the files are placed under the `/opt/ansible-automation-platform/installer` directory. 
+
 .Installing without internet access
 
 Use the {PlatformName} (AAP) *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. Access to Red Hat Enterprise Linux repositories is still needed. All other dependencies are included in the tar archive.
