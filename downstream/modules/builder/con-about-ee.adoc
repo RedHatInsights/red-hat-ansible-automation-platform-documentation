@@ -11,11 +11,12 @@ Base the file name and the ID on the module title. For example:
 
 [role="_abstract"]
 
-{ExecEnvNameStart} are container images on which all automation in {PlatformName} is run. {ExecEnvName} create a common language for communicating automation dependencies, and provide a standard way to build and distribute the automation environment.
+{ExecEnvNameStart} are container images on which all automation in {PlatformName} is run. {ExecEnvNameStart} create a common language for communicating automation dependencies, and provide a standard way to build and distribute the automation environment.
 
-An {ExecEnvName} is expected to contain the following:
+An {ExecEnvNameSing} is expected to contain the following:
 
 * Ansible 2.9 or Ansible Core 2.11
-* Python 3.8
+* Python 3.8+
 * Content collections
 * Collection, Python, or system dependencies
+* Container Runtime like Podman or Docker
