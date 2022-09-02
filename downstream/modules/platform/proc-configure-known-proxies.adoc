@@ -20,7 +20,6 @@ To configure a list of known proxies for your {ControllerName}, add the proxy IP
 ]
 ----
 
-
 [IMPORTANT]
 ====
 * `PROXY_IP_ALLOWED_LIST` requires proxies in the list are properly sanitizing header input and correctly setting an ``X-Forwarded-For`` value equal to the real source IP of the client. {ControllerNameStart} can rely on the IP addresses and hostnames in `PROXY_IP_ALLOWED_LIST` to provide non-spoofed values for the `X-Forwarded-For` field.
