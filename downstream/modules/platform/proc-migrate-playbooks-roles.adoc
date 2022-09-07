@@ -2,7 +2,7 @@
 [id="proc-migrate-playbooks-roles_{context}"]
 
 
-= Migrating your Ansible playbooks and roles to Core 2.12
+= Migrating your Ansible playbooks and roles to Core 2.13
 
 [role="_abstract"]
 
