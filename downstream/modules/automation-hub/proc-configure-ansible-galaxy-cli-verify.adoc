@@ -4,7 +4,7 @@
 
 You can configure Ansible-Galaxy CLI to verify collections. This assures that collections you download are approved by your organization and have not been changed after it was uploaded to {HubName}.
 
-If a collection has been signed by the Galaxy server, the server provides ASCII armored, GPG-detached signatures to verify the authenticity of the MANIFEST.json before using it to verify the collection’s contents. You must opt into signature verification by link:https://docs.ansible.com/ansible/devel/reference_appendices/config.html#galaxy-gpg-keyring[configuring a keyring] for `ansible-galaxy` or providing the path with the `--keyring` option.
+If a collection has been signed by {HubName}, the server provides ASCII armored, GPG-detached signatures to verify the authenticity of the MANIFEST.json before using it to verify the collection’s contents. You must opt into signature verification by link:https://docs.ansible.com/ansible/devel/reference_appendices/config.html#galaxy-gpg-keyring[configuring a keyring] for `ansible-galaxy` or providing the path with the `--keyring` option.
 
 .Prerequisites
 
@@ -22,7 +22,7 @@ gpg --import --no-default-keyring --keyring ~/.ansible/pubring.kbx my-public-key
 +
 [NOTE]
 ====
-In addition to any signatures provided by the Galaxy server, signature sources can also be provided in the requirements file and on the command line. Signature sources should be URIs.
+In addition to any signatures provided by the {HubName}, signature sources can also be provided in the requirements file and on the command line. Signature sources should be URIs.
 ====
 +
 . Use the `--signature` option to verify the collection name provided on the CLI with an additional signature.
@@ -48,5 +48,5 @@ collections:
 ansible-galaxy collection verify -r requirements.yml --keyring ~/.ansible/pubring.kbx
 ----
 +
-When you install a collection from a Galaxy server, the signatures provided by the server are saved along with the installed collections to verify the collection’s authenticity.
+When you install a collection from {HubName}, the signatures provided by the server are saved along with the installed collections to verify the collection’s authenticity.
 . (Optional) If you need to verify the internal consistency of your collection again without querying the Galaxy server, run the same command you used previously using the `--offline` option.
