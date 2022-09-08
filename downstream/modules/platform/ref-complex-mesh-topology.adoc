@@ -13,7 +13,7 @@ This example inventory demonstrates a complex automation mesh design pattern tha
 * The control plane contains only *control* nodes, which are auto-peered together.
 * `[automationcontroller:vars]` peers the controllers to the _disconnected_ execution nodes group `[instance_group_disconnected]`, ignoring the hop nodes in `[execution_nodes]`.
 * All execution node types are defined in `[execution nodes]`, as well as which execution nodes need a hop. Hop nodes are also defined in this group.
-* The `instance_grouo_prefix` automatically adds nodes into the {ControllerName} user interface as an instance group after running the {PlatformName} installer.
+* The `instance_group_prefix` automatically adds nodes into the {ControllerName} user interface as an instance group after running the {PlatformName} installer.
 * The `[local_hop]` group peers to the `[automationcontoller]` group.
 * The `[remote_hop]` group peers to the `[local_hop]` group.
 ====
