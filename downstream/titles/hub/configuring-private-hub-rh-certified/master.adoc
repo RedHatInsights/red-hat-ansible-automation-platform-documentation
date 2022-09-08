@@ -8,6 +8,8 @@ You can sync {HubName} to use the Red Hat Certified Collections available throug
 
 Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the {HubName} service hosted on console.redhat.com.
 
+You can also configure private automation hub for signing and publishing Ansible content collections tailored to meet your organization's unique needs.
+
 include::hub/assembly-synclists.adoc[leveloffset=+1]
 
 include::hub/assembly-syncing-to-cloud-repo.adoc[leveloffset=+1]
