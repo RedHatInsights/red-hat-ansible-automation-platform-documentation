@@ -27,7 +27,7 @@ spec:
 +
 -----
 oc project ansible-automation-platform
-oc apply -f connetion_checker.yaml
+oc apply -f connection_checker.yaml
 -----
 . Verify that the connection checker pod is running:
 +

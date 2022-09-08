@@ -7,10 +7,10 @@ To migrate {PlatformNameShort} deployment to {OperatorPlatform}, you must have t
 
 * Secret key secret
 * Postgresql configuration
-* Role-Based Access Controls
-* Network connectivity
+* Role-based Access Control for the namespaces on the new OpenShift cluster
+* Previous PostgreSQL database host must be resolvable from the new OpenShift cluster
 
 [NOTE]
 ====
-Secret key information can be located in the inventory file created during the initial {PlatformName} installation. If you are unable to remember your secret key or have trouble locating your inventory file, contact link::https://access.redhat.com/[Ansible support] via the Red Hat Customer portal. 
+Secret key information can be located in the inventory file created during the initial {PlatformName} installation. If you are unable to remember your secret key or have trouble locating your inventory file, contact link:https://access.redhat.com/[Ansible support] via the Red Hat Customer portal.
 ====

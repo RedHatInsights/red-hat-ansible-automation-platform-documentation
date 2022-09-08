@@ -4,4 +4,4 @@
 
 
 [role="_abstract"]
-Before migrating your current {PlatformNameShort} deployment to {OperatorPlatform}, you need to backup your existing data, create secret keys, and create a postresql configuration secret for migration.
+Before migrating your current {PlatformNameShort} deployment to {OperatorPlatform}, you need to backup your existing data, create k8s secrets for your secret key and postgresql configuration.

@@ -4,6 +4,7 @@
 
 
 [role="_abstract"]
-To upgrade to a newer version of {OperatorPlatform}, you must have the following:
+To upgrade to a newer version of {OperatorPlatform}, it is recommended that you do the following:
 
-* TBD
+* Create AutomationControllerBackup and AutomationHubBackup objects. See (Backup and Restore) for information on creating backup objects.
+* Review the release notes for new {PlatformNameShort} version to which you are upgrading, and any intermediate versions.
