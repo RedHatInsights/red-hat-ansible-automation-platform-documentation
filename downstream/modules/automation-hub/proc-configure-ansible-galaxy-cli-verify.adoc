@@ -49,4 +49,4 @@ ansible-galaxy collection verify -r requirements.yml --keyring ~/.ansible/pubrin
 ----
 +
 When you install a collection from {HubName}, the signatures provided by the server are saved along with the installed collections to verify the collection’s authenticity.
-. (Optional) If you need to verify the internal consistency of your collection again without querying the Galaxy server, run the same command you used previously using the `--offline` option.
+. (Optional) If you need to verify the internal consistency of your collection again without querying the {Galaxy} server, run the same command you used previously using the `--offline` option.

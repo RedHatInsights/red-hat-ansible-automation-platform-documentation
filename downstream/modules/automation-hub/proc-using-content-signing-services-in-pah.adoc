@@ -18,6 +18,6 @@ Content signing on {PrivateHubName} provides solutions for the following scenari
 . In the left navigation, click *Collections > Approval*.
 The Approval dashboard is displayed with a list of collections.
 
-. Click the *Sign and approve* button for each collection you want to prefer to sign.
+. Click the *Sign and approve* button for each collection you want to sign.
 
 . Verify that the collections you signed and approved manually are displayed in the Collections tab.
