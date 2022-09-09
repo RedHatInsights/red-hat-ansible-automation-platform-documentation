@@ -4,11 +4,17 @@
 
 include::attributes/attributes.adoc[]
 
+<<<<<<< HEAD
 You can sync {HubName} to use the Red Hat Certified Collections available through your {PlatformNameShort} subscription or community collections available through {Galaxy}.
 
 Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the {HubName} service hosted on console.redhat.com.
+=======
+You can sync {HubName} to use the Red Hat Certified Collections available through your {PlatformNameShort} subscription or community collections available through {Galaxy}. 
 
-You can also configure private automation hub for signing and publishing Ansible content collections tailored to meet your organization's unique needs.
+Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the {HubName} service hosted on cloud.redhat.com.
+>>>>>>> effc5a0 (AAP-2844 Resolved conflict by adding attributes in intro)
+
+You can also configure private {HubName} for signing and publishing Ansible content collections tailored to meet your organization's unique needs.
 
 include::hub/assembly-synclists.adoc[leveloffset=+1]
 
@@ -18,10 +24,15 @@ include::hub/assembly-collections-and-content-signing-in-pah.adoc[leveloffset=+1
 
 == Conclusion
 
+<<<<<<< HEAD
 When the above procedures are complete, you will have:
 
 * created a synclist for Red Hat Certified collections content,
 * synced that content to your local {HubName}, and
 * designated community collections from {Galaxy} to distribute to your users.
 
+=======
+Upon completing the above procedures, you will have created a synclist for Red Hat Certified collections content, synced that content to your local {HubName}, and designated community collections from {Galaxy} to distribute to your users.
+
+>>>>>>> effc5a0 (AAP-2844 Resolved conflict by adding attributes in intro)
 Users can now view and download collections content from your local {HubName}.
