@@ -1,0 +1,15 @@
+ifdef::context[:parent-context: {context}]
+[preface]
+[id='ansible-automation-platform']
+:context: aap-common
+= {PlatformName}
+
+{PlatformName} simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles.
+{PlatformNameShort} works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments.
+Simple to adopt, use, and understand, {PlatformNameShort} provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
+
+include::making-open-source-more-inclusive.adoc[leveloffset=+1]
+
+// Restore the parent context.
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
