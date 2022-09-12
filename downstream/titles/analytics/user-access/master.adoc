@@ -10,7 +10,6 @@ include::attributes/attributes.adoc[]
 
 = Managing user access in {InsightsName}
 
-//Downstream only content
-//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
 include::analytics/assembly-user-access.adoc[leveloffset=+1]
