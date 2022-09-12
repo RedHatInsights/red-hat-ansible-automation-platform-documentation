@@ -21,7 +21,7 @@ include::hub/assembly-collections-and-content-signing-in-pah.adoc[leveloffset=+1
 When you complete all of the previous procedures, you will have:
 
 * created a synclist for Red Hat Certified collections content.
-* synced that content to your local {HubName}
+* synced that content to your local {HubName}.
 * designated community collections from {Galaxy} to distribute to your users.
 * configured content signing on {PrivateHubName}.
 * signed and approved collections for your organization's specific needs.
