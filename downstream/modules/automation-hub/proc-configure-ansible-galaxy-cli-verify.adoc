@@ -2,11 +2,9 @@
 
 = Configuring Ansible-Galaxy CLI to verify collections
 
-You can configure Ansible-Galaxy CLI to verify collections. 
-This ensures that collections you download are approved by your organization and have not been changed after they were uploaded to {HubName}.
+You can configure Ansible-Galaxy CLI to verify collections. This ensures that collections you download are approved by your organization and have not been changed after they were uploaded to {HubName}.
 
-If a collection has been signed by {HubName}, the server provides ASCII armored, GPG-detached signatures to verify the authenticity of `MANIFEST.json` before using it to verify the collection’s contents. 
-You must opt into signature verification by link:https://docs.ansible.com/ansible/devel/reference_appendices/config.html#galaxy-gpg-keyring[configuring a keyring] for `ansible-galaxy` or providing the path with the `--keyring` option.
+If a collection has been signed by {HubName}, the server provides ASCII armored, GPG-detached signatures to verify the authenticity of `MANIFEST.json` before using it to verify the collection’s contents. You must opt into signature verification by link:https://docs.ansible.com/ansible/devel/reference_appendices/config.html#galaxy-gpg-keyring[configuring a keyring] for `ansible-galaxy` or providing the path with the `--keyring` option.
 
 .Prerequisites
 
