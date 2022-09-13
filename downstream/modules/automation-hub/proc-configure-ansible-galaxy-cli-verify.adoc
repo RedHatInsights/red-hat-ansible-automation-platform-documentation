@@ -34,7 +34,7 @@ ansible-galaxy collection install namespace.collection
 --signature file:///path/to/local/detached_signature.asc --keyring ~/.ansible/pubring.kbx
 ----
 You can use this option multiple times to provide multiple signatures.
-. Confirm that the collections in a requirements file lists any additional signature sources following the collection’s signatures key, as in the following example.
+. Confirm that the collections in a requirements file list any additional signature sources following the collection’s signatures key, as in the following example.
 +
 [source,yaml]
 ----
