@@ -95,6 +95,7 @@
 :CertifiedName: Ansible Certified Content Collections
 :ServiceNowColl: Red Hat Ansible Certified Content Collection for Service Now
 :Galaxy: Ansible Galaxy
+:Console: console.redhat.com
 
 // OpenShift attributes
 :OCP: Red Hat OpenShift Container Platform
