@@ -8,16 +8,23 @@ You can sync {HubName} to use the Red Hat Certified Collections available throug
 
 Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the {HubName} service hosted on console.redhat.com.
 
+You can also configure private {HubName} for signing and publishing Ansible content collections tailored to meet your organization's unique needs.
+
 include::hub/assembly-synclists.adoc[leveloffset=+1]
 
 include::hub/assembly-syncing-to-cloud-repo.adoc[leveloffset=+1]
 
+include::hub/assembly-collections-and-content-signing-in-pah.adoc[leveloffset=+1]
+
 == Conclusion
 
-When the above procedures are complete, you will have:
+When you complete all of the previous procedures, you will have:
 
-* created a synclist for Red Hat Certified collections content,
-* synced that content to your local {HubName}, and
+* created a synclist for Red Hat Certified collections content.
+* synced that content to your local {HubName}.
 * designated community collections from {Galaxy} to distribute to your users.
+* configured content signing on {PrivateHubName}.
+* signed and approved collections for your organization's specific needs.
+* configured Ansible-Galaxy CLI to verify collections before signing them.
 
 Users can now view and download collections content from your local {HubName}.
