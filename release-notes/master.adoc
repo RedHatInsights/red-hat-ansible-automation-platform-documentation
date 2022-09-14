@@ -16,6 +16,9 @@ include::topics/catalog-05-2022.adoc[leveloffset=+2]
 
 include::topics/controller-420.adoc[leveloffset=+2]
 
+include::topics/operator-220.adoc[leveloffset=+2]
+
+
 [[anchor-february-2022-release]]
 == February 2022 release
 
