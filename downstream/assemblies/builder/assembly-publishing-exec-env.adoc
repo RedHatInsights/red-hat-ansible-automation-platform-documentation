@@ -2,6 +2,4 @@
 
 = Publishing an {ExecEnvNameSing}
 
-include::builder/con-gathering-system-dependencies.adoc[leveloffset=+1]
-include::builder/con-pip-based-req.adoc[leveloffset=+1]
 include::builder/proc-customize-ee-image.adoc[leveloffset=+1]

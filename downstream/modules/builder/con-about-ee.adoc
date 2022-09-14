@@ -15,8 +15,7 @@ Base the file name and the ID on the module title. For example:
 
 An {ExecEnvNameSing} is expected to contain the following:
 
-* Ansible 2.9 or Ansible Core 2.11
-* Python 3.8+
-* Content collections
+* Ansible 2.9 or Ansible Core 2.11-2.13
+* Python 3.8-3.10
+* Ansible content collections
 * Collection, Python, or system dependencies
-* Container Runtime like Podman or Docker

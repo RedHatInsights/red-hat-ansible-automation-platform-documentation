@@ -1,7 +1,7 @@
 [id="con-ansible-config-file-path"]
 
 = Ansible config file path
-When using an `ansible.cfg` file to pass a token and other settings for a private account to an {HubName} server, list the config file path (relative to where the definition file is located) as a string to enable it as a build argument in the initial phase of the build.
+The `ansible_config` directive allows specifying the path to an `ansible.cfg` file to pass a token and other settings for a private account to an {HubName} server during the Collection installation stage of the build. The config file path should be relative to the definition file location, and will be copied to the generated container build context.
 
 The `ansible.cfg` file should be formatted like the following example:
 

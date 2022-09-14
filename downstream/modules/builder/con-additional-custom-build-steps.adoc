@@ -12,8 +12,9 @@ The syntax for `additional_build_steps` must be one of the following:
 [example]
 ====
 ----
-RUN whoami
-RUN cat /etc/os-release
+prepend: |
+   RUN whoami
+   RUN cat /etc/os-release
 ----
 ====
 
@@ -23,6 +24,7 @@ RUN cat /etc/os-release
 [example]
 ====
 ----
+append:
 - RUN echo This is a post-install command!
 - RUN ls -la /etc
 ----

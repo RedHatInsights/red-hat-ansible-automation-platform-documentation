@@ -2,7 +2,7 @@
 
 = Optional build command arguments
 
-The `-t` flag will give your {ExecEnvNameSing} image a specific name. For example, the following command will build an image named `my_first_ee_image`:
+The `-t` flag will tag your {ExecEnvNameSing} image with a specific name. For example, the following command will build an image named `my_first_ee_image`:
 
 ====
 ----

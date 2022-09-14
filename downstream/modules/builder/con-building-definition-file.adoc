@@ -14,14 +14,12 @@ version: 1
 build_arg_defaults: <1>
   ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: "-v"
 
-ansible_config: 'ansible.cfg' <2>
-
-dependencies: <3>
+dependencies: <2>
   galaxy: requirements.yml
   python: requirements.txt
   system: bindep.txt
 
-additional_build_steps: <4>
+additional_build_steps: <3>
   prepend: |
     RUN whoami
     RUN cat /etc/os-release
@@ -33,6 +31,5 @@ additional_build_steps: <4>
 ====
 
 <1> Lists default values for build arguments
-<2> Specifies the `ansible.cfg` file path
-<3> Specifies the location of various requirements files
-<4> Commands for additional custom build steps
+<2> Specifies the location of various requirements files
+<3> Commands for additional custom build steps
