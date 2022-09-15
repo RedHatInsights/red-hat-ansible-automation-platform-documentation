@@ -2,4 +2,6 @@
 :imagesdir: images
 :numbered:
 
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
 include::hub/assembly-managing-private-collections.adoc[leveloffset=+1]
