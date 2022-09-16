@@ -2,6 +2,8 @@
 
 = Private Automation Hub life cycle
 
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
 == Overview
 
 As part of an Red Hat Ansible Automation Platform subscription, customers have access to a supported version of Automation Hub. Red Hat provides a published product life cycle for Automation Hub so that customers and partners can properly plan, deploy, support, and maintain their private Automation Hub(s) that they use with the Ansible Automation Platform.
