@@ -32,7 +32,7 @@ $ subscription-manager attach --pool=<sku-pool-id>
 +
 [options="nowrap" subs="+quotes"]
 ----
-$ sudo dnf install --enablerepo=ansible-automation-platform-2.2-for-rhel-8-x86_64-rpms ansible-navigator
+# dnf install --enablerepo=ansible-automation-platform-2.2-for-rhel-8-x86_64-rpms ansible-navigator
 ----
 
 .Verification
