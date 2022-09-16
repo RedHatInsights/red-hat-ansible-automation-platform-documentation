@@ -10,6 +10,8 @@ Your organization can access and curate into a unique set of collections from al
 
 You can also configure private {HubName} for signing and publishing Ansible content collections tailored to meet your organization's unique needs.
 
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
 include::hub/assembly-synclists.adoc[leveloffset=+1]
 
 include::hub/assembly-syncing-to-cloud-repo.adoc[leveloffset=+1]
