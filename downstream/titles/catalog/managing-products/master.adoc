@@ -9,4 +9,6 @@ include::attributes/attributes-catalog.adoc[]
 = Managing Products in Automation Service Catalog
 
 // Contents
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
 include::modules/con_Surveys.adoc[]

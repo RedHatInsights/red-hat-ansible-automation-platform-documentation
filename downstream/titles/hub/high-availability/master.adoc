@@ -14,5 +14,7 @@ This configuration eliminates single points of failure to minimize service downt
 This guide covers deployment of a HA {HubName} application stack only.
 Other HA components, such as database and file system HA, or setting up DNS load balancing, are out of scope for this guide.
 
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
 include::hub/assembly-high-availability-hub-requirements.adoc[leveloffset=+1]
 include::hub/assembly-installing-high-availability-hub.adoc[leveloffset=+1]

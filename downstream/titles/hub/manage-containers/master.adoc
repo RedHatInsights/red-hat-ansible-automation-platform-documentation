@@ -7,6 +7,8 @@ include::attributes/attributes.adoc[]
 // Book Title
 = Managing containers in private automation hub
 
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
 include::hub/assembly-managing-container-registry.adoc[leveloffset=+1]
 
 include::hub/assembly-container-user-access.adoc[leveloffset=+1]
