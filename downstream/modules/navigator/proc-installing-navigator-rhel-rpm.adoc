@@ -14,29 +14,26 @@ You can install {Navigator} on Red Hat Enterprise Linux (RHEL) from an RPM.
 * You have installed RHEL 8 or later.
 * You registered your system with Red Hat Subscription Manager.
 
+[NOTE]
+====
+Ensure that you only install the navigator matching your current {PlatformName} environment.
+====
 
 .Procedure
 
-. Attach the {PlatformName} SKU.
+. Attach the {PlatformName} SKU:
+[options="nowrap" subs="+quotes"]
 +
 ----
 $ subscription-manager attach --pool=<sku-pool-id>
 ----
 
-. Enable the repository for RHEL 8.
+. Install {Navigator} with the following command:
 +
+[options="nowrap" subs="+quotes"]
 ----
-$ sudo subscription-manager repos --enable ansible-automation-platform-2.1-for-rhel-8-x86_64-rpms
+# dnf install --enablerepo=ansible-automation-platform-2.2-for-rhel-8-x86_64-rpms ansible-navigator
 ----
-
-
-. Install {Navigator}.
-+
-----
-$ dnf install ansible-navigator
-----
-+
-
 
 .Verification
 
