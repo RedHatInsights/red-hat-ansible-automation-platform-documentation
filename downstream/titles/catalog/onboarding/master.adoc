@@ -1,5 +1,6 @@
 = Automation Service Catalog Onboarding
 
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
 == About Automation Service Catalog
 
