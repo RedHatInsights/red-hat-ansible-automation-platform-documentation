@@ -14,4 +14,5 @@ include::builder/proc-executing-build.adoc[leveloffset=+1]
 
 include::assembly-definition-file-breakdown.adoc[leveloffset=+1]
 include::builder/con-optional-build-command-arguments.adoc[leveloffset=+1]
+include::builder/con-container_file.adoc[leveloffset=+1]
 include::builder/proc-creating-containerfile-no-image.adoc[leveloffset=+1]

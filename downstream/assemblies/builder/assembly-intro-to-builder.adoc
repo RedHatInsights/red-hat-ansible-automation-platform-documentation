@@ -8,7 +8,6 @@ Using Ansible content that depends on non-default dependencies can be complicate
 
 include::builder/con-about-ee.adoc[leveloffset=+1]
 include::builder/con-why-ee.adoc[leveloffset=+2]
-include::builder/con-ee-precedence.adoc[leveloffset=+2]
 //include::builder/con-about-builder.adoc[leveloffset=+1]
 //include::builder/con-why-builder.adoc[leveloffset=+2]
 
