@@ -10,7 +10,7 @@ include::attributes/attributes.adoc[]
 // Book Title
 = Creating and consuming execution environments with {PlatformName}
 
-Use {Builder} to create a consistent and reproducible {ExecEnvName} for your {PlatformName} needs.
+Use {Builder} to create consistent and reproducible {ExecEnvName} for your {PlatformName} needs.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
