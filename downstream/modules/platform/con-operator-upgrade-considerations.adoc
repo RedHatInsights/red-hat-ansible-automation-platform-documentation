@@ -10,10 +10,10 @@ If you are using a version of {OCPShort} that is not supported by the version of
 
 Use this support matrix to determine the {OCPShort} version needed:
 
-.{PlatormNameShort}/{OCPShort} support matrix
+.{PlatformNameShort}/{OCPShort} support matrix
 [options="header"]
 |====
-|{PlatformNameShort}|Supported {OCPShort} versions
+|{PlatformNameShort} version| Supported {OCPShort} versions
 //|2.3 | 4.9 - 4.12 [Include row for the 2.3 release of doc]
 |2.2 | 4.8 - 4.11
 |2.1 | 4.7 - 4.10
