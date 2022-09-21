@@ -1,6 +1,6 @@
 [id="assembly-central-auth-group-perms"]
 
-= Managing group permissions with {AAPCentralAuth}
+== Managing group permissions with {AAPCentralAuth}
 
 You can manage user access on the {PlatformNameShort} by assigning specific permissions to user groups. As users log in to the {PlatformNameShort} for the first time, their groups will appear in the user access page in {HubName}, allowing you to assign user access and permissions to each group.
 
