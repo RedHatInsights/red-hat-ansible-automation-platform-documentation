@@ -8,7 +8,7 @@ To migrate {PlatformNameShort} deployment to {OperatorPlatform}, you must have t
 * Secret key secret
 * Postgresql configuration
 * Role-based Access Control for the namespaces on the new OpenShift cluster
-* Previous PostgreSQL database host must be resolvable from the new OpenShift cluster
+* The new OpenShift cluster must be able to connect to the previous PostgreSQL database
 
 [NOTE]
 ====

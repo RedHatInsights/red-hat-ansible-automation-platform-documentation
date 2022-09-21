@@ -6,4 +6,17 @@
 [role="_abstract"]
 {PlatformName} version 2.0 was the first release of the {OperatorPlatform}. If you are upgrading from version 2.0, continue to the xref::operator-upgrade_{context}[Upgrading the {OperatorPlatform}] procedure.
 
-If you are running {OCPShort} 4.6 with {PlatformName} 2.0, you must upgrade your cluster before upgrading to {PlatformName} 2.1 and above. For information about upgrading your cluster, refer to link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.7/html-single/updating_clusters/index[Updating clusters].
+If you are using a version of {OCPShort} that is not supported by the version of {PlatformName} to which you are upgrading, you must upgrade your {OCPShort} cluster to a supported version prior to upgrading.
+
+Use this support matrix to determine the {OCPShort} version needed:
+
+.{PlatormNameShort}/{OCPShort} support matrix
+[options="header"]
+|====
+|{PlatformNameShort}|Supported {OCPShort} versions
+//|2.3 | 4.9 - 4.12 [Include row for the 2.3 release of doc]
+|2.2 | 4.8 - 4.11
+|2.1 | 4.7 - 4.10
+|====
+
+For information about upgrading your cluster, refer to link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.7/html-single/updating_clusters/index[Updating clusters].
