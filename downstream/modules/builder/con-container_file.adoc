@@ -10,4 +10,4 @@ Once your definition file is created, Ansible Builder reads and validates it, th
 . `prepend` for additional_build_steps from the definition file are run.
 . In the final {ExecEnvName} image, system dependencies listed in the definition file are installed, including all system dependencies declared by collections listed in the definition file.
 . In the final {ExecEnvName} image, the downloaded collections are copied and the previously fetched Python dependencies are installed.
-. `append` for additional_build_steps from the definition file are run. 
+. `append` for additional_build_steps from the definition file are run.
