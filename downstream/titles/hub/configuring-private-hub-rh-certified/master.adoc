@@ -4,12 +4,13 @@
 
 include::attributes/attributes.adoc[]
 
-You can synchronize {HubName} to use the Ansible Content Collections available through your {PlatformNameShort} subscription or community collections available through {Galaxy}.
-Ansible validated collections are pre-loaded on your {PrivateHubName} and can be updated manually by downloading their packages.
+Included with a subscription to {PlatformName}, Ansible Content Collections feature Red Hat Ansible Certified Content and Ansible validated content, as well as {Galaxy} content from the community. 
+Using {HubName}, your organization can access and curate a unique set of collections from all forms of Ansible content. 
 
-Your organization can access and curate a unique set of collections from all Red Hat Ansible Certified Collections and Ansible validated content in the {HubName} service hosted on console.redhat.com.
+You can also synchronize {HubName} to create a custom list of collections from either Red Hat Ansible Certified Content, validated content, or {Galaxy} community content. 
 
-You can also configure private {HubName} for signing and publishing Ansible content collections tailored to meet your organization's unique needs.
+Initially, Ansible validated collections will only be available in your {PrivateHubName}
+These collections can be preloaded into {PrivateHubName} and can be updated manually by downloading their packages.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 

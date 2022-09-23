@@ -3,8 +3,8 @@
 [id="proc-set-community-remote"]
 = Configuring the community remote repository and syncing {Galaxy} collections
 
-You can edit the *community* remote repository to sync chosen collections from {Galaxy} to your local {HubName}.
-By default, your local {HubName} `community` repository directs to `https://galaxy.ansible.com/api/`.
+You can edit the *community* remote repository to synchronize chosen collections from {Galaxy} to your {PrivateHubName}.
+By default, your {PrivateHubName} community repository directs to `https://galaxy.ansible.com/api/`.
 
 .Prerequisites
 
@@ -23,20 +23,20 @@ collections:
 -----
 
 .Procedure
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . Navigate to menu:Repo Management[].
 . Click the *Remotes* tab.
 . In the *community* remote, click the btn:[More Actions] icon image:more_actions.png[More, 10,25] and click btn:[Edit].
 . In the modal, click btn:[Browse] and locate the `requirements.yml` file on your local machine.
 . Click btn:[Save].
-
++
 The modal closes and returns you to the *Repo Management* page.
-You can now sync collections identified in your `requirements.yml` file from {Galaxy} to your local {HubName}.
+You can now synchronize collections identified in your `requirements.yml` file from {Galaxy} to your {PrivateHubName}.
 
 . Click btn:[Sync] to sync collections from {Galaxy} and {HubName}.
 
-The *Sync status* notification updates to notify you of completion or failure of {Galaxy} collections sync to your {HubName}.
+The *Sync status* notification updates to notify you of completion or failure of {Galaxy} collections synchronization to your {PrivateHubName}.
 
 .Verification
 
-You can confirm successful sync by selecting *Community* from the collections content drop-down list.
+You can confirm successful synchronization by selecting *Community* from the collections content drop-down list.
