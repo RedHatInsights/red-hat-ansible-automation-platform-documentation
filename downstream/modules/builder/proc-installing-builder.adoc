@@ -8,13 +8,13 @@ NOTE: You must have valid subscriptions attached on the host before installing `
 
 .Procedure
 
-. In your terminal, run the following command to activate your Ansible Automation Platform repo:
+. In your terminal, run the following command to activate your {PlatformNameShort} repo:
 +
 ----
 $ ansible-automation-platform-2.1-for-rhel-8-x86_64-rpms
 ----
 +
-. Then run the following command:
+. Then enter the following command to install {Builder}:
 +
 ----
 $ dnf install ansible-builder
