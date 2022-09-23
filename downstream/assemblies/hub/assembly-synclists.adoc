@@ -1,7 +1,7 @@
 [id="assembly-synclists"]
-= Managing Red Hat Certified Content Collections or Ansible validated content synclists in {HubName}
+= Managing Ansible Content Collection synclists in {HubName}
 
-You can use {HubName} to distribute the relevant Red Hat Certified collections or Validated Content to your users by creating synclists.
+You can use {HubName} to distribute the relevant Red Hat Certified collections content to your users by creating synclists.
 
 include::automation-hub/con-rh-certified-synclist.adoc[leveloffset=+1]
 
