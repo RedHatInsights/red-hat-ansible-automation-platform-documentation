@@ -32,14 +32,14 @@ You can use these instructions to install the {HubName} operator on {OCP} and in
 == Installing the {PlatformNameShort} operator
 
 . Log in to {OCP}.
-. Navigate to *Operators* -> *Operator Hub*.
+. Navigate to menu:Operators[Operator Hub].
 . Locate the {PlatformName} catalog and click on it.
 . Choose your *Installation Mode*.
 . Choose a *Namespace* from the drop-down menu.
 . Select an *Approval Strategy*
 . Click *Install*
 
-The installation process will begin. When installation is complete a modal will appear notifying you the operated is installed in the specified namespace.
+The installation process will begin. When installation is complete a modal will appear notifying you the operator is installed in the specified namespace.
 
 * Click *View Operator* to view your newly installed operator.
 
@@ -52,10 +52,10 @@ The installation process will begin. When installation is complete a modal will 
 
 .Procedure
 
-. Navigate to *Operators* -> *Installed Operators*.
+. Navigate to menu:Operators[Installed Operators].
 . Locate the {HubName} operator and click on it.
 . Click *Create Instance*.
-. Select the *Form View* to configure the operator instance.
+. Select *Form View* to configure the operator instance.
 . Click *Advanced Configuration* to enter additional resource information. Use this option to supply *Admin password secret*, *Database configuration secret* and other parameters.
 . Select *Route* from the *Ingress Type* drop-down menu.
 .. Input the *Route DNS host* to specify the DNS to use to point to the instance.
@@ -67,17 +67,22 @@ The installation process will begin. When installation is complete a modal will 
 
 {OCP} will create the pods. This may take a few minutes.
 
-* View progress by navigating to *Workloads* -> *Pods* and locating the newly created instance.
+* View progress by navigating to menu:Workloads[Pods] and locating the newly created instance.
 
 
 == Accessing the {HubName} user interface
 
 You can access the {HubName} interface once all pods have successfully launched.
 
-. Navigate to *Networking* -> *Routes*.
+. Navigate to menu:Networking[Routes].
 . Under *Location*, click on the URL for your {HubName} instance.
 
-The {HubName} user interface will launch, You can sign in with the admin credentials specified during the operator configuration process.
+The {HubName} user interface launches where you can sign in with the administrator credentials specified during the operator configuration process.
+
+[NOTE]
+====
+If you did not specify an administrator password during configuration, one was automatically created for you. To locate this password, go to your project, select menu:Workloads[Secrets] and open controller-admin-password. From there you can copy the password and paste it into the {HubNameStart} password field.
+====
 
 [role="_additional-resources"]
 == Additional resources
