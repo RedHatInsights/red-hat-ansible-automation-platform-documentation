@@ -48,6 +48,7 @@
 // Automation hub
 :HubNameStart: Automation hub
 :HubName: automation hub
+:HubNameMain: Ansible automation hub
 :PrivateHubNameStart: Private automation hub
 :PrivateHubName: private automation hub
 :PrivateCollections: Ansible private automation hub collection management
@@ -93,8 +94,11 @@
 
 // Content Collections
 :CertifiedName: Ansible Certified Content Collections
+:CertifiedColl: Red Hat Ansible Certified Content Collection
+:CertifiedCon: Red Hat Ansible Certified Content
 :ServiceNowColl: Red Hat Ansible Certified Content Collection for Service Now
 :Galaxy: Ansible Galaxy
+:Valid: Ansible validated content
 :Console: console.redhat.com
 
 // OpenShift attributes
