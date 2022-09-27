@@ -48,6 +48,7 @@
 // Automation hub
 :HubNameStart: Automation hub
 :HubName: automation hub
+:HubNameMain: Ansible automation hub
 :PrivateHubNameStart: Private automation hub
 :PrivateHubName: private automation hub
 :PrivateCollections: Ansible private automation hub collection management
