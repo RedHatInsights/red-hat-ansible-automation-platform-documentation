@@ -1,0 +1,17 @@
+[id="proc_create-controller-form-view_{context}"]
+
+= Create-{ControllerName}-form-view
+
+. Ensure *Form view* is selected. It should be selected by default.
+. Enter the name of the new controller.
+. Add any labels necessary.
+. Click *Advanced configuration*.
+. Enter *Hostname* of the instance. The hostname is optional. The default hostname will be generated based upon the deployment name you have selected.
+. Enter the *Admin account username*.
+. Enter the *Admin email address*.
+. Select the *Admin password secret* from the dropdown menu.
+. Select *Database configuration secret* from the drop down menu.
+. Select the *Old Database configuration secret* from the drop down menu.
+. Select *Secret key secret* from the drop down menu.
+. Select *Broadcast Websocket Secret* from the drop down menu.
+. Enter any *Service Account Annotations* necessary.
