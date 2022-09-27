@@ -21,6 +21,8 @@ include::topics/controller-420.adoc[leveloffset=+2]
 [[anchor-february-2022-release]]
 == February 2022 release
 
+include::topics/aap-212.adoc[leveloffset=+2]
+
 include::topics/aap-211.adoc[leveloffset=+2]
 
 include::topics/hub-441.adoc[leveloffset=+2]
