@@ -2,7 +2,7 @@
 
 = Configure the Ingress type for your {HubName} operator
 
-The {PlatformName} operator installation form allows you to further configure your {HubName} operator Ingress under *Advanced configuration*.
+The {PlatformName} operator installation form allows you to further configure your {ControllerName} operator Ingress under *Advanced configuration*.
 
 . Click *Advanced Configuration*.
 . Under *Ingress type*, click the drop-down menu and select *Ingress*.

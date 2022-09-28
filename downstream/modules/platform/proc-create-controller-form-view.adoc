@@ -2,6 +2,8 @@
 
 = Create-{ControllerName}-form-view
 
+== Using the Form View
+
 . Ensure *Form view* is selected. It should be selected by default.
 . Enter the name of the new controller.
 . Add any labels necessary.
