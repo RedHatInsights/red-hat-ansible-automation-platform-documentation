@@ -27,3 +27,6 @@ include::platform/assembly-controlling-data-collection.adoc[leveloffset=+1]
 include::platform/assembly-supported-inventory-plugins-template.adoc[leveloffset=+1]
 include::platform/assembly-supported-attributes-custom-notifications.adoc[leveloffset=+1]
 
+[appendix]
+include::platform/platform/ref-hub-variables.adoc[]
+

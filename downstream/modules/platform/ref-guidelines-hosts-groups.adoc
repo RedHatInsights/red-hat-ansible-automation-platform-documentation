@@ -1,0 +1,57 @@
+[id="ref-guidelines-hosts-groups"]
+
+= Guidelines for hosts and groups
+
+* Using external databases: ensure the database sections of your inventory file are properly set up.
+* The database server should be on the same network or in the same data center as the {ControllerName} server for performance reasons.
+* Add {HubNameMain} information in the [automationhub] group
+* {HubNamemain} and {ControllerName} cannot be installed on the same node.
+* Provide a reachable IP address or fully qualified domain name (FDQN) for the [automationhub] host to ensure users can synchronize and install content from {HubNameMain} from a different node. 
+Do not use `localhost`.
+{ControllerNameStart} will not configure replication or failover for the database that it uses. 
+{ControllerName} should work with any replication you have.
+* For upgrading an existing cluster: When upgrading a cluster, you may decide that you want to also reconfigure your cluster to omit existing instances or instance groups. 
+Omitting the instance or the instance group from the inventory file is enough to remove them from the cluster. 
+In addition to omitting instances or instance groups from the inventory file, you must also deprovision instances or instance groups before starting the upgrade. 
+Otherwise, omitted instances or instance groups continue to communicate with the cluster, which can cause issues with {Controllername} services during the upgrade.
+* For clustered installations: If you are creating a clustered setup, you must replace [localhost] with the hostname or IP address of all instances. 
+All nodes and instances must be able to reach any others using this hostname or address. 
+In other words, you cannot use the localhost `ansible_connection=local` on one of the nodes, and all of the nodes should use the same format for the host names.
++
+Therefore, this does not work:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+[automationhub]
+localhost ansible_connection=local
+hostA
+hostB.example.com
+172.27.0.4
+----
++
+Instead, use these formats:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+[automationhub]
+hostA
+hostB
+hostC
+----
++
+or
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+[automationhub]
+hostA.example.com
+hostB.example.com
+hostC.example.com
+----
+
+[IMPORTANT]
+====
+You must separate the installation of {Controllername} and {HubNameMain} because the [database] group does not distinguish between the two if both are installed at the same time. 
+
+If you use one value in [database] and both {Controllername} and {HubNameMain} defined it they would use the same database.
+====

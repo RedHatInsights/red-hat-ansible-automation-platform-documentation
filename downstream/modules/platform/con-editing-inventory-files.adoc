@@ -1,0 +1,9 @@
+[id="con-editing_inventory_files"]
+
+= Editing inventory files
+
+You can further configure your {PlatformName} installation by including additional variables in the inventory file. 
+These configurations add optional features for managing your {PlatformName}. 
+Add these variables by editing the inventory file using a text editor.
+
+A table of predefined values for Inventory File variables can be found in Appendix A: Inventory File Variables
