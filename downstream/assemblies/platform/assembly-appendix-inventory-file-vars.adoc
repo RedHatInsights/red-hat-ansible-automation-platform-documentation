@@ -1,0 +1,6 @@
+[id="appendix-inventory-files-vars_{context}"]
+= Inventory file variables
+
+This appendix contains information about the vaiables that you can edit in Ansible installation inventory files.
+
+include::/platform/ref-hub-variables.adoc[leveloffset=+2]

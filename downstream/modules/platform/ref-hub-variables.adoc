@@ -1,6 +1,6 @@
 [id="ref-hub-variables"]
 
-== {HubNameMain} variables
+= {HubNameMain} variables
 
 [cols="50%,50%",options="header"]
 |====

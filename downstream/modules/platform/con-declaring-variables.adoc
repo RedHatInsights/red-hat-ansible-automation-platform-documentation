@@ -1,6 +1,6 @@
 [id="con-declaring_variables"]
 
-== Declaring variables
+= Declaring variables
 
 The values of string variables are declared in quotes. 
 For example:

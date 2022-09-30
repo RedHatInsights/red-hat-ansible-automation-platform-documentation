@@ -51,7 +51,7 @@ hostC.example.com
 
 [IMPORTANT]
 ====
-You must separate the installation of {Controllername} and {HubNameMain} because the [database] group does not distinguish between the two if both are installed at the same time. 
+You must separate the installation of {Controllername} and {HubNameMain} because the `[database]` group does not distinguish between the two if both are installed at the same time. 
 
-If you use one value in [database] and both {Controllername} and {HubNameMain} defined it they would use the same database.
+If you use one value in `[database]` and both {Controllername} and {HubNameMain} define it, they would use the same database.
 ====
