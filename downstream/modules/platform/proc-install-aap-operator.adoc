@@ -13,4 +13,4 @@
 
 The installation process will begin. When installation is complete, a modal will appear notifying you that the {PlatformName} operator is installed in the specified namespace.
 
-* Click *View Operator* to view your newly installed {PlatformName} operator.
+* Click btn:[View Operator] to view your newly installed {PlatformName} operator.
