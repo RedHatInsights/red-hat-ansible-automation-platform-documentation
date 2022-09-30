@@ -12,15 +12,14 @@ pg_username='awx'
 pg_password='<password>'
 ----
 
-When declared inline with the host, INI values are interpreted as Python literal structures (strings, numbers, tuples, lists, dicts, booleans, None). 
+When declared in a `:vars` section, INI values are interpreted as strings. 
+For example, `var=FALSE` creates a string equal to `FALSE`. 
+Unlike host lines, `:vars` sections accept only a single entry per line, so everything after the `=` must be the value for the entry.
+//When declared inline with the host, INI values are interpreted as Python literal structures (strings, numbers, tuples, lists, dicts, booleans, None). 
 Host lines accept multiple `key=value` parameters per line. 
 Therefore they need a way to indicate that a space is part of a value rather than a separator. 
 Values that contain whitespace can be quoted (single or double). 
 See the Python shlex parsing rules for details.
-
-When declared in a `:vars` section, INI values are interpreted as strings. 
-For example, `var=FALSE` creates a string equal to `FALSE`. 
-Unlike host lines, `:vars` sections accept only a single entry per line, so everything after the `=` must be the value for the entry.
 
 If a variable value set in an INI inventory must be a certain type (for example, a string or a boolean value), always specify the type with a filter in your task. 
 Do not rely on types set in INI inventories when consuming variables.

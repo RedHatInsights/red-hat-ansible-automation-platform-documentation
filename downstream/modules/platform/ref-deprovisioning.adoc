@@ -1,4 +1,4 @@
-[id="ref-deprovisioning"]
+[id="ref-deprovisioning_{context}"]
 
 = Deprovisioning nodes or groups in a cluster
 
@@ -25,7 +25,7 @@ To remove an entire instance group from a deployment:
 [instance_group_restrictedzone]
 host4.example.com
 host5.example.com
-[instance_group_restrictedzone:vars]
 
+[instance_group_restrictedzone:vars]
 node_state=deprovision
 ----

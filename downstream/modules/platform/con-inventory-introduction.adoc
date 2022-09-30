@@ -1,4 +1,4 @@
-[id="con-inventory-intro_{context}"]
+[id="con-inventory-introduction_{context}"]
 
 = About the installer inventory file
 
@@ -22,7 +22,7 @@ The following table shows possible locations:
 | *RPM* | `/opt/ansible-automation-platform/installer`
 |====
 
-You caan verify the hosts in your inventory using the command:
+You can verify the hosts in your inventory using the command:
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
