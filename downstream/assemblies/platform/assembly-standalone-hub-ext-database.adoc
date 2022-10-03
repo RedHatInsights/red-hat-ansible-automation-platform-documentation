@@ -6,7 +6,8 @@ ifdef::context[:parent-context: {context}]
 :context: standalone-hub-ext-database
 
 [role="_abstract"]
-You can use these instructions to install a standalone instance of {HubName} with an external managed database. This installs the {HubName} server on a single machine and installs a remote PostgreSQL database using the {PlatformNameShort} installer.
+You can use these instructions to install a standalone instance of {HubName} with an external managed database. 
+This installs the {HubName} server on a single machine and installs a remote PostgreSQL database using the {PlatformNameShort} installer.
 
 
 == Prerequisites

@@ -1,4 +1,4 @@
-[id="ref-catalog-variables"]
+[id="ref-controller-variables"]
 
 = {ControllerNameStart} variables
 
@@ -74,6 +74,7 @@ Same as 'automationhub_server_ssl_cert' but for web server UI and API.
 /path/to/webserver.key
 
 Same as `automationhub_server_ssl_key` but for web server UI and API.
+|====
 
 
 

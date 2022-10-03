@@ -19,7 +19,6 @@ include::platform/proc-attaching-subscriptions.adoc[leveloffset=+1]
 include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
 
 //New section here
-//== About the installer inventory file
 include::platform/con-inventory-introduction.adoc[leveloffset=+1]
 include::platform/ref-guidelines-hosts-groups.adoc[leveloffset=+2]
 include::platform/ref-deprovisioning.adoc[leveloffset=+2]

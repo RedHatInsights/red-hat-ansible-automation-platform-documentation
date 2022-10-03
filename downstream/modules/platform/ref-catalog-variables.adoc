@@ -34,7 +34,7 @@ They can cause the password to fail.
 The default is 5432
 | *`automationcatalog_pg_username`* | The postgres ID for your {CatalogName}.
 | *`automationcatalog_ssl_cert`* | Path to a custom provided SSL certificate file. 
-Requires `automationcatalog_ssl_key`` 
+Requires `automationcatalog_ssl_key` 
 The internally managed CA signs and creates the certificate if not provided and https is left enabled.
 | *`automationcatalog_ssl_key`* | Path to a custom provided SSL certificate key file. 
 

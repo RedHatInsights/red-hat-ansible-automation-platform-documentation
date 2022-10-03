@@ -15,7 +15,6 @@ pg_password='<password>'
 When declared in a `:vars` section, INI values are interpreted as strings. 
 For example, `var=FALSE` creates a string equal to `FALSE`. 
 Unlike host lines, `:vars` sections accept only a single entry per line, so everything after the `=` must be the value for the entry.
-//When declared inline with the host, INI values are interpreted as Python literal structures (strings, numbers, tuples, lists, dicts, booleans, None). 
 Host lines accept multiple `key=value` parameters per line. 
 Therefore they need a way to indicate that a space is part of a value rather than a separator. 
 Values that contain whitespace can be quoted (single or double). 
@@ -32,5 +31,3 @@ Consider using YAML format for inventory sources to avoid confusion on the actua
 If a parameter value in the Ansible inventory file contains special characters, such as #, { or }, you must double-escape the value (that is enclose the value in both single and double quotation marks). 
 
 For example, to use `mypasswordwith#hashsigns` as a value for the variable `pg_password`, declare it as `pg_password='"mypasswordwith#hashsigns"'` in the Ansible host inventory file.
-
-
