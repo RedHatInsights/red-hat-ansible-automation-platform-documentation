@@ -1,10 +1,13 @@
 [id="proc_controller-ldap-security_{context}"]
 
-= controller-ldap-security
+= Configuring your controller LDAP security
 
 
-. Under *LDAP Certificate Authority Trust Bundle* click the drop down menu and select a secret from the list.
-. Under *LDAP Password Secret* click the drop down menu and select a secret from the list.
-. Under *EE Images Pull Credentials Secret* click the drop down menu and select a secret from the list.
-. Under *Bundle Cacert Secret* click the drop down menu and select a secret from the list.
-. Under *Service Type* click the drop down menu and select *ClusterIP*, *LoadBalancer*, or *NodePort*. 
+. Under *LDAP Certificate Authority Trust Bundle* click the drop-down menu and select a secret.
+. Under *LDAP Password Secret* click the drop-down menu and select a secret.
+. Under *EE Images Pull Credentials Secret* click the drop-down menu and select a secret.
+. Under *Bundle Cacert Secret* click the drop-down menu and select a secret.
+. Under *Service Type* click the drop-down menu and select 
+* *ClusterIP*
+* *LoadBalancer*
+* *NodePort*
