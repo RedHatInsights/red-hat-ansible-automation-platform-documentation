@@ -6,6 +6,11 @@ include::topics/platform-intro.adoc[leveloffset=+1]
 
 include::topics/upgrading.adoc[leveloffset=+1]
 
+[[anchor-september-2022-release]]
+== September 2022 release
+
+include::topics/aap-221.adoc[leveloffset=+2]
+
 [[anchor-august-2022-release]]
 == August 2022 release
 
