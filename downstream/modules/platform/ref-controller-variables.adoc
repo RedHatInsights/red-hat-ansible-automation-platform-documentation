@@ -1,0 +1,80 @@
+[id="ref-catalog-variables"]
+
+= {ControllerNameStart} variables
+
+[cols="50%,50%",options="header"]
+|====
+| *Variable* | *Description* 
+| *`admin_password`* | The password for an administration user to access the UI upon install completion.
+| *`controller_base_url`* | 
+| *`node_state`* | _Optional_
+
+The status of a node or group of nodes. 
+Valid options are `‘active’`, `'deprovision'` to remove a node from a cluster or `'iso_migrate'` to migrate a legacy isolated node to an execution node.
+
+The default is `‘active’`.
+| *`node_type`* | For `[automationcontroller]` group.
+
+Two valid `node_types` can be assigned for this group.
+
+A `node_type='control'` implies that the node will only be able to run project and inventory updates, but not regular jobs.
+
+A `node_type='hybrid'` has the ability to run everything.
+
+The default for this group is `'hybrid'`.
+
+For `[execution_nodes]` group
+
+Two valid node_types can be assigned for this group.
+
+A `node_type='hop'` implies that the node forwards jobs to an execution node.
+
+A `node_type='execution'` implies that the node can run jobs.
+
+The default for this group is `'execution'`.
+a| *`peers`* | Peer relationships define node-to-node connections. 
+
+For example 
+
+`[automationcontroller:vars]
+node_type=control
+peers=instance_group_local`
+| *`pg_database`* | The name of the postgres database.
+
+The default is `‘awx’`.
+| *`pg_host`* | The postgreSQL host, which can be an externally managed database.
+| *`pg_password`* | The password for the postgreSQL database.
+
+Do not use special characters for `pg_password`. 
+They can cause the password to fail.
+
+NOTE
+
+You no longer need to provide a `pg_hashed_password` in your inventory file at the time of installation because postgreSQL 13 can now store user passwords more securely. 
+
+When you supply `pg_password`` in the inventory file for the installer, postgreSQL uses the SCRAM-SHA-256 hash to secure that password as part of the installation process.
+| *`pg_port`* | The postgreSQL port to use.
+
+The default is 5432
+| *`pg_ssl_mode`* | One of `'prefer'`, `'verify-full'`, ? ?
+
+Set to `'verify-full'` for client-side enforced SSL.
+
+The default is `‘prefer’`.
+| *`pg_username`* | Your postgres database username.
+
+The default is `‘awx’`.
+| *`web_server_ssl_cert`* |  _Optional_ 
+
+/path/to/webserver.cert
+
+Same as 'automationhub_server_ssl_cert' but for web server UI and API.
+| *`web_server_ssl_key`* |  _Optional_
+
+/path/to/webserver.key
+
+Same as `automationhub_server_ssl_key` but for web server UI and API.
+
+
+
+

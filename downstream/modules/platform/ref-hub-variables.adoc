@@ -23,21 +23,10 @@ The default is `false`.
 
 {HubNameMain} provides artifacts in `/var/lib/pulp`. 
 {ControllerName} automatically backs up the artifacts by default. 
+
 If a partition (e.g., LVM, NFS, CephFS, etc.) is mounted there, an enterprise organization ensures it is always backed up. 
+
 If this is the case, you can set `automationhub_backup_collections = false` and the backup/restore process does not then backup or restore `/var/lib/pulp`.
-| *`automationhub_authentication_backend`* | ldap
-| *`automationhub_auto_sign_collections`* |If a collection signing service is enabled, collections are not signed automatically by default. 
-
-Setting this parameter to `true`` signs them by default.
-
-The default is `false`.
-| *`automationhub_backup_collections`* |Optional
-
-{HubNameMain} provides artifacts in `/var/lib/pulp`. {ControllerName} automatically backs up the artifacts by default. 
-If a partition (e.g. LVM, NFS, CephFS, etc.) is mounted there, an enterprise organization would ensure it is always backed up. 
-If this is the case, you can set `automationhub_backup_collections = false` and the backup/restore process does not have to backup or restore `/var/lib/pulp`.
-
-The default value is `true`.
 | *`automationhub_collection_signing_service_key`* | If a collection signing service is enabled, you must provide this variable to ensure collections can be properly signed. 
 
 `/absolute/path/to/key/to/sign`
@@ -75,7 +64,7 @@ This variable is expected to be a dictionary.
 2+| For {HubNameMain} to connect to LDAP directly the following variables must be configured. 
 A list of other LDAP related variables (not covered by the `automationhub_ldap_xxx` variables below) that can be passed using the `ldap_extra_settings` variable can be found here:
 https://django-auth-ldap.readthedocs.io/en/latest/reference.html#settings
-| *`automationhub_ldap_bind_dn`* | The name to use when binding to the LDAP server (with `automationhub_ldap_bind_password`). 
+| *`automationhub_ldap_bind_dn`* | The name to use when binding to the LDAP server with `automationhub_ldap_bind_password`). 
 
 Use the empty string (the default) for an anonymous bind. 
 
@@ -97,7 +86,7 @@ The default is '`None`'
 | *`automationhub_ldap_server_uri`* | The URI of the LDAP server. 
 This can be any URI that is supported by your underlying LDAP libraries. 
 Can also be a callable that returns the URI. 
-The callable is passed a single positional argument: request.
+The callable is passed a single positional argument: `request`.
 When `automationhub_ldap_server_uri` is set to a callable, it is passed a positional request argument. 
 Support for no arguments continues for backwards compatibility but will be removed in a future version.
 | *`automationhub_ldap_user_dn_template`* | A string template that describes any user’s distinguished name based on the username. 
@@ -150,7 +139,7 @@ Same as `web_server_ssl_cert` but for {HubName} UI and API
 Same as `web_server_ssl_key` but for {HubName} UI and API
 | *`automationhub_ssl_validate_certs`* | For {PlatformName} 2.2 and later, this value is no longer used.
 
-Whether or not {HubName} should validate certificate when requesting itself because by default, Platform deploys with self-signed certificates.
+If {HubName} should validate certificate when requesting itself because by default, Platform deploys with self-signed certificates.
 
 The default value is `'false'`.
 | *`automationhub_upgrade`* | By default, when the {HubName} package and its dependencies are installed they are not upgraded when running the installer, even if newer packages are available. 
