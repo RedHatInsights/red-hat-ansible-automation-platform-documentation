@@ -1,0 +1,11 @@
+[id="aap-backup-recommendations"]
+
+= Backup recommendations
+
+
+[role="_abstract"]
+Recovering from data loss requires that you plan for and create backup resources of your {PlatformName} deployments on a regular basis. At a minimum, Red Hat recommends backing up deployments of {PlatformName} under the following circumstances:
+
+* Before upgrading your {PlatormName} deployments
+* Before upgrading your Openshift cluster
+* Once per week. This is particularly important if your environment is configured for automatic upgrades.

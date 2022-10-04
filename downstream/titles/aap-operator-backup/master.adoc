@@ -1,0 +1,23 @@
+:imagesdir: images
+:numbered:
+:toclevels: 1
+
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Red Hat Ansible Automation Platform Operator Backup and Recovery Guide
+
+Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
+
+Use the procedures in this guide to create backup resources that can be used for recovering your {PlatformName} deployment in the event of a failure.
+//Downstream only content
+//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
+include::platform/assembly-aap-backup-recovery.adoc[leveloffset=+1]
+
+include::platform/assembly-aap-backup.adoc[leveloffset=+1]
+
+include::platform/assembly-aap-recovery.adoc[leveloffset=+1]
