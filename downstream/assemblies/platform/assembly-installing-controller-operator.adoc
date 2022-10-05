@@ -37,10 +37,10 @@ When an instance of {ControllerName} is removed, the associated PVCs are not aut
 You can proceed with configuring the instance using either the Form View or YAML view.
 
 
-include::platform/proc-create-controller-form-view.adoc[leveloffset=+2]
-include::platform/proc-controller-image-pull-policy.adoc[leveloffset=+2]
-include::platform/proc-controller-ldap-security.adoc[leveloffset=+2]
-include::platform/proc-controller-route-options.adoc[leveloffset=+2]
+include::platform/proc-creating-controller-form-view.adoc[leveloffset=+2]
+include::platform/proc-configuring-the-controller-image-pull-policy.adoc[leveloffset=+2]
+include::platform/proc-configuring-controller-ldap-security.adoc[leveloffset=+2]
+include::platform/proc-configuring-controller-route-options.adoc[leveloffset=+2]
 include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
 
 Once you have configured your {ControllerName} operator, click *Create* at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
