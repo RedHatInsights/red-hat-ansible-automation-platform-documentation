@@ -10,8 +10,7 @@ By default, your {PrivateHubName} community repository directs to `galaxy.ansibl
 
 * You have *Modify Ansible repo content* permissions.
 See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
-* You have a `requirements.yml` file that identifies those collections to sync from {Galaxy}.
-See example below.
+* You have a `requirements.yml` file that identifies those collections to sync from {Galaxy} as in the following example:
 
 .Requirements.yml example
 -----
@@ -26,7 +25,7 @@ collections:
 . Log in to your {HubNameMain}.
 . Navigate to menu:Repo Management[].
 . Click the *Remotes* tab.
-. In the *community* remote, click the btn:[More Actions] icon image:more_actions.png[More, 10,25] and click btn:[Edit].
+. In the *Community* remote, click the btn:[More Actions] icon image:more_actions.png[More, 10,25] and click btn:[Edit].
 . In the modal, click btn:[Browse] and locate the `requirements.yml` file on your local machine.
 . Click btn:[Save].
 +

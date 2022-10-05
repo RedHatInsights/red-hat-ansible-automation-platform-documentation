@@ -1,9 +1,10 @@
 [id="assembly-private-automation-hub"]
-= {PrivateHubName}
+= {PrivateHubNameStart}
 
 {HubNameMain} is the central repository place for the certified collections, and functions as the main source of trusted, tested and supported content. 
 
-{PrivateHubName} provides automation developers the ability to collaborate and publish their own automation content and streamline delivery of Ansible code within their organization. It is also the central repository for {Valid}, which is not supported, but is trusted and tested by Red Hat and our partners. 
+{PrivateHubNameStart} provides automation developers the ability to collaborate and publish their own automation content and streamline delivery of Ansible code within their organization. 
+It is also the central repository for {Valid}, which is not supported, but is trusted and tested by Red Hat and our partners. 
 
 include::automation-hub/con-required-shared-filesystem.adoc[leveloffset=+1]
 include::automation-hub/proc-shared-filesystem.adoc[leveloffset=+1]
