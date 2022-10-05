@@ -1,0 +1,28 @@
+[id="proc-configuring-controller-image-pull-policy_{context}"]
+
+= Configuring your controller image pull policy
+
+
+. Under *Image Pull Policy*, click on the radio button to select
+* *Always* 
+* *Never* 
+* *IfNotPresent*
+. To display the option under *Image Pull Secrets*, click the arrow.
+.. Click *+* beside *Add Image Pull Secret* and enter a value.
+. To display fields under the *Web container resource requirements* drop-down list, click the arrow.
+.. Under *Limits*, and *Requests*, enter values for *CPU cores*, *Memory*, and *Storage*.
+. To display fields under the *Task container resource requirements* drop-down list, click the arrow.
+.. Under *Limits*, and *Requests*, enter values for *CPU cores*, *Memory*, and *Storage*.
+. To display fields under the *EE Control Plane container resource requirements* drop-down list, click the arrow.
+.. Under *Limits*, and *Requests*, enter values for *CPU cores*, *Memory*, and *Storage*.
+. To display fields under the *PostgreSQL init container resource requirements (when using a managed service)* drop-down list, click the arrow.
+.. Under *Limits*, and *Requests*, enter values for *CPU cores*, *Memory*, and *Storage*.
+. To display fields under the *Redis container resource requirements* drop-down list, click the arrow.
+.. Under *Limits*, and *Requests*, enter values for *CPU cores*, *Memory*, and *Storage*.
+. To display fields under the *PostgreSQL container resource requirements (when using a managed instance)** drop-down list, click the arrow.
+.. Under *Limits*, and *Requests*, enter values for *CPU cores*, *Memory*, and *Storage*.
+. To display the *PostgreSQL container storage requirements (when using a managed instance)* drop-down list, click the arrow.
+.. Under *Limits*, and *Requests*, enter values for *CPU cores*, *Memory*, and *Storage*.
+. Under Replicas, enter the number of instance replicas.
+. Under *Remove used secrets on instance removal*, select *true* or *false*. The default is false.
+.  Under *Preload instance with data upon creation*, select *true* or *false*. The default is true.
