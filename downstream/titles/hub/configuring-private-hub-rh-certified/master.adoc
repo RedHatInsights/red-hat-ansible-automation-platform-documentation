@@ -31,11 +31,11 @@ include::hub/assembly-validated-content.adoc[leveloffset=+1]
 
 When you complete all of the previous procedures, you will have:
 
-* created a synclist for Red Hat Certified collections content.
-* synced that content to your local {HubName}.
+* created a synclist for {CertifiedCon} content.
+* synced that content to your {PrivateHubName}.
 * designated community collections from {Galaxy} to distribute to your users.
 * configured content signing on {PrivateHubName}.
 * signed and approved collections for your organization's specific needs.
 * configured Ansible-Galaxy CLI to verify collections before signing them.
 
-Users can now view and download collections content from your {HubName}.
+Users can now view and download collections content from your {PrivateHubName}.

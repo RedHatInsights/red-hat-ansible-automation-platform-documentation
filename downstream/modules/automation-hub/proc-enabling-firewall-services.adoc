@@ -2,7 +2,7 @@
 
 = Enabling firewall services
 
-As part of a highly available {HubMame} environment, because of the requirement of using a shared filesystem, the following firewall services must be enabled to ensure successful mounting of the filesystem as shown in the next section.
+As part of a highly available {HubNameMain} environment, because of the requirement of using a shared filesystem, the following firewall services must be enabled to ensure that the filesystem is successfully mounted.
 
 On each {HubNameMain} node, you must:
 
