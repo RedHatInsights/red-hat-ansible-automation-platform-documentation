@@ -1,0 +1,21 @@
+[id="proc-shared-filesystem"]
+
+On each automation hub node, you must:
+
+. Create the `/var/lib/pulp` directory.
++
+----
+# mkdir /var/lib/pulp
+----
++
+. Mount the shared filesystem (this reference environment uses an NFS share).
++
+----
+# mount -t nfs4 <nfs_share_ip_address>:/ /var/lib/pulp
+----
++
+. Confirm the shared filesystem is successfully mounted using:
++
+----
+$ df -h
+----
