@@ -1,0 +1,26 @@
+[id="proc-enabling-firewall-services"]
+
+= Enabling firewall services
+
+As part of a highly available {HubMame} environment, because of the requirement of using a shared filesystem, the following firewall services must be enabled to ensure successful mounting of the filesystem as shown in the next section.
+
+On each {HubNameMain} node, you must:
+
+. Ensure the following `firewalld` services (`nfs`, `mountd`, `rpc-bind`) are enabled.
++
+----
+# firewall-cmd --zone=public --add-service=nfs
+# firewall-cmd --zone=public --add-service=mountd
+# firewall-cmd --zone=public --add-service=rpc-bind
+----
++
+. Reload `firewalld` for changes to take effect.
++
+----
+# firewall-cmd --reload
+----
+. Verify the `firewalld` services are enabled.
++
+----
+# firewall-cmd --get-services
+----

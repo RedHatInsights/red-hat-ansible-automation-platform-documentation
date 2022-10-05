@@ -1,0 +1,58 @@
+[id="assembly-validated-content"]
+= {Valid}
+
+{PlatformName} includes {Valid}, which complements existing {CertifiedCon}. 
+
+{Valid} provides an expert-led path for performing operational tasks on a variety of platforms including both Red Hat and our trusted partners.
+
+[NOTE]
+====
+{Valid} is only available with a valid subscription to {PlatformName}.
+Unlike {CertifiedCon}, {Valid} is not supported by Red Hat or our partners. 
+For the release of {PlatformName} 2.3, {Valid} will be preloaded into {PrivateHubName} and can be updated manually by downloading their packages.
+====
+
+{Valid}
+[cols="20%,30%,30%,20%",options="header"]
+|====
+| Entity | Collection name | Description | Published by
+| Ansible | cloud.azure_roles.load_balancer | A role to manage Azure Load Balancer | Red Hat Ansible
+| Ansible | cloud.azure_roles.managed_postgresql | A role to manage Azure PostGreSQL Database |Red Hat Ansible
+| Ansible | cloud.azure_roles.network_interface | A role to manage Azure Network Interface | Red Hat Ansible 
+| Ansible | cloud.azure_roles.networking_stack | A role to manage Azure Networking Stack | Red Hat Ansible
+| Ansible | cloud.azure_roles.resource_group  | A role to manage Azure Resource Group | Red Hat Ansible
+| Ansible | cloud.azure_roles.security_group  | A role to manage Azure Security Group | Red Hat Ansible
+| Ansible | cloud.azure_roles.virtual_machine  | A role to manage Azure Virtual Machine | Red Hat Ansible
+| Ansible | network.base | A validated content collection to consist base config related implementation that would be utilized by other validated content | Red Hat Ansible
+| Ansible | network.base | A validated content collection to configure bgp and provide capabilities to do operational state/healthchecks | Red Hat Ansible
+| Ansible | network.acls | A validated content collection to configure acls and provide capabilities to do operational state/healthchecks | Red Hat Ansible
+| Ansible | network.interfaces | A validated content collection to configure interfaces and provide capabilities to do operational state/healthchecks | Red Hat Ansible
+| Ansible | network.ospf | A validated content collection to configure ospf and provide capabilities to do operational state/healthchecks | Red Hat Ansible
+| Ansible | <name yet to decide> | Connectivity between on-prem network device (for ex CSR) and cloud gateway(for ex AWS) | Red Hat Ansible
+| Ansible | <name yet to decide> | A validated content (potentially a role) on Inventory Report that returns statistics and IDs of different edge nodes and servers |Red Hat Ansible
+| Ansible | | Network device Inventory report using html | Red Hat Ansible
+| Ansible | | Network config backup | Red Hat Ansible
+| Ansible | | Network config restore | Red Hat Ansible
+| Ansible | | IOS Updater | Red Hat Ansible
+| Ansible | | NXOS Updater | Red Hat Ansible
+| Ansible | | EOS Updater | Red Hat Ansible
+| Ansible | | Firewall policy automation - A validated cotent to take care of FW policy hygiene | Red Hat Ansible
+| Ansible | | OSbuilder for RHEL Edge disconnected (customer request) | Red Hat Ansible
+| Ansible | | Middleware collection | Red Hat Ansible
+| Ansible | | Windows and Linux Compliance |Red Hat Ansible
+| Ansible | | SAP Deployment | Red Hat Ansible
+| Ansible | | Automation controller configuration | Red Hat Ansible
+| Ansible | | Execution Environment Utilities | Red Hat Ansible
+| Ansible | | {HubNameStart} configuration | Red Hat Ansible
+| Ansible | | AAP utilities | Red Hat Ansible
+| Ansible | | Role to deploy and migrate a web application on _Amazon Web Services_ (AWS) | Red Hat Ansible 
+| Ansible | | Role to deal with AWS orphaned instances by tag | Red Hat Ansible
+| Ansible | | Role to create a customized _Amazon Machine Images_ (AMI) | Red Hat Ansible
+| Ansible | | Role to detach and delete AWS _Internet Gateway_ (IGW)s |Red Hat Ansible
+| Ansible | | Role to configure a multi-region CloudTrail | Red Hat Ansible
+| Ansible | | Role to configure CloudTrail encryption | Red Hat Ansible
+| Ansible | | Role to troubleshoot EC2 instances failing to join an ECS cluster | Red Hat Ansible
+| Ansible | | Role to troubleshoot _Relational database Service_ (RDS) connectivity from an instance | Red Hat Ansible
+| Ansible | | Role to troubleshoot _Virtual Private Cloud_ (VPC) connectivity issues | Red Hat Ansible
+|====
+

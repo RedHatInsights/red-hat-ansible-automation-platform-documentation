@@ -1,15 +1,15 @@
 // Module included in the following assemblies:
 // obtaining-token/master.adoc
 [id="proc-set-rhcertified-remote"]
-= Configuring the rh-certified remote repository and syncing Red Hat Certified collections.
+= Configuring the rh-certified remote repository and syncing {CertifiedColl}.
 
 You can edit the *rh-certified* remote repository to synchronize collections from {HubName} hosted on {Console} to your {PrivateHubName}.
-By default, your {PrivateHubName} `rh-certified` repository includes the URL for the entire group of Red Hat Ansible Certified Content Collections.
+By default, your {PrivateHubName} `rh-certified` repository includes the URL for the entire group of {CertifiedName}.
 To only use those collections specified by your organization, you must include a unique URL.
 
 .Prerequisites
 
-* You have *Modify Ansible repo content* permissions.
+* You have valid *Modify Ansible repo content* permissions.
 See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
 * You have retrieved the Sync URL and API Token from the {HubName} hosted service on {Console}.
 

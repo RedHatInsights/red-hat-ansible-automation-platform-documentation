@@ -2,7 +2,7 @@
 
 = About Red Hat Ansible Certified Collections synclists
 
-A synclist is a curated group of Red Hat Certified collections that is assembled by your organization administrator that synchronizes with your local {HubName}. 
+A synclist is a curated group of Red Hat Certified collections that is assembled by your organization administrator that synchronizes with your local {HubNameMain}. 
 Using synclists enables you to manage only the content that you want and exclude unnecessary collections.
 You can design and manage your synclist from the content available as part of Red Hat content available on {Console}
 
@@ -10,6 +10,6 @@ Each synclist has its own unique repository URL you can use to designate as a re
 
 [NOTE]
 ====
-Initially, Ansible validated content will only be available through the {PrivateHubName} installer. 
-Organization Administrators can preload all Ansible validated content collections at install time and put them into a staging state where they can be reviewed to avoid uploading unnecessary collections.
+Initially, {Valid} will only be available through the {PrivateHubName} installer. 
+Organization Administrators can preload all {Valid} collections at install time and put them into a staging state where they can be reviewed to avoid uploading unnecessary collections.
 ====

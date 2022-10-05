@@ -4,10 +4,10 @@
 
 = Creating a synclist of Red Hat Certified collections
 
-You can create a synclist of curated Red Hat Ansible Certified Content in {HubName} on {Console}. 
-Your synclist repository is located under menu:Automation Hub[Repo Management], which is updated whenever you choose to manage content within Red Hat Certified Content Collections.
+You can create a synclist of curated {CertifiedCon} in {HubName} on {Console}. 
+Your synclist repository is located under menu:Automation Hub[Repo Management], which is updated whenever you choose to manage content within {CertifiedName}.
 
-By default, all Red Hat Ansible Certified Content Collections are included in your initial organization synclist.
+By default, all {CertifiedName} are included in your initial organization synclist.
 
 .Prerequisites
 
@@ -18,7 +18,7 @@ By default, all Red Hat Ansible Certified Content Collections are included in yo
 ** `cloud.redhat.com`
 ** `{Console}`
 ** `sso.redhat.com`
-* {HubNameStart} resources are stored in Amazon Simple Storage.
+* {HubNameMain} resources are stored in Amazon Simple Storage.
 Add the following domain name to the allow list:
 ** `automation-hub-prd.s3.us-east-2.amazonaws.com`
 * SSL inspection must be disabled either when using self signed certificates or for the Red Hat domains.
@@ -29,5 +29,5 @@ Add the following domain name to the allow list:
 . Navigate to menu:Automation Hub[Collections].
 . Use the toggle switch on each collection to determine whether to exclude it from your synclist.
 
-When you finish managing collections for your synclist, you can navigate to menu:Automation Hub[Repo Management] to initiate the remote repository sync to your {PrivateHubName}. 
-If your remote repository is already configured, you can manually synchronize Red Hat Ansible Certified Content Collections to your {PrivateHubName} to update the collections content that you made available to local users.
+When you finish managing collections for your synclist, you can navigate to menu:Automation Hub[Repo Management] to initiate the remote repository synchronization to your {PrivateHubName}. 
+If your remote repository is already configured, you can manually synchronize {CertifiedName} to your {PrivateHubName} to update the collections content that you made available to local users.
