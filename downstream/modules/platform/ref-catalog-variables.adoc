@@ -11,7 +11,7 @@ Requires `automation_controller_main_url` to be defined as well.
 | *`automationcatalog_controller_token`* | Used for a pre-created OAuth token for {ControllerName}.
 This token will be used instead of generating a token.
 | *`automationcatalog_controller_username`* | Used to generate a token from a controller host. 
-Requires `automation_controller_main_url`` to be defined as well.
+Requires `automation_controller_main_url` to be defined as well.
 | *`automationcatalog_controller_verify_ssl`* | Used to enable or disable SSL validation from {CatalogName} to {ControllerName}. 
 
 The default value is `true`.

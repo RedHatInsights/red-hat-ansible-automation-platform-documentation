@@ -13,7 +13,7 @@
 - set `generate_automationhub_token` to `true` to generate a new token
 
 Generating a new token will invalidate the existing token.
-| *`automationhub_authentication_backend`* | ldap ??
+| *`automationhub_authentication_backend`* | ldap ?? TBD
 | *`automationhub_auto_sign_collections`* | If a collection signing service is enabled, collections are not signed automatically by default. 
 
 Setting this parameter to `true` signs them by default.
@@ -33,8 +33,8 @@ If this is the case, you can set `automationhub_backup_collections = false` and 
 | *`automationhub_collection_signing_service_script`* | If a collection signing service is enabled, you must provide this variable to ensure collections can be properly signed. 
 
 `/absolute/path/to/script/that/signs`
-| *`automationhub_create_default_collection_signing_service`* | The default install will not create a signing service. 
-If set to `true` a signing service will be created.
+| *`automationhub_create_default_collection_signing_service`* | The default install does not create a signing service. 
+If set to `true` a signing service is created.
 
 Default = `false`
 | *`automationhub_disable_hsts`* | The default install deploys a TLS enabled {HubNameMain}.
@@ -78,6 +78,7 @@ The default is '' (Empty string)
 | *`automationhub_ldap_bind_password`* | The password to use with `automationhub_ldap_bind_dn`.
 
 The default is '' (Empty string)
+| *`automationhub_ldap_find_group_perms`* | TBD
 | *`automationhub_ldap_group_search`* | An LDAPSearch object that finds all LDAP groups that users might belong to. 
 If your configuration makes any references to LDAP groups, this and `automationhub_ldap_group_type` must be set.
 
