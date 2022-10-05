@@ -1,11 +1,12 @@
-[id="proc-controller-route-options_{context}"]
+[id="proc-configuring-controller-route-options_{context}"]
 
-= Configure your {ControllerName} operator route options
+= Configuring your {ControllerName} operator route options
 
 The {PlatformName} operator installation form allows you to further configure your {ControllerName} operator route options under *Advanced configuration*.
 
 . Click *Advanced configuration*.
 . Under *Ingress type*, click the drop-down menu and select *Route*.
 . Under *Route DNS host*, enter a common host name that the route answers to.
-. Under *Route TLS termination mechanism*, click the drop-down menu and select *Edge* or *Passthrough*.
+. Under *Route TLS termination mechanism*, click the drop-down menu and select *Edge* or *Passthrough*. For most instances *Edge* should be selected.
 . Under *Route TLS credential secret*, click the drop-down menu and select a secret from the list.
+. Under *Enable persistence for __/var/lib/projects__ directory* select either true or false by moving the slider.
