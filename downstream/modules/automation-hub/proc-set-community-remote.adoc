@@ -4,7 +4,7 @@
 = Configuring the community remote repository and syncing {Galaxy} collections
 
 You can edit the *community* remote repository to synchronize chosen collections from {Galaxy} to your {PrivateHubName}.
-By default, your {PrivateHubName} community repository directs to `https://galaxy.ansible.com/api/`.
+By default, your {PrivateHubName} community repository directs to `galaxy.ansible.com/api/`.
 
 .Prerequisites
 
@@ -23,7 +23,7 @@ collections:
 -----
 
 .Procedure
-. Log in to your {PrivateHubName}.
+. Log in to your {HubNameMain}.
 . Navigate to menu:Repo Management[].
 . Click the *Remotes* tab.
 . In the *community* remote, click the btn:[More Actions] icon image:more_actions.png[More, 10,25] and click btn:[Edit].
@@ -33,9 +33,9 @@ collections:
 The modal closes and returns you to the *Repo Management* page.
 You can now synchronize collections identified in your `requirements.yml` file from {Galaxy} to your {PrivateHubName}.
 
-. Click btn:[Sync] to sync collections from {Galaxy} and {HubName}.
+. Click btn:[Sync] to sync collections from {Galaxy} and {HubNameMain}.
 
-The *Sync status* notification updates to notify you of completion or failure of {Galaxy} collections synchronization to your {PrivateHubName}.
+The *Sync status* notification updates to notify you of completion or failure of {Galaxy} collections synchronization to your {HubNameMain}.
 
 .Verification
 
