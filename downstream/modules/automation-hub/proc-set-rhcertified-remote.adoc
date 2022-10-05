@@ -15,7 +15,7 @@ See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_pla
 
 .Procedure
 
-. Log in to your {PrivteHubName}.
+. Log in to your {PrivateHubName}.
 . Navigate to menu:Repo Management[].
 . Click the *Remotes* tab.
 . In the *rh-certified* remote repository, click image:more_actions.png[More actions] and click btn:[Edit].
