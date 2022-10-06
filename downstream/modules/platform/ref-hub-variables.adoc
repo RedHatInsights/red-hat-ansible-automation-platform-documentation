@@ -6,14 +6,23 @@
 |====
 | *Variable* | *Description* 
 | *`automationhub_admin_password`* | Required
-| *`automationhub_api_token`* | If upgrading from {PlatformNameShort} 2.0 or earlier, you must either:
+| *`automationhub_api_token`* a| If upgrading from {PlatformNameShort} 2.0 or earlier, you must either:
 
-- provide an existing {HubNameMain} token as `automationhub_api_token`, or 
+* provide an existing {HubNameMain} token as `automationhub_api_token`, or 
 
-- set `generate_automationhub_token` to `true` to generate a new token
+* set `generate_automationhub_token` to `true` to generate a new token
 
 Generating a new token will invalidate the existing token.
-| *`automationhub_authentication_backend`* | ldap ?? TBD
+| *`automationhub_authentication_backend`* a| This variable is not set by default. 
+Set it to `ldap`` to use LDAP authentication. 
+
+When this is set to `‘ldap’``, the following variables must also be set:
+
+* `automationhub_ldap_server_uri`
+* `automationhub_ldap_bind_dn`
+* `automationhub_ldap_bind_password`
+* `automationhub_ldap_user_search_base_dn`
+
 | *`automationhub_auto_sign_collections`* | If a collection signing service is enabled, collections are not signed automatically by default. 
 
 Setting this parameter to `true` signs them by default.
@@ -78,25 +87,40 @@ The default is '' (Empty string)
 If your configuration makes any references to LDAP groups, this and `automationhub_ldap_group_type` must be set.
 
 The default is '`None`'
-| *`auth_ldap_group-search_filter`* | TBD
-| *`auth_ldap_group_search_scope`* | TBD
+| *`automatiohub_ldap_group-search_filter`* | _Optional_
+
+Default = `'(objectClass=Group)'`
+| *`automationhub_ldap_group_search_scope`* | _Optional_
+
+Default = `'subtree'`
 | *`automationhub_ldap_group_type`* |An LDAPGroupType instance describing the type of group returned by `automationhub_ldap_group_search`.
-| *`auth_ldap_group_type_class`* | TBD
+| *`automationhub_ldap_group_type_class`* | _Optional_
+
+Default =`'django_auth_ldap.config:GroupOfNamesType'`
 | *`automationhub_ldap_server_uri`* | The URI of the LDAP server. 
+
 This can be any URI that is supported by your underlying LDAP libraries. 
+
 Can also be a callable that returns the URI. 
+
 The callable is passed a single positional argument: `request`.
+
 When `automationhub_ldap_server_uri` is set to a callable, it is passed a positional request argument. 
+
 Support for no arguments continues for backwards compatibility but will be removed in a future version.
 | *`automationhub_ldap_user_search_base_dn`* | An LDAPSearch object that locates a user in the directory. 
 The filter parameter should contain the placeholder %(user)s for the username. 
 It must return exactly one result for authentication to succeed.
 
 The default is `‘None’`
-| *`auth_ldap_user_search_filter`* | TBD
-| *`auth_ldap_user_search_scope`* | TBD
+| *`automationhub_ldap_user_search_filter`* |  _Optional_
+
+Default = `'subtree'`
+| *`automationhub_ldap_user_search_scope`* |  _Optional_
+
+Default = `'(uid=%(user)s)'`
 | *`automationhub_main_url`* | When using Single Sign-On, specify the main {HubName} URL that
-clients will connect to, e.g. `https://<hubaddress.example.com>`, which leads to the external address being entered in `/etc/pulp/settings.py`.
+clients will connect to, e.g. `\https://<hubaddress.example.com>`, which leads to the external address being entered in `/etc/pulp/settings.py`.
 
 If not specified, the first node in the `[automationhub]` group is used.
 | *`automationhub_pg_database`* | _Required_
