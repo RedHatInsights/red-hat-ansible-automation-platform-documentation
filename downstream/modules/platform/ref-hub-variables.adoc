@@ -16,12 +16,13 @@ Generating a new token will invalidate the existing token.
 | *`automationhub_authentication_backend`* a| This variable is not set by default. 
 Set it to `ldap`` to use LDAP authentication. 
 
-When this is set to `‘ldap’``, the following variables must also be set:
+When this is set to `‘ldap’`, the following variables must also be set:
 
 * `automationhub_ldap_server_uri`
 * `automationhub_ldap_bind_dn`
 * `automationhub_ldap_bind_password`
 * `automationhub_ldap_user_search_base_dn`
+* `automationhub_ldap_group_seach_base_dn`
 
 | *`automationhub_auto_sign_collections`* | If a collection signing service is enabled, collections are not signed automatically by default. 
 
@@ -73,49 +74,30 @@ This variable is expected to be a dictionary.
 2+| For {HubNameMain} to connect to LDAP directly the following variables must be configured. 
 A list of other LDAP related variables (not covered by the `automationhub_ldap_xxx` variables below) that can be passed using the `ldap_extra_settings` variable can be found here:
 https://django-auth-ldap.readthedocs.io/en/latest/reference.html#settings
-| *`automationhub_ldap_bind_dn`* | The name to use when binding to the LDAP server with `automationhub_ldap_bind_password`). 
+| *`automationhub_ldap_bind_dn`* | The name to use when binding to the LDAP server with `automationhub_ldap_bind_password`. 
+| *`automationhub_ldap_bind_password`* | _Required_
 
-Use the empty string (the default) for an anonymous bind. 
-
-To authenticate a user, bind with that user’s DN and password, but for all other LDAP operations, the user is bound as the DN in this setting. 
-
-The default is '' (Empty string)
-| *`automationhub_ldap_bind_password`* | The password to use with `automationhub_ldap_bind_dn`.
-
-The default is '' (Empty string)
-| *`automationhub_ldap_group_search`* | An LDAPSearch object that finds all LDAP groups that users might belong to. 
+The password to use with `automationhub_ldap_bind_dn`.
+| *`automationhub_ldap_group_search_base_dn`* | An LDAPSearch object that finds all LDAP groups that users might belong to. 
 If your configuration makes any references to LDAP groups, this and `automationhub_ldap_group_type` must be set.
 
 The default is '`None`'
-| *`automatiohub_ldap_group-search_filter`* | _Optional_
+| *`automatiohub_ldap_group_search_filter`* | _Optional_
 
 Default = `'(objectClass=Group)'`
 | *`automationhub_ldap_group_search_scope`* | _Optional_
 
-Default = `'subtree'`
-| *`automationhub_ldap_group_type`* |An LDAPGroupType instance describing the type of group returned by `automationhub_ldap_group_search`.
+Default = `'SUBTREE'`
 | *`automationhub_ldap_group_type_class`* | _Optional_
 
 Default =`'django_auth_ldap.config:GroupOfNamesType'`
 | *`automationhub_ldap_server_uri`* | The URI of the LDAP server. 
-
-This can be any URI that is supported by your underlying LDAP libraries. 
-
-Can also be a callable that returns the URI. 
-
-The callable is passed a single positional argument: `request`.
-
-When `automationhub_ldap_server_uri` is set to a callable, it is passed a positional request argument. 
-
-Support for no arguments continues for backwards compatibility but will be removed in a future version.
 | *`automationhub_ldap_user_search_base_dn`* | An LDAPSearch object that locates a user in the directory. 
 The filter parameter should contain the placeholder %(user)s for the username. 
 It must return exactly one result for authentication to succeed.
-
-The default is `‘None’`
 | *`automationhub_ldap_user_search_filter`* |  _Optional_
 
-Default = `'subtree'`
+Default = `'SUBTREE'`
 | *`automationhub_ldap_user_search_scope`* |  _Optional_
 
 Default = `'(uid=%(user)s)'`
@@ -170,11 +152,11 @@ The default value is `'false'`.
 To upgrade, you must to run the `./setup.sh` script with this variable set to `true`.
 
 Default = `'false'`
-| *`generate_automationhub_token`* | If upgrading from {PlatformName} 2.0 or earlier, you must either:
+| *`generate_automationhub_token`* a| If upgrading from {PlatformName} 2.0 or earlier, you must either:
 
-- provide an existing {HubNameMain} token as `automationhub_api_token` or
+* provide an existing {HubNameMain} token as `automationhub_api_token` or
 
-- set `generate_automationhub_token` to `true` to generate a new token.
+* set `generate_automationhub_token` to `true` to generate a new token.
 Generating a new token will invalidate the existing token.
 | *`pulp_db_fields_key`* | Relative or absolute path to the Fernet symmetric encryption key one wants to import. 
 The path is on the Ansible management node. 
