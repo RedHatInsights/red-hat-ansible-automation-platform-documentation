@@ -1,0 +1,10 @@
+[id="ref-resource-management-pods-containers"]
+
+= Resource management for pods and containers
+
+When you specify a Pod, you can optionally specify how much of each resource a container needs. 
+The most common resources to specify are CPU and memory (RAM), although there are others.
+
+When you specify the resource request for containers in a Pod, the kubenetes-scheduler uses this information to allocate the node to place the Pod on. 
+When you specify a resource limit for a container, the kubelet enforces those limits so that the running container is not permitted to use more of that resource than the limit you set. 
+The kubelet also reserves at least the request amount of that system resource specifically for that container to use.

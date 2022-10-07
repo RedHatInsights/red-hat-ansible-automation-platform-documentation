@@ -8,19 +8,15 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= {AAPonAzureName} guide
+= {PlatformName} Performance Considerations for Operator Based Installations
 
-Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
+Deploying applications to a container orchestration platform such as {OCP} provides a number of advantages from an operational perspective. 
+For example, an update to the base image of an application can be consumed through a simple in-place upgrade with little to no disruption, while a change to the required operating system of an application deployed to traditional virtual machines can be a much more disruptive and risky upgrade process.
 
-This guide helps you to understand the installation and use of {AAPonAzureNameShort}. This document has been updated to include information for the latest release of {AAPonAzureNameShort}.
+However, while application and operator developers can provide many options to {OCCPShort} users regarding the deployment of the application, these configurations must be provided by the end user because they are dependent on the configuration of {OCPShort}. 
+For example, use of node labels in the Openshift cluster can help ensure different workloads are run on specific nodes. This type of configuration must be provided by the user as the {PlatformNameShort} Operator has no way of inferring this.
 
-include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
-include::aap-on-azure/assembly-aap-azure-intro.adoc[leveloffset=+1]
-include::aap-on-azure/assembly-aap-azure-install.adoc[leveloffset=+1]
-include::aap-on-azure/assembly-aap-azure-network-peering.adoc[leveloffset=+1]
-include::aap-on-azure/assembly-aap-azure-hub-spoke-peering.adoc[leveloffset=+2]
-include::aap-on-azure/assembly-aap-azure-vwan-peering.adoc[leveloffset=+2]
-include::aap-on-azure/assembly-aap-azure-direct-peering.adoc[leveloffset=+2]
-include::aap-on-azure/assembly-aap-azure-connecting-to-aap.adoc[leveloffset=+1]
- 
+include::platform/assembly-pod-spec-modifications.adoc[leveloffset=+1]
+

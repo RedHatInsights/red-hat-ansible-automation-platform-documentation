@@ -1,0 +1,14 @@
+[id="proc-customizing-pod-specs"]
+
+== Customizing the pod specification
+
+.Procedure
+. In the {ControllerName} UI, navigate to ???
+. In the *Pod Spec Override* field, specify the namespace by using the toggle to enable and expand the Pod Spec Override field.
+. Click btn:[Save].
+You can provide additional customizations, if required. 
+. Click btn:[Expand] to view the entire customization window.
+
+The image used at job launch time is determined by which execution environment is associated with the job. 
+If a Container Registry credential is associated with the execution environment, then the controller uses `ImagePullSecret` to pull the image. 
+If you prefer not to give the service account permission to manage secrets, you must pre-create the ImagePullSecret, specify it on the pod specification, and omit any credential from the execution environment used.

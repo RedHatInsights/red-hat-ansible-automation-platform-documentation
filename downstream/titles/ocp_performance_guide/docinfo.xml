@@ -1,7 +1,7 @@
-<title>Red Hat Ansible Automation Platform Automation on Clouds Guide</title>
+<title>Red Hat Ansible Automation Platform Performance Considerations for Operator Based Installations</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.1</productnumber>
-<subtitle>Install and configure Red Hat Ansible Automation Platform on Microsoft Azure</subtitle>
+<productnumber>2.3</productnumber>
+<subtitle>This guide provides recommendations on how to configure Automation Controller and Container Groups resource requests and other kubernetes configuration options to more efficiently run jobs at scale on operator based installations of Automation Controller.</subtitle>
 <abstract>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
     <para> If you have a suggestion to improve this documentation, or find an error, please contact technical support at <link xlink:href="https://access.redhat.com"></link> to create an issue on the <emphasis role="strong">Ansible Automation Platform</emphasis> Jira project using the <emphasis role="strong">Docs</emphasis> component.</para>

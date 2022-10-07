@@ -1,0 +1,97 @@
+[id="con-pod-specification-mods_{context}"]
+
+= Introduction
+
+The Kubernetes concept of a pod is one or more containers deployed together on one host, and the smallest compute unit that can be defined, deployed, and managed.
+
+Pods are the equivalent of a machine instance (physical or virtual) to a container. 
+Each pod is allocated its own internal IP address, therefore owning its entire port space, and containers within pods can share their local storage and networking.
+
+Pods have a life cycle. 
+They are defined, then they are assigned to run on a node, then they run until their container(s) exit or they are removed for some other reason. 
+Pods, depending on policy and exit code, may be removed after exiting, or may be retained to enable access to the logs of their containers.
+
+{PlatformName} provides a simple default Pod specification, however, you can provide a custom YAML, or JSON document that overrides the default Pod specification. 
+This field uses any custom fields, such as `ImagePullSecrets`, that can be “serialized” as valid Pod JSON or YAML. 
+A full list of options can be found in the link:https://docs.openshift.com/online/pro/architecture/core_concepts/pods_and_services.html[Openshift documentation].
+
+An example definition of a pod follows, that provides a long-running service. 
+It demonstrates many features of pods, most of which are discussed in other topics and thus only briefly mentioned here:
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations: { ... }					<1>
+  labels:                                
+    deployment: docker-registry-1
+    deploymentconfig: docker-registry
+    docker-registry: default
+  generateName: docker-registry-1-   			<2>    
+spec:
+  containers:     						<3>                       
+  - env:         						<4>                        
+    - name: OPENSHIFT_CA_DATA
+      value: ...
+    - name: OPENSHIFT_CERT_DATA
+      value: ...
+    - name: OPENSHIFT_INSECURE
+      value: "false"
+    - name: OPENSHIFT_KEY_DATA
+      value: ...
+    - name: OPENSHIFT_MASTER
+      value: https://master.example.com:8443
+    image: openshift/origin-docker-registry:v0.6.2 <5>
+    imagePullPolicy: IfNotPresent
+    name: registry
+    ports:   							<6>                           
+    - containerPort: 5000
+      protocol: TCP
+    resources: {}
+    securityContext: { ... }    				<7>        
+    volumeMounts:                       		<8>
+    - mountPath: /registry
+      name: registry-storage
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-br6yz
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  imagePullSecrets:
+  - name: default-dockercfg-at06w
+  restartPolicy: Always  					<9>               
+  serviceAccount: default					<10>               
+  volumes:    							<11>                          
+  - emptyDir: {}
+    name: registry-storage
+  - name: default-token-br6yz
+    secret:
+      secretName: default-token-br6yz
+----
+
+[cols="30%,70%",options="header"]
+|====
+| Label | Description
+| `annotations:` | Pods can be "tagged" with one or more labels, which can then be used to select and manage groups of pods in a single operation. 
+The labels are stored in key:value format in the metadata hash. 
+One label in this example is `docker-registry=default`.
+| `generateName:` | Pods must have a unique name within their namespace. 
+A pod definition can specify the basis of a name with the `generateName` attribute, and add random characters automatically to generate a unique name.
+| `containers:` | `containers` specifies an array of container definitions. In this case (as with most), just one.
+| `env:` | Environment variables can be specified to pass necessary values to each container.
+| `image:` | Each container in the pod is instantiated from its own Docker-formatted container image.
+| `ports:` |  The container can bind to ports made available on the pod’s IP.
+| `securityContext` | OpenShift Online defines a security context for containers that specifies whether they are permitted to run as privileged containers, run as a user of their choice, and more. 
+The default context is very restrictive but administrators can modify this as required.
+| `volumeMounts:` | The container specifies where external storage volumes should be mounted within the container. 
+In this case, there is a volume for storing the registry’s data, and one for access to credentials the registry needs for making requests against the OpenShift Online API.
+| `restartPolicy:` | The pod restart policy with possible values `Always`, `OnFailure`, and `Never`. 
+The default value is `Always`.
+| `serviceAccount:` | Pods making requests against the OpenShift Online API is a common enough pattern that there is a `serviceAccount` field for specifying which service account user the pod should authenticate as when making the requests. This enables fine-grained access control for custom infrastructure components.
+| `volumes:` | The pod defines storage volumes that are available to its container(s) to use. 
+In this case, it provides an ephemeral volume for the registry storage and a secret volume containing the service account credentials.
+|====
+
+The pod used to run jobs in a kubernetes-based cluster using {ControlerNameShort} can be modified by editing the pod specification in the {ControllerNameShort} UI.  
+The pod specification that is used to create the pod that runs the job is in YAML format. 
+For further information on editing the pod specifications, see link:proc-customizing-pod-specs[Customizing the pod specification].
