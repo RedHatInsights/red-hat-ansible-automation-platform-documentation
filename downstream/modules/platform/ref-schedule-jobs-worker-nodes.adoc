@@ -1,0 +1,21 @@
+[id="ref-schedule-jobs-worker-nodes"]
+
+= Scheduling jobs on the worker nodes
+
+In short, both controller and kubernetes play a role in scheduling a job.  
+
+When a job is launched, its dependencies are fulfilled, meaning any project updates or inventory updates are launched by Controller.s" settings respected, etc. 
+
+If the job is not blocked by other business logic in controller and there is control capacity in the control plane to start the job, the job is submitted to the dispatcher. 
+The default settings of the "cost" to control a job is 1 "capacity". 
+So a control pod with 100 capacity will be able to control up to 100 jobs at a time. 
+Given control capacity, the job transitions from _pending_ to _waiting_. 
+
+At this point, a background process in the control plan pod called the dispatcher starts a worker process to run the job.
+This communicates with the kubernetes API using a service account associated with the container group and uses the pod specification as defined on the Container Group in {ControllerName} to provision the pod. 
+At this point the job is shown as running in {ControllerName}.
+
+Kubernetes now schedules the pod. 
+If the pod stays in _pending_, it can stay there for `awx_container_group_pod_pending_timeout`. 
+If the pod is denied through a ResourceQuota, the job starts over at _pending_. 
+

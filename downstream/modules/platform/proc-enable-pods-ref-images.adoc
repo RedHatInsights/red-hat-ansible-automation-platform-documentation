@@ -4,12 +4,12 @@
 
 This section describes how to create image pull secrets.
 
-The .dockercfg file (or `$HOME/.docker/config.json`` for newer Docker clients) is a Docker credentials file that stores your information if you have previously logged into a secured or insecure registry.
+The .dockercfg file (or `$HOME/.docker/config.json` for newer Docker clients) is a Docker credentials file that stores your information if you have previously logged into a secured or insecure registry.
 
 .Procedure
 . To pull a secured container image that is not from the {OCP} internal registry, you must create a pull secret from your Docker credentials and add it to your service account.
 +
-If you already have a `.dockercfg`` file for the secured registry, you can create a secret from that file by running:
+If you already have a `.dockercfg` file for the secured registry, you can create a secret from that file by running:
 +
 [options="nowrap" subs="+quotes,attributes"]
 ----
@@ -19,7 +19,7 @@ $ oc create secret generic <pull_secret_name> \
 ----
 +
 Or if you have a `$HOME/.docker/config.json` file:
-
++
 [options="nowrap" subs="+quotes,attributes"]
 ----
 $ oc create secret generic <pull_secret_name> \ 

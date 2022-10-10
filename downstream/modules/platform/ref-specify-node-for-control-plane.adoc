@@ -1,0 +1,10 @@
+[id="ref-specify-node-for-control-plane"]
+
+= Specifying the node for control plane
+
+A kubernetes cluster runs on top of multiple Virtual Machines or nodes (generally anywhere between 2 and 20 nodes). 
+Pods can be scheduled on any of these nodes. 
+The `topology_spread_constraints` setting enables you to configure how new pods are distributed across the underlying nodes when scheduled or created.  Typically your pods should not be scheduled on a single node, because if that node fails, so does the services those pods are providing.
+
+Ansible also recommends that you specify that the control plane nodes be run on different nodes to the automation job pods. 
+This is a good practice because if the control plane pods share nodes with the job pods, the control plane can become resource starved and degrade service of the whole application.

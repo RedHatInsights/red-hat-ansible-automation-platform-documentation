@@ -1,0 +1,67 @@
+[id="ref-assign-pods-to-nodes"]
+
+= Assigning pods to specific nodes
+
+You can constrain the controller pods created by the operator to run on a certain subset of nodes.
+
+* `node_selector` and `postgres_selector` constrain the controller pods to run only on the nodes that match all the specified key, or value, pairs.
+* `tolerations` and `postgres_tolerations` enable the controller pods to be scheduled onto nodes with matching taints. 
+See Taints and Tolerations in the Kubernetes documentation for further details.
+
+This table shows the settings and fields that can be set on the {ControllerName}'s specification section of the YAML (or using the Openshift UI form).
+
+[cols="40%,40%,20%",options="header"]
+|====
+| Name | Description | Default
+| `postgres_image` | Path of the image to pull | postgres
+| `postgres_image_version` | Image version to pull | 13
+| `node_selector` | AWX pods’ nodeSelector | “”’’
+| `topology_spread_constraints` | AWX pods’ topologySpreadConstraints | “”’’
+| `tolerations` |  AWX pods’ tolerations | “”’’
+| `annotations` | AWX pods’ annotations | “”’’
+| `postgres_selector` | Postgres pods’ nodeSelector | “”’’
+| `postgres_tolerations`| Postgres pods’ tolerations | “”’’
+|====
+
+`topology_spread_constraints` can help optimize spreading your control plane pods across the compute nodes that match your node selector. 
+For example, with the `maxSkew` parameter of this option set to `100`, this means maximally spread across available nodes. 
+So if there are 3 matching compute nodes and 3 pods, 1 pod will be assigned to each compute node. 
+This helps prevent the control plane pods from competing for resources with each other.
+
+Example of a custom configuration for constraining controller pods to specific nodes:
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+spec:
+  ...
+  node_selector: |
+    disktype: ssd
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+  topology_spread_constraints: |
+    - maxSkew: 100
+      topologyKey: "topology.kubernetes.io/zone"
+      whenUnsatisfiable: "ScheduleAnyway"
+      labelSelector:
+        matchLabels:
+          app.kubernetes.io/name: "<resourcename>"
+  tolerations: |
+    - key: "dedicated"
+      operator: "Equal"
+      value: "AWX"
+      effect: "NoSchedule"
+  postgres_selector: |
+    disktype: ssd
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+  postgres_tolerations: |
+    - key: "dedicated"
+      operator: "Equal"
+      value: "AWX"
+      effect: "NoSchedule"
+----
+
+== Specify Nodes for Job Execution
+
+A node selector can be added to the container group pod specification to ensure they only run against certain nodes. 
+First add a label to the nodes you want to run jobs against. 

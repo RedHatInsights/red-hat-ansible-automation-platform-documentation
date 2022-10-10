@@ -1,0 +1,12 @@
+ifdef::context[:parent-context: {context}]
+
+:context: performance-considerations
+
+[id="assembly-control-plane-adjustments"]
+= Control plane adjustments
+
+The control plane refers to the {ControllerName} pods which contain the web and task containers that, among other things, provide the user interface and handle the scheduling and launching of jobs.  
+On the {ControllerName} custom Rresource, the number of “replicas” determines the number of {ControllerName} pods in the {ControllerName} deployment.
+
+include::platform/ref-set-requests-limits-for-containers.adoc[leveloffset=+1]
+include::platform/ref-container-resource-requirements.adoc[leveloffset=+1]

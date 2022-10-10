@@ -1,0 +1,14 @@
+ifdef::context[:parent-context: {context}]
+
+:context: performance-considerations
+
+[id="assembly-specify-dedicted-nodes"]
+= Specifying dedicated nodes
+
+Ansible recommends that you have the Controller control plane pods (web, task, redis, postgres) run on a different kubernetes node to the node or nodes that the jobs are run on. 
+
+include::platform/ref-specify-node-for-control-plane.adoc[leveloffset=+1]
+include::platform/ref-assign-pods-to-nodes.adoc[leveloffset=+1]
+include::platform/proc-specify-nodes-job-execution.adoc[leveloffset=+1]
+include::platform/proc-set-custom-pod-timeout.adoc[leveloffset=+1]
+include::platform/ref-schedule-jobs-worker-nodes.adoc[leveloffset=+1]
