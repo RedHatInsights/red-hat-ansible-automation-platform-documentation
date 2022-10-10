@@ -2,8 +2,6 @@
 
 == Enabling pods to reference images from other secured registries
 
-This section describes how to create image pull secrets.
-
 The .dockercfg file (or `$HOME/.docker/config.json` for newer Docker clients) is a Docker credentials file that stores your information if you have previously logged into a secured or insecure registry.
 
 .Procedure

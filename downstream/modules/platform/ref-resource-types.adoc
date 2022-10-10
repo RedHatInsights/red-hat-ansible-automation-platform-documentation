@@ -9,7 +9,7 @@ Memory is specified in units of bytes.
 
 CPU and memory are collectively referred to as compute resources, or resources. 
 Compute resources are measurable quantities that can be requested, allocated, and consumed. 
-They are distinct from API resources. API resources, such as Pods and Services are objects that can be read and modified through the Kubernetes API server.
+They are distinct from API resources. API resources, such as Pods and Service, are objects that can be read and modified through the Kubernetes API server.
 
 == Resource requests and limits of Pod and container
 For each container, you can specify resource limits and requests, including the following:

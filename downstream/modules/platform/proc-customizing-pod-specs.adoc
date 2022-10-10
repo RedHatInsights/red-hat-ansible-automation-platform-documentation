@@ -2,6 +2,8 @@
 
 == Customizing the pod specification
 
+You can use the following procedure to customize the pod. 
+
 .Procedure
 . In the {ControllerName} UI, navigate to ???
 . In the *Pod Spec Override* field, specify the namespace by using the toggle to enable and expand the Pod Spec Override field.

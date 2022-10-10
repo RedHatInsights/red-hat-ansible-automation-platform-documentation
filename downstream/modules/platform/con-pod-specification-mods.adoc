@@ -15,8 +15,8 @@ Pods, depending on policy and exit code, may be removed after exiting, or may be
 This field uses any custom fields, such as `ImagePullSecrets`, that can be “serialized” as valid Pod JSON or YAML. 
 A full list of options can be found in the link:https://docs.openshift.com/online/pro/architecture/core_concepts/pods_and_services.html[Openshift documentation].
 
-An example definition of a pod follows, that provides a long-running service. 
-It demonstrates many features of pods, most of which are discussed in other topics and thus only briefly mentioned here:
+.Example of a pod that provides a long-running service. 
+This example demonstrates many features of pods, most of which are discussed in other topics and thus only briefly mentioned here:
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
@@ -92,6 +92,6 @@ The default value is `Always`.
 In this case, it provides an ephemeral volume for the registry storage and a secret volume containing the service account credentials.
 |====
 
-The pod used to run jobs in a kubernetes-based cluster using {ControlerNameShort} can be modified by editing the pod specification in the {ControllerNameShort} UI.  
+You can  modify the pod used to run jobs in a kubernetes-based cluster using {ControlerNameShort} by editing the pod specification in the {ControllerNameShort} UI.  
 The pod specification that is used to create the pod that runs the job is in YAML format. 
 For further information on editing the pod specifications, see link:proc-customizing-pod-specs[Customizing the pod specification].
