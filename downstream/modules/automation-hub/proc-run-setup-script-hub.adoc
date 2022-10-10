@@ -1,0 +1,14 @@
+[id="run-setup-script-hub"]
+
+= Running the setup script
+
+You can run the setup script once you finish updated the `inventory` file with required parameters for installing your Private Automation Hub.
+
+. Run the `setup.sh` script
++
+-----
+$ ./setup.sh
+-----
+
+The installation will begin.
+

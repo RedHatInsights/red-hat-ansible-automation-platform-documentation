@@ -1,0 +1,40 @@
+[id="ref-variables-connect-hub-existing-sso"]
+= Inventory file variables for connecting {HubName} to an existing {RHSSO} instance
+
+To connect {HubName} to an existing {RHSSO} installation that is managed by {PlatformNameShort}, you must configure variables in the `inventory` file.
+
+The following variables can be configured for both {PlatformNameShort} managed and external {RHSSO}:
+
+[cols="50%,50%",options="header"]
+|====
+| *Variable* | *Required or optional*
+| *`sso_console_admin_password`* | Required
+| *`sso_console_admin_username`* | Optional
+| *`sso_use_https`* | Optional
+| *`sso_redirect_host`* | Optional
+| *`sso_ssl_validate_certs`* | Optional
+| *`sso_automation_platform_realm`* | Optional
+| *`sso_automation_platform_realm_displayname`* | Optional
+| *`sso_automation_platform_login_theme`* | Optional
+| *`automationhub_main_url`* | Required if you need to specify the main {HubName} URL that clients connect to, for example if you have multiple hub instances or a load balancer.
+|====
+
+The following variables can be configured for {PlatformNameShort} managed {RHSSO} only:
+
+[cols="50%,50%",options="header"]
+|====
+| *Variable* | *Required or optional*
+| *`sso_keystore_password`* | Required only if `sso_use_https` = `true`
+| *`sso_custom_keystore_file`* | Optional
+| *`sso_keystore_file_remote`* | Optional
+| *`sso_keystore_name`* | Optional
+|====
+
+The following variables can be configured for external {RHSSO} only:
+
+[cols="50%,50%",options="header"]
+|====
+| *Variable* | *Description*
+| *`sso_host`* | Required
+// | *`sso_http_port or sso_https_port`* | Optional
+|====

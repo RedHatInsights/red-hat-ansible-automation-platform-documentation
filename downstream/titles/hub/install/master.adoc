@@ -1,6 +1,10 @@
-= Installing and upgrading Private Automation Hub
 :imagesdir: images
 :numbered:
+:toclevels: 1
+:experimental:
+include::attributes/attributes.adoc[]
+
+= Installing and upgrading Private Automation Hub
 
 You can install Private Automation Hub or upgrade to a new version on a Red Hat Enterprise Linux 7 or 8 virtual or physical machine with a valid Red Hat Ansible Automation Platform subscription.
 
@@ -140,6 +144,9 @@ automationhub_pg_sslmode='prefer'
 # automationhub_ssl_cert=/path/to/automationhub.cert
 # automationhub_ssl_key=/path/to/automationhub.key
 -----
+
+include::hub/assembly-hub-connect-existing-sso.adoc[leveloffset=+2]
+include::hub/assembly-hub-install-setup-script.adoc[leveloffset=+1]
 
 == Running the setup script
 
