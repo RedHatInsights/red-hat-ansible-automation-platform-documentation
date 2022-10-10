@@ -22,8 +22,8 @@ sso_use_https
 | `sso_host` | IP or routable hostname for SSO.
 | `sso_console_admin_username` | The default value is `admin`.
 | `sso_console_admin_password` | 
-| `sso_http_port or sso_https_port | The default values are `8080` for `http` and `8443` for https.
 | `sso_use_https` | The defaut value is `true` .
+| `sso_http_port` or `sso_https_port` | The default values are `8080` for `http` and `8443` for `https`.
 |====
 
 . Run the installer setup script to begin the installation:
