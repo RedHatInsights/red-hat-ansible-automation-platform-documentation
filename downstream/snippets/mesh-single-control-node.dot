@@ -1,0 +1,16 @@
+# mesh-single-control-node.png
+strict digraph "" {
+    rankdir=TB
+    node [shape=box];
+    
+    subgraph cluster_0 {
+        graph [label="Control nodes", type =solid];
+        {
+            rank=same;
+            "aap_c_1";
+        }
+
+  }
+  "aap_c_1" -> "aap_e_1";
+  "aap_e_1";
+}

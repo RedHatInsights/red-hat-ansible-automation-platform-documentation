@@ -6,9 +6,9 @@
 
 
 [role="_abstract"]
-This example inventory file deploys a control plane consisting of three nodes and an execution topology that utilizes hope nodes.
+This example inventory file deploys a control plane consisting of three nodes and an execution topology that utilizes hop nodes.
 
-
+[source,yaml]
 -----
 [automationcontroller]
 control-plane-1.example.com

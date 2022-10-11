@@ -7,18 +7,24 @@ ifdef::context[:parent-context: {context}]
 :context: design-patterns
 
 [role="_abstract"]
-The automation mesh topologies in this section provide examples you can use to design a mesh deployment in your environment. Examples range from a single, hydrid node deployment to a complex pattern that deploys numerous {ControllerName} instances, employing several execution and hop nodes.
+The automation mesh topologies in this section provide examples you can use to design a mesh deployment in your environment. Examples range from a simple, hydrid node deployment to a complex pattern that deploys numerous {ControllerName} instances, employing several execution and hop nodes.
 
 .Prerequisites
 * You reviewed conceptual information on node types and relationsips
 
-include::platform/ref-single-hybrid-node-only.adoc[leveloffset=2]
+[NOTE]
+====
+The following examples include images that illustrate the mesh topology.
+The arrows in the images indicate the direction of peering.
+After peering is established, the connection between the nodes allows bidirectional communication.
+====
+
+
 include::platform/ref-multiple-hybrid-nodes.adoc[leveloffset=2]
 include::platform/ref-single-node-control-plane-single-execution-node.adoc[leveloffset=2]
-include::platform/ref-control-plane-execution-nodes-fully-connected.adoc[leveloffset=2]
-include::platform/ref-control-plane-with-single-egress.adoc[leveloffset=2]
-include::platform/ref-control-plane-execution-topo-hop-nodes.adoc[leveloffset=2]
-include::platform/ref-complex-mesh-topology.adoc[leveloffset=2]
+include::platform/ref-mesh-minimum-resilient-config.adoc[leveloffset=2]
+include::platform/ref-mesh-segregated-execution_nodes.adoc[leveloffset=2]
+include::platform/ref-mesh-multi-hop-execution.adoc[leveloffset=2]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
