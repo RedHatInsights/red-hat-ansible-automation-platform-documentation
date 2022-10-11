@@ -38,7 +38,7 @@ You can proceed with configuring the instance using either the Form View or YAML
 
 
 include::platform/proc-creating-controller-form-view.adoc[leveloffset=+2]
-include::platform/proc-configuring-the-controller-image-pull-policy.adoc[leveloffset=+2]
+include::platform/proc-configuring-controller-image-pull-policy.adoc[leveloffset=+2]
 include::platform/proc-configuring-controller-ldap-security.adoc[leveloffset=+2]
 include::platform/proc-configuring-controller-route-options.adoc[leveloffset=+2]
 include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
