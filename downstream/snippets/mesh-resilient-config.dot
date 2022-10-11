@@ -1,0 +1,23 @@
+# mesh-resilient-config.png
+strict digraph "" {
+    nodesep=0.5
+    rankdir=TB
+    node [shape=box];
+    
+    subgraph cluster_0 {
+        graph [label="Control nodes", type =solid];
+        {
+            rank=same;
+            "aap_c_1";
+            "aap_c_2";
+        }
+
+  }
+  "aap_e_1";
+  "aap_e_2";
+  "aap_c_1" -> "aap_c_2"[dir=both];
+  "aap_c_1" -> "aap_e_1";
+  "aap_c_1" -> "aap_e_2";
+  "aap_c_2" -> "aap_e_1";
+  "aap_c_2" -> "aap_e_2";
+}

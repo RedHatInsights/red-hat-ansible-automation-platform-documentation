@@ -1,0 +1,75 @@
+[id="mesh-multi-hop-execution"]
+
+= Multi-hopped execution node
+
+[role="_abstract"]
+
+In this configuration, resilient controller nodes are peered with resilient local execution nodes.
+Resilient local hop nodes are peered with the controller nodes.
+A remote execution node and a remote hop node are peered with the local hop nodes.
+
+You can use this setup if you need to run automation in a DMZ network from a remote network.
+
+
+[source,yaml]
+-----
+[automationcontroller]
+aap_c_1.example.com
+aap_c_2.example.com
+aap_c_3.example.com
+
+[automationcontroller:vars]
+node_type=control
+peers=instance_group_local
+
+[execution_nodes]
+aap_e_1.example.com
+aap_e_2.example.com
+aap_e_3.example.com
+aap_e_4.example.com
+aap_h_1.example.com node_type=hop
+aap_h_2.example.com node_type=hop
+aap_h_3.example.com node_type=hop
+
+[instance_group_local]
+aap_e_1.example.com
+aap_e_2.example.com
+
+[instance_group_remote]
+aap_e_3.example.com
+
+[instance_group_remote:vars]
+peers=local_hop
+
+[instance_group_multi_hop_remote]
+aap_e_4.example.com
+
+[instance_group_multi_hop_remote:vars]
+peers=remote_multi_hop
+
+[local_hop]
+aap_h_1.example.com
+aap_h_2.example.com
+
+[local_hop:vars]
+peers=automationcontroller
+
+[remote_multi_hop]
+aap_h_3 peers=local_hop
+
+-----
+
+
+The following image displays the topology of this mesh network.
+
+//dotfile for image: /downloads/snippets/mesh-multi-hop.dot
+image::mesh-multi-hop.png["The topology map of the configuration consists of an automation controller group, a local execution group, a hop node group, and a remote execution node group. The automation controller group consists of three control nodes: aap_c_1, aap_c_2, and aap_c_3. The local execution nodes are aap_e_1 and aap_e_2. Every control node is peered to every local execution node. The hop node group contains two hop nodes, aap_h_1 and aap_h_2. It is peered to the controller group. The remote execution node group contains one execution node, aap_e_3. It is peered to the hop node group. A remote hop node group, consisting of node aap_h_3, is peered with the local hop node group. An execution node, aap_e_4, is peered with the remote hop group"]
+
+The `[automationcontroller:vars]` stanza sets the node types for all nodes in the control plane and defines how the control nodes peer to the local execution nodes:
+
+* All nodes in the control plane are automatically peered to one another.
+* All nodes in the control plane are peered with all local execution nodes.
+
+The `[local_hop:vars]` stanza peers all nodes in the `[local_hop]` group with all the control nodes.
+
+If the name of a group of nodes begins with `instance_group_`, the installer recognises it as an instance group and adds it to the {PlatformNameShort} user interface.
