@@ -9,13 +9,8 @@
 | *`automationcontroller_main_url`* | For an alternative front end URL needed for SSO configuration with {CatalogName}, provide the URL.
 
 {CatalogNameStart} requires either Controller to be installed with {ControllerName}, or a URL to an active and routable Controller server must be provided with this variable
-| *`automationcontroller_password`* | TBD
-| *`automationcontroller_username`* | TBD
-| *`controller_base_url`* | TBD
-| *`enable_insights_collection`* | The default install will register the node to the {InsightsName} Service if the node is registered with Subscription Manager. 
-Set to `False` to disable.
-
-Default = `‘true’`
+| *`automationcontroller_password`* | Password for your {ControllerName} instance.
+| *`automationcontroller_username`* | Username for your {ControllerName} instance.
 | *`node_state`* | _Optional_
 
 The status of a node or group of nodes. 
@@ -73,34 +68,27 @@ The default is `‘prefer’`.
 | *`pg_username`* | Your postgres database username.
 
 The default is `‘awx’`.
+| *`postgres_ssl_cert`* | location of postgres ssl certificate.
+
+`'/path/to/pgsql_ssl.cert'`
+| *`postgres_ssl_key* | location of postgres ssl key.
+
+`'/path/to/pgsql_ssl.key'`
 | *`postgres_use_cert`* | Location of postgres user certificate. 
 
 `'/path/to/pgsql.crt'`
 | *`postgres_use_key`* | Location of postgres user key. 
 
 `'/path/to/pgsql.key'`
-| *`postgres_use_ssl`* | TBD
-| *`receptor_listener_port`* | TBD
-| *`sso_console_admin_password`* | TBD
-| *`sso_console_keystore_file`* | Keystore file to install in SSO node.
+| *`postgres_use_ssl`* | If postgres is to use SSL.
+| *`receptor_listener_port`* | Port to use for recptor connection.
 
-`'/path/to/sso.jks'`
-| *`sso_host`* | {CatalogNameStart} requires SSO and SSO admin credentials for
-authentication. 
-SSO administration credentials are also required to set Catalog specific
-roles needed for the application. 
-
-If SSO is not provided in the inventory for
-configuration, then the SSO host needs to be defined with this variable.
-| *`sso_keystore_password`* | A keystore password is required for https enabled SSO.
-
-The default install deploys SSO with `sso_use_https=True`
-| *`sso_use_https`* | TBD
+The default is 27199.
 | *`web_server_ssl_cert`* |  _Optional_ 
 
 /path/to/webserver.cert
 
-Same as 'automationhub_server_ssl_cert' but for web server UI and API.
+Same as 'automationhub_ssl_cert' but for web server UI and API.
 | *`web_server_ssl_key`* |  _Optional_
 
 /path/to/webserver.key

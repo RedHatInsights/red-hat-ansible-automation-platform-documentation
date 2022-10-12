@@ -12,7 +12,7 @@
 
 * set `generate_automationhub_token` to `true` to generate a new token
 
-Generating a new token will invalidate the existing token.
+Generating a new token invalidates the existing token.
 | *`automationhub_authentication_backend`* a| This variable is not set by default. 
 Set it to `ldap`` to use LDAP authentication. 
 
@@ -29,7 +29,7 @@ When this is set to `‘ldap’`, the following variables must also be set:
 Setting this parameter to `true` signs them by default.
 
 The default is `false`.
-| *`automationhub_backup_collections`* | Optional
+| *`automationhub_backup_collections`* | _Optional_
 
 {HubNameMain} provides artifacts in `/var/lib/pulp`. 
 {ControllerName} automatically backs up the artifacts by default. 
