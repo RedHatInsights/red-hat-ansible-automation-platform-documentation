@@ -1,0 +1,16 @@
+[id="operator-upgrade{context}"]
+
+= Upgrading the {OperatorPlatform}
+
+
+[role=_abstract]
+
+To upgrade to the latest version of {OperatorPlatform} on {OCPShort}, do the following:
+
+.Prodedure
+. Log in to {OCPShort}.
+. Navigate to menu:Operators[Installed Operators].
+. Select the *Subscriptions* tab.
+. Under *Upgrade status*, click btn:[Upgrade Available].
+. Click btn:[Preview InstallPlan].
+. Click btn:[Approve].
