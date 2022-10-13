@@ -29,7 +29,11 @@ $ cd ansible-automation-platform-setup-<latest-version>
 . Modify the `inventory` file to provision new nodes, deprovision nodes or groups, and import or generate {HubName} API tokens.
 +
 You can use the same `inventory` file from an existing {PlatformNameShort} 2.1 installation if there are no changes to the environment.
-
++
+[NOTE]
+====
+{HubNameStart} requirements are not automatically updated by default. If you want {HubName} requirements to be updated during the upgrade, set `automationhub_upgrade=true` in your inventory file.
+====
 
 .Provisioning new nodes in a cluster
 
