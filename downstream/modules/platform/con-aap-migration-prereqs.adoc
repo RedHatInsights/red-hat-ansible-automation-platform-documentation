@@ -1,9 +1,10 @@
 [id="aap-migration-prereqs"]
 
 = Prerequisites
-To migrate {PlatformNameShort} deployment to {OperatorPlatform}, you must have the following:
 
 [role="_abstract"]
+
+To migrate {PlatformNameShort} deployment to {OperatorPlatform}, you must have the following:
 
 * Secret key secret
 * Postgresql configuration

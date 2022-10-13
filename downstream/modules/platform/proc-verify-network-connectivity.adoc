@@ -41,7 +41,7 @@ oc get pods
 -----
 oc rsh dbchecker
 -----
-. Once the shell session opens in the pod, verify that the new project can connect to your old project cluster:
+. After the shell session opens in the pod, verify that the new project can connect to your old project cluster:
 +
 -----
 pg_isready -h <old-host-address> -p <old-port-number> -U awx

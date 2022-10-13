@@ -4,4 +4,4 @@
 
 [role=_abstract]
 
-Once you have set your secret key, postgresql credentials, verified network connectivity and installed the {OperatorPlatform}, you can migrate your data by creating a custom resource controller object.
+After you have set your secret key, postgresql credentials, verified network connectivity and installed the {OperatorPlatform}, you must create a custom resource controller object before you can migrate your data.

@@ -4,13 +4,13 @@
 
 [role=_abstract]
 
-Once your data migration is complete, you need to delete any InstanceGroups that are no longer required.
+After your data migration is complete, you must delete any InstanceGroups that are no longer required.
 
 .Procedure
 . Log in to {PlatformName} as the administrator with the password you created during migration.
 [NOTE]
 ====
-Note: If you did not create an administrator password during migration, one was automatically created for you. To locate this password, go to your project, select menu:Workloads[Secrets] and open controller-admin-password. From there you can copy the password and paste it into the {PlatformName} password field. 
+Note: If you did not create an administrator password during migration, one was automatically created for you. To locate this password, go to your project, select menu:Workloads[Secrets] and open controller-admin-password. From there you can copy the password and paste it into the {PlatformName} password field.
 ====
 . Select menu:Administration[InstanceGroups].
 . Select all InstanceGroups except controlplane and default.
