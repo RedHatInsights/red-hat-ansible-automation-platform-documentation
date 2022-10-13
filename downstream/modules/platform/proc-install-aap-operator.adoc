@@ -7,7 +7,7 @@
 . Select an *Update Channel*:
 +
 * *stable-2.x*: deploys only one {HubName} or {ControllerName} instance and is suitable for most cases. The stable-2.x channel does not require administrator privileges and utilizes fewer resources because it only monitors a single namespace.
-* *stable-2.x-cluster-scoped*: deploys {HubName} and {ControllerName} across multiple namespaces in the cluster and requires administrator privileges for all namespaces in the cluster.
+* *stable-2.x-cluster-scoped*: limits deployments of {HubName} and {ControllerName} instances to a single namespace and is suitable for most cases. The stable-2.x channel does not require administrator privileges and utilizes fewer resources because it only monitors a single namespace.
 . Select *Installation Mode*, *Installed Namespace*, and *Approval Strategy*.
 . Click *Install*.
 
