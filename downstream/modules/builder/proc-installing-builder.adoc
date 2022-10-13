@@ -19,3 +19,5 @@ $ dnf config-manager --enable ansible-automation-platform-2.1-for-rhel-8-x86_64-
 ----
 $ dnf install ansible-builder
 ----
++
+. Verify your install.
