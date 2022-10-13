@@ -4,7 +4,12 @@
 
 You can access the {HubName} interface once all pods have successfully launched.
 
-. Navigate to *Networking* -> *Routes*.
+. Navigate to menu:Networking[Routes].
 . Under *Location*, click on the URL for your {HubName} instance.
 
-The {HubName} user interface will launch, You can sign in with the admin credentials specified during the operator configuration process.
+The {HubName} user interface launches where you can sign in with the administrator credentials specified during the operator configuration process.
+
+[NOTE]
+====
+If you did not specify an administrator password during configuration, one was automatically created for you. To locate this password, go to your project, select menu:Workloads[Secrets] and open controller-admin-password. From there you can copy the password and paste it into the {HubNameStart} password field.
+====
