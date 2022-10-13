@@ -7,14 +7,15 @@ Before migrating your data from {PlatformNameShort} 2.x or earlier, you must bac
 . Log in to your current deployment project.
 . Run setup.sh to create a backup of your current data/deployment:
 +
-For on prem deployments:
+For on-prem deployments of version 2.x or earlier:
 +
 -----
 $ ./setup.sh -b
 -----
 +
-For OpenShift deployments:
+For OpenShift deployments prior to version 2.0 (non-operator deployments):
 +
 -----
 ./setup_openshift.sh -b
 -----
+//reminder - add a cross reference statement to new Backup and Restore doc once published. "For Openshift Operator installations for version 2.0 and later, refer to"
