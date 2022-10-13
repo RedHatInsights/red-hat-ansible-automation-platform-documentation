@@ -13,7 +13,7 @@ The name specified for the new AutomationHub custom resource must not match an e
 .Prerequisites
 
 * You must be authenticated with an Openshift cluster.
-* The {ControllerName} has been deployed to the cluster.
+* The {HubName} has been deployed to the cluster.
 * An AutomationHubBackup is available on a PVC in your cluster.
 
 .Procedure

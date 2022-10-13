@@ -8,8 +8,8 @@ Use this procedure to back up a deployment of the controller, including jobs, in
 .Prerequisites
 
 * You must be authenticated with an Openshift cluster.
-* The {OperatorPlatform} has been deployed to the cluster.
-* The {PlatformName} is deployed to using the operator.
+* The {OperatorPlatform} has been installed to the cluster.
+* The {ControllerName} is deployed to using the {OperatorPlatform}.
 
 .Procedure
 . Log in to *{OCP}*.
@@ -19,7 +19,7 @@ Use this procedure to back up a deployment of the controller, including jobs, in
 . Click btn:[Create AutomationControllerBackup].
 . Enter a *Name* for the backup.
 . Enter the *Deployment name* for the deployment being backed up.
-. If you want to use a customer, pre-created pvc:
+. If you want to use a custom, pre-created pvc:
 .. Optionally enter the name of the *Backup persistant volume claim*.
 .. Optionally enter the *Backup PVC storage requirements*, and *Backup PVC storage class*.
 +
@@ -28,7 +28,7 @@ Use this procedure to back up a deployment of the controller, including jobs, in
 If no pvc or storage class is provided, the cluster's default storage class is used to create the pvc.
 ====
 +
-.. If you have a large database, specify higher storage requests under *Backup management pod resource requirements*.
+.. If you have a large database, specify your storage requests accordingly under *Backup management pod resource requirements*.
 +
 [NOTE]
 ====
@@ -39,4 +39,4 @@ $ df -h | grep "/var/lib/pgsql/data"
 ====
 . Click btn:[Create].
 +
-A backup tar file of the specified deployment is created and available for data recovery or deployment rollback. Future backups are stored in separate tar files on the same pvc.
+A backup tarball of the specified deployment is created and available for data recovery or deployment rollback. Future backups are stored in separate tar files on the same pvc.

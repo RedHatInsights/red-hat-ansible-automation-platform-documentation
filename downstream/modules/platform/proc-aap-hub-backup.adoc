@@ -8,8 +8,8 @@ Use this procedure to back up a deployment of the hub, including all hosted Ansi
 .Prerequisites
 
 * You must be authenticated with an Openshift cluster.
-* The {OperatorPlatform} has been deployed to the cluster.
-* The {PlatformName} is deployed to using the operator.
+* The {OperatorPlatform} has been installed to the cluster.
+* The {HubName} is deployed to using the {OperatorPlatform}.
 
 .Procedure
 . Log in to *{OCP}*.
@@ -19,7 +19,7 @@ Use this procedure to back up a deployment of the hub, including all hosted Ansi
 . Click btn:[Create AutomationHubBackup].
 . Enter a *Name* for the backup.
 . Enter the *Deployment name* for the deployment being backed up.
-. If you want to use a customer, pre-created pvc:
+. If you want to use a custom, pre-created pvc:
 .. Optionally, enter the name of the *Backup persistent volume claim*, *Backup persistent volume claim namespace*, *Backup PVC storage requirements*, and *Backup PVC storage class*.
 . Click btn:[Create].
 +
