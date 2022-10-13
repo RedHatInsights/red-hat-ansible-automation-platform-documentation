@@ -1,0 +1,7 @@
+[id="aap-migration-considerations"]
+
+= Migration considerations
+
+
+[role="_abstract"]
+If you are upgrading from {PlatformNameShort} 1.2 on {OCPShort} 3 to {PlatformNameShort} 2.x on {OCPShort} 4, you must provision a fresh {OCPShort} version 4 cluster and then migrate the {PlatformNameShort} to the new cluster. 

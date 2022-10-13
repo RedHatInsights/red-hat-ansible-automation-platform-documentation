@@ -1,0 +1,17 @@
+[id="aap-create_hub"]
+
+= Creating an AutomationHub object
+
+[role=_abstract]
+
+Use the following steps to create an AutomationHub custom resource object.
+
+.Procedure
+. Log in to *{OCP}*.
+. Navigate to menu:Operators[Installed Operators].
+. Select the {OperatorPlatform} installed on your project namespace.
+. Select the *Automation Hub* tab.
+. Click btn:[Create AutomationHub].
+. Enter a name for the new deployment.
+. In *Advanced configurations*, select your xref::create-secret-key-secret_{context}[secret key secret] and xref::create-postresql-secret_{context}[postgres configuration secret].
+. Click btn:[Create].

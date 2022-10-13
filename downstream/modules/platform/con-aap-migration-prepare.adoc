@@ -1,0 +1,12 @@
+[id="aap-migration-prepare"]
+
+= Preparing for migration
+
+[role="_abstract"]
+
+Before migrating your current {PlatformNameShort} deployment to {OperatorPlatform}, you need to back up your existing data, create k8s secrets for your secret key and postgresql configuration.
+
+[NOTE]
+====
+If you are migrating both {ControllerName} and {HubName} instances, repeat the steps in xref:create-secret-key-secret_{context}[Creating a secret key secret] and xref:create-postresql-secret_{context}[Creating a postgresql configuration secret] for both and then proceed to xref:aap-migration_{context}[Migrating data to the {PlatformNameShort} Operator].
+====

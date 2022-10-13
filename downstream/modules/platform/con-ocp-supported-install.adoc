@@ -9,7 +9,7 @@ Alternatively, you can install {OperatorPlatform} from the {OCPShort} command-li
 
 Follow one of the workflows below to install the {OperatorPlatform} and use it to install the components of {PlatformNameShort} that you require.
 
-* {ControllerNameStart} and customer resources first, then {HubName} and customer resources;
-* {HubNameStart} and customer resources first, then {ControllerName} and customer resources;
-* {ControllerNameStart} and customer resources;
-* {HubNameStart} and custom resources.
+* {ControllerNameStart} custom resources first, then {HubName} custom resources;
+* {HubNameStart} custom resources first, then {ControllerName} custom resources;
+* {ControllerNameStart} custom resources;
+* {HubNameStart} custom resources.
