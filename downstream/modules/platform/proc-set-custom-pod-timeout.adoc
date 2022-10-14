@@ -1,11 +1,11 @@
 [id="proc-set-custom-pod-timeout"]
 
-= Set a custom pod timeout
+= Custom pod timeouts
 
-You can set `awx_container_group_pod_pending_timeout` higher if long running jobs are being killed. 
+You can set `awx_container_group_pod_pending_timeout` higher if long running jobs are being canceled. 
 This can be done using `extra_settings` on the {ControllerName} specification 
 
-With extra_settings, you can pass multiple custom settings using the awx-operator. 
+With `extra_settings`, you can pass multiple custom settings using the awx-operator. 
 The parameter extra_settings is appended to `/etc/tower/settings.py` and can be an alternative to the `extra_volumes` parameter.
 
 [cols="20%,20%,20%",options="header"]
@@ -14,7 +14,8 @@ The parameter extra_settings is appended to `/etc/tower/settings.py` and can be 
 | `extra_settings` | Extra settings | ‘’
 |====
 
-Example configuration of extra_settings parameter
+.Example configuration of `extra_settings` parameter
+
 [options="nowrap" subs="+quotes,attributes"]
 ----
  spec:

@@ -1,10 +1,10 @@
 [id="ref-schedule-jobs-worker-nodes"]
 
-= Scheduling jobs on the worker nodes
+= Jobs scheduled on the worker nodes
 
-In short, both controller and kubernetes play a role in scheduling a job.  
+Both controller and kubernetes play a role in scheduling a job.  
 
-When a job is launched, its dependencies are fulfilled, meaning any project updates or inventory updates are launched by Controller.s" settings respected, etc. 
+When a job is launched, its dependencies are fulfilled, meaning any project updates or inventory updates are launched by Controller.s" settings respected. 
 
 If the job is not blocked by other business logic in controller and there is control capacity in the control plane to start the job, the job is submitted to the dispatcher. 
 The default settings of the "cost" to control a job is 1 "capacity". 

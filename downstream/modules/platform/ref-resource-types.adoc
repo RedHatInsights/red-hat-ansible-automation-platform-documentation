@@ -34,8 +34,7 @@ In Kubernetes, 1 CPU unit is equivalent to 1 physical processor core, or 1 virtu
 
 Fractional requests are allowed. 
 When you define a container with `spec.containers[].resources.requests.cpu` set to `0.5`, you are requesting half as much CPU time compared to if you asked for 1.0 CPU. 
-For CPU resource units, the quantity expression 0.1 is equivalent to the expression 100m, which can be read as one hundred millicpu. 
-Alternatively it could be one hundred millicores. 
+For CPU resource units, the quantity expression 0.1 is equivalent to the expression 100m, which can be read as one hundred millicpu or one hundred millicores. 
 This is understood to mean the same thing.
 CPU resource is always specified as an absolute amount of resource, never as a relative amount. 
 For example, 500m CPU represents the roughly same amount of computing power whether that container runs on a single-core, dual-core, or 48-core machine.
@@ -57,8 +56,7 @@ For example, the following represent roughly the same value:
 ----
 
 Pay attention to the case of the suffixes. 
-If you request 400m of memory, this is a request for 0.4 bytes. 
-Someone who types that probably meant to ask for 400 mebibytes (400Mi) or 400 megabytes (400M).
+If you request 400m of memory, this is a request for 0.4 bytes, not 400 mebibytes (400Mi) or 400 megabytes (400M).
 
 For example, given the resources specified below, the cluster has enough free resources to schedule a task pod with a dedicated 100m CPU and 250Mi, and that cluster can also withstand bursts over that dedicated usage up to 2000m CPU and 2Gi memory.  
 
@@ -79,17 +77,17 @@ If the task pod does use more resources than the limit set, the container is OOM
 
 === Resource Requests
 
-All jobs that use a container group use the same Pod Specification. The Pod Specification includes the resource requests for the pod that runs the job. 
+All jobs that use a container group use the same Pod Specification. 
+The Pod Specification includes the resource requests for the pod that runs the job. 
 
 All jobs use the same resource requests. 
 The specified resource requests for your particular job on the pod specification affect how Kubernetes schedules the job pod based on resources available on worker nodes. 
 These are the default values. 
-In general, 1 fork takes 100Mb of memory (see system_task_forks_mem). 
-So if your jobs have 5 forks, you would want your job pod specification to request 500Mb of memory.
 
-This means if you have job templates that have particularly high “forks” value or otherwise need larger resource requests, you should create a separate container group with a different pod spec that indicates larger resource requests. 
+* In general, 1 fork takes 100Mb of memory. This is set using `system_task_forks_mem`. 
+So if your jobs have 5 forks, you would want your job pod specification to request 500Mb of memory.
+* If you have job templates that have particularly high forks value or otherwise need larger resource requests, you should create a separate container group with a different pod spec that indicates larger resource requests. 
 Then you can assign it to the job template in question. 
 For example a job template with the forks value of 50 would be best paired with a container group that requests 5GB of memory. 
-
-If a job’s forks value is very high, such that no single pod would be able to contain the job, use of the job slicing feature can split the inventory up such that the individual job “slices” each do fit well in an automation pod provisioned by the container group.
+* If a job’s forks value is very high, such that no single pod would be able to contain the job, use of the job slicing feature can split the inventory up such that the individual job “slices” each do fit well in an automation pod provisioned by the container group.
 

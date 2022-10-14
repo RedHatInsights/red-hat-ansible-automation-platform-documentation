@@ -57,5 +57,5 @@ $ oc secrets link builder <pull_secret_name>
 
 When the container group is successfully created, the Details tab of the newly created container group remains, which allows you to review and edit your container group information. 
 This is the same menu that is opened if you click btn:[Edit] from the *Instance Group* link. 
-You can also edit Instances and review Jobs associated with this instance group.
+You can also edit instances and review jobs associated with this instance group.
 

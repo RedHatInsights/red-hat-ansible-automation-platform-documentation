@@ -2,7 +2,10 @@
 
 = Containers resource requirements
 
-The resource requirements for both the task and the web containers are configurable, at both the lower end (requests) and the upper end (limits).
+You can configure the resource requirements of task and the web containers, at both the lower end (requests) and the upper end (limits).
+
+Setting resource requests and limits is a best practice because when a container has both defined, it is given a higher _Quality of Service_ class. 
+This means that if the underlying node is resource constrained and the cluster has to reap a pod to prevent running memory or other failure, the control plane pod is less likely to be reaped.
 
 [cols="30%,30%,30%",options="header"]
 |====
@@ -40,6 +43,3 @@ spec:
       cpu: 500m
       memory: 2Gi
 ----
-
-Setting resource requests and limits is a best practice because when a container has both defined, it is given a higher “Quality of Service” class. 
-This means that if the underlying node is resource constrained and the cluster has to reap a pod to prevent running memory or other failure, the control plane pod is less likely to be reaped.

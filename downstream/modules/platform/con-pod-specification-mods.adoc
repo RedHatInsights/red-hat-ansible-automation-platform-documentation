@@ -16,6 +16,7 @@ This field uses any custom fields, such as `ImagePullSecrets`, that can be “se
 A full list of options can be found in the link:https://docs.openshift.com/online/pro/architecture/core_concepts/pods_and_services.html[Openshift documentation].
 
 .Example of a pod that provides a long-running service. 
+
 This example demonstrates many features of pods, most of which are discussed in other topics and thus only briefly mentioned here:
 
 [options="nowrap" subs="+quotes,attributes"]

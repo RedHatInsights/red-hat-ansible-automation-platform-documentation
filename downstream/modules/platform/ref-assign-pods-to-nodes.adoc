@@ -8,7 +8,7 @@ You can constrain the controller pods created by the operator to run on a certai
 * `tolerations` and `postgres_tolerations` enable the controller pods to be scheduled onto nodes with matching taints. 
 See Taints and Tolerations in the Kubernetes documentation for further details.
 
-This table shows the settings and fields that can be set on the {ControllerName}'s specification section of the YAML (or using the Openshift UI form).
+The following table shows the settings and fields that can be set on the {ControllerName}'s specification section of the YAML (or using the Openshift UI form).
 
 [cols="40%,40%,20%",options="header"]
 |====
@@ -26,9 +26,9 @@ This table shows the settings and fields that can be set on the {ControllerName}
 `topology_spread_constraints` can help optimize spreading your control plane pods across the compute nodes that match your node selector. 
 For example, with the `maxSkew` parameter of this option set to `100`, this means maximally spread across available nodes. 
 So if there are 3 matching compute nodes and 3 pods, 1 pod will be assigned to each compute node. 
-This helps prevent the control plane pods from competing for resources with each other.
+This parameter helps prevent the control plane pods from competing for resources with each other.
 
-Example of a custom configuration for constraining controller pods to specific nodes:
+.Example of a custom configuration for constraining controller pods to specific nodes
 
 [options="nowrap" subs="+quotes,attributes"]
 ----

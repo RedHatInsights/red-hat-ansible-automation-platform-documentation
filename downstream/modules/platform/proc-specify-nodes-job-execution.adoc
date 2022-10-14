@@ -2,7 +2,7 @@
 
 = Specify nodes for job execution
 
-A node selector can be added to the container group pod specification to ensure they only run against certain nodes.  
+You can add a node selector to the container group pod specification to ensure they only run against certain nodes.  
 First add a label to the nodes you want to run jobs against. 
 
 The following procedure adds a label to a node.
@@ -25,7 +25,7 @@ The output is similar to this:
 | `worker2` | Ready | <none> | 1d | v1.13.0 | `...,kubernetes.io/hostname=worker2`
 |====
 +
-. Choose one of your nodes, and add a label to it:
+. Choose one of your nodes, and add a label to it using the following command:
 +
 [options="nowrap" subs="+quotes,attributes"]
 ----
@@ -49,7 +49,6 @@ kubectl get nodes --show-labels
 ----
 +
 . The output is similar to this:
-
 +
 [cols="15%,15%,15%,15%,15,25%",options="header"]
 |====
@@ -59,7 +58,7 @@ kubectl get nodes --show-labels
 | `worker2` | Ready | <none> | 1d | v1.13.0 | `...,kubernetes.io/hostname=worker2`
 |====
 +
-In the preceding output, you can see that the `worker0` node has a `disktype=ssd` label.
+You can see that the `worker0` node now has a `disktype=ssd` label.
 +
 . In the {ControllerName} UI, specify that label in your pod specification on the container group.  
 [options="nowrap" subs="+quotes,attributes"]
