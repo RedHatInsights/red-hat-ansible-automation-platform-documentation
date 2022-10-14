@@ -30,9 +30,3 @@ Provide access to your container repository to users who need to work the images
 . Under *Groups with access*, select a group or groups to grant access to.
 ** Optional: Add or remove permissions for a specific group using the drop down under that group name.
 . Click *Save*.
-
-
-[role="_additional-resources"]
-.Additional resources
-
-* See <<container-registry-group-permissions, Container registry group permissions>> to learn more about specific permissions.

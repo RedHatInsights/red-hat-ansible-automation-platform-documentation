@@ -23,4 +23,4 @@ include::hub/assembly-setup-container-repository.adoc[leveloffset=+1]
 include::hub/assembly-pull-image.adoc[leveloffset=+1]
 
 [appendix]
-include::builder/con-ee-precedence.adoc[leveloffset=+1]
+include::../../modules/builder/con-ee-precedence.adoc[leveloffset=+1]

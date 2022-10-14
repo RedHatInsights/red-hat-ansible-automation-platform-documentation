@@ -50,7 +50,7 @@ dependencies:
 +
 [NOTE]
 ====
-Since this example uses the community version of `kubernetes.core` and not a certified collection from {HubName}, we do not need to create an `ansible.cfg` nor reference that in our definition file.
+Since this example uses the community version of `kubernetes.core` and not a certified collection from {HubName}, we do not need to create an `ansible.cfg` file or reference that in our definition file.
 ====
 . Build the new {ExecEnvShort} image using the following command:
 +
