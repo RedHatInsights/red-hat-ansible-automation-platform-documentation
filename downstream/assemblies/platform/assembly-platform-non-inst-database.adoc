@@ -20,20 +20,6 @@ Access to a container registry enables you to load automation execution environm
 By default, the {PlatformNameShort} uses `registry.redhat.io`, which requires a Red Hat registry service account. 
 See the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts] guide to create a registry service account.
 
-[IMPORTANT]
-====
-* Root access to remote machines is required. 
-With Ansible, this can be achieved in different ways:
-* `ansible_user=root ansible_ssh_pass=”your_password_here”` inventory host or group variables
-* `ansible_user=root ansible_ssh_private_key_file=”path_to_your_keyfile.pem”` inventory host or group variables
-* `ANSIBLE_BECOME_METHOD=’sudo’ ANSIBLE_BECOME=True ./setup.sh`
-
-For more information on `become` plugins, see link:https://docs.ansible.com/ansible/latest/user_guide/become.html#understanding-privilege-escalation[Understanding privilege escalation].
-
-For more information on inventory file variables, see [About the installer inventory file]
-====
-
-//include::platform/ref-platform-install-settings.adoc[leveloffset=3]
 include::platform/proc-editing-inventory-file.adoc[leveloffset=3]
 include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=3]
 include::platform/ref-setup-script-args.adoc[leveloffset=3]
