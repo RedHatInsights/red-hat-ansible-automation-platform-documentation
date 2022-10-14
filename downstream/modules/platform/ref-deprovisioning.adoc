@@ -1,6 +1,6 @@
-[id="ref-deprovisioning_{context}"]
+[id="ref-deprovisioning"]
 
-= Deprovisioning nodes or groups in a cluster
+= Deprovisioning nodes or groups
 You can deprovision nodes and instance groups using the {PlatformNameShort} installer.
 Running the installer will remove all configuration files and logs attached to the nodes in the group.
 

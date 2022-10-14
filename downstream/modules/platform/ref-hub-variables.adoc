@@ -84,6 +84,8 @@ If your configuration makes any references to LDAP groups, this and `automationh
 The default is '`None`'
 | *`automatiohub_ldap_group_search_filter`* | _Optional_
 
+Search filter for finding group membership.
+
 Default = `'(objectClass=Group)'`
 | *`automationhub_ldap_group_search_scope`* | _Optional_
 
@@ -95,12 +97,6 @@ Default =`'django_auth_ldap.config:GroupOfNamesType'`
 | *`automationhub_ldap_user_search_base_dn`* | An LDAPSearch object that locates a user in the directory. 
 The filter parameter should contain the placeholder %(user)s for the username. 
 It must return exactly one result for authentication to succeed.
-| *`automationhub_ldap_user_search_filter`* |  _Optional_
-
-Default = `'SUBTREE'`
-| *`automationhub_ldap_user_search_scope`* |  _Optional_
-
-Default = `'(uid=%(user)s)'`
 | *`automationhub_main_url`* | When using Single Sign-On, specify the main {HubName} URL that
 clients will connect to, e.g. `\https://<hubaddress.example.com>`, which leads to the external address being entered in `/etc/pulp/settings.py`.
 

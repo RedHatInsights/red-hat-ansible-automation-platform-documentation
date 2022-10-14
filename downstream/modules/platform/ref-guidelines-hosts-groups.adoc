@@ -2,17 +2,32 @@
 
 = Guidelines for hosts and groups
 
-* When using external databases, ensure the `[database]` sections of your inventory file are properly set up.
+.Databases
+* When using an external database, ensure the `[database]` sections of your inventory file are properly set up.
 * The database server should be on the same network or in the same data center as the {ControllerName} server for performance reasons.
+
+.{HubName}
 * Add {HubNameMain} information in the `[automationhub]` group
 * {HubNamemain} and {ControllerName} cannot be installed on the same node.
 * Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` host to ensure users can synchronize and install content from {HubNameMain} from a different node. 
 Do not use `localhost`.
-{ControllerNameStart} will not configure replication or failover for the database that it uses. 
+
+[IMPORTANT]
+====
+You must separate the installation of {Controllername} and {HubNameMain} because the `[database]` group does not distinguish between the two if both are installed at the same time. 
+
+If you use one value in `[database]` and both {Controllername} and {HubNameMain} define it, they would use the same database.
+====
+
+.{ControllerName}
+* {ControllerNameStart} will not configure replication or failover for the database that it uses. 
 {ControllerName} should work with any replication you have.
-* When upgrading an existing cluster, you may decide that you want to also reconfigure your cluster to omit existing instances or instance groups. 
+
+
+.Clustered installations
+* When upgrading an existing cluster, you can also reconfigure your cluster to omit existing instances or instance groups. 
 Omitting the instance or the instance group from the inventory file is not enough to remove them from the cluster. 
-In addition to omitting instances or instance groups from the inventory file, you must also deprovision instances or instance groups before starting the upgrade. 
+In addition to omitting instances or instance groups from the inventory file, you must also deprovision instances or instance groups before starting the upgrade. See xref:ref-deprovisioning[Deprovisioning nodes or groups]. 
 Otherwise, omitted instances or instance groups continue to communicate with the cluster, which can cause issues with {Controllername} services during the upgrade.
 * If you are creating a clustered installation setup, you must replace `[localhost]` with the hostname or IP address of all instances. 
 All nodes and instances must be able to reach any others using this hostname or address. 
@@ -49,9 +64,3 @@ hostB.example.com
 hostC.example.com
 ----
 
-[IMPORTANT]
-====
-You must separate the installation of {Controllername} and {HubNameMain} because the `[database]` group does not distinguish between the two if both are installed at the same time. 
-
-If you use one value in `[database]` and both {Controllername} and {HubNameMain} define it, they would use the same database.
-====
