@@ -7,7 +7,7 @@
 . Select an *Update Channel*:
 +
 * *stable-2.x*: installs a namespace-scoped operator, which limits deployments of {HubName} and {ControllerName} instances to the namespace the operator is installed in. This is suitable for most cases. The stable-2.x channel does not require administrator privileges and utilizes fewer resources because it only monitors a single namespace.
-* *stable-2.x-cluster-scoped*: deploys automation hub and automation controller across multiple namespaces in the cluster and requires administrator privileges for all namespaces in the cluster.
+* *stable-2.x-cluster-scoped*: deploys {HubName} and {ControllerName} across multiple namespaces in the cluster and requires administrator privileges for all namespaces in the cluster.
 . Select *Installation Mode*, *Installed Namespace*, and *Approval Strategy*.
 . Click *Install*.
 
