@@ -6,8 +6,8 @@ To pull container images from a password or token-protected registry, create a c
 
 .Procedure
 . Navigate to {ControllerName}
-. In the side-menu bar, click *Resources* > *Credentials*.
-. Click *Add* to create a new credential.
-. Supply an authorization URL, username, and password. Click *Save*.
+. In the side-menu bar, click menu:Resources[Credentials].
+. Click btn:[Add] to create a new credential.
+. Supply an authorization URL, username, and password. Click btn:[Save].
 
 For more information, please reference the Pulling from Protected Registries section of the Execution Environment documentation.
