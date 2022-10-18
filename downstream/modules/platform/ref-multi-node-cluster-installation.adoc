@@ -29,7 +29,7 @@ host12
 host2
 
 [database]
-host3
+host3 <1>
 
 [all:vars]
 ansible_become=true
