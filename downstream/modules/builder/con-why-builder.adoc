@@ -2,8 +2,6 @@
 
 = Why use {Builder}?
 
-Before {Builder} was developed, Automation Platform users would potentially run against dependency issues and multiple error messages as they attempted to create a custom virtual environment or container that had all of their required dependencies installed.
+Before {Builder} was developed, {PlatformName} users could run into dependency issues and errors when  creating custom virtual environments or containers that included all of the required dependencies installed.
 
-Through the use of an easily customizable definition file, {Builder} installs Ansible, specified Collections and any of its dependencies so that all of the necessary requirements to get jobs running are fulfilled behind the scenes.
-
-NOTE: Red Hat currently does not support users who choose to provide their own container images when building automation execution environments.
+Now, with {Builder}, you can easily create a customizable {ExecEnvName} definition file that specifies the content you want included in your {ExecEnvName} such as, collections, requirements, and system level packages. This allows you to fulfill all of the necessary requirements and dependencies to get jobs running.
