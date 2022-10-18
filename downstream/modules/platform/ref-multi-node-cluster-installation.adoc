@@ -47,3 +47,6 @@ registry_url='registry.redhat.io'
 registry_username='<registry username>'
 registry_password='<registry password>'
 -----
+
+
+<1> Field should be empty.
