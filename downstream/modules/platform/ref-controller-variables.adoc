@@ -88,7 +88,7 @@ The default is 27199.
 
 /path/to/webserver.cert
 
-Same as 'automationhub_ssl_cert' but for web server UI and API.
+Same as `automationhub_ssl_cert` but for web server UI and API.
 | *`web_server_ssl_key`* |  _Optional_
 
 /path/to/webserver.key

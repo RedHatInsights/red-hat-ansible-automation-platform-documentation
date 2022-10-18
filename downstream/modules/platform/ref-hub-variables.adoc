@@ -14,7 +14,7 @@
 
 Generating a new token invalidates the existing token.
 | *`automationhub_authentication_backend`* a| This variable is not set by default. 
-Set it to `ldap`` to use LDAP authentication. 
+Set it to `ldap` to use LDAP authentication. 
 
 When this is set to `‘ldap’`, the following variables must also be set:
 
@@ -135,7 +135,7 @@ Default = `true`
 Same as `web_server_ssl_cert` but for {HubName} UI and API
 | *`automationhub_ssl_key`* | _Optional_
 
-`/path/to/automationhub.key``
+`/path/to/automationhub.key`
 
 Same as `web_server_ssl_key` but for {HubName} UI and API
 | *`automationhub_ssl_validate_certs`* | For {PlatformName} 2.2 and later, this value is no longer used.
