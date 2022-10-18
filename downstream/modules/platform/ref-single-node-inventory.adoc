@@ -16,7 +16,7 @@ This example describes how you can populate the inventory file for a single node
 
 -----
 [automationcontroller]
-127.0.0.1 ansible_connection=local
+127.0.0.1 ansible_connection=local <1>
 
 [database]
 
@@ -34,3 +34,6 @@ registry_url='registry.redhat.io'
 registry_username='<registry username>'
 registry_password='<registry password>'
 -----
+
+
+<1> This should be set as a FQDN/IP.
