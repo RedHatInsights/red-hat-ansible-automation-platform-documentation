@@ -4,14 +4,14 @@
 
 {PlatformName} works against a list of managed nodes or hosts in your infrastructure that are logically organized, using an inventory file. 
 You can use the {PlatformName} installer inventory file to specify your installation scenario and describe host deployments to Ansible. 
-Using an inventory file, Ansible can manage a large number of hosts with a single command. 
+By using an inventory file, Ansible can manage a large number of hosts with a single command. 
 Inventories also help you use Ansible more efficiently by reducing the number of command line options you have to specify. 
 
 The inventory file can be in one of many formats, depending on the inventory plugins that you have. 
 The most common formats are `INI` and `YAML`. 
 Inventory files listed in this document are shown in INI format.
 
-The location of the inventory file depends on the installer used. 
+The location of the inventory file depends on the installer you used. 
 The following table shows possible locations: 
 
 [cols="30%,70%",options="header"]
@@ -29,7 +29,7 @@ You can verify the hosts in your inventory using the command:
 ansible all -i <path-to-inventory-file. --list-hosts
 ----
 
-A typical inventory file might look something like this:
+.Example inventory file
 
 [options="nowrap" subs="+quotes,attributes"]
 ----

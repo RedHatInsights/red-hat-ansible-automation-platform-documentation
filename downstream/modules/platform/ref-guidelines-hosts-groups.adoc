@@ -4,12 +4,12 @@
 
 .Databases
 * When using an external database, ensure the `[database]` sections of your inventory file are properly set up.
-* The database server should be on the same network or in the same data center as the {ControllerName} server for performance reasons.
+* To increase performance, do not place the database server and the automation controller server on the same network.
 
 .{HubName}
 * Add {HubNameMain} information in the `[automationhub]` group
-* {HubNamemain} and {ControllerName} cannot be installed on the same node.
-* Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` host to ensure users can synchronize and install content from {HubNameMain} from a different node. 
+* Do not install {HubNamemain} and {ControllerName} on the same node.
+* Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` host to ensure that users can synchronize and install content from {HubNameMain} from a different node. 
 Do not use `localhost`.
 
 [IMPORTANT]
@@ -20,8 +20,8 @@ If you use one value in `[database]` and both {Controllername} and {HubNameMain}
 ====
 
 .{ControllerName}
-* {ControllerNameStart} will not configure replication or failover for the database that it uses. 
-{ControllerName} should work with any replication you have.
+* {ControllerNameStart} does not configure replication or failover for the database that it uses. 
+{ControllerName} works with any replication that you have.
 
 
 .Clustered installations
@@ -30,8 +30,10 @@ Omitting the instance or the instance group from the inventory file is not enoug
 In addition to omitting instances or instance groups from the inventory file, you must also deprovision instances or instance groups before starting the upgrade. See xref:ref-deprovisioning[Deprovisioning nodes or groups]. 
 Otherwise, omitted instances or instance groups continue to communicate with the cluster, which can cause issues with {Controllername} services during the upgrade.
 * If you are creating a clustered installation setup, you must replace `[localhost]` with the hostname or IP address of all instances. 
+Installers for {ControllerName}, {HubName}, and {CatalogName} do not accept `[localhost]`
 All nodes and instances must be able to reach any others using this hostname or address. 
-In other words, you cannot use the localhost `ansible_connection=local` on one of the nodes, and all of the nodes should use the same format for the host names.
+In other words, you cannot use the localhost `ansible_connection=local` on one of the nodes. 
+Use the same format for the host names of all the nodes.
 +
 Therefore, this does not work:
 +

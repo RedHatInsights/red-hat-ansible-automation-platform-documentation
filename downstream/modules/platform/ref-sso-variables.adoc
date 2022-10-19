@@ -7,7 +7,7 @@
 [cols="50%,50%",options="header"]
 |====
 | *Variable* | *Description* 
-| *`*_sso_console_admin_password`* | TBD
+| *`*_sso_console_admin_password`* | SSO admin password.
 | *`*_sso_console_keystore_file`* | Keystore file to install in SSO node.
 
 `'/path/to/sso.jks'`
@@ -21,5 +21,5 @@ configuration, then the SSO host needs to be defined with this variable.
 | *`*_sso_keystore_password`* | A keystore password is required for https enabled SSO.
 
 The default install deploys SSO with `sso_use_https=True`
-| *`*_sso_use_https`* | TBD
+| *`*_sso_use_https`* | If Single Sign On is used
 |====

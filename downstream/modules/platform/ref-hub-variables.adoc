@@ -16,7 +16,7 @@ Generating a new token invalidates the existing token.
 | *`automationhub_authentication_backend`* a| This variable is not set by default. 
 Set it to `ldap` to use LDAP authentication. 
 
-When this is set to `‘ldap’`, the following variables must also be set:
+When this is set to `‘ldap’`, you must also set the following variables:
 
 * `automationhub_ldap_server_uri`
 * `automationhub_ldap_bind_dn`
@@ -28,15 +28,15 @@ When this is set to `‘ldap’`, the following variables must also be set:
 
 Setting this parameter to `true` signs them by default.
 
-The default is `false`.
+Default = `false`.
 | *`automationhub_backup_collections`* | _Optional_
 
 {HubNameMain} provides artifacts in `/var/lib/pulp`. 
 {ControllerName} automatically backs up the artifacts by default. 
 
-If a partition (e.g., LVM, NFS, CephFS, etc.) is mounted there, an enterprise organization ensures it is always backed up. 
+You can also set `automationhub_backup_collections = false` and the backup/restore process does not then backup or restore `/var/lib/pulp`.
 
-If this is the case, you can set `automationhub_backup_collections = false` and the backup/restore process does not then backup or restore `/var/lib/pulp`.
+Default = `'true'`
 | *`automationhub_collection_signing_service_key`* | If a collection signing service is enabled, you must provide this variable to ensure collections can be properly signed. 
 
 `/absolute/path/to/key/to/sign`
@@ -48,19 +48,22 @@ If set to `true` a signing service is created.
 
 Default = `false`
 | *`automationhub_disable_hsts`* | The default install deploys a TLS enabled {HubNameMain}.
-The HSTS web-security policy mechanism is enabled unless specified otherwise. 
+use if {HubName} is deployed with _HTTP Strict Transport Security_ (HSTS) web-security policy enabled.
+Unless specified otherwise, the HSTS web-security policy mechanism is enabled. 
 This setting allows you to disable it if required.
 
 Default = `false`
 | *`automationhub_disable_https`* | _Optional_
 
-If {HubNameMain} should be deployed with the _HTTP Strict Transport Security_ (HSTS) web-security policy mechanism enabled.
+If {HubNameMain} is deployed with HTTPS enabled.
 
-The default value is `false`.
+Default = `false`.
 | *`automationhub_enable_api_access_log`* | When set to `true`, creates a log file at `/var/log/galaxy_api_access.log` that logs all user actions made to the platform, including their username and IP address.
 
-The default value is `false`.
+Default = `false`.
 | *`automationhub_importer_settings`* | _Optional_ 
+
+Dictionary of setting to pass to galaxy-importer.
 
 At import time collections can go through a series of checks.
 
@@ -70,8 +73,7 @@ Examples are `ansible-doc`, `ansible-lint`, and `flake8`.
 
 This parameter enables you to drive this configuration.
 
-This variable is expected to be a dictionary.
-2+| For {HubNameMain} to connect to LDAP directly the following variables must be configured. 
+2+| For {HubNameMain} to connect to LDAP directly; the following variables must be configured. 
 A list of other LDAP related variables (not covered by the `automationhub_ldap_xxx` variables below) that can be passed using the `ldap_extra_settings` variable can be found here:
 https://django-auth-ldap.readthedocs.io/en/latest/reference.html#settings
 | *`automationhub_ldap_bind_dn`* | The name to use when binding to the LDAP server with `automationhub_ldap_bind_password`. 
@@ -81,7 +83,7 @@ The password to use with `automationhub_ldap_bind_dn`.
 | *`automationhub_ldap_group_search_base_dn`* | An LDAPSearch object that finds all LDAP groups that users might belong to. 
 If your configuration makes any references to LDAP groups, this and `automationhub_ldap_group_type` must be set.
 
-The default is '`None`'
+Default = '`None`'
 | *`automatiohub_ldap_group_search_filter`* | _Optional_
 
 Search filter for finding group membership.
@@ -94,6 +96,7 @@ Default = `'SUBTREE'`
 
 Default =`'django_auth_ldap.config:GroupOfNamesType'`
 | *`automationhub_ldap_server_uri`* | The URI of the LDAP server. 
+This can be any URI that is supported by your underlying LDAP libraries.
 | *`automationhub_ldap_user_search_base_dn`* | An LDAPSearch object that locates a user in the directory. 
 The filter parameter should contain the placeholder %(user)s for the username. 
 It must return exactly one result for authentication to succeed.
@@ -105,7 +108,7 @@ If not specified, the first node in the `[automationhub]` group is used.
 
 The database name.
 
-The default value is `‘automationhub’`
+Default = `‘automationhub’`
 | *`automationhub_pg_host`* | Required if not using internal database.
 | *`automationhub_pg_password`* | The password for the {HubName} postgreSQL database.
 
@@ -113,13 +116,13 @@ Do not use special characters for `automationhub_pg_password`.
 They can cause the password to fail.
 | *`automationhub_pg_port`* | Required if not using internal database.
 
-Default value is 5432
+Default = 5432
 | *`automationhub_pg_sslmode`* | Required.
 
-Default value is `‘prefer’`
+Default = `‘prefer’`
 | *`automationhub_pg_username`* | Required 
 
-Default value is `‘automationhub’`
+Default = `‘automationhub’`
 | *`automationhub_require_content_approval`* | _Optional_
 
 If {HubName} enforces the approval mechanism before collections are made available.
@@ -142,7 +145,7 @@ Same as `web_server_ssl_key` but for {HubName} UI and API
 
 If {HubName} should validate certificate when requesting itself because by default, Platform deploys with self-signed certificates.
 
-The default value is `'false'`.
+Default = `'false'`.
 | *`automationhub_upgrade`* | By default, when the {HubName} package and its dependencies are installed they are not upgraded when running the installer, even if newer packages are available. 
 
 To upgrade, you must to run the `./setup.sh` script with this variable set to `true`.
