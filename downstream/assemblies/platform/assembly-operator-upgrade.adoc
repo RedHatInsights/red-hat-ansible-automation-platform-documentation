@@ -1,7 +1,7 @@
 
 ifdef::context[:parent-context: {context}]
 
-[id="operator-upgrade"]
+[id="operator-upgrade_{context}"]
 
 = Upgrading {OperatorPlatform} on {OCPShort}
 
