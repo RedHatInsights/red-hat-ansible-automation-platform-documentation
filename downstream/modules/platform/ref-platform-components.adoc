@@ -7,7 +7,7 @@ Red Hat Ansible Automation Platform consists of the following components:
 .{HubNameMain}
 A repository for certified content of Ansible Content Collections. 
 {HubNamemain} is the centralized repository for Red Hat and its partners to publish content, and for customers to discover certified, supported Ansible Content Collections. 
-{CertifiedCon} provides users with content that has been tested and is backed by Red Hat.
+{CertifiedCon} provides users with content that has been tested and is supported by Red Hat.
  
 .{PrivateHubNameStart}
 If you create your own Ansible content, the Ansible private automation hub provides a way to publish and collaborate on it within your organization behind your firewall or on disconnected systems. 
@@ -35,7 +35,8 @@ Using automation services catalog you can:
 
 * Dynamic cluster capacity that scales independently, allowing you to create, register, group, ungroup and deregister nodes with minimal downtime.
 * Control and execution plane separation that enables you to scale playbook execution capacity independently from control plane capacity.
-* Deployment choices that are resilient to latency, reconfigurable without outage, and that dynamically re-reroute to choose a different path when outages may exist. mesh routing changes.
+* Deployment choices that are resilient to latency, reconfigurable without outage, and that dynamically re-reroute to choose a different path when outages exist. 
+* Mesh routing changes.
 * Connectivity that includes bi-directional, multi-hopped mesh communication possibilities which are Federal Information Processing Standards (FIPS) compliant.
 
 .{ExecEnvNameStart}
