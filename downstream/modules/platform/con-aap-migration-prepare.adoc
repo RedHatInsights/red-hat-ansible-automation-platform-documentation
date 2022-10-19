@@ -8,5 +8,5 @@ Before migrating your current {PlatformNameShort} deployment to {OperatorPlatfor
 
 [NOTE]
 ====
-If you are migrating both {ControllerName} and {HubName} instances, repeat the steps in xref:create-secret-key-secret_{context}[Creating a secret key secret] and xref:create-postresql-secret_{context}[Creating a postgresql configuration secret] for both and then proceed to xref:aap-migration_{context}[Migrating data to the {PlatformNameShort} Operator].
+If you are migrating both {ControllerName} and {HubName} instances, repeat the steps in xref:create-secret-key-secret_aap-migration[Creating a secret key secret] and xref:create-postresql-secret_aap-migration[Creating a postgresql configuration secret] for both and then proceed to xref:aap-migration_aap-migration[Migrating data to the {PlatformNameShort} Operator].
 ====
