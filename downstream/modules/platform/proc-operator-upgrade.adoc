@@ -1,4 +1,4 @@
-[id="operator-upgrade{context}"]
+[id="upgrading-operator_{context}"]
 
 = Upgrading the {OperatorPlatform}
 
