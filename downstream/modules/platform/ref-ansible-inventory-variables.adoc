@@ -46,9 +46,9 @@ This can override the ssh_executable setting in `ansible.cfg`.
 You should not use this setting unless you have set the `ansible_shell_executable` to a non-Bourne (sh) compatible shell. 
 By default commands are formatted using sh-style syntax. 
 Setting this to `csh` or `fish` causes commands executed on target systems to follow the syntax of those shells instead.
-| *`ansible_shell_executable`* | This sets the shell the ansible controller will use on the target machine, and overrides the executable in `ansible.cfg` which defaults to `/bin/sh`. 
+| *`ansible_shell_executable`* | This sets the shell that the ansible controller uses on the target machine, and overrides the executable in `ansible.cfg` which defaults to `/bin/sh`. 
 
-You should only change it if is not possible to use `/bin/sh`, that is, if `/bin/sh` is not installed on the target machine or cannot be run from sudo.
+You should only change if it is not possible to use `/bin/sh`, that is, if `/bin/sh` is not installed on the target machine or cannot be run from sudo.
 2+|The following variables cannot be set directly by the user. 
 Ansible will always override them to reflect internal state.
 | *`ansible_check_mode`* | Boolean that indicates if we are in check mode or not
