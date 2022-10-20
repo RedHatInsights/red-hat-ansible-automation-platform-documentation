@@ -2,23 +2,29 @@
 
 == Managing group permissions with {AAPCentralAuth}
 
-You can manage user access on the {PlatformNameShort} by assigning specific permissions to user groups. As users log in to the {PlatformNameShort} for the first time, their groups will appear in the user access page in {HubName}, allowing you to assign user access and permissions to each group.
+You can manage user access on the {PlatformNameShort} by grouping specific permissions into roles, and then assigning those roles to groups. As you log in to the {PlatformNameShort} for the first time, *Users*, *Groups*, and *Roles* appear in the user access page in {HubName}, then you can assign user access and roles to each group.
 
-=== Assigning permissions to Groups
+{HubNameStart} includes a set of managed roles that are compatible with use cases you may encounter. You can create your own set of managed roles or use the predefined roles located in the *Roles* section of the *User Access* page.
 
-You can assign permissions to groups in {HubName}that enable users to access specific features in the system.
+=== Grouping permissions into Roles
+
+You can group permissions into roles with specific user access to features in the system.
 
 .Prerequisites
 You are signed in as a `hubadmin` user.
 
 .Procedure
 . Log in to your local {HubName}.
-. Navigate to *Groups*.
-. Click on a group name.
-. Click *Edit*.
-. Click in the field for the permission type and select permissions that appear in the list.
-. Click *Save* when finished assigning permissions.
+. Navigate to the *User Access* drop-down menu.
+. Click btn:[Roles].
+. Click btn:[Add roles].
+. Enter role name in the *Name* field.
+. Enter role description in the *Description* field.
+. Click the drop-down menu next to each *Permissions* type and select the appropriate permissions for the role.
+. Click btn:[Save].
 
-The group can now access features in {HubName} associated with their assigned permissions.
+You have created a new role with specific permissions. You can now assign this role to groups.
+
+include::automation-hub/proc-assigning-roles.adoc[leveloffset=+2]
 
 include::automation-hub/ref-permissions.adoc[leveloffset=+2]
