@@ -1,4 +1,4 @@
-<title>Red Hat Ansible Automation Platform Operator Installation Guide</title>
+<title>Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.2</productnumber>
 <subtitle>This guide provides procedures and reference information for the supported installation scenarios for the Red Hat Ansible Automation Platform operator on OpenShift Container Platform</subtitle>
