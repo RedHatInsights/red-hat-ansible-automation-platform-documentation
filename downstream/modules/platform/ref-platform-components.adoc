@@ -10,7 +10,8 @@ A repository for certified content of Ansible Content Collections.
 {CertifiedCon} provides users with content that has been tested and is supported by Red Hat.
  
 .{PrivateHubNameStart}
-{PrivateHubNameStart} provides a disconnected or on premise solution for synchronizing content, both collections and execution environment images from Red Hat cloud automation hub, storing and serving your own custom automation collections and execution images. 
+{PrivateHubNameStart} provides both disconnected and on premise solution for synchronizing content.
+You can synchronize collections and execution environment images from Red Hat cloud automation hub, storing and serving your own custom automation collections and execution images. 
 You can also use other sources such as {Galaxy} or other container registries to provide content to your {PrivateHubName}. 
 {PrivateHubName} can integrate into your enterprise directory and your CI/CD pipelines.
 
