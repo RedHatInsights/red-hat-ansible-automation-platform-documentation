@@ -17,8 +17,6 @@ As a certified partner, publishing Collections to {HubNameMain} provides end cus
 
 For more information about getting started with certifying a solution, please refer to https://www.ansible.com/partners for details.
 
-//As a partner, publishing Collections to the Automation Hub gives your end customer organizations the power to manage how trusted automation content is used in the customer environment.
-
 == How do I get a collection certified?
 
 Refer to our partner website http://www.ansible.com/partners for the Ansible certification policy guide to understand how to certify your collection.
@@ -58,7 +56,7 @@ For any queries and clarifications please contact ansiblepartners@redhat.com.
 
 Ansible sanity tests are made up of scripts and tools used to perform static code analysis. 
 The primary purpose of these tests is to enforce Ansible coding standards and requirements. 
-Ansible collections must be in a very specific path, such as the following:
+Ansible collections must be in a specific path, such as the following:
 
 [options="nowrap" subs="=quotes, attributes"]
 ----
@@ -70,14 +68,15 @@ You must ensure your collection is in that specific path, with an empty director
 == Does Galaxy house the source code for my Collection?
 
 No, Galaxy does not house the source for the collections. 
-The actual collection source must be housed outside of {Galaxy}, for example GitHub. 
+The actual collection source must be housed outside of {Galaxy}, for example in GitHub. 
 {Galaxy} contains the collection build tarball to publish the collection. 
 You can include the link to the source for community users in the `galaxy.yml` file contained in the collection. 
-This provides information to users of where they should go if they want to contribute to the collection or even file issues against it.
+This shows users where they should go if they want to contribute to the collection or even file issues against it.
 
 == How does the joint support agreement on certified collections work?
 
-If a customer raises an issue with the Red Hat support team about on a certified collection, Red Hat support will triage the issue and check if the problem exists within Ansible or Ansible usage and they also check if the issue is with a certified collection. 
+If a customer raises an issue with the Red Hat support team about on a certified collection, Red Hat support will triage the issue and check whether the problem exists within Ansible or Ansible usage. 
+They also check whether the issue is with a certified collection. 
 If there is a problem with the certified collection, support teams transfer the issue to the vendor owner of the certified collection through an agreed upon tool such as TSANet.
 
 == How to migrate existing modules/plugins to collections?

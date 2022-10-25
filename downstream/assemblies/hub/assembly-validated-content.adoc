@@ -9,7 +9,7 @@
 ====
 {Valid} is only available with a valid subscription to {PlatformName}.
 Unlike {CertifiedCon}, {Valid} is not supported by Red Hat or our partners. 
-For the release of {PlatformName} 2.3, {Valid} will be preloaded into {PrivateHubName} and can be updated manually by downloading their packages.
+From the {PlatformName} 2.3 release, {Valid} is preloaded into {PrivateHubName} and can be updated manually by downloading the packages.
 ====
 
 {Valid}

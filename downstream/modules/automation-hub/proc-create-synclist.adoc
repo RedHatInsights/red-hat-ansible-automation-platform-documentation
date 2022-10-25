@@ -29,5 +29,5 @@ Add the following domain name to the allow list:
 . Navigate to menu:Automation Hub[Collections].
 . Use the toggle switch on each collection to determine whether to exclude it from your synclist.
 
-When you finish managing collections for your synclist, you can navigate to menu:Automation Hub[Repo Management] to initiate the remote repository synchronization to your {PrivateHubName}. 
+When you finish managing collections for your synclist, navigate to menu:Automation Hub[Repo Management] to initiate the remote repository synchronization to your {PrivateHubName}. 
 If your remote repository is already configured, you can manually synchronize {CertifiedName} to your {PrivateHubName} to update the collections content that you made available to local users.
