@@ -16,6 +16,7 @@ include::platform/ref-system-requirements.adoc[leveloffset=+1]
 include::platform/ref-network-ports-protocols.adoc[leveloffset=+1]
 
 include::platform/proc-attaching-subscriptions.adoc[leveloffset=+1]
+include::platform/ref-platform-components.adoc[leveloffset=+1]
 include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
 
 == Supported installation scenarios
