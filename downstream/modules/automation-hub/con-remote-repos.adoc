@@ -2,7 +2,7 @@
 
 = About remote repositories
 
-By configuring remote repositories, you can set your {PrivateHubName} to synchronise Red Hat Certified Collections hosted in your organization's repository on `{Console}` and your choice of collections in {Galaxy}.
+By configuring remote repositories, you can set your {PrivateHubName} to synchronize Red Hat Certified Collections hosted in your organization's repository on `{Console}` and your choice of collections in {Galaxy}.
 
-Each remote repository located in menu:Repo Management[Remote] provides information for both the *community* and *rh-certified* repository about when the reposiitory was *last updated* and when content was *last synced*. 
+Each remote repository located in menu:Repo Management[Remote] provides information for both the *community* and *rh-certified* repository about when the repository was *last updated* and when content was *last synced*. 
 You can add new content to {HubNameMain} at any time using the *Edit* and *Sync* features included on the menu:Repo Management[Remote] page.

@@ -3,11 +3,11 @@
 [id="proc-create-api-token"]
 = Retrieving your Red Hat Certified Collections Sync URL and API token.
 
-You can sync Red Hat Ansible Certified Content Collections curated by your organization from `{Console}` to your {PrivateHubName}.
+You can synchronize {CertifiedName} curated by your organization from `{Console}` to your {PrivateHubName}.
 
 .Prerequisites
 
-* You have Organization Administrator permissions for {Console}.
+* You have Organization Administrator permissions to create the synclist on {Console}.
 
 .Procedure
 
