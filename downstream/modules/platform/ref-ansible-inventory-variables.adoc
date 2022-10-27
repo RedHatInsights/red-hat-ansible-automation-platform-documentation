@@ -49,8 +49,14 @@ Setting this to `csh` or `fish` causes commands executed on target systems to fo
 | *`ansible_shell_executable`* | This sets the shell that the ansible controller uses on the target machine, and overrides the executable in `ansible.cfg` which defaults to `/bin/sh`. 
 
 You should only change if it is not possible to use `/bin/sh`, that is, if `/bin/sh` is not installed on the target machine or cannot be run from sudo.
-2+|The following variables cannot be set directly by the user. 
+|====
+
+The following variables cannot be set directly by the user. 
 Ansible will always override them to reflect internal state.
+
+[cols="50%,50%",options="header"]
+|====
+| *Variable* | *Description*
 | *`ansible_check_mode`* | Boolean that indicates if we are in check mode or not
 | *`ansible_dependent_role_names`* | The names of the roles currently imported into the current play as dependencies of other plays
 | *`ansible_limit`* | Contents of the `--limit` CLI option for the current execution of Ansible

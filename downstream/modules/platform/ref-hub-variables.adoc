@@ -72,10 +72,15 @@ Behavior is driven by `galaxy-importer.cfg` configuration.
 Examples are `ansible-doc`, `ansible-lint`, and `flake8`.
 
 This parameter enables you to drive this configuration.
+|====
 
-2+| For {HubNameMain} to connect to LDAP directly; the following variables must be configured. 
+For {HubNameMain} to connect to LDAP directly; the following variables must be configured. 
 A list of other LDAP related variables (not covered by the `automationhub_ldap_xxx` variables below) that can be passed using the `ldap_extra_settings` variable can be found here:
 https://django-auth-ldap.readthedocs.io/en/latest/reference.html#settings
+
+[cols="50%,50%",options="header"]
+|====
+| *Variable* | *Description* 
 | *`automationhub_ldap_bind_dn`* | The name to use when binding to the LDAP server with `automationhub_ldap_bind_password`. 
 | *`automationhub_ldap_bind_password`* | _Required_
 
