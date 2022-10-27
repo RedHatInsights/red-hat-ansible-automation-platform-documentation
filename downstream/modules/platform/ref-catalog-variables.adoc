@@ -14,13 +14,13 @@ This token will be used instead of generating a token.
 Requires `automation_controller_main_url` to be defined as well.
 | *`automationcatalog_controller_verify_ssl`* | Used to enable or disable SSL validation from {CatalogName} to {ControllerName}. 
 
-Default = `'true'`.
+Default = `true`.
 | *`automationcatalog_disable_hsts`* | Used to enable or disable HSTS web-security policy for {CatalogName}. 
 
-Default = `'false'`.
+Default = `false.
 | *`automationcatalog_disable_https`* | Used to enable or disable HSTS web-security policy for Services Catalog.
 
-Default = `'false'`.
+Default = `false`.
 | *`automationcatalog_enable_analytics_collection`* | Used to control activation of analytics collection for {CatalogName}
 | *`automationcatalog_main_url`* | Used by the {RHSSO} host configuration if there is an alternative hostname that needs to be used between the SSO and {CatalogName} host.
 | *`automationcatalog_pg_database`* | The postgres database URL for your {CatalogName}.

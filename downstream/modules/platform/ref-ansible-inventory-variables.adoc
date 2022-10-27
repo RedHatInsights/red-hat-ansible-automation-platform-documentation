@@ -16,8 +16,8 @@ A list of global configuration options can be found at https://docs.ansible.com/
 This can be the name of any of ansible connection plugin. 
 SSH protocol types are `smart`, `ssh` or `paramiko`. 
 
-Default = `‘smart’`
-| *`ansible_host`* | The ip or name of the target host to use instead of *'inventory_hostname'*.
+Default = `smart`
+| *`ansible_host`* | The ip or name of the target host to use instead of *`inventory_hostname`*.
 | *`ansible_port`* | The connection port number, if not, the default (22 for ssh).
 | *`ansible_user`* | The user name to use when connecting to the host.
 | *`ansible_password`* | The password to use to authenticate to the host. 
@@ -57,17 +57,18 @@ Ansible will always override them to reflect internal state.
 | *`ansible_loop`* | A dictionary or map containing extended loop information when enabled using `loop_control.extended`
 | *`ansible_loop_var`* | The name of the value provided to loop_control.loop_var. Added in 2.8
 | *`ansible_index_var`* | The name of the value provided to `loop_control.index_var`. Added in 2.9
-| *`ansible_parent_role_names`* | When the current role is being executed by means of an include_role or import_role action, this variable contains a list of all parent roles, with the most recent role. 
-In other words, the role that included or imported this role being the first item in the list. 
-When multiple inclusions occur, this list lists the last role( the role that included this role) as the first item in the list. 
+| *`ansible_parent_role_names`* | When the current role is being executed by means of an `include_role` or `import_role action`, this variable contains a list of all parent roles, with the most recent role. 
+In other words, the role that included or imported this role is the first item in the list. 
+When multiple inclusions occur, the first item in this list is the last role (the role that included this role). 
 It is also possible for a specific role to exist more than once in this list.
 
 For example: 
-When role A includes role B, inside role B, ansible_parent_role_names will equal to ['A']. 
+When role A includes role B, inside role B, `ansible_parent_role_names` will equal ['A']. 
 If role B then includes role C, the list becomes ['B', 'A'].
-| *`ansible_parent_role_paths`* | When the current role is being executed by means of an include_role or import_role action, this variable contains a list of all parent roles paths, with the most recent role (in other words, the role that included/imported this role) being the first item in the list. 
+| *`ansible_parent_role_paths`* | When the current role is being executed by means of an `include_role` or `import_role` action, this variable contains a list of all parent roles paths, with the most recent role (in other words, the role that included/imported this role) being the first element in the list. 
 See, `ansible_parent_role_names` for the order of items in this list.
-| *`ansible_play_batch`* | List of active hosts in the current play run limited by the serial, aka ‘batch’. Failed or unreachable hosts are not considered `‘active’`.
+| *`ansible_play_batch`* | List of active hosts in the current play run limited by the serial, aka `batch`. 
+Failed or unreachable hosts are not considered `active`.
 | *`ansible_play_hosts`* | List of hosts in the current play run, not limited by the serial.
 Failed or unreachable hosts are excluded from this list.
 | *`ansible_play_hosts_all`* | List of all the hosts that were targeted by the play

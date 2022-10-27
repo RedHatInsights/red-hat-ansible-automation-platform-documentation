@@ -14,29 +14,29 @@
 | *`node_state`* | _Optional_
 
 The status of a node or group of nodes. 
-Valid options are `‘active’`, `'deprovision'` to remove a node from a cluster or `'iso_migrate'` to migrate a legacy isolated node to an execution node.
+Valid options are `active`, `deprovision` to remove a node from a cluster or `iso_migrate` to migrate a legacy isolated node to an execution node.
 
-Default = `‘active’`.
+Default = `active`.
 | *`node_type`* | For `[automationcontroller]` group.
 
 Two valid `node_types` can be assigned for this group.
 
-A `node_type='control'` implies that the node will only be able to run project and inventory updates, but not regular jobs.
+A `node_type=control` implies that the node only runs project and inventory updates, but not regular jobs.
 
-A `node_type='hybrid'` has the ability to run everything.
+A `node_type=hybrid` has the ability to run everything.
 
-Default for this group = `'hybrid'`.
+Default for this group = `hybrid`.
 
 For `[execution_nodes]` group
 
 Two valid node_types can be assigned for this group.
 
-A `node_type='hop'` implies that the node forwards jobs to an execution node.
+A `node_type=hop` implies that the node forwards jobs to an execution node.
 
-A `node_type='execution'` implies that the node can run jobs.
+A `node_type=execution` implies that the node can run jobs.
 
-Default for this group = `'execution'`.
-a| *`peers`* | _Optional_
+Default for this group = `execution`.
+| *`peers`* | _Optional_
 
 Peer relationships define node-to-node connections. 
 
@@ -48,7 +48,7 @@ This is resolved into a set of hosts that is used to construct the `receptor.con
 
 | *`pg_database`* | The name of the postgres database.
 
-Default = `‘awx’`.
+Default = `awx`.
 | *`pg_host`* | The postgreSQL host, which can be an externally managed database.
 | *`pg_password`* | The password for the postgreSQL database.
 
@@ -57,44 +57,44 @@ They can cause the password to fail.
 
 NOTE
 
-You no longer need to provide a `pg_hashed_password` in your inventory file at the time of installation because postgreSQL 13 can now store user passwords more securely. 
+You no longer need to provide a `pg_hashed_password` in your inventory file at the time of installation because PostgreSQL 13 can now store user passwords more securely. 
 
-When you supply `pg_password`` in the inventory file for the installer, postgreSQL uses the SCRAM-SHA-256 hash to secure that password as part of the installation process.
+When you supply `pg_password` in the inventory file for the installer, PostgreSQL uses the SCRAM-SHA-256 hash to secure that password as part of the installation process.
 | *`pg_port`* | The postgreSQL port to use.
 
 Default = 5432
-| *`pg_ssl_mode`* | One of `'prefer'`, `'verify-full'`, ? ?
+| *`pg_ssl_mode`* | One of `prefer` or `verify-full`.
 
-Set to `'verify-full'` for client-side enforced SSL.
+Set to `verify-full` for client-side enforced SSL.
 
-Default = `‘prefer’`.
+Default = `prefer`.
 | *`pg_username`* | Your postgres database username.
 
-Default = `‘awx’`.
+Default = `awx`.
 | *`postgres_ssl_cert`* | location of postgres ssl certificate.
 
-`'/path/to/pgsql_ssl.cert'`
+`/path/to/pgsql_ssl.cert`
 | *`postgres_ssl_key* | location of postgres ssl key.
 
-`'/path/to/pgsql_ssl.key'`
+`/path/to/pgsql_ssl.key`
 | *`postgres_use_cert`* | Location of postgres user certificate. 
 
-`'/path/to/pgsql.crt'`
+`/path/to/pgsql.crt`
 | *`postgres_use_key`* | Location of postgres user key. 
 
-`'/path/to/pgsql.key'`
+`/path/to/pgsql.key`
 | *`postgres_use_ssl`* | If postgres is to use SSL.
 | *`receptor_listener_port`* | Port to use for recptor connection.
 
 Default = 27199.
 | *`web_server_ssl_cert`* |  _Optional_ 
 
-/path/to/webserver.cert
+`/path/to/webserver.cert`
 
 Same as `automationhub_ssl_cert` but for web server UI and API.
 | *`web_server_ssl_key`* |  _Optional_
 
-/path/to/webserver.key
+`/path/to/webserver.key`
 
 Same as `automationhub_server_ssl_key` but for web server UI and API.
 |====
