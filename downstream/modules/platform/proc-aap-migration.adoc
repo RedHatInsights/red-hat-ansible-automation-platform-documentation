@@ -1,4 +1,4 @@
-[id="aap-migration_{context}"]
+[id="aap-data-migration_{context}"]
 
 = Migrating data to the {PlatformNameShort} Operator
 
