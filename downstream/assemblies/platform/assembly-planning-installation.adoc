@@ -19,6 +19,16 @@ include::platform/proc-attaching-subscriptions.adoc[leveloffset=+1]
 include::platform/ref-platform-components.adoc[leveloffset=+1]
 include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
 
+//New section here
+include::platform/con-inventory-introduction.adoc[leveloffset=+1]
+include::platform/ref-guidelines-hosts-groups.adoc[leveloffset=+2]
+include::platform/ref-deprovisioning.adoc[leveloffset=+2]
+include::platform/con-inventory-variables-intro.adoc[leveloffset=+2]
+include::platform/con-declaring-variables.adoc[leveloffset=+2]
+include::platform/proc-securing-secrets-in-inventory.adoc[leveloffset=+2]
+include::platform/con-editing-inventory-files.adoc[leveloffset=+2]
+//End of new section
+
 == Supported installation scenarios
 
 Red Hat supports the following installations scenarios for {PlatformName}

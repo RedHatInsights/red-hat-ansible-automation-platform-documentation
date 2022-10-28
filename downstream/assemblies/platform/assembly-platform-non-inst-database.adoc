@@ -15,8 +15,11 @@ You can use these instructions to install {PlatformName} (both {ControllerName} 
 * You chose and obtained a platform installer from the https://access.redhat.com/downloads/content/480/ver=2.1/rhel---8/2.1/x86_64/product-software[Red Hat Ansible Automation Platform Product Software].
 * You are installing on a machine that meets base system requirements.
 * You have created a Red Hat Registry Service Account, following the instructions in the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
+* A container registry service is required to install {PlatformNameShort}. 
+Access to a container registry enables you to load automation execution environments onto the {PlatformNameShort}, giving you a consistent and containerized environment for executing Ansible playbooks and roles. 
+By default, the {PlatformNameShort} uses `registry.redhat.io`, which requires a Red Hat registry service account. 
+See the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts] guide to create a registry service account.
 
-include::platform/ref-platform-install-settings.adoc[leveloffset=3]
 include::platform/proc-editing-inventory-file.adoc[leveloffset=3]
 include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=3]
 include::platform/ref-setup-script-args.adoc[leveloffset=3]

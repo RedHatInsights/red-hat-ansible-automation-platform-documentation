@@ -1,0 +1,38 @@
+[id="ref-deprovisioning"]
+
+= Deprovisioning nodes or groups
+You can deprovision nodes and instance groups using the {PlatformNameShort} installer.
+Running the installer will remove all configuration files and logs attached to the nodes in the group.
+
+[NOTE]
+====
+You can deprovision any hosts in your inventory except for the first host specified in the `[automationcontroller]` group.
+====
+
+To deprovision nodes, append `node_state=deprovision` to the node or group within the inventory file.
+
+For example:
+
+To remove a single node from a deployment:
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+[automationcontroller]
+host1.example.com
+host2.example.com
+host4.example.com   node_state=deprovision
+----
+
+or
+
+To remove an entire instance group from a deployment:
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+[instance_group_restrictedzone]
+host4.example.com
+host5.example.com
+
+[instance_group_restrictedzone:vars]
+node_state=deprovision
+----
