@@ -1,7 +1,4 @@
-
-
 [id="editing-inventory-file-for-updates_{context}"]
-
 
 = Setting up the inventory file
 
