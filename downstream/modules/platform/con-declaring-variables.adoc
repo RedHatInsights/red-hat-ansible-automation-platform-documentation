@@ -1,0 +1,34 @@
+[id="con-declaring_variables"]
+
+= Rules for declaring variables in invetory files
+
+The values of string variables are declared in quotes. 
+For example:
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+pg_database='awx'
+pg_username='awx'
+pg_password='<password>'
+----
+
+When declared in a `:vars` section, INI values are interpreted as strings. 
+For example, `var=FALSE` creates a string equal to `FALSE`. 
+Unlike host lines, `:vars` sections accept only a single entry per line, so everything after the `=` must be the value for the entry.
+Host lines accept multiple `key=value` parameters per line. 
+Therefore they need a way to indicate that a space is part of a value rather than a separator. 
+Values that contain whitespace can be quoted (single or double). 
+See the link:https://docs.python.org/3/library/shlex.html#parsing-rules[Python shlex parsing rules] for details.
+
+If a variable value set in an INI inventory must be a certain type (for example, a string or a boolean value), always specify the type with a filter in your task. 
+Do not rely on types set in INI inventories when consuming variables.
+
+[NOTE]
+====
+Consider using YAML format for inventory sources to avoid confusion on the actual type of a variable. 
+The YAML inventory plugin processes variable values consistently and correctly.
+====
+
+If a parameter value in the Ansible inventory file contains special characters, such as #, { or }, you must double-escape the value (that is enclose the value in both single and double quotation marks). 
+
+For example, to use `mypasswordwith#hashsigns` as a value for the variable `pg_password`, declare it as `pg_password='"mypasswordwith#hashsigns"'` in the Ansible host inventory file.

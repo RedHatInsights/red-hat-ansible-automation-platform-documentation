@@ -6,7 +6,8 @@ ifdef::context[:parent-context: {context}]
 :context: standalone-hub-ext-database
 
 [role="_abstract"]
-You can use these instructions to install a standalone instance of {HubName} with an external managed database. This installs the {HubName} server on a single machine and installs a remote PostgreSQL database using the {PlatformNameShort} installer.
+You can use these instructions to install a standalone instance of {HubName} with an external managed database. 
+This installs the {HubName} server on a single machine and installs a remote PostgreSQL database using the {PlatformNameShort} installer.
 
 
 == Prerequisites
@@ -15,10 +16,8 @@ You can use these instructions to install a standalone instance of {HubName} wit
 * You are installing on a machine that meets base system requirements.
 * You have created a Red Hat Registry Service Account, following the instructions in the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
 
-include::platform/ref-platform-install-settings.adoc[leveloffset=3]
 include::platform/proc-editing-inventory-file.adoc[leveloffset=3]
 include::platform/ref-standalone-hub-ext-database-inventory.adoc[leveloffset=3]
-include::platform/ref-additional-inv-configs.adoc[leveloffset=3]
 include::platform/ref-setup-script-args.adoc[leveloffset=3]
 include::platform/proc-running-setup-script.adoc[leveloffset=3]
 include::platform/proc-verify-controller-installation.adoc[leveloffset=3]
