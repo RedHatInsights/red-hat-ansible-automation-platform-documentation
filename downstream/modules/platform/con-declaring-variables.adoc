@@ -1,6 +1,6 @@
 [id="con-declaring_variables"]
 
-= Rules for declaring variables in invetory files
+= Rules for declaring variables in inventory files
 
 The values of string variables are declared in quotes. 
 For example:
