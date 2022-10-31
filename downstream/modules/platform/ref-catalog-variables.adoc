@@ -1,0 +1,44 @@
+[id="ref-catalog-variables"]
+
+= {CatalogNameStart} variables
+
+[cols="50%,50%",options="header"]
+|====
+| *Variable* | *Description* 
+| *`automationcatalog_controller_password`* |Used to generate a token from a controller host. 
+
+Requires `automation_controller_main_url` to be defined as well.
+| *`automationcatalog_controller_token`* | Used for a pre-created OAuth token for {ControllerName}.
+This token will be used instead of generating a token.
+| *`automationcatalog_controller_username`* | Used to generate a token from a controller host. 
+Requires `automation_controller_main_url` to be defined as well.
+| *`automationcatalog_controller_verify_ssl`* | Used to enable or disable SSL validation from {CatalogName} to {ControllerName}. 
+
+Default = `true`.
+| *`automationcatalog_disable_hsts`* | Used to enable or disable HSTS web-security policy for {CatalogName}. 
+
+Default = `false.
+| *`automationcatalog_disable_https`* | Used to enable or disable HSTS web-security policy for Services Catalog.
+
+Default = `false`.
+| *`automationcatalog_enable_analytics_collection`* | Used to control activation of analytics collection for {CatalogName}
+| *`automationcatalog_main_url`* | Used by the {RHSSO} host configuration if there is an alternative hostname that needs to be used between the SSO and {CatalogName} host.
+| *`automationcatalog_pg_database`* | The postgres database URL for your {CatalogName}.
+| *`automationcatalog_pg_host`* | The PostgreSQL host (database node) for your {CatalogName}
+| *`automationcatalog_pg_password`* | The password for the PostgreSQL database of your {CatalogName}.
+
+Do not use special characters for `automationcatalog_pg_password`. 
+They can cause the password to fail.
+| *`automationcatalog_pg_port`* | The PostgreSQL port to use for your {CatalogName}.
+
+Default = 5432
+| *`automationcatalog_pg_username`* | The postgres ID for your {CatalogName}.
+| *`automationcatalog_ssl_cert`* | Path to a custom provided SSL certificate file. 
+Requires `automationcatalog_ssl_key` 
+The internally managed CA signs and creates the certificate if not provided and https is left enabled.
+| *`automationcatalog_ssl_key`* | Path to a custom provided SSL certificate key file. 
+
+Requires `automationcatalog_ssl_cert`. 
+
+The internally managed CA signs and creates the certificate if not provided and https is left enabled.
+|====
