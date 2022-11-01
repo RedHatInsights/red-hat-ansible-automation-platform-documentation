@@ -151,11 +151,6 @@ Same as `web_server_ssl_key` but for {HubName} UI and API
 If {HubName} should validate certificate when requesting itself because by default, {PlatformNameShort} deploys with self-signed certificates.
 
 Default = `false`.
-| *`automationhub_upgrade`* | By default, when the {HubName} package and its dependencies are installed they are not upgraded when running the installer, even if newer packages are available. 
-
-To upgrade, you must to run the `./setup.sh` script with this variable set to `true`.
-
-Default = `false`
 | *`generate_automationhub_token`* a| If upgrading from {PlatformName} 2.0 or earlier, you must either:
 
 * provide an existing {HubNameMain} token as `automationhub_api_token` or
