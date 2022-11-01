@@ -105,8 +105,9 @@ This can be any URI that is supported by your underlying LDAP libraries.
 | *`automationhub_ldap_user_search_base_dn`* | An LDAPSearch object that locates a user in the directory. 
 The filter parameter should contain the placeholder %(user)s for the username. 
 It must return exactly one result for authentication to succeed.
-| *`automationhub_main_url`* | When using Single Sign-On, specify the main {HubName} URL that
-clients will connect to, for example, `\https://<hubaddress.example.com>`, which leads to the external address being entered in `/etc/pulp/settings.py`.
+| *`automationhub_main_url`* | The main {HubNameShort} URL that clients connect to.
+
+For example, \https://<load balancer host>.
 
 If not specified, the first node in the `[automationhub]` group is used.
 | *`automationhub_pg_database`* | _Required_
