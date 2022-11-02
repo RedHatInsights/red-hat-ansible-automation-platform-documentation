@@ -67,6 +67,7 @@ You can see that the `worker0` node now has a `disktype=ssd` label.
 apiVersion: v1
 kind: Pod
 metadata:
+  disktype: ssd
   namespace: ansible-automation-platform
 spec:
   serviceAccountName: default
