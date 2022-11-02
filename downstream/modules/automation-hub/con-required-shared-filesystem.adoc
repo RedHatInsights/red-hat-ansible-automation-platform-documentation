@@ -6,4 +6,5 @@
 = Required shared filesystem
 
 A high availability {HubName} requires you to have a shared file system, such as NFS, already installed in your environment. 
-Before you run the {PlatformName} installer, verify that the `/var/lib/pulp` directory exists across your cluster as a result of your shared file system installation. The {PlatformName} installer returns an error if `/var/lib/pulp` is not detected in one of your nodes, causing your high availability {HubName} setup to fail.
+Before you run the {PlatformName} installer, verify that the `/var/lib/pulp` directory exists across your cluster as a result of your shared file system installation. 
+The {PlatformName} installer returns an error if `/var/lib/pulp` is not detected in one of your nodes, causing your high availability {HubName} setup to fail.

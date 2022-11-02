@@ -16,18 +16,18 @@ From the {PlatformName} 2.3 release, {Valid} is preloaded into {PrivateHubName} 
 [cols="20%,30%,30%,20%",options="header"]
 |====
 | Entity | Collection name | Description | Published by
-| Ansible | cloud.azure_roles.load_balancer | A role to manage Azure Load Balancer | Red Hat Ansible
-| Ansible | cloud.azure_roles.managed_postgresql | A role to manage Azure PostGreSQL Database |Red Hat Ansible
-| Ansible | cloud.azure_roles.network_interface | A role to manage Azure Network Interface | Red Hat Ansible 
-| Ansible | cloud.azure_roles.networking_stack | A role to manage Azure Networking Stack | Red Hat Ansible
-| Ansible | cloud.azure_roles.resource_group  | A role to manage Azure Resource Group | Red Hat Ansible
-| Ansible | cloud.azure_roles.security_group  | A role to manage Azure Security Group | Red Hat Ansible
-| Ansible | cloud.azure_roles.virtual_machine  | A role to manage Azure Virtual Machine | Red Hat Ansible
-| Ansible | network.base | A validated content collection to consist base config related implementation that would be utilized by other validated content | Red Hat Ansible
-| Ansible | network.base | A validated content collection to configure bgp and provide capabilities to do operational state/healthchecks | Red Hat Ansible
-| Ansible | network.acls | A validated content collection to configure acls and provide capabilities to do operational state/healthchecks | Red Hat Ansible
-| Ansible | network.interfaces | A validated content collection to configure interfaces and provide capabilities to do operational state/healthchecks | Red Hat Ansible
-| Ansible | network.ospf | A validated content collection to configure ospf and provide capabilities to do operational state/healthchecks | Red Hat Ansible
+| Ansible | `cloud.azure_roles.load_balancer` | A role to manage Azure Load Balancer | Red Hat Ansible
+| Ansible | `cloud.azure_roles.managed_postgresql` | A role to manage Azure PostGreSQL Database |Red Hat Ansible
+| Ansible | `cloud.azure_roles.network_interface` | A role to manage Azure Network Interface | Red Hat Ansible 
+| Ansible | `cloud.azure_roles.networking_stack` | A role to manage Azure Networking Stack | Red Hat Ansible
+| Ansible | `cloud.azure_roles.resource_group`  | A role to manage Azure Resource Group | Red Hat Ansible
+| Ansible | `cloud.azure_roles.security_group`  | A role to manage Azure Security Group | Red Hat Ansible
+| Ansible | `cloud.azure_roles.virtual_machine`  | A role to manage Azure Virtual Machine | Red Hat Ansible
+| Ansible | `network.base` | A validated content collection to consist base config related implementation that would be utilized by other validated content | Red Hat Ansible
+| Ansible | `network.base` | A validated content collection to configure bgp and provide capabilities to do operational state/healthchecks | Red Hat Ansible
+| Ansible | `network.acls` | A validated content collection to configure acls and provide capabilities to do operational state/healthchecks | Red Hat Ansible
+| Ansible | `network.interfaces` | A validated content collection to configure interfaces and provide capabilities to do operational state/healthchecks | Red Hat Ansible
+| Ansible | `network.ospf` | A validated content collection to configure ospf and provide capabilities to do operational state/healthchecks | Red Hat Ansible
 | Ansible | <name yet to decide> | Connectivity between on-prem network device (for ex CSR) and cloud gateway(for ex AWS) | Red Hat Ansible
 | Ansible | <name yet to decide> | A validated content (potentially a role) on Inventory Report that returns statistics and IDs of different edge nodes and servers |Red Hat Ansible
 | Ansible | | Network device Inventory report using html | Red Hat Ansible
