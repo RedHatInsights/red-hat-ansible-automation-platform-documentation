@@ -1,0 +1,24 @@
+[[catalog-05-2022]]
+= Automation Services Catalog
+
+Automation Services Catalog provides an easy way to extend automation in your Ansible controller to a broader user base. It offers multi-level approval to ensure extending automation is done safely. And, Role Based Access allows you to restrict automation access to specified users. Automation Services Catalog is the shop window into the Ansible Automation Platform.
+
+[NOTE]
+====
+Automation Services Catalog is a Technology Preview supported feature.
+====
+
+The following languages are supported for internalization:
+
+* English
+* French
+* Spanish
+* Japanese
+* Korean
+* Dutch
+* Chinese
+
+.Enhancements
+
+* Adopted the new pulp RBAC system.
+* Fixed an issue where the pulp resource manager was not removed on upgrade from Ansible Automation Platform 2.1 to Ansible Automation Platform 2.2. 

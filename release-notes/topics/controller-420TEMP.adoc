@@ -1,0 +1,18 @@
+[[controller-420-intro]]
+= Automation Controller 4.2
+
+Automation controller replaces Ansible Tower.
+Automation controller introduces a distributed, modular architecture with a decoupled control and execution plane.
+The name change reflects these enhancements and the overall position within the Ansible Automation Platform suite.
+
+Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.
+
+.Enhancements
+
+* Fixed a race condition where the UI would not properly populate upon launch.
+* Fixed an error when navigating to a non-existent group URL.
+* Fixed an issue where execution environments were failing to be pushed locally during install.
+* Fixed an issue where filters were not working correctly when searching for execution environments.
+* Fixed an issue where inventory cannot be selected in workflows even if the user has admin permissions on the workflow.
+
+See link:https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[automation controller Release Notes for 4.x] for a full list of new features and enhancements.
