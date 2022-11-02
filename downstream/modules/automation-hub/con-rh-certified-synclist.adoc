@@ -10,6 +10,6 @@ Each synclist has its own unique repository URL you can use to designate as a re
 
 [NOTE]
 ====
-Initially, {Valid} will only be available through the {PrivateHubName} installer. 
+Initially, {Valid} is only available through the {PrivateHubName} installer. 
 Organization Administrators can preload all {Valid} collections at install time and put them into a staging state where they can be reviewed to avoid uploading unnecessary collections.
 ====
