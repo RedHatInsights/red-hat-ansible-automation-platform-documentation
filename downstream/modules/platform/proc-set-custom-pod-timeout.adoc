@@ -2,11 +2,14 @@
 
 = Custom pod timeouts
 
-You can set `awx_container_group_pod_pending_timeout` higher if long running jobs are being canceled. 
-This can be done using `extra_settings` on the {ControllerName} specification 
+A container group job in {ControllerName} will transition to the `running` state just before you submit the pod to the kubernetes API. 
+{ControllerNameStart} then expects the pod to enter the `Running` state before `awx_container_group_pod_pending_timeout` seconds has elapsed. 
+You can set `awx_container_group_pod_pending_timeout` to a higher value if you want {ControllerName} to wait for longer before cancelling jobs that fail to enter the `Running` state.
+
+For further information about pod scheduling, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.11/html/nodes/controlling-pod-placement-onto-nodes-scheduling[Controlling pod placement onto nodes].
 
 With `extra_settings`, you can pass multiple custom settings using the awx-operator. 
-The parameter extra_settings is appended to `/etc/tower/settings.py` and can be an alternative to the `extra_volumes` parameter.
+The parameter `extra_settings` is appended to `/etc/tower/settings.py` and can be an alternative to the `extra_volumes` parameter.
 
 [cols="20%,20%,20%",options="header"]
 |====
