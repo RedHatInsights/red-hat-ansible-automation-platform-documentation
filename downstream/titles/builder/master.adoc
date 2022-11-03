@@ -5,7 +5,6 @@
 
 include::attributes/attributes.adoc[]
 
-
 // Book Title
 = Creating and consuming execution environments with {PlatformName}
 
