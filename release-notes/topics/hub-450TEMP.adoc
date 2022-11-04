@@ -5,11 +5,23 @@ Automation Hub allows you to discover and utilize new certified automation conte
 
 .Enhancements
 
+* Added a configurable automatic logout time. Set a minimum password length for internal users.
 * Added the capability to configure LDAP with Private Automation Hub.
-* Allow option for execution environment images to be pulled from Hub only.
+* Added visibility for EE's created by ansible-builder in the automation hub UI.
+* Fixed an issue where roles could not be created through the UI.
 * Fixed an issue during Hub installation during the collect static content task.
 * Fixed an issue when a 500 error would populate when listing roles on a group.
 * Fixed an issue when imports contained more than 100 namespaces.
+* Fixed an issue where filters were not working correctly when searching for execution environments.
 * Fixed an issue where certified content would display incorrectly in private automation hub when synced.
 * Fixed an issue where group_admin users could not view groups.
 * Fixed an issue where pressing the enter key would reload a form instead of submitting.
+* Fixed an issue with broken links on community collection dependencies.
+* Fixed an issue with roles not showing up on a group access page.
+* Fixed some issues with how roles were displayed on the groups page.
+* Updated so that only admins can change the superuser status on users.
+* Updated so that the screen no longer hangs when attempting to edit a group with unknown permissions.
+* Updated the installer to use a custom repo that Hub will add to show validated content.
+* Updated the pulp_ansible package to 0.15.
+* Updated the pulp_container package to 2.14.
+* Upgraded pulp_installer to 3.20.5+.

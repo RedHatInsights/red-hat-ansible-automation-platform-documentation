@@ -21,4 +21,3 @@ The following languages are supported for internalization:
 .Enhancements
 
 * Adopted the new pulp RBAC system.
-* Fixed an issue where the pulp resource manager was not removed on upgrade from Ansible Automation Platform 2.1 to Ansible Automation Platform 2.2. 

@@ -12,3 +12,7 @@ spec:
     - redhat-operators-pull-secret
     - my-other-pull-secret
 -----
+
+.Enhancements
+
+* Fixed an issue where the pulp resource manager was not removed on upgrade from Automation Platform Operator 2.1 to Automation Platform Operator 2.2.
