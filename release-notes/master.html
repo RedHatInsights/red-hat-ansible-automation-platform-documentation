@@ -601,10 +601,16 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 <div class="title">Enhancements</div>
 <ul>
 <li>
+<p>Added a configurable automatic logout time. Set a minimum password length for internal users.</p>
+</li>
+<li>
 <p>Added the capability to configure LDAP with Private Automation Hub.</p>
 </li>
 <li>
-<p>Allow option for execution environment images to be pulled from Hub only.</p>
+<p>Added visibility for EE&#8217;s created by ansible-builder in the automation hub UI.</p>
+</li>
+<li>
+<p>Fixed an issue where roles could not be created through the UI.</p>
 </li>
 <li>
 <p>Fixed an issue during Hub installation during the collect static content task.</p>
@@ -616,6 +622,9 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 <p>Fixed an issue when imports contained more than 100 namespaces.</p>
 </li>
 <li>
+<p>Fixed an issue where filters were not working correctly when searching for execution environments.</p>
+</li>
+<li>
 <p>Fixed an issue where certified content would display incorrectly in private automation hub when synced.</p>
 </li>
 <li>
@@ -623,6 +632,33 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 </li>
 <li>
 <p>Fixed an issue where pressing the enter key would reload a form instead of submitting.</p>
+</li>
+<li>
+<p>Fixed an issue with broken links on community collection dependencies.</p>
+</li>
+<li>
+<p>Fixed an issue with roles not showing up on a group access page.</p>
+</li>
+<li>
+<p>Fixed some issues with how roles were displayed on the groups page.</p>
+</li>
+<li>
+<p>Updated so that only admins can change the superuser status on users.</p>
+</li>
+<li>
+<p>Updated so that the screen no longer hangs when attempting to edit a group with unknown permissions.</p>
+</li>
+<li>
+<p>Updated the installer to use a custom repo that Hub will add to show validated content.</p>
+</li>
+<li>
+<p>Updated the pulp_ansible package to 0.15.</p>
+</li>
+<li>
+<p>Updated the pulp_container package to 2.14.</p>
+</li>
+<li>
+<p>Upgraded pulp_installer to 3.20.5+.</p>
 </li>
 </ul>
 </div>
@@ -680,9 +716,6 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 <li>
 <p>Adopted the new pulp RBAC system.</p>
 </li>
-<li>
-<p>Fixed an issue where the pulp resource manager was not removed on upgrade from Ansible Automation Platform 2.1 to Ansible Automation Platform 2.2.</p>
-</li>
 </ul>
 </div>
 </div>
@@ -709,10 +742,10 @@ The name change reflects these enhancements and the overall position within the 
 <p>Fixed an issue where execution environments were failing to be pushed locally during install.</p>
 </li>
 <li>
-<p>Fixed an issue where filters were not working correctly when searching for execution environments.</p>
+<p>Fixed an issue where inventory cannot be selected in workflows even if the user has admin permissions on the workflow.</p>
 </li>
 <li>
-<p>Fixed an issue where inventory cannot be selected in workflows even if the user has admin permissions on the workflow.</p>
+<p>Introduced a content signing utility through the Command Line Interface called, <code>ansible-sign</code> that provides options for the user to sign and verify whether the project is signed.</p>
 </li>
 </ul>
 </div>
@@ -740,6 +773,14 @@ The name change reflects these enhancements and the overall position within the 
     - redhat-operators-pull-secret
     - my-other-pull-secret</pre>
 </div>
+</div>
+<div class="ulist">
+<div class="title">Enhancements</div>
+<ul>
+<li>
+<p>Fixed an issue where the pulp resource manager was not removed on upgrade from Automation Platform Operator 2.1 to Automation Platform Operator 2.2.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1810,7 +1851,7 @@ grouping options.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-11-02 13:09:47 UTC
+Last updated 2022-11-04 14:24:32 UTC
 </div>
 </div>
 </body>

@@ -1,4 +1,4 @@
-[[hub-450-intro]]
+[[hub-450TEMPintro]]
 = Automation Hub 4.5
 
 Automation Hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible Automation Hub, you can discover and manage Ansible Collections, which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.

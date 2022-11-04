@@ -1,4 +1,4 @@
-[[operator-220-intro]]
+[[operator-220TEMP-intro]]
 = Automation Platform Operator 2.2
 
 The Ansible Automation Platform Operator provides cloud-native, push-button deployment of new Ansible Automation Platform instances in your OpenShift environment.
