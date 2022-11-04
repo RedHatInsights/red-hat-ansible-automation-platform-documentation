@@ -5,9 +5,8 @@
 
 include::attributes/attributes.adoc[]
 
-
 // Book Title
-= Creating and consuming execution environments with {PlatformName}
+= Creating and Consuming Execution Environments
 
 Use {Builder} to create consistent and reproducible {ExecEnvName} for your {PlatformName} needs.
 
