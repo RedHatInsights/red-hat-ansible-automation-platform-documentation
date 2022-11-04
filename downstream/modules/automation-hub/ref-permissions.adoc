@@ -9,7 +9,7 @@ Permissions provide a defined set of actions each group performs on a given obje
 |===
 | Object | Permission | Description
 
-h| namespace |
+h| collection namespaces |
 
 Add namespace
 
