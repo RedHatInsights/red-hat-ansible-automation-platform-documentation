@@ -11,7 +11,7 @@ CPU and memory are collectively referred to as compute resources, or resources.
 Compute resources are measurable quantities that can be requested, allocated, and consumed. 
 They are distinct from API resources. API resources, such as Pods and Service, are objects that can be read and modified through the Kubernetes API server.
 
-== Resource requests and limits of Pod and container
+== Specifying resource requests and limits for Pods and containers
 For each container, you can specify resource limits and requests, including the following:
 
 [options="nowrap" subs="+quotes,attributes"]
@@ -27,8 +27,7 @@ For a particular resource, a Pod resource request/limit is the sum of the resour
 
 == Resource units in Kubernetes
 
-=== CPU resource units
-
+.CPU resource units
 Limits and requests for CPU resources are measured in CPU units. 
 In Kubernetes, 1 CPU unit is equivalent to 1 physical processor core, or 1 virtual core, depending on whether the node is a physical host or a virtual machine running inside a physical machine.
 
@@ -44,7 +43,7 @@ For example, 500m CPU represents the roughly same amount of computing power whet
 You cannot specify CPU resources with a precision finer than 1m. Because of this, it's useful to specify CPU units less than 1.0 or 1000m using the milliCPU form; for example, 5m rather than 0.005.
 ====
 
-=== Memory resource units
+.Memory resource units
 Limits and requests for memory are measured in bytes. 
 You can express memory as a plain integer or as a fixed-point number using one of these quantity suffixes: E, P, T, G, M, k. 
 You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki. 
@@ -58,7 +57,10 @@ For example, the following represent roughly the same value:
 Pay attention to the case of the suffixes. 
 If you request 400m of memory, this is a request for 0.4 bytes, not 400 mebibytes (400Mi) or 400 megabytes (400M).
 
-For example, given the resources specified below, the cluster has enough free resources to schedule a task pod with a dedicated 100m CPU and 250Mi, and that cluster can also withstand bursts over that dedicated usage up to 2000m CPU and 2Gi memory.  
+.Example CPU and memory specification
+
+The following cluster has enough free resources to schedule a task pod with a dedicated 100m CPU and 250Mi. 
+The cluster can also withstand bursts over that dedicated usage up to 2000m CPU and 2Gi memory.  
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
@@ -72,10 +74,10 @@ spec:
       memory: 2Gi
 ----
 
-Controller will not schedule jobs that use more resources than the limit set. 
+{ControllerNameStart} will not schedule jobs that use more resources than the limit set. 
 If the task pod does use more resources than the limit set, the container is OOMKilled by kubernetes and restarted.  
 
-=== Resource Requests
+== Size recommendations for resource requests
 
 All jobs that use a container group use the same Pod Specification. 
 The Pod Specification includes the resource requests for the pod that runs the job. 

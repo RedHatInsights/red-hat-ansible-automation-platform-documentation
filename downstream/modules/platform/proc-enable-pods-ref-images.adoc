@@ -2,11 +2,20 @@
 
 == Enabling pods to reference images from other secured registries
 
-The .dockercfg file (or `$HOME/.docker/config.json` for newer Docker clients) is a Docker credentials file that stores your information if you have previously logged into a secured or insecure registry.
+If a container group uses a container from a secured registry that requires a credential, you can associate a Container Registry credential with the Execution Environment that is assigned to the job template. 
+{ControllerNameStart} uses this to create an `ImagePullSecret' for you in the {OCPShort} namespace where the container group job runs, and cleans it up after the job is done.
+
+Alternatively, if the `ImagePullSecret`` already exists in the container group namespace, you can specify the `ImagePullSecret`` on the custom pod specification for the ContainerGroup.
+
+Note that the image used by a job running in a container group is always overridden by the Execution Environment associated with the job.
+
+.Use of pre-created ImagePullSecrets (Advanced)
+If you want to use this workflow and pre-create the `ImagePullSecret``, you can source the necessary information to create it from your local `.dockercfg` file on a system that has previously accessed a secure container registry.
+
 
 .Procedure
-. To pull a secured container image that is not from the {OCP} internal registry, you must create a pull secret from your Docker credentials and add it to your service account.
-+
+The .dockercfg file (or `$HOME/.docker/config.json` for newer Docker clients) is a Docker credentials file that stores your information if you have previously logged into a secured or insecure registry.
+
 If you already have a `.dockercfg` file for the secured registry, you can create a secret from that file by running:
 +
 [options="nowrap" subs="+quotes,attributes"]

@@ -8,6 +8,7 @@ ifdef::context[:parent-context: {context}]
 A kubernetes cluster runs on top of multiple Virtual Machines or nodes (generally anywhere between 2 and 20 nodes). 
 Pods can be scheduled on any of these nodes. 
 When you create or schedule a new pod, use the `topology_spread_constraints` setting to configure how new pods are distributed across the underlying nodes when scheduled or created. 
+
 Typically your pods should not be scheduled on a single node, because if that node fails, so does the services those pods are providing.
 
 The control plane nodes be run on different nodes to the automation job pods. 
