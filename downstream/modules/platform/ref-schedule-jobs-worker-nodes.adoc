@@ -18,4 +18,6 @@ At this point the job is shown as running in {ControllerName}.
 Kubernetes now schedules the pod. 
 If the pod stays in _pending_, it can stay there for `awx_container_group_pod_pending_timeout`. 
 If the pod is denied through a ResourceQuota, the job starts over at _pending_. 
+You can configure a resource quota on a namespace to limit how many resources may be consumed by pods in the namespace. 
+For further information on ResourceQuotas, see link:https://kubernetes.io/docs/concepts/policy/resource-quotas/[Resource Quotas].
 

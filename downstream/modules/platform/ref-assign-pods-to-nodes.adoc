@@ -15,10 +15,10 @@ The following table shows the settings and fields that can be set on the {Contro
 | Name | Description | Default
 | `postgres_image` | Path of the image to pull | postgres
 | `postgres_image_version` | Image version to pull | 13
-| `node_selector` | AWX pods’ nodeSelector | “”’’
-| `topology_spread_constraints` | AWX pods’ topologySpreadConstraints | “”’’
-| `tolerations` |  AWX pods’ tolerations | “”’’
-| `annotations` | AWX pods’ annotations | “”’’
+| `node_selector` | AutomationController pods’ nodeSelector | “”’’
+| `topology_spread_constraints` | AutomationController pods’ topologySpreadConstraints | “”’’
+| `tolerations` |  AutomationController pods’ tolerations | “”’’
+| `annotations` | AutomationController pods’ annotations | “”’’
 | `postgres_selector` | Postgres pods’ nodeSelector | “”’’
 | `postgres_tolerations`| Postgres pods’ tolerations | “”’’
 |====
@@ -48,7 +48,7 @@ spec:
   tolerations: |
     - key: "dedicated"
       operator: "Equal"
-      value: "AWX"
+      value: "AutomationController"
       effect: "NoSchedule"
   postgres_selector: |
     disktype: ssd
@@ -57,11 +57,6 @@ spec:
   postgres_tolerations: |
     - key: "dedicated"
       operator: "Equal"
-      value: "AWX"
+      value: "AutomationController"
       effect: "NoSchedule"
 ----
-
-== Specify Nodes for Job Execution
-
-A node selector can be added to the container group pod specification to ensure they only run against certain nodes. 
-First add a label to the nodes you want to run jobs against. 
