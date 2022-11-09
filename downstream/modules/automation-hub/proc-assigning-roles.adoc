@@ -1,0 +1,38 @@
+//module included in the following assemblies:
+//assembly-central-auth-group-perms.adoc
+
+[id="proc-assigning-roles"]
+
+== Assigning roles to groups
+
+You can assign roles to groups, giving users access to specific features in the system, from both the *Groups* menu and the *Namespaces* menu. Roles assigned to a group from the *Groups* menu have a global scope. For example, if a user is assigned a namespace owner role, that permission applies to all namespaces. However, roles assigned to a group from the _Namespaces_ menu will only give a user access to a specific instance of an object.
+
+.Prerequisites
+
+You are signed in as a `hubadmin` user.
+
+.Procedure
+
+Assigning roles from the *Groups* menu.
+
+. Log in to your local {HubName}.
+. Navigate to the *User Access* drop-down menu.
+. Click btn:[Groups] and select a group name.
+. Click btn:[Add roles].
+. Click the checkbox next to the role that you want to add.
+. Click btn:[Next] to preview the role that will be applied to the group.
+. Click btn:[Add] to apply the selected role to the group.
+
+[NOTE]
+Click btn:[Back] to return to the roles menu, or click btn:[Cancel] to return to the previous page.
+
+.Procedure
+
+Assigning roles from the *Namespaces* menu.
+
+. Log in to your local {HubName}.
+. Navigate to the *Collections* drop-down menu.
+. Click the *My Namespaces* tab, and select a namespace.
+. Click the *Namespace owners* tab to edit.
+
+Users can now access features in {HubName} associated with their assigned permissions.
