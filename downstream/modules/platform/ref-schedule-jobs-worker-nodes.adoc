@@ -2,22 +2,22 @@
 
 = Jobs scheduled on the worker nodes
 
-Both {ControllerName} and kubernetes play a role in scheduling a job.  
+Both {ControllerName} and Kubernetes play a role in scheduling a job.  
 
-When a job is launched, its dependencies are fulfilled, meaning any project updates or inventory updates are launched as indicated by settings on each resource, such as project update on launch. 
+When a job is launched, its dependencies are fulfilled, meaning any project updates or inventory updates are launched as indicated by settings on each resource, such as *project update on launch*. 
 
 If the job is not blocked by other business logic in {Controllername} and there is control capacity in the control plane to start the job, the job is submitted to the dispatcher. 
 The default settings of the "cost" to control a job is 1 _capacity_. 
 So, a control pod with 100 capacity is able to control up to 100 jobs at a time. 
 Given control capacity, the job transitions from _pending_ to _waiting_. 
 
-At this point, a background process in the control plan pod called the dispatcher starts a worker process to run the job.
+The dispatcher, which is a background process in the control plan pod, starts a worker process to run the job.
 This communicates with the kubernetes API using a service account associated with the container group and uses the pod specification as defined on the Container Group in {ControllerName} to provision the pod. 
-At this point the job is shown as running in {ControllerName}.
+The job status in {ControllerName} is shown as _running_.
 
 Kubernetes now schedules the pod. 
-If the pod stays in _pending_, it can stay there for `awx_container_group_pod_pending_timeout`. 
-If the pod is denied through a ResourceQuota, the job starts over at _pending_. 
+A pod can remain in the _pending_ state for `awx_container_group_pod_pending_timeout`. 
+If the pod is denied through a `ResourceQuota`, the job starts over at _pending_. 
 You can configure a resource quota on a namespace to limit how many resources may be consumed by pods in the namespace. 
 For further information on ResourceQuotas, see link:https://kubernetes.io/docs/concepts/policy/resource-quotas/[Resource Quotas].
 

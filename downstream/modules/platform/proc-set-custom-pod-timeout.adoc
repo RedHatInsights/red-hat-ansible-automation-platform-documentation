@@ -6,7 +6,7 @@ A container group job in {ControllerName} will transition to the `running` state
 {ControllerNameStart} then expects the pod to enter the `Running` state before `awx_container_group_pod_pending_timeout` seconds has elapsed. 
 You can set `awx_container_group_pod_pending_timeout` to a higher value if you want {ControllerName} to wait for longer before cancelling jobs that fail to enter the `Running` state.
 
-For further information about pod scheduling, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.11/html/nodes/controlling-pod-placement-onto-nodes-scheduling[Controlling pod placement onto nodes].
+For further information about pod scheduling, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/nodes/controlling-pod-placement-onto-nodes-scheduling[Controlling pod placement onto nodes].
 
 .Extra settings
 With `extra_settings`, you can pass multiple custom settings using the awx-operator. 

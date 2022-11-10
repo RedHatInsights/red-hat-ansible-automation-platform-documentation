@@ -79,8 +79,8 @@ The labels are stored in key:value format in the metadata hash.
 One label in this example is `docker-registry=default`.
 | `generateName:` | Pods must have a unique name within their namespace. 
 A pod definition can specify the basis of a name with the `generateName` attribute, and add random characters automatically to generate a unique name.
-| `containers:` | `containers` specifies an array of container definitions. In this case (as with most), just one.
-| `env:` | Environment variables can be specified to pass necessary values to each container.
+| `containers:` | `containers` specifies an array of container definitions. In this case (as with most), defines only one container.
+| `env:` | Environment variables pass necessary values to each container.
 | `image:` | Each container in the pod is instantiated from its own Docker-formatted container image.
 | `ports:` |  The container can bind to ports made available on the pod’s IP.
 | `resources` | When you specify a Pod, you can optionally describe how much of each resource a container needs. 
