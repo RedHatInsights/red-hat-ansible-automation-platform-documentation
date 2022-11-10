@@ -15,7 +15,7 @@ The following procedure adds a label to a node.
 kubectl get nodes --show-labels
 ----
 +
-The output is similar to this:
+The output is similar to this (shown here in a table):
 +
 [cols="15%,15%,15%,15%,15,25%",options="header"]
 |====
@@ -48,7 +48,7 @@ where `<your-node-name>` is the name of your chosen node.
 kubectl get nodes --show-labels
 ----
 +
-. The output is similar to this:
+. The output is similar to this (shown here in a table):
 +
 [cols="15%,15%,15%,15%,15,25%",options="header"]
 |====

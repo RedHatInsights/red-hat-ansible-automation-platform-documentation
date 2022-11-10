@@ -2,11 +2,11 @@
 
 = Assigning pods to specific nodes
 
-You can constrain the controller pods created by the operator to run on a certain subset of nodes.
+You can constrain the {ControllerName} pods created by the operator to run on a certain subset of nodes.
 
-* `node_selector` and `postgres_selector` constrain the controller pods to run only on the nodes that match all the specified key, or value, pairs.
-* `tolerations` and `postgres_tolerations` enable the controller pods to be scheduled onto nodes with matching taints. 
-See Taints and Tolerations in the Kubernetes documentation for further details.
+* `node_selector` and `postgres_selector` constrain the {ControllerName} pods to run only on the nodes that match all the specified key, or value, pairs.
+* `tolerations` and `postgres_tolerations` enable the {ControllerName} pods to be scheduled onto nodes with matching taints. 
+See link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/[Taints and Toleration] in the Kubernetes documentation for further details.
 
 The following table shows the settings and fields that can be set on the {ControllerName}'s specification section of the YAML (or using the Openshift UI form).
 

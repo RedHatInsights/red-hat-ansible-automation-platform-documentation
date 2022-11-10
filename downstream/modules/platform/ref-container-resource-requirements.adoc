@@ -2,10 +2,18 @@
 
 = Containers resource requirements
 
-You can configure the resource requirements of task and the web containers, at both the lower end (requests) and the upper end (limits). The execution environment control plane is used for project updates, but is normally be the same as the default execution environment for jobs.
+You can configure the resource requirements of task and the web containers, at both the lower end (requests) and the upper end (limits). The execution environment control plane is used for project updates, but is normally the same as the default execution environment for jobs.
 
 Setting resource requests and limits is a best practice because when a container has both defined, it is given a higher _Quality of Service_ class. 
 This means that if the underlying node is resource constrained and the cluster has to reap a pod to prevent running memory or other failure, the control plane pod is less likely to be reaped.
+
+These requests and limits apply to the control pods for {ControllerName} and if limits are set, determine the _capacity_ of the instance. 
+By default, controlling a job takes 1 unit of capacity. 
+The memory and CPU limits of the task container are used to determine the capacity of control nodes. 
+For more information on how this is calculated, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#resource-determination-for-capacity-algorithm[Resouce determination]. 
+
+See also xref:ref-schedule-jobs-worker-nodes[Jobs scheduled on the worker nodes]
+
 
 [cols="30%,30%,30%",options="header"]
 |====

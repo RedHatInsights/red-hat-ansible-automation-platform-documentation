@@ -12,7 +12,7 @@ When you create or schedule a new pod, use the `topology_spread_constraints` set
 Typically your pods should not be scheduled on a single node, because if that node fails, so does the services those pods are providing.
 
 The control plane nodes be run on different nodes to the automation job pods. 
-If the control plane pods share nodes with the job pods, the control plane can become resource starved and degrade service of the whole application.
+If the control plane pods share nodes with the job pods, the control plane can become resource starved and degrade the performance of the whole application.
 
 include::platform/ref-assign-pods-to-nodes.adoc[leveloffset=+1]
 include::platform/proc-specify-nodes-job-execution.adoc[leveloffset=+1]

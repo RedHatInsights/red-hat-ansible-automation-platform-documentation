@@ -10,3 +10,4 @@ On the {ControllerName} custom resource, the number of _replicas_ determines the
 
 include::platform/ref-set-requests-limits-for-containers.adoc[leveloffset=+1]
 include::platform/ref-container-resource-requirements.adoc[leveloffset=+1]
+include::platform/con-alternative-capacity-limits.adoc[leveloffset=+1]
