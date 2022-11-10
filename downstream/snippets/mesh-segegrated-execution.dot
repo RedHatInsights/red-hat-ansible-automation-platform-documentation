@@ -1,0 +1,28 @@
+# mesh-segegrated-execution.png
+strict digraph "" {
+    nodesep=0.5
+    rankdir=TB
+    rankdir=TB
+    node [shape=box];
+    "aap_e_3";
+    "aap_h_1";
+    subgraph cluster_0 {
+        graph [label="Control nodes", type =solid];
+        {
+            rank=same;
+            "aap_c_1";
+            "aap_c_2";
+        }
+
+  }
+  "aap_e_1";
+  "aap_e_2";
+  "aap_e_3" -> "aap_h_1";
+  "aap_h_1" -> "aap_c_1";
+  "aap_h_1" -> "aap_c_2";
+  "aap_c_1" -> "aap_c_2" [dir=both];
+  "aap_c_1" -> "aap_e_1";
+  "aap_c_1" -> "aap_e_2";
+  "aap_c_2" -> "aap_e_1";
+  "aap_c_2" -> "aap_e_2";
+}

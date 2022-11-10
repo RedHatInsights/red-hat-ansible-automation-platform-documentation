@@ -28,8 +28,7 @@ Pull images from the {HubName} container registry to make a copy to your local m
 
 == Prerequisites
 
-* You can view and pull from private containers.
-
+* You have permission to view and pull from a private container repository.
 
 include::automation-hub/proc-pull-image.adoc[leveloffset=+1]
 

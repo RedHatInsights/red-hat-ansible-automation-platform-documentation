@@ -18,4 +18,3 @@ oc get pvc -n <namespace>
 -----
 oc delete pvc -n <namespace> <pvc-name>
 -----
-+

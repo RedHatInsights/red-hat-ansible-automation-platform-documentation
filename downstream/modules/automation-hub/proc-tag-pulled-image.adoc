@@ -12,6 +12,7 @@ After you pull images from a registry, tag them for use in your private {HubName
 .Prerequisites
 
 * You have pulled a container image from an external registry.
+* You have the FQDN or IP address of the {HubName} instance.
 
 .Procedure
 

@@ -1,0 +1,7 @@
+[id="aap-data-migration_{context}"]
+
+= Migrating data to the {PlatformNameShort} Operator
+
+[role=_abstract]
+
+After you have set your secret key, postgresql credentials, verified network connectivity and installed the {OperatorPlatform}, you must create a custom resource controller object before you can migrate your data.

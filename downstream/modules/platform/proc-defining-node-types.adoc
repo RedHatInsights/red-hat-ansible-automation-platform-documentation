@@ -5,11 +5,17 @@
 = Defining {AutomationMesh} node types
 
 [role="_abstract"]
-You can a define node type either by its default value assigned by the inventory group or by using the `node_type` host variable. Specify the `node_type` either as part of the inventory group or within the inventory `vars` group.  This section provides examples of how you can define node types in your inventory file.  Nodes in `[execution_nodes]` default execution node_type. Hybrid node types can be overridden to be control type via `node_type=control`. Execution node type can be overridden to be hope node type via `node_type=hop`
+The examples in this section demonstrate how to set the node type for the hosts in your inventory file.
+
+You can set the `node_type` for single nodes in the control plane or execution plane inventory groups.
+To define the node type for an entire group of nodes, set the `node_type` in the `vars` stanza for the group.
+
+* The allowed values for `node_type` in the control plane `[automationcontroller]` group are `hybrid` (default) and `control`.
+* The allowed values for `node_type` in the `[execution_nodes]` group are `execution` (default) and `hop`.
 
 .Hybrid node
 
-Nodes in `[automationcontroller]` default to the *hybrid node* type. In the below example, we create a single hybrid node:
+The following inventory consists of a single hybrid node in the control plane:
 
 -----
 [automationcontroller]
@@ -18,28 +24,62 @@ control-plane-1.example.com
 
 .Control node
 
-Convert hybrid node types to control nodes using `node_type=control`:
+The following inventory consists of a single control node in the control plane:
 
 -----
 [automationcontroller]
 control-plane-1.example.com node_type=control
 -----
 
+If you set `node_type` to `control` in the `vars` stanza for the control plane nodes, then all of the nodes in control plane are control nodes.
+
+-----
+[automationcontroller]
+control-plane-1.example.com
+
+[automationcontroller:vars]
+node_type=control
+-----
+
 .Execution node
-Nodes in the`[execution_nodes]` inventory group default to the *execution node* type. In the below example, we create a single execution node:
+
+The following stanza defines a single execution node in the execution plane:
 
 -----
 [execution_nodes]
-execution-node-1.example.com
+execution-plane-1.example.com
 -----
 
 .Hop node
-Convert execution nodes to hop nodes using `node_type=control`:
+The following stanza defines a single hop node and an execution node in the execution plane. The `node_type` variable is set for every individual node.
 
 -----
 [execution_nodes]
-execution-node-1.example.com node_type=hop
+execution-plane-1.example.com node_type=hop
+execution-plane-2.example.com
 -----
+
+If you want to set the `node-type` at the group level, you must create separate groups for the execution nodes and the hop nodes.
+
+-----
+[execution_nodes]
+execution-plane-1.example.com
+execution-plane-2.example.com
+
+[execution_group]
+execution-plane-2.example.com
+
+[execution_group:vars]
+node_type=execution
+
+[hop_group]
+execution-plane-1.example.com
+
+[hop_group:vars]
+node_type=hop
+
+----- 
+
 
 .Peer connections
 Create node-to-node connections using the `peers=` host variable.

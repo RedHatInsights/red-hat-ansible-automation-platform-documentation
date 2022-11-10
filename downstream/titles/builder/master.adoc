@@ -1,4 +1,3 @@
-:imagesdir: images
 :numbered:
 :toclevels: 1
 
@@ -6,9 +5,8 @@
 
 include::attributes/attributes.adoc[]
 
-
 // Book Title
-= Ansible Builder Guide
+= Creating and Consuming Execution Environments
 
 Use {Builder} to create consistent and reproducible {ExecEnvName} for your {PlatformName} needs.
 
@@ -17,4 +15,10 @@ include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::builder/assembly-intro-to-builder.adoc[leveloffset=+1]
 include::builder/assembly-using-builder.adoc[leveloffset=+1]
 include::builder/assembly-publishing-exec-env.adoc[leveloffset=+1]
-include::builder/assembly-building-off-existing-ee.adoc[leveloffset=+1]
+//include::builder/assembly-building-off-existing-ee.adoc[leveloffset=+1]
+include::hub/assembly-populate-container-registry.adoc[leveloffset=+1]
+include::hub/assembly-setup-container-repository.adoc[leveloffset=+1]
+include::hub/assembly-pull-image.adoc[leveloffset=+1]
+
+[appendix]
+include::builder/builder/con-ee-precedence.adoc[leveloffset=+1]
