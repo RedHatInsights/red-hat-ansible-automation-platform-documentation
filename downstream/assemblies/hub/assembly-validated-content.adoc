@@ -5,13 +5,6 @@
 
 {Valid} provides an expert-led path for performing operational tasks on a variety of platforms including both Red Hat and our trusted partners.
 
-[NOTE]
-====
-{Valid} is only available with a valid subscription to {PlatformName}.
-Unlike {CertifiedCon}, {Valid} is not supported by Red Hat or our partners. 
-From the {PlatformName} 2.3 release, {Valid} is preloaded into {PrivateHubName} and can be updated manually by downloading the packages.
-====
-
 == Configuring validated or certified collections with the installer
 
 When you download and run the bundle installer, certified and validated collections are automatically uploaded. 
@@ -28,7 +21,14 @@ Possible values are certified or validated.
 If missing both content sets will be uploaded.
 |====
 
-== Types of {Valid}
+== {Valid}
+
+[NOTE]
+====
+{Valid} is only available with a valid subscription to {PlatformName}.
+Unlike {CertifiedCon}, {Valid} is not supported by Red Hat or our partners. 
+From the {PlatformName} 2.3 release, {Valid} is preloaded into {PrivateHubName} and can be updated manually by downloading the packages.
+====
 
 [cols="20%,30%,30%,20%",options="header"]
 |====

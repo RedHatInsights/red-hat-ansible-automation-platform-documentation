@@ -8,13 +8,12 @@ include::attributes/attributes.adoc[]
 Included with a subscription to {PlatformName}, {CertifiedColl} feature {CertifiedName} and {Valid}, as well as {Galaxy} content from the community. 
 Using {HubNameMain}, your organization can access and curate a unique set of collections from all forms of Ansible content. 
 
-At present, you can only obtain {Valid} as part of the Platform Installer.
-When you download the bundled installer by default Validated Content will be pre-populated into the {PrivateHubName}, if the {PrivateHubName} is enabled as part of the inventory.
-
 You can also synchronize {HubNameMain} to create a custom list of collections from either {CertifiedCon}, {valid}, or {Galaxy} community content. 
 
-Initially, Ansible validated collections will only be available in your {PrivateHubName}
-These collections can be preloaded into {PrivateHubName} using the installer and can be updated manually by downloading their packages.
+At present, Ansible validated collections are only available in your {PrivateHubName} {Valid} as part of the Platform Installer.
+When you download the bundled installer by default Validated Content is pre-populated into the {PrivateHubName}, if the {PrivateHubName} is enabled as part of the inventory.
+
+These collections can be updated manually by downloading their packages.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
@@ -35,7 +34,7 @@ include::hub/assembly-validated-content.adoc[leveloffset=+1]
 When you complete all of the previous procedures, you will have:
 
 * created a synclist for {CertifiedCon} content.
-* synced that content to your {PrivateHubName}.
+* synchronized that content to your {PrivateHubName}.
 * designated community collections from {Galaxy} to distribute to your users.
 * configured content signing on {PrivateHubName}.
 * signed and approved collections for your organization's specific needs.

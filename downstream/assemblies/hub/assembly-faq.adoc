@@ -79,10 +79,6 @@ If a customer raises an issue with the Red Hat support team about on a certified
 They also check whether the issue is with a certified collection. 
 If there is a problem with the certified collection, support teams transfer the issue to the vendor owner of the certified collection through an agreed upon tool such as TSANet.
 
-== How to migrate existing modules or plugins to collections?
-Follow the guide found here <link required TBD> to start developing a collection. 
-To test if the collection is working properly you can follow the usage guide found here <link required TBD> as it explains how collections are consumed.
-
 == Can we create and certify a collection containing only Ansible Roles?
 
 Collections containing only roles may be created and certified. 
