@@ -45,7 +45,7 @@ The following table provides recommendations for node sizing:
 
 [NOTE]
 ====
-On all nodes except hop nodes, allocate a minimum of 20 GB to `/home/awx` for execution environment storage.
+On all nodes except hop nodes, allocate a minimum of 20 GB to `/var/lib/awx` for execution environment storage.
 ====
 
 [cols="a,a,a"]
