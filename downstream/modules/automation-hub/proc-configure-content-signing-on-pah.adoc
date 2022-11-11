@@ -15,7 +15,7 @@ To successfully sign and publish {CertifiedName}, you must configure {PrivateHub
 +
 [NOTE]
 ====
-This script will act as the signing service and must generate an ascii-armored detached `gpg` signature for that file using the key specified through the `PULP_SIGNING_KEY_FINGERPRINT` environment variable.
+This script acts as the signing service and must generate an ascii-armored detached `gpg` signature for that file using the key specified through the `PULP_SIGNING_KEY_FINGERPRINT` environment variable.
 ====
 +
 The script then prints out a JSON structure with the following format.

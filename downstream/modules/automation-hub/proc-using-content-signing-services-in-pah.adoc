@@ -20,4 +20,4 @@ The Approval dashboard is displayed with a list of collections.
 
 . Click btn:[Sign and approve] for each collection you want to sign.
 
-. Verify that the collections you signed and approved manually are displayed in the Collections tab.
+. Verify that the collections you signed and approved manually are displayed in the *Collections* tab.

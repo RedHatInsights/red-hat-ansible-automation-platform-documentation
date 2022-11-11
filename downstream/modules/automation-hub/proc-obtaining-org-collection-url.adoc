@@ -1,7 +1,7 @@
 // Module included in the following assemblies:
 // obtaining-token/master.adoc
 [id="proc-create-api-token"]
-= Retrieving your Red Hat Certified Collections Sync URL and API token.
+= Retrieving the Sync URL and API token for your Red Hat Certified Collection
 
 You can synchronize {CertifiedName} curated by your organization from `{Console}` to your {PrivateHubName}.
 
