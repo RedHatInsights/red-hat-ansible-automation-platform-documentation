@@ -9,7 +9,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Deploying the {OperatorPlatform} on {OCPShort}
+= Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform
 
 Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
 
