@@ -4,7 +4,7 @@
 
 Both {ControllerName} and Kubernetes play a role in scheduling a job.  
 
-When a job is launched, its dependencies are fulfilled, meaning any project updates or inventory updates are launched as indicated by settings on each resource, such as *project update on launch*. 
+When a job is launched, its dependencies are fulfilled, meaning any project updates or inventory updates are launched by {ControllerName} as required by the job template, project, and inventory settings.
 
 If the job is not blocked by other business logic in {Controllername} and there is control capacity in the control plane to start the job, the job is submitted to the dispatcher. 
 The default settings of the "cost" to control a job is 1 _capacity_. 
