@@ -25,9 +25,9 @@ If missing both content sets will be uploaded.
 
 [NOTE]
 ====
-{Valid} is only available with a valid subscription to {PlatformName}.
-Unlike {CertifiedCon}, {Valid} is not supported by Red Hat or our partners. 
-From the {PlatformName} 2.3 release, {Valid} is preloaded into {PrivateHubName} and can be updated manually by downloading the packages.
+* {Valid} is only available with a valid subscription to {PlatformName}.
+* Unlike {CertifiedCon}, {Valid} is not supported by Red Hat or our partners. 
+* From the {PlatformName} 2.3 release, {Valid} is preloaded into {PrivateHubName} and can be updated manually by downloading the packages.
 ====
 
 [cols="20%,30%,30%,20%",options="header"]
