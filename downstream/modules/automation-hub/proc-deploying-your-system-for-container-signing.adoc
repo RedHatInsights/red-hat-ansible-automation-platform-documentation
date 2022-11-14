@@ -1,0 +1,37 @@
+
+[id="deploying-your-system-for-container-signing"]
+
+= Deploying your system for container signing
+
+Execution Environments are container images used by Ansible Automation
+Controller to run jobs. This content can be downloaded to the private automation
+hub, and published within your organization.
+
+Automation hub is now implementing image signing so the user can rely on better
+security for the EE container images.
+
+As an Ansible Automation Platform user, you can now confirm if an EE/Container
+is already signed, or how to use the proper tools to sign and verify the
+signature yourself.
+This section details how to deploy your system so it is ready for container
+signing.
+
+
+.Procedure
+. Deploy your system with support for container signing activated.
+
+    _automation_hub:
+        automationhub_create_default_container_signing_service: true
+        automationhub_container_signing_service_key: _path/to/gpg.key_
+        automationhub_container_signing_service_script: _path/to/executable_
+
+
+. Navigate to automation hub
+
+. Click on *Signature Keys* in the left menu pane
+
+. Ensure you have a key titled *container-default*, or *container*-_anyname_.
+
+NOTE:.The 'container-default' service is created by the AAP installer.
+
+

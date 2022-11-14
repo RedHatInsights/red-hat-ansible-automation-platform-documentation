@@ -1,0 +1,18 @@
+
+[id="using-policies-with-signed-images_{context}"]
+
+= Using policies with signed images
+
+Policies can be used by podman or other image clients to ensure the validity of the image by assigning specific policies to that signature.
+
+== Using podman to ensure an image is signed by a specific signature
+When ensuring a signature is signed by a specific signature(s), the signature must be on your local.
+
+.Procedure
+
+. Click on *Signature Keys* in the left menu.
+
+. Click on the three dots on the right hand side of the signature to be used.
+. Select *Download key* from the drop-down menu. A new window will open.
+. In the *Name* field, enter the name of the key.
+. Click *Save*
