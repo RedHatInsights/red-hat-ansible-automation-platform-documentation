@@ -14,7 +14,7 @@ privileges.
     > sudo <name of editor> __/etc/containers/policy.json__
 
 The file may look similar to this:
-
++
 ----
     {
         "default": [{"type": "reject"}],
@@ -36,9 +36,10 @@ since the type is 'insecureAcceptAnything' which overrides the default type of
 parameter 'type' has been set to '"signedBy"'.
 
 NOTE: The only 'keyType' currently supported is GPG keys.
-+
+
 . Under the '_<server-address>_' entry, modify the 'keyPath' <1> to reflect the
 name of your key file.
++
 ----
     {
         "default": [{"type": "reject"}],
