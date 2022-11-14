@@ -16,7 +16,7 @@ This communicates with the kubernetes API using a service account associated wit
 The job status in {ControllerName} is shown as _running_.
 
 Kubernetes now schedules the pod. 
-A pod can remain in the _pending_ state for `awx_container_group_pod_pending_timeout`. 
+A pod can remain in the _pending_ state for `AWX_CONTAINER_GROUP_POD_PENDING_TIMEOUT`. 
 If the pod is denied through a `ResourceQuota`, the job starts over at _pending_. 
 You can configure a resource quota on a namespace to limit how many resources may be consumed by pods in the namespace. 
 For further information on ResourceQuotas, see link:https://kubernetes.io/docs/concepts/policy/resource-quotas/[Resource Quotas].
