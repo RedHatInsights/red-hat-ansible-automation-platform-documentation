@@ -5,34 +5,34 @@
 
 .Procedure
 . From a terminal, log into podman, or any container client currently in use.
-
++
 ----
 > podman pull <__container-name__>
 ----
-
++
 . Once the image is pulled, add tags:
-
++
 ----
 > podman tag <container-name> _<server-address>_/<container-name>:<tag name>
 ----
-
++
 . Sign the image after changes have been made, and push it back up:
-
++
 ----
 > podman push _<server-address>_/<container-name>:<tag name>
 --tls-verify=false --sign-by<reference to the gpg key on your local>
 ----
-
++
 If the image is not signed, it can only be pushed with any current signature
 embedded.
 
 . Push the image without signing it:
-
++
 ----
 > podman push _<server-address>_/<container-name>:<tag name>
 --tls-verify=false
 ----
-
++
 . Navigate to the automation hub and click on *Execution Environments* if that
 window is not open.
 
