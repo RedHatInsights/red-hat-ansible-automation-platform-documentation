@@ -1,0 +1,13 @@
+ifdef::context[:parent-context: {context}]
+
+:context: performance-considerations
+
+[id="assembly-pod-spec-modifications"]
+= Pod specification modifications
+
+include::platform/con-pod-specification-mods.adoc[leveloffset=+1]
+include::platform/proc-customizing-pod-specs.adoc[leveloffset=+1]
+include::platform/proc-enable-pods-ref-images.adoc[leveloffset=+1]
+include::platform/ref-resource-management-pods-containers.adoc[leveloffset=+1]
+include::platform/ref-requests-limits.adoc[leveloffset=+1]
+include::platform/ref-resource-types.adoc[leveloffset=+1]

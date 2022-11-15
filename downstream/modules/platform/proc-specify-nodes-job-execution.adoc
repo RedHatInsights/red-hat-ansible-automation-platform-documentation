@@ -1,0 +1,89 @@
+[id="proc-specify-nodes-job-execution"]
+
+= Specify nodes for job execution
+
+You can add a node selector to the container group pod specification to ensure they only run against certain nodes.  
+First add a label to the nodes you want to run jobs against. 
+
+The following procedure adds a label to a node.
+
+.Procedure
+. List the nodes in your cluster, along with their labels:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+kubectl get nodes --show-labels
+----
++
+The output is similar to this (shown here in a table):
++
+[cols="15%,15%,15%,15%,15,25%",options="header"]
+|====
+| Name | Status | Roles | Age | Version | Labels
+| `worker0` | Ready | <none> | 1d | v1.13.0 | `...,kubernetes.io/hostname=worker0`
+| `worker1` | Ready | <none> | 1d | v1.13.0 | `...,kubernetes.io/hostname=worker1`
+| `worker2` | Ready | <none> | 1d | v1.13.0 | `...,kubernetes.io/hostname=worker2`
+|====
++
+. Choose one of your nodes, and add a label to it using the following command:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+kubectl label nodes <your-node-name> <aap_node_type>=<execution>
+----
++
+For example:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+kubectl label nodes <your-node-name> disktype=ssd
+----
++
+where `<your-node-name>` is the name of your chosen node.
++
+. Verify that your chosen node has a `disktype=ssd` label:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+kubectl get nodes --show-labels
+----
++
+. The output is similar to this (shown here in a table):
++
+[cols="15%,15%,15%,15%,15,25%",options="header"]
+|====
+| Name | Status | Roles | Age | Version | Labels
+| `worker0` | Ready | <none> | 1d | v1.13.0 | `...disktype=ssd,kubernetes.io/hostname=worker0`
+| `worker1` | Ready | <none> | 1d | v1.13.0 | `...,kubernetes.io/hostname=worker1`
+| `worker2` | Ready | <none> | 1d | v1.13.0 | `...,kubernetes.io/hostname=worker2`
+|====
++
+You can see that the `worker0` node now has a `disktype=ssd` label.
++
+. In the {ControllerName} UI, specify that label in the metadata section of your customized pod specification in the container group. 
+ 
+[options="nowrap" subs="+quotes,attributes"]
+----
+apiVersion: v1
+kind: Pod
+metadata:
+  disktype: ssd
+  namespace: ansible-automation-platform
+spec:
+  serviceAccountName: default
+  automountServiceAccountToken: false
+  nodeSelector:
+    aap_node_type: execution
+  containers:
+    - image: >-
+     registry.redhat.io/ansible-automation-platform-22/ee-supported-rhel8@sha256:d134e198b179d1b21d3f067d745dd1a8e28167235c312cdc233860410ea3ec3e
+      name: worker
+      args:
+        - ansible-runner
+        - worker
+        - '--private-data-dir=/runner'
+      resources:
+        requests:
+          cpu: 250m
+          memory: 100Mi
+----
