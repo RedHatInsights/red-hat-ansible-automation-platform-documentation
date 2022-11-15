@@ -1,0 +1,20 @@
+ifdef::context[:parent-context: {context}]
+
+:context: performance-considerations
+
+[id="assembly-specify-dedicted-nodes"]
+= Specifying dedicated nodes
+
+A kubernetes cluster runs on top of multiple Virtual Machines or nodes (generally anywhere between 2 and 20 nodes). 
+Pods can be scheduled on any of these nodes. 
+When you create or schedule a new pod, use the `topology_spread_constraints` setting to configure how new pods are distributed across the underlying nodes when scheduled or created. 
+
+Do not schedule your pods on a single node, because if that node fails, the services that those pods provide also fails.
+
+Schedule the control plane nodes to run on different nodes to the automation job pods. 
+If the control plane pods share nodes with the job pods, the control plane can become resource starved and degrade the performance of the whole application.
+
+include::platform/ref-assign-pods-to-nodes.adoc[leveloffset=+1]
+include::platform/proc-specify-nodes-job-execution.adoc[leveloffset=+1]
+include::platform/proc-set-custom-pod-timeout.adoc[leveloffset=+1]
+include::platform/ref-schedule-jobs-worker-nodes.adoc[leveloffset=+1]
