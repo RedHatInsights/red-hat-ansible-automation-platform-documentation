@@ -3,9 +3,9 @@
 = Alternative capacity limiting with {ControllerName} settings
 
 The capacity of a control node in Openshift is determined by the memory and CPU limits. 
-However, if these are not set then the capacity is determined by the memory and CPU detected by the pod on the filesystem, which are actually the CPU and memory of the underlying kubernetes node.
+However, if these are not set then the capacity is determined by the memory and CPU detected by the pod on the filesystem, which are actually the CPU and memory of the underlying Kubernetes node.
 
-This can lead to issues with overwhelming the underlying kubernetes pod if the {ControllerName} pod is not the only pod on that node. 
+This can lead to issues with overwhelming the underlying Kubernetes pod if the {ControllerName} pod is not the only pod on that node. 
 If you do not want to set limits directly on the task container, you can use `extra_settings`, see _Extra Settings_ in xref:proc-set-custom-pod-timeout[Custom pod timeouts] section for how to configure the following
 
 [options="nowrap" subs="+quotes,attributes"]

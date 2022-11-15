@@ -13,6 +13,7 @@ The runtime prevents the container from using more than the configured resource 
 If a process in the container tries to consume more than the allowed amount of memory, the system kernel terminates the process that attempted the allocation, with an _Out Of Memory_ (OOM) error.
 
 You can implement limits in two ways:
+
 * Reactively: the system intervenes once it sees a violation.
 * By enforcement: the system prevents the container from ever exceeding the limit. 
 
