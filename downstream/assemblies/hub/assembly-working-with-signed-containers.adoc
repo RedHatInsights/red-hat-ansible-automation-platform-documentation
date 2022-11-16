@@ -1,0 +1,31 @@
+
+ifdef::context[:parent-context: {context}]
+
+
+
+[id="working-with-signed-containers"]
+= Working with signed containers
+
+
+:context: working-with-signed-containers
+
+
+include::automation-hub/proc-deploying-your-system-for-container-signing.adoc[leveloffset=+1]
+
+include::automation-hub/proc-adding-containers-remotely-to-the-automation-hub.adoc[leveloffset=+1]
+
+include::automation-hub/proc-adding-an-execution-environment.adoc[leveloffset=+1]
+
+include::automation-hub/proc-pushing-container-images-from-your-local.adoc[leveloffset=+1]
+
+include::automation-hub/proc-using-policies-with-signed-images.adoc[leveloffset=+1]
+
+include::automation-hub/proc-configuring-the-client-to-verify-signatures.adoc[leveloffset=+1]
+
+
+
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
+
