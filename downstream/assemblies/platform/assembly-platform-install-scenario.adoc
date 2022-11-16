@@ -19,7 +19,7 @@ The {PlatformNameShort} installer allows you to deploy *only one* {HubName} per 
 
 [IMPORTANT]
 ====
-Installer does not require a user to be logged as root to run `./setup.sh`. The user will need to properly configure the environment variable `ANSIBLE_BECOME_METHOD` for the preferred method of privilege escalation to root. The default method is `sudo`.
+Installer does not require a user to be logged in as root to run `./setup.sh`. The user will need to properly configure the environment variable `ANSIBLE_BECOME_METHOD` for the preferred method of privilege escalation to root. The default method is `sudo`.
 ====
 
 This installation option includes two supported scenarios:
