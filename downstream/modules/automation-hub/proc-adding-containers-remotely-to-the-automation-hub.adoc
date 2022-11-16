@@ -12,13 +12,12 @@ There are two ways to add containers to the automation hub:
 .Procedure
 To add a remote registry:
 
-. In automation hub, click on *Execution Environments* in the left menu
-pane. Two choices will become available, *Execution Environments*, and *Remote
-Registries*.
+. In automation hub, click *Execution Environments* in the main menu
+pane. Two choices will become available, *Execution Environments*, and *Remote Registries*.
 
-. Click on *Remote Registries*.
+. Click *Remote Registries*.
 
-. Click on *Add Remote Registry* in the main window.
+. Click *Add Remote Registry* in the main window.
 
 .. In the *Name* field, enter the name of the registry where the container
 resides.
@@ -30,4 +29,4 @@ resides.
 
 .. In the *Password* field, enter the password if necessary.
 
-.. Click *Save*.
+.. Click btn:[Save].

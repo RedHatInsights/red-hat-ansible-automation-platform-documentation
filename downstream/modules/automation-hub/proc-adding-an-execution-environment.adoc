@@ -4,7 +4,7 @@
 = Adding an execution environment
 
 .Procedure
-. Click on *Execution Environment* in the left menu.
+. Click on *Execution Environment* in the main menu.
 
 . Enter the name of the execution environment.
 
@@ -22,6 +22,6 @@ of the tags will be passed. So it is important to pass repository specific tags.
 .. Description
 .. Groups with access
 
-. Click *Save*.
+. Click btn:[Save].
 
 . Sync the image.
