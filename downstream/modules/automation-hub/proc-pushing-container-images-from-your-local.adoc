@@ -39,16 +39,16 @@ window is not open.
 . Click the "Refresh" icon to refresh the page to show the new execution
 environment.
 
-. Click on the name of the image.
+. Click the name of the image.
 
 In the details page, below the image name, will be displayed whether or not the
 image has been signed. In this case, it displays "Unsigned."
 
 To sign the image from automation hub:
 
-. Click on the image name to open the details page.
+. Click the image name to open the details page.
 
-. Click on the three dots in the upper right hand corner of the details page.
+. Click the three dots in the upper right hand corner of the details page.
 Three options are available:
 * Use in Controller
 * Delete
