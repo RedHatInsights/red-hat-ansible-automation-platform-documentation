@@ -28,5 +28,4 @@ include::platform/assembly-supported-inventory-plugins-template.adoc[leveloffset
 include::platform/assembly-supported-attributes-custom-notifications.adoc[leveloffset=+1]
 
 [appendix]
-include::platform/assembly-appendix-inventory-file-vars.adoc[leveloffset=+1]
-
+include::platform/assembly-appendix-inventory-file-vars.adoc
