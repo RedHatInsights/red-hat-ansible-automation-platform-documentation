@@ -36,10 +36,6 @@ Once you have configured your {HubName} operator, click btn:[Create] at the bott
 
 include::platform/proc-access-hub-operator-ui.adoc[leveloffset=+1]
 
-
-
-
-
 [role="_additional-resources"]
 == Additional resources
 
