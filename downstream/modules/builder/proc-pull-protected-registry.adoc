@@ -2,6 +2,8 @@
 
 = Pulling from a protected registry
 
+Previously, you were required to deploy a registry to store execution environment images. On {PlatformNameShort} 2.0 and later, it is assumed that you already have a container registry up and running. Therefore, you are only required to add the credentials of a container registry of your choice to store execution environment images.
+
 To pull container images from a password or token-protected registry, create a credential in {ControllerName}:
 
 .Procedure
