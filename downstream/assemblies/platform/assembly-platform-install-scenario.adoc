@@ -17,6 +17,11 @@ ifdef::context[:parent-context: {context}]
 The {PlatformNameShort} installer allows you to deploy *only one* {HubName} per inventory. You can use the {PlatformNameShort} installer for a standalone instance of {HubName} and run the installer any number of times with any number of different inventories to deploy multiple {HubName} nodes.
 ====
 
+[IMPORTANT]
+====
+Installer does not require a user to be logged in as root to run `./setup.sh`. The user will need to properly configure the environment variable `ANSIBLE_BECOME_METHOD` for the preferred method of privilege escalation to root. The default method is `sudo`.
+====
+
 This installation option includes two supported scenarios:
 
 include::assembly-platform-non-inst-database.adoc[leveloffset=+1]

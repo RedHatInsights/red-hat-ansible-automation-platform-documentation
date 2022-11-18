@@ -1,8 +1,9 @@
 [id="appendix-inventory-files-vars"]
 = Inventory file variables
 
-The following tables contain information about the pre-defined variables used in Ansible installation inventory files. 
-Not all of these variables are required. 
+The following tables contain information about the pre-defined variables used in Ansible installation inventory files.
+
+Not all of these variables are required.
 
 include::platform/ref-general-inventory-variables.adoc[leveloffset=+2]
 include::platform/ref-hub-variables.adoc[leveloffset=+2]
