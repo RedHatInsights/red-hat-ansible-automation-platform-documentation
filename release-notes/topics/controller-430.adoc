@@ -1,0 +1,25 @@
+[[controller-430-intro]]
+= Automation Controller 4.3
+
+Automation controller replaces Ansible Tower.
+Automation controller introduces a distributed, modular architecture with a decoupled control and execution plane.
+The name change reflects these enhancements and the overall position within the Ansible Automation Platform suite.
+
+Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.
+
+.Enhancements
+
+* Fixed the Ansible Galaxy Credential to no longer be automatically created or added to organizations after removing it manually.
+* Fixed an issue where warnings were being unnecessarily displayed.
+* Included updates and enhancements to task manager for scaling jobs, mesh, and cluster size to improve performance.
+* Included  reaper and periodic task improvements for scaling the mesh and jobs, which improve performance.
+* Fixed an issue with webhook notifications not triggering for some job template runs.
+* Fixed a race condition where the UI would not properly populate upon launch.
+* Added UI support for filtering single select survey question answers when configuring a job.
+* Fixed an error when navigating to a non-existent group URL.
+* Fixed an issue where Execution Environments were failing to be pushed locally during installation.
+* Fixed an issue where inventory cannot be selected in workflows even if the user has admin permissions on the workflow
+* Introduced a content signing utility through the Command Line Interface called, `ansible-sign` that provides options for the user to sign and verify whether the project is signed.
+* Added project or playbook signature verification functionality to Controller enabling users to supply a GPG key and add a content signing credential to a project, automatically enabling content signing for said project.
+
+See link:https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[automation controller Release Notes for 4.x] for a full list of new features and enhancements.

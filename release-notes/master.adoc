@@ -6,6 +6,20 @@ include::topics/platform-intro.adoc[leveloffset=+1]
 
 include::topics/upgrading.adoc[leveloffset=+1]
 
+[[anchor-november-2022-release]]
+== November 2022 release
+This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
+
+include::topics/aap-23.adoc[leveloffset=+2]
+
+include::topics/hub-460.adoc[leveloffset=+2]
+
+include::topics/catalog-05-2022.adoc[leveloffset=+2]
+
+include::topics/controller-430.adoc[leveloffset=+2]
+
+include::topics/operator-230.adoc[leveloffset=+2]
+
 [[anchor-september-2022-release]]
 == September 2022 release
 
@@ -15,6 +29,7 @@ include::topics/aap-221.adoc[leveloffset=+2]
 == August 2022 release
 
 include::topics/aap-213.adoc[leveloffset=+2]
+
 
 [[anchor-may-2022-release]]
 == May 2022 release
