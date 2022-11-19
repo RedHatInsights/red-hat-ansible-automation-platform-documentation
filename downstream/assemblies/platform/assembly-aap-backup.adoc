@@ -9,7 +9,7 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-Backing up your {PlatformName} deployment involves creating backup resources for your deployed automation hub and automation controller instances. Use these procedures to create backup resources for your {PlatformName} deployment.
+Backing up your {PlatformName} deployment involves creating backup resources for your deployed {HubName} and {ControllerName} instances. Use these procedures to create backup resources for your {PlatformName} deployment.
 
 include::platform/proc-aap-controller-backup.adoc[leveloffset=+1]
 

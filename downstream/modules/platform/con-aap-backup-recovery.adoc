@@ -7,9 +7,9 @@ Red Hat recommends backing up deployments of Red Hat Ansible Automation Platform
 
 A backup resource of your {PlatformName} deployment includes the following:
 
-* Custom deployment specific values in the spec section of the AAP custom resource object
-* Back up of the postgresql database
-* secret_key, admin_password, and broadcast_websocket secrets,
+* Custom deployment of specific values in the `spec` section of the AAP custom resource object
+* Back up of the `postgresql` database
+* `secret_key`, `admin_password`, and `broadcast_websocket` secrets
 * Database configuration
 
 [NOTE]
