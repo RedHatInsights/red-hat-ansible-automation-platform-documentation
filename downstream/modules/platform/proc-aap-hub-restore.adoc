@@ -1,0 +1,30 @@
+[id="aap-hub-restore"]
+
+= Recovering the {HubNameStart} deployment
+
+[role=_abstract]
+Use this procedure to restore a previous hub deployment into the namespace. The deployment name you provide will be the name of the new AutomationHub custom resource that will be created.
+
+[NOTE]
+====
+The name specified for the new AutomationHub custom resource must not match an existing deployment or the recovery process will fail.
+====
+
+.Prerequisites
+
+* You must be authenticated with an Openshift cluster.
+* The {HubName} has been deployed to the cluster.
+* An AutomationHubBackup is available on a PVC in your cluster.
+
+.Procedure
+. Log in to *{OCP}*.
+. Navigate to menu:Operators[Installed Operators].
+. Select the {OperatorPlatform} installed on your project namespace.
+. Select the *Automation Hub Restore* tab.
+. Click btn:[Create AutomationHubRestore].
+. Enter a *Name* for the recovery deployment.
+. Select the *Backup source to restore* from. *Backup CR* is recommended.
+. Enter the *Backup Name* of the AutomationHubBackup object.
+. Click btn:[Create].
++
+A new deployment is created and your backup is restored to it.

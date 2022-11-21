@@ -1,0 +1,18 @@
+[id="aap-backup-recovery"]
+
+= About backup and recovery
+
+[role="_abstract"]
+Red Hat recommends backing up deployments of {PlatformName} in your {OCP} environment to prevent data loss.
+
+A backup resource of your {PlatformName} deployment includes the following:
+
+* Custom deployment of specific values in the `spec` section of the {PlatormNameShort} custom resource object
+* Back up of the `postgresql` database
+* `secret_key`, `admin_password`, and `broadcast_websocket` secrets
+* Database configuration
+
+[NOTE]
+====
+Be sure to secure your backup resources because they can include sensitive information.
+====
