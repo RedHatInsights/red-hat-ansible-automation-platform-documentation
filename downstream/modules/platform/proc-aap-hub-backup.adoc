@@ -1,0 +1,26 @@
+[id="aap-hub-backup"]
+
+= Backing up the {HubNameStart} deployment
+
+[role=_abstract]
+Use this procedure to back up a deployment of the hub, including all hosted Ansible content.
+
+.Prerequisites
+
+* You must be authenticated with an Openshift cluster.
+* The {OperatorPlatform} has been installed to the cluster.
+* The {HubName} is deployed to using the {OperatorPlatform}.
+
+.Procedure
+. Log in to *{OCP}*.
+. Navigate to menu:Operators[Installed Operators].
+. Select the {OperatorPlatform} installed on your project namespace.
+. Select the *Automation Hub Backup* tab.
+. Click btn:[Create AutomationHubBackup].
+. Enter a *Name* for the backup.
+. Enter the *Deployment name* for the deployment being backed up.
+. If you want to use a custom, pre-created pvc:
+.. Optionally, enter the name of the *Backup persistent volume claim*, *Backup persistent volume claim namespace*, *Backup PVC storage requirements*, and *Backup PVC storage class*.
+. Click btn:[Create].
++
+A backup of the specified deployment is created and available for data recovery or deployment rollback.

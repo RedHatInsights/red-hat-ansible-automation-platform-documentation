@@ -1,0 +1,19 @@
+
+ifdef::context[:parent-context: {context}]
+
+[id="aap-backup"]
+
+:context: aap-backup
+
+= Creating {PlatformName} backup resources
+
+[role="_abstract"]
+
+Backing up your {PlatformName} deployment involves creating backup resources for your deployed {HubName} and {ControllerName} instances. Use these procedures to create backup resources for your {PlatformName} deployment.
+
+include::platform/proc-aap-controller-backup.adoc[leveloffset=+1]
+
+include::platform/proc-aap-hub-backup.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
