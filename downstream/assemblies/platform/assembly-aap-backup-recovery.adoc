@@ -1,0 +1,19 @@
+
+ifdef::context[:parent-context: {context}]
+
+[id="aap-backup-recover"]
+
+:context: aap-backup
+
+= Backup and recovery of {PlatformName}
+
+[role="_abstract"]
+
+To safeguard against unexpected data loss and application errors, it is critical that you perform periodic backups of your {PlatformName} deployment. In addition to data loss prevention, backups allow you to fall back to a different deployment state.
+
+include::platform/con-aap-backup-recovery.adoc[leveloffset=+1]
+
+include::platform/con-aap-backup-recommendations.adoc[leveloffset=+2]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
