@@ -1,0 +1,70 @@
+[id="creating-collection-namespace_{context}"]
+
+= Creating Collection Namespace
+
+The namespace of the collection must exist for the import to be successful. You can find the namespace name by looking at the first part of the collection tarball filename.  For example the namespace of the collection __ansible-netcommon-3.0.0.tar.gz__ is __ansible__.
+
+.Procedure
+
+. Login to private automation hub web console.
+
+. Navigate to menu:Collections[Namespaces].
+
+. Click btn:[Create].
+
+. Provide the namespace name.
+
+. Click btn:[Create].
+
+== Importing the collection tarball with GUI
+
+. Login to {PrivateHubName} web console.
+
+. Navigate to menu:Collections[Namespaces].
+
+. Click on btn:[View collections] of the namespace you will be importing the collection into.
+
+. Click btn:[Upload collection].
+
+. Click the *folder icon* and select the tarball of the collection.
+
+. Click btn:[Upload].
+
+This opens the My imports page.  You can see the status of the import and various details of the files and modules that have been imported.
+
+
+== Importing the collection tarball using ansible-galaxy via CLI
+
+You can import collections into the private automation hub by using the command-line interface rather than the GUI.
+
+. Copy the collection tarballs to the private automation hub.
++
+. Log in to the private automation hub server via SSH.
++
+. Add the self-signed root CA cert to the trust store on the automation hub.
++
+----
+# cp /etc/pulp/certs/root.crt \
+    /etc/pki/ca-trust/source/anchors/automationhub-root.crt
+# update-ca-trust
+----
++
+
+. Update the `/etc/ansible/ansible.cfg` file with your hub configuration.  Use either a token or a username and password for authentication.
++
+----
+[galaxy]
+server_list = private_hub
+
+[galaxy_server.private_hub]
+url=https://<hub_fqdn>/api/galaxy/
+token=<token_from_private_hub>
+----
++
+
+. Import the collection using the ansible-galaxy command.
+----
+$ ansible-galaxy collection publish <collection_tarball>
+----
+
+NOTE: Create the namespace that the collection belongs to in advance or publishing the collection will fail.

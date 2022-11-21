@@ -1,6 +1,6 @@
 [id="proc-creating-a-new-web-server-to-host-repositories_{context}"]
 
-= Creating a new web server to host repositories
+= Creating a New Web Server to Host Repositories
 
 If you are going to host your repositories from a web server you can use an existing web server or create one with the synced repositories.
 

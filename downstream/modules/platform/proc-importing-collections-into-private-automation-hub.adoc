@@ -1,0 +1,27 @@
+[id="importing-collections-into-private-automation-hub_{context}"]
+
+= Importing Collections into Private Automation Hub
+
+
+You can download collection tarball files from the following sources:
+
+* Red Hat certified collections are found on
+link::https://console.redhat.com/ansible/automation-hub/[Red Hat Automation Hub]
+* Community collections are found on
+link::https://galaxy.ansible.com/[Ansible Galaxy]
+
+== Downloading collection from Red Hat Automation Hub
+
+This section gives instructions on how to download a collection from Red Hat Automation Hub. If the collection has dependencies, they will also need to be downloaded and installed.
+
+.Procedure
+
+. Navigate to https://console.redhat.com/ansible/automation-hub/ and login with your Red Hat credentials.
+
+. Click on the *collection* you wish to download.
+
+. Click btn:[Download tarball]
+
+. To verify if a collection has dependencies, click the btn:[Dependencies] tab.
+
+. Download any dependencies needed for this collection.
