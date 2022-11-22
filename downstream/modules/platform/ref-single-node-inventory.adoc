@@ -16,7 +16,7 @@ This example describes how you can populate the inventory file for a single node
 
 -----
 [automationcontroller]
-127.0.0.1 ansible_connection=local <1>
+controller.example.com ansible_connection=local <1>
 
 [database]
 
