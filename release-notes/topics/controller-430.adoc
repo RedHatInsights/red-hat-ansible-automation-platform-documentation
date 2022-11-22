@@ -17,8 +17,8 @@ Automation controller provides a standardized way to define, operate and delegat
 * Fixed a race condition where the UI would not properly populate upon launch.
 * Added UI support for filtering single select survey question answers when configuring a job.
 * Fixed an issue where execution environments were failing to be pushed locally during installation.
-* Fixed an issue where inventory cannot be selected in workflows even if the user has admin permissions on the workflow
-* Introduced a content signing utility through the Command Line Interface called, `ansible-sign` that provides options for the user to sign and verify whether the project is signed.
-* Added project or playbook signature verification functionality to Controller enabling users to supply a GPG key and add a content signing credential to a project, automatically enabling content signing for said project.
+* Fixed an issue where inventory could not be selected in workflows even if the user has admin permissions on the workflow.
+* Introduced a content signing utility through the Command Line Interface called `ansible-sign` that provides options for the user to sign and verify whether the project is signed.
+* Added project or playbook signature verification functionality to controller, enabling users to supply a GPG key and add a content signing credential to a project. This automatically enables content signing for said project.
 
 See link:https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[automation controller Release Notes for 4.x] for a full list of new features and enhancements.

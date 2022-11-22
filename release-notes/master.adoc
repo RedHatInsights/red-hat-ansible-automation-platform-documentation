@@ -14,8 +14,6 @@ include::topics/aap-23.adoc[leveloffset=+2]
 
 include::topics/hub-460.adoc[leveloffset=+2]
 
-//include::topics/catalog-05-2022.adoc[leveloffset=+2]
-
 include::topics/controller-430.adoc[leveloffset=+2]
 
 include::topics/operator-230.adoc[leveloffset=+2]

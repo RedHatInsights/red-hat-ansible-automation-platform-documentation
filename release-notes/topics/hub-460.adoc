@@ -11,7 +11,7 @@ Automation Hub allows you to discover and utilize new certified automation conte
 * Added visibility for execution environments created by ansible-builder in the automation hub UI.
 * Fixed an error when navigating to a non-existent group URL.
 * Fixed an issue where roles could not be created through the UI.
-* Fixed an issue during Hub installation during the collect static content task
+* Fixed an issue with Hub installation during the collect static content task.
 * Fixed an issue when a 500 error would populate when listing roles on a group.
 * Fixed an issue when imports contained more than 100 namespaces.
 * Fixed an issue where filters were not working correctly when searching for execution environments.

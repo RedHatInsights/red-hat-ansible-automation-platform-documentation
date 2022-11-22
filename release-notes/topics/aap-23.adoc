@@ -5,7 +5,7 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 .Enhancements
 
-* Fixed a race condition where the UI would not properly populate upon launch
+* Fixed a race condition where the UI would not properly populate upon launch.
 * Fixed an issue where puppet managed files are not handled properly by the set-up script.
 * Fixed an issue where self-signed certs were being recreated on every run of `setup.sh`.
 * Added an option for execution environment images to be pulled from Hub only.
@@ -14,16 +14,15 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Implemented sidecar documentation to allow easy documentation of filter and test plugins, as well as documentation for non-python modules without requiring a .py file for documentation.
 * Migrated display for `stdout` and `stderr` from the display class to proxy over the queue for dispatch in the main process to improve reliability of displaying information to the terminal.
 * Moved handler processing into the configured strategy, so that handlers operate within the configured strategy, instead of using a non-configurable linear like execution of handlers.
-* Migrated display for `stdout` and `stderr` from the display class to proxy over the queue for dispatch in the main process to improve reliability of displaying information to the terminal.
-* Updated internal FieldAttribute classes to act as Python data descriptors to reduce code complexity and use of metaclasses
-* Fixed an issue when ansible-runner was not properly removed from hybrid nodes when upgrading to Ansible Automation Platform 2.2
+* Updated internal FieldAttribute classes to act as Python data descriptors to reduce code complexity and use of metaclasses.
+* Fixed an issue when ansible-runner was not properly removed from hybrid nodes when upgrading to Ansible Automation Platform 2.2.
 * Added the ability to use external execution nodes when running AAP as a managed service in Azure.
 * Added the ability to use external execution nodes when running the AAP Operator in Openshift.
 
 
 Other noteworthy developer tooling updates include the following:
 
-* Added new pre-flight checks to ansible-core CLI start up to enforce assumptions made about handling display and text encoding..
+* Added new pre-flight checks to ansible-core CLI start up to enforce assumptions made about handling display and text encoding.
 * Added official support for Python 3.11 to ansible-core CLIs and target node execution.
 * Dropped Python 3.8 support for ansible-core CLIs and controller side code.
 * Added lint profile support for content pipelines.
