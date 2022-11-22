@@ -11,7 +11,7 @@
 .. Install the ansible-builder RPM.
 
 NOTE: This is preferred if a Satellite exists because the EE images can leverage RHEL content from the Satellite if the underlying build host is registered.
-
++
 .. Unarchive the AAP setup bundle.
 .. Install the ansible-builder RPM and its dependencies from the included content:
 +
@@ -28,8 +28,7 @@ python38-requirements-parser-0.2.0-3.el8ap.noarch.rpm
 $ mkdir custom-ee
 $ cd custom-ee/
 ----
-
-
++
 . Create an __execution-environment.yml__ file that defines the requirements for your custom EE following the documentation at
 https://ansible-builder.readthedocs.io/en/stable/definition/.  Override the `EE_BASE_IMAGE` and `EE_BUILDER_IMAGE` variables to point to the EEs available in your private automation hub.
 +
@@ -174,7 +173,7 @@ RUN /output/install-from-bindep && rm -rf /output/wheels
 $ podman build -f context/Containerfile \
     -t <hub_fqdn>/custom-ee:latest
 ----
-
++
 . Once the custom EE image builds successfully, push it to the private
 automation hub.
 +
