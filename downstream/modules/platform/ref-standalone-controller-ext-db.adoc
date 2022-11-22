@@ -16,7 +16,7 @@ This example describes how you can populate the inventory file to deploy an inst
 
 -----
 [automationcontroller]
-controller.example.com ansible_connection=local   <1>
+controller.example.com  <1>
 
 
 [database]
