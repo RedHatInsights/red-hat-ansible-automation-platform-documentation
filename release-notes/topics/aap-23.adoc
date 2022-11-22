@@ -15,7 +15,6 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Migrated display for `stdout` and `stderr` from the display class to proxy over the queue for dispatch in the main process to improve reliability of displaying information to the terminal.
 * Moved handler processing into the configured strategy, so that handlers operate within the configured strategy, instead of using a non-configurable linear like execution of handlers.
 * Migrated display for `stdout` and `stderr` from the display class to proxy over the queue for dispatch in the main process to improve reliability of displaying information to the terminal.
-* Moved handler processing into the configured strategy, so that handlers operate within the configured strategy, instead of using a non-configurable linear like execution of handlers
 * Updated internal FieldAttribute classes to act as Python data descriptors to reduce code complexity and use of metaclasses
 * Fixed an issue when ansible-runner was not properly removed from hybrid nodes when upgrading to Ansible Automation Platform 2.2
 * Added the ability to use external execution nodes when running AAP as a managed service in Azure.
