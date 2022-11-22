@@ -10,11 +10,11 @@
 
 . Click btn:[Browse] and select the __manifest.zip__ you created earlier.
 
-. Click btn:[Next]
+. Click btn:[Next].
 
 . Uncheck btn:[User analytics] and btn:[Automation analytics]. These rely on an Internet connection and should be turned off.
 
-. Click btn:[Next]
+. Click btn:[Next].
 
 . Read the End User License Agreement and click btn:[Submit] if you agree.
 

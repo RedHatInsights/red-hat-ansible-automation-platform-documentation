@@ -31,7 +31,7 @@ include::platform/proc-creating-collection-namespace.adoc[leveloffset=+1]
 
 include::platform/proc-approving-the-imported-collection.adoc[leveloffset=+1]
 
-incldue::plaform/con-building-an-execution-environment-in-a-disconnected-environment.adoc[leveloffset=+1]
+include::platform/con-building-an-execution-environment-in-a-disconnected-environment.adoc[leveloffset=+1]
 
 include::platform/proc-installing-the-ansible-builder-rpm.adoc[leveloffset=+1]
 

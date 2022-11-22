@@ -5,10 +5,8 @@
 
 You can download collection tarball files from the following sources:
 
-* Red Hat certified collections are found on
-link::https://console.redhat.com/ansible/automation-hub/[Red Hat Automation Hub]
-* Community collections are found on
-link::https://galaxy.ansible.com/[Ansible Galaxy]
+* Red Hat certified collections are found on link:https://console.redhat.com/ansible/automation-hub/[Red Hat Automation Hub].
+* Community collections are found on link:https://galaxy.ansible.com/[Ansible Galaxy].
 
 == Downloading collection from Red Hat Automation Hub
 
