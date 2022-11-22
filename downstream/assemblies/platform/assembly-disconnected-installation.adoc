@@ -11,23 +11,27 @@ ifdef::context[:parent-context: {context}]
 
 
 
-include::platform/platform/con_aap-installation-on-disconnected-rhel.adoc[leveloffset=+1]
+include::platform/con_aap-installation-on-disconnected-rhel.adoc[leveloffset=+1]
 
-include::platform/platform/proc-synchronizing-rpm-repositories-by-using-reposync.adoc[leveloffset=+1]
+include::platform/proc-synchronizing-rpm-repositories-by-using-reposync.adoc[leveloffset=+1]
 
-include::platform/platform/proc-creating-a-new-web-server-to-host-repositories.adoc[leveloffset=+1]
+include::platform/proc-creating-a-new-web-server-to-host-repositories.adoc[leveloffset=+1]
 
-include::platform/platform/proc-accessing-rpm-repositories-for-locally-mounted-dvd.adoc[leveloffset=+1]
+include::platform/proc-accessing-rpm-repositories-for-locally-mounted-dvd.adoc[leveloffset=+1]
 
-include::platform/platform/proc-adding-a-subscription-manifest-to-aap-without-an-internet-connection.adoc[leveloffset=+1]
+include::platform/proc-adding-a-subscription-manifest-to-aap-without-an-internet-connection.adoc[leveloffset=+1]
 
-include::platform/platform/proc-installing-the-aap-setup-bundle.adoc[leveloffset=+1]
+include::platform/proc-installing-the-aap-setup-bundle.adoc[leveloffset=+1]
 
-include::platform/platform/proc-completing-post-installation-tasks.adoc[leveloffset=+1]
+include::platform/proc-completing-post-installation-tasks.adoc[leveloffset=+1]
 
-include::platform/platform/proc-importing-collections-into-private-automation-hub.adoc[leveloffset=+1]
+include::platform/proc-importing-collections-into-private-automation-hub.adoc[leveloffset=+1]
 
-include::platform/platform/proc-creating-collection-namespace.adoc[leveloffset=+1]
+include::platform/proc-creating-collection-namespace.adoc[leveloffset=+1]
+
+include::platform/proc-approving-the-imported-collection.adoc[leveloffset=+1]
+
+
 
 
 [leveloffset=+1] ensures that when a module title is a level 1 heading (= Title), the heading will be interpreted as a level-2 heading (== Title) in the assembly. Use [leveloffset=+2] and [leveloffset=+3] to nest modules in an assembly.
