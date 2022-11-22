@@ -31,12 +31,9 @@ include::platform/proc-creating-collection-namespace.adoc[leveloffset=+1]
 
 include::platform/proc-approving-the-imported-collection.adoc[leveloffset=+1]
 
+incldue::plaform/con-building-an-execution-environment-in-a-disconnected-environment.adoc[leveloffset=+1]
 
-
-
-[leveloffset=+1] ensures that when a module title is a level 1 heading (= Title), the heading will be interpreted as a level-2 heading (== Title) in the assembly. Use [leveloffset=+2] and [leveloffset=+3] to nest modules in an assembly.
-
-include::modules/TEMPLATE_PROCEDURE_doing_one_procedure.adoc[leveloffset=+2]
+include::platform/proc-installing-the-ansible-builder-RPM.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
