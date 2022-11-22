@@ -559,7 +559,7 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 <div class="title">Enhancements</div>
 <ul>
 <li>
-<p>Fixed a race condition where the UI would not properly populate upon launch</p>
+<p>Fixed a race condition where the UI would not properly populate upon launch.</p>
 </li>
 <li>
 <p>Fixed an issue where puppet managed files are not handled properly by the set-up script.</p>
@@ -586,16 +586,10 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 <p>Moved handler processing into the configured strategy, so that handlers operate within the configured strategy, instead of using a non-configurable linear like execution of handlers.</p>
 </li>
 <li>
-<p>Migrated display for <code>stdout</code> and <code>stderr</code> from the display class to proxy over the queue for dispatch in the main process to improve reliability of displaying information to the terminal.</p>
+<p>Updated internal FieldAttribute classes to act as Python data descriptors to reduce code complexity and use of metaclasses.</p>
 </li>
 <li>
-<p>Moved handler processing into the configured strategy, so that handlers operate within the configured strategy, instead of using a non-configurable linear like execution of handlers</p>
-</li>
-<li>
-<p>Updated internal FieldAttribute classes to act as Python data descriptors to reduce code complexity and use of metaclasses</p>
-</li>
-<li>
-<p>Fixed an issue when ansible-runner was not properly removed from hybrid nodes when upgrading to Ansible Automation Platform 2.2</p>
+<p>Fixed an issue when ansible-runner was not properly removed from hybrid nodes when upgrading to Ansible Automation Platform 2.2.</p>
 </li>
 <li>
 <p>Added the ability to use external execution nodes when running AAP as a managed service in Azure.</p>
@@ -611,7 +605,7 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 <div class="ulist">
 <ul>
 <li>
-<p>Added new pre-flight checks to ansible-core CLI start up to enforce assumptions made about handling display and text encoding..</p>
+<p>Added new pre-flight checks to ansible-core CLI start up to enforce assumptions made about handling display and text encoding.</p>
 </li>
 <li>
 <p>Added official support for Python 3.11 to ansible-core CLIs and target node execution.</p>
@@ -652,7 +646,7 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 <p>Fixed an issue where roles could not be created through the UI.</p>
 </li>
 <li>
-<p>Fixed an issue during Hub installation during the collect static content task</p>
+<p>Fixed an issue with Hub installation during the collect static content task.</p>
 </li>
 <li>
 <p>Fixed an issue when a 500 error would populate when listing roles on a group.</p>
@@ -743,13 +737,13 @@ The name change reflects these enhancements and the overall position within the 
 <p>Fixed an issue where execution environments were failing to be pushed locally during installation.</p>
 </li>
 <li>
-<p>Fixed an issue where inventory cannot be selected in workflows even if the user has admin permissions on the workflow</p>
+<p>Fixed an issue where inventory could not be selected in workflows even if the user has admin permissions on the workflow.</p>
 </li>
 <li>
-<p>Introduced a content signing utility through the Command Line Interface called, <code>ansible-sign</code> that provides options for the user to sign and verify whether the project is signed.</p>
+<p>Introduced a content signing utility through the Command Line Interface called <code>ansible-sign</code> that provides options for the user to sign and verify whether the project is signed.</p>
 </li>
 <li>
-<p>Added project or playbook signature verification functionality to Controller enabling users to supply a GPG key and add a content signing credential to a project, automatically enabling content signing for said project.</p>
+<p>Added project or playbook signature verification functionality to controller, enabling users to supply a GPG key and add a content signing credential to a project. This automatically enables content signing for said project.</p>
 </li>
 </ul>
 </div>
@@ -760,13 +754,13 @@ The name change reflects these enhancements and the overall position within the 
 <div class="sect2">
 <h3 id="operator-230-intro">Automation Platform Operator 2.3</h3>
 <div class="paragraph">
-<p>The Ansible Automation Platform Operator provides cloud-native, push-button deployment of new Ansible Automation Platform instances in your OpenShift environment.</p>
+<p>Ansible Automation Platform Operator provides cloud-native, push-button deployment of new Ansible Automation Platform instances in your OpenShift environment.</p>
 </div>
 <div class="ulist">
 <div class="title">Enhancements</div>
 <ul>
 <li>
-<p>Fixed an issue where the pulp resource manager was not removed on upgrade from Automation Platform Operator 2.1 to Automation Platform Operator 2.2</p>
+<p>Fixed an issue where the pulp resource manager was not removed on upgrade from Automation Platform Operator 2.1 to Automation Platform Operator 2.2.</p>
 </li>
 </ul>
 </div>
@@ -1839,7 +1833,7 @@ grouping options.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-11-18 19:39:54 -0500
+Last updated 2022-11-22 12:57:12 -0500
 </div>
 </div>
 </body>
