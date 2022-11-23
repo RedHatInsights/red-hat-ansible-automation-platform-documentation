@@ -1,6 +1,6 @@
 <title>Installing the automation services catalog worker</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.2</productnumber>
+<productnumber>2.3</productnumber>
 <subtitle>Extend your Red Hat Ansible Automation Platform to connect with automation services catalog on cloud.redhat.com using the Ansible Automation Platform 2.0 Setup or Setup Bundle Installers</subtitle>
 <abstract>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
