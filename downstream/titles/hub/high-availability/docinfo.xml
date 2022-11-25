@@ -1,6 +1,6 @@
 <title>Deploying a high availability automation hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.2</productnumber>
+<productnumber>2.3</productnumber>
 <subtitle>Overview of the requirements and procedures for a high availability deployment of automation hub.</subtitle>
 <abstract>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
