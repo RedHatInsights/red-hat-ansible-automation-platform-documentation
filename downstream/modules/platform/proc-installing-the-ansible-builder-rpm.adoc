@@ -11,7 +11,7 @@
 .. Install the ansible-builder RPM.
 
 NOTE: This is preferred if a Satellite exists because the EE images can leverage RHEL content from the Satellite if the underlying build host is registered.
-+
+
 .. Unarchive the AAP setup bundle.
 .. Install the ansible-builder RPM and its dependencies from the included content:
 +
@@ -166,7 +166,7 @@ ADD pip.conf /etc/pip.conf
 COPY --from=builder /output/ /output/
 RUN /output/install-from-bindep && rm -rf /output/wheels
 ----
-
++
 . Create the EE image in the local podman cache using the `podman` command.
 +
 ----
