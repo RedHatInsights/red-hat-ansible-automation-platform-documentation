@@ -60,7 +60,7 @@ token=<admin_token>
 . Create a __ubi.repo__ file that points to your disconnected UBI repo mirror (this could be your Satellite if the UBI content is hosted there).  
 
 This is an example output where `reposync` was used to mirror the UBI repos.
-+
+
 ----
 $ cat ubi.repo
 [ubi-8-baseos]
