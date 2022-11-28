@@ -77,12 +77,12 @@ enabled = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 gpgcheck = 1
 ----
-+
+
 . Add the CA certificate used to sign the private automation hub web server certificate.
 
-.. For self-signed certificates (the installer default), make a copy of the file __/etc/pulp/certs/root.crt__ from your private automation hub and name it hub-root.crt.
+.. For self-signed certificates (the installer default), make a copy of the file __/etc/pulp/certs/root.crt__ from your private automation hub and name it *hub-root.crt*.
 
-.. If an internal certificate authority was used to request and sign the private automation hub web server certificate, make a copy of that CA certificate called hub-root.crt.
+.. If an internal certificate authority was used to request and sign the private automation hub web server certificate, make a copy of that CA certificate called *hub-root.crt*.
 
 . Create your python requirements.txt and ansible collection requirements.yml with the content needed for your custom EE image.  Note that any collections you require should already be uploaded into your private automation hub.
 
