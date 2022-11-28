@@ -1,0 +1,25 @@
+[id="building-an-execution-environment-in-a-disconnected-environment_{context}"]
+
+= Building an Execution Environment in a Disconnected Environment
+
+
+When building a custom execution environment, the ansible-builder tool defaults
+to downloading the following requirements from the internet:
+
+* Ansible Galaxy (galaxy.ansible.com) or Automation Hub (cloud.redhat.com) for any collections added to the EE image.
+* PyPI (pypi.org) for any python packages required as collection dependencies.
+* The UBI repositories (cdn.redhat.com) for updating any UBI-based EE images.
+** The RHEL repositories might also be needed to meet certain collection requirements.
+* registry.redhat.io for access to the ansible-builder-rhel8 container image.
+
+Building an EE image in a disconnected environment requires a subset of all of these mirrored, or otherwise made available on the disconnected network.  See xref:proc-importing-collections-into-private-automation-hub_{context}[Importing Collections into Private Automation Hub] for information on importing collections from Galaxy or Automation Hub into a private automation hub.
+
+Mirrored PyPI content once transferred into the high-side network can be made available using a web server or an artifact repository like Nexus.
+
+The UBI repositories can be mirrored on the low-side using a tool like `reposync`, imported to the disconnected environment, and made available from Satellite or a simple web server (since the content is freely redistributable).
+
+The `ansible-builder-rhel8` container image can be imported into a private automation hub in the same way a custom EE can be imported, see Transferring a Custom EE Images Across a Disconnected Boundary xref:proc-approving-the-imported-collection_{context}[Transferring a Custom EE Images Across a Disconnected Boundary] for details substituting `localhost/custom-ee` for
+`registry.redhat.io/ansible-automation-platform-21/ansible-builder-rhel8`. This will make the ansible-builder-rhel8 image available in the private automation hub registry along with the default EE images.
+
+Once all of the prerequisites are available on the high-side network,
+ansible-builder and podman can be used to create a custom execution environment image.
