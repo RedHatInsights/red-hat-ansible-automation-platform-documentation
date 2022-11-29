@@ -1,15 +1,10 @@
 
 ifdef::context[:parent-context: {context}]
 
-
+:context: disconnected-installation
 
 [id="disconnected-installation"]
 = Disconnected installation
-
-
-:context: disconnected-installation
-
-
 
 include::platform/con-aap-installation-on-disconnected-rhel.adoc[leveloffset=+1]
 
