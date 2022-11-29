@@ -113,6 +113,14 @@ h| Database | PostgreSQL version 13 |
 
 |===
 
+[role="_additional-resources"]
+.Additional resources
+////
+Optional. Delete if not used.
+////
+* link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription].
+
+
 .Automation hub
 
 [cols="a,a,a"]
@@ -194,9 +202,3 @@ If performing a bundled {PlatformNameShort} installation, the installation progr
 
 If you choose to install Ansible on your own, the {PlatformNameShort} installation program will detect that Ansible has been installed and will not attempt to reinstall it. Note that you must install Ansible using a package manager like ``yum`` and that the latest stable version must be installed for {PlatformName} to work properly. Ansible version 2.9 is required for |at| versions 3.8 and later.
 
-[role="_additional-resources"]
-.Additional resources
-////
-Optional. Delete if not used.
-////
-* link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription].
