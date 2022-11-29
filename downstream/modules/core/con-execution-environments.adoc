@@ -23,7 +23,7 @@ The `context` attribute enables module reuse. Every module ID includes {context}
 
 You can define and create an automation execution environment using {Builder}.
 
-////
+/////
 [role="_additional-resources"]
 .Additional resources
 
@@ -34,4 +34,4 @@ You can define and create an automation execution environment using {Builder}.
 * For more details on writing concept modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
 * Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
 * For more information on {Builder}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/%7BPlatformVers%7D/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments].
-////
+/////
