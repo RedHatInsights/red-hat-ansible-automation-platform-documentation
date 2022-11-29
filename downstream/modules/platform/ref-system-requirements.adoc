@@ -118,7 +118,7 @@ h| Database | PostgreSQL version 12 |
 ////
 Optional. Delete if not used.
 ////
-* link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription].
+* To authorize the use of {ControllerName}, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription]. 
 
 
 .Automation hub
