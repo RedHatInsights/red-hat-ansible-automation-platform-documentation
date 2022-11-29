@@ -1,4 +1,4 @@
-[id="assembly-appendix-inventory-files-vars"]
+[id="appendix-inventory-files-vars"]
 = Inventory file variables
 
 The following tables contain information about the pre-defined variables used in Ansible installation inventory files.
