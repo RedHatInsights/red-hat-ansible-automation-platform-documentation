@@ -22,11 +22,9 @@
 
 === Self-Signed Certificates
 
-By default, AAP hub and controller are installed using self signed certificates. This creates an issue where the controller does not trust the hub’s certificate and will not download the execution environments from the hub. The solution is to import the hub’s CA cert as a trusted cert on the controller. You can use SCP or directly copy and paste from one file into another to perform this action. The steps below are copied from a KB article found at
-link::https://access.redhat.com/solutions/6707451
+By default, AAP hub and controller are installed using self signed certificates. This creates an issue where the controller does not trust the hub’s certificate and will not download the execution environments from the hub. The solution is to import the hub’s CA cert as a trusted cert on the controller. You can use SCP or directly copy and paste from one file into another to perform this action. The steps below are copied from a KB article found at https://access.redhat.com/solutions/6707451.
 
-=== Copying the root certificate on the private {HubName} to the
-{ControllerName} using secure copy (SCP)
+=== Copying the root certificate on the private {HubName} to the {ControllerName} using secure copy (SCP)
 
 If SSH is available as the root user between the controller and the private automation hub, use SCP to copy the root certificate on the private automation hub to the controller and run `update-ca-trust` on the controller to update the CA trust store.
 
@@ -40,8 +38,7 @@ $ sudo -i
 
 === Copying and Pasting
 
-If SSH is unavailable as root between the private automation hub and the controller, copy the contents of the file __/etc/pulp/certs/root.crt__ on the private automation hub and paste it into a new file on the controller called
-__/etc/pki/ca-trust/source/anchors/automationhub-root.crt__. After the new file is created, run the command `update-ca-trust` command in order to update the CA trust store with the new certificate.
+If SSH is unavailable as root between the private automation hub and the controller, copy the contents of the file __/etc/pulp/certs/root.crt__ on the private automation hub and paste it into a new file on the controller called __/etc/pki/ca-trust/source/anchors/automationhub-root.crt__. After the new file is created, run the command `update-ca-trust` command in order to update the CA trust store with the new certificate.
 
 On the {PrivateHubNameStart}
 ----
