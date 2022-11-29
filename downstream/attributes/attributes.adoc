@@ -6,7 +6,7 @@
 :AAPCentralAuth: Ansible Automation Platform Central Authentication
 :CentralAuthStart: Central authentication
 :CentralAuth: central authentication
-:PlatformVers: 2.2
+:PlatformVers: 2.3
 :AnsibleCoreVers: 2.13
 
 // AAP on Clouds
