@@ -3,7 +3,7 @@
 = Accessing RPM Repositories for Locally Mounted DVD
 
 
-If you re going to access the repositories from the DVD, it is necessary to set up a local repository. This section shows how to do that.
+If you are going to access the repositories from the DVD, it is necessary to set up a local repository. This section shows how to do that.
 
 .Procedure
 
