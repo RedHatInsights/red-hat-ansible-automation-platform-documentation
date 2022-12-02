@@ -2,7 +2,7 @@
 ifdef::context[:parent-context: {context}]
 
 [id="assembly-platform-ext-database"]
-= Installing {PlatformName} with an external managed database
+= Installing {PlatformName} with an externally managed database
 
 :context: standalone-controller-ext-database
 
