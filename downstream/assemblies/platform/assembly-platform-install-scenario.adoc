@@ -22,10 +22,32 @@ The {PlatformNameShort} installer allows you to deploy *only one* {HubName} per 
 Installer does not require a user to be logged in as root to run `./setup.sh`. The user will need to properly configure the environment variable `ANSIBLE_BECOME_METHOD` for the preferred method of privilege escalation to root. The default method is `sudo`.
 ====
 
-This installation option includes two supported scenarios:
+.Prerequisites
 
-include::assembly-platform-non-inst-database.adoc[leveloffset=+1]
-include::assembly-platform-ext-database-install.adoc[leveloffset=+1]
+* You chose and obtained a platform installer from the https://access.redhat.com/downloads/content/480/ver=2.1/rhel---8/2.1/x86_64/product-software[Red Hat Ansible Automation Platform Product Software].
+* You are installing on a machine that meets base system requirements.
+* You have created a Red Hat Registry Service Account, following the instructions in the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
+
+There are a number of supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario using one of the examples below:
+
+* xref:ref-standlone-platform-inventory_{context}[Example inventory file for a database on the automation controller node or a non-installer managed database]
+* xref:ref-standlone-platform-ext-database-inventory_{context}[Example {PlatformName} inventory file with an external managed database]
+
+include::platform/proc-editing-inventory-file.adoc[leveloffset=+1]
+include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=+2]
+include::platform/ref-example-platform-ext-database-inventory.adoc[leveloffset=+2]
+include::platform/ref-single-node-inventory.adoc[leveloffset=+2]
+include::platform/ref-standalone-controller-ext-db.adoc[leveloffset=+2]
+include::platform/ref-standalone-hub-inventory.adoc[leveloffset=+2]
+include::platform/ref-standalone-hub-ext-database-inventory.adoc[leveloffset=+2]
+include::platform/ref-multi-node-cluster-installation.adoc[leveloffset=+2]
+include::platform/proc-running-setup-script.adoc[leveloffset=+1]
+include::platform/proc-verify-controller-installation.adoc[leveloffset=+1]
+include::platform/ref-controller-configs.adoc[leveloffset=+2]
+include::platform/proc-verify-hub-installation.adoc[leveloffset=+1]
+include::platform/ref-hub-configs.adoc[leveloffset=+2]
+include::assembly-platform-whats-next.adoc[leveloffset=+1]
+
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
