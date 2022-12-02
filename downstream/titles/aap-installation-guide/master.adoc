@@ -19,9 +19,7 @@ include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::platform/assembly-planning-installation.adoc[leveloffset=+1]
 
 include::platform/assembly-platform-install-scenario.adoc[leveloffset=+1]
-include::platform/assembly-single-machine-scenarios.adoc[leveloffset=+1]
-include::platform/assembly-multi-machine-cluster-scenario.adoc[leveloffset=+1]
-include::platform/assembly-disconnected-installation.adoc[leveloffset=+1]
+include::platform/assembly-installing-aap-components.adoc[leveloffset=+1]
 include::platform/assembly-configuring-proxy-support.adoc[leveloffset=+1]
 include::platform/assembly-configuring-websockets.adoc[leveloffset=+1]
 include::platform/assembly-controlling-data-collection.adoc[leveloffset=+1]
@@ -29,5 +27,4 @@ include::platform/assembly-supported-inventory-plugins-template.adoc[leveloffset
 include::platform/assembly-supported-attributes-custom-notifications.adoc[leveloffset=+1]
 
 [appendix]
-include::platform/assembly-appendix-inventory-file-vars.adoc[]
-
+include::platform/assembly-appendix-inventory-file-vars.adoc[leveloffset=1]
