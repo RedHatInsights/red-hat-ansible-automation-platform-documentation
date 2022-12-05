@@ -11,10 +11,8 @@ Before {PlatformName} 2.0, an automation content developer may have needed so ma
 As {ControllerName} shifts to using {ExecEnvName}, tools like {Navigator} and {Builder} ensure that you can take advantage of those {ExecEnvName} locally within your own development system.
 
 
-/////
 [role="_additional-resources"]
 .Additional resources
 
-* See the link:[Ansible Navigator Creator Guide] for more on using {Navigator}.
-* For more information on {Builder}, see the link:[Ansible Builder Creator Guide].
-/////
+* See the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/ansible_navigator_creator_guide[Ansible Navigator Creator Guide] for more on using {Navigator}.
+* For more information on {Builder}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments].
