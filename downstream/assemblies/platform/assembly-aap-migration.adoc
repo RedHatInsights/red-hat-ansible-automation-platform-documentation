@@ -13,7 +13,7 @@ Migrating your {PlatformName} deployment to the {OperatorPlatform} allows you to
 This guide allows you to migrate:
 
 * A VM-based installation of {ControllerName} or {HubName}, or
-* An Openshift instance of Ansible Tower 3.8.7 ({PlatformNameShort} 1.2.7)
+* An Openshift instance of Ansible Tower 3.8.6 ({PlatformNameShort} 1.2)
 
 
 include::platform/con-aap-migration-considerations.adoc[leveloffset=+1]
