@@ -11,7 +11,6 @@ include::attributes/attributes.adoc[]
 = Red Hat Ansible Automation Platform Operations Guide
 
 This guide provides procedures for configuration tasks that you can perform after installing {PlatformName}.
-This document has been updated to include information for the latest release of {PlatformNameShort}.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
