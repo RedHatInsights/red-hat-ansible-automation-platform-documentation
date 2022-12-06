@@ -13,10 +13,14 @@ ifdef::context[:parent-context: {context}]
 You can use this section to help plan your {PlatformName} installation. Before installation, review information on the setup installer, system requirements, and supported installation scenarios.
 
 include::platform/ref-system-requirements.adoc[leveloffset=+1]
+include::platform/ref-platform-components.adoc[leveloffset=+1]
+include::platform/ref-controller-system-requirements.adoc[leveloffset=+1]
+include::platform/ref-automation-hub-requirements.adoc[leveloffset=+1]
+include::platform/ref-postgresql-requirements.adoc[leveloffset=+1]
 include::platform/ref-network-ports-protocols.adoc[leveloffset=+1]
 
 include::platform/proc-attaching-subscriptions.adoc[leveloffset=+1]
-include::platform/ref-platform-components.adoc[leveloffset=+1]
+
 include::platform/proc-choosing-obtaining-installer.adoc[leveloffset=+1]
 
 //New section here
