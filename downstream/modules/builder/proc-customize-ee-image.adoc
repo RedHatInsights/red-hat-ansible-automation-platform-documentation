@@ -5,7 +5,7 @@
 Ansible Controller ships with three default execution environments:
 
 * `Ansible 2.9` - no collections are installed other than Controller modules
-* `Minimal` - contains the latest Ansible 2.11 release along with Ansible Runner, but contains no collections or other additional content
+* `Minimal` - contains the latest Ansible 2.12 release along with Ansible Runner, but contains no collections or other additional content
 * `EE Supported` - contains all Red Hat-supported content
 
 While these environments cover many automation use cases, you can add additional items to customize these containers for your specific needs. The following procedure adds the `kubernetes.core` collection to the `ee-minimal` default image:
