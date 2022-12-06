@@ -1,5 +1,3 @@
-
-
 [id="con-websocket-setup_{context}"]
 
 = Websocket configuration for {ControllerName}
@@ -11,5 +9,5 @@
 
 [IMPORTANT]
 ====
-* It is intended that your nodes are broadcasting websocket traffic across a private, trusted subnet (and not the open Internet). Therefore, if you turn off HTTPS for websocket broadcasting, the websocket traffic, comprised mostly of Ansible playbook stdout, is sent between {ControllerName} nodes unencrypted.
+* Ensure that your nodes are broadcasting websocket traffic across a private, trusted subnet (and not the open Internet). Therefore, if you turn off HTTPS for websocket broadcasting, the websocket traffic, comprised mostly of Ansible playbook stdout, is sent unencrypted between {ControllerName} nodes.
 ====
