@@ -9,5 +9,5 @@
 
 [IMPORTANT]
 ====
-* Ensure that your nodes are broadcasting websocket traffic across a private, trusted subnet (and not the open Internet). Therefore, if you turn off HTTPS for websocket broadcasting, the websocket traffic, comprised mostly of Ansible playbook stdout, is sent unencrypted between {ControllerName} nodes.
+* Your {ControllerName} nodes are designed to broadcast websocket traffic across a private, trusted subnet (and not the open Internet). Therefore, if you turn off HTTPS for websocket broadcasting, the websocket traffic, comprised mostly of Ansible playbook stdout, is sent unencrypted between {ControllerName} nodes.
 ====
