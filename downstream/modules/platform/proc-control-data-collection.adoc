@@ -8,7 +8,7 @@ You can control how {ControllerName} collects data by setting your participation
 .Procedure
 
 . Log in to your {ControllerName}.
-. Navigate to *Settings > User Interface*.
+. Navigate to menu:Settings[User Interface].
 . Select the desired level of data collection from the *User Analytics Tracking State* drop-down list:
 ** *Off*: Prevents any data collection.
 ** *Anonymous*: Enables data collection without your specific user data.
