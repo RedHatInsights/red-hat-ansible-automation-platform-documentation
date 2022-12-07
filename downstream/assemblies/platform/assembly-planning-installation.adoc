@@ -10,7 +10,7 @@ ifdef::context[:parent-context: {context}]
 :context: planning
 
 [role="_abstract"]
-You can use this section to help plan your {PlatformName} installation. Before installation, review information on the setup installer, system requirements, and supported installation scenarios.
+To help plan your {PlatformName} installation, review information on the setup installer, system requirements, and supported installation scenarios.
 
 include::platform/ref-system-requirements.adoc[leveloffset=+1]
 include::platform/ref-platform-components.adoc[leveloffset=+1]

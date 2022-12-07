@@ -5,7 +5,7 @@
 {ControllerNameStart} is a distributed system, where different software components can be co-located or deployed across multiple compute nodes.
 In the installer, node types of control, hybrid, execution, and hop are provided as abstractions to help you design the topology appropriate for your use case.
 
-The following tables provides recommendations for node sizing:
+Use the following recommendations for node sizing:
 
 [NOTE]
 ====
@@ -34,7 +34,8 @@ h| Requirement | Required
 |===
 
 .Hybrid nodes
-Runs both automation and cluster jobs, comments for both execution and control nodes apply to this node type.
+Runs both automation and cluster jobs. 
+Comments on CPU and memory for execution and control nodes also apply to this node type.
 
 [cols="a,a,options="header"]
 |===

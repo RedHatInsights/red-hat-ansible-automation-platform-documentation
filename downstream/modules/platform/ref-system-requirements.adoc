@@ -52,7 +52,7 @@ See link:https://docs.ansible.com/ansible/latest/user_guide/intro_getting_starte
 
 * The requirements for systems managed by {PlatformNameShort} are the same as for Ansible. See link:https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html[Getting Started] in the Ansible _User Guide_.
 
-* While {PlatformName} depends on Ansible Playbooks and requires the installation of the latest stable version of Ansible before installing {ControllerName}, manual installations of Ansible are no longer required.
+* Although {PlatformName} depends on Ansible Playbooks and requires the installation of the latest stable version of Ansible before installing {ControllerName}, manual installations of Ansible are no longer required.
 
 * For new installations, {ControllerName} installs the latest release package of Ansible 2.2.
 
@@ -64,15 +64,3 @@ See link:https://docs.ansible.com/ansible/latest/user_guide/intro_getting_starte
 ====
 You must install Ansible using a package manager such as `yum`, and the latest stable version must be installed for {PlatformName} to work properly. Ansible version 2.9 is required for versions 3.8 and later.
 ====
-
-
-
-.Amazon EC2
-
-//There is text to explain this entry. 
-
-* Instance size of m5.large or larger
-* An instance size of m4.xlarge or larger if there are more than 100 hosts
-
-
-
