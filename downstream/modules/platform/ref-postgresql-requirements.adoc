@@ -1,0 +1,27 @@
+[id="ref-postgresql-requirements"]
+
+== PostgreSQL requirements
+
+{PlatformName} uses PostgreSQL 13.
+
+* PostgreSQL user passwords are hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
+* Because {ControllerName} and {HubName} use a Software Collections version of PostgreSQL in 3.8, you must enable the `rh-postgresql10` scl to access the database. 
+Administrators can use the `awx-manage dbshell` command, which automatically enables the PostgreSQL SCL.
+* To determine if your {ControllerName} instance has access to the database, you can do so with the command, `awx-manage check_db`.
+
+
+.PostgreSQL Configurations
+
+Optionally, you can configure the PostgreSQL database as separate nodes that are not managed by the {PlatformName} installer. 
+When the {PlatformNameShort} installer manages the database server, it configures the server with defaults that are generally recommended for most workloads. 
+However, you can adjust these PostgreSQL settings for standalone database server node where `ansible_memtotal_mb` is the total memory size of the database server:
+
+-----
+max_connections == 1024
+shared_buffers == ansible_memtotal_mb*0.3
+work_mem == ansible_memtotal_mb*0.03
+maintenance_work_mem == ansible_memtotal_mb*0.04
+-----
+
+.Additional resources
+For more detail on tuning your PostgreSQL server, see the link:https://wiki.postgresql.org/wiki/Main_Page[PostgreSQL documentation].
