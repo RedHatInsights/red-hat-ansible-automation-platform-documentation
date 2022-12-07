@@ -3,7 +3,7 @@
 = Verifying {ControllerName} installation
 
 [role="_abstract"]
-Once the installation completes, you can verify your {ControllerName} has been installed successfully by logging in with the admin credentials you inserted into the `inventory` file.
+After the installation completes, you can verify your {ControllerName} has been installed successfully by logging in with the admin credentials you inserted into the `inventory` file.
 
 .Procedure
 . Navigate to the IP address specified for the {ControllerName} node in the `inventory` file.
