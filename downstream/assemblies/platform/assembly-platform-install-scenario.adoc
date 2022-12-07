@@ -17,21 +17,15 @@ ifdef::context[:parent-context: {context}]
 The {PlatformNameShort} installer allows you to deploy *only one* {HubName} per inventory. You can use the {PlatformNameShort} installer for a standalone instance of {HubName} and run the installer any number of times with any number of different inventories to deploy multiple {HubName} nodes.
 ====
 
-[IMPORTANT]
-====
-Installer does not require a user to be logged in as root to run `./setup.sh`. The user will need to properly configure the environment variable `ANSIBLE_BECOME_METHOD` for the preferred method of privilege escalation to root. The default method is `sudo`.
-====
-
-.Prerequisites
-
-* You chose and obtained a platform installer from the https://access.redhat.com/downloads/content/480/ver=2.1/rhel---8/2.1/x86_64/product-software[Red Hat Ansible Automation Platform Product Software].
-* You are installing on a machine that meets base system requirements.
-* You have created a Red Hat Registry Service Account, following the instructions in the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
-
 There are a number of supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario using one of the examples below:
 
 * xref:ref-standlone-platform-inventory_{context}[Example inventory file for a database on the automation controller node or a non-installer managed database]
 * xref:ref-standlone-platform-ext-database-inventory_{context}[Example {PlatformName} inventory file with an external managed database]
+* xref:ref-single-node-inventory_{context}[Example {PlatformName} single node inventory file]
+* xref:standalone-controller-ext-db_{context}[Example inventory file for a standalone automation controller with an external managed database]
+* xref:ref-standlone-hub-inventory_{context}[Example standalone {HubName} inventory file]
+* xref:ref-standlone-hub-ext-database-inventory_{context}[Example standalone {HubName} inventory file]
+* xref:ref-multi-node-cluster-inventory_{context}[Example {PlatformName} multi-node inventory file]
 
 include::platform/proc-editing-inventory-file.adoc[leveloffset=+1]
 include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=+2]

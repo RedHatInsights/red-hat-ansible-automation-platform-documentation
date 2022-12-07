@@ -1,4 +1,4 @@
-// [id="proc-verify-controller-installation_{context}"]
+[id="proc-verify-controller-installation_{context}"]
 
 = Verifying {ControllerName} installation
 

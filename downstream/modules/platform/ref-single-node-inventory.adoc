@@ -1,6 +1,6 @@
 
 
-// [id="ref-single-node-inventory_{context}"]
+[id="ref-single-node-inventory_{context}"]
 
 = Example {PlatformName} single node inventory file
 

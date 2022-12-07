@@ -1,0 +1,20 @@
+[id="aap-installation-overview"]
+
+= {PlatformName} installation overview
+
+[role="_abstract"]
+
+The {PlatformName} installation program offers you flexibility, allowing you to install {PlatformName} using a number of supported installation scenarios.
+
+[NOTE]
+====
+For more information about the supported installation scenarios, see the {PlatformName} Planning Guide.
+====
+
+Regardless of the installation scenario you choose, installing {PlatformName} involves the following steps:
+
+* xref:proc-editing-installer-inventory-file_{context}[Editing the {PlatformName} installer inventory file]
+* xref:proc-running-setup-script_{context}[Running the {PlatformName} installer setup script]
+* xref:proc-verify-controller-installation_{context}[Verifying {ControllerName} installation]
+* xref:proc-verify-hub-installation_{context}[Verifying {HubName} installation]
+* xref:assembly-platform-whats-next_{context}[Next steps]

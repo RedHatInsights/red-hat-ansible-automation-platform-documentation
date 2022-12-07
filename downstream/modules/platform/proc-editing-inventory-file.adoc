@@ -1,6 +1,4 @@
-
-
-// [id="proc-editing-installer-inventory-file_{context}"]
+[id="proc-editing-installer-inventory-file_{context}"]
 
 
 = Editing the {PlatformName} installer inventory file
