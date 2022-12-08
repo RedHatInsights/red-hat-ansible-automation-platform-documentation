@@ -10,7 +10,7 @@ ifdef::context[:parent-context: {context}]
 :context: platform-install-scenario
 
 [role="_abstract"]
-{PlatformName} installation involves deploying {ControllerName} and {HubName}.
+{PlatformNameShort} is a modular platform and installation involves deploying {ControllerName} with other automation platform components, such as {HubName}. For more information about the components provided with {PlatformNameShort}, see _Red Hat Ansible Automation Platform platform components_ in the {PlatformName} Planning Guide.
 
 [IMPORTANT]
 ====
