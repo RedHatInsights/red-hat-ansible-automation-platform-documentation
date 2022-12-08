@@ -10,7 +10,7 @@ You can run the setup script once you finish updating the `inventory` file with 
 . Run the `setup.sh` script
 +
 -----
-$ ./setup.sh
+$ sudo ./setup.sh
 -----
 
 The installation will begin.
