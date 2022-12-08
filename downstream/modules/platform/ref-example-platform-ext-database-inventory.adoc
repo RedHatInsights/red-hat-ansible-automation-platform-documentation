@@ -8,13 +8,6 @@
 [role="_abstract"]
 This example describes how you can populate the inventory file to install {PlatformName}. This installation inventory file includes both {ControllerName} and {HubName} with an external managed database.
 
-[IMPORTANT]
-====
-* You cannot install {ControllerName} and {HubName} on the same node.
-* Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from Private Automation Hub from a different node.
-* Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
-====
-
 -----
 [automationcontroller]
 controller.acme.org

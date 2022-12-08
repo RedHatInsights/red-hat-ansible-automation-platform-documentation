@@ -1,4 +1,4 @@
-// [id="proc-running-setup-script_{context}"]
+[id="proc-running-setup-script_{context}"]
 
 = Running the {PlatformName} installer setup script
 
