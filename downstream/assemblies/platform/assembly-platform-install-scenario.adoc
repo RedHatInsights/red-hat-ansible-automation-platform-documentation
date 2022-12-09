@@ -17,25 +17,27 @@ ifdef::context[:parent-context: {context}]
 The {PlatformNameShort} installer allows you to deploy *only one* {HubName} per inventory. You can use the {PlatformNameShort} installer for a standalone instance of {HubName} and run the installer any number of times with any number of different inventories to deploy multiple {HubName} nodes.
 ====
 
-There are a number of supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario using one of the examples below:
+There are a number of supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario using one of the following examples:
 
-* xref:ref-standlone-platform-inventory_platform-install-scenario[Example inventory file for a database on the automation controller node or a non-installer managed database]
-* xref:ref-standlone-platform-ext-database-inventory_platform-install-scenario[Example {PlatformName} inventory file with an external managed database]
-* xref:ref-single-node-inventory_platform-install-scenario[Example {PlatformName} single node inventory file]
-* xref:standalone-controller-ext-db_platform-install-scenario[Example inventory file for a standalone automation controller with an external managed database]
-* xref:ref-standlone-hub-inventory_platform-install-scenario[Example standalone {HubName} inventory file]
-* xref:ref-standlone-hub-ext-database-inventory_platform-install-scenario[Example standalone {HubName} inventory file]
-* xref:ref-multi-node-cluster-inventory_platform-install-scenario[Example {PlatformName} multi-node inventory file]
+* xref:ref-standlone-platform-inventory_platform-install-scenario[Standalone automation controller with internal database]
+* xref:ref-single-controller-ext-installer-managed-db_platform-install-scenario[Single {ControllerName} with external (installer managed) database]
+* xref:ref-single-controller-ext-customer-managed-db_platform-install-scenario[Single {ControllerName} with external (customer provided) database]
+* xref:ref-standlone-platform-ext-database-inventory_platform-install-scenario[{PlatformNameShort} with an external (installer managed) database]
+* xref:ref-example-platform-ext-database-customer-provided_platform-install-scenario[{PlatformNameShort} with an external (installer managed) database]
+* xref:ref-standlone-hub-inventory_platform-install-scenario[Standalone {HubName} with internal database]
+* xref:ref-standlone-hub-ext-database-inventory_platform-install-scenario[Single {ControllerName} with external (installer managed) database]
+* xref:ref-standalone-hub-ext-database-customer-provided_platform-install-scenario[Single {ControllerName} with external (customer provided) database]
 
 include::platform/proc-editing-inventory-file.adoc[leveloffset=+1]
 include::platform/con-install-scenario-examples.adoc[leveloffset=+2]
 include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=+3]
+include::platform/ref-single-controller-ext-installer-managed-db.adoc[leveloffset=+3]
+include::platform/ref-single-controller-ext-customer-managed-db.adoc[leveloffset=+3]
 include::platform/ref-example-platform-ext-database-inventory.adoc[leveloffset=+3]
-include::platform/ref-single-node-inventory.adoc[leveloffset=+3]
-include::platform/ref-standalone-controller-ext-db.adoc[leveloffset=+3]
+include::platform/ref-example-platform-ext-database-customer-provided.adoc[leveloffset=+3]
 include::platform/ref-standalone-hub-inventory.adoc[leveloffset=+3]
 include::platform/ref-standalone-hub-ext-database-inventory.adoc[leveloffset=+3]
-include::platform/ref-multi-node-cluster-installation.adoc[leveloffset=+3]
+include::platform/ref-standalone-hub-ext-database-customer-provided.adoc[leveloffset=+3]
 include::platform/proc-running-setup-script.adoc[leveloffset=+1]
 include::platform/proc-verify-controller-installation.adoc[leveloffset=+1]
 include::platform/ref-controller-configs.adoc[leveloffset=+2]

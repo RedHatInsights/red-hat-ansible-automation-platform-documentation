@@ -1,20 +1,22 @@
 
-[id="ref-standlone-platform-inventory_{context}"]
+[id="ref-single-controller-ext-installer-managed-db_{context}"]
 
-= Standalone {ControllerName} with internal database
+= Single {ControllerName} with external (installer managed) database
 
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to install {PlatformName}.
-This installation inventory file includes a single {ControllerName} node with an internal database.
+This example describes how you can populate the inventory file to install {PlatformName}. This installation inventory file includes a single {ControllerName} node with an external database on a separate node.
 
 -----
 [automationcontroller]
 controller.acme.org
 
+[database]
+data.acme.org
+
 [all:vars]
 admin_password='<password>'
-pg_host=''
+pg_host='data.acme.org'
 pg_port='5432'
 pg_database='awx'
 pg_username='awx'
@@ -24,7 +26,6 @@ pg_sslmode='prefer'  # set to 'verify-full' for client-side enforced SSL
 registry_url='registry.redhat.io'
 registry_username='<registry username>'
 registry_password='<registry password>'
-
 
 # SSL-related variables
 # If set, this will install a custom CA certificate to the system trust store.
