@@ -17,7 +17,7 @@ xref:proc-editing-installer-inventory-file_platform-install-scenario[Editing the
 
 xref:proc-running-setup-script_platform-install-scenario[Running the {PlatformName} installer setup script]:: The setup script installs your Private Automation Hub using the required parameters defined in the inventory file.
 
-xref:proc-verify-controller-installation_platform-install-scenario[Verifying {ControllerName} installation]:: After installaing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {ControllerName}.
+xref:proc-verify-controller-installation_platform-install-scenario[Verifying {ControllerName} installation]:: After installing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {ControllerName}.
 
 xref:proc-verify-hub-installation_platform-install-scenario[Verifying {HubName} installation]:: After installing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {HubName}.
 
