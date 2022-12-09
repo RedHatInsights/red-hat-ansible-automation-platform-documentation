@@ -10,14 +10,14 @@ ifdef::context[:parent-context: {context}]
 :context: platform-install-scenario
 
 [role="_abstract"]
-{PlatformNameShort} is a modular platform and installation involves deploying {ControllerName} with other automation platform components, such as {HubName}. For more information about the components provided with {PlatformNameShort}, see _Red Hat Ansible Automation Platform platform components_ in the {PlatformName} Planning Guide.
+{PlatformNameShort} is a modular platform and you can deploy {ControllerName} with other automation platform components, such as {HubName}. For more information about the components provided with {PlatformNameShort}, see _Red Hat Ansible Automation Platform platform components_ in the {PlatformName} Planning Guide.
 
 [IMPORTANT]
 ====
-The {PlatformNameShort} installer allows you to deploy *only one* {HubName} per inventory. You can use the {PlatformNameShort} installer for a standalone instance of {HubName} and run the installer any number of times with any number of different inventories to deploy multiple {HubName} nodes.
+With the {PlatformNameShort} installer, you can deploy *only one* {HubName} per inventory. You can use the {PlatformNameShort} installer for a standalone instance of {HubName} and run the installer any number of times with any number of different inventories to deploy multiple {HubName} nodes.
 ====
 
-There are a number of supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario using one of the examples below:
+You can choose one of the supported installation scenarios for {PlatformName}. Edit the inventory file parameters to specify your installation scenario by using one of the following examples:
 
 * xref:ref-standlone-platform-inventory_platform-install-scenario[Example inventory file for a database on the automation controller node or a non-installer managed database]
 * xref:ref-standlone-platform-ext-database-inventory_platform-install-scenario[Example {PlatformName} inventory file with an external managed database]

@@ -1,7 +1,7 @@
 <title>Red Hat Ansible Automation Platform Installation Guide</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.3</productnumber>
-<subtitle>This guide provides procedures and reference information for the supported installation scenarios for Red Hat Ansible Automation Platform</subtitle>
+<subtitle>Learn how to install Red Hat Ansible Automation Platform based on supported installation scenarios.</subtitle>
 <abstract>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
     <para> If you have a suggestion to improve this documentation, or find an error, please contact technical support at <link xlink:href="https://access.redhat.com"></link> to create an issue on the <emphasis role="strong">Ansible Automation Platform</emphasis> Jira project using the <emphasis role="strong">Docs</emphasis> component.</para>

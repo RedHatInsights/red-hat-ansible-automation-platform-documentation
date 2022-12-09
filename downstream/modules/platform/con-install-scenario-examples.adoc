@@ -1,9 +1,10 @@
 [id="con-install-scenario-examples"]
 
-= Installation scenario examples
+= Inventory file examples based on installation scenarios
+
 
 [role="_abstract"]
-Red Hat supports a number of installations scenarios for {PlatformNameShort}. Use the examples provided in this section to update the `inventory` file based on your preferred installation scenario.
+Red Hat supports a number of installation scenarios for {PlatformNameShort}. Review the following examples and choose those suitable for your preferred installation scenario.
 
 [IMPORTANT]
 ====
