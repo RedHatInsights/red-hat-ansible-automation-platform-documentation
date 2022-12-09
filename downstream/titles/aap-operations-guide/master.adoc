@@ -1,0 +1,20 @@
+:imagesdir: images
+:numbered:
+:toclevels: 1
+
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Red Hat Ansible Automation Platform Operations Guide
+
+This guide provides procedures for configuration tasks that you can perform after installing {PlatformName}.
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
+include::platform/assembly-configuring-proxy-support.adoc[leveloffset=+1]
+include::platform/assembly-configuring-websockets.adoc[leveloffset=+1]
+include::platform/assembly-controlling-data-collection.adoc[leveloffset=+1]
+

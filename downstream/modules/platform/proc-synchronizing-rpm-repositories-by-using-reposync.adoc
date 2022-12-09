@@ -6,7 +6,7 @@ To perform a reposync you need a RHEL host that has access to the Internet. Afte
 
 .Procedure
 
-. Attach the BaseOS and AppStream required repositories
+. Attach the BaseOS and AppStream required repositories:
 +
 ----
 # subscription-manager repos \
@@ -14,7 +14,7 @@ To perform a reposync you need a RHEL host that has access to the Internet. Afte
     --enable rhel-8-for-x86_64-appstream-rpms
 ----
 
-. Perform the reposync
+. Perform the reposync:
 +
 ----
 # dnf install yum-utils
@@ -30,13 +30,12 @@ To perform a reposync you need a RHEL host that has access to the Internet. Afte
 
 .. If using `--newest-only` the repos downloaded will be ~14GB
 
-. If you plan to use Red Hat Single Sign-On (RHSSO)  you must also sync these
-repositories
+. If you plan to use Red Hat Single Sign-On (RHSSO) sync these repositories.
 
 .. jb-eap-7.3-for-rhel-8-x86_64-rpms
 .. rh-sso-7.4-for-rhel-8-x86_64-rpms
++
+After the reposync is completed your repositories are ready to use with a web server.
 
-. After the reposync is completed your repositories are ready to use with a web
-server.
 
-.. Move the repositories to your disconnected network.
+. Move the repositories to your disconnected network.

@@ -1,6 +1,4 @@
-
 [id="con-usability-analytics_{context}"]
-
 
 = Usability analytics and data collection
 

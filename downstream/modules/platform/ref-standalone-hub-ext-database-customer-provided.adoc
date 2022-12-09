@@ -1,9 +1,14 @@
-[id="ref-standlone-hub-ext-database-inventory_{context}"]
+[id="ref-standalone-hub-ext-database-customer-provided_{context}"]
 
-= Single {HubName} with external (installer managed) database
+= Single {HubName} with external (customer provided) database
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to deploy a single instance of {HubName} with an external (installer managed) database.
+This example describes how you can populate the inventory file to deploy a single instance of {HubName} with an external database that is not managed by the platform installer.
+
+[IMPORTANT]
+====
+This example does not have a host underneath the database group. This indicates to the installer that the database  already exists, and is being managed elsewhere.
+====
 
 -----
 [automationcontroller]
@@ -12,7 +17,6 @@ This example describes how you can populate the inventory file to deploy a singl
 automationhub.acme.org
 
 [database]
-data.acme.org
 
 [all:vars]
 registry_url='registry.redhat.io'
