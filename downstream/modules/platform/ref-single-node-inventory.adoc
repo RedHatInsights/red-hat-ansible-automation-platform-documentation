@@ -1,18 +1,12 @@
 
 
-// [id="ref-single-node-inventory_{context}"]
+[id="ref-single-node-inventory_{context}"]
 
 = Example {PlatformName} single node inventory file
 
 
 [role="_abstract"]
 This example describes how you can populate the inventory file for a single node installation of {ControllerName}.
-
-[IMPORTANT]
-====
-* Do not use special characters for `pg_password`. It may cause the setup to fail.
-* Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
-====
 
 -----
 [automationcontroller]
