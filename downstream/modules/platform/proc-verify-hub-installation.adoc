@@ -1,9 +1,9 @@
 [id="proc-verify-hub-installation_{context}"]
 
-= Verifying {HubName} installation
+= Verifying installation of {HubName}
 
 [role="_abstract"]
-After the installation completes, you can verify your {HubName} has been installed successfully by logging in with the admin credentials you inserted into the `inventory` file.
+Verify that you installed your {HubName} successfully by logging in with the admin credentials you inserted into the `inventory` file.
 
 .Procedure
 . Navigate to the IP address specified for the {HubName} node in the `inventory` file.
@@ -12,7 +12,7 @@ After the installation completes, you can verify your {HubName} has been install
 
 [IMPORTANT]
 ====
-If the installation fails and you are a customer who has purchased a valid license for {PlatformName}, please contact Ansible via the Red Hat Customer portal at https://access.redhat.com/.
+If the installation fails and you are a customer who has purchased a valid license for {PlatformName}, contact Ansible through the Red Hat Customer portal at https://access.redhat.com/.
 ====
 
 Upon a successful login to {HubName}, your installation of {PlatformName} {PlatformVers} is now complete.

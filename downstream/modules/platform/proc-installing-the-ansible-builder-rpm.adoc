@@ -9,9 +9,12 @@
 .. Subscribe the RHEL box to a Satellite on the disconnected network.
 .. Attach the Ansible Automation Platform subscription and enable the AAP repo.
 .. Install the ansible-builder RPM.
-
-NOTE: This is preferred if a Satellite exists because the EE images can leverage RHEL content from the Satellite if the underlying build host is registered.
-
++
+[NOTE]
+====
+This is preferred if a Satellite exists because the EE images can leverage RHEL content from the Satellite if the underlying build host is registered.
+====
++
 . Unarchive the AAP setup bundle.
 . Install the ansible-builder RPM and its dependencies from the included content:
 +
@@ -57,10 +60,10 @@ url=https://<hub_fqdn>/api/galaxy/
 token=<admin_token>
 ----
 +
-. Create a __ubi.repo__ file that points to your disconnected UBI repo mirror (this could be your Satellite if the UBI content is hosted there).  
-
+. Create a __ubi.repo__ file that points to your disconnected UBI repo mirror (this could be your Satellite if the UBI content is hosted there).
++
 This is an example output where `reposync` was used to mirror the UBI repos.
-
++
 ----
 $ cat ubi.repo
 [ubi-8-baseos]
@@ -87,7 +90,7 @@ gpgcheck = 1
 . Create your python requirements.txt and ansible collection requirements.yml with the content needed for your custom EE image.  Note that any collections you require should already be uploaded into your private automation hub.
 
 . Use ansible-builder to create the context directory used to build the EE image.
-
++
 ----
 $ ansible-builder create
 Complete! The build context can be found at: /home/cloud-user/custom-ee/context
