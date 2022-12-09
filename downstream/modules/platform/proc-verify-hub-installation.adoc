@@ -3,7 +3,7 @@
 = Verifying installation of {HubName}
 
 [role="_abstract"]
-Verify than you installed your {HubName} successfully by logging in with the admin credentials you inserted into the `inventory` file.
+Verify that you installed your {HubName} successfully by logging in with the admin credentials you inserted into the `inventory` file.
 
 .Procedure
 . Navigate to the IP address specified for the {HubName} node in the `inventory` file.
