@@ -23,3 +23,5 @@ Use this guide for guidance on post installation activities for the Ansible Auto
 ** Upgrade procedures so you can upgrade to the latest available version of the Ansible Automation Platform Operator.
 
 * The _Red Hat Ansible Automation Platform Operator Backup and Recovery Guide_ has been added to the library to help you backup and recover installations of the Red Hat Ansible Automation Platform operator on OpenShift Container Platform.
+
+* The _Ansible Builder Guide_ has been renamed to _Creating and Consuming Execution Environments_ to better reflect the information provided in the guide.
