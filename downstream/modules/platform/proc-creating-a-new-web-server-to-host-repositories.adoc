@@ -1,20 +1,20 @@
 [id="proc-creating-a-new-web-server-to-host-repositories_{context}"]
 
-= Creating a new web server to host repositories
+= Creating a New Web Server to Host Repositories
 
-If you do not have an existing web server to host your repositories, create one with the synced repositories.
+If you are going to host your repositories from a web server you can use an existing web server or create one with the synced repositories.
 
 .Procedure
 
 Use the following steps if creating a new web server.
 
-. Install prerequisites:
+. Install prerequisites
 +
 ----
 $ sudo dnf install httpd
 ----
 +
-. Configure httpd to serve the repo directory:
+. Configure httpd to serve the repo directory by creating
 +
 ----
 /etc/httpd/conf.d/repository.conf
@@ -33,26 +33,26 @@ DocumentRoot '/path/to/repos'
 </Directory>
 ----
 +
-. Ensure that the directory is readable by an apache user:
+. Ensure that the directory is readable by apache user
 +
 ----
 $ sudo chown -R apache /path/to/repos
 ----
 
-. Configure SELinux:
+. Configure SELinux
 +
 ----
 $ sudo semanage fcontext -a -t httpd_sys_content_t "/path/to/repos(/.*)?"
 $ sudo restorecon -ir /path/to/repos
 ----
 
-. Enable httpd:
+. Enable httpd
 +
 ----
 $ sudo systemctl enable --now httpd.service
 ----
 
-. Open firewall:
+. Open firewall
 +
 ----
 $ sudo firewall-cmd --zone=public --add-service=http –add-service=https
@@ -60,8 +60,8 @@ $ sudo firewall-cmd --zone=public --add-service=http –add-service=https
 $ sudo firewall-cmd --reload
 ----
 
-. On {ControllerName} and {HubName}, add a repo file at __/etc/yum.repos.d/local.repo__, add
-the optional repos if needed:
+. On Controller and Hub add a repo file at __/etc/yum.repos.d/local.repo__, add
+the optional repos if needed.
 +
 ----
 [Local-BaseOS]

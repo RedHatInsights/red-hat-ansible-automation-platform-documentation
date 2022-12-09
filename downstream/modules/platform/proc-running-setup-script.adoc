@@ -1,16 +1,16 @@
-[id="proc-running-setup-script_{context}"]
+// [id="proc-running-setup-script_{context}"]
 
 = Running the {PlatformName} installer setup script
 
 [role="_abstract"]
-After you update the inventory file with required parameters for installing your {PrivateHubName}, run the installer setup script.
+You can run the setup script once you finish updating the `inventory` file with required parameters for installing your Private Automation Hub.
 
 .Procedure
 
-* Run the `setup.sh` script
+. Run the `setup.sh` script
 +
 -----
-$ sudo ./setup.sh
+$ ./setup.sh
 -----
 
-Installation of {PlatformName} will begin.
+The installation will begin.

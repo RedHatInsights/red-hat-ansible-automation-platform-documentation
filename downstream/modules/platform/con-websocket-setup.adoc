@@ -1,13 +1,15 @@
+
+
 [id="con-websocket-setup_{context}"]
 
 = Websocket configuration for {ControllerName}
 
 [role="_abstract"]
-{ControllerNameStart} nodes are interconnected through websockets to distribute all websocket-emitted messages throughout your system. This configuration setup enables any browser client websocket to subscribe to any job that might be running on any {ControllerName} node. Websocket clients are not routed to specific {ControllerName} nodes. Instead, any {ControllerName} node can handle any websocket request and each {ControllerName} node must know about all websocket messages destined for all clients.
+{ControllerNameStart} nodes connect to all other {ControllerName} nodes via websockets. This interconnect is used to distribute all websocket emitted messages to all other {ControllerName} nodes. This is required because any browser client websocket can subscribe to any job that may be running on any {ControllerName} node. Websocket clients are not routed to specific {ControllerName} nodes. Any {ControllerName} node can handle any websocket request and each {ControllerName} node must know about all websocket messages destined for all clients.
 
-{ControllerNameStart} automatically handles discovery of other {ControllerName} nodes through the Instance record in the database.
+{ControllerNameStart} will automatically handle discovery of other {ControllerName} nodes via the Instance record in the database.
 
 [IMPORTANT]
 ====
-Your {ControllerName} nodes are designed to broadcast websocket traffic across a private, trusted subnet (and not the open Internet). Therefore, if you turn off HTTPS for websocket broadcasting, the websocket traffic, composed mostly of Ansible playbook stdout, is sent unencrypted between {ControllerName} nodes.
+* It is intended that your nodes are broadcasting websocket traffic across a private, trusted subnet (and not the open Internet). Therefore, if you turn off HTTPS for websocket broadcasting, the websocket traffic, comprised mostly of Ansible playbook stdout, is sent between {ControllerName} nodes unencrypted.
 ====

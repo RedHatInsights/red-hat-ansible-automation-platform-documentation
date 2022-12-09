@@ -7,11 +7,10 @@ See the following resources to explore additional {ControllerName} configuration
 .Resources to configure {ControllerName}
 [options="header"]
 |====
-|Resource link|Description
+|Link|Description
 |https://docs.ansible.com/automation-controller/latest/html/quickstart/index.html[Automation Controller Quick Setup Guide]|Set up {ControllerName} and run your first playbook
 |https://docs.ansible.com/automation-controller/latest/html/administration/index.html[Automation Controller Administration Guide]|Configure {ControllerName} administration through customer scripts, management jobs, etc.
-//12/2/22 [dcd: add links to sections in new Operations Guide once published.]
-//|xref:assembly-configuring-proxy-support[Configuring proxy support for {PlatformName}]|Set up {ControllerName} with a proxy server
-//|xref:assembly-controlling-data-collection[Managing usability analytics and data collection from {ControllerName}]|Manage what {ControllerName} information you share with Red Hat
+|xref:assembly-configuring-proxy-support[Configuring proxy support for {PlatformName}]|Set up {ControllerName} with a proxy server
+|xref:assembly-controlling-data-collection[Managing usability analytics and data collection from {ControllerName}]|Manage what {ControllerName} information you share with Red Hat
 |https://docs.ansible.com/automation-controller/latest/html/userguide/index.html[Automation Controller User Guide]|Review {ControllerName} functionality in more detail
 |====

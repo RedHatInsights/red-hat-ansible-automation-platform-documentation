@@ -1,4 +1,6 @@
-[id="proc-editing-installer-inventory-file_{context}"]
+
+
+// [id="proc-editing-installer-inventory-file_{context}"]
 
 
 = Editing the {PlatformName} installer inventory file
@@ -9,7 +11,7 @@ You can use the {PlatformName} installer inventory file to specify your installa
 
 .Procedure
 
-. Navigate to the installer:
+. Navigate to the installer
 .. [bundled installer]
 +
 -----
@@ -23,8 +25,4 @@ $ cd ansible-automation-platform-setup-<latest-version>
 -----
 +
 . Open the `inventory` file with a text editor.
-. Edit `inventory` file parameters to specify your installation scenario. Use one of the supported xref:con-install-scenario-examples[Installation scenario examples] to update your `inventory` file.
-
-[role="_additional-resources"]
-.Additional resources
-For a comprehensive list of pre-defined variables used in Ansible installation inventory files, see xref:appendix-inventory-files-vars[Inventory file variables].
+. Edit `inventory` file parameters to specify your installation scenario. Follow the example below.

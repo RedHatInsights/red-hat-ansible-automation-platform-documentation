@@ -1,9 +1,9 @@
-[id="proc-verify-controller-installation_{context}"]
+// [id="proc-verify-controller-installation_{context}"]
 
-= Verifying installation of {ControllerName}
+= Verifying {ControllerName} installation
 
 [role="_abstract"]
-Verify that you installed automation controller successfully by logging in with the admin credentials you inserted in the `inventory` file.
+Once the installation completes, you can verify your {ControllerName} has been installed successfully by logging in with the admin credentials you inserted into the `inventory` file.
 
 .Procedure
 . Navigate to the IP address specified for the {ControllerName} node in the `inventory` file.
@@ -16,7 +16,7 @@ The {ControllerName} server is accessible from port 80 (*https://<TOWER_SERVER_N
 
 [IMPORTANT]
 ====
-If the installation fails and you are a customer who has purchased a valid license for {PlatformName}, contact Ansible through the Red Hat Customer portal at https://access.redhat.com/.
+If the installation fails and you are a customer who has purchased a valid license for {PlatformName}, please contact Ansible via the Red Hat Customer portal at https://access.redhat.com/.
 ====
 
 Upon a successful login to {ControllerName}, your installation of {PlatformName} {PlatformVers} is now complete.

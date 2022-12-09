@@ -2,51 +2,32 @@
 
 [id="ref-standlone-platform-ext-database-inventory_{context}"]
 
-= {PlatformNameShort} with an external (installer managed) database
+= Example {PlatformName} inventory file with an external managed database
 
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to install {PlatformNameShort}. This installation inventory file includes two {ControllerName} nodes, two execution nodes, and {HubName} with an external managed database.
+This example describes how you can populate the inventory file to install {PlatformName}. This installation inventory file includes both {ControllerName} and {HubName} with an external managed database.
+
+[IMPORTANT]
+====
+* You cannot install {ControllerName} and {HubName} on the same node.
+* Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from Private Automation Hub from a different node.
+* Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
+====
 
 -----
-# Automation Controller Nodes
-# There are two valid node_types that can be assigned for this group.
-# A node_type=control implies that the node will only be able to run
-# project and inventory updates, but not regular jobs.
-# A node_type=hybrid will have the ability to run everything.
-# If you do not define the node_type, it defaults to hybrid.
-#
-# control.example node_type=control
-# hybrid.example  node_type=hybrid
-# hybrid2.example <- this will default to hybrid
-
 [automationcontroller]
-controller1.acme.org node_type=control
-controller2.acme.org node_type=control
-
-# Execution Nodes
-# There are two valid node_types that can be assigned for this group.
-# A node_type=hop implies that the node will forward jobs to an execution node.
-# A node_type=execution implies that the node will be able to run jobs.
-# If you do not define the node_type, it defaults to execution.
-#
-# hop.example node_type=hop
-# execution.example  node_type=execution
-# execution2.example <- this will default to execution
-
-[execution_nodes]
-execution1.acme.org node_type=execution
-execution2.acme.org node_type=execution
+controller.acme.org
 
 [automationhub]
 automationhub.acme.org
 
 [database]
-data.acme.org
+database-01.acme.org
 
 [all:vars]
 admin_password='<password>'
-pg_host='data.acme.org'
+pg_host='database-01.acme.org'
 pg_port='5432'
 pg_database='awx'
 pg_username='awx'
@@ -57,14 +38,10 @@ registry_url='registry.redhat.io'
 registry_username='<registry username>'
 registry_password='<registry password>'
 
-# Receptor Configuration
-#
-receptor_listener_port=27199
-
 # Automation Hub Configuration
 #
 automationhub_admin_password='<password>'
-automationhub_pg_host='data.acme.org'
+automationhub_pg_host='database-01.acme.org'
 automationhub_pg_port='5432'
 automationhub_pg_database='automationhub'
 automationhub_pg_username='automationhub'

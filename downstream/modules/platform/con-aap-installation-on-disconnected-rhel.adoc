@@ -17,11 +17,8 @@ before you install AAP on a disconnected network.
 * Create DNS records for the automation controller and private automation hub
 servers
 
-. Create a subscription manifest.
-. Download the AAP setup bundle.
-. Create DNS records for the automation controller and private automation hub servers.
-
-NOTE: The setup bundle includes additional components that make installing AAP easier in a disconnected environment. These include the AAP RPMs and the default execution environment (EE) images.
+NOTE: The setup bundle includes additional components such as the AAP RPMs, and the default execution environment (EE) images which makes installing AAP easier in a disconnected environment.  The setup bundle tarball is preferred over the
+standard setup tarball for disconnected networks.
 
 == System Requirements
 
