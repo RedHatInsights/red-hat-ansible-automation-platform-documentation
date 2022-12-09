@@ -5,7 +5,7 @@
 
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to install {PlatformName}.
+Use this example to populate the inventory file to install {PlatformName}.
 This installation inventory file includes a single {ControllerName} node with an internal database.
 
 -----

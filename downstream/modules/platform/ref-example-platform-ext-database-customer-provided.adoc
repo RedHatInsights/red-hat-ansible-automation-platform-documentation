@@ -4,11 +4,11 @@
 
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to install {PlatformName}. This installation inventory file includes one of each node type; control, hybrid, hop, and execution, and {HubName} with an external managed database that is not managed by the platform installer.
+Use this example to populate the inventory file to install {PlatformName}. This installation inventory file includes one of each node type; control, hybrid, hop, and execution, and {HubName} with an external managed database that is not managed by the platform installer.
 
 [IMPORTANT]
 ====
-This example does not have a host underneath the database group. This indicates to the installer that the database  already exists, and is being managed elsewhere.
+This example does not have a host under the database group. This indicates to the installer that the database  already exists, and is being managed elsewhere.
 ====
 
 -----
