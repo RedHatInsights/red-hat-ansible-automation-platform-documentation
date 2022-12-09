@@ -1,12 +1,15 @@
+[id="ref-example-platform-ext-database-customer-provided_{context}"]
 
-
-[id="ref-standlone-platform-ext-database-inventory_{context}"]
-
-= {PlatformNameShort} with an external (installer managed) database
+= {PlatformNameShort} with an external (customer provided) database
 
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to install {PlatformNameShort}. This installation inventory file includes two {ControllerName} nodes, two execution nodes, and {HubName} with an external managed database.
+This example describes how you can populate the inventory file to install {PlatformName}. This installation inventory file includes one of each node type; control, hybrid, hop, and execution, and {HubName} with an external managed database that is not managed by the platform installer.
+
+[IMPORTANT]
+====
+This example does not have a host underneath the database group. This indicates to the installer that the database  already exists, and is being managed elsewhere.
+====
 
 -----
 # Automation Controller Nodes
@@ -21,8 +24,8 @@ This example describes how you can populate the inventory file to install {Platf
 # hybrid2.example <- this will default to hybrid
 
 [automationcontroller]
+hybrid1.acme.org node_type=hybrid
 controller1.acme.org node_type=control
-controller2.acme.org node_type=control
 
 # Execution Nodes
 # There are two valid node_types that can be assigned for this group.
@@ -35,14 +38,13 @@ controller2.acme.org node_type=control
 # execution2.example <- this will default to execution
 
 [execution_nodes]
+hop1.acme.org node_type=hop
 execution1.acme.org node_type=execution
-execution2.acme.org node_type=execution
 
 [automationhub]
 automationhub.acme.org
 
 [database]
-data.acme.org
 
 [all:vars]
 admin_password='<password>'
