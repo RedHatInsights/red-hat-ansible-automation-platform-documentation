@@ -11,22 +11,21 @@ ifdef::context[:parent-context: {context}]
 
 The {PlatformName} installation program offers you flexibility, allowing you to install {PlatformNameShort} using a number of supported installation scenarios.
 
-[NOTE]
-====
-For more information about the supported installation scenarios, see the {PlatformName} Planning Guide.
-====
-
 Regardless of the installation scenario you choose, installing {PlatformNameShort} involves the following steps:
 
 xref:proc-editing-installer-inventory-file_platform-install-scenario[Editing the {PlatformName} installer inventory file]:: The {PlatformNameShort} installer inventory file allows you to specify your installation scenario and describe host deployments to Ansible. The examples provided in this document show the parameter specifications needed to install that scenario for your deployment.
 
 xref:proc-running-setup-script_platform-install-scenario[Running the {PlatformName} installer setup script]:: The setup script installs your Private Automation Hub using the required parameters defined in the inventory file.
 
-xref:proc-verify-controller-installation_platform-install-scenario[Verifying {ControllerName} installation]:: After {PlatformNameShort} is completed, you can verify that the installation has been successful by logging in to the {ControllerName}.
+xref:proc-verify-controller-installation_platform-install-scenario[Verifying {ControllerName} installation]:: After installaing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {ControllerName}.
 
-xref:proc-verify-hub-installation_platform-install-scenario[Verifying {HubName} installation]:: After {PlatformNameShort} is completed, you can verify that the installation has been successful by logging in to the {HubName}.
+xref:proc-verify-hub-installation_platform-install-scenario[Verifying {HubName} installation]:: After installing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {HubName}.
 
-xref:assembly-platform-whats-next_platform-install-scenario[Next steps]:: After successful installation, you can begin to leverage the features of {PlatformNameShort}.
+xref:assembly-platform-whats-next_platform-install-scenario[Post-installation steps]:: After successful installation, you can begin using the features of {PlatformNameShort}.
+
+[role="_additional-resources"]
+.Additional resources
+For more information about the supported installation scenarios, see the {PlatformName} Planning Guide.
 
 include::platform/con-aap-installation-prereqs.adoc[leveloffset=+1]
 
