@@ -6,7 +6,7 @@
 * When using an external database, ensure the `[database]` sections of your inventory file are properly set up.
 * To improve performance, do not place the database server and the automation controller server on the same network.
 
-.{HubNameStart}
+.{HubName}
 * Add {HubNameMain} information in the `[automationhub]` group
 * Do not install {HubNamemain} and {ControllerName} on the same node.
 * Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` host to ensure that users can synchronize and install content from {HubNameMain} from a different node. 
@@ -19,7 +19,7 @@ You must separate the installation of {Controllername} and {HubNameMain} because
 If you use one value in `[database]` and both {Controllername} and {HubNameMain} define it, they would use the same database.
 ====
 
-.{ControllerNameStart}
+.{ControllerName}
 * {ControllerNameStart} does not configure replication or failover for the database that it uses. 
 {ControllerName} works with any replication that you have.
 

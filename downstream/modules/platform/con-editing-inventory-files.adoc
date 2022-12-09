@@ -6,4 +6,4 @@ You can further configure your {PlatformName} installation by including addition
 These configurations add optional features for managing your {PlatformName}. 
 Add these variables by editing the inventory file using a text editor.
 
-A table of predefined values for inventory file variables can be found in _Appendix A: Inventory File Variables_ of the _{PlatformName} Installation Guide_.
+A table of predefined values for inventory file variables can be found in xref:appendix-inventory-files-vars[Appendix A: Inventory File Variables]

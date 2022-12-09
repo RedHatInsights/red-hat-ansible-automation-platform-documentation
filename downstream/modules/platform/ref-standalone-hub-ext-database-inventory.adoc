@@ -1,18 +1,28 @@
+
+
 [id="ref-standlone-hub-ext-database-inventory_{context}"]
 
-= Single {HubName} with external (installer managed) database
+= Example standalone {HubName} inventory file
+
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to deploy a single instance of {HubName} with an external (installer managed) database.
+This example describes how you can populate the inventory file to deploy a standalone instance of {HubName}.
 
+[IMPORTANT]
+====
+* For {PlatformName} or {HubName}: Add an {HubName} host in the `[automationhub] group. You cannot install {ControllerName} and {HubName} on the same node.
+* Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` host to ensure users can sync and install content from {HubName} from a different node. Do not use 'localhost'.
+* Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
+====
 -----
 [automationcontroller]
 
+
 [automationhub]
-automationhub.acme.org
+127.0.0.1 ansible_connection=local
 
 [database]
-data.acme.org
+host2
 
 [all:vars]
 registry_url='registry.redhat.io'
@@ -21,8 +31,8 @@ registry_password='<registry password>'
 
 automationhub_admin_password= <PASSWORD>
 
-automationhub_pg_host='data.acme.org'
-automationhub_pg_port='5432'
+automationhub_pg_host=''
+automationhub_pg_port=''
 
 automationhub_pg_database='automationhub'
 automationhub_pg_username='automationhub'

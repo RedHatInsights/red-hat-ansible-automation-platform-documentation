@@ -17,11 +17,6 @@ NOTE: Attaching a subscription is unnecessary if you have enabled link:https://a
 # subscription-manager list --available --all | grep "Ansible Automation Platform" -B 3 -A 6
 -----
 +
-[NOTE]
-====
-Do not use MCT4022 as a `pool_id` for your subscription because it can cause {PlatformNameShort} subscription attachment to fail.
-====
-+
 .Example
 An example output of the `*subsciption-manager list*` command. Obtain the `pool_id` as seen in the `Pool ID:` section:
 +
@@ -57,14 +52,14 @@ You have now attached your {PlatformName} subscriptions to all nodes.
 
 * If you are unable to locate certain packages that came bundled with the {PlatformNameShort} installer, or if you are seeing a `_Repositories disabled by configuration_` message, try enabling the repository using the command:
 +
-Red Hat Ansible Automation Platform 2.3 for RHEL 8
+Red Hat Ansible Automation Platform 2.2 for RHEL 8
 +
 ----
-subscription-manager repos --enable ansible-automation-platform-2.3-for-rhel-8-x86_64-rpms
+subscription-manager repos --enable ansible-automation-platform-2.2-for-rhel-8-x86_64-rpms
 ----
 +
-Red Hat Ansible Automation Platform 2.3 for RHEL 9
+Red Hat Ansible Automation Platform 2.2 for RHEL 9
 +
 ----
-subscription-manager repos --enable ansible-automation-platform-2.3-for-rhel-9-x86_64-rpms
+subscription-manager repos --enable ansible-automation-platform-2.2-for-rhel-9-x86_64-rpms
 ----

@@ -7,7 +7,7 @@ See the following resources to explore additional {HubName} configurations.
 .Resources to configure {ControllerName}
 [options="header"]
 |====
-|Resource link|Description
+|Link|Description
 |https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in private {HubName}]|Configure user access for {HubName}
 |https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_red_hat_certified_and_ansible_galaxy_collections_in_automation_hub/index[Managing Red Hat Certified and Ansible Galaxy collections in {HubName}]|Add content to your {HubName}
 |https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/publishing_proprietary_content_collections_in_automation_hub/index[Publishing proprietary content collections in {HubName}]|Publish internally developed collections on your {HubName}

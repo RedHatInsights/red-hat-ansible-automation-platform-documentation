@@ -1,17 +1,20 @@
+
+
 [id="proc-controlling-data-collection_{context}"]
 
 = Controlling data collection from {ControllerName}
 
+
 [role="_abstract"]
-You can control how {ControllerName} collects data by setting your participation level in the *User Interface* tab in the *Settings* menu.
+You can control how {ControllerName} collects data by setting your participation level in the **User Interface** tab in the settings menu.
 
 .Procedure
 
-. Log in to your {ControllerName}.
-. Navigate to menu:Settings[User Interface].
-. Select the desired level of data collection from the *User Analytics Tracking State* drop-down list:
-** *Off*: Prevents any data collection.
-** *Anonymous*: Enables data collection without your specific user data.
-** *Detailed*: Enables data collection including your specific user data.
-. Click btn:[Save] to apply the settings or btn:[Cancel] to discard the changes.
+. Log in to your {ControllerName}
 
+. Navgate to *Settings* -> *User Interface*
+. Select the desired level of data collection from the User Analytics Tracking State drop-down list:
+.. *Off*: Prevents any data collection.
+.. *Anonymous*: Enables data collection without your specific user data.
+.. *Detailed*: Enables data collection including your specific user data.
+. Click *Save* to apply the settings or *Cancel* to abandon the changes.

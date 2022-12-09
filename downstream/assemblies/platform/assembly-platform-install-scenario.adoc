@@ -10,41 +10,22 @@ ifdef::context[:parent-context: {context}]
 :context: platform-install-scenario
 
 [role="_abstract"]
-{PlatformNameShort} is a modular platform and you can deploy {ControllerName} with other automation platform components, such as {HubName}. For more information about the components provided with {PlatformNameShort}, see _Red Hat Ansible Automation Platform platform components_ in the {PlatformName} Planning Guide.
+{PlatformName} installation involves deploying {ControllerName} and {HubName}.
 
 [IMPORTANT]
 ====
-With the {PlatformNameShort} installer, you can deploy *only one* {HubName} per inventory. You can use the {PlatformNameShort} installer for a standalone instance of {HubName} and run the installer any number of times with any number of different inventories to deploy multiple {HubName} nodes.
+The {PlatformNameShort} installer allows you to deploy *only one* {HubName} per inventory. You can use the {PlatformNameShort} installer for a standalone instance of {HubName} and run the installer any number of times with any number of different inventories to deploy multiple {HubName} nodes.
 ====
 
-There are a number of supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario using one of the following examples:
+[IMPORTANT]
+====
+Installer does not require a user to be logged in as root to run `./setup.sh`. The user will need to properly configure the environment variable `ANSIBLE_BECOME_METHOD` for the preferred method of privilege escalation to root. The default method is `sudo`.
+====
 
-* xref:ref-standlone-platform-inventory_platform-install-scenario[Standalone automation controller with internal database]
-* xref:ref-single-controller-ext-installer-managed-db_platform-install-scenario[Single {ControllerName} with external (installer managed) database]
-* xref:ref-single-controller-ext-customer-managed-db_platform-install-scenario[Single {ControllerName} with external (customer provided) database]
-* xref:ref-standlone-platform-ext-database-inventory_platform-install-scenario[{PlatformNameShort} with an external (installer managed) database]
-* xref:ref-example-platform-ext-database-customer-provided_platform-install-scenario[{PlatformNameShort} with an external (installer managed) database]
-* xref:ref-standlone-hub-inventory_platform-install-scenario[Standalone {HubName} with internal database]
-* xref:ref-standlone-hub-ext-database-inventory_platform-install-scenario[Single {ControllerName} with external (installer managed) database]
-* xref:ref-standalone-hub-ext-database-customer-provided_platform-install-scenario[Single {ControllerName} with external (customer provided) database]
+This installation option includes two supported scenarios:
 
-include::platform/proc-editing-inventory-file.adoc[leveloffset=+1]
-include::platform/con-install-scenario-examples.adoc[leveloffset=+2]
-include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=+3]
-include::platform/ref-single-controller-ext-installer-managed-db.adoc[leveloffset=+3]
-include::platform/ref-single-controller-ext-customer-managed-db.adoc[leveloffset=+3]
-include::platform/ref-example-platform-ext-database-inventory.adoc[leveloffset=+3]
-include::platform/ref-example-platform-ext-database-customer-provided.adoc[leveloffset=+3]
-include::platform/ref-standalone-hub-inventory.adoc[leveloffset=+3]
-include::platform/ref-standalone-hub-ext-database-inventory.adoc[leveloffset=+3]
-include::platform/ref-standalone-hub-ext-database-customer-provided.adoc[leveloffset=+3]
-include::platform/proc-running-setup-script.adoc[leveloffset=+1]
-include::platform/proc-verify-controller-installation.adoc[leveloffset=+1]
-include::platform/ref-controller-configs.adoc[leveloffset=+2]
-include::platform/proc-verify-hub-installation.adoc[leveloffset=+1]
-include::platform/ref-hub-configs.adoc[leveloffset=+2]
-include::assembly-platform-whats-next.adoc[leveloffset=+1]
-
+include::assembly-platform-non-inst-database.adoc[leveloffset=+1]
+include::assembly-platform-ext-database-install.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

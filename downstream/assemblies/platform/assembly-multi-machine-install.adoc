@@ -9,6 +9,13 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 You can use these instructions to install {PlatformName} as multiple {ControllerName} nodes and {HubName} with an external managed database.
 
+
+== Prerequisites
+
+* You chose and obtained a platform installer from the https://access.redhat.com/downloads/content/480/ver=2.1/rhel---8/2.1/x86_64/product-software[Red Hat Ansible Automation Platform Product Software].
+* You are installing on a machine that meets base system requirements.
+* You have created a Red Hat Registry Service Account, following the instructions in the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
+
 include::platform/proc-editing-inventory-file.adoc[leveloffset=3]
 include::platform/ref-multi-node-cluster-installation.adoc[leveloffset=3]
 include::platform/ref-setup-script-args.adoc[leveloffset=3]
