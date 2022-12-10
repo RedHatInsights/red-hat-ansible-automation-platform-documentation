@@ -18,6 +18,7 @@ include::topics/controller-430.adoc[leveloffset=+2]
 
 include::topics/operator-230.adoc[leveloffset=+2]
 
+include::topics/docs-23.adoc[leveloffset=+2]
 
 [[anchor-september-2022-release]]
 == September 2022 release
