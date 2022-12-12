@@ -3,11 +3,11 @@
 = Single {HubName} with external (customer provided) database
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to deploy a single instance of {HubName} with an external database that is not managed by the platform installer.
+Use this example to populate the inventory file to deploy a single instance of {HubName} with an external database that is not managed by the platform installer.
 
 [IMPORTANT]
 ====
-This example does not have a host underneath the database group. This indicates to the installer that the database  already exists, and is being managed elsewhere.
+This example does not have a host under the database group. This indicates to the installer that the database already exists, and is being managed elsewhere.
 ====
 
 -----
