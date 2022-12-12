@@ -8,4 +8,6 @@
 * You are installing on a machine that meets base system requirements.
 * You have created a Red Hat Registry Service Account, following the instructions in the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
 
-For more information about obtaining a platform installer or system requirements, refer to the {PlatformName} Planning Guide.
+[role="_additional-resources"]
+.Additional resources
+For more information about obtaining a platform installer or system requirements, refer to the link:https://https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/red_hat_ansible_automation_platform_planning_guide/planning-installation#red_hat_ansible_automation_platform_system_requirements[{PlatformName} system requirements] in the _{PlatformName} Planning Guide_.

@@ -3,7 +3,7 @@
 = Single {HubName} with external (installer managed) database
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to deploy a single instance of {HubName} with an external (installer managed) database.
+Use this example to populate the inventory file to deploy a single instance of {HubName} with an external (installer managed) database.
 
 -----
 [automationcontroller]
