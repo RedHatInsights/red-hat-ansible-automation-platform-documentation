@@ -4,7 +4,7 @@
 
 // Should be introductory text here.
 
-[cols="a,a"]
+[cols="a,a,a"]
 |===
 | | Required | Notes
 
@@ -23,6 +23,4 @@ h| Disk: database node| 20 GB dedicated hard disk space |
 
 * 150 GB+ recommended
 * Storage volume should be rated for a high baseline IOPS (1500 or more).
-h| Browser | A currently supported version of Mozilla FireFox or Google Chrome |
-h| Database | PostgreSQL version 13 |
 |===
