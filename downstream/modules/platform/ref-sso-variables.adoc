@@ -11,7 +11,7 @@
 | *`*_sso_console_keystore_file`* | Keystore file to install in SSO node.
 
 `/path/to/sso.jks`
-| *`*_sso_host`* | {CatalogNameStart} requires SSO and SSO admin credentials for
+| *`*_sso_host`* | {CatalogNameStart} requires SSO and SSO administration credentials for
 authentication. 
 SSO administration credentials are also required to set {CatalogName} specific
 roles needed for the application. 

@@ -57,7 +57,7 @@ They can cause the password to fail.
 
 NOTE
 
-You no longer need to provide a `pg_hashed_password` in your inventory file at the time of installation because PostgreSQL 13 can now store user passwords more securely. 
+You no longer have to provide a `pg_hashed_password` in your inventory file at the time of installation because PostgreSQL 13 can now store user passwords more securely. 
 
 When you supply `pg_password` in the inventory file for the installer, PostgreSQL uses the SCRAM-SHA-256 hash to secure that password as part of the installation process.
 | *`pg_port`* | The postgreSQL port to use.
