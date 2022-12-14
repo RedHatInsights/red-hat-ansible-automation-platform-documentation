@@ -5,7 +5,7 @@ The documentation set for Red Hat Ansible Automation Platform 2.3 has been refac
 
 .Enhancements
 
-* The _Red Hat Ansible Automation Platform Instllation Guide_ has been restructured into three separate documents to include the following:
+* The _Red Hat Ansible Automation Platform Installation Guide_ has been restructured into three separate documents to include the following:
 
 _Red Hat Ansible Automation Platform Planning Guide_::
 Use this guide to understand requirements, options, and recommendations for installing Ansible Automation Platform.
@@ -18,7 +18,7 @@ Use this guide for guidance on post installation activities for the Ansible Auto
 
 * The _Red Hat Ansible Automation Platform Operator Installation Guide_ has been renamed to _Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform_. The document has also been updated to include the following:
 
-** Migration procedures so you can migrate your existing Ansible Automation Platform deployment to Ansible Automation Platform Operator.
+** Migration procedures, so you can migrate your existing Ansible Automation Platform deployment to Ansible Automation Platform Operator.
 
 ** Upgrade procedures so you can upgrade to the latest available version of the Ansible Automation Platform Operator.
 
