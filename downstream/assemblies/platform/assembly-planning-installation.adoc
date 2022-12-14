@@ -35,7 +35,7 @@ include::platform/con-editing-inventory-files.adoc[leveloffset=+2]
 
 == Supported installation scenarios
 
-Red Hat supports the following installations scenarios for {PlatformName}:
+Red Hat supports the following installation scenarios for {PlatformName}:
 
 [role="_additional-resources"]
 .Additional resources
