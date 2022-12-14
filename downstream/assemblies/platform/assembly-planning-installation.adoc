@@ -35,7 +35,11 @@ include::platform/con-editing-inventory-files.adoc[leveloffset=+2]
 
 == Supported installation scenarios
 
-Red Hat supports the following installations scenarios for {PlatformName}
+Red Hat supports the following installation scenarios for {PlatformName}:
+
+[role="_additional-resources"]
+.Additional resources
+To edit inventory file parameters to specify a supported installation scenario, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/red_hat_ansible_automation_platform_installation_guide/assembly-platform-install-scenario#con-install-scenario-examples[Inventory file examples based on installation scenarios] in the _{PlatformName} Installation Guide_.
 
 //[dcd 12/8/2022 Removing links until new guides are published because some topics were removed and others were added.]
 include::platform/con-SM-standalone-contr-non-inst-database.adoc[leveloffset=+2]
@@ -81,7 +85,6 @@ include::platform/con-cluster-platform-ext-database.adoc[leveloffset=+2]
 //See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/red_hat_ansible_automation_platform_installation_guide/assembly-multi-machine-cluster-scenario[Installing a multi-node {PlatformName} with an external managed database] to get started.
 
 //See xref:assembly-multi-machine-cluster-scenario[Installing a multi-node {PlatformName} with an external managed database] in _Multi-machine cluster installation_ to get started.
-
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

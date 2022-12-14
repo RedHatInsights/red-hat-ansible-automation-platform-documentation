@@ -6,7 +6,7 @@
 
 
 [role="_abstract"]
-This example describes how you can populate the inventory file to install {PlatformNameShort}. This installation inventory file includes two {ControllerName} nodes, two execution nodes, and {HubName} with an external managed database.
+Use this example to populate the inventory file to install {PlatformNameShort}. This installation inventory file includes two {ControllerName} nodes, two execution nodes, and {HubName} with an external managed database.
 
 -----
 # Automation Controller Nodes
