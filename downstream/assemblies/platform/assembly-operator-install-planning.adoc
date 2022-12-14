@@ -10,7 +10,7 @@ ifdef::context[:parent-context: {context}]
 :context: operator-install-planning
 
 [role="_abstract"]
-{PlatformName} is supported on both Red Hat Enterprise Linux 8 and Red Hat Openshift.
+{PlatformName} is supported on both Red Hat Enterprise Linux and Red Hat Openshift.
 
 OpenShift operators help install and automate day-2 operations of complex, distributed software on {OCP}. The {OperatorPlatform} enables you to deploy and manage {PlatformNameShort} components on {OCP}.
 
