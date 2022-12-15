@@ -9,8 +9,7 @@ The “bundle” version is strongly recommended for disconnected installations 
 
 == Downloading the Setup Bundle
 
-. Download the AAP setup bundle package by navigating to
-https://access.redhat.com/downloads/content/480 and click btn:[Download Now] for the Ansible Automation Platform {PlatformVers} Setup Bundle.
+. Download the AAP setup bundle package by navigating to https://access.redhat.com/downloads/content/480 and click btn:[Download Now] for the Ansible Automation Platform {PlatformVers} Setup Bundle.
 
 === Installing the Setup Bundle
 
