@@ -10,6 +10,5 @@ Whether you are a new {PlatformNameShort} user looking to start automating, or a
 //isolated node migration
 //playbooks to download
 
-
 include::assembly-migrate-platform.adoc[leveloffset=+1]
 include::platform/con-why-automation-mesh.adoc[leveloffset=+1]

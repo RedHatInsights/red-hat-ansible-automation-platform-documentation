@@ -8,7 +8,7 @@ Use this example to populate the inventory file to install {PlatformName}. This 
 
 [IMPORTANT]
 ====
-This example does not have a host under the database group. This indicates to the installer that the database  already exists, and is being managed elsewhere.
+This example does not have a host under the database group. This indicates to the installer that the database already exists, and is being managed elsewhere.
 ====
 
 -----
