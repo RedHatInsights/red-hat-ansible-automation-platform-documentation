@@ -23,6 +23,7 @@ You can setup your container repository to add a description, include a README, 
 include::automation-hub/proc-add-container-readme.adoc[leveloffset=+1]
 include::automation-hub/proc-add-group-to-container-repo.adoc[leveloffset=+1]
 include::automation-hub/proc-tag-image.adoc[leveloffset=+1]
+include::automation-hub/proc-create-credential.adoc[leveloffset=+1]
 
 
 
