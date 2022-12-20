@@ -33,7 +33,7 @@ automationhub3.testing.ansible.com ansible_user=cloud-user ansible_host=192.0.2.
 -----
 
 .Red Hat Single Sign-On requirements
-If you are implementing Red Hat Single Sign-On on your {HubName} environment, specify the main {HubName} URL that clients will connect to, using the `automationhub_main_url` field. For example:
+If you are implementing Red Hat Single Sign-On on your {HubName} environment, specify the main {HubName} URL that clients will connect to, using the `automationhub_main_url` inventory variable. For example:
 -----
 automationhub_main_url = 'https://automationhub.ansible.com'
 -----
