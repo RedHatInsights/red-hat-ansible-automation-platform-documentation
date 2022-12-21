@@ -8,6 +8,7 @@
 :CentralAuth: central authentication
 :PlatformVers: 2.3
 :AnsibleCoreVers: 2.13
+:PlatformDownloadUrl: https://access.redhat.com/downloads/content/480/ver=2.3/rhel---9/2.3/x86_64/product-software
 
 // AAP on Clouds
 :AAPonAzureName: Red Hat Ansible Automation Platform on Microsoft Azure
