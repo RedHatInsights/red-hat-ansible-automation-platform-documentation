@@ -11,7 +11,7 @@ You can use these instructions to install a standalone {ControllerName} server o
 
 == Prerequisites
 
-* You chose and obtained a platform installer from the https://access.redhat.com/downloads/content/480/ver=2.1/rhel---8/2.1/x86_64/product-software[Red Hat Ansible Automation Platform Product Software].
+* You chose and obtained a platform installer from the {PlatformDownloadUrl}[Red Hat Ansible Automation Platform Product Software].
 * You are installing on a machine that meets base system requirements.
 * You have created a Red Hat Registry Service Account, following the instructions in the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
 
