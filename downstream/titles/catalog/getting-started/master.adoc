@@ -53,11 +53,6 @@ Roles provide a defined set of actions each group performs. Determine the requir
 |===
 |  | Role | Description
 
-h| Administration | Organization Administrator |
-
-* Manage user access for Catalog and Approval
-* Add platform sources to Catalog
-
 .3+h| Approval | Approval Administrator |
 
 * Create and assign users to approval groups
