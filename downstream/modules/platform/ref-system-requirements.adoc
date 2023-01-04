@@ -22,7 +22,7 @@ Your system must meet the following minimum system requirements to install and r
 
 h| Subscription | Valid Red Hat Ansible Automation Platform |
 
-h| OS | Red Hat Enterprise Linux 8.4 or later 64-bit (x86) |
+h| OS | Red Hat Enterprise Linux 8.4 or later 64-bit (x86) |{PlatformName} is also supported on OpenShift, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform] for more information.
 
 h| Ansible | version 2.2 required | If Ansible is not already present on the system, the setup playbook will install `ansible-core` 2.13.
 
@@ -44,7 +44,7 @@ The following are necessary for you to work with project updates and collections
 
 [NOTE]
 ====
-The requirements for systems managed by {PlatformNameShort} are the same as for Ansible. 
+The requirements for systems managed by {PlatformNameShort} are the same as for Ansible.
 See link:https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html[Getting Started] in the Ansible _User Guide_.
 ====
 
@@ -58,10 +58,10 @@ See link:https://docs.ansible.com/ansible/latest/user_guide/intro_getting_starte
 
 * If performing a bundled {PlatformNameShort} installation, the installation program attempts to install Ansible (and its dependencies) from the bundle for you.
 
-* If you choose to install Ansible on your own, the {PlatformNameShort} installation program detects that Ansible has been installed and does not attempt to reinstall it. 
+* If you choose to install Ansible on your own, the {PlatformNameShort} installation program detects that Ansible has been installed and does not attempt to reinstall it.
 
 [NOTE]
 ====
-You must install Ansible using a package manager such as `yum`, and the latest stable version of the package manager must be installed for {PlatformName} to work properly. 
+You must install Ansible using a package manager such as `yum`, and the latest stable version of the package manager must be installed for {PlatformName} to work properly.
 Ansible version 2.9 is required for versions 3.8 and later.
 ====
