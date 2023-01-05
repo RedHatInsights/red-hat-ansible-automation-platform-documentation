@@ -10,7 +10,9 @@ ifdef::context[:parent-context: {context}]
 :context: planning
 
 [role="_abstract"]
-You can use this section to help plan your {PlatformName} installation. Before installation, review information on the setup installer, system requirements, and supported installation scenarios.
+Red Hat Ansible Automation Platform is supported on both Red Hat Enterprise Linux and Red Hat Openshift. Use this guide to plan your Red Hat Ansible Automation Platform installation on Red Hat Enterprise Linux.
+
+To install {PlatformName} on your Red Hat OpenShift Container Platform environment, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform].
 
 include::platform/ref-system-requirements.adoc[leveloffset=+1]
 include::platform/ref-network-ports-protocols.adoc[leveloffset=+1]
