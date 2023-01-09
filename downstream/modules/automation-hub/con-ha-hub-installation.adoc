@@ -17,7 +17,7 @@ automationhub_pg_host='192.0.2.10'
 automationhub_pg_port='5432'
 -----
 
-also specify the IP address for your database host in the [database] section, using the value in the `automationhub_pg_port` field:
+also specify the IP address for your database host in the [database] section, using the value in the `automationhub_pg_host` inventory variable:
 -----
 [database]
 192.0.2.10
