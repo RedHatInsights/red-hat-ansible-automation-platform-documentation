@@ -1,8 +1,8 @@
 [id="ref-automation-hub-requirements"]
 
-== {HubNameStart} system requirements
+= {HubNameStart} system requirements
 
-// Should be introductory text here.
+{HubNameStart} has the following system requirements:
 
 [cols="a,a,a"]
 |===
