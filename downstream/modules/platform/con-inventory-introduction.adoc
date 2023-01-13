@@ -60,3 +60,7 @@ registry_password='<registry password>'
 ----
 
 The first part of the inventory file specifies the hosts or groups that Ansible can work with. 
+
+[NOTE]
+====
+The inventory file variables `registry_username` and `registry_password` are only required if a non-bundle installer is used.

@@ -46,4 +46,9 @@ Setting this to `csh` or `fish` causes commands executed on target systems to fo
 | *`ansible_shell_executable`* | This sets the shell that the ansible controller uses on the target machine, and overrides the executable in `ansible.cfg` which defaults to `/bin/sh`. 
 
 You should only change if it is not possible to use `/bin/sh`, that is, if `/bin/sh` is not installed on the target machine or cannot be run from sudo.
+| *`inventory_hostname`* | This variable takes the hostname of the machine from the inventory script or the ansible configuration file.
+
+You cannot set the value of this variable.
+
+Because the value is taken from the configuration file, the actual runtime hostname value can vary from what is returned by this variable.
 |====

@@ -9,7 +9,9 @@
 Set to `False` to disable.
 
 Default = `true`
-| *`registry_password`* | Password credential for access to `registry_url`.
+| *`registry_password`* | `registry_password` is only required if a non-bundle installer is used.
+
+Password credential for access to `registry_url`.
 
 Used for both `[automationcontroller]` and `[automationhub]` groups.
 
@@ -19,7 +21,9 @@ When `registry_url` is `registry.redhat.io`, username and password are required 
 | *`registry_url`* | Used for both `[automationcontroller]` and `[automationhub]` groups.
 
 Default = `registry.redhat.io`.
-| *`registry_username`* | User credential for access to `registry_url`.
+| *`registry_username`* | `registry_username` is only required if a non-bundle installer is used.
+
+User credential for access to `registry_url`.
 
 Used for both `[automationcontroller]` and `[automationhub]` groups, but only if the value of `registry_url` is `registry.redhat.io`.
 
