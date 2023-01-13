@@ -87,10 +87,6 @@ Approval User |
 ====
 By default, all users will have Catalog User and Approval User roles assigned to them.
 ====
-[IMPORTANT]
-====
-Due of potential security implications, limit the number of users in cloud.redhat.com with Organization Administrator privileges.
-====
 
 
 === Creating administrator groups
