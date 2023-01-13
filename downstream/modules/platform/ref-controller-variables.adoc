@@ -74,7 +74,7 @@ Default = `awx`.
 | *`postgres_ssl_cert`* | location of postgres ssl certificate.
 
 `/path/to/pgsql_ssl.cert`
-| *`postgres_ssl_key* | location of postgres ssl key.
+| *`postgres_ssl_key`* | location of postgres ssl key.
 
 `/path/to/pgsql_ssl.key`
 | *`postgres_use_cert`* | Location of postgres user certificate. 
@@ -87,6 +87,10 @@ Default = `awx`.
 | *`receptor_listener_port`* | Port to use for recptor connection.
 
 Default = 27199.
+| *`routable_hostname`* | `routable hostname` is used if the machine running the installer can only route to the target host through a specific URL,
+for example, if you use shortnames in your inventory, but the node running the installer can only resolve that host using FQDN.
+
+If `routable_hostname` is not set, it should default to `ansible_host`. Then if, and only if `ansible_host` is not set, `inventory_hostname` is used as a last resort.
 | *`web_server_ssl_cert`* |  _Optional_ 
 
 `/path/to/webserver.cert`

@@ -72,6 +72,31 @@ Behavior is driven by `galaxy-importer.cfg` configuration.
 Examples are `ansible-doc`, `ansible-lint`, and `flake8`.
 
 This parameter enables you to drive this configuration.
+| *`automationhub_seed_collections`* | A boolean that defines whether or not preloading is enabled.
+
+When the bundle installer is run, by a new repository is created by default in {PrivateHubName} named `validated`` and the list of the validated collections is updated.
+
+If you do not want to install this content, there are two options:
+
+Set `automationhub_seed_collections` to `false`.
+
+Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to `certified`.
+
+
+Set to `False` to disable the seeding.
+
+Default = `true`
+|  *`automationhub_collection_seed_repository`* | When the bundle installer is run, by a new repository is created by default in {PrivateHubName} named `validated`` and the list of the validated collections is updated.
+
+If `automationhub_seed_collections` is set to `true`, this variable enables you to specify  the type of content to upload.
+
+Possible values are `certified` and `validated`.
+
+If you do not want to install this content, there are two options:
+
+Set `automationhub_seed_collections` to `false`.
+
+Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to `certified`.
 |====
 
 For {HubNameMain} to connect to LDAP directly; the following variables must be configured. 
@@ -110,6 +135,9 @@ It must return exactly one result for authentication to succeed.
 For example, \https://<load balancer host>.
 
 If not specified, the first node in the `[automationhub]` group is used.
+
+Use `automationhub_main_url` to specify the main {HubName} URL that clients connect to if you are implementing {RHSSO} on your {HubName} environment.
+
 | *`automationhub_pg_database`* | _Required_
 
 The database name.
