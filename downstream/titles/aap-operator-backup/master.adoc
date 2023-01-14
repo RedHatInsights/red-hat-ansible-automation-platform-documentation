@@ -22,4 +22,4 @@ include::platform/assembly-aap-backup.adoc[leveloffset=+1]
 
 include::platform/assembly-aap-recovery.adoc[leveloffset=+1]
 
-include::platform/assembly-troubleshoot-backup-recovery.adoc[leveloffset=+1]
+include::platform/assembly-aap-troubleshoot-backup-recovery.adoc[leveloffset=+1]
