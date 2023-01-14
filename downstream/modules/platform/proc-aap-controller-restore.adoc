@@ -7,7 +7,7 @@ Use this procedure to restore a previous controller deployment from an Automatio
 
 [NOTE]
 ====
-The name specified for the new AutomationController custom resource must not match an existing deployment or the recovery process will fail.
+The name specified for the new AutomationController custom resource must not match an existing deployment or the recovery process will fail. Ifthe name specified does match an existing deployment, see xref:aap-troubleshoot-backup-recover[Troubleshooting] for steps to resolve the issue.
 ====
 
 .Prerequisites
