@@ -1,4 +1,4 @@
-[id="con-inventory-introduction_{context}"]
+//[id="con-inventory-introduction_{context}"]
 
 = About the installer inventory file
 

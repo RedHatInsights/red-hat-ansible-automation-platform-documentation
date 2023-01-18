@@ -1,0 +1,8 @@
+[id="con-about-galaxy_{context}"]
+
+= {Galaxy}
+
+
+[role="_abstract"]
+{Galaxy} is a hub for finding, reusing, and sharing Ansible content.
+Community-provided Galaxy content, in the form of prepackaged roles, can help start automation projects. Roles for provisioning infrastructure, deploying applications, and completing other tasks can be dropped into Ansible Playbooks and be applied immediately to customer environments.
