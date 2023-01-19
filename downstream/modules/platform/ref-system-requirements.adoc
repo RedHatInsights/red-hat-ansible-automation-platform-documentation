@@ -21,7 +21,7 @@ Your system must meet the following minimum system requirements to install and r
 
 h| Subscription | Valid Red Hat Ansible Automation Platform |
 
-h| OS | Red Hat Enterprise Linux 8.4 or later 64-bit (x86) |
+h| OS | Red Hat Enterprise Linux 8.4 or later 64-bit (x86) |{PlatformName} is also supported on OpenShift, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform] for more information.
 
 h| Ansible | version 2.2 required | If Ansible is not already present on the system, the setup playbook will install `ansible-core` 2.13.
 
@@ -202,3 +202,10 @@ If performing a bundled {PlatformNameShort} installation, the installation progr
 
 If you choose to install Ansible on your own, the {PlatformNameShort} installation program will detect that Ansible has been installed and will not attempt to reinstall it. Note that you must install Ansible using a package manager like ``yum`` and that the latest stable version must be installed for {PlatformName} to work properly. Ansible version 2.9 is required for |at| versions 3.8 and later.
 
+* If you choose to install Ansible on your own, the {PlatformNameShort} installation program detects that Ansible has been installed and does not attempt to reinstall it.
+
+[NOTE]
+====
+You must install Ansible using a package manager such as `yum`, and the latest stable version of the package manager must be installed for {PlatformName} to work properly.
+Ansible version 2.9 is required for versions 3.8 and later.
+====
