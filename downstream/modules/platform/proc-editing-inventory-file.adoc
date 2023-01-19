@@ -10,6 +10,12 @@ You can use the {PlatformName} installer inventory file to specify your installa
 .Procedure
 
 . Navigate to the installer:
+.. [RPM installed package]
++
+-----
+$ cd /opt/ansible-automation-platform/installer/
+-----
++
 .. [bundled installer]
 +
 -----
