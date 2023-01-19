@@ -135,7 +135,6 @@ h| RAM | 8 GB minimum |
 
 h| CPUs | 2 minimum |
 
-<<<<<<< HEAD
 * For capacity based on forks in your configuration, see additional resources
 
 h| Disk: service node | 60 GB dedicated hard disk space |
@@ -203,7 +202,6 @@ If performing a bundled {PlatformNameShort} installation, the installation progr
 
 If you choose to install Ansible on your own, the {PlatformNameShort} installation program will detect that Ansible has been installed and will not attempt to reinstall it. Note that you must install Ansible using a package manager like ``yum`` and that the latest stable version must be installed for {PlatformName} to work properly. Ansible version 2.9 is required for |at| versions 3.8 and later.
 
-=======
 * If you choose to install Ansible on your own, the {PlatformNameShort} installation program detects that Ansible has been installed and does not attempt to reinstall it.
 
 [NOTE]
@@ -211,4 +209,3 @@ If you choose to install Ansible on your own, the {PlatformNameShort} installati
 You must install Ansible using a package manager such as `yum`, and the latest stable version of the package manager must be installed for {PlatformName} to work properly.
 Ansible version 2.9 is required for versions 3.8 and later.
 ====
->>>>>>> 4dbe23d (AAP-3514 added links for OCP install of AAP (#693))
