@@ -4,7 +4,7 @@
 
 .Databases
 * When using an external database, ensure the `[database]` sections of your inventory file are properly set up.
-* The database server should be on the same network or in the same datacenter as the {ControllerNameStart} server for performance reasons.
+* For the best performance, ensure that your database server and the {ControllerNameStart} server are in the same network or datacenter.
 
 .{HubNameStart}
 * Add {HubNameMain} information in the `[automationhub]` group
@@ -20,7 +20,7 @@ If you use one value in `[database]` and both {Controllername} and {HubNameMain}
 ====
 
 .{ControllerNameStart}
-* {ControllerNameStart} will not configure replication or failover for the database that it uses, although automation controller should work with any replication that you have. 
+* {ControllerNameStart} will not configure replication or failover for the database that it uses.
 {ControllerName} works with any replication that you have.
 
 
