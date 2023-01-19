@@ -1,0 +1,16 @@
+[id="proc-installing-without-internet_{context}"]
+
+
+= Installing without internet access
+
+[role="_abstract"]
+Use the {PlatformName} (AAP) *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. Access to Red Hat Enterprise Linux repositories is still needed. All other dependencies are included in the tar archive.
+
+.Procedure
+. Navigate to https://access.redhat.com/downloads/content/480
+. Click *Download Now* for the *Ansible Automation Platform <latest-version> Setup Bundle*.
+. Extract the files:
++
+-----
+$ tar xvzf ansible-automation-platform-setup-bundle-<latest-version>.tar.gz
+-----

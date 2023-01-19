@@ -1,0 +1,14 @@
+[id="con-about-services-catalog_{context}"]
+
+= {CatalogNameStart}
+
+[role="_abstract"]
+{CatalogNameStart} is a service within {PlatformName}.
+{CatalogNameStart} enables you to organize and govern product catalog sources on Ansible {ControllerName} across various environments.
+
+Using {CatalogName} you can:
+
+* Apply multi-level approval to individual platform inventories.
+* Organize content in the form of products from your platforms into portfolios.
+* Choose portfolios to share with specific groups of users.
+* Set boundaries around values driving execution of user requests.
