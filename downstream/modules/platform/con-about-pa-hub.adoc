@@ -1,0 +1,9 @@
+[id="con-about-pa-hub_{context}"]
+
+= {PrivateHubNameStart}
+
+[role="_abstract"]
+{PrivateHubNameStart} provides both disconnected and on premise solution for synchronizing content.
+You can synchronize collections and execution environment images from Red Hat cloud automation hub, storing and serving your own custom automation collections and execution images.
+You can also use other sources such as {Galaxy} or other container registries to provide content to your {PrivateHubName}.
+{PrivateHubNameStart} can integrate into your enterprise directory and your CI/CD pipelines.

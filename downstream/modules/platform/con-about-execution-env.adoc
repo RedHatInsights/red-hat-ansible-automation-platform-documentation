@@ -1,0 +1,7 @@
+[id="con-about-execution-env_{context}"]
+
+= {ExecEnvNameStart}
+
+[role="_abstract"]
+{ExecEnvNameStart} are container images on which all automation in {PlatformName} is run. They provide a solution that includes the Ansible execution engine and hundreds of modules that help users automate all aspects of IT environments and processes.
+{ExecEnvNameStart} automate commonly used operating systems, infrastructure platforms, network devices, and clouds.

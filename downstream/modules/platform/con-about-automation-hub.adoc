@@ -1,0 +1,8 @@
+[id="con-about-automation-hub_{context}"]
+
+= {HubNameMain}
+
+[role="_abstract"]
+{HubNameMain} is a repository for certified content of Ansible Content Collections.
+It is the centralized repository for Red Hat and its partners to publish content, and for customers to discover certified, supported Ansible Content Collections.
+{CertifiedCon} provides users with content that has been tested and is supported by Red Hat.
