@@ -32,6 +32,7 @@ To perform a reposync you need a RHEL host that has access to the Internet. Afte
 
 .. jb-eap-7.3-for-rhel-8-x86_64-rpms
 .. rh-sso-7.4-for-rhel-8-x86_64-rpms
+
 +
 After the reposync is completed your repositories are ready to use with a web server.
 
