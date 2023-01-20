@@ -1,0 +1,20 @@
+// Richard Fontana from the Legal Department approved the following disclaimer.
+// When linking to external resources, include this file in your document.
+//
+// Prerequisites:
+// Add a symlink to the /downstream/snippets directory from the directory that contains the
+// file where you plan to include the disclaimer.
+// For example, if you want to include the disclaimer in master.adoc for the installation guide,
+// you must add a symlink to /downstream/snippets in the /titles/installation-guide directory:
+// $ cd titles/aap-installation-guide
+// $ ln -s ../../snippets ./snippets
+//
+// The following example adds a symlink to snippets from a hub title
+// $ cd /titles/hub/getting-started
+// $ ln -s ../../../snippets ./snippets
+// 
+// Including the file in a document
+// Add the following in the file where you want the text to be included:
+// include::snippets/external-site-disclaimer.adoc[]
+
+*Disclaimer*: Links contained in this note to external website(s) are provided for convenience only. Red Hat has not reviewed the links and is not responsible for the content or its availability. The inclusion of any link to an external website does not imply endorsement by Red Hat of the website or their entities, products or services. You agree that Red Hat is not responsible or liable for any loss or expenses that may result due to your use of (or reliance on) the external site or content.
