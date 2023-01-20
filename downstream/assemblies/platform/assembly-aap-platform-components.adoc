@@ -1,0 +1,30 @@
+ifdef::context[:parent-context: {context}]
+
+[id="ref-aap-components"]
+
+= {PlatformName} platform components
+
+:context: planning
+
+
+[role="_abstract"]
+{PlatformNameShort} is a modular platform composed of separate components that can be connected together to meet your deployment needs. {PlatformNameShort} deployments start with {ControllerName} which is the enterprise framework for controlling, securing, and managing Ansible automation with a user interface (UI) and RESTful application programming interface (API). Then, you can add to your deployment any combination of the following automation platform components:
+
+include::platform/con-about-automation-hub.adoc[leveloffset=+1]
+
+include::platform/con-about-pa-hub.adoc[leveloffset=+1]
+
+//[dcd-moved this description to the intro to platform components since it is the only "required" component. include::platform/con-about-automation-controller.adoc[leveloffset=+1]
+
+include::platform/con-about-services-catalog.adoc[leveloffset=+1]
+
+include::platform/con-overview-automation-mesh.adoc[leveloffset=+1]
+
+include::platform/con-about-execution-env.adoc[leveloffset=+1]
+
+include::platform/con-about-galaxy.adoc[leveloffset=+1]
+
+include::platform/con-about-navigator.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
