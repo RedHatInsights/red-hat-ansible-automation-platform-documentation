@@ -9,7 +9,11 @@ Before you update the route tables, confirm that you satisfy the xref:proc-azure
 
 . Navigate to menu:Route Tables[] in the Azure portal.
 . As part of your hub-and-spoke configuration, you created one or more route tables to define the routes between the networks. Click on one of these route tables.
+<<<<<<< HEAD
 . From the route table menu bar, navigate to menu:Routes[Add].
+=======
+. From the route table menu bar, click btn:[Routes] > btn:[Add].
+>>>>>>> 367ef0d (AAP-4208 updated clickable elements)
 . Configure routes from your existing networks to send traffic to {PlatformNameShort}. You must configure routes for any network requesting {PlatformNameShort} user interfaces and for any network that will have automation performed against its resources.
 For each route that you add, enter the following information:
 ** *Route name*: Enter a route name for the {PlatformNameShort} managed application network

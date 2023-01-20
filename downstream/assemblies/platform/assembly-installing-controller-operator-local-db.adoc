@@ -28,7 +28,7 @@ You can use these instructions to install the {HubName} operator on {OCP} with r
 . Log in to {OCP}.
 . Navigate to *Operators* -> *Operator Hub*.
 . Locate the {PlatformName} catalog and click on it.
-. Click *Install*
+. Click btn:[Install].
 
 .Instantiating an instance of {HubName}
 
@@ -39,9 +39,9 @@ You can use these instructions to install the {HubName} operator on {OCP} with r
 
 . Navigate to *Operators* -> *Installed Operators*.
 . Locate the {HubName} operator and click on it.
-. Click *Create Instance*.
+. Click btn:[Create Instance].
 . Use either the *Form View* or *YAML view* to configure the instance.
-.. Click *Advanced Configuration* to enter additional resource information.
+.. Click btn:[Advanced Configuration] to enter additional resource information.
 
 /////
 include::modules/TEMPLATE_CONCEPT_explaining_a_concept.adoc[leveloffset=+1]

@@ -102,12 +102,12 @@ To create a *Catalog Administrator* group:
 
 
 . Navigate to *Settings* ➔ *User Access*.
-. Click *Create group*.
+. Click btn:[Create group].
 . Enter group *name* and set the *description*.
-. Click *Next*.
-. In the *Add members* modal, check each user to add to the group. Click *Next* when finished.
+. Click btn:[Next].
+. In the *Add members* modal, check each user to add to the group. Click btn:[Next] when finished.
 . Check *Catalog Administrator* on the *Assign roles* modal.
-. Review details for the new group and click *Confirm*.
+. Review details for the new group and click btn:[Confirm].
 
 We have created a group of *Catalog Administrators* and will now create a group of Approval administrators.
 
@@ -118,12 +118,12 @@ The Approval Administrator is a role that grants create, read, update and order 
 To create an *Approval Administrator* group:
 
 . Navigate to *Settings* ➔ *User Access*.
-. Click *Create group*.
+. Click btn:[Create group].
 . Enter group *name* and set the *description*.
-. Click *Next*.
-. In the *Add members* modal, check each user to add to the group. Click *Next* when finished.
+. Click btn:[Next].
+. In the *Add members* modal, check each user to add to the group. Click btn:[Next] when finished.
 . Check *Approval Administrator* on the *Assign roles* modal.
-. Review details for the new group and click *Confirm*.
+. Review details for the new group and click btn:[Confirm].
 
 The new group of Approval Administrators has been created. Approval Administrators can create new approval processes to set to platforms, portfolios, and products.
 
@@ -134,14 +134,14 @@ The Approval Approver is a role that grants create and read permissions to users
 To create an Approval Approver group:
 
 . Navigate to *Settings* ➔ *User Access*.
-. Click *Create group*.
+. Click btn:[Create group].
 . Enter group *name* and set the *description*.
-. Click *Next*.
-. In the *Add members* modal, check each user to add to the group. Click *Next* when finished.
+. Click btn:[Next].
+. In the *Add members* modal, check each user to add to the group. Click btn:[Next] when finished.
 . Check *Approval Approvers* on the *Assign roles* modal.
-. Review details for the new group and click *Confirm*.
+. Review details for the new group and click btn:[Confirm].
 
-The new group of Approval Approvers has been created..
+The new group of Approval Approvers has been created.
 
 ==== Adding new users to existing Groups
 
@@ -150,11 +150,11 @@ The *Catalog Administrator* can add new users to existing groups. Once added, us
 You can add users to a group in the *Groups* view in *User Access*.
 
 . Navigate to *Settings* ➔ *User Access*.
-. Click *Groups*.
+. Click btn:[Groups].
 . Select a group from the list.
-. Click *Members* and then click *Add Member*.
+. Click btn:[Members] and then click btn:[Add Member].
 . Check those users that appear in the modal that you wish to add to the group.
-. Click *Add to group*.
+. Click btn:[Add to group].
 
 A message will appear notifying you if the member was added successfully.
 
@@ -201,10 +201,10 @@ You can create an approval process from the *Approval processes* list view.
 
 . Select *Approval* from the main navigation.
 . Select the *Approval processes* tab.
-. Click *Create*.
+. Click btn:[Create].
 . Provide an approval process name and description.
 . Select a group from the *Set groups* drop-down menu. You may set multiple groups for approval.
-. Click *Submit* when finished.
+. Click btn:[Submit] when finished.
 
 Implement an approval process against a platform, portfolio, or product.
 
@@ -219,9 +219,9 @@ You can edit the sequence number for an approval process from the Approval proce
 . Select *Approval* from the main navigation.
 . Click the *Approval processes* tab.
 . Navigate to the approval process, then click image:ellipsis.png[More actions,10,25].
-. Click *Edit*.
+. Click btn:[Edit].
 . Enter the desired sequence number under *Enter sequence*.
-. Click *Save*.
+. Click btn:[Save].
 
 
 The approval process list view will update to reflect the newly sequence.
@@ -258,20 +258,20 @@ See link:
 
 To create a portfolio:
 
-. Click *Create portfolio*.
+. Click btn:[Create portfolio].
 . Provide a *New Portfolio Name* and *Description*.
 . Choose an *Approval workflow* from the drop-down list.
-. Click *Save*.
+. Click btn:[Save].
 
 
 Our initial portfolio is empty, and we can start adding products from this empty state.
 
 To add a product from a platform:
 
-. Click in the *Filter by Platform* field to view connected platforms.
+. Click in the btn:[Filter by Platform] field to view connected platforms.
 . Select a platform. The screen will populate with products from that platform.
 . Check each product to add to the portfolio.
-. Click *Add*.
+. Click btn:[Add].
 
 
 === Setting approval processes for the portfolio
@@ -283,7 +283,7 @@ To set an approval processes for the portfolio:
 . Navigate to *Portfolios*.
 . Click image:ellipsis.png[More actions,10,25] on a portfolio tile and select *Set approval*.
 . From the *Set approval process* drop-down menu, select an approval processes to set to the portfolio.
-. Click *Save*.
+. Click btn:[Save].
 
 
 
@@ -293,15 +293,20 @@ The portfolio is now ready to share with groups of users. These designated user 
 
 To share a portfolio:
 
+<<<<<<< HEAD
 . Click *Portfolios*.
 . Click image:ellipsis.png[More actions,10,25] on a portfolio, then click *Share*. The icon:[Y] indicates a shared portfolio.
+=======
+. Click btn:[Portfolios].
+. Click image:images/ellipsis.png[More actions,10,25] on a portfolio, then click btn:[Share]. The icon:[Y] indicates a shared portfolio.
+>>>>>>> 367ef0d (AAP-4208 updated clickable elements)
 . Adding groups:
 .. Under *Invite group* search groups to share the portfolio with.
 .. Select the level of permissions using the drop-down list.
 . Edit sharing settings for existing groups:
 .. Under *Groups with access* adjust permissions using the drop-down for each group.
 .. To stop sharing a portfolio with a group, click icon:[X].
-. Click *Send* when finished.
+. Click btn:[Send] when finished.
 
 Our portfolio is now accessible to the groups of users, who can order the products we collected in it. We can now duplicate this portfolio, change its name and add new products, to share with different user groups.
 
@@ -370,13 +375,13 @@ You can edit fields in the surveys from the product detail view. Edit each field
 The product has an associated survey, created in Ansible Tower.
 
 .Procedure
-. Click *Products*.
+. Click btn:[Products].
 . Locate the product and click on its title.
 . Click image:ellipsis.png[More actions,10,25] and select *Edit survey*.
 . Select a field in the survey. The *Properties* editor will appear.
-. Click *Properties* to view the elements to edit for that field.
+. Click btn:[Properties] to view the elements to edit for that field.
 . Select *Validation* to configure the validator types used to validate user input.
-. Click *Save* when finished.
+. Click btn:[Save] when finished.
 
 == Managing orders
 
@@ -389,9 +394,9 @@ Once a user places an order it is created and available for review on the orders
 To approve or deny a request:
 
 . Navigate to *Approval*.
-. Click the *Requests* tab and then click on a request to expand it to detailed view.
-. Click *Approve* or *Deny*. Provide a *Reason* when denying a request.
-. Click *Submit*.
+. Click the btn:[Requests] tab and then click on a request to expand it to detailed view.
+. Click btn:[Approve] or btn:[Deny]. Provide a *Reason* when denying a request.
+. Click btn:[Submit].
 
 === Commenting on requests
 
@@ -401,9 +406,9 @@ Comment on requests as an administrator or approver. Comments are captured by th
 To comment on a request:
 
 . Navigate to *Approval*.
-. Click the *Requests* tab and then click on a request..
-. Click *Comment*.
-. Add a comment and click *Submit*.
+. Click the btn:[Requests] tab and then click on a request.
+. Click btn:[Comment].
+. Add a comment and click btn:[Submit].
 
 == Conclusion
 

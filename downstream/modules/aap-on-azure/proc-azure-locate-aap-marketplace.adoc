@@ -6,8 +6,8 @@
 
 
 . In a browser, navigate to the Azure Marketplace.
-. Click *Private Products* from the menu on the left of the screen.
+. Click btn:[Private Products] from the menu on the left of the screen.
 . Search for {PlatformName}.
 . Click the card that is returned in the search. Be sure to select the official offering from Red Hat.
-. Click *Get it Now*, *Continue*, and then *Create* to initiate the deployment process.
+. Click btn:[Get it Now], btn:[Continue], and then btn:[Create] to initiate the deployment process.
 

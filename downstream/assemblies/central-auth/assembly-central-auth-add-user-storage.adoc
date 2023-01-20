@@ -9,7 +9,7 @@
 
 .Procedure
 . Log in to {AAPCentralAuth} as an SSO admin user.
-. Under the Configure section on the side navigation bar, click *User Federation*.
+. Under the Configure section on the side navigation bar, click btn:[User Federation].
 . Using the dropdown menu labeled _Add provider_, select your LDAP provider to proceed to the LDAP configuration page.
 
 The following table lists the available options for your LDAP configuration:
