@@ -20,7 +20,7 @@ If you use one value in `[database]` and both {Controllername} and {HubNameMain}
 ====
 
 .{ControllerNameStart}
-* {ControllerNameStart} will not configure replication or failover for the database that it uses.
+* {ControllerNameStart} does not configure replication or failover for the database that it uses.
 * {ControllerName} works with any replication that you have.
 
 
