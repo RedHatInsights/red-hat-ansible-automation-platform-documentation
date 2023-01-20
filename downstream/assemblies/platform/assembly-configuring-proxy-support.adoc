@@ -21,5 +21,13 @@ include::platform/proc-configure-known-proxies.adoc[leveloffset=+2]
 
 include::platform/proc-configuring-reverse-proxy.adoc[leveloffset=+1]
 
+include::platform/con-sticky-sessions.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+.Additional resources
+* Refer to link:https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html[Sticky sessions for your Application Load Balancer] for more information about enabling sticky sessions.
+
+include::snippets/external-site-disclaimer.adoc[]
+
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
