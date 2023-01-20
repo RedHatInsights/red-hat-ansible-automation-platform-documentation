@@ -29,10 +29,9 @@ You can use the same `inventory` file from an existing {PlatformNameShort} 2.1 i
 +
 [NOTE]
 ====
-* Provide a reachable IP address or fully qualified domain name (FDQN) for the [automationhub] and [automationcontroller] hosts to ensure that users can synchronize and install content from Ansible automation hub from a different node. 
+Provide a reachable IP address or fully qualified domain name (FDQN) for the [automationhub] and [automationcontroller] hosts to ensure that users can synchronize and install content from Ansible automation hub from a different node. 
 Do not use `localhost`.
 If `localhost is used`, upgrade will be stopped as part of preflight checks.
-* {HubNameStart} requirements are not automatically updated by default. If you want {HubName} requirements to be updated during the upgrade, set `automationhub_upgrade=true` in your inventory file.
 ====
 
 .Provisioning new nodes in a cluster
