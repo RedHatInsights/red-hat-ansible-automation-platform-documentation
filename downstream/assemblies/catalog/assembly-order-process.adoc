@@ -47,7 +47,7 @@ Set an order process that will apply to a single product.
 
 . Select *Products* from the main navigation, then select a product.
 
-. Click btn:[More actions] and select btn:[Set order processes].
+. Click btn:[More actions] and select *Set order processes*.
 
 . Expand the drop-down menu and select an order process.
 
