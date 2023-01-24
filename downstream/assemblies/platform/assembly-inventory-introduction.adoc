@@ -60,3 +60,11 @@ registry_password='<registry password>'
 ----
 
 The first part of the inventory file specifies the hosts or groups that Ansible can work with.
+
+include::platform/ref-guidelines-hosts-groups.adoc[leveloffset=+1]
+include::platform/ref-deprovisioning.adoc[leveloffset=+1]
+include::platform/con-inventory-variables-intro.adoc[leveloffset=+1]
+include::platform/con-declaring-variables.adoc[leveloffset=+1]
+include::platform/proc-securing-secrets-in-inventory.adoc[leveloffset=+1]
+include::platform/con-editing-inventory-files.adoc[leveloffset=+1]
+
