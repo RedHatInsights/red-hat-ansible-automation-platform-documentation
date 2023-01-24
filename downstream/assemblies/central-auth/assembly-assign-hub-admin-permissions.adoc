@@ -9,10 +9,10 @@ Hub administrative users will need to be assigned the role of _hubadmin_ in orde
 
 .Procedure
 . Navigate to the `ansible-automation-platform` realm on your SSO client.
-. Under the _Manage_ section on the side navigation bar, click btn:[Users].
+. From the navigation bar, select menu:Manage[Users].
 . Select a user from the list by clicking their ID.
-. Click the btn:[Role Mappings] tab.
+. Click the *Role Mappings* tab.
 . Using the dropdown menu under _Client Roles_, select *automation-hub*.
-. Click btn:[hubadmin] from the _Available Roles_ field, then click btn:[Add selected >].
+. Click *hubadmin* from the _Available Roles_ field, then click btn:[Add selected >].
 
 The user is now a _hubadmin_. Repeat steps 3-6 to assign any additional users the _hubadmin_ role.
