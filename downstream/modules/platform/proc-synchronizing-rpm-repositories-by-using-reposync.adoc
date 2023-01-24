@@ -28,21 +28,11 @@ To perform a reposync you need a RHEL host that has access to the Internet. Afte
 
 .. If using `--newest-only` the repos downloaded will be ~14GB.
 
-<<<<<<< HEAD
-. If you plan to use Red Hat Single Sign-On (RHSSO) sync these repositories.
-=======
 . If you plan to use Red Hat Single Sign-On (RHSSO) you must also sync these repositories.
->>>>>>> 161c95ba (Fixed formatting and spacing issues (#660))
 
 .. jb-eap-7.3-for-rhel-8-x86_64-rpms
 .. rh-sso-7.4-for-rhel-8-x86_64-rpms
 
-+
-After the reposync is completed your repositories are ready to use with a web server.
-
-<<<<<<< HEAD
-=======
 . After the reposync is completed your repositories are ready to use with a web server.
->>>>>>> 161c95ba (Fixed formatting and spacing issues (#660))
 
 . Move the repositories to your disconnected network.
