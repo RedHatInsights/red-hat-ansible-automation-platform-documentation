@@ -6,10 +6,12 @@
 * When using an external database, ensure the `[database]` sections of your inventory file are properly set up.
 * To improve performance, do not place the database server and the automation controller server on the same network.
 
+
 .{HubNameStart}
+* If there is an `[automationhub]` group, you must include the variables `automationhub_pg_host` and `automationhub_pg_port`.
 * Add {HubNameMain} information in the `[automationhub]` group
 * Do not install {HubNamemain} and {ControllerName} on the same node.
-* Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` host to ensure that users can synchronize and install content from {HubNameMain} from a different node. 
+* Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` and `[automationcontroller]` hosts to ensure that users can synchronize and install content from {HubNameMain} and {ControllerName} from a different node. 
 Do not use `localhost`.
 
 [IMPORTANT]
