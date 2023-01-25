@@ -24,3 +24,18 @@ h| Disk: database node| 20 GB dedicated hard disk space |
 * 150 GB+ recommended
 * Storage volume should be rated for a high baseline IOPS (1500 or more).
 |===
+
+[NOTE]
+====
+{PrivateHubNameStart}
+
+If you install {PrivateHubname} from an internal address, and have a certificate which only encompasses the external address, this can result in an installation which cannot be used as container registry without certificate issues. 
+
+To avoid this, use the `automationhub_main_url` inventory variable with a value like \https://pah.example.com linking to the {PrivateHubName} node in the installation inventory file.
+
+This adds the external address to `/etc/pulp/settings.py`.
+
+This implies that you only want to use the external address.
+
+For information on inventory file variables, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars[Inventory File Variables] in the _{PlatformName} Installation Guide_.
+====
