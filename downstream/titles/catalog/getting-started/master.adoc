@@ -268,7 +268,7 @@ Our initial portfolio is empty, and we can start adding products from this empty
 
 To add a product from a platform:
 
-. Click in the btn:[Filter by Platform] field to view connected platforms.
+. Click in the *Filter by Platform* field to view connected platforms.
 . Select a platform. The screen will populate with products from that platform.
 . Check each product to add to the portfolio.
 . Click btn:[Add].
@@ -394,7 +394,7 @@ Once a user places an order it is created and available for review on the orders
 To approve or deny a request:
 
 . Navigate to *Approval*.
-. Click the btn:[Requests] tab and then click on a request to expand it to detailed view.
+. Click the *Requests* tab and then click on a request to expand it to detailed view.
 . Click btn:[Approve] or btn:[Deny]. Provide a *Reason* when denying a request.
 . Click btn:[Submit].
 
@@ -406,7 +406,7 @@ Comment on requests as an administrator or approver. Comments are captured by th
 To comment on a request:
 
 . Navigate to *Approval*.
-. Click the btn:[Requests] tab and then click on a request.
+. Click the *Requests* tab and then click on a request.
 . Click btn:[Comment].
 . Add a comment and click btn:[Submit].
 
