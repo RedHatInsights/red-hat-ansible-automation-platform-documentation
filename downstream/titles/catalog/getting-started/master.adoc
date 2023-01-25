@@ -101,7 +101,7 @@ The Catalog Administrator is a role that grants create, read, update and order p
 To create a *Catalog Administrator* group:
 
 
-. Navigate to *Settings* ➔ *User Access*.
+. Navigate to menu:Settings[User Access].
 . Click btn:[Create group].
 . Enter group *name* and set the *description*.
 . Click btn:[Next].
