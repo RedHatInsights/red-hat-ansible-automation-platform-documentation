@@ -10,7 +10,7 @@ Follow the procedures below to configure SSO with Azure Active Directory (Azure 
 . In a browser, navigate to the Automation controller URL and log in using the following credentials:
   * Username: `admin`
   * Password: Use the _Administrator password_ you provided when you deployed the {PlatformNameShort} application.
-. In the Automation controller console, click btn:[Settings] in the menu options.
+. In the Automation controller console, click menu:Settings[].
 . Click btn:[Miscellaneous System settings] under the *System* settings.
 . Click btn:[Edit]. Enter the Automation controller URL in the Base URl of the service field.
 . Click btn:[Save].
@@ -24,7 +24,7 @@ To register the {ControllerName} instance in Azure, you must supply the _Azure A
 .Fetching the Azure AD OAuth2 Callback URL
 
 . In a web browser, open the {ControllerName} console.
-. Click btn:[Settings] in the menu to open the main settings page.
+. Click menu:Settings[] in the menu to open the main settings page.
 . Click btn:[Azure AD settings] in the *Authentication* category to open the *Details* page.
 . Copy the value for _Azure AD OAuth2 Callback URL_. You will need this value when you register your deployed application in Azure AD.
 
@@ -34,7 +34,7 @@ To register the {ControllerName} instance in Azure, you must supply the _Azure A
 . Ensure that you are using the tenant where you deployed {PlatformNameShort}.
 . Type `Azure Active Directory` in the search bar.
 . Select *Azure Active Directory* from the search results.
-. Under *Manage* in the menu options, click btn:[App registrations].
+. From the menu options, select menu:Manage[App registrations].
 . In the *App registrations* page, click btn:[+ New registration].
 . Configure the new registration as follows:
   * In the *Name* field, enter the same name that you used for the deployed application.
@@ -50,7 +50,7 @@ When registration is complete, the registration page for the Automation Controll
 . In the *Automation controller application registration page* on Azure, copy and save the value of _Application (client) ID_.
 +
 You will use this value for the _Azure AD OAuth2 Key_ in the {PlatformNameShort} settings.
-. Under *Manage*, click btn:[Certificates & secrets].
+. Select menu:Manage[Certificates & secrets].
 . Click btn:[Client secrets] and then btn:[+ New client secret].
 . Provide a description for the new secret.
 +
@@ -78,8 +78,7 @@ Add the key _(Application (client) ID)_ and value (_Value_) of the secret that y
 .Adding Azure Credentials to Automation controller
 
 . Open the {ControllerName} in a web browser.
-. Under *Resources*, click btn:[Credentials].
-. Click btn:[Add] to open the *Create New Credentials* page.
+. Select menu:Resources[Credentials] and click btn:[Add] to open the *Create New Credentials* page.
 . Enter a name for the new credential and select *Azure Resource Manager* for the credential type.
 . Use the Service Principal details to fill out the values of the form:
   * *Name*: Choose a descriptive name for the credential, for example _*Azure Infrastructure*_.
