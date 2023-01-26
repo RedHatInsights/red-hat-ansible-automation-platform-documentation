@@ -13,7 +13,7 @@ You can create a super user in automation hub and spread administration work acr
 .Procedure
 . Log in to your local automation hub.
 . Navigate to *User Access*.
-. Click *Users*.
+. Click btn:[Users].
 . Select the user you want to be a super user to see the User details page.
 . Select *Super User* under User type.
 

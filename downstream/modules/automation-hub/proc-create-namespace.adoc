@@ -13,7 +13,7 @@ You can create a namespace to use to group collections your developers upload to
 .Procedure
 . Log in to your local Automation Hub.
 . Navigate to *My Namespaces*.
-. Click *Create* and provide a *namespace name* and assign a group of *Namespace owners*.
-. Click *Create*.
+. Click btn:[Create] and provide a *namespace name* and assign a group of *Namespace owners*.
+. Click btn:[Create].
 
 Your content developers can now proceed to upload collections to your new namespace, or allow users in groups assigned as owners to upload collections.

@@ -6,7 +6,7 @@ You can copy portfolios from the *Portfolios* list view.
 
 .Procedure
 
-. Click *Portfolios*.
+. Click btn:[Portfolios].
 . Locate the portfolio and click image:actions.png[More Actions].
 . Select *Copy*.
 

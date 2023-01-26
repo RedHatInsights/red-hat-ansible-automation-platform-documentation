@@ -13,6 +13,6 @@ Edit an existing order process.
 
 . Locate your desired order process, then click image:actions.png[More actions].
 
-. Click *Edit*.
+. Click btn:[Edit].
 
-. Make any desired changes, then click *Save*.
+. Make any desired changes, then click btn:[Save].
