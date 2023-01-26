@@ -24,7 +24,7 @@ Provide access to your container repository to users who need to work the images
 
 .Procedure
 
-. Navigate to *Execution Environments*.
+. Navigate to menu:Execution Environments[].
 . Select your container repository.
 . Click btn:[Edit] at the top right of your window.
 . Under *Groups with access*, select a group or groups to grant access to.

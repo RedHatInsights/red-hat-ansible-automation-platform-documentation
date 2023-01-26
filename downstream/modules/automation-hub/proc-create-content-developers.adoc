@@ -15,7 +15,7 @@ In this section you will create a new group and assign the required permissions 
 .Procedure
 
 . Log in to your local Automation Hub.
-. Navigate to *Groups* and click btn:[Create].
+. Navigate to menu:Groups[] and click btn:[Create].
 . Enter *Content Engineering* as a *Name* for the group in the modal and click btn:[Create]. The new group is created and the *Groups* page will appear.
 . On the *Permissions* tab, click btn:[Edit].
 . Under *Namespaces*, add permissions for *Add Namespace*, *Upload to Namespace* and *Change Namespace*.

@@ -26,7 +26,7 @@ You can use these instructions to install the {HubName} operator on {OCP} with r
 .Installing the {HubName} operator
 
 . Log in to {OCP}.
-. Navigate to *Operators* -> *Operator Hub*.
+. Navigate to menu:Operators[Operator Hub].
 . Locate the {PlatformName} catalog and click on it.
 . Click btn:[Install].
 
@@ -37,7 +37,7 @@ You can use these instructions to install the {HubName} operator on {OCP} with r
 {OCP} clusters running on AWS do not support ReadWriteMany without adding NFS or other storage.
 ====
 
-. Navigate to *Operators* -> *Installed Operators*.
+. Navigate to menu:Operators[Installed Operators].
 . Locate the {HubName} operator and click on it.
 . Click btn:[Create Instance].
 . Use either the *Form View* or *YAML view* to configure the instance.

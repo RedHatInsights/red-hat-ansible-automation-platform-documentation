@@ -44,7 +44,7 @@ When configuring {CatalogName} for your organization, consider the scope of your
 {CatalogNameStart} features and workflows are governed by *groups* that have specific *roles* attached to them. The *Organization Administrator* role performs the initial creation of groups, assigns roles, and adds users.
 
 .Groups
-Groups are user-defined and flexible to include many users and have multiple roles.  Create new groups based on your organization’s requirements for working with {CatalogName}.
+Groups are user-defined and flexible to include many users and have multiple roles. Create new groups based on your organization’s requirements for working with {CatalogName}.
 
 .Roles
 Roles provide a defined set of actions each group performs. Determine the required level of access for your users based on the following roles {CatalogName} uses:
@@ -117,7 +117,7 @@ The Approval Administrator is a role that grants create, read, update and order 
 
 To create an *Approval Administrator* group:
 
-. Navigate to *Settings* ➔ *User Access*.
+. Navigate to menu:Settings[User Access].
 . Click btn:[Create group].
 . Enter group *name* and set the *description*.
 . Click btn:[Next].
@@ -133,7 +133,7 @@ The Approval Approver is a role that grants create and read permissions to users
 
 To create an Approval Approver group:
 
-. Navigate to *Settings* ➔ *User Access*.
+. Navigate to menu:Settings[User Access].
 . Click btn:[Create group].
 . Enter group *name* and set the *description*.
 . Click btn:[Next].
@@ -149,7 +149,7 @@ The *Catalog Administrator* can add new users to existing groups. Once added, us
 
 You can add users to a group in the *Groups* view in *User Access*.
 
-. Navigate to *Settings* ➔ *User Access*.
+. Navigate to menu:Settings[User Access].
 . Click btn:[Groups].
 . Select a group from the list.
 . Click btn:[Members] and then click btn:[Add Member].
@@ -186,7 +186,7 @@ Set approval processes at the platform, portfolio, or product level. Approval pr
 
 * *Serial process* - a product has multiple approval processes that must execute in a hierarchical sequence. If two approval processes are assigned to a product in serial, the approval group in the first approval process must approve the request before notification is sent to the second approval group. Priority of approval process execution is based on its position on the approval process list view. Approval processes at the top of the list will execute before the processes below it.
 
-* *Parallel process* -  a product has one approval process containing multiple groups. All groups are notified simultaneously when a request is created and the order is not granted until all groups approve it. Any group that declines the request ends the process and the user is notified the order has been denied.
+* *Parallel process* - a product has one approval process containing multiple groups. All groups are notified simultaneously when a request is created and the order is not granted until all groups approve it. Any group that declines the request ends the process and the user is notified the order has been denied.
 
 [NOTE]
 ====
@@ -280,7 +280,7 @@ We have now created a portfolio and added some products to it. Our next step is 
 
 To set an approval processes for the portfolio:
 
-. Navigate to *Portfolios*.
+. Navigate to menu:Portfolios[].
 . Click image:ellipsis.png[More actions,10,25] on a portfolio tile and select *Set approval*.
 . From the *Set approval process* drop-down menu, select an approval processes to set to the portfolio.
 . Click btn:[Save].
@@ -293,13 +293,8 @@ The portfolio is now ready to share with groups of users. These designated user 
 
 To share a portfolio:
 
-<<<<<<< HEAD
-. Click *Portfolios*.
-. Click image:ellipsis.png[More actions,10,25] on a portfolio, then click *Share*. The icon:[Y] indicates a shared portfolio.
-=======
 . Click btn:[Portfolios].
-. Click image:images/ellipsis.png[More actions,10,25] on a portfolio, then click btn:[Share]. The icon:[Y] indicates a shared portfolio.
->>>>>>> 367ef0d (AAP-4208 updated clickable elements)
+. Click image:ellipsis.png[More actions,10,25] on a portfolio, then click btn:[Share]. The icon:[Y] indicates a shared portfolio.
 . Adding groups:
 .. Under *Invite group* search groups to share the portfolio with.
 .. Select the level of permissions using the drop-down list.
@@ -389,11 +384,11 @@ Orders are created once a user successfully submits the request and provides any
 
 === Approving or denying requests
 
-Once a user places an order it is created and available for review on the orders page.  Groups assigned the Approval Approver role can then approve or deny orders. Detailed information is provided for each request, with information on the ordered product and its associated requester and project. A stage transcript is also provided. Denied requests require justification and the approver must enter a reason.
+Once a user places an order it is created and available for review on the orders page. Groups assigned the Approval Approver role can then approve or deny orders. Detailed information is provided for each request, with information on the ordered product and its associated requester and project. A stage transcript is also provided. Denied requests require justification and the approver must enter a reason.
 
 To approve or deny a request:
 
-. Navigate to *Approval*.
+. Navigate to menu:Approval[].
 . Click the *Requests* tab and then click on a request to expand it to detailed view.
 . Click btn:[Approve] or btn:[Deny]. Provide a *Reason* when denying a request.
 . Click btn:[Submit].
@@ -405,7 +400,7 @@ Comment on requests as an administrator or approver. Comments are captured by th
 
 To comment on a request:
 
-. Navigate to *Approval*.
+. Navigate to menu:Approval[].
 . Click the *Requests* tab and then click on a request.
 . Click btn:[Comment].
 . Add a comment and click btn:[Submit].

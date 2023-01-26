@@ -13,7 +13,7 @@ Tag images to add an additional name to images stored in your {HubName} containe
 
 .Procedure
 
-. Navigate to *Execution Environments*.
+. Navigate to menu:Execution Environments[].
 . Select your container repository.
 . Click the *Images* tab.
 . Click image:more_actions.png[more actions], then click btn:[Manage tags].

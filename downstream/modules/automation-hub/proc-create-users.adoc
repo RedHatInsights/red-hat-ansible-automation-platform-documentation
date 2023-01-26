@@ -12,7 +12,7 @@ You can create a user in Automation Hub and add them to groups that can access f
 
 .Procedure
 . Log in to your local Automation Hub.
-. Navigate to *Users*.
+. Navigate to menu:Users[].
 . Click btn:[Create user].
 . Provide information in each of the fields. *Username* and *Password* are required.
 . [Optional] Assign the user to a group by clicking in the *Groups* field and selecting from the list of groups.
