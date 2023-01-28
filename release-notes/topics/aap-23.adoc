@@ -21,8 +21,9 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 * Added the ability to use external execution nodes when running AAP as a managed service in Azure.
 * Added the ability to use external execution nodes when running the AAP Operator in Openshift.
-* Simplified addition and removal of execution node capacity. In the technology preview, requirements for using platform installer to add or remove execution nodes has been removed.
-* Enhancements for job utilization on multiple execution nodes. A more efficient task manager can make efficient use of execution nodes, increasing your automation capacity.
+//[DCD removed following per PG see AAP-7858]
+//* Simplified addition and removal of execution node capacity. In the technology preview, requirements for using platform installer to add or remove execution nodes has been removed.
+//* Enhancements for job utilization on multiple execution nodes. A more efficient task manager can make efficient use of execution nodes, increasing your automation capacity.
 
 Other noteworthy developer tooling updates include the following:
 
