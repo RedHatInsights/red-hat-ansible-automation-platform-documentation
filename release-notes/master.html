@@ -512,6 +512,12 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 </tbody>
 </table>
 </div>
+<div class="sect2">
+<h3 id="technology-preview">What is a Technology Preview feature</h3>
+<div class="paragraph">
+<p>Technology Preview features are not supported with Red Hat production service-level agreements (SLAs) and might not be functionally complete, and Red Hat does not recommend using them for production. These features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. For more information see <a href="https://access.redhat.com/support/offerings/techpreview">Red Hat Technology Preview Features Support Scope</a>.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -592,11 +598,22 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 <li>
 <p>Fixed an issue when ansible-runner was not properly removed from hybrid nodes when upgrading to Ansible Automation Platform 2.2.</p>
 </li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Technology preview features</div>
+<ul>
 <li>
 <p>Added the ability to use external execution nodes when running AAP as a managed service in Azure.</p>
 </li>
 <li>
 <p>Added the ability to use external execution nodes when running the AAP Operator in Openshift.</p>
+</li>
+<li>
+<p>Simplified addition and removal of execution node capacity. In the technology preview, requirements for using platform installer to add or remove execution nodes has been removed.</p>
+</li>
+<li>
+<p>Enhancements for job utilization on multiple execution nodes. A more efficient task manager can make efficient use of execution nodes, increasing your automation capacity.</p>
 </li>
 </ul>
 </div>
@@ -616,6 +633,17 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 </li>
 <li>
 <p>Added lint profile support for content pipelines.</p>
+</li>
+</ul>
+</div>
+<div class="ulist _additional-resources">
+<div class="title">Additional resources</div>
+<ul>
+<li>
+<p><a href="#technology-preview">What is Technology Preview feature</a></p>
+</li>
+<li>
+<p>For information regarding execution node enhancements on Openshift deployments, see <a href="https://docs.ansible.com/automation-controller/latest/html/administration/instances.html">Managing Capacity With Instances</a>.</p>
 </li>
 </ul>
 </div>
@@ -808,6 +836,9 @@ The name change reflects these enhancements and the overall position within the 
 </li>
 <li>
 <p>The <em>Red Hat Ansible Automation Platform Operator Backup and Recovery Guide</em> has been added to the library to help you backup and recover installations of the Red Hat Ansible Automation Platform operator on OpenShift Container Platform.</p>
+</li>
+<li>
+<p>The <em>Ansible Builder Guide</em> has been renamed to <em>Creating and Consuming Execution Environments</em> to better reflect the information provided in the guide.</p>
 </li>
 </ul>
 </div>
@@ -2264,7 +2295,7 @@ grouping options.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-12-09 12:49:42 -0700
+Last updated 2023-01-04 14:06:08 -0700
 </div>
 </div>
 </body>
