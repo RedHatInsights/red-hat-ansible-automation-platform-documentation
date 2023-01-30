@@ -22,7 +22,7 @@ The default destination ports and installer inventory listed below are configura
 |TCP
 |SSH
 |Inbound and Outbound
-|`pg_port`
+|`ansible_port`
 |Remote access during installation
 |5432
 |TCP
