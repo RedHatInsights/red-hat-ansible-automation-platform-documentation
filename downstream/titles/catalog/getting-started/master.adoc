@@ -53,11 +53,6 @@ Roles provide a defined set of actions each group performs. Determine the requir
 |===
 |  | Role | Description
 
-h| Administration | Organization Administrator |
-
-* Manage user access for Catalog and Approval
-* Add platform sources to Catalog
-
 .3+h| Approval | Approval Administrator |
 
 * Create and assign users to approval groups
@@ -91,10 +86,6 @@ Approval User |
 [NOTE]
 ====
 By default, all users will have Catalog User and Approval User roles assigned to them.
-====
-[IMPORTANT]
-====
-Due of potential security implications, limit the number of users in cloud.redhat.com with Organization Administrator privileges.
 ====
 
 
