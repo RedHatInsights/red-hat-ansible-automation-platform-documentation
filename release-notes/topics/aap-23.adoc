@@ -16,9 +16,14 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Moved handler processing into the configured strategy, so that handlers operate within the configured strategy, instead of using a non-configurable linear like execution of handlers.
 * Updated internal FieldAttribute classes to act as Python data descriptors to reduce code complexity and use of metaclasses.
 * Fixed an issue when ansible-runner was not properly removed from hybrid nodes when upgrading to Ansible Automation Platform 2.2.
+
+.Technology preview features
+
 * Added the ability to use external execution nodes when running AAP as a managed service in Azure.
 * Added the ability to use external execution nodes when running the AAP Operator in Openshift.
-
+//[DCD removed following per PG see AAP-7858]
+//* Simplified addition and removal of execution node capacity. In the technology preview, requirements for using platform installer to add or remove execution nodes have been removed.
+//* Enhancements for job utilization on multiple execution nodes. A more efficient task manager can make efficient use of execution nodes, increasing your automation capacity.
 
 Other noteworthy developer tooling updates include the following:
 
@@ -26,3 +31,9 @@ Other noteworthy developer tooling updates include the following:
 * Added official support for Python 3.11 to ansible-core CLIs and target node execution.
 * Dropped Python 3.8 support for ansible-core CLIs and controller side code.
 * Added lint profile support for content pipelines.
+
+[role="_additional-resources"]
+.Additional resources
+
+* xref:technology-preview[What is a Technology Preview feature]
+* For information regarding execution node enhancements on Openshift deployments, see link:https://docs.ansible.com/automation-controller/latest/html/administration/instances.html[Managing Capacity With Instances].
