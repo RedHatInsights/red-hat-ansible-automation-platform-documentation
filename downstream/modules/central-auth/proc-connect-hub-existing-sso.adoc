@@ -1,0 +1,34 @@
+[id="proc-connect-hub-existing-sso"]
+= Connecting {HubName} to an existing {RHSSO} environment
+
+To connect {HubName} to an existing {RHSSO} installation, you must configure variables in the inventory file.
+The {PlatformNameShort} installer uses the {RHSSO} variables to setup a Keycloak realm and client.
+
+.Procedure
+
+. Add the following variables to the `inventory` file:
++
+-----
+sso_host
+sso_console_admin_username
+sso_console_admin_password
+sso_http_port or sso_https_port
+sso_use_https
+-----
++
+[cols="30%,70%",options="header"]
+|====
+| *Variable* | *Description*
+| `sso_host` | IP or routable hostname for SSO.
+| `sso_console_admin_username` | The default value is `admin`.
+| `sso_console_admin_password` | 
+| `sso_use_https` | The defaut value is `true` .
+| `sso_http_port` or `sso_https_port` | The default values are `8080` for `http` and `8443` for `https`.
+|====
+
+. Run the installer setup script to begin the installation:
++
+-----
+$ ./setup.sh
+-----
+

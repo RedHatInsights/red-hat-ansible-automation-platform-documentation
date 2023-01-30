@@ -1,0 +1,8 @@
+[id="assembly-hub-auth-existing-sso"]
+
+= Connecting {HubName} to an existing {RHSSO} environment
+
+You can connect {HubName} to an existing {RHSSO} environment.
+
+include::automation-hub/proc-connect-hub-existing-sso.adoc[leveloffset=+1]
+
