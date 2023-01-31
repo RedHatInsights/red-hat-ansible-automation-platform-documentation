@@ -24,7 +24,9 @@ See also xref:ref-schedule-jobs-worker-nodes[Jobs scheduled on the worker nodes]
 | `redis_resource_requirements` | Redis control plane container resource requirements | requests: {CPU:100m, memory: 128Mi}
 |====
 
-An example of customization could be:
+Because the use of `topology_spread_constraints` to maximally spread control nodes onto separate underlying kubernetes worker nodes is also recommended, a reasonable set of requests and limits would be limits whose sum is equal to the actual resources on the node. 
+If only `limits` are set, then the request is automatically set to be equal to the limit. But because some variablity of resource usage between the containers in the control pod is permitted, you can set `requests` to a lower amount, for example to 25% of the resources available on the node. 
+An example of container customization for a cluster where the worker nodes have 4 CPUs and 16 GB of RAM could be:
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
