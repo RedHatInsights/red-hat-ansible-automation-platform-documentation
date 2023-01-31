@@ -33,8 +33,8 @@ When an instance of {ControllerName} is removed, the associated PVCs are not aut
 
 == Installing the {ControllerName} operator
 
-. Navigate to *Operators* > *Installed Operators*, then click on the *Ansible Automation Platform* operator.
-. Locate the *Automation controller* tab, then click *Create instance*.
+. Navigate to menu:Operators[Installed Operators], then click on the *Ansible Automation Platform* operator.
+. Locate the *Automation controller* tab, then click btn:[Create instance].
 
 You can proceed with configuring the instance using either the Form View or YAML view.
 
@@ -45,9 +45,9 @@ include::platform/proc-configuring-controller-ldap-security.adoc[leveloffset=+2]
 include::platform/proc-configuring-controller-route-options.adoc[leveloffset=+2]
 include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
 
-Once you have configured your {ControllerName} operator, click *Create* at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
+Once you have configured your {ControllerName} operator, click btn:[Create] at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
 
-* View progress by navigating to *Workloads* -> *Pods* and locating the newly created instance.
+* View progress by navigating to menu:Workloads[Pods] and locating the newly created instance.
 
 include::platform/proc-operator-external-db-controller.adoc[leveloffset=+1]
 
