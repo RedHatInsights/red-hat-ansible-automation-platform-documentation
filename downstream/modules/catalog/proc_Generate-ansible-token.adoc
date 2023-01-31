@@ -15,7 +15,7 @@ As an Ansible Tower system administrator, you can create the application token l
 
 . Log in to your Ansible Tower instance.
 . Navigate to *Administration* -> *Applications*.
-. Click image:images/plus_icon.png[Add,40,40].
+. Click image:plus_icon.png[Add,40,40].
 . Enter or select the following in the required fields for the *New Application*:
 .. *Name*: Automation Services Catalog.
 .. *Authorization Grant Type*: Resource owner password-based.
@@ -28,8 +28,8 @@ As an Ansible Tower system administrator, you can create the application token l
 . Navigate to *Access* -> *Users*.
 . In the *Users* list, click the username to create the token for.
 . Click *TOKENS* in the user profile
-. Click image:images/plus_icon.png[Add,40,40].
-. Under *APPLICATION*, click image:images/magnify.png[Search,40,40] and select *Automation Services Catalog* from the modal.
+. Click image:plus_icon.png[Add,40,40].
+. Under *APPLICATION*, click image:magnify.png[Search,40,40] and select *Automation Services Catalog* from the modal.
 . Click *SELECT*.
 . Under *SCOPE* select *Write* from the drop-down.
 . Click *SAVE*.
