@@ -12,14 +12,14 @@ Bundled installer::
 +
 [source,options="nowrap",subs=attributes+]
 -----
-$ cd ansible-automation-platform-setup-bundle-<latest-version>
+$ cd ansible-automation-platform-setup-bundle-2.3-1.1
 -----
 +
 Online installer::
 +
 [source,options="nowrap",subs=attributes+]
 -----
-$ cd ansible-automation-platform-setup-<latest-version>
+$ cd ansible-automation-platform-setup-2.3-1.1
 -----
 
 . Open the `inventory` file for editing.
