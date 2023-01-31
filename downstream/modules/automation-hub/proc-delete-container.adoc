@@ -7,6 +7,6 @@
 * You have permissions to manage repositories.
 
 .Procedure
-. Navigate to *Execution Environments*.
-. On the container repository you would like to delete, click image:images/more_actions.png[more actions] > *Delete*.
-. When presented with the confirmation message, click the checkbox then click *Delete*.
+. Navigate to menu:Execution Environments[].
+. On the container repository you would like to delete, click image:images/more_actions.png[more actions], then click btn:[Delete].
+. When presented with the confirmation message, click the checkbox, then click btn:[Delete].
