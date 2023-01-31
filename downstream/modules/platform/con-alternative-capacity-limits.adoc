@@ -10,8 +10,8 @@ If you do not want to set limits directly on the task container, you can use `ex
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
-SYSTEM_TASK_ABS_MEM
-SYSTEM_TASK_ABS_CPU
+SYSTEM_TASK_ABS_MEM = 3gi
+SYSTEM_TASK_ABS_CPU = 750m
 ----
 
 This acts as a soft limit within the application that enables {ControllerName} to control how much work it attempts to run, while not risking any CPU throttling from Kubernetes itself, or being reaped if memory usage peaks above the desired limit. 
