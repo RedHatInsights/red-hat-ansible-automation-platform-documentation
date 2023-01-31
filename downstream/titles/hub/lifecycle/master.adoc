@@ -1,3 +1,4 @@
+:imagesdir: images
 [[hub_life_cycle]]
 
 = Private Automation Hub life cycle
