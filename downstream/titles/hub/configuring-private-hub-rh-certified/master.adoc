@@ -1,4 +1,5 @@
 = Managing Red Hat Certified and Ansible Galaxy collections in automation hub
+:imagesdir: images
 :numbered:
 :experimental:
 
