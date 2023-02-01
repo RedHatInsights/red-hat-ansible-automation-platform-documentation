@@ -11,10 +11,10 @@ When you delete a user account, the name and email of the user are permanently r
 
 .Procedure
 . Log in to {HubName}.
-. Expand the *User Access* menu.
-. Click *Users* to display a list of the current users.
-. Click the action menu (image:images/more_actions.png[more actions]) beside the user that you want to remove and click *Delete*.
-. Click *Delete* in the warning message to permanently delete the user.
+. Expand menu:User Access[].
+. Click btn:[Users] to display a list of the current users.
+. Click the action menu (image:more_actions.png[more actions]) beside the user that you want to remove, then click btn:[Delete].
+. Click btn:[Delete] in the warning message to permanently delete the user.
 
-// . Click the action menu (image:images/more_actions.png[more actions]) beside the user that you want to remove and click *Delete*.
+// . Click the action menu (image:images/more_actions.png[more actions]) beside the user that you want to remove, then click btn:[Delete].
 
