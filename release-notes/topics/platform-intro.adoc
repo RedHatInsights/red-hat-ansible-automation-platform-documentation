@@ -18,3 +18,9 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 | hosted service
 
 |===
+
+== Red Hat Ansible Automation Platform life cycle
+
+Red Hat publishes a product life cycle page that identifies the levels of maintenance for each Ansible Automation Platform release.
+See link:https://access.redhat.com/support/policy/updates/ansible-automation-platform[Red Hat Ansible Automation Platform Life Cycle] for additional information.
+
