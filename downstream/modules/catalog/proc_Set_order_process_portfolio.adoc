@@ -11,7 +11,7 @@ Set an order process that will apply to all products in a portfolio.
 
 . Select *Portfolios* from the main navigation, then select a portfolio.
 
-. Click image:images/actions.png[More actions] and select *Set order processes*.
+. Click image:actions.png[More actions] and select *Set order processes*.
 
 . Expand the drop-down menu and select an order process.
 
