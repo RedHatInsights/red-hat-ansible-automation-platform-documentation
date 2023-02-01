@@ -1,5 +1,5 @@
 = Managing user access in Private Automation Hub
-// :imagesdir: images
+:imagesdir: images
 :numbered:
 include::attributes/attributes.adoc[]
 
