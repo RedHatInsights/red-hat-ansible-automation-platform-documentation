@@ -11,7 +11,7 @@ You can create and assign roles to a group that enables users to access specific
 .Procedure
 
 . Log in to cloud.redhat.com
-. Click image:images/cog.png[] > *Settings*.
+. Click image:cog.png[] > *Settings*.
 . From the sidebar, navigate to *User Access* > *Groups*.
 . Click *Create group*.
 . A setup wizard will now appear. Enter a group name and description, then click *Next*.
