@@ -12,7 +12,7 @@ The product has an associated survey, created in Ansible Tower.
 
 . Click *Products*.
 . Locate the product and click on its title.
-. Click image:images/actions.png[More Actions] and select *Edit survey*.
+. Click image:actions.png[More Actions] and select *Edit survey*.
 . Select a field in the survey. The *Properties editor* will appear.
 . Click *Properties* to view the elements to edit for that field.
 . Select *Validation* to configure the *validator* types used to validate user input.

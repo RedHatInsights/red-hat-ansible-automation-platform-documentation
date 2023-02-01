@@ -1,3 +1,4 @@
+:imagesdir: images
 :experimental:
 :toclevels: 4
 include::attributes/attributes.adoc[]
@@ -226,7 +227,7 @@ You can edit the sequence number for an approval process from the Approval proce
 
 . Select *Approval* from the main navigation.
 . Click the *Approval processes* tab.
-. Navigate to the approval process, then click image:images/ellipsis.png[More actions,10,25].
+. Navigate to the approval process, then click image:ellipsis.png[More actions,10,25].
 . Click *Edit*.
 . Enter the desired sequence number under *Enter sequence*.
 . Click *Save*.
@@ -289,7 +290,7 @@ We have now created a portfolio and added some products to it. Our next step is 
 To set an approval processes for the portfolio:
 
 . Navigate to *Portfolios*.
-. Click image:images/ellipsis.png[More actions,10,25] on a portfolio tile and select *Set approval*.
+. Click image:ellipsis.png[More actions,10,25] on a portfolio tile and select *Set approval*.
 . From the *Set approval process* drop-down menu, select an approval processes to set to the portfolio.
 . Click *Save*.
 
@@ -302,7 +303,7 @@ The portfolio is now ready to share with groups of users. These designated user 
 To share a portfolio:
 
 . Click *Portfolios*.
-. Click image:images/ellipsis.png[More actions,10,25] on a portfolio, then click *Share*. The icon:[Y] indicates a shared portfolio.
+. Click image:ellipsis.png[More actions,10,25] on a portfolio, then click *Share*. The icon:[Y] indicates a shared portfolio.
 . Adding groups:
 .. Under *Invite group* search groups to share the portfolio with.
 .. Select the level of permissions using the drop-down list.
@@ -380,7 +381,7 @@ The product has an associated survey, created in Ansible Tower.
 .Procedure
 . Click *Products*.
 . Locate the product and click on its title.
-. Click image:images/ellipsis.png[More actions,10,25] and select *Edit survey*.
+. Click image:ellipsis.png[More actions,10,25] and select *Edit survey*.
 . Select a field in the survey. The *Properties* editor will appear.
 . Click *Properties* to view the elements to edit for that field.
 . Select *Validation* to configure the validator types used to validate user input.

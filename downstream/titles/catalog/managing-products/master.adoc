@@ -1,3 +1,4 @@
+:imagesdir: images
 :toc:
 :toclevels: 4
 :numbered:
