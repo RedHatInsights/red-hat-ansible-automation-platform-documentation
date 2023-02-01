@@ -19,8 +19,8 @@ The download and installation of the setup bundle needs to be located on the aut
 +
 ----
 $ tar xvf \
-   ansible-automation-platform-setup-bundle-2.3-1.1.tar.gz
-$ cd ansible-automation-platform-setup-bundle-2.3-1.1
+   ansible-automation-platform-setup-bundle-2.3-1.2.tar.gz
+$ cd ansible-automation-platform-setup-bundle-2.3-1.2
 ----
 +
 . Edit the inventory file to include the required options
