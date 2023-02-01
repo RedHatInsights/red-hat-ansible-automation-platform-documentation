@@ -11,6 +11,6 @@ Delete an existing order process.
 
 . Select *Order Processes* from the main navigation.
 
-. Locate your desired order process, then click image:images/actions.png[More actions].
+. Locate your desired order process, then click image:actions.png[More actions].
 
 . Click *Delete*.

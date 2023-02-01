@@ -160,7 +160,7 @@ You can verify that the installation and configuration completed successfully by
 .Procedure
 
 . Log in to cloud.redhat.com.
-. Navigate to image:images/cog.png[Settings,40,40] > *Sources* and refresh the browser.
+. Navigate to image:cog.png[Settings,40,40] > *Sources* and refresh the browser.
 .. Your newly added Ansible Tower will appear with the *Name* provided in the `install_receptor.yml` playbook.
 . Verify that the *Status* is *Available*.
 . Navigate to Automation Services Catalog > Platforms.
