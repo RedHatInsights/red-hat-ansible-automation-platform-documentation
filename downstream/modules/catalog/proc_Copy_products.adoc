@@ -7,7 +7,7 @@ You can copy products from the *Products* detail view.
 .Procedure
 
 . Click *Products* and select a product
-. Click image:images/actions.png[More Actions] and select *Copy*.
+. Click image:actions.png[More Actions] and select *Copy*.
 . Select a *Portfolio* from the list to copy the product to.
 . Click *Submit*.
 

@@ -3,6 +3,6 @@
 Procedure
 
 . Navigate to *Portfolios*.
-. Click image:images/actions.png[More actions] on a portfolio tile and select *Set approval*.
+. Click image:actions.png[More actions] on a portfolio tile and select *Set approval*.
 . From the *Set approval process* drop-down menu, select an approval processes to set to the portfolio.
 . Click *Save*.

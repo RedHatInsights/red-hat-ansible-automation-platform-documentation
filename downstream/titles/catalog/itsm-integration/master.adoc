@@ -1,3 +1,4 @@
+:imagesdir: images
 [[configuring-your-tower-infrastructure-to-communicate-with-catalog]]
 = Integrating Automation Services Catalog with your IT Service Management (ITSM) systems
 
