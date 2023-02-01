@@ -1,6 +1,7 @@
 // This assembly is included in the following assemblies:
 //
 
+:imagesdir: images
 :experimental:
 :toclevels: 4
 
