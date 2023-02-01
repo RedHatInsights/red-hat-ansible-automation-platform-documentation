@@ -1,3 +1,4 @@
+:imagesdir: images
 = Managing Red Hat Ansible Content Collections and Ansible Galaxy collections in automation hub
 :numbered:
 :experimental:
