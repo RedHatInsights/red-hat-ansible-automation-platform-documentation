@@ -16,8 +16,8 @@ See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_pla
 -----
 collections:
   # Install a collection from Ansible Galaxy.
-  - name: geerlingguy.php_roles
-    version: 0.9.3
+  - name: community.aws
+    version: 5.2.0
     source: https://galaxy.ansible.com
 -----
 
