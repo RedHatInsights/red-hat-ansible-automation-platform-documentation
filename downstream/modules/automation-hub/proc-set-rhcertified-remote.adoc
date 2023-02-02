@@ -18,7 +18,7 @@ See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_pla
 . Log in to your {PrivateHubName}.
 . Navigate to menu:Repo Management[].
 . Click the *Remotes* tab.
-. In the *rh-certified* remote repository, click image:more_actions.png[More actions] and click btn:[Edit].
+. In the *rh-certified* remote repository, click image:images/ellipsis.png[More,5,12] and click btn:[Edit].
 . In the modal, paste the *Sync URL* and Token you acquired from {Console}.
 . Click btn:[Save].
 +

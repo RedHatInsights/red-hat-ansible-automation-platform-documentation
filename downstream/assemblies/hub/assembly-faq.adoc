@@ -73,6 +73,11 @@ The actual collection source must be housed outside of {Galaxy}, for example in 
 You can include the link to the source for community users in the `galaxy.yml` file contained in the collection. 
 This shows users where they should go if they want to contribute to the collection or even file issues against it.
 
+== Does Red Hat officially support collections downloaded and installed from {Galaxy}
+
+No, collections downloaded from Galaxy do not have any support claims associated and are 100% community supported.
+Users and contributors of any such collection must contact the collection developers directly.
+
 == How does the joint support agreement on certified collections work?
 
 If a customer raises an issue with the Red Hat support team about on a certified collection, Red Hat support triages the issue and checks whether the problem exists within Ansible or Ansible usage. 

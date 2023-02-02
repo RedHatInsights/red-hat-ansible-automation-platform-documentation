@@ -1,3 +1,4 @@
+
 :imagesdir: images
 = Managing Red Hat Ansible Content Collections and Ansible Galaxy collections in automation hub
 :numbered:
@@ -5,7 +6,7 @@
 
 include::attributes/attributes.adoc[]
 
-Included with a subscription to {PlatformName}, {CertifiedColl} feature {CertifiedName} and {Valid}, as well as {Galaxy} content from the community. 
+Included with a subscription to {PlatformName}, {CertifiedColl} feature {CertifiedName} and {Valid}. 
 Using {HubNameMain}, your organization can access and curate a unique set of collections from all forms of Ansible content. 
 
 You can also synchronize {HubNameMain} to create a custom list of collections from either {CertifiedCon}, {valid}, or {Galaxy} community content. 

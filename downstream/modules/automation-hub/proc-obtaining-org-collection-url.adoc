@@ -7,21 +7,15 @@ You can synchronize {CertifiedName} curated by your organization from `{Console}
 
 .Prerequisites
 
-* You have Organization Administrator permissions to create the synclist on {Console}.
+* You have organization administrator permissions to create the synclist on {Console}.
 
 .Procedure
 
 . Log in to `{Console}` as an organization administrator.
 . Navigate to menu:Automation Hub[Repo Management].
-<<<<<<< HEAD
-. Locate the *Sync URL* and click the btn:[Copy to clipboard] icon (image:copy.png[Copy,10,25]). 
-Paste the *Sync URL* in a file to use when configuring the rh-certified remote.
-. Click the btn:[More actions] icon (image:more_actions.png[More,10,25]) and click btn:[Get token].
-=======
-. Locate the *Sync URL* and click the btn:[Copy to clipboard] icon (image:images/copy.png[Copy,10,25]). 
+. Locate the *Sync URL* and click the btn:[Copy to clipboard] icon (image:images/copy.png[Copy,15,20]). 
 Paste the *Sync URL* in a file to use when configuring the *rh-certified* remote.
-. Click the btn:[More actions] icon (image:images/more_actions.png[More,10,25]) and click btn:[Get token].
->>>>>>> 85aa952 (Corrected text to include Certified Content)
+. Click the btn:[More actions] icon image:images/ellipsis.png[More,5,12] and click btn:[Get token].
 . On the *Token management* page, click btn:[Load token].
 . Click btn:[Copy to clipboard] to copy the API token.
 . Paste the API token into a file and store in a secure location.

@@ -2,12 +2,12 @@
 // obtaining-token/master.adoc
 [id="proc-create-synclist"]
 
-= Creating a synclist of Red Hat Certified collections
+= Creating a synclist of Red Hat {CertifiedName}
 
-You can create a synclist of curated {CertifiedCon} in {HubName} on {Console}. 
+You can create a synclist of curated {CertifiedCon} in {HubNameMain} on {Console}. 
 Your synclist repository is located under menu:Automation Hub[Repo Management], which is updated whenever you choose to manage content within {CertifiedName}.
 
-By default, all {CertifiedName} are included in your initial organization synclist.
+All {CertifiedName} are included by default in your initial organization synclist.
 
 .Prerequisites
 
@@ -30,4 +30,4 @@ Add the following domain name to the allow list:
 . Use the toggle switch on each collection to determine whether to exclude it from your synclist.
 
 When you finish managing collections for your synclist, navigate to menu:Automation Hub[Repo Management] to initiate the remote repository synchronization to your {PrivateHubName}. 
-If your remote repository is already configured, you can manually synchronize {CertifiedName} to your {PrivateHubName} to update the collections content that you made available to local users.
+If your remote repository is already configured, you can manually synchronize Red Hat {CertifiedName} to your {PrivateHubName} to update the collections content that you made available to local users.

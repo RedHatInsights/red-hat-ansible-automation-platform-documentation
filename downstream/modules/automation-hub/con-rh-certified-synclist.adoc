@@ -1,6 +1,6 @@
 [id="con-rh-certified-synclist"]
 
-= About Red Hat Ansible Certified Collections synclists
+= About Red Hat {CertifiedName} synclists
 
 A synclist is a curated group of Red Hat Certified collections that is assembled by your organization administrator that synchronizes with your local {HubNameMain}. 
 Using synclists enables you to manage only the content that you want and exclude unnecessary collections.

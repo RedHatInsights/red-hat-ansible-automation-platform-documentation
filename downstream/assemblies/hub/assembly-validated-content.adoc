@@ -17,7 +17,7 @@ This behavior can be configured with two variables:
 | Name | Description 
 | `automationhub_seed_collections` | A boolean that defines whether or not preloading is enabled.
 | `automationhub_collection_seed_repository` | If `automationhub_seed_collections` is set to `true`, this variable enables you to specify the type of content to upload. 
-Possible values are certified or validated. 
+Possible values are `certified` or `validated`. 
 If missing both content sets will be uploaded.
 |====
 
@@ -27,7 +27,7 @@ If missing both content sets will be uploaded.
 ====
 * {Valid} is only available with a valid subscription to {PlatformName}.
 * Unlike {CertifiedCon}, {Valid} is not supported by Red Hat or our partners. 
-* From the {PlatformName} 2.3 release, {Valid} is preloaded into {PrivateHubName} and can be updated manually by downloading the packages.
+* From the {PlatformName} {PlatformVers} release, {Valid} is preloaded into {PrivateHubName} and can be updated manually by downloading the packages.
 ====
 
 [cols="20%,30%,30%,20%",options="header"]
@@ -53,7 +53,7 @@ If missing both content sets will be uploaded.
 | Ansible | | IOS Updater | Red Hat Ansible
 | Ansible | | NXOS Updater | Red Hat Ansible
 | Ansible | | EOS Updater | Red Hat Ansible
-| Ansible | | Firewall policy automation - A validated cotent to take care of FW policy hygiene | Red Hat Ansible
+| Ansible | | Firewall policy automation - A validated content to take care of FW policy hygiene | Red Hat Ansible
 | Ansible | | OSbuilder for RHEL Edge disconnected (customer request) | Red Hat Ansible
 | Ansible | | Middleware collection | Red Hat Ansible
 | Ansible | | Windows and Linux Compliance |Red Hat Ansible
@@ -62,7 +62,7 @@ If missing both content sets will be uploaded.
 | Ansible | | Execution Environment Utilities | Red Hat Ansible
 | Ansible | | {HubNameStart} configuration | Red Hat Ansible
 | Ansible | | AAP utilities | Red Hat Ansible
-| Ansible | | Role to deploy and migrate a web application on _Amazon Web Services_ (AWS) | Red Hat Ansible 
+| Ansible | | Role to deploy and migrate a web application on _{AWS}_ (AWS) | Red Hat Ansible 
 | Ansible | | Role to deal with AWS orphaned instances by tag | Red Hat Ansible
 | Ansible | | Role to create a customized _Amazon Machine Images_ (AMI) | Red Hat Ansible
 | Ansible | | Role to detach and delete AWS _Internet Gateway_ (IGW)s |Red Hat Ansible
