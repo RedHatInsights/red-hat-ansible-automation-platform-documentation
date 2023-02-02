@@ -1,4 +1,5 @@
 = Uploading content to Red Hat Automation Hub
+:imagesdir: images
 :numbered:
 :experimental:
 include::attributes/attributes.adoc[]
