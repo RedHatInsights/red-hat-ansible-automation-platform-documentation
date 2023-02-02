@@ -30,14 +30,14 @@ When an instance of {HubName} is removed, the PVCs are not automatically deleted
 == Installing the {HubName} operator
 
 . Navigate to menu:Operators[Installed Operators].
-. Locate the *Automation hub* entry, then click *Create instance*.
+. Locate the *Automation hub* entry, then click btn:[Create instance].
 
 include::platform/con-storage-options-for-operator-installation-on-ocp.adoc[leveloffset=+2]
 include::platform/proc-provision-ocp-storage-with-readwritemany.adoc[leveloffset=+3]
 include::platform/proc-hub-route-options.adoc[leveloffset=+2]
 include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
 
-Once you have configured your {HubName} operator, click *Create* at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
+Once you have configured your {HubName} operator, click btn:[Create] at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
 
 * View progress by navigating to menu:Workloads[Pods] and locating the newly created instance.
 
