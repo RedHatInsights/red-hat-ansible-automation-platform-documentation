@@ -70,7 +70,7 @@ NOTE: The inventory should be kept intact after installation since it is used fo
 +
 ----
 $ sudo -i
-# cd /path/to/ansible-automation-platform-setup-bundle-2.3-1.1
+# cd /path/to/ansible-automation-platform-setup-bundle-2.3-1.2
 # ./setup.sh
 ----
 +
