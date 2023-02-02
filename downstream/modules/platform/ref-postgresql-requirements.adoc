@@ -9,6 +9,35 @@
 Administrators can use the `awx-manage dbshell` command, which automatically enables the PostgreSQL SCL.
 * To determine if your {ControllerName} instance has access to the database, you can do so with the command, `awx-manage check_db`.
 
+[cols="a,a",options="header"]
+|===
+h| Requirement |Required
+| *RAM* |
+| *CPUs* |
+| *Local disk* |
+|===
+
+.Database
+
+[cols="a,a,a",options="header"]
+|===
+h| Service |Required |Notes
+| *Each {ControllerName}* | 40 GB dedicated hard disk space |
+
+* dedicate a minimum of 20 GB to `/var/` for file and working directory storage
+* Storage volume should be rated for a minimum baseline of 1500 IOPS.
+* Projects are stored on control and hybrid, and for the duration of jobs, also on execution nodes. If the cluster has many large projects, consider having twice the GB in /var/lib/awx/projects, to avoid disk space errors.
+
+* 150 GB+ recommended
+* Storage volume should be rated for a high baseline IOPS (1500 or more).
+| *Each {HubName}* | 60 GB dedicated hard disk space |
+
+Storage volume should be rated for a minimum baseline of 1500 IOPS.
+| *Database* | 20 GB dedicated hard disk space |
+
+* 150 GB+ recommended
+* Storage volume should be rated for a high baseline IOPS (1500 or more).
+|===
 
 .PostgreSQL Configurations
 

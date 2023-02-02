@@ -10,7 +10,7 @@ Your system must meet the following minimum system requirements to install and r
 
 [cols="a,a,a"]
 |===
-|  | Required | Notes
+| Requirement | Required | Notes
 
 h| Subscription | Valid Red Hat Ansible Automation Platform |
 

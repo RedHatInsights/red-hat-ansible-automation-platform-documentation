@@ -20,28 +20,37 @@ Runs automation. Increases memory and CPU to increase capacity for running more 
 h| Requirement | Required
 | *RAM* | 16 GB
 | *CPUs* | 4
+| *Local disk* | 40GB minimum with at least 20GB available under /var/lib/awx
 |===
 
 .Control nodes
 Processes events and runs cluster jobs including project updates and cleanup jobs.
 Increasing CPU and memory can help with job event processing.
 
-
+[cols="a,a",options="header"]
 |===
 h| Requirement | Required
 | *RAM* | 16 GB
 | *CPUs* | 4
+| *Local disk* a|
+* 40GB minimum with at least 20GB available under /var/lib/awx
+* Storage volume should be rated for a minimum baseline of 1500 IOPS
+* Projects are stored on control and hybrid, and for the duration of jobs, also on execution nodes. If the cluster has many large projects, consider doubling the GB in /var/lib/awx/projects, to avoid disk space errors
 |===
 
 .Hybrid nodes
 Runs both automation and cluster jobs.
 Comments on CPU and memory for execution and control nodes also apply to this node type.
 
-[cols="a,a,options="header"]
+[cols="a,a",options="header"]
 |===
 h| Requirement | Required
 | *RAM* | 16 GB
 | *CPUs* | 4
+| *Local disk* a|
+* 40GB minimum with at least 20GB available under /var/lib/awx
+* Storage volume should be rated for a minimum baseline of 1500 IOPS
+* Projects are stored on control and hybrid, and for the duration of jobs, also on execution nodes. If the cluster has many large projects, consider doubling the GB in /var/lib/awx/projects, to avoid disk space errors
 |===
 
 .Hop nodes
@@ -49,29 +58,13 @@ Serves to route traffic from one part of the Automation Mesh to another (for exa
 RAM could affect throughput, CPU activity is low.
 Network bandwidth and latency are generally a more important factor than either RAM or CPU.
 
-[cols="a,a,options="header"]
+[cols="a,a",options="header"]
 |===
 h| Requirement | Required
 | *RAM* | 16 GB
 | *CPUs* | 4
+| *Local disk* | 40GB
 |===
-
-.Database
-
-[cols="a,a,a,options="header"]
-|===
-h| Service| Required | Notes
-h| Disk: service node | 40 GB dedicated hard disk space |
-
-* *{ControllerName}*: dedicate a minimum of 20 GB to `/var/` for file and working directory storage
-* Storage volume should be rated for a minimum baseline of 1500 IOPS.
-* Projects are stored on control and hybrid, and for the duration of jobs, also on execution nodes. If the cluster has many large projects, consider having twice the GB in /var/lib/awx/projects, to avoid disk space errors.
-h| Disk: database node | 20 GB dedicated hard disk space |
-
-* 150 GB+ recommended
-* Storage volume should be rated for a high baseline IOPS (1500 or more).
-|===
-
 
 * All {ControllerName} data is stored in the database.
 Database storage increases with the number of hosts managed, number of jobs run, number of facts stored in the fact cache, and number of tasks in any individual job.
