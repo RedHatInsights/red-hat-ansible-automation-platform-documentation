@@ -11,11 +11,11 @@ You can create and assign roles to a group that enables users to access specific
 .Procedure
 
 . Log in to cloud.redhat.com
-. Click image:cog.png[] > *Settings*.
-. From the sidebar, navigate to *User Access* > *Groups*.
-. Click *Create group*.
-. A setup wizard will now appear. Enter a group name and description, then click *Next*.
-. Select one or more roles to add to this group, then click *Next*.
+. Click image:cog.png[] and select *Settings*.
+. From the sidebar, navigate to menu:User Access[Groups].
+. Click btn:[Create group].
+. A setup wizard will now appear. Enter a group name and description, then click btn:[Next].
+. Select one or more roles to add to this group, then click btn:[Next].
 
 [NOTE]
 ====
@@ -23,7 +23,7 @@ Any user in this group will have all the permissions prescribed to each role. Se
 ====
 
 [start=7]
-. Select one or more users to add to this group, then click *Next*.
-. Review the details, then click *Submit* to create the group.
+. Select one or more users to add to this group, then click btn:[Next].
+. Review the details, then click btn:[Submit] to create the group.
 
 Users in the group can now access features in {InsightsShort} associated with their assigned permissions.

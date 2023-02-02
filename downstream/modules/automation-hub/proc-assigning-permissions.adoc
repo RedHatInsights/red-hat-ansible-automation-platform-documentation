@@ -12,10 +12,10 @@ You can assign permissions to groups in Automation Hub that enable users to acce
 
 .Procedure
 . Log in to your local Automation Hub.
-. Navigate to *User Access* > *Groups*.
+. Navigate to menu:User Access[Groups].
 . Click on a group name.
-. Select the *Permissions* tab, then click *Edit*.
+. Select the *Permissions* tab, then click btn:[Edit].
 . Click in the field for each permission type and select permissions that appear in the list.
-. Click *Save* when finished assigning permissions.
+. Click btn:[Save] when finished assigning permissions.
 
 The group can now access features in Automation Hub associated the their assigned permissions.
