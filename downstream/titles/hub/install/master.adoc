@@ -4,9 +4,7 @@
 :experimental:
 include::attributes/attributes.adoc[]
 
-= Installing and upgrading {PrivateHubName}
-
-You can install {PrivateHubName} or upgrade to a new version on a Red Hat Enterprise Linux 7 or 8 virtual or physical machine with a valid {PlatformName} subscription.
+You can install Private Automation Hub or upgrade to a new version on a Red Hat Enterprise Linux (RHEL) 8.4 or later, or RHEL 9 or later virtual or physical machine with a valid Red Hat Ansible Automation Platform subscription.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
@@ -22,34 +20,34 @@ Installing a {PrivateHubName} instance requires the following:
 
 h| Subscription | Valid Red Hat {PlatformNameShort}
 
-h| OS | Red Hat Enterprise Linux 7.7 or later 64-bit (x86) or 8.2 or later 64-bit (x86)
+h| OS | RHEL 8.4 or later 64-bit (x86), or RHEL 9.0 or later 64-bit (x86)
 
 h| Ansible | Version 2.9 required
 
-h| RAM | 4 GB minimum
+h| RAM | 8 GB minimum
 
 h| CPUs | 2 minimum
 
-h| Disk | 20 GB dedicated hard disk space
+h| Disk | 60 GB dedicated hard disk space
 
 Dependent on size of collections stored
 
 h| Browser | A currently supported version of Mozilla Firefox or Google Chrome
 
-h| Database | PostgreSQL version 10 |
+h| Database | PostgreSQL version 13 |
 
 |===
 
 [NOTE]
 ====
 You cannot install {PlatformNameShort} and a {PrivateHubName} instance on the same node.
-The `inventory` file can handle the installation of both {PlatformNameShort} and {HubName}. 
+The `inventory` file can handle the installation of both {PlatformNameShort} and {HubName}.
 These instructions are only for the installation of {PlatformNameShort}.
 ====
 
 == Installing online or offline
 
-Choose the {PlatformNameShort} installer you need to install {PrivateHubName} based on your Red Hat Enterprise Linux environment internet connectivity. 
+Choose the {PlatformNameShort} installer you need to install {PrivateHubName} based on your Red Hat Enterprise Linux environment internet connectivity.
 Review the following scenarios and determine which {PlatformNameShort} installer meets your needs.
 
 [NOTE]
@@ -59,7 +57,7 @@ You must have a valid Red Hat customer account to access {PlatformNameShort} ins
 
 .Installing with internet access
 
-Install {PrivateHubName} using the {PlatformNameShort} installer if your Red Hat Enterprise Linux environment is connected to the internet. 
+Install {PrivateHubName} using the {PlatformNameShort} installer if your Red Hat Enterprise Linux environment is connected to the internet.
 Installing with internet access will retrieve the latest required repositories, packages, and dependencies.
 
 . Navigate to link:https://access.redhat.com/downloads/content/480[Download Red Hat Ansible Automation Platform].
@@ -73,8 +71,8 @@ $ tar xvzf ansible-automation-platform-setup-<latest-version>.tar.gz
 
 .Installing without internet access
 
-Install {PrivateHubName} using the {PlatformNameShort} *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. 
-Access to Red Hat Enterprise Linux repositories is still needed. 
+Install {PrivateHubName} using the {PlatformNameShort} *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories.
+Access to Red Hat Enterprise Linux repositories is still needed.
 All other dependencies are included in the tar archive.
 
 . Navigate to link:https://access.redhat.com/downloads/content/480[Download Red Hat Ansible Automation Platform].
@@ -168,7 +166,7 @@ Your {PrivateHubName} is now ready for initial configuration. See the following 
 
 == Upgrading to the latest version
 
-You can upgrade your {PrivateHubName} to the latest version using the {PlatformNameShort} setup bundle installer. 
+You can upgrade your {PrivateHubName} to the latest version using the {PlatformNameShort} setup bundle installer.
 Perform this upgrade using the `inventory` file configured when you installed {PrivateHubName}.
 
 . Navigate to link:https://access.redhat.com/downloads/content/480[Download Red Hat Ansible Automation Platform].
