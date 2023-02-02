@@ -20,20 +20,24 @@ You can view the progress by navigating to menu:Workloads[Pods] and locating the
 Verify that the following operator pods provided by the {PlatformNameShort} Operator installation from {HubName} are running:
 [cols="a,a,a"]
 |===
-| automation-controller-operator-controller-manager | {HubName} | {ControllerName}
+| Operator manager controllers | {ControllerName} |{HubName}
 
-|
+| The operator manager controllers for each of the 3 operators, include the following:
+
+* automation-controller-operator-controller-manager
 * automation-hub-operator-controller-manager
-* Resource-operator-controller-manager
-|
+* resource-operator-controller-manager
+| After deploying {ControllerName}, you will see the addition of these pods:
+
 * controller
 * controller-postgres
-|
-* Api
-* <deployment-name>-ui
-* Content
-* Worker
-* Postgres
+| After deploying {HubName}, you will see the addition of these pods:
+
+* hub-api
+* hub-content
+* hub-postgres
+* hub-redis
+* hub-worker
 
 |===
 
