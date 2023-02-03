@@ -31,4 +31,4 @@ The *Sync status* notification updates to notify you of completion of the Red Ha
 
 .Verification
 
-You can confirm that your collections content has synchronized successfully by selecting *Red Hat Certified* from the collections content drop-down list.
+Select *Red Hat Certified* from the collections content drop-down list to confirm that your collections content has synchronized successfully.

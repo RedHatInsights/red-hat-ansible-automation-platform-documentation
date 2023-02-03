@@ -8,9 +8,10 @@
 == Configuring validated or certified collections with the installer
 
 When you download and run the bundle installer, certified and validated collections are automatically uploaded. 
-Certified colections are uploaded into the `rh-certified` repository, while validated collections are uploaded into the `validated` repository. 
+Certified collections are uploaded into the `rh-certified` repository. 
+Validated collections are uploaded into the `validated` repository. 
 
-This behavior can be configured with two variables:
+You can change to default configuration by using two variables:
 
 [cols="20%,50%",options="header"]
 |====
@@ -40,7 +41,7 @@ If missing both content sets will be uploaded.
 | Ansible | `cloud.azure_roles.resource_group`  | A role to manage Azure Resource Group | Red Hat Ansible
 | Ansible | `cloud.azure_roles.security_group`  | A role to manage Azure Security Group | Red Hat Ansible
 | Ansible | `cloud.azure_roles.virtual_machine`  | A role to manage Azure Virtual Machine | Red Hat Ansible
-| Ansible | `network.base` | A validated content collection to consist base config related implementation that would be utilized by other validated content | Red Hat Ansible
+| Ansible | `network.base` | A validated content collection to configure base config related implementation that would be used by other validated content | Red Hat Ansible
 | Ansible | `network.base` | A validated content collection to configure bgp and provide capabilities to do operational state/healthchecks | Red Hat Ansible
 | Ansible | `network.acls` | A validated content collection to configure acls and provide capabilities to do operational state/healthchecks | Red Hat Ansible
 | Ansible | `network.interfaces` | A validated content collection to configure interfaces and provide capabilities to do operational state/healthchecks | Red Hat Ansible
