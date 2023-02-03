@@ -15,7 +15,7 @@ The content of a `requirements.yml` file may look like the following:
 ====
 ----
 collections:
-  - geerlingguy.java
+  - community.aws
   - kubernetes.core
 ----
 ====
