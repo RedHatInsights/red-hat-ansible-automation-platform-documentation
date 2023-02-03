@@ -105,3 +105,4 @@ NOTE: You must repeat this command to reattach the proper SELinux labels wheneve
 
 .Additional Resources
 * See the link:https://docs.pulpproject.org/en/2.16/user-guide/scaling.html#selinux-requirements[SELinux Requirements on the Pulp Project documentation] for a list of SELinux contexts.
+* See the link:https://docs.pulpproject.org/pulpcore/installation/hardware-requirements.html#filesystem-layout[Filesystem Layout] for a full description of Pulp folders. 
