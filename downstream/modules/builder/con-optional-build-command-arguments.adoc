@@ -10,6 +10,11 @@ $ ansible-builder build -t my_first_ee_image
 ----
 ====
 
+[NOTE]
+====
+If you do not use `-t` with `build`, an image called `ansible-execution-env`` is created and loaded into the local container registry.
+====
+
 If you have multiple definition files, you can specify which one to use by utilizing the `-f` flag:
 
 [[example1]]
