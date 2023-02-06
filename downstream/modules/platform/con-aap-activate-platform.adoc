@@ -1,0 +1,8 @@
+
+[id="con-aap-activate-platform_{context}"]
+
+= Activate {PlatformName}
+
+After you've successfully installed {PlatformName}, you must obtain a subscription manifest to activate it.
+
+To begin, login to the link:https//www.access.redhat.com[Red Hat Customer Portal] using your admin user account and follow the procedures in this section.

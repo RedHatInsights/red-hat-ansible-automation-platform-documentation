@@ -1,0 +1,11 @@
+
+[id="proc-create-subscription-allocation_{context}"]
+
+= Create a subscription allocation
+
+To create a new subscription allocation, do the following:
+
+. Navigate to menu:Subscription Allocations[New Subscription Allocation]
+. Enter a name.
+. Select *Type: Satellite 6.8*
+. Click btn:[Create].

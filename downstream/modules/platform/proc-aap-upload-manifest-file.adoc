@@ -1,0 +1,17 @@
+
+[id="proc-upload-manifest-file_{context}"]
+
+= Upload a manifest file to {PlatformName}
+
+To upload the manifest file to {PlatformName}, do the following:
+
+. Complete steps to generate and download the manifest file
+. Log in to {PlatformName}.
+. If you are not immediately prompted for a manifest file, go to menu:Settings[License].
+. Make sure the *Username* and *Password* fields are empty.
+. Click *Browse* and select the manifest file.
+
+[NOTE]
+====
+If the btn:[BROWSE] button is disabled on the License page, clear the *USERNAME* and *PASSWORD* fields.
+====

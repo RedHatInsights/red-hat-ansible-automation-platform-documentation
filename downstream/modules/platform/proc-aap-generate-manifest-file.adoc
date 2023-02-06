@@ -1,0 +1,10 @@
+
+[id="proc-generate-manifest-file_{context}"]
+
+= Generate a manifest file
+
+To generate and download a manifest file from a subscription allocation, do the following:
+
+. Navigate to menu:Subscription Allocations[New Subscription Allocation]
+. Click the name of the *Subscription Allocation* for which you would like to generate a manifest.
+. Click btn:[Export Manifest] to download the manifest file.

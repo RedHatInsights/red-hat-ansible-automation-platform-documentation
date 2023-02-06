@@ -1,0 +1,13 @@
+
+[id="proc-add-merge-subscriptions_{context}"]
+
+= Add or merge a subscription
+
+To add or merge subscriptions to a subscription allocation, do the following:
+
+. Navigate to menu:Subscription Allocations[New Subscription Allocation]
+. Click on the name of the *Subscription Allocation* to which you would like to add a subscription.
+. Click the *Subscriptions* tab.
+. Click btn:[Add Subscriptions].
+. Add the {PlatformName} Entitlement(s) using the right side controls.
+. Click btn:[Submit].
