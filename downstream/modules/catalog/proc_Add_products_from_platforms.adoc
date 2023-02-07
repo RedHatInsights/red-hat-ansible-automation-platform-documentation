@@ -3,4 +3,4 @@ Procedure
 . Click in the *Filter by Platform* field to view connected platforms.
 . Select a platform. The screen will populate with products from that platform.
 . Check each product to add to the portfolio.
-. Click *Add*.
+. Click btn:[Add].

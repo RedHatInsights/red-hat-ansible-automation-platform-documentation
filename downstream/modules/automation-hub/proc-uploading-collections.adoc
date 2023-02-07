@@ -17,10 +17,10 @@ Format your collection file name as follows: <NAMESPACE-COLLECTION-NAME.tar.gz>
 
 .Procedure
 . Log in to your local Automation Hub
-. Navigate to *My Namespaces* and select a namespace.
-. Click *Upload collection*.
-. Click *Select file* from the *New collection* modal.
+. Navigate to menu:My Namespaces[] and select a namespace.
+. Click btn:[Upload collection].
+. Click btn:[Select file] from the *New collection* modal.
 . Select the collection to upload.
-. Click *Upload*.
+. Click btn:[Upload].
 
 The *My Imports* screen will provide a summary of tests and notify you if the collection uploaded successfully or failed.
