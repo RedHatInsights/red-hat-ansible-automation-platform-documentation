@@ -27,7 +27,7 @@ include::platform/con-sticky-sessions.adoc[leveloffset=+1]
 .Additional resources
 * Refer to link:https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html[Sticky sessions for your Application Load Balancer] for more information about enabling sticky sessions.
 
-include::snippets/external-site-disclaimer.adoc[]
+include::aap-common/external-site-disclaimer.adoc[]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
