@@ -4,7 +4,7 @@
 
 .Databases
 * When using an external database, ensure the `[database]` sections of your inventory file are properly set up.
-* To improve performance, do not place the database server and the automation controller server on the same network.
+* To improve performance, do not colocate the database and the {ControllerName} on the same server.
 
 
 .{HubNameStart}
