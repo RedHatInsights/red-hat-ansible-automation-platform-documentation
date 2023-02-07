@@ -10,5 +10,5 @@ Edit any information about an existing savings plan by clicking on it from the s
 
 .Procedure
 . Navigate to menu:Red Hat Insights[Savings Planner].
-. On the automation savings plan, click image:ellipsis.png[More,10,25] and select *Edit*.
+. On the automation savings plan, click image:ellipsis.png[More,10,25], then click btn:[Edit].
 . Make any changes to the automation plan, then click btn:[Save].

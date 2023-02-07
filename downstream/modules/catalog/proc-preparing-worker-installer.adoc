@@ -6,7 +6,7 @@
 
 
 [role="_abstract"]
-Installing the automation services catalog worker requires adding `host vars` in the {PlatformName} installer used for installation parameters. The 'host_vars' files store parameter information for each host you specify.  Refer to the parameters table below for all available and required parameters.
+Installing the automation services catalog worker requires adding `host vars` in the {PlatformName} installer used for installation parameters. The 'host_vars' files store parameter information for each host you specify. Refer to the parameters table below for all available and required parameters.
 
 .Available `host_vars` parameters
 
@@ -117,8 +117,8 @@ You can verify that the automation services catalog worker installed and connect
 You are a Catalog Administrator and can create portfolios and add products to them.
 
 . Log in to cloud.redhat.com
-. Navigate to *Ansible Automation Platform* -> *Automation Services Catalog*.
-. Click *Platforms*.
+. Navigate to menu:Ansible Automation Platform[Automation Services Catalog].
+. Click btn:[Platforms].
 . Locate the platforms associated with the hosts you created for your `host_vars`.
 . Click on a platform.
 . Verify that *inventory* and *templates* from your automation controller are included.

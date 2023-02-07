@@ -18,4 +18,4 @@ Set an order process that will apply to all products in a portfolio.
 +
 NOTE: Ansible Automation Platform currently only supports one order process per portfolio.
 
-. Click *Save*.
+. Click btn:[Save].
