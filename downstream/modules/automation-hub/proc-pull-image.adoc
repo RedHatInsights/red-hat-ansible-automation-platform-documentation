@@ -18,9 +18,9 @@ You can pull images from the {HubName} container registry to make a copy to your
 
 .Procedure
 
-. Navigate to *Execution Environments*.
+. Navigate to menu:Execution Environments[].
 . Select your container repository.
-. In the *Pull this image* entry, click *Copy to clipboard*.
+. In the *Pull this image* entry, click btn:[Copy to clipboard].
 . Paste and run the command in your terminal.
 
 

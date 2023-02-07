@@ -19,12 +19,12 @@ The Approval Approver is a role that approves or deny requests generated when a 
 
 To create and assign users to an *Approval Approver* group:
 
-. Navigate to *Settings* ➔ *User Access*.
-. Click *Create group*.
-. Enter group *name* and set the *description*, then click *Next*.
+. Navigate to menu:Settings[User Access].
+. Click btn:[Create group].
+. Enter group *name* and set the *description*, then click btn:[Next].
 . In the *Assign roles* modal, check *Approval Approvers*.
-. Click *Next*.
-. In the *Add members* modal, check each user to add to the group. Click *Next* when finished.
-. Review details for the new group and click *Confirm*.
+. Click btn:[Next].
+. In the *Add members* modal, check each user to add to the group. Click btn:[Next] when finished.
+. Review details for the new group and click btn:[Confirm].
 
 You have now created and assigned users to an *Approval Approver* group.

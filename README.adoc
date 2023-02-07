@@ -77,7 +77,7 @@ The first time you contribute:
 
 . Fork the repository.
 
-   From the main page of the link:https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation[GitHub repository], click **Fork** in the upper right corner.
+   From the main page of the link:https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation[GitHub repository], click btn[Fork] in the upper right corner.
 
 . Clone the forked repository locally.
 

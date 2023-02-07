@@ -5,11 +5,11 @@ Creating an approval process designates specific groups required to approve prod
 
 You can create an approval process from the *Approval processes* list view.
 
-. Select *Approval* from the main navigation.
+. Navigate to menu:Approval[].
 . Select the *Approval processes* tab.
-. Click *Create*.
+. Click btn:[Create].
 . Provide an approval process name and description.
 . Select a group from the *Set groups* drop-down menu. You may set multiple groups for approval.
-. Click *Submit* when finished.
+. Click btn:[Submit] when finished.
 
 Implement an approval process against a platform, portfolio, or product.

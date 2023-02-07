@@ -40,6 +40,6 @@ automationhub_enable_unauthenticated_collection_download = True <2>
 Once the installation completes, you can verify that you have view-only access on your private {HubName} by attempting to view content on your {HubName} without logging in.
 
 . Navigate to your private {HubName}.
-. On the login screen, click *View only mode*.
+. On the login screen, click btn:[View only mode].
 
 Verify that you are able to view content on your {HubName}, such as namespaces or collections, without having to log in.

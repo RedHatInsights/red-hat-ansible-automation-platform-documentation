@@ -4,7 +4,7 @@
 
 The {PlatformName} operator installation form allows you to further configure your {HubName} operator Ingress under *Advanced configuration*.
 
-. Click *Advanced Configuration*.
+. Click btn:[Advanced Configuration].
 . Under *Ingress type*, click the drop-down menu and select *Ingress*.
 . Under *Ingress annotations*, enter any annotations to add to the ingress.
 . Under *Ingress TLS secret*, click the drop-down menu and select a secret from the list.
