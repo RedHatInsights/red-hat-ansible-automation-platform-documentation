@@ -21,11 +21,11 @@ You can review your {ExecEnvNameStart} with the {Navigator} text-based user inte
 $ ansible-navigator images
 ----
 +
-image::navigator-images-list.png[]
+image::navigator-images-list.png[List of automation execution environments]
 
 . Type the number of the {ExecEnvNameSing} you want to delve into for more details.
 +
-image::navigator-image-details.png[]
+image::navigator-image-details.png[Automation execution environment details]
 +
 You can review the packages and versions of each installed {ExecEnvNameSing} and the Ansible version any included collections.
 
@@ -41,4 +41,4 @@ $ ansible-navigator images --eei  registry.example.com/example-enterprise-ee:lat
 
 *  Review the {ExecEnvNameSing} output.
 +
-image::navigator-image-details.png[]
+image::navigator-image-details.png[Automation execution environment output]

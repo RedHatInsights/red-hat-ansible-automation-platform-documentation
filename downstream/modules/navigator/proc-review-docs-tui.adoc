@@ -79,7 +79,7 @@ ANSIBLE.UTILS.IP_ADDRESS: Test if something in an IP address
 :open
 ----
 +
-image::navigator-vscode-example.png[]
+image::navigator-vscode-example.png[Documentation example in editor]
 +
 See xref:ref-navigator-general-settings_settings-navigator[Automation content navigator general settings] for details on how to set up your editor.
 
