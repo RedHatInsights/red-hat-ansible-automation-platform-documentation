@@ -13,11 +13,11 @@
 To upload your collection using the Automation Hub user interface:
 
 . Log in to Red Hat Ansible Automation platform.
-. Navigate to *Automation Hub* -> *My Namespaces*.
+. Navigate to menu:Automation Hub[My Namespaces].
 . Click a namespace.
-. Click *Upload collection*.
-. In the *New collection* modal, click *Select file*. Locate the file on your system.
-. Click *Upload*.
+. Click btn:[Upload collection].
+. In the *New collection* modal, click btn:[Select file]. Locate the file on your system.
+. Click btn:[Upload].
 
 To upload a collection using the `ansible-galaxy` client, enter the following command:
 
