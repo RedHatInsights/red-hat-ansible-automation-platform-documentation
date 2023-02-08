@@ -28,7 +28,7 @@ $ ansible-navigator
 $ :collections
 ----
 +
-image::navigator-collection-list.png[]
+image::navigator-collection-list.png[A list of Ansible collections shown in the Automation content navigator]
 
 . Type the number of the collection you want to explore.
 +
@@ -36,7 +36,7 @@ image::navigator-collection-list.png[]
 :4
 ----
 +
-image::navigator-plugin-list.png[]
+image::navigator-plugin-list.png[A collection shown in the Automation content navigator]
 
 . Type the number corresponding to the module you want to delve into.
 +
@@ -91,13 +91,13 @@ ANSIBLE.UTILS.IP_ADDRESS: Test if something in an IP address
 :open
 ----
 +
-image::navigator-vscode-example.png[]
+image::navigator-vscode-example.png[Documentation example shown in the editing tool]
 
 .Verification
 
 *  Browse the collection list.
 +
-image::navigator-collection-list.png[]
+image::navigator-collection-list.png[Collection list]
 
 
 [role="_additional-resources"]
