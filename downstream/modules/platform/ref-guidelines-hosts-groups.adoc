@@ -14,6 +14,11 @@
 * Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` and `[automationcontroller]` hosts to ensure that users can synchronize and install content from {HubNameMain} and {ControllerName} from a different node. 
 Do not use `localhost`.
 
+.{PrivateHubNameStart}
+* Do not install {PrivateHubName} and {ControllerName} on the same node.
+* You can use the same Postgresql (database) instance, but they must use a different (database) name.
+* If you install {PrivateHubName} from an internal address, and have a certificate which only encompasses the external address, it can result in an installation you cannot use as a container registry without certificate issues.
+
 [IMPORTANT]
 ====
 You must separate the installation of {Controllername} and {HubNameMain} because the `[database]` group does not distinguish between the two if both are installed at the same time. 
