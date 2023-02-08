@@ -45,7 +45,7 @@ $ ansible-galaxy install ansible_security.acl_manager
 
 . Run the playbook $ ansible-navigator run --ee false <playbook.yml>:
 +
-image::security-delete-rule.png[]
+image::security-delete-rule.png[Playbook with deleted firewall rule]
 
 .Verification
 
