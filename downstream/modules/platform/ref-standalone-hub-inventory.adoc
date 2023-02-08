@@ -11,7 +11,7 @@ Use this example to populate the inventory file to deploy a standalone instance 
 
 
 [automationhub]
-127.0.0.1 ansible_connection=local
+automationhub.acme.org ansible_connection=local
 
 [all:vars]
 registry_url='registry.redhat.io'
