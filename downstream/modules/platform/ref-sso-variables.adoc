@@ -21,5 +21,10 @@ configuration, then you must use this variable to define the SSO host.
 | *`*_sso_keystore_password`* | A keystore password is required for https enabled SSO.
 
 The default install deploys SSO with `sso_use_https=True`
+| *`sso_redirect_host`* | If `sso_redirect_host` is set, it is used by the application to connect to SSO for authentication. 
+
+This must be reachable from client machines.
 | *`*_sso_use_https`* | If Single Sign On is used
+
+Default = `true`
 |====
