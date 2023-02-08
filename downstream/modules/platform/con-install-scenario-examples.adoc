@@ -9,8 +9,11 @@ Red Hat supports a number of installation scenarios for {PlatformNameShort}. Rev
 [IMPORTANT]
 ====
 * For Red Hat Ansible Automation Platform or automation hub: Add an automation hub host in the [automationhub] group.
-* You cannot install {ControllerName} and {HubName} on the same node.
-* Provide a reachable IP address or fully qualified domain name (FDQN) for the [automationhub] host to ensure users can sync and install content from automation hub from a different node. Do not use 'localhost'.
+* Do not install {ControllerName} and {HubName} on the same node for versions of {PlatformNameShort} in a production or customer environment.
+This can cause contention issues and heavy resource use.
+* Provide a reachable IP address or fully qualified domain name (FDQN) for the [automationhub] and [automationcontroller] hosts to ensure users can sync and install content from automation hub from a different node. 
+Do not use 'localhost'.
 * Do not use special characters for `pg_password`. It can cause the setup to fail.
 * Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
+* The inventory file variables `registry_username` and `registry_password` are only required if a non-bundle installer is used.
 ====
