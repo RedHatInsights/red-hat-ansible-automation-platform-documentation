@@ -73,7 +73,7 @@ Default = `false`.
 
 Default = `false`.
 | *`automationhub_enable_unathenticated_collection_access`* | TBD
-| *`automation_hub_enable_unauthenticated_collection_download*` | TBD
+| *`automation_hub_enable_unauthenticated_collection_download`* | TBD
 | *`automationhub_importer_settings`* | _Optional_ 
 
 Dictionary of setting to pass to galaxy-importer.
@@ -100,7 +100,7 @@ Set to `False` to disable the seeding.
 
 Default = `true`
 | *`automationhub_ui_download_url`* | Set URL to acquire the {HubName} UI for internal testing.
-| *`automationhub_upgrade*` | *Deprecated*
+| *`automationhub_upgrade`* | *Deprecated*
 
 For Ansible Automation Platform 2.2.1 and later, the value of this has been fixed at true.
 
