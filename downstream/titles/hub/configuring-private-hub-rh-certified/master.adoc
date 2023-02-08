@@ -12,7 +12,7 @@ Using {HubNameMain}, your organization can access and curate a unique set of col
 You can also synchronize {HubNameMain} to create a custom list of collections from either {CertifiedCon}, {valid}, or {Galaxy} community content. 
 
 At present, Ansible validated collections are only available in your {PrivateHubName} {Valid} as part of the Platform Installer.
-When you download the bundled installer by default Validated Content is pre-populated into the {PrivateHubName}, if the {PrivateHubName} is enabled as part of the inventory.
+When you download the bundled installer, by default Validated Content is pre-populated into the {PrivateHubName}, if the {PrivateHubName} is enabled as part of the inventory.
 
 These collections can be updated manually by downloading their packages.
 

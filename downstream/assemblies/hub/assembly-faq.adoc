@@ -19,7 +19,7 @@ For more information about getting started with certifying a solution, see https
 
 == How do I get a collection certified?
 
-Refer to our partner website http://www.ansible.com/partners for the Ansible certification policy guide to understand how to certify your collection.
+Refer to link:http://www.ansible.com/partners[Red Hat Partner Connect] for the Ansible certification policy guide to understand how to certify your collection.
 
 == What’s the difference between {Galaxy} and {HubNameMain}?
 
