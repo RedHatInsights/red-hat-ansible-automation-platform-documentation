@@ -58,7 +58,7 @@ Ansible sanity tests are made up of scripts and tools used to perform static cod
 The primary purpose of these tests is to enforce Ansible coding standards and requirements. 
 Ansible collections must be in a specific path, such as the following:
 
-[options="nowrap" subs="=quotes, attributes"]
+[options="nowrap" subs="+quotes, attributes"]
 ----
 {...}/ansible_collections/{namespace}/{collection}/
 ----

@@ -25,7 +25,7 @@ collections:
 . Log in to your {HubNameMain}.
 . Navigate to menu:Repo Management[].
 . Click the *Remotes* tab.
-. In the *Community* remote, click the btn:[More Actions] icon image:images/ellipsis.png[More,5,12] and click btn:[Edit].
+. In the *Community* remote, click the btn:[More Actions] icon image:ellipsis.png[More,5,12] and click btn:[Edit].
 . In the modal, click btn:[Browse] and locate the `requirements.yml` file on your local machine.
 . Click btn:[Save].
 +
