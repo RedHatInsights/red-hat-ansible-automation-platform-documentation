@@ -39,7 +39,7 @@ You can also set `automationhub_backup_collections = false` and the backup/resto
 Default = `true`
 | *`automationhub_collection_seed_repository`* | When the bundle installer is run, by default a new repository is created in {PrivateHubName} named "validated" and the list of the validated collections will be updated.
 
-If 'automationhub_seed_collections' is set to true, this variable enables you to specify the type of content to upload. 
+If `automationhub_seed_collections` is set to true, this variable enables you to specify the type of content to upload. 
 
 Possible values are 'certified' or 'validated'.
 
@@ -138,7 +138,7 @@ Used for installing {HubName} with LDAP.
 Default = `SUBTREE`
 | *`automationhub_ldap_group_type_class`* | _Optional_
 
-Variable which identifies the group type used during group searches within the django framework for LDAP authentication. 
+Variable identifies the group type used during group searches within the django framework for LDAP authentication. 
 Used for installing {HubName} with LDAP.
 
 Default =`django_auth_ldap.config:GroupOfNamesType`
