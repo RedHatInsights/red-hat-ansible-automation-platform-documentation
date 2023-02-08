@@ -37,6 +37,17 @@ Default = `false`.
 You can also set `automationhub_backup_collections = false` and the backup/restore process does not then backup or restore `/var/lib/pulp`.
 
 Default = `true`
+| *`automationhub_collection_seed_repository`* | When the bundle installer is run, by default a new repository is created in {PrivateHubName} named "validated" and the list of the validated collections will be updated.
+
+If 'automationhub_seed_collections' is set to true, this variable enables you to specify the type of content to upload. 
+
+Possible values are 'certified' or 'validated'.
+
+If you do not want to install this content, there are two options:
+
+Set `automationhub_seed_collections` to `false`.
+
+Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to `certified`.
 | *`automationhub_collection_signing_service_key`* | If a collection signing service is enabled, you must provide this variable to ensure collections can be properly signed. 
 
 `/absolute/path/to/key/to/sign`
@@ -61,6 +72,8 @@ Default = `false`.
 | *`automationhub_enable_api_access_log`* | When set to `true`, creates a log file at `/var/log/galaxy_api_access.log` that logs all user actions made to the platform, including their username and IP address.
 
 Default = `false`.
+| *`automationhub_enable_unathenticated_collection_access`* | TBD
+| *`automation_hub_enable_unauthenticated_collection_download*` | TBD
 | *`automationhub_importer_settings`* | _Optional_ 
 
 Dictionary of setting to pass to galaxy-importer.
@@ -86,17 +99,12 @@ Set `automationhub_seed_collections` to `true` and `automationhub_collection_see
 Set to `False` to disable the seeding.
 
 Default = `true`
-|  *`automationhub_collection_seed_repository`* | When the bundle installer is run, by a new repository is created by default in {PrivateHubName} named `validated`` and the list of the validated collections is updated.
+| *`automationhub_ui_download_url`* | Set URL to acquire the {HubName} UI for internal testing.
+| *`automationhub_upgrade*` | *Deprecated*
 
-If `automationhub_seed_collections` is set to `true`, this variable enables you to specify  the type of content to upload.
+For Ansible Automation Platform 2.2.1 and later, the value of this has been fixed at true.
 
-Possible values are `certified` and `validated`.
-
-If you do not want to install this content, there are two options:
-
-Set `automationhub_seed_collections` to `false`.
-
-Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to `certified`.
+{HubNameStart} always updates with the latest packages.
 |====
 
 For {HubNameMain} to connect to LDAP directly; the following variables must be configured. 
@@ -118,11 +126,20 @@ Default = `None`
 
 Search filter for finding group membership.
 
+Variable identifies what objectClass type to use for mapping groups with {HubName} and LDAP. 
+Used for installing {HubName} with LDAP.
+
 Default = `(objectClass=Group)`
 | *`automationhub_ldap_group_search_scope`* | _Optional_
 
+Scope to search for groups in an LDAP tree using the django framework for LDAP authentication. 
+Used for installing {HubName} with LDAP.
+
 Default = `SUBTREE`
 | *`automationhub_ldap_group_type_class`* | _Optional_
+
+Variable which identifies the group type used during group searches within the django framework for LDAP authentication. 
+Used for installing {HubName} with LDAP.
 
 Default =`django_auth_ldap.config:GroupOfNamesType`
 | *`automationhub_ldap_server_uri`* | The URI of the LDAP server. 
@@ -130,6 +147,12 @@ This can be any URI that is supported by your underlying LDAP libraries.
 | *`automationhub_ldap_user_search_base_dn`* | An LDAPSearch object that locates a user in the directory. 
 The filter parameter should contain the placeholder %(user)s for the username. 
 It must return exactly one result for authentication to succeed.
+| *`automationhub_ldap_user-search_scope`* | _Optional_
+
+Scope to search for users in an LDAP tree using django framework for LDAP authentication. 
+Used for installing {HubName} with LDAP.
+
+Default = `SUBTREE
 | *`automationhub_main_url`* | The main {HubNameShort} URL that clients connect to.
 
 For example, \https://<load balancer host>.
