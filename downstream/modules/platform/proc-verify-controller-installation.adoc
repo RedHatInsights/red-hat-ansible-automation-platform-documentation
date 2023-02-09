@@ -11,7 +11,7 @@ Verify that you installed automation controller successfully by logging in with 
 
 [NOTE]
 ====
-The {ControllerName} server is accessible from port 80 (*https://<TOWER_SERVER_NAME>/*) but will redirect to port 443 so 443 needs to be available also.
+The {ControllerName} server is accessible from port 80 (*\https://<CONTROLLER_SERVER_NAME>/*) but redirects to port 443, so port 443 must also be available.
 ====
 
 [IMPORTANT]
