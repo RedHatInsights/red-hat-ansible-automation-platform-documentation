@@ -28,4 +28,4 @@ Automation Hub allows you to discover and utilize new certified automation conte
 * Updated the pulp_container package to 2.14.
 * Upgraded pulpcore to 3.21.x.
 * Fixed problem in which the released date for collections in private automation hub was the same as the released date for that collection and its versions in the console.redhat.com automation hub.
-* Deprecated the pulp_firewalld_zone parameter, replacing it with the automationhub_firewalld_zone parameter
+* Deprecated the pulp_firewalld_zone parameter, replacing it with the automationhub_firewalld_zone parameter.
