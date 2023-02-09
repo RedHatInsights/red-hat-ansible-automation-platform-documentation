@@ -1,0 +1,32 @@
+release-notes/     : Red Hat Ansible Automation Platform Release Notes
+downstream/titles/aap-installation-guide    : Red Hat Ansible Automation Platform Installation Guide
+downstream/titles/aap-operations-guide    : Red Hat Ansible Automation Platform Operations Guide
+downstream/titles/aap-planning-guide    : Red Hat Ansible Automation Platform Planning Guide
+downstream/titles/upgrade    : Red Hat Ansible Automation Platform Upgrade and Migration Guide
+downstream/titles/aap-operator-installation    : Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform
+downstream/titles/central-auth    : Installing and Configuring Central Authentication for the Ansible Automation Platform
+downstream/titles/security-guide    : Red Hat Ansible Security Automation Guide
+downstream/titles/aap-operator-backup    : Red Hat Ansible Automation Platform Operator Backup and Recovery Guide
+downstream/titles/ocp_performance_guide    : Red Hat Ansible Automation Platform Performance Considerations for Operator Based Installations
+downstream/titles/hub/getting-started    : Getting started with automation hub
+downstream/titles/hub/managing-user-access    : Managing user access in Private Automation Hub
+downstream/titles/hub/high-availability    : Deploying a high availability automation hub
+downstream/titles/hub/uploading-internal-collections    : Curating collections using namespaces in Automation Hub
+downstream/titles/hub/publishing-internal-content    : Publishing proprietary content collections in Automation Hub
+downstream/titles/hub/manage-containers    : Managing containers in private automation hub
+downstream/titles/hub/configuring-private-hub-rh-certified    : Managing Red Hat Ansible Content Collections and Ansible Galaxy collections in automation hub
+downstream/titles/hub/uploading-collections    : Uploading content to Red Hat Automation Hub
+downstream/titles/hub/install    : Installing and upgrading Private Automation Hub
+downstream/titles/hub/lifecycle    : Private Automation Hub life cycle
+downstream/titles/builder    : Creating and Consuming Execution Environments
+downstream/titles/navigator-guide    : Early Access Ansible Navigator Creator Guide
+downstream/titles/automation-mesh    : Red Hat Ansible Automation Platform Automation Mesh Guide
+downstream/titles/catalog/getting-started    : Getting started with Automation Services Catalog
+downstream/titles/catalog/support-matrix    : Automation Services Catalog product support matrix
+downstream/titles/catalog/itsm-integration    : Integrating Automation Services Catalog with your IT Service Management (ITSM) systems
+downstream/titles/worker-install    : Installing the automation services catalog worker
+downstream/titles/analytics/automation-savings    : Using the Automation Calculator
+downstream/titles/dev-guide    : Red Hat Ansible Automation Platform Creator Guide
+downstream/titles/analytics/reports    : Viewing reports about your Ansible automation environment
+downstream/titles/analytics/job-explorer    : Evaluating your Ansible Tower job runs using the Job Explorer
+downstream/titles/analytics/automation-savings-planner    : Planning your automation jobs using the automation savings planner
