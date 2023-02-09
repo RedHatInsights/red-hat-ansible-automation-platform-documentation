@@ -21,7 +21,7 @@ Note that, if you are using a Red Hat ansible-builder RPM, the default image bec
 | `EE_BUILDER_IMAGE`
 | Specifies the intermediate builder image used for Python dependency collection and compilation; must contain a matching Python version with EE_BASE_IMAGE and have ansible-builder installed.
 
-If no `EE_BASE_IMAGE` is specified, the default image `quay.io/ansible/ansible-builder:latest` is used.
+If no `EE_BUILDER_IMAGE` is specified, the default image `quay.io/ansible/ansible-builder:latest` is used.
 
 Note that, if you are using a Red Hat ansible-builder RPM, the default image becomes `registry.redhat.io/ansible-automation-platform-23/ansible-builder-rhel8:latest`.
 |===
