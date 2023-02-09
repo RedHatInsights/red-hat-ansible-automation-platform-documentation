@@ -2,7 +2,7 @@
 = Frequently asked questions about {CertifiedCon}
 
 The following is a list of Frequently Asked Questions for the {PlatformName} Certification Program. 
-If you have any questions regarding the items below, please email ansiblepartners@redhat.com.
+If you have any questions regarding the following items, email ansiblepartners@redhat.com.
 
 
 == Why certify Ansible collections?
@@ -32,7 +32,7 @@ A certified collection means that Red Hat and partners have a strategic relation
 
 == How do I request a namespace on {Galaxy}?
 
-Send an email to ansiblepartners@redhat.com after you request a namespace through an {Galaxy} gitHub issue. 
+After you request a namespace through an {Galaxy} GitHub issue, send an email to ansiblepartners@redhat.com 
 You must provide us with the GitHub username that you used to sign up on {Galaxy}, and you must have logged in at least once for the system to validate. 
 When users are added as administrators of the namespace, then additional administrators can be added by the self-serve process.
 
@@ -40,7 +40,7 @@ When users are added as administrators of the namespace, then additional adminis
 
 Collection namespaces must follow python module name convention. 
 This means collections should have short, all lowercase names. 
-Underscores may be used in the collection name if it improves readability.
+You can use underscores in the collection name if it improves readability.
 
 == Are there any recommendations for collection naming?
 
@@ -49,27 +49,27 @@ This way multiple products may have different collections under the company name
 
 == How do I get a namespace on {HubNameMain}?
 
-By default namespaces used on {Galaxy} are also utilized on {HubNameMain} by the Ansible partner team. 
-For any queries and clarifications please contact ansiblepartners@redhat.com.
+By default namespaces used on {Galaxy} are also used on {HubNameMain} by the Ansible partner team. 
+For any queries and clarifications contact ansiblepartners@redhat.com.
 
 == How do I run sanity tests on my collection?
 
 Ansible sanity tests are made up of scripts and tools used to perform static code analysis. 
 The primary purpose of these tests is to enforce Ansible coding standards and requirements. 
-Ansible collections must be in a specific path, such as the following:
+Ansible collections must be in a specific path, such as the following example:
 
 [options="nowrap" subs="+quotes, attributes"]
 ----
 {...}/ansible_collections/{namespace}/{collection}/
 ----
 
-Ensure your collection is in that specific path, and that you have three directories:
+Ensure that your collection is in that specific path, and that you have three directories:
 
 * An empty directory named `ansible_collections`
 * A directory for the namespace
 * A directory for the collection itself
 
-== Does {Galaxy} house the source code for my Collection?
+== Does {Galaxy} house the source code for my collection?
 
 No, {Galaxy} does not house the source for the collections. 
 The actual collection source must be housed outside of {Galaxy}, for example, in GitHub. 

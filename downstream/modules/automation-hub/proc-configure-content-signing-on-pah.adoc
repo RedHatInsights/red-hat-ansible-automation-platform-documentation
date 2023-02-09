@@ -11,7 +11,7 @@ To successfully sign and publish {CertifiedName}, you must configure {PrivateHub
 
 .Procedure
 
-. Create a signing script that only accepts a filename.
+. Create a signing script that accepts only a filename.
 +
 [NOTE]
 ====
@@ -55,7 +55,7 @@ fi
 +
 After you deploy a {PrivateHubName} with signing enabled to your {PlatformNameShort} cluster, new UI additions display when you interact with collections.
 
-. Review the AAP installer inventory file for options that begins with `automationhub_*`.
+. Review the AAP installer inventory file for options that begin with `automationhub_*`.
 +
 [source,highlight=67-68]
 ----

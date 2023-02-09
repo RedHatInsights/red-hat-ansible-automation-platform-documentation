@@ -13,21 +13,19 @@ All {CertifiedName} are included by default in your initial organization synclis
 
 * You have a valid {PlatformNameShort} subscription.
 * You have Organization Administrator permissions for {Console}.
-* Ensure that the following domain names are part of either the firewall or the proxy's allowlist for successful connection and download of collections from {HubName} or Galaxy server:
+* The following domain names are part of either the firewall or the proxy's allowlist for successful connection and download of collections from {HubName} or Galaxy server:
 ** `galaxy.ansible.com`
 ** `cloud.redhat.com`
 ** `{Console}`
 ** `sso.redhat.com`
-* {HubNameMain} resources are stored in Amazon Simple Storage.
-Add the following domain name to the allow list:
+* {HubNameMain} resources are stored in Amazon Simple Storage and the following domain name is in the allow list:
 ** `automation-hub-prd.s3.us-east-2.amazonaws.com`
-* SSL inspection must be disabled either when using self signed certificates or for the Red Hat domains.
+* SSL inspection is disabled either when using self signed certificates or for the Red Hat domains.
 
 .Procedure
 
 . Log in to `{Console}`.
 . Navigate to menu:Automation Hub[Collections].
 . Use the toggle switch on each collection to determine whether to exclude it from your synclist.
-
-When you finish managing collections for your synclist, navigate to menu:Automation Hub[Repo Management] to initiate the remote repository synchronization to your {PrivateHubName}. 
-If your remote repository is already configured, you can manually synchronize Red Hat {CertifiedName} to your {PrivateHubName} to update the collections content that you made available to local users.
+. When you finish managing collections for your synclist, navigate to menu:Automation Hub[Repo Management] to initiate the remote repository synchronization to your {PrivateHubName}. 
+. Optional: If your remote repository is already configured, you can manually synchronize Red Hat {CertifiedName} to your {PrivateHubName} to update the collections content that you made available to local users.

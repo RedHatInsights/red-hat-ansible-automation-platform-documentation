@@ -1,5 +1,5 @@
 [id="assembly-creating-tokens-in-automation-hub"]
-= Configuring {HubNameMain} remote repositories to sync content from Red Hat Certified and {Galaxy} collections
+= Configuring {HubNameMain} remote repositories to sync content
 
 You can configure your {PrivateHubName} to synchronize with {CertifiedName} hosted in your organization repository on `{Console}` or to your choice of collections in {Galaxy}.
 

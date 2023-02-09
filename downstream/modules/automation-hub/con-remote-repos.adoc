@@ -1,6 +1,6 @@
 [id="con-remote-repos"]
 
-= About remote repositories
+= Reasons to configure remote repositories
 
 By configuring remote repositories, you can set your {PrivateHubName} to synchronize Red Hat Certified Collections hosted in your organization's repository on `{Console}` and your choice of collections in {Galaxy}.
 

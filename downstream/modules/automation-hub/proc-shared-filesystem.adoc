@@ -2,7 +2,9 @@
 
 = Setting up the shared filesystem
 
-On each automation hub node, you must:
+You must mount the shared file system on each automation hub node:
+
+.Procedure
 
 . Create the `/var/lib/pulp` directory.
 +

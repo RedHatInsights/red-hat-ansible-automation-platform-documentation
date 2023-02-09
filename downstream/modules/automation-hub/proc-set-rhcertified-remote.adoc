@@ -5,7 +5,7 @@
 
 You can edit the *rh-certified* remote repository to synchronize collections from {HubName} hosted on {Console} to your {PrivateHubName}.
 By default, your {PrivateHubName} `rh-certified` repository includes the URL for the entire group of {CertifiedName}.
-To only use those collections specified by your organization, you must include a unique URL.
+To use only those collections specified by your organization, you must include a unique URL.
 
 .Prerequisites
 
@@ -31,4 +31,4 @@ The *Sync status* notification updates to notify you of completion of the Red Ha
 
 .Verification
 
-Select *Red Hat Certified* from the collections content drop-down list to confirm that your collections content has synchronized successfully.
+* Select *Red Hat Certified* from the collections content drop-down list to confirm that your collections content has synchronized successfully.

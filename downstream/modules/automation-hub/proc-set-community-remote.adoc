@@ -38,4 +38,4 @@ The *Sync status* notification updates to notify you of completion or failure of
 
 .Verification
 
-You can confirm successful synchronization by selecting *Community* from the collections content drop-down list.
+* Select *Community* from the collections content drop-down list to confirm successful synchronization.
