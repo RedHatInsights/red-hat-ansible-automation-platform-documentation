@@ -1,0 +1,24 @@
+:_content-type: CONCEPT
+[id='aap_example_architecture_{context}']
+= Example {PlatformNameShort} architecture
+
+The architecture for this example includes two sites, _Ansible Site 1_ and _Ansible Site 2_ for high availability. Each site consists of the following:
+
+* A three node automation controller cluster with one PostgreSQL database
+* A three node automation hub cluster with one PostgreSQL database
+* Two execution nodes per automation controller cluster
+* Access to console.redhat.com services such as {InsightsShort} and {CatalogName}
+
+To achieve high availability for the PostgreSQL databases, configuration as code along with Git webhooks are used when push or merge events are triggered on a Git repository that configure the specified event on both _Ansible Site 1_ and _Ansible Site 2_.
+
+To ensure logging consistency, a highly available centralized logging environment is installed and used by both {PlatformNameShort} environments.
+
+The example focuses on the deployment of {PlatformNameShort} using automation mesh on Red Hat Enterprise Linux 8.4 x86_64. The key components covered within this example architecture include the following:
+
+* Red Hat Enterprise Linux 8.4
+* {PlatformNameShort}
+* {AutomationMesh}
+* {PrivateHubName}
+
+.Example {PlatformNameShort} architecture
+image::aap-example-architecture.png[Reference architecture for an example Ansible Automation Platform deployment]
