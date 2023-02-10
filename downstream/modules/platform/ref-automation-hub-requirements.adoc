@@ -2,7 +2,8 @@
 
 = {HubNameStart} system requirements
 
-{HubNameStart} allows you to discover and use new certified automation content from Red Hat Ansible and Certified Partners. On {HubNameMain}, you can discover and manage Ansible Collections, which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, and security automation.
+{HubNameStart} enables you to discover and use new certified automation content from Red Hat Ansible and Certified Partners. 
+On {HubNameMain}, you can discover and manage Ansible Collections, which are supported automation content developed by partners and Red Hat for use cases such as cloud automation, network automation, and security automation.
 
 {HubNameStart} has the following system requirements:
 
