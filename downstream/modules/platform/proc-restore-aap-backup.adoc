@@ -15,7 +15,7 @@ $ ./setup.sh -r -e ‘restore_backup_file=/ansible/mybackup/tower-backup-latest.
 <3> `-r` sets the restore database option to `True`
 
 . Log in to your new RHEL 8 Tower 3.8 instance to verify whether the content from your original instance has been restored:
-.. Navigate to *Administration* > *Instance groups*. The recreated instance groups should now contain the *Total Jobs* from your original instance.
+.. Navigate to menu:Administration[Instance groups]. The recreated instance groups should now contain the *Total Jobs* from your original instance.
 .. Using the side navigation panel, check that your content has been imported from your original instance, including Jobs, Templates, Inventories, Credentials, and Users.
 
 You now have a new instance of Ansible Tower with all the Ansible content from your original instance.

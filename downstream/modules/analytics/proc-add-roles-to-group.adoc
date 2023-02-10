@@ -11,10 +11,10 @@ Adding roles to an existing group will grant new permissions to existing users i
 .Procedure
 
 . Log in to cloud.redhat.com
-. Click image:cog.png[] > *Settings*.
-. From the sidebar, navigate to *User Access* > *Groups*.
+. Click image:cog.png[] and select *Settings*.
+. From the sidebar, navigate to menu:User Access[Groups].
 . Click the group you want to add users to.
-. Click *Add role*.
-. Select one or more roles to add to this group, then click *Add to group*.
+. Click btn:[Add role].
+. Select one or more roles to add to this group, then click btn:[Add to group].
 
 The selected roles will now be granted to the users of the group. You can review the roles in a group by checking the Roles tab.

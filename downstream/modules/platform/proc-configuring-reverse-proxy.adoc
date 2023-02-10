@@ -12,7 +12,7 @@ You can support a reverse proxy server configuration by adding `HTTP_X_FORWARDED
 
 .Procedure
 
-. On your {ControllerName}, navigate to *Settings* > *Miscellaneous System*.
+. On your {ControllerName}, navigate to menu:Settings[Miscellaneous System].
 . In the *REMOTE_HOST_HEADERS* field, enter the following values:
 +
 ----
