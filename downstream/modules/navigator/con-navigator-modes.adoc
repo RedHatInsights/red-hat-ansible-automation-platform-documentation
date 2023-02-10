@@ -23,7 +23,7 @@ subcommand help:: Accessible from the subcommand, for example `ansible-navigator
 
 The text-based user interface mode provides enhanced interaction with {ExecEnvName}, collections, playbooks, and inventory. This mode is compatible with integrated development environments (IDE), such as Visual Studio Code.
 
-image::navigator-welcome.png[]
+image::navigator-welcome.png[Text-based user interface mode]
 
 This mode includes a number of helpful user interface options:
 
