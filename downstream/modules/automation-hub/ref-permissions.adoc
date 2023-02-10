@@ -60,7 +60,7 @@ Change collection remote
 
 View collection remote |
 
-Groups with these permissions can configure remote repository under *Collections* > *Repo Management*.
+Groups with these permissions can configure remote repository by navigating to menu:Collections[Repo Management].
 
 h| containers |
 
