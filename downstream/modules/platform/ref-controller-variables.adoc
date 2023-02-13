@@ -91,6 +91,10 @@ Default = 27199.
 for example, if you use shortnames in your inventory, but the node running the installer can only resolve that host using FQDN.
 
 If `routable_hostname` is not set, it should default to `ansible_host`. Then if, and only if `ansible_host` is not set, `inventory_hostname` is used as a last resort.
+| *`supervisor_start_retry_count`* | When specified (no default value exists), it adds `startretries = <value specified>` to the supervisor config file (/etc/supervisord.d/tower.ini).
+
+See link:http://http://supervisord.org/configuration.html#program-x-section-values[`program:x` Section Values] for further explanation about `startretries`.
+
 | *`web_server_ssl_cert`* |  _Optional_ 
 
 `/path/to/webserver.cert`
