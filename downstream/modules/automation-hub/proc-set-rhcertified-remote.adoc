@@ -1,33 +1,34 @@
 // Module included in the following assemblies:
 // obtaining-token/master.adoc
 [id="proc-set-rhcertified-remote"]
-= Configuring the rh-certified remote repository and syncing Red Hat Certified collections.
+= Configuring the rh-certified remote repository and syncing {CertifiedColl}.
 
-You can edit the *rh-certified* remote repository to sync collections from {HubName} hosted on cloud.redhat.com to your local {HubName}.
-By default, your local {HubName} `rh-certified` repository includes the URL for the entire group of Red Hat Certified Collections available on cloud.redhat.com.
+You can edit the *rh-certified* remote repository to synchronize collections from {HubName} hosted on {Console} to your {PrivateHubName}.
+By default, your {PrivateHubName} `rh-certified` repository includes the URL for the entire group of {CertifiedName}.
 To use only those collections specified by your organization, you must include a unique URL.
 
 .Prerequisites
 
-* You have *Modify Ansible repo content* permissions.
+* You have valid *Modify Ansible repo content* permissions.
 See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
-* You have retrieved the Sync URL and API Token from the {HubName} hosted service on cloud.redhat.com.
+* You have retrieved the Sync URL and API Token from the {HubName} hosted service on {Console}.
 
 .Procedure
-. Log in to your local {HubName}.
+
+. Log in to your {PrivateHubName}.
 . Navigate to menu:Repo Management[].
 . Click the *Remotes* tab.
-. In the *rh-certified* remote, click image:more_actions.png[More actions] and click btn:[Edit].
-. In the modal, paste the Sync URL and Token you acquired from cloud.redhat.com.
+. In the *rh-certified* remote repository, click image:ellipsis.png[More,5,12] and click btn:[Edit].
+. In the modal, paste the *Sync URL* and Token you acquired from {Console}.
 . Click btn:[Save].
-
++
 The modal closes and returns you to the *Repo Management* page.
-You can now sync collections between your organization synclist on cloud.redhat.com and your local {HubName}.
-
+You can now synchronize collections between your organization synclist on {Console} and your {PrivateHubName}.
++
 . Click btn:[Sync] to sync collections.
 
-The *Sync status* notification updates to notify you of completion of Red Hat Certified collections sync.
+The *Sync status* notification updates to notify you of completion of the Red Hat Certified Content Collections synchronization.
 
 .Verification
 
-You can confirm that your collections content has synced successfully by selecting *Red Hat Certified* from the collections content drop-down list.
+* Select *Red Hat Certified* from the collections content drop-down list to confirm that your collections content has synchronized successfully.

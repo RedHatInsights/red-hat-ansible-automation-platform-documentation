@@ -11,11 +11,11 @@ To successfully sign and publish {CertifiedName}, you must configure {PrivateHub
 
 .Procedure
 
-. Create a signing script that only accepts a filename.
+. Create a signing script that accepts only a filename.
 +
 [NOTE]
 ====
-This script will act as the signing service and must generate an ascii-armored detached `gpg` signature for that file using the key specified through the `PULP_SIGNING_KEY_FINGERPRINT` environment variable.
+This script acts as the signing service and must generate an ascii-armored detached `gpg` signature for that file using the key specified through the `PULP_SIGNING_KEY_FINGERPRINT` environment variable.
 ====
 +
 The script then prints out a JSON structure with the following format.
@@ -55,7 +55,7 @@ fi
 +
 After you deploy a {PrivateHubName} with signing enabled to your {PlatformNameShort} cluster, new UI additions display when you interact with collections.
 
-. Review the AAP installer inventory file for options that begins with `automationhub_*`.
+. Review the AAP installer inventory file for options that begin with `automationhub_*`.
 +
 [source,highlight=67-68]
 ----

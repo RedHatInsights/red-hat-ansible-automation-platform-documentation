@@ -1,3 +1,4 @@
+
 :imagesdir: images
 = Managing Red Hat Ansible Content Collections and Ansible Galaxy collections in automation hub
 :numbered:
@@ -5,11 +6,15 @@
 
 include::attributes/attributes.adoc[]
 
-You can sync {HubName} to use the Red Hat Certified Collections available through your {PlatformNameShort} subscription or community collections available through {Galaxy}.
+{CertifiedColl} is included in your subscription to {PlatformName}. {CertifiedColl} inclues two types of content: {CertifiedName} and {Valid}. 
+Using {HubNameMain}, you can access and curate a unique set of collections from all forms of Ansible content. 
 
-Your organization can access and curate into a unique set of collections from all Red Hat Certified content in the {HubName} service hosted on console.redhat.com.
+You can also synchronize {HubNameMain} to create a custom list of collections from {CertifiedCon}, {Valid}, or {Galaxy} community content. 
 
-You can also configure private {HubName} for signing and publishing Ansible content collections tailored to meet your organization's unique needs.
+At present, Ansible validated collections are only available in your {PrivateHubName} {Valid} as part of the Platform Installer.
+When you download {PlatformName} with the bundled installer, validated content is pre-populated into the {PrivateHubName} by default, but only if you enable the {PrivateHubName} as part of the inventory.
+
+You can update these collections manually by downloading their packages.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
@@ -17,17 +22,23 @@ include::hub/assembly-synclists.adoc[leveloffset=+1]
 
 include::hub/assembly-syncing-to-cloud-repo.adoc[leveloffset=+1]
 
+include::hub/assembly-private-automation-hub.adoc[leveloffset=+1]
+
 include::hub/assembly-collections-and-content-signing-in-pah.adoc[leveloffset=+1]
+
+include::hub/assembly-faq.adoc[leveloffset=+1]
+
+include::hub/assembly-validated-content.adoc[leveloffset=+1]
 
 == Conclusion
 
 When you complete all of the previous procedures, you will have:
 
-* created a synclist for Red Hat Certified collections content.
-* synced that content to your local {HubName}.
+* created a synclist for {CertifiedCon} content.
+* synchronized that content to your {PrivateHubName}.
 * designated community collections from {Galaxy} to distribute to your users.
 * configured content signing on {PrivateHubName}.
 * signed and approved collections for your organization's specific needs.
 * configured Ansible-Galaxy CLI to verify collections before signing them.
 
-Users can now view and download collections content from your local {HubName}.
+Users can now view and download collections content from your {PrivateHubName}.

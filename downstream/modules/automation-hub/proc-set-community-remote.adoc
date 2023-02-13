@@ -3,40 +3,39 @@
 [id="proc-set-community-remote"]
 = Configuring the community remote repository and syncing {Galaxy} collections
 
-You can edit the *community* remote repository to sync chosen collections from {Galaxy} to your local {HubName}.
-By default, your local {HubName} `community` repository directs to `https://galaxy.ansible.com/api/`.
+You can edit the *community* remote repository to synchronize chosen collections from {Galaxy} to your {PrivateHubName}.
+By default, your {PrivateHubName} community repository directs to `galaxy.ansible.com/api/`.
 
 .Prerequisites
 
 * You have *Modify Ansible repo content* permissions.
 See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
-* You have a `requirements.yml` file that identifies those collections to sync from {Galaxy}.
-See example below.
+* You have a `requirements.yml` file that identifies those collections to synchronize from {Galaxy} as in the following example:
 
 .Requirements.yml example
 -----
 collections:
   # Install a collection from Ansible Galaxy.
-  - name: geerlingguy.php_roles
-    version: 0.9.3
+  - name: community.aws
+    version: 5.2.0
     source: https://galaxy.ansible.com
 -----
 
 .Procedure
-. Log in to your local {HubName}.
+. Log in to your {HubNameMain}.
 . Navigate to menu:Repo Management[].
 . Click the *Remotes* tab.
-. In the *community* remote, click the btn:[More Actions] icon image:more_actions.png[More, 10,25] and click btn:[Edit].
+. In the *Community* remote, click the btn:[More Actions] icon image:ellipsis.png[More,5,12] and click btn:[Edit].
 . In the modal, click btn:[Browse] and locate the `requirements.yml` file on your local machine.
 . Click btn:[Save].
-
++
 The modal closes and returns you to the *Repo Management* page.
-You can now sync collections identified in your `requirements.yml` file from {Galaxy} to your local {HubName}.
+You can now synchronize collections identified in your `requirements.yml` file from {Galaxy} to your {PrivateHubName}.
 
-. Click btn:[Sync] to sync collections from {Galaxy} and {HubName}.
+. Click btn:[Sync] to sync collections from {Galaxy} and {HubNameMain}.
 
-The *Sync status* notification updates to notify you of completion or failure of {Galaxy} collections sync to your {HubName}.
+The *Sync status* notification updates to notify you of completion or failure of {Galaxy} collections synchronization to your {HubNameMain}.
 
 .Verification
 
-You can confirm successful sync by selecting *Community* from the collections content drop-down list.
+* Select *Community* from the collections content drop-down list to confirm successful synchronization.
