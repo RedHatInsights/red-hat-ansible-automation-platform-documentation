@@ -20,7 +20,7 @@ The following lab environment demonstrates what an Ansible security automation i
 
 Keep in mind that a real world setup will feature other vendors and technologies.
 
-image::security-ids-sample-demo.png[]
+image::security-ids-sample-demo.png[Sample Ansible security automation integration]
 
 [role="_additional-resources"]
 .Additional resources

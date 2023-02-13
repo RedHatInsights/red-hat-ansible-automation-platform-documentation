@@ -46,7 +46,7 @@ $ ansible-galaxy install ansible_security.acl_manager
 
 . Run the playbook ``$ ansible-navigator run --ee false <playbook.yml>``.
 +
-image::security-create-rule.png[]
+image::security-create-rule.png[Playbook with new firewall rule]
 
 .Verification
 
