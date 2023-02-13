@@ -162,8 +162,8 @@ Once the installation completes, you can verify your Private Automation Hub has 
 
 Your Private Automation Hub is now ready for initial configuration. See the following administration guides for more:
 
-* https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/managing_user_access_in_private_automation_hub/index[Managing user access in Private Automation Hub]
-* https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/managing_red_hat_certified_and_ansible_galaxy_collections_in_automation_hub/index[Managing Red Hat Certified and Ansible Galaxy collections in Automation Hub]
+* https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/managing_user_access_in_private_automation_hub/index[Managing user access in Private Automation Hub]
+* https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/managing_red_hat_certified_and_ansible_galaxy_collections_in_automation_hub/index[Managing Red Hat Certified and Ansible Galaxy collections in Automation Hub]
 
 == Upgrading to the latest version
 
