@@ -1,21 +1,21 @@
 // Module included in the following assemblies:
 // obtaining-token/master.adoc
 [id="proc-create-api-token"]
-= Retrieving your Red Hat Certified Collections Sync URL and API token.
+= Retrieving the Sync URL and API token for your Red Hat Certified Collection
 
-You can sync Red Hat certified collections curated by your organization from console.redhat.com to your local {HubName}.
+You can synchronize {CertifiedName} curated by your organization from `{Console}` to your {PrivateHubName}.
 
 .Prerequisites
 
-* You have Organization Administrator permissions for console.redhat.com.
+* You have organization administrator permissions to create the synclist on {Console}.
 
 .Procedure
 
-. Log in to console.redhat.com as an Organization Administrator.
+. Log in to `{Console}` as an organization administrator.
 . Navigate to menu:Automation Hub[Repo Management].
-. Locate the *Sync URL* and click the btn:[Copy to clipboard] icon (image:copy.png[Copy,10,25]). 
-Paste the *Sync URL* in a file to use when configuring the rh-certified remote.
-. Click the btn:[More actions] icon (image:more_actions.png[More,10,25]) and click btn:[Get token].
+. Locate the *Sync URL* and click the btn:[Copy to clipboard] icon (image:copy.png[Copy,15,20]). 
+Paste the *Sync URL* in a file to use when configuring the *rh-certified* remote.
+. Click the btn:[More actions] icon image:ellipsis.png[More,5,12] and click btn:[Get token].
 . On the *Token management* page, click btn:[Load token].
 . Click btn:[Copy to clipboard] to copy the API token.
 . Paste the API token into a file and store in a secure location.
