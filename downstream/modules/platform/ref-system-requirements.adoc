@@ -121,7 +121,12 @@ Optional. Delete if not used.
 * To authorize the use of {ControllerName}, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription].
 
 
-.Automation hub
+== Automation hub
+
+{HubNameStart} enables you to discover and use new certified automation content from Red Hat Ansible and Certified Partners. 
+On {HubNameMain}, you can discover and manage Ansible Collections, which are supported automation content developed by Red Hat and its partners for use cases such as cloud automation, network automation, and security automation.
+
+Automation hub has the following system requirements:
 
 [cols="a,a,a"]
 |===
