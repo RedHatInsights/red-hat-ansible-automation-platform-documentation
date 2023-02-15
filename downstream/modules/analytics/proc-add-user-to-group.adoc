@@ -11,7 +11,7 @@ You can add users to groups when creating a group or by manually adding users to
 .Procedure
 
 . Log in to cloud.redhat.com
-. Click image:cog.png[Settings], then click:[Settings].
+. Click image:cog.png[], then click:[Settings].
 . From the sidebar, navigate to menu:User Access[Groups].
 . Click the group you want to add users to.
 . Navigate to the Members tab, then click btn:[Add member].

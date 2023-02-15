@@ -19,11 +19,11 @@ The *Catalog Administrator* can add new users to existing groups. Once added, us
 
 You can add users to a group in the *Groups* view in *User Access*.
 
-. Navigate to *Settings* ➔ *User Access*.
-. Click *Groups*.
+. Navigate to menu:Settings[User Access].
+. Click btn:[Groups].
 . Select a group from the list.
-. Click the *Members* tab, then click *Add Member*.
+. Click the *Members* tab, then click btn:[Add Member].
 . Check the users that appear in the modal that you wish to add to the group.
-. Click *Add to group*.
+. Click btn:[Add to group].
 
 A message will appear notifying you if the member was added successfully.
