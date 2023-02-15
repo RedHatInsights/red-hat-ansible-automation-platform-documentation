@@ -12,7 +12,7 @@ When you delete a user account, the user's name and email are permanently remove
 .Procedure
 . Log in to {ControllerName}.
 . Expand the *Access* menu.
-. Click *Users* to display a list of the current users.
-. Select the checkbox for the user that you want to remove and click *Delete*.
-. Click *Delete* in the warning message to permanently delete the user.
+. Click btn:[Users] to display a list of the current users.
+. Select the checkbox for the user that you want to remove and click btn:[Delete].
+. Click btn:[Delete] in the warning message to permanently delete the user.
 

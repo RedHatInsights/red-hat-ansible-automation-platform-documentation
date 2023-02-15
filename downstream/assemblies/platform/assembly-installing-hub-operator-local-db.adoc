@@ -37,11 +37,11 @@ You can use these instructions to install the {HubName} operator on {OCP} and in
 . Choose your *Installation Mode*.
 . Choose a *Namespace* from the drop-down menu.
 . Select an *Approval Strategy*
-. Click *Install*
+. Click btn:[Install].
 
 The installation process will begin. When installation is complete a modal will appear notifying you the operator is installed in the specified namespace.
 
-* Click *View Operator* to view your newly installed operator.
+* Click btn:[View Operator] to view your newly installed operator.
 
 == Instantiating an instance of {HubName}
 
@@ -54,16 +54,16 @@ The installation process will begin. When installation is complete a modal will 
 
 . Navigate to menu:Operators[Installed Operators].
 . Locate the {HubName} operator and click on it.
-. Click *Create Instance*.
+. Click btn:[Create Instance].
 . Select *Form View* to configure the operator instance.
-. Click *Advanced Configuration* to enter additional resource information. Use this option to supply *Admin password secret*, *Database configuration secret* and other parameters.
+. Click btn:[Advanced Configuration] to enter additional resource information. Use this option to supply *Admin password secret*, *Database configuration secret* and other parameters.
 . Select *Route* from the *Ingress Type* drop-down menu.
 .. Input the *Route DNS host* to specify the DNS to use to point to the instance.
 .. Select a *Route TLS termination mechanism* option from the drop-down menu.
 .. Select a *Route TLS credential secret* to choose a secret where the TLS related credentials are stored.
 . Select a *Storage Type* from the options in the drop-down menu.
 .. Choose a *Storage Secret* based on the storage type you are using.
-. Click *Create*.
+. Click btn:[Create].
 
 {OCP} will create the pods. This may take a few minutes.
 

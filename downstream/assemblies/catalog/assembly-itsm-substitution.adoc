@@ -61,7 +61,7 @@ Create a survey for the `product_order.yml` job template that includes:
 
 . Enter *What is your favorite color?* in the *Prompt* field.
 . Enter *favorite_color* in the *Answer Variable Name* field.
-. Click *UPDATE*.
+. Click btn:[UPDATE].
 
 
 Enable the *product order* survey on Automation Services Catalog to use the 'favorite_color' value passed from `before_order.yml`.
@@ -101,7 +101,7 @@ In the survey attached to your `after_order.yml` job template:
 
 . Type "Enter your after data" in the *Prompt* field.
 . Enter *after_data* in the *Answer Variable Name* field.
-. Click *UPDATE*.
+. Click btn:[UPDATE].
 
 Enable the *after order* survey on Automation Services Catalog to use the 'after_data' value passed from `after_order.yml`.
 

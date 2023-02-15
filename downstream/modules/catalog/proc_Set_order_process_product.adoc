@@ -18,4 +18,4 @@ Set an order process that will apply to a single product.
 +
 NOTE: Ansible Automation Platform currently only supports one order process per product provision.
 
-. Click *Save*.
+. Click btn:[Save].
