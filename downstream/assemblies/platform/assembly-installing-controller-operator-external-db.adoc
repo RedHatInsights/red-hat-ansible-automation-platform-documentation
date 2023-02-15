@@ -27,12 +27,12 @@ You can use these instructions to install the {ControllerName} operator on {OCP}
 
 include::platform/proc-install-aap-operator.adoc[leveloffset=+1]
 
-With the {PlatformName} operator installed, locate the *Automation controller* entry and click *Create instance*.
+With the {PlatformName} operator installed, locate the *Automation controller* entry and click btn:[Create instance].
 
 include::platform/proc-controller-route-options.adoc[leveloffset=+2]
 include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
 
-Once you have configured your {ControllerName} operator, click *Create* at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
+Once you have configured your {ControllerName} operator, click btn:[Create] at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
 
 * View progress by navigating to *Workloads* -> *Pods* and locating the newly created instance.
 

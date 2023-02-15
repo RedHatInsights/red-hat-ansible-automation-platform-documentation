@@ -5,16 +5,16 @@ To add an {TowerName}source:
 
 . Click menu:Settings.
 . Select *Sources*
-. Click *Add source*.
-. Enter the source *Name* and click *Next*.
+. Click btn:[Add source].
+. Enter the source *Name* and click btn:[Next].
 . Select *Catalog* from the available applications.
 . Select *Ansible Tower* as the *source type*.
 . Enter *user name* and *Secret Key* credentials.
 . Provide the {TowerName} endpoint *URL*
 . (Optional) Toggle the switch to verify the endpoint SSL certificate.
-.. Enter the  SSL certificate in the *Certificate Authority* field.
-. Click *Next*.
+.. Enter the SSL certificate in the *Certificate Authority* field.
+. Click btn:[Next].
 . Review your {TowerName} source details.
-. Click *Finish* to add your source.
+. Click btn:[Finish] to add your source.
 
 After connecting your Ansible Tower instance, navigate back to {ProductNameShort} to review templates available on that platform, and add those products to your portfolios.

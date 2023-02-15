@@ -55,7 +55,7 @@ A valid Red Hat customer account is required to access Ansible Automation Platfo
 Install Private Automation Hub using the Ansible Automation Platform installer if your Red Hat Enterprise Linux environment is connected to the internet. Installing with internet access will retrieve the latest required repositories, packages, and dependencies.
 
 . Navigate to https://access.redhat.com/downloads/content/480
-. Click *Download Now* for the *Ansible Automation Platform <latest-version> Setup*.
+. Click btn:[Download Now] for the *Ansible Automation Platform <latest-version> Setup*.
 . Extract the files:
 +
 -----
@@ -68,7 +68,7 @@ $ tar xvzf ansible-automation-platform-setup-<latest-version>.tar.gz
 Install Private Automation Hub using the Ansible Automation Platform *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. Access to Red Hat Enterprise Linux repositories is still needed. All other dependencies are included in the tar archive.
 
 . Navigate to https://access.redhat.com/downloads/content/480
-. Click *Download Now* for the *Ansible Automation Platform <latest-version> Setup Bundle*.
+. Click btn:[Download Now] for the *Ansible Automation Platform <latest-version> Setup Bundle*.
 . Extract the files:
 +
 -----
@@ -79,7 +79,7 @@ $ tar xvzf ansible-automation-platform-setup-bundle-<latest-version>.tar.gz
 
 Edit the `inventory` file to specify an installation of Automation Hub, and update required parameters.
 
-. Navigate to the installer
+. Navigate to the installer.
 .. [bundled installer]
 +
 -----
@@ -157,7 +157,7 @@ The installation will begin.
 
 Once the installation completes, you can verify your Private Automation Hub has been intalled successfully by logging in with the admin credentials you inserted into the `inventory` file.
 
-. Navigate to your Private Automation Hub
+. Navigate to your Private Automation Hub.
 . Log in with the Admin credentials you set in the `inventory` file.
 
 Your Private Automation Hub is now ready for initial configuration. See the following administration guides for more:
@@ -170,7 +170,7 @@ Your Private Automation Hub is now ready for initial configuration. See the foll
 You can upgrade your Private Automation Hub to the latest version using the Ansible Automation Platform setup bundle installer. Perform this upgrade using the `inventory` file configured when you installed Private Automation Hub.
 
 . Navigate to https://access.redhat.com/downloads/content/480
-. Click *Download Now* for the *Ansible Automation Platform <latest-version> Setup Bundle*.
+. Click btn:[Download Now] for the *Ansible Automation Platform <latest-version> Setup Bundle*.
 . Extract the files:
 +
 -----
@@ -189,5 +189,5 @@ You can verify a successful upgrade to your Private Automation Hub by reviewing 
 
 . Log in to your Private Automation Hub.
 . Click the *?* icon in the top navigation bar.
-. Click *About*.
+. Click btn:[About].
 . Verify that the *server version* matches the version you upgraded to.

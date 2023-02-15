@@ -13,9 +13,9 @@ As a catalog administrator, create order processes to allow you to execute your 
 
 .Procedure
 
-. Select *Order Processes* from the main navigation.
+. Navigate to menu:Order Processes[].
 
-. Click *Create*.
+. Click btn:[Create].
 
 . Provide an order process name and description.
 
@@ -24,4 +24,4 @@ As a catalog administrator, create order processes to allow you to execute your 
 +
 NOTE: The drop-down menus will display playbooks pulled from your Ansible Tower source. Only one Before and After action is supported for each order process.
 
-. Review the new Order Process details, then click *Create*.
+. Review the new Order Process details, then click btn:[Create].
