@@ -43,5 +43,5 @@ Verify that the following operator pods provided by the {PlatformNameShort} Oper
 
 [NOTE]
 ====
-A missing pod can indicate the need for a pull secret. Pull secrets are required for protected or private image registries. See link:https://docs.openshift.com/container-platform/4.11/openshift_images/managing_images/using-image-pull-secrets.html[Using image pull secrets] for more information.
+A missing pod can indicate the need for a pull secret. Pull secrets are required for protected or private image registries. See link:https://docs.openshift.com/container-platform/4.11/openshift_images/managing_images/using-image-pull-secrets.html[Using image pull secrets] for more information. You can diagnose this issue further by running `oc describe pod <pod-name>` to see if there is an ImagePullBackOff error on that pod.
 ====
