@@ -182,7 +182,7 @@ For example, a playbook run every hour (24 times a day) across 250, hosts, with 
 {PlatformName} uses PostgreSQL 13.
 
 * PostgreSQL user passwords are hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
-* To determine if your {ControllerName} instance has access to the database, you can do so with the command, ``awx-manage check_db``.
+* To determine if your {ControllerName} instance has access to the database, you can do so with the command, `awx-manage check_db`.
 
 
 .PostgreSQL Configurations
