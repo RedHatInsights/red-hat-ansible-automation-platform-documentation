@@ -26,6 +26,7 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Resolved issues where the Controller user interface was not accessible, when automation controller was installed through Operator on OpenShift Core Platform 4.10
 * Fixed an issue that caused the upgrade from Ansible Automation Platform 1.2 to 2.1 to fail, when the execution environment was transferred to automation hub
 * Fixed an issue so that a standalone installation of private automation hub can now transfer the execution environments to the hub
+* Resolved intermittent `500 internal server error` while pushing the execution environments to automation hub that prevents images from being pushed to the hub
 * Fixed an issue when the variable `sslmode` was not configured correctly during automation hub installation
 * Running the ``./setup.sh -b` command from the installer directory no longer fails to load group variables
 * Fixed an issue where the SELinux context was not being configured correctly on subsequent installations
@@ -43,7 +44,7 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Added support for `ansible_host` in the installer inventory for automation hub
 * Fixed an issue where a few commands were missing on initializing the container
 * Fixed an issue where the TTL controller caused the jobs to run repeatedly
-* Resolved intermittent `500 internal server error` while pulling the execution environments from private automation hub
+* Resolved intermittent `500 internal server error` while pulling and pushing the execution environments from private automation hub
 * Fixed an issue so that remotes configured with proxy authentication can be edited without re-entering the proxy password
 * Updated the proxy password from text type to password type to make the password more secure
 * Updated the synchronization that is used by authenticated proxy to avoid authentication failures
@@ -53,4 +54,5 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Added import result and filenames to the audit log
 * Updated the group categories such as *Namespaces*, *Collections*, *Users*, *Groups*, *Remotes*, and *Containers* in the translatable strings
 * Updated the *Filter by repository* dropdown field in the translatable strings
-* Updated the *Namespaces* label in the translatable strings.
+* Updated the *Namespaces* label in the translatable strings
+* Fixed an issue where artifacts were removed from the entire repository when reclaim space was triggered with image removal

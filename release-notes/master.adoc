@@ -115,8 +115,6 @@ include::topics/hub-42.adoc[leveloffset=+3]
 include::topics/catalog-11-2020.adoc[leveloffset=+3]
 
 
-
-
 [[anchor-oct-2020-release]]
 == October 2020 release
 
