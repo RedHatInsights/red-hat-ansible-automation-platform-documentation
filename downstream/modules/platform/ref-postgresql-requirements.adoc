@@ -5,8 +5,6 @@
 {PlatformName} uses PostgreSQL 13.
 
 * PostgreSQL user passwords are hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
-* Because {ControllerName} and {HubName} use a Software Collections version of PostgreSQL in 3.8, you must enable the `rh-postgresql10` scl to access the database.
-Administrators can use the `awx-manage dbshell` command, which automatically enables the PostgreSQL SCL.
 * To determine if your {ControllerName} instance has access to the database, you can do so with the command, `awx-manage check_db`.
 
 
