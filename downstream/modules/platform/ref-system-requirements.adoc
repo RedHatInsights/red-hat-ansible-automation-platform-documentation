@@ -177,13 +177,12 @@ For example, a playbook run every hour (24 times a day) across 250, hosts, with 
 * A larger number of hosts can of course be addressed, though if the fork number is less than the total host count, more passes across the hosts are required. These RAM limitations are avoided when using rolling updates or when using the provisioning callback system built into {ControllerName}, where each system requesting configuration enters a queue and is processed as quickly as possible; or in cases where {ControllerName} is producing or deploying images such as AMIs. All of these are great approaches to managing larger environments. For further questions, please contact Ansible support via the Red Hat Customer portal at https://access.redhat.com/.
 * The requirements for systems managed by {PlatformNameShort} are the same as for Ansible. See link:https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html[Getting Started] in the Ansible _User Guide_.
 
-.Notable PostgreSQL changes
+.PostgreSQL requirements
 
 {PlatformName} uses PostgreSQL 13.
 
-* PostgreSQL user passwords will now be hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
-* Since {ControllerName} and {HubName} are using a Software Collections version of PostgreSQL in 3.8, the `rh-postgresql10` scl must be enabled in order to access the database.  Administrators can use the ``awx-manage dbshell`` command, which will automatically enable the PostgreSQL SCL.
-* If you just need to determine if your {ControllerName} instance has access to the database, you can do so with the command, ``awx-manage check_db``.
+* PostgreSQL user passwords are hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
+* To determine if your {ControllerName} instance has access to the database, you can do so with the command, ``awx-manage check_db``.
 
 
 .PostgreSQL Configurations
