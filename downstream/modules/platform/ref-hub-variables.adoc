@@ -228,7 +228,7 @@ It must return exactly one result for authentication to succeed.
 Scope to search for users in an LDAP tree using django framework for LDAP authentication. 
 Used for installing {HubName} with LDAP.
 
-Default = `SUBTREE
+Default = `SUBTREE`
 |====
 
 
