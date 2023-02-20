@@ -1,10 +1,47 @@
 [id="proc-hub-ingress-options_{context}"]
 
-= Configuring the Ingress type for your {ControllerName} operator
+= Configuring the Ingress type for your {HubName} operator
 
-The {PlatformName} operator installation form allows you to further configure your {ControllerName} operator Ingress under *Advanced configuration*.
+The {PlatformName} operator installation form allows you to further configure your {HubName} operator Ingress under *Advanced configuration*.
 
-. Click btn:[Advanced Configuration].
+.Procedure
+
+. Click *Advanced Configuration*.
 . Under *Ingress type*, click the drop-down menu and select *Ingress*.
 . Under *Ingress annotations*, enter any annotations to add to the ingress.
 . Under *Ingress TLS secret*, click the drop-down menu and select a secret from the list.
+
+After you have configured your {HubName} operator, click *Create* at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
+
+You can view the progress by navigating to menu:Workloads[Pods] and locating the newly created instance.
+
+.Verification
+
+Verify that the following operator pods provided by the {PlatformNameShort} Operator installation from {HubName} are running:
+[cols="a,a,a"]
+|===
+| Operator manager controllers | {ControllerName} |{HubName}
+
+| The operator manager controllers for each of the 3 operators, include the following:
+
+* automation-controller-operator-controller-manager
+* automation-hub-operator-controller-manager
+* resource-operator-controller-manager
+| After deploying {ControllerName}, you will see the addition of these pods:
+
+* controller
+* controller-postgres
+| After deploying {HubName}, you will see the addition of these pods:
+
+* hub-api
+* hub-content
+* hub-postgres
+* hub-redis
+* hub-worker
+
+|===
+
+[NOTE]
+====
+A missing pod can indicate the need for a pull secret. Pull secrets are required for protected or private image registries. See link:https://docs.openshift.com/container-platform/4.11/openshift_images/managing_images/using-image-pull-secrets.html[Using image pull secrets] for more information. You can diagnose this issue further by running `oc describe pod <pod-name>` to see if there is an ImagePullBackOff error on that pod.
+====

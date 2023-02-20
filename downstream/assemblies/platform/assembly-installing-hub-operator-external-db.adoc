@@ -29,16 +29,7 @@ With the {PlatformName} operator installed, locate the *Automation hub* entry an
 
 include::platform/proc-hub-route-options.adoc[leveloffset=+2]
 include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
-
-Once you have configured your {HubName} operator, click btn:[Create] at the bottom of the form view. {OCP} will now create the pods. This may take a few minutes.
-
-* View progress by navigating to *Workloads* -> *Pods* and locating the newly created instance.
-
 include::platform/proc-access-hub-operator-ui.adoc[leveloffset=+1]
-
-
-
-
 
 [role="_additional-resources"]
 == Additional resources
