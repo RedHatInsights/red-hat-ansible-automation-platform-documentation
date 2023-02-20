@@ -37,24 +37,23 @@ Default = `false`.
 You can also set `automationhub_backup_collections = false` and the backup/restore process does not then backup or restore `/var/lib/pulp`.
 
 Default = `true`
-| *`automationhub_collection_seed_repository`* | When the bundle installer is run, by default a new repository is created in {PrivateHubName} named "validated" and the list of the validated collections will be updated.
-
-If `automationhub_seed_collections` is set to true, this variable enables you to specify the type of content to upload. 
+| *`automationhub_collection_seed_repository`* a| When the bundle installer is run, validated content is uploaded to the `validated` repository, and certified content is uploaded to the `rh-certified` repository.
 
 By default, both certified and validated content are uploaded. 
-If you only want one content type, use this variable.
 
-Possible values are 'certified' or 'validated'.
+Possible values of this variable are 'certified' or 'validated'.
 
-If you do not want to install this content, there are two options:
+If you do not want to install one type of content, there are two options:
 
-Set `automationhub_seed_collections` to `false`.
+* Set `automationhub_seed_collections` to `false`, or
 
-Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to `certified`.
+* Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to the type of content you do want to include.
+
+Default = `true`.
 | *`automationhub_collection_signing_service_key`* | If a collection signing service is enabled, you must provide this variable to ensure that collections can be properly signed. 
 
 `/absolute/path/to/key/to/sign`
-| *`automationhub_collection_signing_service_script`* | If a collection signing service is enabled, you must provide this variable to ensure thhat collections can be properly signed. 
+| *`automationhub_collection_signing_service_script`* | If a collection signing service is enabled, you must provide this variable to ensure that collections can be properly signed. 
 
 `/absolute/path/to/script/that/signs`
 | *`automationhub_create_default_collection_signing_service`* | The default install does not create a collection signing service. 
@@ -64,7 +63,7 @@ Default = `false`
 | *`automationhub_container_signing_service_key`* | If a container signing service is enabled, you must provide this variable to ensure that containers can be properly signed. 
 
 `/absolute/path/to/key/to/sign`
-| *`automationhub_container_signing_service_script`* | If a container signing service is enabled, you must provide this variable to ensure thayt containers can be properly signed. 
+| *`automationhub_container_signing_service_script`* | If a container signing service is enabled, you must provide this variable to ensure that containers can be properly signed. 
 
 `/absolute/path/to/script/that/signs`
 | *`automationhub_create_default_container_signing_service`* | The default install does not create a container signing service. 
@@ -139,18 +138,17 @@ If you want to disable the content approval flow, set the variable to `false`.
 Default = `true`
 | *`automationhub_seed_collections`* | A boolean that defines whether or not preloading is enabled.
 
-When the bundle installer is run, by a new repository is created by default in {PrivateHubName} named `validated`` and the list of the validated collections is updated.
+When the bundle installer is run, validated content is uploaded to the `validated` repository, and certified content is uploaded to the `rh-certified` repository.
 
-If you do not want to install this content, there are two options:
+By default, both certified and validated content are uploaded. 
 
-Set `automationhub_seed_collections` to `false`.
+If you do not want to install one type of content, there are two options:
 
-Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to `certified`.
+* Set `automationhub_seed_collections` to `false` o disable the seeding, or
 
+* Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to the type of content you do want to include.
 
-Set to `False` to disable the seeding.
-
-Default = `true`
+Default = `true`.
 | *`automationhub_ssl_cert`* | _Optional_ 
 
 `/path/to/automationhub.cert`
@@ -165,7 +163,6 @@ Same as `web_server_ssl_key` but for {HubName} UI and API
 If {HubName} should validate certificate when requesting itself because by default, {PlatformNameShort} deploys with self-signed certificates.
 
 Default = `false`.
-| *`automationhub_ui_download_url`* | Set URL to acquire the {HubName} UI for internal testing.
 | *`automationhub_upgrade`* | *Deprecated*
 
 For Ansible Automation Platform 2.2.1 and later, the value of this has been fixed at true.
@@ -181,6 +178,23 @@ Generating a new token will invalidate the existing token.
 The path is on the Ansible management node. 
 It is used to encrypt certain fields in the database (such as credentials.) 
 If not specified, a new key will be generated.
+| *`sso_console_admin_password`* | SSO admin password.
+| *`sso_console_keystore_file`* | Keystore file to install in SSO node.
+
+`/path/to/sso.jks`
+| *`sso_host`* | {CatalogNameStart} requires SSO and SSO administration credentials for
+authentication. 
+
+If SSO is not provided in the inventory for configuration, then you must use this variable to define the SSO host.
+| *`sso_keystore_password`* | A keystore password is required for https enabled SSO.
+
+The default install deploys SSO with `sso_use_https=True`
+| *`sso_redirect_host`* | If `sso_redirect_host` is set, it is used by the application to connect to SSO for authentication. 
+
+This must be reachable from client machines.
+| *`sso_use_https`* | If Single Sign On uses https.
+
+Default = `true`
 |====
 
 For {HubNameMain} to connect to LDAP directly; the following variables must be configured. 
