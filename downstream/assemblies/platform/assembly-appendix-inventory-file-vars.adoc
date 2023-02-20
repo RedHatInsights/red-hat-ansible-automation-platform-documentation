@@ -6,7 +6,9 @@ Not all of these variables are required.
 
 include::platform/ref-general-inventory-variables.adoc[leveloffset=+1]
 include::platform/ref-hub-variables.adoc[leveloffset=+1]
-include::platform/ref-sso-variables.adoc[leveloffset=+1]
-include::platform/ref-catalog-variables.adoc[leveloffset=+1]
+//Removed and combined with automationhub at 2.4
+//include::platform/ref-sso-variables.adoc[leveloffset=+1]
+// Catalog removed for  2.4
+//include::platform/ref-catalog-variables.adoc[leveloffset=+1]
 include::platform/ref-controller-variables.adoc[leveloffset=+1]
 include::platform/ref-ansible-inventory-variables.adoc[leveloffset=+1]

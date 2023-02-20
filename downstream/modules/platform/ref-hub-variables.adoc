@@ -203,6 +203,26 @@ Same as `web_server_ssl_key` but for {HubName} UI and API
 If {HubName} should validate certificate when requesting itself because by default, {PlatformNameShort} deploys with self-signed certificates.
 
 Default = `false`.
+| *`automationhub_sso_console_admin_password`* | SSO admin password.
+| *`automationhub_sso_console_keystore_file`* | Keystore file to install in SSO node.
+
+`/path/to/sso.jks`
+| *`automationhub_sso_host`* | {CatalogNameStart} requires SSO and SSO administration credentials for
+authentication. 
+SSO administration credentials are also required to set {CatalogName} specific
+roles needed for the application. 
+
+If SSO is not provided in the inventory for
+configuration, then you must use this variable to define the SSO host.
+| *`automationhub_sso_keystore_password`* | A keystore password is required for https enabled SSO.
+
+The default install deploys SSO with `sso_use_https=True`
+| *`automationhub_sso_redirect_host`* | If `sso_redirect_host` is set, it is used by the application to connect to SSO for authentication. 
+
+This must be reachable from client machines.
+| *`automationhub_sso_use_https`* | If Single Sign On is used
+
+Default = `true`
 | *`generate_automationhub_token`* a| If upgrading from {PlatformName} 2.0 or earlier, you must either:
 
 * provide an existing {HubNameMain} token as `automationhub_api_token` or
