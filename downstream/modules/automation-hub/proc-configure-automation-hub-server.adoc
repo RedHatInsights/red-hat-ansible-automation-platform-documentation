@@ -47,3 +47,4 @@ password=my_pass
 <2> Include the `/api/galaxy/` subdirectory in the Galaxy server URL.
 <3> Include the `/api/galaxy/` subdirectory in the {HubName} server URL.
 
+NOTE: All API URLs must end with a trailing slash */* in order to prevent receiving a 301 redirect.
