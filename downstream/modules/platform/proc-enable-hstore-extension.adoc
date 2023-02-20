@@ -42,9 +42,9 @@ If the `hstore` extension is not available on the PostgreSQL server, the result 
 ------+-----------------+-------------------+---------
 (0 rows)
 ----
-. On a RHEL based server, the `hstore` extension is included in the `postgresql-contrib` RPM package which is not installed automatically when installing the PostgreSQL server RPM package. 
+. On a RHEL based server, the `hstore` extension is included in the `postgresql-contrib` RPM package, which is not installed automatically when installing the PostgreSQL server RPM package. 
 +
-To install the RPM package use the following command:
+To install the RPM package, use the following command:
 +
 [options="nowrap" subs="+quotes,attributes"]
 ----
@@ -63,7 +63,7 @@ The output of which is:
 ----
 CREATE EXTENSION
 ----
-. In the following output the `installed_version` field contains the `hstore` extension used, indicating that `hstore` is enabled.
+. In the following output, the `installed_version` field contains the `hstore` extension used, indicating that `hstore` is enabled.
 +
 [options="nowrap" subs="+quotes,attributes"]
 ----
