@@ -12,7 +12,7 @@ To use only those collections specified by your organization, you must include a
 * You have valid *Modify Ansible repo content* permissions.
 See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
 * You have retrieved the Sync URL and API Token from the {HubName} hosted service on {Console}.
-* You have configured access to port 443. This is required for syncing certified collections. For more informatiom, see the Automation hub table in the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/ref-network-ports-protocols_planning[Network ports and protocols] chapter of the {PlatformName} Planning Guide.
+* You have configured access to port 443. This is required for syncing certified collections. For more information, see the Automation hub table in the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/ref-network-ports-protocols_planning[Network ports and protocols] chapter of the {PlatformName} Planning Guide.
 
 .Procedure
 
