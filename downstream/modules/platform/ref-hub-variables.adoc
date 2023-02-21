@@ -43,13 +43,9 @@ By default, both certified and validated content are uploaded.
 
 Possible values of this variable are 'certified' or 'validated'.
 
-If you do not want to install one type of content, there are two options:
+If you do not want to install content, set `automationhub_seed_collections` to `false` to disable the seeding.
 
-* Set `automationhub_seed_collections` to `false`, or
-
-* Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to the type of content you do want to include.
-
-Default = `true`.
+If you only want one type of content, set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to the type of content you do want to include.
 | *`automationhub_collection_signing_service_key`* | If a collection signing service is enabled, you must provide this variable to ensure that collections can be properly signed. 
 
 `/absolute/path/to/key/to/sign`
@@ -142,11 +138,9 @@ When the bundle installer is run, validated content is uploaded to the `validate
 
 By default, both certified and validated content are uploaded. 
 
-If you do not want to install one type of content, there are two options:
+If you do not want to install content, set `automationhub_seed_collections` to `false` to disable the seeding.
 
-* Set `automationhub_seed_collections` to `false` to disable the seeding, or
-
-* Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to the type of content you do want to include.
+If you only want one type of content, set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to the type of content you do want to include.
 
 Default = `true`.
 | *`automationhub_ssl_cert`* | _Optional_ 
