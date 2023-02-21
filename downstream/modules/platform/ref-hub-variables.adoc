@@ -87,9 +87,9 @@ Default = `false`.
 | *`automationhub_enable_unathenticated_collection_access`* | Enables unauthorized users to view collections
 
 Default = `false`.
-| *`automation_hub_enable_unauthenticated_collection_download`* | Enables unauthorized users to download collections.
+| *`automationhub_enable_unauthenticated_collection_download`* | Enables unauthorized users to download collections.
 
-Default = `false`
+Default = `false`.
 | *`automationhub_importer_settings`* | _Optional_ 
 
 Dictionary of setting to pass to galaxy-importer.
@@ -101,7 +101,7 @@ Behavior is driven by `galaxy-importer.cfg` configuration.
 Examples are `ansible-doc`, `ansible-lint`, and `flake8`.
 
 This parameter enables you to drive this configuration.
-| *`automationhub_main_url`* | The main {HubNameShort} URL that clients connect to.
+| *`automationhub_main_url`* | The main {HubName} URL that clients connect to.
 
 For example, \https://<load balancer host>.
 
@@ -129,7 +129,7 @@ Default = `prefer`
 Default = `automationhub`
 | *`automationhub_require_content_approval`* | _Optional_
 
-If {HubName} enforces the approval mechanism before collections are made available.
+Value is `true` if {HubName} enforces the approval mechanism before collections are made available.
 
 By default when you upload collections to {HubName} an administrator must approve it before it is made available to the users. 
 
@@ -144,7 +144,7 @@ By default, both certified and validated content are uploaded.
 
 If you do not want to install one type of content, there are two options:
 
-* Set `automationhub_seed_collections` to `false` o disable the seeding, or
+* Set `automationhub_seed_collections` to `false` to disable the seeding, or
 
 * Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to the type of content you do want to include.
 
@@ -160,7 +160,7 @@ Same as `web_server_ssl_cert` but for {HubName} UI and API
 Same as `web_server_ssl_key` but for {HubName} UI and API
 | *`automationhub_ssl_validate_certs`* | For {PlatformName} 2.2 and later, this value is no longer used.
 
-If {HubName} should validate certificate when requesting itself because by default, {PlatformNameShort} deploys with self-signed certificates.
+Value is `true` if {HubName} should validate certificate when requesting itself because by default, {PlatformNameShort} deploys with self-signed certificates.
 
 Default = `false`.
 | *`automationhub_upgrade`* | *Deprecated*
@@ -186,9 +186,9 @@ If not specified, a new key will be generated.
 authentication. 
 
 If SSO is not provided in the inventory for configuration, then you must use this variable to define the SSO host.
-| *`sso_keystore_password`* | A keystore password is required for https enabled SSO.
+| *`sso_keystore_password`* | Whether a keystore password is required for https enabled SSO.
 
-The default install deploys SSO with `sso_use_https=True`
+The default install deploys SSO with `sso_use_https=true`
 | *`sso_redirect_host`* | If `sso_redirect_host` is set, it is used by the application to connect to SSO for authentication. 
 
 This must be reachable from client machines.
