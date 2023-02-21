@@ -3,11 +3,23 @@
 
 = Add or merge a subscription
 
+Available subscriptions or a subscription manifest authorize the use of {PlatformNameShort}.
+
+.Procedure
 To add or merge subscriptions to a subscription allocation, do the following:
 
 . Navigate to menu:Subscription Allocations[New Subscription Allocation]
 . Click on the name of the *Subscription Allocation* to which you would like to add a subscription.
 . Click the *Subscriptions* tab.
 . Click btn:[Add Subscriptions].
-. Add the {PlatformName} Entitlement(s) using the right side controls.
+. Add the {PlatformNameShort} Entitlement(s) using the right side controls.
 . Click btn:[Submit].
+
+.Verification
+After your subscription has been accepted, subscription details are displayed. A status of _Compliant_ indicates your subscription is in compliance with the number of hosts you have automated within your subscription count. Otherwise, your status will show as _Out of Compliance_, indicating you have exceeded the number of hosts in your subscription.
+
+Other important information displayed include the following:
+
+Hosts automated:: Host count automated by the job, which consumes the license count
+Hosts imported:: Host count considering all inventory sources (does not impact hosts remaining)
+Hosts remaining:: Total host count minus hosts automated

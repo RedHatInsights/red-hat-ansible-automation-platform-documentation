@@ -3,15 +3,28 @@
 
 = Upload a manifest file to {PlatformName}
 
-To upload the manifest file to {PlatformName}, do the following:
+The manifest file can be uploaded using the {PlatformName} interface or manually in an Ansible playbook.
+
+.Uploading with the interface
 
 . Complete steps to generate and download the manifest file
 . Log in to {PlatformName}.
 . If you are not immediately prompted for a manifest file, go to menu:Settings[License].
 . Make sure the *Username* and *Password* fields are empty.
-. Click *Browse* and select the manifest file.
+. Click btn:[Browse] and select the manifest file.
+. Click btn:[Next].
 
 [NOTE]
 ====
 If the btn:[BROWSE] button is disabled on the License page, clear the *USERNAME* and *PASSWORD* fields.
 ====
+
+.Uploading manually
+
+If you are unable to apply or update the subscription info using the {PlatformName} interface, you can upload the subscriptions manifest manually in an Ansible playbook using the `license` module in the `ansible.controller` collection.
+
+-----
+- name: Set the license using a file
+  license:
+  manifest: "/tmp/my_manifest.zip"
+-----
