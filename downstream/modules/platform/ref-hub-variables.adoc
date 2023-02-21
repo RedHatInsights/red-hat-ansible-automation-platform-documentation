@@ -37,24 +37,32 @@ Default = `false`.
 You can also set `automationhub_backup_collections = false` and the backup/restore process does not then backup or restore `/var/lib/pulp`.
 
 Default = `true`
-| *`automationhub_collection_seed_repository`* | When the bundle installer is run, by default a new repository is created in {PrivateHubName} named "validated" and the list of the validated collections will be updated.
+| *`automationhub_collection_seed_repository`* a| When the bundle installer is run, validated content is uploaded to the `validated` repository, and certified content is uploaded to the `rh-certified` repository.
 
-If `automationhub_seed_collections` is set to true, this variable enables you to specify the type of content to upload. 
+By default, both certified and validated content are uploaded. 
 
-Possible values are 'certified' or 'validated'.
+Possible values of this variable are 'certified' or 'validated'.
 
-If you do not want to install this content, there are two options:
+If you do not want to install content, set `automationhub_seed_collections` to `false` to disable the seeding.
 
-Set `automationhub_seed_collections` to `false`.
-
-Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to `certified`.
-| *`automationhub_collection_signing_service_key`* | If a collection signing service is enabled, you must provide this variable to ensure collections can be properly signed. 
+If you only want one type of content, set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to the type of content you do want to include.
+| *`automationhub_collection_signing_service_key`* | If a collection signing service is enabled, you must provide this variable to ensure that collections can be properly signed. 
 
 `/absolute/path/to/key/to/sign`
-| *`automationhub_collection_signing_service_script`* | If a collection signing service is enabled, you must provide this variable to ensure collections can be properly signed. 
+| *`automationhub_collection_signing_service_script`* | If a collection signing service is enabled, you must provide this variable to ensure that collections can be properly signed. 
 
 `/absolute/path/to/script/that/signs`
-| *`automationhub_create_default_collection_signing_service`* | The default install does not create a signing service. 
+| *`automationhub_create_default_collection_signing_service`* | The default install does not create a collection signing service. 
+If set to `true` a signing service is created.
+
+Default = `false`
+| *`automationhub_container_signing_service_key`* | If a container signing service is enabled, you must provide this variable to ensure that containers can be properly signed. 
+
+`/absolute/path/to/key/to/sign`
+| *`automationhub_container_signing_service_script`* | If a container signing service is enabled, you must provide this variable to ensure that containers can be properly signed. 
+
+`/absolute/path/to/script/that/signs`
+| *`automationhub_create_default_container_signing_service`* | The default install does not create a container signing service. 
 If set to `true` a signing service is created.
 
 Default = `false`
@@ -72,8 +80,12 @@ Default = `false`.
 | *`automationhub_enable_api_access_log`* | When set to `true`, creates a log file at `/var/log/galaxy_api_access.log` that logs all user actions made to the platform, including their username and IP address.
 
 Default = `false`.
-| *`automationhub_enable_unathenticated_collection_access`* | TBD
-| *`automation_hub_enable_unauthenticated_collection_download`* | TBD
+| *`automationhub_enable_unathenticated_collection_access`* | Enables unauthorized users to view collections
+
+Default = `false`.
+| *`automationhub_enable_unauthenticated_collection_download`* | Enables unauthorized users to download collections.
+
+Default = `false`.
 | *`automationhub_importer_settings`* | _Optional_ 
 
 Dictionary of setting to pass to galaxy-importer.
@@ -85,26 +97,98 @@ Behavior is driven by `galaxy-importer.cfg` configuration.
 Examples are `ansible-doc`, `ansible-lint`, and `flake8`.
 
 This parameter enables you to drive this configuration.
-| *`automationhub_seed_collections`* | A boolean that defines whether or not preloading is enabled.
+| *`automationhub_main_url`* | The main {HubName} URL that clients connect to.
 
-When the bundle installer is run, by a new repository is created by default in {PrivateHubName} named `validated`` and the list of the validated collections is updated.
+For example, \https://<load balancer host>.
 
-If you do not want to install this content, there are two options:
+If not specified, the first node in the `[automationhub]` group is used.
 
-Set `automationhub_seed_collections` to `false`.
+Use `automationhub_main_url` to specify the main {HubName} URL that clients connect to if you are implementing {RHSSO} on your {HubName} environment.
+| *`automationhub_pg_database`* | _Required_
 
-Set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to `certified`.
+The database name.
 
+Default = `automationhub`
+| *`automationhub_pg_host`* | Required if not using internal database.
+| *`automationhub_pg_password`* | The password for the {HubName} PostgreSQL database.
 
-Set to `False` to disable the seeding.
+Do not use special characters for `automationhub_pg_password`. 
+They can cause the password to fail.
+| *`automationhub_pg_port`* | Required if not using internal database.
+
+Default = 5432
+| *`automationhub_pg_sslmode`* | Required.
+
+Default = `prefer`
+| *`automationhub_pg_username`* | Required 
+
+Default = `automationhub`
+| *`automationhub_require_content_approval`* | _Optional_
+
+Value is `true` if {HubName} enforces the approval mechanism before collections are made available.
+
+By default when you upload collections to {HubName} an administrator must approve it before it is made available to the users. 
+
+If you want to disable the content approval flow, set the variable to `false`.
 
 Default = `true`
-| *`automationhub_ui_download_url`* | Set URL to acquire the {HubName} UI for internal testing.
+| *`automationhub_seed_collections`* | A boolean that defines whether or not preloading is enabled.
+
+When the bundle installer is run, validated content is uploaded to the `validated` repository, and certified content is uploaded to the `rh-certified` repository.
+
+By default, both certified and validated content are uploaded. 
+
+If you do not want to install content, set `automationhub_seed_collections` to `false` to disable the seeding.
+
+If you only want one type of content, set `automationhub_seed_collections` to `true` and `automationhub_collection_seed_repository` to the type of content you do want to include.
+
+Default = `true`.
+| *`automationhub_ssl_cert`* | _Optional_ 
+
+`/path/to/automationhub.cert`
+Same as `web_server_ssl_cert` but for {HubName} UI and API
+| *`automationhub_ssl_key`* | _Optional_
+
+`/path/to/automationhub.key`
+
+Same as `web_server_ssl_key` but for {HubName} UI and API
+| *`automationhub_ssl_validate_certs`* | For {PlatformName} 2.2 and later, this value is no longer used.
+
+Value is `true` if {HubName} should validate certificate when requesting itself because by default, {PlatformNameShort} deploys with self-signed certificates.
+
+Default = `false`.
 | *`automationhub_upgrade`* | *Deprecated*
 
 For Ansible Automation Platform 2.2.1 and later, the value of this has been fixed at true.
 
 {HubNameStart} always updates with the latest packages.
+| *`generate_automationhub_token`* a| If upgrading from {PlatformName} 2.0 or earlier, you must either:
+
+* provide an existing {HubNameMain} token as `automationhub_api_token` or
+
+* set `generate_automationhub_token` to `true` to generate a new token.
+Generating a new token will invalidate the existing token.
+| *`pulp_db_fields_key`* | Relative or absolute path to the Fernet symmetric encryption key you want to import. 
+The path is on the Ansible management node. 
+It is used to encrypt certain fields in the database (such as credentials.) 
+If not specified, a new key will be generated.
+| *`sso_console_admin_password`* | SSO admin password.
+| *`sso_console_keystore_file`* | Keystore file to install in SSO node.
+
+`/path/to/sso.jks`
+| *`sso_host`* | {CatalogNameStart} requires SSO and SSO administration credentials for
+authentication. 
+
+If SSO is not provided in the inventory for configuration, then you must use this variable to define the SSO host.
+| *`sso_keystore_password`* | Whether a keystore password is required for https enabled SSO.
+
+The default install deploys SSO with `sso_use_https=true`
+| *`sso_redirect_host`* | If `sso_redirect_host` is set, it is used by the application to connect to SSO for authentication. 
+
+This must be reachable from client machines.
+| *`sso_use_https`* | If Single Sign On uses https.
+
+Default = `true`
 |====
 
 For {HubNameMain} to connect to LDAP directly; the following variables must be configured. 
@@ -152,67 +236,7 @@ It must return exactly one result for authentication to succeed.
 Scope to search for users in an LDAP tree using django framework for LDAP authentication. 
 Used for installing {HubName} with LDAP.
 
-Default = `SUBTREE
-| *`automationhub_main_url`* | The main {HubNameShort} URL that clients connect to.
-
-For example, \https://<load balancer host>.
-
-If not specified, the first node in the `[automationhub]` group is used.
-
-Use `automationhub_main_url` to specify the main {HubName} URL that clients connect to if you are implementing {RHSSO} on your {HubName} environment.
-
-| *`automationhub_pg_database`* | _Required_
-
-The database name.
-
-Default = `automationhub`
-| *`automationhub_pg_host`* | Required if not using internal database.
-| *`automationhub_pg_password`* | The password for the {HubName} PostgreSQL database.
-
-Do not use special characters for `automationhub_pg_password`. 
-They can cause the password to fail.
-| *`automationhub_pg_port`* | Required if not using internal database.
-
-Default = 5432
-| *`automationhub_pg_sslmode`* | Required.
-
-Default = `prefer`
-| *`automationhub_pg_username`* | Required 
-
-Default = `automationhub`
-| *`automationhub_require_content_approval`* | _Optional_
-
-If {HubName} enforces the approval mechanism before collections are made available.
-
-By default when you upload collections to {HubName} an administrator must approve it before it is made available to the users. 
-
-If you want to disable the content approval flow, set the variable to `false`.
-
-Default = `true`
-| *`automationhub_ssl_cert`* | _Optional_ 
-
-`/path/to/automationhub.cert`
-Same as `web_server_ssl_cert` but for {HubName} UI and API
-| *`automationhub_ssl_key`* | _Optional_
-
-`/path/to/automationhub.key`
-
-Same as `web_server_ssl_key` but for {HubName} UI and API
-| *`automationhub_ssl_validate_certs`* | For {PlatformName} 2.2 and later, this value is no longer used.
-
-If {HubName} should validate certificate when requesting itself because by default, {PlatformNameShort} deploys with self-signed certificates.
-
-Default = `false`.
-| *`generate_automationhub_token`* a| If upgrading from {PlatformName} 2.0 or earlier, you must either:
-
-* provide an existing {HubNameMain} token as `automationhub_api_token` or
-
-* set `generate_automationhub_token` to `true` to generate a new token.
-Generating a new token will invalidate the existing token.
-| *`pulp_db_fields_key`* | Relative or absolute path to the Fernet symmetric encryption key you want to import. 
-The path is on the Ansible management node. 
-It is used to encrypt certain fields in the database (such as credentials.) 
-If not specified, a new key will be generated.
+Default = `SUBTREE`
 |====
 
 
