@@ -1,7 +1,7 @@
 // Module included in the following assemblies:
 // obtaining-token/master.adoc
 [id="proc-set-rhcertified-remote"]
-= Configuring the rh-certified remote repository and syncing {CertifiedColl}.
+= Configuring the rh-certified remote repository and synchronizing {CertifiedColl}.
 
 You can edit the *rh-certified* remote repository to synchronize collections from {HubName} hosted on {Console} to your {PrivateHubName}.
 By default, your {PrivateHubName} `rh-certified` repository includes the URL for the entire group of {CertifiedName}.
@@ -12,6 +12,7 @@ To use only those collections specified by your organization, you must include a
 * You have valid *Modify Ansible repo content* permissions.
 See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in Automation Hub] for more information on permissions.
 * You have retrieved the Sync URL and API Token from the {HubName} hosted service on {Console}.
+* You have configured access to port 443. This is required for synchronizing certified collections. For more information, see the {HubName} table in the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/ref-network-ports-protocols_planning[Network ports and protocols] chapter of the {PlatformName} Planning Guide.
 
 .Procedure
 
@@ -25,7 +26,7 @@ See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_pla
 The modal closes and returns you to the *Repo Management* page.
 You can now synchronize collections between your organization synclist on {Console} and your {PrivateHubName}.
 +
-. Click btn:[Sync] to sync collections.
+. Click btn:[Sync] to synchronize collections.
 
 The *Sync status* notification updates to notify you of completion of the Red Hat Certified Content Collections synchronization.
 
