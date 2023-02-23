@@ -50,7 +50,6 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Updated the proxy password from text type to password type to make the password more secure
 * Updated the synchronization that is used by authenticated proxy to avoid authentication failures
 * Added message in the Controller user interface to inform users that the community collections do not have docs
-* Resolved intermittent issue while trying to sync community `devsec.hardening` collection on automation hub 4.4.0
 * Added field validation to allow HTTPS URLs only when adding a remote registry
 * Added import result and filenames to the audit log
 * Updated the group categories such as *Namespaces*, *Collections*, *Users*, *Groups*, *Remotes*, and *Containers* in the translatable strings
