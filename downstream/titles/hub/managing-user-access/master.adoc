@@ -1,6 +1,7 @@
 = Managing user access in Private Automation Hub
 :imagesdir: images
 :numbered:
+:experimental:
 include::attributes/attributes.adoc[]
 
 Configure user access in Automation Hub to provide the appropriate level of system permissions to groups in your organization, or provide view-only access to unauthorized users.
