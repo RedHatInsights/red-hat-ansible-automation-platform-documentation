@@ -15,6 +15,7 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Added support to provide a custom secret key when running the `rekey.yml` file
 * Added a preflight check to detect missing username and password variables for service catalog worker, instead of causing an installation failure at a later point of time
 * Updated the collection counts on the *Content* tab when the collection details were filtered
+* Added guidelines for setting `ORPHAN_PROTECTION_TIME` 
  
 .Bug fixes
 * Fixed an issue where Controller user interface would not load on a few cloud providers
