@@ -80,6 +80,11 @@ Default = `false`.
 | *`automationhub_enable_api_access_log`* | When set to `true`, creates a log file at `/var/log/galaxy_api_access.log` that logs all user actions made to the platform, including their username and IP address.
 
 Default = `false`.
+| *`automationhub_enable_analytics`* | A Boolean indicating whether to enable pulp analytics for the version of pulpcore used in {HubName} in {PlatformNameShort} {PlatformVers}. 
+
+To enable pulp analytics, set `automationhub_enable_analytics = true`.
+
+Default = `false`.
 | *`automationhub_enable_unathenticated_collection_access`* | Enables unauthorized users to view collections
 
 Default = `false`.
