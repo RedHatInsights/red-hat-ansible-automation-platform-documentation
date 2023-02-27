@@ -11,6 +11,9 @@
 {CatalogNameStart} requires either Controller to be installed with {ControllerName}, or a URL to an active and routable Controller server must be provided with this variable
 | *`automationcontroller_password`* | Password for your {ControllerName} instance.
 | *`automationcontroller_username`* | Username for your {ControllerName} instance.
+| *`nginx_hsts_max_age`* | This variable specifies how long, in seconds, you want the client to treat you as a _HTTP Strict Transport Security_ (HSTS) host. That is, how long you want them to contact you using HTTPS exclusively.
+
+Default = 63072000 seconds, or two years.
 | *`nginx_tls_protocols`* | Defines support for `ssl_protocols` in Nginx.
 
 Default = `TLSv1.2`.
