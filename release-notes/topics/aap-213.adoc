@@ -32,6 +32,7 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Updated the documentation link to route to documentation of the correct version
 * Resolved intermittent issue while trying to sync community `devsec.hardening` collection on automation hub 4.4.0
 * Improved import log and status overflow pages in automation controller UI
+* Added visibility for execution environments created by ansible-builder in the automation hub UI
 * Resolved an issue while copying and removing content from a repository by changing lock and transaction into a single task
 * Updated orphan cleanup task to improve collection re-upload experience
 * Resolved an issue where a list of execution environments available and discovered were not displayed after indexing
