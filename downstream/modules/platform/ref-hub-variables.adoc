@@ -173,6 +173,9 @@ For Ansible Automation Platform 2.2.1 and later, the value of this has been fixe
 
 * set `generate_automationhub_token` to `true` to generate a new token.
 Generating a new token will invalidate the existing token.
+| *`nginx_tls_protocols`* | Defines support for `ssl_protocols` in Nginx.
+
+Default = `TLSv1.2`.
 | *`pulp_db_fields_key`* | Relative or absolute path to the Fernet symmetric encryption key you want to import. 
 The path is on the Ansible management node. 
 It is used to encrypt certain fields in the database (such as credentials.) 
