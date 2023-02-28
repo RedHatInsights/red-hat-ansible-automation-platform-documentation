@@ -1,9 +1,12 @@
 
-[id="proc-upload-manifest-file_{context}"]
+[id="proc-aap-activate-with-manifest_{context}"]
 
-= Upload a manifest file to {PlatformName}
+= Activate with a manifest file
 
-The manifest file can be uploaded using the {PlatformName} interface or manually in an Ansible playbook.
+If you have a subscriptions manifest, you can upload the manifest file either using the {PlatformName} interface or manually in an Ansible playbook.
+
+.Prerequisites
+You must have a Red Hat Subscription Manifest file exported from the Red Hat Customer Portal. For more information, see xref:assembly-aap-obtain-manifest-files[Obtaining a manifest file].
 
 .Uploading with the interface
 

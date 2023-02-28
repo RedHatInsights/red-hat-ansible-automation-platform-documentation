@@ -1,8 +1,4 @@
-
-
 ifdef::context[:parent-context: {context}]
-
-
 
 [id="assembly-aap-post-installation"]
 = Post installation tasks
@@ -12,15 +8,8 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 After installing {PlatformName}, your system might need extra configuration to ensure your deployment runs smoothly.
 
-include::platform/con-aap-activate-platform.adoc[leveloffset=+1]
-
-include::platform/proc-aap-create-subscription-allocation.adoc[leveloffset=+2]
-
-include::platform/proc-aap-add-merge-subscriptions.adoc[leveloffset=+2]
-
-include::platform/proc-aap-generate-manifest-file.adoc[leveloffset=+2]
-
-include::platform/proc-aap-upload-manifest-file.adoc[leveloffset=+2]
+include::assembly-aap-activate.adoc[leveloffset=+1]
+include::assembly-aap-manifest-files.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
