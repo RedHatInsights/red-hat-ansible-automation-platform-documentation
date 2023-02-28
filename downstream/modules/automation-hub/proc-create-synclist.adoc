@@ -14,13 +14,13 @@ All {CertifiedName} are included by default in your initial organization synclis
 * You have a valid {PlatformNameShort} subscription.
 * You have Organization Administrator permissions for {Console}.
 * The following domain names are part of either the firewall or the proxy's allowlist for successful connection and download of collections from {HubName} or Galaxy server:
-** `ansible-galaxy.s3.amazonaws.com`
 ** `galaxy.ansible.com`
 ** `cloud.redhat.com`
 ** `{Console}`
 ** `sso.redhat.com`
 * {HubNameMain} resources are stored in Amazon Simple Storage and the following domain name is in the allow list:
 ** `automation-hub-prd.s3.us-east-2.amazonaws.com`
+** `ansible-galaxy.s3.amazonaws.com`
 * SSL inspection is disabled either when using self signed certificates or for the Red Hat domains.
 
 .Procedure
