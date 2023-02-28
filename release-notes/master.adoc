@@ -6,6 +6,16 @@ include::topics/platform-intro.adoc[leveloffset=+1]
 
 include::topics/upgrading.adoc[leveloffset=+1]
 
+[[anchor-august-2022-release]]
+== August 2022 release
+ 
+include::topics/aap-213.adoc[leveloffset=+2]
+
+[[anchor-april-2022-release]]
+== April 2022 release
+ 
+include::topics/aap-212.adoc[leveloffset=+2]
+
 [[anchor-february-2022-release]]
 == February 2022 release
 
@@ -103,8 +113,6 @@ include::topics/tower-intro-38.adoc[leveloffset=+3]
 include::topics/hub-42.adoc[leveloffset=+3]
 
 include::topics/catalog-11-2020.adoc[leveloffset=+3]
-
-
 
 
 [[anchor-oct-2020-release]]
