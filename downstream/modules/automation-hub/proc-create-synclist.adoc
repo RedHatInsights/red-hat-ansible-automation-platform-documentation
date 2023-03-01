@@ -21,8 +21,8 @@ By default, all Red Hat Certified collections are included in your initial organ
 * {HubNameStart} resources are stored in Amazon Simple Storage.
 Add the following domain name to the allow list:
 ** `automation-hub-prd.s3.us-east-2.amazonaws.com`
-* SSL inspection must be disabled either when using self signed certificates or for the Red Hat domains.
-
+** `ansible-galaxy.s3.amazonaws.com`
+* SSL inspection is disabled either when using self signed certificates or for the Red Hat domains.
 
 .Procedure
 
