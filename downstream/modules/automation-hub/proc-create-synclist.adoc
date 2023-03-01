@@ -20,6 +20,7 @@ All {CertifiedName} are included by default in your initial organization synclis
 ** `sso.redhat.com`
 * {HubNameMain} resources are stored in Amazon Simple Storage and the following domain name is in the allow list:
 ** `automation-hub-prd.s3.us-east-2.amazonaws.com`
+** `ansible-galaxy.s3.amazonaws.com`
 * SSL inspection is disabled either when using self signed certificates or for the Red Hat domains.
 
 .Procedure
