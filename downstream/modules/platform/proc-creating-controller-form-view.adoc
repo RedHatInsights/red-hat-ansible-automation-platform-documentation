@@ -6,7 +6,7 @@
 . Ensure *Form view* is selected. It should be selected by default.
 . Enter the name of the new controller.
 . Optional: Add any labels necessary.
-. Click *Advanced configuration*.
+. Click btn:[Advanced configuration].
 . Enter *Hostname* of the instance. The hostname is optional. The default hostname will be generated based upon the deployment name you have selected.
 . Enter the *Admin account username*.
 . Enter the *Admin email address*.

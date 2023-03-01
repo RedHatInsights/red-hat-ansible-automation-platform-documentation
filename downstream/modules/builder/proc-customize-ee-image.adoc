@@ -104,7 +104,7 @@ $ podman push [automation-hub-IP-address]/[username]/new-ee
 ----
 +
 . Pull your new image into your {ControllerName} instance:
-.. Navigate to {ControllerName}
+.. Navigate to {ControllerName}.
 .. From the side-navigational bar, click menu:Administration[Execution Environments].
 .. Click btn:[Add].
 .. Enter the appropriate information then click btn:[Save] to pull in the new image.

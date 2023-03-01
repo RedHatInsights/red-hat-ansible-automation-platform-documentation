@@ -10,7 +10,7 @@ When ensuring a signature is signed by a specific signature(s), the signature mu
 
 .Procedure
 
-. Click *Signature Keys* in the left menu.
+. Click btn:[Signature Keys] in the left menu.
 
 . Click the three dots on the right hand side of the signature to be used.
 . Select *Download key* from the drop-down menu. A new window will open.

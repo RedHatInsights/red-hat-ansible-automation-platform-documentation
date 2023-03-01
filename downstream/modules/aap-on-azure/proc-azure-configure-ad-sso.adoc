@@ -51,7 +51,7 @@ When registration is complete, the registration page for the Automation Controll
 +
 You will use this value for the _Azure AD OAuth2 Key_ in the {PlatformNameShort} settings.
 . Select menu:Manage[Certificates & secrets].
-. Click *Client secrets* and then *New client secret*.
+. Click btn:[Client secrets] and then btn:[New client secret].
 . Provide a description for the new secret.
 +
 It is not possible to automatically renew a certificate or identify when it is about to expire.
