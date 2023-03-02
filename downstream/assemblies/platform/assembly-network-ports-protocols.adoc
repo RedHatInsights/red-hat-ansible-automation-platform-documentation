@@ -22,7 +22,7 @@ The default destination ports and installer inventory listed below are configura
 |TCP
 |SSH
 |Inbound and Outbound
-|`pg_port`
+|`ansible_port`
 |Remote access during installation
 |5432
 |TCP
@@ -194,19 +194,19 @@ ENABLE connections from hop node(s) to Receptor port if relayed through hop node
 |TCP
 |HTTP
 |Inbound
-|`nginx_http_port`
+| Fixed value
 |User interface
 |443
 |TCP
 |HTTPS
 |Inbound
-|`nginx_https_port`
+| Fixed value
 |User interface
 |5432
 |TCP
 |PostgreSQL
 |Inbound and Outbound
-|`pg_port`
+|`automationhub_pg_port`
 a|Open *only* if the internal database is used along with another component. Otherwise, this port should not be open
 |===
 
