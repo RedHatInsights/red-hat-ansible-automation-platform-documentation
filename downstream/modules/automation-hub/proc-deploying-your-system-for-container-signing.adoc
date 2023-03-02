@@ -21,7 +21,7 @@ As an Ansible Automation Platform user, you can now confirm if an EE/Container i
 
 . Navigate to automation hub.
 
-. Click btn:[Signature Keys] in the left menu pane.
+. In the navigation pane, select menu:Signature Keys[].
 
 . Ensure you have a key titled *container-default*, or *container*-_anyname_.
 
