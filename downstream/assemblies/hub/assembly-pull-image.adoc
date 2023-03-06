@@ -8,24 +8,6 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 Pull images from the {HubName} container registry to make a copy to your local machine. {HubNameStart} provides the `podman pull` command for each `latest` image in the container repository. You can copy and paste this command into your terminal, or use `podman pull` to copy an image based on an image tag.
 
-[IMPORTANT]
-====
-Image manifests and filesystem blobs are served directly from `registry.redhat.io` and `registry.access.redhat.com`. 
-However, from 1st of May 2023, filesystem blobs are served from quay.io instead. 
-To avoid problems pulling container images, you must enable outbound connections to the following hostnames:
-
-* `cdn.quay.io`
-* `cdn01.quay.io`
-* `cdn02.quay.io`
-* `cdn03.quay.io`
-
-This change should be made to any firewall configuration that specifically enables outbound connections to `registry.redhat.io` or `registry.access.redhat.com`.
-
-Use the hostnames instead of IP addresses when configuring firewall rules. 
-
-After making this change you can continue to pull images from `registry.redhat.io` and `registry.access.redhat.com`. You do not require a `quay.io` login, or need to interact with the `quay.io` registry directly in any way to continue pulling Red Hat container images.
-====
-
 == Prerequisites
 
 You must have permission to view and pull from a private container repository.
