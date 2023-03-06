@@ -261,19 +261,18 @@ a|Open *only* if the internal database is used. Otherwise, this port should not 
 [options="header"]
 |===
 |URL |Required for
-|link:https://registry.redhat.io:44[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
+|link:https://registry.redhat.io:443[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
+| `cdn.quay.io` | Access to container images provided by Red Hat and partners
+| `cdn01.quay.io` | Access to container images provided by Red Hat and partners
+| `cdn02.quay.io` | Access to container images provided by Red Hat and partners
+| `cdn03.quay.io` | Access to container images provided by Red Hat and partners
 |===
 
 [IMPORTANT]
 ====
 Image manifests and filesystem blobs are served directly from `registry.redhat.io` and `registry.access.redhat.com`. 
 However, from 1st of May 2023, filesystem blobs are served from `quay.io` instead. 
-To avoid problems pulling container images, you must enable outbound connections to the following hostnames:
-
-* `cdn.quay.io`
-* `cdn01.quay.io`
-* `cdn02.quay.io`
-* `cdn03.quay.io`
+To avoid problems pulling container images, you must enable outbound connections to the listed `quay.io` hostnames.
 
 This change should be made to any firewall configuration that specifically enables outbound connections to `registry.redhat.io` or `registry.access.redhat.com`.
 
