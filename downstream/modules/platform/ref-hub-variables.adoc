@@ -150,7 +150,7 @@ Same as `web_server_ssl_cert` but for {HubName} UI and API
 `/path/to/automationhub.key`
 
 Same as `web_server_ssl_key` but for {HubName} UI and API
-| *`automationhub_ssl_validate_certs`* | For {PlatformName} 2.2 and later, this value is no longer used.
+| *`automationhub_ssl_validate_certs`* | For {PlatformName} 2.3 and later, this value is no longer used.
 
 If {HubName} should validate certificate when requesting itself because by default, {PlatformNameShort} deploys with self-signed certificates.
 
