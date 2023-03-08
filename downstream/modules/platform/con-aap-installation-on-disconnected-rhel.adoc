@@ -31,4 +31,4 @@ RPM dependencies for AAP that come from the BaseOS and AppStream repositories ar
 * reposync - Makes full copies of the required RPM repositories and hosts them on the disconnected network
 * RHEL Binary DVD - Use the RPMs available on the RHEL 8 Binary DVD
 
-NOTE: The RHEL Binary DVD method requires the DVD for RHEL 8.4 or higher.
+NOTE: The RHEL Binary DVD method requires the DVD for supported versions of RHEL 8.4 or higher. See link:/https://access.redhat.com/support/policy/updates/errata[Red Hat Enterprise Linux Life Cycle] for information on which versions of RHEL are currently supported.
