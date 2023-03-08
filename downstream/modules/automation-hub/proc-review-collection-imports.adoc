@@ -16,7 +16,7 @@ Imported collections information includes:
 .Procedure
 
 . Log in to your local Automation Hub.
-. Navigate to *My Namespaces*.
+. Navigate to menu:My Namespaces[].
 . Select a namespace.
 . Click image:more_actions.png[More actions] and select *My imports*.
 . Use the search field or locate an imported collection from the list.
