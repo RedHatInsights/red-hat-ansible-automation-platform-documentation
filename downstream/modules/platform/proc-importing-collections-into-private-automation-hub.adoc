@@ -20,6 +20,6 @@ This section gives instructions on how to download a collection from Red Hat Aut
 
 . Click btn:[Download tarball]
 
-. To verify if a collection has dependencies, click the btn:[Dependencies] tab.
+. To verify if a collection has dependencies, click the *Dependencies* tab.
 
 . Download any dependencies needed for this collection.

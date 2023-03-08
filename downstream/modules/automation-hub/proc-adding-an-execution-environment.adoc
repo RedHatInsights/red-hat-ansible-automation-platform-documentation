@@ -4,7 +4,7 @@
 = Adding an execution environment
 
 .Procedure
-. Click *Execution Environment* in the main menu.
+. Navigate to menu:Execution Environments[].
 
 . Enter the name of the execution environment.
 
