@@ -8,7 +8,7 @@ Use the {PlatformName} (AAP) *Bundle* installer if you are unable to access the 
 
 .Procedure
 . Navigate to https://access.redhat.com/downloads/content/480
-. Click *Download Now* for the *Ansible Automation Platform <latest-version> Setup Bundle*.
+. Click btn:[Download Now] for the *Ansible Automation Platform <latest-version> Setup Bundle*.
 . Extract the files:
 +
 -----

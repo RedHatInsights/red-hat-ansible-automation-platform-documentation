@@ -8,7 +8,7 @@
 * *Never* 
 * *IfNotPresent*
 . To display the option under *Image Pull Secrets*, click the arrow.
-.. Click *+* beside *Add Image Pull Secret* and enter a value.
+.. Click btn:[+] beside *Add Image Pull Secret* and enter a value.
 . To display fields under the *Web container resource requirements* drop-down list, click the arrow.
 .. Under *Limits*, and *Requests*, enter values for *CPU cores*, *Memory*, and *Storage*.
 . To display fields under the *Task container resource requirements* drop-down list, click the arrow.

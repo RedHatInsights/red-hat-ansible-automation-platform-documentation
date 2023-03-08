@@ -24,7 +24,7 @@ To recreate your instance groups in the new instance, do the following:
 NOTE: Make note of all instance groups from your original Tower instance. You will need to recreate these groups in your new instance.
 
 . Log in to your new instance of Tower.
-. On the side panel, navigate to menu:Administration[Instance groups].
-. Click menu:+[Create instance group].
+. In the navigation pane, select menu:Administration[Instance groups].
+. Click btn:[Create instance group].
 . Enter a *Name* that matches an instance group from your original instance, then click btn:[Save]
 . Repeat until all instance groups from your original instance have been recreated.

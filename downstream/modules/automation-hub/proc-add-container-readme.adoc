@@ -25,7 +25,7 @@ Add a README to your container repository to provide instructions to your users 
 
 .Procedure
 
-. Navigate to menu:[Execution Environments].
+. Navigate to menu:Execution Environments[].
 . Select your container repository.
 . On the *Detail* tab, click btn:[Add].
 . In the *Raw Markdown* text field, enter your README text in Markdown.
