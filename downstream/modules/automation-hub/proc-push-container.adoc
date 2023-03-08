@@ -39,6 +39,6 @@ NOTE: The `--remove-signatures` flag is required when signed images from registr
 
 . Log in to your {HubName}.
 
-. Navigate to *Container Registry*.
+. Navigate to menu:Container Registry[].
 
 . Locate the container in the container repository list.
