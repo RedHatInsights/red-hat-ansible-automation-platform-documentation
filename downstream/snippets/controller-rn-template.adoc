@@ -1,0 +1,74 @@
+// For each release of AAP, make a copy of this file and rename it to controller-rn-xx.adoc where xx is the release number; for example, 24 for the 2.4 release.
+// Save the renamed copy of this file to the release-notes/topics directory topic files for the release notes reside.
+//Only include release note types that have updates for a given release. For example, if there are no Technology previews for the release, remove that section from this file.
+//Add an include statement for this file to the newly created assembly-rn-xx.adoc file. If Automation Controller has no release notes for a given release, do not include this information.
+
+= Automation Controller <version>
+
+Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.
+
+== New features and enhancements
+
+This release of Automation Controller features the following enhancements:
+
+* Feature/enhancement and description
+* Feature/enhancement and description
+
+== Technology Preview
+
+Some features in this release are currently classified as Technology Preview. These experimental features are not intended for production use. For more information about technology preview features, see xref:technology-preview[What is a Technology Preview feature].
+
+<ABC> is available as a Technology Preview::
+ABC, which Red Hat provides as an unsupported Technology Preview, is <description of feature>
+
+<XYZ> is available as a Technology Preview::
+XYZ, which Red Hat provides as an unsupported Technology Preview, is <description of feature>
+
+== Bug fixes
+
+These bugs were fixed in this release of Automation Controller:
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of bug fix>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of bug fix>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of bug fix>
+
+== Deprecated and removed features
+
+Some features available in previous releases have been deprecated or removed.
+
+Deprecated functionality is still included in Automation Controller and continues to be supported; however, it will be removed in a future release of this product and is not recommended for new deployments. For the most recent list of major functionality deprecated and removed within Automation Controller <version>, refer to the table below.
+
+.Deprecated features
+[options="header"]
+[cols=",a"]
+|===
+|Deprecated Feature |Details
+|<feature abc> |Support for <feature abc> is now deprecated. This functionality will be removed in a future release.
+|<feature xyz> |Support for <feature xyz> is now deprecated. This functionality will be removed in a future release.
+|===
+
+.Removed features
+[options="header"]
+[cols=",a"]
+|===
+|Removed feature |Details
+|<feature abc> |<feature abc> support has been removed in Automation Controller <version>
+|<feature xyz> |<feature xyz> support has been removed in Automation Controller <version>
+|===
+
+== Known issues
+These known issues exist in Automation Controller at this time:
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of issue>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of issue>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of issue>

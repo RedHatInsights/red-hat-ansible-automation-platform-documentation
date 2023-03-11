@@ -1,0 +1,22 @@
+// For each release of AAP, make a copy of this file and rename it to assembly-rn-aap-xx.adoc where xx is the release number; for example, 24 for the 2.4 release.
+// Save this assembly file to the release-notes directory where the master.adoc file resides.
+//Update the module names to match how you rename the component module templates. See those individual templates for instructions.
+//Only include modules for components that have release note updates for a given release. If the component has no release notes for the release, remove the include statement for that module.
+
+ifdef::context[:parent-context: {context}]
+
+[id="rn-<release-date>"]
+
+= <release-date> release
+
+[role="_abstract"]
+
+This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
+
+include::topics/aap-rn-template.adoc[leveloffset=+1]
+include::topics/hub-rn-template.adoc[leveloffset=+1]
+include::topics/controller-rn-template.adoc[leveloffset=+1]
+include::topics/operator-rn-template.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
