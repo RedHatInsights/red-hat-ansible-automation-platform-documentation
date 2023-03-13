@@ -11,7 +11,7 @@ You can further manage your collections by deleting unwanted  collections, provi
 
 .Procedure
 . Log in to {PlatformName}.
-. Navigate to *Automation Hub* -> *Collections*.
+. Navigate to menu:Automation Hub[Collections].
 . Click a collection to delete.
 . Click image:more_actions.png[More actions] then select an option:
 .. *Delete entire collection* to delete all versions in this collection.
