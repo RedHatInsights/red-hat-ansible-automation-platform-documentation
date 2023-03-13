@@ -9,7 +9,7 @@ To configure a list of known proxies for your {ControllerName}, add the proxy IP
 
 .Procedure
 
-. On your {ControllerName}, navigate to *Settings* > *Miscellaneous System*.
+. On your {ControllerName}, navigate to menu:Settings[Miscellaneous System].
 . In the *PROXY_IP_ALLOWED_LIST* field, enter IP addresses that are allowed to connect to your {ControllerName}, following the syntax in the example below:
 +
 .Example *PROXY_IP_ALLOWED_LIST* entry
