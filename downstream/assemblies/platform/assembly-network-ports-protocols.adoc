@@ -136,7 +136,7 @@ ALLOW connections from hop node(s) to Receptor port (if relayed through hop node
 |Receptor
 |Inbound and Outbound
 |`receptor_listener_port`
-a|Mesh - Nodes directly peered to controllers. Direct nodes involved. 27199 is bi-diretional for execution nodes
+a|Mesh - Nodes directly peered to controllers. Direct nodes involved. 27199 is bi-directional for execution nodes
 
 ENABLE connections from controller(s) to Receptor port for non-hop connected nodes
 
@@ -249,6 +249,7 @@ a|Open *only* if the internal database is used. Otherwise, this port should not 
 |===
 |URL |Required for
 |link:https://console.redhat.com:443[https://console.redhat.com:443] |General account services, subscriptions
+|link:https://catalog.redhat.com[https://catalog.redhat.com] |Indexing execution environments
 |link:https://sso.redhat.com:443[https://sso.redhat.com:443] |TCP
 |link:https://automation-hub-prd.s3.amazonaws.com[https://automation-hub-prd.s3.amazonaws.com] |
 |link:https://galaxy.ansible.com[https://galaxy.ansible.com] |Ansible Community curated Ansible content
