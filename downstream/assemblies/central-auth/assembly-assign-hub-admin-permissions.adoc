@@ -13,6 +13,6 @@ Hub administrative users will need to be assigned the role of _hubadmin_ in orde
 . Select a user from the list by clicking their ID.
 . Click the *Role Mappings* tab.
 . Using the dropdown menu under _Client Roles_, select *automation-hub*.
-. Click *hubadmin* from the _Available Roles_ field, then click btn:[Add selected >].
+. Click btn:[hubadmin] from the _Available Roles_ field, then click btn:[Add selected >].
 
 The user is now a _hubadmin_. Repeat steps 3-6 to assign any additional users the _hubadmin_ role.

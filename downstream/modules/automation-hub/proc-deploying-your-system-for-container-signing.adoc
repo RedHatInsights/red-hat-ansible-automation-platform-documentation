@@ -19,9 +19,9 @@ As an Ansible Automation Platform user, you can now confirm if an EE/Container i
         automationhub_container_signing_service_script: _path/to/executable_
 
 
-. Navigate to automation hub
+. Navigate to automation hub.
 
-. Click *Signature Keys* in the left menu pane
+. In the navigation pane, select menu:Signature Keys[].
 
 . Ensure you have a key titled *container-default*, or *container*-_anyname_.
 
