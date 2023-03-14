@@ -37,7 +37,7 @@ include::automation-hub/proc-pull-image.adoc[leveloffset=+1]
 [role="_additional-resources"]
 == Additional resources
 
-* See the link:http://docs.podman.io/en/latest/index.html[Podman documentation] for options to use when pulling images.
+* See the link:http://docs.podman.io/en/latest/index.html[What is Podman?] documentation for options to use when pulling images.
 
 
 ifdef::parent-context[:context: {parent-context}]
