@@ -26,4 +26,4 @@ If you need to pull container images from a password or token-protected registry
 
 
 .Verification
-. Run `podman images` to view images on your local machine.
+* Run `podman images` to view images on your local machine.
