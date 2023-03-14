@@ -17,7 +17,7 @@ You can setup your container repository to add a description, include a README, 
 
 == Prerequisites
 
-* You're logged in to a private Automation Hub with permissions to change the repository.
+* You are logged in to a private Automation Hub with permissions to change the repository.
 
 
 include::automation-hub/proc-add-container-readme.adoc[leveloffset=+1]
