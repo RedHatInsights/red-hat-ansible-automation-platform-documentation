@@ -18,4 +18,4 @@ You can assign permissions to groups in Automation Hub that enable users to acce
 . Click in the field for each permission type and select permissions that appear in the list.
 . Click btn:[Save] when finished assigning permissions.
 
-The group can now access features in Automation Hub associated the their assigned permissions.
+The group can now access features in Automation Hub associated with their assigned permissions.

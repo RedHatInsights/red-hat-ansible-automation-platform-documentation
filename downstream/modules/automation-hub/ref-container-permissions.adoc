@@ -4,7 +4,7 @@
 = Container registry group permissions
 
 [role="_abstract"]
-User access provides granular controls to how users can interact with containers managed in private {HubName}. Use the list of permissions below to create groups with the right privileges for your container registries.
+User access provides granular controls to how users can interact with containers managed in private {HubName}. Use the following list of permissions to create groups with the right privileges for your container registries.
 
 .List of group permissions used to manage containers in private automation hub
 [cols="1,1"]

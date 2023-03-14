@@ -16,7 +16,7 @@ The `context` attribute enables module reuse. Every module ID includes {context}
 = Providing access to your container repository
 
 [role="_abstract"]
-Provide access to your container repository to users who need to work the images. Adding a group allows you to modify the permissions the group can have to the container repository. You can use this option to extend or restrict permissions based on what the group is assigned.
+Provide access to your container repository for users who need to work the images. Adding a group allows you to modify the permissions the group can have to the container repository. You can use this option to extend or restrict permissions based on what the group is assigned.
 
 .Prerequisites
 
