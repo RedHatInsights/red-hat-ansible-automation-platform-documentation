@@ -183,23 +183,50 @@ Default = `TLSv1.2`.
 The path is on the Ansible management node. 
 It is used to encrypt certain fields in the database (such as credentials.) 
 If not specified, a new key will be generated.
-| *`sso_console_admin_password`* | SSO admin password.
-| *`sso_console_keystore_file`* | Keystore file to install in SSO node.
+| *`sso_console_admin_username`* | SSO admin username.
 
-`/path/to/sso.jks`
+Default = `admin`
+| *`sso_console_admin_password`* | SSO admin password.
+//| *`sso_console_keystore_file`* | Keystore file to install in SSO node.
+//
+//`/path/to/sso.jks`
 | *`sso_host`* | {CatalogNameStart} requires SSO and SSO administration credentials for
 authentication. 
 
 If SSO is not provided in the inventory for configuration, then you must use this variable to define the SSO host.
-| *`sso_keystore_password`* | Whether a keystore password is required for https enabled SSO.
-
-The default install deploys SSO with `sso_use_https=true`
 | *`sso_redirect_host`* | If `sso_redirect_host` is set, it is used by the application to connect to SSO for authentication. 
 
 This must be reachable from client machines.
 | *`sso_use_https`* | If Single Sign On uses https.
 
 Default = `true`
+| *`sso_ssl_validate_certs`* | Set to `true` if the cert is to be validated during connection.
+
+Default = `true`
+| *`sso_keystore_name`* | Name of keystore for SSO.
+
+Default = `ansible-automation-platform`
+| *`sso_keystore_password`* | Password for keystore https enabled SSO.
+
+Required when using {PlatformNameShort} managed SSO and when HTTPS is enabled. The default install deploys SSO with `sso_use_https=true`.
+| *`sso_custom_keystore_file`* | Customer-provided keystore for SSO.
+
+| *`sso_keystore_file_remote`* |  Set to `true` if the customer-provided keystore is on a remote node.
+
+Default = `false`
+| *`sso_automation_platform_realm`* | The name of the realm in SSO.
+
+Default = `ansible-automation-platform`
+| *`sso_automation_platform_realm_displayname`* | Display name for the realm.
+
+Default = `Ansible Automation Platform`
+| *`sso_automation_platform_login_theme`* | Path to the directory where theme files are located.
+
+If changing this variable, you must provide your own theme files.
+Default = `ansible-automation-platform`
+//| *`sso_http_port`* or *`sso_https_port`* | IP or routable hostname for SSO.
+//
+//Default = `8080` for http, `8443` for https
 |====
 
 For {HubNameMain} to connect to LDAP directly; the following variables must be configured. 
