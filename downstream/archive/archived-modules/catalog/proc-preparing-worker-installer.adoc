@@ -1,0 +1,124 @@
+
+
+[id="creating-host-vars"]
+
+= Adding host variables to the installer
+
+
+[role="_abstract"]
+Installing the automation services catalog worker requires adding `host vars` in the {PlatformName} installer used for installation parameters. The 'host_vars' files store parameter information for each host you specify. Refer to the parameters table below for all available and required parameters.
+
+.Available `host_vars` parameters
+
+[cols="a,a"]
+|===
+| Parameter | Required
+
+h| servicescatalog_controller_hostname |
+
+h| servicescatalog_controller_name |
+
+h| servicescatalog_controller_user | Yes
+
+h| servicescatalog_controller_password | Yes
+
+h| servicescatalog_controller_validate_certs |
+
+h| servicescatalog_http_proxy |
+
+h| servicescatalog_https_proxy |
+
+h| servicescatalog_no_proxy |
+
+|===
+
+.Procedure
+
+. Navigate to the {PlatformNameShort} setup or setup bundle installer directory.
++
+-----
+# cd ansible-automation-platform-setup-<latest>
+-----
++
+. Create a new directory called `host_vars`:
++
+-----
+# mkdir host_vars
+-----
+. Create a file for each required host. Examples with parameters for two hosts are included below.
+.. Service account on `localhost`:
++
+-----
+# touch finance
+-----
++
+-----
+ansible_connection: local
+
+servicescatalog_controller_name: Finance
+
+servicescatalog_controller_user: finance_sa
+servicescatalog_controller_password: <password>
+-----
++
+.. Service account on an additional host:
++
+-----
+# touch marketing
+-----
++
+-----
+ansible_host: IP address
+ansible_user: [User should have sudo access to install packages and write to system-level configuration files]
+ansible_become: true
+
+servicescatalog_controller_name: Marketing
+
+servicescatalog_controller_user: marketing_sa
+servicescatalog_controller_password: password
+-----
++
+. Save each file.
+. Open the `inventory` file in the {PlatformNameShort} installer:
++
+-----
+# vi inventory
+-----
++
+. Add the `host_vars` for each host under `[servicescatalog_workers]`:
++
+----
+[servicescatalog_workers]
+finance
+marketing
+----
++
+. Save the inventory file.
+
+= Running the installer
+
+You can now proceed to run the installer.
+
+* Run the {PlatformNameShort} setup script:
++
+-----
+# ./setup.sh
+-----
+
+Running the automation services catalog worker will create an application and an application token, install the necessary packages, connect to cloud.redhat.com, and start the service.
+
+
+
+
+.Verification
+You can verify that the automation services catalog worker installed and connected to your automation service catalog, and that jobs ordered in automation service catalog run on automation controller.
+
+.Prerequisites
+You are a Catalog Administrator and can create portfolios and add products to them.
+
+. Log in to cloud.redhat.com
+. Navigate to menu:Ansible Automation Platform[Automation Services Catalog].
+. Click btn:[Platforms].
+. Locate the platforms associated with the hosts you created for your `host_vars`.
+. Click on a platform.
+. Verify that *inventory* and *templates* from your automation controller are included.

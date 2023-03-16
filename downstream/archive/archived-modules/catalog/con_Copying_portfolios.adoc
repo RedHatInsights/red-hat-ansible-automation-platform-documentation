@@ -1,0 +1,5 @@
+[id="copying-portfolios"]
+
+= Copying existing portfolios to edit and share with new groups
+
+Copying portfolios allows you to quickly duplicate an already organized portfolio to offer to different groups of users. Once a copy is created, you can add or remove products, share with new groups, and apply new approval processes to meet organizational requirements.

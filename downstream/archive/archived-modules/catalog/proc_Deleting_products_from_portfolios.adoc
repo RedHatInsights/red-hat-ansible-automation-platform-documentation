@@ -1,0 +1,7 @@
+Procedure:
+
+. Navigate to menu:Catalog[Portfolios].
+. Click a portfolio.
+. Check each product in the portfolio you want to remove.
+. Click btn:[More Actions] and select *Remove products*.
+. [Optional] Click btn:[undo] in the notification to revert the removal action.

@@ -1,0 +1,8 @@
+= Creating a portfolio and adding products to it
+
+To create a portfolio:
+
+. Click btn:[Create portfolio].
+. Provide a *New Portfolio Name* and *Description*.
+. Choose an *Approval workflow* from the drop-down list.
+. Click btn:[Save].

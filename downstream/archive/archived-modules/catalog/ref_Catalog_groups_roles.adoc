@@ -1,0 +1,64 @@
+// Module included in the following assemblies:
+//
+// <List assemblies here, each on a new line>
+
+
+// The ID is used as an anchor for linking to the module. Avoid changing it after the module has been published to ensure existing links are not broken.
+[id="ref-catalog-groups-roles_{context}"]
+
+== Groups
+
+Groups are user-defined and flexible to include many users and have multiple roles.  Create new groups based on your organization’s requirements for working with {ProductName}.
+
+== Roles
+
+Roles provide a defined set of actions each group performs. Determine the required level of access for your users based on the following roles {ProductName} uses:
+
+.Role Reference Table
+[cols="a,a,a"]
+|===
+|  | Role | Description
+
+h| Administration | Organization Administrator |
+
+* Manage user access for Catalog and Approval
+* Add platform sources to Catalog
+
+.3+h| Approval | Approval Administrator |
+
+* Create and assign users to approval groups
+* Create and configure approval processes
+* Approval or deny requests
+* Monitor existing requests
+
+| Approval Approver |
+
+* Approve or deny requests
+* Monitor existing requests|
+
+Approval User |
+
+* Request a product
+* Monitor existing requests
+
+.2+h| Catalog | Catalog Administrator |
+
+* Create / Edit order processes
+* Set an order process to a product or portfolios
+* Delete order processes
+
+|Catalog User |
+* Request a product
+* Monitor existing requests
+
+
+|===
+
+[NOTE]
+====
+By default, all users will have Catalog User and Approval User roles assigned to them.
+====
+[IMPORTANT]
+====
+Due to potential security implications, limit the number of users in cloud.redhat.com with Organization Administrator privileges.
+====

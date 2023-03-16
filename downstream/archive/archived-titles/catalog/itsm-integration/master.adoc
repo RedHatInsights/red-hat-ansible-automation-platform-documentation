@@ -1,0 +1,74 @@
+:imagesdir: images
+[[configuring-your-tower-infrastructure-to-communicate-with-catalog]]
+= Integrating Automation Services Catalog with your IT Service Management (ITSM) systems
+
+You can use the order process features of Automation Services Catalog to integrate with an Information Technology Service Management (ITSM) systems such as ServiceNow.
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
+include::catalog/assembly-planning-ITSM-integration.adoc[leveloffset=+1]
+
+include::catalog/assembly-update-playbook-set-stats.adoc[leveloffset=+1]
+
+include::catalog/assembly-order-process.adoc[leveloffset=+1]
+
+include::catalog/assembly-itsm-substitution.adoc[leveloffset=+1]
+
+
+
+
+/////
+Customers needs to do a lot of stuff to get it to work, Complicated feature from the end user/customer perspective
+
+Order of operations:
+
+How should customers plan for ITSM integration?
+
+What updates need to be made to playbooks?
+
+How should admins organize pre and post playbooks on their end - initial recommendation was to create a portfolio called ITSM and keep all pre/post playbooks there so they aren't shared with users and basically unaccessible.
+
+
+In order for Automation Services Catalog to receive information
+
+Do we want to get support in on this feature?
+
+Do we want this as its own category on the splash page?
+
+Request info - user objects can come from `user` and `request`
+
+Grouped by `before` `after` and `applicable`
+
+`artifacts` will be what they playbook returns
+
+what are all attributes we have.
+
+prefix = `expose_to_cloud_redhat_com_`
+
+When a user enters the
+
+Order of operations:
+
+Playbook Inventory:
+1. if customers want to use any of the before objects the ansible tower operator needs to set stats with whatever value they want to expose to c.rh.c
+2.. The post_set_Stats playbook will gather all the substituted fields and use them in executing the job.
+
+Tower:
+2. In the playbook used to run as the before, edit the survey to include one of the variables that gets passed back to ASC
+3. In the playbook used to run the after, edit the survey to include fields from the object model. Example :name, email address, order ID, order start time, order status, ticket number, ticket closed by.
+
+ASC:
+1. add the befoe and after products to the ITSM portfolio so they can be used to create an order process
+2. Create the order process using the two playbooks. (only two playbooks for right now)
+
+
+Set order processes to product allows for more than one order process to be applied. What's the supported scenario and what do we need to call out?
+
+Substitution happens in the after - applicable can happen from the after and the order itself.
+
+Note from John about Objects model to add to documentation.
+
+wAHT DO WE DO IF A BEFORE OR AFTER PLAYBOOK FAILS
+
+Remind erik that we need exact parameters
+/////
