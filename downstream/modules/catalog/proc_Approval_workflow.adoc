@@ -1,9 +1,0 @@
-To create an approval workflow:
-
-. Click btn:[Approval].
-. Click btn:[Create workflow].
-. Provide a *Name* and *Description*, then click btn:[Continue].
-. Under *Set groups* click btn:[Add a group].
-. Select a group from the drop-down menu.
-. Click btn:[Add another group] to continue to add groups. Click btn:[Next] when finished.
-. Review workflow details and click btn:[Confirm].

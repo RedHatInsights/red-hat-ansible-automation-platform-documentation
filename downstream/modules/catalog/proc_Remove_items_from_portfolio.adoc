@@ -1,9 +1,0 @@
-[id="removing_products_from_portfolios"]
-= Removing products from portfolios
-
-. Click btn:[Portfolios].
-. Click btn:[Remove products].
-. Check boxes for each product to remove.
-. Click btn:[Remove]. 
-
-If products were removed by mistake, click btn:[undo] in the prompt that appears. 
