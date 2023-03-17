@@ -253,7 +253,7 @@ a|Open *only* if the internal database is used. Otherwise, this port should not 
 |link:https://automation-hub-prd.s3.amazonaws.com[https://automation-hub-prd.s3.amazonaws.com] |
 |link:https://galaxy.ansible.com[https://galaxy.ansible.com] |Ansible Community curated Ansible content
 |link:https://ansible-galaxy.s3.amazonaws.com[https://ansible-galaxy.s3.amazonaws.com] |
-|link:https://registry.redhat.io:44[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
+|link:https://registry.redhat.io:443[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
 |link:https://cert.cloud.redhat.com:443[https://cert.cloud.redhat.com:443] |Red Hat and partner curated Ansible Collections
 |===
 
@@ -261,5 +261,21 @@ a|Open *only* if the internal database is used. Otherwise, this port should not 
 [options="header"]
 |===
 |URL |Required for
-|link:https://registry.redhat.io:44[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
+|link:https://registry.redhat.io:443[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
+| `cdn.quay.io:443` | Access to container images provided by Red Hat and partners
+| `cdn01.quay.io:443` | Access to container images provided by Red Hat and partners
+| `cdn02.quay.io:443` | Access to container images provided by Red Hat and partners
+| `cdn03.quay.io:443` | Access to container images provided by Red Hat and partners
 |===
+
+[IMPORTANT]
+====
+Image manifests and filesystem blobs are served directly from `registry.redhat.io`. 
+However, from 1st of May 2023, filesystem blobs are served from `quay.io` instead. 
+To avoid problems pulling container images, you must enable outbound connections to the listed `quay.io` hostnames.
+This change should be made to any firewall configuration that specifically enables outbound connections to `registry.redhat.io`.
+Use the hostnames instead of IP addresses when configuring firewall rules. 
+After making this change you can continue to pull images from `registry.redhat.io`. 
+You do not require a `quay.io` login, or need to interact with the `quay.io` registry directly in any way to continue pulling Red Hat container images.
+For more information, see the article link:https://access.redhat.com/articles/6999582[here]
+====
