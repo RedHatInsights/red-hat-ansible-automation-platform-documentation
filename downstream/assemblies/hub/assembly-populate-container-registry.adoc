@@ -23,11 +23,11 @@ To avoid problems pulling container images, you must enable outbound connections
 * `cdn02.quay.io`
 * `cdn03.quay.io`
 
-This change should be made to any firewall configuration that specifically enables outbound connections to `registry.redhat.io` or `registry.access.redhat.com`.
+Make this change to any firewall configuration that specifically enables outbound connections to `registry.redhat.io` or `registry.access.redhat.com`.
 
 Use the hostnames instead of IP addresses when configuring firewall rules. 
 
-After making this change you can continue to pull images from `registry.redhat.io` and `registry.access.redhat.com`. You do not require a `quay.io` login, or need to interact with the `quay.io` registry directly in any way to continue pulling Red Hat container images.
+After making this change you can continue to pull images from `registry.redhat.io` and `registry.access.redhat.com`. You do not need a `quay.io` login, or need to interact with the `quay.io` registry directly in any way to continue pulling Red Hat container images.
 ====
 
 == Prerequisites
