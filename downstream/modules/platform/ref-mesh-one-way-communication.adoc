@@ -25,4 +25,4 @@ peers=automationcontroller
 
 The following image displays the topology of this mesh network.
 
-image::mesh_one_way_communication.png["The topology map of the configuration consists of an automation controller group, and local execution group. The automation controller group consists of two control nodes: aap_c_1, and aap_c_2. The local execution nodes are aap-e-1, aap-e-2, aap-e-3, aap-e-4, and aap-e-5. Every execution node is peered to every control node in an outgoing connection."]
+image::mesh-one-way-communication.png["The topology map consists of an automation controller group, and local execution group. The automation controller group consists of two control nodes: aap_c_1, and aap_c_2. The local execution nodes are aap-e-1, aap-e-2, aap-e-3, aap-e-4, and aap-e-5. Every execution node is peered to every control node in an outgoing connection."]
