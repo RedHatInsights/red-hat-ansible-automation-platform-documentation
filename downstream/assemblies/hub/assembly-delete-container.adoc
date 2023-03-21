@@ -8,10 +8,6 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 Delete a container repository from your local {HubName} to manage your disk space. You can delete repositories from the {PlatformName} interface in the *Container Repository* list view.
 
-== Prerequisites
-
-* You have permissions to manage repositories.
-
 include::automation-hub/proc-delete-container.adoc[leveloffset=+1]
 
 .Verification

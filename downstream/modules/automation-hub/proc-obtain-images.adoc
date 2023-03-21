@@ -6,7 +6,7 @@
 = Obtaining images for use in {HubName}
 
 [role="_abstract"]
-Before you can push container images to your private {HubName}, you must first pull them from an existing registry and tag them for use. This example details how to pull an image from the Red Hat Ecosystem Catalog (registry.redhat.io).
+Before you can push container images to your {PrivateHubName}, you must first pull them from an existing registry and tag them for use. This example details how to pull an image from the Red Hat Ecosystem Catalog (registry.redhat.io).
 
 .Prerequisites
 You have permissions to pull images from registry.redhat.io.

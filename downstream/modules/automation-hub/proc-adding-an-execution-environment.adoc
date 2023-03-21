@@ -24,4 +24,4 @@ of the tags will be passed. So it is important to pass repository specific tags.
 
 . Click btn:[Save].
 
-. Sync the image.
+. Synchronize the image.
