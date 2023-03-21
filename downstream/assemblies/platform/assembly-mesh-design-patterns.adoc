@@ -25,6 +25,7 @@ include::platform/ref-single-node-control-plane-single-execution-node.adoc[level
 include::platform/ref-mesh-minimum-resilient-config.adoc[leveloffset=2]
 include::platform/ref-mesh-segregated-execution_nodes.adoc[leveloffset=2]
 include::platform/ref-mesh-multi-hop-execution.adoc[leveloffset=2]
+include::platform/ref-mesh-one-way-communication.adoc[leveloffset=2]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
