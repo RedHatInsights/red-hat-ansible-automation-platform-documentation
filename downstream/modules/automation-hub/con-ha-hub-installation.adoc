@@ -37,5 +37,12 @@ If you are implementing Red Hat Single Sign-On on your {HubName} environment, sp
 -----
 automationhub_main_url = 'https://automationhub.ansible.com'
 -----
+
+.Post installation
+Check to ensure the directives below are present in ``/etc/pulp/settings.py`` in each of the Private Automation Hub servers:
+----
+USE_X_FORWARDED_PORT = True
+USE_X_FORWARDED_HOST = True 
+----
 [NOTE]
 If `automationhub_main_url` is not specified, the first node in the [automationhub] group will be used as default.
