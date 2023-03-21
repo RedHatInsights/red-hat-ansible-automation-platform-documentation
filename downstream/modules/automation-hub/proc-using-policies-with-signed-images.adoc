@@ -11,7 +11,7 @@ When ensuring a signature is signed by a specific signature(s), the signature mu
 .Procedure
 
 . In the navigation pane, select menu:Signature Keys[].
-. Click the three dots on the right hand side of the signature to be used.
-. Select *Download key* from the drop-down menu. A new window will open.
+. Click the three dots on the right hand side of the signature that you are using.
+. Select *Download key* from the drop-down menu. A new window opens.
 . In the *Name* field, enter the name of the key.
 . Click btn:[Save].

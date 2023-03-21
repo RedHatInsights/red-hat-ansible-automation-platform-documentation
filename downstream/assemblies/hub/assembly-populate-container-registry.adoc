@@ -3,14 +3,14 @@
 ifdef::context[:parent-context: {context}]
 
 [id="populate-container-registry"]
-= Populating your private {HubName} container registry
+= Populating your {PrivateHubName} container registry
 
 
 :context: populate-container-registry
 
 
 [role="_abstract"]
-By default, private {HubName} does not include container images. To populate your container registry, you need to push a container image to it. The procedures in this section describe how to pull images from the Red Hat Ecosystem Catalog (registry.redhat.io), tag them, and push them to your private {HubName} container registry.
+By default, {PrivateHubName} does not include container images. To populate your container registry, you need to push a container image to it. The procedures in this section describe how to pull images from the Red Hat Ecosystem Catalog (registry.redhat.io), tag them, and push them to your {PrivateHubName} container registry.
 
 [IMPORTANT]
 ====
@@ -32,7 +32,7 @@ After making this change you can continue to pull images from `registry.redhat.i
 
 == Prerequisites
 
-* You have permissions to create new containers and push containers to private {HubName}.
+* You have permissions to create new containers and push containers to {PrivateHubName}.
 
 include::automation-hub/proc-obtain-images.adoc[leveloffset=+1]
 include::automation-hub/proc-tag-pulled-image.adoc[leveloffset=+1]

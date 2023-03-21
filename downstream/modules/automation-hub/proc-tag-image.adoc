@@ -18,7 +18,7 @@ Tag images to add an additional name to images stored in your {HubName} containe
 . Click the *Images* tab.
 . Click image:ellipsis.png[more actions,5,12], then click btn:[Manage tags].
 . Add a new tag in the text field and click btn:[Add].
-** Optional: Remove *current tags* by clicking the btn:[x] on any of the tags for that image.
+** Optional: Remove *current tags* by clicking btn:[x] on any of the tags for that image.
 . Click btn:[Save].
 
 
