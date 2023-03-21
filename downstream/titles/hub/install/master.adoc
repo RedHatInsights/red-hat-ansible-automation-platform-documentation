@@ -148,18 +148,6 @@ automationhub_pg_sslmode='prefer'
 include::hub/assembly-hub-connect-existing-sso.adoc[leveloffset=+2]
 include::hub/assembly-hub-install-setup-script.adoc[leveloffset=+1]
 
-== Running the setup script
-
-You can run the setup script once you finish updated the `inventory` file with required parameters for installing your Private Automation Hub.
-
-. Run the `setup.sh` script
-+
------
-$ ./setup.sh
------
-
-The installation will begin.
-
 == Verifying installation
 
 Once the installation completes, you can verify your Private Automation Hub has been intalled successfully by logging in with the admin credentials you inserted into the `inventory` file.
