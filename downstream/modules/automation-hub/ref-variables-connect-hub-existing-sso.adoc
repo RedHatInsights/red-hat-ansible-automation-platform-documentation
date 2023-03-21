@@ -1,7 +1,8 @@
 [id="ref-variables-connect-hub-existing-sso"]
 = Inventory file variables for connecting {HubName} to an existing {RHSSO} instance
 
-To connect {HubName} to an existing {RHSSO} installation that is managed by {PlatformNameShort}, you must configure variables in the `inventory` file.
+To connect {HubName} to an existing {RHSSO} installation that is managed by {PlatformNameShort}, you must configure variables in the `inventory` file. 
+For more information about these inventory variables, refer to link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-hub-variables[Ansible automation hub variables] in the _{PlatformName} Installation Guide_.
 
 The following variables can be configured for both {PlatformNameShort} managed and external {RHSSO}:
 
