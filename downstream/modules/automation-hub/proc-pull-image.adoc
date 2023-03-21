@@ -1,10 +1,4 @@
-
-
 [id="pulling-image"]
-
-////
-The `context` attribute enables module reuse. Every module ID includes {context}, which ensures that the module has a unique ID even if it is reused multiple times in a guide.
-////
 
 = Pulling an image
 
