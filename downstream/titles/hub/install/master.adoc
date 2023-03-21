@@ -145,7 +145,7 @@ automationhub_pg_sslmode='prefer'
 # automationhub_ssl_key=/path/to/automationhub.key
 -----
 
-include::hub/assembly-hub-connect-existing-sso.adoc[leveloffset=+2]
+include::hub/assembly-hub-connect-sso.adoc[leveloffset=+2]
 include::hub/assembly-hub-install-setup-script.adoc[leveloffset=+1]
 
 == Verifying installation
