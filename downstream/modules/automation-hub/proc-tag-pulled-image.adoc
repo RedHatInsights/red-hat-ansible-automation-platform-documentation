@@ -7,7 +7,7 @@
 
 
 [role="_abstract"]
-After you pull images from a registry, tag them for use in your private {HubName} container registry.
+After you pull images from a registry, tag them for use in your {PrivateHubName} container registry.
 
 .Prerequisites
 
