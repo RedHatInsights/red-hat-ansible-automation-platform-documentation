@@ -33,7 +33,7 @@ The following variables can be configured for {PlatformNameShort} managed {RHSSO
 | *`sso_keystore_name`* | Optional
 |====
 
-The following variables can be configured for external {RHSSO} only:
+The following variable can be configured for external {RHSSO} only:
 
 [cols="50%,50%",options="header"]
 |====
