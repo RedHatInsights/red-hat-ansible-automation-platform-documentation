@@ -6,6 +6,8 @@ include::attributes/attributes.adoc[]
 [[getting-started]]
 = Getting started with Automation Services Catalog
 
+include::aap-common/sunset-catalog-content-admonition.adoc[leveloffset=+1]
+
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
 == About {CatalogName}
