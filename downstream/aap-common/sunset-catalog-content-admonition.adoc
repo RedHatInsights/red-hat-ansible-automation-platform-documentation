@@ -1,0 +1,8 @@
+
+[id="sunset-catalog-content-admonition"]
+[IMPORTANT]
+====
+Support for Automation Services Catalog is no longer available for Ansible Automation Platform from 2.4.
+====
+
+
