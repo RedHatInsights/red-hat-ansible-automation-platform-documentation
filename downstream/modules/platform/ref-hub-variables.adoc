@@ -190,7 +190,7 @@ Default = `admin`
 //| *`sso_console_keystore_file`* | Keystore file to install in SSO node.
 //
 //`/path/to/sso.jks`
-| *`sso_host`* | {CatalogNameStart} requires SSO and SSO administration credentials for
+| *`sso_host`* | {HubNameStart} requires SSO and SSO administration credentials for
 authentication. 
 
 If SSO is not provided in the inventory for configuration, then you must use this variable to define the SSO host.
