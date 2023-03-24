@@ -225,9 +225,9 @@ SSO admin password.
 //`/path/to/sso.jks`
 | *`sso_custom_keystore_file`* | _Optional_
 
-Customer-provided keystore for SSO.
-
 Used for {PlatformNameShort} managed {RHSSO} only.
+
+Customer-provided keystore for SSO.
 | *`sso_host`* | _Required_
 
 Used for {PlatformNameShort} externally managed {RHSSO} only.
