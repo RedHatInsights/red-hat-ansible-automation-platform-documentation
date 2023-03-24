@@ -183,50 +183,98 @@ Default = `TLSv1.2`.
 The path is on the Ansible management node. 
 It is used to encrypt certain fields in the database (such as credentials.) 
 If not specified, a new key will be generated.
-| *`sso_console_admin_username`* | SSO admin username.
+| *`sso_automation_platform_login_theme`* | _Optional_
 
-Default = `admin`
-| *`sso_console_admin_password`* | SSO admin password.
-//| *`sso_console_keystore_file`* | Keystore file to install in SSO node.
-//
-//`/path/to/sso.jks`
-| *`sso_host`* | {HubNameStart} requires SSO and SSO administration credentials for
-authentication. 
+Path to the directory where theme files are located.
+If changing this variable, you must provide your own theme files.
 
-If SSO is not provided in the inventory for configuration, then you must use this variable to define the SSO host.
-| *`sso_redirect_host`* | If `sso_redirect_host` is set, it is used by the application to connect to SSO for authentication. 
-
-This must be reachable from client machines.
-| *`sso_use_https`* | If Single Sign On uses https.
-
-Default = `true`
-| *`sso_ssl_validate_certs`* | Set to `true` if the cert is to be validated during connection.
-
-Default = `true`
-| *`sso_keystore_name`* | Name of keystore for SSO.
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
 Default = `ansible-automation-platform`
-| *`sso_keystore_password`* | Password for keystore https enabled SSO.
+| *`sso_automation_platform_realm`* | _Optional_
 
-Required when using {PlatformNameShort} managed SSO and when HTTPS is enabled. The default install deploys SSO with `sso_use_https=true`.
-| *`sso_custom_keystore_file`* | Customer-provided keystore for SSO.
+The name of the realm in SSO.
 
-| *`sso_keystore_file_remote`* |  Set to `true` if the customer-provided keystore is on a remote node.
-
-Default = `false`
-| *`sso_automation_platform_realm`* | The name of the realm in SSO.
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
 Default = `ansible-automation-platform`
-| *`sso_automation_platform_realm_displayname`* | Display name for the realm.
+| *`sso_automation_platform_realm_displayname`* | _Optional_
+
+Display name for the realm.
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
 Default = `Ansible Automation Platform`
-| *`sso_automation_platform_login_theme`* | Path to the directory where theme files are located.
-
-If changing this variable, you must provide your own theme files.
-Default = `ansible-automation-platform`
 //| *`sso_http_port`* or *`sso_https_port`* | IP or routable hostname for SSO.
 //
 //Default = `8080` for http, `8443` for https
+| *`sso_console_admin_username`* | _Optional_
+
+SSO admin username.
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+Default = `admin`
+| *`sso_console_admin_password`* | _Required_
+
+SSO admin password.
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+//| *`sso_console_keystore_file`* | Keystore file to install in SSO node.
+//
+//`/path/to/sso.jks`
+| *`sso_custom_keystore_file`* | _Optional_
+
+Customer-provided keystore for SSO.
+
+Used for {PlatformNameShort} managed {RHSSO} only.
+| *`sso_host`* | _Required_
+
+Used for {PlatformNameShort} externally managed {RHSSO} only.
+
+{HubNameStart} requires SSO and SSO administration credentials for
+authentication. 
+
+If SSO is not provided in the inventory for configuration, then you must use this variable to define the SSO host.
+| *`sso_keystore_file_remote`* | _Optional_
+
+Set to `true` if the customer-provided keystore is on a remote node.
+
+Used for {PlatformNameShort} managed {RHSSO} only.
+
+Default = `false`
+| *`sso_keystore_name`* | _Optional_
+Name of keystore for SSO.
+
+Used for {PlatformNameShort} managed {RHSSO} only.
+
+Default = `ansible-automation-platform`
+| *`sso_keystore_password`* | Password for keystore for HTTPS enabled SSO.
+
+Required when using {PlatformNameShort} managed SSO and when HTTPS is enabled. The default install deploys SSO with `sso_use_https=true`.
+| *`sso_redirect_host`* | _Optional_
+
+If `sso_redirect_host` is set, it is used by the application to connect to SSO for authentication. 
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+This must be reachable from client machines.
+| *`sso_ssl_validate_certs`* | _Optional_
+
+Set to `true` if the cert is to be validated during connection.
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+Default = `true`
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+| *`sso_use_https`* | _Optional_
+
+If Single Sign On uses https.
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+Default = `true`
 |====
 
 For {HubNameMain} to connect to LDAP directly; the following variables must be configured. 
