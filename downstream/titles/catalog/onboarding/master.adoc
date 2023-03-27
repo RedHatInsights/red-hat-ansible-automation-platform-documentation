@@ -1,4 +1,9 @@
 :imagesdir: images
+
+:experimental:
+
+include::attributes/attributes.adoc[]
+
 = Automation Service Catalog Onboarding
 
 include::aap-common/sunset-catalog-content-admonition.adoc[leveloffset=+1]
