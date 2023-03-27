@@ -271,7 +271,7 @@ a|Open *only* if the internal database is used. Otherwise, this port should not 
 [IMPORTANT]
 ====
 Image manifests and filesystem blobs are served directly from `registry.redhat.io`. 
-However, from 1 of May 2023, filesystem blobs are served from `quay.io` instead. 
+However, from 1 May 2023, filesystem blobs are served from `quay.io` instead. 
 To avoid problems pulling container images, you must enable outbound connections to the listed `quay.io` hostnames.
 Make this change to any firewall configuration that specifically enables outbound connections to `registry.redhat.io`.
 Use the hostnames instead of IP addresses when configuring firewall rules. 
