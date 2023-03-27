@@ -1,4 +1,9 @@
 :imagesdir: images
+
+:experimental:
+
+include::attributes/attributes.adoc[]
+
 [[catalog_support_matrix]]
 = Automation Services Catalog product support matrix
 
