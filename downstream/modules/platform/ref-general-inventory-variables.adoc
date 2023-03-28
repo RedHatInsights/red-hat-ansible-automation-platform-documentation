@@ -28,6 +28,12 @@ User credential for access to `registry_url`.
 Used for both `[automationcontroller]` and `[automationhub]` groups, but only if the value of `registry_url` is `registry.redhat.io`.
 
 Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
+| *`routable_hostname`* | `routable hostname` is used if the machine running the installer can only route to the target host through a specific URL, for example, if you use shortnames in your inventory, but the node running the installer can only resolve that host using FQDN.
+
+If `routable_hostname` is not set, it should default to `ansible_host`. Then if, and only if `ansible_host` is not set, `inventory_hostname` is used as a last resort.
+
+Note that this varible is used as a host variable for particular hosts and not under the `[all:vars]` section. 
+See link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html#assigning-a-variable-to-one-machine-host-variables[Assigning a variable to one machine:host variables]
 |====
 
 
