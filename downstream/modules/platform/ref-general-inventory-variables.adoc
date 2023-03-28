@@ -32,8 +32,8 @@ Enter your Red Hat Registry Service Account credentials in `registry_username` a
 
 If `routable_hostname` is not set, it should default to `ansible_host`. Then if, and only if `ansible_host` is not set, `inventory_hostname` is used as a last resort.
 
-Note that this varible is used as a host variable for particular hosts and not under the `[all:vars]` section. 
-See link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html#assigning-a-variable-to-one-machine-host-variables[Assigning a variable to one machine:host variables]
+Note that this variable is used as a host variable for particular hosts and not under the `[all:vars]` section. 
+For further information, see link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html#assigning-a-variable-to-one-machine-host-variables[Assigning a variable to one machine:host variables]
 |====
 
 
