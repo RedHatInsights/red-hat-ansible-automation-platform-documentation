@@ -111,4 +111,5 @@
 
 // Red Hat products
 :RHSSO: Red Hat Single Sign-On
+:RHSSOshort: RH-SSO
 :OperatorRHSSO: Red Hat Single Sign-On Operator
