@@ -66,8 +66,10 @@ After you deploy a {PrivateHubName} with signing enabled to your {PlatformNameSh
 automationhub_create_default_collection_signing_service = True
 automationhub_auto_sign_collections = True
 automationhub_require_content_approval = True
-automationhub_collection_signing_service_key = /abs/path/to/galaxy_signing_service.gpg
-automationhub_collection_signing_service_script = /abs/path/to/collection_signing.sh
+automationhub_collection_signing_service_key = /absolute/path/to/key/to/sign
+automationhub_collection_signing_service_script =  /absolute/path/to/script/that/signs
+automationhub_container_signing_service_key = /absolute/path/to/key/to/sign
+automationhub_container_signing_service_script =  /absolute/path/to/script/that/signs
 ----
 +
 The two new keys (*automationhub_auto_sign_collections* and *automationhub_require_content_approval*) indicate that the collections must be signed and require approval after they are uploaded to {PrivateHubName}.
