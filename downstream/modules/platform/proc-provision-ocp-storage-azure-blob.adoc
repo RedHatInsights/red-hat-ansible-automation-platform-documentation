@@ -1,0 +1,49 @@
+[id="provision-ocp-storage-azure-blob_{context}"]
+
+= Configuring object storage on Azure Blob
+
+Red Hat supports Azure Blob Storage for {HubName}.
+You can configure it when deploying the `AutomationHub` custom resource (CR), or you can configure it for an existing instance.
+
+.Prerequisites
+
+* Create an Azure Storage blob container to store the objects.
+* Note the name of the blob container.
+
+.Procedure
+
+. Create a Kubernetes secret containing the credentials and connection details for your Azure account, and the name of your Azure Storage blob container.
+The following example creates a secret called `test-azure`: 
++
+[source,yaml]
+----
+$ oc -n $HUB_NAMESPACE apply -f- <<EOF
+apiVersion: v1
+kind: Secret
+metadata:
+  name: 'test-azure'
+stringData:
+  azure-account-name: $AZURE_ACCOUNT_NAME
+  azure-account-key: $AZURE_ACCOUNT_KEY
+  azure-container: $AZURE_CONTAINER
+  azure-container-path: $AZURE_CONTAINER_PATH
+  azure-connection-string: $AZURE_CONNECTION_STRING
+EOF
+----
++
+. Add the secret to the {HubName} custom resource (CR) `spec`:
++
+[source,yaml]
+----
+spec:
+  object_storage_azure_secret: test-azure
+----
+
+. If you are applying this secret to an existing instance, restart the API pods for the change to take effect.
+`<hub-name>` is the name of your hub instance.
+
+[source,bash]
+----
+$ oc -n $HUB_NAMESPACE delete pod -l app.kubernetes.io/name=<hub-name>-api
+----
+
