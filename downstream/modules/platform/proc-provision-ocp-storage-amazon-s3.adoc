@@ -1,0 +1,49 @@
+[id="provision-ocp-storage-amazon-s3_{context}"]
+
+
+= Configuring object storage on Amazon S3
+
+Red Hat supports Amazon Simple Storage Service (S3) for {HubName}.
+You can configure it when deploying the `AutomationHub` custom resource (CR), or you can configure it for an existing instance.
+
+.Prerequisites
+
+* Create an Amazon S3 bucket to store the objects.
+* Note the name of the S3 bucket.
+
+.Procedure
+
+. Create a Kubernetes secret containing the AWS credentials and connection details, and the name of your Amazon S3 bucket.
+The following example creates a secret called `test-s3`:
++
+[source,yaml]
+----
+$ oc -n $HUB_NAMESPACE apply -f- <<EOF
+apiVersion: v1
+kind: Secret
+metadata:
+  name: 'test-s3'
+stringData:
+  s3-access-key-id: $S3_ACCESS_KEY_ID
+  s3-secret-access-key: $S3_SECRET_ACCESS_KEY
+  s3-bucket-name: $S3_BUCKET_NAME
+  s3-region: $S3_REGION
+EOF
+----
++
+. Add the secret to the {HubName} custom resource (CR) `spec`:
++
+[source,yaml]
+----
+spec:
+  object_storage_s3_secret: test-s3
+----
++
+. If you are applying this secret to an existing instance, restart the API pods for the change to take effect.
+`<hub-name>` is the name of your hub instance.
+
+[source,bash]
+----
+$ oc -n $HUB_NAMESPACE delete pod -l app.kubernetes.io/name=<hub-name>-api
+----
+
