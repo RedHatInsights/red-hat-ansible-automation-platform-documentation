@@ -1,0 +1,33 @@
+
+[id="proc-aap-activate-with-manifest_{context}"]
+
+= Activate with a manifest file
+
+If you have a subscriptions manifest, you can upload the manifest file either using the {PlatformName} interface or manually in an Ansible playbook.
+
+.Prerequisites
+You must have a Red Hat Subscription Manifest file exported from the Red Hat Customer Portal. For more information, see xref:assembly-aap-obtain-manifest-files[Obtaining a manifest file].
+
+.Uploading with the interface
+
+. Complete steps to generate and download the manifest file
+. Log in to {PlatformName}.
+. If you are not immediately prompted for a manifest file, go to menu:Settings[License].
+. Make sure the *Username* and *Password* fields are empty.
+. Click btn:[Browse] and select the manifest file.
+. Click btn:[Next].
+
+[NOTE]
+====
+If the btn:[BROWSE] button is disabled on the License page, clear the *USERNAME* and *PASSWORD* fields.
+====
+
+.Uploading manually
+
+If you are unable to apply or update the subscription info using the {PlatformName} interface, you can upload the subscriptions manifest manually in an Ansible playbook using the `license` module in the `ansible.controller` collection.
+
+-----
+- name: Set the license using a file
+  license:
+  manifest: "/tmp/my_manifest.zip"
+-----

@@ -1,0 +1,12 @@
+
+[id="proc-create-subscription-allocation_{context}"]
+
+= Create a subscription allocation
+
+Creating a new subscription allocation allows you to set aside subscriptions and entitlements for a system that is currently offline or air-gapped. This is necessary before you can download its manifest and upload it to {PlatformNameShort}.
+
+.Procedure
+. From the link:https://access.redhat.com/management/subscription_allocations/[Subscription Allocations] page, click btn:[New Subscription Allocation].
+. Enter a name for the allocation so that you can find it later.
+. Select *Type: Satellite 6.8* as the management application.
+. Click btn:[Create].
