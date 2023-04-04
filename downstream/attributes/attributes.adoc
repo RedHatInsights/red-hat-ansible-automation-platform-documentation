@@ -6,7 +6,7 @@
 :AAPCentralAuth: Ansible Automation Platform Central Authentication
 :CentralAuthStart: Central authentication
 :CentralAuth: central authentication
-:PlatformVers: 2.3
+:PlatformVers: 2.4
 :AnsibleCoreVers: 2.13
 :PlatformDownloadUrl: https://access.redhat.com/downloads/content/480/ver=2.3/rhel---9/2.3/x86_64/product-software
 
@@ -105,7 +105,7 @@
 // OpenShift attributes
 :OCP: Red Hat OpenShift Container Platform
 :OCPShort: OpenShift Container Platform
-:OCPLatest: 4.11
+:OCPLatest: 4.12
 :ODF: Red Hat OpenShift Data Foundation
 :ODFShort: OpenShift Data Foundation
 

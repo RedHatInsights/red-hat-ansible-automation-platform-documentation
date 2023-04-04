@@ -1,6 +1,6 @@
 <title>Managing user access in Private Automation Hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.3</productnumber>
+<productnumber>2.4</productnumber>
 <subtitle>Create groups for your automation hub users to provide them with appropriate system permissions, or allow view-only access to unauthorized users.</subtitle>
 <abstract>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
