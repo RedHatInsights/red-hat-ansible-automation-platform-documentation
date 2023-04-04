@@ -14,3 +14,4 @@ emender/results/*
 downstream/titles/*/master.html
 downstream/titles/*/*/master.html
 release-notes/master.html
+*.docx
