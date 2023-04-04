@@ -4,24 +4,24 @@
 
 = Creating a new group for content curators
 
-You can create a new group in Automation Hub designed to support content curation in your organization who will contribute internally developed collections for publication in Automation Hub.
+You can create a new group in {HubName} designed to support content curation in your organization that contributes internally developed collections for publication in {HubName}.
 
-In this section you will create a new group and assign the required permissions to help content developers create namespaces and upload their collections to Automation Hub.
+This section shows you how to create a new group and assign the required permissions to help content developers create namespaces and upload their collections to {HubName}.
 
 .Prerequisites
 
-* You have *admin* permissions in Automation Hub and create groups.
+* You have *admin* permissions in {HubName} and create groups.
 
 .Procedure
 
-. Log in to your local Automation Hub.
+. Log in to your local {HubName}.
 . Navigate to menu:Groups[] and click btn:[Create].
-. Enter *Content Engineering* as a *Name* for the group in the modal and click btn:[Create]. The new group is created and the *Groups* page will appear.
+. Enter *Content Engineering* as a *Name* for the group in the modal and click btn:[Create]. You have created the new group and the *Groups* page appears.
 . On the *Permissions* tab, click btn:[Edit].
 . Under *Namespaces*, add permissions for *Add Namespace*, *Upload to Namespace* and *Change Namespace*.
 . Click btn:[Save].
 +
-The new group is created with the permissions you assigned. Next you can add users to the group.
+The new group is created with the permissions you assigned. You can then add users to the group.
 +
 . Click the *Users* tab on the *Groups* page.
 . Click btn:[Add].
@@ -29,8 +29,8 @@ The new group is created with the permissions you assigned. Next you can add use
 
 .Conclusion
 
-You now have a new group who can use Automation Hub to:
+You now have a new group who can use {HubName} to:
 
-* create a namespace,
-* edit the namespace details and resources page
-* upload internally developed collections to the namespace.
+* Create a namespace.
+* Edit the namespace details and resources page.
+* Upload internally developed collections to the namespace.

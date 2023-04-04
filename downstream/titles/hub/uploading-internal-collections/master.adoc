@@ -12,9 +12,9 @@ include::hub/assembly-working-with-namespaces.adoc[leveloffset=+1]
 
 == Conclusion
 
-Following the procedure above, you::
+Using the previous procedure you can:
 
-* Create groups with permissions to curate namespaces and upload collections it;
-* Add information and resources to the namespace that helps end users of the collection in their automation tasks;
+* Create groups with permissions to curate namespaces and upload collections to it.
+* Add information and resources to the namespace that helps end users of the collection in their automation tasks.
 * Upload a collection to the namespace.
-* Review the namespace import logs to determine success or failure of uploading the collection and its current approval status.
+* Review the namespace import logs to determine the success or failure of uploading the collection and its current approval status.
