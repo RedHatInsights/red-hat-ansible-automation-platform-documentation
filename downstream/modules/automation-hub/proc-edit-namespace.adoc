@@ -4,7 +4,7 @@
 
 = Adding additional information and resources to a namespace
 
-You can add information and provide resources for your users to accompany collections included in the namespace. Add a logo, a description and link users to your GitHub repository, issue tracker, or other online assets. You can also enter markdown text in the *Edit resources* tab to include more information. This is helpful to end users who may use your collection in their automation tasks.
+You can add information and provide resources for your users to accompany collections included in the namespace. Add a logo and a description, and link users to your GitHub repository, issue tracker, or other online assets. You can also enter markdown text in the *Edit resources* tab to include more information. This is helpful to end users who may use your collection in their automation tasks.
 
 .Prerequisites
 
