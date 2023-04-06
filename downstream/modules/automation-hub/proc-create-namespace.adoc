@@ -4,7 +4,7 @@
 
 = Creating a namespace
 
-You can create a namespace to use to group collections your developers upload to {HubName}. When creating a namespace, you can assign a group in {HubName} as owners of that namespace.
+You can create a namespace to organize collections that your content developers upload to {HubName}. When creating a namespace, you can assign a group in {HubName} as owners of that namespace.
 
 .Prerequisites
 

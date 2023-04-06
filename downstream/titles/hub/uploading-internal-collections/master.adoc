@@ -4,7 +4,7 @@
 :experimental:
 include::attributes/attributes.adoc[]
 
-Curate collections developed in your organization using namespaces in Automation Hub.
+Curate collections developed in your organization using namespaces in {HubName}.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
