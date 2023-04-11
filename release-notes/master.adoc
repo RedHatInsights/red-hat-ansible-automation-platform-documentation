@@ -15,6 +15,10 @@ This release includes a number of enhancements, additions, and fixes that have b
 
 include::topics/aap-214.adoc[leveloffset=+2]
 
+include::topics/hub-443.adoc[leveloffset=+2]
+
+include::topics/controller-414.adoc[leveloffset=+2]
+
 [[anchor-november-2022-release]]
 == November 2022 release
 This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.

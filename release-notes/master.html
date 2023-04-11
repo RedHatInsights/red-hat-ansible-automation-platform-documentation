@@ -586,7 +586,7 @@ Refer to <a href="https://access.redhat.com/support/policy/updates/ansible-autom
 <p>A password is now asked for when running ad-hoc commands and selecting the credential</p>
 </li>
 <li>
-<p>Fixed an error during installation where the skopeo directory was being created</p>
+<p>Fixed an error during installation where the skopeo directory was created</p>
 </li>
 <li>
 <p>Fixed an error caused by ansible-core version conflicts during the upgrade from 1.2 to 2.1</p>
@@ -595,10 +595,10 @@ Refer to <a href="https://access.redhat.com/support/policy/updates/ansible-autom
 <p>Fixed an issue where survey fields couldn&#8217;t be updated on the web console if they were created using the API</p>
 </li>
 <li>
-<p>Fixed an issue where the date picker would select dates in the past and prevent saving</p>
+<p>Fixed an issue where the date picker would select dates in the past, and this would prevent saving</p>
 </li>
 <li>
-<p>Fixed an issue where setting use role in credential resulted in unwanted roles being added to other users</p>
+<p>Fixed an issue where setting <strong>Use Role</strong> in credential resulted in unwanted roles being added to other users</p>
 </li>
 <li>
 <p>Fixed an issue where execution environments were failing to be pushed locally during install</p>
@@ -610,7 +610,7 @@ Refer to <a href="https://access.redhat.com/support/policy/updates/ansible-autom
 <p>Fixed an issue where filter options were being removed when navigating between job template pages</p>
 </li>
 <li>
-<p>Fixed an issue where the launched job was vanishing from the jobs page</p>
+<p>Fixed an issue where the launched job was vanishing from the <strong>Jobs</strong> page</p>
 </li>
 <li>
 <p>Fixed an issue where the installer failed at "Push execution environment images locally on Automation Controller and Execution Nodes" and was unable to make rootless runtime</p>
@@ -622,7 +622,46 @@ Refer to <a href="https://access.redhat.com/support/policy/updates/ansible-autom
 <p>Fixed an issue where private automation hub was unable to restore with an external database</p>
 </li>
 <li>
+<p>Fixed an issue where hub installed unnecessary extra packages</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="hub-443-intro">Automation Hub 4.4.3</h3>
+<div class="paragraph">
+<p>Automation Hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible Automation Hub, you can discover and manage Ansible Collections, which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.</p>
+</div>
+<div class="ulist">
+<div class="title">Bug fixes</div>
+<ul>
+<li>
+<p>Fixed an issue where idle connections were growing and not closing in the automation hub database</p>
+</li>
+<li>
+<p>Fixed an issue where private automation hub was unable to restore with an external database</p>
+</li>
+<li>
 <p>Fixed an issue where hub installs unnecessary extra packages</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="controller-414-intro">Automation Controller 4.1.4</h3>
+<div class="paragraph">
+<p>Automation controller replaces Ansible Tower.
+Automation controller introduces a distributed, modular architecture with a decoupled control and execution plane.
+The name change reflects these enhancements and the overall position within the Ansible Automation Platform suite.</p>
+</div>
+<div class="paragraph">
+<p>Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.</p>
+</div>
+<div class="ulist">
+<div class="title">Bug fixes</div>
+<ul>
+<li>
+<p>Fixed an issue where the installer failed at "Push execution environment images locally on Automation Controller and Execution Nodes" and was unable to make rootless runtime</p>
 </li>
 </ul>
 </div>
@@ -2370,7 +2409,7 @@ grouping options.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-04-05 15:53:57 +0100
+Last updated 2023-04-11 16:36:35 +0100
 </div>
 </div>
 </body>
