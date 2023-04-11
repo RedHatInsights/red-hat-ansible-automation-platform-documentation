@@ -22,4 +22,3 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Fixed an issue where idle connections were growing and not closing in the automation hub database.
 * Fixed an issue where private automation hub was unable to restore with an external database.
 * Fixed an issue where hub installed unnecessary extra packages.
-
