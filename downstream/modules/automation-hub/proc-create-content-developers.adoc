@@ -10,7 +10,7 @@ This section shows you how to create a new group and assign the required permiss
 
 .Prerequisites
 
-* You have *admin* permissions in {HubName} and create groups.
+* You have administrative permissions in {HubName} and create groups.
 
 .Procedure
 

@@ -4,7 +4,7 @@
 
 = Uploading collections to your namespaces
 
-You can upload internally developed collections to your local {HubName} namespace for review and approval by an {HubName} administrator. Once approved, the collection will move to the *Published* content repository where {HubName} users can view and download it.
+You can upload internally developed collections to your local {HubName} namespace for review and approval by an {HubName} administrator. When approved, the collection moves to the *Published* content repository where {HubName} users can view and download it.
 
 [NOTE]
 ====
