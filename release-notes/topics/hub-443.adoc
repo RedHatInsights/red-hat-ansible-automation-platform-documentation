@@ -1,0 +1,10 @@
+[[hub-443-intro]]
+= Automation Hub 4.4.3
+
+Automation Hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible Automation Hub, you can discover and manage Ansible Collections, which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.
+
+.Bug fixes
+
+* Fixed an issue where idle connections were growing and not closing in the automation hub database.
+* Fixed an issue where private automation hub was unable to restore with an external database.
+* Fixed an issue where hub installs unnecessary extra packages.

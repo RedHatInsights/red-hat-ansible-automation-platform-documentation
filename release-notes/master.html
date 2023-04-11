@@ -497,6 +497,19 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 </tbody>
 </table>
 </div>
+<div class="sect2">
+<h3 id="_red_hat_ansible_automation_platform_life_cycle">Red Hat Ansible Automation Platform life cycle</h3>
+<div class="paragraph">
+<p>Red Hat publishes a product life cycle page that identifies the levels of maintenance for each Ansible Automation Platform release.
+Refer to <a href="https://access.redhat.com/support/policy/updates/ansible-automation-platform">Red Hat Ansible Automation Platform Life Cycle</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="technology-preview">What is a Technology Preview feature</h3>
+<div class="paragraph">
+<p>Technology Preview features are not supported with Red Hat production service-level agreements (SLAs) and might not be functionally complete, and Red Hat does not recommend using them for production. These features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. For more information see <a href="https://access.redhat.com/support/offerings/techpreview">Red Hat Technology Preview Features Support Scope</a>.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -527,6 +540,528 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 </div>
 <div class="paragraph">
 <p>See the <a href="https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index">Ansible Automation Platform Installation Guide</a> for procedures on using the Ansible Automation Platform installer.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="anchor-december-2022-release">December 2022 release</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.</p>
+</div>
+<div class="sect2">
+<h3 id="aap-2.1.4-intro">Ansible Automation Platform 2.1.4</h3>
+<div class="paragraph">
+<p>Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.</p>
+</div>
+<div class="ulist">
+<div class="title">Enhancements</div>
+<ul>
+<li>
+<p>Rebuilt the bundle installer to pick up the latest python-pulp-container rpm and container images</p>
+</li>
+<li>
+<p>Updated RSA key strength for Ansible Automation Platform certificates</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Bug fixes</div>
+<ul>
+<li>
+<p>A password is now asked for when running ad-hoc commands and selecting the credential</p>
+</li>
+<li>
+<p>Fixed an error during installation where the skopeo directory was created</p>
+</li>
+<li>
+<p>Fixed an error caused by ansible-core version conflicts during the upgrade from 1.2 to 2.1</p>
+</li>
+<li>
+<p>Fixed an issue where survey fields couldn&#8217;t be updated on the web console if they were created using the API</p>
+</li>
+<li>
+<p>Fixed an issue where the date picker would select dates in the past, and this would prevent saving</p>
+</li>
+<li>
+<p>Fixed an issue where setting <strong>Use Role</strong> in credential resulted in unwanted roles being added to other users</p>
+</li>
+<li>
+<p>Fixed an issue where execution environments were failing to be pushed locally during install</p>
+</li>
+<li>
+<p>Fixed an issue where facts gathered while using slices were not stored in Ansible Automation Platform</p>
+</li>
+<li>
+<p>Fixed an issue where filter options were being removed when navigating between job template pages</p>
+</li>
+<li>
+<p>Fixed an issue where the launched job was vanishing from the <strong>Jobs</strong> page</p>
+</li>
+<li>
+<p>Fixed an issue where the installer failed at "Push execution environment images locally on Automation Controller and Execution Nodes" and was unable to make rootless runtime</p>
+</li>
+<li>
+<p>Fixed an issue where idle connections were growing and not closing in the automation hub database</p>
+</li>
+<li>
+<p>Fixed an issue where private automation hub was unable to restore with an external database</p>
+</li>
+<li>
+<p>Fixed an issue where hub installed unnecessary extra packages</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="hub-443-intro">Automation Hub 4.4.3</h3>
+<div class="paragraph">
+<p>Automation Hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible Automation Hub, you can discover and manage Ansible Collections, which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.</p>
+</div>
+<div class="ulist">
+<div class="title">Bug fixes</div>
+<ul>
+<li>
+<p>Fixed an issue where idle connections were growing and not closing in the automation hub database</p>
+</li>
+<li>
+<p>Fixed an issue where private automation hub was unable to restore with an external database</p>
+</li>
+<li>
+<p>Fixed an issue where hub installs unnecessary extra packages</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="controller-414-intro">Automation Controller 4.1.4</h3>
+<div class="paragraph">
+<p>Automation controller replaces Ansible Tower.
+Automation controller introduces a distributed, modular architecture with a decoupled control and execution plane.
+The name change reflects these enhancements and the overall position within the Ansible Automation Platform suite.</p>
+</div>
+<div class="paragraph">
+<p>Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.</p>
+</div>
+<div class="ulist">
+<div class="title">Bug fixes</div>
+<ul>
+<li>
+<p>Fixed an issue where the installer failed at "Push execution environment images locally on Automation Controller and Execution Nodes" and was unable to make rootless runtime</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="anchor-november-2022-release">November 2022 release</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.</p>
+</div>
+<div class="sect2">
+<h3 id="aap-2.3-intro">Ansible Automation Platform 2.3</h3>
+<div class="paragraph">
+<p>Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.</p>
+</div>
+<div class="ulist">
+<div class="title">Enhancements</div>
+<ul>
+<li>
+<p>Fixed a race condition where the UI would not properly populate upon launch.</p>
+</li>
+<li>
+<p>Fixed an issue where puppet managed files are not handled properly by the set-up script.</p>
+</li>
+<li>
+<p>Fixed an issue where self-signed certs were being recreated on every run of <code>setup.sh</code>.</p>
+</li>
+<li>
+<p>Added an option for execution environment images to be pulled from Hub only.</p>
+</li>
+<li>
+<p>Fixed an issue where the bundled installer was failing when DNF was trying to fetch gpg keys remotely.</p>
+</li>
+<li>
+<p>Upgraded pulp_installer to 3.20.5+ .</p>
+</li>
+<li>
+<p>Implemented sidecar documentation to allow easy documentation of filter and test plugins, as well as documentation for non-python modules without requiring a .py file for documentation.</p>
+</li>
+<li>
+<p>Migrated display for <code>stdout</code> and <code>stderr</code> from the display class to proxy over the queue for dispatch in the main process to improve reliability of displaying information to the terminal.</p>
+</li>
+<li>
+<p>Moved handler processing into the configured strategy, so that handlers operate within the configured strategy, instead of using a non-configurable linear like execution of handlers.</p>
+</li>
+<li>
+<p>Updated internal FieldAttribute classes to act as Python data descriptors to reduce code complexity and use of metaclasses.</p>
+</li>
+<li>
+<p>Fixed an issue when ansible-runner was not properly removed from hybrid nodes when upgrading to Ansible Automation Platform 2.2.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Technology preview features</div>
+<ul>
+<li>
+<p>Added the ability to use external execution nodes when running AAP as a managed service in Azure.</p>
+</li>
+<li>
+<p>Added the ability to use external execution nodes when running the AAP Operator in Openshift.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Other noteworthy developer tooling updates include the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added new pre-flight checks to ansible-core CLI start up to enforce assumptions made about handling display and text encoding.</p>
+</li>
+<li>
+<p>Added official support for Python 3.11 to ansible-core CLIs and target node execution.</p>
+</li>
+<li>
+<p>Dropped Python 3.8 support for ansible-core CLIs and controller side code.</p>
+</li>
+<li>
+<p>Added lint profile support for content pipelines.</p>
+</li>
+</ul>
+</div>
+<div class="ulist _additional-resources">
+<div class="title">Additional resources</div>
+<ul>
+<li>
+<p><a href="#technology-preview">What is a Technology Preview feature</a></p>
+</li>
+<li>
+<p>For information regarding execution node enhancements on Openshift deployments, see <a href="https://docs.ansible.com/automation-controller/latest/html/administration/instances.html">Managing Capacity With Instances</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="hub-460-intro">Automation Hub 4.6</h3>
+<div class="paragraph">
+<p>Automation Hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible Automation Hub, you can discover and manage Ansible Collections, which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.</p>
+</div>
+<div class="ulist">
+<div class="title">Enhancements</div>
+<ul>
+<li>
+<p>Adopted the new pulp RBAC system.</p>
+</li>
+<li>
+<p>Added a configurable automatic logout time. Set a minimum password length for internal users.</p>
+</li>
+<li>
+<p>Added the capability to configure LDAP with private automation hub.</p>
+</li>
+<li>
+<p>Added visibility for execution environments created by ansible-builder in the automation hub UI.</p>
+</li>
+<li>
+<p>Fixed an error when navigating to a non-existent group URL.</p>
+</li>
+<li>
+<p>Fixed an issue where roles could not be created through the UI.</p>
+</li>
+<li>
+<p>Fixed an issue with Hub installation during the collect static content task.</p>
+</li>
+<li>
+<p>Fixed an issue when a 500 error would populate when listing roles on a group.</p>
+</li>
+<li>
+<p>Fixed an issue when imports contained more than 100 namespaces.</p>
+</li>
+<li>
+<p>Fixed an issue where filters were not working correctly when searching for execution environments.</p>
+</li>
+<li>
+<p>Fixed an issue where certified content would display incorrectly in private automation hub when synced.</p>
+</li>
+<li>
+<p>Fixed an issue where group_admin users could not view groups.</p>
+</li>
+<li>
+<p>Fixed an issue where pressing the enter key would reload a form instead of submitting.</p>
+</li>
+<li>
+<p>Fixed an issue with broken links on community collection dependencies.</p>
+</li>
+<li>
+<p>Fixed an issue with roles not showing up on a group access page.</p>
+</li>
+<li>
+<p>Fixed some issues with how roles were displayed on the groups page.</p>
+</li>
+<li>
+<p>Updated so that only admins can change the superuser status on users.</p>
+</li>
+<li>
+<p>Updated so that the screen no longer hangs when attempting to edit a group with unknown permissions.</p>
+</li>
+<li>
+<p>Updated the installer to use a custom repo that automation hub will add to show validated content.</p>
+</li>
+<li>
+<p>Updated the pulp_ansible package to 0.15.x.</p>
+</li>
+<li>
+<p>Updated the pulp_container package to 2.14.</p>
+</li>
+<li>
+<p>Upgraded pulpcore to 3.21.x.</p>
+</li>
+<li>
+<p>Fixed problem in which the released date for collections in private automation hub was the same as the released date for that collection and its versions in the console.redhat.com automation hub.</p>
+</li>
+<li>
+<p>Deprecated the pulp_firewalld_zone parameter, replacing it with the automationhub_firewalld_zone parameter.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="controller-430-intro">Automation Controller 4.3</h3>
+<div class="paragraph">
+<p>Automation controller replaces Ansible Tower.
+Automation controller introduces a distributed, modular architecture with a decoupled control and execution plane.
+The name change reflects these enhancements and the overall position within the Ansible Automation Platform suite.</p>
+</div>
+<div class="paragraph">
+<p>Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.</p>
+</div>
+<div class="ulist">
+<div class="title">Enhancements</div>
+<ul>
+<li>
+<p>Fixed the Ansible Galaxy Credential to no longer be automatically created or added to organizations after removing it manually.</p>
+</li>
+<li>
+<p>Fixed an issue where warnings were being unnecessarily displayed.</p>
+</li>
+<li>
+<p>Included updates and enhancements to task manager for scaling jobs, mesh, and cluster size to improve performance.</p>
+</li>
+<li>
+<p>Included  reaper and periodic task improvements for scaling the mesh and jobs, which improve performance.</p>
+</li>
+<li>
+<p>Fixed an issue with webhook notifications not triggering for some job template runs.</p>
+</li>
+<li>
+<p>Fixed a race condition where the UI would not properly populate upon launch.</p>
+</li>
+<li>
+<p>Added UI support for filtering single select survey question answers when configuring a job.</p>
+</li>
+<li>
+<p>Fixed an issue where execution environments were failing to be pushed locally during installation.</p>
+</li>
+<li>
+<p>Fixed an issue where inventory could not be selected in workflows even if the user has admin permissions on the workflow.</p>
+</li>
+<li>
+<p>Introduced a content signing utility through the Command Line Interface called <code>ansible-sign</code> that provides options for the user to sign and verify whether the project is signed.</p>
+</li>
+<li>
+<p>Added project or playbook signature verification functionality to controller, enabling users to supply a GPG key and add a content signing credential to a project. This automatically enables content signing for said project.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>See <a href="https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x">automation controller Release Notes for 4.x</a> for a full list of new features and enhancements.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="operator-230-intro">Automation Platform Operator 2.3</h3>
+<div class="paragraph">
+<p>Ansible Automation Platform Operator provides cloud-native, push-button deployment of new Ansible Automation Platform instances in your OpenShift environment.</p>
+</div>
+<div class="ulist">
+<div class="title">Enhancements</div>
+<ul>
+<li>
+<p>Fixed an issue where the pulp resource manager was not removed on upgrade from Automation Platform Operator 2.1 to Automation Platform Operator 2.2.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="docs-2.3-intro">Ansible Automation Platform 2.3 Documentation</h3>
+<div class="paragraph">
+<p>The documentation set for Red Hat Ansible Automation Platform 2.3 has been refactored to improve the experience for our customers and the Ansible community. These changes will make it easier for you to install, migrate, backup, recover and implement new features.</p>
+</div>
+<div class="ulist">
+<div class="title">Enhancements</div>
+<ul>
+<li>
+<p>The <em>Red Hat Ansible Automation Platform Instllation Guide</em> has been restructured into three separate documents to include the following:</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><em>Red Hat Ansible Automation Platform Planning Guide</em></dt>
+<dd>
+<p>Use this guide to understand requirements, options, and recommendations for installing Ansible Automation Platform.</p>
+</dd>
+<dt class="hdlist1"><em>Red Hat Ansible Automation Platform Installation Guide</em></dt>
+<dd>
+<p>Use this guide to learn how to install Ansible Automation Platform based on supported installation scenarios.</p>
+</dd>
+<dt class="hdlist1"><em>Red Hat Ansible Automation Platform Operations Guide</em></dt>
+<dd>
+<p>Use this guide for guidance on post installation activities for the Ansible Automation Platform.</p>
+</dd>
+</dl>
+</div>
+</li>
+<li>
+<p>The <em>Red Hat Ansible Automation Platform Operator Installation Guide</em> has been renamed to <em>Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform</em>. The document has also been updated to include the following:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Migration procedures so you can migrate your existing Ansible Automation Platform deployment to Ansible Automation Platform Operator.</p>
+</li>
+<li>
+<p>Upgrade procedures so you can upgrade to the latest available version of the Ansible Automation Platform Operator.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The <em>Red Hat Ansible Automation Platform Operator Backup and Recovery Guide</em> has been added to the library to help you backup and recover installations of the Red Hat Ansible Automation Platform operator on OpenShift Container Platform.</p>
+</li>
+<li>
+<p>The <em>Ansible Builder Guide</em> has been renamed to <em>Creating and Consuming Execution Environments</em> to better reflect the information provided in the guide.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="anchor-september-2022-release">September 2022 release</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="aap-2.2.1-intro">Ansible Automation Platform 2.2.1</h3>
+<div class="paragraph">
+<p>Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.</p>
+</div>
+<div class="ulist">
+<div class="title">Enhancements</div>
+<ul>
+<li>
+<p>Modified installer to include the <strong>ansible-builder</strong> image</p>
+</li>
+<li>
+<p>Updated the <code>openshift-clients</code> to 4.10.x</p>
+</li>
+<li>
+<p>Enabled users to use certificates located on destination nodes</p>
+</li>
+<li>
+<p>Updated the version to <code>pulpcore-selinux</code> 1.3.2</p>
+</li>
+<li>
+<p>Updated the version to <code>pulp_installer</code> 3.18</p>
+</li>
+<li>
+<p>Enhanced the copy process of execution environments so that they require less space in the <code>/tmp</code> directory</p>
+</li>
+<li>
+<p>Updated RSA key strength for Ansible Automation Platform certificates</p>
+</li>
+<li>
+<p>Removed <code>redhat.rhv</code> collection from supported execution environments due to Python dependencies</p>
+</li>
+<li>
+<p>Modified the base images of execution environments so that controller backups are executed in the container</p>
+</li>
+<li>
+<p>Added the capability to configure LDAP with private automation hub</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Bug fixes</div>
+<ul>
+<li>
+<p>Fixed an issue where package dependencies were missing on execution nodes</p>
+</li>
+<li>
+<p>The setup log now gets updated when it is run as <code>non-root</code> on bastion host</p>
+</li>
+<li>
+<p>The pulp resource manager now gets removed when the Ansible Automation Platform is upgraded from 2.1 to 2.2</p>
+</li>
+<li>
+<p>The <code>receptor.service</code> now restarts as expected when you run the <code>automation-controller-service</code> commands</p>
+</li>
+<li>
+<p>The installer no longer fails with permission errors in the <code>`/home/pulp</code> directory</p>
+</li>
+<li>
+<p>The receptor no longer fails in FIPS mode</p>
+</li>
+<li>
+<p>Installer no longer fails with error in installing the <code>semanage</code> dependency</p>
+</li>
+<li>
+<p>Updated the default configuration of <code>GALAXY_COLLECTION_SIGNING_SERVICE</code> to <code>ansible-default</code> instead of <code>TRUE</code></p>
+</li>
+<li>
+<p>Installation no longer fails due to conflicting <code>ansible-builder</code> Python packages</p>
+</li>
+<li>
+<p>Upgrade from Ansible Tower to Ansible Automation Platform 2.1 no longer fails due to non-root user error</p>
+</li>
+<li>
+<p>Controller database no longer gets unpacked on all nodes and cause disk space issues</p>
+</li>
+<li>
+<p>Installation of high availability automation hub no longer fails on a shared Netapp storage</p>
+</li>
+<li>
+<p>Ansible Automation Platform 1.2 to 2.1 upgrade no longer fails with 502 error due to wrong SELinux content set on nginx</p>
+</li>
+<li>
+<p>Installer no longer fails to generate SSO key pair for IPV6</p>
+</li>
+<li>
+<p>The group permissions editor can now be used to set permissions for the group when external authorization is enabled</p>
+</li>
+<li>
+<p>While using automation hub 4.5.0 with central authentication, the hub user interface no longer turns unresponsive when the group permissions are modified</p>
+</li>
+<li>
+<p>Added localization support for <strong>Modules</strong>, <strong>Roles</strong>, <strong>Plugins</strong>, and <strong>Dependencies</strong> counter in container list for both card and list view</p>
+</li>
+<li>
+<p>The <strong>Deprecated</strong> label now appears immediately after an action click or after the page reload on automation hub UI</p>
+</li>
+<li>
+<p>Upon clicking the <strong>Undeprecate</strong> button for a collection on automation hub UI, an alert is displayed stating that the task has started with a link of the task</p>
+</li>
+<li>
+<p>After syncing the Red Hat certified collections and their versions in private automation hub, the UI now correctly displays the release date of the collection and not the synchronization date</p>
+</li>
+<li>
+<p>Updated the default namespace logo to make it appear similar to the Ansible product logo</p>
+</li>
+<li>
+<p>Automation hub UI now displays the selected collection similar to the rest of the selections</p>
+</li>
+<li>
+<p>Reenabled the <strong>Deprecate</strong> button for collections in Insights mode on automation hub UI</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -1622,7 +2157,7 @@ grouping options.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-12-19 14:39:47 UTC
+Last updated 2023-04-11 16:36:35 +0100
 </div>
 </div>
 </body>
