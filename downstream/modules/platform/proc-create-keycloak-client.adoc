@@ -119,7 +119,7 @@ spec:
           id.token.claim: 'true'
           access.token.claim: 'true'
           userinfo.token.claim: 'true'
-          usermodel.clientRoleMapping.clientId:  '{HubName}'
+          usermodel.clientRoleMapping.clientId:  'automation-hub'
           claim.name: client_roles
           jsonType.label: String
         name: client_roles
@@ -128,7 +128,7 @@ spec:
       - config:
           id.token.claim: "true"
           access.token.claim: "true"
-          included.client.audience: '{HubName}'
+          included.client.audience: 'auutomation-hub'
         protocol: openid-connect
         name: audience mapper
         protocolMapper: oidc-audience-mapper
