@@ -1,0 +1,14 @@
+[id="run-setup-script-hub"]
+
+= Running the setup script
+
+You can run the setup script when you finish updating the `inventory` file with the required parameters for installing your {PrivateHubName}.
+
+. Run the `setup.sh` script
++
+-----
+$ ./setup.sh
+-----
+
+The installation begins.
+

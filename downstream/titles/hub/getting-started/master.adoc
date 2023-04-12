@@ -12,7 +12,8 @@ include::attributes/attributes.adoc[]
 
 Red Hat Ansible {HubName} provides a place for Red Hat subscribers to quickly find and use content that is supported by Red Hat and our technology partners to deliver additional reassurance for the most demanding environments.
 
-The Ansible Galaxy client, `ansible-galaxy`, manages roles and collections from the command line. To ensure that the `ansible-galaxy` client uses certified, supported Ansible collections whenever possible, you should update your `ansible.cfg` file to use Red Hat {HubName} as your primary source of Ansible collections.
+The {Galaxy} client, `ansible-galaxy`, manages roles and collections from the command line.
+To ensure that the `ansible-galaxy` client uses certified, supported Ansible collections whenever possible, update your `ansible.cfg` file to use Red Hat {HubName} as your primary source of Ansible collections.
 
 This guide walks you through the steps required to configure your `ansible.cfg` file to use Red Hat {HubName} as the default source for certified Ansible collections content.
 
@@ -26,4 +27,5 @@ include::automation-hub/proc-configure-automation-hub-server.adoc[leveloffset=+1
 
 You have now configured {HubName} as your default server and can proceed to download and install supported collections.
 
-For more information on server list configuration options and using Ansible Galaxy as an Ansible content source, see the https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
+For more information on server list configuration options and using {Galaxy} as an Ansible content source, see the https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[{Galaxy} User Guide].
+
