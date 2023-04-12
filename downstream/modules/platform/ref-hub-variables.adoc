@@ -167,9 +167,11 @@ Default = `false`.
 For Ansible Automation Platform 2.2.1 and later, the value of this has been fixed at true.
 
 {HubNameStart} always updates with the latest packages.
-| *`ee_from_hub_only`* | When deployed with {HubName} the installer pushes execution environment images to {HubName} and configures {controllerName} to pull images from the {HubName} registry.
+| *`ee_from_hub_only`* | When deployed with {HubName} the installer pushes execution environment images to {HubName} and configures {ControllerName} to pull images from the {HubName} registry.
 
-To make {hubName} the only registry to pull execution environment images from, set 'ee_from_hub_only' to `true`. 
+To make {HubName} the only registry to pull execution environment images from, set 'ee_from_hub_only' to `true`. 
+
+If set to `false`, execution environment images are also taken directly from Red Hat.
 
 Default = `true` when the bundle installer is used.
 | *`generate_automationhub_token`* a| If upgrading from {PlatformName} 2.0 or earlier, you must either:
