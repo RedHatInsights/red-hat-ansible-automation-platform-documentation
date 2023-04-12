@@ -212,14 +212,14 @@ Default = `Ansible Automation Platform`
 
 Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
-SSO admin username.
+SSO administration username.
 
 Default = `admin`
 | *`sso_console_admin_password`* | _Required_
 
 Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
-SSO admin password.
+SSO administration password.
 //| *`sso_console_keystore_file`* | Keystore file to install in SSO node.
 //
 //`/path/to/sso.jks`
@@ -264,7 +264,7 @@ This must be reachable from client machines.
 
 Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
-Set to `true` if the cert is to be validated during connection.
+Set to `true` if the certificate is to be validated during connection.
 
 Default = `true`
 
