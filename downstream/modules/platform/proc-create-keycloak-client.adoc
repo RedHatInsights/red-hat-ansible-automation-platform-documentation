@@ -128,7 +128,7 @@ spec:
       - config:
           id.token.claim: "true"
           access.token.claim: "true"
-          included.client.audience: 'auutomation-hub'
+          included.client.audience: 'automation-hub'
         protocol: openid-connect
         name: audience mapper
         protocolMapper: oidc-audience-mapper
