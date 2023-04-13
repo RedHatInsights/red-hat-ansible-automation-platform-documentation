@@ -1,0 +1,161 @@
+:_content-type: REFERENCE
+
+[id="ref-ldap-config-on-pah_{context}"]
+= LDAP configuration on {PrivateHubName}
+
+You must set the following six variables in your {PlatformName} installer inventory file to configure your {PrivateHubName} for LDAP authentication:
+
+* automationhub_authentication_backend
+* automationhub_ldap_server_uri
+* automationhub_ldap_bind_dn
+* automationhub_ldap_bind_password
+* automationhub_ldap_user_search_base_dn
+* automationhub_ldap_group_search_base_dn
+
+If any of these variables are missing, the Ansible Automation  installer will  not complete the installation. 
+
+If you require additional parameters for your LDAP configuration (for example, super user access, mirroring, grant or deny access, debug logging, and the like), follow instructions in link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-configuring-extra-ldap-parameters.adoc[Configuring extra LDAP parameters].
+
+
+== Setting up your inventory file variables
+
+When you configure your {PrivateHubName} with LDAP authentication, you must set the proper variables in your inventory files during the installation process.
+
+.Prerequisites
+
+* Ensure that your system is running Red Hat Ansible Automation Platform 2.2.1 or later.
+* Ensure that you are using {PrivateHubName} 4.5.2 or later.
+
+.Procedure
+
+. Access your inventory file according to the procedure in link:hhttps://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-editing-installer-inventory-file_platform-install-scenario[Editing the Red Hat Ansible Automation Platform installer inventory file].
+
+. Use the following example as a guide to set up your Ansible Automation Platform inventory file:
++
+-----
+automationhub_authentication_backend = "ldap"
+
+automationhub_ldap_server_uri = "ldap://ldap:389"   (for LDAPs use  automationhub_ldap_server_uri = "ldaps://ldap-server-fqdn")
+automationhub_ldap_bind_dn = "cn=admin,dc=ansible,dc=com"
+automationhub_ldap_bind_password = "GoodNewsEveryone"
+automationhub_ldap_user_search_base_dn = "ou=people,dc=ansible,dc=com"
+automationhub_ldap_group_search_base_dn = "ou=people,dc=ansible,dc=com"
+-----
++
+[Note] 
+====
+The inventory files also contain the following optional variables with default values. If required, you can update the values.
+
+-----
+auth_ldap_user_search_scope: `SUBTREE'
+auth_ldap_user_search_filter: `(uid=%(user)s)`
+auth_ldap_group_search_scope: 'SUBTREE'
+auth_ldap_group_search_filter: '(objectClass=Group)`
+auth_ldap_group_type_class: 'django_auth_ldap.config:GroupOfNamesType'
+-----
+
+====
+
+. If you plan to set up extra parameters in  your {PrivateHubName} (such as user groups, super user access, mirroring, or others), proceed to the following secton, link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-configuring-extra-ldap-parameters.adoc[Configuring extra LDAP parameters].
+
+
+== Configuring extra LDAP parameters
+
+If you plan to set up super user access, user groups, mirroring or other extra parameters, you can create a yaml file that comprises them in your `ldap_extra_settings` dictionary.
+
+.Procedure
+
+. Create a yaml file that will contain a `ldap_extra_settings`, such as the following:
++
+----
+#ldapextras.yml   
+---
+ldap_extra_settings:
+  AUTH_LDAP_USER_ATTR_MAP: '{"first_name": "givenName", "last_name": "sn", "email": "mail"}'
+...
+----
+
+. Use this example to set up a super user flag based on membership in an LDAP group.
++
+----
+#ldapextras.yml
+---
+ldap_extra_settings:
+  AUTH_LDAP_USER_FLAGS_BY_GROUP: {"is_superuser": "cn=pah-admins,ou=groups,dc=example,dc=com",}
+...
+----
+
+. Use this example to set up super user access.
++
+----
+#ldapextras.yml
+---
+ldap_extra_settings:
+  AUTH_LDAP_USER_FLAGS_BY_GROUP: {"is_superuser": "cn=pah-admins,ou=groups,dc=example,dc=com",}
+...
+----
+
+. Use this example to mirror all LDAP groups you belong to.
++
+----
+#ldapextras.yml
+---
+ldap_extra_settings:
+  AUTH_LDAP_MIRROR_GROUPS: True
+...
+----
+
+. Use this example to map LDAP user attributes (such as first name, last name, and email address of the user).
++
+----
+#ldapextras.yml
+---
+ldap_extra_settings:
+  AUTH_LDAP_USER_ATTR_MAP: {"first_name": "givenName", "last_name": "sn", "email": "mail",}
+...
+----
+
+. Use the following examples to grant or deny access based on LDAP group membership.
+.. To grant private automation hub access (for example, members of the `cn=pah-nosoupforyou,ou=groups,dc=example,dc=com` group): 
++
+----
+#ldapextras.yml
+---
+ldap_extra_settings:
+  AUTH_LDAP_DENY_GROUP: 'cn=pah-nosoupforyou,ou=groups,dc=example,dc=com'
+...
+----
+.. To deny private automation hub access (for example, members of the `cn=pah-nosoupforyou,ou=groups,dc=example,dc=com` group):
++
+----
+#ldapextras.yml
+---
+ldap_extra_settings:
+  AUTH_LDAP_DENY_GROUP: 'cn=pah-nosoupforyou,ou=groups,dc=example,dc=com'
+...
+----
+
+. Use this example to enable LDAP debug logging.
++
+----
+#ldapextras.yml
+---
+ldap_extra_settings:
+  GALAXY_LDAP_LOGGING: True
+...
+----
+
+. Use this example to configure LDAP caching by setting the variable `AUTH_LDAP_CACHE_TIMEOUT`.
++
+----
+#ldapextras.yml
+---
+ldap_extra_settings:
+  AUTH_LDAP_CACHE_TIMEOUT: 3600
+...
+----
+. After you set all of the parameters for your preferred extra settings, run the following command to configure them in ldapextras.yml.
++
+----
+setup.sh -e @ldapextras.yml
+----
