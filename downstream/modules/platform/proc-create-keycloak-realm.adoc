@@ -29,7 +29,7 @@ spec:
     id: ansible-automation-platform
     realm: ansible-automation-platform
     enabled: true
-    displayName: {PlatformNameShort}
+    displayName: Ansible Automation Platform
   instanceSelector:
     matchLabels:
       app: sso
