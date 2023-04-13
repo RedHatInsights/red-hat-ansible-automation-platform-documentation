@@ -497,6 +497,19 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 </tbody>
 </table>
 </div>
+<div class="sect2">
+<h3 id="_red_hat_ansible_automation_platform_life_cycle">Red Hat Ansible Automation Platform life cycle</h3>
+<div class="paragraph">
+<p>Red Hat publishes a product life cycle page that identifies the levels of maintenance for each Ansible Automation Platform release.
+Refer to <a href="https://access.redhat.com/support/policy/updates/ansible-automation-platform">Red Hat Ansible Automation Platform Life Cycle</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="technology-preview">What is a Technology Preview feature</h3>
+<div class="paragraph">
+<p>Technology Preview features are not supported with Red Hat production service-level agreements (SLAs) and might not be functionally complete, and Red Hat does not recommend using them for production. These features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. For more information see <a href="https://access.redhat.com/support/offerings/techpreview">Red Hat Technology Preview Features Support Scope</a>.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -527,6 +540,117 @@ For more details, see <a href="https://www.redhat.com/en/blog/making-open-source
 </div>
 <div class="paragraph">
 <p>See the <a href="https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index">Ansible Automation Platform Installation Guide</a> for procedures on using the Ansible Automation Platform installer.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="anchor-december-2022-release">December 2022 release</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.</p>
+</div>
+<div class="sect2">
+<h3 id="aap-2.1.4-intro">Ansible Automation Platform 2.1.4</h3>
+<div class="paragraph">
+<p>Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.</p>
+</div>
+<div class="ulist">
+<div class="title">Enhancements</div>
+<ul>
+<li>
+<p>Rebuilt the bundle installer to pick up the latest python-pulp-container rpm and container images</p>
+</li>
+<li>
+<p>Updated RSA key strength for Ansible Automation Platform certificates</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Bug fixes</div>
+<ul>
+<li>
+<p>A password is now asked for when running ad-hoc commands and selecting the credential</p>
+</li>
+<li>
+<p>Fixed an error during installation where the skopeo directory was created</p>
+</li>
+<li>
+<p>Fixed an error caused by ansible-core version conflicts during the upgrade from 1.2 to 2.1</p>
+</li>
+<li>
+<p>Fixed an issue where survey fields couldn&#8217;t be updated on the web console if they were created using the API</p>
+</li>
+<li>
+<p>Fixed an issue where the date picker would select dates in the past, and this would prevent saving</p>
+</li>
+<li>
+<p>Fixed an issue where setting <strong>Use Role</strong> in credential resulted in unwanted roles being added to other users</p>
+</li>
+<li>
+<p>Fixed an issue where execution environments were failing to be pushed locally during install</p>
+</li>
+<li>
+<p>Fixed an issue where facts gathered while using slices were not stored in Ansible Automation Platform</p>
+</li>
+<li>
+<p>Fixed an issue where filter options were being removed when navigating between job template pages</p>
+</li>
+<li>
+<p>Fixed an issue where the launched job was vanishing from the <strong>Jobs</strong> page</p>
+</li>
+<li>
+<p>Fixed an issue where the installer failed at "Push execution environment images locally on Automation Controller and Execution Nodes" and was unable to make rootless runtime</p>
+</li>
+<li>
+<p>Fixed an issue where idle connections were growing and not closing in the automation hub database</p>
+</li>
+<li>
+<p>Fixed an issue where private automation hub was unable to restore with an external database</p>
+</li>
+<li>
+<p>Fixed an issue where hub installed unnecessary extra packages</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="hub-443-intro">Automation Hub 4.4.3</h3>
+<div class="paragraph">
+<p>Automation Hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible Automation Hub, you can discover and manage Ansible Collections, which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.</p>
+</div>
+<div class="ulist">
+<div class="title">Bug fixes</div>
+<ul>
+<li>
+<p>Fixed an issue where idle connections were growing and not closing in the automation hub database</p>
+</li>
+<li>
+<p>Fixed an issue where private automation hub was unable to restore with an external database</p>
+</li>
+<li>
+<p>Fixed an issue where hub installs unnecessary extra packages</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="controller-414-intro">Automation Controller 4.1.4</h3>
+<div class="paragraph">
+<p>Automation controller replaces Ansible Tower.
+Automation controller introduces a distributed, modular architecture with a decoupled control and execution plane.
+The name change reflects these enhancements and the overall position within the Ansible Automation Platform suite.</p>
+</div>
+<div class="paragraph">
+<p>Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.</p>
+</div>
+<div class="ulist">
+<div class="title">Bug fixes</div>
+<ul>
+<li>
+<p>Fixed an issue where the installer failed at "Push execution environment images locally on Automation Controller and Execution Nodes" and was unable to make rootless runtime</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -1622,7 +1746,7 @@ grouping options.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-12-19 14:39:47 UTC
+Last updated 2023-04-11 16:36:35 +0100
 </div>
 </div>
 </body>
