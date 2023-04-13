@@ -5,17 +5,17 @@ You can review the status of collections uploaded to your namespaces to evaluate
 
 Imported collections information includes:
 
-* *Status* - completed or failed;
-* *Approval status* - waiting for approval or approved;
-* *Version* - the version of the uploaded collection.
-* *Import log* - activities executed during the collection import.
+* *Status* - completed or failed
+* *Approval status* - waiting for approval or approved
+* *Version* - the version of the uploaded collection
+* *Import log* - activities executed during the collection import
 
 .Prerequisites
 * You have access to a namespace to which you can upload collections.
 
 .Procedure
 
-. Log in to your local Automation Hub.
+. Log in to your local {HubName}.
 . Navigate to menu:My Namespaces[].
 . Select a namespace.
 . Click image:more_actions.png[More actions] and select *My imports*.

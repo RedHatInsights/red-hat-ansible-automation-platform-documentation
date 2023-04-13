@@ -4,14 +4,14 @@
 
 = Creating a namespace
 
-You can create a namespace to use to group collections your developers upload to Automation Hub. When creating a namespace, you can assign a group in Automation Hub as owners of that namespace.
+You can create a namespace to organize collections that your content developers upload to {HubName}. When creating a namespace, you can assign a group in {HubName} as owners of that namespace.
 
 .Prerequisites
 
 * You have *Add Namespaces* and *Upload to Namespaces* permissions.
 
 .Procedure
-. Log in to your local Automation Hub.
+. Log in to your local {HubName}.
 . Navigate to menu:My Namespaces[].
 . Click btn:[Create] and provide a *namespace name* and assign a group of *Namespace owners*.
 . Click btn:[Create].
