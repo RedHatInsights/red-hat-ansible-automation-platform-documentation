@@ -10,5 +10,5 @@ You can associate a job template to a savings plan to allow {InsightsShort} to p
 
 .Procedure
 . Navigate to menu:Red Hat Insights[Savings Planner].
-. Click image:ellipses.png[More,10,25] and select *Link Template*.
+. Click image:ellipsis.png[More,10,25] and select *Link Template*.
 . Click btn:[Save].
