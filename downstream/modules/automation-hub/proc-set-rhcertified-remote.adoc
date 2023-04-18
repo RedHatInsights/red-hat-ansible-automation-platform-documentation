@@ -7,10 +7,6 @@ You can edit the *rh-certified* remote repository to synchronize collections fro
 By default, your {PrivateHubName} `rh-certified` repository includes the URL for the entire group of {CertifiedName}.
 To use only those collections specified by your organization, you must include a unique URL.
 
-A {PrivateHubName} administrator can upload manually-created requirements from the `rh-certified` remote.
-
-If you have collections `A`, `B`, and `C` in your requirements file, and you add a new collection `X`, you must add `X` to your requirements file for {PrivateHubName} to synchronize it.
-
 .Prerequisites
 
 * You have valid *Modify Ansible repo content* permissions.
