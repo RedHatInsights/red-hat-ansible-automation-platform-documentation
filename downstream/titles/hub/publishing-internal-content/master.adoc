@@ -1,6 +1,8 @@
 = Publishing proprietary content collections in Automation Hub
 :imagesdir: images
 :numbered:
+:experimental:
+include::attributes/attributes.adoc[]
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 

@@ -6,11 +6,11 @@
 
 = About Approval
 
-You can manage uploaded collections in Automation Hub using the *Approval* feature located in the left navigation.
+You can manage uploaded collections in {HubName} using the *Approval* feature located in the left navigation.
 
 .Approval Dashboard
 
-The *Approval* dashboard lists by default all collections with *Needs Review* status, which you can evaluate for inclusion in your *Published* repository.
+By default, the *Approval* dashboard lists all collections with *Needs Review* status. You can check these for inclusion in your *Published* repository.
 
 .Viewing collection details
 
@@ -18,4 +18,4 @@ You can view more information about the collection by clicking the *Version* num
 
 .Filtering collections
 
-Filter collections by *Namespace*, *Collection Name* or *Repository* to locate content and update its status.
+Filter collections by *Namespace*, *Collection Name* or *Repository*, to locate content and update its status.
