@@ -1,6 +1,6 @@
 <title>Installing and upgrading Private Automation Hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>1.2</productnumber>
+<productnumber>2.2</productnumber>
 <subtitle>Installing an instance of Private Automation Hub or upgrading to a new version on online or offline Red Hat Enterprise Linux 7 and 8 physical or virtual machines.</subtitle>
 <abstract>
     <para><emphasis role="strong">Providing Feedback:</emphasis></para>
