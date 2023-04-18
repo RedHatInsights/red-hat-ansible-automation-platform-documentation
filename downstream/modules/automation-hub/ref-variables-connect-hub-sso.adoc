@@ -5,7 +5,7 @@ If you are installing {HubName} and {RHSSO} together for the first time or you h
 
 If you are installing {HubName} and you intend to connect it to an existing externally managed {RHSSO} instance, configure the variables for externally managed {RHSSO}.
 
-For more information about these inventory variables, refer to link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-hub-variables[Ansible automation hub variables] in the _{PlatformName} Installation Guide_.
+For more information about these inventory variables, refer to link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-sso-variables[Red Hat Single Sign-On variables] in the _{PlatformName} Installation Guide_.
 
 The following variables can be configured for both {PlatformNameShort} managed and external {RHSSO}:
 
