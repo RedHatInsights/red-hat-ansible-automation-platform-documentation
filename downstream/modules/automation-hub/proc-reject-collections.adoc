@@ -15,7 +15,7 @@ Collections requiring approval have the status *Needs review*. Click the *Versio
 .Procedure
 
 * From the sidebar, navigate to menu:Approval[].
-* Locate collection to review.
+* Locate the collection to review.
 * Click btn:[Reject] to decline the collection.
 
 Collections you decline for publication are moved to the *Rejected* repository.
