@@ -7,9 +7,3 @@ You can use synclists to manage only the content that you want and exclude unnec
 You can design and manage your synclist from the content available as part of Red Hat content on {Console}
 
 Each synclist has its own unique repository URL that you can use to designate as a remote source for content in {HubName} and is securely accessed using an API token.
-
-[NOTE]
-====
-Initially, {Valid} is only available through the {PrivateHubName} installer. 
-Organization Administrators can preload all {Valid} collections at install time and put them into a staging state where they can be reviewed to avoid uploading unnecessary collections.
-====

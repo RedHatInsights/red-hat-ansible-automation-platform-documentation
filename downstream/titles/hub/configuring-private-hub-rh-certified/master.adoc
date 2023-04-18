@@ -1,6 +1,6 @@
 
 :imagesdir: images
-= Managing Red Hat Certified and Ansible Galaxy collections in automation hub
+= Managing Red Hat Certified, validated and Ansible Galaxy content in automation hub
 :numbered:
 :experimental:
 
@@ -13,6 +13,9 @@ You can also synchronize {HubNameMain} to create a custom list of collections fr
 
 At present, Ansible validated collections are only available in your {PrivateHubName} {Valid} as part of the Platform Installer.
 When you download {PlatformName} with the bundled installer, validated content is pre-populated into the {PrivateHubName} by default, but only if you enable the {PrivateHubName} as part of the inventory.
+
+If you are not using the bundle installer, a Red Hat supplied Ansible playbook can be used to install validated content. 
+For further information, see xref:assembly-validated-content[{Valid}]
 
 You can update these collections manually by downloading their packages.
 
