@@ -7,19 +7,96 @@
 [cols="50%,50%",options="header"]
 |====
 | *Variable* | *Description* 
-| *`*_sso_console_admin_password`* | SSO admin password.
-| *`*_sso_console_keystore_file`* | Keystore file to install in SSO node.
+| *`sso_automation_platform_login_theme`* | _Optional_
 
-`/path/to/sso.jks`
-| *`*_sso_host`* | {CatalogNameStart} requires SSO and SSO admin credentials for
-authentication. 
-SSO administration credentials are also required to set {CatalogName} specific
-roles needed for the application. 
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
-If SSO is not provided in the inventory for
-configuration, then you must use this variable to define the SSO host.
-| *`*_sso_keystore_password`* | A keystore password is required for https enabled SSO.
+Path to the directory where theme files are located.
+If changing this variable, you must provide your own theme files.
 
-The default install deploys SSO with `sso_use_https=True`
-| *`*_sso_use_https`* | If Single Sign On is used
+Default = `ansible-automation-platform`
+| *`sso_automation_platform_realm`* | _Optional_
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+The name of the realm in SSO.
+
+Default = `ansible-automation-platform`
+| *`sso_automation_platform_realm_displayname`* | _Optional_
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+Display name for the realm.
+
+Default = `Ansible Automation Platform`
+//| *`sso_http_port`* or *`sso_https_port`* | IP or routable hostname for SSO.
+//
+//Default = `8080` for http, `8443` for https
+| *`sso_console_admin_username`* | _Optional_
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+SSO administration username.
+
+Default = `admin`
+| *`sso_console_admin_password`* | _Required_
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+SSO administration password.
+// | *`*_sso_console_keystore_file`* | Keystore file to install in SSO node.
+//
+// `/path/to/sso.jks`
+| *`sso_custom_keystore_file`* | _Optional_
+
+Used for {PlatformNameShort} managed {RHSSO} only.
+
+Customer-provided keystore for SSO.
+| *`sso_host`* | _Required_
+
+Used for {PlatformNameShort} externally managed {RHSSO} only.
+
+{HubNameStart} and {CatalogNameStart} require SSO and SSO administration credentials for authentication.
+
+SSO administration credentials are also required to set {CatalogName} specific roles needed for the application. 
+
+If SSO is not provided in the inventory for configuration, then you must use this variable to define the SSO host.
+| *`sso_keystore_file_remote`* | _Optional_
+
+Used for {PlatformNameShort} managed {RHSSO} only.
+
+Set to `true` if the customer-provided keystore is on a remote node.
+
+Default = `false`
+| *`sso_keystore_name`* | _Optional_
+
+Used for {PlatformNameShort} managed {RHSSO} only.
+
+Name of keystore for SSO.
+
+Default = `ansible-automation-platform`
+| *`sso_keystore_password`* | Password for keystore for HTTPS enabled SSO.
+
+Required when using {PlatformNameShort} managed SSO and when HTTPS is enabled. The default install deploys SSO with `sso_use_https=true`.
+| *`sso_redirect_host`* | _Optional_
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+If `sso_redirect_host` is set, it is used by the application to connect to SSO for authentication.
+
+This must be reachable from client machines.
+| *`sso_ssl_validate_certs`* | _Optional_
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+Set to `true` if the certificate is to be validated during connection.
+
+Default = `true`
+| *`sso_use_https`* | _Optional_
+
+Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+
+If Single Sign On uses https.
+
+Default = `true`
 |====
