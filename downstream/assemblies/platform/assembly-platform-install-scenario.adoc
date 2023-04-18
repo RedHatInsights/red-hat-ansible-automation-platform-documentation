@@ -27,7 +27,7 @@ There are a number of supported installation scenarios for {PlatformName}. To in
 * xref:ref-standlone-hub-inventory_platform-install-scenario[Standalone {HubName} with internal database]
 * xref:ref-standlone-hub-ext-database-inventory_platform-install-scenario[Single {ControllerName} with external (installer managed) database]
 * xref:ref-standalone-hub-ext-database-customer-provided_platform-install-scenario[Single {ControllerName} with external (customer provided) database]
-* xref:ref-ldap-config-on-pah[LDAP configuration on {PrivateHubName}]
+
 
 include::platform/proc-editing-inventory-file.adoc[leveloffset=+1]
 include::platform/con-install-scenario-examples.adoc[leveloffset=+2]
