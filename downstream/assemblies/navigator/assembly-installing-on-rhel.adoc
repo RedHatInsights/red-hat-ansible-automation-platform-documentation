@@ -8,7 +8,7 @@ ifdef::context[:parent-context: {context}]
 :context: install-navigator-rhel
 
 [role="_abstract"]
-As a content creator, you can install {Navigator} on Red Hat Enterprise Linux (RHEL) 8 or later.
+As a content creator, you can install {Navigator} on Red Hat Enterprise Linux (RHEL) 8.6 or later.
 
 include::navigator/proc-installing-navigator-rhel-rpm.adoc[leveloffset=+1]
 

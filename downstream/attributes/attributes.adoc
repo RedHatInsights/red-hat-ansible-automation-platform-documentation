@@ -7,7 +7,7 @@
 :CentralAuthStart: Central authentication
 :CentralAuth: central authentication
 :PlatformVers: 2.4
-:AnsibleCoreVers: 2.13
+:AnsibleCoreVers: 2.15
 :PlatformDownloadUrl: https://access.redhat.com/downloads/content/480/ver=2.3/rhel---9/2.3/x86_64/product-software
 
 // AAP on Clouds
@@ -79,6 +79,7 @@
 :ExecEnvNameSing: automation execution environment
 :ExecEnvShort: execution environment
 :RHEL8: RHEL 8 UBI
+:RHEL9: RHEL 9 UBI
 :Python: Python 3.8
 :Runner: Ansible Runner
 :Role: Role ARG Spec
