@@ -35,11 +35,13 @@ You require the following variables to run the playbook.
 |====
 | Name | Description 
 | *`automationhub_admin_password`* | Your administration password.
-| *`automation_hub_api_token`* | The API token generated for your {HubName}.
+| *`automationhub_api_token`* | The API token generated for your {HubName}.
 | *`automationhub_main_url`* | For example, `\https://automationhub.example.com`
-| *`automation_hub_require_content_approval`* | Boolean (`true` or `false`)
+| *`automationhub_require_content_approval`* | Boolean (`true` or `false`)
 
 This must match the value used during {HubName} deployment.
+
+This variable is set to `true` by the installer.
 |====
 
 [NOTE]
@@ -47,15 +49,13 @@ This must match the value used during {HubName} deployment.
 Use either `automationhub_admin_password` or `automationhub_api_token`, not both.
 ====
 
-Upload the content and define the variables using the command:
+Upload the content and define the variables (this example uses `automationhub_api_token'):
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
 ansible-playbook collection_seed.yml 
--e automationhub_admin_password=<admin password> 
--e automationhub_main_url=<main_url>
 -e automationhub_api_token=<api_token>
-ansible-playbook collection_seed.yml -e @<name of file where variables are defined>
+-e automationhub_require_content_approval=true
 ----
 
 For more information on running ansible playbooks, see link:https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook]
