@@ -9,14 +9,6 @@
 Administrators can use the `awx-manage dbshell` command, which automatically enables the PostgreSQL SCL.
 * To determine if your {ControllerName} instance has access to the database, you can do so with the command, `awx-manage check_db`.
 
-[cols="a,a",options="header"]
-|===
-h| Requirement |Required
-| *RAM* |
-| *CPUs* |
-| *Local disk* |
-|===
-
 .Database
 
 [cols="a,a,a",options="header"]
@@ -37,6 +29,12 @@ Storage volume should be rated for a minimum baseline of 1500 IOPS.
 
 * 150 GB+ recommended
 * Storage volume should be rated for a high baseline IOPS (1500 or more).
+* All {ControllerName} data is stored in the database.
+Database storage increases with the number of hosts managed, number of jobs run, number of facts stored in the fact cache, and number of tasks in any individual job.
+For example, a playbook run every hour (24 times a day) across 250, hosts, with 20 tasks will store over 800000 events in the database every week.
+* If not enough space is reserved in the database, old job runs and facts will need cleaned on a regular basis.
+Refer to link:https://docs.ansible.com/ansible-tower/3.8.3/html/administration/management_jobs.html#ag-management-jobs[Management Jobs] in the _Automation Controller Administration Guide_ for more information
+
 |===
 
 .PostgreSQL Configurations

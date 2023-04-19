@@ -66,13 +66,6 @@ h| Requirement | Required
 | *Local disk* | 40GB
 |===
 
-* All {ControllerName} data is stored in the database.
-Database storage increases with the number of hosts managed, number of jobs run, number of facts stored in the fact cache, and number of tasks in any individual job.
-For example, a playbook run every hour (24 times a day) across 250, hosts, with 20 tasks will store over 800000 events in the database every week.
-
-* If not enough space is reserved in the database, old job runs and facts will need cleaned on a regular basis.
-Refer to link:https://docs.ansible.com/ansible-tower/3.8.3/html/administration/management_jobs.html#ag-management-jobs[Management Jobs] in the _Automation Controller Administration Guide_ for more information
-
 * Actual RAM requirements vary based on how many hosts {ControllerName} will manage simultaneously (which is controlled by the `forks` parameter in the job template or the system `ansible.cfg` file).
 To avoid possible resource conflicts, Ansible recommends 1 GB of memory per 10 forks + 2 GB reservation for {ControllerName}, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#at-capacity-determination-and-job-impact[Automation controller Capacity Determination and Job Impact] for further details. If `forks` is set to 400, 42 GB of memory is recommended.
 * A larger number of hosts can of course be addressed, though if the fork number is less than the total host count, more passes across the hosts are required.
