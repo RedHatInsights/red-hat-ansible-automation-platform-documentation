@@ -80,7 +80,7 @@
 :ExecEnvShort: execution environment
 :RHEL8: RHEL 8 UBI
 :RHEL9: RHEL 9 UBI
-:Python: Python 3.8
+:Python: Python 3.9
 :Runner: Ansible Runner
 :Role: Role ARG Spec
 
