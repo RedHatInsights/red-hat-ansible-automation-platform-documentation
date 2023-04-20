@@ -57,3 +57,9 @@ password=my_pass
 <3> Include the `/api/galaxy/` subdirectory in the {HubName} server URL.
 
 NOTE: All API URLs must end with a trailing slash */* in order to prevent receiving a 301 redirect.
+
+You have now configured automation hub as your primary server using CLI, and can proceed to download and install supported collections.
+
+[role="_additional-resources"]
+.Additional resources
+For more information on server list configuration options and using Ansible Galaxy as an Ansible content source, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
