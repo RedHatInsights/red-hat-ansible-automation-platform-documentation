@@ -3,7 +3,7 @@
 
 Configure Red Hat automation hub as your primary source of content to access Ansible Certified Content Collections. You can configure automation hub in the command-line interface (CLI) or the web console.
 
-== 2.1. Configuring Red Hat automation hub as the primary source for content using the CLI
+== Configuring Red Hat automation hub as the primary source for content using the CLI
 
 Configure Red Hat automation hub as your primary source of content by using the command-line interface (CLI). To configure automation hub, you must modify the `ansible.cfg` configuration file. With automation hub, you have access to certified, supported collections.
 
