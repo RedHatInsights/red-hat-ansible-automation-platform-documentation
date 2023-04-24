@@ -1,5 +1,5 @@
 [id="proc-configure-automation-hub-server-gui"]
-= Configuring Red Hat {HubName} as the primary source for content using the web console
+== Configuring Red Hat {HubName} as the primary source for content using the web console
 
 Configure Red Hat automation hub as your primary source of content by using the web console. To configure automation hub, you must create a credential and add it to the Organization’s Galaxy Credentials field. With automation hub, you have access to certified, supported collections.
 
@@ -27,7 +27,7 @@ Configure Red Hat automation hub as your primary source of content by using the 
 .. Navigate to menu:Access[Organizations].
 .. Select the organization where you’d like to add your Galaxy credentials.
 .. Click btn:[Edit].
-.. Under Galaxy Credentials, click image:_____.png.
+.. Under Galaxy Credentials, click image:search-icon.png.
 .. Select the credential you created for automation hub, and place it at the beginning of the list.
 .. Optional: If you have a secondary source of content, such as Ansible Galaxy, place this credential after the credential you created for automation hub. 
 .. Click btn:[Select].
@@ -48,3 +48,4 @@ You have now configured automation hub as your primary server using the web cons
 [role="_additional-resources"]
 .Additional resources
 . For more information on server list configuration options and using Ansible Galaxy as an Ansible content source, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
+. For more information on creating and using credentials, see the link:https://docs.ansible.com/automation-controller/4.2.1/html/userguide/credentials.html[Credentials] section of Automation Controller User Guide v4.2.1.
