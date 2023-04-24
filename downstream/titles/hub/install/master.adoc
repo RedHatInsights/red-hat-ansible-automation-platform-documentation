@@ -4,15 +4,15 @@
 :experimental:
 include::attributes/attributes.adoc[]
 
-= Installing and upgrading Private Automation Hub
+= Installing and upgrading {PrivateHubName}
 
-You can install Private Automation Hub or upgrade to a new version on a Red Hat Enterprise Linux 7 or 8 virtual or physical machine with a valid Red Hat Ansible Automation Platform subscription.
+You can install {PrivateHubName} or upgrade to a new version on a Red Hat Enterprise Linux 7 or 8 virtual or physical machine with a valid {PlatformName} subscription.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
 == System requirements
 
-Installing a Private Automation Hub instance requires the following:
+Installing a {PrivateHubName} instance requires the following:
 
 .System Requirements
 
@@ -20,11 +20,11 @@ Installing a Private Automation Hub instance requires the following:
 |===
 |  | Required
 
-h| Subscription | Valid Red Hat Ansible Automation Platform
+h| Subscription | Valid Red Hat {PlatformNameShort}
 
 h| OS | Red Hat Enterprise Linux 7.7 or later 64-bit (x86) or 8.2 or later 64-bit (x86)
 
-h| Ansible | version 2.9 required
+h| Ansible | Version 2.9 required
 
 h| RAM | 4 GB minimum
 
@@ -34,7 +34,7 @@ h| Disk | 20 GB dedicated hard disk space
 
 Dependent on size of collections stored
 
-h| Browser | A currently supported version of Mozilla FireFox or Google Chrome
+h| Browser | A currently supported version of Mozilla Firefox or Google Chrome
 
 h| Database | PostgreSQL version 10 |
 
@@ -42,24 +42,28 @@ h| Database | PostgreSQL version 10 |
 
 [NOTE]
 ====
-You cannot install Ansible Tower and a Private Automation Hub instance on the same node. The `inventory` file can handle the installation of both Ansible Tower and Automation Hub. These instructions are only for the installation of Automation Hub.
+You cannot install {PlatformNameShort} and a {PrivateHubName} instance on the same node.
+The `inventory` file can handle the installation of both {PlatformNameShort} and {HubName}. 
+These instructions are only for the installation of {PlatformNameShort}.
 ====
 
 == Installing online or offline
 
-Choose the Ansible Automation Platform installer you need to install Private Automation Hub based on your Red Hat Enterprise Linux environment internet connectivity. Review the scenarios below and determine which Ansible Automation Platform installer meets your needs.
+Choose the {PlatformNameShort} installer you need to install {PrivateHubName} based on your Red Hat Enterprise Linux environment internet connectivity. 
+Review the following scenarios and determine which {PlatformNameShort} installer meets your needs.
 
 [NOTE]
 ====
-A valid Red Hat customer account is required to access Ansible Automation Platform installer downloads on the Red Hat Customer Portal.
+You must have a valid Red Hat customer account to access {PlatformNameShort} installer downloads on the Red Hat Customer Portal.
 ====
 
 .Installing with internet access
 
-Install Private Automation Hub using the Ansible Automation Platform installer if your Red Hat Enterprise Linux environment is connected to the internet. Installing with internet access will retrieve the latest required repositories, packages, and dependencies.
+Install {PrivateHubName} using the {PlatformNameShort} installer if your Red Hat Enterprise Linux environment is connected to the internet. 
+Installing with internet access will retrieve the latest required repositories, packages, and dependencies.
 
-. Navigate to https://access.redhat.com/downloads/content/480
-. Click btn:[Download Now] for the *Ansible Automation Platform <latest-version> Setup*.
+. Navigate to link:https://access.redhat.com/downloads/content/480[Download Red Hat Ansible Automation Platform].
+. Click btn:[Download Now] for the *{PlatformNameShort} <latest-version> Setup*.
 . Extract the files:
 +
 -----
@@ -69,9 +73,11 @@ $ tar xvzf ansible-automation-platform-setup-<latest-version>.tar.gz
 
 .Installing without internet access
 
-Install Private Automation Hub using the Ansible Automation Platform *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. Access to Red Hat Enterprise Linux repositories is still needed. All other dependencies are included in the tar archive.
+Install {PrivateHubName} using the {PlatformNameShort} *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. 
+Access to Red Hat Enterprise Linux repositories is still needed. 
+All other dependencies are included in the tar archive.
 
-. Navigate to https://access.redhat.com/downloads/content/480
+. Navigate to link:https://access.redhat.com/downloads/content/480[Download Red Hat Ansible Automation Platform].
 . Click btn:[Download Now] for the *Ansible Automation Platform <latest-version> Setup Bundle*.
 . Extract the files:
 +
@@ -81,7 +87,7 @@ $ tar xvzf ansible-automation-platform-setup-bundle-<latest-version>.tar.gz
 
 == Editing the inventory file
 
-Edit the `inventory` file to specify an installation of Automation Hub, and update required parameters.
+Edit the `inventory` file to specify an installation of {HubName}, and update the required parameters.
 
 . Navigate to the installer.
 .. [bundled installer]
@@ -97,7 +103,7 @@ $ cd ansible-automation-platform-setup-<latest-version>
 -----
 +
 . Open the `inventory` file with a text editor.
-. Edit `inventory` file parameters to specify an installation of Automaton Hub host only. Follow the example below.
+. Edit the `inventory` file parameters to specify an installation of {HubName} host only. Refer to the following example.
 .. Leave `[automationcontroller]` inventory information *empty*.
 .. Add `[automationhub]` group host information.
 +
