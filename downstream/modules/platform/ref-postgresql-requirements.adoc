@@ -7,6 +7,33 @@
 * PostgreSQL user passwords are hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
 * To determine if your {ControllerName} instance has access to the database, you can do so with the command, `awx-manage check_db`.
 
+.Database
+
+[cols="a,a,a",options="header"]
+|===
+h| Service |Required |Notes
+| *Each {ControllerName}* | 40 GB dedicated hard disk space |
+
+* dedicate a minimum of 20 GB to `/var/` for file and working directory storage
+* Storage volume must be rated for a minimum baseline of 1500 IOPS.
+* Projects are stored on control and hybrid nodes, and for the duration of jobs, are also stored on execution nodes. If the cluster has many large projects, consider having twice the GB in /var/lib/awx/projects, to avoid disk space errors.
+
+* 150 GB+ recommended
+* Storage volume must be rated for a high baseline IOPS (1500 or more).
+| *Each {HubName}* | 60 GB dedicated hard disk space |
+
+Storage volume must be rated for a minimum baseline of 1500 IOPS.
+| *Database* | 20 GB dedicated hard disk space |
+
+* 150 GB+ recommended
+* Storage volume must be rated for a high baseline IOPS (1500 or more).
+* All {ControllerName} data is stored in the database.
+Database storage increases with the number of hosts managed, number of jobs run, number of facts stored in the fact cache, and number of tasks in any individual job.
+For example, a playbook run every hour (24 times a day) across 250 hosts, with 20 tasks, will store over 800000 events in the database every week.
+* If not enough space is reserved in the database, old job runs and facts must be cleaned on a regular basis.
+Refer to link:https://docs.ansible.com/ansible-tower/3.8.3/html/administration/management_jobs.html#ag-management-jobs[Management Jobs] in the _Automation Controller Administration Guide_ for more information
+
+|===
 
 .PostgreSQL Configurations
 
