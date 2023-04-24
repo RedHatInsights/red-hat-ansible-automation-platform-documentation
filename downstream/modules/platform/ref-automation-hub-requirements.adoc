@@ -9,30 +9,25 @@ On {HubNameMain}, you can discover and manage Ansible Collections, which are sup
 
 [cols="a,a,a"]
 |===
-| | Required | Notes
+h|Requirement | Required | Notes
 
-h| RAM | 8 GB minimum |
+| *RAM* | 8 GB minimum |
 
 * 8 GB RAM (minimum and recommended for Vagrant trial installations)
 * 8 GB RAM (minimum for external standalone PostgreSQL databases)
 * For capacity based on forks in your configuration, see additional resources
-h| CPUs | 2 minimum |
+| *CPUs* | 2 minimum |
 
-* For capacity based on forks in your configuration, see additional resources
-h| Disk: service node | 60 GB dedicated hard disk space |
+For capacity based on forks in your configuration, see additional resources.
+| *Local disk* |  60 GB disk | A minimum of 40GB should be  dedicated to /var for collection storage.
 
-* Storage volume should be rated for a minimum baseline of 1500 IOPS.
-h| Disk: database node| 20 GB dedicated hard disk space |
-
-* 150 GB+ recommended
-* Storage volume should be rated for a high baseline IOPS (1500 or more).
 |===
 
 [NOTE]
 ====
 {PrivateHubNameStart}
 
-If you install {PrivateHubname} from an internal address, and have a certificate which only encompasses the external address, this can result in an installation which cannot be used as container registry without certificate issues. 
+If you install {PrivateHubname} from an internal address, and have a certificate which only encompasses the external address, this can result in an installation which cannot be used as container registry without certificate issues.
 
 To avoid this, use the `automationhub_main_url` inventory variable with a value like \https://pah.example.com linking to the {PrivateHubName} node in the installation inventory file.
 
