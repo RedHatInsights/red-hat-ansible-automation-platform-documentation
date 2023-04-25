@@ -5,12 +5,12 @@
 
 You must set the following six variables in your {PlatformName} installer inventory file to configure your {PrivateHubName} for LDAP authentication:
 
-* automationhub_authentication_backend
-* automationhub_ldap_server_uri
-* automationhub_ldap_bind_dn
-* automationhub_ldap_bind_password
-* automationhub_ldap_user_search_base_dn
-* automationhub_ldap_group_search_base_dn
+* `automationhub_authentication_backend`
+* `automationhub_ldap_server_uri`
+* `automationhub_ldap_bind_dn`
+* `automationhub_ldap_bind_password`
+* `automationhub_ldap_user_search_base_dn`
+* `automationhub_ldap_group_search_base_dn`
 
 If any of these variables are missing, the Ansible Automation  installer will  not complete the installation. 
 
