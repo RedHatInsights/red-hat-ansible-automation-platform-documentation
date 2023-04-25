@@ -159,7 +159,7 @@ Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
 +
 [NOTE]
 ====
-If it is not practical to re-run setup.sh or if debug logging should just be enabled for a short time, a line containing GALAXY_LDAP_LOGGING: True can also be added manually to the /etc/pulp/settings.py file on private automation hub. Restart both pulpcore-api.service and nginx.service for the changes to take effect.
+If it is not practical to re-run setup.sh or if debug logging should just be enabled for a short time, a line containing `GALAXY_LDAP_LOGGING: True` can also be added manually to the `/etc/pulp/settings.py` file on {PrivateHubName}. Restart both `pulpcore-api.service` and `nginx.service` for the changes to take effect.
 ====
 +
 . Use this example to configure LDAP caching by setting the variable `AUTH_LDAP_CACHE_TIMEOUT`.
