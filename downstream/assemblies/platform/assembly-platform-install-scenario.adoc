@@ -30,6 +30,7 @@ There are a number of supported installation scenarios for {PlatformName}. To in
 * 
 xref:ref-ldap-config-on-pah_platform-install-scenario[LDAP configuration on {PrivateHubName}]
 
+
 include::platform/proc-editing-inventory-file.adoc[leveloffset=+1]
 include::platform/con-install-scenario-examples.adoc[leveloffset=+2]
 include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=+3]
