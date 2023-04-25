@@ -87,7 +87,7 @@ $ tar xvzf ansible-automation-platform-setup-bundle-<latest-version>.tar.gz
 
 == Editing the inventory file
 
-Edit the `inventory` file to specify an installation of {HubName}, and update the required parameters.
+Edit the `inventory` file to specify an installation of {HubName} and update the required parameters.
 
 . Navigate to the installer.
 .. [bundled installer]
@@ -178,7 +178,7 @@ Perform this upgrade using the `inventory` file configured when you installed {P
 -----
 $ tar xvzf ansible-automation-platform-setup-bundle-<latest-version>.tar.gz
 -----
-. Copy configuration information from your initial installation to the `inventory` file.
+. Copy the configuration information from your initial installation to the `inventory` file.
 . Run the `setup.sh` script
 +
 -----
