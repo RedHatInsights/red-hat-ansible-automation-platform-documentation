@@ -5,7 +5,7 @@ Configure Red Hat automation hub as your primary source of content by using the 
 
 .Prerequisites
 
-* You have obtained the API token for the {HubName} server. See link: https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/getting_started_with_red_hat_ansible_automation_hub/proc-create-api-token[Creating the {HubName} API token] for more information.
+* You have obtained the API token for the {HubName} server. See xref:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/getting_started_with_red_hat_ansible_automation_hub/proc-create-api-token[Creating the {HubName} API token] for more information.
 [IMPORTANT]
 ====
 	Creating a new token revokes any previous tokens 
@@ -18,16 +18,16 @@ Configure Red Hat automation hub as your primary source of content by using the 
 . Create a new credential.
 .. Click btn:[Add] from the **Credentials** screen.
 .. Enter the name for your new credential in the **Name** field.
-.. Optional: enter a description and enter or select the name of the organization with which the credential is associated.
-.. Under Organization, select the organization that you would like to use the credential for.
+.. Optional: Enter a description and enter or select the name of the organization with which the credential is associated.
+.. Under **Organization**, select the organization that you would like to use the credential for.
 .. Select **Ansible Galaxy/Automation Hub API Token** as the credential type.
 .. Under **Type Details**, enter the **Galaxy Server URL**, **Authentication Server URL**, and **API Token** created in the Prerequisite.
 .. Click btn:[Save].
-. Select the credential you created from the Organization’s Galaxy Credentials field.
+. Select the credential you created from the Organization’s **Galaxy Credentials** field.
 .. Navigate to menu:Access[Organizations].
 .. Select the organization where you’d like to add your Galaxy credentials.
 .. Click btn:[Edit].
-.. Under Galaxy Credentials, click image:search-icon.png.
+.. Under Galaxy Credentials, click the **Search** icon.
 .. Select the credential you created for automation hub, and place it at the beginning of the list.
 .. Optional: If you have a secondary source of content, such as Ansible Galaxy, place this credential after the credential you created for automation hub. 
 .. Click btn:[Select].
@@ -35,10 +35,10 @@ Configure Red Hat automation hub as your primary source of content by using the 
 
 .Verification
 
-To validate the credential, update an existing source control management (SCM)-based project by selecting the project and clicking the [refresh icon] button.
+To validate the credential, update an existing source control management (SCM)-based project by selecting the project and clicking the **Refresh** icon.
 
 . Navigate to your project repository.
-. Select a project that uses a collections/requirements.yml file.
+. Select a project that uses a `collections/requirements.yml` file.
 . Update the project by clicking the refresh icon [refresh icon].
 
 If the status of the project is **Successful**, then the credential is valid. 

@@ -5,11 +5,11 @@ Configure Red Hat automation hub as your primary source of content to access Ans
 
 == Configuring Red Hat automation hub as the primary source for content using the CLI
 
-Configure Red Hat automation hub as your primary source of content by using the command-line interface (CLI). To configure automation hub, you must modify the `ansible.cfg` configuration file. With automation hub, you have access to certified, supported collections.
+Configure Red Hat automation hub as your primary source of content by using the CLI. To configure automation hub, you must modify the `ansible.cfg` configuration file. With automation hub, you have access to certified, supported collections.
 
 .Prerequisites
 
-* You have obtained the API token for the {HubName} server. See link: https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/getting_started_with_red_hat_ansible_automation_hub/proc-create-api-token[Creating the {HubName} API token] for more information.
+* You have obtained the API token for the {HubName} server. See xref:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/getting_started_with_red_hat_ansible_automation_hub/proc-create-api-token[Creating the {HubName} API token] for more information.
 [IMPORTANT]
 ====
 	Creating a new token revokes any previous tokens 
@@ -22,7 +22,7 @@ Configure Red Hat automation hub as your primary source of content by using the 
 . Create a new section for each server name:
 +
 -----
-[galaxy_server.<server_name>]
+[galaxy_server._<server_name>_]
 -----
 
 . Set the `url` option for each server name. You must include the `api/galaxy/` subdirectory in the server URL:
@@ -31,7 +31,7 @@ Configure Red Hat automation hub as your primary source of content by using the 
 -----
 https://__<server_fully_qualified_domain_name>__/api/galaxy/
 -----
-. Set the `auth_url` option if necessary. The community Ansible Galaxy does not require an `auth_url`.
+. Optional: Set the `auth_url` option. The community Ansible Galaxy does not require an `auth_url`.
 . Set the API token for the {HubName} server.
 
 The following `ansible.cfg` example shows how to configure multiple servers in prioritized order, with {HubName} configured as your primary source and an Ansible Galaxy server as a secondary source:
@@ -53,7 +53,7 @@ username=my_user
 password=my_pass
 -----
 <1> A trailing slash */* must follow the server URL.
-<2> Include the `/api/galaxy/` subdirectory in the Galaxy server URL.
+<2> Include the `/api/galaxy/` subdirectory in the Ansible Galaxy server URL.
 <3> Include the `/api/galaxy/` subdirectory in the {HubName} server URL.
 
 NOTE: All API URLs must end with a trailing slash */* in order to prevent receiving a 301 redirect.
