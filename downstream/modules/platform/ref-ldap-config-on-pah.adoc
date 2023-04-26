@@ -130,7 +130,7 @@ Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
 #ldapextras.yml
 ---
 ldap_extra_settings:
-  AUTH_LDAP_DENY_GROUP: 'cn=pah-nosoupforyou,ou=groups,dc=example,dc=com'
+  AUTH_LDAP_REQUIRE_GROUP: 'cn=pah-users,ou=groups,dc=example,dc=com'
 ...
 ----
 .. To deny {PrivateHubName} access (for example, members of the `cn=pah-nosoupforyou,ou=groups,dc=example,dc=com` group):
