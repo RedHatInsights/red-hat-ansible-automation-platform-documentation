@@ -4,11 +4,10 @@
 
 You can run the setup script when you finish updating the `inventory` file with the required parameters for installing your {PrivateHubName}.
 
-. Run the `setup.sh` script
+* Run the `setup.sh` script to begin installation:
 +
 -----
 $ ./setup.sh
 -----
 
-The installation begins.
 
