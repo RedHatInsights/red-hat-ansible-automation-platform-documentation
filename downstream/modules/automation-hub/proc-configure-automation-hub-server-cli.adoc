@@ -34,7 +34,7 @@ https://__<server_fully_qualified_domain_name>__/api/galaxy/
 . Optional: Set the `auth_url` option. The community Ansible Galaxy does not require an `auth_url`.
 . Set the API token for the {HubName} server.
 
-The following `ansible.cfg` example shows how to configure multiple servers in prioritized order, with {HubName} configured as your primary source and an Ansible Galaxy server as a secondary source:
+The following `ansible.cfg` configuration file example shows how to configure multiple servers in prioritized order, with {HubName} configured as your primary source and an Ansible Galaxy server as a secondary source:
 
 .ansible.cfg
 -----
@@ -52,7 +52,7 @@ url=https://automation.my_org/api/galaxy/ <3>
 username=my_user
 password=my_pass
 -----
-<1> A trailing slash */* must follow the server URL.
+<1> Include a trailing slash */* after the server URL.
 <2> Include the `/api/galaxy/` subdirectory in the Ansible Galaxy server URL.
 <3> Include the `/api/galaxy/` subdirectory in the {HubName} server URL.
 
