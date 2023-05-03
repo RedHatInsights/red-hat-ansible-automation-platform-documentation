@@ -1,0 +1,65 @@
+[id="proc-configure-automation-hub-server-cli"]
+= Configuring Red Hat {HubName} as the primary source for content
+
+Configure Red Hat automation hub as your primary source of content to access Ansible Certified Content Collections. You can configure automation hub in the command-line interface (CLI) or the web console.
+
+== Configuring Red Hat automation hub as the primary source for content using the CLI
+
+Configure Red Hat automation hub as your primary source of content by using the CLI. To configure automation hub, you must modify the `ansible.cfg` configuration file. With automation hub, you have access to certified, supported collections.
+
+.Prerequisites
+
+* You have obtained the API token for the {HubName} server. See xref:proc-create-api-token[Creating the Red Hat {HubName} API token] for more information.
+[IMPORTANT]
+====
+	Creating a new token revokes any previous tokens 
+	generated for Private Automation Hub. Ensure that you update any Controller or scripts that you created with the previous token.
+====
+
+.Procedure
+
+. Add the `server_list` option under the `[galaxy]` section and provide one or more server names.
+. Create a new section for each server name:
++
+-----
+[galaxy_server._<server_name>_]
+-----
+
+. Set the `url` option for each server name. You must include the `api/galaxy/` subdirectory in the server URL:
++
+[subs="+quotes"]
+-----
+https://__<server_fully_qualified_domain_name>__/api/galaxy/
+-----
+. Optional: Set the `auth_url` option. The community Ansible Galaxy does not require an `auth_url`.
+. Set the API token for the {HubName} server.
+
+The following `ansible.cfg` configuration file example shows how to configure multiple servers in prioritized order, with {HubName} configured as your primary source and an Ansible Galaxy server as a secondary source:
+
+.ansible.cfg
+-----
+[galaxy]
+server_list = automation_hub, my_org_hub
+
+[galaxy_server.automation_hub]
+url=https://cloud.redhat.com/api/automation-hub/api/galaxy/ <1> <2>
+auth_url=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
+
+token=my_ah_token
+
+[galaxy_server.my_org_hub]
+url=https://automation.my_org/api/galaxy/ <3>
+username=my_user
+password=my_pass
+-----
+<1> Include a trailing slash */* after the server URL.
+<2> Include the `/api/galaxy/` subdirectory in the Ansible Galaxy server URL.
+<3> Include the `/api/galaxy/` subdirectory in the {HubName} server URL.
+
+NOTE: All API URLs must end with a trailing slash */* in order to prevent receiving a 301 redirect.
+
+You have now configured automation hub as your primary server using CLI, and can proceed to download and install supported collections.
+
+[role="_additional-resources"]
+.Additional resources
+For more information on server list configuration options and using Ansible Galaxy as an Ansible content source, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
