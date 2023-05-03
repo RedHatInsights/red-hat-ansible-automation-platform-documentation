@@ -251,7 +251,7 @@ a|Open *only* if the internal database is used. Otherwise, this port should not 
 |link:https://console.redhat.com:443[https://console.redhat.com:443] |General account services, subscriptions
 |link:https://catalog.redhat.com[https://catalog.redhat.com] |Indexing execution environments
 |link:https://sso.redhat.com:443[https://sso.redhat.com:443] |TCP
-|link:https://automation-hub-prd.s3.amazonaws.com[https://automation-hub-prd.s3.amazonaws.com] |
+|link:https://automation-hub-prd.s3.amazonaws.com[https://automation-hub-prd.s3.amazonaws.com] link:https://automation-hub-prd.s3.us-east-2.amazonaws.com/[https://automation-hub-prd.s3.us-east-2.amazonaws.com/]| Firewall access
 |link:https://galaxy.ansible.com[https://galaxy.ansible.com] |Ansible Community curated Ansible content
 |link:https://ansible-galaxy.s3.amazonaws.com[https://ansible-galaxy.s3.amazonaws.com] |
 |link:https://registry.redhat.io:44[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
