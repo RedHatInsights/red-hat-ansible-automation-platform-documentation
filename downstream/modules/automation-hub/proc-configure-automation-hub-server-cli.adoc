@@ -9,7 +9,7 @@ Configure Red Hat automation hub as your primary source of content by using the 
 
 .Prerequisites
 
-* You have obtained the API token for the {HubName} server. See xref:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/getting_started_with_red_hat_ansible_automation_hub/proc-create-api-token[Creating the {HubName} API token] for more information.
+* You have obtained the API token for the {HubName} server. See xref:proc-create-api-token[Creating the Red Hat {HubName} API token] for more information.
 [IMPORTANT]
 ====
 	Creating a new token revokes any previous tokens 

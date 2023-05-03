@@ -24,8 +24,6 @@ The API token is now available for configuring {HubName} as your default collect
 
 include::automation-hub/con-offline-token-active.adoc[leveloffset=+2]
 
-include::automation-hub/proc-configure-automation-hub-server.adoc[leveloffset=+1]
+include::automation-hub/proc-configure-automation-hub-server-cli.adoc[leveloffset=+1]
 
-You have now configured {HubName} as your default server and can proceed to download and install supported collections.
-
-For more information on server list configuration options and using Ansible Galaxy as an Ansible content source, see the https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
+include::automation-hub/proc-configure-automation-hub-server-gui.adoc[leveloffset=+1]
