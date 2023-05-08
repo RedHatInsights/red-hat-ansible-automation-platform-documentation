@@ -12,7 +12,7 @@ You must set the following six variables in your {PlatformName} installer invent
 * `automationhub_ldap_user_search_base_dn`
 * `automationhub_ldap_group_search_base_dn`
 
-If any of these variables are missing, the Ansible Automation installer will  not complete the installation. 
+If any of these variables are missing, the Ansible Automation installer will not complete the installation. 
 
 
 == Setting up your inventory file variables
@@ -26,7 +26,7 @@ When you configure your {PrivateHubName} with LDAP authentication, you must set 
 
 .Procedure
 
-. Access your inventory file according to the procedure in link:hhttps://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-editing-installer-inventory-file_platform-install-scenario[Editing the {PlatformName} installer inventory file].
+. Access your inventory file according to the procedure in link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-editing-installer-inventory-file_platform-install-scenario[Editing the {PlatformName} installer inventory file].
 
 . Use the following example as a guide to set up your {PlatformNameShort} inventory file:
 +
@@ -54,16 +54,16 @@ auth_ldap_group_type_class= 'django_auth_ldap.config:GroupOfNamesType'
 
 ====
 
-. If you plan to set up extra parameters in  your {PrivateHubName} (such as user groups, super user access, mirroring, or others), proceed to the next section.
+. If you plan to set up extra parameters in  your {PrivateHubName} (such as user groups, superuser access, mirroring, or others), proceed to the next section.
 
 
 == Configuring extra LDAP parameters
 
-If you plan to set up super user access, user groups, mirroring or other extra parameters, you can create a yaml file that comprises them in your `ldap_extra_settings` dictionary.
+If you plan to set up superuser access, user groups, mirroring or other extra parameters, you can create a YAML file that comprises them in your `ldap_extra_settings` dictionary.
 
 .Procedure
 
-. Create a yaml file that will contain `ldap_extra_settings`, such as the following:
+. Create a YAML file that will contain `ldap_extra_settings`, such as the following:
 +
 ----
 #ldapextras.yml   
