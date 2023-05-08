@@ -6,7 +6,7 @@ ifdef::context[:parent-context: {context}]
 :context: standalone-hub-ext-database
 
 [role="_abstract"]
-You can use these instructions to install a standalone instance of {HubName} with an external managed database. 
+You can use these instructions to install a standalone instance of {HubName} with an external managed database.
 This installs the {HubName} server on a single machine and installs a remote PostgreSQL database using the {PlatformNameShort} installer.
 
 
@@ -18,6 +18,7 @@ This installs the {HubName} server on a single machine and installs a remote Pos
 
 include::platform/proc-editing-inventory-file.adoc[leveloffset=3]
 include::platform/ref-standalone-hub-ext-database-inventory.adoc[leveloffset=3]
+include::platform/ref-ldap-config-on-pah.adoc[leveloffset=+3]
 include::platform/ref-setup-script-args.adoc[leveloffset=3]
 include::platform/proc-running-setup-script.adoc[leveloffset=3]
 include::platform/proc-verify-controller-installation.adoc[leveloffset=3]
