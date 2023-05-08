@@ -19,7 +19,7 @@ If any of these variables are missing, the Ansible Automation installer will not
 
 When you configure your {PrivateHubName} with LDAP authentication, you must set the proper variables in your inventory files during the installation process.
 
-.Prerequisites (Add Prereqs to 2.2 only)
+.Prerequisites
 
 * Ensure that your system is running {PlatformName} 2.2.1 or later.
 * Ensure that you are using {PrivateHubName} 4.5.2 or later.
