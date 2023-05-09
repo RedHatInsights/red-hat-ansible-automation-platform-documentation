@@ -1,0 +1,14 @@
+[[enhancements-052020]]
+= Enhancements
+
+.May 2020
+
+This Red Hat Automation Analytics release includes the following enhancements:
+
+* Additional notifications including:
+** Ansible Tower approaching End of Life
+** Jobs in error state
+** Pending jobs approaching limit (1000)
+** Node in cluster down
+** Cluster approaching license expiration
+* Stored history of Notifications
