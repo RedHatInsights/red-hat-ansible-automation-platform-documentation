@@ -4,6 +4,8 @@
 :experimental:
 include::attributes/attributes.adoc[]
 
+= Installing and upgrading {PrivateHubName}
+
 You can install Private Automation Hub or upgrade to a new version on a Red Hat Enterprise Linux (RHEL) 8.4 or later, or RHEL 9 or later virtual or physical machine with a valid Red Hat Ansible Automation Platform subscription.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
