@@ -15,6 +15,8 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 You can use these instructions to install the {HubName} operator on {OCP}, specify custom resources, and deploy {PlatformNameShort} with an external database.
 
+{HubNameStart} configuration can be done through the {HubName} pulp_settings or directly in the user interface after deployment. However, it is important to note that configurations made in pulp_settings take precedence over settings made in the user interface. Hub settings should always be set as lowercase on the Hub custom resource specification.
+
 [NOTE]
 ====
 When an instance of {HubName} is removed, the PVCs are not automatically deleted. This can cause issues during migration if the new deployment has the same name as the previous one. Therefore, it is recommended that you manually remove old PVCs before deploying a new {HubName} instance in the same namespace. See xref:proc-find-delete-PVCs_{context}[Finding and deleting PVCs] for more information.
