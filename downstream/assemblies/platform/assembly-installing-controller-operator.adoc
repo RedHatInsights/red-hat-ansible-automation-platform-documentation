@@ -17,6 +17,8 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 You can use these instructions to install the {ControllerName} operator on {OCP}, specify custom resources, and deploy {PlatformNameShort} with an external database.
 
+{ControllerNameStart} configuration can be done through the {ControllerName} extra_settings or directly in the user interface after deployment. However, it is important to note that configurations made in extra_settings take precedence over settings made in the user interface.
+
 [NOTE]
 ====
 When an instance of {ControllerName} is removed, the associated PVCs are not automatically deleted. This can cause issues during migration if the new deployment has the same name as the previous one. Therefore, it is recommended that you manually remove old PVCs before deploying a new {ControllerName} instance in the same namespace. See xref:proc-find-delete-PVCs_{context}[Finding and deleting PVCs] for more information.
