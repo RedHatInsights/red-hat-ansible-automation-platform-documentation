@@ -7,6 +7,10 @@
 
 {PlatformName} (AAP) uses a number of ports to communicate with its services. These ports must be open and available for incoming connection to the {PlatformName} server in order for it to work. Ensure that these ports are available and are not being blocked by the server firewall.
 
+The following architectural diagram is an example of a fully deployed {PlatformNameShort} with all possible components.
+
+image::ansible-network-ports-protocols.png[Ansible Automation Platform Architectural Diagram]
+
 The following tables provide the default {PlatformName} destination ports required for each application.
 
 [NOTE]
@@ -263,23 +267,23 @@ a|Open *only* if the internal database is used. Otherwise, this port should not 
 |===
 |URL |Required for
 |link:https://registry.redhat.io:443[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
-| `cdn.quay.io:443` | Access to container images provided by Red Hat and partners
-| `cdn01.quay.io:443` | Access to container images provided by Red Hat and partners
-| `cdn02.quay.io:443` | Access to container images provided by Red Hat and partners
-| `cdn03.quay.io:443` | Access to container images provided by Red Hat and partners
+|`cdn.quay.io:443` | Access to container images provided by Red Hat and partners
+|`cdn01.quay.io:443` | Access to container images provided by Red Hat and partners
+|`cdn02.quay.io:443` | Access to container images provided by Red Hat and partners
+|`cdn03.quay.io:443` | Access to container images provided by Red Hat and partners
 |===
 
 [IMPORTANT]
 ====
-Image manifests and filesystem blobs are served directly from `registry.redhat.io`. 
-However, from 1st of May 2023, filesystem blobs are served from `quay.io` instead. 
+Image manifests and filesystem blobs are served directly from `registry.redhat.io`.
+However, from 1 May 2023, filesystem blobs are served from `quay.io` instead.
 To avoid problems pulling container images, you must enable outbound connections to the listed `quay.io` hostnames.
 
 This change should be made to any firewall configuration that specifically enables outbound connections to `registry.redhat.io`.
 
-Use the hostnames instead of IP addresses when configuring firewall rules. 
+Use the hostnames instead of IP addresses when configuring firewall rules.
 
-After making this change you can continue to pull images from `registry.redhat.io`. 
+After making this change, you can continue to pull images from `registry.redhat.io`.
 You do not require a `quay.io` login, or need to interact with the `quay.io` registry directly in any way to continue pulling Red Hat container images.
 
 For more information, see the article link:https://access.redhat.com/articles/6999582[here]
