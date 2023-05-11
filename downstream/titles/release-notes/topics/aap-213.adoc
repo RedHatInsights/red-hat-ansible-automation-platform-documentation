@@ -1,0 +1,34 @@
+[[aap-2.1.3-intro]]
+= Ansible Automation Platform 2.1.3
+
+Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
+
+.Enhancements
+* Updated the version to `Openshift-clients` 4.10.x
+* Updated the version to `pulpcore-selinux` 1.3.2
+* Updated the version to `pulp_installer` 3.15.9-3
+* Updated the version to Receptor 1.2.3
+* Added an enhancement such that execution environment images can now be pulled from automation controller only
+* Modified the base images of execution environments so that the controller backups are executed in the container
+
+.Bug fixes
+* Task container no longer fails for Controller Operator 2.1.3
+* The setup log now gets updated when it is run as `non-root` on bastion host
+* The users' time zones are now populated correctly in the execution environments
+* Installation of automation hub no longer causes SELinux errors
+* Syncing the execution environments from `registry.redhat.io` on automation hub 2.1 no longer causes `[Too many open files]` errors
+* Enhanced the copy process of execution environments so that they require less space in the ``/tmp` directory
+* The receptor no longer fails in FIPS mode
+* Added the `no_proxy` definition in the inventory file so that deployments no longer use proxy when accessing private automation hub and thereby run successfully
+* The bundled installer no longer fails while finding registry details
+* Bundle installation no longer fails with `skopeo` file permissions error
+* Installation of Red Hat Single Sign On (SSO) on private automation hub no longer fails
+* Bundle installation of private automation hub no longer pushes images with missing `ee_image_base` that leads to installation failure
+* When you run the ``./setup.sh -b` command during an upgrade, the API tokens are now maintained
+* The super user role of users can now be changed by administrators only
+* Improved the tasks for collections deletion so that the collections are now deleted from both the repositories and the disks
+* While using automation hub 4.5.0 with central authentication, the hub user interface no longer turns unresponsive when the group permissions are modified
+* Added localization support for *Modules*, *Roles*, *Plugins*, and *Dependencies* counter in container list for both card and list view
+* Updated the documentation link to route to documentation of the correct version
+* Resolved intermittent issue while trying to sync community `devsec.hardening` collection on automation hub 4.4.0
+* Improved import log and status overflow pages in automation controller UI

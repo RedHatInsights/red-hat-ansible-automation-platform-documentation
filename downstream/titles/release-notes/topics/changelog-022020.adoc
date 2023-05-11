@@ -1,0 +1,4 @@
+[[changelog-022020]]
+= Changelog
+
+The changelog for all changes included in this release can be found in the link:https://github.com/RedHatInsights/red-hat-automation-analytics-docs/blob/master/CHANGELOG.md[documentation repository] for the project.
