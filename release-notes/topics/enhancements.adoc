@@ -1,8 +1,0 @@
-[[enhancements-022020]]
-= Enhancements
-
-This Red Hat Automation Analytics release includes the following enhancements:
-
-* *Clusters* filters apply to all charts and lists in that dashboard.
-* *Organization Statistics* filters apply to all charts in that dashboard.
-* *Notifications* link out to the source cluster for that item.
