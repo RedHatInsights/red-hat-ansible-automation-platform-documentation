@@ -1,8 +1,0 @@
-[[hub-42-intro]]
-= Automation Hub 4.2.0
-
-Automation Hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible Automation Hub, you can discover and manage Ansible Collections which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.
-
-.Private Automation Hub
-
-* Use the new private Automation Hub, which is hosted on-premises or on the cloud of your choice, to synchronize and manage this automation for enterprise use. Administrators can synchronize any desired certified Content Collections from Ansible Automation Hub into private Automation Hub, in addition to their own content, to provide a curated library of content for reusing and sharing across your internal automation community.
