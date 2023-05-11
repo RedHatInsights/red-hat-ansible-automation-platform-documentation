@@ -14,8 +14,6 @@ target=target
 
 # Clean the existing downstream and release-note folders.
 rm -rf $target/downstream
-rm -rf $target/release-notes
 
 # Copy the content of the downstream and release-note folders.
 cp -r $source/downstream $target/downstream
-cp -r $source/release-notes $target/release-notes

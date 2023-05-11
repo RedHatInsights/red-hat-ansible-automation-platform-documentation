@@ -1,0 +1,10 @@
+[[insights-102021]]
+
+= Red Hat Insights for Red Hat Ansible Automation Platform
+
+Insights for Ansible Automation Platform gives you feedback about your automation deployments through insights and governance which allow you to view information about automation health, usage, and performance across your enterprise.
+
+This release introduces reports to Insights for Ansible Automation Platform. The reports feature on the Ansible Automation Platform provides users with a visual overview of their automation efforts across different teams using Ansible. Each report is designed to help users monitor the status of their automation environment, be it the frequency of playbook runs or the status of hosts affected by various job templates.
+
+.Reports feature
+* Added a reports feature that gives you a visual overview of how your Ansible automation environment is running, across a variety of metrics.
