@@ -40,7 +40,7 @@ automationhub_ldap_user_search_base_dn = "ou=people,dc=ansible,dc=com"
 automationhub_ldap_group_search_base_dn = "ou=people,dc=ansible,dc=com"
 -----
 +
-[Note] 
+[NOTE] 
 ====
 The following variables will be set with default values, unless you set them with other options.
 
