@@ -1,7 +1,0 @@
-[[bugfixes-022020]]
-= Bug Fixes
-
-This release of Red Hat Automation Analytics includes the following bug fixes:
-
-* Cluster names are no longer duplicated in the dropdown menu.
-* Duplicate data no longer appears in the user interface.
