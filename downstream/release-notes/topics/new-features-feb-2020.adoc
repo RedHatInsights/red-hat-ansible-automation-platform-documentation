@@ -1,9 +1,0 @@
-[[new-features-022020]]
-= New Features
-
-This Red Hat Automation Analytics release includes the following features:
-
-*  Filter organization statistics by *Top 5 Orgs*, *Bottom 5 Orgs*, and *All*.
-*  Most failed tasks added to the detailed view for *Top Templates*.
-*  Success rate of jobs added to the detailed view for *Top Templates*.
-*  Filtered out organizations on *Job Runs by Organization* and *Usage by Organization* now represented as *other organizations*.

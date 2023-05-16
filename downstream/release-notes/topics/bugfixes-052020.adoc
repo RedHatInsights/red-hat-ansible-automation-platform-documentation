@@ -1,4 +1,0 @@
-[[bugfixes-052020]]
-= Bug Fixes
-
-This release of Red Hat Automation Analytics includes the following bug fixes:
