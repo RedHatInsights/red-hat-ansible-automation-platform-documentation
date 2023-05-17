@@ -1,0 +1,12 @@
+[id="eda-user-guide"]
+= Setting up a new project
+
+== Procedure overview
+
+. Set up a new project
+. Set up decision environment
+. Set up token
+. Set up a rulebook activation
+
+
+
