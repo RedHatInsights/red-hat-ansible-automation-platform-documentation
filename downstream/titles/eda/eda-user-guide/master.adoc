@@ -15,5 +15,3 @@ This guide helps you configure your Event-Driven Ansible controller to set up ne
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 include::eda/assembly-eda-user-guide-overview.adoc[leveloffset=+1]
-
-

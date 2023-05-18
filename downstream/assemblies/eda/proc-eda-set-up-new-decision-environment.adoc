@@ -1,0 +1,29 @@
+[id="proc-eda-set-up-new-decision-environment"]
+
+= Setting up a new Decision Environment
+
+Decision Environments are a container image to run Ansible rulebooks.
+
+== Prerequisites
+
+* You have created a project.
+* You are logged in as a Content Consumer.
+* You have set up a credential, if necessary. 
+For more information, refer to the link:https://docs.ansible.com/automation-controller/latest/html/userguide/credentials.html[Credentials]
+section.
+
+== Procedure
+
+. Navigate to the {EDANameShort} Controller Dashboard.
+. From the navigation bar, select btn:[Decision Environments] → btn:[Create decision environment].
+. Insert the following: 
+** *Name*
+** *Description*: This field is optional.
+** *Image*: This is the full image location, including the container registry, image name, and version tag.
+** *Credential*: This is the token needed to utilize the Decision environment image. 
+. Select btn:[Create decision environment].
+
+Your Decision Environment is now created and can be managed on the *Decision Environments* screen.
+
+After saving the new Decision Environment, you are brought to the decision environment's details page. 
+From there or the *Decision Environment* list view you can edit or delete the Decision Environment.

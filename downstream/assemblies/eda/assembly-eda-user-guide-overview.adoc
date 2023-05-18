@@ -8,5 +8,11 @@ The following procedures form the user configuration:
 . Set up token
 . Set up a rulebook activation
 
-
-
+include::proc-eda-set-up-new-project.adoc[leveloffset=-0]
+include::proc-eda-set-up-new-decision-environment.adoc[leveloffset=-0]
+include::proc-eda-set-up-token.adoc[leveloffset=-0]
+include::proc-eda-set-up-rulebook-activation.adoc[leveloffset=-0]
+include::proc-eda-enable-rulebook-activations.adoc[leveloffset=+1]
+include::proc-eda-restart-rulebook-activations.adoc[leveloffset=+1]
+include::proc-eda-delete-rulebook-activations.adoc[leveloffset=+1]
+include::proc-eda-activate-webhook.adoc[leveloffset=+1]

@@ -1,0 +1,9 @@
+[id="proc-eda-activate-webhook"]
+
+= Activating Webhook rulebooks
+
+Rulebooks that include a "source" section require extra configuration to accept external messages as triggers, usually in the form of a webhook. In Openshift environments, you can allow webhooks to reach an activation-job-pod over a given port by creating a Route that exposes that rulebook activation's k8s service.
+
+== Prerequisites
+
+* You have created a rulebook activation in {EDANameShort} Controller Dashboard.

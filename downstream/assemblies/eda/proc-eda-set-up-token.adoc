@@ -1,0 +1,25 @@
+[id="proc-eda-set-up-token"]
+
+= Setting up token to authenticate to Ansible Automation Platform Controller
+
+Automation Controller must contain a project based on a repository with certain playbooks designed to work with the {EDANameShort} rulebooks. 
+Automation Controller must also have corresponding job templates set up based on the playbooks in that project.
+
+== Prerequisites
+
+* You are logged in as a Content Consumer.
+* You have created a user.
+
+== Procedure
+
+. Navigate to the {EDANameShort} Controller Dashboard.
+. From the navigation bar, select btn:[User] → btn:[User Access].
+. Select a username that you have already created, in the *Username* column.
+. Select btn:[Controller Tokens] → btn:[Create controller token].
+. Insert the following: 
+** *Name*
+** *Description*: This field is optional.
+** *Token* 
+. Select btn:[Create controller token].
+
+After saving the new token, you are brought to the *Controller Tokens* page where you can edit or delete the token.
