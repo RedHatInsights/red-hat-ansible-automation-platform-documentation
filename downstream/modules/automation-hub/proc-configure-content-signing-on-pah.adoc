@@ -18,43 +18,38 @@ To successfully sign and publish {CertifiedName}, you must configure {PrivateHub
 This script acts as the signing service and must generate an ascii-armored detached `gpg` signature for that file using the key specified through the `PULP_SIGNING_KEY_FINGERPRINT` environment variable.
 ====
 +
-The script then prints out a JSON structure with the following format.
+Example signing script:
 +
-----
-{"file": "filename", "signature": "filename.asc"}
-----
-+
-All the file names are relative paths inside the current working directory. The file name must remain the same for the detached signature, as shown.
-+
-The following example shows a script that produces signatures for content:
-+
-[source,shell]
 ----
 #!/usr/bin/env bash
 
-FILE_PATH=$1
-SIGNATURE_PATH="$1.asc"
+# This GPG_TTY variable might be needed on a container image that is not running as root.
+# export GPG_TTY=$(tty)
 
-ADMIN_ID="$PULP_SIGNING_KEY_FINGERPRINT"
-PASSWORD="password"
+# pulp_container SigningService will pass the next 4 variables to the script.
+MANIFEST_PATH=$1
+FINGERPRINT="$PULP_SIGNING_KEY_FINGERPRINT"
+IMAGE_REFERENCE="$REFERENCE"
+SIGNATURE_PATH="$SIG_PATH"
 
-# Create a detached signature
-gpg --quiet --batch --pinentry-mode loopback --yes --passphrase \
-   $PASSWORD --homedir ~/.gnupg/ --detach-sign --default-key $ADMIN_ID \
-   --armor --output $SIGNATURE_PATH $FILE_PATH
+# Create container signature using skopeo
+skopeo standalone-sign \
+  $MANIFEST_PATH \
+  $IMAGE_REFERENCE \
+  $FINGERPRINT \
+  --output $SIGNATURE_PATH
+
+# Optionally pass the passphrase to the key if password protected.
+# --passphrase-file /path/to/key_password.txt
 
 # Check the exit status
 STATUS=$?
 if [ $STATUS -eq 0 ]; then
-   echo {\"file\": \"$FILE_PATH\", \"signature\": \"$SIGNATURE_PATH\"}
+  echo {\"signature_path\": \"$SIGNATURE_PATH\"}
 else
-   exit $STATUS
+  exit $STATUS
 fi
 ----
-
-+
-After you deploy a {PrivateHubName} with signing enabled to your {PlatformNameShort} cluster, new UI additions display when you interact with collections.
-
 . Review the AAP installer inventory file for options that begin with `automationhub_*`.
 +
 [source,highlight=67-68]
@@ -64,10 +59,8 @@ After you deploy a {PrivateHubName} with signing enabled to your {PlatformNameSh
 .
 .
 automationhub_create_default_collection_signing_service = True
-automationhub_auto_sign_collections = True
-automationhub_require_content_approval = True
-automationhub_collection_signing_service_key = /abs/path/to/galaxy_signing_service.gpg
-automationhub_collection_signing_service_script = /abs/path/to/collection_signing.sh
+automationhub_container_signing_service_key = /absolute/path/to/key/to/sign
+automationhub_container_signing_service_script =  /absolute/path/to/script/that/signs
 ----
 +
-The two new keys (*automationhub_auto_sign_collections* and *automationhub_require_content_approval*) indicate that the collections must be signed and require approval after they are uploaded to {PrivateHubName}.
+If `automationhub_create_default_container_signing_service` is *True*, then the path to signing key and path to script need to be provided.
