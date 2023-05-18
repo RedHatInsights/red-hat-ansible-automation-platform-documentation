@@ -1,0 +1,12 @@
+[id="eda-user-guide-overview"]
+= {EDANameShort} user guide overview
+
+The following procedures form the user configuration:
+
+. Set up a new project
+. Set up decision environment
+. Set up token
+. Set up a rulebook activation
+
+
+

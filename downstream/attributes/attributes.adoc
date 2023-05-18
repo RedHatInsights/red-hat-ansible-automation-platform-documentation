@@ -118,3 +118,7 @@
 :RHSSO: Red Hat Single Sign-On
 :RHSSOshort: RH-SSO
 :OperatorRHSSO: Red Hat Single Sign-On Operator
+
+// Event-Driven Ansible
+:EDAName: Red Hat Event-Driven Ansible
+:EDANameShort: Event-Driven Ansible
