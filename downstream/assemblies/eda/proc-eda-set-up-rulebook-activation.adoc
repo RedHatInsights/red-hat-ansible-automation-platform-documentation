@@ -8,7 +8,7 @@ Rulebook activations are rulebooks that have been activated to run.
 
 == Prerequisites
 
-* You are logged in as a Content Developer.
+* You are logged in as a Content Consumer.
 
 == Procedure
 
@@ -26,7 +26,7 @@ Rulebook activations are rulebooks that have been activated to run.
 ... Never: never restarts a rulebook when it finishes
 ... On failure: only restarts when it fails
 ** *Rulebook activation enabled?*: This automatically enables the rulebook activation to run.
-** *Variables*:Pass extra command line variables to the playbook in the Variables section. This is the `-e or --extra-vars` command line parameter for ansible-rulebook. 
+** *Variables*: Pass extra command line variables to the playbook in the Variables section. This is the `-e or --extra-vars` command line parameter for ansible-rulebook. 
 Provide key/value pairs using either YAML or JSON. Refer to the documentation for example syntax.
 . Select btn:[Create Create rulebook activation].
 

@@ -2,8 +2,45 @@
 
 = Activating Webhook rulebooks
 
-Rulebooks that include a "source" section require extra configuration to accept external messages as triggers, usually in the form of a webhook. In Openshift environments, you can allow webhooks to reach an activation-job-pod over a given port by creating a Route that exposes that rulebook activation's k8s service.
+Rulebooks that include a "source" section require extra configuration to accept external messages as triggers, usually in the form of a webhook. In Openshift environments, you can allow webhooks to reach an activation-job-pod over a given port by creating a Route that exposes that rulebook activation's K8s service.
 
 == Prerequisites
 
 * You have created a rulebook activation in {EDANameShort} Controller Dashboard.
+
+== Procedure
+
+. Create a Route to expose the service. The following is an example Route for an ansible-rulebook source that expects POST's on port 5000 on the Decision Environment pod:
++
+-----
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: test-sync-bug
+  namespace: dynatrace
+  labels:
+    app: eda
+    job-name: activation-job-a52f905c-9892-4f8c-acd6-bf794e45b4c1
+spec:
+  host: test-sync-bug-dynatrace.apps.aap-dt.ocp4.testing.ansible.com
+  to:
+    kind: Service
+    name: activation-job-a52f905c-9892-4f8c-acd6-bf794e45b4c1-5000
+    weight: 100
+  port:
+    targetPort: 5000
+  wildcardPolicy: None
+-----
++
+. When you create the Route, test it with a Post to the Route URL:
++
+-----
+curl -H "Content-Type: application/json" -X POST 
+test-sync-bug-dynatrace.apps.aap-dt.ocp4.testing.ansible.com -d 
+'{}'
+-----
++
+[NOTE]
+====
+You do not need the port as it is specified on the Route (targetPort).
+====

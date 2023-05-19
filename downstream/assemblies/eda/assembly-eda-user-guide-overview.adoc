@@ -4,9 +4,9 @@
 The following procedures form the user configuration:
 
 . Set up a new project
-. Set up decision environment
-. Set up token
-. Set up a rulebook activation
+. Set up a Decision Environment
+. Set up a token
+. Set up a Rulebook Activation
 
 include::proc-eda-set-up-new-project.adoc[leveloffset=-0]
 include::proc-eda-set-up-new-decision-environment.adoc[leveloffset=-0]
@@ -16,3 +16,4 @@ include::proc-eda-enable-rulebook-activations.adoc[leveloffset=+1]
 include::proc-eda-restart-rulebook-activations.adoc[leveloffset=+1]
 include::proc-eda-delete-rulebook-activations.adoc[leveloffset=+1]
 include::proc-eda-activate-webhook.adoc[leveloffset=+1]
+include::proc-eda-test-with-K8s.adoc[leveloffset=+1]

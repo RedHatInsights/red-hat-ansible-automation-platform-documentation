@@ -25,5 +25,5 @@ section.
 
 Your Decision Environment is now created and can be managed on the *Decision Environments* screen.
 
-After saving the new Decision Environment, you are brought to the decision environment's details page. 
+After saving the new Decision Environment, you are brought to the Decision Environment's details page. 
 From there or the *Decision Environment* list view you can edit or delete the Decision Environment.

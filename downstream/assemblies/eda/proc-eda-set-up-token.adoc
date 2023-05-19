@@ -9,12 +9,13 @@ Automation Controller must also have corresponding job templates set up based on
 
 * You are logged in as a Content Consumer.
 * You have created a user.
+* You can log in to the {EDANameShort} Controller Dashboard or you are added as a user in the organization.
 
 == Procedure
 
 . Navigate to the {EDANameShort} Controller Dashboard.
-. From the navigation bar, select btn:[User] → btn:[User Access].
-. Select a username that you have already created, in the *Username* column.
+. From the top navigation bar, select your profile.
+. Go to *User details*.
 . Select btn:[Controller Tokens] → btn:[Create controller token].
 . Insert the following: 
 ** *Name*
@@ -22,4 +23,4 @@ Automation Controller must also have corresponding job templates set up based on
 ** *Token* 
 . Select btn:[Create controller token].
 
-After saving the new token, you are brought to the *Controller Tokens* page where you can edit or delete the token.
+After saving the new token, you are brought to the *Controller Tokens* tab where you can delete the token.
