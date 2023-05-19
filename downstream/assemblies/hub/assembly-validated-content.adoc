@@ -55,6 +55,7 @@ Upload the content and define the variables (this example uses `automationhub_ap
 ----
 ansible-playbook collection_seed.yml 
 -e automationhub_api_token=<api_token>
+-e automationhub_main_url=https://automationhub.example.com
 -e automationhub_require_content_approval=true
 ----
 
