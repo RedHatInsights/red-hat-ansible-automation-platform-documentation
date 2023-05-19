@@ -1,0 +1,7 @@
+[id="deploying-eda-controller-with-aap-operator-on-ocp"]
+
+= Deploying {EDAcontroller} with {OperatorPlatform} on {OCPShort}
+
+{EDAName} is not limited to {PlatformNameShort} on VMs. You can also access this feature on {OperatorPlatform} on {OCPShort}. To deploy {EDAName} with {OperatorPlatform}, follow the instructions in link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html-single/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index#deploy-eda-controller-on-aap-operator-ocp[Deploying Event-Driven Ansible controller with Ansible Automation Platform Operator on OpenShift Container Platform]. 
+
+After successful deployment, you can connect to event sources and resolve issues more efficiently.
