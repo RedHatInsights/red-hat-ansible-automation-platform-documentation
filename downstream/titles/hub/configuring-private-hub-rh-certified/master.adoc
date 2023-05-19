@@ -1,6 +1,6 @@
 
 :imagesdir: images
-= Managing Red Hat Certified, validated and Ansible Galaxy content in automation hub
+= Managing Red Hat Certified, validated, and Ansible Galaxy content in automation hub
 :numbered:
 :experimental:
 
