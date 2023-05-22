@@ -5,7 +5,7 @@
 
 {Valid} provides an expert-led path for performing operational tasks on a variety of platforms including both Red Hat and our trusted partners.
 
-== Configuring validated or certified collections with the installer
+== Configuring validated collections with the installer
 
 When you download and run the bundle installer, certified and validated collections are automatically uploaded. 
 Certified collections are uploaded into the `rh-certified` repository. 
@@ -22,55 +22,43 @@ Possible values are `certified` or `validated`.
 If missing both content sets will be uploaded.
 |====
 
-== {Valid}
+== Installing validated content using the tarball
+
+If you are not using the bundle installer, a standalone tarball, `ansible-validated-content-bundle-1.tar.gz` can be used instead.
+The standalone tarball can also be used later to update validated contents later in any environment, when a newer tarball becomes available, and without having to re-run the bundle installer.
+
+To obtain the tarball, navigate to https://access.redhat.com/downloads/content/480 and select *Ansible Validated Content*.
+
+You require the following variables to run the playbook. 
+
+[cols="20%,50%",options="header"]
+|====
+| Name | Description 
+| *`automationhub_admin_password`* | Your administration password.
+| *`automationhub_api_token`* | The API token generated for your {HubName}.
+| *`automationhub_main_url`* | For example, `\https://automationhub.example.com`
+| *`automationhub_require_content_approval`* | Boolean (`true` or `false`)
+
+This must match the value used during {HubName} deployment.
+
+This variable is set to `true` by the installer.
+|====
 
 [NOTE]
 ====
-* {Valid} is only available with a valid subscription to {PlatformName}.
-* Unlike {CertifiedCon}, {Valid} is not supported by Red Hat or our partners. 
-* From the {PlatformName} {PlatformVers} release, {Valid} is preloaded into {PrivateHubName} and can be updated manually by downloading the packages.
+Use either `automationhub_admin_password` or `automationhub_api_token`, not both.
 ====
 
-[cols="20%,30%,30%,20%",options="header"]
-|====
-| Entity | Collection name | Description | Published by
-| Ansible | `cloud.azure_roles.load_balancer` | A role to manage Azure Load Balancer | Red Hat Ansible
-| Ansible | `cloud.azure_roles.managed_postgresql` | A role to manage Azure PostGreSQL Database |Red Hat Ansible
-| Ansible | `cloud.azure_roles.network_interface` | A role to manage Azure Network Interface | Red Hat Ansible 
-| Ansible | `cloud.azure_roles.networking_stack` | A role to manage Azure Networking Stack | Red Hat Ansible
-| Ansible | `cloud.azure_roles.resource_group`  | A role to manage Azure Resource Group | Red Hat Ansible
-| Ansible | `cloud.azure_roles.security_group`  | A role to manage Azure Security Group | Red Hat Ansible
-| Ansible | `cloud.azure_roles.virtual_machine`  | A role to manage Azure Virtual Machine | Red Hat Ansible
-| Ansible | `network.base` | A validated content collection to configure base config related implementation that would be used by other validated content | Red Hat Ansible
-| Ansible | `network.base` | A validated content collection to configure bgp and provide capabilities to do operational state/healthchecks | Red Hat Ansible
-| Ansible | `network.acls` | A validated content collection to configure acls and provide capabilities to do operational state/healthchecks | Red Hat Ansible
-| Ansible | `network.interfaces` | A validated content collection to configure interfaces and provide capabilities to do operational state/healthchecks | Red Hat Ansible
-| Ansible | `network.ospf` | A validated content collection to configure ospf and provide capabilities to do operational state/healthchecks | Red Hat Ansible
-| Ansible | <name yet to decide> | Connectivity between on-prem network device (for ex CSR) and cloud gateway(for ex AWS) | Red Hat Ansible
-| Ansible | <name yet to decide> | A validated content (potentially a role) on Inventory Report that returns statistics and IDs of different edge nodes and servers |Red Hat Ansible
-| Ansible | | Network device Inventory report using html | Red Hat Ansible
-| Ansible | | Network config backup | Red Hat Ansible
-| Ansible | | Network config restore | Red Hat Ansible
-| Ansible | | IOS Updater | Red Hat Ansible
-| Ansible | | NXOS Updater | Red Hat Ansible
-| Ansible | | EOS Updater | Red Hat Ansible
-| Ansible | | Firewall policy automation - A validated content to take care of FW policy hygiene | Red Hat Ansible
-| Ansible | | OSbuilder for RHEL Edge disconnected (customer request) | Red Hat Ansible
-| Ansible | | Middleware collection | Red Hat Ansible
-| Ansible | | Windows and Linux Compliance |Red Hat Ansible
-| Ansible | | SAP Deployment | Red Hat Ansible
-| Ansible | | Automation controller configuration | Red Hat Ansible
-| Ansible | | Execution Environment Utilities | Red Hat Ansible
-| Ansible | | {HubNameStart} configuration | Red Hat Ansible
-| Ansible | | AAP utilities | Red Hat Ansible
-| Ansible | | Role to deploy and migrate a web application on _{AWS}_ (AWS) | Red Hat Ansible 
-| Ansible | | Role to deal with AWS orphaned instances by tag | Red Hat Ansible
-| Ansible | | Role to create a customized _Amazon Machine Images_ (AMI) | Red Hat Ansible
-| Ansible | | Role to detach and delete AWS _Internet Gateway_ (IGW)s |Red Hat Ansible
-| Ansible | | Role to configure a multi-region CloudTrail | Red Hat Ansible
-| Ansible | | Role to configure CloudTrail encryption | Red Hat Ansible
-| Ansible | | Role to troubleshoot EC2 instances failing to join an ECS cluster | Red Hat Ansible
-| Ansible | | Role to troubleshoot _Relational database Service_ (RDS) connectivity from an instance | Red Hat Ansible
-| Ansible | | Role to troubleshoot _Virtual Private Cloud_ (VPC) connectivity issues | Red Hat Ansible
-|====
+Upload the content and define the variables (this example uses `automationhub_api_token`):
 
+[options="nowrap" subs="+quotes,attributes"]
+----
+ansible-playbook collection_seed.yml 
+-e automationhub_api_token=<api_token>
+-e automationhub_main_url=https://automationhub.example.com
+-e automationhub_require_content_approval=true
+----
+
+For more information on running ansible playbooks, see link:https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook].
+
+When complete, the collections are visible in the validated collection section of {PrivateHubName}.
