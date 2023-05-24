@@ -1,0 +1,20 @@
+// Module included in the following assemblies:
+// assembly-repo-management.adoc
+
+
+[id="con-approval-pipeline"]
+
+= Approval pipeline
+
+Automation Hub allows you to approve collections into any repository that is marked with the `pipeline=approved` label. By default, Hub ships with one repository for approved content, but you have the option to add more from the repository creation screen. Repositories marked with this label are not eligible for direct publishing and collections must come from one of the staging repositories.
+
+Auto approval::
+When auto approve is enabled, any collection uploaded to a staging repository is automatically promoted to all of the repositories marked as `pipeline=approved`.
+
+Approval required::
+When an administrator navigates to the approval dashboard, they can see the collections that have been uploaded into any of the staging repositories. From here they are presented with an Approve button. Clicking btn:[Approve] displays a list of approved repositories. From this list, the administrator can select 1 or more repositories to which the content should be promoted.
++
+If only one approved repository exists, the collection is automatically moved into it and the administrator is not prompted to select a repository.
+
+Rejection::
+Rejected collections are automatically placed into the pre-installed rejected repository.
