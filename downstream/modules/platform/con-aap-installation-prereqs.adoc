@@ -6,7 +6,12 @@
 
 * You chose and obtained a platform installer from the link:{PlatformDownloadUrl}[Red Hat Ansible Automation Platform Product Software].
 * You are installing on a machine that meets base system requirements.
+* You have updated all of the packages to the recent version of your RHEL nodes.
+
+WARNING: You may experience errors if you do not fully upgrade your RHEL nodes prior to your {PlatformNameShort} installation.
+
 * You have created a Red Hat Registry Service Account, using the instructions in the link:https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
+
 
 [role="_additional-resources"]
 .Additional resources
