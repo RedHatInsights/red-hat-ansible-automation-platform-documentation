@@ -11,12 +11,9 @@ You can synchronize {CertifiedName} curated by your organization from `{Console}
 
 .Procedure
 
-. Log in to menu:Automation Hub[Repositories].
-. Locate the URL for the remote server, including the path for the specific repository  and click btn:[Copy CLI configuration].
-. Paste the *URL* in a file to use when configuring the remote.
-. Navigate to menu:Automation Hub[API Token].
-. On the *API Token
-* page, click btn:[Load token].
+. Log in to {Console} as an origanization administrator.
+. Navigate to menu:Automation Hub[Connect to Hub]].
+. Under *Offline token*, click btn:[Load token].
 . Click btn:[Copy to clipboard] to copy the API token.
 . Paste the API token into a file and store in a secure location.
 
