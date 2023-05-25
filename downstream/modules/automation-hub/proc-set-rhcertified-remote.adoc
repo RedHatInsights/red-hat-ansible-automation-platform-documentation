@@ -5,7 +5,13 @@
 
 You can edit the *rh-certified* remote repository to synchronize collections from {HubName} hosted on {Console} to your {PrivateHubName}.
 By default, your {PrivateHubName} `rh-certified` repository includes the URL for the entire group of {CertifiedName}.
-To use only those collections specified by your organization, you must include a unique URL.
+
+To use only those collections specified by your organization, a {PrivateHubName} administrator can upload manually-created requirements files from the `rh-certified` remote. 
+
+For more information about using requirements files, see link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file[Install multiple collections with a requirements file] in the {Galaxy} User Guide.
+
+If you have collections `A`, `B`, and `C` in your requirements file, and a new collection `X` is added to {Console} that you want to use, you must add `X` to your requirements file for {PrivateHubName} to synchronize it.
+
 
 .Prerequisites
 
