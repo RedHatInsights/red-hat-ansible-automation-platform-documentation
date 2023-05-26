@@ -15,6 +15,7 @@ Custom repositories:: any user with write permissions on the repository can publ
 Staging repositories are marked with the 'pipeline=staging' label. By default automation hub ships with one staging repository that is automatically used when a repository is not specified for uploading collections. However, users can create new staging repositories from the repository creation screen. See [xref to Creating a repository].
 
 include::automation-hub/con-approval-pipeline.adoc[leveloffset=+1]
+include::automation-hub/con-repo-rbac.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

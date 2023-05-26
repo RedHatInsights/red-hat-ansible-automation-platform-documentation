@@ -1,0 +1,23 @@
+// Module included in the following assemblies:
+// assembly-repo-sync.adoc
+
+[id="proc-basic-repo-sync"]
+
+= Basic repository sync
+
+Use this procedure to sync a repository from one automation hub instance to another.
+
+.Procedure
+. Log in to Red Hat Ansible Automation platform.
+. Navigate to menu:Automation Hub[Repositories].
+. Locate your repository in the list and click *Sync*.
++
+All collections in the configured remote are downloaded to your custom repository. To check the status of the collection sync, select menu:Task Management[] from the Navigation panel.
++
+[NOTE]
+====
+To limit repository synchronization to specific collections within a remote, you can identify specific collections to be pulled using a requirements.yml file. See xref:proc-create-remote[Create a remote] for more information.
+====
+
+.Additional resources
+For more information about using requirements files, see link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file[Install multiple collections with a requirements file] in the Galaxy User Guide.

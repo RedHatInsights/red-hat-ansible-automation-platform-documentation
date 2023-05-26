@@ -6,7 +6,7 @@ include::attributes/attributes.adoc[]
 
 = Managing content in your {PrivateHubName}
 
-Repository management is included with Red Hat automation hub. It allows you to create, edit, modify and delete repositories.
+Repository management is included with Red Hat {HubName}. It allows you to create, edit, modify and delete repositories.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::hub/assembly-repo-management.adoc[leveloffset=+1]

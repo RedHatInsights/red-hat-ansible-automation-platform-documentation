@@ -10,6 +10,7 @@ With basic repository management, you can create, edit, delete, and move content
 
 include::automation-hub/proc-create-repository.adoc[leveloffset=+1]
 include::automation-hub/proc-provide-repository-access.adoc[leveloffset=+1]
+include::automation-hub/proc-adding-collections-repository.adoc[leveloffset=+1]
 include::automation-hub/proc-revert-repository.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]

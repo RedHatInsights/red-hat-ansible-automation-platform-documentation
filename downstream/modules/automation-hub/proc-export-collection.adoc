@@ -1,0 +1,14 @@
+// Module included in the following assemblies:
+// assembly-collection-import-export.adoc
+
+[id="proc-export-collection"]
+
+= Export a collection
+
+After collections are finalized, they can be delivered to new destinations and distributed to  others users across your organization. Use the following procedure to export a collection.
+
+.Procedure
+. Log in to {PlatformName}.
+. Navigate to menu:Automation Hub[Collections]. The Collections page displays all of the collections across all of the repositories and allows you to search for a specific collection.
+. Select the collection you want to export. The collection details page is displayed.
+. From the *Installation* tab, select *Download tarball*. The tar file is downloaded to your default browser downloads folder and available to be imported to the location of your choosing.
