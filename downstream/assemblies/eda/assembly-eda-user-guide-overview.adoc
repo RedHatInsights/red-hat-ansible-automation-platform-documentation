@@ -8,7 +8,7 @@ The following procedures form the user configuration:
 . Set up a token
 . Set up a Rulebook Activation
 
-include::proc-eda-set-up-new-project.adoc[leveloffset=-0]
+include::eda/proc-eda-set-up-new-project.adoc[leveloffset=-0]
 include::proc-eda-set-up-new-decision-environment.adoc[leveloffset=-0]
 include::proc-eda-set-up-token.adoc[leveloffset=-0]
 include::proc-eda-set-up-rulebook-activation.adoc[leveloffset=-0]
