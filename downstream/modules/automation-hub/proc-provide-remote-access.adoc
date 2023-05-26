@@ -10,7 +10,7 @@ After a remote is created, you can provide access to it by doing the following.
 .Procedure
 . Log in to {PlatformName}.
 . Navigate to menu:Automation Hub[Remotes].
-. Locate your repository in the list and click image:ellipsis.png[more actions], then select *Edit*.
+. Locate your repository in the list and click image:more_actions.png[more actions], then select *Edit*.
 . Select the *Access* tab.
 . Select a group for *Repository owners*. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/managing_user_access_in_private_automation_hub/assembly-user-access[Configuring user access for your local Automation Hub] for information about implementing user access.
 . Select the appropriate roles for the selected group.

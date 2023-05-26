@@ -10,6 +10,6 @@ When content is added or removed from a repository, a new version of it is creat
 .Procedure
 . Log in to {PlatformName}.
 . Navigate to menu:Automation Hub[Repositories].
-. Locate your repository in the list and click image:ellipsis.png[more actions], then select *Edit*.
-. Locate the version you want to rollback to and click image:ellipsis.png[more actions], then select *Revert to this version*.
+. Locate your repository in the list and click image:more_actions.png[more actions], then select *Edit*.
+. Locate the version you want to rollback to and click image:more_actions.png[more actions], then select *Revert to this version*.
 . Click btn:[Revert].

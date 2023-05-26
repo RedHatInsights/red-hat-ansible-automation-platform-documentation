@@ -17,19 +17,20 @@ Use this procedure to create a repository.
 +
 [NOTE]
 ====
-If there are issues with a change to your custom repository, retained versions allow you to revert to a previous version. See” Revert to a different repository version” for more information.
+If there are issues with a change to your custom repository, retained versions allow you to xref:proc-revert-repository-version[revert to a different repository version].
 ====
 +
-. Select the Pipeline for the repository. The available options include the following:
+. Select the *Pipeline* for the repository. The available options include the following:
 +
 Staging:: Anyone is allowed to publish content into the repository.
 Approved:: Anything added to this repository is required to go through the approval process through the staging repository. When auto approve is enabled, any collection uploaded to a staging repository is automatically promoted to all of the approved repositories.
-None:: Any user with permissions on the repository can publish to the repository directly and it is not part of the approval pipeline. Should this be approval pipeline? The selection is Pipeline but we seem to also refer to it as workflow and should be consistent.
+None:: Any user with permissions on the repository can publish to the repository directly and it is not part of the approval pipeline.
 +
-. To hide the repository from search results, select Hide from search. This is selected by default.
-. To make the repository private, select Make private. This hides the repository from anyone who does not have permissions to view the repository.
-. To sync the content from a remote into this repository, select Remote and select the remote that contains the content you want included in your custom repository. For more information, see [xref Repository sync].
+. To hide the repository from search results, select *Hide from search*. This is selected by default.
+. To make the repository private, select *Make private*. This hides the repository from anyone who does not have permissions to view the repository.
+. To sync the content from a remote into this repository, select *Remote* and select the remote that contains the content you want included in your custom repository. For more information, see xref:proc-basic-repo-sync[Repository sync].
 . Click btn:[Save].
++
 After the repository is created, the details page is displayed.
 +
 From here, you can provide access to your repository, review or add collections, and work with the saved versions of your custom repository.

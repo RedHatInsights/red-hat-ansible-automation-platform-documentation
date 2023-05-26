@@ -6,13 +6,13 @@ ifdef::context[:parent-context: {context}]
 :context: repo-management
 
 [role="_abstract"]
-Automation Hub includes two types of repositories where you can publish content:
+{HubNameStart} includes two types of repositories where you can publish content:
 
 Staging repositories:: any user with permission to upload for a namespace can publish content into these repositories. Content in these repositories are not available in the search page, but rather, are displayed on the approval dashboard for an administrator to verify.
 
-Custom repositories:: any user with write permissions on the repository can publish content to these repositories. These repositories are not displayed on the approval dashboard. They can show up on the search page depending on whether search is enabled by the owner of the repository. Custom repositories can be private repositories (ie only users with view permissions can see them) or public (all users can see them). See [xref to Cross-repo search].
+Custom repositories:: any user with write permissions on the repository can publish content to these repositories. These repositories are not displayed on the approval dashboard. They can show up on the search page depending on whether search is enabled by the owner of the repository. Custom repositories can be private repositories where only users with view permissions can see them, or public where all users can see them.
 
-Staging repositories are marked with the 'pipeline=staging' label. By default automation hub ships with one staging repository that is automatically used when a repository is not specified for uploading collections. However, users can create new staging repositories from the repository creation screen. See [xref to Creating a repository].
+Staging repositories are marked with the `pipeline=staging` label. By default {HubName} ships with one staging repository that is automatically used when a repository is not specified for uploading collections. However, users can create new staging repositories during xref:proc-create-repository[repository creation].
 
 include::automation-hub/con-approval-pipeline.adoc[leveloffset=+1]
 include::automation-hub/con-repo-rbac.adoc[leveloffset=+1]

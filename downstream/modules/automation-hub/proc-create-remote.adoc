@@ -41,7 +41,7 @@ Collections:
 All collection dependencies are automatically downloaded during the Sync process.
 ====
 +
-. To configure your remote further, use the options available under Advanced configuration:
+. To configure your remote further, use the options available under *Advanced configuration*:
 .. If there is a corporate proxy in place for your organization, enter a *Proxy URL*, *Proxy Username* and *Proxy Password*.
 .. Enable or disable transport layer security using *TLS validation* checkbox.
 .. If digital certificates are required for authentication, enter a *Client key* and *Client certificate*.
