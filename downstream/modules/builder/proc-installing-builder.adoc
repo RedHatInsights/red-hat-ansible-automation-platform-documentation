@@ -2,20 +2,14 @@
 
 = Installing {Builder}
 
-You can install {Builder} using Red Hat Subscription Management (RHSM) to attach your {PlatformName} subscription. https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-attaching-subscriptions_planning/[Attaching your {PlatformName} subscription] allows you to access subscription-only resources necessary to install `ansible-builder`. Once you attach your subscription, the necessary repository for `ansible-builder` is automatically enabled.
+You can install {Builder} using Red Hat Subscription Management (RHSM) to attach your {PlatformName} subscription. https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html-single/red_hat_ansible_automation_platform_planning_guide/index#proc-attaching-subscriptions_planning[Attaching your {PlatformName} subscription] allows you to access subscription-only resources necessary to install `ansible-builder`. Once you attach your subscription, the necessary repository for `ansible-builder` is automatically enabled.
 
 NOTE: You must have valid subscriptions attached on the host before installing `ansible-builder`.
 
 .Procedure
 
-. In your terminal, run the following command to activate your {PlatformNameShort} repo:
+* In your terminal, run the following command to install {Builder} and activate your {PlatformNameShort} repo:
 +
 ----
-# dnf config-manager --enable ansible-automation-platform-2.3-for-rhel-8-x86_64-rpms 
-----
-+
-. Then enter the following command to install {Builder}:
-+
-----
-# dnf install ansible-builder
+# dnf install --enablerepo ansible-automation-platform-2.3-for-rhel-8-x86_64-rpms ansible-builder
 ----
