@@ -1,0 +1,18 @@
+[id="create-realm"]
+
+= Create a client
+
+[role=_abstract]
+Use the following procedure to create a RH-SSO client.
+.Procedure
+. Log into Red Hat Single Sign-on as the admin user.
+. Go to your Ansible Automation Platform realm.
+. Navigate menu:Clients[Create].
+. Click *select file* to import the data that exists on Ansible Automation Platform. To get the configuration, run the following:
++
+-----
+curl -L -k https://tower.usersys.redhat.com/sso/metadata/saml/ > rhsso-metadata.xml
+-----
+. Import the rhsso-metadata.xml file, which will populate the Client ID and Client Protocol fields
+. Set the Client Protocol to SAML.
+. Click btn:[Save].

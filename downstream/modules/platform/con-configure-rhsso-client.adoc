@@ -1,0 +1,6 @@
+[id="configure-rhsso-client"]
+
+= Red Hat Single Sign-On client configuration
+
+[role="_abstract"]
+After you configure SAML authentication, you can enable simplified login authentication for users by configuring the Red Hat Single Sign-On client. 

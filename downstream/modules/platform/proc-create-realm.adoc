@@ -1,0 +1,25 @@
+[id="create-realm"]
+
+= Create a realm
+
+[role=_abstract]
+When you log in to the Red Hat Single Sign-On admin console, you work in a realm, which is a space where you manage objects. This is the first step in delegating authentication to Red Hat Single Sign-On.
+
+.Prerequisites
+* Red Hat Single Sign-On is installed.
+* You have the initial admin account for the admin console.
+
+.Procedure
+. Go to the RH-SSO console and log in to the Red Hat Single Sign-On admin console using the admin account.
+. From the realm menu, click menu:Add Realm[]. When you are logged in to the main realm, this menu lists all other realms.
+. Enter a name for the realm in the *Name* field. 
+
+[NOTE]
+====
+The realm name is case-sensitive, so make note of the case that you use.
+====
+. Click btn:[Create]. The main admin console page opens with the realm set to the specified name.
+. Select the *Keys* tab and delete all certificates, keys, and other information that have been created by default.
+. Select the *Providers* tab.
+. Click btn:[Add Keystore] and select *rsa*.
+. Click btn:[Save] to create your Ansible Automation Platform client information.

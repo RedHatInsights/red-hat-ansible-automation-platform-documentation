@@ -1,0 +1,6 @@
+[id="saml-configuration"]
+
+= SAML configuration
+
+[role="_abstract"]
+The first step to integrating Red Hat Single Sign-On on Ansible Automation Platform is to create a certificate, a realm and configure SAML settings.

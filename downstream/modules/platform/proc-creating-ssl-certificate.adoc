@@ -1,0 +1,9 @@
+[id="creating-ssl-certificate"]
+
+= Create an SSL certificate
+
+[role=_abstract]
+Unless you already have an SSL certificate, you must create one. To create an SSL certificate, run the following command:
+-----
+# openssl req -new -x509 -days 365 -nodes -out saml.crt -keyout saml.key
+-----

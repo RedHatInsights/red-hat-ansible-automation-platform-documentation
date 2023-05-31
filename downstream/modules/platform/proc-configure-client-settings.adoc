@@ -1,0 +1,22 @@
+[id="configure-client-settings"]
+
+= Configure client settings
+
+[role=_abstract]
+.Procedure
+. Enter a Name.
+. Ensure that the following are set to On:
+** Enabled
+** Include AuthStatement
+** Sign Documents
+** Sign Assertions
+** Encrypt Assertions
+** Force POST Binding
+** Force Channel Logout
+. Enter SAML for Client Protocol.
+. Enter a Signature Algorithm.
+. Enter a SAML Signature Key Name.
+. Enter a Canonicalization Method.
+. Enter a Name ID Format.
+. Enter a Root URL.
+. Click Save.
