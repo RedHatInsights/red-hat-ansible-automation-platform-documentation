@@ -28,9 +28,8 @@
 
 
 // Automation services catalog
-// Hherbly--removed attributes for catalog since it is deprecated for AAP 2.4. See: AAP-12573
-//:CatalogName: automation services catalog
-//:CatalogNameStart: Automation services catalog
+:CatalogName: automation services catalog
+:CatalogNameStart: Automation services catalog
 :ITSM: ITSM integration
 :returns: product returns
 :leasing: product leasing
