@@ -12,7 +12,7 @@
 
 // Event-Driven Ansible
 :EDAName: Event-Driven Ansible
-:EDAcontroller: Event-Driven controller
+:EDAcontroller: Event-Driven Ansible controller
 
 // AAP on Clouds
 :AAPonAzureName: Red Hat Ansible Automation Platform on Microsoft Azure
