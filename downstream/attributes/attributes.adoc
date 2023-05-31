@@ -10,6 +10,10 @@
 :AnsibleCoreVers: 2.15
 :PlatformDownloadUrl: https://access.redhat.com/downloads/content/480/ver=2.3/rhel---9/2.3/x86_64/product-software
 
+// Event-Driven Ansible
+:EDAName: Event-Driven Ansible
+:EDAcontroller: Event-Driven controller
+
 // AAP on Clouds
 :AAPonAzureName: Red Hat Ansible Automation Platform on Microsoft Azure
 :AAPonAzureNameShort: Ansible Automation Platform on Microsoft Azure
