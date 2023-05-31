@@ -214,30 +214,6 @@ ENABLE connections from hop node(s) to Receptor port if relayed through hop node
 a|Open *only* if the internal database is used along with another component. Otherwise, this port should not be open
 |===
 
-.Services Catalog
-[options="header"]
-|===
-|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
-|22
-|TCP
-|SSH
-|Inbound and Outbound
-|`ansible_port`
-|Installation
-|443
-|TCP
-|HTTPS
-|Inbound
-|`nginx_https_port`
-|Access to Service Catalog user interface
-|5432
-|TCP
-|PostgreSQL
-|Inbound and Outbound
-|`pg_port`
-a|Open *only* if the internal database is used. Otherwise, this port should not be open
-|===
-
 .{InsightsName}
 [options="header"]
 |===
