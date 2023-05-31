@@ -6,9 +6,8 @@
 |====
 | *Variable* | *Description* 
 | *`admin_password`* | The password for an administration user to access the UI upon install completion.
-| *`automation_controller_main_url`* | For an alternative front end URL needed for SSO configuration with {CatalogName}, provide the URL.
+| *`automation_controller_main_url`* | For an alternative front end URL needed for SSO configuration, provide the URL.
 
-{CatalogNameStart} requires either Controller to be installed with {ControllerName}, or a URL to an active and routable Controller server must be provided with this variable
 | *`automationcontroller_password`* | Password for your {ControllerName} instance.
 | *`automationcontroller_username`* | Username for your {ControllerName} instance.
 | *`nginx_http_port`* | The nginx HTTP server listens for inbound connections.

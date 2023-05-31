@@ -37,7 +37,7 @@ Omitting the instance or the instance group from the inventory file is not enoug
 In addition to omitting instances or instance groups from the inventory file, you must also deprovision instances or instance groups before starting the upgrade. See xref:ref-deprovisioning[Deprovisioning nodes or groups]. 
 Otherwise, omitted instances or instance groups continue to communicate with the cluster, which can cause issues with {Controllername} services during the upgrade.
 * If you are creating a clustered installation setup, you must replace `[localhost]` with the hostname or IP address of all instances. 
-Installers for {ControllerName}, {HubName}, and {CatalogName} do not accept `[localhost]`
+Installers for {ControllerName} and {HubName} do not accept `[localhost]`
 All nodes and instances must be able to reach any others using this hostname or address. 
 In other words, you cannot use the localhost `ansible_connection=local` on one of the nodes. 
 Use the same format for the host names of all the nodes.
