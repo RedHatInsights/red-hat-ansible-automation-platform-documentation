@@ -50,7 +50,7 @@ A `node_type=execution` implies that the node can run jobs.
 Default for this group = `execution`.
 | *`peers`* | _Optional_
 
-Peer relationships define node-to-node connections. 
+The `peers` variable is used to indicate which nodes a specific host or group connects to. Wherever the peers variable is defined, an outbound connection will be established to the specific host or group.
 
 This variable is used to add `tcp-peer` entries in the `receptor.conf` file used for establishing network connections with other nodes. 
 See link:https://receptor.readthedocs.io/en/latest/connecting_nodes.html?highlight=tcp-peer[Peering]
