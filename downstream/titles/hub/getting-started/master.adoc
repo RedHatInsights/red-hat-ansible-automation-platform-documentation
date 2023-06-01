@@ -18,6 +18,7 @@ To ensure that the `ansible-galaxy` client uses certified, supported Ansible col
 This guide walks you through the steps required to configure your `ansible.cfg` file to use Red Hat {HubName} as the default source for certified Ansible collections content.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 
 include::automation-hub/proc-create-api-token.adoc[leveloffset=+1]
 

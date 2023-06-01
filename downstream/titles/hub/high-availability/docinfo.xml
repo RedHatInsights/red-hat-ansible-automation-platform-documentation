@@ -1,10 +1,9 @@
 <title>Deploying a high availability automation hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.4</productnumber>
-<subtitle>Overview of the requirements and procedures for a high availability deployment of automation hub.</subtitle>
+<subtitle>Increase reliability and scalablility with a high availability deployment of automation hub</subtitle>
 <abstract>
-    <para><emphasis role="strong">Providing Feedback:</emphasis></para>
-    <para> If you have a suggestion to improve this documentation, or find an error, please contact technical support at <link xlink:href="https://access.redhat.com"></link> to create an issue on the <emphasis role="strong">Ansible Automation Platform</emphasis> Jira project using the <emphasis role="strong">Docs</emphasis> component.</para>
+<para>This guide provides an overview of the requirements and procedures for a high availability deployment of automation hub.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>
