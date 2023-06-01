@@ -1,6 +1,6 @@
 [id="proc-eda-delete-rulebook-activations"]
 
-== Deleting Rulebook Activations
+== Deleting rulebook activations
 
 . Select the image:ellipsis.png[more actions,5,12] icon next to *Rulebook Activation enabled/disabled* switch.
 . Select select btn:[Delete rulebook activation].

@@ -1,6 +1,6 @@
 [id="proc-eda-restart-rulebook-activations"]
 
-== Restarting Rulebook Activations
+== Restarting rulebook activations
 
 [NOTE]
 ====

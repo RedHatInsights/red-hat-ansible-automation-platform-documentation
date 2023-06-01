@@ -2,18 +2,18 @@
 
 = Setting up token to authenticate to Ansible Automation Platform Controller
 
-Automation Controller must contain a project based on a repository with certain playbooks designed to work with the {EDANameShort} rulebooks. 
+Automation Controller must contain a project based on a repository with certain playbooks designed to work with the {EDAName} rulebooks. 
 Automation Controller must also have corresponding job templates set up based on the playbooks in that project.
 
 == Prerequisites
 
 * You are logged in as a Content Consumer.
 * You have created a user.
-* You can log in to the {EDANameShort} Controller Dashboard or you are added as a user in the organization.
+* You can log in to the {EDAcontroller} Dashboard or you are added as a user in the organization.
 
 == Procedure
 
-. Navigate to the {EDANameShort} Controller Dashboard.
+. Navigate to the {EDAcontroller} Dashboard.
 . From the top navigation bar, select your profile.
 . Go to *User details*.
 . Select btn:[Controller Tokens] → btn:[Create controller token].

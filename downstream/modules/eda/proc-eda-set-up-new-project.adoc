@@ -16,7 +16,7 @@ section.
 
 == Procedure
 
-. Log in to the {EDANameShort} Controller Dashboard.
+. Log in to the {EDAcontroller} Dashboard.
 . From the navigation bar, select btn:[Projects] → btn:[Create project].
 . Insert the following:
 ** *Name*

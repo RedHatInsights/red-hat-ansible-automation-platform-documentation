@@ -1,6 +1,6 @@
 [id="proc-eda-set-up-rulebook-activation"]
 
-= Setting up a Rulebook Activation
+= Setting up a rulebook activation
 
 [role="_abstract"]
 
@@ -9,10 +9,13 @@ Rulebook activations are rulebooks that have been activated to run.
 == Prerequisites
 
 * You are logged in as a Content Consumer.
+* You have set up a project.
+* You have set up a decision environment.
+* You have set up an authentication token.
 
 == Procedure
 
-. Navigate to the {EDANameShort} Controller Dashboard.
+. Navigate to the {EDAcontroller} Dashboard.
 . From the navigation bar, select btn:[Rulebook Activations] → btn:[Create rulebook activation].
 . Insert the following: 
 ** *Name*

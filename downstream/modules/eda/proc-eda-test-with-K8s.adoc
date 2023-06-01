@@ -1,8 +1,8 @@
 [id="proc-eda-test-with-K8s"]
 
-= Testing with K8s
+= Testing with Kubernetes
 
-With K8s you can create an Ingress, or expose the port, but not for prod.
+With Kubernetes you can create an Ingress, or expose the port, but not for prod.
 
 == Procedure
 
