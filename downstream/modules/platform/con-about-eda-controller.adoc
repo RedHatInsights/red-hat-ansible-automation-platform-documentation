@@ -12,5 +12,9 @@ The Event-Driven Ansible controller is the interface for event-driven automation
 [role="_additional-resources"]
 .Additional resources
 
-* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Red Hat Ansible Automation Platform Installation Guide].
+////
+The following link will not work until published.
+////
+
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_event-driven_ansible_guide/index[Getting Started with Event-Driven Ansible Guide].
 
