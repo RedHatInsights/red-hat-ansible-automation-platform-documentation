@@ -8,6 +8,6 @@ You can only restart a rulebook activation if it is currently enabled and the re
 ====
 
 . Select the image:ellipsis.png[more actions,5,12] icon next to *Rulebook Activation enabled/disabled* switch.
-. Select select btn:[Restart rulebook activation].
+. Select btn:[Restart rulebook activation].
 . In the popup window, select btn:[Yes, I confirm that I want to restart these X rulebook activations].
 . Select btn:[Restart rulebook activations].
