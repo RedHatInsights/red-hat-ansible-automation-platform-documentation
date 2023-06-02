@@ -1,6 +1,7 @@
 
-[id="single-event-driven-ansible-controller-node-with-internal-database_{context}"]
-= Single Event-Driven Ansible controller node with internal database
+[id="ref_single-eda-controller-with-internal-db_{context}"]
+
+= Single {EDAcontroller} node with internal database
 
 Use this example to populate the inventory file to install {EDAcontroller}. This installation inventory file includes a single {EDAcontroller} node with an internal database.
 
