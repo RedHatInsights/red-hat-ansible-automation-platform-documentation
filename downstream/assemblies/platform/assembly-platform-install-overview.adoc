@@ -21,6 +21,8 @@ xref:proc-verify-controller-installation_platform-install-scenario[Verifying {Co
 
 xref:proc-verify-hub-installation_platform-install-scenario[Verifying {HubName} installation]:: After installing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {HubName}.
 
+xref:proc-verify-eda-controller-installation_platform-install-scenario[Verifying {EDAcontroller} installation]:: After installing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {EDAcontroller}.
+
 xref:assembly-platform-whats-next_platform-install-scenario[Post-installation steps]:: After successful installation, you can begin using the features of {PlatformNameShort}.
 
 [role="_additional-resources"]
