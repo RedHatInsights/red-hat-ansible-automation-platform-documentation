@@ -1,6 +1,5 @@
-:_content-type: PROCEDURE
-
 [id="proc-verify-eda-controller-installation_{context}"]
+
 = Verifying  {EDAcontroller} installation
 
 Verify that you installed {EDAcontroller} successfully by logging in with the admin credentials you inserted in the inventory file.
