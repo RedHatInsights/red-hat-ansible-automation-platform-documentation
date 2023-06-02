@@ -1,0 +1,23 @@
+[id="create-sso-user"]
+
+= Create a user
+
+[role=_abstract]
+You create users in the realm where you intend to have applications needed by those users. Avoid creating users in the master realm, which is only intended for creating other realms.
+
+.Prerequisites
+* You are in a realm other than the master realm.
+
+.Procedure
+
+Click menu:Manage[Users] from the navigation panel.
+Click btn:[Add User].
+Enter the details for the new user.
++
+[NOTE]
+====
+Username is the only required field.
+====
+Click btn:[Save].
++
+After saving the details, the Management page for the new user is displayed where you can define credentials, configure attributes, and perform other user management functions. Refer to link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.6/html-single/server_administration_guide/index#assembly-managing-users_server_administration_guide[Managing users] in the _{RHSSO} Server Administration Guide_.

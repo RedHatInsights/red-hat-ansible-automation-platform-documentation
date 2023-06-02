@@ -27,7 +27,7 @@ include::platform/con-configure-rhsso-client.adoc[leveloffset=+1]
 include::platform/proc-create-client.adoc[leveloffset=+2]
 include::platform/proc-configure-client-settings.adoc[leveloffset=+2]
 include::platform/proc-create-mappers.adoc[leveloffset=+2]
-include::platform/proc-create-user.adoc[leveloffset=+2]
+include::platform/proc-create-sso-user.adoc[leveloffset=+2]
 
 .Verification
 
