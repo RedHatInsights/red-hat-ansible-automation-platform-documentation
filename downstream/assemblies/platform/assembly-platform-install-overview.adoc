@@ -9,7 +9,7 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-The {PlatformName} installation program offers you flexibility, allowing you to install {PlatformNameShort} using a number of supported installation scenarios.
+The {PlatformName} installation program offers you flexibility, allowing you to install {PlatformNameShort} using a number of supported installation scenarios. Starting with {PlatformNameShort} {PlatformVers}, the installation scenarios include the optional deployment of {EDAcontroller}, which introduces the automated resolution of IT requests. 
 
 Regardless of the installation scenario you choose, installing {PlatformNameShort} involves the following steps:
 

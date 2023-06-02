@@ -10,7 +10,7 @@ ifdef::context[:parent-context: {context}]
 :context: platform-install-scenario
 
 [role="_abstract"]
-{PlatformNameShort} is a modular platform and you can deploy {ControllerName} with other automation platform components, such as {HubName}. For more information about the components provided with {PlatformNameShort}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/planning-installation#ref-platform-components[{PlatformName} components] in the {PlatformName} Planning Guide.
+{PlatformNameShort} is a modular platform and you can deploy {ControllerName} with other automation platform components, such as {HubName} and {EDAcontroller}. For more information about the components provided with {PlatformNameShort}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/planning-installation#ref-platform-components[{PlatformName} components] in the {PlatformName} Planning Guide.
 
 [IMPORTANT]
 ====
@@ -23,7 +23,8 @@ There are a number of supported installation scenarios for {PlatformName}. To in
 * xref:ref-single-controller-ext-installer-managed-db_platform-install-scenario[Single {ControllerName} with external (installer managed) database]
 * xref:ref-single-controller-ext-customer-managed-db_platform-install-scenario[Single {ControllerName} with external (customer provided) database]
 * xref:ref-standlone-platform-ext-database-inventory_platform-install-scenario[{PlatformNameShort} with an external (installer managed) database]
-* xref:ref-example-platform-ext-database-customer-provided_platform-install-scenario[{PlatformNameShort} with an external (installer managed) database]
+* xref:ref-example-platform-ext-database-customer-provided_platform-install-scenario[{PlatformNameShort} with an external (customer managed) database]
+* xref:ref-single-eda-controller-with-internal-db_platform-install-scenario[Single {EDAcontroller} node with internal database]
 * xref:ref-standlone-hub-inventory_platform-install-scenario[Standalone {HubName} with internal database]
 * xref:ref-standlone-hub-ext-database-inventory_platform-install-scenario[Single {ControllerName} with external (installer managed) database]
 * xref:ref-standalone-hub-ext-database-customer-provided_platform-install-scenario[Single {ControllerName} with external (customer provided) database]
@@ -37,6 +38,7 @@ include::platform/ref-single-controller-ext-installer-managed-db.adoc[leveloffse
 include::platform/ref-single-controller-ext-customer-managed-db.adoc[leveloffset=+3]
 include::platform/ref-example-platform-ext-database-inventory.adoc[leveloffset=+3]
 include::platform/ref-example-platform-ext-database-customer-provided.adoc[leveloffset=+3]
+include::platform/ref-single-eda-controller-with-internal-db.adoc[leveloffset=+3]
 include::platform/ref-standalone-hub-inventory.adoc[leveloffset=+3]
 include::platform/ref-standalone-hub-ext-database-inventory.adoc[leveloffset=+3]
 include::platform/ref-standalone-hub-ext-database-customer-provided.adoc[leveloffset=+3]
