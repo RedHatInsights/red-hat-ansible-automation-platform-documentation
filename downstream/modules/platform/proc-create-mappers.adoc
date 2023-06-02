@@ -1,18 +1,19 @@
-[id="configure-client-settings"]
+[id="configure-mappers"]
 
-= Create mappers on the AAP client
+= Create mappers on the {PlatformNameShort} client
 
 [role=_abstract]
 The final step to take is to create the mappers on the {PlatformNameShort} {RHSSO} client. This defines the information coming from {RHSSO} and maps it to your {PlatformNameShort} users.
 
 New clients do not have built-in mappers and they must be created. Protocol mappers map items, such as an email address, to a specific claim in the identity and access token. The function of a mapper should be self explanatory from its name.
 
-The mappers required for Ansible Automation Platform include the following:
-* User Name
-* User ID
-* First Name
-* Last Name
-* Email
+The mappers required for {PlatformNameShort} include the following:
+
+//* User Name
+//* User ID
+* firstName
+* lastName
+* email
 
 Use the following procedure to create a mapper for each requirement.
 
@@ -26,13 +27,4 @@ Use the following procedure to create a mapper for each requirement.
 . Enter a *Property* and *Friendly Name*.
 . Enter a *SAML Attribute Name* and select *Basic* for the *SAML Attribute Name Format*.
 . Click btn:[Save].
-. Repeat these steps for each mapper required by the Ansible Automation Platform client.
-
-Mapping in RH-SSO should be these:
-email
-firstName
-lastName
-
-Friendly Name == what it’s called in Controller
-SAML Attribute Name == what it’s called in Controller
-Property == what IdP (rhsso) expects
+. Repeat these steps for each mapper required by the {PlatformNameShort} client.

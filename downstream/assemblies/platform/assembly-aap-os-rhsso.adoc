@@ -29,12 +29,13 @@ include::platform/proc-configure-client-settings.adoc[leveloffset=+2]
 include::platform/proc-create-mappers.adoc[leveloffset=+2]
 include::platform/proc-create-sso-user.adoc[leveloffset=+2]
 
-.Verification
-
 [IMPORTANT]
 ====
 Log out of both systems before attempting authorization.
 ====
+
+.Verification
+
 * Go to the login page for Ansible Automation Platform and verify that *Sign in With S* is displayed indicating it as an alternative method of authentication.
 
 

@@ -1,4 +1,4 @@
-[id="create-realm"]
+[id="create-client"]
 
 = Create a client
 
@@ -9,7 +9,6 @@ Use the following procedure to create a SAML client.
 . Go to your {PlatformName} realm.
 . Navigate to menu:Clients[Create].
 . Click *select file* to import the data that exists on {PlatformName}. To get the configuration, run the following command:
-+
 -----
 curl -L -k https://tower.usersys.redhat.com/sso/metadata/saml/ > rhsso-metadata.xml
 -----
