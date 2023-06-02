@@ -1,5 +1,5 @@
 
-[id="ref_single-eda-controller-with-internal-db_{context}"]
+[id="ref-single-eda-controller-with-internal-db_{context}"]
 
 = Single {EDAcontroller} node with internal database
 
