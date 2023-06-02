@@ -1,0 +1,20 @@
+:_content-type: PROCEDURE
+
+[id="proc-verify-eda-controller-installation_{context}"]
+= Verifying installation of {EDAcontroller}
+
+Verify that you installed {EDAcontroller} successfully by logging in with the admin credentials you inserted in the inventory file.
+
+.Procedure
+
+. Navigate to the IP address specified for the {EDAcontroller} node in the `inventory` file.
+
+. Log in with the Admin credentials you set in the `inventory` file.
+
+[IMPORTANT]
+====
+If the installation fails and you are a customer who has purchased a valid license for {PlatformName}, contact Ansible through the link:https://access.redhat.com/[Red Hat Customer portal].
+====
+
+Upon a successful login to {EDAcontroller}, your installation of {PlatformName} {PlatformVers} is complete.
+
