@@ -3,25 +3,26 @@
 = Create mappers on the AAP client
 
 [role=_abstract]
-The final step to take is to create the mappers on the Ansible Automation Platform Red Hat Single Sign-On client. This defines the information coming from your Red Hat Single Sign-On and maps it to your Ansible Automation Platform users.
+The final step to take is to create the mappers on the {PlatformNameShort} {RHSSO} client. This defines the information coming from {RHSSO} and maps it to your {PlatformNameShort} users.
 
 New clients do not have built-in mappers and they must be created. Protocol mappers map items, such as an email address, to a specific claim in the identity and access token. The function of a mapper should be self explanatory from its name.
 
 The mappers required for Ansible Automation Platform include the following:
-User Name
-User ID
-First Name
-Last Name
-Email
+* User Name
+* User ID
+* First Name
+* Last Name
+* Email
+
+Use the following procedure to create a mapper for each requirement.
+
 .Procedure
-To create a mapper for each requirement, do the following:
-. Login to the Red Hat Single Sign-On admin console.
+. Login to the {RHSSO} admin console.
 . Navigate to menu:Configure[Clients].
 . Select the *Mappers* tab.
 . Click btn:[Create].
-. Enter an *ID*.
-. Enter *Mapper Type* as User Property
-. Enter a *Name*.
+. Enter a mapper *Name*.
+. Select *User Property* as the *Mapper Type*.
 . Enter a *Property* and *Friendly Name*.
 . Enter a *SAML Attribute Name* and select *Basic* for the *SAML Attribute Name Format*.
 . Click btn:[Save].

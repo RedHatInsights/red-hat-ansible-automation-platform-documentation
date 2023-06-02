@@ -3,20 +3,28 @@
 = Configure client settings
 
 [role=_abstract]
+After a SAML client is created, you can define the client settings on the client *Settings* tab.
+
 .Procedure
-. Enter a Name.
-. Ensure that the following are set to On:
-** Enabled
-** Include AuthStatement
-** Sign Documents
-** Sign Assertions
-** Encrypt Assertions
-** Force POST Binding
-** Force Channel Logout
-. Enter SAML for Client Protocol.
-. Enter a Signature Algorithm.
-. Enter a SAML Signature Key Name.
-. Enter a Canonicalization Method.
-. Enter a Name ID Format.
-. Enter a Root URL.
-. Click Save.
+. Enter a *Name*. This is the display name for the client whenever it is displayed in a {RHSSO} UI screen.
+. Ensure that the following toggles are set to On:
+** *Enabled* to ensure the client can request authentication.
+** *Include AuthStatement* to ensure the client can determine the maximum session length.
+** *Sign Documents* to ensure {RHSSO} signs the document using the realm’s private key.
+** *Sign Assertions* to ensure assertion is signed and embedded within the SAML XML Auth response
+** *Encrypt Assertions* to ensure assertions in SAML documents are encrypted with the realm’s private key
+** *Force POST Binding* to ensure {RHSSO} is forced to respond using the SAML POST Binding.
+** *Force Channel Logout* to ensure browser redirects are able to perform a logout.
+. Select *SAML* for the *Client Protocol*.
+. Select a *Signature Algorithm* for signing SAML documents.
+. Enter a *SAML Signature Key Name*.
++
+[NOTE]
+====
+The {RHSSO} key ID is the default key name. However, your organization might expect a different key name or no key name at all
+====
++
+. Select a *Canonicalization Method* for xml signatures.
+. Enter a *Name ID Format* for the subject. If no name ID policy is specified in the request or if the Force Name ID Format attribute is true, this value is used.
+. Enter a *Root URL*. If {RHSSO} uses any configured relative URLs, this value is prepended to them.
+. Click btn:[Save].

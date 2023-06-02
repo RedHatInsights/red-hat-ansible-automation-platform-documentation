@@ -3,21 +3,21 @@
 = Configure SAML on {ControllerName}
 
 [role=_abstract]
-Use this procedure to enable simplified login authentication for users through Red Hat Single Sign-On.
+Use this procedure to enable simplified login authentication for users through {RHSSO}.
 
 .Procedure
-. Log in to Ansible Automation Platform as the admin user.
-. Select Settings to configure AAP settings.
-. Select SAML settings in the Authentication pane.
-. Click Edit.
-. Enter the SAML Service Provider Entity ID. This is usually the URL for the service with the entry point hostname for the controller instance.
+. Log in to {PlatformNameShort} as the admin user.
+. Select *Settings* to configure {PlatformNameShort} settings.
+. Select *SAML settings* from the Authentication pane.
+. Click btn:[Edit].
+. Enter the *SAML Service Provider Entity ID*. This is usually the URL for the service with the entry point hostname for the controller instance.
 +
 [NOTE]
 ====
-This must match the settings on the Red Hat Single Sign-On client_id name.
+This must match the settings on the {RHSSO} client_id name.
 ====
 +
-. Enter the keypair to use as a service provider (SP) and include the certificate content in SAML Service Provider Public Certificate.
+. Enter the keypair to use as a service provider (SP) and include the certificate content in *SAML Service Provider Public Certificate*.
 +
 -----
 -----BEGIN CERTIFICATE——
@@ -25,8 +25,8 @@ This must match the settings on the Red Hat Single Sign-On client_id name.
 -----END CERTIFICATE——
 -----
 +
-. Create a private key for the controller to use as a service provider (SP) and enter it in the SAML Service Provider Private Key field.
-. Provide the URL, display name, and the name of your app in the SAML Service Provider Organization Info field. Refer to the documentation for example syntax.
+. Create a private key for the controller to use as a service provider (SP) and enter it in the *SAML Service Provider Private Key* field.
+. Provide the URL, display name, and the name of your app in the *SAML Service Provider Organization Info* field. Refer to the documentation for example syntax.
 +
 -----
 {
@@ -38,7 +38,7 @@ This must match the settings on the Red Hat Single Sign-On client_id name.
 }
 -----
 +
-. Provide the name and email address of the support contact for your service provider in the SAML Service Provider Technical Contact field.
+. Provide the name and email address of the support contact for your service provider in the *SAML Service Provider Technical Contact* field.
 +
 -----
 {
@@ -47,8 +47,8 @@ This must match the settings on the Red Hat Single Sign-On client_id name.
 }
 -----
 +
-. Provide the name and email address of the support contact for your service provider in the SAML Service Provider Support Contact field.
-. Use the SAML Enabled Identity Providers field to configure the Entity ID, SSO URL and certificate for each identity provider (IdP) in use. Multiple SAML IdPs are supported. Some IdPs may provide user data using attribute names that differ from the default OIDs. Attribute names can be overridden for each IdP.
+. Provide the name and email address of the support contact for your service provider in the *SAML Service Provider Support Contact* field.
+. Use the *SAML Enabled Identity Providers* field to configure the Entity ID, SSO URL and certificate for each identity provider (IdP) in use. Multiple SAML IdPs are supported. Some IdPs may provide user data using attribute names that differ from the default OIDs. Attribute names can be overridden for each IdP.
 +
 -----
 {
@@ -66,7 +66,7 @@ This must match the settings on the Red Hat Single Sign-On client_id name.
 }
 -----
 +
-. Use the SAML Organization Map field to configure the users placed into an organization based on their username and email address, for example:
+. Use the *SAML Organization Map* field to configure the users placed into an organization based on their username and email address, for example:
 +
 -----
 {
@@ -87,11 +87,11 @@ This must match the settings on the Red Hat Single Sign-On client_id name.
 }
 -----
 +
-. Use the SAML Team Map field to map team members (users) from social authorization accounts.
-. Use the SAML Team Attribute Mapping field to translate user team membership.
-. SAML Security Config A dict of key value pairs that are passed to the underlying python-saml security setting https://github.com/onelogin/python-saml#settings
-. SAML Service Provider Extra Configuration Data A dict of key value pairs to be passed to the underlying python-saml Service Provider configuration setting.
-. SAML IDP to EXTRA_DATA Attribute Mapping A list of tuples that maps IDP attributes to extra_attributes. Each attribute will be a list of values, even if only 1 value.
-. Use the SAML User Flags Attribute Mapping field to map super users and system auditors from SAML.
-. Click Save.
-. Go to menu:Settings[Miscellaneous] and make sure the Base URL of the system is properly set to your entrypoint.
+. Use the *SAML Team Map* field to map team members (users) from social authorization accounts.
+. Use the *SAML Team Attribute Mapping* field to translate user team membership.
+. Use the *SAML Security Config* field to define key value pairs that are passed to the underlying python-saml security setting.
+. Use the *SAML Service Provider Extra Configuration Data* field to define key value pairs to be passed to the underlying python-saml Service Provider configuration setting.
+. Use the *SAML IDP to EXTRA_DATA Attribute Mapping* to define a list of tuples that maps IDP attributes to extra_attributes. Each attribute will be a list of values, even if only 1 value.
+. Use the *SAML User Flags Attribute Mapping* field to map super users and system auditors from SAML.
+. Click btn:[Save].
+. Go to menu:Settings[Miscellaneous] and make sure the *Base URL* of the system is properly set to your entrypoint.
