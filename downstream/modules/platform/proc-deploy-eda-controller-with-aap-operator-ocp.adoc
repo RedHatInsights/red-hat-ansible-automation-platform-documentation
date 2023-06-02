@@ -16,7 +16,7 @@
 +
 This takes you to the Form View to customize your installation.
 
-. Specify your Controller URL. 
+. Specify your controller URL. 
 +
 If you deployed automation controller in Openshift as well, you can find the URL on the Routes page.
 +
