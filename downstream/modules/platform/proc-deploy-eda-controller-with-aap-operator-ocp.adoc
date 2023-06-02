@@ -1,0 +1,45 @@
+
+[id="proc-deploy-eda-controller-with-aap-operator-ocp_{context}"]
+
+
+
+.Prerequisites
+
+* You have installed {OperatorPlatform} on {OCPShort}.
+* You have installed and configured {ControllerName}.
+
+.Procedure
+
+. Navigate to menu:Operators[Installed Operators].
+
+. Create a new Event-Driven Ansible custom resource. 
++
+This takes you to the Form View to customize your installation.
+
+. Specify your Controller URL. 
++
+If you deployed automation controller in Openshift as well, you can find the URL on the Routes page.
++
+[NOTE]
+====
+This is the only required customization, but you can customize other options using the UI form or directly in the YAML configuration tab, if desired.
+====
+
+. Click btn:[Create].
+This deploys {EDAcontroller} in the namespace you specified. After a couple minutes when the installation is marked as *Successful*, you can reach the UI. 
+
+. Click *Routes* to find the new Route URL that has been created for you.
+
+. Click the new URL to navigate to {EDAName} in the browser.
+
+. On the *Secrets* page in Openshift, locate the Admin Password k8s secret that was created for you, unless you specified a custom one. 
+
+[NOTE]
+====
+The password value in that secret can be used to log in to the {EDAcontroller} UI.  The default user is `Admin`.
+====
+
+
+
+
+
