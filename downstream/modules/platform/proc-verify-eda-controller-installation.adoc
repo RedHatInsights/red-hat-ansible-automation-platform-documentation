@@ -1,5 +1,4 @@
 
-
 [id="proc-verify-eda-controller-installation_{context}"]
 
 = Verifying  {EDAcontroller} installation

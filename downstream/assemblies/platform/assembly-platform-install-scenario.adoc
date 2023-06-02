@@ -48,7 +48,7 @@ include::platform/proc-verify-controller-installation.adoc[leveloffset=+1]
 include::platform/ref-controller-configs.adoc[leveloffset=+2]
 include::platform/proc-verify-hub-installation.adoc[leveloffset=+1]
 include::platform/ref-hub-configs.adoc[leveloffset=+2]
-include::proc-verify-eda-controller-installation.adoc[leveloffset=+1]
+include::platform/proc-verify-eda-controller-installation.adoc[leveloffset=+1]
 include::assembly-platform-whats-next.adoc[leveloffset=+1]
 
 
