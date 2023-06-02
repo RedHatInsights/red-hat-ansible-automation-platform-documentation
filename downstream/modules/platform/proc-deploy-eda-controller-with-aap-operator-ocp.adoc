@@ -33,10 +33,10 @@ This deploys {EDAcontroller} in the namespace you specified. After a couple minu
 . Click the new URL to navigate to {EDAName} in the browser.
 
 . On the *Secrets* page in Openshift, locate the Admin Password k8s secret that was created for you, unless you specified a custom one. 
-
++
 [NOTE]
 ====
-The password value in that secret can be used to log in to the {EDAcontroller} UI.  The default user is `Admin`.
+You can use the password value in the secret to log in to the {EDAcontroller} UI. The default user is `Admin`.
 ====
 
 
