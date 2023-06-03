@@ -5,7 +5,7 @@
 ====
 As of the 2.4 release you can still synchronize content, but synclists are deprecated, and will be removed in a future version.
 
-From Ansible Automation Platform 2.4 a private automation hub administrator can go to the rh-certified remote and upload a manually-created requirements file. 
+From Ansible Automation Platform 2.4 a private automation hub administrator can go to the rh-certified remote and upload a manually-created requirements file.
 
 Remotes are configurations that allow you to synchronize content to your custom repositories from an external collection source.
 ====

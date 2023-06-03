@@ -4,7 +4,7 @@
 
 = Creating a synclist of Red Hat {CertifiedName}
 
-You can create a synclist of curated {CertifiedCon} in {HubNameMain} on {Console}. 
+You can create a synclist of curated {CertifiedCon} in {HubNameMain} on {Console}.
 Your synclist repository is located under menu:Automation Hub[Repo Management], which is updated whenever you choose to manage content within {CertifiedName}.
 
 All {CertifiedName} are included by default in your initial organization synclist.
@@ -28,5 +28,5 @@ All {CertifiedName} are included by default in your initial organization synclis
 . Log in to `{Console}`.
 . Navigate to menu:Automation Hub[Collections].
 . Use the toggle switch on each collection to determine whether to exclude it from your synclist.
-. When you finish managing collections for your synclist, navigate to menu:Automation Hub[Repo Management] to initiate the remote repository synchronization to your {PrivateHubName}. 
+. When you finish managing collections for your synclist, navigate to menu:Automation Hub[Repositories] to initiate the remote repository synchronization to your {PrivateHubName}.
 . Optional: If your remote repository is already configured, you can manually synchronize Red Hat {CertifiedName} to your {PrivateHubName} to update the collections content that you made available to local users.
