@@ -1,6 +1,6 @@
 
 [id="event-driven-ansible-controller_{context}"]
-= Event-Driven Ansible controller
+= Event-Driven Ansible controller variables
 
 [cols="50%,50%",options="header"]
 |====
