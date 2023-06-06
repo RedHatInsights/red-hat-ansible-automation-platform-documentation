@@ -1,13 +1,13 @@
 [id="proc-eda-set-up-token"]
 
-= Setting up token to authenticate to Ansible Automation Platform Controller
+= Setting up a token to authenticate to {PlatformNameShort} Controller
 
-Automation Controller must contain a project based on a repository with certain playbooks designed to work with the {EDAName} rulebooks. 
-Automation Controller must also have corresponding job templates set up based on the playbooks in that project.
+{ControllerNameStart} must contain a project based on a repository with certain playbooks designed to work with the {EDAName} rulebooks. 
+{ControllerNameStart} must also have corresponding job templates set up based on the playbooks in that project.
 
 == Prerequisites
 
-* You are logged in as a Content Consumer.
+* You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
 * You have created a user.
 * You can log in to the {EDAcontroller} Dashboard or you are added as a user in the organization.
 

@@ -2,7 +2,7 @@
 
 = Testing with Kubernetes
 
-With Kubernetes you can create an Ingress, or expose the port, but not for prod.
+With Kubernetes you can create an Ingress, or expose the port, but not for production.
 
 == Procedure
 
@@ -12,7 +12,7 @@ With Kubernetes you can create an Ingress, or expose the port, but not for prod.
 kubectl port-forward svc/<ACTIVATION_SVC_NAME> 5000:5000
 -----
 +
-. Make the HTTP requests against the localhost:5000 to trigger the rulebook:
+. Make the HTTP requests against the `localhost:5000` to trigger the rulebook:
 +
 -----
 curl -H "Content-Type: application/json" -X POST test-sync-bug-dynatrace.apps.aap-dt.ocp4.testing.ansible.com -d '{}'

@@ -2,12 +2,12 @@
 
 = Activating webhook rulebooks
 
-Rulebooks that include a "source" section require extra configuration to accept external messages as triggers, usually in the form of a webhook. 
-In Openshift environments, you can allow webhooks to reach an activation-job-pod over a given port by creating a Route that exposes that rulebook activation's K8s service.
+Rulebooks that include a `source` section require extra configuration to accept external messages as triggers, usually in the form of a webhook. 
+In Openshift environments, you can allow webhooks to reach an activation-job-pod over a given port by creating a Route that exposes that rulebook activation's Kubernetes service.
 
 == Prerequisites
 
-* You have created a rulebook activation in {EDAcontroller} Dashboard.
+* You have created a rulebook activation in the {EDAcontroller} Dashboard.
 
 [NOTE]
 ====
