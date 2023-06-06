@@ -1,0 +1,38 @@
+:imagesdir: images
+:numbered:
+:toclevels: 1
+:context: operator-platform-doc
+
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform
+
+Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
+
+This guide helps you to understand the installation, migration and upgrade requirements for deploying the {OperatorPlatform} on {OCPShort}.
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
+include::platform/assembly-operator-install-planning.adoc[leveloffset=+1]
+
+include::platform/assembly-install-aap-operator.adoc[leveloffset=+1]
+
+include::platform/assembly-installing-controller-operator.adoc[leveloffset=+1]
+
+include::platform/assembly-installing-hub-operator.adoc[leveloffset=+1]
+
+// include::platform/assembly-installing-hub-operator-local-db.adoc[leveloffset=+1]
+
+// include::platform/assembly-installing-controller-operator-local-db.adoc[leveloffset=+1]
+
+include::platform/assembly-installing-aap-operator-cli.adoc[leveloffset=+1]
+
+include::platform/assembly-using-rhsso-operator-with-automation-hub.adoc[leveloffset=+1]
+
+include::platform/assembly-aap-migration.adoc[leveloffset=+1]
+
+include::platform/assembly-operator-upgrade.adoc[leveloffset=+1]
