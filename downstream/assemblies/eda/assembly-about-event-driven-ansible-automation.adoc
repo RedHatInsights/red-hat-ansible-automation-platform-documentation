@@ -2,7 +2,7 @@ ifdef::context[:parent-context: {context}]
 
 [id="assembly-about-event-driven-ansible-automation"]
 
-= About {EDAName} Automation
+= {EDAName} Automation
 
 [role="_abstract"]
 
