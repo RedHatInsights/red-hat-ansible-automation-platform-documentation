@@ -1,0 +1,20 @@
+ifdef::context[:parent-context: {context}]
+
+[id="installation-of-eda-controller"]
+
+= Installation of {EDAname} controller
+
+:context: installation-of-eda-controller
+
+The installation of Event-Driven Ansible automation controller happens along with other Ansible Automation Platform components. Like automation controller and automation hub, the setup includes default settings for specific variables in the inventory files.
+
+include::eda/ref-installing-eda-controller-on-aap.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+== Additional resources (or Next steps)
+* For more detailed information on planning, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/index[Red Hat Ansible Automation Platform Planning Guide].
+* For a comprehensive list of predefined variables for the Event-Driven Ansible controller, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Red Hat Ansible Automation Platform Installation Guide].
+* For more information about deployment on Ansible Automation Platform operator, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform Guide]
+
+
+

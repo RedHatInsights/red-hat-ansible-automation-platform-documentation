@@ -2,21 +2,21 @@
 :numbered:
 :toclevels: 1
 
-
 :experimental:
 
 include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Getting Started with {EDAname} Guide
+= Getting Started with Event-Driven Ansible Guide
 
 Thank you for your interest in {EDAname}. {EDAname} is a new way to enhance and expand automation. It helps teams automate decision-making and improve IT speed and agility .
 
 This guide provides the conceptual framework of {EDAname} and links you to information on installing and using {EDAcontroller}.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::eda/assembly-about-event-driven-ansible-automation.adoc[leveloffset=+1]
+include::eda/assembly-installation-eda-controller.adoc[leveloffset=+1]
 
-include::eda/eda/con-about-event-driven-ansible.adoc[leveloffset=+1]
 
 

@@ -2,16 +2,13 @@ ifdef::context[:parent-context: {context}]
 
 [id="about-event-driven-ansible-automation"]
 
-
 = About {EDAName} Automation
-
-:context: about-event-driven-ansible-automation
 
 [role="_abstract"]
 
 {EDAName} is a new way to connect to sources of events and act on those events using rulebooks. This technology improves IT speed and agility, and enables consistency and resilience.
 
-include::eda/eda/con-about-event-driven-ansible.adoc[leveloffset=+1]
+include::eda/con-about-event-driven-ansible.adoc[leveloffset=+1]
 
 
 
