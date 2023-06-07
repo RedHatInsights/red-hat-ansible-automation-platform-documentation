@@ -1,8 +1,9 @@
-:_content-type: CONCEPT
 
 [id="about-event-driven-ansible_{context}"]
+
 = About {EDAName}
 
+[role="_abstract"]
 {EDAName} is designed for simplicity and flexibility. With these enhancements, you can:
 
 * Automate decision making
