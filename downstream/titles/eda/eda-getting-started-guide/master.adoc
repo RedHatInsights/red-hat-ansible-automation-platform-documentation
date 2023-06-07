@@ -17,6 +17,6 @@ This guide provides the conceptual framework of {EDAname} and links you to infor
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
-include::eda/con-about-event-driven-ansible.adoc[leveloffset=+1]
+include::eda/eda/con-about-event-driven-ansible.adoc[leveloffset=+1]
 
 
