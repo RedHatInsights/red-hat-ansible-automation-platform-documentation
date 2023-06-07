@@ -1,0 +1,25 @@
+ifdef::context[:parent-context: {context}]
+
+[id="about-event-driven-ansible-automation"]
+
+
+= About {EDAName} Automation
+
+:context: about-event-driven-ansible-automation
+
+[role="_abstract"]
+
+{EDAName} is a new way to connect to sources of events and act on those events using rulebooks. This technology improves IT speed and agility, and enables consistency and resilience.
+
+include::eda/con-about-event-driven-ansible.adoc[leveloffset=+1]
+
+
+[role="_additional-resources"]
+== Additional resources (or Next steps)
+* A bulleted list of links to other closely-related material. These links can include `link:` and `xref:` macros.
+* For more details on writing assemblies, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+
+ifdef::parent-context-of-about-event-driven-ansible-automation[:context: {parent-context-of-about-event-driven-ansible-automation}]
+ifndef::parent-context-of-about-event-driven-ansible-automation[:!context:]
+
