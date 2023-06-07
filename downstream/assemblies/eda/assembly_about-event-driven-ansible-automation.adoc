@@ -11,7 +11,7 @@ ifdef::context[:parent-context: {context}]
 
 {EDAName} is a new way to connect to sources of events and act on those events using rulebooks. This technology improves IT speed and agility, and enables consistency and resilience.
 
-include::eda/con-about-event-driven-ansible.adoc[leveloffset=+1]
+include::eda/eda/con-about-event-driven-ansible.adoc[leveloffset=+1]
 
 
 [role="_additional-resources"]
