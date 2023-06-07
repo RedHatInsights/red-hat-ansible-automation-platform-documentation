@@ -4,8 +4,6 @@ ifdef::context[:parent-context: {context}]
 
 = Installation of {EDAname} controller
 
-:context: installation-of-eda-controller
-
 The installation of Event-Driven Ansible automation controller happens along with other Ansible Automation Platform components. Like automation controller and automation hub, the setup includes default settings for specific variables in the inventory files.
 
 include::eda/ref-installing-eda-controller-on-aap.adoc[leveloffset=+1]

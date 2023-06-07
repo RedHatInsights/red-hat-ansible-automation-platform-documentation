@@ -1,6 +1,7 @@
 :imagesdir: images
 :numbered:
 :toclevels: 1
+:context: eda-getting-started
 
 :experimental:
 
