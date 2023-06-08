@@ -4,7 +4,7 @@
 
 After you have successfully installed the {EDAcontroller}, you can customize your event-driven automation experience. 
 
-include::ref-eda-controller-tasks.adoc[leveloffset=+1]
+include::eda/ref-eda-controller-tasks.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
 .Additional resources (or Next steps)
