@@ -8,7 +8,7 @@ Projects are a logical collection of rulebooks.
 
 == Prerequisites
 
-* You are logged in as a Content Consumer.
+* You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
 * You have set up a credential, if necessary. 
 For more information, refer to the link:https://docs.ansible.com/automation-controller/latest/html/userguide/credentials.html[Credentials]
 section of the {ControllerNameStart} documentation.

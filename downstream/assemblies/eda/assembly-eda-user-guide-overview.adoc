@@ -6,10 +6,10 @@
 
 The following procedures form the user configuration:
 
-. Create a new project
-. Create a decision environment
-. Create a token
-. Create a rulebook activation
+* Create a new project
+* Create a decision environment
+* Create a token
+* Create a rulebook activation
 
 include::eda/proc-eda-set-up-new-project.adoc[leveloffset=-0]
 include::eda/proc-eda-set-up-new-decision-environment.adoc[leveloffset=-0]
