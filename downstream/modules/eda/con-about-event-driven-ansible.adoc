@@ -1,7 +1,7 @@
 
 [id="about-event-driven-ansible_{context}"]
 
-= About {EDAName}
+= {EDAName} benefits
 
 [role="_abstract"]
 {EDAName} is designed for simplicity and flexibility. With these enhancements, you can:
