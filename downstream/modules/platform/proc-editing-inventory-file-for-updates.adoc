@@ -49,6 +49,10 @@ include::ini/clustered-nodes.ini[]
 
 .Importing and generating API tokens
 
+When migrating from {PlatformName} 2.0 or earlier to {PlatformName} 2.1 or later, you can use your existing automation hub API token or generate a new token. In the inventory file, edit the following fields before running the {PlatformName} installer setup script `setup.sh`:
+
+If you are upgrading from {PlatformName} 2.0 or earlier, you must perform one of the following tasks:
+
 * Import an existing API token with the `automationhub_api_token` flag as follows:
 +
 [options="nowrap",subs="+quotes"]
@@ -60,7 +64,7 @@ automationhub_api_token=__<api_token>__
 +
 [options="nowrap",subs="+quotes"]
 ----
-generate_automationhub_token=
+generate_automationhub_token=True
 ----
 
 [role="_additional-resources"]
