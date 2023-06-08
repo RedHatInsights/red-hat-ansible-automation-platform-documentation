@@ -1,5 +1,3 @@
-ifdef::context[:parent-context: {context}]
-
 [id="using-event-driven-ansible-controller"]
 
 = Using {EDAcontroller}
