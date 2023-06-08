@@ -2,9 +2,10 @@
 
 = Decision Frameworks
 
- {EDAName} includes, by default, an ansible.eda collection, which contains some sample sources, event filters and rulebooks. All the collections, ansible rulebooks and their dependencies use a Decision Environment, which is an image that can be run on either Podman or Kubernetes. 
 
-In Decision Environments, sources are typically Python code that are distributed through ansible-collections. They inject external events into a rulebook for processing.It consists of the following:
+{EDAName} includes, by default, an ansible.eda collection, which contains some sample sources, event filters and rulebooks. All the collections, ansible rulebooks and their dependencies use a Decision Environment, which is an image that can be run on either Podman or Kubernetes.
+
+In Decision Environments, sources, which are typically Python code, are distributed through ansible-collections. They inject external events into a rulebook for processing. The rulebook consists of the following:
 
 * The python interpreter
 * Java Runtime Environment
