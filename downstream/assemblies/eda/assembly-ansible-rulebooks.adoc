@@ -1,0 +1,18 @@
+
+[id="ansible-rulebooks"]
+
+= Ansible rulebooks
+
+{EDAcontroller} provides the interface in which Event-Driven Ansible automation performs. The Ansible rulebook provides the framework for Event-Driven Ansible automation. Ansible rulebook is essentially a collection of rulesets, which in turn, consists of one or more sources, rules, and conditions.
+
+include::eda/con-decision-frameworks.adoc[leveloffset=+1]
+include::eda/con_rulebook-actions.adoc[leveloffset=+1]
+
+
+[role="_additional-resources"]
+.Additional resources
+* For more information on using rulebooks, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/eda-user-guide/index[Event-Driven Ansible controller User's Guide].
+* For more detailed information on Ansible rulebooks, see the section on link:https://ansible-rulebook.readthedocs.io/en/stable/rulebooks.html[Rulebooks] in the link:https://ansible-rulebook.readthedocs.io/en/latest/[Ansible Rulebook documentation]. 
+
+
+

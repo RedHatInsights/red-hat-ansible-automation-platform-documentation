@@ -1,0 +1,15 @@
+ifdef::context[:parent-context: {context}]
+
+[id="using-event-driven-ansible-controller"]
+
+= Using {EDAcontroller}
+
+After you have successfully installed the {EDAcontroller}, you can customize your event-driven automation experience. 
+
+include::ref_eda-controller-tasks.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+.Additional resources (or Next steps)
+* For further details on using Event-Driven Ansible controller, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/eda-user-guide/index[Event-Driven Ansible controller User's Guide].
+
+
