@@ -14,5 +14,5 @@ This guide provides recommended practices for various processes needed to instal
 
 include::aap-hardening/assembly-aap-compliance.adoc[leveloffset=+1]
 include::aap-hardening/assembly-aap-security-enabling.adoc[leveloffset=+1]
-include::aap-on-azure/assembly-hardening-aap[leveloffset=+1]
+include::aap-hardening/assembly-hardening-aap.adoc[leveloffset=+1]
 include::aap-hardening/assembly-intro-to-aap-hardening.adoc[leveloffset=+1]
