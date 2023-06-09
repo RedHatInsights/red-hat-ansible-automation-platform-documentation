@@ -8,7 +8,7 @@
 Use this procedure to sync a repository from one {HubName} instance to another.
 
 .Procedure
-. Log in to Red Hat Ansible Automation platform.
+. Log in to {PlatformName}.
 . Navigate to menu:Automation Hub[Repositories].
 . Locate your repository in the list and click *Sync*.
 +
