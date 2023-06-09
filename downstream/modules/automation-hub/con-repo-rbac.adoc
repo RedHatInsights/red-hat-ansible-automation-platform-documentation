@@ -4,6 +4,6 @@
 
 [id="con-repo-rbac"]
 
-= Role Based Access Conrol
+= Role Based Access Control
 
-Role Based Access Control (RBAC) restricts user access to custom repositories based on their defined role. By default, users can view all public repositories in their {HubName}, but they can not modify them unless they have explicit permission to do so. This is the same for other operations on the repository. For example, removing a user's rights revokes their ability to download content from a custom repository. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/managing_user_access_in_private_automation_hub/assembly-user-access[Configuring user access for your local Automation Hub] for information about managing user access in automation hub.
+Role Based Access Control (RBAC) restricts user access to custom repositories based on their defined role. By default, users can view all public repositories in their {HubName}, but they cannot modify them unless they have explicit permission to do so. This is the same for other operations on the repository. For example, removing a user's rights revokes their ability to download content from a custom repository. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/managing_user_access_in_private_automation_hub/assembly-user-access[Configuring user access for your local {HubName}] for information about managing user access in {HubName}.

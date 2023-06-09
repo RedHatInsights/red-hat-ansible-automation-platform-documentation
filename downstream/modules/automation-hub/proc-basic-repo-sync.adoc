@@ -5,7 +5,7 @@
 
 = Basic repository sync
 
-Use this procedure to sync a repository from one automation hub instance to another.
+Use this procedure to sync a repository from one {HubName} instance to another.
 
 .Procedure
 . Log in to Red Hat Ansible Automation platform.

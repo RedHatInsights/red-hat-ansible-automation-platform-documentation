@@ -5,7 +5,7 @@
 
 = Provide access to a repository
 
-By default, private repositories and the content are hidden from all users in the system. Public repositories can be viewed by all users, but can not be modified. Use this procedure to provide access to your custom repository.
+By default, private repositories and the content are hidden from all users in the system. Public repositories can be viewed by all users, but cannot be modified. Use this procedure to provide access to your custom repository.
 
 .Procedure
 . Log in to {PlatformName}.
@@ -14,7 +14,7 @@ By default, private repositories and the content are hidden from all users in th
 . Select the *Access* tab.
 . Select a group for *Repository owners*.
 +
-See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/managing_user_access_in_private_automation_hub/assembly-user-access[Configuring user access for your local Automation Hub] for information about implementing user access.
+See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/managing_user_access_in_private_automation_hub/assembly-user-access[Configuring user access for your local {HubName}] for information about implementing user access.
 +
 . Select the roles you want assigned for the selected group.
 . Click btn:[Save].

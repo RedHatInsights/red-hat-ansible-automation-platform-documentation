@@ -6,7 +6,7 @@
 
 = Approval pipeline
 
-Automation Hub allows you to approve collections into any repository that is marked with the `pipeline=approved` label. By default, Hub ships with one repository for approved content, but you have the option to add more from the repository creation screen. Repositories marked with this label are not eligible for direct publishing and collections must come from one of the staging repositories.
+{HubNameStart} allows you to approve collections into any repository that is marked with the `pipeline=approved` label. By default, {HubName} ships with one repository for approved content, but you have the option to add more from the repository creation screen. Repositories marked with this label are not eligible for direct publishing and collections must come from one of the staging repositories.
 
 Auto approval::
 When auto approve is enabled, any collection uploaded to a staging repository is automatically promoted to all of the repositories marked as `pipeline=approved`.
