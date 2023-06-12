@@ -1,0 +1,54 @@
+// Module included in the following repositories: 
+// assembly-platform-whats-next.adoc
+
+:_content-type: PROCEDURE
+
+[id="updating-ee-image-locations_{context}"]
+
+= Updating execution environment image locations
+
+If your {PrivateHubName} was installed separately, you may need to update your execution environment image locations to point to your {PrivateHubName}. Use this procedure to update your execution environment image locations. 
+
+.Procedure
+. Navigate to the directory containing `setup.sh`
+. Create `.group_vars/automationcontroller` by running the following command: 
++
+----
+touch ./group_vars/automationcontroller
+----
++
+. Paste the following content into `./group_vars/automationcontroller`, being sure to adjust the settings to fit your environment:
++
+----
+# Automation Hub Registry
+registry_username: 'your-automation-hub-user'
+registry_password: 'your-automation-hub-password'
+registry_url: 'automationhub.example.org'
+registry_verify_ssl: False
+
+## Execution Environments
+control_plane_execution_environment: 'automationhub.example.org/ee-supported-rhel8:latest'
+
+global_job_execution_environments:
+  - name: "Default execution environment"
+    image: "automationhub.example.org/ee-supported-rhel8:latest"
+  - name: "Ansible Engine 2.9 execution environment"
+    image: "automationhub.example.org/ee-29-rhel8:latest"
+  - name: "Minimal execution environment"
+    image: "automationhub.example.org/ee-minimal-rhel8:latest"
+----
++
+. Run the `./setup.sh` script
++
+----
+$ ./setup.sh
+----
+
+.Verification
+
+. Log into {PlatformNameShort} as a user with system administrator access. 
+. Navigate to menu:Administration[Execution Environment].
+. Confirm that the execution environment image location has changed from the default value of `<registry url>/ansible-automation-platform-<version>/<image name>:<tag>` to `<automation hub url>/<image name>:<tag>`. 
+
+
+
