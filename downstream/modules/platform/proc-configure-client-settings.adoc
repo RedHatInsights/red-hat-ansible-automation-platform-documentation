@@ -7,7 +7,7 @@ After a SAML client is created, you can define the client settings on the client
 
 .Procedure
 . Enter a *Name*. This is the display name for the client whenever it is displayed in a {RHSSO} UI screen.
-. Ensure that the following toggles are set to On:
+. Ensure that the following toggles are set *On*:
 ** *Enabled* to ensure the client can request authentication.
 ** *Include AuthStatement* to ensure the client can determine the maximum session length.
 ** *Sign Documents* to ensure {RHSSO} signs the document using the realm’s private key.

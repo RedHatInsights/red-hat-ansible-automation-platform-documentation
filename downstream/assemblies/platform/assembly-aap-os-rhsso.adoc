@@ -5,17 +5,17 @@ ifdef::context[:parent-context: {context}]
 
 :context: aap-authentication
 
-= Setting up authentication
+= Setting up single sign-on
 
 [role="_abstract"]
 
-Red Hat Single Sign-On (RH-SSO) is based on the Keycloak project and enables you to secure Ansible Automation Platform by providing single sign-on (SSO) capabilities based on popular standards such as SAML 2.0 and OpenID Connect.
+{RHSSO} ({RHSSOshort}) is based on the Keycloak project and enables you to secure {PlatformNameShort} by providing single sign-on (SSO) capabilities based on popular standards such as SAML 2.0 and OpenID Connect.
 
-Red Hat Ansible Automation Platform supports SAML authentication by default. Beginning with Ansible Automation Platform 2.x, you can enhance security by delegating authentication to Red Hat Single Sign-on.
+{PlatformName} supports SAML authentication by default. Beginning with {PlatformNameShort} 2.x, you can enhance security by delegating authentication to Red Hat Single Sign-on.
 
 .Prerequisites
-- A running instance of Red Hat Single Sign-On (RH-SSO)
-- A running installation of automation controller from Ansible Automation Platform 2.x
+- A running instance of {RHSSOshort}
+- A running installation of automation controller from {PlatformNameShort} 2.x
 - Administrator rights to the two systems
 - A valid host name
 
@@ -36,7 +36,7 @@ Log out of both systems before attempting authorization.
 
 .Verification
 
-* Go to the login page for Ansible Automation Platform and verify that *Sign in With S* is displayed indicating it as an alternative method of authentication.
+* Go to the login page for {PlatformNameShort} and verify that *Sign in With S* is displayed indicating it as an alternative method of authentication.
 
 
 

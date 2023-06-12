@@ -75,10 +75,10 @@ This must match the settings on the {RHSSO} client_id name.
    },
    "Systems Engineering": {
       "admins": [
-         "acheron@redhat.com",
-         "jparrill@redhat.com",
-         "covenant@redhat.com",
-         "olympia@redhat.com"
+         "<admin-email>",
+         "<admin-email>",
+         "<admin-email>",
+         "<admin-email>"
       ],
       "remove_admins": false,
       "remove_users": false,
