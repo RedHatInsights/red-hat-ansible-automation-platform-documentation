@@ -5,7 +5,7 @@ ifdef::context[:parent-context: {context}]
 
 :context: aap-authentication
 
-= Setting up single sign-on
+= {RHSSO} integration with {ControllerName}
 
 [role="_abstract"]
 
