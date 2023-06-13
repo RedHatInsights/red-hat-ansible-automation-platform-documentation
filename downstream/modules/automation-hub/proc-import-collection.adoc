@@ -9,7 +9,7 @@ To import a collection for use in a custom repository, it must be imported into 
 
 .Procedure
 . Log in to {PlatformName}.
-. Navigate to menu:Automation Hub[Namespaces]. The Namepaces page displays all of the namespaces available.
+. Navigate to menu:Automation Hub[Namespaces]. The Namespaces page displays all of the namespaces available.
 . Click btn:[View Collections].
 . Click btn:[Upload Collection].
 . Navigate to the collection tarball file, select the file and click btn:[Open].
