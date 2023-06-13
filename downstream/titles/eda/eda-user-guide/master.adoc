@@ -6,7 +6,7 @@
 include::attributes/attributes.adoc[]
 
 // Book Title
-= Red Hat {EDAName} Controller user guide
+= {EDAName} Controller user guide
 
 {EDAcontroller} is a new way to enhance and expand automation by improving IT speed and agility while enabling consistency and resilience. 
 Developed by Red Hat, this feature is designed for simplicity and flexibility. 

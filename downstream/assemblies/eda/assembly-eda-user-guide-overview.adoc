@@ -1,6 +1,6 @@
 [id="eda-user-guide-overview"]
 
-= Red Hat {EDAcontroller} user guide overview
+= {EDAcontroller} user guide overview
 
 {EDAName} is a highly scalable, flexible automation capability that works with event sources such as other software vendors' monitoring tools. These tools watch IT solutions and identify events and automatically implement the documented changes or response in a rulebook to handle that event.
 
