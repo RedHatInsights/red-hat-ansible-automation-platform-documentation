@@ -1,0 +1,12 @@
+ifdef::context[:parent-context: {context}]
+
+[id="remote-management"]
+= Remote management
+
+:context: remote-management
+
+[role="_abstract"]
+You can set up remote configurations to any server that is running {HubName}. Remote configurations allow you to sync content to your custom repositories from an external collection source.
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
