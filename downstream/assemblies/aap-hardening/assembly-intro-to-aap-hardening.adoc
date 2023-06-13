@@ -1,0 +1,9 @@
+ifdef::context[:parent-context: {context}]
+
+[id="assembly-intro-to-aap-hardening"]
+=  Introduction
+
+:context: introduction
+
+[role="_abstract"]
+
