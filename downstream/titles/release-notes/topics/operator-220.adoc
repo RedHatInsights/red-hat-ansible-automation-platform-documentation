@@ -1,5 +1,8 @@
+// This is the release notes for Automation Platform Operator 2.2, the version number is removed from the topic title as part of the release notes restructuring efforts.
+
+
 [[operator-220-intro]]
-= Automation Platform Operator 2.2
+= Automation Platform Operator
 
 The Ansible Automation Platform Operator provides cloud-native, push-button deployment of new Ansible Automation Platform instances in your OpenShift environment.
 

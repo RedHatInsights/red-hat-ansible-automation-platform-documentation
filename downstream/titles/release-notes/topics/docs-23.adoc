@@ -1,11 +1,13 @@
+// This is the release notes for AAP 2.3 documentation, the version number is removed from the topic title as part of the release notes restructuring efforts.
+
 [[docs-2.3-intro]]
-= Ansible Automation Platform 2.3 Documentation
+= Ansible Automation Platform Documentation
 
 The documentation set for Red Hat Ansible Automation Platform 2.3 has been refactored to improve the experience for our customers and the Ansible community. These changes will make it easier for you to install, migrate, backup, recover and implement new features.
 
 .Enhancements
 
-* The _Red Hat Ansible Automation Platform Instllation Guide_ has been restructured into three separate documents to include the following:
+* The _Red Hat Ansible Automation Platform Installation Guide_ has been restructured into three separate documents to include the following:
 
 _Red Hat Ansible Automation Platform Planning Guide_::
 Use this guide to understand requirements, options, and recommendations for installing Ansible Automation Platform.
