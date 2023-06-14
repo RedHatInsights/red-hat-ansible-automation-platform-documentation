@@ -4,10 +4,10 @@
 
 Depending on your role, you can use Event-Driven Ansible controller for any of the following tasks:
 
-* Configure a new project
-* Set up a new decision environment
-* Create a new authentication token
-* Set up a rulebook activation
+* Configuring a new project
+* Setting up a new decision environment
+* Creating a new authentication token
+* Setting up a rulebook activation
 
 
 
