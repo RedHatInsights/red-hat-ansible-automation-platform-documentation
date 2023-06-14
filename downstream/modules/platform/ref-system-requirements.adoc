@@ -55,5 +55,5 @@ See link:https://docs.ansible.com/ansible/latest/user_guide/intro_getting_starte
 [NOTE]
 ====
 You must install Ansible using a package manager such as `yum`, and the latest stable version of the package manager must be installed for {PlatformName} to work properly.
-Ansible version 2.9 is required for versions 3.8 and later.
+Ansible version 2.14 is required for versions {PlatformVers} and later.
 ====
