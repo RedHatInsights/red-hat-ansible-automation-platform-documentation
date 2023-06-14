@@ -4,7 +4,7 @@
 
 Decision environments are a container image to run Ansible rulebooks.
 They create a common language for communicating automation dependencies, and provide a standard way to build and distribute the automation environment.
-The default decision environment is found at link:https://quay.io/repository/ansible/ansible-rulebook[Ansible-Rulebook]. 
+The default decision environment is found in the link:https://quay.io/repository/ansible/ansible-rulebook[Ansible-Rulebook]. 
 
 To create your own decision environment refer to link:https://access.redhat.com/solutions/7018085[How do I Build a Custom Decision Environment for Event Driven Ansible within Ansible Automation Platform?].
 
@@ -21,12 +21,13 @@ of the {ControllerNameStart} documentation.
 == Procedure
 
 . Navigate to the {EDAcontroller} Dashboard.
-. From the navigation bar, select btn:[Decision Environments] → btn:[Create decision environment].
+. From the navigation panel, select menu:Decision Environments[Create decision environment].
 . Insert the following: 
-** *Name*
-** *Description*: This field is optional.
-** *Image*: This is the full image location, including the container registry, image name, and version tag.
-** *Credential*: This is the token needed to utilize the decision environment image. 
++
+Name::
+Description:: This field is optional.
+Image:: This is the full image location, including the container registry, image name, and version tag.
+Credential:: This is the token needed to utilize the decision environment image. 
 . Select btn:[Create decision environment].
 
 Your decision environment is now created and can be managed on the *Decision Environments* screen.

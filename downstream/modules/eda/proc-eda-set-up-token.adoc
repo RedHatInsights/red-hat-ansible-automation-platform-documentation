@@ -14,13 +14,14 @@
 == Procedure
 
 . Navigate to the {EDAcontroller} Dashboard.
-. From the top navigation bar, select your profile.
+. From the top navigation panel, select your profile.
 . Go to *User details*.
-. Select btn:[Controller Tokens] → btn:[Create controller token].
+. Select menu:Controller Tokens[Create controller token].
 . Insert the following: 
-** *Name*
-** *Description*: This field is optional.
-** *Token* 
++
+Name::
+Description:: This field is optional.
+Token::
 . Select btn:[Create controller token].
 
 After saving the new token, you are brought to the *Controller Tokens* tab where you can delete the token.

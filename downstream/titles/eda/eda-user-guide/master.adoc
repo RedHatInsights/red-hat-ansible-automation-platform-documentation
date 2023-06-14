@@ -10,7 +10,6 @@ include::attributes/attributes.adoc[]
 
 {EDAcontroller} is a new way to enhance and expand automation by improving IT speed and agility while enabling consistency and resilience. 
 Developed by Red Hat, this feature is designed for simplicity and flexibility. 
-This guide helps you configure your {EDAcontroller} to set up new projects, decision environments, tokens to authenticate to Ansible Automation Platform Controller, and rulebook activation.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]

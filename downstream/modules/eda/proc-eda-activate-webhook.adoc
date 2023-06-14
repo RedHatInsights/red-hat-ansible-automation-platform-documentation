@@ -59,7 +59,7 @@ spec:
   wildcardPolicy: None
 -----
 +
-. When you create the Route, test it with a Post to the Route URL:
+. When you create the Route, test it with a *Post to the Route URL*:
 +
 -----
 curl -H "Content-Type: application/json" -X POST 

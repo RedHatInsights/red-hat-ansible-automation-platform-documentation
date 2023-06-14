@@ -17,20 +17,21 @@ section of the {ControllerNameStart} documentation.
 == Procedure
 
 . Log in to the {EDAcontroller} Dashboard.
-. From the navigation bar, select btn:[Projects] → btn:[Create project].
+. From the navigation panel, select menu:Projects[Create project].
 . Insert the following:
-** *Name*
-** *Description*: This field is optional.
-** *SCM type*: Git is the only SCM type available for use.
-** *SCM URL*: This is a URL to a remote archive, such as GitHub Release or a build artifact stored in Artifactory that unpacks it into the project path for use.
++
+Name::
+Description:: This field is optional.
+SCM type:: Git is the only SCM type available for use.
+SCM URL:: This is a URL to a remote archive, such as GitHub Release or a build artifact stored in Artifactory that unpacks it into the project path for use.
 +
 [NOTE]
 ====
 You cannot edit the SCM URL after you create the project.
 ====
-** *Credential*: This is the token needed to utilize the SCM URL.
-. Select btn:[Create project].
+Credential:: This is the token needed to utilize the SCM URL.
+. Select menu:Projects[Create project].
 
 Your project is now created and can be managed in the *Projects* screen.
 
-After saving the new project, you are brought to the project's details page. From there or the *Projects* list view you can edit or delete the project.
+After saving the new project, the project's details page is displayed. From there or the *Projects* list view, you can edit or delete the project.
