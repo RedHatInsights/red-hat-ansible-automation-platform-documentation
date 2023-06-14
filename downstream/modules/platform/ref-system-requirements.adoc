@@ -16,7 +16,7 @@ h| Subscription | Valid Red Hat Ansible Automation Platform |
 
 h| OS | Red Hat Enterprise Linux 8.4 or later 64-bit (x86) |{PlatformName} is also supported on OpenShift, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform] for more information.
 
-h| Ansible | version 2.3 required | If Ansible is not already present on the system, the setup playbook will install `ansible-core` 2.14.
+h| Ansible | version 2.14 required | If Ansible is not already present on the system, the setup playbook will install `ansible-core` 2.14.
 
 h| Python | 3.8 or later |
 
@@ -55,5 +55,5 @@ See link:https://docs.ansible.com/ansible/latest/user_guide/intro_getting_starte
 [NOTE]
 ====
 You must install Ansible using a package manager such as `yum`, and the latest stable version of the package manager must be installed for {PlatformName} to work properly.
-Ansible version 2.9 is required for versions 3.8 and later.
+Ansible version 2.14 is required for versions {PlatformVers} and later.
 ====
