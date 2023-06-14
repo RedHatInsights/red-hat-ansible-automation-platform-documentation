@@ -1,0 +1,17 @@
+:_content-type: CONCEPT
+
+[id="single-eda-controller-with-internal-database"]
+
+= Single {EDAcontroller} node with internal database
+
+This scenario includes installation of Event-Driven Ansible controller on a single machine with an internal database. 
+
+[IMPORTANT]
+====
+{ControllerNameStart} must be installed before you populate the inventory file with the appropriate {EDAName} variables.
+====
+
+[role="_additional-resources"]
+.Additional resources
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#ref-single-eda-controller-with-internal-db_platform-install-scenario[Single Event-Driven Ansible controller node with internal database]
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-eda-controller-variables[Appendix A. 5. Event-Driven Ansible controller variables]
