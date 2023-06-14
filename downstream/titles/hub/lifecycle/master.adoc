@@ -4,6 +4,7 @@
 = Private Automation Hub life cycle
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 
 == Overview
 
