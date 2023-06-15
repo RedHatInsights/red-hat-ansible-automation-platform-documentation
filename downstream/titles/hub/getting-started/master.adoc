@@ -19,7 +19,9 @@ This guide walks you through the steps required to configure your `ansible.cfg` 
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
-include::automation-hub/proc-create-api-token.adoc[leveloffset=+1]
+The API token is now available for configuring {HubName} as your default collections server or uploading collections using the `ansible-galaxy` command line tool.
+
+include::automation-hub/con-create-api-token.adoc[leveloffset=+1]
 
 The API token is now available for configuring {HubName} as your default collections server or uploading collections using the `ansible-galaxy` command line tool.
 
