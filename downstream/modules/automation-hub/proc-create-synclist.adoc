@@ -5,7 +5,7 @@
 = Creating a synclist of Red Hat {CertifiedName}
 
 You can create a synclist of curated {CertifiedCon} in {HubNameMain} on {Console}.
-Your synclist repository is located under menu:Automation Hub[Repo Management], which is updated whenever you choose to manage content within {CertifiedName}.
+Your synclist repository is located under menu:Automation Hub[Repositories], which is updated whenever you choose to manage content within {CertifiedName}.
 
 All {CertifiedName} are included by default in your initial organization synclist.
 
