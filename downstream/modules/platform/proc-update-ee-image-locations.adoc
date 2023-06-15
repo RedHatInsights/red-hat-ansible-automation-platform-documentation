@@ -8,7 +8,7 @@
 = Updating execution environment image locations
 
 [role="_abstract"]
-If your {PrivateHubName} was installed separately, you may need to update your execution environment image locations to point to your {PrivateHubName}. Use this procedure to update your execution environment image locations. 
+If your {PrivateHubName} was installed separately, you can update your execution environment image locations to point to your {PrivateHubName}. Use this procedure to update your execution environment image locations. 
 
 .Procedure
 . Navigate to the directory containing `setup.sh`
