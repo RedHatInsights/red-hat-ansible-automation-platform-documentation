@@ -12,10 +12,19 @@ You can assign permissions to groups in {HubName} that enable users to access sp
 
 .Procedure
 . Log in to your local {HubName}.
-. Navigate to menu:User Access[Groups].
-. Click on a group name.
-. Select the *Permissions* tab, then click btn:[Edit].
+. Navigate to menu:User Access[Roles].
+. Click btn:[Add roles].
+. Click in the name field and fill in the role name.
+. Click in the description field and fill in the description.
+. Complete the *Permissions* section.
 . Click in the field for each permission type and select permissions that appear in the list.
 . Click btn:[Save] when finished assigning permissions.
+. Navigate to menu:User Access[Groups].
+. Click on a group name.
+. Click on the *Access* tab.
+. Click btn:[Add roles].
+. Select the role created in step 8.
+. Click btn:[Next] to confirm the selected role.
+. Click btn:[Add] to complete adding the role.
 
 The group can now access features in {HubName} associated with their assigned permissions.
