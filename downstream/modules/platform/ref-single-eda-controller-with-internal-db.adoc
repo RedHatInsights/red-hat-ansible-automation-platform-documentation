@@ -28,7 +28,7 @@ automationedacontroller_pg_password='<password>'
 # in inventory.
 #
 automation_controller_main_url = 'https://controller.example.org/'
-' 
+ 
 
 # Boolean flag used to verify Automation Controller's
 # web certificates when making calls from Automation EDA Controller.
