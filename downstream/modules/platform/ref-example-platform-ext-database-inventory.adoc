@@ -6,7 +6,7 @@
 
 
 [role="_abstract"]
-Use this example to populate the inventory file to install {PlatformNameShort}. This installation inventory file includes two {ControllerName} nodes, two execution nodes, and {HubName} with an external managed database.
+Use this example to populate the inventory file to install {PlatformNameShort}. This installation inventory file includes two {ControllerName} nodes, two execution nodes, {HubName} with an external managed database, and {EDAcontroller}.
 
 -----
 # Automation Controller Nodes
@@ -94,4 +94,53 @@ automationhub_pg_sslmode='prefer'
 # postgres_use_ssl=False
 # postgres_ssl_cert=/path/to/pgsql.crt
 # postgres_ssl_key=/path/to/pgsql.key
+
+# Automation EDA Controller Configuration
+#
+
+automationedacontroller_admin_password='<eda-password>'
+
+automationedacontroller_pg_host='data.acme.org'
+automationedacontroller_pg_port=5432
+
+automationedacontroller_pg_database='automationedacontroller'
+automationedacontroller_pg_username='automationedacontroller'
+automationedacontroller_pg_password='<password>'
+
+# The full routable URL used by EDA to connect to a controller host.
+# This URL is required if there is no Automation Controller configured
+# in inventory.
+#
+# automation_controller_main_url=''
+
+# Boolean flag used to verify Automation Controller's
+# web certificates when making calls from Automation EDA Controller.
+#
+# automationedacontroller_controller_verify_ssl = true
+
+# SSL-related variables
+
+# If set, this will install a custom CA certificate to the system trust store.
+# custom_ca_cert=/path/to/ca.crt
+
+# Certificate and key to install in nginx for the web UI and API
+# web_server_ssl_cert=/path/to/tower.cert
+# web_server_ssl_key=/path/to/tower.key
+
+# Certificate and key to install in Automation Hub node
+# automationhub_ssl_cert=/path/to/automationhub.cert
+# automationhub_ssl_key=/path/to/automationhub.key
+
+# Server-side SSL settings for PostgreSQL (when we are installing it).
+# postgres_use_ssl=False
+# postgres_ssl_cert=/path/to/pgsql.crt
+# postgres_ssl_key=/path/to/pgsql.key
+
+# Keystore file to install in SSO node
+# sso_custom_keystore_file='/path/to/sso.jks'
+
+# The default install will deploy SSO with sso_use_https=True
+# Keystore password is required for https enabled SSO
+sso_keystore_password=''
+
 -----
