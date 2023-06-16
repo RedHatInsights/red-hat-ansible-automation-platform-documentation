@@ -2,7 +2,6 @@
 
 = Activating webhook rulebooks
 
-Rulebooks that include a `source` section require extra configuration to accept external messages as triggers, usually in the form of a webhook. 
 In Openshift environments, you can allow webhooks to reach an activation-job-pod over a given port by creating a Route that exposes that rulebook activation's Kubernetes service.
 
 == Prerequisites
@@ -14,23 +13,22 @@ In Openshift environments, you can allow webhooks to reach an activation-job-pod
 The following is an example of rulebook with a given webhook:
 -----
 - name: Listen for storage-monitor events
-hosts: all
-sources:
-- ansible.eda.webhook:
-host: 0.0.0.0
-port: 5000
-
-rules:
-- name: Rule - Print event information
-condition: event.meta.headers is defined
-action:
-run_job_template:
-name: StorageRemediation
-organization: Default
-job_args:
-extra_vars:
-message: from eda
-sleep: 1
+  hosts: all
+  sources:
+    - ansible.eda.webhook:
+        host: 0.0.0.0
+        port: 5000
+  rules:
+    - name: Rule - Print event information
+    condition: event.meta.headers is defined
+    action:
+      run_job_template:
+        name: StorageRemediation
+        organization: Default
+        job_args:
+          extra_vars:
+             message: from eda
+             sleep: 1
 -----
 ====
 

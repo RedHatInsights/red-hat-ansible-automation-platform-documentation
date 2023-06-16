@@ -32,5 +32,5 @@ Credential:: This is the token needed to utilize the decision environment image.
 
 Your decision environment is now created and can be managed on the *Decision Environments* screen.
 
-After saving the new decision environment, you are brought to the decision environment's details page. 
+After saving the new decision environment, the decision environment's details page is displayed. 
 From there or the *Decision Environment* list view you can edit or delete it.
