@@ -9,7 +9,7 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-The {PlatformName} installation program offers you flexibility, allowing you to install {PlatformNameShort} using a number of supported installation scenarios.
+The {PlatformName} installation program offers you flexibility, allowing you to install {PlatformNameShort} using a number of supported installation scenarios. Starting with {PlatformNameShort} {PlatformVers}, the installation scenarios include the optional deployment of {EDAcontroller}, which introduces the automated resolution of IT requests. 
 
 Regardless of the installation scenario you choose, installing {PlatformNameShort} involves the following steps:
 
@@ -20,6 +20,8 @@ xref:proc-running-setup-script_platform-install-scenario[Running the {PlatformNa
 xref:proc-verify-controller-installation_platform-install-scenario[Verifying {ControllerName} installation]:: After installing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {ControllerName}.
 
 xref:proc-verify-hub-installation_platform-install-scenario[Verifying {HubName} installation]:: After installing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {HubName}.
+
+xref:proc-verify-eda-controller-installation_platform-install-scenario[Verifying {EDAcontroller} installation]:: After installing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {EDAcontroller}.
 
 xref:assembly-platform-whats-next_platform-install-scenario[Post-installation steps]:: After successful installation, you can begin using the features of {PlatformNameShort}.
 
