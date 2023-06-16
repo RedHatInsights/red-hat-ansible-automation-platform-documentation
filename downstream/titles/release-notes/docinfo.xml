@@ -3,7 +3,7 @@
 <productnumber>2.4</productnumber>
 <subtitle>New features, enhancements, and bug fix information</subtitle>
 <abstract>
-    <para>A summary of new features, enhancements, and bug fix information for Red Hat Ansible Automation Platform.</para>
+    <para>This guide provides a summary of new features, enhancements, and bug fix information for Red Hat Ansible Automation Platform.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>

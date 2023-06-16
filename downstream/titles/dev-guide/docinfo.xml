@@ -1,10 +1,9 @@
 <title>Red Hat Ansible Automation Platform Creator Guide</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.4</productnumber>
-<subtitle>This guide is intended for developers looking to learn how to use Ansible in creating content for automation.</subtitle>
+<subtitle>Learn to create automation content with Ansible</subtitle>
 <abstract>
-    <para><emphasis role="strong">Providing Feedback:</emphasis></para>
-    <para> If you have a suggestion to improve this documentation, or find an error, please contact technical support at <link xlink:href="https://access.redhat.com"></link> to create an issue on the <emphasis role="strong">Ansible Automation Platform</emphasis> Jira project using the <emphasis role="strong">Docs</emphasis> component.</para>
+<para>This guide helps developers learn how to use Ansible to create content for automation.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>

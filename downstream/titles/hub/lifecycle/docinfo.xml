@@ -1,9 +1,9 @@
 <title>Private Automation Hub life cycle</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.4</productnumber>
-<subtitle>Maintenance and Updates Statement for Automation Hub</subtitle>
+<subtitle>Maintenance and updates statement for automation hub</subtitle>
 <abstract>
-    <para>This document describes the maintenance schedule for security patches and feature enhancements that Red Hat will provide for the Private Automation Hub.</para>
+    <para>This guide describes the maintenance schedule for security patches and feature enhancements that Red Hat will provide for the Private Automation Hub.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services</orgname>
