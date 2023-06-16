@@ -3,8 +3,6 @@
 <productnumber>2.4</productnumber>
 <subtitle>Learn about the benefits and how to get started using Event-Driven Ansible.</subtitle>
 <abstract>Event-Driven Ansible is a new way to enhance and expand automation by improving IT speed and agility while enabling consistency and resilience. Developed by Red Hat, this feature is designed for simplicity and flexibility.
-    <para><emphasis role="strong">Providing Feedback:</emphasis></para>
-    <para> If you have a suggestion to improve this documentation, or find an error, please contact technical support at <link xlink:href="https://access.redhat.com"></link> to create an issue on the <emphasis role="strong">Ansible Automation Platform</emphasis> Jira project using the <emphasis role="strong">Docs</emphasis> component.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>
