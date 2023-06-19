@@ -23,13 +23,13 @@ section of the {ControllerNameStart} documentation.
 Name::
 Description:: This field is optional.
 SCM type:: Git is the only SCM type available for use.
-SCM URL:: This is a URL to a remote archive, such as GitHub Release or a build artifact stored in Artifactory that unpacks it into the project path for use.
+SCM URL:: HTTP[S] protocol address of a repository, such as GitHub or GitLab. 
 +
 [NOTE]
 ====
 You cannot edit the SCM URL after you create the project.
 ====
-Credential:: This is the token needed to utilize the SCM URL.
+Credential:: This field is optional. This is the token needed to utilize the SCM URL.
 . Select btn:[Create project].
 
 Your project is now created and can be managed in the *Projects* screen.
