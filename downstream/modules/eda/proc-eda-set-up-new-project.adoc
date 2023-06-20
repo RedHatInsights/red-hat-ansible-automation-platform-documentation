@@ -1,0 +1,38 @@
+[id="proc-eda-set-up-new-project"]
+
+= Setting up a new project
+
+[role="_abstract"]
+
+Projects are a logical collection of rulebooks.
+
+== Prerequisites
+
+* You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
+* You have set up a credential, if necessary. 
+For more information, refer to the link:https://docs.ansible.com/automation-controller/latest/html/userguide/credentials.html[Credentials]
+section of the {ControllerNameStart} documentation.
+* You have an existing repository containing rulebooks that are integrated with playbooks contained in a repository to be used by Automation Controller.
+
+== Procedure
+
+. Log in to the {EDAcontroller} Dashboard.
+. From the navigation panel, select menu:Projects[Create project].
+. Insert the following:
++
+Name::
+Description:: This field is optional.
+SCM type:: Git is the only SCM type available for use.
+SCM URL:: HTTP[S] protocol address of a repository, such as GitHub or GitLab. 
++
+[NOTE]
+====
+You cannot edit the SCM URL after you create the project.
+====
+Credential:: This field is optional. This is the token needed to utilize the SCM URL.
+. Select btn:[Create project].
+
+Your project is now created and can be managed in the *Projects* screen.
+
+After saving the new project, the project's details page is displayed. 
+From there or the *Projects* list view, you can edit or delete the project.
