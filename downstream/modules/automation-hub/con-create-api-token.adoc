@@ -1,0 +1,10 @@
+[id="con-create-api-token"]
+= Creating the Red Hat automation hub API token
+
+Before you can interact with automation hub by uploading or downloading collections, you must create an API token. The automation hub API token authenticates your `ansible-galaxy` client to the Red Hat automation hub server.
+
+You can create an API token using automation hub *Token management* in automation hub or *API Token Management* in private automation hub (PAH).
+
+include::proc-create-api-token.adoc[leveloffset=+1]
+
+include::proc-create-api-token-pah.adoc[leveloffset=+1]
