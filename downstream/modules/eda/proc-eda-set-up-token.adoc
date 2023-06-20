@@ -1,0 +1,27 @@
+[id="proc-eda-set-up-token"]
+
+= Setting up a token to authenticate to {PlatformNameShort} Controller
+
+{ControllerNameStart} must contain a project based on a repository with certain playbooks designed to work with the {EDAName} rulebooks. 
+{ControllerNameStart} must also have corresponding job templates set up based on the playbooks in that project.
+
+== Prerequisites
+
+* You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
+* You have created a user.
+* You can log in to the {EDAcontroller} Dashboard or you are added as a user in the organization.
+
+== Procedure
+
+. Navigate to the {EDAcontroller} Dashboard.
+. From the top navigation panel, select your profile.
+. Go to *User details*.
+. Select menu:Controller Tokens[Create controller token].
+. Insert the following: 
++
+Name::
+Description:: This field is optional.
+Token::
+. Select btn:[Create controller token].
+
+After saving the new token, you are brought to the *Controller Tokens* tab where you can delete the token.

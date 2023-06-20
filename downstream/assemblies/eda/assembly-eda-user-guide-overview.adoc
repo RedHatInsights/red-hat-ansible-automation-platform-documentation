@@ -1,12 +1,22 @@
 [id="eda-user-guide-overview"]
-= {EDANameShort} user guide overview
+
+= {EDAcontroller} user guide overview
+
+{EDAName} is a highly scalable, flexible automation capability that works with event sources such as other software vendors' monitoring tools. These tools watch IT solutions and identify events and automatically implement the documented changes or response in a rulebook to handle that event.
 
 The following procedures form the user configuration:
 
-. Set up a new project
-. Set up decision environment
-. Set up token
-. Set up a rulebook activation
+* Create a new project
+* Create a decision environment
+* Create a token
+* Create a rulebook activation
 
-
-
+include::eda/proc-eda-set-up-new-project.adoc[leveloffset=-0]
+include::eda/proc-eda-set-up-new-decision-environment.adoc[leveloffset=-0]
+include::eda/proc-eda-set-up-token.adoc[leveloffset=-0]
+include::eda/proc-eda-set-up-rulebook-activation.adoc[leveloffset=-0]
+include::eda/proc-eda-enable-rulebook-activations.adoc[leveloffset=+1]
+include::eda/proc-eda-restart-rulebook-activations.adoc[leveloffset=+1]
+include::eda/proc-eda-delete-rulebook-activations.adoc[leveloffset=+1]
+include::eda/proc-eda-activate-webhook.adoc[leveloffset=+1]
+include::eda/proc-eda-test-with-K8s.adoc[leveloffset=+1]
