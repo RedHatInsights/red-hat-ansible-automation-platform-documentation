@@ -1,0 +1,36 @@
+[id="proc-eda-set-up-new-decision-environment"]
+
+= Setting up a new decision environment
+
+Decision environments are a container image to run Ansible rulebooks.
+They create a common language for communicating automation dependencies, and provide a standard way to build and distribute the automation environment.
+The default decision environment is found in the link:https://quay.io/repository/ansible/ansible-rulebook[Ansible-Rulebook]. 
+
+To create your own decision environment refer to link:https://access.redhat.com/solutions/7018085[How do I Build a Custom Decision Environment for Event Driven Ansible within Ansible Automation Platform?].
+
+The following steps describe how to import a decision environment into your {EDAcontroller} Dashboard.
+
+== Prerequisites
+
+* You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
+* You have set up a credential, if necessary. 
+For more information, refer to the link:https://docs.ansible.com/automation-controller/latest/html/userguide/credentials.html[Credentials] section
+of the {ControllerNameStart} documentation.
+* You have pushed a decision environment image to an image repository or you chose to use the image `de-supported` provided at link:http://registry.redhat.io/[registry.redhat.io].
+
+== Procedure
+
+. Navigate to the {EDAcontroller} Dashboard.
+. From the navigation panel, select menu:Decision Environments[Create decision environment].
+. Insert the following: 
++
+Name::
+Description:: This field is optional.
+Image:: This is the full image location, including the container registry, image name, and version tag.
+Credential:: This field is optional. This is the token needed to utilize the decision environment image. 
+. Select btn:[Create decision environment].
+
+Your decision environment is now created and can be managed on the *Decision Environments* screen.
+
+After saving the new decision environment, the decision environment's details page is displayed. 
+From there or the *Decision Environment* list view you can edit or delete it.

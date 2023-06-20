@@ -1,0 +1,7 @@
+[id="proc-eda-enable-rulebook-activations"]
+
+== Enable and disable rulebook activations
+
+. Select the switch on the row level to enable or disable your chosen rulebook.
+. In the popup window, select btn:[Yes, I confirm that I want to enable/disable these X rulebook activations].
+. Select btn:[Enable/Disable rulebook activation].
