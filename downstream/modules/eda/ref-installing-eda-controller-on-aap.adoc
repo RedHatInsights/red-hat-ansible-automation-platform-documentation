@@ -11,7 +11,8 @@ The following existing sections have been updated with code examples and variabl
 * link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/assembly-platform-install-scenario#ref-standlone-platform-ext-database-inventory_platform-install-scenario[Ansible Automation Platform with an external (installer managed) database].
 * link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index#ref-example-platform-ext-database-customer-provided_platform-install-scenario[Ansible Automation Platform with an external (customer provided) database].
 
-Lastly, the following {EDAcontroller}-specific code example and appendix section have been added to the installation content: 
+Lastly, the following {EDAcontroller}-specific code example and appendix section have been added to the installation content:
+ 
 * link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#ref-single-eda-controller-with-internal-db_platform-install-scenario[Single Event-Driven Ansible controller node with internal database]
 * link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-eda-controller-variables[Appendix A. 5. Event-Driven Ansible controller variables]
 
