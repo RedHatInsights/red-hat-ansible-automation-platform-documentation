@@ -1,7 +1,7 @@
 <title>Red Hat Ansible Security Automation Guide</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.4</productnumber>
-<subtitle>Identify and manage security events using Ansible
+<subtitle>Identify and manage security events using Ansible</subtitle>
 <abstract>
 <para>This guide provides procedures for automating and streamlining various security processes needed to identify, triage, and respond to security events using Ansible.</para>
 </abstract>
