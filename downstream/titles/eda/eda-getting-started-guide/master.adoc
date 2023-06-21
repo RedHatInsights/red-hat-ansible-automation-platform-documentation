@@ -11,7 +11,7 @@ include::attributes/attributes.adoc[]
 // Book Title
 = Getting Started with {EDAname} Guide
 
-Thank you for your interest in {EDAname}. {EDAname} is a new way to enhance and expand automation. It helps teams automate decision-making and improve IT speed and agility .
+Thank you for your interest in {EDAname}. {EDAname} is a new way to enhance and expand automation. It helps teams automate decision-making and improve IT speed and agility.
 
 This guide provides the conceptual framework of {EDAname} and links you to information on installing and using {EDAcontroller}.
 
