@@ -10,9 +10,11 @@
 
 .Procedure
 
-. Navigate to menu:Operators[Installed Operators].
+. Select menu:Operators[Installed Operators].
 
-. Create a new Event-Driven Ansible custom resource. 
+. Locate and select your installation of {PlatformNameShort}.
+
+. Under *Provided APIs*, locate the {EDAName} modal and click *Create instance*. 
 +
 This takes you to the Form View to customize your installation.
 
@@ -26,17 +28,23 @@ This is the only required customization, but you can customize other options usi
 ====
 
 . Click btn:[Create].
-This deploys {EDAcontroller} in the namespace you specified. After a couple minutes when the installation is marked as *Successful*, you can reach the UI. 
+This deploys {EDAcontroller} in the namespace you specified. 
++
+After a couple minutes when the installation is marked as *Successful*, you can find the URL for the {EDAName} UI on the *Routes* page in the Openshift UI. 
 
-. Click *Routes* to find the new Route URL that has been created for you.
+. From the navigation panel, select menu:Networking[Routes] to find the new Route URL that has been created for you. 
++
+Routes are listed according to the name of your custom resource.
 
 . Click the new URL to navigate to {EDAName} in the browser.
 
-. On the *Secrets* page in Openshift, locate the Admin Password k8s secret that was created for you, unless you specified a custom one. 
+. From the navigation panel, select menu:Workloads[Secrets] and locate the Admin Password k8s secret that was created for you, unless you specified a custom one.
++
+Secrets are listed according to the name of your custom resource and appended with `-admin-password.`
 +
 [NOTE]
 ====
-You can use the password value in the secret to log in to the {EDAcontroller} UI. The default user is `Admin`.
+You can use the password value in the secret to log in to the {EDAcontroller} UI. The default user is `admin`.
 ====
 
 
