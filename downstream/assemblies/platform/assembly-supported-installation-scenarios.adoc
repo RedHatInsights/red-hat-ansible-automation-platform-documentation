@@ -23,7 +23,7 @@ include::platform/con-SM-standalone-contr-ext-database.adoc[leveloffset=+1]
 
 //See xref:assembly-standalone-controller-ext-database[Installing {ControllerName} with an external managed database] in _Installing {PlatformName} components on a single machine_ to get started.
 
-include::platform/ref-single-eda-controller-with-internal-db.adoc[leveloffset=+1]
+include::platform/con-single-eda-controller-with-internal-database.adoc[leveloffset=+1]
 
 include::platform/con-SM-standalone-hub-non-inst-database.adoc[leveloffset=+1]
 
