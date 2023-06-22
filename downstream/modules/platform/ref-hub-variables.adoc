@@ -85,10 +85,14 @@ Default = `false`.
 To enable pulp analytics, set `automationhub_enable_analytics = true`.
 
 Default = `false`.
-| *`automationhub_enable_unathenticated_collection_access`* | Enables unauthorized users to view collections
+| *`automationhub_enable_unauthenticated_collection_access`* | Enables unauthorized users to view collections.
+
+To enable unauthorized users to view collections, set `automationhub_enable_unauthenticated_collection_access = true`.
 
 Default = `false`.
 | *`automationhub_enable_unauthenticated_collection_download`* | Enables unauthorized users to download collections.
+
+To enable unauthorized users to download collections, set `automationhub_enable_unauthenticated_collection_download = true`.
 
 Default = `false`.
 | *`automationhub_importer_settings`* | _Optional_ 
