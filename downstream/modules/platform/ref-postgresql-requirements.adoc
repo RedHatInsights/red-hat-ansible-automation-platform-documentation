@@ -50,3 +50,37 @@ maintenance_work_mem == ansible_memtotal_mb*0.04
 
 .Additional resources
 For more detail on tuning your PostgreSQL server, see the link:https://wiki.postgresql.org/wiki/Main_Page[PostgreSQL documentation].
+
+|===
+
+.PostgreSQL Max Connections Setting
+
+For a more realistic method of determining a value of max_connections, a ballpark formula for {ControllerName} is outlined here.
+For a given deployment, database connections will scale with the number of control and hybrid nodes.
+Per-node connection needs are listed here.
+
+* Callback Receiver workers: 4 connections per node or the number of CPUs per node, whichever is larger
+* Dispatcher Workers: instance (forks) capacity plus 7
+* uWSGI workers: 16 connections per node
+* Listeners and auxiliary services: 4 connections per node
+* Reserve for installer and other actions: 5 connections in total
+
+Each of these points represent maximum expected connection use in high-load circumstances.
+To apply this, consider a cluster with 3 hybrid nodes, each with 8 CPUs and 16 GB of RAM.
+The capacity formula will determine a capacity of 132 forks per node based on the memory and capacity formula.
+
+-----
+(3 nodes) x (
+  (8 CPUs / node) x (1 connection / CPU) +
+  (132 forks / node) x (1 connection / fork) + (7 connections / node) +
+  (16 connections / node) +
+  (4 connections / node)
+) + (5 connections)
+-----
+
+Adding up all the components comes out to 506 for this example cluster.
+Practically, this means that the max_connections should be set to something higher than this.
+Additional connections should be added to account for other platform components.
+
+This calculation is most sensitive to the number of forks per node.
+This can be adjusted with the SYSTEM_TASK_ABS_MEM setting, or with instance groups max jobs or max forks.
