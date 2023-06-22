@@ -4,7 +4,7 @@ ifdef::context[:parent-context: {context}]
 
 = Installation of {EDAcontroller}
 
-The installation of {EDAcontroller} occurs at the same time as other {PlatformNameShort} components. Like {ControllerName} and {HubName}, the setup includes default settings for specific variables in the inventory files.
+The installation of {EDAcontroller} occurs at the same time as the installation for other {PlatformNameShort} components. Like {ControllerName} and {HubName}, the setup includes default settings for specific variables in the inventory files.
 
 include::eda/ref-installing-eda-controller-on-aap.adoc[leveloffset=+1]
 include::eda/ref-deploy-eda-controller-with-aap-operator-on-ocp.adoc[leveloffset=+1]
