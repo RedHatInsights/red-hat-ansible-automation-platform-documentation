@@ -1,0 +1,68 @@
+
+[id="ref-single-eda-controller-with-internal-db_{context}"]
+
+= Single {EDAcontroller} node with internal database
+
+Use this example to populate the inventory file to install {EDAcontroller}. This installation inventory file includes a single {EDAcontroller} node with an internal database.
+
+[IMPORTANT]
+====
+{ControllerNameStart} must be installed before you populate the inventory file with the following {EDAName} variables.
+====
+
+-----
+# Automation EDA Controller Configuration
+#
+
+automationedacontroller_admin_password='<eda-password>'
+
+automationedacontroller_pg_host=''
+automationedacontroller_pg_port=5432
+
+automationedacontroller_pg_database='automationedacontroller'
+automationedacontroller_pg_username='automationedacontroller'
+automationedacontroller_pg_password='<password>'
+
+# The full routable URL used by EDA to connect to a controller host.
+# This URL is required if there is no Automation Controller configured
+# in inventory.
+#
+automation_controller_main_url = 'https://controller.example.org/'
+ 
+
+# Boolean flag used to verify Automation Controller's
+# web certificates when making calls from Automation EDA Controller.
+#
+automationedacontroller_controller_verify_ssl = true
+
+# SSL-related variables
+
+# If set, this will install a custom CA certificate to the system trust store.
+# custom_ca_cert=/path/to/ca.crt
+
+# Certificate and key to install in nginx for the web UI and API
+# web_server_ssl_cert=/path/to/tower.cert
+# web_server_ssl_key=/path/to/tower.key
+
+# Certificate and key to install in Automation Hub node
+# automationhub_ssl_cert=/path/to/automationhub.cert
+# automationhub_ssl_key=/path/to/automationhub.key
+
+# Server-side SSL settings for PostgreSQL (when we are installing it).
+# postgres_use_ssl=False
+# postgres_ssl_cert=/path/to/pgsql.crt
+# postgres_ssl_key=/path/to/pgsql.key
+
+# Keystore file to install in SSO node
+# sso_custom_keystore_file='/path/to/sso.jks'
+
+# The default install will deploy SSO with sso_use_https=True
+# Keystore password is required for https enabled SSO
+sso_keystore_password=''
+
+
+-----
+[role="_additional-resources"]
+.Additional resources
+* For more details on {EDAName}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_event-driven_ansible_guide/index[Getting Started with Event-Driven Ansible Guide].
+
