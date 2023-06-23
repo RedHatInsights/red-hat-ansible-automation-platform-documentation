@@ -1,24 +1,24 @@
 [id="assembly-validated-content"]
 = {Valid}
 
-{PlatformName} includes {Valid}, which complements existing {CertifiedCon}. 
+{PlatformName} includes {Valid}, which complements existing {CertifiedCon}.
 
 {Valid} provides an expert-led path for performing operational tasks on a variety of platforms including both Red Hat and our trusted partners.
 
 == Configuring validated collections with the installer
 
-When you download and run the bundle installer, certified and validated collections are automatically uploaded. 
-Certified collections are uploaded into the `rh-certified` repository. 
-Validated collections are uploaded into the `validated` repository. 
+When you download and run the bundle installer, certified and validated collections are automatically uploaded.
+Certified collections are uploaded into the `rh-certified` repository.
+Validated collections are uploaded into the `validated` repository.
 
 You can change to default configuration by using two variables:
 
 [cols="20%,50%",options="header"]
 |====
-| Name | Description 
+| Name | Description
 | `automationhub_seed_collections` | A boolean that defines whether or not preloading is enabled.
-| `automationhub_collection_seed_repository` | If `automationhub_seed_collections` is set to `true`, this variable enables you to specify the type of content to upload. 
-Possible values are `certified` or `validated`. 
+| `automationhub_collection_seed_repository` | If `automationhub_seed_collections` is set to `true`, this variable enables you to specify the type of content to upload.
+Possible values are `certified` or `validated`.
 If missing both content sets will be uploaded.
 |====
 
@@ -27,13 +27,13 @@ If missing both content sets will be uploaded.
 If you are not using the bundle installer, a standalone tarball, `ansible-validated-content-bundle-1.tar.gz` can be used instead.
 The standalone tarball can also be used later to update validated contents later in any environment, when a newer tarball becomes available, and without having to re-run the bundle installer.
 
-To obtain the tarball, navigate to https://access.redhat.com/downloads/content/480 and select *Ansible Validated Content*.
+To obtain the tarball, navigate to link:https://access.redhat.com/downloads/content/480[{PlatformNameShort} Downloads] and select *Ansible Validated Content*.
 
 You require the following variables to run the playbook. 
 
 [cols="20%,50%",options="header"]
 |====
-| Name | Description 
+| Name | Description
 | *`automationhub_admin_password`* | Your administration password.
 | *`automationhub_api_token`* | The API token generated for your {HubName}.
 | *`automationhub_main_url`* | For example, `\https://automationhub.example.com`
@@ -53,7 +53,7 @@ Upload the content and define the variables (this example uses `automationhub_ap
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
-ansible-playbook collection_seed.yml 
+ansible-playbook collection_seed.yml
 -e automationhub_api_token=<api_token>
 -e automationhub_main_url=https://automationhub.example.com
 -e automationhub_require_content_approval=true

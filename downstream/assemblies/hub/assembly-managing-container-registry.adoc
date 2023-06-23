@@ -20,8 +20,7 @@ The following include statements pull in the module files that comprise the asse
 include::automation-hub/con-container-registry.adoc[leveloffset=+1]
 
 
-[role="_additional-resources"]
-==  Next steps
+.Next steps
 
 * Push a container image to the {HubName} container registry.
 * Create a group with access to the container repository in the registry.

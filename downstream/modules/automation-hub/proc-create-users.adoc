@@ -8,11 +8,11 @@ You can create a user in Automation Hub and add them to groups that can access f
 
 .Prerequisites
 
-* You have *user* permissions and can create users in Automation Hub.  
+* You have *user* permissions and can create users in Automation Hub.
 
 .Procedure
 . Log in to your local Automation Hub.
-. Navigate to menu:Users[].
+. Navigate to menu:User Access[].
 . Click btn:[Create user].
 . Provide information in each of the fields. *Username* and *Password* are required.
 . [Optional] Assign the user to a group by clicking in the *Groups* field and selecting from the list of groups.

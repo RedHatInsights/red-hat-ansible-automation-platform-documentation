@@ -19,4 +19,4 @@ You can further manage your collections by deleting unwanted  collections, provi
 +
 NOTE: If the selected collection has any dependencies with other collections, these actions will be unavailable to you until you delete those dependencies. Click the *Dependencies* tab to see a list of dependencies to delete before you proceed.
 +
-. When the confirmation window appears, verify that the collection or version number is correct, then click the checkbox -> *Delete*.
+. When the confirmation window appears, verify that the collection or version number is correct, then select *Delete*.

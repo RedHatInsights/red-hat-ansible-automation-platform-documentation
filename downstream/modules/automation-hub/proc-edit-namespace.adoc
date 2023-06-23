@@ -12,7 +12,7 @@ You can add information and provide resources for your users to accompany collec
 
 .Procedure
 . Log in to your local {HubName}.
-. Navigate to menu:My Namespaces[].
+. Navigate to menu:Automation Hub[Namespaces].
 . Click image:more_actions.png[More actions] and select *Edit namespace*.
 . In the *Edit details* tab, provide information in the fields to enhance your namespace experience.
 . Click the *edit resources* tab to enter markdown in the text field.
