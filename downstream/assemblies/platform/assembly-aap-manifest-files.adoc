@@ -12,7 +12,7 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 You can obtain a subscription manifest in the link:https://access.redhat.com/management/subscription_allocations/[Subscription Allocations] section of Red Hat Subscription Management. After you obtain a subscription allocation, you can download its manifest file and upload it to activate {PlatformNameShort}.
 
-To begin, login to the link:https//www.access.redhat.com[Red Hat Customer Portal] using your administrator user account and follow the procedures in this section.
+To begin, login to the link:https://access.redhat.com/[Red Hat Customer Portal] using your administrator user account and follow the procedures in this section.
 
 include::platform/proc-aap-create-subscription-allocation.adoc[leveloffset=+1]
 
