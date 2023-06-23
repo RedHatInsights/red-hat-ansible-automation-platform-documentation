@@ -1,8 +1,8 @@
 [id="con-remote-repos"]
 
-= Reasons to configure remote repositories
+= Reasons to create remote configurations
 
-By configuring remote repositories, you can set your {PrivateHubName} to synchronize Red Hat Certified Collections hosted in your organization's repository on `{Console}` and your choice of collections in {Galaxy}.
+With remote configurations, you can set your {PrivateHubName} to synchronize Red Hat Certified Collections hosted in your organization's repository on `{Console}` and your choice of collections in {Galaxy}.
 
-Each remote repository located in menu:Repo Management[Remote] provides information for both the *community* and *rh-certified* repository about when the repository was *last updated* and when content was *last synced*. 
-You can add new content to {HubNameMain} at any time using the *Edit* and *Sync* features included on the menu:Repo Management[Remote] page.
+Each remote configuration located in menu:Automation Hub[Remotes] provides information for both the *community* and *rh-certified* repository about when the repository was *last updated*.
+You can add new content to {HubNameMain} at any time using the *Edit* and *Sync* features included on the menu:Automation Hub[Repositories] page.

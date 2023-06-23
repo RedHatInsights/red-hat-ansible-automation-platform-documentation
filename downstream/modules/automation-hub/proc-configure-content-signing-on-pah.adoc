@@ -55,7 +55,7 @@ fi
 +
 After you deploy a {PrivateHubName} with signing enabled to your {PlatformNameShort} cluster, new UI additions display when you interact with collections.
 
-. Review the AAP installer inventory file for options that begin with `automationhub_*`.
+. Review the {PlatformNameShort} installer inventory file for options that begin with `automationhub_*`.
 +
 [source,highlight=67-68]
 ----

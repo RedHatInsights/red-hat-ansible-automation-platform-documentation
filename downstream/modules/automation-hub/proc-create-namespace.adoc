@@ -12,7 +12,7 @@ You can create a namespace to organize collections that your content developers 
 
 .Procedure
 . Log in to your local {HubName}.
-. Navigate to menu:My Namespaces[].
+. Navigate to menu:Automation Hub[Namespaces].
 . Click btn:[Create] and provide a *namespace name* and assign a group of *Namespace owners*.
 . Click btn:[Create].
 

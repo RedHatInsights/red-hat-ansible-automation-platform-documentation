@@ -36,7 +36,7 @@ embedded.
 . Navigate to the automation hub and click on *Execution Environments* if that
 window is not open.
 
-. Click the "Refresh" icon to refresh the page to show the new execution
+. Click the *Refresh* icon to refresh the page to show the new execution
 environment.
 
 . Click the name of the image.
@@ -54,6 +54,6 @@ Three options are available:
 * Delete
 * Sign
 
-. Click sign from the drop-down menu.
+. Click *sign* from the drop-down menu.
 
 The signing service signs the image. Once the image is signed, the status changes to "signed".

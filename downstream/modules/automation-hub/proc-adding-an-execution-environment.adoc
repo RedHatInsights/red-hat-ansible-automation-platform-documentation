@@ -16,11 +16,11 @@
 of the tags will be passed. So it is important to pass repository specific tags.
 
 . The remaining fields are optional:
-.. Currently included tags
-.. Add tag(s) to exclude
-.. Currently excluded tag(s)
-.. Description
-.. Groups with access
+* Currently included tags
+* Add tag(s) to exclude
+* Currently excluded tag(s)
+* Description
+* Groups with access
 
 . Click btn:[Save].
 

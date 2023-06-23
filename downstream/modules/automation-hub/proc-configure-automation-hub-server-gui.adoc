@@ -8,13 +8,13 @@ Configure Red Hat automation hub as your primary source of content by using the 
 * You have obtained the API token for the {HubName} server. See xref:proc-create-api-token[Creating the Red Hat {HubName} API token] for more information.
 [IMPORTANT]
 ====
-	Creating a new token revokes any previous tokens 
+	Creating a new token revokes any previous tokens
 	generated for Private Automation Hub. Ensure that you update any Controller or scripts that you created with the previous token.
 ====
 
 .Procedure
 
-. Navigate to your Automation Controller. 
+. Navigate to your Automation Controller.
 . Create a new credential.
 .. Click btn:[Add] from the **Credentials** screen.
 .. Enter the name for your new credential in the **Name** field.
@@ -29,7 +29,7 @@ Configure Red Hat automation hub as your primary source of content by using the 
 .. Click btn:[Edit].
 .. Under Galaxy Credentials, click the **Search** icon.
 .. Select the credential you created for automation hub, and place it at the beginning of the list.
-.. Optional: If you have a secondary source of content, such as Ansible Galaxy, place this credential after the credential you created for automation hub. 
+.. Optional: If you have a secondary source of content, such as Ansible Galaxy, place this credential after the credential you created for automation hub.
 .. Click btn:[Select].
 .. Click btn:[Save].
 
@@ -41,11 +41,12 @@ To validate the credential, update an existing source control management (SCM)-b
 . Select a project that uses a `collections/requirements.yml` file.
 . Update the project by clicking the refresh icon [refresh icon].
 
-If the status of the project is **Successful**, then the credential is valid. 
+If the status of the project is **Successful**, then the credential is valid.
 
 You have now configured automation hub as your primary server using the web console, and you can proceed to download and install supported collections.
 
 [role="_additional-resources"]
+
 .Additional resources
 . For more information on server list configuration options and using Ansible Galaxy as an Ansible content source, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
 . For more information on creating and using credentials, see the link:https://docs.ansible.com/automation-controller/4.2.1/html/userguide/credentials.html[Credentials] section of Automation Controller User Guide v4.2.1.
