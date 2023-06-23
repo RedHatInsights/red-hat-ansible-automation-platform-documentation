@@ -122,7 +122,7 @@ automationedacontroller_pg_password='<password>'
 
 # SSL-related variables
 
-# If set, this will install a custom CA certificate to the system trust store.
+# If set, this installs a custom CA certificate to the system trust store.
 # custom_ca_cert=/path/to/ca.crt
 
 # Certificate and key to install in nginx for the web UI and API
