@@ -6,7 +6,7 @@
 You can edit the *rh-certified* remote repository to synchronize collections from {HubName} hosted on {Console} to your {PrivateHubName}.
 By default, your {PrivateHubName} `rh-certified` repository includes the URL for the entire group of {CertifiedName}.
 
-To use only those collections specified by your organization, a {PrivateHubName} administrator can upload manually-created requirements files from the `rh-certified` remote. 
+To use only those collections specified by your organization, a {PrivateHubName} administrator can upload manually-created requirements files from the `rh-certified` remote.
 
 For more information about using requirements files, see link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file[Install multiple collections with a requirements file] in the {Galaxy} User Guide.
 
@@ -23,16 +23,15 @@ See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_pla
 .Procedure
 
 . Log in to your {PrivateHubName}.
-. Navigate to menu:Repo Management[].
-. Click the *Remotes* tab.
-. In the *rh-certified* remote repository, click image:ellipsis.png[More,5,12] and click btn:[Edit].
+. Navigate to menu:Automation Hub[Remotes].
+. In the *rh-certified* remote repository, click image:ellipsis.png[More actions] and click btn:[Edit].
 . In the modal, paste the *Sync URL* and Token you acquired from {Console}.
 . Click btn:[Save].
 +
-The modal closes and returns you to the *Repo Management* page.
+The modal closes and returns you to the *Remotes* page.
 You can now synchronize collections between your organization synclist on {Console} and your {PrivateHubName}.
 +
-. Click btn:[Sync] to synchronize collections.
+. Click image:ellipsis.png[More actions] and select *Sync*.
 
 The *Sync status* notification updates to notify you of completion of the Red Hat Certified Content Collections synchronization.
 

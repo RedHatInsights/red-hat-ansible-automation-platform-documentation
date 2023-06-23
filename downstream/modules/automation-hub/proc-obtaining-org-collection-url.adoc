@@ -12,13 +12,12 @@ You can synchronize {CertifiedName} curated by your organization from `{Console}
 .Procedure
 
 . Log in to {Console} as an origanization administrator.
-. Navigate to menu:Automation Hub[Connect to Hub]].
+. Navigate to menu:Automation Hub[Connect to Hub].
 . Under *Offline token*, click btn:[Load token].
 . Click btn:[Copy to clipboard] to copy the API token.
 . Paste the API token into a file and store in a secure location.
 
 [IMPORTANT]
 ====
-The API token is a secret token used to protect your content. 
-Store your API token in a secure location.
+The API token is a secret token used to protect your content.
 ====
