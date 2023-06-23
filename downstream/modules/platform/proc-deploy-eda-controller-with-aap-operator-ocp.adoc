@@ -1,0 +1,53 @@
+
+[id="proc-deploy-eda-controller-with-aap-operator-ocp_{context}"]
+
+
+
+.Prerequisites
+
+* You have installed {OperatorPlatform} on {OCPShort}.
+* You have installed and configured {ControllerName}.
+
+.Procedure
+
+. Select menu:Operators[Installed Operators].
+
+. Locate and select your installation of {PlatformNameShort}.
+
+. Under *Provided APIs*, locate the {EDAName} modal and click *Create instance*. 
++
+This takes you to the Form View to customize your installation.
+
+. Specify your controller URL. 
++
+If you deployed {ControllerName} in Openshift as well, you can find the URL on the Routes page.
++
+[NOTE]
+====
+This is the only required customization, but you can customize other options using the UI form or directly in the YAML configuration tab, if desired.
+====
+
+. Click btn:[Create].
+This deploys {EDAcontroller} in the namespace you specified. 
++
+After a couple minutes when the installation is marked as *Successful*, you can find the URL for the {EDAName} UI on the *Routes* page in the Openshift UI. 
+
+. From the navigation panel, select menu:Networking[Routes] to find the new Route URL that has been created for you. 
++
+Routes are listed according to the name of your custom resource.
+
+. Click the new URL to navigate to {EDAName} in the browser.
+
+. From the navigation panel, select menu:Workloads[Secrets] and locate the Admin Password k8s secret that was created for you, unless you specified a custom one.
++
+Secrets are listed according to the name of your custom resource and appended with `-admin-password.`
++
+[NOTE]
+====
+You can use the password value in the secret to log in to the {EDAcontroller} UI. The default user is `admin`.
+====
+
+
+
+
+

@@ -32,6 +32,8 @@ include::platform/assembly-installing-hub-operator.adoc[leveloffset=+1]
 
 include::platform/assembly-installing-aap-operator-cli.adoc[leveloffset=+1]
 
+include::platform/assembly-deploy-eda-controller-on-aap-operator.adoc[leveloffset=+1]
+
 include::platform/assembly-using-rhsso-operator-with-automation-hub.adoc[leveloffset=+1]
 
 include::platform/assembly-aap-migration.adoc[leveloffset=+1]
