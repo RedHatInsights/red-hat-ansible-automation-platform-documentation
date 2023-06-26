@@ -8,8 +8,10 @@
 . Log in to RH SSO as admin.
 
 NOTE: If you have an existing realm you may go to step 4.
+
 +
-.Add Realm.
+
+. Add Realm.
 
 . Enter Name and click btn:[Create].
 
@@ -27,8 +29,10 @@ NOTE: If you have an existing realm you may go to step 4.
 . In the Web origins field, enter your AAP server IP or hostname. If not in production, set to *.
 
 . Click on *Credentials* tab.
++
 
-NOTE: Keep track of Secret to be used later.
+NOTE: Keep track of the Secret to be used later.
+
 +
 . Log in to Ansible Automation Platform Controller as admin.
 . Click on Settings. 
@@ -38,5 +42,6 @@ NOTE: Keep track of Secret to be used later.
 . In the OIDC Secret field, enter the secret saved from step 7.
 . In the OIDC Provider URL field, enter your keycloak server URL and port.
 . Click btn:[Save].
++
 
 OIDC should appear as an option for login.  Click on btn:[Sign in with OIDC] and it will redirect you to the SSO server for login and redirection back to AAP. 
