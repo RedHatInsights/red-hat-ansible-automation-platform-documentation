@@ -11,7 +11,7 @@ You can manage user access on the {PlatformNameShort} by grouping specific permi
 You can group permissions into roles with specific user access to features in the system.
 
 .Prerequisites
-You are signed in as a `hubadmin` user.
+* You are signed in as a `hubadmin` user.
 
 .Procedure
 . Log in to your local {HubName}.
