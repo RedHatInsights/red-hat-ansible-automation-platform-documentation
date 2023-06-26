@@ -9,6 +9,7 @@ ifdef::context[:parent-context: {context}]
 Simple to adopt, use, and understand, {PlatformNameShort} provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
 
 include::making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 
 // Restore the parent context.
 ifdef::parent-context[:context: {parent-context}]

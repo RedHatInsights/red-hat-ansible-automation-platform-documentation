@@ -1,0 +1,19 @@
+[id="installing-eda-controller-on-red-hat-aap_{context}"]
+
+= Installing {EDAcontroller} on {PlatformName}
+
+To prepare for installation of {EDAcontroller}, review the planning steps, including the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/ref-aap-components[components list], system requirements, and other valuable information in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/index[Red Hat Ansible Automation Platform Planning Guide]. 
+
+For detailed instructions on deploying the {EDAcontroller} with {PlatformNameShort}, follow the instructions in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Red Hat Ansible Automation Platform Installation Guide], specifically the examples in link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index#assembly-platform-install-scenario[Installing Red Hat Ansible Automation Platform]. 
+
+To further assist you in getting started with {EDAName}, review the following existing sections that have been updated with code examples and variables that are required for successful installation of {EDAcontroller}:
+
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/assembly-platform-install-scenario#ref-standlone-platform-ext-database-inventory_platform-install-scenario[Ansible Automation Platform with an external (installer managed) database].
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index#ref-example-platform-ext-database-customer-provided_platform-install-scenario[Ansible Automation Platform with an external (customer provided) database].
+
+Lastly, refer to the following {EDAcontroller}-specific code example and appendix section that have been added to the Red Hat Ansible Automation Platform Installation Guide:
+
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#ref-single-eda-controller-with-internal-db_platform-install-scenario[Single Event-Driven Ansible controller node with internal database]
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-eda-controller-variables[Appendix A. 5. Event-Driven Ansible controller variables]
+
+

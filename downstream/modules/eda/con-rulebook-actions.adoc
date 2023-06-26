@@ -1,0 +1,15 @@
+[id="rulebook-actions_{context}"]
+
+= Rulebook actions
+
+A rulebook specifies actions to be performed when a rule is triggered. A rule gets triggered when the events match the conditions for the rules. The following actions are currently supported:
+
+* `run_job_template`
+* `run_playbook` (only supported with ansible-rulebook CLI)
+* `debug`
+* `print_event`
+* `set_fact`
+* `post_event`
+* `retract_fact`
+* `shutdown`
+
