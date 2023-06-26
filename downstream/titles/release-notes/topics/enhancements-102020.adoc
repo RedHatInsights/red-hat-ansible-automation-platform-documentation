@@ -1,8 +1,6 @@
 [[enhancements-102020]]
 = Enhancements
 
-.October 2020
-
 This Red Hat Automation Analytics release includes the following enhancements:
 
 * A date filter on the Automation Calculator;
