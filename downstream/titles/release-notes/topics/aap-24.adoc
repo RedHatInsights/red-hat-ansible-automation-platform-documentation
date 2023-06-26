@@ -11,7 +11,7 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 This release of Ansible Automation Platform features the following enhancements:
 
-* Previously, the Execution Environment container images were based on RHEL 8 only. With Ansible Automation Platform 2.4 onwards, the Execution Environment container images are now available on RHEL 9 too. 
+* Previously, the Execution Environment container images were based on RHEL 8 only. With Ansible Automation Platform 2.4 onwards, the Execution Environment container images are now also available on RHEL 9. 
 The Execution Environment includes the following container images:
 ** ansible-python-base
 ** ansible-python-toolkit
@@ -19,7 +19,7 @@ The Execution Environment includes the following container images:
 ** ee-minimal
 ** ee-supported
 
-* The ansible-builder project recently released Ansible Builder version 3, a much-improved approach to creating execution environments. 
+* The ansible-builder project recently released Ansible Builder version 3, a much-improved and simplified approach to creating execution environments. 
 You can use the following configuration YAML keys with Ansible Builder version 3:
 ** additional_build_files
 ** additional_build_steps
@@ -28,6 +28,7 @@ You can use the following configuration YAML keys with Ansible Builder version 3
 ** images
 ** options
 ** version
+
 For more information about using Ansible Builder version 3, see 
 https://ansible.readthedocs.io/projects/builder/en/stable/[Ansible Builder Documentation] and https://docs.ansible.com/automation-controller/latest/html/userguide/ee_reference.html[Execution Environment Setup Reference].
 
@@ -41,7 +42,7 @@ https://ansible.readthedocs.io/projects/builder/en/stable/[Ansible Builder Docum
 
 * Updated sqlparse for ReDOS vulnerability (CVE-2023-30608).
 
-* Updated django for potential denial-of-service via Accept-Language headers (CVE-2023-23969).
+* Updated django for potential denial-of-service in Accept-Language headers (CVE-2023-23969).
 
 
 == Deprecated and removed features
@@ -66,7 +67,7 @@ The following bugs were fixed in this release of Ansible Automation Platform:
 
 * Installer now ensures that collection auto signing cannot be enabled without enabling the collection signing service.
 
-*  Fixed an issue with restoring backups when the installed automation controller version is different from the backup version.
+* Fixed an issue with restoring backups when the installed automation controller version is different from the backup version.
 
 * Fixed an issue with not adding user defined galaxy-importer settings to `galaxy-importer.cfg` file.
 
@@ -84,7 +85,7 @@ The following bugs were fixed in this release of Ansible Automation Platform:
 
 * Added a FQDN check for the automation hub hostname required to run the Skopeo commands.
 
-*  Fixed an issue such that the front end URL for Red Hat Single Sign On (SSO) is now properly configured after you specify the `sso_redirect_host` variable.
+* Fixed an issue such that the front end URL for Red Hat Single Sign On (SSO) is now properly configured after you specify the `sso_redirect_host` variable.
 
 * Fixed the variable precedence for all component `nginx_tls_files_remote` variables.
 
@@ -98,14 +99,14 @@ Some features in this release are currently classified as Technology Preview. Te
 
 Following are the technology preview features: 
 
-* Ansible Automation Platform 2.4 adds the ability to install the automation controller for IBM Power (ppc64le), IBM Z (s390x), and IBM(R) LinuxONE (s390x) architectures as a Technology Preview feature.
+* Ansible Automation Platform 2.4 adds the ability to install the automation controller for IBM Power (ppc64le), IBM Z (s390x), and IBM(R) LinuxONE (s390x) architectures.
 
 [role="_additional-resources"]
 .Additional resources
 
 * For the most recent list of technology preview features, see link:https://access.redhat.com/articles/ansible-automation-platform-preview-features[Ansible Automation Platform - Preview Features].
 
-* For more information about technology preview features, see link:https://access.redhat.com/support/offerings/techpreview[Red Hat Technology Preview Features Support Scope].
+* For more information about support for technology preview features, see link:https://access.redhat.com/support/offerings/techpreview[Red Hat Technology Preview Features Support Scope].
 
 * For information regarding execution node enhancements on Openshift deployments, see link:https://docs.ansible.com/automation-controller/latest/html/administration/instances.html[Managing Capacity With Instances].
 

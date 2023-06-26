@@ -2,7 +2,6 @@
 
 
 [[hub-443-intro]]
-= Automation Hub
 
 .Automation hub 4.4.3 bug fixes
 

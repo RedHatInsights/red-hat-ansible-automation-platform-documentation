@@ -5,10 +5,9 @@
 
 The documentation set for Red Hat Ansible Automation Platform 2.4 has had significant updates to improve the experience for our customers and the Ansible community. 
 
-
 .Enhancements
 
-* With the removal of the on-premise component Automation Services Catalog from Ansible Automation Platform 2.4 onwards, the Automation Services Catalog documentation too is removed from the Ansible Automation Platform 2.4 documentation.
+* With the removal of the on-premise component Automation Services Catalog from Ansible Automation Platform 2.4 onwards, all Automation Services Catalog documentation is removed from the Ansible Automation Platform 2.4 documentation.
 
 * The following documents are created to help you install and use Event-Driven Ansible, the newest capability of Ansible Automation Platform:
 
@@ -16,11 +15,11 @@ The documentation set for Red Hat Ansible Automation Platform 2.4 has had signif
 
 ** https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/event_driven_ansible_controller_user_guide/index[Event-Driven Ansible User Guide ]
 
-In addition, sections of the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/red_hat_ansible_automation_platform_planning_guide/index[Ansible Automation Platform Planning Guide]  
-and the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide]  are updated to include instructions for planning and installing Event-Driven Ansible. 
+In addition, sections of the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/red_hat_ansible_automation_platform_planning_guide/index[Ansible Automation Platform Planning Guide] 
+and the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide] are updated to include instructions for planning and installing Event-Driven Ansible. 
 
 * The name of the _Managing Red Hat Certified and Ansible Galaxy collections in automation hub Guide_ has changed to include validated content and is now _Managing Red Hat Certified, validated, and Ansible Galaxy content in automation hub_.
 
-* The Ansible Automation Platform 2.4 Release Notes are restructured to improve the experience for our customers and the Ansible Community. Users can now view the latest updates based on the Ansible Automation Platform versions, instead of their release timeline.  
+* The Ansible Automation Platform 2.4 Release Notes are restructured to improve the experience for our customers and the Ansible Community. Users can now view the latest updates based on the Ansible Automation Platform versions, instead of their release timeline. 
 
 * The document https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/managing_repositories_in_automation_hub/index[Managing repositories in automation hub] is created to help you create and manage custom repositories in automation hub. 

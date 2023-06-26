@@ -10,14 +10,14 @@ The name change reflects these enhancements and the overall position within the 
 Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.
 
 
-.Automation controller 4.1 new features
+.Automation controller 4.1 new features and enhancements
 
 * Separate control and execution layers.
 * Automation execution environments are container images that provide a standardized way to build and distribute environments where automation runs.
 * Automation mesh allows distributed execution across on-premises environments, the hybrid cloud, and the edge. It replaces Ansible Tower and isolated nodes.
 
 
-.Automation controller 4.1 removed features
+.Automation controller 4.1 deprecated and removed features
 
 * Support for custom Python virtual environments for execution.
 

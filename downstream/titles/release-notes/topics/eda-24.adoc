@@ -1,16 +1,15 @@
-// This is the release notes for Event-Driven Ansible for AAP 2.4 release, the version number is removed from the topic title as part of the release notes restructuring efforts.
+// This is the release notes for Event-Driven Ansible 1.0 for AAP 2.4 release, the version number is removed from the topic title as part of the release notes restructuring efforts.
 
 [[eda-24-intro]]
 = Event-Driven Ansible
 
-Event-Driven Ansible is the newest capability of Ansible Automation Platform that is designed to enable automated response with user-defined, rules-based workflows. Event-Driven Ansible works by receiving events from third party tools, deciding on the actions to take and acting automatically.  
+Event-Driven Ansible is the newest capability of Ansible Automation Platform that is designed to enable automated response with user-defined, rules-based workflows. Event-Driven Ansible works by receiving events from third party tools, deciding on the actions to take, and acting automatically.
 
-Event-Driven Ansible is included in Ansible Automation Platform, making the platform even more capable as a single enterprise automation solution.  Using Event-Driven Ansible, domain experts can easily create end-to-end fully automated OpsAsCode scenarios for a  broad array of use cases across the IT landscape.  By eliminating high-volume routine tasks and automatically responding to changing conditions, teams are free to innovate more, sleep more, and act consistently and accurately at scale.
+Event-Driven Ansible is included in Ansible Automation Platform, making the platform even more capable as a single enterprise automation solution. Using Event-Driven Ansible, domain experts can easily create end-to-end fully automated OpsAsCode scenarios for a broad array of use cases across the IT landscape. By eliminating high-volume routine tasks and automatically responding to changing conditions, teams are free to innovate more efficiently, and act consistently and accurately at scale.
 
 .Known issues
 
 * Certain characters, such as hyphen (-), forward slash (/), and period (.), are not supported in the event keys.
-
 
 * Both contributor and editor roles cannot set the AWX token. The AWX token can be set by users with administrator roles only. 
 
@@ -32,7 +31,7 @@ Event-Driven Ansible is included in Ansible Automation Platform, making the plat
 
 * Long running activations with loads of events can cause out of disk space issue.
 
-* Users can add multiple tokens even when only the first AWX token is used.  
+* Users can add multiple tokens even when only the first AWX token is used. 
 
 * A race condition occurs when creating and rapidly deleting an activation causes multiple errors. 
 
