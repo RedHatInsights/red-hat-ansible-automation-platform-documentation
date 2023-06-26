@@ -31,16 +31,16 @@ $ tar xvzf ansible-automation-platform-setup-<latest-version>.tar.gz
 
 . Install Ansible Automation Platform Installer Package
 +
-v.2.4 for RHEL 8 for x86_64
+v.{PlatformVers} for RHEL 8 for x86_64
 +
 ----
-$ sudo dnf install --enablerepo=ansible-automation-platform-2.4-for-rhel-8-x86_64-rpms ansible-automation-platform-installer
+$ sudo dnf install --enablerepo=ansible-automation-platform-{PlatformVers}-for-rhel-8-x86_64-rpms ansible-automation-platform-installer
 ----
 +
-v.2.4 for RHEL 9 for x86-64
+v.{PlatformVers} for RHEL 9 for x86-64
 +
 ----
-$ sudo dnf install --enablerepo=ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms ansible-automation-platform-installer
+$ sudo dnf install --enablerepo=ansible-automation-platform-{PlatformVers}-for-rhel-9-x86_64-rpms ansible-automation-platform-installer
 ----
 
 [NOTE]
