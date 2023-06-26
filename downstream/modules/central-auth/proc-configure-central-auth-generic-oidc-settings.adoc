@@ -6,7 +6,7 @@
 .Procedure
 
 . Log in to RH SSO as admin.
-
++
 NOTE: If you have an existing realm you may go to step 4.
 
 . Add Realm.
