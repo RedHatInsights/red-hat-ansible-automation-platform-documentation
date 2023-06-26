@@ -60,11 +60,11 @@ You have now attached your {PlatformName} subscriptions to all nodes.
 {PlatformName} {PlatformVers} for RHEL 8
 +
 ----
-subscription-manager repos --enable ansible-automation-platform-{PlatformVers}-for-rhel-8-x86_64-rpms
+subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-8-x86_64-rpms
 ----
 +
 {PlatformName} {PlatformVers} for RHEL 9
 +
 ----
-subscription-manager repos --enable ansible-automation-platform-{PlatformVers}-for-rhel-9-x86_64-rpms
+subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms
 ----
