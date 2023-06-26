@@ -9,7 +9,7 @@ The “bundle” version is strongly recommended for disconnected installations 
 
 == Downloading the Setup Bundle
 
-. Download the AAP setup bundle package by navigating to https://access.redhat.com/downloads/content/480 and click btn:[Download Now] for the Ansible Automation Platform {PlatformVers} Setup Bundle.
+. Download the AAP setup bundle package by navigating to the https://access.redhat.com/downloads/content/480[Red Hat Ansible Automation Platform download] page and clicking btn:[Download Now] for the Ansible Automation Platform {PlatformVers} Setup Bundle.
 
 === Installing the Setup Bundle
 
@@ -19,8 +19,8 @@ The download and installation of the setup bundle needs to be located on the aut
 +
 ----
 $ tar xvf \
-   ansible-automation-platform-setup-bundle-2.3-1.2.tar.gz
-$ cd ansible-automation-platform-setup-bundle-2.3-1.2
+   ansible-automation-platform-setup-bundle-2.4.tar.gz
+$ cd ansible-automation-platform-setup-bundle-2.4
 ----
 +
 . Edit the inventory file to include the required options
@@ -70,7 +70,7 @@ NOTE: The inventory should be kept intact after installation since it is used fo
 +
 ----
 $ sudo -i
-# cd /path/to/ansible-automation-platform-setup-bundle-2.3-1.2
+# cd /path/to/ansible-automation-platform-setup-bundle-2.4
 # ./setup.sh
 ----
 +
