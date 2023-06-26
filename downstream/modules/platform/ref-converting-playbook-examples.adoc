@@ -72,7 +72,7 @@ The volume mount is mapped with the same name in the container and has read-writ
 
 The _prompt on launch_ should be set for _extra_vars_ so you can adjust the sleep duration for each run, The default is 30 seconds.
 
-Once launched, and the wait_for module is invoked for the sleep, you can go onto the execution node and look at what is running.   
+Once launched, and the _wait_for_ module is invoked for the sleep, you can go onto the execution node and look at what is running.   
 
 To verify the run has completed successfully, run this command to get an output of the job:
 
@@ -112,14 +112,14 @@ Fatal: [localhost]: FAILED: => {"msg": "An unhandled exception occurred while ru
 ...ignoring
 ----
 
-The job failed, even though :rw is set, so it should have write capability. 
+The job failed, even though *:rw* is set, so it should have write capability. 
 The process was able to read the existing file, but not write out. This is due to SELinux protection that requires proper labels to be placed on the volume content mounted into the container. If the label is missing, SELinux may prevent the process from running inside the container. Labels set by the OS are not changed by Podman. See the Podman documentation for more information.
 
 This could be a common misinterpretation. We have set the default to *:z*, which tells Podman to relabel file objects on shared volumes.
 
 So we can either add *:z* or leave it off.
 
-Paths to expose isolated jobs
+Paths to expose isolated jobs:
 
 ----
 [
@@ -149,7 +149,7 @@ Back on the underlying execution node host, we have the newly written out conten
 
 NOTE: If you are using container groups to launch automation jobs inside Red Hat OpenShift, we can also tell Ansible Automation Platform 2 to expose the same paths to that environment, but you must toggle the default to On under settings.
 
-Once enabled, this will inject this as volumeMounts and volumes inside the pod spec that will be used for execution. It will look like this:
+Once enabled, this will inject this as _volumeMounts_ and _volumes_ inside the pod spec that will be used for execution. It will look like this:
 
 ----
 apiVersion: v1
@@ -186,8 +186,4 @@ hostPath:
 name: volume-2
 ----
 
-
-
-
-
-Storage inside the running container using the overlay file system. Any modifications inside the running container are destroyed after the job completes, much like a tmpfs being unmounted.
+Storage inside the running container is using the overlay file system. Any modifications inside the running container are destroyed after the job completes, much like a tmpfs being unmounted.
