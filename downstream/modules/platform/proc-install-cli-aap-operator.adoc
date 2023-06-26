@@ -6,6 +6,10 @@
 
 = Subscribing a namespace to an operator using the {OCPShort} CLI
 
+Use this procedure to subscribe a namespace to an operator.
+
+.Procedure
+
 . Create a project for the operator
 +
 -----
