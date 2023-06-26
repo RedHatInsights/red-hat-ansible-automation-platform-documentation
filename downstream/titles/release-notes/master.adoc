@@ -7,8 +7,6 @@ include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
 include::topics/platform-intro.adoc[leveloffset=+1]
 
-include::topics/upgrading.adoc[leveloffset=+1]
-
 [[anchor-aap_2.4-release]]
 == Red Hat Ansible Automation Platform 2.4
 This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
@@ -86,8 +84,6 @@ This release includes a number of enhancements, additions, and fixes that have b
 include::topics/platform-installer-121.adoc[leveloffset=+2]
 
 include::topics/platform-intro-124.adoc[leveloffset=+2]
-
-include::topics/platform-intro-125.adoc[leveloffset=+2]
 
 include::topics/aap-126.adoc[leveloffset=+2]
 

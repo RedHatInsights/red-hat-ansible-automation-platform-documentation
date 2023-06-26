@@ -1,8 +1,6 @@
 [[hub-426-intro]]
 = Automation Hub 4.2.6
 
-Automation Hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible Automation Hub, you can discover and manage Ansible Collections which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.
-
 .Automation Hub bug fixes
 
 * Implemented filters for state and keywords on imports API

@@ -36,9 +36,9 @@ The Execution Environment includes the following container images:
 
 == Deprecated and removed features
 
-Some features available in previous releases have been deprecated or removed.
+Some features available in previous releases have been deprecated or removed. Deprecated functionality is still included in Ansible Automation Platform and continues to be supported; however, it will be removed in a future release of this product and is not recommended for new deployments. 
 
-Deprecated functionality is still included in Ansible Automation Platform and continues to be supported; however, it will be removed in a future release of this product and is not recommended for new deployments. The following is a list of major functionality deprecated and removed within Ansible Automation Platform 2.4:
+The following is a list of major functionality deprecated and removed within Ansible Automation Platform 2.4:
 
 * On-premise component Automation Services Catalog is now removed from Ansible Automation Platform 2.4 onwards.
 
@@ -84,7 +84,7 @@ The following bugs were fixed in this release of Ansible Automation Platform:
 
 == Technology Preview
 
-Some features in this release are currently classified as Technology Preview.Technology Preview features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. These features are not supported with Red Hat production service-level agreements (SLAs) and might not be functionally complete, and Red Hat does not recommend using them for production. These features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. 
+Some features in this release are currently classified as Technology Preview. Technology Preview features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. Please note that Red Hat does not recommend using technology preview features for production, and Red Hat SLAs do not support technology preview functions.
 
 Following are the technology preview features: 
 

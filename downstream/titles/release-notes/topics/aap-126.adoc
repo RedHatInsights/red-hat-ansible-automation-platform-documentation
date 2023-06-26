@@ -1,8 +1,6 @@
 [[aap-1.2.6-intro]]
 = Ansible Automation Platform 1.2.6
 
-Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
-
 .Enhancements and bug fixes
 
 * Updated openshift-clients package that ships with Ansible Tower 3.7 and 3.8
