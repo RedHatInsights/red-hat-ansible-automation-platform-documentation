@@ -22,9 +22,9 @@ NOTE: If you have an existing realm you may go to step 4.
 
 . In the Root URL field, enter your AAP server IP or hostname.
 
-. In the Valid Redirect field, enter your AAP server IP or hostname.  .If not in production, set to *.
+. In the Valid Redirect field, enter your AAP server IP or hostname. If not in production, set to *.
 
-. In the Web origins field, enter your AAP server IP or hostname.  If not in production, set to *.
+. In the Web origins field, enter your AAP server IP or hostname. If not in production, set to *.
 
 . Click on *Credentials* tab.
 
