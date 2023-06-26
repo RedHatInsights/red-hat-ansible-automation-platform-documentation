@@ -30,7 +30,9 @@ You can use these instructions to install the {HubName} operator on {OCP} and in
 * You have installed the catalog containing the {PlatformName} operators
 
 == Installing the {PlatformNameShort} operator
+Use this procedure to install the {PlatformNameShort} operator.
 
+.Procedure
 . Log in to {OCP}.
 . Navigate to menu:Operators[Operator Hub].
 . Locate the {PlatformName} catalog and click on it.

@@ -1,11 +1,13 @@
 [id="proc-configuring-controller-image-pull-policy_{context}"]
 
 = Configuring your controller image pull policy
+Use this procedure to configure the image pull policy on your {ControllerName}.
 
+.Procedure
 
 . Under *Image Pull Policy*, click on the radio button to select
-* *Always* 
-* *Never* 
+* *Always*
+* *Never*
 * *IfNotPresent*
 . To display the option under *Image Pull Secrets*, click the arrow.
 .. Click btn:[+] beside *Add Image Pull Secret* and enter a value.

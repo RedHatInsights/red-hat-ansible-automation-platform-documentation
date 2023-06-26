@@ -4,6 +4,8 @@
 
 The {PlatformName} operator installation form allows you to further configure your {HubName} operator route options under *Advanced configuration*.
 
+.Procedure
+
 . Click btn:[Advanced configuration].
 . Under *Ingress type*, click the drop-down menu and select *Route*.
 . Under *Route DNS host*, enter a common host name that the route answers to.
