@@ -34,13 +34,13 @@ $ subscription-manager attach --pool=<sku-pool-id>
 v.{PlatformVers} for RHEL 8 for x86_64
 +
 ----
-$ sudo dnf install --enablerepo=ansible-automation-platform-{PlatformVers}-for-rhel-8-x86_64-rpms ansible-navigator
+$ sudo dnf install --enablerepo=ansible-automation-platform-2.4-for-rhel-8-x86_64-rpms ansible-navigator
 ----
 +
 v.{PlatformVers} for RHEL 9 for x86-64
 +
 ----
-$ sudo dnf install --enablerepo=ansible-automation-platform-{PlatformVers}-for-rhel-9-x86_64-rpms ansible-navigator
+$ sudo dnf install --enablerepo=ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms ansible-navigator
 ----
 
 .Verification

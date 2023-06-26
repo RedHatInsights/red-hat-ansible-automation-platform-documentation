@@ -11,5 +11,5 @@ NOTE: You must have valid subscriptions attached on the host before installing `
 * In your terminal, run the following command to install {Builder} and activate your {PlatformNameShort} repo:
 +
 ----
-#  dnf install --enablerepo=ansible-automation-platform-{PlatformVers}-for-rhel-9-x86_64-rpms ansible-builder
+#  dnf install --enablerepo=ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms ansible-builder
 ----
