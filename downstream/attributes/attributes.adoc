@@ -8,7 +8,7 @@
 :CentralAuth: central authentication
 :PlatformVers: 2.4
 :AnsibleCoreVers: 2.15
-:PlatformDownloadUrl: https://access.redhat.com/downloads/content/480/ver=2.3/rhel---9/2.3/x86_64/product-software
+:PlatformDownloadUrl: https://access.redhat.com/downloads/content/480/ver=2.4/rhel---9/2.4/x86_64/product-software
 
 // Event-Driven Ansible
 :EDAName: Event-Driven Ansible
