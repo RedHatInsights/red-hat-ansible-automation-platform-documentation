@@ -1,0 +1,14 @@
+
+[id="assembly-about-event-driven-ansible-automation"]
+
+= {EDAName} Automation
+
+[role="_abstract"]
+
+{EDAName} is a new way to connect to sources of events and act on those events using rulebooks. This technology improves IT speed and agility, and enables consistency and resilience.
+
+include::eda/con-about-event-driven-ansible.adoc[leveloffset=+1]
+
+
+
+
