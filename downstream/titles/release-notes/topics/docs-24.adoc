@@ -14,7 +14,7 @@ The documentation set for Red Hat Ansible Automation Platform 2.4 has had signif
 
 ** https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_event_driven_ansible/index[Getting Started with Event-Driven Ansible]
 
-** Event-Driven Ansible User's Guide <insert hyperlink>
+** https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/event_driven_ansible_controller_user_guide/index[Event-Driven Ansible User Guide ]
 
 In addition, sections of the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html/red_hat_ansible_automation_platform_planning_guide/index[Ansible Automation Platform Planning Guide]  
 and the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide]  are updated to include instructions for planning and installing Event-Driven Ansible. 
