@@ -3,9 +3,9 @@
 
 .Examples
 
-This example is of a shared directory called “/mydata” in which we want to be able to read and write files to during a job run. Remember this has to already exist on the execution node we will be using for the automation run.
+This example is of a shared directory called */mydata* in which we want to be able to read and write files to during a job run. Remember this has to already exist on the execution node we will be using for the automation run.
 
-You will target the aape1.local execution node to run this job, because the underlying hosts already has this in place:
+You will target the _aape1.local_ execution node to run this job, because the underlying hosts already has this in place:
 
 ----
 [awx@aape1 ~]$ ls -la /mydata/
@@ -16,7 +16,7 @@ dr-xr-xr-x. 19 root root 258 Apr 11 15:16 ..
 -rw-r--r--.  1 awx  awx    0 Apr 28 09:27 file_write
 ----
 
-You will use a simple playbook to launch the automation with sleep defined to allow us access, and to understand the process, as well as demonstrate reading and writing to files.
+You will use a simple playbook to launch the automation with sleep defined to allow you access, and to understand the process, as well as demonstrate reading and writing to files.
 
 ----
 # vim:ft=ansible:
@@ -58,7 +58,8 @@ You will use a simple playbook to launch the automation with sleep defined to al
 
 ----
 
-In Ansible Automation Platform 2 navigate to menu:Settings[Job Settings][Jobs] 
+In Ansible Automation Platform 2 from the Settings menu, select menu:Job Settings[Jobs]. 
+
 Paths to expose isolated jobs:
 
 ----
@@ -68,7 +69,8 @@ Paths to expose isolated jobs:
 ----
 
 The volume mount is mapped with the same name in the container and has read-write capability. This will get used when you launch the job template.
-The prompt on launch should be set for extra_vars so you can adjust the sleep duration for each run, The default is 30 seconds.
+
+The _prompt on launch_ should be set for _extra_vars_ so you can adjust the sleep duration for each run, The default is 30 seconds.
 
 Once launched, and the wait_for module is invoked for the sleep, you can go onto the execution node and look at what is running.   
 
@@ -76,10 +78,12 @@ To verify the run has completed successfully, run this command to get an output 
 
 ----
 $ podman exec -it 'podman ps -q' /bin/bash
-bash-4.4#----
+bash-4.4#
+----
 
 You are now inside the running execution environment container.
-Look at the permissions, you will see that awx has become ‘root’, but this is not really root as in the superuser, as you are using rootless Podman, which maps users into a kernel namespace similar to a sandbox. Learn more about How does rootless Podman work? for shadow-utils.
+
+Look at the permissions, you will see that *awx* has become ‘root’, but this is not really root as in the superuser, as you are using rootless Podman, which maps users into a kernel namespace similar to a sandbox. Learn more about How does rootless Podman work? for shadow-utils.
 
 ----
 bash-4.4# ls -la /mydata/
