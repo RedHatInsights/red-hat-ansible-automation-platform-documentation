@@ -1,5 +1,5 @@
 [id="converting-playbook-examples_{context}"]
-= Converting-playbook-examples
+= Converting playbook examples
 
 .Examples
 
