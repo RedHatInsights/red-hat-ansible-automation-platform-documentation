@@ -20,7 +20,7 @@ include::platform/proc-install-ansible-colls.adoc[leveloffset=+1]
 
 include::platform/proc-migrate-playbooks-roles.adoc[leveloffset=+1]
 
-
+include::platform/ref-converting-playbook-examples.adoc[leveloffset=+1]
 
 
 

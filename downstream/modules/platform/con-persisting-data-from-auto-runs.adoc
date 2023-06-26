@@ -1,7 +1,9 @@
+//Can be found in /platform/asssemlbly/converting-playbooks-for-AAP2
+
 :_content-type: CONCEPT
 
 [id="persisting-data-from-auto-runs_{context}"]
-= persisting_data_from_auto_runs
+= Persisting data from auto runs
 
 Consider the local Automation Controller filesystem as counterproductive since that ties the data to that host. If you have a multi-node cluster, then you can contact a different host each time causing issues if you are creating workflows that depend upon each other and created directories. For example, if a directory was only created in one node, while another node runs the playbook, the results would be inconsistent.
 
@@ -29,6 +31,6 @@ The caveats need to be carefully observed. It is highly recommended to read up o
 
 [role="_additional-resources"]
 .Additional resources
-* link:https://github.com/redhat-documentation/https://opensource.com/article/19/2/how-does-rootless-podman-work[rootless Podman].
+* link:https://github.com/redhat-documentation/https://opensource.com/article/19/2/how-does-rootless-podman-work[Understanding rootless Podman].
 * link:https://docs.podman.io/en/latest/markdown/podman-run.1.html#volume-v-source-volume-host-dir-container-dir-options[Podman volume mount runtime options].
 
