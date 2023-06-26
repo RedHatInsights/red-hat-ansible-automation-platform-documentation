@@ -9,7 +9,7 @@ You can assign roles to groups, giving users access to specific features in the 
 
 .Prerequisites
 
-You are signed in as a `hubadmin` user.
+* You are signed in as a `hubadmin` user.
 
 .Procedure
 
