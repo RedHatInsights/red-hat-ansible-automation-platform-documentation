@@ -4,6 +4,7 @@
 
 You can access the {HubName} interface once all pods have successfully launched.
 
+.Procedure
 . Navigate to menu:Networking[Routes].
 . Under *Location*, click on the URL for your {HubName} instance.
 

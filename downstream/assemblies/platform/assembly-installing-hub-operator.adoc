@@ -30,6 +30,9 @@ When an instance of {HubName} is removed, the PVCs are not automatically deleted
 * You have installed the {PlatformName} operator in Operator Hub.
 
 == Installing the {HubName} operator
+Use this procedure to install the {HubName} operator.
+
+.Procedure
 
 . Navigate to menu:Operators[Installed Operators].
 . Locate the *Automation hub* entry, then click btn:[Create instance].
