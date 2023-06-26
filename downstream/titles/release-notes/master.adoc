@@ -15,6 +15,16 @@ This release includes a number of enhancements, additions, and fixes that have b
 
 include::topics/aap-24.adoc[leveloffset=+2]
 
+include::topics/hub-464.adoc[leveloffset=+2]
+
+include::topics/controller-440.adoc[leveloffset=+2]
+
+include::topics/eda-24.adoc[leveloffset=+2]
+
+include::topics/operator-240.adoc[leveloffset=+2]
+
+include::topics/docs-24.adoc[leveloffset=+2]
+
 [[anchor-aap_2.3-release]]
 == Red Hat Ansible Automation Platform 2.3
 This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
@@ -73,11 +83,11 @@ include::topics/controller-414.adoc[leveloffset=+3]
 == Red Hat Ansible Automation Platform 1.2
 This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
 
-include::topics/platform-installer-121.adoc[leveloffset=+3]
+include::topics/platform-installer-121.adoc[leveloffset=+2]
 
-include::topics/platform-intro-124.adoc[leveloffset=+3]
+include::topics/platform-intro-124.adoc[leveloffset=+2]
 
-include::topics/platform-intro-125.adoc[leveloffset=+3]
+include::topics/platform-intro-125.adoc[leveloffset=+2]
 
 include::topics/aap-126.adoc[leveloffset=+2]
 
