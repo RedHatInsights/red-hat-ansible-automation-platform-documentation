@@ -1,11 +1,6 @@
 [[tower-383-intro]]
 = Ansible Tower 3.8.3
 
-Ansible Tower helps teams centralize and control your IT infrastructure with
-a visual dashboard, role-based access control, job scheduling, integrated
-notifications and graphical inventory management.  Easily embed Ansible
-Automation into existing tools and processes with REST API and CLI.
-
 .Bux fixes 
 
 * Analytics collection no longer cause lost job events when Tower is under load

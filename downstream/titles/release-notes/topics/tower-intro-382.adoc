@@ -1,11 +1,6 @@
 [[tower-382-intro]]
 = Ansible Tower 3.8.2
 
-Ansible Tower helps teams centralize and control your IT infrastructure with
-a visual dashboard, role-based access control, job scheduling, integrated
-notifications and graphical inventory management.  Easily embed Ansible
-Automation into existing tools and processes with REST API and CLI.
-
 .Bux fixes and enhancements
 
 * Upgraded to the latest oVirt inventory plugin to resolve a number of inventory syncing issues that can occur on RHEL7
