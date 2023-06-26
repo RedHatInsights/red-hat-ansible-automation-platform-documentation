@@ -34,3 +34,6 @@ The caveats need to be carefully observed. It is highly recommended to read up o
 * link:https://github.com/redhat-documentation/https://opensource.com/article/19/2/how-does-rootless-podman-work[Understanding rootless Podman].
 * link:https://docs.podman.io/en/latest/markdown/podman-run.1.html#volume-v-source-volume-host-dir-container-dir-options[Podman volume mount runtime options].
 
+
+include::platform/ref-converting-playbook-examples.adoc[leveloffset=+1]
+
