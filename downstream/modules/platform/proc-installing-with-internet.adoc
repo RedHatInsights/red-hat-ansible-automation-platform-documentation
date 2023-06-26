@@ -10,7 +10,7 @@ Choose the {PlatformName} (AAP) installer if your Red Hat Enterprise Linux envir
 
 .Tarball install
 
-. Navigate to https://access.redhat.com/downloads/content/480
+. Navigate to https://access.redhat.com/downloads/content/480[the Red Hat AAP download page].
 . Click btn:[Download Now] for the *Ansible Automation Platform <latest-version> Setup*.
 . Extract the files:
 +
