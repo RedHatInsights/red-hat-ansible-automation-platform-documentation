@@ -17,8 +17,8 @@ NOTE: If you have an existing realm you may go to step 4.
 
 . Enter Name and Click btn:[Create].
 
-. From the Client Protocol menu, select menu:openid-connect.
-. From the Access Type menu, select menu:confidential.
+. From the Client Protocol menu, select menu:[openid-connect].
+. From the Access Type menu, select menu:[confidential].
 
 . In the Root URL field, enter your AAP server IP or hostname.
 
@@ -33,11 +33,17 @@ NOTE: Keep track of the Secret to be used later.
 
 +
 . Log in to Ansible Automation Platform Controller as admin.
-. Click on Settings. 
+
+. Click on btn:Settings. 
+
 . Click on Generic OIDC settings.
+
 . Click btn:[Edit].
+
 . In the OIDC Key field, enter the name of your client from step 4.
+
 . In the OIDC Secret field, enter the secret saved from step 7.
+
 . In the OIDC Provider URL field, enter your keycloak server URL and port.
 . Click btn:[Save].
 +
