@@ -4,7 +4,7 @@
 :experimental:
 include::attributes/attributes.adoc[]
 
-= Managing repositories in {HubName}
+= Managing repositories in automation hub
 
 Repository management is included with Red Hat {HubName}. It allows you to create, edit, modify and delete repositories.
 
