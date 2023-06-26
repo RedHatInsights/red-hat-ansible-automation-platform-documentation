@@ -1,6 +1,6 @@
-[id="configure-central-auth-generic-oidc-settings_{context}"]
+[id="configure-central-auth-generic-oidc-settings]
 
-= Configureing central-auth generic oidc settings
+= Configuring central auth generic oidc settings
 
 
 .Procedure
