@@ -8,13 +8,12 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 [cols="a,a,a,a,a"]
 |===
-| Ansible Automation Platform | Automation controller | Automation hub | Automation services catalog | Insights for Ansible Automation Platform
+| Ansible Automation Platform | Automation controller | Automation hub | Event-Driven Ansible controller | Insights for Ansible Automation Platform
 
-|2.3 | 4.3|
-* 4.6
-* hosted service a|
-* 1.0 Private (Technology Preview)
-* hosted service (Retired)
+|2.4 | 4.4|
+* 4.7
+* hosted service|
+1.0
 | hosted service
 
 |===
@@ -24,6 +23,18 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 Red Hat publishes a product life cycle page that identifies the levels of maintenance for each Ansible Automation Platform release.
 Refer to link:https://access.redhat.com/support/policy/updates/ansible-automation-platform[Red Hat Ansible Automation Platform Life Cycle].
 
-[[technology-preview]]
-== What is a Technology Preview feature
-Technology Preview features are not supported with Red Hat production service-level agreements (SLAs) and might not be functionally complete, and Red Hat does not recommend using them for production. These features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. For more information see link:https://access.redhat.com/support/offerings/techpreview[Red Hat Technology Preview Features Support Scope].
+== Upgrading Ansible Automation platform
+
+Use installer to perform upgrades to maintenance versions of Ansible Automation Platform. The installer performs all necessary actions required to upgrade to the latest versions of Ansible Automation Platform, including Ansible Tower and Private Automation Hub.
+
+[IMPORTANT]
+====
+Do not use `yum update` to run upgrades. Use installer instead.
+====
+
+.Additional resources
+* Refer to the table in xref:whats-included[What's included in Ansible Automation Platform] for information on maintenance releases of Ansible Automation Platform.
+
+* For more information on upgrading your Ansible Automation Platform, see the  https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[Red Hat Ansible Automation Platform Upgrade Guide].
+
+* For procedures related to using the Ansible Automation Platform installer, see the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide].
