@@ -82,5 +82,5 @@ Adding up all the components comes out to 506 for this example cluster.
 Practically, this means that the max_connections should be set to something higher than this.
 Additional connections should be added to account for other platform components.
 
-This calculation is most sensitive to the number of forks per node. Database connections are opened at the start of and end of jobs. Environments where bursts of many jobs start at once will be most likely to reach the theoretical max number of open database connections.
+This calculation is most sensitive to the number of forks per node. Database connections are briefly opened at the start of and end of jobs. Environments where bursts of many jobs start at once will be most likely to reach the theoretical max number of open database connections.
 The max number of jobs that would be started concurrently can be adjusted by modifying the effective capacity of the instances. This can be done with the SYSTEM_TASK_ABS_MEM setting, the capacity adjustment on instances, or with instance groups max jobs or max forks.
