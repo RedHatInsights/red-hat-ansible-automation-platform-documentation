@@ -34,6 +34,9 @@ When an instance of {ControllerName} is removed, the associated PVCs are not aut
 * For Hub a StorageClass that supports ReadWriteMany must be available on the cluster to dynamically created the PVC needed for the content, redis and api pods. If it is not the default StorageClass on the cluster, you can specify it when creating your AutomationHub object.
 
 == Installing the {ControllerName} operator
+Use this procedure to install the {ControllerName} operator.
+
+.Procedure
 
 . Navigate to menu:Operators[Installed Operators], then click on the *Ansible Automation Platform* operator.
 . Locate the *Automation controller* tab, then click btn:[Create instance].
