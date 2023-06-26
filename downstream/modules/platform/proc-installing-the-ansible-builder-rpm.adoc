@@ -19,8 +19,8 @@ This is preferred if a Satellite exists because the EE images can leverage RHEL 
 . Install the ansible-builder RPM and its dependencies from the included content:
 +
 ----
-$ tar -xzvf ansible-automation-platform-setup-bundle-2.3-1.2.tar.gz
-$ cd ansible-automation-platform-setup-bundle-2.3-1.2/bundle/el8/repos/
+$ tar -xzvf ansible-automation-platform-setup-bundle-2.4-1.tar.gz
+$ cd ansible-automation-platform-setup-bundle-2.4/bundle/el8/repos/
 $ sudo yum install ansible-builder-1.0.1-2.el8ap.noarch.rpm
 python38-requirements-parser-0.2.0-3.el8ap.noarch.rpm
 ----
