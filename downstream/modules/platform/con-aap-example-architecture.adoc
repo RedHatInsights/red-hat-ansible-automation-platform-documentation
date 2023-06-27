@@ -2,7 +2,7 @@
 [id='aap_example_architecture_{context}']
 = Example {PlatformNameShort} architecture
 
-The {PlatformName} 2.4 reference architecture provides an example setup of a standard deployment of {PlatformNameShort} using automation mesh on Red Hat Enterprise Linux 8.4 x86_64. The deployment shown takes advantage of the following key components to provide a simple, secure and flexible method of handling your automation workloads, a central location for content collections, and automated resolution of IT requests.
+The {PlatformName} {PlatformVers} reference architecture provides an example setup of a standard deployment of {PlatformNameShort} using automation mesh on Red Hat Enterprise Linux 8.4 x86_64. The deployment shown takes advantage of the following key components to provide a simple, secure and flexible method of handling your automation workloads, a central location for content collections, and automated resolution of IT requests.
 
 {ControllerNameStart}:: Provides the control plane for automation through its UI, Restful API, RBAC workflows and CI/CD integrations.
 {AutomationMeshStart}:: Is an overlay network that provides the ability to ease the distribution of work across a large and dispersed collection of workers through nodes that establish peer-to-peer connections with each other using existing networks.
@@ -18,6 +18,6 @@ The architecture for this example consists of the following:
 * A single PostgreSQL database connected to the {ControllerName}, {HubName}, and EDA controller clusters
 * Two execution nodes per automation controller cluster
 
-.Example {PlatformNameShort} 2.4 architecture
+.Example {PlatformNameShort} {PlatformVers} architecture
 // dcd - Image in progress with graphics team and will be added once complete.
-// image::aap2.4-ref-arch.png[Reference architecture for an example Ansible Automation Platform deployment]
+image::aap_ref_arch_2.4.png[Reference architecture for an example setup of a standard Ansible Automation Platform deployment]
