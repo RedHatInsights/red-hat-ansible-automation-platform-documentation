@@ -7,7 +7,7 @@ The {PlatformName} {PlatformVers} reference architecture provides an example set
 {ControllerNameStart}:: Provides the control plane for automation through its UI, Restful API, RBAC workflows and CI/CD integrations.
 {AutomationMeshStart}:: Is an overlay network that provides the ability to ease the distribution of work across a large and dispersed collection of workers through nodes that establish peer-to-peer connections with each other using existing networks.
 {PrivateHubNameStart}:: Provides automation developers the ability to collaborate and publish their own automation content and streamline delivery of Ansible code within their organization.
-Event Driven Ansible (EDA):: Provides the event-handling capability needed to automate time-consuming tasks and respond to changing conditions in any IT domain.
+Event-Driven Ansible (EDA):: Provides the event-handling capability needed to automate time-consuming tasks and respond to changing conditions in any IT domain.
 
 The architecture for this example consists of the following:
 
