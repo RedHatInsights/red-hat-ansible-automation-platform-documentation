@@ -19,7 +19,7 @@ Rulebook activations are rulebooks that have been activated to run.
 . From the navigation panel, select menu:Rulebook Activations[Create rulebook activation].
 . Insert the following: 
 +
-Name::
+Name:: Insert the name.
 Description:: This field is optional.
 Project:: Projects are a logical collection of rulebooks.
 Rulebook:: Rulebooks will be shown according to the project selected.
