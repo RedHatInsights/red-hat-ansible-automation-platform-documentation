@@ -24,7 +24,7 @@ of the {ControllerNameStart} documentation.
 . From the navigation panel, select menu:Decision Environments[Create decision environment].
 . Insert the following: 
 +
-Name::
+Name:: Insert the name.
 Description:: This field is optional.
 Image:: This is the full image location, including the container registry, image name, and version tag.
 Credential:: This field is optional. This is the token needed to utilize the decision environment image. 
