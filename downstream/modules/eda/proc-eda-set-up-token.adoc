@@ -19,7 +19,7 @@
 . Select menu:Controller Tokens[Create controller token].
 . Insert the following: 
 +
-Name::
+Name:: Insert the name.
 Description:: This field is optional.
 Token::
 . Select btn:[Create controller token].
