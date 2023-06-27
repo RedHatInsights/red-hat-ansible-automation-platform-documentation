@@ -5,7 +5,7 @@
 
 This example is of a shared directory called */mydata* in which we want to be able to read and write files to during a job run. Remember this has to already exist on the execution node we will be using for the automation run.
 
-You will target the _aape1.local_ execution node to run this job, because the underlying hosts already has this in place:
+You will target the _aape1.local_ execution node to run this job, because the underlying hosts already has this in place.
 
 ----
 [awx@aape1 ~]$ ls -la /mydata/
