@@ -10,6 +10,6 @@ As part of the migration from Ansible 2.9 to more recent versions, you need to f
 
 . Download and install the Collection into your runtime or execution environments using `ansible-builder`.
 
-. Update the _requirements.yml_ file in your Automation Controller project install roles and collections. This way every time you sync the project in Automation Controller the roles and collections will be downloaded.
+. Update the 'requirements.yml' file in your Automation Controller project install roles and collections. This way every time you sync the project in Automation Controller the roles and collections will be downloaded.
 
 NOTE: In many cases the upstream and downstream Collections could be the same, but always download your certified collections from Automation Hub. 
