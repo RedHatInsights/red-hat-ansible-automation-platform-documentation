@@ -1,0 +1,15 @@
+:_content-type: PROCEDURE
+
+[id="install-ansible-colls_{context}"]
+
+= Installing Ansible collections
+
+
+
+As part of the migration from Ansible 2.9 to more recent versions, you need to find and download the collections that include the modules you have been using. Once you find that list of collections, you can use one of the following options to include your collections locally:
+
+. Download and install the Collection into your runtime or execution environments using `ansible-builder`.
+
+. Update the 'requirements.yml' file in your Automation Controller project install roles and collections. This way every time you sync the project in Automation Controller the roles and collections will be downloaded.
+
+NOTE: In many cases the upstream and downstream Collections could be the same, but always download your certified collections from Automation Hub. 

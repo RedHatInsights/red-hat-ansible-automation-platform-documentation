@@ -1,0 +1,39 @@
+//Can be found in /platform/asssemlbly/converting-playbooks-for-AAP2
+
+:_content-type: CONCEPT
+
+[id="persisting-data-from-auto-runs_{context}"]
+= Persisting data from auto runs
+
+Consider the local Automation Controller filesystem as counterproductive since that ties the data to that host. If you have a multi-node cluster, then you can contact a different host each time causing issues if you are creating workflows that depend upon each other and created directories. For example, if a directory was only created in one node, while another node runs the playbook, the results would be inconsistent.
+
+The solution is to use some form of shared storage solution, like Amazon S3, Gist, or a role to rsync data to your data endpoint. 
+
+The option exists of injecting data or a configuration into a container at runtime. This can be achieved using the automation controller’s isolated jobs path option.
+
+This provides a way to mount directories and files into an execution environment at runtime. This is achieved through the automation mesh, utilizing ansible-runner to inject them into a Podman container to launch the automation. What follows are some of the use cases for using isolated job paths:
+
+* Providing SSL certificates at runtime, rather than baking them into an execution environment.
+
+* Passing runtime configuration data, such as SSH config settings, but could be anything you want to provide and use during automation.
+
+* Reading and writing to files used before, during and after automation runs.
+
+There are caveats to utilization:
+
+* The volume mount has to pre-exist on all nodes capable of automation execution (so hybrid control plane nodes and all execution nodes).
+
+* Where SELinux is enabled (Ansible Automation Platform default) beware of file permissions.
+
+** This is important since rootless podman is run on non-OCP based installs.
+
+The caveats need to be carefully observed. It is highly recommended to read up on rootless Podman and the Podman volume mount runtime options, the [:OPTIONS] part of the isolated job paths, as this is what is used inside Ansible Automation Platform 2. 
+
+[role="_additional-resources"]
+.Additional resources
+* link:https://github.com/redhat-documentation/https://opensource.com/article/19/2/how-does-rootless-podman-work[Understanding rootless Podman].
+* link:https://docs.podman.io/en/latest/markdown/podman-run.1.html#volume-v-source-volume-host-dir-container-dir-options[Podman volume mount runtime options].
+
+
+include::platform/ref-converting-playbook-examples.adoc[leveloffset=+1]
+

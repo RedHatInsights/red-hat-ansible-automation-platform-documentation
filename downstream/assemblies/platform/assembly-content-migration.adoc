@@ -16,9 +16,11 @@ If you are migrating from an `ansible-core` version to `ansible-core` 2.13, cons
 For a list of fully supported and certified Ansible Content Collections, see link:https://console.redhat.com/ansible/automation-hub[Ansible Automation hub] on link:https://console.redhat.com/[console.redhat.com].
 
 
+include::platform/proc-install-ansible-colls.adoc[leveloffset=+1]
+
 include::platform/proc-migrate-playbooks-roles.adoc[leveloffset=+1]
 
-
+include::platform/ref-converting-playbook-examples.adoc[leveloffset=+1]
 
 
 

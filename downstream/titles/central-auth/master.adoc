@@ -19,3 +19,4 @@ include::central-auth/assembly-central-auth-add-user-storage.adoc[leveloffset=+1
 include::central-auth/assembly-assign-hub-admin-permissions.adoc[leveloffset=+1]
 include::central-auth/assembly-central-auth-identity-broker.adoc[leveloffset=+1]
 include::central-auth/assembly-central-auth-group-perms.adoc[leveloffset=+1]
+include::central-auth/assembly-configuring-central-auth-generic-oidc-settings.adoc[leveloffset=+1]
