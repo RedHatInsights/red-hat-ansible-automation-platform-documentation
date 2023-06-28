@@ -24,14 +24,14 @@ See https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_pla
 
 . Log in to your {PrivateHubName}.
 . Navigate to menu:Automation Hub[Remotes].
-. In the *rh-certified* remote repository, click image:ellipsis.png[More actions,10,25] and click btn:[Edit].
+. In the *rh-certified* remote repository, click the btn:[More Actions] icon *&vellip;* and click btn:[Edit].
 . In the modal, paste the *Sync URL* and Token you acquired from {Console}.
 . Click btn:[Save].
 +
 The modal closes and returns you to the *Remotes* page.
 You can now synchronize collections between your organization synclist on {Console} and your {PrivateHubName}.
 +
-. Click image:ellipsis.png[More actions,10,25] and select *Sync*.
+. Click the btn:[More Actions] icon *&vellip;* and select *Sync*.
 
 The *Sync status* notification updates to notify you of completion of the Red Hat Certified Content Collections synchronization.
 
