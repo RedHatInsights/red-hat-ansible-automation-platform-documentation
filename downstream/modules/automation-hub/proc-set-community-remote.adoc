@@ -24,7 +24,7 @@ collections:
 .Procedure
 . Log in to your {HubNameMain}.
 . Navigate to menu:Automation Hub[Remotes].
-. In the *Community* remote, click image:ellipsis.png[More actions,10,25] and select *Edit*.
+. In the *Community* remote, click image:ellipsis.png[More actions,15,50] and select *Edit*.
 . In the modal, click btn:[Browse] and locate the `requirements.yml` file on your local machine.
 . Click btn:[Save].
 +
