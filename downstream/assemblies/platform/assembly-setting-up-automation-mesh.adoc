@@ -19,7 +19,7 @@ include::platform/proc-import-mesh-ca.adoc[leveloffset=+1]
 [role="_additional-resources"]
 .Additional resources
 
-* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/planning-installation#red_hat_ansible_automation_platform_system_requirements[{PlatformName} System Requirements]
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[{PlatformName} System Requirements]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
