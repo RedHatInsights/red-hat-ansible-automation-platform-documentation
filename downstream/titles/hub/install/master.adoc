@@ -63,7 +63,7 @@ You must have a valid Red Hat customer account to access {PlatformNameShort} ins
 Install {PrivateHubName} using the {PlatformNameShort} installer if your Red Hat Enterprise Linux environment is connected to the internet.
 Installing with internet access will retrieve the latest required repositories, packages, and dependencies.
 
-. Navigate to link:https://access.redhat.com/downloads/content/480[Download Red Hat Ansible Automation Platform].
+. Navigate to the link:{PlatformDownloadUrl}[{PlatformName} download] page.
 . Click btn:[Download Now] for the *{PlatformNameShort} <latest-version> Setup*.
 . Extract the files:
 +
