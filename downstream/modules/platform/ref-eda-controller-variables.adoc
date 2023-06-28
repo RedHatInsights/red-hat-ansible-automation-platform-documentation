@@ -1,7 +1,7 @@
 
 [id="event-driven-ansible-controller_{context}"]
 = {EDAcontroller} variables
-
+ 
 [cols="50%,50%",options="header"]
 |====
 | *Variable* | *Description* 
