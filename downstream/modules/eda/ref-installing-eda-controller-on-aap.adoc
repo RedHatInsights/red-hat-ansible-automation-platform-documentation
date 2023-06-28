@@ -14,6 +14,6 @@ To further assist you in getting started with {EDAName}, review the following ex
 Lastly, refer to the following {EDAcontroller}-specific code example and appendix section that have been added to the Red Hat Ansible Automation Platform Installation Guide:
 
 * link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#ref-single-eda-controller-with-internal-db_platform-install-scenario[Single Event-Driven Ansible controller node with internal database]
-* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/#event-driven-ansible-controller_appendix-inventory-files-vars[Appendix A. 5. Event-Driven Ansible controller variables]
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/#ref-eda-controller-variables_appendix-inventory-files-vars[Appendix A. 5. Event-Driven Ansible controller variables]
 
 
