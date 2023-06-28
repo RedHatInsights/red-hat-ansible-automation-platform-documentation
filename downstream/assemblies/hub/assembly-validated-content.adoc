@@ -27,7 +27,7 @@ If missing both content sets will be uploaded.
 If you are not using the bundle installer, a standalone tarball, `ansible-validated-content-bundle-1.tar.gz` can be used instead.
 The standalone tarball can also be used later to update validated contents later in any environment, when a newer tarball becomes available, and without having to re-run the bundle installer.
 
-To obtain the tarball, navigate to link:https://access.redhat.com/downloads/content/480[{PlatformNameShort} Downloads] and select *Ansible Validated Content*.
+To obtain the tarball, navigate to the link:{PlatformDownloadUrl}[{PlatformName} download] page and select *Ansible Validated Content*.
 
 You require the following variables to run the playbook. 
 
