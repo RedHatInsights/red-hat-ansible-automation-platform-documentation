@@ -24,14 +24,14 @@ collections:
 .Procedure
 . Log in to your {HubNameMain}.
 . Navigate to menu:Automation Hub[Remotes].
-. In the *Community* remote, click image:ellipsis.png[More actions] and select *Edit*.
+. In the *Community* remote, click the btn:[More Actions] icon *&vellip;* and select *Edit*.
 . In the modal, click btn:[Browse] and locate the `requirements.yml` file on your local machine.
 . Click btn:[Save].
 +
 The modal closes and returns you to the *Remotes* page.
 You can now synchronize collections identified in your `requirements.yml` file from {Galaxy} to your {PrivateHubName}.
 
-. Click image:ellipsis.png[More actions] and select *Sync* to sync collections from {Galaxy} and {HubNameMain}.
+. Click the btn:[More Actions] icon *&vellip;* and select *Sync* to sync collections from {Galaxy} and {HubNameMain}.
 
 The *Sync status* notification updates to notify you of completion or failure of {Galaxy} collections synchronization to your {HubNameMain}.
 

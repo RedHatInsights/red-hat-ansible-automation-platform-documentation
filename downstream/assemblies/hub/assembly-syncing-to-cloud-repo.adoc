@@ -1,7 +1,7 @@
 [id="assembly-creating-tokens-in-automation-hub"]
 = Configuring {HubNameMain} remote repositories to synchronize content
 
-You can configure your {PrivateHubName} to synchronize with {CertifiedName} hosted on `{Console}` or to your choice of collections in {Galaxy}.
+You can configure your {PrivateHubName} to synchronize with {CertifiedName} hosted on `{Console}` or to your choice of collections in {Galaxy}, using remote configurations.
 
 [IMPORTANT]
 ====
