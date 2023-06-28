@@ -1,5 +1,3 @@
-// Module included in the following assemblies:
-// obtaining-token/master.adoc
 [id="proc-create-api-token"]
 = Retrieving the API token for your Red Hat Certified Collection
 
@@ -11,7 +9,7 @@ You can synchronize {CertifiedName} curated by your organization from `{Console}
 
 .Procedure
 
-. Log in to {Console} as an origanization administrator.
+. Log in to `{Console}` as an organization administrator.
 . Navigate to menu:Automation Hub[Connect to Hub].
 . Under *Offline token*, click btn:[Load token].
 . Click btn:[Copy to clipboard] to copy the API token.
