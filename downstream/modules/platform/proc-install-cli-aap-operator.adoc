@@ -43,7 +43,7 @@ metadata:
   name: ansible-automation-platform
   namespace: ansible-automation-platform
 spec:
-  channel: 'stable-2.3'
+  channel: 'stable-2.4'
   installPlanApproval: Automatic
   name: ansible-automation-platform-operator
   source: redhat-operators
@@ -59,7 +59,7 @@ spec:
 
 -----
 +
-This file creates a `Subscription` object called `_ansible-automation-platform_` that subscribes the `ansible-automation-platform` namespace to the `ansible-automation-platform-operator` operator.
+This file creates a `Subscription` object called `_ansible-automation-platform_` that subscribes the `ansible-automation-platform` namespace to the `ansible-automation-platform-operator` operator.
 +
 It then creates an `AutomationController` object called `_example_` in the `ansible-automation-platform` namespace.
 +
@@ -86,3 +86,4 @@ $ oc get subs -n ansible-automation-platform
 -----
 
 For further information about subscribing namespaces to operators, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/operators/user-tasks#olm-installing-operator-from-operatorhub-using-cli_olm-installing-operators-in-namespace[Installing from OperatorHub using the CLI] in the {OCP} _Operators_ guide.
+
