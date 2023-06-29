@@ -10,7 +10,7 @@ By default, private repositories and the content are hidden from all users in th
 .Procedure
 . Log in to {PlatformName}.
 . Navigate to menu:Automation Hub[Repositories].
-. Locate your repository in the list and click image:more_actions.png[more actions], then select *Edit*.
+. Locate your repository in the list and click the btn:[More Actions] icon *{MoreActionsIcon}*, then select *Edit*.
 . Select the *Access* tab.
 . Select a group for *Repository owners*.
 +
