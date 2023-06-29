@@ -9,4 +9,4 @@ The name change reflects these enhancements and the overall position within the 
 
 Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.
 
-See link:https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[automation controller Release Notes for 4.x] for a full list of new features and enhancements.
+See link:https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[Automation Controller Release Notes for 4.x] for a full list of new features and enhancements.
