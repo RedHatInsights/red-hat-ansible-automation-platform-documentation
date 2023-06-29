@@ -1,0 +1,7 @@
+// This assembly is part of the AAP Planning Guide
+[id='aap_architecture']
+= {PlatformName} Architecture
+
+As a modular platform, {PlatformNameShort} provides the flexibility to easily integrate components and customize your deployment to best meet your automation requirements. This section provides a comprehensive architectural example of an {PlatformNameShort} deployment.
+
+include::platform/con-aap-example-architecture.adoc[leveloffset=+1]
