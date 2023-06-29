@@ -30,7 +30,7 @@ Restart policy:: This is a policy to decide when to restart a rulebook.
 ... Never: Never restarts a rulebook when it finishes
 ... On failure: Only restarts when it fails
 Rulebook activation enabled?:: This automatically enables the rulebook activation to run.
-Variables:: Pass extra command line variables to the playbook in the Variables section. This is the `-e or --extra-vars` command line parameter for ansible-rulebook. 
+Variables:: Pass extra command line variables to the playbook in the Variables section. These are the `-e` or `--extra-vars` command line parameters for ansible-rulebook. 
 Provide key/value pairs using either YAML or JSON. Refer to the documentation for example syntax.
 . Select btn:[Create rulebook activation].
 
