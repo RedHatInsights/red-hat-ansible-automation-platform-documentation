@@ -23,7 +23,8 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 Some features in this release are currently classified as Technology Preview. Technology Preview features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. Please note that Red Hat does not recommend using technology preview features for production, and Red Hat SLAs do not support technology preview functions.
 
-Following are the technology preview features:
+The following are the technology preview features:
+
 * Added the ability to use external execution nodes when running AAP as a managed service in Azure.
 * Added the ability to use external execution nodes when running the AAP Operator in Openshift.
 //[DCD removed following per PG see AAP-7858]
