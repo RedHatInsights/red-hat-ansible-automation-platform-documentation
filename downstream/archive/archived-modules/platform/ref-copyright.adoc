@@ -1,9 +1,8 @@
 = Copyright © Red Hat, Inc.
 
-
 Ansible, Ansible Tower, Red Hat, and {RHEL} are trademarks of Red Hat, Inc., registered in the United States and other countries.
 
-If you distribute this document, or a modified version of it, you must provide attribution to Red Hat, Inc. and provide a link to the original version. 
+If you distribute this document, or a modified version of it, you must provide attribution to Red Hat, Inc. and provide a link to the original version.
 
 **Third Party Rights**
 
@@ -15,7 +14,7 @@ Microsoft, Windows, Windows Azure, and Internet Explore are trademarks of Micros
 
 VMware is a registered trademark or trademark of VMware, Inc.
 
-Rackspace trademarks, service marks, logos and domain names are either common-law trademarks/service marks or registered trademarks/service marks of Rackspace US, Inc., or its subsidiaries, and are protected by trademark and other laws in the United States and other countries. 
+Rackspace trademarks, service marks, logos and domain names are either common-law trademarks/service marks or registered trademarks/service marks of Rackspace US, Inc., or its subsidiaries, and are protected by trademark and other laws in the United States and other countries.
 
 Amazon Web Services", "AWS", "Amazon EC2", and "EC2”, are trademarks of Amazon Web Services, Inc. or its affiliates.
 
@@ -28,3 +27,4 @@ Safari® is a registered trademark of Apple, Inc.
 Firefox® is a registered trademark of the Mozilla Foundation.
 
 All other trademarks are the property of their respective owners.
+
