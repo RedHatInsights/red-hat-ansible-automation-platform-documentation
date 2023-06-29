@@ -218,7 +218,7 @@ You can edit the sequence number for an approval process from the Approval proce
 
 . Select *Approval* from the main navigation.
 . Click the *Approval processes* tab.
-. Navigate to the approval process, then click image:ellipsis.png[More actions,10,25].
+. Navigate to the approval process, then click the btn:[More Actions] icon *{MoreActionsIcon}*.
 . Click btn:[Edit].
 . Enter the desired sequence number under *Enter sequence*.
 . Click btn:[Save].
@@ -281,7 +281,7 @@ We have now created a portfolio and added some products to it. Our next step is 
 To set an approval processes for the portfolio:
 
 . Navigate to menu:Portfolios[].
-. Click image:ellipsis.png[More actions,10,25] on a portfolio tile and select *Set approval*.
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* on a portfolio tile and select *Set approval*.
 . From the *Set approval process* drop-down menu, select an approval processes to set to the portfolio.
 . Click btn:[Save].
 
@@ -294,7 +294,7 @@ The portfolio is now ready to share with groups of users. These designated user 
 To share a portfolio:
 
 . Click btn:[Portfolios].
-. Click image:ellipsis.png[More actions,10,25] on a portfolio, then click btn:[Share]. The icon:[Y] indicates a shared portfolio.
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* on a portfolio, then click btn:[Share]. The icon:[Y] indicates a shared portfolio.
 . Adding groups:
 .. Under *Invite group* search groups to share the portfolio with.
 .. Select the level of permissions using the drop-down list.
@@ -372,7 +372,7 @@ The product has an associated survey, created in Ansible Tower.
 .Procedure
 . Click btn:[Products].
 . Locate the product and click on its title.
-. Click image:ellipsis.png[More actions,10,25] and select *Edit survey*.
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Edit survey*.
 . Select a field in the survey. The *Properties* editor will appear.
 . Click btn:[Properties] to view the elements to edit for that field.
 . Select *Validation* to configure the validator types used to validate user input.
