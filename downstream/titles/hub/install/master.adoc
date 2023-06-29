@@ -24,7 +24,7 @@ h| Subscription | Valid Red Hat {PlatformNameShort}
 
 h| OS | Red Hat Enterprise Linux 7.7 or later 64-bit (x86) or 8.2 or later 64-bit (x86)
 
-h| Ansible | Version 2.9 required
+h| Ansible | Version 2.11 required
 
 h| RAM | 4 GB minimum
 
