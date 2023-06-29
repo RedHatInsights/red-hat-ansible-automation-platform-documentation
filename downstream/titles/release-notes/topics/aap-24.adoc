@@ -30,7 +30,7 @@ You can use the following configuration YAML keys with Ansible Builder version 3
 ** version
 
 For more information about using Ansible Builder version 3, see 
-https://ansible.readthedocs.io/projects/builder/en/stable/[Ansible Builder Documentation] and https://docs.ansible.com/automation-controller/latest/html/userguide/ee_reference.html[Execution Environment Setup Reference].
+link:https://ansible.readthedocs.io/projects/builder/en/stable/[Ansible Builder Documentation] and link:https://docs.ansible.com/automation-controller/latest/html/userguide/ee_reference.html[Execution Environment Setup Reference].
 
 * Ansible Automation Platform 2.4 and later versions can now be run on ARM platforms, including both the control plane and the execution environments.
 
