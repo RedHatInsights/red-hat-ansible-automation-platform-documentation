@@ -17,15 +17,14 @@ Standalone roles outside of Collections are still supported, but new roles shoul
 
 . In your terminal, navigate to the `roles` directory inside a collection.
 . Create a role called `role_name` inside the collection created previously:
-
 +
 -----
 $ ansible-galaxy role init my_role
 -----
 +
-
 The collection now contains a role named `my_role` inside the `roles` directory:
-
++
+-----
     ~/.ansible/collections/ansible_collections/<my_namespace>/<my_collection_name>
     ...
     └── roles/
@@ -33,21 +32,22 @@ The collection now contains a role named `my_role` inside the `roles` directory:
             ├── .travis.yml
             ├── README.md
             ├── defaults/
-            │   └── main.yml
+            │   └── main.yml
             ├── files/
             ├── handlers/
-            │   └── main.yml
+            │   └── main.yml
             ├── meta/
-            │   └── main.yml
+            │   └── main.yml
             ├── tasks/
-            │   └── main.yml
+            │   └── main.yml
             ├── templates/
             ├── tests/
-            │   ├── inventory
-            │   └── test.yml
+            │   ├── inventory
+            │   └── test.yml
             └── vars/
                 └── main.yml
-
+-----
++
 . A custom role skeleton directory can be supplied using the `--role-skeleton` argument. This allows organizations to create standardized templates for new roles to suit their needs.
 
     ansible-galaxy role init my_role --role-skeleton ~/role_skeleton

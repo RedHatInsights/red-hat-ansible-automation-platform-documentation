@@ -4,8 +4,10 @@
 
 [role="_abstract"]
 The {OperatorPlatform} provides cloud-native, push-button deployment of new {PlatformNameShort} instances in your OpenShift environment.
-The {OperatorPlatform} includes resource types to deploy and manage instances of {ControllerNameStart} and Private Automation hub. It also includes {ControllerName} job resources for defining and launching jobs inside your {ControllerName} deployments. 
+The {OperatorPlatform} includes resource types to deploy and manage instances of {ControllerNameStart} and Private Automation hub.
+It also includes {ControllerName} job resources for defining and launching jobs inside your {ControllerName} deployments.
 
 Deploying {PlatformNameShort} instances with a Kubernetes native operator offers several advantages over launching instances from a playbook deployed on {OCP}, including upgrades and full lifecycle support for your {PlatformName} deployments.
 
 You can install the {OperatorPlatform} from the Red Hat Operators catalog in OperatorHub.
+
