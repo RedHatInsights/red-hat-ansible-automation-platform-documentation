@@ -18,7 +18,7 @@ Import log:: activities executed during the collection import
 . Log in to your local {HubName}.
 . Navigate to menu:Automation Hub[Namespaces].
 . Select a namespace.
-. Click image:more_actions.png[More actions] and select *My imports*.
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *My imports*.
 . Use the search field or locate an imported collection from the list.
 . Click on the imported collection.
 
