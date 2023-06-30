@@ -19,3 +19,4 @@ $ ./setup.sh -r -e ‘restore_backup_file=/ansible/mybackup/tower-backup-latest.
 .. Using the side navigation panel, check that your content has been imported from your original instance, including Jobs, Templates, Inventories, Credentials, and Users.
 
 You now have a new instance of Ansible Tower with all the Ansible content from your original instance.
+

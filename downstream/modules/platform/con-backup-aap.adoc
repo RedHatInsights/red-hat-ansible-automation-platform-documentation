@@ -14,3 +14,4 @@ $ ./setup.sh -e ‘backup_dir=/ansible/mybackup’ -e ‘use_compression=True’
 <2> `@credentials.yml` passes the password variables and their values encrypted via `ansible-vault`.
 
 With a successful backup, a backup file is created at `/ansible/mybackup/tower-backup-latest.tar.gz` .
+
