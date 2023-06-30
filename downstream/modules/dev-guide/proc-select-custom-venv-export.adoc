@@ -1,4 +1,3 @@
-
 [id="select-custom-venv-export"]
 
 = Selecting the custom virtual environment to export
@@ -27,6 +26,7 @@ six==1.16.0
 To list all available custom virtual environments run:
 awx-manage list_custom_venvs
 -----
+
 [NOTE]
 ====
 Pass the `-q` flag when running `awx-manage list_custom_venvs` to reduce output.
