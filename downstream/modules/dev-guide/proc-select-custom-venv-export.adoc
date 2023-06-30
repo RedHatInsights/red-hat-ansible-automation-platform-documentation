@@ -1,15 +1,10 @@
 
-
 [id="select-custom-venv-export"]
-
-
 
 = Selecting the custom virtual environment to export
 
-
 [role="_abstract"]
 Select the custom virtual environment you wish to export using `awx-manage export_custom_venv` command.
-
 
 .Procedure
 
@@ -19,8 +14,8 @@ Select the custom virtual environment you wish to export using `awx-manage expor
 $ awx-manage export_custom_venv /path/to/venv
 -----
 
-
-The output from this command will show a `pip freeze` of what is in the specified virtual environment. This information can be copied into a `requirements.txt` file for {Builder} to use for creating a new {ExecEnvName} image
+The output from this command will show a `pip freeze` of what is in the specified virtual environment.
+This information can be copied into a `requirements.txt` file for {Builder} to use for creating a new {ExecEnvName} image.
 
 -----
 numpy==1.20.2
@@ -36,3 +31,4 @@ awx-manage list_custom_venvs
 ====
 Pass the `-q` flag when running `awx-manage list_custom_venvs` to reduce output.
 ====
+

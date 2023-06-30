@@ -12,3 +12,4 @@ After upgrading your {PlatformName} instance, associate your original instances 
 . Associate execution nodes by clicking on an instance group, then click the *Instances* tab.
 . Click btn:[Associate]. Select the node(s) to associate to this instance group, then click btn:[Save].
 . You can also modify the default instance to disassociate your new execution nodes.
+

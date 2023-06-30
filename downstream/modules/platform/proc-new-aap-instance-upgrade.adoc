@@ -28,3 +28,4 @@ NOTE: Make note of all instance groups from your original Tower instance. You wi
 . Click btn:[Create instance group].
 . Enter a *Name* that matches an instance group from your original instance, then click btn:[Save]
 . Repeat until all instance groups from your original instance have been recreated.
+
