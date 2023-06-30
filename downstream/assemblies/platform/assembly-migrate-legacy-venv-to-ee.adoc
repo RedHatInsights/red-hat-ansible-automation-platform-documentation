@@ -12,7 +12,7 @@ ifdef::context[:parent-context: {context}]
 
 
 
-[role="_abstract"]
+// [role="_abstract"]
 
 include::platform/con-why-ee.adoc[leveloffset=+1]
 
@@ -30,7 +30,7 @@ The below workflow describes how to migrate from legacy venvs to {ExecEnvName} u
 
 include::dev-guide/assembly-virt-env-to-ee.adoc[leveloffset=+1]
 
-[role="_additional-resources"]
+// [role="_additional-resources"]
 // Remove comments once 2.2 version of the docs are published.
 //== Additional resources
 
