@@ -35,5 +35,5 @@ The caveats need to be carefully observed. It is highly recommended to read up o
 * link:https://docs.podman.io/en/latest/markdown/podman-run.1.html#volume-v-source-volume-host-dir-container-dir-options[Podman volume mount runtime options].
 
 
-include::platform/ref-converting-playbook-examples.adoc[leveloffset=+1]
+include::ref-converting-playbook-examples.adoc[leveloffset=+1]
 
