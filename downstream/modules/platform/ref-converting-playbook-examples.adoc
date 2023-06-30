@@ -1,0 +1,189 @@
+[id="converting-playbook-examples_{context}"]
+= Converting playbook examples
+
+.Examples
+
+This example is of a shared directory called */mydata* in which we want to be able to read and write files to during a job run. Remember this has to already exist on the execution node we will be using for the automation run.
+
+You will target the _aape1.local_ execution node to run this job, because the underlying hosts already has this in place.
+
+----
+[awx@aape1 ~]$ ls -la /mydata/
+total 4
+drwxr-xr-x.  2 awx  awx   41 Apr 28 09:27 .
+dr-xr-xr-x. 19 root root 258 Apr 11 15:16 ..
+-rw-r--r--.  1 awx  awx   33 Apr 11 12:34 file_read
+-rw-r--r--.  1 awx  awx    0 Apr 28 09:27 file_write
+----
+
+You will use a simple playbook to launch the automation with sleep defined to allow you access, and to understand the process, as well as demonstrate reading and writing to files.
+
+----
+# vim:ft=ansible:
+----
+
+----
+- hosts: all
+  gather_facts: false
+  ignore_errors: yes
+  vars:
+    period: 120
+    myfile: /mydata/file
+  tasks:
+    - name: Collect only selected facts
+      ansible.builtin.setup:
+        filter:
+          - 'ansible_distribution'
+          - 'ansible_machine_id'
+          - 'ansible_memtotal_mb'
+          - 'ansible_memfree_mb'
+    - name: "I'm feeling real sleepy..."
+      ansible.builtin.wait_for:
+        timeout: "{{ period }}"
+      delegate_to: localhost
+    - ansible.builtin.debug:
+        msg: "Isolated paths mounted into execution node: {{ AWX_ISOLATIONS_PATHS }}"
+    - name: "Read pre-existing file..."
+      ansible.builtin.debug:
+        msg: "{{ lookup('file', '{{ myfile }}_read'
+    - name: "Write to a new file..."
+      ansible.builtin.copy:
+        dest: "{{ myfile }}_write"
+        content: |
+          This is the file I've just written to.
+          
+    - name: "Read written out file..."
+      ansible.builtin.debug:
+        msg: "{{ lookup('file', '{{ myfile }}_write') }}"
+
+----
+
+In Ansible Automation Platform 2 from the Settings menu, select menu:Job Settings[Jobs]. 
+
+Paths to expose isolated jobs:
+
+----
+[
+"/mydata:/mydata:rw"
+]
+----
+
+The volume mount is mapped with the same name in the container and has read-write capability. This will get used when you launch the job template.
+
+The _prompt on launch_ should be set for _extra_vars_ so you can adjust the sleep duration for each run, The default is 30 seconds.
+
+Once launched, and the _wait_for_ module is invoked for the sleep, you can go onto the execution node and look at what is running.   
+
+To verify the run has completed successfully, run this command to get an output of the job:
+
+----
+$ podman exec -it 'podman ps -q' /bin/bash
+bash-4.4#
+----
+
+You are now inside the running execution environment container.
+
+Look at the permissions, you will see that *awx* has become ‘root’, but this is not really root as in the superuser, as you are using rootless Podman, which maps users into a kernel namespace similar to a sandbox. Learn more about How does rootless Podman work? for shadow-utils.
+
+----
+bash-4.4# ls -la /mydata/
+Total 4
+drwxr-xr-x. 2 root root 41 Apr 28 09:27 .
+dr-xr-xr-x. 1 root root 77 Apr 28 09:40 ..
+-rw-r—--r–. 1 root root 33 Apr 11 12:34 file_read
+-rw-r—--r–. 1 root root  0 Apr 28 09:27 file_write
+----
+
+According to the results, this job failed. In order to understand why, the remaining output needs to be examined.
+
+
+----
+TASK [Read pre-existing file…]******************************* 10:50:12
+ok: [localhost] =>  {
+    “Msg”: “This is the file I am reading in.”
+
+TASK {Write to a new file...}********************************* 10:50:12
+An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/mydata/.ansible_tmpazyqyqdrfile_write' -> b' /mydata/file_write' 
+Fatal: [localhost]: FAILED! => {"changed": false, :checksum": "9f576o85d584287a3516ee8b3385cc6f69bf9ce", "msg": "Unable to make b'/root/.ansible/tmp/anisible-tim-1651139412.9808054-40-91081834383738/source' into /mydata/file_write, failed final rename from b'/mydata/.ansible_tmpazyqyqdrfile_write': [Errno 13] Permission denied: b'/mydata/.ansible_tmpazyqyqdrfile_write' -> b'/mydata/file_write}
+...ignoring
+
+TASK [Read written out file...] ****************************** 10:50:13
+Fatal: [localhost]: FAILED: => {"msg": "An unhandled exception occurred while running the lookup plugin 'file'. Error was a <class 'ansible.errors.AnsibleError;>, original message: could not locate file in lookup: /mydate/file_write. Vould not locate file in lookup: /mydate/file_write"}
+...ignoring
+----
+
+The job failed, even though *:rw* is set, so it should have write capability. 
+The process was able to read the existing file, but not write out. This is due to SELinux protection that requires proper labels to be placed on the volume content mounted into the container. If the label is missing, SELinux may prevent the process from running inside the container. Labels set by the OS are not changed by Podman. See the Podman documentation for more information.
+
+This could be a common misinterpretation. We have set the default to *:z*, which tells Podman to relabel file objects on shared volumes.
+
+So we can either add *:z* or leave it off.
+
+Paths to expose isolated jobs:
+
+----
+[
+   "/mydata:/mydata"
+]
+----
+
+The playbook will now work as expected:
+
+----
+PLAY [all] **************************************************** 11:05:52
+TASK [I'm feeling real sleepy. . .] *************************** 11:05:52
+ok: [localhost]
+TASK [Read pre-existing file...] ****************************** 11:05:57
+ok: [localhost] =>  {
+	"Msg": "This is the file I'm reading in."
+}
+TASK [Write to a new file…] ********************************** 11:05:57
+ok: [localhost]
+TASK [Read written out file…] ******************************** 11:05:58
+ok: [localhost] =>  {
+      “Msg”: “This is the file I’ve just written to.”
+----
+
+
+Back on the underlying execution node host, we have the newly written out contents.
+
+NOTE: If you are using container groups to launch automation jobs inside Red Hat OpenShift, we can also tell Ansible Automation Platform 2 to expose the same paths to that environment, but you must toggle the default to On under settings.
+
+Once enabled, this will inject this as _volumeMounts_ and _volumes_ inside the pod spec that will be used for execution. It will look like this:
+
+----
+apiVersion: v1
+kind: Pod
+Spec:
+   containers:
+   - image: registry.redhat.io/ansible-automatoin-platform-24/ee-minimal-rhel8
+  args:
+    - ansible runner
+    - worker
+    - –private-data-dir=/runner
+  volumeMounts:
+mountPath: /mnt2
+name: volume-0
+readOnly: true
+mouuntPath: /mnt3
+name: volume-1
+readOnly: true
+mountPath: /mnt4
+name: volume-2
+readOnly: true
+volumes:
+hostPath:
+  path: /mnt2
+  type: “”
+name: volume-0
+hostPath: 
+  path: /mnt3
+  type: “”
+name: volume-1
+hostPath: 
+  path: /mnt4
+  type: “”
+name: volume-2
+----
+
+Storage inside the running container is using the overlay file system. Any modifications inside the running container are destroyed after the job completes, much like a tmpfs being unmounted.
