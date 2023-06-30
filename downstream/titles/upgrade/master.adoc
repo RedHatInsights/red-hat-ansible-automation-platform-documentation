@@ -17,7 +17,4 @@ include::platform/assembly-aap-upgrading-platform.adoc[leveloffset=+1]
 include::platform/assembly-migrate-legacy-venv-to-ee.adoc[leveloffset=+1]
 include::platform/assembly-migrate-isolated-execution-nodes.adoc[leveloffset=+1]
 include::platform/assembly-content-migration.adoc[leveloffset=+1]
-<<<<<<< HEAD
-=======
 include::platform/assembly-converting-playbooks-for-aap2.adoc[leveloffset=+1]
->>>>>>> e1e1dde (Corrected assembly names and include statement (#1168))
