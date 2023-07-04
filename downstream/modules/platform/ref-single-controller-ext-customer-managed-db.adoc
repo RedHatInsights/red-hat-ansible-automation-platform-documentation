@@ -14,14 +14,14 @@ This example does not have a host under the database group. This indicates to th
 
 -----
 [automationcontroller]
-controller.acme.org
+controller.example.com
 
 [database]
 
 [all:vars]
 admin_password='<password>'
 
-pg_host='data.acme.org'
+pg_host='data.example.com'
 pg_port='5432'
 pg_database='awx'
 pg_username='awx'
