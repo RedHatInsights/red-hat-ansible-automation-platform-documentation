@@ -10,7 +10,7 @@ This installation inventory file includes a single {ControllerName} node with an
 
 -----
 [automationcontroller]
-controller.acme.org
+controller.example.com
 
 [all:vars]
 admin_password='<password>'
