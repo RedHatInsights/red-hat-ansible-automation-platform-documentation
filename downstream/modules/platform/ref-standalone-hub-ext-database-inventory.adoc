@@ -12,7 +12,7 @@ Use this example to populate the inventory file to deploy a single instance of {
 automationhub.example.com
 
 [database]
-data.acme.org
+data.example.com
 
 [all:vars]
 registry_url='registry.redhat.io'
