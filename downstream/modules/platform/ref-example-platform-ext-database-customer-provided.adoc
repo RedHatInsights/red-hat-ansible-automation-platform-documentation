@@ -24,8 +24,8 @@ This example does not have a host under the database group. This indicates to th
 # hybrid2.example <- this will default to hybrid
 
 [automationcontroller]
-hybrid1.acme.org node_type=hybrid
-controller1.acme.org node_type=control
+hybrid1.example.com node_type=hybrid
+controller1.example.com node_type=control
 
 # Execution Nodes
 # There are two valid node_types that can be assigned for this group.
@@ -38,17 +38,17 @@ controller1.acme.org node_type=control
 # execution2.example <- this will default to execution
 
 [execution_nodes]
-hop1.acme.org node_type=hop
-execution1.acme.org node_type=execution
+hop1.example.com node_type=hop
+execution1.example.com node_type=execution
 
 [automationhub]
-automationhub.acme.org
+automationhub.example.com
 
 [database]
 
 [all:vars]
 admin_password='<password>'
-pg_host='data.acme.org'
+pg_host='data.example.com'
 pg_port='5432'
 pg_database='awx'
 pg_username='awx'
@@ -66,7 +66,7 @@ receptor_listener_port=27199
 # Automation Hub Configuration
 #
 automationhub_admin_password='<password>'
-automationhub_pg_host='data.acme.org'
+automationhub_pg_host='data.example.com'
 automationhub_pg_port='5432'
 automationhub_pg_database='automationhub'
 automationhub_pg_username='automationhub'
@@ -102,7 +102,7 @@ automationhub_pg_sslmode='prefer'
 
 automationedacontroller_admin_password='<eda-password>'
 
-automationedacontroller_pg_host='data.acme.org'
+automationedacontroller_pg_host='data.example.com'
 automationedacontroller_pg_port=5432
 
 automationedacontroller_pg_database='automationedacontroller'

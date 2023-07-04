@@ -27,7 +27,7 @@ automationedacontroller_pg_password='<password>'
 # This URL is required if there is no Automation Controller configured
 # in inventory.
 #
-automation_controller_main_url = 'https://controller.example.org/'
+automation_controller_main_url = 'https://controller.example.com/'
  
 
 # Boolean flag used to verify Automation Controller's

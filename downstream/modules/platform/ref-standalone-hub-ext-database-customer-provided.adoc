@@ -14,7 +14,7 @@ This example does not have a host under the database group. This indicates to th
 [automationcontroller]
 
 [automationhub]
-automationhub.acme.org
+automationhub.example.com
 
 [database]
 
@@ -25,7 +25,7 @@ registry_password='<registry password>'
 
 automationhub_admin_password= <PASSWORD>
 
-automationhub_pg_host='data.acme.org'
+automationhub_pg_host='data.example.com'
 automationhub_pg_port='5432'
 
 automationhub_pg_database='automationhub'
