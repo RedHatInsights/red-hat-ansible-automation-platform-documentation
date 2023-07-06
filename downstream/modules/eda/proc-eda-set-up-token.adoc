@@ -1,4 +1,4 @@
-[id="proc-eda-set-up-token"]
+[id="eda-set-up-token"]
 
 = Setting up a token to authenticate to {PlatformNameShort} Controller
 
@@ -21,7 +21,13 @@
 +
 Name:: Insert the name.
 Description:: This field is optional.
-Token::
+Token:: Create the token in {ControllerName}. 
+For more information on creating the token, refer to the link:https://docs.ansible.com/automation-controller/latest/html/userguide/users.html#users-tokens[Users - Tokens] section of the Automation controller User Guide.
++
+[NOTE]
+====
+The token must be in write-scope.
+====
 . Select btn:[Create controller token].
 
 After saving the new token, you are brought to the *Controller Tokens* tab where you can delete the token.

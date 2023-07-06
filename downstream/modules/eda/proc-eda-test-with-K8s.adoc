@@ -1,4 +1,4 @@
-[id="proc-eda-test-with-K8s"]
+[id="eda-test-with-K8s"]
 
 = Testing with Kubernetes
 

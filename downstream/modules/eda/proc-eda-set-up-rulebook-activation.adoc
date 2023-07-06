@@ -1,4 +1,4 @@
-[id="proc-eda-set-up-rulebook-activation"]
+[id="eda-set-up-rulebook-activation"]
 
 = Setting up a rulebook activation
 
