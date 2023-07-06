@@ -12,7 +12,7 @@ include::eda/con-rulebook-actions.adoc[leveloffset=+1]
 [role="_additional-resources"]
 .Additional resources
 * For more information on using rulebooks, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/event-driven_ansible_controller_user_guide/index[Event-Driven Ansible controller User's Guide].
-* For more detailed information on Ansible rulebooks, see the section on link:https://ansible-rulebook.readthedocs.io/en/stable/rulebooks.html[Rulebooks] in the link:https://ansible-rulebook.readthedocs.io/en/latest/[Ansible Rulebook documentation]. 
+* For more detailed information on Ansible rulebooks, see the section on link:https://ansible.readthedocs.io/projects/rulebook/en/stable/rulebooks.html[Rulebooks] in the link:https://ansible.readthedocs.io/projects/rulebook/en/latest/[Ansible Rulebook documentation]. 
 
 
 

@@ -31,5 +31,5 @@ You can now type the number next to the plays and tasks to step into each to rev
 [role="_additional-resources"]
 .Additional resources
 
-* https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook].
-* https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html[Introduction to Ansible playbooks].
+* link:https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook]
+* link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html[Ansible playbooks]

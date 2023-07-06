@@ -23,4 +23,4 @@ image::security-lab-environment.png[Simplified security lab environment]
 [role="_additional-resources"]
 .Additional resources
 
-For more information on Ansible roles, see https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#roles[roles] on docs.ansible.com.
+For more information on Ansible roles, see link:./modules/security/con-automating-firewall-rules.adoc:26:https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#roles[roles] on docs.ansible.com.
