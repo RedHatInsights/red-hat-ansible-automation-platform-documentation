@@ -1,13 +1,13 @@
 [id="eda-restart-rulebook-activations"]
 
-== Restart rulebook activations
+= Restart rulebook activations
 
 [NOTE]
 ====
 You can only restart a rulebook activation if it is currently enabled and the restart policy was set to *Always* when it was created.
 ====
 
-. Click the btn:[More Actions] icon *{MoreActionsIcon}* next to *Rulebook Activation enabled/disabled* switch.
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* next to *Rulebook Activation enabled/disabled* toggle.
 . Select btn:[Restart rulebook activation].
 . In the popup window, select btn:[Yes, I confirm that I want to restart these X rulebook activations].
 . Select btn:[Restart rulebook activations].

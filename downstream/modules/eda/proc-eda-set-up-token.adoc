@@ -21,7 +21,7 @@
 +
 Name:: Insert the name.
 Description:: This field is optional.
-Token:: Create the token in Automation controller. 
+Token:: Create the token in {ControllerName}. 
 For more information on creating the token, refer to the link:https://docs.ansible.com/automation-controller/latest/html/userguide/users.html#users-tokens[Users - Tokens] section of the Automation controller User Guide.
 +
 [NOTE]
