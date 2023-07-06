@@ -1,4 +1,4 @@
-[id="proc-eda-enable-rulebook-activations"]
+[id="eda-enable-rulebook-activations"]
 
 == Enable and disable rulebook activations
 

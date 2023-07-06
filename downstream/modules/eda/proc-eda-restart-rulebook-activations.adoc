@@ -1,4 +1,4 @@
-[id="proc-eda-restart-rulebook-activations"]
+[id="eda-restart-rulebook-activations"]
 
 == Restart rulebook activations
 

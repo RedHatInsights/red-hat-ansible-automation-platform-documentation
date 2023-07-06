@@ -1,4 +1,4 @@
-[id="proc-eda-set-up-new-decision-environment"]
+[id="eda-set-up-new-decision-environment"]
 
 = Setting up a new decision environment
 
