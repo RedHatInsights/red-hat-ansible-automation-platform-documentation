@@ -1,4 +1,4 @@
-[id="proc-eda-activate-webhook"]
+[id="eda-activate-webhook"]
 
 = Activating webhook rulebooks
 

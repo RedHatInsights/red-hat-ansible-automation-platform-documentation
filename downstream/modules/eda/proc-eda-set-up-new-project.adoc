@@ -1,4 +1,4 @@
-[id="proc-eda-set-up-new-project"]
+[id="eda-set-up-new-project"]
 
 = Setting up a new project
 
