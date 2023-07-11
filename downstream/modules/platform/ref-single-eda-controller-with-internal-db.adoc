@@ -35,32 +35,6 @@ automation_controller_main_url = 'https://controller.example.com/'
 #
 automationedacontroller_controller_verify_ssl = true
 
-# SSL-related variables
-
-# If set, this will install a custom CA certificate to the system trust store.
-# custom_ca_cert=/path/to/ca.crt
-
-# Certificate and key to install in nginx for the web UI and API
-# web_server_ssl_cert=/path/to/tower.cert
-# web_server_ssl_key=/path/to/tower.key
-
-# Certificate and key to install in Automation Hub node
-# automationhub_ssl_cert=/path/to/automationhub.cert
-# automationhub_ssl_key=/path/to/automationhub.key
-
-# Server-side SSL settings for PostgreSQL (when we are installing it).
-# postgres_use_ssl=False
-# postgres_ssl_cert=/path/to/pgsql.crt
-# postgres_ssl_key=/path/to/pgsql.key
-
-# Keystore file to install in SSO node
-# sso_custom_keystore_file='/path/to/sso.jks'
-
-# The default install will deploy SSO with sso_use_https=True
-# Keystore password is required for https enabled SSO
-sso_keystore_password=''
-
-
 -----
 [role="_additional-resources"]
 .Additional resources
