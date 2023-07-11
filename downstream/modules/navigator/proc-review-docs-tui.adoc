@@ -86,5 +86,6 @@ See xref:ref-navigator-general-settings_settings-navigator[Automation content na
 [role="_additional-resources"]
 .Additional resources
 
-* https://docs.ansible.com/ansible/latest/cli/ansible-collection.html[ansible-collection].
-* https://docs.ansible.com/ansible/latest/user_guide/intro_collection.html[Introduction to Ansible inventories].
+* link:https://docs.ansible.com/ansible/latest/collections/index.html[Collection index]
+* link:https://docs.ansible.com/ansible/latest/collections_guide/index.html[Using Ansible collections]
+* link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html[Building Ansible inventories]

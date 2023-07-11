@@ -3,4 +3,6 @@
 
 This Red Hat Automation Analytics release includes the following features:
 
-* The *Job Explorer* provides a detailed view of jobs run on Ansible Tower clusters across your organizations. You can access the Job Explorer by directly clicking on the navigation tab or using the drill-down view available across each of the application’s charts. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.0/html-single/evaluating_your_ansible_tower_job_runs_using_the_job_explorer[Evaluating your Ansible Tower jobs runs using the Job Explorer] to learn more.
+* The *Job Explorer* provides a detailed view of jobs run on Ansible Tower clusters across your organizations.
+You can access the Job Explorer by directly clicking on the navigation tab or using the drill-down view available across each of the application’s charts.
+See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/evaluating_your_automation_controller_job_runs_using_the_job_explorer/index[Evaluating your {ControllerName} jobs runs using the Job Explorer] to learn more.

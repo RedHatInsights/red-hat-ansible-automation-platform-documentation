@@ -15,7 +15,7 @@ Red Hat offers go-to-market benefits for Certified Partners to grow market aware
 Red Hat {CertifiedName} are distributed through {HubNameMain} (subscription required), a centralized repository for jointly supported Ansible Content. 
 As a certified partner, publishing collections to {HubNameMain} provides end customers the power to manage how trusted automation content is used in their production environment with a well-known support life cycle.
 
-For more information about getting started with certifying a solution, see link:https://www.ansible.com/partners[Red Hat Partner Connect].
+For more information about getting started with certifying a solution, see link:https://connect.redhat.com/en/partner-with-us/red-hat-ansible-automation-certification[Red Hat Partner Connect].
 
 == How do I get a collection certified?
 
