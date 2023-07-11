@@ -13,7 +13,7 @@ You can create an API token using {HubName} *Token management*.
 
 .Procedure
 
-. Navigate to the link:https://cloud.redhat.com/ansible/automation-hub/token/[Red Hat Hybrid Cloud Console].
+. Navigate to link:https://console.redhat.com/ansible/automation-hub/token/[{PlatformNameShort} on the Red Hat Hybrid Cloud Console].
 . Select menu:Automation Hub[Connect to Hub]
 . Under *Offline token*, click btn:[Load Token].
 . Click btn:[copy] icon to copy the API token to the clipboard.

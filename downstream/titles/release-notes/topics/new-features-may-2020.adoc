@@ -3,5 +3,6 @@
 
 This Red Hat Automation Analytics release includes the following features:
 
-* *Automation Calculator* provides the ability to produce metrics and graphs that demonstrate the return on your automation investment. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.0/html-single/using_the_automation_calculator[Using the Automation Calculator] to learn more.
+* *Automation Calculator* provides the ability to produce metrics and graphs that demonstrate the return on your automation investment.
+See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/using_the_automation_calculator/index[Using the Automation Calculator] to learn more.
 * *Notifications* are now included in a dedicated view accessed from the navigation menu. 

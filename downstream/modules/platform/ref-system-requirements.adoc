@@ -37,12 +37,10 @@ The following are necessary for you to work with project updates and collections
 [NOTE]
 ====
 The requirements for systems managed by {PlatformNameShort} are the same as for Ansible.
-See link:https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html[Getting Started] in the Ansible _User Guide_.
+See link:https://docs.ansible.com/ansible/latest/getting_started/index.html[Getting started with Ansible] in the Ansible _User Guide_.
 ====
 
 .Additional notes for {PlatformName} requirements
-
-* The requirements for systems managed by {PlatformNameShort} are the same as for Ansible. See link:https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html[Getting Started] in the Ansible _User Guide_.
 
 * Although {PlatformName} depends on Ansible Playbooks and requires the installation of the latest stable version of Ansible before installing {ControllerName}, manual installations of Ansible are no longer required.
 
