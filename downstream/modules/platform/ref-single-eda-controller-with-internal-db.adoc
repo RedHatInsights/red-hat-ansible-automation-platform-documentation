@@ -14,6 +14,13 @@ Use this example to populate the inventory file to install {EDAcontroller}. This
 # Automation EDA Controller Configuration
 #
 
+[automationedacontroller]
+eda.example.com
+
+[database]
+
+[all:vars]
+
 automationedacontroller_admin_password='<eda-password>'
 
 automationedacontroller_pg_host=''
