@@ -78,7 +78,7 @@ Install {PrivateHubName} using the {PlatformNameShort} *Bundle* installer if you
 Access to Red Hat Enterprise Linux repositories is still needed.
 All other dependencies are included in the tar archive.
 
-. Navigate to link:https://access.redhat.com/downloads/content/480[Download Red Hat Ansible Automation Platform].
+. Navigate to link:{PlatformDownloadUrl}[Download {PlatformName}].
 . Click btn:[Download Now] for the *{PlatformNameShort} <latest-version> Setup Bundle*.
 . Extract the files:
 +
@@ -172,7 +172,7 @@ Your {PrivateHubName} is now ready for initial configuration. See the following 
 You can upgrade your {PrivateHubName} to the latest version using the {PlatformNameShort} setup bundle installer.
 Perform this upgrade using the `inventory` file configured when you installed {PrivateHubName}.
 
-. Navigate to link:https://access.redhat.com/downloads/content/480[Download Red Hat Ansible Automation Platform].
+. Navigate to link:{PlatformDownloadUrl}[Download {PlatformName}].
 . Click btn:[Download Now] for the *{PlatformNameShort} <latest-version> Setup Bundle*.
 . Extract the files:
 +

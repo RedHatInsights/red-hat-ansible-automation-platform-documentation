@@ -77,5 +77,5 @@ The `TAXONOMY` field details the hierarchy of groups the selected group or node 
 [role="_additional-resources"]
 .Additional resources
 
-* https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html[ansible-inventory].
-* https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html[Introduction to Ansible inventories].
+* link:https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html[ansible-inventory].
+* link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html[How to build your inventory].
