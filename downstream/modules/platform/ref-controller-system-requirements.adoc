@@ -74,8 +74,6 @@ All of these are great approaches to managing larger environments. For further q
 
 [role="_additional-resources"]
 .Additional resources
-////
-Optional. Delete if not used.
 
-////
 * link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription].
+
