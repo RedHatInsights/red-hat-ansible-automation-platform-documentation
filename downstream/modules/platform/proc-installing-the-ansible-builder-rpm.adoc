@@ -18,8 +18,9 @@ This is preferred if a Satellite exists because the EE images can leverage RHEL 
 . Unarchive the AAP setup bundle.
 . Install the ansible-builder RPM and its dependencies from the included content:
 +
+[source,options="nowrap",subs="+attributes"]
 ----
-$ tar -xzvf ansible-automation-platform-setup-bundle-2.4-1.tar.gz
+$ tar -xzvf ansible-automation-platform-setup-bundle-{AnsibleInstallVers}.tar.gz
 $ cd ansible-automation-platform-setup-bundle-2.4/bundle/el8/repos/
 $ sudo yum install ansible-builder-1.0.1-2.el8ap.noarch.rpm
 python38-requirements-parser-0.2.0-3.el8ap.noarch.rpm
@@ -198,32 +199,36 @@ To upgrade between minor releases of AAP 2, use this general workflow.
 
 . Run `./setup.sh` to upgrade the installation.
 
-For example, to upgrade from version 2.2.0-7 to 2.3-1.2, make sure that both setup bundles are on the initial controller node where the installation occurred:
+For example, to upgrade from version 2.2.0-7 to {AnsibleInstallVers}, make sure that both setup bundles are on the initial controller node where the installation occurred:
 
+[literal, options="nowrap" subs="+attributes"]
 ----
     $ ls -1F
 ansible-automation-platform-setup-bundle-2.2.0-7/
 ansible-automation-platform-setup-bundle-2.2.0-7.tar.gz
-ansible-automation-platform-setup-bundle-2.3-1.2/
-ansible-automation-platform-setup-bundle-2.3-1.2.tar.gz
+ansible-automation-platform-setup-bundle-{AnsibleInstallVers}/
+ansible-automation-platform-setup-bundle-{AnsibleInstallVers}.tar.gz
 ----
 
 Back up the 2.2.0-7 installation:
+[literal, options="nowrap" subs="+attributes"]
 ----
 $ cd ansible-automation-platform-setup-bundle-2.2.0-7
 $ sudo ./setup.sh -b
 $ cd ..
 ----
 
-Copy the 2.2.0-7 inventory file into the 2.3-1.2 bundle directory:
+Copy the 2.2.0-7 inventory file into the {AnsibleInstallVers} bundle directory:
+[literal, options="nowrap" subs="+attributes"]
 ----
 $ cd ansible-automation-platform-setup-bundle-2.2.0-7
-$ cp inventory ../ansible-automation-platform-setup-bundle-2.3-1.2/
+$ cp inventory ../ansible-automation-platform-setup-bundle-{AnsibleInstallVers}/
 $ cd ..
 ----
 
-Upgrade from 2.2.0-7 to 2.3-1.2 with the setup.sh script:
+Upgrade from 2.2.0-7 to {AnsibleInstallVers} with the setup.sh script:
+[literal, options="nowrap" subs="+attributes"]
 ----
-$ cd ansible-automation-platform-setup-bundle-2.3-1.2
+$ cd ansible-automation-platform-setup-bundle-{AnsibleInstallVers}
 $ sudo ./setup.sh
 ----
