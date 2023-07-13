@@ -1,16 +1,9 @@
-////
-Base the file name and the ID on the module title. For example:
-* file name: con-my-concept-module-a.adoc
-* ID: [id="con-my-concept-module-a_{context}"]
-* Title: = My concept module A
-////
 [id="con-about-firewall-policy-management_{context}"]
 
 = About firewall policy management
-////
+
 [role="_abstract"]
 Manage multiple firewall policies across various products and vendors with Ansible security automation.
-////
 
 An organization’s network firewall is the first line of defense against an attack and a vital component for maintaining a secure environment. As a security operator, you construct and manage secure networks to ensure that your firewall only allows inbound and outbound network traffic defined by your organization’s firewall policies. A firewall policy consists of security rules that protect the network against harmful incoming and outgoing traffic.
 
@@ -18,7 +11,3 @@ Managing multiple firewall rules across various products and vendors can be both
 
 Ansible security automation interacts with a wide variety of security technologies from a range of vendors. Ansible enables security teams to manage different products, interfaces, and workflows in a unified way to produce a successful deployment. For example, your security team can automate tasks such as blocking and unblocking IP and URLs on supported technologies such as enterprise firewalls.
 
-////
-[role="_additional-resources"]
-.Additional resources
-////
