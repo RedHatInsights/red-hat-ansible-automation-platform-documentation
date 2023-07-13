@@ -1,0 +1,63 @@
+[id="eda-build-a-custom-decision-environment"]
+
+= Building a custom decision environment for Event-Driven Ansible within Ansible Automation Platform
+
+Refer to this section if you need a custom decision environment to provide a custom maintained or third-party event source plugin that is not available in the default decision environment.
+
+== Environment
+
+* Ansible Automation Platform > = 2.4
+* Event-Driven Ansible
+* Ansible Builder > = 3.0
+
+== Procedure
+
+* Add the `de-supported` decision environment. This image is built from a base image provided by Red Hat called `de-minimal`. 
++
+[NOTE]
+====
+Red Hat recommends using de-minimal as the base image with Ansible Builder to build your custom decision environments.
+====
+
+The following is an example of the Ansible builder definition file using de-minimal as a base image to build a custom decision environment with the ansible.eda collection:
+-----
+version: 3
+
+images:
+  base_image:
+    name: 'registry.redhat.io/ansible-automation-platform-24/de-minimal-rhel8:latest'
+
+dependencies:
+  galaxy:
+    collections:
+      - ansible.eda
+  python_interpreter:
+    package_system: "python39"
+
+options:
+  package_manager_path: /usr/bin/microdnf
+-----
+
+Additionally, if other python packages or RPM are needed, you can add the following to a single definition file:
+-----
+version: 3
+
+images:
+  base_image:
+    name: 'registry.redhat.io/ansible-automation-platform-24/de-minimal-rhel8:latest'
+
+dependencies:
+  galaxy:
+    collections:
+      - ansible.eda
+  python:
+    - six
+    - psutil
+  system:
+    - iputils [platform:rpm]
+  python_interpreter:
+    package_system: "python39"
+
+options:
+  package_manager_path: /usr/bin/microdnf
+-----
