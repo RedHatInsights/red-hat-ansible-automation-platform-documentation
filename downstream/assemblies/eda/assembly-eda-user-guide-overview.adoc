@@ -13,6 +13,7 @@ The following procedures form the user configuration:
 
 include::eda/proc-eda-set-up-new-project.adoc[leveloffset=-0]
 include::eda/proc-eda-set-up-new-decision-environment.adoc[leveloffset=-0]
+include::eda/proc-eda-build-a-custom-decision-environment.adoc[leveloffset=+1]
 include::eda/proc-eda-set-up-token.adoc[leveloffset=-0]
 include::eda/proc-eda-set-up-rulebook-activation.adoc[leveloffset=-0]
 include::eda/proc-eda-enable-rulebook-activations.adoc[leveloffset=+1]
