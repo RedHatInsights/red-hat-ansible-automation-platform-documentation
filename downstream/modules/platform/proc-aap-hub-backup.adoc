@@ -18,7 +18,8 @@ Use this procedure to back up a deployment of the hub, including all hosted Ansi
 . Select the *Automation Hub Backup* tab.
 . Click btn:[Create AutomationHubBackup].
 . Enter a *Name* for the backup.
-. Enter the *Deployment name* for the deployment being backed up.
+. Enter the *Deployment name* of the deployed {PlatformNameShort} instance being backed up. 
+For example, if your {HubName} must be backed up and the deployment name is `aap-hub`, enter 'aap-hub' in the *Deployment name* field.
 . If you want to use a custom, pre-created pvc:
 .. Optionally, enter the name of the *Backup persistent volume claim*, *Backup persistent volume claim namespace*, *Backup PVC storage requirements*, and *Backup PVC storage class*.
 . Click btn:[Create].

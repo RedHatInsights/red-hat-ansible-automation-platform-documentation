@@ -18,7 +18,8 @@ Use this procedure to back up a deployment of the controller, including jobs, in
 . Select the *Automation Controller Backup* tab.
 . Click btn:[Create AutomationControllerBackup].
 . Enter a *Name* for the backup.
-. Enter the *Deployment name* for the deployment being backed up.
+. Enter the *Deployment name* of the deployed {PlatformNameShort} instance being backed up. 
+For example, if your {ControllerName} must be backed up and the deployment name is `aap-controller`, enter 'aap-controller' in the *Deployment name* field.
 . If you want to use a custom, pre-created pvc:
 .. Optionally enter the name of the *Backup persistant volume claim*.
 .. Optionally enter the *Backup PVC storage requirements*, and *Backup PVC storage class*.
