@@ -13,8 +13,7 @@
 * Browse and introspect {ExecEnvName}.
 * Browse your file-based inventory.
 * Render Ansible module documentation and extract examples you can use in your playbooks.
-
-You cannot execute Ansible commands that are part of Ansible core, such as `ansible-playbook`, in containers such as {ExecEnvName}. Use {Navigator} which includes a set of the Ansible CLI commands that are compatible with {ExecEnvName}. {Navigator} also includes a more detailed output within its text-based user interface.
+* View a detailed command output on the user interface.
 
 //// 
 comment outfor now:
