@@ -1,5 +1,7 @@
+// This is the release notes for Automation Controller 4.3 for AAP 2.3 release, the version number is removed from the topic title as part of the release notes restructuring efforts.
+
 [[controller-430-intro]]
-= Automation Controller 4.3
+= Automation Controller
 
 Automation controller replaces Ansible Tower.
 Automation controller introduces a distributed, modular architecture with a decoupled control and execution plane.
@@ -7,7 +9,7 @@ The name change reflects these enhancements and the overall position within the 
 
 Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.
 
-.Enhancements
+== Enhancements
 
 * Fixed the Ansible Galaxy Credential to no longer be automatically created or added to organizations after removing it manually.
 * Fixed an issue where warnings were being unnecessarily displayed.
@@ -21,4 +23,4 @@ Automation controller provides a standardized way to define, operate and delegat
 * Introduced a content signing utility through the Command Line Interface called `ansible-sign` that provides options for the user to sign and verify whether the project is signed.
 * Added project or playbook signature verification functionality to controller, enabling users to supply a GPG key and add a content signing credential to a project. This automatically enables content signing for said project.
 
-See link:https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[automation controller Release Notes for 4.x] for a full list of new features and enhancements.
+See link:https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[Automation Controller Release Notes for 4.x] for a full list of new features and enhancements.

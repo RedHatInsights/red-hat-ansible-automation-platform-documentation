@@ -3,7 +3,7 @@
 
 Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
 
-.Enhancements
+== Enhancements
 
 * Fixed a race condition where the UI would not properly populate upon launch.
 * Fixed an issue where puppet managed files are not handled properly by the set-up script.
@@ -17,7 +17,11 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 * Updated internal FieldAttribute classes to act as Python data descriptors to reduce code complexity and use of metaclasses.
 * Fixed an issue when ansible-runner was not properly removed from hybrid nodes when upgrading to Ansible Automation Platform 2.2.
 
-.Technology preview features
+== Technology preview features
+
+Some features in this release are currently classified as Technology Preview. Technology Preview features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. Please note that Red Hat does not recommend using technology preview features for production, and Red Hat SLAs do not support technology preview functions.
+
+The following are the technology preview features:
 
 * Added the ability to use external execution nodes when running AAP as a managed service in Azure.
 * Added the ability to use external execution nodes when running the AAP Operator in Openshift.
@@ -35,5 +39,8 @@ Other noteworthy developer tooling updates include the following:
 [role="_additional-resources"]
 .Additional resources
 
-* xref:technology-preview[What is a Technology Preview feature]
+* For the most recent list of technology preview features, see link:https://access.redhat.com/articles/ansible-automation-platform-preview-features[Ansible Automation Platform - Preview Features].
+
+* For more information about support for technology preview features, see link:https://access.redhat.com/support/offerings/techpreview[Red Hat Technology Preview Features Support Scope].
+
 * For information regarding execution node enhancements on Openshift deployments, see link:https://docs.ansible.com/automation-controller/latest/html/administration/instances.html[Managing Capacity With Instances].
