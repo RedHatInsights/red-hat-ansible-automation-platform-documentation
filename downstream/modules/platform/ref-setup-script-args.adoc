@@ -14,7 +14,12 @@ You can also pass flags and extra variables when running the setup script to ins
 |`-e EXTRA_VARS`|Set additional Ansible variables as key=value or YAML/JSON
 |`-b`|Perform a database backup in lieu of installing
 |`-r`|Perform a database restore in lieu of installing
-|`-k`|Generate *and* dsitribute a SECRET_KEY
+|`-k`|Generate *and* distribute a SECRET_KEY. 
+
+When you execute the setup.sh script using this argument, by default, a new secret key is generated and distributed for the automation controller but not for the automation services catalog. 
+
+To generate and distribute a new secret key for both the automation controller and the automation services catalog, specify the variable `rekey_catalog: true`. 
+
 |====
 
 Use the `--` separator to add any Ansible arguments you wish to apply. For example: `./setup.sh -i my_awesome_inventory.yml -e matburt_is_country_gold=True -- -K`.
@@ -49,6 +54,7 @@ $ ./setup.sh -e bundle_install=false
 |`required_ram`|The minimum RAM required to install Tower (should only be changed for test installation)|`3750`
 |`min_open_fds`|The minimum open file descriptions (should only be changed for test installations)|None
 |`ignore_preflight_errors`|Ignore preflight checks, useful when installing into a template or other non-system image (overrides `required_ram` and `min_open_fds`)|`False`
+|`rekey_catalog: true`|When you execute the `setup.sh` script using this variable, by default, a new secret key is generated and distributed for both the automation controller and the automation services catalog.|`False`
 |====
 
 .Examples
