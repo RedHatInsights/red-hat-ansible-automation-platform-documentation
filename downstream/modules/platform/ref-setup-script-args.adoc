@@ -54,7 +54,7 @@ $ ./setup.sh -e bundle_install=false
 |`required_ram`|The minimum RAM required to install Tower (should only be changed for test installation)|`3750`
 |`min_open_fds`|The minimum open file descriptions (should only be changed for test installations)|None
 |`ignore_preflight_errors`|Ignore preflight checks, useful when installing into a template or other non-system image (overrides `required_ram` and `min_open_fds`)|`False`
-|`rekey_catalog: true`|When you execute the `setup.sh` script using this variable, by default, a new secret key is generated and distributed for both the automation controller and the automation services catalog.|`False`
+|`rekey_catalog`|When you execute the `setup.sh` script using this variable set to `true`, by default, a new secret key is generated and distributed for both the automation controller and the automation services catalog.|`False`
 |====
 
 .Examples
