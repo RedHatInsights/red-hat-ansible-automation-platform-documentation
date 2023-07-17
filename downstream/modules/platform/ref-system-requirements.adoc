@@ -151,7 +151,7 @@ h| Disk: service node | 60 GB dedicated hard disk space |
 
 * Storage volume should be rated for a minimum baseline of 1500 IOPS.
 
-|Disk: Database node| Required | Notes
+|Database node| Required | Notes
 
 h| RAM | 16 GB  |
 
