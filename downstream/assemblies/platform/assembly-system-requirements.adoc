@@ -7,6 +7,11 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 Use this information when planning your {PlatformName} installations and designing {AutomationMesh} topologies that fit your use case.
 
+.Prerequisites
+
+* You must be able to obtain root access either through the `sudo` command, or through privilege escalation. For more on privilege escalation see link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_privilege_escalation.html[Understanding Privilege Escalation].
+* You must be able to de-escalate privileges from root to users such as: AWX, PostgreSQL, EDA, or Pulp.
+
 include::platform/ref-system-requirements.adoc[leveloffset=+1]
 include::platform/ref-controller-system-requirements.adoc[leveloffset=+1]
 include::platform/ref-automation-hub-requirements.adoc[leveloffset=+1]
