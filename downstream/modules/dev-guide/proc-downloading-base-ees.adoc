@@ -18,7 +18,7 @@ Base images that ship with AAP 2.0 are hosted on the Red Hat Ecosystem Catalog (
 . Log in to registry.redhat.io
 +
 -----
-$ podman login registry.redhat.com
+$ podman login registry.redhat.io
 -----
 +
 . Pull the base images from the registry
