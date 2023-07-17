@@ -100,7 +100,7 @@ h| Disk: service node | 40 GB dedicated hard disk space |
 * Storage volume should be rated for a minimum baseline of 1500 IOPS.
 * Projects are stored on control and hybrid, and for the duration of jobs, also on execution nodes. If the cluster has many large projects, consider having twice the GB in /var/lib/awx/projects, to avoid disk space errors.
 
-|Disk: Database node| Required | Notes
+|Database node| Required | Notes
 
 h| RAM | 16 GB  |
 
