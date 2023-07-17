@@ -1,11 +1,13 @@
 ifdef::context[:parent-context: {context}]
 
 [id="repo-management"]
-= Repository management
+= Repository management with {HubName}
 
 :context: repo-management
 
 [role="_abstract"]
+With repository management, you can create, edit, delete, and move content between repositories.
+
 {HubNameStart} includes two types of repositories where you can publish content:
 
 Staging repositories:: Any user with permission to upload for a namespace can publish content into these repositories. Content in these repositories are not available in the search page, but rather, are displayed on the approval dashboard for an administrator to verify.
@@ -16,6 +18,11 @@ Staging repositories are marked with the `pipeline=staging` label. By default, {
 
 include::automation-hub/con-approval-pipeline.adoc[leveloffset=+1]
 include::automation-hub/con-repo-rbac.adoc[leveloffset=+1]
+include::automation-hub/proc-create-repository.adoc[leveloffset=+1]
+include::automation-hub/proc-provide-repository-access.adoc[leveloffset=+1]
+include::automation-hub/proc-adding-collections-repository.adoc[leveloffset=+1]
+include::automation-hub/proc-revert-repository-version.adoc[leveloffset=+1]
+
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

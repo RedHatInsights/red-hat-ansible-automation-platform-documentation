@@ -1,7 +1,7 @@
 ifdef::context[:parent-context: {context}]
 
 [id="repository-sync"]
-= Repository sync
+= Synchronizing repositories in {HubName}
 
 :context: repository-sync
 

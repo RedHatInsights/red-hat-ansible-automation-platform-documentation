@@ -10,10 +10,7 @@ Repository management is included with Red Hat {HubName}. It allows you to creat
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
-
 include::hub/assembly-repo-management.adoc[leveloffset=+1]
-include::hub/assembly-basic-repo-management.adoc[leveloffset=+2]
 include::hub/assembly-remote-management.adoc[leveloffset=+1]
-include::hub/assembly-basic-remote-management.adoc[leveloffset=+2]
 include::hub/assembly-repo-sync.adoc[leveloffset=+1]
 include::hub/assembly-collection-import-export.adoc[leveloffset=+1]

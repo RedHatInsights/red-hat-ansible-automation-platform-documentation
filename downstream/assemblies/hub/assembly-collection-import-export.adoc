@@ -1,7 +1,7 @@
 ifdef::context[:parent-context: {context}]
 
 [id="export-import-collections"]
-= Exporting and importing collections
+= Exporting and importing collections in {HubName}
 
 :context: export-import
 

@@ -3,9 +3,9 @@
 
 [id="proc-import-collection"]
 
-= Import a collection
+= Importing a collection in {HubName}
 
-To import a collection for use in a custom repository, it must be imported into your namespace and approved. If the collection is not approved, it is not displayed in the published repository.
+You can import a collection for use in a custom repository. Collections must be imported into your namespace and approved.
 
 .Procedure
 . Log in to {PlatformName}.
@@ -19,5 +19,9 @@ The My Imports screen provides a summary of tests and notifies you whether the c
 +
 [NOTE]
 ====
-The collection must be approved before it can be added to your repository. See xref:con-approval-pipeline[Approval pipeline] for more information about collection and repository approvals.
+If the collection is not approved, it is not displayed in the published repository.
 ====
+
+[role="_additional-resources"]
+.Additional resources
+* See xref:con-approval-pipeline[Approval pipeline] for more information about collection and repository approvals.

@@ -3,7 +3,7 @@
 
 [id="proc-provide-repository-access"]
 
-= Provide access to a repository
+= Providing access to a custom repository
 
 By default, private repositories and the content are hidden from all users in the system. Public repositories can be viewed by all users, but cannot be modified. Use this procedure to provide access to your custom repository.
 
