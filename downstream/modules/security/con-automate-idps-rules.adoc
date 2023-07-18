@@ -1,18 +1,6 @@
-////
-Base the file name and the ID on the module title. For example:
-* file name: con-my-concept-module-a.adoc
-* ID: [id="con-my-concept-module-a_{context}"]
-* Title: = My concept module A
-////
-
 [id="con-automate-ids-rules_{context}"]
 
 = Automating your IDPS rules with Ansible
-
-////
-[role="_abstract"]
-Write a short introductory paragraph that provides an overview of the module. The text that immediately follows the `[role="_abstract"]` tag is used for search metadata.
-////
 
 To automate your IDPS, use the `ids_rule` role to create and change Snort rules. Snort uses rule-based language that analyzes your network traffic and compares it against the given rule set.
 
@@ -22,8 +10,3 @@ Keep in mind that a real world setup will feature other vendors and technologies
 
 image::security-ids-sample-demo.png[Sample Ansible security automation integration]
 
-[role="_additional-resources"]
-.Additional resources
-////
-Optional. Delete if not used.
-////
