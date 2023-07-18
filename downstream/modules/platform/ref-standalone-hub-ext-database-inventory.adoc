@@ -19,7 +19,7 @@ This example describes how you can populate the inventory file to deploy a stand
 
 
 [automationhub]
-127.0.0.1 ansible_connection=local
+<FQDN> ansible_connection=local
 
 [database]
 host2
