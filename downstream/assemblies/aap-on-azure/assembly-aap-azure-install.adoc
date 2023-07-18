@@ -5,9 +5,6 @@ ifdef::context[:parent-context: {context}]
 
 :context: aap-azure-install
 
-// [role="_abstract"]
-// You can use these instructions to install 
-
 == Prerequisites
 
 .Azure requirements
@@ -35,16 +32,6 @@ include::aap-on-azure/proc-azure-accessing-aap.adoc[leveloffset=+1]
 include::aap-on-azure/proc-azure-license-association.adoc[leveloffset=+2]
 include::aap-on-azure/proc-azure-configure-ad-sso.adoc[leveloffset=+2]
 // include::aap-on-azure/[leveloffset=+2]
-
-////
-[role="_additional-resources"]
-.Additional resources
-
-* A bulleted list of links to other material closely related to the contents of the concept module.
-* Currently, modules cannot include xrefs, so you cannot include links to other content in your collection. If you need to link to another assembly, add the xref to the assembly that includes this module.
-* For more details on writing concept modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-////
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

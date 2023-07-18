@@ -1,9 +1,3 @@
-////
-Base the file name and the ID on the module title. For example:
-* file name: con-my-concept-module-a.adoc
-* ID: [id="con-my-concept-module-a_{context}"]
-* Title: = My concept module A
-////
 [id="con-about-firewall-policy-management_{context}"]
 
 = About firewall policy management
@@ -18,7 +12,3 @@ Managing multiple firewall rules across various products and vendors can be both
 
 Ansible security automation interacts with a wide variety of security technologies from a range of vendors. Ansible enables security teams to manage different products, interfaces, and workflows in a unified way to produce a successful deployment. For example, your security team can automate tasks such as blocking and unblocking IP and URLs on supported technologies such as enterprise firewalls.
 
-////
-[role="_additional-resources"]
-.Additional resources
-////
