@@ -5,7 +5,7 @@
 [cols="50%,50%",options="header"]
 |====
 | *Variable* | *Description* 
-| *`automationedacontroller_admin_password`* | The admin password used by the EDA controller
+| *`automationedacontroller_admin_password`* | The admin password used by the {EdaController} instance.
 
 | *`automationedacontroller_admin_username`* | Username used by django to identify and create the admin superuser in {EDAcontroller}.
 
@@ -45,7 +45,7 @@ Default = (# of cores or threads) * 2 + 1
 | *`automationedacontroller_pg_port`* | The port number of the postgres database used by {EDAController}.
 
 Default = `5432`
-| *`automationedacontroller_rq_workers`* | Number of rq workers used by {EDAcontroller}.
+| *`automationedacontroller_rq_workers`* | Number of rq workers (Python processes that run in the background) used by {EDAcontroller}.
 
 Default =  (# of cores or threads) * 2 + 1
 |====
