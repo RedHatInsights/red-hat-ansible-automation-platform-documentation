@@ -41,7 +41,7 @@ Default = `false`
 Default = (# of cores or threads) * 2 + 1
 | *`automationedacontroller_pg_database`* | The postgres database used by {EDAController.}
 
-Default = `awx`.
+Default = `automtionedacontroller`.
 | *`automationnedacontroller_pg_host`* | The hostname of the postgres database used by {EDAController}, which can be an externally managed database.
 | *`automationedacontroller_pg_password`* | The password for the postgres database used by {EDAController}.
 
@@ -52,7 +52,7 @@ They can cause the password to fail.
 Default = `5432`.
 | *`automationedacontroller_pg_username`* | The username for yout {EDAController} postgres database.
 
-Default = `awx`.
+Default = `automationedacontroller`.
 | *`automationedacontroller_rq_workers`* | Number of rq workers (Python processes that run in the background) used by {EDAcontroller}.
 
 Default =  (# of cores or threads) * 2 + 1
