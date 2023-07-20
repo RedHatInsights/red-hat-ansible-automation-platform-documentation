@@ -119,6 +119,10 @@ The database name.
 
 Default = `automationhub`
 | *`automationhub_pg_host`* | Required if not using internal database.
+
+The hostname of the remote postgres database used by {HubName}
+
+Default = `127.0.0.1`
 | *`automationhub_pg_password`* | The password for the {HubName} PostgreSQL database.
 
 Do not use special characters for `automationhub_pg_password`. 
