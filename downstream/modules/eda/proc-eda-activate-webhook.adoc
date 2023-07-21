@@ -4,7 +4,7 @@
 
 In Openshift environments, you can allow webhooks to reach an activation-job-pod over a given port by creating a Route that exposes that rulebook activation's Kubernetes service.
 
-== Prerequisites
+.Prerequisites
 
 * You have created a rulebook activation in the {EDAcontroller} Dashboard.
 
@@ -32,7 +32,7 @@ The following is an example of rulebook with a given webhook:
 -----
 ====
 
-== Procedure
+.Procedure
 
 . Create a Route (on OpenShift Container Platform) to expose the service. 
 The following is an example Route for an ansible-rulebook source that expects POST's on port 5000 on the decision environment pod:

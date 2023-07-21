@@ -5,13 +5,13 @@
 {ControllerNameStart} must contain a project based on a repository with certain playbooks designed to work with the {EDAName} rulebooks. 
 {ControllerNameStart} must also have corresponding job templates set up based on the playbooks in that project.
 
-== Prerequisites
+.Prerequisites
 
 * You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
 * You have created a user.
 * You can log in to the {EDAcontroller} Dashboard or you are added as a user in the organization.
 
-== Procedure
+.Procedure
 
 . Navigate to the {EDAcontroller} Dashboard.
 . From the top navigation panel, select your profile.

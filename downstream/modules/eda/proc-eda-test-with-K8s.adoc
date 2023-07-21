@@ -4,7 +4,7 @@
 
 With Kubernetes you can create an Ingress, or expose the port, but not for production.
 
-== Procedure
+.Procedure
 
 . Run the following command to expose the port on the cluster for a given service:
 +

@@ -6,7 +6,7 @@
 
 Projects are a logical collection of rulebooks.
 
-== Prerequisites
+.Prerequisites
 
 * You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
 * You have set up a credential, if necessary. 
@@ -14,7 +14,7 @@ For more information, refer to the link:https://docs.ansible.com/automation-cont
 section of the {ControllerName} documentation.
 * You have an existing repository containing rulebooks that are integrated with playbooks contained in a repository to be used by {ControllerName}.
 
-== Procedure
+.Procedure
 
 . Log in to the {EDAcontroller} Dashboard.
 . From the navigation panel, select menu:Projects[Create project].

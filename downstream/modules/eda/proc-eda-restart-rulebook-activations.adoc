@@ -1,6 +1,6 @@
 [id="eda-restart-rulebook-activations"]
 
-= Restart rulebook activations
+= Restarting rulebook activations
 
 [NOTE]
 ====
