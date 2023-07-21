@@ -5,19 +5,19 @@ Configure Red Hat automation hub as your primary source of content to access Ans
 
 == Configuring Red Hat automation hub as the primary source for content using the CLI
 
-Configure Red Hat automation hub as your primary source of content by using the CLI. To configure automation hub, you must modify the `ansible.cfg` configuration file. With automation hub, you have access to certified, supported collections.
+Configure Red Hat automation hub as your primary source of content by using the CLI. To configure automation hub, you must modify the `ansible.cfg` configuration file. By default, the `ansible.cfg` configuration file is located in the `/etc/ansible/` directory. With automation hub, you have access to certified, supported collections.
 
 .Prerequisites
 
 * You have obtained the API token for the {HubName} server. See xref:proc-create-api-token[Creating the Red Hat {HubName} API token] for more information.
 [IMPORTANT]
 ====
-	Creating a new token revokes any previous tokens 
-	generated for Private Automation Hub. Ensure that you update any Controller or scripts that you created with the previous token.
+Creating a new token revokes any previous tokens generated for Private Automation Hub. Ensure that you update any Controller or scripts that you created with the previous token.
 ====
 
 .Procedure
 
+. Open the `ansible.cfg` file.
 . Add the `server_list` option under the `[galaxy]` section and provide one or more server names.
 . Create a new section for each server name:
 +
