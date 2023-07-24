@@ -1,6 +1,0 @@
-[id="proc-azure-proc-azure-deploy-aap_{context}"]
-
-= Deploying {PlatformNameShort} from Azure Marketplace
-
-// [role="_abstract"]
-

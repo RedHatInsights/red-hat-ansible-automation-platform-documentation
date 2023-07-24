@@ -1,6 +1,0 @@
-[id="con-aap-azure-migration_{context}"]
-
-= Migration
-
-Red Hat does not provide a solution to migrate existing deployments to {AAPonAzureNameShort}.
-
