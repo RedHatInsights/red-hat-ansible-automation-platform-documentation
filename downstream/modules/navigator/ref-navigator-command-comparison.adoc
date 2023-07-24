@@ -8,7 +8,7 @@ The {Navigator} commands run familiar Ansible CLI commands in `-m stdout` mode. 
 .Comparison of {Navigator} and Ansible CLI commands
 [options="header"]
 |====
-|Ansible navigator command|Ansible CLI command
+|{Navigator} command|Ansible CLI command
 |`ansible-navigator collections`|`ansible-galaxy collection`
 |`ansible-navigator config`|`ansible-config`
 |`ansible-navigator doc`|`ansible-doc`
