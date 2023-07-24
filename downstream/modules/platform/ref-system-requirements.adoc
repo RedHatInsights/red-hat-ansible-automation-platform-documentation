@@ -53,7 +53,7 @@ On all nodes except hop nodes, allocate a minimum of 20 GB to `/var/lib/awx` for
 
 
 
-| Execution nodes| Required | Notes
+| *Execution nodes*| *Required* | *Notes*
 
 h| RAM | 16 GB  |
 
@@ -64,7 +64,7 @@ h| CPUs | 4|
 
 
 
-|Control nodes | Required | Notes
+|*Control nodes* | *Required* | *Notes*
 
 h| RAM | 16 GB  |
 
@@ -75,7 +75,7 @@ h| CPUs | 4|
 
 
 
-| Hybrid nodes| Required | Notes
+| *Hybrid nodes*| *Required* | *Notes*
 
 h| RAM | 16 GB  |
 
@@ -85,7 +85,7 @@ h| CPUs | 4|
 
 
 
-|Hop nodes| Required | Notes
+|*Hop nodes*| *Required* | *Notes*
 
 h| RAM | 16 GB  |
 
@@ -100,10 +100,20 @@ h| Disk: service node | 40 GB dedicated hard disk space |
 * Storage volume should be rated for a minimum baseline of 1500 IOPS.
 * Projects are stored on control and hybrid, and for the duration of jobs, also on execution nodes. If the cluster has many large projects, consider having twice the GB in /var/lib/awx/projects, to avoid disk space errors.
 
-h| Disk: database node| 20 GB dedicated hard disk space |
+|*Database node*| *Required* | *Notes*
 
+h| RAM | 16 GB  |
+
+
+h| CPUs | 4|
+
+h| Disk | 20 GB dedicated hard disk space|
+
+* Minimum dedicated hard disk space is 20 GB
 * 150 GB+ recommended
 * Storage volume should be rated for a high baseline IOPS (1500 or more).
+
+
 
 
 
@@ -146,8 +156,16 @@ h| Disk: service node | 60 GB dedicated hard disk space |
 
 * Storage volume should be rated for a minimum baseline of 1500 IOPS.
 
-h| Disk: database node| 20 GB dedicated hard disk space |
+|*Database node*| *Required* | *Notes*
 
+h| RAM | 16 GB  |
+
+
+h| CPUs | 4|
+
+h| Disk | 20 GB dedicated hard disk space|
+
+* Minimum dedicated hard disk space is 20 GB
 * 150 GB+ recommended
 * Storage volume should be rated for a high baseline IOPS (1500 or more).
 
