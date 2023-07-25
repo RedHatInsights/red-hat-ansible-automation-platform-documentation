@@ -21,8 +21,8 @@ This is preferred if a Satellite exists because the EE images can leverage RHEL 
 ----
 $ tar -xzvf ansible-automation-platform-setup-bundle-2.3-1.2.tar.gz
 $ cd ansible-automation-platform-setup-bundle-2.3-1.2/bundle/el8/repos/
-$ sudo yum install ansible-builder-1.0.1-2.el8ap.noarch.rpm
-python38-requirements-parser-0.2.0-3.el8ap.noarch.rpm
+$ sudo yum install ansible-builder-1.2.0-1.el9ap.noarch.rpm
+python38-requirements-parser-0.2.0-4.el9ap.noarch.rpm
 ----
 +
 . Create a directory for your custom EE build artifacts.
