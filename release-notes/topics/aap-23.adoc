@@ -19,7 +19,7 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 == Technology preview features
 
-Some features in this release are currently classified as Technology Preview. Technology Preview features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. Please note that Red Hat does not recommend using technology preview features for production, and Red Hat SLAs do not support technology preview functions.
+Some features in this release are currently classified as Technology Preview. Technology Preview features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. Note that Red Hat does not recommend using technology preview features for production, and Red Hat SLAs do not support technology preview functions.
 
 The following are the technology preview features:
 
