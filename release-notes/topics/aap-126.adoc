@@ -5,5 +5,5 @@
 
 * Updated openshift-clients package that ships with Ansible Tower 3.7 and 3.8
 * Modified database backup and restore logic to compress dump data
-* Added ability to provide custom secret key when running rekey.yml
+* Added ability to provide custom secret key when running `rekey.yml`
 * Fixed a bug where the selinux-policy was not recognized during installation
