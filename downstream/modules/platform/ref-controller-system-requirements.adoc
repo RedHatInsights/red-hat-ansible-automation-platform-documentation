@@ -9,7 +9,7 @@ Use the following recommendations for node sizing:
 
 [NOTE]
 ====
-On all nodes except hop nodes, allocate a minimum of 20 GB to `/var/lib/awx` for execution environment storage.
+On control and hybrid nodes, allocate a minimum of 20 GB to `/var/lib/awx` for execution environment storage.
 ====
 
 .Execution nodes
@@ -20,7 +20,7 @@ Runs automation. Increases memory and CPU to increase capacity for running more 
 h| Requirement | Required
 | *RAM* | 16 GB
 | *CPUs* | 4
-| *Local disk* | 40GB minimum with at least 20GB available under /var/lib/awx
+| *Local disk* | 40GB minimum
 |===
 
 .Control nodes
