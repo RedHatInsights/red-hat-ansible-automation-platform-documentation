@@ -1,0 +1,26 @@
+:imagesdir: images
+:numbered:
+:toclevels: 4
+:experimental:
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Managing containers in private automation hub
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+
+include::hub/assembly-managing-container-registry.adoc[leveloffset=+1]
+
+include::hub/assembly-container-user-access.adoc[leveloffset=+1]
+
+include::hub/assembly-populate-container-registry.adoc[leveloffset=+1]
+
+include::hub/assembly-setup-container-repository.adoc[leveloffset=+1]
+
+include::hub/assembly-pull-image.adoc[leveloffset=+1]
+
+include::hub/assembly-working-with-signed-containers.adoc[leveloffset=+1]
+
+include::hub/assembly-delete-container.adoc[leveloffset=+1]

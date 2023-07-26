@@ -1,0 +1,21 @@
+:imagesdir: images
+:numbered:
+include::attributes/attributes.adoc[]
+
+= Deploying a high availability automation hub
+
+This guide provides an overview of the requirements and procedures for a high availability deployment of your {HubName}.
+
+A high availability (HA) configuration increases reliability and scalablility for {HubName} deployments.
+
+HA deployments of {HubName} have multiple nodes that concurrently run the same service with a load balancer distributing workload (an "active-active" configuration).
+This configuration eliminates single points of failure to minimize service downtime and allows you to easily add or remove nodes to meet workload demands.
+
+This guide covers deployment of a HA {HubName} application stack only.
+Other HA components, such as database and file system HA, or setting up DNS load balancing, are out of scope for this guide.
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+
+include::hub/assembly-high-availability-hub-requirements.adoc[leveloffset=+1]
+include::hub/assembly-installing-high-availability-hub.adoc[leveloffset=+1]
