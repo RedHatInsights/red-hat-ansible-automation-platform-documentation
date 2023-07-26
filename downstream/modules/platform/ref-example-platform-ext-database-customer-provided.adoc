@@ -43,7 +43,8 @@ execution1.example.com node_type=execution
 
 [automationhub]
 automationhub.example.com
-
+[automationedacontroller]
+eda.example.com
 [database]
 
 [all:vars]
@@ -99,13 +100,6 @@ automationhub_pg_sslmode='prefer'
 
 # Automation EDA Controller Configuration
 #
-
-[automationedacontroller]
-eda.example.com
-
-[database]
-
-[all:vars]
 
 automationedacontroller_admin_password='<eda-password>'
 
