@@ -14,13 +14,6 @@ Use this example to populate the inventory file to install {EDAcontroller}. This
 # Automation EDA Controller Configuration
 #
 
-[automationedacontroller]
-eda.example.com
-
-[database]
-
-[all:vars]
-
 automationedacontroller_admin_password='<eda-password>'
 
 automationedacontroller_pg_host=''
@@ -36,13 +29,13 @@ automationedacontroller_pg_password='<password>'
 #
 automation_controller_main_url = 'https://controller.example.com/'
  
-
 # Boolean flag used to verify Automation Controller's
 # web certificates when making calls from Automation EDA Controller.
 #
 automationedacontroller_controller_verify_ssl = true
 
 -----
+
 [role="_additional-resources"]
 .Additional resources
 * For more details on {EDAName}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_event-driven_ansible_guide/index[Getting Started with Event-Driven Ansible Guide].
