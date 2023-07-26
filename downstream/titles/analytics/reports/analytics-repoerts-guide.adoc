@@ -1,0 +1,15 @@
+:imagesdir: images
+:experimental:
+:toclevels: 4
+
+:insights_reports:
+include::attributes/attributes.adoc[]
+
+[[insights_reports]]
+= Viewing reports about your Ansible automation environment
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+
+// Contents
+include::analytics/assembly-insights-reports.adoc[leveloffset=+1]

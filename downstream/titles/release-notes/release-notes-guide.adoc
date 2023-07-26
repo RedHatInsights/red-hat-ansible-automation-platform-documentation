@@ -1,0 +1,156 @@
+// Templates for release notes are contained in the ..downstream/snippets folder.
+// For each release, make a copy of assembly-rn-template.adoc, rename and save as instructed in the template and add an include statement to this file.
+
+= Red Hat Ansible Automation Platform Release Notes
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+
+include::topics/platform-intro.adoc[leveloffset=+1]
+
+[[anchor-aap_2.4-release]]
+== Red Hat Ansible Automation Platform 2.4
+This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
+
+include::topics/aap-24.adoc[leveloffset=+2]
+
+include::topics/hub-464.adoc[leveloffset=+2]
+
+include::topics/controller-440.adoc[leveloffset=+2]
+
+include::topics/eda-24.adoc[leveloffset=+2]
+
+include::topics/operator-240.adoc[leveloffset=+2]
+
+include::topics/docs-24.adoc[leveloffset=+2]
+
+[[anchor-aap_2.3-release]]
+== Red Hat Ansible Automation Platform 2.3
+This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
+
+include::topics/aap-23.adoc[leveloffset=+2]
+
+include::topics/hub-460.adoc[leveloffset=+2]
+
+include::topics/controller-430.adoc[leveloffset=+2]
+
+include::topics/operator-230.adoc[leveloffset=+2]
+
+include::topics/docs-23.adoc[leveloffset=+2]
+
+[[anchor-aap_2.2-release]]
+== Red Hat Ansible Automation Platform 2.2
+This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
+
+include::topics/aap-22.adoc[leveloffset=+2]
+
+include::topics/aap-221.adoc[leveloffset=+2]
+
+include::topics/hub-450.adoc[leveloffset=+2]
+
+include::topics/catalog-05-2022.adoc[leveloffset=+2]
+
+include::topics/controller-420.adoc[leveloffset=+2]
+
+include::topics/operator-220.adoc[leveloffset=+2]
+
+[[anchor-aap_2.1-release]]
+== Red Hat Ansible Automation Platform 2.1
+This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
+
+include::topics/aap-21.adoc[leveloffset=+2]
+
+include::topics/aap-211.adoc[leveloffset=+2]
+
+include::topics/aap-212.adoc[leveloffset=+2]
+
+include::topics/aap-213.adoc[leveloffset=+2]
+
+include::topics/aap-214.adoc[leveloffset=+2]
+
+include::topics/hub-441.adoc[leveloffset=+2]
+
+include::topics/hub-443.adoc[leveloffset=+3]
+
+include::topics/controller-41.adoc[leveloffset=+2]
+
+include::topics/controller-411.adoc[leveloffset=+3]
+
+include::topics/controller-414.adoc[leveloffset=+3]
+
+[[anchor-aap_1.2-release]]
+== Red Hat Ansible Automation Platform 1.2
+This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
+
+include::topics/platform-installer-121.adoc[leveloffset=+2]
+
+include::topics/platform-intro-124.adoc[leveloffset=+2]
+
+include::topics/aap-126.adoc[leveloffset=+2]
+
+include::topics/tower-intro-38.adoc[leveloffset=+2]
+
+include::topics/tower-intro-381.adoc[leveloffset=+3]
+
+include::topics/tower-intro-382.adoc[leveloffset=+3]
+
+include::topics/tower-intro-383.adoc[leveloffset=+3]
+
+include::topics/tower-intro-384.adoc[leveloffset=+2]
+
+include::topics/hub-42.adoc[leveloffset=+3]
+
+include::topics/hub-421.adoc[leveloffset=+3]
+
+include::topics/hub-422.adoc[leveloffset=+3]
+
+include::topics/hub-423.adoc[leveloffset=+3]
+
+include::topics/hub-424.adoc[leveloffset=+3]
+
+include::topics/hub-426.adoc[leveloffset=+3]
+
+include::topics/catalog-11-2020.adoc[leveloffset=+3]
+
+[[anchor-aap_insights-release]]
+== Red Hat Insights for Red Hat Ansible Automation Platform
+
+include::topics/insights-062021.adoc[leveloffset=+2]
+
+include::topics/insights-102021.adoc[leveloffset=+2]
+
+[[anchor-aap-automation-analytics-10-2020-release]]
+== Red Hat Automation Analytics October 2020 release
+
+include::topics/introduction.adoc[leveloffset=+2]
+
+// include::topics/changelog-022020.adoc[leveloffset=+1]
+
+include::topics/new-features-oct-2020.adoc[leveloffset=+2]
+
+include::topics/enhancements-102020.adoc[leveloffset=+2]
+
+include::topics/bugfixes-102020.adoc[leveloffset=+2]
+
+
+
+////
+[[anchor-may-2020-release]]
+== May 2020 release
+
+include::topics/new-features-may-2020.adoc[leveloffset=+2]
+
+include::topics/enhancements-052020.adoc[leveloffset=+2]
+
+include::topics/bugfixes-052020.adoc[leveloffset=+2]
+
+
+[[anchor-february-2020-release]]
+== February 2020 release
+
+include::topics/new-features-feb-2020.adoc[leveloffset=+2]
+
+include::topics/enhancements.adoc[leveloffset=+2]
+
+include::topics/bugfixes-022020.adoc[leveloffset=+2]
+////
