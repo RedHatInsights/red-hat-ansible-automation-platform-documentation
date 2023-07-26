@@ -1,0 +1,5 @@
+
+[id="about-aap-hardening"]
+
+= About hardening
+

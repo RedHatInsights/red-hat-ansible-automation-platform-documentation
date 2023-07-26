@@ -1,8 +1,0 @@
-[id="proc-azure-license-association_{context}"]
-
-= License association
-
-Red Hat provided a specific subscription entitlement manifest when you subscribed to {AAPonAzureName}.
- 
-When asked to submit information about your license, select your license manifest file that you obtained from access.redhat.com.
-
