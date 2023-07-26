@@ -3,7 +3,7 @@
 
 Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
 
-.Enhancements
+== Enhancements
 
 * Added the Automation Services Catalog as an on-prem component for the Ansible Automation Platform. Automation Services Catalog is is a Technology Preview supported feature in Ansible Automation Platform 2.2.
 * Added support for RHEL 9 for automation controller, private automation hub, and private services catalog.
@@ -18,6 +18,23 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 Other noteworthy developer tooling updates include the following:
 
-* `ansible-lint` is available as a technology preview. It is a command-line tool that further enhances the content creation experience by proven practices, patterns, and behaviors. See link:https://github.com/ansible/ansible-navigator/releases/tag/v2.0.0[New features and changes for ansible-navigator] for more information.
 * Automation content navigator v2.0 now includes more features to create content more easily. See link:https://github.com/ansible/ansible-lint/releases/tag/v6.0.0[New features and changes for ansible-lint] for more information.
 * An updated VS Code extension provide language support for creating Ansible content, including smart auto-completion of related playbook content, syntax highlighting, jinja helpers, and direct integrations with supported tooling. See link:https://github.com/ansible/vscode-ansible/blob/main/CHANGELOG.md[New features and enhancements for vscode-ansible] for more information.
+
+== Technology Preview
+
+Some features in this release are currently classified as Technology Preview. Technology Preview features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. Note that Red Hat does not recommend using technology preview features for production, and Red Hat SLAs do not support technology preview functions.
+
+Following are the technology preview features: 
+* Added functionality for collection signing and verification in Ansible Builder.
+
+* Added `ansible-lint`, a command-line tool that further enhances the content creation experience by proven practices, patterns, and behaviors. See link:https://github.com/ansible/ansible-navigator/releases/tag/v2.0.0[New features and changes for ansible-navigator] for more information.
+
+* Added Automation Services Catalog, which provides an easy way to extend automation in your Ansible controller to a broader user base. See xref:catalog-05-2022[Automation Services Catalog] for more information.
+
+[role="_additional-resources"]
+.Additional resources
+
+* For the most recent list of technology preview features, see link:https://access.redhat.com/articles/ansible-automation-platform-preview-features[Ansible Automation Platform - Preview Features].
+
+* For more information about support for technology preview features, see link:https://access.redhat.com/support/offerings/techpreview[Red Hat Technology Preview Features Support Scope].
