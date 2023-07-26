@@ -1,0 +1,9 @@
+[id="eda-projects"]
+
+= Projects
+
+[role="_abstract"]
+
+Projects are a logical collection of rulebooks.
+
+include::eda/proc-eda-set-up-new-project.adoc[leveloffset=-0]

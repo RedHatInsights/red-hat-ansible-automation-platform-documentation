@@ -2,10 +2,6 @@
 
 = Setting up a rulebook activation
 
-[role="_abstract"]
-
-Rulebook activations are rulebooks that have been activated to run.
-
 .Prerequisites
 
 * You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.

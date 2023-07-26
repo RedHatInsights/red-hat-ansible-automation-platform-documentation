@@ -1,9 +1,6 @@
-[id="eda-set-up-token"]
+[id="eda-set-up-token-to-authenticate"]
 
 = Setting up a token to authenticate to {PlatformNameShort} Controller
-
-{ControllerNameStart} must contain a project based on a repository with certain playbooks designed to work with the {EDAName} rulebooks. 
-{ControllerNameStart} must also have corresponding job templates set up based on the playbooks in that project.
 
 .Prerequisites
 
