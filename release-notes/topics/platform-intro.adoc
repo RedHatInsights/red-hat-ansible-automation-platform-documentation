@@ -13,3 +13,22 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 |1.2.0 | 3.8.0 | 4.2.0 | hosted service | hosted service
 
 |===
+
+== Red Hat Ansible Automation Platform life cycle
+
+Red Hat publishes a product life cycle page that identifies the levels of maintenance for each Ansible Automation Platform release.
+Refer to link:https://access.redhat.com/support/policy/updates/ansible-automation-platform[Red Hat Ansible Automation Platform Life Cycle].
+
+== Upgrading Ansible Automation platform
+
+Perform upgrades to maintenance versions of Ansible Automation Platform using the installer. The installer performs all necessary actions required to upgrade to the latest versions of Ansible Automation Platform, including Ansible Tower and Private Automation Hub.
+
+[IMPORTANT]
+====
+Do not use `yum update` to run upgrades. Use installer instead.
+====
+
+Refer to the table in xref:whats-included[What's included in Ansible Automation Platform] for information on maintenance releases of Ansible Automation Platform.
+
+See https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html[Ansible Automation Platform Quick Installation Guide] for procedures on using the Ansible Automation Platform installer.
+

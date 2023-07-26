@@ -2,85 +2,49 @@
 
 include::topics/platform-intro.adoc[leveloffset=+1]
 
-include::topics/upgrading.adoc[leveloffset=+1]
+[[anchor-aap_1.2-release]]
+== Red Hat Ansible Automation Platform 1.2
+This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
 
-[[anchor-october-2021-release]]
-== October 2021 release
-
-include::topics/insights-102021.adoc[leveloffset=+2]
-
-[[anchor-september-2021-release]]
-== September 2021 release
-
-include::topics/platform-intro-125.adoc[leveloffset=+2]
-
-include::topics/tower-intro-384.adoc[leveloffset=+2]
-
-include::topics/hub-426.adoc[leveloffset=+2]
-
-[[anchor-july-2021-release]]
-== July 2021 release
+include::topics/platform-installer-121.adoc[leveloffset=+2]
 
 include::topics/platform-intro-124.adoc[leveloffset=+2]
 
-include::topics/hub-424.adoc[leveloffset=+2]
+include::topics/aap-126.adoc[leveloffset=+2]
 
-include::topics/insights-062021.adoc[leveloffset=+2]
-
-[[anchor-may-2021-release]]
-== May 2021 release
-
-=== Red Hat Ansible Automation Platform 1.2.3
-
-The latest version of Red Hat Automation Platform includes the following:
-
-include::topics/tower-intro-383.adoc[leveloffset=+3]
-
-include::topics/hub-423.adoc[leveloffset=+3]
-
-[[anchor-mar-2021-release]]
-== March 2021 release
-
-=== Red Hat Ansible Automation Platform 1.2.2
-
-The latest version of Red Hat Automation Platform includes the following:
-
-include::topics/tower-intro-382.adoc[leveloffset=+3]
-
-include::topics/hub-422.adoc[leveloffset=+3]
-
-[[anchor-jan-2021-release]]
-== January 2021 release
-
-=== Red Hat Ansible Automation Platform 1.2.1
-
-The latest version of Red Hat Automation Platform includes the following:
-
-include::topics/platform-installer-121.adoc[leveloffset=+3]
+include::topics/tower-intro-38.adoc[leveloffset=+2]
 
 include::topics/tower-intro-381.adoc[leveloffset=+3]
 
-include::topics/hub-421.adoc[leveloffset=+3]
+include::topics/tower-intro-382.adoc[leveloffset=+3]
 
+include::topics/tower-intro-383.adoc[leveloffset=+3]
 
-[[anchor-nov-2020-release]]
-== November 2020 release
-
-=== Red Hat Ansible Automation Platform 1.2.0
-
-The latest version of Red Hat Automation Platform includes the following:
-
-include::topics/tower-intro-38.adoc[leveloffset=+3]
+include::topics/tower-intro-384.adoc[leveloffset=+2]
 
 include::topics/hub-42.adoc[leveloffset=+3]
 
+include::topics/hub-421.adoc[leveloffset=+3]
+
+include::topics/hub-422.adoc[leveloffset=+3]
+
+include::topics/hub-423.adoc[leveloffset=+3]
+
+include::topics/hub-424.adoc[leveloffset=+3]
+
+include::topics/hub-426.adoc[leveloffset=+3]
+
 include::topics/catalog-11-2020.adoc[leveloffset=+3]
 
+[[anchor-aap_insights-release]]
+== Red Hat Insights for Red Hat Ansible Automation Platform
 
+include::topics/insights-062021.adoc[leveloffset=+2]
 
+include::topics/insights-102021.adoc[leveloffset=+2]
 
-[[anchor-oct-2020-release]]
-== October 2020 release
+[[anchor-aap-automation-analytics-10-2020-release]]
+== Red Hat Automation Analytics October 2020 release
 
 include::topics/introduction.adoc[leveloffset=+2]
 
@@ -91,24 +55,3 @@ include::topics/new-features-oct-2020.adoc[leveloffset=+2]
 include::topics/enhancements-102020.adoc[leveloffset=+2]
 
 include::topics/bugfixes-102020.adoc[leveloffset=+2]
-
-////
-[[anchor-may-2020-release]]
-== May 2020 release
-
-include::topics/new-features-may-2020.adoc[leveloffset=+2]
-
-include::topics/enhancements-052020.adoc[leveloffset=+2]
-
-include::topics/bugfixes-052020.adoc[leveloffset=+2]
-
-
-[[anchor-february-2020-release]]
-== February 2020 release
-
-include::topics/new-features-feb-2020.adoc[leveloffset=+2]
-
-include::topics/enhancements.adoc[leveloffset=+2]
-
-include::topics/bugfixes-022020.adoc[leveloffset=+2]
-////
