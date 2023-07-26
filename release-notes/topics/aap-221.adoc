@@ -20,7 +20,7 @@
 * The setup log now gets updated when it is run as `non-root` on bastion host
 * The pulp resource manager now gets removed when the Ansible Automation Platform is upgraded from 2.1 to 2.2
 * The `receptor.service` now restarts as expected when you run the `automation-controller-service` commands
-* The installer no longer fails with permission errors in the ``/home/pulp` directory
+* The installer no longer fails with permission errors in the `/home/pulp` directory
 * The receptor no longer fails in FIPS mode
 * Installer no longer fails with error in installing the `semanage` dependency
 * Updated the default configuration of `GALAXY_COLLECTION_SIGNING_SERVICE` to `ansible-default` instead of `TRUE`
