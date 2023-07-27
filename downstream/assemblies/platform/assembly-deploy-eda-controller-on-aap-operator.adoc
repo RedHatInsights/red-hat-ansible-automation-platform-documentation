@@ -8,7 +8,7 @@ ifdef::context[:parent: {context}]
 :context: deploying
 
 [role="_abstract"]
-{EDAcontroller} is the interface for event-driven automation and introduces automated resolution of IT requests. This component helps you connect to sources of events and acts on those events using rulebooks. When you deploy {EDAcontroller}, you can automate decision making, leverage numerous event sources, implement event-driven automation within and across multiple IT use cases, and achieve more efficient service delivery. 
+{EDAcontroller} is the interface for event-driven automation and introduces automated resolution of IT requests. This component helps you connect to sources of events and acts on those events using rulebooks. When you deploy {EDAcontroller}, you can automate decision making, use numerous event sources, implement event-driven automation within and across multiple IT use cases, and achieve more efficient service delivery. 
 
 Use the following instructions to install {EDAName} with your {OperatorPlatform} on {OCPShort}.
 
