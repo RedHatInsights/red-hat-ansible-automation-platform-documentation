@@ -1,6 +1,6 @@
 [id="eda-delete-rulebook-activations"]
 
-= Delete rulebook activations
+= Deleting rulebook activations
 
 . Select the btn:[More Actions] icon *{MoreActionsIcon}* next to the *Rulebook Activation enabled/disabled* toggle.
 . Select btn:[Delete rulebook activation].
