@@ -4,13 +4,13 @@
 
 Refer to this section if you need a custom decision environment to provide a custom maintained or third-party event source plugin that is not available in the default decision environment.
 
-== Environment
+.Prerequisites
 
 * Ansible Automation Platform > = 2.4
 * Event-Driven Ansible
 * Ansible Builder > = 3.0
 
-== Procedure
+.Procedure
 
 * Add the `de-supported` decision environment. This image is built from a base image provided by Red Hat called `de-minimal`. 
 +

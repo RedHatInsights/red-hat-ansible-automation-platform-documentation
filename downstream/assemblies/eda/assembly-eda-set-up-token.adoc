@@ -1,0 +1,8 @@
+[id="eda-set-up-token"]
+
+= Setting up a token
+
+{ControllerNameStart} must contain a project based on a repository with certain playbooks designed to work with the {EDAName} rulebooks. 
+{ControllerNameStart} must also have corresponding job templates set up based on the playbooks in that project.
+
+include::eda/proc-eda-set-up-token.adoc[leveloffset=+1]
