@@ -43,7 +43,8 @@ execution1.example.com node_type=execution
 
 [automationhub]
 automationhub.example.com
-
+[automationedacontroller]
+eda.example.com
 [database]
 
 [all:vars]
@@ -144,4 +145,5 @@ automationedacontroller_pg_password='<password>'
 # The default install will deploy SSO with sso_use_https=True
 # Keystore password is required for https enabled SSO
 sso_keystore_password=''
+
 -----
