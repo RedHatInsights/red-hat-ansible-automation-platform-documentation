@@ -6,4 +6,4 @@
 
 Projects are a logical collection of rulebooks.
 
-include::eda/proc-eda-set-up-new-project.adoc[leveloffset=-0]
+include::eda/proc-eda-set-up-new-project.adoc[leveloffset=+1]

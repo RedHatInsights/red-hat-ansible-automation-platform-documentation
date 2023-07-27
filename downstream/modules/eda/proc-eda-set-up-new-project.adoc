@@ -1,6 +1,6 @@
 [id="eda-set-up-new-project"]
 
-== Setting up a new project
+= Setting up a new project
 
 [role="_abstract"]
 
