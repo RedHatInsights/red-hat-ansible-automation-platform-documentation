@@ -1,9 +1,11 @@
+// This is the release notes for Automation Hub 4.4.1, the version number is removed from the topic title as part of the release notes restructuring efforts.
+
 [[hub-441-intro]]
-= Automation Hub 4.4.1
+= Automation Hub
 
 Automation Hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible Automation Hub, you can discover and manage Ansible Collections which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.
 
-.Enhancements and bug fixes
+.Automation Hub 4.4.1 enhancements and bug fixes
 
 * Added tasking system permissions so that users with the appropriate permissions can view and manage tasks
 * Added name, namespace name, and registry requirements when add/editing an execution environment
