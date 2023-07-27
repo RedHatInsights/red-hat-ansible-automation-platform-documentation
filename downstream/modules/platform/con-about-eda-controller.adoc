@@ -6,7 +6,7 @@
 The Event-Driven Ansible controller is the interface for event-driven automation and introduces automated resolution of IT requests. This component helps you connect to sources of events and act on those events using rulebooks. This technology improves IT speed and agility, and enables consistency and resilience. With Event-Driven Ansible, you can: 
 
 * Automate decision making
-* Leverage numerous event sources
+* Use numerous event sources
 * Implement event-driven automation within and across multiple IT use cases
 
 [role="_additional-resources"]
