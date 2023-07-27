@@ -12,7 +12,7 @@
 +
 [NOTE]
 ====
-This is preferred if a Satellite exists because the EE images can leverage RHEL content from the Satellite if the underlying build host is registered.
+This is preferred if a Satellite exists because the EE images can use RHEL content from the Satellite if the underlying build host is registered.
 ====
 +
 . Unarchive the AAP setup bundle.
