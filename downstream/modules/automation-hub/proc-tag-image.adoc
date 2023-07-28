@@ -13,14 +13,8 @@ Tag images to add an additional name to images stored in your {HubName} containe
 
 .Procedure
 
-. Navigate to menu:Execution Environments[].
+. From the Navigation panel, select menu:Administration[Execution Environments].
 . Select your container repository.
-. Click the *Images* tab.
-. Click the btn:[More Actions] icon *{MoreActionsIcon}*, then click btn:[Manage tags].
-. Add a new tag in the text field and click btn:[Add].
-** Optional: Remove *current tags* by clicking btn:[x] on any of the tags for that image.
+. Click the btn:[Edit Execution Environment] icon.
+. Enter the full image location, including the container registry, image name, and version tag in the *Image* field.
 . Click btn:[Save].
-
-
-.Verification
-* Click the *Activity* tab and review the latest changes.

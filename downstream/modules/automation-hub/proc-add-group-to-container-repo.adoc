@@ -3,7 +3,7 @@
 = Providing access to your container repository
 
 [role="_abstract"]
-Provide access to your container repository for users who need to work the images. Adding a group allows you to modify the permissions the group can have to the container repository. You can use this option to extend or restrict permissions based on what the group is assigned.
+Provide access to your container repository for users who need to work the images. Adding an organization allows you to modify the permissions the group can have to the container repository. You can use this option to extend or restrict permissions based on what the group is assigned.
 
 .Prerequisites
 
@@ -11,9 +11,9 @@ Provide access to your container repository for users who need to work the image
 
 .Procedure
 
-. Navigate to menu:Execution Environments[].
+. From the Navigation panel, select menu:Administration[Execution Environments].
 . Select your container repository.
-. Click btn:[Edit] at the top right of your window.
+. Click the btn:[Edit Execution Environment] icon.
 . Under *Groups with access*, select a group or groups to grant access to.
 ** Optional: Add or remove permissions for a specific group using the drop down under that group name.
 . Click btn:[Save].

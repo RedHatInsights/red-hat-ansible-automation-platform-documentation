@@ -1,0 +1,22 @@
+[id="ref-definition-file-image"]
+
+= images
+
+The `images` section of the definition file is a dictionary used to define the base image to be used. Verification of signed container images is supported with the `podman` container runtime.
+
+See the following table for a list of values that can be used in `images`:
+
+[cols="a,a"]
+|===
+| Value | Description
+
+| `base_image`
+| Specifies the parent image for the automation execution environment, enabling a new image to be built that is based off of an already-existing image. This is typically a supported execution environment base image like ee-minimal or ee-supported, but it can also be an execution environment image that you've created previously and want to customize further.
+
+A `name` key is required for the container image to use. Specify the `signature _original_name` key if the image is mirrored within your repository, but signed with the image's original signature key. Image names must contain a tag, such as `:latest`.
+
+The default image is `registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel8:latest`.
+
+|===
+
+NOTE: If the same variable is specified in the CLI `--build-arg` flag, the CLI value will take higher precedence.

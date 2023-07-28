@@ -1,0 +1,30 @@
+[id="con-python-dependencies"]
+
+= Python
+
+The `python` entry in the definition file points to a valid requirements file for the `pip install -r ...` command.
+
+The entry `requirements.txt` is a file that installs extra Python requirements on top of what the Collections already list as their Python dependencies. It may be listed as a relative path from the directory of the {ExecEnvNameSing} definition’s folder, or an absolute path. The contents of a `requirements.txt` file should be formatted like the following example, similar to the standard output from a `pip freeze` command:
+
+.A `requirements.txt` file for Python
+[example]
+====
+----
+boto>=2.49.0
+botocore>=1.12.249
+pytz
+python-dateutil>=2.7.0
+awxkit
+packaging
+requests>=2.4.2
+xmltodict
+azure-cli-core==2.11.1
+python_version >= '2.7'
+collection community.vmware
+google-auth
+openshift>=0.6.2
+requests-oauthlib
+openstacksdk>=0.13
+ovirt-engine-sdk-python>=4.4.10
+----
+====

@@ -4,9 +4,24 @@
 
 A definition file is required for building {ExecEnvName} with {Builder}, because it specifies the content that is included in the {ExecEnvNameSing} container image.
 
+[NOTE]
+====
+If the definition file does not specify a version, version 1 is assumed.
+====
+
 The following sections breaks down the different parts of a definition file.
 
 include::builder/ref-build-args-base-image.adoc[leveloffset=+1]
-include::builder/con-ansible-config-file-path.adoc[leveloffset=+1]
+//include::builder/con-ansible-config-file-path.adoc[leveloffset=+1]
 include::builder/con-definition-dependencies.adoc[leveloffset=+1]
+include::builder/con-galaxy-dependencies.adoc[leveloffset=+2]
+include::builder/con-python-dependencies.adoc[leveloffset=+2]
+include::builder/con-system-dependencies.adoc[leveloffset=+2]
+include::builder/ref-definition-file-images.adoc[leveloffset=+1]
+include::builder/con-additional-build-files.adoc[leveloffset=+1]
 include::builder/con-additional-custom-build-steps.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+== Additional resources
+
+* For example definition files for common scenarios, see link:https://ansible.readthedocs.io/projects/builder/en/latest/scenario_guides/scenario_copy/[Common scenarios section] of the _Ansible Builder Documentation_

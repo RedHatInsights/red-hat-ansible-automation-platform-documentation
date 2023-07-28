@@ -1,0 +1,18 @@
+[id="con-galaxy-dependencies"]
+
+= Galaxy
+The `galaxy` entry points to a valid requirements file for the `ansible-galaxy collection install -r ...` command.
+
+The entry `requirements.yml` may be a relative path from the directory of the {ExecEnvNameSing} definition’s folder, or an absolute path.
+
+The content of a `requirements.yml` file may look like the following:
+
+.A `requirements.yml` file for Galaxy
+[example]
+====
+----
+collections:
+  - community.aws
+  - kubernetes.core
+----
+====

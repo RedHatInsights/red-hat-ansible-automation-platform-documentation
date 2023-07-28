@@ -1,17 +1,5 @@
-////
-Base the file name and the ID on the module title. For example:
-* file name: proc-doing-procedure-a.adoc
-* ID: [id="doing-procedure-a_{context}"]
-* Title: = Doing procedure A
+[id="proc-add-container-readme"]
 
-The ID is an anchor that links to the module. Avoid changing it after the module has been published to ensure existing links are not broken.
-////
-
-[id="proc-doing-one-procedure_{context}"]
-
-////
-The `context` attribute enables module reuse. Every module ID includes {context}, which ensures that the module has a unique ID even if it is reused multiple times in a guide.
-////
 
 = Adding a README to your container repository
 
@@ -25,9 +13,8 @@ Add a README to your container repository to provide instructions to your users 
 
 .Procedure
 
-. Navigate to menu:Execution Environments[].
-. Select your container repository.
-. On the *Detail* tab, click btn:[Add].
+. For the Navigation panel, select menu:Execution Environments[].
+. Click btn:[Add].
 . In the *Raw Markdown* text field, enter your README text in Markdown.
 . Click btn:[Save] when you are finished.
 
