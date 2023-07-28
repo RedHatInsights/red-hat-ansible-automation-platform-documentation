@@ -1,0 +1,16 @@
+tmp
+build/
+html/
+*#
+*~
+.sw*
+.*.sw*
+master.html
+.DS_Store
+*/.DS_Store
+# Pycharm stuff
+.idea
+# VSCode stuff
+.vscode
+# virtual environments
+venv
