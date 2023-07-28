@@ -1,0 +1,14 @@
+[id="eda-rulebook-activations"]
+
+= Rulebook activations
+
+[role="_abstract"]
+
+Rulebook activations are rulebooks that have been activated to run.
+
+include::eda/proc-eda-set-up-rulebook-activation.adoc[leveloffset=+1]
+include::eda/proc-eda-enable-rulebook-activations.adoc[leveloffset=+1]
+include::eda/proc-eda-restart-rulebook-activations.adoc[leveloffset=+1]
+include::eda/proc-eda-delete-rulebook-activations.adoc[leveloffset=+1]
+include::eda/proc-eda-activate-webhook.adoc[leveloffset=+1]
+include::eda/proc-eda-test-with-K8s.adoc[leveloffset=+1]
