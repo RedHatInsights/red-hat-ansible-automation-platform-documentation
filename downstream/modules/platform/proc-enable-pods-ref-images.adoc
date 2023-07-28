@@ -65,6 +65,6 @@ $ oc secrets link builder <pull_secret_name>
 . Optional: For builds, you must also reference the secret as the pull secret from within your build configuration.
 
 When the container group is successfully created, the *Details* tab of the newly created container group remains, which allows you to review and edit your container group information. 
-This is the same menu that is opened if you click btn:[Edit] from the *Instance Group* link. 
+This is the same menu that is opened if you click the btn:[Edit] icon *&#128393;* from the *Instance Group* link. 
 You can also edit instances and review jobs associated with this instance group.
 
