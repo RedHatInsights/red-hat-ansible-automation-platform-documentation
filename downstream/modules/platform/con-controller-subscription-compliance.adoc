@@ -1,0 +1,7 @@
+[id="controller-subscription-compliance"]
+
+= Subscription compliance
+
+A status of *Compliance* indicates your subscription is in compliance with the number of hosts you have automated within your subscription count. 
+Otherwise, your status shows an *Out of Compliance* status, indicating you have exceeded the number of hosts in your subscription.
+
