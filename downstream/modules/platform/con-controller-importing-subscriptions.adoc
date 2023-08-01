@@ -2,11 +2,11 @@
 
 To obtain your automation controller subscription, you can either:
 
-. Provide your Red Hat or Satellite username and password on the license page.
-. Obtain a subscriptions manifest from your Subscription Allocations page on the customer portal. 
-See link:http://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#obtain-sub-manifest[Obtaining a subscriptions manifest] in the Automation Controller User Guide for more detail.
+* Provide your Red Hat or Satellite username and password on the license page.
+* Obtain a subscriptions manifest from your Subscription Allocations page on the customer portal. 
+See link:http://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#obtain-sub-manifest[Obtaining a subscriptions manifest] in the Automation Controller User Guide for more information.
 
-If you have a Red Hat Ansible Automation Platform subscription, use your Red Hat customer credentials when you launch the controller to access your subscription information, refer to the xref:controller-import-subscription[Importing a subscription] section.
+If you have a [PlatformName] subscription, use your Red Hat customer credentials when you launch the controller to access your subscription information, refer to the xref:controller-import-subscription[Importing a subscription] section.
 
 If you do not have a {PlatformName} subscription, you can request a link:https://www.redhat.com/en/technologies/management/ansible/try-it[trial subscription here] or click *Request Subscription* and follow the instructions to request one.
 

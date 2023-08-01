@@ -1,0 +1,15 @@
+[id="controller-host-metric-utilities"]
+
+= Host metric utilities
+
+The controller provides a way to generate a CSV output of the host metric data and host metric summary through the Command Line Interface (CLI) and to soft delete hosts in bulk through the API.
+
+== API endpoint functions
+
+The API lists only non-deleted records that can be sorted by `last_automation` and `used_in_inventories` columns.
+
+As an alternative to the user interface, you can use the host metric API endpoint, `api/v2/host_metric` to soft-delete hosts:
+-----
+api/v2/host_metric <n> DELETE
+-----
+A monthly scheduled task automatically deletes jobs that use hosts from the Host Metric table that were last automated more than a year ago.

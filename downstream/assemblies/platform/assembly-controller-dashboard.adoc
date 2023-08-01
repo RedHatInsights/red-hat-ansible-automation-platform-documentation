@@ -1,0 +1,7 @@
+[id="controller-dashboard"]
+
+= Controller Dashboard
+
+The Dashboard offers a graphical framework for your IT orchestration needs. 
+In the navigation menu of the Dashboard, you can quickly display different views, navigate to your resources, grant access, and administer certain controller features in the user interface.
+

@@ -22,7 +22,9 @@ Use your Satellite username and password if your controller cluster nodes are re
 Once you enter your credentials, click *Get Subscriptions*.
 . The subscription metadata is then retrieved from the RHSM/Satellite API, or from the manifest provided.
 ** If it is a subscription manifest, and multiple subscription counts were applied in a single installation, the controller combines the counts but uses the earliest expiration date as the expiry (at which point you must refresh your subscription).
-** If you enter your credential information (username/password), the controller retrieves your configured subscription service. Then it prompts you to choose the subscription you want to run (the example below shows multiple subscriptions) and entitles the controller with that metadata. You can log in over time and retrieve new subscriptions if you have renewed.
+** If you enter your credential information (username and password), the controller retrieves your configured subscription service. 
+Then it prompts you to choose the subscription you want to run and entitles the controller with that metadata. 
+You can log in over time and retrieve new subscriptions if you have renewed.
 +
 [NOTE]
 ====
@@ -52,7 +54,7 @@ The System Administrator role is not equivalent to the Administrator user checkb
 Tracking and insights collect data to help Red Hat improve the product by delivering you a much better user experience. 
 For more information about data collection, refer to link:http://docs.ansible.com/automation-controller/4.4/html/administration/usability_data_collection.html#usability-data-collection[Usability Analytics and Data Collection]. 
 This option is checked by default, but you may opt out of any of the following:
-** *User analytics* collects data from the controller User Interface.
+** *User analytics* collects data from the controller user interface.
 ** *Insights Analytics* provides a high level analysis of your automation with {ControllerName}, which is used to help you identify trends and anomalous use of the controller. 
 For opt-in of Automation Analytics to have any effect, your instance of {ControllerName} must be running on Red Hat Enterprise Linux. 
 Refer to the link:https://docs.ansible.com/automation-controller/4.4/html/administration/usability_data_collection.html#user-data-insights[Automation Analytics] section for more information. 
@@ -67,7 +69,7 @@ You can change your analytics data collection preferences at any time, as descri
 . After you have specified your tracking and insights preferences, click btn:[Next] to proceed to the End User Agreement.
 . Review and check the *I agree to the End User License Agreement* checkbox and click btn:[Submit].
 
-When your subscription has been accepted, the controller briefly displays the subscription details and navigates you to the Dashboard of the {ControllerName} interface. 
+When your subscription has been accepted, the controller displays the subscription details and navigates you to the Dashboard of the {ControllerName} interface. 
 You can return to this screen by clicking btn:[Settings] from the navigation menu and select btn:[Subscription settings] from the Subscription option.
 
 
