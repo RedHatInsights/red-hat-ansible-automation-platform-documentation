@@ -4,7 +4,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="assembly-intro-navigator_{context}"]
-= Introduction to Ansible content navigator
+= Introduction to {Navigator}
 
 :context: intro-ansible-navigator
 
