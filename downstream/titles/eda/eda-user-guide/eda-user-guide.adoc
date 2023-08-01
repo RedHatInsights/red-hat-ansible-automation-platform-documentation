@@ -1,0 +1,16 @@
+:imagesdir: images
+:numbered:
+:toclevels: 1
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+// Book Title
+= Event-Driven Ansible controller user guide
+
+{EDAcontroller} is a new way to enhance and expand automation by improving IT speed and agility while enabling consistency and resilience. 
+Developed by Red Hat, this feature is designed for simplicity and flexibility. 
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::eda/assembly-eda-user-guide-overview.adoc[leveloffset=+1]
