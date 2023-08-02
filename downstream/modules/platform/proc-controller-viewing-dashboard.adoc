@@ -17,8 +17,8 @@ Refer to the link:https://docs.ansible.com/automation-controller/4.4/html/admini
 
 [NOTE]
 ====
-The goal of this Quick Start is to launch a simple playbook. 
-To do this, you must set up a number of configuration options. 
+The goal of this quick start is to launch a simple playbook. 
+This requires you to set up a number of configuration options. 
 Completing the quick start configuration tasks now ensures that the controller is configured properly and allows for easier executions of more involved playbooks later on.
 ====
 

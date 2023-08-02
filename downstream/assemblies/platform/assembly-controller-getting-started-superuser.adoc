@@ -1,4 +1,4 @@
-[id="controller-superuser"]
+[id="controller-getting-started-superuser"]
 
 = Logging in as a Superuser
 

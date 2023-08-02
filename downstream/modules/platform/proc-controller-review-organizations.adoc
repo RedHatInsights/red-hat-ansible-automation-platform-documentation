@@ -1,0 +1,28 @@
+[id="controller-review-organizations"]
+
+= Reviewing organizations
+
+.Procedure
+
+* Click *Organizations* in the navigation bar.
++
+[NOTE]
+====
+The [ControllerName] creates a default organization automatically. 
+Users of Tower with a Self-support level license only have the default organization available and should not delete it.
+====
++
+** A default organization is automatically created and is available to all users of the [ControllerName]. 
+It can be used as is or edited later as needed.
++
+[NOTE]
+====
+If you are using the controller with a Basic subscription, you must use the default organization. 
+Only Enterprise or Premium licenses have the ability to add new organizations beyond the default.
+====
++
+** To edit the default organization, expand its properties by clicking Edit () and enter the appropriate details, then save your changes.
+image::controller-organization-list-view-edit-icon.png
+
+Enterprise and Premium license users who want to add a new organization should refer to the link:https://docs.ansible.com/automation-controller/4.4/html/userguide/organizations.html#ug-organizations[Organizations] section in the Automation Controller User Guide.
+

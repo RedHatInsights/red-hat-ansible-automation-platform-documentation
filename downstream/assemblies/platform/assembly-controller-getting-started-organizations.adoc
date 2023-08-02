@@ -1,0 +1,8 @@
+[id="controller-getting-started-organizations"]
+
+= Organizations
+
+An organization is a logical collection of users, teams, projects, and inventories. 
+It is the highest level object in the controller object hierarchy.
+
+include::platform/proc-controller-review-organizations.adoc[leveloffset=+1]
