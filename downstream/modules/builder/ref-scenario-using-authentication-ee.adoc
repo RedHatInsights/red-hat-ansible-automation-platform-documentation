@@ -1,10 +1,10 @@
-[id="ref-example-platform-ext-database-customer-provided_{context}"]
+[id="ref-scenario-using-authentication-ee"]
 
 = Using {HubName} authentication details when building {ExecEnvName}
 
 
 [role="_abstract"]
-Use this example to populate the definition file to pass {HubName} authentication details into the {ExecEnvName} build without exposing them in the final {ExecEnvName} image.
+Use this example to populate the definition file to pass {HubName} authentication details into the {ExecEnvNameSing} build without exposing them in the final {ExecEnvNameSing} image.
 
 -----
 ---
