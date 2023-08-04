@@ -1,4 +1,4 @@
-[id="event-driven-ansible-system-requirements]
+[id="event-driven-ansible-system-requirements"]
 
 = {EDAName} system requirements
 
