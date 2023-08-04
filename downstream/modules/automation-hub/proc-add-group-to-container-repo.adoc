@@ -11,9 +11,10 @@ Provide access to your container repository for users who need to work the image
 
 .Procedure
 
-. From the Navigation panel, select menu:Administration[Execution Environments].
+. From the Navigation panel, select menu:Execution Environments[Execution Environments].
 . Select your container repository.
-. Click the btn:[Edit Execution Environment] icon.
-. Under *Groups with access*, select a group or groups to grant access to.
-** Optional: Add or remove permissions for a specific group using the drop down under that group name.
-. Click btn:[Save].
+. On the *Access* tab, click btn:[Select a group].
+. Select a group or groups to which you want to grant access.
+. Select a role or roles to be added for this execution environment.
+//** Optional: Add or remove permissions for a specific group using the drop down under that group name.
+. Click btn:[Add].

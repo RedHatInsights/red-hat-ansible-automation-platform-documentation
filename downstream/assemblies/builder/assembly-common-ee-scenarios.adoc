@@ -1,0 +1,8 @@
+[id="assembly-building-off-existing-ee"]
+
+= Common {ExecEnvName} scenarios
+
+Use the following example scenarios to create {ExecEnvName} to address common configuration requirements.
+
+include::builder/proc-push-execenv-to-hub.adoc[leveloffset=+1]
+include::builder/proc-pull-protected-registry.adoc[leveloffset=+1]

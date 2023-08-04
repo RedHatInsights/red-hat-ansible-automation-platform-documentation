@@ -19,6 +19,7 @@ include::automation-hub/proc-sync-image.adoc[leveloffset=+1]
 == Additional resources
 
 * See the link:http://docs.podman.io/en/latest/index.html[What is Podman?] documentation for options to use when pulling images.
+* * See link:https://access.redhat.com/RegistryAuthentication[Red Hat Container Registry Authentication] for a list of registries.
 
 
 ifdef::parent-context[:context: {parent-context}]
