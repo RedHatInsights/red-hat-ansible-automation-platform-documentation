@@ -1,0 +1,17 @@
+[id="event-driven-ansible-system-requirements]
+
+= Event-Driven Ansible system requirements
+//Note to peer reviewers: Didn't use the attribute in the tile, per recent discussions during our Process and Improvement meetings to not use them in titles. Will need to make this consistent across the entire repo for modules. (J. Self)
+
+Starting with version 2.4, {PlatformNameShort} includes {EDAName}, a component that provides event-handling capability to automate time-consuming tasks that are required for IT remediation.
+
+{EDAName} processes events about conditions in your IT environment, determines the appropriate response to the event, and executes automated actions to address the event. In addition to IT-related tasks, {EDAName} can automate a variety of tasks across your IT environment.
+
+[cols="a,a",options="header"]
+|===
+h| Requirement | Required
+| *RAM* | 16 GB
+| *CPUs* | 4
+| *Local disk* | 40GB minimum
+|===
+
