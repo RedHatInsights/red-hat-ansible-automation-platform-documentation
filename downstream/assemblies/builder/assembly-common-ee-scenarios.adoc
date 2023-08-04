@@ -1,8 +1,13 @@
-[id="assembly-building-off-existing-ee"]
+[id="assembly-common-ee-scenarios"]
 
 = Common {ExecEnvName} scenarios
 
-Use the following example scenarios to create {ExecEnvName} to address common configuration requirements.
+Use the following example definition files address common configuration scenarios.
 
-include::builder/proc-push-execenv-to-hub.adoc[leveloffset=+1]
-include::builder/proc-pull-protected-registry.adoc[leveloffset=+1]
+include::builder/ref-scenario-update-hub-ca-cert.adoc[leveloffset=+1]
+include::builder/ref-scenario-using-authentication-ee.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+== Additional resources
+* For information regarding the different parts of an {ExecEnvName} definition file, see xref:assembly-definition-file-breakdown[Breakdown of definition file content].
+* For additional example definition files for common scenarios, see link:https://ansible.readthedocs.io/projects/builder/en/latest/scenario_guides/scenario_copy/[Common scenarios section] of the _Ansible Builder Documentation_

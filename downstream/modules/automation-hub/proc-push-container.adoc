@@ -27,7 +27,7 @@ $ podman login -u=__<username>__ -p=__<password>__ __<automation_hub_url>__
 +
 [subs="+quotes"]
 -----
-$ podman push __<automation_hub_url>__/__<container_image_name>__ 
+$ podman push __<automation_hub_url>__/__<container_image_name>__
 -----
 +
 [NOTE]
@@ -41,6 +41,6 @@ The `--remove-signatures` flag is required when signed images from registry.redh
 
 . Log in to your {HubName}.
 
-. Navigate to menu:Container Registry[].
+. Navigate to menu:Execution Environments[Remote Registries].
 
 . Locate the container in the container repository list.
