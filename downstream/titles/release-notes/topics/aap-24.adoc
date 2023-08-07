@@ -101,6 +101,17 @@ Following are the technology preview features:
 
 * Ansible Automation Platform 2.4 adds the ability to install the automation controller for IBM Power (ppc64le), IBM Z (s390x), and IBM(R) LinuxONE (s390x) architectures.
 
+* Starting with Ansible Automation Platform 2.4, the Platform Resource Operator can be used to create the following resources in automation controller by applying YAML to your OpenShift cluster:
+** Inventories
+** Projects
+** Instance Groups
+** Credentials
+** Schedules
+** Workflow Job Templates
+** Launch Workflows
+
+One notable change is that you can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the old `tower_auth_secret` parameter. This change is backwards compatible, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
+
 [role="_additional-resources"]
 .Additional resources
 
@@ -108,5 +119,5 @@ Following are the technology preview features:
 
 * For more information about support for technology preview features, see link:https://access.redhat.com/support/offerings/techpreview[Red Hat Technology Preview Features Support Scope].
 
-* For information regarding execution node enhancements on Openshift deployments, see link:https://docs.ansible.com/automation-controller/latest/html/administration/instances.html[Managing Capacity With Instances].
+* For information regarding execution node enhancements on OpenShift deployments, see link:https://docs.ansible.com/automation-controller/latest/html/administration/instances.html[Managing Capacity With Instances].
 
