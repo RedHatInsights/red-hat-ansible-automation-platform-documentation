@@ -3,6 +3,7 @@
 
 [id="proc-basic-repo-sync"]
 
+
 .Procedure
 . Log in to {PlatformName}.
 . Navigate to menu:Automation Hub[Repositories].

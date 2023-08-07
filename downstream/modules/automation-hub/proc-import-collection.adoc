@@ -3,9 +3,9 @@
 
 [id="proc-import-collection"]
 
-= Importing a collection in {HubName}
+= Importing an automation content collection in {HubName}
 
-You can import a collection for use in a custom repository. Collections must be imported into your namespace and approved.
+As an automation content creator, you can import a collection for use in a custom repository. Collections must be imported into your namespace and approved by the {HubName} administrator before they can be accessed.
 
 .Procedure
 . Log in to {PlatformName}.

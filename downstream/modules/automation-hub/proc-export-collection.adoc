@@ -3,9 +3,9 @@
 
 [id="proc-export-collection"]
 
-= Exporting a collection in {HubName}
+= Exporting an automation content collection in {HubName}
 
-After collections are finalized, you can deliver them to new destinations to be distributed to others user across your organization. 
+After collections are finalized, you can deliver them to new destinations for distribution to others user across your organization. 
 
 .Procedure
 . Log in to {PlatformName}.
