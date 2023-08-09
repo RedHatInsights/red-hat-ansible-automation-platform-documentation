@@ -2,8 +2,9 @@
 
 = Projects
 
-[role="_abstract"]
-
-Projects are a logical collection of rulebooks.
+Projects are a logical collection of rulebooks. They must be a git repository and only http protocol is supported. 
 
 include::eda/proc-eda-set-up-new-project.adoc[leveloffset=+1]
+include::eda/con-eda-projects-list-view.adoc[leveloffset=+1]
+include::eda/proc-eda-editing-a-project.adoc[leveloffset=+1]
+include::eda/proc-eda-delete-project.adoc[leveloffset=+1]

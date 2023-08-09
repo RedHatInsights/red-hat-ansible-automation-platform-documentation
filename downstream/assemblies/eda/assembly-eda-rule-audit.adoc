@@ -1,0 +1,12 @@
+[id="eda-rule-audit"]
+
+= Rule Audit
+
+Rule audit allows the auditing of rules which have been triggered by all the activations that were activated at some point.
+
+The *Rule Audit* list view shows you a list of every time an event came in that matched a condition within a rulebook and triggered an action.
+The list shows you rules within your rulebook and each heading matches up to a rule that has been executed.
+
+include::eda/proc-eda-view-rule-audit-details.adoc[leveloffset=+1]
+include::eda/proc-eda-view-rule-audit-events.adoc[leveloffset=+1]
+include::eda/proc-eda-view-rule-audit-actions.adoc[leveloffset=+1]
