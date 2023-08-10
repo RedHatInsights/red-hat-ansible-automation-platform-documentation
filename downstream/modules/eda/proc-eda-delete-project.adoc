@@ -3,7 +3,7 @@
 = Deleting a project
 
 .Procedure
-. From the *Projects* list view, select the desired project.
-. Click the btn:[More Actions] icon *{MoreActionsIcon}* and btn:[Delete] project.
+. From the *Projects* list view, select btn:[More Actions] icon *{MoreActionsIcon}* next to the desired project.
+. Select btn:[Delete] project.
 . In the popup window, select btn:[Yes, I confirm that I want to delete this project].
 . Select btn:[Delete project].

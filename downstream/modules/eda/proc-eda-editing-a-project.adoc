@@ -4,7 +4,7 @@
 
 .Procedure
 
-. From the *Projects* list view, select the desired project.
+. From the *Projects* list view, select btn:[More Actions] icon *{MoreActionsIcon}* next to the desired project.
 . Select btn:[Edit project].
 . Enter the required changes and select btn:[Save project].
 

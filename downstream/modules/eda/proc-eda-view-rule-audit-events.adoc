@@ -5,8 +5,8 @@
 .Procedure
 
 . From the navigation panel select btn:[Rule Audit].
-. Select the desired rule, this brings you to the *Details* tab.
-This shows you the event that triggered an action.
+. Select the desired rule, this brings you to the *Details* tab. To view all the events that triggered an action, select the *Events* tab.
+This shows you the event that triggered actions.
 . Select an event to view the *Event log*, along with the *Source type* and *Timestamp*.
 
 image::eda-event-details.png[Event details]
