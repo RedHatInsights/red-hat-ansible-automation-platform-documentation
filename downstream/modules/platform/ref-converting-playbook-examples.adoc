@@ -83,7 +83,7 @@ bash-4.4#
 
 You are now inside the running execution environment container.
 
-Look at the permissions, you will see that *awx* has become ‘root’, but this is not really root as in the superuser, as you are using rootless Podman, which maps users into a kernel namespace similar to a sandbox. Learn more about How does rootless Podman work? for shadow-utils.
+Look at the permissions, you will see that *awx* has become ‘root’, but this is not really root as in the superuser, as you are using rootless Podman, which maps users into a kernel namespace similar to a sandbox. Learn more about link:https://opensource.com/article/19/2/how-does-rootless-podman-work[How does rootless Podman work?] for shadow-utils.
 
 ----
 bash-4.4# ls -la /mydata/
