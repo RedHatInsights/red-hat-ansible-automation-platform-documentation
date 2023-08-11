@@ -10,9 +10,9 @@ As an automation hub administrator, you can create, edit, delete, and move autom
 
 {HubNameStart} includes two types of repositories where you can publish collections:
 
-Staging repositories:: Any user with permission to upload for a namespace can publish collections into these repositories. Collections in these repositories are not available in the search page, but rather, are displayed on the approval dashboard for an administrator to verify.
+Staging repositories:: Any user with permission to upload to a namespace can publish collections into these repositories. Collections in these repositories are not available in the search page, but rather, are displayed on the approval dashboard for an administrator to verify.
 
-Custom repositories:: Any user with write permissions on the repository can publish collections to these repositories. These repositories are not displayed on the approval dashboard. They can show up on the search page depending on whether search is enabled by the owner of the repository. Custom repositories can be private repositories where only users with view permissions can see them, or public where all users can see them.
+Custom repositories:: Any user with write permissions on the repository can publish collections to these repositories. Custom repositories can be private repositories where only users with view permissions can see them, or public where all users can see them. These repositories are not displayed on the approval dashboard. If search is enabled by the repository owner, they can appear in search results.
 
 Staging repositories are marked with the `pipeline=staging` label. By default, {HubName} ships with one staging repository that is automatically used when a repository is not specified for uploading collections. However, users can create new staging repositories during xref:proc-create-repository[repository creation].
 

@@ -5,7 +5,7 @@
 
 = Exporting an automation content collection in {HubName}
 
-After collections are finalized, you can deliver them to new destinations for distribution to others user across your organization. 
+After collections are finalized, you can import them to a location where they can be distributed to others across your organization.
 
 .Procedure
 . Log in to {PlatformName}.
