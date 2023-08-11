@@ -2,7 +2,7 @@
 
 = Viewing rule audit actions
 
-Procedure
+.Procedure
 
 . From the navigation panel select btn:[Rule Audit].
 . Select the desired rule, this brings you to the *Actions* tab.

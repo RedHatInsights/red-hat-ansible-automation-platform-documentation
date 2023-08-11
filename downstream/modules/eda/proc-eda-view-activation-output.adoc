@@ -5,8 +5,9 @@
 You can view the output of the activations in the *History* tab.
 
 .Procedure
-. Select the *History* tab to access the list of all the times the activation has been executed.
-. Then select the activation in question, this will show you the *Output* produced by that specific execution.
+. Select the *History* tab to access the list of all the activation instances.
+An activation instance represents a single execution of the activation.
+. Then select the activation instance in question, this will show you the *Output* produced by that specific execution.
 
 image::eda-rulebook-activation-history.png[Rulebook activation history]
 
