@@ -3,7 +3,7 @@
 = Decision environments
 
 Decision environments are a container image to run Ansible rulebooks.
-They create a common language for communicating automation dependencies and provide a standard way to build and distribute the automation environment.
+They create a common language for communicating automation dependencies, and provide a standard way to build and distribute the automation environment.
 The default decision environment is found in the link:https://quay.io/repository/ansible/ansible-rulebook[Ansible-Rulebook]. 
 
 To create your own decision environment refer to xref:eda-build-a-custom-decision-environment[Building a custom decision environment for Event-Driven Ansible within Ansible Automation Platform].

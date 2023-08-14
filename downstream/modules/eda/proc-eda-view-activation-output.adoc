@@ -11,4 +11,4 @@ An activation instance represents a single execution of the activation.
 
 image::eda-rulebook-activation-history.png[Rulebook activation history]
 
-To view events that came in and triggered an action you can use the xref:eda-rule-audit[Rule Audit] section in the {EDAcontroller} Dashboard. 
+To view events that came in and triggered an action, you can use the xref:eda-rule-audit[Rule Audit] section in the {EDAcontroller} Dashboard. 
