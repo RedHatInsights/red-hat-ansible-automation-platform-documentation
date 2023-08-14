@@ -3,9 +3,9 @@
 
 [id="proc-provide-remote-access"]
 
-= Provide access to a remote
+= Providing access to a remote configuration
 
-After a remote is created, you can provide access to it by doing the following.
+After a remote configuration is created, you can provide access to it by doing the following.
 
 .Procedure
 . Log in to {PlatformName}.
