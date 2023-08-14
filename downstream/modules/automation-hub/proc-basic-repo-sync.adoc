@@ -3,9 +3,6 @@
 
 [id="proc-basic-repo-sync"]
 
-= Basic repository sync
-
-Use this procedure to sync a repository from one {HubName} instance to another.
 
 .Procedure
 . Log in to {PlatformName}.

@@ -3,9 +3,9 @@
 
 [id="proc-adding-collections-repository"]
 
-= Adding collections to a repository
+= Adding collections to a {HubName} repository
 
-After your repository is created, you can begin adding collections to it.
+After you create your repository, you can begin adding automation content collections to it.
 
 .Procedure
 . Log in to {PlatformName}.

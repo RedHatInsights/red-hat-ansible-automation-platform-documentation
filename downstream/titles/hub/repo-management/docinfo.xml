@@ -1,7 +1,7 @@
 <title>Managing repositories in automation hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.4</productnumber>
-<subtitle>Create and manage custom repositories in automation hub.</subtitle>
+<subtitle>Create and manage custom repositories in automation hub</subtitle>
 <abstract>
     <para>This guide shows you how to create, edit, delete, and move content between custom repositories in automation hub.</para>
 </abstract>
