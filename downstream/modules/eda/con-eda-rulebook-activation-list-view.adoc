@@ -1,0 +1,13 @@
+[id="eda-rulebook-activation-list-view"]
+
+= Rulebook activation list view
+
+On the *Rulebook Activations* page, you can view the rulebook activations that you have created along with the *Activation status*, *Number of rules associated* with the rulebook, the *Fire count*, and *Restart count*.
+
+If the *Activation Status* is *Running*, it means that the rulebook activation is running in the background and executing the required actions according to the rules declared in the rulebook.
+
+You can view more details by selecting the activation from the *Rulebook Activations* list view.
+
+image::eda-rulebook-activations-list-view.png[Rulebook activation][width=25px]
+
+For all activations that have run, you can view the *Details* and *History* tabs to get more information about what happened.
