@@ -13,7 +13,7 @@ Configure Red Hat automation hub as your primary source of content by using the 
 [IMPORTANT]
 ====
 Creating a new token revokes any previous tokens generated for Private Automation Hub. Ensure that you update any Controller or scripts that you created with the previous token.
-=======
+====
 
 .Procedure
 
