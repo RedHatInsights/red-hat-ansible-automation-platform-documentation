@@ -27,7 +27,7 @@ Hardware requirements are documented in the Automation Platform Installation Gui
 
 RPM dependencies for AAP that come from the BaseOS and AppStream repositories are not included in the setup bundle.To add these dependencies, you must obtain access to BaseOS and AppStream repositories.
 
-* link:/https://access.redhat.com/documentation/en-us/red_hat_satellite/6.11/html/installing_satellite_server_in_a_disconnected_network_environment/index[Satellite] is the recommended method from Red Hat to synchronize repositories
+* link:https://access.redhat.com/documentation/en-us/red_hat_satellite/6.11/html/installing_satellite_server_in_a_disconnected_network_environment/index[Satellite] is the recommended method from Red Hat to synchronize repositories
 * reposync - Makes full copies of the required RPM repositories and hosts them on the disconnected network
 * RHEL Binary DVD - Use the RPMs available on the RHEL 8 Binary DVD
 
