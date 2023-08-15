@@ -4,9 +4,11 @@
 
 [role="_abstract"]
 
-Rulebook activations are rulebooks that have been activated to run.
+A rulebook activation is a process running in the background defined by a decision environment executing a specific rulebook.
 
 include::eda/proc-eda-set-up-rulebook-activation.adoc[leveloffset=+1]
+include::eda/con-eda-rulebook-activation-list-view.adoc[leveloffset=+1]
+include::eda/proc-eda-view-activation-output.adoc[leveloffset=+2]
 include::eda/proc-eda-enable-rulebook-activations.adoc[leveloffset=+1]
 include::eda/proc-eda-restart-rulebook-activations.adoc[leveloffset=+1]
 include::eda/proc-eda-delete-rulebook-activations.adoc[leveloffset=+1]

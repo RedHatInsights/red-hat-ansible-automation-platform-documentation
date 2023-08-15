@@ -1,0 +1,13 @@
+[id="eda-view-rule-audit-details"]
+
+= Viewing rule audit details
+
+From the *Rule Audit* list view you can check the event that triggered specific actions.
+
+image::eda-rule-audit-list-view.png[Rule audit list view]
+
+.Procedure
+. From the navigation panel select btn:[Rule Audit].
+. Select the desired rule, this brings you to the *Details* tab.
+
+From here you can view when it was created, when it was last fired, and the rulebook activation that it corresponds to.

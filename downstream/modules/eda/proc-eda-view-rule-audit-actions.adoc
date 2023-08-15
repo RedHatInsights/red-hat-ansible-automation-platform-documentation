@@ -1,0 +1,11 @@
+[id="eda-view-rule-audit-actions"]
+
+= Viewing rule audit actions
+
+.Procedure
+
+. From the navigation panel select btn:[Rule Audit].
+. Select the desired rule, this brings you to the *Actions* tab.
+
+From here you can view executed actions that were taken. 
+Some actions are linked out to {ControllerName} where you can view the output.

@@ -17,4 +17,3 @@ kubectl port-forward svc/<ACTIVATION_SVC_NAME> 5000:5000
 -----
 curl -H "Content-Type: application/json" -X POST test-sync-bug-dynatrace.apps.aap-dt.ocp4.testing.ansible.com -d '{}'
 -----
-+
