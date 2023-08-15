@@ -2,10 +2,6 @@
 
 = Setting up a new project
 
-[role="_abstract"]
-
-Projects are a logical collection of rulebooks.
-
 .Prerequisites
 
 * You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
@@ -35,4 +31,4 @@ Credential:: This field is optional. This is the token needed to utilize the SCM
 Your project is now created and can be managed in the *Projects* screen.
 
 After saving the new project, the project's details page is displayed. 
-From there or the *Projects* list view, you can edit or delete the project.
+From there or the *Projects* list view, you can edit or delete it.
