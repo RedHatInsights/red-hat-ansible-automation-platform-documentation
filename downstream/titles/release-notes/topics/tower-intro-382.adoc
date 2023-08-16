@@ -1,13 +1,13 @@
 [[tower-382-intro]]
 = Ansible Tower 3.8.2
 
-.Bux fixes and enhancements
+.Bug fixes and enhancements
 
 * Upgraded to the latest oVirt inventory plugin to resolve a number of inventory syncing issues that can occur on RHEL7
 * Upgraded to the latest theforeman.foreman inventory plugin to resolve a few bugs and performance regressions
-* Upgraded to a more recent version of Django to address https://access.redhat.com/security/cve/cve-2021-3281[CVE-2021-3281]
-* Upgraded to a more recent version of autobahn to address https://access.redhat.com/security/cve/cve-2021-35678[CVE-2020-35678]
-* Fixed a security issue that allowed a malicious playbook author to elevate to the awx user from outside the isolated environment https:https://access.redhat.com/security/cve/cve-2021-2025[CVE-2021-20253]
+* Upgraded to a more recent version of Django to address link:https://access.redhat.com/security/cve/cve-2021-3281[CVE-2021-3281]
+* Upgraded to a more recent version of autobahn to address link:https://access.redhat.com/security/cve/cve-2020-35678[CVE-2020-35678]
+* Fixed a security issue that allowed a malicious playbook author to elevate to the awx user from outside the isolated environment link:https://access.redhat.com/security/cve/cve-2021-20253[CVE-2021-20253]
 * Fixed several issues related to how Tower rotates its log files
 * Fixed the installer to no longer prevent Tower from installing on RHEL8 with certain non-en_US.UTF-8 locales
 * Fixed unanticipated delays in certain playbook output
