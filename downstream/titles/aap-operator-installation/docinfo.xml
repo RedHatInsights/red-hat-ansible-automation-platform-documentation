@@ -1,0 +1,11 @@
+<title>Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>2.4</productnumber>
+<subtitle>Install and configure Ansible Automation Platform operator on OpenShift Container Platform</subtitle>
+<abstract>
+<para>This guide provides procedures and reference information for the supported installation scenarios for the Red Hat Ansible Automation Platform operator on OpenShift Container Platform.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

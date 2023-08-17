@@ -1,0 +1,11 @@
+<title>Managing user access in {InsightsName} </title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>1.2</productnumber>
+<subtitle>Configure user roles and permissions to get started using {InsightsShort}</subtitle>
+<abstract>
+    <para>Manage user access to specific content and features in {InsightsName} by assigning users to groups that grant specific permissions. </para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services</orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

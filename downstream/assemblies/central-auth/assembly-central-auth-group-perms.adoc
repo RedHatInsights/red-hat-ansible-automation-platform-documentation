@@ -1,0 +1,30 @@
+[id="assembly-central-auth-group-perms"]
+
+== Managing group permissions with {AAPCentralAuth}
+
+You can manage user access on the {PlatformNameShort} by grouping specific permissions into roles, and then assigning those roles to groups. As you log in to the {PlatformNameShort} for the first time, *Users*, *Groups*, and *Roles* appear in the user access page in {HubName}, then you can assign user access and roles to each group.
+
+{HubNameStart} includes a set of managed roles that are compatible with use cases you may encounter. You can create your own set of managed roles or use the predefined roles located in the *Roles* section of the *User Access* page.
+
+=== Grouping permissions into Roles
+
+You can group permissions into roles with specific user access to features in the system.
+
+.Prerequisites
+* You are signed in as a `hubadmin` user.
+
+.Procedure
+. Log in to your local {HubName}.
+. Navigate to the *User Access* drop-down menu.
+. Click btn:[Roles].
+. Click btn:[Add roles].
+. Enter role name in the *Name* field.
+. Enter role description in the *Description* field.
+. Click the drop-down menu next to each *Permissions* type and select the appropriate permissions for the role.
+. Click btn:[Save].
+
+You have created a new role with specific permissions. You can now assign this role to groups.
+
+include::automation-hub/proc-assigning-roles.adoc[leveloffset=+2]
+
+include::automation-hub/ref-permissions.adoc[leveloffset=+2]

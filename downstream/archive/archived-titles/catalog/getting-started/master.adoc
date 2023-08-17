@@ -1,0 +1,422 @@
+:imagesdir: images
+:experimental:
+:toclevels: 4
+include::attributes/attributes.adoc[]
+
+[[getting-started]]
+= Getting started with Automation Services Catalog
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
+== About {CatalogName}
+
+{CatalogNameStart} is a service within the Red Hat Ansible Automation Platform.
+{CatalogNameStart} allows customers to organize and govern product catalog sources on Ansible Tower across various environments.
+
+Using {CatalogName} you can:
+
+* Apply multi-level approval to individual platform inventories
+* Organize content in the form of products from your platforms into portfolios
+* Choose portfolios to share with specific groups of users
+* Set boundaries around values driving execution of user requests
+
+
+== Getting started with {CatalogName}
+
+This guide provides instructions to begin using {CatalogName}, including prerequisites and procedures for connecting your Ansible Tower provider, as well as configuring users and permissions. We also provide instructions for working with platforms, portfolios, and products.
+
+After completing the setup described and following the steps in this guide, you will have a portfolio of products, governed by an approval process, accessible to users.
+
+[NOTE]
+====
+*Entitlements*
+
+To begin using Automation Service Catalog, you need:
+
+At least one Red Hat account user with Organization Administrator entitlements.
+The account number for this Red Hat corporate account.
+====
+
+== User access for {CatalogName}
+
+When configuring {CatalogName} for your organization, consider the scope of your user environments, how those users are grouped, and the roles to assign. You can manage this workflow through *User Access*.
+
+{CatalogNameStart} features and workflows are governed by *groups* that have specific *roles* attached to them. The *Organization Administrator* role performs the initial creation of groups, assigns roles, and adds users.
+
+.Groups
+Groups are user-defined and flexible to include many users and have multiple roles. Create new groups based on your organization’s requirements for working with {CatalogName}.
+
+.Roles
+Roles provide a defined set of actions each group performs. Determine the required level of access for your users based on the following roles {CatalogName} uses:
+
+.Role Reference Table
+[cols="a,a,a"]
+|===
+|  | Role | Description
+
+.3+h| Approval | Approval Administrator |
+
+* Create and assign users to approval groups
+* Create and configure approval processes
+* Approval or deny requests
+* Monitor existing requests
+
+| Approval Approver |
+
+* Approve or deny requests
+* Monitor existing requests|
+
+Approval User |
+
+* Request a product
+* Monitor existing requests
+
+.2+h| Catalog | Catalog Administrator |
+
+* Create / Edit order processes
+* Set an order process to a product or portfolios
+* Delete order processes
+
+|Catalog User |
+* Request a product
+* Monitor existing requests
+
+
+|===
+
+[NOTE]
+====
+By default, all users will have Catalog User and Approval User roles assigned to them.
+====
+
+
+=== Creating administrator groups
+
+The Organization Administrator can create new groups of administrators and users in {CatalogName}. Catalog and Approval administrators are required to perform initial workflows in configuring {CatalogName}. In this section, we will create groups for both Catalog and Approval administrators.
+
+==== Creating a Catalog Administrator group
+
+The Catalog Administrator is a role that grants create, read, update and order permissions. This role is used in creating and managing processes associated with portfolios and products.
+
+To create a *Catalog Administrator* group:
+
+
+. Navigate to menu:Settings[User Access].
+. Click btn:[Create group].
+. Enter group *name* and set the *description*.
+. Click btn:[Next].
+. In the *Add members* modal, check each user to add to the group. Click btn:[Next] when finished.
+. Check *Catalog Administrator* on the *Assign roles* modal.
+. Review details for the new group and click btn:[Confirm].
+
+We have created a group of *Catalog Administrators* and will now create a group of Approval administrators.
+
+==== Creating an Approval Administrator group
+
+The Approval Administrator is a role that grants create, read, update and order permissions. This role is used in creating and managing processes associated with portfolios and products.
+
+To create an *Approval Administrator* group:
+
+. Navigate to menu:Settings[User Access].
+. Click btn:[Create group].
+. Enter group *name* and set the *description*.
+. Click btn:[Next].
+. In the *Add members* modal, check each user to add to the group. Click btn:[Next] when finished.
+. Check *Approval Administrator* on the *Assign roles* modal.
+. Review details for the new group and click btn:[Confirm].
+
+The new group of Approval Administrators has been created. Approval Administrators can create new approval processes to set to platforms, portfolios, and products.
+
+==== Creating Approval Approver Groups
+
+The Approval Approver is a role that grants create and read permissions to users who will approve or deny requests generated when a {CatalogName} user orders a product.
+
+To create an Approval Approver group:
+
+. Navigate to menu:Settings[User Access].
+. Click btn:[Create group].
+. Enter group *name* and set the *description*.
+. Click btn:[Next].
+. In the *Add members* modal, check each user to add to the group. Click btn:[Next] when finished.
+. Check *Approval Approvers* on the *Assign roles* modal.
+. Review details for the new group and click btn:[Confirm].
+
+The new group of Approval Approvers has been created.
+
+==== Adding new users to existing Groups
+
+The *Catalog Administrator* can add new users to existing groups. Once added, users will have the level of permissions associated with that group.
+
+You can add users to a group in the *Groups* view in *User Access*.
+
+. Navigate to menu:Settings[User Access].
+. Click btn:[Groups].
+. Select a group from the list.
+. Click btn:[Members] and then click btn:[Add Member].
+. Check those users that appear in the modal that you wish to add to the group.
+. Click btn:[Add to group].
+
+A message will appear notifying you if the member was added successfully.
+
+== Configuring Approval
+
+{CatalogNameStart} supports group-based approval processes applied to portfolios, products, and platform inventories, providing the flexibility to include selected organizational groups in approving requests utilizing the *Approval* service.
+
+Approval administrators can create approval groups and processes, view request details, approve or deny requests, and monitor the status of existing requests.
+
+
+=== Approval requests
+
+Approval requests are created when a user orders a product that has an approval policy attached to it. The order will initiate the approval processes assigned to the product and users designated as approvers in each approval process receive an email notifying them that a request is ready.
+
+Users logging in to Catalog can access approval requests via the following tabs:
+
+* *My requests* - Requests that the user can approve based on their group permissions.
+* *All requests* - All requests across all approver groups.
+* *Approval processes* - List of approval processes that can be configured by the Approval Administrator. Accessible by the Approval Administrator only.
+
+
+=== Approval processes
+
+Approval processes consist of one or many groups required to approve a request. Each group is notified through the email address associated with that user when requests are created that require approval.
+
+Approval administrators can design approval processes for a product to execute in serial or parallel when set to a portfolio. Simple serial and parallel approval processes are described below:
+
+Set approval processes at the platform, portfolio, or product level. Approval processes set to a platform will apply to all products originating from that platform.
+
+* *Serial process* - a product has multiple approval processes that must execute in a hierarchical sequence. If two approval processes are assigned to a product in serial, the approval group in the first approval process must approve the request before notification is sent to the second approval group. Priority of approval process execution is based on its position on the approval process list view. Approval processes at the top of the list will execute before the processes below it.
+
+* *Parallel process* - a product has one approval process containing multiple groups. All groups are notified simultaneously when a request is created and the order is not granted until all groups approve it. Any group that declines the request ends the process and the user is notified the order has been denied.
+
+[NOTE]
+====
+To create and list groups when creating Approval processes, the Approval Administrator must also have Organization Administrator privileges.
+====
+
+==== Creating an approval process
+
+Creating an approval process designates specific groups required to approve product orders placed by {CatalogName} users.
+
+You can create an approval process from the *Approval processes* list view.
+
+. Select *Approval* from the main navigation.
+. Select the *Approval processes* tab.
+. Click btn:[Create].
+. Provide an approval process name and description.
+. Select a group from the *Set groups* drop-down menu. You may set multiple groups for approval.
+. Click btn:[Submit] when finished.
+
+Implement an approval process against a platform, portfolio, or product.
+
+=== Approval process sequences
+
+Each approval process is assigned a sequence ID that determines the priority in which it executes when included in a serial approval process set to a portfolio. An approval process with the sequence ID of 1 will execute and notify groups in that approval process of a new request before a process with a sequence ID greater than 1.
+
+==== Editing an approval process sequence
+
+You can edit the sequence number for an approval process from the Approval process list view.
+
+. Select *Approval* from the main navigation.
+. Click the *Approval processes* tab.
+. Navigate to the approval process, then click the btn:[More Actions] icon *{MoreActionsIcon}*.
+. Click btn:[Edit].
+. Enter the desired sequence number under *Enter sequence*.
+. Click btn:[Save].
+
+
+The approval process list view will update to reflect the newly sequence.
+
+=== Automatic approval
+
+You can designate products to approve automatically by not setting an approval process at the following levels:
+
+* the inventory hosting the product
+* the portfolio containing it
+* the product itself
+
+Products without an approval process at any of these levels will approve upon order creation.
+
+== Working with platforms, portfolios, and products
+
+This section demonstrates the basic workflows for platforms, portfolios, and products to get started using {CatalogName}
+
+We will demonstrate how to:
+
+
+* create portfolios
+* add products from the source platform into the portfolio
+* set approval processes for the portfolio
+* share the portfolio with users
+
+/////
+=== Adding sources
+
+See link:
+/////
+
+=== Creating a portfolio and adding products to it
+
+To create a portfolio:
+
+. Click btn:[Create portfolio].
+. Provide a *New Portfolio Name* and *Description*.
+. Choose an *Approval workflow* from the drop-down list.
+. Click btn:[Save].
+
+
+Our initial portfolio is empty, and we can start adding products from this empty state.
+
+To add a product from a platform:
+
+. Click in the *Filter by Platform* field to view connected platforms.
+. Select a platform. The screen will populate with products from that platform.
+. Check each product to add to the portfolio.
+. Click btn:[Add].
+
+
+=== Setting approval processes for the portfolio
+
+We have now created a portfolio and added some products to it. Our next step is to set the approval process for the portfolio. Setting the approval process for our portfolio ensure that specific groups are designated to approve any orders placed by a user.
+
+To set an approval processes for the portfolio:
+
+. Navigate to menu:Portfolios[].
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* on a portfolio tile and select *Set approval*.
+. From the *Set approval process* drop-down menu, select an approval processes to set to the portfolio.
+. Click btn:[Save].
+
+
+
+=== Sharing the portfolio with users
+
+The portfolio is now ready to share with groups of users. These designated user groups can order products collected in the portfolio, and their orders are approved or denied using the approval process set for the portfolio.
+
+To share a portfolio:
+
+. Click btn:[Portfolios].
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* on a portfolio, then click btn:[Share]. The icon:[Y] indicates a shared portfolio.
+. Adding groups:
+.. Under *Invite group* search groups to share the portfolio with.
+.. Select the level of permissions using the drop-down list.
+. Edit sharing settings for existing groups:
+.. Under *Groups with access* adjust permissions using the drop-down for each group.
+.. To stop sharing a portfolio with a group, click icon:[X].
+. Click btn:[Send] when finished.
+
+Our portfolio is now accessible to the groups of users, who can order the products we collected in it. We can now duplicate this portfolio, change its name and add new products, to share with different user groups.
+
+=== Copying existing portfolios to edit and share with new groups
+
+Copying portfolios allows you to quickly duplicate an already organized portfolio to offer to different groups of users. Once a copy is created, you can add or remove products, share with new groups, and apply new approval processes to meet organizational requirements.
+
+
+Copying portfolios allows you to quickly duplicate an already organized portfolio to offer to different groups of users. Once a copy is created, you can add or remove products, share with new groups, and apply new approval processes to meet organizational requirements.
+
+
+We can also copy products from various portfolios to additional portfolios.
+
+=== Copying products to different portfolios
+
+You can copy products from one portfolio to another as part of developing new portfolios to meet group needs. Once a product is copied you can edit its basic fields, update its survey, and apply different approval processes.
+
+
+
+=== Workflows summary
+
+The workflows in this section of the guide demonstrated how to perform the basic actions for platforms, portfolios and products necessary to get started using {CatalogName}:
+
+* add entitlements to access Automation Service Catalog;
+* create the necessary groups and users;
+* connect to a source platform;
+* create portfolios;
+* add products from the source platform into the portfolio;
+* set approval processes for the portfolio;
+* share the portfolio with users;
+* make a copy of our existing portfolio to share with different users;
+* copy products from one portfolio to another.
+
+In the next section, we will describe working with the survey editor, and provide an overview of working with requests and orders.
+
+
+== Using the survey editor
+
+When ordering a product in {CatalogName}, users may be required to provide additional information to complete the request. This prompt is created by a survey associated with the product. Initially created and edited in Ansible Tower, Catalog Administrators and portfolio users with update permissions can edit the survey in {CatalogName}. Once submitted and validated, the surveys pass user-submitted extra variables to the job or workflow template run on Ansible Tower on the execution of an order.
+
+See _Surveys_ in the link:https://docs.ansible.com/ansible-tower/latest/html/userguide/index.html[Ansible Tower User Guide] to learn more creating and editing surveys for job templates.
+
+Using the survey properties editor, you can:
+
+* Set labels, helper text or placeholders to enhance the user experience of users providing information
+* Further restrict existing validation parameters.
+* Change validation messages.
+* Hide, disable or set to read-only chosen fields in the survey.
+
+=== Survey properties editor
+
+Values for surveys are defined in Ansible Tower and the {CatalogName} properties editor allows Catalog Administrators to restrict survey options, such as adjusting default values and removing items from drop-down menus.
+
+Additionally, use the properties editor to hide, disable, or set a field to read only.
+
+[NOTE]
+====
+Provide an initial value for any required field set to Hidden or Disabled. This includes `read only` fields.
+====
+
+=== Editing surveys
+
+You can edit fields in the surveys from the product detail view. Edit each field individually using the Properties editor.
+
+.Prerequisites
+The product has an associated survey, created in Ansible Tower.
+
+.Procedure
+. Click btn:[Products].
+. Locate the product and click on its title.
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Edit survey*.
+. Select a field in the survey. The *Properties* editor will appear.
+. Click btn:[Properties] to view the elements to edit for that field.
+. Select *Validation* to configure the validator types used to validate user input.
+. Click btn:[Save] when finished.
+
+== Managing orders
+
+Orders are created once a user successfully submits the request and provides any required validation. The approval process then governs the user’s order status.
+
+=== Approving or denying requests
+
+Once a user places an order it is created and available for review on the orders page. Groups assigned the Approval Approver role can then approve or deny orders. Detailed information is provided for each request, with information on the ordered product and its associated requester and project. A stage transcript is also provided. Denied requests require justification and the approver must enter a reason.
+
+To approve or deny a request:
+
+. Navigate to menu:Approval[].
+. Click the *Requests* tab and then click on a request to expand it to detailed view.
+. Click btn:[Approve] or btn:[Deny]. Provide a *Reason* when denying a request.
+. Click btn:[Submit].
+
+=== Commenting on requests
+
+Comment on requests as an administrator or approver. Comments are captured by the system and visible at each stage of approval.
+
+
+To comment on a request:
+
+. Navigate to menu:Approval[].
+. Click the *Requests* tab and then click on a request.
+. Click btn:[Comment].
+. Add a comment and click btn:[Submit].
+
+== Conclusion
+
+In the previous sections of this guide we walked through the primary workflows necessary to get started using {CatalogName}.
+
+
+Following these workflows you have:
+
+* Created the necessary groups and users to use both Catalog and Approval through the User access,
+* Connected to a source platform,
+* Created portfolios,
+* Added products from the source platform into the portfolio,
+* Created and set approval processes for the portfolio,
+* Shared the portfolio with users,
+* Approved or denied orders created by users,
+* and comment on orders where necessary.

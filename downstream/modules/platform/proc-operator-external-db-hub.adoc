@@ -1,0 +1,69 @@
+
+[id="proc-operator-external-db-hub"]
+
+= Configuring an external database for {HubName} on {PlatformName} operator
+
+[role="_abstract"]
+For users who prefer to deploy {PlatformNameShort} with an external database, they can do so by configuring a secret with instance credentials and connection information, then applying it to their cluster using the `oc create` command.
+
+By default, the {PlatformName} operator automatically creates and configures a managed PostgreSQL pod in the same namespace as your {PlatformNameShort} deployment.
+
+You can choose to use an external database instead if you prefer to use a dedicated node to ensure dedicated resources or to manually manage backups, upgrades, or performance tweaks.
+
+[NOTE]
+====
+The same external database (PostgreSQL instance) can be used for both {HubName} and {ControllerName} as long as the database names are different. In other words, you can have multiple databases with different names inside a single PostgreSQL instance.
+====
+
+The following section outlines the steps to configure an external database for your {HubName} on a {PlatformNameShort} operator.
+
+.Prerequisite
+The external database must be a PostgreSQL database that is the version supported by the current release of {PlatformNameShort}.
+
+[NOTE]
+====
+{PlatformNameShort} {PlatformVers} supports PostgreSQL 13.
+====
+
+.Procedure
+
+The external postgres instance credentials and connection information will need to be stored in a secret, which will then be set on the {HubName} spec.
+
+. Create a `postgres_configuration_secret` .yaml file, following the template below:
++
+----
+apiVersion: v1
+kind: Secret
+metadata:
+  name: external-postgres-configuration
+  namespace: <target_namespace> <1>
+stringData:
+  host: "<external_ip_or_url_resolvable_by_the_cluster>" <2>
+  port: "<external_port>" <3>
+  database: "<desired_database_name>"
+  username: "<username_to_connect_as>"
+  password: "<password_to_connect_with>" <4>
+  sslmode: "prefer" <5>
+  type: "unmanaged"
+type: Opaque
+----
+<1> Namespace to create the secret in. This should be the same namespace you wish to deploy to.
+<2> The resolvable hostname for your database node.
+<3> External port defaults to `5432`.
+<4> Value for variable `password` should not contain single or double quotes (', ") or backslashes (\) to avoid any issues during deployment, backup or restoration.
+<5> The variable `sslmode` is valid for `external` databases only. The allowed values are: `*prefer*`, `*disable*`, `*allow*`, `*require*`, `*verify-ca*`, and `*verify-full*`.
+. Apply `external-postgres-configuration-secret.yml` to your cluster using the `oc create` command.
++
+----
+$ oc create -f external-postgres-configuration-secret.yml
+----
+. When creating your `AutomationHub` custom resource object, specify the secret on your spec, following the example below:
++
+----
+apiVersion: awx.ansible.com/v1beta1
+kind: AutomationHub
+metadata:
+  name: hub-dev
+spec:
+  postgres_configuration_secret: external-postgres-configuration
+----

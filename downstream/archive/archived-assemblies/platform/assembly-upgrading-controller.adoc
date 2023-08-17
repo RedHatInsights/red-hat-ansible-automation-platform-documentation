@@ -1,0 +1,61 @@
+
+
+ifdef::context[:parent-context: {context}]
+
+
+[id="assembly-my-user-story_{context}"]
+= Upgrading your {ControllerNameStart}
+
+
+:context: upgrading-controller
+
+
+[role="_abstract"]
+You can upgrade your existing {ControllerName} installation to the latest version. {ControllerNameStart} looks for existing configuration files and recognizes when an upgrade should be performed instead of an installation.
+
+The upgrade process requires that the {ControllerName} server be able to access the Internet. The upgrade process takes roughly the same amount of time as a {ControllerName} installation, plus any time needed for data migration.
+
+This upgrade procedure assumes that you have a working installation of Ansible and {ControllerName}.
+
+[NOTE]
+====
+You can not convert an embedded-database {ControllerName} to a clustered installation as part of an upgrade. Users who want to deploy {ControllerName} in a clustered configuration should back up their {ControllerName} database, install a new clustered configuration on a different VM or physical host, and then restore the database. It is possible to add additional instances later to {ControllerName} if it is already operating on an external database. See link:https://docs.ansible.com/ansible-tower/3.8.3/html/administration/clustering.html#ag-clustering[Clustering] in the _Ansible Controller Administration Guide_ for more.
+====
+
+If {PlatformName} is on a version of RHEL older than RHEL 8 and you want to upgrade to {PlatformName} on RHEL 8, follow the sequence outlined below:
+
+. See _Choosing and obtaining a {PlatformNameShort} installer_ to upgrade to {PlatformNameShort} on RHEL 7.
+. Run {ControllerName} backup included in the {ControllerName} setup playbook. See link:https://docs.ansible.com/ansible-tower/3.8.3/html/administration/backup_restore.html#ag-backup-restore[Backing up and restoring {ControllerName}] in the _Automation Platform Administration Guide_ for details.
+. Obtain the {PlatformName} installer and install a fresh version of {ControllerName} on supported versions of RHEL, including version 8.6 or higher. See link:https://access.redhat.com/support/policy/updates/errata[Red Hat Enterprise Linux Life Cycle] for information on which versions of RHEL are currently supported.
+. Run {ControllerName} Restore included in the {ControllerName} setup playbook.
+
+This process ensures that the PostgreSQL database is also properly migrated to the latest version if you are upgrading an embedded-database Tower. Depending on the size of your |aap| installation, this may take some time. Note that if you upgrade a Tower with an external database, the client libraries will be upgraded as well, but you will need to upgrade your external PostgreSQL server manually. Be sure the check the release notes to see if this applies to you before upgrading.
+
+If the upgrade of Tower fails or if you need assistance, please contact Ansible via the Red Hat Customer portal at https://access.redhat.com/.
+
+== Requirements
+
+* You system meets the requirements for upgrading to the latest version of {PlatformName}. See _System Requirements_ for more information.
+
+[NOTE]
+====
+All upgrades should be no more than two major versions behind what you are currently upgrading to. For example, in order to upgrade to |at| 2.0.x, you must first be on version 3.8.x; i.e., there is no direct upgrade path from version 3.7.x. Refer to the `recommended upgrade path article link:https://access.redhat.com/articles/4098921[recommended upgrade path article] off the Red Hat customer portal.
+====
+
+Subscriptions from Red Hat Satellite can be applied to a {ControllerName} instance by providing a Satellite username and password with access to subscriptions. To take advantage of this, you must register your {ControllerName} node with Satellite by installing the Katello RPM *before* upgrading to Tower 3.8.x..
+==
+
+
+== Backing up your {ControllerName} installation
+
+Create a backup before upgrading the system. After the backup process has been accomplished, proceed with RHEL and {PlatformName} upgrades.
+
+See link:https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html[Backing up and restoring {ControllerName}].
+
+
+
+include::platform/ref-setup-scripts-args.adoc[leveloffset=+1]
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

@@ -1,0 +1,5 @@
+[id="assembly-publishing-exec-env"]
+
+= Publishing an {ExecEnvNameSing}
+
+include::builder/proc-customize-ee-image.adoc[leveloffset=+1]

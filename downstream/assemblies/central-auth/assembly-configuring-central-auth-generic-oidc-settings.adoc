@@ -1,0 +1,14 @@
+
+[id="configuring-central-auth-generic-oidc-settings"]
+
+= Configuring {AAPCentralAuth} Generic OIDC settings and Red Hat SSO/keycloak for Red Hat SSO and {PlatformNameShort}
+
+
+{AAPCentralAuth} allows for the setting of generic OIDC settings and Red Hat SSO/keycloak for Red Hat SSO and AAP. 
+
+== Prerequisites
+
+* You are able to log in as an admin user.
+
+include::central-auth/proc-configure-central-auth-generic-oidc-settings.adoc[leveloffset=+1]
+

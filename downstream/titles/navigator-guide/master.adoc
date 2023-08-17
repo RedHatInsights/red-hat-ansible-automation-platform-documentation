@@ -1,0 +1,23 @@
+:imagesdir: images
+:toclevels: 4
+:experimental:
+:context: ansible-navigator
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Automation Content Navigator Creator Guide
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+
+include::navigator/assembly-intro-navigator.adoc[leveloffset=+1]
+include::navigator/assembly-installing-on-rhel.adoc[leveloffset=+1]
+include::navigator/assembly-review-ee-navigator.adoc[leveloffset=+1]
+include::navigator/assembly-review-inventory-navigator.adoc[leveloffset=+1]
+include::navigator/assembly-browse-collections-navigator.adoc[leveloffset=+1]
+include::navigator/assembly-execute-playbook-navigator.adoc[leveloffset=+1]
+include::navigator/assembly-review-ansible-config-navigator.adoc[leveloffset=+1]
+include::navigator/assembly-settings-navigator.adoc[leveloffset=+1]
+include::navigator/assembly-troubleshooting-navigator.adoc[leveloffset=+1]

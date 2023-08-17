@@ -1,0 +1,9 @@
+[[hub-424-intro]]
+= Automation Hub 4.2.4
+
+.Automation Hub bug fixes
+
+
+* Fix "CVE-2021-32052 django: header injection" by moving to django 2.2.23
+
+* Download collection artifacts from the galaxy apis instead of the pulp content app

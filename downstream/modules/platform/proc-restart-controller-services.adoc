@@ -1,0 +1,12 @@
+[id="proc-restart-controller-services"]
+
+= Restarting {ControllerName} services
+
+.Procedure
+. When encryption is completed on all nodes, perform a restart of services across the cluster using:
++
+[literal, options="nowrap" subs="+quotes,attributes"]
+----
+# automation-controller-service restart
+----
+. Navigate to the UI, and verify you are able to run jobs across all nodes.

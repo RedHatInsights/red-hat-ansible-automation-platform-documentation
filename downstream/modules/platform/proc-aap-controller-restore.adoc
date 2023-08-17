@@ -1,0 +1,37 @@
+[id="aap-controller-restore"]
+
+= Recovering the {ControllerNameStart} deployment
+
+[role=_abstract]
+Use this procedure to restore a previous controller deployment from an AutomationControllerBackup. The deployment name you provide will be the name of the new AutomationController custom resource that will be created.
+
+[NOTE]
+====
+The name specified for the new AutomationController custom resource must not match an existing deployment or the recovery process will fail. If the name specified does match an existing deployment, see xref:aap-troubleshoot-backup-recover[Troubleshooting] for steps to resolve the issue.
+====
+
+.Prerequisites
+
+* You must be authenticated with an Openshift cluster.
+* The {ControllerName} has been deployed to the cluster.
+* An AutomationControllerBackup is available on a PVC in your cluster.
+
+.Procedure
+. Log in to *{OCP}*.
+. Navigate to menu:Operators[Installed Operators].
+. Select the {OperatorPlatform} installed on your project namespace.
+. Select the *Automation Controller Restore* tab.
+. Click btn:[Create AutomationControllerRestore].
+. Enter a *Name* for the recovery deployment.
+. Enter a *New Deployment name* for the restored deployment.
++
+[NOTE]
+====
+This should be different from the original deployment name.
+====
++
+. Select the *Backup source to restore from*. *Backup CR* is recommended.
+. Enter the *Backup Name* of the AutomationControllerBackup object.
+. Click btn:[Create].
++
+A new deployment is created and your backup is restored to it. This can take approximately 5 to 15 minutes depending on the size of your database.

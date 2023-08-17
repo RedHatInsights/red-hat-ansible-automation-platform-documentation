@@ -1,0 +1,10 @@
+<title>Getting Started with Event-Driven Ansible Guide</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>2.4</productnumber>
+<subtitle>Learn about the benefits and how to get started using Event-Driven Ansible.</subtitle>
+<abstract>Event-Driven Ansible is a new way to enhance and expand automation by improving IT speed and agility while enabling consistency and resilience. This feature is designed for simplicity and flexibility.
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

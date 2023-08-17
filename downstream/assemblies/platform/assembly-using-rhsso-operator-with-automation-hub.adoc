@@ -1,0 +1,43 @@
+ifdef::context[:parent-context: {context}]
+
+[id="using-rhsso-operator-with-automation-hub"]
+
+:context: using-a-rhsso-operator
+
+= Using {OperatorRHSSO} with {HubName}
+
+{PrivateHubNameStart} uses {RHSSO} for authentication.
+
+The {OperatorRHSSO} creates and manages resources.
+Use this Operator to create custom resources to automate {RHSSO} administration in Openshift.
+
+* When installing {PlatformNameShort} on _Virtual Machines_ (VMs) the installer can automatically install and configure {RHSSO} for use with {PrivateHubName}.
+
+* When installing {PlatformNameShort} on {OCP} you must install Single Sign-On separately.
+
+This chapter describes the process to configure {RHSSO} and integrate it with {PrivateHubName} when {PlatformNameShort} is installed on {OCPShort}.
+
+
+.Prerequisites
+* You have access to {OCP} using an account with operator installation permissions.
+* You have installed the catalog containing the {PlatformName} operators.
+* You have installed the {OperatorRHSSO}.
+To install the {OperatorRHSSO}, follow the procedure in link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.6/html/server_installation_and_configuration_guide/operator#doc-wrapper[Installing {RHSSO} using a custom resource] in the {RHSSO} documentation.
+
+include::platform/proc-create-keycloak-instance.adoc[leveloffset=2]
+include::platform/proc-create-keycloak-realm.adoc[leveloffset=2]
+include::platform/proc-create-keycloak-client.adoc[leveloffset=2]
+include::platform/proc-create-a-user.adoc[leveloffset=2]
+include::platform/proc-installing-the-ansible-platform-operator.adoc[leveloffset=2]
+include::platform/proc-creating-a-secret.adoc[leveloffset=2]
+include::platform/proc-installing-hub-using-operator.adoc[leveloffset=2]
+include::platform/proc-determine-hub-route.adoc[leveloffset=2]
+include::platform/proc-update-rhsso-client.adoc[leveloffset=2]
+
+== Additional resources
+
+* For more information on running operators on {OCPShort}, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/operators/index[Working with Operators in {OCPShort}] in the {OCPShort} product documentation.
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

@@ -1,0 +1,58 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: proc-doing-procedure-a.adoc
+* ID: [id="doing-procedure-a_{context}"]
+* Title: = Doing procedure A
+
+The ID is an anchor that links to the module. Avoid changing it after the module has been published to ensure existing links are not broken.
+////
+
+[id="proc-creating-firewall-rule_{context}"]
+
+== Creating a new firewall rule
+
+[role="_abstract"]
+Use the acl_manager role to create a new firewall rule for blocking a source IP address from accessing a destination IP address.
+
+.Prerequisites
+
+* You have installed Ansible 2.9 or later
+* You have access to the Check Point Management server to enforce the new policies
+
+.Procedure
+
+. Install the acl_manager role using the ansible-galaxy command.
++
+----
+$ ansible-galaxy install ansible_security.acl_manager
+----
+
+. Create a new playbook and set the following parameter. For example, source object, destination object, access rule between the two objects and the actual firewall you are managing, such as Check Point:
++
+----
+- name: block IP address
+  hosts: checkpoint
+  connection: httpapi
+
+  tasks:
+    - include_role:
+        name: acl_manager
+        tasks_from: block_ip
+      vars:
+        source_ip: 172.17.13.98
+        destination_ip: 192.168.0.10
+        ansible_network_os: checkpoint
+----
+
+. Run the playbook ``$ ansible-navigator run --ee false <playbook.yml>``.
++
+image::security-create-rule.png[Playbook with new firewall rule]
+
+.Verification
+
+You have created a new firewall rule that blocks a source IP address from accessing a destination IP address. Access the MGMT server and verify that the new security policy has been created.
+
+[role="_additional-resources"]
+.Additional resources
+
+For more information on installing roles, see https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#installing-roles-from-galaxy[Installing roles from Galaxy].

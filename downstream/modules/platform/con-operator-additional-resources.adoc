@@ -1,0 +1,5 @@
+[id="con-operator-additional-resources_{context}"]
+
+= Additional resources
+
+* See link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/operators/understanding-operators#olm-understanding-operatorhub[Understanding OperatorHub] to learn more about OpenShift Container Platform OperatorHub.

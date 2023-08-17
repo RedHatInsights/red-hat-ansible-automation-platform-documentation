@@ -1,0 +1,17 @@
+[id="proc-installing-the-ansible-platform-operator_{context}"]
+
+= Installing the {PlatformNameShort} Operator
+
+.Procedure
+
+. Navigate to menu:Operator[Operator Hub] and search for the {PlatformNameShort} Operator.
+. Select the {PlatformNameShort} Operator project.
+. Click on the Operator tile.
+. Click btn:[Install].
+. Select a Project to install the Operator into.
+Red Hat recommends using the Operator recommended Namespace name.
+.. If  you want to install the Operator into a project other than the recommended one, select *Create Project* from the drop down menu.
+.. Enter the Project name.
+.. Click btn:[Create].
+. Click btn:[Install].
+. When the Operator has been installed, click btn:[View Operator].

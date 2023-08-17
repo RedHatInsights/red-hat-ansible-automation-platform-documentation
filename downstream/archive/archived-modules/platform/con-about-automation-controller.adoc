@@ -1,0 +1,7 @@
+[id="con-about-automation-controller_{context}"]
+
+= {ControllerNameStart}
+
+
+[role="_abstract"]
+{ControllerNameStart} is an enterprise framework for controlling, securing, and managing Ansible automation with a user interface (UI) and RESTful application programming interface (API).

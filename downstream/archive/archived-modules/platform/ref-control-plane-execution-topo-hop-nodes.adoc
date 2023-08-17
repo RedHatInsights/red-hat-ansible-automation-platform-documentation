@@ -1,0 +1,31 @@
+
+
+[id="ref-control-plane-execution-topo-hop-nodes"]
+
+= Standard control plane and execution topology with hop nodes
+
+
+[role="_abstract"]
+This example inventory file deploys a control plane consisting of three nodes and an execution topology that utilizes hop nodes.
+
+[source,yaml]
+-----
+[automationcontroller]
+control-plane-1.example.com
+control-plane-2.example.com
+control-plane-3.example.com
+
+[automationcontroller:vars]
+node_type=control
+peers=execution_nodes
+
+[execution_nodes]
+execution-node-1.example.com peers=execution-node-2.example.com
+execution-node-2.example.com peers=execution-node-3.example.com
+execution-node-3.example.com peers=execution-node-4.example.com node_type=hop
+execution-node-4.example.com peers=execution-node-5.example.com node_type=hop
+execution-node-5.example.com peers=execution-node-6.example.com node_type=hop
+execution-node-6.example.com peers=execution-node-7.example.com
+execution-node-7.example.com
+
+-----

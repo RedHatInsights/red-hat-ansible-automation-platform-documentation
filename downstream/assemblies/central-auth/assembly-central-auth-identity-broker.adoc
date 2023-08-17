@@ -1,0 +1,34 @@
+[id="assembly-central-auth-identity-broker"]
+
+= Adding an identity broker to {AAPCentralAuth}
+
+{AAPCentralAuth} supports both social and protocol-based providers. You can add an identity broker to {CentralAuth} to enable social authentication for your realm, allowing users to log in using an existing social network account, such as Google, Facebook, GitHub etc.
+
+[NOTE]
+For a list of supported social networks and for more information to enable them, please see this https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html/server_administration_guide/identity_broker#social_identity_providers[section].
+
+Protocol-based providers are those that rely on a specific protocol in order to authenticate and authorize users. They allow you to connect to any identity provider compliant with a specific protocol. {AAPCentralAuth} provides support for SAML v2.0 and OpenID Connect v1.0 protocols.
+
+.Procedure
+. Log in to {AAPCentralAuth}as an admin user.
+. Under the _Configure_ section on the side navigation bar, click btn:[Identity Providers].
+. Using the dropdown menu labeled _Add provider_, select your identity provider to proceed to the identity provider configuration page.
+
+The following table lists the available options for your identity provider configuration:
+
+.Identity Broker Configuration Options
+[cols="a,a"]
+|===
+h|Configuration Option  h|Description
+| Alias | The alias is a unique identifier for an identity provider. It is used to reference an identity provider internally. Some protocols such as `OpenID Connect` require a redirect URI or callback url in order to communicate with an identity provider. In this case, the alias is used to build the redirect URL.
+| Enabled | Turns the provider on/off.
+| Hide on Login Page | If enabled, this provider will not be shown as a login option on the login page. Clients can still request to use this provider by using the `kc_idp_hint` parameter in the URL they use to request a login.
+| Account Linking Only | If enabled, this provider cannot be used to login users and will not be shown as an option on the login page. Existing accounts can still be linked with this provider.
+| Store Tokens | Whether or not to store the token received from the identity provider.
+| Stored Tokens Readable | Whether or not users are allowed to retrieve the stored identity provider token. This also applies to the broker client-level role read token.
+| Trust Email | Whether an email address provided by the identity provider will be trusted. If the realm requires email validation, users that log in from this IDP will not have to go through the email verification process.
+| GUI Order | The order number that sorts how the available IDPs are listed on the login page.
+| First Login Flow | Select an authentication flow that will be triggered for users that log in to {CentralAuth} through this IDP for the first time.
+| Post Login Flow | Select an authentication flow that is triggered after the user finishes logging in with the external identity provider.
+
+|===

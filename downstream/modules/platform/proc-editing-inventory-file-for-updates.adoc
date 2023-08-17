@@ -1,0 +1,71 @@
+[id="editing-inventory-file-for-updates_{context}"]
+
+= Setting up the inventory file
+
+Before upgrading your {PlatformName} installation, edit the `inventory` file so that it matches your desired configuration.
+You can keep the same parameters from your existing {PlatformNameShort} deployment or you can modify the parameters to match any changes to your environment.
+
+.Procedure
+
+. Navigate to the installation program directory.
+Bundled installer::
++
+[source,options="nowrap",subs=attributes+]
+-----
+$ cd ansible-automation-platform-setup-bundle-2.4-1-x86_64
+-----
++
+Online installer::
++
+[source,options="nowrap",subs=attributes+]
+-----
+$ cd ansible-automation-platform-setup-2.4-1
+-----
+
+. Open the `inventory` file for editing.
+. Modify the `inventory` file to provision new nodes, deprovision nodes or groups, and import or generate {HubName} API tokens.
++
+You can use the same `inventory` file from an existing {PlatformNameShort} 2.1 installation if there are no changes to the environment.
++
+[NOTE]
+====
+Provide a reachable IP address or fully qualified domain name (FDQN) for the [automationhub] and [automationcontroller] hosts to ensure that users can synchronize and install content from Ansible automation hub from a different node. 
+Do not use `localhost`.
+If `localhost is used`, the upgrade will be stopped as part of preflight checks.
+====
+
+.Provisioning new nodes in a cluster
+
+* Add new nodes alongside existing nodes in the `inventory` file as follows:
++
+[source,ini,options="nowrap",subs=attributes+]
+----
+include::ini/clustered-nodes.ini[]
+----
+
+.Deprovisioning nodes or groups in a cluster
+
+* Append `node_state-deprovision` to the node or group within the `inventory` file.
+
+.Importing and generating API tokens
+
+When upgrading from {PlatformName} 2.0 or earlier to {PlatformName} 2.1 or later, you can use your existing automation hub API token or generate a new token. In the inventory file, edit one of the following fields before running the {PlatformName} installer setup script `setup.sh`:
+
+* Import an existing API token with the `automationhub_api_token` flag as follows:
++
+[options="nowrap",subs="+quotes"]
+----
+automationhub_api_token=__<api_token>__
+----
+
+* Generate a new API token, and invalidate any existing tokens, with the `generate_automationhub_token` flag as follows:
++
+[options="nowrap",subs="+quotes"]
+----
+generate_automationhub_token=True
+----
+
+[role="_additional-resources"]
+.Additional resources
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/assembly-platform-install-scenario[Installing {PlatformName}]
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/assembly-deprovisioning-mesh[Deprovisioning individual nodes or instance groups]

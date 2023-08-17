@@ -1,0 +1,57 @@
+
+
+[id="proc-deprovisioning-nodes"]
+
+= Deprovisioning individual nodes using the installer
+
+[role="_abstract"]
+You can deprovision nodes from your {AutomationMesh} using the {PlatformNameShort} installer. Edit the `inventory` file to mark the nodes to deprovision, then run the installer. Running the installer also removes all configuration files and logs attached to the node.
+
+[NOTE]
+====
+You can deprovision any of your inventory’s hosts except for the first host specified in the `[automationcontroller]` group.
+====
+
+.Procedure
+
+* Append `*node_state=deprovision*` to nodes in the installer file you want to deprovision.
+
+.Example
+
+This example inventory file deprovisions two nodes from an automation mesh configuration.
+
+
+-----
+[automationcontroller]
+126-addr.tatu.home ansible_host=192.168.111.126  node_type=control
+121-addr.tatu.home ansible_host=192.168.111.121  node_type=hybrid  routable_hostname=121-addr.tatu.home
+115-addr.tatu.home ansible_host=192.168.111.115  node_type=hybrid node_state=deprovision
+
+[automationcontroller:vars]
+peers=connected_nodes
+
+[execution_nodes]
+110-addr.tatu.home ansible_host=192.168.111.110 receptor_listener_port=8928
+108-addr.tatu.home ansible_host=192.168.111.108 receptor_listener_port=29182 node_state=deprovision
+100-addr.tatu.home ansible_host=192.168.111.100 peers=110-addr.tatu.home node_type=hop
+
+-----
+
+== Deprovisioning isolated nodes
+You have the option to manually remove any isolated nodes using the `awx-manage` deprovisioning utility.
+
+WARNING: Use the deprovisioning command to remove only isolated nodes that have not migrated to execution nodes. To deprovision execution nodes from your {AutomationMesh} architecture, use the <<proc-deprovisioning-nodes, installer method>> instead.
+
+.Procedure
+
+. Shut down the instance:
++
+----
+$ automation-controller-service stop
+----
+. Run the deprovision command from another instance, replacing `__host_name__` with the name of the node as listed in the inventory file:
+[subs="+quotes"]
++
+----
+$ awx-manage deprovision_instance --hostname=__<host_name>__
+----

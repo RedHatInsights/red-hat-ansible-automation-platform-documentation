@@ -1,0 +1,41 @@
+
+
+[id="ref-platform-notes_{context}"]
+
+= Platform notes
+
+[role="_abstract"]
+.Installing {PlatformName} on systems with FIPS mode enabled
+
+* Only Red Hat Enterprise Linux 7+ is supported. The standard python that ships with RHEL must be used for {ControllerName} to work in FIPS mode. Using any non-standard, non-system python for {ContollerName} is therefore, unsupported.
+
+* By default, {ContollerName} configures PostgreSQL using password-based authentication, and this process relies on the usage of `md5` when `CREATE USER` is run at install time.  To run the {ContollerName} installer from a FIPS-enabled system, specify `pg_password` in your inventory file. **DO NOT** use special characters in `pg_password` as it may cause the setup to fail:
+
+-----
+pg_password='choose-a-password'
+-----
+
+If you supply a password in the inventory file for the installer (`pg_password`), that password will be SCRAM-SHA-256 hashed by PostgreSQL as part of the installation process.
+
+
+-  The `ssh-keygen` command generates keys in a format (RFC4716) which uses the `md5` digest algorithm at some point in the process (as part of a transformation performed on the input passphrase).  On a FIPS-enforcing system, `md5` is completely disabled, so these types of encrypted SSH keys (RFC4716 private keys protected by a passphrase) will not be usable.  When FIPS mode is enabled, any encrypted SSH key you import into Ansible Tower **must** be a `PKCS8`-formatted key.  Existing `AES128` keys can be converted to `PKCS8` by running the following `openssl` command::
+
+-----
+$ openssl pkcs8 -topk8 -v2 aes128 -in <INPUT_KEY> -out <NEW_OUTPUT_KEY>
+-----
+
+For more details, see: https://access.redhat.com/solutions/1519083
+
+* Use of Ansible features that use the `paramiko` library will not be FIPS compliant. This includes setting `ansible_connection=paramiko` as a transport and using network modules that utilize the `ncclient` NETCONF library.
+
+*  The TACACS+ protocol uses `md5` to obfuscate the content of authorization packets; link:https://docs.ansible.com/ansible-tower/3.8.3/html/administration/ent_auth.html#tacacs-plus[TACACS+ Authentication]is not supported for systems where FIPS mode is enabled.
+
+*  The RADIUS protocol uses `md5` to encrypt passwords in `Access-Request` queries; link:https://docs.ansible.com/ansible-tower/3.8.3/html/administration/ent_auth.html#radius[RADIUS Authentication] is not supported for systems where FIPS mode is enabled.
+
+.Notes for Red Hat Enterprise Linux setups
+
+* PackageKit can frequently interfere with the installation/update mechanism. Consider disabling or removing PackageKit if installed prior to running the setup process.
+* Only the "targeted" SELinux policy is supported. The targeted policy can be set to disabled, permissive, or enforcing.
+* When performing a bundled install, refer to _Choosing and obtaining a {PlatformName} installer_ for more information.
+* When installing {ControllerName}, you only need to run `setup.sh`, any repositories needed by Tower are installed automatically.
+* The latest version of Ansible is installed automatically during the setup process. No additional installation or configuration is required.

@@ -1,0 +1,14 @@
+// Module included in the following assemblies:
+// assembly-automation-savings-planner.adoc
+
+
+[id="proc-edit-savings-plan_{context}"]
+
+= Edit an existing savings plan
+
+Edit any information about an existing savings plan by clicking on it from the savings planner list view.
+
+.Procedure
+. Navigate to menu:Red Hat Insights[Savings Planner].
+. On the automation savings plan, click Click the btn:[More Actions] icon *{MoreActionsIcon}*, then click btn:[Edit].
+. Make any changes to the automation plan, then click btn:[Save].

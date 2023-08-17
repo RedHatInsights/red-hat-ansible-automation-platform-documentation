@@ -1,0 +1,16 @@
+// [id="proc-running-setup-script-for-updates_{context}"]
+
+= Running the {PlatformName} installer setup script
+
+[role="_abstract"]
+You can run the setup script once you have finished updating the `inventory` file.
+
+.Procedure
+
+. Run the `setup.sh` script
++
+-----
+$ ./setup.sh
+-----
+
+The installation will begin.

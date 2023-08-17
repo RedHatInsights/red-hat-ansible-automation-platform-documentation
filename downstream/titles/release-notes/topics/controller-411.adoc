@@ -1,0 +1,12 @@
+// This is the release notes for Automation controller 4.1, the version number is removed from the topic title as part of the release notes restructuring efforts.
+
+[[controller-411-intro]]
+= Automation controller
+
+.Automation controller 4.1.1 enhancements and bug fixes
+
+* Added the ability to specify additional nginx headers
+* Fixed analytics gathering to collect all the data the controller needed to collect
+* Fixed the controller to no longer break subsequent installer runs when deleting the demo organization
+
+See https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[automation controller Release Notes for 4.x] for a full list of new features and enhancements.

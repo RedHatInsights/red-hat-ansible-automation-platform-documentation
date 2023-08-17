@@ -1,0 +1,33 @@
+
+
+[id="ref-single-node-inventory_{context}"]
+
+= Example {PlatformName} single node inventory file
+
+
+[role="_abstract"]
+This example describes how you can populate the inventory file for a single node installation of {ControllerName}.
+
+-----
+[automationcontroller]
+controller.example.com <1>
+
+[database]
+
+[all:vars]
+admin_password='<password>'
+
+pg_host=''
+pg_port=''
+
+pg_database='awx'
+pg_username='awx'
+pg_password='<password>'
+
+registry_url='registry.redhat.io'
+registry_username='<registry username>'
+registry_password='<registry password>'
+-----
+
+
+<1> This should be set as a FQDN/IP.

@@ -1,0 +1,17 @@
+:imagesdir: images
+:toclevels: 4
+:experimental:
+:context: ansible-security
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Red Hat Ansible Security Automation Guide
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+
+include::security/assembly-firewall-policy-manage.adoc[leveloffset=+1]
+
+include::security/assembly-idps.adoc[leveloffset=+1]

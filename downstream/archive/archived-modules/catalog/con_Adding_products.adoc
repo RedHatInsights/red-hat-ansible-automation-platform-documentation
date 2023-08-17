@@ -1,0 +1,9 @@
+
+[id="Products"]
+== Adding products from a platform to a portfolio
+
+Products are the content that exist on your platforms, that your users need to order. In this section, we will add products from a platform to a portfolio.
+
+To add products from a platform to a portfolio:
+
+include::proc_Add_products_from_platforms.adoc[]

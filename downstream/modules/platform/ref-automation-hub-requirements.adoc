@@ -1,0 +1,39 @@
+[id="ref-automation-hub-requirements"]
+
+= {HubNameStart} system requirements
+
+{HubNameStart} enables you to discover and use new certified automation content from Red Hat Ansible and Certified Partners. 
+On {HubNameMain}, you can discover and manage Ansible Collections, which are supported automation content developed by Red Hat and its partners for use cases such as cloud automation, network automation, and security automation.
+
+{HubNameStart} has the following system requirements:
+
+[cols="a,a,a"]
+|===
+h|Requirement | Required | Notes
+
+| *RAM* | 8 GB minimum |
+
+* 8 GB RAM (minimum and recommended for Vagrant trial installations)
+* 8 GB RAM (minimum for external standalone PostgreSQL databases)
+* For capacity based on forks in your configuration, see additional resources
+| *CPUs* | 2 minimum |
+
+For capacity based on forks in your configuration, see additional resources.
+| *Local disk* |  60 GB disk | A minimum of 40GB should be  dedicated to /var for collection storage.
+
+|===
+
+[NOTE]
+====
+{PrivateHubNameStart}
+
+If you install {PrivateHubname} from an internal address, and have a certificate which only encompasses the external address, this can result in an installation which cannot be used as container registry without certificate issues.
+
+To avoid this, use the `automationhub_main_url` inventory variable with a value like \https://pah.example.com linking to the {PrivateHubName} node in the installation inventory file.
+
+This adds the external address to `/etc/pulp/settings.py`.
+
+This implies that you only want to use the external address.
+
+For information on inventory file variables, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars[Inventory File Variables] in the _{PlatformName} Installation Guide_.
+====

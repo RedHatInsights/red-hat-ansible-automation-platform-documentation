@@ -1,0 +1,13 @@
+[id="assembly-managing-private-collections"]
+
+= Managing the publication process of internal collections in Automation Hub
+
+Use {HubName} to manage and publish content collections developed within your organization. You can upload and group collections in namespaces. They need administrative approval to appear in the *Published* content repository. After you publish a collection, your users can access and download it for use.
+
+Additionally, you can reject submitted collections that do not meet organizational certification criteria.
+
+include::automation-hub/con-approval.adoc[leveloffset=+1]
+
+include::automation-hub/proc-approve-collection.adoc[leveloffset=+1]
+
+include::automation-hub/proc-reject-collections.adoc[leveloffset=+1]

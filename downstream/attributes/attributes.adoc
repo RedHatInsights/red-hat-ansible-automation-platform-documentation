@@ -1,0 +1,126 @@
+// Attributes for Red Hat Ansible Automation Platform
+
+// Platform
+:PlatformName: Red Hat Ansible Automation Platform
+:PlatformNameShort: Ansible Automation Platform
+:AAPCentralAuth: Ansible Automation Platform Central Authentication
+:CentralAuthStart: Central authentication
+:CentralAuth: central authentication
+:PlatformVers: 2.4
+:AnsibleCoreVers: 2.15
+:AnsibleInstallVers: 2.4-1
+:PlatformDownloadUrl: https://access.redhat.com/downloads/content/480/ver=2.4/rhel---9/2.4/x86_64/product-software
+
+// Event-Driven Ansible
+:EDAName: Event-Driven Ansible
+:EDAcontroller: Event-Driven Ansible controller
+
+// AAP on Clouds
+:AAPonAzureName: Red Hat Ansible Automation Platform on Microsoft Azure
+:AAPonAzureNameShort: Ansible Automation Platform on Microsoft Azure
+:AWS: Amazon Web Services
+:GCP: Google Cloud Platform
+
+// Automation Mesh
+:AutomationMesh: automation mesh
+:AutomationMeshStart: Automation mesh
+
+// Operators
+:OperatorPlatform: Ansible Automation Platform Operator
+:OperatorHub: Ansible Automation Platform Hub Operator
+:OperatorController: Ansible Automation Platform Controller Operator
+:OperatorResource: Ansible Automation Platform Resource Operator
+
+
+// Automation services catalog
+:CatalogName: automation services catalog
+:CatalogNameStart: Automation services catalog
+:ITSM: ITSM integration
+:returns: product returns
+:leasing: product leasing
+:surveys: dynamic surveys
+:connector: cloud connector for catalog
+
+// Insights
+:InsightsName: Red Hat Insights for Red Hat Ansible Automation Platform
+:InsightsShort: Insights for Ansible Automation Platform
+:calculator: automation calculator
+:explorer: job explorer
+:planner: automation savings planner
+:email: email notification
+:subscription: subscription watch
+:insights: insights integration
+
+// Automation hub
+:HubNameStart: Automation hub
+:HubName: automation hub
+:HubNameMain: Ansible automation hub
+:PrivateHubNameStart: Private automation hub
+:PrivateHubName: private automation hub
+:PrivateCollections: Ansible private automation hub collection management
+:EEmanagement: Ansible private automation hub EE management
+:HubDatabase: Ansible private automation hub database
+:Hubreadonly: Ansible automation hub "read-only" instance
+:HubCollLife: Ansible automation hub collection lifecycle
+
+// Automation Controller
+:ControllerNameStart: Automation controller
+:ControllerName: automation controller
+:TaskManager: task manager/scheduler
+:APIinventory: API inventory management
+:APIcredential: API credential management
+:MessageQueue: message queue/cache/KV store
+:MeshConnect: automation mesh connector
+:MeshReceptor: automation mesh receptor
+
+// Automation Mesh
+:MeshName: automation mesh
+:ReceptorRpm: receptor rpm/container
+:RunnerRpm: Ansible-runner rpm/container
+
+// Execution environments
+:ExecEnvNameStart: Automation execution environments
+:ExecEnvName: automation execution environments
+:ExecEnvNameSing: automation execution environment
+:ExecEnvShort: execution environment
+:RHEL8: RHEL 8 UBI
+:RHEL9: RHEL 9 UBI
+:Python: Python 3.9
+:Runner: Ansible Runner
+:Role: Role ARG Spec
+
+
+// Ansible developer tools
+:ToolsName: Ansible developer tools
+:Test: Ansible-test
+:Builder: Ansible Builder
+:Navigator: Automation content navigator
+:IDEplugin: Ansible IDE plugins
+:IDEcollection: Ansible IDE collection explorer
+:IDElanguage: Ansible IDE language server
+
+// Content Collections
+:CertifiedName: Ansible Certified Content Collections
+:CertifiedColl: Red Hat Ansible Certified Content Collection
+:CertifiedCon: Red Hat Ansible Certified Content
+:ServiceNowColl: Red Hat Ansible Certified Content Collection for Service Now
+:Galaxy: Ansible Galaxy
+:Valid: Ansible validated content
+:Console: console.redhat.com
+
+// OpenShift attributes
+:OCP: Red Hat OpenShift Container Platform
+:OCPShort: OpenShift Container Platform
+:OCPLatest: 4.12
+:ODF: Red Hat OpenShift Data Foundation
+:ODFShort: OpenShift Data Foundation
+
+// Red Hat products
+:RHSSO: Red Hat Single Sign-On
+:RHSSOVers: 7.6
+:RHSSOshort: RH-SSO
+:OperatorRHSSO: Red Hat Single Sign-On Operator
+
+// Icons
+:MoreActionsIcon: &vellip;
+:SettingsIcon: &#9881;

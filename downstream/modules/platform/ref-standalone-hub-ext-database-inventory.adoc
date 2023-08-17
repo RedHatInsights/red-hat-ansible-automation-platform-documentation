@@ -1,0 +1,48 @@
+[id="ref-standlone-hub-ext-database-inventory_{context}"]
+
+= Single {HubName} with external (installer managed) database
+
+[role="_abstract"]
+Use this example to populate the inventory file to deploy a single instance of {HubName} with an external (installer managed) database.
+
+-----
+[automationcontroller]
+
+[automationhub]
+automationhub.example.com
+
+[database]
+data.example.com
+
+[all:vars]
+registry_url='registry.redhat.io'
+registry_username='<registry username>'
+registry_password='<registry password>'
+
+automationhub_admin_password= <PASSWORD>
+
+automationhub_pg_host='data.example.com'
+automationhub_pg_port='5432'
+
+automationhub_pg_database='automationhub'
+automationhub_pg_username='automationhub'
+automationhub_pg_password=<PASSWORD>
+automationhub_pg_sslmode='prefer'
+
+# The default install will deploy a TLS enabled Automation Hub.
+# If for some reason this is not the behavior wanted one can
+# disable TLS enabled deployment.
+#
+# automationhub_disable_https = False
+# The default install will generate self-signed certificates for the Automation
+# Hub service. If you are providing valid certificate via automationhub_ssl_cert
+# and automationhub_ssl_key, one should toggle that value to True.
+#
+# automationhub_ssl_validate_certs = False
+# SSL-related variables
+# If set, this will install a custom CA certificate to the system trust store.
+# custom_ca_cert=/path/to/ca.crt
+# Certificate and key to install in Automation Hub node
+# automationhub_ssl_cert=/path/to/automationhub.cert
+# automationhub_ssl_key=/path/to/automationhub.key
+-----

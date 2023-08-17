@@ -1,0 +1,74 @@
+// For each release of AAP, make a copy of this file and rename it to operator-rn-xx.adoc where xx is the release number; for example, 24 for the 2.4 release.
+// Save the renamed copy of this file to the release-notes/topics directory topic files for the release notes reside.
+//Only include release note types that have updates for a given release. For example, if there are no Technology previews for the release, remove that section from this file.
+//Add an include statement for this file to the newly created assembly-rn-xx.adoc file. If the AAP Operator has no release notes for a given release, do not include this information.
+
+= Ansible Automation Platform Operator <version>
+
+The Ansible Automation Platform Operator provides cloud-native, push-button deployment of new Ansible Automation Platform instances in your OpenShift environment.
+
+== New features and enhancements
+
+This release of Ansible Automation Platform Operator features the following enhancements:
+
+* Feature/enhancement and description
+* Feature/enhancement and description
+
+== Technology Preview
+
+Some features in this release are currently classified as Technology Preview. These experimental features are not intended for production use. For more information about technology preview features, see xref:technology-preview[What is a Technology Preview feature].
+
+<ABC> is available as a Technology Preview::
+ABC, which Red Hat provides as an unsupported Technology Preview, is <description of feature>
+
+<XYZ> is available as a Technology Preview::
+XYZ, which Red Hat provides as an unsupported Technology Preview, is <description of feature>
+
+== Bug fixes
+
+These bugs were fixed in this release of Ansible Automation Platorm:
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of bug fix>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of bug fix>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of bug fix>
+
+== Deprecated and removed features
+
+Some features available in previous releases have been deprecated or removed.
+
+Deprecated functionality is still included in Ansible Automation Platform Operator and continues to be supported; however, it will be removed in a future release of this product and is not recommended for new deployments. For the most recent list of major functionality deprecated and removed within Ansible Automation Platform Operator <version>, refer to the table below.
+
+.Deprecated features
+[options="header"]
+[cols=",a"]
+|===
+|Deprecated Feature |Details
+|<feature abc> |Support for <feature abc> is now deprecated. This functionality will be removed in a future release.
+|<feature xyz> |Support for <feature xyz> is now deprecated. This functionality will be removed in a future release.
+|===
+
+.Removed features
+[options="header"]
+[cols=",a"]
+|===
+|Removed feature |Details
+|<feature abc> |<feature abc> support has been removed in Ansible Automation Platform Operator <version>
+|<feature xyz> |<feature xyz> support has been removed in Ansible Automation Platform Operator <version>
+|===
+
+== Known issues
+These known issues exist in Ansible Automation Platform Operator at this time:
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of issue>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of issue>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of issue>

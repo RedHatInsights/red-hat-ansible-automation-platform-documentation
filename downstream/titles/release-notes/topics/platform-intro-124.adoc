@@ -1,0 +1,12 @@
+[[platform-124-intro]]
+= Red Hat Ansible Automation Platform 1.2.4
+
+.Bug fixes
+
+* Added the ability for Ansible Automation Platform 1.2.x to transition from venvs to execution environments smoothly to platform 2.x This includes three new `awx-manage` commands, check associations, and export venvs for building an execution environment.
+
+* Added Ansible 2.9.25 to the platform installer package
+
+* Fixed Tower’s NGINX Instance vulnerability (CVE-2021-23017). For any deployments on RHEL 8, the package comes from RHEL, and just applying the RHEL update resolves this.
+
+* Updated the backup and restore to now work without the `automationhub` group

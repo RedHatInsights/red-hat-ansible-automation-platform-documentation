@@ -1,0 +1,11 @@
+[id="ref-operator-ocp-version_{context}"]
+
+= {OCPShort} version compatibility
+
+[role="_abstract"]
+
+The {OperatorPlatform} to install {PlatformNameShort} {PlatformVers} is available on {OCPShort} 4.9 and later versions.
+
+[role="_additional-resources"]
+.Additional resources
+* See the link:https://access.redhat.com/support/policy/updates/ansible-automation-platform[Red Hat Ansible Automation Platform Life Cycle] for the most current compatibility details.

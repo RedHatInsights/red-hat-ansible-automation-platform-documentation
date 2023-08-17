@@ -1,0 +1,10 @@
+// This is the release notes for Automation Platform Operator 2.3, the version number is removed from the topic title as part of the release notes restructuring efforts.
+
+[[operator-230-intro]]
+= Automation Platform Operator
+
+Ansible Automation Platform Operator provides cloud-native, push-button deployment of new Ansible Automation Platform instances in your OpenShift environment.
+
+.Enhancements
+
+* Fixed an issue where the pulp resource manager was not removed on upgrade from Automation Platform Operator 2.1 to Automation Platform Operator 2.2.

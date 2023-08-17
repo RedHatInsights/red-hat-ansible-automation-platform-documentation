@@ -1,0 +1,66 @@
+[id="con-inventory-introduction_{context}"]
+
+= About the installer inventory file
+
+{PlatformName} works against a list of managed nodes or hosts in your infrastructure that are logically organized, using an inventory file. 
+You can use the {PlatformName} installer inventory file to specify your installation scenario and describe host deployments to Ansible. 
+By using an inventory file, Ansible can manage a large number of hosts with a single command. 
+Inventories also help you use Ansible more efficiently by reducing the number of command line options you have to specify. 
+
+The inventory file can be in one of many formats, depending on the inventory plugins that you have. 
+The most common formats are `INI` and `YAML`. 
+Inventory files listed in this document are shown in INI format.
+
+The location of the inventory file depends on the installer you used. 
+The following table shows possible locations: 
+
+[cols="30%,70%",options="header"]
+|====
+| Installer | Location
+| *Bundle tar* | `/ansible-automation-platform-setup-bundle-<latest-version>`
+| *Non-bundle tar* | `/ansible-automation-platform-setup-<latest-version>`
+| *RPM* | `/opt/ansible-automation-platform/installer`
+|====
+
+You can verify the hosts in your inventory using the command:
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+ansible all -i <path-to-inventory-file. --list-hosts
+----
+
+.Example inventory file
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+[automationcontroller]
+host1.example.com
+host2.example.com
+Host4.example.com
+
+[automationhub]
+host3.example.com
+
+[database]
+Host5.example.com
+
+[all:vars]
+admin_password='<password>'
+
+pg_host=''
+pg_port=''
+
+pg_database='awx'
+pg_username='awx'
+pg_password='<password>'
+
+registry_url='registry.redhat.io'
+registry_username='<registry username>'
+registry_password='<registry password>'
+----
+
+The first part of the inventory file specifies the hosts or groups that Ansible can work with. 
+
+[NOTE]
+====
+The inventory file variables `registry_username` and `registry_password` are only required if a non-bundle installer is used.

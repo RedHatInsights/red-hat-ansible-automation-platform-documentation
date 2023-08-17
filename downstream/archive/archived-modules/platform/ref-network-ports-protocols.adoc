@@ -1,0 +1,265 @@
+
+[id="ref-network-ports-protocols_{context}"]
+
+= Network ports and protocols
+
+[role="_abstract"]
+
+{PlatformName} (AAP) uses a number of ports to communicate with its services. These ports must be open and available for incoming connection to the {PlatformName} server in order for it to work. Ensure that these ports are available and are not being blocked by the server firewall.
+
+The following tables provide the default {PlatformName} destination ports required for each application.
+
+[NOTE]
+The default destination ports and installer inventory listed below are configurable. If you choose to configure them to suit your environment, you may experience a change in behavior.
+
+
+
+.PostgreSQL
+[options="header"]
+|===
+|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
+|22
+|TCP
+|SSH
+|Inbound and Outbound
+|`ansible_port`
+|Remote access during installation
+|5432
+|TCP
+|Postgres
+|Inbound and Outbound
+|`pg_port`
+a|Default port
+
+ALLOW connections from controller(s) to database port
+|===
+
+.{ControllerNameStart}
+[options="header"]
+|===
+|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
+|22
+|TCP
+|SSH
+|Inbound and Outbound
+|`ansible_port`
+|Installation
+
+|80
+|TCP
+|HTTP
+|Inbound
+|`nginx_http_port`
+|UI/API
+
+|443
+|TCP
+|HTTPS
+|Inbound
+|`nginx_https_port`
+|UI/API
+
+|5432
+|TCP
+|PostgreSQL
+|Inbound and Outbound
+|`pg_port`
+a|Open *only* if the internal database is used along with another component. Otherwise, this port should not be open
+
+Hybrid mode in a cluster
+
+|27199
+|TCP
+|Receptor
+|Inbound and Outbound
+|`receptor_listener_port`
+|ALLOW receptor listener port across all controllers for mandatory & automatic control plane clustering
+|===
+
+.Hop Nodes
+[options="header"]
+|===
+|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
+|22
+|TCP
+|SSH
+|Inbound and Outbound
+|`ansible_port`
+|Installation
+
+|27199
+|TCP
+|Receptor
+|Inbound and Outbound
+|`receptor_listener_port`
+a|Mesh
+
+ALLOW connection from controller(s) to Receptor port
+|===
+
+.Execution Nodes
+[options="header"]
+|===
+|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
+|22
+|TCP
+|SSH
+|Inbound and Outbound
+|`ansible_port`
+|Installation
+
+|27199
+|TCP
+|Receptor
+|Inbound and Outbound
+|`receptor_listener_port`
+a|Mesh - Nodes directly peered to controllers. No hop nodes involved. 27199 is bi-directional for the execution nodes
+
+ALLOW connections from controller(s) to Receptor port (non-hop connected nodes)
+
+ALLOW connections from hop node(s) to Receptor port (if relayed through hop nodes)
+|===
+
+.Control Nodes
+[options="header"]
+|===
+|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
+|22
+|TCP
+|SSH
+|Inbound and Outbound
+|`ansible_port`
+|Installation
+
+|27199
+|TCP
+|Receptor
+|Inbound and Outbound
+|`receptor_listener_port`
+a|Mesh - Nodes directly peered to controllers. Direct nodes involved. 27199 is bi-diretional for execution nodes
+
+ENABLE connections from controller(s) to Receptor port for non-hop connected nodes
+
+ENABLE connections from hop node(s) to Receptor port if relayed through hop nodes
+|443
+|TCP
+|Podman
+|Inbound
+|`nginx_https_port`
+|UI/API
+|===
+
+.Hybrid Nodes
+[options="header"]
+|===
+|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
+|22
+|TCP
+|SSH
+|Inbound and Outbound
+|`ansible_port`
+|Installation
+
+|27199
+|TCP
+|Receptor
+|Inbound and Outbound
+|`receptor_listener_port`
+a|Mesh - Nodes directly peered to controllers. No hop nodes involved. 27199 is bi-directional for the execution nodes
+
+ENABLE connections from controller(s) to Receptor port for non-hop connected nodes
+
+ENABLE connections from hop node(s) to Receptor port if relayed through hop nodes
+
+|443
+|TCP
+|Podman
+|Inbound
+|`nginx_https_port`
+|UI/API
+|===
+
+.{HubNameStart}
+[options="header"]
+|===
+|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
+|22
+|TCP
+|SSH
+|Inbound and Outbound
+|`ansible_port`
+|Installation
+
+|80
+|TCP
+|HTTP
+|Inbound
+|`nginx_http_port`
+|User interface
+|443
+|TCP
+|HTTPS
+|Inbound
+|`nginx_https_port`
+|User interface
+|5432
+|TCP
+|PostgreSQL
+|Inbound and Outbound
+|`pg_port`
+a|Open *only* if the internal database is used along with another component. Otherwise, this port should not be open
+|===
+
+.Services Catalog
+[options="header"]
+|===
+|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
+|22
+|TCP
+|SSH
+|Inbound and Outbound
+|`ansible_port`
+|Installation
+|443
+|TCP
+|HTTPS
+|Inbound
+|`nginx_https_port`
+|Access to Service Catalog user interface
+|5432
+|TCP
+|PostgreSQL
+|Inbound and Outbound
+|`pg_port`
+a|Open *only* if the internal database is used. Otherwise, this port should not be open
+|===
+
+.{InsightsName}
+[options="header"]
+|===
+|URL |Required for
+|link:http://api.access.redhat.com:443[http://api.access.redhat.com:443] |General account services, subscriptions
+|link:https://cert-api.access.redhat.com:443[https://cert-api.access.redhat.com:443] |Insights data upload
+|link:https://cert.cloud.redhat.com:443[https://cert.cloud.redhat.com:443] |Inventory upload and Cloud Connector connection
+|link:https://cloud.redhat.com[https://cloud.redhat.com] |Access to Insights dashboard
+|===
+
+.Automation Hub
+[options="header"]
+|===
+|URL |Required for
+|link:https://console.redhat.com:443[https://console.redhat.com:443] |General account services, subscriptions
+|link:https://sso.redhat.com:443[https://sso.redhat.com:443] |TCP
+|link:https://automation-hub-prd.s3.amazonaws.com[https://automation-hub-prd.s3.amazonaws.com] |
+|link:https://galaxy.ansible.com[https://galaxy.ansible.com] |Ansible Community curated Ansible content
+|link:https://ansible-galaxy.s3.amazonaws.com[https://ansible-galaxy.s3.amazonaws.com] |
+|link:https://registry.redhat.io:44[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
+|link:https://cert.cloud.redhat.com:443[https://cert.cloud.redhat.com:443] |Red Hat and partner curated Ansible Collections
+|===
+
+.Execution Environments (EE)
+[options="header"]
+|===
+|URL |Required for
+|link:https://registry.redhat.io:44[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
+|===

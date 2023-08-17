@@ -1,0 +1,15 @@
+[[tower-381-intro]]
+= Ansible Tower 3.8.1
+
+.Bux fixes and enhancements
+
+* Improved analytics collection to collect the playbook status for all hosts in a playbook run
+* Updated nginx on RHEL 7 
+* Updated autobahn 
+* Added aggregation support for applying multiple subscriptions to a single Tower installation
+* Fixed Tower to properly handle certain uploaded subscription manifests
+* Fixed Tower to properly respect the configured destination port when interacting with Red Hat Satellite 6 to obtain licensing/entitlement data
+* Fixed an error in the module documentation for the tower_license module* Fixed inventory updates from Satellite 6 and Tower to no longer fail unexpectedly
+* Fixed AWS inventory hosts to now properly track across inventory updates
+
+See https://docs.ansible.com/ansible-tower/latest/html/release-notes/index.html[Ansible Tower Release Notes v3.8.1] for a full list of new features and enhancements.

@@ -1,0 +1,8 @@
+[id="verify-sso-install"]
+
+= Verifying {RHSSO} connection
+
+The installer uses the {RHSSO} variables to setup a Keycloak realm and client.
+
+To verify that you have successfully connected to the existing {RHSSO} installation, check that `settings.py` contains the {RHSSO} host information, the realm name, the key, and the secret.
+

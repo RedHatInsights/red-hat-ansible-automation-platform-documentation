@@ -1,0 +1,95 @@
+////
+Retains the context of the parent assembly if this assembly is nested within another assembly.
+For more information about nesting assemblies, see: https://redhat-documentation.github.io/modular-docs/#nesting-assemblies
+See also the complementary step on the last line of this file.
+////
+
+ifdef::context[:parent-context: {context}]
+
+
+[id="installing-hub-operator-local"]
+= Installing {HubName} on {OCP} with a local database and routed web traffic
+
+
+:context: installing-hub-operator-local
+
+[NOTE]
+====
+Default installation settings include storage of 50 GB and `ReadWriteMany` access.
+====
+
+
+[role="_abstract"]
+You can use these instructions to install the {HubName} operator on {OCP} and instantiate an instance with routed web traffic using the advanced configuration options in the *Form View*.
+
+
+// mirrors AWX operator flow
+
+== Prerequisites
+
+* You have installed the catalog containing the {PlatformName} operators
+
+== Installing the {PlatformNameShort} operator
+Use this procedure to install the {PlatformNameShort} operator.
+
+.Procedure
+. Log in to {OCP}.
+. Navigate to menu:Operators[Operator Hub].
+. Locate the {PlatformName} catalog and click on it.
+. Choose your *Installation Mode*.
+. Choose a *Namespace* from the drop-down menu.
+. Select an *Approval Strategy*
+. Click btn:[Install].
+
+The installation process will begin. When installation is complete a modal will appear notifying you the operator is installed in the specified namespace.
+
+* Click btn:[View Operator] to view your newly installed operator.
+
+== Instantiating an instance of {HubName}
+
+[NOTE]
+====
+{OCP} clusters running on AWS do not support ReadWriteMany without adding NFS or other storage.
+====
+
+.Procedure
+
+. Navigate to menu:Operators[Installed Operators].
+. Locate the {HubName} operator and click on it.
+. Click btn:[Create Instance].
+. Select *Form View* to configure the operator instance.
+. Click btn:[Advanced Configuration] to enter additional resource information. Use this option to supply *Admin password secret*, *Database configuration secret* and other parameters.
+. Select *Route* from the *Ingress Type* drop-down menu.
+.. Input the *Route DNS host* to specify the DNS to use to point to the instance.
+.. Select a *Route TLS termination mechanism* option from the drop-down menu.
+.. Select a *Route TLS credential secret* to choose a secret where the TLS related credentials are stored.
+. Select a *Storage Type* from the options in the drop-down menu.
+.. Choose a *Storage Secret* based on the storage type you are using.
+. Click btn:[Create].
+
+{OCP} will create the pods. This may take a few minutes.
+
+* View progress by navigating to menu:Workloads[Pods] and locating the newly created instance.
+
+
+== Accessing the {HubName} user interface
+
+You can access the {HubName} interface once all pods have successfully launched.
+
+. Navigate to menu:Networking[Routes].
+. Under *Location*, click on the URL for your {HubName} instance.
+
+The {HubName} user interface launches where you can sign in with the administrator credentials specified during the operator configuration process.
+
+[NOTE]
+====
+If you did not specify an administrator password during configuration, one was automatically created for you. To locate this password, go to your project, select menu:Workloads[Secrets] and open controller-admin-password. From there you can copy the password and paste it into the {HubNameStart} password field.
+====
+
+[role="_additional-resources"]
+== Additional resources
+
+* See link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.2/html/operators/index[Working with Operators in OpenShift Container Platform] for more information on running operators on OpenShift Container Platform.
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

@@ -1,0 +1,54 @@
+[[aap-2.1.2-intro]]
+= Ansible Automation Platform 2.1.2
+
+.Enhancements
+* Added architecture support labels for the Ansible Automation Platform operator
+* Updated to Receptor 1.2.1 on all supported versions of the Ansible Automation Platform
+* Removed unnecessary packages from the bundle installer to reduce the file size
+* Updated to version to Ansible Runner 2.1.3
+* Removed the enforcement of license compliance from the Ansible Automation Platform installer
+* Added support to enable an array of pull secrets to pass to the operator
+* Added a preflight check to ensure that the installer is running on a UTF-8 system
+* Removed unnecessary `become_user:root` entries from the Ansible Automation Platform installer
+* Added support to provide a custom secret key when running the `rekey.yml` file
+* Added a preflight check to detect missing username and password variables for service catalog worker, instead of causing an installation failure at a later point of time
+* Updated the collection counts on the *Content* tab when the collection details were filtered
+
+.Bug fixes
+* Fixed an issue where Controller user interface would not load on a few cloud providers
+* Added compatibility with earlier versions for `image_pull_secret` key in `awx-operator`, so that the backup and restore operations are completed successfully
+* Automation controller backups no longer fail when multiple secrets are supported
+* Resolved certification mismatch during upgrade so that every controller dashboard is accessible
+* Improved the labels for Japanese translations
+* Resolved issues when upgrading automation hub from version 2.1.1 to version 2.1.2
+* Resolved issues where the Controller user interface was not accessible, when automation controller was installed through Operator on OpenShift Core Platform 4.10
+* Fixed an issue that caused the upgrade from Ansible Automation Platform 1.2 to 2.1 to fail, when the execution environment was transferred to automation hub
+* Fixed an issue so that a standalone installation of private automation hub can now transfer the execution environments to the hub
+* Fixed an issue when the variable `sslmode` was not configured correctly during automation hub installation
+* Running the ``./setup.sh -b` command from the installer directory no longer fails to load group variables
+* Fixed an issue where the SELinux context was not being configured correctly on subsequent installations
+* The installer no longer fails when IPV6 is disabled
+* Modified the database backup and restore logic to compress the data dump
+* Fixed an issue during installation where a configured proxy would not be used when required
+* Fixed installations of execution environments when installing without internet access
+* Creating default execution environments no longer fails when the password includes special characters
+* Added support to set a parameter to change the temporary directory path, so that the execution environments can be extracted to the bundled installer
+* Upgrading to Ansible Automation Platform 2.1 no longer fails when the Django superuser is missing
+* Fixed an issue where installation of automation hub failed due to symlinks
+* Added explanations for variables of service catalog worker in the installer inventory
+* Fixed an issue where installing automation hub with an external database did not install Postgres as expected
+* Fixed an issue where variables with default values were shown as undefined variables
+* Added support for `ansible_host` in the installer inventory for automation hub
+* Fixed an issue where a few commands were missing on initializing the container
+* Fixed an issue where the TTL controller caused the jobs to run repeatedly
+* Resolved intermittent `500 internal server error` while pulling the execution environments from private automation hub
+* Fixed an issue so that remotes configured with proxy authentication can be edited without re-entering the proxy password
+* Updated the proxy password from text type to password type to make the password more secure
+* Updated the synchronization that is used by authenticated proxy to avoid authentication failures
+* Added message in the Controller user interface to inform users that the community collections do not have docs
+* Resolved intermittent issue while trying to sync community `devsec.hardening` collection on automation hub 4.4.0
+* Added field validation to allow HTTPS URLs only when adding a remote registry
+* Added import result and filenames to the audit log
+* Updated the group categories such as *Namespaces*, *Collections*, *Users*, *Groups*, *Remotes*, and *Containers* in the translatable strings
+* Updated the *Filter by repository* dropdown field in the translatable strings
+* Updated the *Namespaces* label in the translatable strings.

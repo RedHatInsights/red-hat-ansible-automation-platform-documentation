@@ -1,0 +1,12 @@
+<title>Uploading content to Red Hat Automation Hub</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>2.4</productnumber>
+<subtitle>Manage your collections with Automation Hub
+</subtitle>
+<abstract>
+<para>This guide shows how to upload and delete collections using the automation hub.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

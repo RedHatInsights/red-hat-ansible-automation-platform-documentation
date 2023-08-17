@@ -1,0 +1,42 @@
+
+[id="ref-single-eda-controller-with-internal-db_{context}"]
+
+= Single {EDAcontroller} node with internal database
+
+Use this example to populate the inventory file to install {EDAcontroller}. This installation inventory file includes a single {EDAcontroller} node with an internal database.
+
+[IMPORTANT]
+====
+{ControllerNameStart} must be installed before you populate the inventory file with the following {EDAName} variables.
+====
+
+-----
+# Automation EDA Controller Configuration
+#
+
+automationedacontroller_admin_password='<eda-password>'
+
+automationedacontroller_pg_host=''
+automationedacontroller_pg_port=5432
+
+automationedacontroller_pg_database='automationedacontroller'
+automationedacontroller_pg_username='automationedacontroller'
+automationedacontroller_pg_password='<password>'
+
+# The full routable URL used by EDA to connect to a controller host.
+# This URL is required if there is no Automation Controller configured
+# in inventory.
+#
+automation_controller_main_url = 'https://controller.example.com/'
+ 
+# Boolean flag used to verify Automation Controller's
+# web certificates when making calls from Automation EDA Controller.
+#
+automationedacontroller_controller_verify_ssl = true
+
+-----
+
+[role="_additional-resources"]
+.Additional resources
+* For more details on {EDAName}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_event-driven_ansible_guide/index[Getting Started with Event-Driven Ansible Guide].
+

@@ -1,0 +1,35 @@
+
+[id="proc-installing-navigator-rhel-tar_{context}"]
+
+
+= Installing {Navigator} on RHEL from a tarball
+
+
+[role="_abstract"]
+
+You can install {Navigator} on Red Hat Enterprise Linux (RHEL) from a tar file.
+
+.Prerequisites
+
+* You must have access to https://access.redhat.com/downloads/content/480.
+
+
+.Procedure
+
+. Download the tarball from https://access.redhat.com/downloads/content/480.
+
+. Install {Navigator}:
++
+----
+$ pip install <ansible-navigator-tarball>
+----
++
+
+
+.Verification
+
+* Verify your {Navigator} installation:
++
+----
+$ ansible-navigator --help
+----

@@ -1,0 +1,23 @@
+////
+Base the file name and the ID on the module title. For example:
+* file name: con-my-concept-module-a.adoc
+* ID: [id="con-my-concept-module-a_{context}"]
+* Title: = My concept module A
+////
+
+[id="con-about-builder"]
+
+= About {Builder}
+
+[role="_abstract"]
+
+{Builder} is a command line tool that automates the process of building {ExecEnvName} by using the metadata defined in various Ansible Collections or by the user.
+
+Before {Builder} was developed, {PlatformName} users could run into dependency issues and errors when creating custom virtual environments or containers that included all of the required dependencies installed.
+
+Now, with {Builder}, you can easily create a customizable {ExecEnvName} definition file that specifies the content you want to be included in your {ExecEnvName} such as collections, third-party Python requirements, and system-level packages. This allows you to fulfill all of the necessary requirements and dependencies to get jobs running.
+
+[NOTE]
+====
+Red Hat currently does not support users who choose to provide their own container images when building automation {ExecEnvName}.
+====

@@ -1,0 +1,18 @@
+[id="con-ee-precedence"]
+
+= {ExecEnvNameStart} precedence
+
+Project updates will always use the control plane {ExecEnvName} by default, however, jobs will use the first available {ExecEnvName} as follows:
+
+. The `execution_environment` defined on the template (job template or inventory source) that created the job.
+. The `default_environment` defined on the project that the job uses.
+. The `default_environment` defined on the organization of the job.
+. The `default_environment` defined on the organization of the inventory the job uses.
+. The current `DEFAULT_EXECUTION_ENVIRONMENT` setting (configurable at `api/v2/settings/jobs/`)
+. Any image from the `GLOBAL_JOB_EXECUTION_ENVIRONMENTS` setting.
+. Any other global execution environment.
+
+[NOTE]
+====
+If more than one execution environment fits a criteria (applies for 6 and 7), the most recently created one is used.
+====

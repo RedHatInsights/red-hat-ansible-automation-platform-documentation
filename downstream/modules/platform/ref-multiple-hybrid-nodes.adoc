@@ -1,0 +1,66 @@
+[id="ref-multiple-hybrid-nodes"]
+
+= Multiple hybrid nodes inventory file example
+
+[role="_abstract"]
+This example inventory file deploys a control plane consisting of multiple hybrid nodes. The nodes in the control plane are automatically peered to one another.
+
+[source,yaml]
+-----
+[automationcontroller]
+aap_c_1.example.com
+aap_c_2.example.com
+aap_c_3.example.com
+-----
+
+The following image displays the topology of this mesh network.
+
+// image from downstream/snippets/mesh-multiple-hybrid-nodes.dot
+image::mesh-multiple-hybrid-nodes.png["The topology map of the multiple hybrid node mesh configuration consists of an automation controller group. The automation controller group contains three hybrid nodes: aap_c_1, aap_c_2, and aap_c_3. The control nodes are peered to one another as follows: aap_c_3 is peered to aap_c_1 and aap_c_1 is peered to aap_c_2."]
+
+The default `node_type` for nodes in the control plane is `hybrid`.
+You can explicitly set the `node_type` of individual nodes to `hybrid` in the `[automationcontroller group]`:
+
+[source,yaml]
+-----
+[automationcontroller]
+aap_c_1.example.com node_type=hybrid
+aap_c_2.example.com node_type=hybrid
+aap_c_3.example.com node_type=hybrid
+
+-----
+
+Alternatively, you can set the `node-type` of all nodes in the `[automationcontroller]` group.
+When you add new nodes to the control plane they are automatically set to hybrid nodes.
+
+[source,yaml]
+-----
+[automationcontroller]
+aap_c_1.example.com
+aap_c_2.example.com
+aap_c_3.example.com
+
+[automationcontroller:vars]
+node_type=hybrid
+
+-----
+
+If you think that you might add control nodes to your control plane in future, it is better to define a separate group for the hybrid nodes, and set the `node-type` for the group:
+
+[source,yaml]
+-----
+[automationcontroller]
+aap_c_1.example.com
+aap_c_2.example.com
+aap_c_3.example.com
+
+[hybrid_group]
+aap_c_1.example.com
+aap_c_2.example.com
+aap_c_3.example.com
+
+[hybrid_group:vars]
+node_type=hybrid
+
+-----
+

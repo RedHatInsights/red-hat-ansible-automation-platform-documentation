@@ -1,0 +1,33 @@
+
+ifdef::context[:parent-context: {context}]
+
+
+
+[id="installing-aap-components"]
+= Installing {PlatformName} components
+
+
+:context: installing-components
+
+[role="_abstract"]
+After you have completed installing {PlatformName}, you can install {PlatformName} components.
+
+.Prerequisites
+
+* You chose and obtained a platform installer from the {PlatformDownloadUrl}[Red Hat Ansible Automation Platform Product Software].
+* You are installing on a machine that meets base system requirements.
+* You have created a Red Hat Registry Service Account, following the instructions in the https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
+
+include::platform/proc-editing-inventory-file.adoc[leveloffset=+1]
+include::assembly-single-machine-scenarios.adoc[leveloffset=+1]
+include::assembly-multi-machine-cluster-scenario.adoc[leveloffset=+1]
+include::platform/ref-setup-script-args.adoc[leveloffset=+1]
+include::platform/proc-running-setup-script.adoc[leveloffset=+1]
+include::platform/proc-verify-controller-installation.adoc[leveloffset=+1]
+include::platform/ref-controller-configs.adoc[leveloffset=+2]
+include::platform/proc-verify-hub-installation.adoc[leveloffset=+1]
+include::platform/ref-hub-configs.adoc[leveloffset=+2]
+include::assembly-platform-whats-next.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

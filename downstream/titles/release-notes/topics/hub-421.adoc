@@ -1,0 +1,11 @@
+[[hub-421-intro]]
+= Automation Hub 4.2.1
+
+.Private Automation Hub bug fixes and enhancements 
+
+* Fixed NamespaceLink creation and Validation on duplicated name
+* Fixed a bug where API returns 409 in case of existing group with same name
+* Updated the namespaces api to perform a partial match on namespace name and namespace company name when using the 'keywords' query parameter
+* Fixed KeyError lookup in namespace and collection viewset
+* Fixed error in error msg when importing invalid filenames
+* Enhanced content sync to better deal with Akamai rate limits

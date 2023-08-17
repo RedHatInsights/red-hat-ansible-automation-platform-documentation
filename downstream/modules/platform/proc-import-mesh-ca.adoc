@@ -1,0 +1,24 @@
+[id="importing-mesh-ca_{context}"]
+
+= Importing a Certificate Authority (CA) certificate
+
+A Certificate Authority (CA) verifies and signs individual node certificates in an {AutomationMesh} environment. You can provide your own CA by specifying the path to the certificate and the private RSA key file in the `inventory` file of your {PlatformName} installer.
+
+NOTE: The {PlatformNameShort} installation program generates a CA if you do not provide one.
+
+.Procedure
+
+. Open the `inventory` file for editing.
+. Add the `mesh_ca_keyfile` variable and specify the full path to the private RSA key (`.key`).
+. Add the `mesh_ca_certfile` variable and specify the full path to the CA certificate file (`.crt`).
+. Save the changes to the inventory file.
+
+.Example
+[subs="+quotes"]
+----
+[all:vars]
+mesh_ca_keyfile=/tmp/__<mesh_CA>__.key
+mesh_ca_certfile=/tmp/__<mesh_CA>__.crt
+----
+
+With the CA files added to the inventory file, run the installation program to apply the CA. This process copies the CA to the to `/etc/receptor/tls/ca/` directory on each control and execution node on your mesh network.

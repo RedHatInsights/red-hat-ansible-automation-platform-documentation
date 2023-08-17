@@ -1,0 +1,44 @@
+
+[id="proc-review-ee-tui_{context}"]
+
+
+
+= Reviewing {ExecEnvNameStart} from {Navigator}
+
+[role="_abstract"]
+
+You can review your {ExecEnvNameStart} with the {Navigator} text-based user interface.
+
+.Prerequisites
+
+* {ExecEnvName}
+
+.Procedure
+
+. Review the {ExecEnvName} included in your {Navigator} configuration.
++
+----
+$ ansible-navigator images
+----
++
+image::navigator-images-list.png[List of automation execution environments]
+
+. Type the number of the {ExecEnvNameSing} you want to delve into for more details.
++
+image::navigator-image-details.png[Automation execution environment details]
++
+You can review the packages and versions of each installed {ExecEnvNameSing} and the Ansible version any included collections.
+
+
+. Optional: pass in the {ExecEnvNameSing} that you want to use. This becomes the primary and is the {ExecEnvNameSing} that {Navigator} uses.
++
+----
+$ ansible-navigator images --eei  registry.example.com/example-enterprise-ee:latest
+----
+
+
+.Verification
+
+*  Review the {ExecEnvNameSing} output.
++
+image::navigator-image-details.png[Automation execution environment output]

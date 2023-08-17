@@ -1,0 +1,13 @@
+[id="con-usability-analytics_{context}"]
+
+= Usability analytics and data collection
+
+[role="_abstract"]
+Usability data collection is included with {ControllerName} to collect data to better understand how {ControllerName} users specifically interact with {ControllerName}, to help enhance future releases, and to continue streamlining your user experience.
+
+Only users installing a trial of {ControllerName} or a fresh installation of {ControllerName} are opted-in for this data collection.
+
+[role="_additional-resources"]
+.Additional resources
+
+* For more information, see the link:https://www.redhat.com/en/about/privacy-policy[Red Hat privacy policy].

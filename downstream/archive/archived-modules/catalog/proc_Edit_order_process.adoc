@@ -1,0 +1,18 @@
+// Module included in the following assemblies:
+// assembly-order-process.adoc
+
+// The ID is used as an anchor for linking to the module. Avoid changing it after the module has been published to ensure existing links are not broken.
+[id="proc_Edit_order_process.adoc_{context}"]
+= Edit Order Process
+
+Edit an existing order process.
+
+.Procedure
+
+. Select *Order Processes* from the main navigation.
+
+. Locate your desired order process, then click image:actions.png[More actions].
+
+. Click btn:[Edit].
+
+. Make any desired changes, then click btn:[Save].

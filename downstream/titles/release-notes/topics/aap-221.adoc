@@ -1,0 +1,40 @@
+
+[[aap-2.2.1-intro]]
+= Ansible Automation Platform 2.2.1
+
+.Enhancements
+* Modified installer to include the *ansible-builder* image
+* Updated the `openshift-clients` to 4.10.x
+* Enabled users to use certificates located on destination nodes
+* Updated the version to `pulpcore-selinux` 1.3.2
+* Updated the version to `pulp_installer` 3.18
+* Enhanced the copy process of execution environments so that they require less space in the `/tmp` directory
+* Updated RSA key strength for Ansible Automation Platform certificates
+* Removed `redhat.rhv` collection from supported execution environments due to Python dependencies
+* Modified the base images of execution environments so that controller backups are executed in the container
+* Added the capability to configure LDAP with private automation hub
+
+.Bug fixes
+* Fixed an issue where package dependencies were missing on execution nodes
+* The setup log now gets updated when it is run as `non-root` on bastion host
+* The pulp resource manager now gets removed when the Ansible Automation Platform is upgraded from 2.1 to 2.2
+* The `receptor.service` now restarts as expected when you run the `automation-controller-service` commands
+* The installer no longer fails with permission errors in the ``/home/pulp` directory
+* The receptor no longer fails in FIPS mode
+* Installer no longer fails with error in installing the `semanage` dependency
+* Updated the default configuration of `GALAXY_COLLECTION_SIGNING_SERVICE` to `ansible-default` instead of `TRUE`
+* Installation no longer fails due to conflicting `ansible-builder` Python packages
+* Upgrade from Ansible Tower to Ansible Automation Platform 2.1 no longer fails due to non-root user error
+* Controller database no longer gets unpacked on all nodes and cause disk space issues
+* Installation of high availability automation hub no longer fails on a shared Netapp storage
+* Ansible Automation Platform 1.2 to 2.1 upgrade no longer fails with 502 error due to wrong SELinux content set on nginx
+* Installer no longer fails to generate SSO key pair for IPV6
+* The group permissions editor can now be used to set permissions for the group when external authorization is enabled
+* While using automation hub 4.5.0 with central authentication, the hub user interface no longer turns unresponsive when the group permissions are modified
+* Added localization support for *Modules*, *Roles*, *Plugins*, and *Dependencies* counter in container list for both card and list view
+* The *Deprecated* label now appears immediately after an action click or after the page reload on automation hub UI
+* Upon clicking the *Undeprecate* button for a collection on automation hub UI, an alert is displayed stating that the task has started with a link of the task
+* After syncing the Red Hat certified collections and their versions in private automation hub, the UI now correctly displays the release date of the collection and not the synchronization date
+* Updated the default namespace logo to make it appear similar to the Ansible product logo
+* Automation hub UI now displays the selected collection similar to the rest of the selections
+* Reenabled the *Deprecate* button for collections in Insights mode on automation hub UI

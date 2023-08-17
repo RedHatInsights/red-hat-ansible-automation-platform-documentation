@@ -1,0 +1,119 @@
+[id="ref-controller-variables"]
+
+= {ControllerNameStart} variables
+
+[cols="50%,50%",options="header"]
+|====
+| *Variable* | *Description* 
+| *`admin_password`* | The password for an administration user to access the UI upon install completion.
+| *`automation_controller_main_url`* | For an alternative front end URL needed for SSO configuration, provide the URL.
+
+| *`automationcontroller_password`* | Password for your {ControllerName} instance.
+| *`automationcontroller_username`* | Username for your {ControllerName} instance.
+| *`nginx_http_port`* | The nginx HTTP server listens for inbound connections.
+
+Default = 80
+| *`nginx_https_port`* | The nginx HTTPS server listens for secure connections.
+
+Default = 443
+| *`nginx_hsts_max_age`* | This variable specifies how long, in seconds, the system should be considered as a _HTTP Strict Transport Security_ (HSTS) host. That is, how long HTTPS is used exclusively for communication.
+
+Default = 63072000 seconds, or two years.
+| *`nginx_tls_protocols`* | Defines support for `ssl_protocols` in Nginx.
+
+Default = `TLSv1.2`.
+| *`node_state`* | _Optional_
+
+The status of a node or group of nodes. 
+Valid options are `active`, `deprovision` to remove a node from a cluster or `iso_migrate` to migrate a legacy isolated node to an execution node.
+
+Default = `active`.
+| *`node_type`* | For `[automationcontroller]` group.
+
+Two valid `node_types` can be assigned for this group.
+
+A `node_type=control` implies that the node only runs project and inventory updates, but not regular jobs.
+
+A `node_type=hybrid` has the ability to run everything.
+
+Default for this group = `hybrid`.
+
+For `[execution_nodes]` group
+
+Two valid node_types can be assigned for this group.
+
+A `node_type=hop` implies that the node forwards jobs to an execution node.
+
+A `node_type=execution` implies that the node can run jobs.
+
+Default for this group = `execution`.
+| *`peers`* | _Optional_
+
+The `peers` variable is used to indicate which nodes a specific host or group connects to. Wherever the peers variable is defined, an outbound connection will be established to the specific host or group.
+
+This variable is used to add `tcp-peer` entries in the `receptor.conf` file used for establishing network connections with other nodes. 
+See link:https://receptor.readthedocs.io/en/latest/connecting_nodes.html?highlight=tcp-peer[Peering]
+
+The peers variable can be a comma-separated list of hosts and/or groups from the inventory.  
+This is resolved into a set of hosts that is used to construct the `receptor.conf` file.
+
+| *`pg_database`* | The name of the postgres database.
+
+Default = `awx`.
+| *`pg_host`* | The postgreSQL host, which can be an externally managed database.
+| *`pg_password`* | The password for the postgreSQL database.
+
+Do not use special characters for `pg_password`. 
+They can cause the password to fail.
+
+NOTE
+
+You no longer have to provide a `pg_hashed_password` in your inventory file at the time of installation because PostgreSQL 13 can now store user passwords more securely. 
+
+When you supply `pg_password` in the inventory file for the installer, PostgreSQL uses the SCRAM-SHA-256 hash to secure that password as part of the installation process.
+| *`pg_port`* | The postgreSQL port to use.
+
+Default = 5432
+| *`pg_ssl_mode`* | One of `prefer` or `verify-full`.
+
+Set to `verify-full` for client-side enforced SSL.
+
+Default = `prefer`.
+| *`pg_username`* | Your postgres database username.
+
+Default = `awx`.
+| *`postgres_ssl_cert`* | location of postgres ssl certificate.
+
+`/path/to/pgsql_ssl.cert`
+| *`postgres_ssl_key`* | location of postgres ssl key.
+
+`/path/to/pgsql_ssl.key`
+| *`postgres_use_cert`* | Location of postgres user certificate. 
+
+`/path/to/pgsql.crt`
+| *`postgres_use_key`* | Location of postgres user key. 
+
+`/path/to/pgsql.key`
+| *`postgres_use_ssl`* | If postgres is to use SSL.
+| *`receptor_listener_port`* | Port to use for recptor connection.
+
+Default = 27199.
+| *`supervisor_start_retry_count`* | When specified (no default value exists), adds `startretries = <value specified>` to the supervisor config file (/etc/supervisord.d/tower.ini).
+
+See link:http://supervisord.org/configuration.html#program-x-section-values[program:x Section Values] for further explanation about `startretries`.
+
+| *`web_server_ssl_cert`* |  _Optional_ 
+
+`/path/to/webserver.cert`
+
+Same as `automationhub_ssl_cert` but for web server UI and API.
+| *`web_server_ssl_key`* |  _Optional_
+
+`/path/to/webserver.key`
+
+Same as `automationhub_server_ssl_key` but for web server UI and API.
+|====
+
+
+
+

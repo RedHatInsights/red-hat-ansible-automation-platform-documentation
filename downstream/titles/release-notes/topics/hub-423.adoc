@@ -1,0 +1,38 @@
+[[hub-423-intro]]
+= Automation Hub 4.2.3
+
+.Automation Hub bug fixes
+
+* Fix how travis checks for existence of Jira issues
+
+* Fixed synclist curation creating 2 * N tasks, where N is number of synclists.
+  Now synclist curation is executed in batches. Number of batches is configured in project settings.
+  By default it is set to 200 synclists per task.
+
+* Fix NamespaceLink creation and Validation on duplicated name.
+
+* API returns 409 in case of existing group with same name.
+
+* The namespaces api now performs a partial match on namespace name and namespace company name when using the 'keywords' query parameter.
+
+* Fix KeyError lookup in namespace and collection viewset
+
+* Fix error in error msg when importing invalid filenames
+
+* Fix the galaxy-importer check for max size of docs files
+
+* Only show synclist toggles to org admin. Non-org admins should get 403 response when viewing synclist endpoints.
+
+* Users should not be able to delete themselves regardless of having 'delete-user' permissions.
+
+* Prevent users with delete-user perms from deleting admin users
+
+* Make token and password obfuscated on the API docs for /sync/config
+
+* split proxy_url in 3 fields: username, password, address
+
+* Fix groups endpoint viewable only by admin
+
+* Expose pulp API in generated openapi spec.
+
+* Replace current PULP_REDIS* env variables with PULP_REDIS_URL env variable to accommodate PULP_REDIS_SSL.

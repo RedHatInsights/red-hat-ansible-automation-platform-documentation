@@ -1,0 +1,16 @@
+:imagesdir: images
+:experimental:
+:toclevels: 4
+
+
+:analyticsuseraccess_guide:
+
+[[analyticsuseraccess_guide]]
+
+include::attributes/attributes.adoc[]
+
+= Managing user access in {InsightsName}
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
+include::analytics/assembly-user-access.adoc[leveloffset=+1]

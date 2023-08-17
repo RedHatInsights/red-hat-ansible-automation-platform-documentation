@@ -1,0 +1,11 @@
+// Module included in the following assemblies:
+// assembly-user-access.adoc
+
+
+[id="con-implementing-user-access_{context}"]
+
+= About user access
+
+User access on the {PlatformName} is based on managing roles to groups, rather than assigning roles to individual users. You can assign roles to a group when you create a group. You can then assign users to these groups, granting each user the roles assigned to their group.
+
+Groups created in {InsightsShort} can range from system administrators responsible for configuring user access to users who can view and share automation data.

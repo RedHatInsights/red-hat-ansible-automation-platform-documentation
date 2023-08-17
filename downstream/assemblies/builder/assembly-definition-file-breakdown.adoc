@@ -1,0 +1,12 @@
+[id="assembly-definition-file-breakdown"]
+
+= Breakdown of definition file content
+
+A definition file is required for building {ExecEnvName} with {Builder}, because it specifies the content that is included in the {ExecEnvNameSing} container image.
+
+The following sections breaks down the different parts of a definition file.
+
+include::builder/ref-build-args-base-image.adoc[leveloffset=+1]
+include::builder/con-ansible-config-file-path.adoc[leveloffset=+1]
+include::builder/con-definition-dependencies.adoc[leveloffset=+1]
+include::builder/con-additional-custom-build-steps.adoc[leveloffset=+1]

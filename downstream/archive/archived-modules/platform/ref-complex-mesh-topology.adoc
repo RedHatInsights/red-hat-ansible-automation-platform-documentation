@@ -1,0 +1,64 @@
+
+
+[id="ref-complex-mesh-topology"]
+
+= Complex automation mesh design example
+
+
+[role="_abstract"]
+This example inventory demonstrates a complex automation mesh design pattern that uses groups to associate nodes of the same type in order to reduce noise in the installer configuration. It deploys three {ControllerName}s, two execution nodes and multiple hops with execution nodes.
+
+[NOTE]
+====
+* The control plane contains only *control* nodes, which are auto-peered together.
+* `[automationcontroller:vars]` peers the controllers to the _disconnected_ execution nodes group `[instance_group_disconnected]`, ignoring the hop nodes in `[execution_nodes]`.
+* All execution node types are defined in `[execution nodes]`, as well as which execution nodes need a hop. Hop nodes are also defined in this group.
+* The `instance_group_prefix` automatically adds nodes into the {ControllerName} user interface as an instance group after running the {PlatformName} installer.
+* The `[local_hop]` group peers to the `[automationcontoller]` group.
+* The `[remote_hop]` group peers to the `[local_hop]` group.
+====
+
+.Inventory file
+
+-----
+[automationcontroller]
+control-plane-1.example.com ansible_connection=local
+control-plane-2.example.com
+control-plane-3.example.com
+
+[automationcontroller:vars]
+peers=instance_group_directconnected
+node_type=control
+
+[execution_nodes]
+execution-node-1.example.com
+execution-node-2.example.com
+execution-node-3.example.com peers=local_hop
+execution-node-4.example.com peers=remote_hop
+hop-node-1.example.com node_type=hop
+hop-node-2.example.com node_type=hop
+hop-node-3.example.com node_type=hop
+
+[instance_group_directconnected]
+execution-node-1.example.com
+execution-node-2.example.com
+
+[instance_group_localhop]
+execution-node-3.example.com
+
+[instance_group_multihop]
+execution-node-4.example.com
+
+[local_hop]
+hop-node-1.example.com
+hop-node-2.example.com
+
+[local_hop:vars]
+peers=automationcontroller
+
+[remote_hop]
+hop-node-3.example.com
+
+[remote_hop:vars]
+peers=local_hop
+-----

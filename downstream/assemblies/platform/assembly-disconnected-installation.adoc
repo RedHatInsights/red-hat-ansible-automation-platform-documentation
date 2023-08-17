@@ -1,0 +1,34 @@
+
+ifdef::context[:parent-context: {context}]
+
+:context: disconnected-installation
+
+[id="disconnected-installation"]
+= Disconnected installation
+
+include::platform/con-aap-installation-on-disconnected-rhel.adoc[leveloffset=+1]
+
+include::platform/proc-synchronizing-rpm-repositories-by-using-reposync.adoc[leveloffset=+1]
+
+include::platform/proc-creating-a-new-web-server-to-host-repositories.adoc[leveloffset=+1]
+
+include::platform/proc-accessing-rpm-repositories-for-locally-mounted-dvd.adoc[leveloffset=+1]
+
+include::platform/proc-adding-a-subscription-manifest-to-aap-without-an-internet-connection.adoc[leveloffset=+1]
+
+include::platform/proc-installing-the-aap-setup-bundle.adoc[leveloffset=+1]
+
+include::platform/proc-completing-post-installation-tasks.adoc[leveloffset=+1]
+
+include::platform/proc-importing-collections-into-private-automation-hub.adoc[leveloffset=+1]
+
+include::platform/proc-creating-collection-namespace.adoc[leveloffset=+1]
+
+include::platform/proc-approving-the-imported-collection.adoc[leveloffset=+1]
+
+include::platform/con-building-an-execution-environment-in-a-disconnected-environment.adoc[leveloffset=+1]
+
+include::platform/proc-installing-the-ansible-builder-rpm.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

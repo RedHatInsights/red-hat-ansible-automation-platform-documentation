@@ -1,0 +1,38 @@
+
+[id="con-navigator-mode_{context}"]
+
+= {Navigator} modes
+
+{Navigator} operates in two modes:
+
+[role="_abstract"]
+
+stdout mode:: Accepts most of the existing Ansible commands and extensions at the command line.
+text-based user interface mode:: Provides an interactive, text-based interface to the Ansible commands. Use this mode to evaluate content, run playbooks, and troubleshoot playbooks after they run using artifact files.
+
+== stdout mode
+
+Use the `-m stdout` subcommand with {Navigator} to use the familiar Ansible commands, such as `ansible-playbook` within {ExecEnvName} or on your local development environment. You can use commands you are familiar with for quick tasks.
+
+{Navigator} also provides extensive help in this mode:
+
+`--help`:: Accessible from `ansible-navigator` command or from any subcommand, such as `ansible-navigator config --help`.
+subcommand help:: Accessible from the subcommand, for example `ansible-navigator config --help-config`. This help displays the details of all the parameters supported from the related Ansible command. 
+
+== Text-based user interface mode
+
+The text-based user interface mode provides enhanced interaction with {ExecEnvName}, collections, playbooks, and inventory. This mode is compatible with integrated development environments (IDE), such as Visual Studio Code.
+
+image::navigator-welcome.png[Text-based user interface mode]
+
+This mode includes a number of helpful user interface options:
+
+colon commands:: You can access all the {Navigator} commands with a colon, such as `:run` or `:collections`
+navigating the text-based interface:: The screen shows how to page up or down, scroll, escape to a prior screen or access `:help`.
+output by line number:: You can access any line number in the displayed output by preceding it with a colon, for example `:12`.
+color-coded output:: With colors enabled, {Navigator} displays items, such as deprecated modules, in red.
+pagination and scrolling:: You can page up or down, scroll, or escape by using the options displayed at the bottom of each {Navigator} screen.
+
+You cannot switch between modes after {Navigator} is running.
+
+This document uses the text-based user interface mode for most procedures.

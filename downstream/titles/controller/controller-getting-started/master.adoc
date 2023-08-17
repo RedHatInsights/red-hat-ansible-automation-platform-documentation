@@ -1,0 +1,21 @@
+:imagesdir: images
+:numbered:
+:toclevels: 1
+
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Automation controller Quick Start Guide
+
+To begin, install {PlatformNameShort} and choose a target system where you can deploy an initial playbook (provided by {ControllerName}). 
+Refer to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Red Hat Ansible Automation Platform Installation Guide] for further instructions.
+The following example playbook executes simple Ansible tasks, while teaching you how to use the controller and properly set it up. This can be any sort of system manageable by Ansible, as described in the link:https://docs.ansible.com/ansible/latest/user_guide/basic_concepts.html#managed-nodes[Managed nodes] section of the Ansible documentation.
+
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+
+

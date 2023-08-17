@@ -1,0 +1,39 @@
+
+[id="ref-standlone-platform-inventory_{context}"]
+
+= Standalone {ControllerName} with internal database
+
+
+[role="_abstract"]
+Use this example to populate the inventory file to install {PlatformName}.
+This installation inventory file includes a single {ControllerName} node with an internal database.
+
+-----
+[automationcontroller]
+controller.example.com
+
+[all:vars]
+admin_password='<password>'
+pg_host=''
+pg_port='5432'
+pg_database='awx'
+pg_username='awx'
+pg_password='<password>'
+pg_sslmode='prefer'  # set to 'verify-full' for client-side enforced SSL
+
+registry_url='registry.redhat.io'
+registry_username='<registry username>'
+registry_password='<registry password>'
+
+
+# SSL-related variables
+# If set, this will install a custom CA certificate to the system trust store.
+# custom_ca_cert=/path/to/ca.crt
+# Certificate and key to install in nginx for the web UI and API
+# web_server_ssl_cert=/path/to/tower.cert
+# web_server_ssl_key=/path/to/tower.key
+# Server-side SSL settings for PostgreSQL (when we are installing it).
+# postgres_use_ssl=False
+# postgres_ssl_cert=/path/to/pgsql.crt
+# postgres_ssl_key=/path/to/pgsql.key
+-----

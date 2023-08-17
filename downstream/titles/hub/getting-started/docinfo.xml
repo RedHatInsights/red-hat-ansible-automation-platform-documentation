@@ -1,0 +1,13 @@
+<title>Getting started with automation hub</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>2.4</productnumber>
+<subtitle>Configure Red Hat automation hub as your default server for Ansible collections content
+</subtitle>
+<abstract>
+    <para>This guide walks you through the initial steps required to use Red Hat automation hub as the default source for certified Ansible collections content.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+    <email>saas-docs@redhat.com</email>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

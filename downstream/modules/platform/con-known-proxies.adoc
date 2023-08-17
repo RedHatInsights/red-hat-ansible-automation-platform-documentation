@@ -1,0 +1,20 @@
+
+[id="con-known-proxies_{context}"]
+
+= Known proxies
+
+
+[role="_abstract"]
+
+When {ControllerName} is configured with `REMOTE_HOST_HEADERS = ['HTTP_X_FORWARDED_FOR', 'REMOTE_ADDR', 'REMOTE_HOST']`, it assumes that the value of `X-Forwarded-For` has originated from the proxy/load balancer sitting in front of {ControllerName}.
+If {ControllerName} is reachable without use of the proxy/load balancer, or if the proxy does not validate the header, the value of `X-Forwarded-For` can be falsified to fake the originating IP addresses.
+Using `HTTP_X_FORWARDED_FOR` in the `REMOTE_HOST_HEADERS` setting poses a vulnerability.
+
+To avoid this, you can configure a list of known proxies that are allowed using the *PROXY_IP_ALLOWED_LIST* field in the settings menu on your {ControllerName}.
+Load balancers and hosts that are not on the known proxies list will result in a rejected request.
+
+//.Example vulnerabilities:
+//
+//* The host config key for a job template
+//* The hostname or ansible_(ssh_)host of a host in the job template's linked inventory
+//* The URL of the job template's provisioning callback

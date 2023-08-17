@@ -1,0 +1,37 @@
+[id="eda-set-up-rulebook-activation"]
+
+= Setting up a rulebook activation
+
+.Prerequisites
+
+* You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
+* You have set up a project.
+* You have set up a decision environment.
+* You have set up an {ControllerName} token.
+
+.Procedure
+
+. Navigate to the {EDAcontroller} Dashboard.
+. From the navigation panel, select menu:Rulebook Activations[Create rulebook activation].
+. Insert the following: 
++
+Name:: Insert the name.
+Description:: This field is optional.
+Project:: Projects are a logical collection of rulebooks.
+Rulebook:: Rulebooks will be shown according to the project selected.
+Decision environment:: Decision environments are a container image to run Ansible rulebooks.
+Restart policy:: This is a policy to decide when to restart a rulebook.
+*** Policies:
+... Always: Restarts when a rulebook finishes
+... Never: Never restarts a rulebook when it finishes
+... On failure: Only restarts when it fails
+Rulebook activation enabled?:: This automatically enables the rulebook activation to run.
+Variables:: The variables for the rulebook are in a JSON/YAML format. 
+The content would be equivalent to the file passed through the `--vars` flag of ansible-rulebook command.
+
+. Select btn:[Create rulebook activation].
+
+Your rulebook activation is now created and can be managed in the *Rulebook Activations* screen.
+
+After saving the new rulebook activation, the rulebook activation's details page is displayed. 
+From there or the *Rulebook Activations* list view you can edit or delete it.

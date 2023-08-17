@@ -1,0 +1,7 @@
+
+[id="Removing_products_from_portfolios"]
+== Removing products from portfolios
+
+As an administrator, you may need to remove products from your portfolios. Remove any product from a portfolio and, optionally, undo your actions to leave products in place.
+
+include::proc_Deleting_products_from_portfolios.adoc[]

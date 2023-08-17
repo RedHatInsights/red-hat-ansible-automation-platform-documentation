@@ -1,0 +1,123 @@
+[id="ref-navigator-run-settings_{context}"]
+
+= {Navigator} `run` subcommand settings
+
+[role="_abstract"]
+
+The following table describes each parameter and setting options for the  {Navigator} `run` subcommand.
+
+.{Navigator} `run` subcommand parameters settings
+[options="header"]
+[cols='1,1a,1a']
+|====
+|Parameter | Description|Setting options
+|playbook-artifact-replay
+|Specify the path for the playbook artifact to replay.
+|*Default:* No default value set
+
+*CLI:* positional
+
+*ENV:* `ANSIBLE_NAVIGATOR_PLAYBOOK_ARTIFACT_REPLAY`
+
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  playbook-artifact:
+    replay:
+----
+
+|help-playbook
+|Help options for the `ansible-playbook` command in `stdout` mode.
+| *Choices:* `True` or `False`
+
+*Default:* `False`
+
+*CLI:* `--hp` or `--help-playbook`
+
+*ENV:* `ANSIBLE_NAVIGATOR_HELP_PLAYBOOK`
+
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  help-playbook:
+----
+
+|inventory
+|Specify an inventory file path or comma separated host list.
+|*Default:* no default value set
+
+*CLI:* `--i` or `--inventory`
+
+*ENV:* `ANSIBLE_NAVIGATOR_INVENTORIES`
+
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  inventories:
+----
+
+|inventory-column
+|Specify a host attribute to show in the inventory view.
+| *Default:* No default value set
+
+*CLI:* `--ic` or `--inventory-column`
+
+*ENV:** `ANSIBLE_NAVIGATOR_INVENTORY_COLUMNS`
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  inventory-columns:
+----
+
+|playbook
+|Specify the playbook name.
+|*Default:* No default value set
+
+*CLI:* positional
+
+*ENV:* `ANSIBLE_NAVIGATOR_PLAYBOOK`
+
+*Settings file:**
+[source,yaml]
+----
+ansible-navigator:
+  ansible:
+    playbook:
+----
+
+|playbook-artifact-enable
+|Enable or disable the creation of artifacts for completed playbooks. Note: not compatible with `--mode stdout` when playbooks require user input.
+|*Choices:* `True` or `False`
+
+*Default:* `True`
+
+*CLI:* `--pae` or `--playbook-artifact-enable`
+*ENV:* `ANSIBLE_NAVIGATOR_PLAYBOOK_ARTIFACT_ENABLE`
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  playbook-artifact:
+    enable:
+----
+
+|playbook-artifact-save-as
+|Specify the name for artifacts created from completed playbooks.
+| *Default:* `{playbook_dir}/{playbook_name}-artifact-{ts_utc}.json`
+
+*CLI:* `--pas` or `--playbook-artifact-save-as`
+
+*ENV:* `ANSIBLE_NAVIGATOR_PLAYBOOK_ARTIFACT_SAVE_AS`
+
+*Settings file:*
+[source,yaml]
+----
+ansible-navigator:
+  playbook-artifact:
+    save-as:
+----
+|====

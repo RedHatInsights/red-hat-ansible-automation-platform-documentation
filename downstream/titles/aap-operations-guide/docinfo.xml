@@ -1,0 +1,12 @@
+<title>Red Hat Ansible Automation Platform Operations Guide</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>2.4</productnumber>
+<subtitle>Post installation configurations to ensure a smooth deployment of Ansible Automation Platform installation
+</subtitle>
+<abstract>
+<para>This guide provides instructions and guidance on post installation activities for Red Hat Ansible Automation Platform.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

@@ -1,0 +1,43 @@
+[id="aap-controller-backup"]
+
+= Backing up the {ControllerNameStart} deployment
+
+[role=_abstract]
+Use this procedure to back up a deployment of the controller, including jobs, inventories, and credentials.
+
+.Prerequisites
+
+* You must be authenticated with an Openshift cluster.
+* The {OperatorPlatform} has been installed to the cluster.
+* The {ControllerName} is deployed to using the {OperatorPlatform}.
+
+.Procedure
+. Log in to *{OCP}*.
+. Navigate to menu:Operators[Installed Operators].
+. Select the {OperatorPlatform} installed on your project namespace.
+. Select the *Automation Controller Backup* tab.
+. Click btn:[Create AutomationControllerBackup].
+. Enter a *Name* for the backup.
+. Enter the *Deployment name* of the deployed {PlatformNameShort} instance being backed up. 
+For example, if your {ControllerName} must be backed up and the deployment name is `aap-controller`, enter 'aap-controller' in the *Deployment name* field.
+. If you want to use a custom, pre-created pvc:
+.. Optionally enter the name of the *Backup persistant volume claim*.
+.. Optionally enter the *Backup PVC storage requirements*, and *Backup PVC storage class*.
++
+[NOTE]
+====
+If no pvc or storage class is provided, the cluster's default storage class is used to create the pvc.
+====
++
+.. If you have a large database, specify your storage requests accordingly under *Backup management pod resource requirements*.
++
+[NOTE]
+====
+You can check the size of the existing postgres database data directory by running the following command inside the postgres pod.
+----
+$ df -h | grep "/var/lib/pgsql/data"
+----
+====
+. Click btn:[Create].
++
+A backup tarball of the specified deployment is created and available for data recovery or deployment rollback. Future backups are stored in separate tar files on the same pvc.

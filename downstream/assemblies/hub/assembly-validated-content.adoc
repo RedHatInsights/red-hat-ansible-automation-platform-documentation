@@ -1,0 +1,64 @@
+[id="assembly-validated-content"]
+= {Valid}
+
+{PlatformName} includes {Valid}, which complements existing {CertifiedCon}.
+
+{Valid} provides an expert-led path for performing operational tasks on a variety of platforms including both Red Hat and our trusted partners.
+
+== Configuring validated collections with the installer
+
+When you download and run the bundle installer, certified and validated collections are automatically uploaded.
+Certified collections are uploaded into the `rh-certified` repository.
+Validated collections are uploaded into the `validated` repository.
+
+You can change to default configuration by using two variables:
+
+[cols="20%,50%",options="header"]
+|====
+| Name | Description
+| `automationhub_seed_collections` | A boolean that defines whether or not preloading is enabled.
+| `automationhub_collection_seed_repository` | If `automationhub_seed_collections` is set to `true`, this variable enables you to specify the type of content to upload.
+Possible values are `certified` or `validated`.
+If missing both content sets will be uploaded.
+|====
+
+== Installing validated content using the tarball
+
+If you are not using the bundle installer, a standalone tarball, `ansible-validated-content-bundle-1.tar.gz` can be used instead.
+The standalone tarball can also be used later to update validated contents later in any environment, when a newer tarball becomes available, and without having to re-run the bundle installer.
+
+To obtain the tarball, navigate to the link:{PlatformDownloadUrl}[{PlatformName} download] page and select *Ansible Validated Content*.
+
+You require the following variables to run the playbook. 
+
+[cols="20%,50%",options="header"]
+|====
+| Name | Description
+| *`automationhub_admin_password`* | Your administration password.
+| *`automationhub_api_token`* | The API token generated for your {HubName}.
+| *`automationhub_main_url`* | For example, `\https://automationhub.example.com`
+| *`automationhub_require_content_approval`* | Boolean (`true` or `false`)
+
+This must match the value used during {HubName} deployment.
+
+This variable is set to `true` by the installer.
+|====
+
+[NOTE]
+====
+Use either `automationhub_admin_password` or `automationhub_api_token`, not both.
+====
+
+Upload the content and define the variables (this example uses `automationhub_api_token`):
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+ansible-playbook collection_seed.yml
+-e automationhub_api_token=<api_token>
+-e automationhub_main_url=https://automationhub.example.com
+-e automationhub_require_content_approval=true
+----
+
+For more information on running ansible playbooks, see link:https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook].
+
+When complete, the collections are visible in the validated collection section of {PrivateHubName}.

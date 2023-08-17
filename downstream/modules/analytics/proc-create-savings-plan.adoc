@@ -1,0 +1,34 @@
+// Module included in the following assemblies:
+// assembly-automation-savings-planner.adoc
+
+
+[id="proc-create-savings-plan_{context}"]
+
+= Creating a new automation savings plan
+
+Create an automation savings plan by defining the tasks needed to complete an automation job using the {planner}.
+
+* The details you provide when creating a savings plan, namely the number of hosts and the manual duration, will be used to calculate your savings from automating this plan. See <<con-review-savings-calculations_{context},this section>> for more information.
+
+.Procedure
+
+. Navigate to menu:Red Hat Insights[Savings Planner].
+. Click btn:[Add Plan].
+. Provide some information about your automation job:
+.. Enter descriptive information, such as a name, description, and type of automation.
+.. Enter technical information, such as the number of hosts, the duration to manually complete this job, and how often you complete this job.
+.. Click btn:[Next].
+. In the tasks section, list the tasks needed to complete this plan:
+.. Enter each task in the field, then click btn:[Add].
+.. Rearrange tasks by dragging the item up/down the tasks list.
+.. Click btn:[Next].
+
+[NOTE]
+====
+The task list is for your planning purposes only, and does not currently factor into your automation savings calculation.
+====
+
+[start=5]
+. Select a template to link to this plan, then click btn:[Save].
+
+Your new savings plan is now created and displayed on the {planner} list view.

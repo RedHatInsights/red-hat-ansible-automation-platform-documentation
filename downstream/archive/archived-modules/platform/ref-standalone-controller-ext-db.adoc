@@ -1,0 +1,34 @@
+
+
+[id="standalone-controller-ext-db_{context}"]
+
+= Example inventory file for a standalone automation controller with an external managed database
+
+
+[role="_abstract"]
+This example describes how you can populate the inventory file to deploy an installation of {ControllerName} with an external database.
+
+-----
+[automationcontroller]
+controller.example.com  <1>
+
+
+[database]
+database.example.com
+
+[all:vars]
+admin_password='<password>'
+pg_password='<password>'
+
+pg_host='database.example.com'
+pg_port='5432'
+
+pg_database='awx'
+pg_username='awx'
+
+registry_url='registry.redhat.io'
+registry_username='<registry username>'
+registry_password='<registry password>'
+-----
+
+<1> This should be set as a FQDN/IP.

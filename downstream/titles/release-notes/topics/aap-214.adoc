@@ -1,0 +1,22 @@
+[[aap-2.1.4-intro]]
+= Ansible Automation Platform 2.1.4
+
+.Enhancements
+* Rebuilt the bundle installer to pick up the latest python-pulp-container rpm and container images.
+* Updated RSA key strength for Ansible Automation Platform certificates.
+
+.Bug fixes
+* A password is now asked for when running ad-hoc commands and selecting the credential.
+* Fixed an error during installation where the skopeo directory was created.
+* Fixed an error caused by ansible-core version conflicts during the upgrade from 1.2 to 2.1.
+* Fixed an issue where survey fields couldn't be updated on the web console if they were created using the API.
+* Fixed an issue where the date picker would select dates in the past, and this would prevent saving.
+* Fixed an issue where setting *Use Role* in credential resulted in unwanted roles being added to other users.
+* Fixed an issue where execution environments were failing to be pushed locally during install.
+* Fixed an issue where facts gathered while using slices were not stored in Ansible Automation Platform.
+* Fixed an issue where filter options were being removed when navigating between job template pages.
+* Fixed an issue where the launched job was vanishing from the *Jobs* page.
+* Fixed an issue where the installer failed at "Push execution environment images locally on Automation Controller and Execution Nodes" and was unable to make rootless runtime.
+* Fixed an issue where idle connections were growing and not closing in the automation hub database.
+* Fixed an issue where private automation hub was unable to restore with an external database.
+* Fixed an issue where hub installed unnecessary extra packages.

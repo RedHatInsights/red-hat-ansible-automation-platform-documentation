@@ -1,0 +1,27 @@
+
+[id="con-automation-mesh-node-types"]
+
+= Control and execution planes
+
+[role="_abstract"]
+Automation mesh makes use of unique node types to create both the *control* and *execution* plane.  Learn more about the control and execution plane and their node types before designing your automation mesh topology.
+
+== Control plane
+
+The *control plane* consists of hybrid and control nodes. Instances in the control plane run persistent {ControllerName} services such as the the web server and task dispatcher, in addition to project updates, and management jobs.
+
+* *Hybrid nodes* - this is the default node type for control plane nodes, responsible for {ControllerName} runtime functions like project updates, management jobs and `ansible-runner` task operations. Hybrid nodes are also used for automation execution.
+
+* *Control nodes* - control nodes run project and inventory updates and system jobs, but not regular jobs. Execution capabilities are disabled on these nodes.
+
+== Execution plane
+
+The *execution plane* consists of execution nodes that execute automation on behalf of the control plane and have no control functions. Hop nodes serve to communicate. Nodes in the *execution plane* only run user-space jobs, and may be geographically separated, with high latency, from the control plane.
+
+* *Execution nodes* -  Execution nodes run jobs under `ansible-runner` with `podman` isolation. This node type is similar to isolated nodes. This is the default node type for execution plane nodes.
+
+* *Hop nodes* -  similar to a jump host, hop nodes will route traffic to other execution nodes. Hop nodes cannot execute automation.
+
+== Peers
+
+Peer relationships define node-to-node connections. You can define peers within the `[automationcontroller]` and `[execution_nodes]` groups or using the `[automationcontroller:vars]` or `[execution_nodes:vars]` groups

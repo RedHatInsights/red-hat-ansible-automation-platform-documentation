@@ -1,0 +1,32 @@
+
+[id="proc-configuring-proxy-controller_{context}"]
+
+= Enabling proxy server support for {ControllerName}
+
+
+[role="_abstract"]
+You can enable provide proxy server support for {ControllerName} using the `REMOTE_HOST_HEADERS` list variable in {ControllerName} settings. By default ``REMOTE_HOST_HEADERS`` is set to ``['REMOTE_ADDR', 'REMOTE_HOST']``.
+{ControllerNameStart} determines the remote host's IP address by searching through the list of headers in `REMOTE_HOST_HEADERS` until the FIRST IP address is located.
+
+
+.Prerequisites
+
+* You have created the .
+
+
+.Procedure
+
+. On the {ControllerName} node, open  `remote_host_headers.py` in a text editor:
++
+-----
+$ vi /etc/tower/conf.d/remote_host_headers.py`
+-----
++
+. Setup `REMOTE_HOST_HEADERS` as follows:
++
+-----
+`REMOTE_HOST_HEADERS = ['HTTP_X_FORWARDED_FOR', 'REMOTE_ADDR', 'REMOTE_HOST']`
+-----
+
+{ControllerNameStart} determines the remote host's IP address by searching through the list of headers in `REMOTE_HOST_HEADERS` until the FIRST IP address is located.
+

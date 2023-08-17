@@ -1,0 +1,16 @@
+[id="proc-install-aap-operator"]
+
+.Procedure
+. Log in to {OCP}.
+. Navigate to menu:Operators[OperatorHub].
+. Search for the {PlatformName} operator and click btn:[Install].
+. Select an *Update Channel*:
++
+* *stable-2.x*: installs a namespace-scoped operator, which limits deployments of {HubName} and {ControllerName} instances to the namespace the operator is installed in. This is suitable for most cases. The stable-2.x channel does not require administrator privileges and utilizes fewer resources because it only monitors a single namespace.
+* *stable-2.x-cluster-scoped*: deploys {HubName} and {ControllerName} across multiple namespaces in the cluster and requires administrator privileges for all namespaces in the cluster.
+. Select *Installation Mode*, *Installed Namespace*, and *Approval Strategy*.
+. Click btn:[Install].
+
+The installation process will begin. When installation is complete, a modal will appear notifying you that the {PlatformName} operator is installed in the specified namespace.
+
+* Click btn:[View Operator] to view your newly installed {PlatformName} operator.

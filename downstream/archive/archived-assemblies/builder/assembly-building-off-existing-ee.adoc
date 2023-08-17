@@ -1,0 +1,8 @@
+[id="assembly-building-off-existing-ee"]
+
+= Modifying existing execution environments provided by {PlatformName}
+
+{PlatformName} {PlatformVers} comes with a set of prebuilt, supported execution environments available on the Red Hat container registry. You can use these container images, as is, for use in your environment or you can modify them to customize automation to meet your requirements.
+
+include::builder/proc-push-execenv-to-hub.adoc[leveloffset=+1]
+include::builder/proc-pull-protected-registry.adoc[leveloffset=+1]

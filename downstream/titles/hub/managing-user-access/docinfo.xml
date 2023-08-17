@@ -1,0 +1,13 @@
+<title>Managing user access in Private Automation Hub</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>2.4</productnumber>
+<subtitle>
+Define user access for private automation hub
+</subtitle>
+<abstract>
+<para>This guide provides instructions to create groups for your automation hub users, provide them with appropriate system permissions, or allow view-only access to unauthorized users.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

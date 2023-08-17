@@ -1,0 +1,11 @@
+<title>Red Hat Ansible Automation Platform Upgrade and Migration Guide</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>2.4</productnumber>
+<subtitle>Upgrade and migrate legacy deployments of Ansible Automation Platform</subtitle>
+<abstract>
+<para>This guide shows you how to upgrade to the latest version of Ansible Automation Platform and migrate legacy virtual environments to automation execution environments.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

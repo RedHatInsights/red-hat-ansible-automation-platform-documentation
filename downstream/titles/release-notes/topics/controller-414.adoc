@@ -1,0 +1,8 @@
+// This is the release notes for Automation controller 4.1.4, the version number is removed from the topic title as part of the release notes restructuring efforts.
+
+[[controller-414-intro]]
+= Automation controller 
+
+.Automation controller 4.1.4 bug fixes
+
+* Fixed an issue where the installer failed at "Push execution environment images locally on Automation Controller and Execution Nodes" and was unable to make rootless runtime.

@@ -1,0 +1,74 @@
+[id="proc-enable-hstore-extension"]
+
+= Enabling the hstore extension for the {HubName} PostgreSQL database
+
+From {PlatformNameShort} {PlatformVers}, the database migration script uses `hstore` fields to store information, therefore the `hstore` extension to the {HubName} PostgreSQL database must be enabled.
+
+This process is automatic when using the {PlatformNameShort} installer and a managed PostgreSQL server.
+
+However, when the PostgreSQL database is external, you must carry out this step manually before {HubName} installation.
+
+If the `hstore` extension is not enabled before {HubName} installation, a failure is raised during database migration.
+
+.Procedure
+. Check if the extension is available on the PostgreSQL server ({HubName} database).
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+$ psql -d <{HubName} database> -c "SELECT * FROM pg_available_extensions WHERE name='hstore'"
+----
++
+Where the default value for `<{HubName} database>` is `automationhub`.
+
++
+This gives an output similar to the following:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+name  | default_version | installed_version |comment                                 
+------+-----------------+-------------------+---------------------------------------------------
+ hstore | 1.7           |                   | data type for storing sets of (key, value) pairs 
+(1 row)
+----
+
+. This indicates that the `hstore` 1.7 extension is available, but not enabled.
++
+If the `hstore` extension is not available on the PostgreSQL server, the result is similar to the following:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+
+ name | default_version | installed_version | comment 
+------+-----------------+-------------------+---------
+(0 rows)
+----
+. On a RHEL based server, the `hstore` extension is included in the `postgresql-contrib` RPM package, which is not installed automatically when installing the PostgreSQL server RPM package. 
++
+To install the RPM package, use the following command:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+dnf install postgresql-contrib
+----
+. Create the `hstore` PostgreSQL extension on the {HubName} database with the following command:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+$ psql -d <{HubName} database> -c "CREATE EXTENSION hstore"
+----
++
+The output of which is:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+CREATE EXTENSION
+----
+. In the following output, the `installed_version` field contains the `hstore` extension used, indicating that `hstore` is enabled.
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+name | default_version | installed_version | comment
+-----+-----------------+-------------------+------------------------------------------------------
+hstore  |     1.7      |       1.7         | data type for storing sets of (key, value) pairs
+(1 row)
+----

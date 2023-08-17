@@ -1,8 +1,176 @@
-= Red Hat Ansible Automation Platform documentation
+# Red Hat Ansible Automation Platform Documentation
 
 Welcome to the source for Ansible Automation Platform technical content.
 
 This repository contains technical content synchronized from various repositories and then converted into asciidoc.
-You can find the rest of the AAP doc set at:
 
-https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation
+This repository also contains content from the former AAP repository in the RedHatInsights org: https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation
+
+## Contributing
+
+We welcome contributions to the Red Hat Ansible Automation Platform documentation. You can either link:https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation/issues[open an issue] for discussion, or submit an update using the steps below. This section describes the workflow and provides resources for Red Hat style and documentation architecture conventions.
+
+### Authoring modularly structured documentation
+
+Documentation follows a link:https://redhat-documentation.github.io/modular-docs/[modular-based content model], providing a structure for writing and presenting user-story-based documentation. User-story-based documentation attempts to address the reader's needs more than focusing on feature-based documentation. This is accomplished using a set of templates for concepts, references, procedures and assemblies. Templates can be found link:https://github.com/redhat-documentation/modular-docs/tree/master/modular-docs-manual/files[here].
+
+
+= Repository Organization
+
+....
+.
+|
+├── common
+├── downstream
+│   ├── assemblies
+│   │   ├── platform-component1
+│   │   └── platform-component2
+│   │        ├── assembly-title-1.adoc
+│   │        ├── assembly-title-2.adoc
+│   │        └── modules -> ../modules/
+│   ├── attributes
+│   ├── images
+│   │   ├── image-1.png
+│   │   └── image-2.png
+│   ├── modules
+│   │   ├── platform-component1
+│   │   └── platform-component2
+│   │       ├── module-title-1.adoc
+│   │       └── module-title-2.adoc
+|   ├── titles
+│   │   ├── platform-component1
+│   │   └── platform-component2
+│   │        ├── title-1.adoc
+│   │        ├── title-2.adoc
+│   │        └── modules -> ../modules/
+├── release-notes
+└── README.adoc
+....
+
+Top-level directories are:
+
+* `common`: Contains modules and attributes that are shared across Red Hat Ansible Automation branches.
+You should modify content in the `common` folder on the `main` branch only.
+
+* `downstream`: Contains Red Hat Ansible Automation Platform modules, assemblies, and titles in these sub-folders:
+
+** `attributes`: A common directory for attribute files.
+** `assemblies`: A directory for all assemblies, each in its own AsciiDoc file.
+Assemblies are collections of modules linked together.
+Platform assemblies are grouped by component.
+** `images`: A directory for all images and other digital content.
+** `modules`: A directory for all modules, each one in its own AsciiDoc file.
+Platform modules are grouped by component.
+** `titles`: A directory for titles (information units, e.g, install guide, user guide).
+Contains `master.adoc` files that and symbolic links to the `assemblies` and `modules` directories.
+Platform titles are grouped by component or feature.
+
+* `release-notes`: Contains release note content.
+
+### Red Hat Documentation Asciidoc Mark-up Conventions
+
+Red Hat Ansible Automation Platform documentation is written in Asciidoc. See link:https://redhat-documentation.github.io/asciidoc-markup-conventions/[Red Hat Documentation Asciidoc Mark-up Conventions] to learn more about implementing Asciidoc in your writing.
+
+### Red Hat product documentation style conventions
+
+The Red Hat Customer Content Services team uses the link:https://redhat-documentation.github.io/supplementary-style-guide/[Red Hat supplementary style guide for product documentation] and The IBM Style Guide as its primary sources for technical writing conventions and style guidelines. Refer first to the Red Hat supplementary style guide for product documentation for style guidance and conventions. If a topic is not included there, it means we follow the convention as established in the IBM Style Guide.
+
+### Submitting an update
+
+These instructions show how to submit an update using the command line. You may also use the GitHub web interface for the update. Whichever method you choose, the update should be submitted as a pull request.
+
+Before you begin:
+
+* You must have a GitHub account.
+* You must have link:https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account[set up an SSH key for your GitHub account].
+
+The first time you contribute:
+
+. Fork the repository.
+
+   From the main page of the link:https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation[GitHub repository], click btn[Fork] in the upper right corner.
+
+. Clone the forked repository locally.
+
+-----
+$ git clone git@github.com:<username>/red-hat-ansible-automation-platform-documentation.git
+-----
+
+   If this command fails, be sure that you have link:https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account[set up an SSH key for GitHub].
+
+. Navigate to the `red-hat-ansible-automation-platform-documentation` directory.
+
+. Set the upstream remote repository.
+
+ -----
+ $ git remote add -f upstream git@github.com:RedHatInsights/red-hat-ansible-automation-platform-documentation.git
+ -----
+
+To submit an update:
+
+. Fetch the latest changes.
+
+   -----
+   $ git fetch upstream
+   -----
+
+. Check out a branch from upstream/master
+
+-----
+$ git checkout -b <new-branch> upstream/master
+-----
+
+. Make your edits.
+
+   Add or edit files as needed.
+
+. Stage the changes for each file.
+
+-----
+ $ git add <file-name>
+-----
+
+. Commit the changes.
+
+ -----
+   $ git commit -m "<descriptive-commit-message>"
+ -----
+
+. Push the changes to your forked repository.
+
+-----
+$ git push origin HEAD
+-----
+
+. Open a pull request.
+
+   Typically the previous command gives the URL to open a pull request. If not, you can open one from the link:https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation/pulls[Pull requests] tab of the GitHub UI.
+
+After you submit a pull request, it will be reviewed by members of this project.
+
+### Building the guide
+
+You must have `asciidoctor` installed. See the link:https://asciibinder.net/[Asciibinder documentation] for more information on installing Asciibinder.
+
+. Navigate to the `red-hat-ansible-automation-platform-documentation` directory.
+. Use the following command to build the guide:
+
+-----
+$ asciidoctor master.adoc
+-----
+
+This generates a `master.html` file that you can now view in a browser.
+
+
+
+## Contacts
+
+For questions or comments about Red Hat Ansible Automation Platform Documentation documentation, please contact:
+
+mailto:ccs-ansible-docs@redhat.com[ccs-ansible-docs@redhat.com]
+
+
+## License
+
+
+This work is licensed under a link:http://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International License].

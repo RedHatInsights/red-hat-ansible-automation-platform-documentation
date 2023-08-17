@@ -1,0 +1,20 @@
+[id="proc-find-delete-PVCs_{context}"]
+
+= Finding and deleting PVCs
+
+A persistent volume claim (PVC) is a storage volume used to store data that {HubName} and {ControllerName} applications use. These PVCs are independent from the applications and remain even when the application is deleted. If you are confident that you no longer need a PVC, or have backed it up elsewhere, you can manually delete them.
+
+.Procedure
+
+. List the existing PVCs in your deployment namespace:
++
+-----
+oc get pvc -n <namespace>
+-----
++
+. Identify the PVC associated with your previous deployment by comparing the old deployment name and the PVC name.
+. Delete the old PVC:
++
+-----
+oc delete pvc -n <namespace> <pvc-name>
+-----

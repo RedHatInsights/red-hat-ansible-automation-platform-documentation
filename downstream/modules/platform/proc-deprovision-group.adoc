@@ -1,0 +1,49 @@
+
+
+[id="proc-deprovisioning-groups"]
+
+= Deprovisioning groups using the installer
+
+
+[role="_abstract"]
+You can deprovision entire groups from your {AutomationMesh} using the {PlatformNameShort} installer. Running the installer will remove all configuration files and logs attached to the nodes in the group.
+
+[NOTE]
+====
+You can deprovision any hosts in your inventory except for the first host specified in the `[automationcontroller]` group.
+====
+
+
+.Procedure
+
+* Add `*node_state=deprovision*` to the [group:vars] associated with the group you wish to deprovision.
+
+
+.Example
+----
+[execution_nodes]
+execution-node-1.example.com peers=execution-node-2.example.com
+execution-node-2.example.com peers=execution-node-3.example.com
+execution-node-3.example.com peers=execution-node-4.example.com
+execution-node-4.example.com peers=execution-node-5.example.com
+execution-node-5.example.com peers=execution-node-6.example.com
+execution-node-6.example.com peers=execution-node-7.example.com
+execution-node-7.example.com
+
+[execution_nodes:vars]
+node_state=deprovision
+----
+
+== Deprovisioning isolated instance groups
+You have the option to manually remove any isolated instance groups using the `awx-manage` deprovisioning utility.
+
+WARNING: Use the deprovisioning command to only remove isolated instance groups. To deprovision instance groups from your {AutomationMesh} architecture, use the <<proc-deprovisioning-groups, installer method>> instead.
+
+.Procedure
+
+* Run the following command, replacing `__<name>__` with the name of the instance group:
++
+[subs="+quotes"]
+----
+$ awx-manage unregister_queue --queuename=__<name>__
+----

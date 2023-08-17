@@ -1,0 +1,121 @@
+[id="assembly-itsm-substitution"]
+
+= Enabling substitutable variables across the order process workflow
+
+You can substitute variables across products used in your order process workflow. Implementing substitutable variables requires creating or editing the job template survey on Ansible Tower and enabling substitution on surveys attached to products on Automation Services Catalog.
+
+.Substitution format and requirements
+
+Substitutable values are expressed in the format `{{substitution_express}}` with no spaces allowed between the braces and the expression. Refer to xref:ref-permissions[Substitute variables] for information on each variable you can use for substitution.
+
+== Implementing substitutable variables in your order process workflow
+
+In this section we will demonstrate how to align data you expose to Automation Services Catalog in your playbooks with substitutable variables, using the playbooks examples provided earlier in this guide.
+
+=== Creating a *before order* process to pass a value to the product order.
+
+.Example playbook `before_order.yml` for *before order* process
+
+-----
+# This playbook prints a simple debug message and set_stats
+- name: Echo Hello, world!
+  hosts: localhost
+  gather_facts: yes
+  tasks:
+    - debug:
+        msg: "Hello, world!"
+
+    - set_stats:
+        data:
+          expose_to_cloud_redhat_com_favorite_color: "orange"
+
+-----
+
+This playbook returns to Automation Services Catalog a playbook artifact `favorite_color` that has the value `orange`. You do not need to make a job template survey on Ansible Tower since no user input is required.  Instead, you can pass `favorite_color` to the product playbook by editing the survey on Automation Services Catalog set to the before order process product.
+
+
+=== Configuring the *product order* to use a substituted variable
+
+This example product playbook accepts a substituted variable for {{favorite_color}} and passes back to Automation Services Catalog the artifact 'after_data'.
+
+.Example playbook `product_order.yml`
+
+-----
+# This playbook prints a simple debug message with given information
+- name: Echo Hello, world!
+  hosts: localhost
+  gather_facts: yes
+  tasks:
+    - debug:
+        msg: "Hello, {{favorite_color}} world!"
+
+    - set_stats:
+        data:
+          expose_to_cloud_redhat_com_after_data: "{{favorite_color}}"
+
+-----
+
+Create a job template on Ansible Tower for the 'product_order.yml' playbook that sets *favorite_color* as the *Answer Variable Name.
+
+Create a survey for the `product_order.yml` job template that includes:
+
+. Enter *What is your favorite color?* in the *Prompt* field.
+. Enter *favorite_color* in the *Answer Variable Name* field.
+. Click btn:[UPDATE].
+
+
+Enable the *product order* survey on Automation Services Catalog to use the 'favorite_color' value passed from `before_order.yml`.
+
+In the survey attached to your *product order*:
+
+. Update fields with the following values:
+.. *Name*: favorite_color
+.. *Initial Value*: {{before.before_order.artifacts.favorite_color}}
+.. *Label*: What is your favorite color?
+.. *Placeholder*: {{before.before_order.artifacts.favorite_color}}
+. Toggle the *Disabled*  switch to the active position.
+. Toggle the *Substitution* switch to the active position.
+
+You have now configured the *product order* to use the `favorite_color` artifact from the `before_order.yml` playbook as a substituted variable.
+
+=== Configuring the *after order* product to accept `after_data` artifact values from the product order
+
+Use surveys to pass the 'product_order.yml' artifact `after_data` to `after_order.yml` using substitutable variables.
+
+.Example playbook `after_order.yml` for *after order* product
+
+-----
+# This playbook prints a simple debug message with given information
+- name: Echo Hello, world!
+  hosts: localhost
+  gather_facts: yes
+  tasks:
+    - debug:
+        msg: "{{after_data}}"
+
+-----
+
+Create a job template on Ansible Tower for the 'after_order.yml' playbook that sets *after_data* as the *Answer Variable Name.
+
+In the survey attached to your `after_order.yml` job template:
+
+. Type "Enter your after data" in the *Prompt* field.
+. Enter *after_data* in the *Answer Variable Name* field.
+. Click btn:[UPDATE].
+
+Enable the *after order* survey on Automation Services Catalog to use the 'after_data' value passed from `after_order.yml`.
+
+In the survey attached to your *after order*:
+
+. Update fields with the following values:
+.. *Name*: after_data
+.. *Initial Value*: {{product.artifacts.after_data}}
+.. *Label*: "Enter your after data"
+.. *Placeholder*: {{product.artifacts.after_data}}
+. Toggle the *Disabled* switch to the active position.
+. Toggle the *Substitution* switch to the active position.
+
+The playbook will display the value passed for *after data* when the job template is run.
+
+
+include::catalog/ref-substitution.adoc[leveloffset=+1]

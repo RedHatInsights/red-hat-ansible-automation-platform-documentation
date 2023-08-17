@@ -1,0 +1,80 @@
+[id="proc-creating-a-new-web-server-to-host-repositories_{context}"]
+
+= Creating a new web server to host repositories
+
+If you do not have an existing web server to host your repositories, create one with the synced repositories.
+
+.Procedure
+
+Use the following steps if creating a new web server.
+
+. Install prerequisites:
++
+----
+$ sudo dnf install httpd
+----
++
+. Configure httpd to serve the repo directory:
++
+----
+/etc/httpd/conf.d/repository.conf
+
+DocumentRoot '/path/to/repos'
+
+<LocationMatch "^/+$">
+    Options -Indexes
+    ErrorDocument 403 /.noindex.html
+</LocationMatch>
+
+<Directory '/path/to/repos'>
+    Options All Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>
+----
++
+. Ensure that the directory is readable by an apache user:
++
+----
+$ sudo chown -R apache /path/to/repos
+----
+
+. Configure SELinux:
++
+----
+$ sudo semanage fcontext -a -t httpd_sys_content_t "/path/to/repos(/.*)?"
+$ sudo restorecon -ir /path/to/repos
+----
+
+. Enable httpd:
++
+----
+$ sudo systemctl enable --now httpd.service
+----
+
+. Open firewall:
++
+----
+$ sudo firewall-cmd --zone=public --add-service=http –add-service=https
+--permanent
+$ sudo firewall-cmd --reload
+----
+
+. On {ControllerName} and {HubName}, add a repo file at __/etc/yum.repos.d/local.repo__, add
+the optional repos if needed:
++
+----
+[Local-BaseOS]
+name=Local BaseOS
+baseurl=http://<webserver_fqdn>/rhel-8-for-x86_64-baseos-rpms
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[Local-AppStream]
+name=Local AppStream
+baseurl=http://<webserver_fqdn>/rhel-8-for-x86_64-appstream-rpms
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+----

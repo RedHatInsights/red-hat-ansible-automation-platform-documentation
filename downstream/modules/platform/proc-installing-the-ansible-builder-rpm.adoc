@@ -1,0 +1,229 @@
+[id="installing-the-ansible-builder-rpm_{context}"]
+
+= Installing the ansible-builder RPM
+
+.Procedure
+
+. On a RHEL system, install the ansible-builder RPM.  This can be done in one of several  ways:
+
+.. Subscribe the RHEL box to a Satellite on the disconnected network.
+.. Attach the Ansible Automation Platform subscription and enable the AAP repo.
+.. Install the ansible-builder RPM.
++
+[NOTE]
+====
+This is preferred if a Satellite exists because the EE images can use RHEL content from the Satellite if the underlying build host is registered.
+====
++
+. Unarchive the AAP setup bundle.
+. Install the ansible-builder RPM and its dependencies from the included content:
++
+----
+$ tar -xzvf ansible-automation-platform-setup-bundle-2.4-1.tar.gz
+$ cd ansible-automation-platform-setup-bundle-2.4/bundle/el8/repos/
+$ sudo yum install ansible-builder-1.0.1-2.el8ap.noarch.rpm
+python38-requirements-parser-0.2.0-3.el8ap.noarch.rpm
+----
++
+. Create a directory for your custom EE build artifacts.
++
+----
+$ mkdir custom-ee
+$ cd custom-ee/
+----
++
+. Create an __execution-environment.yml__ file that defines the requirements for your custom EE following the documentation at
+https://ansible-builder.readthedocs.io/en/stable/definition/.  Override the `EE_BASE_IMAGE` and `EE_BUILDER_IMAGE` variables to point to the EEs available in your private automation hub.
++
+----
+$ cat execution-environment.yml
+---
+version: 1
+build_arg_defaults:
+  EE_BASE_IMAGE: '<hub_fqdn>/ee-supported-rhel8:latest'
+  EE_BUILDER_IMAGE: '<hub_fqdn>/ansible-builder-rhel8:latest'
+
+dependencies:
+  python: requirements.txt
+  galaxy: requirements.yml
+----
++
+. Create an __ansible.cfg__ file that points to your private automation hub and contains credentials that allow uploading, such as an admin user token.
++
+----
+$ cat ansible.cfg
+[galaxy]
+server_list = private_hub
+
+[galaxy_server.private_hub]
+url=https://<hub_fqdn>/api/galaxy/
+token=<admin_token>
+----
++
+. Create a __ubi.repo__ file that points to your disconnected UBI repo mirror (this could be your Satellite if the UBI content is hosted there).
++
+This is an example output where `reposync` was used to mirror the UBI repos.
++
+----
+$ cat ubi.repo
+[ubi-8-baseos]
+name = Red Hat Universal Base Image 8 (RPMs) - BaseOS
+baseurl = http://<ubi_mirror_fqdn>/repos/ubi-8-baseos
+enabled = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+gpgcheck = 1
+
+[ubi-8-appstream]
+name = Red Hat Universal Base Image 8 (RPMs) - AppStream
+baseurl = http://<ubi_mirror_fqdn>/repos/ubi-8-appstream
+enabled = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+gpgcheck = 1
+----
+
+. Add the CA certificate used to sign the private automation hub web server certificate.
+
+.. For self-signed certificates (the installer default), make a copy of the file __/etc/pulp/certs/root.crt__ from your private automation hub and name it *hub-root.crt*.
+
+.. If an internal certificate authority was used to request and sign the private automation hub web server certificate, make a copy of that CA certificate called *hub-root.crt*.
+
+. Create your python requirements.txt and ansible collection requirements.yml with the content needed for your custom EE image.  Note that any collections you require should already be uploaded into your private automation hub.
+
+. Use ansible-builder to create the context directory used to build the EE image.
++
+----
+$ ansible-builder create
+Complete! The build context can be found at: /home/cloud-user/custom-ee/context
+$ ls -1F
+ansible.cfg
+context/
+execution-environment.yml
+hub-root.crt
+pip.conf
+requirements.txt
+requirements.yml
+ubi.repo
+----
+
+. Copy the files used to override the internet-facing defaults into the context directory.
++
+----
+$ cp ansible.cfg hub-root.crt pip.conf ubi.repo context/
+----
++
+. Edit the file *context/Containerfile* and add the following modifications.
+
+.. In the first *EE_BASE_IMAGE* build section, add the *ansible.cfg* and *hub-root.crt* files and run the `update-ca-trust` command.
+
+.. In the *EE_BUILDER_IMAGE* build section, add the *ubi.repo* and *pip.conf* files.
+
+.. In the final *EE_BASE_IMAGE* build section, add the *ubi.repo* and pip.conf files.
++
+----
+$ cat context/Containerfile
+ARG EE_BASE_IMAGE=<hub_fqdn>/ee-supported-rhel8:latest
+ARG EE_BUILDER_IMAGE=<hub_fqdn>/ansible-builder-rhel8:latest
+
+FROM $EE_BASE_IMAGE as galaxy
+ARG ANSIBLE_GALAXY_CLI_COLLECTION_OPTS=
+USER root
+
+ADD _build /build
+WORKDIR /build
+
+# this section added
+ADD ansible.cfg /etc/ansible/ansible.cfg
+ADD hub-root.crt /etc/pki/ca-trust/source/anchors/hub-root.crt
+RUN update-ca-trust
+# end additions
+RUN ansible-galaxy role install -r requirements.yml \
+    --roles-path /usr/share/ansible/roles
+RUN ansible-galaxy collection install \
+    $ANSIBLE_GALAXY_CLI_COLLECTION_OPTS -r requirements.yml \
+    --collections-path /usr/share/ansible/collections
+
+FROM $EE_BUILDER_IMAGE as builder
+
+COPY --from=galaxy /usr/share/ansible /usr/share/ansible
+
+ADD _build/requirements.txt requirements.txt
+RUN ansible-builder introspect --sanitize \
+    --user-pip=requirements.txt \
+    --write-bindep=/tmp/src/bindep.txt \
+    --write-pip=/tmp/src/requirements.txt
+# this section added
+ADD ubi.repo /etc/yum.repos.d/ubi.repo
+ADD pip.conf /etc/pip.conf
+# end additions
+RUN assemble
+
+FROM $EE_BASE_IMAGE
+USER root
+
+COPY --from=galaxy /usr/share/ansible /usr/share/ansible
+# this section added
+ADD ubi.repo /etc/yum.repos.d/ubi.repo
+ADD pip.conf /etc/pip.conf
+# end additions
+
+COPY --from=builder /output/ /output/
+RUN /output/install-from-bindep && rm -rf /output/wheels
+----
++
+. Create the EE image in the local podman cache using the `podman` command.
++
+----
+$ podman build -f context/Containerfile \
+    -t <hub_fqdn>/custom-ee:latest
+----
++
+. Once the custom EE image builds successfully, push it to the private
+automation hub.
++
+----
+$ podman push <hub_fqdn>/custom-ee:latest
+----
+
+== Workflow for upgrading between minor AAP releases
+
+To upgrade between minor releases of AAP 2, use this general workflow.
+
+.Procedure
+
+. Download and unarchive the latest AAP 2 setup bundle.
+
+. Take a backup of the existing installation.
+
+. Copy the existing installation inventory file into the new setup bundle directory.
+
+. Run `./setup.sh` to upgrade the installation.
+
+For example, to upgrade from version 2.2.0-7 to 2.3-1.2, make sure that both setup bundles are on the initial controller node where the installation occurred:
+
+----
+    $ ls -1F
+ansible-automation-platform-setup-bundle-2.2.0-7/
+ansible-automation-platform-setup-bundle-2.2.0-7.tar.gz
+ansible-automation-platform-setup-bundle-2.3-1.2/
+ansible-automation-platform-setup-bundle-2.3-1.2.tar.gz
+----
+
+Back up the 2.2.0-7 installation:
+----
+$ cd ansible-automation-platform-setup-bundle-2.2.0-7
+$ sudo ./setup.sh -b
+$ cd ..
+----
+
+Copy the 2.2.0-7 inventory file into the 2.3-1.2 bundle directory:
+----
+$ cd ansible-automation-platform-setup-bundle-2.2.0-7
+$ cp inventory ../ansible-automation-platform-setup-bundle-2.3-1.2/
+$ cd ..
+----
+
+Upgrade from 2.2.0-7 to 2.3-1.2 with the setup.sh script:
+----
+$ cd ansible-automation-platform-setup-bundle-2.3-1.2
+$ sudo ./setup.sh
+----

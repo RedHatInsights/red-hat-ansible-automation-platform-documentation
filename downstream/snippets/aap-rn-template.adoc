@@ -1,0 +1,74 @@
+// For each release of AAP, make a copy of this file and rename it to aap-rn-xx.adoc where xx is the release number; for example, 24 for the 2.4 release.
+// Save the renamed copy of this file to the release-notes/topics directory topic files for the release notes reside.
+//Only include release note types that have updates for a given release. For example, if there are no Technology previews for the release, remove that section from this file.
+
+
+= Ansible Automation Platform <version>
+
+Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
+
+== New features and enhancements
+
+This release of Ansible Automation Platform features the following enhancements:
+
+* Feature/enhancement and description
+* Feature/enhancement and description
+
+== Technology Preview
+
+Some features in this release are currently classified as Technology Preview. These experimental features are not intended for production use. For more information about technology preview features, see xref:technology-preview[What is a Technology Preview feature].
+
+<ABC> is available as a Technology Preview::
+ABC, which Red Hat provides as an unsupported Technology Preview, is <description of feature>
+
+<XYZ> is available as a Technology Preview::
+XYZ, which Red Hat provides as an unsupported Technology Preview, is <description of feature>
+
+== Bug fixes
+
+These bugs were fixed in this release of Ansible Automation Platform:
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of bug fix>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of bug fix>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of bug fix>
+
+== Deprecated and removed features
+
+Some features available in previous releases have been deprecated or removed.
+
+Deprecated functionality is still included in Ansible Automation Platform and continues to be supported; however, it will be removed in a future release of this product and is not recommended for new deployments. For the most recent list of major functionality deprecated and removed within Ansible Automation Platform <version>, refer to the table below.
+
+.Deprecated features
+[options="header"]
+[cols=",a"]
+|===
+|Deprecated Feature |Details
+|<feature abc> |Support for <feature abc> is now deprecated. This functionality will be removed in a future release.
+|<feature xyz> |Support for <feature xyz> is now deprecated. This functionality will be removed in a future release.
+|===
+
+.Removed features
+[options="header"]
+[cols=",a"]
+|===
+|Removed feature |Details
+|<feature abc> |<feature abc> support has been removed in Ansible Automation Platform <version>
+|<feature xyz> |<feature xyz> support has been removed in Ansible Automation Platform <version>
+|===
+
+== Known issues
+These known issues exist in Ansible Automation Platform at this time:
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of issue>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of issue>
+
+link:https://<jira-issue>[AAP-xxxx]::
+<description of issue>

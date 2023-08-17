@@ -1,0 +1,40 @@
+[id="ref-multi-node-cluster-inventory_{context}"]
+
+= Example {PlatformName} multi-node inventory file
+
+
+[role="_abstract"]
+This example describes how you can populate the inventory file for a multi-node cluster installation of {ControllerName}.
+
+-----
+[automationcontroller]
+host1
+host11
+host12
+
+
+[automationhub]
+host2
+
+[database]
+<1>
+
+[all:vars]
+ansible_become=true
+
+admin_password='<password>'
+
+pg_host='dbnode.example.com'
+pg_port='5432'
+
+pg_database='tower'
+pg_username='tower'
+pg_password='<password>'
+
+registry_url='registry.redhat.io'
+registry_username='<registry username>'
+registry_password='<registry password>'
+-----
+
+
+<1> Field should be empty.

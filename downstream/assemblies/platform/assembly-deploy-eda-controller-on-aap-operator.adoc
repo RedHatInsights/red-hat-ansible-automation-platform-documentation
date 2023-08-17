@@ -1,0 +1,20 @@
+ifdef::context[:parent: {context}]
+
+
+[id="deploy-eda-controller-on-aap-operator-ocp"]
+
+= Deploying {EDAcontroller} with {OperatorPlatform} on {OCPShort}
+
+:context: deploying
+
+[role="_abstract"]
+{EDAcontroller} is the interface for event-driven automation and introduces automated resolution of IT requests. This component helps you connect to sources of events and acts on those events using rulebooks. When you deploy {EDAcontroller}, you can automate decision making, use numerous event sources, implement event-driven automation within and across multiple IT use cases, and achieve more efficient service delivery. 
+
+Use the following instructions to install {EDAName} with your {OperatorPlatform} on {OCPShort}.
+
+
+include::platform/proc-deploy-eda-controller-with-aap-operator-ocp.adoc[leveloffset=+1]
+
+ifdef::parent-context-of-deploy-eda-controller-with-aap-operator-ocp[:context: {parent-context-of-deploy-eda-controller-with-aap-operator-ocp}]
+ifndef::parent-context-of-deploy-eda-controller-with-aap-operator-ocp[:!context:]
+

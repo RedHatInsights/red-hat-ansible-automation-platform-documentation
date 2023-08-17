@@ -1,0 +1,30 @@
+ifdef::context[:parent-context: {context}]
+
+
+[id="converting-playbooks-for-aap2"]
+= Converting-playbooks-for-AAP2
+
+:context: converting-playbooks-for-aap2
+
+
+[role="_abstract"]
+
+With Ansible Automation Platform 2 and its containerised execution environments, the usage of _localhost_ has been altered. In previous versions of Ansible Automation Platform, a job would run against _localhost_, which translated into running on the underlying Automation Controller host. This could be used to store data and persistent artifacts.
+
+With Ansible Automation Platform 2, localhost means you are running inside a container, which is ephemeral in nature. _Localhost_ is no longer tied to a particular host, and with portable execution environments, this means it can run anywhere with the right environment and software prerequisites already embedded into the execution environment container.
+
+
+
+include::platform/con-persisting-data-from-auto-runs.adoc[leveloffset=+1]
+
+
+
+
+
+
+
+
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
