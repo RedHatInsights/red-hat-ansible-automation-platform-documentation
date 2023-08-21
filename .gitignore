@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 tmp
-build/
-html/
 *#
 *~
 .sw*
@@ -15,18 +12,13 @@ master.html
 .vscode
 # virtual environments
 venv
-=======
 #ignores output from ./scripts/buildGuides.sh
 
 #manually ignoring build dirs,
 #feel free to make this better with a regex
-
-*~
 build/
 html/
 .zanata-cache/
-.DS_Store
-*/.DS_Store
 *.zip
 emender/results/*
 downstream/titles/*/master.html
@@ -34,4 +26,3 @@ downstream/titles/*/*/master.html
 release-notes/master.html
 *.docx
 *.swp
->>>>>>> migrate-main
