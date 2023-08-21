@@ -27,5 +27,5 @@ h|Configuration Option  h|Description
 |Console Display Name |Name used when this provider is referenced in the admin console
 |Priority |The priority of this provider when looking up users or adding a user
 |Sync Registrations |Enable if you want new users created by {AAPCentralAuth} in the admin console or the registration page to be added to LDAP
-|Allow Kerberos authentication|Enable Kerberos/SPNEGO authentication in the realm with users data provisioned from LDAP. See link:https://https://https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.6/html/server_administration_guide/configuring-authentication_server_administration_guide#kerberos[Kerberos] for more information.
+|Allow Kerberos authentication|Enable Kerberos/SPNEGO authentication in the realm with users data provisioned from LDAP. See link:https://https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.6/html/server_administration_guide/configuring-authentication_server_administration_guide#kerberos[Kerberos] for more information.
 |===
