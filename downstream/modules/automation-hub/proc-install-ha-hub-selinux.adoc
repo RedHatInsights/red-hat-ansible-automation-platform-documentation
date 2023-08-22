@@ -18,6 +18,11 @@ $ mkdir /var/lib/pulp/
 srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev,nosharecache 0 0
 srv_rhel8:/data/pulpcore_static /var/lib/pulp/pulpcore_static nfs defaults,_netdev,nosharecache,context="system_u:object_r:httpd_sys_content_rw_t:s0" 0 0
 ----
+. Run the following command:
++
+----
+$ systemctl daemon-reload
+----
 . Run the mount command for `/var/lib/pulp`:
 +
 ----
