@@ -14,8 +14,21 @@ To begin, install {PlatformNameShort} and choose a target system where you can d
 Refer to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Red Hat Ansible Automation Platform Installation Guide] for further instructions.
 The following example playbook executes simple Ansible tasks, while teaching you how to use the controller and properly set it up. This can be any sort of system manageable by Ansible, as described in the link:https://docs.ansible.com/ansible/latest/user_guide/basic_concepts.html#managed-nodes[Managed nodes] section of the Ansible documentation.
 
+[NOTE]
+====
+Ansible Automation Platform is offered on a subscription basis. 
+These subscriptions vary in price and support-levels. 
+For more information about subscriptions and features, see link:https://docs.ansible.com/automation-controller/4.4/html/userguide/license-support.html#subscription-types[Subscription Types].
+====
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
-
-
+include::platform/assembly-controller-getting-started-superuser.adoc[leveloffset=+1]
+include::platform/assembly-controller-getting-started-subscriptions.adoc[leveloffset=+1]
+include::platform/assembly-controller-getting-started-dashboard.adoc[leveloffset=+1]
+include::platform/assembly-controller-getting-started-organizations.adoc[leveloffset=+1]
+include::platform/assembly-controller-getting-started-users.adoc[leveloffset=+1]
+include::platform/assembly-controller-getting-started-inventories.adoc[leveloffset=+1]
+include::platform/assembly-controller-getting-started-credentials.adoc[leveloffset=+1]
+include::platform/assembly-controller-getting-started-projects.adoc[leveloffset=+1]
+include::platform/assembly-controller-getting-started-job-templates.adoc[leveloffset=+1]

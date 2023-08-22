@@ -1,0 +1,76 @@
+[id="controller-import-subscription"]
+
+= Importing a subscription
+
+To understand what is supported with your subscription, see link:http://docs.ansible.com/automation-controller/4.4/html/userguide/license-support.html#licenses-feat-support[Red Hat Ansible Automation Platform Controller Licensing, Updates, and Support]. 
+If you have issues with your subscription, contact your Sales Account Manager or link:https://access.redhat.com/support/contact/customerService/[Red Hat Customer Service].
+
+When you launch controller for the first time, the Subscription screen automatically displays.
+
+.Procedure
+. By default, the option to retrieve and import your subscription is to upload a subscription manifest. 
+Generate this from link:https://access.redhat.com/management/subscription_allocations[Subscription Allocations].
+When you have a subscription manifest, you can upload it by browsing to the location where the file is saved (the subscription manifest is the complete .zip file, and not its component parts).
++
+[NOTE]
+====
+If the *Browse* button in the subscription manifest option is grayed-out, clear the username and password fields to enable the *Browse* button.
+====
++
+Alternatively, you can choose the option to enter your Red Hat customer credentials using your username and password. 
+Use your Satellite username and password if your controller cluster nodes are registered to Satellite using Subscription Manager. 
+Once you enter your credentials, click *Get Subscriptions*.
+. The subscription metadata is then retrieved from the RHSM/Satellite API, or from the manifest provided.
+** If it is a subscription manifest, and multiple subscription counts were applied in a single installation, the controller combines the counts but uses the earliest expiration date as the expiry (at which point you must refresh your subscription).
+** If you enter your credential information (username and password), the controller retrieves your configured subscription service. 
+Then it prompts you to choose the subscription you want to run and entitles the controller with that metadata. 
+You can log in over time and retrieve new subscriptions if you have renewed.
++
+[NOTE]
+====
+When your subscription expires (you can check this in the Subscription details of the Subscription settings window), you must renew it in the controller by one of these two methods.
+====
++
+If you encounter the “Error fetching licenses" message, you need the proper permissions required for the Satellite user. 
+The controller administrator needs this to apply a subscription.
++
+The following Satellite roles grant proper access:
+
+* Custom with *view_subscriptions* and *view_organizations* filter
+* Viewer
+* Administrator
+* Organization Admin
+* Manager
++
+Red Hat recommends the *Custom* role for your controller integration, as it is the most restrictive. 
+Refer to the link:https://access.redhat.com/documentation/en-us/red_hat_satellite/6.13/html/administering_red_hat_satellite/managing_users_and_roles_admin[Creating and Managing Roles] section of the Satellite documentation on managing users and roles for more detail.
++
+[NOTE]
+====
+The System Administrator role is not equivalent to the Administrator user checkbox, and does not provide sufficient permissions to access the subscriptions API page.
+====
++
+. Click btn:[Next] to proceed to *Tracking and Insights*. 
+Tracking and insights collect data to help Red Hat improve the product by delivering you a much better user experience. 
+For more information about data collection, refer to link:http://docs.ansible.com/automation-controller/4.4/html/administration/usability_data_collection.html#usability-data-collection[Usability Analytics and Data Collection]. 
+This option is checked by default, but you may opt out of any of the following:
+** *User analytics* collects data from the controller user interface.
+** *Insights Analytics* provides a high level analysis of your automation with {ControllerName}, which is used to help you identify trends and anomalous use of the controller. 
+For opt-in of Automation Analytics to have any effect, your instance of {ControllerName} must be running on Red Hat Enterprise Linux. 
+Refer to the link:https://docs.ansible.com/automation-controller/4.4/html/administration/usability_data_collection.html#user-data-insights[Automation Analytics] section for more information. 
+If you select to opt-in for this option, the screen expands and prompts for a username and password to enable Insights, if applicable.
+
++
+[NOTE]
+====
+You can change your analytics data collection preferences at any time, as described in the link:http://docs.ansible.com/automation-controller/4.4/html/administration/usability_data_collection.html#usability-data-collection[Usability Analytics and Data Collection] section.
+====
++
+. After you have specified your tracking and insights preferences, click btn:[Next] to proceed to the End User Agreement.
+. Review and check the *I agree to the End User License Agreement* checkbox and click btn:[Submit].
+
+When your subscription has been accepted, the controller displays the subscription details and navigates you to the Dashboard of the {ControllerName} interface. 
+You can return to this screen by clicking btn:[Settings] from the navigation menu and select btn:[Subscription settings] from the Subscription option.
+
+
+

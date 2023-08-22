@@ -1,0 +1,10 @@
+[id="controller-getting-started-set-up-project"]
+
+= Setting up a project
+
+.Procedure
+. Select *Projects* from the navigation bar, to review existing projects.
+** The [ControllerName] simplifies the startup process by providing you with a "Demo Project" to work with initially.
+. Select *Demo Project* to view its details.
+
+image:: controller-demo-project-details.png

@@ -1,0 +1,21 @@
+[id="controller-getting-started-with-job-templates"]
+
+= Getting started with job templates
+
+.Procedure
+* Select *Demo Job Template* to view its details.
+
+image:: controller-job-template-demo-details.png
+
+For the purpose of this getting started leave the default demo job template as it is, but you can edit it later.
+
+. Go to the *Details* tab.
+. Select btn:[Edit].
+
+Alternatively, you can:
+
+. Go to the *Templates* list view.
+. Select btn:[Edit] next to the template name to edit the appropriate details.
+. Save your changes.
+** Select btn:[Cancel] (if no changes were made) or use the breadcrumb navigational links at the top of the [ControllerName] browser to return to the *Templates* list view. 
+Selecting btn:[Save] does not exit the Details dialog.

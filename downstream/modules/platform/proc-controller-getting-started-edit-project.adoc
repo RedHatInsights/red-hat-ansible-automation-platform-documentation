@@ -1,0 +1,31 @@
+[id="controller-getting-started-edit-project"]
+
+= Editing a project
+
+For the purpose of getting started you can leave the default demo credential as it is, but you can edit it later.
+
+.Procedure
+. Go to the *Details* tab.
+. Select btn:[Edit].
+
+Alternatively, you can:
+
+. Go to the *Projects* list view.
+. Select btn[Edit] next to the project name and edit the appropriate details.
+. Save your changes.
+
+If you want to fetch the project for the latest changes, you can manually start an SCM sync for this project:
+
+. Update the SCM-based demo project from the Details tab
+. Select btn:[Sync].
+
+Alternatively, you can:
+
+. Go to the *Projects* list view.
+. Select the Sync () button next to the project name.
+
+[NOTE]
+====
+When you add a project set up to use source control, a “sync” automatically starts that fetches the project details from the configured source control.
+====
+

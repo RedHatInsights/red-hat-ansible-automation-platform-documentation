@@ -1,0 +1,24 @@
+[id="controller-viewing-dashboard"]
+
+= Viewing the Controller Dashboard
+
+.Procedure
+
+* Click the Menu icon to hide or display the navigation bar.
+** On the main Dashboard view, a summary appears listing your current *Job status*. 
+You can filter the job status within a period of time or by job type. 
+Also available in their respective tabs are summaries of *Recent Jobs* ran and *Recent Templates* used. 
+These can be sorted by various attributes.
+image::controller-home-dashboard.png
+
+* Click btn:[Settings] to view the controller configuration settings.
+** The *Settings* page allows administrators to configure authentication, jobs, system-level attributes, customize the user interface, and product license information. 
+Refer to the link:https://docs.ansible.com/automation-controller/4.4/html/administration/configure_tower_in_tower.html#ag-configure-tower[Controller Configuration] section for more information.
+
+[NOTE]
+====
+The goal of this quick start is to launch a simple playbook. 
+This requires you to set up a number of configuration options. 
+Completing the quick start configuration tasks now ensures that the controller is configured properly and allows for easier executions of more involved playbooks later on.
+====
+

@@ -1,0 +1,5 @@
+[id="controller-getting-started-users"]
+
+= Users
+
+include::platform/con-controller-getting-started-create-users.adoc[leveloffset=+1]

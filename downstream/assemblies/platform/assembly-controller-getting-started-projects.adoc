@@ -1,0 +1,17 @@
+[id="controller-getting-started-projects"]
+
+= Projects
+
+A Project is a logical collection of Ansible playbooks, represented in the controller.
+You can manage playbooks and playbook directories by either placing them manually under the Project Base Path on your controller server, or by placing your playbooks into a source code management (SCM) system supported by the controller. 
+These include Git, Subversion, and Mercurial.
+
+[NOTE]
+====
+Red Hat recommends that you use source control to manage your playbooks. 
+This type of best practice provides the ability to treat your infrastructure as code and is in line with DevOps ideals. 
+While this guide uses lightweight examples to get you up and running, we suggest using source control to manage playbook for production purposes.
+====
+
+include::platform/proc-controller-getting-started-set-up-project.adoc[leveloffset=+1]
+

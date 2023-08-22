@@ -1,0 +1,13 @@
+[id="controller-getting-started-job-templates"]
+
+= Job templates
+
+A job template combines an Ansible playbook from a project and the settings required to launch it. 
+
+Review existing job templates by selecting *Templates* from the navigation bar.
+
+For the purpose of this getting started guide, a Demo Job Template has been created for your initial use.
+
+include::platform/proc-controller-getting-started-with-job-templates.adoc[leveloffset=+1]
+
+

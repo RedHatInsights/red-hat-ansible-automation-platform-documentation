@@ -1,0 +1,26 @@
+[id="controller-importing-subscriptions"]
+
+To obtain your automation controller subscription, you can either:
+
+* Provide your Red Hat or Satellite username and password on the license page.
+* Obtain a subscriptions manifest from your Subscription Allocations page on the customer portal. 
+See link:http://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#obtain-sub-manifest[Obtaining a subscriptions manifest] in the Automation Controller User Guide for more information.
+
+If you have a [PlatformName] subscription, use your Red Hat customer credentials when you launch the controller to access your subscription information, refer to the xref:controller-import-subscription[Importing a subscription] section.
+
+If you do not have a {PlatformName} subscription, you can request a link:https://www.redhat.com/en/technologies/management/ansible/try-it[trial subscription here] or click *Request Subscription* and follow the instructions to request one.
+
+Disconnected environments with Satellite can use the login flow on vm-based installations if the subscription manager is configured on the controller instance to connect to their Satellite instance. 
+
+For disconnected environments without Satellite, Red Hat recommends that you either:
+
+* Download a manifest from link:access.redhat.com[access.redhat.com] in a connected environment, and then upload it to the disconnected controller instance.
+* Connect to the Internet through a proxy server.
+
+[NOTE]
+====
+To use a disconnected environment, you must have a valid [ControllerName] entitlement attached to your Satellite organization's manifest. 
+To confirm, enter `hammer subscription list \--organization <org_name>`.
+====
+
+

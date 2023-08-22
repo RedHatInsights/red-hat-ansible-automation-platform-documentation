@@ -1,0 +1,15 @@
+[id="controller-getting-started-add-groups-and-hosts"]
+
+== Adding new Groups and Hosts
+
+.Procedure
+* To add new groups, click btn:[Add] in the *Groups* tab.
+* To add new hosts to groups, click btn:[Add] in the *Hosts* tab.
+
+For the purposes of getting started and to test that the controller is setup properly, a local host is added for your use.
+image:: controller-inventories-default-access-list-view.png
+
+For example, if the organization that you created has a group of web server hosts supporting a particular application:
+
+. Create a group and add the web server hosts, to add these hosts to the inventory.
+. Click btn:[Cancel] (if no changes were made) or use the breadcrumb navigational links at the top of the automation controller browser to return to the *Inventories* list view. Clicking btn:[Save] does not exit the *Details* dialog.

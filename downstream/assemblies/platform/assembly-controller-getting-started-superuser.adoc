@@ -1,0 +1,5 @@
+[id="controller-getting-started-superuser"]
+
+= Logging in as a Superuser
+
+include::platform/proc-controller-login-superuser.adoc[leveloffset=+1]

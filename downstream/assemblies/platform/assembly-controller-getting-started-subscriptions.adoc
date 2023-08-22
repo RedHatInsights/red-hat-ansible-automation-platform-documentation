@@ -1,0 +1,10 @@
+[id="controller-getting-started-subscriptions"]
+
+= Subscriptions
+
+Available subscriptions or a subscription manifest authorize the use of the {ControllerName}. 
+
+include::platform/con-controller-importing-subscriptions.adoc[leveloffset=+1]
+include::platform/proc-controller-import-subscription.adoc[leveloffset=+1]
+include::platform/con-controller-subscription-compliance.adoc[leveloffset=+1]
+include::platform/con-controller-host-metric-utilities.adoc[leveloffset=+1]
