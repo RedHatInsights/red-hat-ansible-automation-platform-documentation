@@ -50,7 +50,7 @@ They can cause the password to fail.
 | *`automationedacontroller_pg_port`* | The port number of the postgres database used by {EDAController}.
 
 Default = `5432`.
-| *`automationedacontroller_pg_username`* | The username for yout {EDAController} postgres database.
+| *`automationedacontroller_pg_username`* | The username for your {EDAController} postgres database.
 
 Default = `automationedacontroller`.
 | *`automationedacontroller_rq_workers`* | Number of rq workers (Python processes that run in the background) used by {EDAcontroller}.
