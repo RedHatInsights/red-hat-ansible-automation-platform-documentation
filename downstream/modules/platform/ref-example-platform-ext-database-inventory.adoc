@@ -39,7 +39,7 @@ execution1.example.com node_type=execution
 execution2.example.com node_type=execution
 
 [automationhub]
-automationhub.exaample.com
+automationhub.example.com
 [automationedacontroller]
 eda.example.com
 [database]
