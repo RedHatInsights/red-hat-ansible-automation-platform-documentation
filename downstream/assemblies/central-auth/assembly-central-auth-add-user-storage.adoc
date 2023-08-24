@@ -10,16 +10,22 @@
 .Procedure
 . Log in to {AAPCentralAuth} as an SSO admin user.
 . From the navigation bar, select menu:Configure section[User Federation].
+
+[NOTE]
+====
+When using an LDAP User Federation in {RHSSOshort}, a group mapper must be added to the client configuration, ansible-automation-platform, to expose the identity provider (IDP) groups to the SAML authentication. Refer to link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html-single/server_administration_guide/index#protocol-mappers[OIDC Token and SAML Assertion Mappings] for more information on SAML assertion mappers.
+====
+
 . Using the dropdown menu labeled _Add provider_, select your LDAP provider to proceed to the LDAP configuration page.
 
 The following table lists the available options for your LDAP configuration:
 [cols="a,a"]
 |===
 h|Configuration Option  h|Description
-|Storage mode| Set to *On* if you want to import users into the {CentralAuth} user database. See https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html/server_administration_guide/user-storage-federation#storage_mode[this section] for more information.
-|Edit mode| Determines the types of modifications that admins can make on user metadata. See https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html/server_administration_guide/user-storage-federation#edit_mode[this section] for more information.
+|Storage mode| Set to *On* if you want to import users into the {CentralAuth} user database. See link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html/server_administration_guide/user-storage-federation#storage_mode[Storage Mode] for more information.
+|Edit mode| Determines the types of modifications that admins can make on user metadata. See link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html/server_administration_guide/user-storage-federation#edit_mode[Edit Mode] for more information.
 |Console Display Name |Name used when this provider is referenced in the admin console
 |Priority |The priority of this provider when looking up users or adding a user
 |Sync Registrations |Enable if you want new users created by {AAPCentralAuth} in the admin console or the registration page to be added to LDAP
-|Allow Kerberos authentication|Enable Kerberos/SPNEGO authentication in the realm with users data provisioned from LDAP. See https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html/server_administration_guide/authentication#kerberos[this section] for more information.
+|Allow Kerberos authentication|Enable Kerberos/SPNEGO authentication in the realm with users data provisioned from LDAP. See link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html/server_administration_guide/authentication#kerberos[Kerberos] for more information.
 |===
