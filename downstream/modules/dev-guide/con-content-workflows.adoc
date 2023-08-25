@@ -14,5 +14,5 @@ As {ControllerName} shifts to using {ExecEnvName}, tools like {Navigator} and {B
 [role="_additional-resources"]
 .Additional resources
 
-* See the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/ansible_navigator_creator_guide/index[Automation Content Navigator Creator Guide] for more on using {Navigator}.
+* See the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_creator_guide/tools#con-about-ansible-navigator_tools[Automation Content Navigator Creator Guide] for more on using {Navigator}.
 * For more information on {Builder}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments].
