@@ -1,0 +1,11 @@
+// Module included in the following assemblies:
+// downstream/assemblies/aap-hardening/assembly-intro-to-aap-hardening.adoc
+
+[id="con-product-overview_{context}"]
+
+= Product overview
+
+[role="_abstract"]
+Ansible is an open source, command-line IT automation software application written in Python. It can configure systems, deploy software, and orchestrate advanced workflows to support  application deployment, system updates, and more. Ansible’s main strengths are simplicity and ease of use. It also has a strong focus on security and reliability, featuring minimal moving parts. It uses secure, well-known communication protocols like SSH, HTTPS, and WinRM for transport and uses a human-readable language that is designed for getting started quickly without extensive training.
+
+{PlatformNameShort} enhances the Ansible language with enterprise-class features, such as Role-Based Access Controls (RBAC), centralized logging and auditing, credential management, job scheduling, and complex automation workflows. With {PlatformNameShort} you get certified content from our robust partner ecosystem; added security, reporting, and analytics; and life cycle technical support to scale automation across your organization. {PlatformNameShort} simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments.

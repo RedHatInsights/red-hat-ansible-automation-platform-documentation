@@ -1,0 +1,13 @@
+// Module included in the following assemblies:
+// downstream/assemblies/aap-hardening/assembly-intro-to-aap-hardening.adoc
+
+[id="con-platform-components_{context}"]
+
+= {PlatformName} components
+
+[role="_abstract"]
+{PlatformNameShort} is a modular platform that includes {ControllerName}, {HubName}, {EDAcontroller} (EDA), and {InsightsShort} for {PlatformNameShort}. 
+
+[role="_additional-resources"]
+.Additional resources
+For more information about the components provided within {PlatformNameShort}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/planning-installation#ref-platform-components[Red Hat Ansible Automation Platform components] in the _Red Hat Ansible Automation Platform Planning Guide_.

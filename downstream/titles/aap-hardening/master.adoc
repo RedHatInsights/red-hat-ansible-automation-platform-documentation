@@ -8,12 +8,12 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= {PlatformName} Hardening Guide for RHEL
+= {PlatformName} Hardening Guide
 
 This guide provides recommended practices for various processes needed to install, configure, and maintain {PlatformNameShort} on Red Hat Enterprise Linux in a secure manner.
 
 include::aap-hardening/assembly-intro-to-aap-hardening.adoc[leveloffset=+1]
 include::aap-hardening/assembly-hardening-aap.adoc[leveloffset=+1]
-include::aap-hardening/assembly-aap-compliance.adoc[leveloffset=+1]
-include::aap-hardening/assembly-aap-security-enabling.adoc[leveloffset=+1]
+// include::aap-hardening/assembly-aap-compliance.adoc[leveloffset=+1]
+// include::aap-hardening/assembly-aap-security-enabling.adoc[leveloffset=+1]
 

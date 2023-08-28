@@ -1,9 +1,21 @@
 ifdef::context[:parent-context: {context}]
 
 [id="assembly-intro-to-aap-hardening"]
-=  Introduction
 
 :context: introduction
 
-[role="_abstract"]
+= Introduction
 
+[role="_abstract"]
+This document provides guidance for improving the security posture of your {PlatformName} (AAP) deployment on Red Hat Enterprise Linux (RHEL).
+
+Other deployment targets, such as OpenShift, are not currently within the scope of this guide. {PlatformNameShort} managed services available through cloud service provider marketplaces are also not within the scope of this guide.
+
+[NOTE]
+====
+These recommendations do not guarantee security or compliance of your deployment of {PlatformNameShort}. You must assess security from the unique requirements of your organization to address specific threats and risks and balance these against implementation factors.
+====
+
+include::aap-hardening/con-hardening-guide-audience.adoc[leveloffset=+1]
+include::aap-hardening/con-product-overview.adoc[leveloffset=+1]
+include::aap-hardening/con-platform-components.adoc[leveloffset=+2]
