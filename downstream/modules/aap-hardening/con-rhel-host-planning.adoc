@@ -1,0 +1,12 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="con-rhel-host-planning_{context"]
+
+= RHEL host planning
+
+[role="_abstract"]
+
+The security of {PlatformNameShort} (AAP) relies in part on the configuration of the underlying Red Hat Enterprise Linux (RHEL) servers. For this reason, the underlying RHEL hosts for each AAP component must be installed and configured in accordance with the link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/security_hardening/index[RHEL 8 Security Hardening Guide] or link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/security_hardening/index[RHEL 9 Security Hardening Guide] (depending on which operating system will be used), as well as any security profile requirements (CIS, STIG, HIPAA, etc.) used by your organization.
+
+Note that applying certain security controls from the STIG or other security profiles may conflict with {PlatformNameShort} support requirements. Some examples are listed in the xref:<link>[<link_]{ControllerNameStart} STIG considerations] section, although this is not an exhaustive list. In order to maintain a supported configuration, be sure to discuss any such conflicts with your security auditors so the AAP requirements are understood and approved.

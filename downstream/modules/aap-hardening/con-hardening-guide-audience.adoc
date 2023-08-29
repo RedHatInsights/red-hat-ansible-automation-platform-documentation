@@ -6,4 +6,8 @@
 = Audience
 
 [role="_abstract"]
+<<<<<<< HEAD
 This guide is written for personnel responsible for installing, configuring, and maintaining {PlatformNameShort} {PlatformVers} when deployed on Red Hat Enterprise Linux (RHEL). Additional information is provided for security operations, compliance assessment, and other functions associated with related security processes.
+=======
+This guide is written for personnel responsible for installing, configuring, and maintaining {PlatformNameShort} {PlatformVers} when deployed on Red Hat Enterprise Linux (RHEL). Additional information is provided for security operations, compliance assessment, and other functions associated with related security processes.
+>>>>>>> e33e5388 (AAP-14809: Title change)

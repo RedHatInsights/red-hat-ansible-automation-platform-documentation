@@ -1,0 +1,24 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="ref-auditing-incident-detection_{context"]
+
+= Auditing and incident detection
+
+[role="_abstract"]
+
+{PlatformNameShort} should be used to fulfill security policy requirements by applying the NIST Cybersecurity Framework for common use cases, such as:
+
+* Requiring HTTPS for web servers on Red Hat Enterprise Linux.
+* Requiring TLS encryption for internal communication between web servers and database servers on Red Hat Enterprise Linux.
+* Generating reports showing that the policy is properly deployed.
+* Monitoring for drift that violates the policy.
+* Automating correction of any policy violation.
+
+This can be done through 5 steps of the cybersecurity framework:
+
+* IDENTIFY- Define the requirements to be implemented according to the security policy.
+* PROTECT - Implement and apply the requirements as an Ansible playbook.
+* DETECT - Monitor for drift and generate an audit report.
+* RESPOND - Explore actions that could be taken when an incident is detected.
+* RECOVER - Use Ansible to restore the systems to the known good configuration.

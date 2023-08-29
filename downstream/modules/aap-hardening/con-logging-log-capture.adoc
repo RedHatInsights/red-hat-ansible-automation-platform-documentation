@@ -1,0 +1,14 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="con-logging-log-capture_{Context"]
+
+= Logging and log capture
+
+[role="_abstract"]
+
+Visibility and analytics is an important pillar in Enterprise Security and Zero Trust Architecture. Logging is an important aspect and key to capturing actions and auditing. This can be managed through the built-in audit support by following the link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening/auditing-the-system_security-hardening[Auditing the system] section of the RHEL Security and Hardening Guide. This is done through the built-in logging support and through the controller built-in Activity Stream support that logs all changes within the controller as well as through the automation logs. More detailed information is available in the link:https://docs.ansible.com/automation-controller/latest/html/administration/logging.html[Logging and Aggregation] section of the {ControllerName} documenation.
+
+This guide recommends that you configure {PlatformNameShort} and the underlying RHEL systems to collect logging and auditing centrally, rather than reviewing it on the local system. {ControllerNameStart} must be configured to use external logging to compile log records from multiple components within the controller server. The events occurring must be time-correlated to conduct accurate forensic analysis. This means that the controller server must be configured with a NTP server that is also used by the logging aggregator service, as well as the targets of the controller. The correlation must meet certain industry tolerance requirements. In other words, there might be a varying requirement that time stamps of different logged events must not differentiate by any amount greater than X seconds. This capability should be available in the external logging service.
+
+Another critical capability of logging is the ability to use cryptography to protect the integrity of log tools. Log data includes all information (e.g., log records, log settings, and log reports) needed to successfully log information system activity. It is common for attackers to replace the log tools or inject code into the existing tools for the purpose of providing the capability to hide or erase system activity from the logs. To address this risk, log tools must be cryptographically signed to provide the capability to identify when the log tools have been modified, manipulated, or replaced. An example is a checksum hash of the file or files. {ControllerNameStart} server log tools must use cryptographic mechanisms to protect the integrity of the tools or allow cryptographic protection mechanisms to be applied to their tools.

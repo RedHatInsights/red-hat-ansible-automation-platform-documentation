@@ -1,0 +1,24 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id+"con-network-firewall-services_{context}"]
+
+= Network, firewall, and network services planning
+
+[role="_abstract"]
+
+{PlatformNameShort} (AAP) requires access to a network to integrate to external auxiliary services and to manage target environments and resources such as hosts, other network devices, applications, cloud services. The link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#ref-network-ports-protocols_planning[network ports and protocols] section of the AAP planning guide describes how AAP components interact on the network as well as which ports and protocols are used, as shown in the following diagram:
+
+//image::<image-name>.png[Interaction of Ansible Automation Platform components on the network with information about the ports and protocols that are used.]
+
+When planning firewall or cloud network security group configurations related to AAP, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#ref-network-ports-protocols_planning[Network ports and protocols] section of the {PlatformNameShort} Planning Guide. When deploying AAP according to the reference architecture, the following Red Hat Knowledgebase article provides additional detail needed when using a load balancer in front of the AAP controller and private automation hub:
+
+link:https://access.redhat.com/solutions/6756251[What Ports Need To Be Opened In The Firewall For Ansible Automation Platform 2 Services?]
+
+For internet-connected systems, this article also defines the outgoing traffic requirements for services that {PlatformNameShort} can be configured to use, such as Red Hat {HubName}, {InsightsShort}, {Galaxy}, the `registry.redhat.io` container image registry, and so on.
+
+Restrict access to the ports used by the AAP components to protected networks and clients.  Examples include:
+
+* Restrict the PostgreSQL database port (5432) on the database servers so that only the other {PlatformNameShort} component servers ({ControllerName}, {HubName}, {EDAcontroller}) are permitted access.
+* Restrict SSH access to the {PlatformNameShort} servers from the installation host (see below) and other trusted systems used for maintenance access to the AAP servers.
+* Only permit HTTPS access to the {ControllerName}, {HubName}, and {EDAcontroller} from trusted networks and clients.

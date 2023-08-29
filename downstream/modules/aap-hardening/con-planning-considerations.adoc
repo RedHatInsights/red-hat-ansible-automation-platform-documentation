@@ -1,0 +1,20 @@
+//Module included in the following assemblies:
+//downstream/assemblies/assembly-hardening-aap.adoc
+
+[ide+"con-planning-considerations_{context}"]
+
+= Planning considerations
+
+[role="_abstract"]
+
+When planning an {PlatformNameShort} installation, first review the system requirements in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[system requirements] in the _{PlatformName} Planning Guide_ for the relevant {PlatformNameShort} components, namely:
+
+* Installer-manged components
+** {ControllerNameShort}
+** {EDAcontroller}
+** {PrivateHubNameStart}
+* PostgreSQL database (if not external)
+** External services
+** {InsightsName}
+** {HubNameStart}
+** `registry.redhat.o` (default {ExecEnvShort} container registry)

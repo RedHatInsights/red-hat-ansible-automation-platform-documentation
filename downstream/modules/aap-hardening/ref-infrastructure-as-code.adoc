@@ -1,0 +1,31 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="ref-infrastructure-as-code_{context}"]
+
+= Use infrastructure as code paradigm
+
+[role="_abstract"]
+
+The Red Hat Community of Practice has created a set of automation content available via collections to manage {PlatformNameShort} (AAP) infrastructure and configuration as code. This enables automation of the platform itself through Infrastructure as Code (IaC) or Configuration as Code (CaC). While many of the benefits of this approach are clear, there are critical security implications to consider.
+
+The following Ansible content collections are available for managing AAP components using an infrastructure as code methodology, all of which are found on the link:https://console.redhat.com/ansible/automation-hub[Ansible Automation Hub]:
+
+.Ansible content collections
+|===
+| *Validated Collection* | *Collection Purpose*
+| `infra.aap_utilities` | Ansible content for automating day 1 and day 2 operations of AAP, including installation, backup and restore, certificate management, and more.
+
+| `infra.controller_configuration` | A collection of roles to manage automation controller components, including managing users and groups (RBAC), projects, job templates and workflows, credentials, and more.
+
+| `infra.ah_configuration` | Ansible content for interacting with automation hub, including users and groups (RBAC), collection upload and management, collection approval,  managing the execution environment image registry, and more.
+
+| `infra.ee_utilities` | A collection of roles for creating and managing execution environment images, or migrating from the older Tower virtualenvs to execution environments.
+|===
+
+Many organizations use CI/CD platforms to configure pipelines or other methods to manage this type of infrastructure. However, using AAP natively, a webhook can be configured to link a Git-based repository natively. In this way, Ansible can respond to git events to trigger Job Templates directly. This removes the need for external CI components from this overall process and thus reduces the attack surface.
+
+Using these practices allows version control of all infrastructure and configuration. Apply git best practices to ensure proper code quality inspection prior to being synchronized into AAP. This includes pull requests, inspection tools to ensure lint rules are adhered to, no plain text secrets are committed to git, pre-commit hooks and any other policies are applied prior to committing.
+
+IaC also encourages using external vault systems (see xref:<link>[<link_External credential vault considerations] which removes the need to store any sensitive data in the repository, or deal with having to individually vault files as needed.
+

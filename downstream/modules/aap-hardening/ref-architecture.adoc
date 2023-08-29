@@ -1,0 +1,16 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="ref-architecture_{context}"]
+
+= Architecture
+
+[role"_abstract"]
+
+For large-scale production environments with availability requirements, this guide recommends deploying the above-mentioned components as described in the link:https://access.redhat.com/documentation/en-us/reference_architectures/2021/html-single/deploying_ansible_automation_platform_2.1/index#overview[reference architecture] documentation for {PlatformName} on RHEL. While some variation may make sense for your specific technical requirements, following the reference architecture results in a supported production-ready environment.
+
+//image::<image-name>.png[Reference architecture for an example setup of an Ansible Automation Platform deployment for large scale production environments]
+
+{EDAName} (EDA) is a new feature of AAP {PlatformVers} that was not available when the reference architecture detailed in Figure 1: Reference architecture overview was originally written. Currently, the supported configuration for EDA is a single {EDAcontroller} with a dedicated internal database. For an organization interested in EDA, the recommendation is to install according to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/assembly-platform-install-scenario#ref-single-eda-controller-with-internal-db_platform-install-scenario[documented configuration]. This document will provide additional clarifications when EDA specific hardening configuration is required.
+
+For smaller production deployments where the full reference architecture may not be needed, this guide recommends deploying AAP with a dedicated PostgreSQL database server whether managed by the installer or provided externally.

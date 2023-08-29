@@ -1,0 +1,36 @@
+// Module included in teh following assemblies: 
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="ref-private-automation-hub-authentication_{context}"]
+
+= Private automation hub authentication
+
+[role="_abstract"]
+
+{PrivateHubNameStart} currently supports the following external authentication mechanisms:
+
+* {PlatformNameShort} central authentication (based on RHSSO)
+* LDAP
+
+For production use, LDAP is the preferred external authentication mechanism for {PrivateHubName}. {PlatformNameShort} (AAP) central authentication is an option which can be deployed with the AAP installer, but it only deploys one central authentication server instance, making it a potential single point of failure.  Standalone mode for AAP central authentication is not recommended in a production environment. However, if you already have the separate {RHSSO} (RHSSO) product deployed in your production environment, it can be used as an external authentication source for {PrivateHubName}.
+
+LDAP authentication for {PrivateHubName} is configured at installation time with the AAP installer. See, link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#ref-ldap-config-on-pah_platform-install-scenario[LDAP configuration on a {PrivateHubName}] for details. The following installer inventory file variables will need to be filled out prior to installation:
+
+.Installer inventory file variables
+|===
+| *Variable* | *Details*
+
+| `automationhub_authentication_backend` | Set to "ldap" in order to use LDAP authentication.
+
+| `automationhub_ldap_server_uri` | The LDAP server URI, for example "ldap://ldap-server.example.com" or "ldaps://ldap-server.example.com:636". 
+
+| `automationhub_ldap_bind_dn` | The account used to connect to the LDAP server.  This account should be one with sufficient privileges to query the LDAP server for users and groups, but it should not be an administrator account or one with the ability to modify LDAP records.
+
+| `automationhub_ldap_bind_password` | The password used by the bind account to access the LDAP server.
+
+| `automationhub_ldap_user_search_base_dn` | The base DN used to search for users.
+
+| `automationhub_ldap_group_search_base_dn` | The base DN used to search for groups.
+|===
+
+In order to ensure that the LDAP traffic is encrypted between the private automation hub and the LDAP server, the LDAP server must support LDAP over TLS or LDAP over SSL (LDAPS).

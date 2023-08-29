@@ -1,0 +1,30 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="ref-sensitive-variables-install-inventory_{context}"]
+
+= Sensitive variables in the installation inventory
+
+[role="_abstract"]
+
+The installation inventory file contains a number of sensitive variables, mainly those used to set the initial passwords used by {PlatformNameShort} (AAP), and these are normally kept in plain text in the inventory file. These variables can be kept in an encrypted link:https://docs.ansible.com/ansible/latest/vault_guide/index.html[Ansible vault] instead to prevent unauthorized viewing. To do this, go to the installer directory and create a vault file:
+
+* `cd /path/to/ansible-automation-platform-setup-bundle-2.4-1-x86_64`
+* `ansible-vault create vault.yml`
+
+You will be prompted for a password to the new Ansible vault. Note that this password will be used every time the vault file needs to be accessed – including day-two operations such as taking a backup – so take care not to lose the vault password (for example, store it in an encrypted password manager or in accordance with your organizational policy for storing passwords securely).
+
+Add the sensitive variables to the vault, for example:
+
+----
+admin_password: <secure_controller_password>
+pg_password: <secure_db_password>
+automationhub_admin_password: <secure_hub_password>
+automationhub_pg_password: <secure_hub_db_password>
+automationhub_ldap_bind_password: <ldap_bind_password>
+automationedacontroller_admin_password: <secure_eda_password>
+automationedacontroller_pg_password: <secure_eda_db_password>
+----
+
+Make sure these variables are not also present in the installation inventory file. To use the new Ansible vault with the installer, run it with the command `./setup.sh -e @vault.yml -- --ask-vault-pass`.
+

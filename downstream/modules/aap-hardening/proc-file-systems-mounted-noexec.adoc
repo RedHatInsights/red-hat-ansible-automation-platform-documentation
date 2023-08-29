@@ -1,0 +1,20 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="proc-file-systems-mounted-noexec.adoc_{context}"]
+
+= File systems mounted with "noexec"
+
+[role="_abstract"]
+
+The Red Hat Enterprise Linux (RHEL) 8 STIG requires that a number of file systems are mounted with the "noexec" option to prevent execution of binaries located in these file systems. The {PlatformNameShort} (AAP) installer runs a preflight check that will fail if any of the following file systems are mounted with the "noexec" option:
+
+* `/tmp`
+* `/var`
+* `/var/tmp`
+
+These file systems must be re-mounted with the "noexec" option removed in order to install {PlatformNameShort} (AAP). Once installation is complete, the "noexec" option can be reapplied to the `/tmp` and `/var/tmp` file systems. When this is completed, change the {ControllerName}'s job execution path from `/tmp` to an alternate directory that does not have the "noexec" option enabled. To make this change, log in to the {ControllerName} UI as an administrator, and navigate to "Settings > Jobs settings", then change the "Job execution path" setting to the alternate directory.
+
+During normal operations, the file system which contains the `/var/lib/awx` subdirectory (typically `/var`) must not be mounted with the "noexec" option, or the {ControllerName} cannot run automation jobs in execution environments.
+
+In environments where STIG controls are routinely audited, discuss waiving the STIG controls related to file system "noexec" with your security auditor.

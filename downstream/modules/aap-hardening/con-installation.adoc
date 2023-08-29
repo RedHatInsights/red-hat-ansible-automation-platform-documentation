@@ -1,0 +1,10 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="con-installation_{context}"]
+
+= Installation
+
+[role="_abstract"]
+
+There are installation-time decisions that affect the security posture of {PlatformNameShort} (AAP). The installation process includes setting a number of variables, some of which are relevant to the hardening of the AAP infrastructure. Before installing AAP, consider the guidance in the installation section of this guide.

@@ -1,0 +1,12 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="con-aap-additional-software_{context}"]
+
+= Ansible Automation Platform and additional software
+
+[role="_abstract"]
+
+When installing the {PlatformNameShort} (AAP) components on Red Hat Enterprise Linux (RHEL) servers, the RHEL servers should be dedicated to that use alone. Additional server capabilities should not be installed in addition to AAP, as this is an unsupported configuration and may affect the security and performance of the AAP software.
+
+Similarly, when AAP is deployed on a RHEL host it installs software like the nginx web server, the Pulp software repository, and the PostgreSQL database server. This software should not be modified or used in a more generic fashion (for example, do not use nginx to server additional web site content or PostgreSQL to host additional databases) as this is an unsupported configuration and may affect the security and performance of AAP. The configuration of this software is managed by the AAP installer, and any manual changes may be undone when performing upgrades.

@@ -8,7 +8,45 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 This guide takes a practical approach to hardening the {PlatformNameShort} security posture, starting with the planning and architecture phase of deployment and then covering specific guidance for the installation phase.  As this guide specifically covers {PlatformNameShort} running on Red Hat Enterprise Linux (RHEL), hardening guidance for RHEL will be covered where it affects the automation platform components.
 
-//
+This guide takes a practical approach to hardening the {PlatformNameShort} (AAP) security posture, starting with the planning and architecture phase of deployment and then covering specific guidance for the installation phase. As this guide specifically covers AAP running on Red Hat Enterprise Linux (RHEL), hardening guidance for RHEL will be covered where it affects the automation platform components.
+
+include::aap-hardening/con-planning-considerations.adoc[leveloffset=+1]
+include::aap-hardening/ref-architecture.adoc[leveloffset=+2]
+include::aap-hardening/con-network-firewall-services-planning.adoc[leveloffset=+2]
+include::aap-hardening/con-dns-ntp-service-planning.adoc[leveloffset=+2]
+include::aap-hardening/ref-dns.adoc[leveloffset=+3]
+include::aap-hardening/ref-dns-load-balancing.adoc[leveloffset=+3]
+include::aap-hardening/ref-ntp.adoc[leveloffset=+3]
+include::aap-hardening/con-user-authentication-planning.adoc[leveloffset=+2]
+include::aap-hardening/ref-automation-controller-authentication.adoc[leveloffset=+3]
+include::aap-hardening/ref-private-automation-hub-authentication.adoc[leveloffset=+3]
+include::aap-hardening/con-credential-management-planning.adoc[leveloffset=+2]
+include::aap-hardening/con-overview.adoc[leveloffset=+3]
+include::aap-hardening/ref-automation-controller-operational-secrets.adoc[leveloffset=+3]
+include::aap-hardening/con-automation-credentials.adoc[leveloffset=+3]
+include::aap-hardening/con-logging-log-capture.adoc[leveloffset=+2]
+include::aap-hardening/ref-auditing-incident-detection.adoc[leveloffset=+2]
+include::aap-hardening/con-rhel-host-planning.adoc[leveloffset=+2]
+include::aap-hardening/con-aap-additional-software.adoc[leveloffset=+3]
+include::aap-hardening/con-installation.adoc[leveloffset=+1]
+include::aap-hardening/con-install-secure-host.adoc[leveloffset=+2]
+include::aap-hardening/ref-security-variables-install-inventory.adoc[leveloffset=+2]
+include::aap-hardening/proc-install-user-pki.adoc[leveloffset=+2]
+include::aap-hardening/ref-sensitive-variables-install-inventory.adoc[leveloffset=+2]
+include::aap-hardening/con-controller-stig-considerations.adoc[leveloffset=+2]
+include::aap-hardening/proc-fapolicyd.adoc[leveloffset=+3]
+include::aap-hardening/proc-file-systems-mounted-noexec.adoc[leveloffset=+3]
+include::aap-hardening/proc-namespaces.adoc[leveloffset=+3]
+include::aap-hardening/ref-sudo-nopasswd.adoc[leveloffset=+3]
+include::aap-hardening/ref-initial-configuration.adoc[leveloffset=+1]
+include::aap-hardening/ref-infrastructure-as-code.adoc[leveloffset=+2]
+include::aap-hardening/con-controller-configuration.adoc[leveloffset=+2]
+include::aap-hardening/proc-configure-centralized-logging.adoc[leveloffset=+3]
+
+
+
+////
+Consider adding a link to future Builder docs here
 [role="_additional-resources"]
 .Additional resources
 * A bulleted list of links to other material closely related to the contents of the concept module.

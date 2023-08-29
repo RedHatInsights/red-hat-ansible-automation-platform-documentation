@@ -1,0 +1,49 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="proc-install-user-pki_{context}"]
+
+= Installing with user-provided PKI certificates
+
+[role="_abstract"]
+
+By default, {PlatformNameShort} (AAP) creates self-signed PKI certificates for the infrastructure components of the platform. Where an existing PKI infrastructure is available, certificates must be generated for the {ControllerName}, {PrivateHubName}, {EDAcontroller}, and the postgres database server. Copy the certificate files and their relevant key files to the installer directory, along with the CA certificate used to verify the certificates.
+
+.PKI certificate inventory variables
+|===
+| *Variable* | *Details*
+| `custom_ca_cert` | The file name of the CA certificate located in the installer directory.
+
+| `web_server_ssl_cert` | The file name of the {ControllerName} PKI certificate located in the installer directory.
+
+| `web_server_ssl_key` | The file name of the {ControllerName} PKI key located in the installer directory.
+
+| `automationhub_ssl_cert` | The file name of the {PrivateHubName} PKI certificate located in the installer directory.
+
+| `automationhub_ssl_key` | The file name of the {PrivateHubName} PKI key located in the installer directory.
+
+| `postgres_ssl_cert` | The file name of the database server PKI certificate located in the installer directory. This variable is only needed for the installer-managed database server, not if a third-party database is used.
+
+| `postgres_ssl_key` | The file name of the database server PKI certificate located in the installer directory. This variable is only needed for the installer-managed database server, not if a third-party database is used.
+
+| `automationedacontroller_ssl_cert` | The file name of the {EDAcontroller} PKI certificate located in the installer directory.
+
+| `automationedacontroller_ssl_key` | The file name of the {EDAcontroller} PKI key located in the installer directory.
+|===
+
+When multiple {ControllerName} are deployed with a load balancer, the `web_server_ssl_cert` and `web_server_ssl_key` will be shared by each controller. To prevent hostname mismatches, the certificate's Common Name (CN) will need to match the DNS FQDN used by the load balancer. This also applies when deploying multiple {PrivateHubName} and the `automationhub_ssl_cert` and `automationhub_ssl_key` variables. If your organizational policies require unique certificates for each service, each certificate will need a Subject Alt Name (SAN) that matches the DNS FQDN used for the load-balanced service. In order to install unique certificates and keys on each {ControllerName}, the certificate and key variables in the installation inventory file must be defined as per-host variables instead of in the `[all:vars]` section. For example:
+
+----
+[automationcontroller]
+controller0.example.com web_server_ssl_cert=/path/to/cert0 web_server_ssl_key=/path/to/key0
+controller1.example.com web_server_ssl_cert=/path/to/cert1 web_server_ssl_key=/path/to/key1
+controller2.example.com web_server_ssl_cert=/path/to/cert2 web_server_ssl_key=/path/to/key2
+----
+
+----
+[automationhub]
+hub0.example.com automationhub_ssl_cert=/path/to/cert0 automationhub_ssl_key=/path/to/key0
+hub1.example.com automationhub_ssl_cert=/path/to/cert1 automationhub_ssl_key=/path/to/key1
+hub2.example.com automationhub_ssl_cert=/path/to/cert2 automationhub_ssl_key=/path/to/key2
+----
+

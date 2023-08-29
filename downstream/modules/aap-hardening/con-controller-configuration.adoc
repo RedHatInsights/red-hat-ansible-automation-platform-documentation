@@ -1,0 +1,8 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="con-controller-configuration_{context}"]
+
+= Controller configuration
+
+// [role="_abstract"]

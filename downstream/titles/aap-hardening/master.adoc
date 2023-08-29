@@ -8,7 +8,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= {PlatformName} Hardening Guide
+= Red Hat Ansible Automation Platform Hardening Guide
 
 This guide provides recommended practices for various processes needed to install, configure, and maintain {PlatformNameShort} on Red Hat Enterprise Linux in a secure manner.
 
