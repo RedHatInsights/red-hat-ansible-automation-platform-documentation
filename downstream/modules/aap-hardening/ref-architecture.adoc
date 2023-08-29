@@ -5,7 +5,7 @@
 
 = Architecture
 
-[role"_abstract"]
+[role="_abstract"]
 
 For large-scale production environments with availability requirements, this guide recommends deploying the above-mentioned components as described in the link:https://access.redhat.com/documentation/en-us/reference_architectures/2021/html-single/deploying_ansible_automation_platform_2.1/index#overview[reference architecture] documentation for {PlatformName} on RHEL. While some variation may make sense for your specific technical requirements, following the reference architecture results in a supported production-ready environment.
 
