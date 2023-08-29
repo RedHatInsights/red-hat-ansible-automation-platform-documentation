@@ -1,7 +1,7 @@
 // Module included in the following assemblies:
 // downstream/assemblies/assembly-hardening-aap.adoc
 
-[id=-"proc-fapolicyd_{context}"]
+[id="proc-fapolicyd_{context}"]
 
 = Fapolicyd
 

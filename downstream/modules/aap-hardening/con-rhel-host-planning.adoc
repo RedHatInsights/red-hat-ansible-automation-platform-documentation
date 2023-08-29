@@ -1,7 +1,7 @@
 // Module included in the following assemblies:
 // downstream/assemblies/assembly-hardening-aap.adoc
 
-[id="con-rhel-host-planning_{context"]
+[id="con-rhel-host-planning_{context}"]
 
 = RHEL host planning
 

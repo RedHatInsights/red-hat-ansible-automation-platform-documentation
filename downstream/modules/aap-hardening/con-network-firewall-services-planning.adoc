@@ -1,7 +1,7 @@
 // Module included in the following assemblies:
 // downstream/assemblies/assembly-hardening-aap.adoc
 
-[id+"con-network-firewall-services_{context}"]
+[id="con-network-firewall-services_{context}"]
 
 = Network, firewall, and network services planning
 

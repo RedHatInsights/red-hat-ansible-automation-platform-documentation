@@ -1,7 +1,7 @@
 // Module included in the following assemblies:
 // downstream/assemblies/assembly-hardening-aap.adoc
 
-[id="con-logging-log-capture_{Context"]
+[id="con-logging-log-capture_{context}"]
 
 = Logging and log capture
 

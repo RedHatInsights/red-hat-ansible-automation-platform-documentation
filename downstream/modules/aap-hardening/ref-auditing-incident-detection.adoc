@@ -1,7 +1,7 @@
 // Module included in the following assemblies:
 // downstream/assemblies/assembly-hardening-aap.adoc
 
-[id="ref-auditing-incident-detection_{context"]
+[id="ref-auditing-incident-detection_{context}"]
 
 = Auditing and incident detection
 

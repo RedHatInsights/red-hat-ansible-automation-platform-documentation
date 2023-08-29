@@ -1,7 +1,7 @@
 // Module included in the following assemblies: 
 // downstream/assemblies/assembly-hardening-aap.adoc
 
-[id="con-user-authentication-planning_{context"]
+[id="con-user-authentication-planning_{context}"]
 
 = User authentication planning
 

@@ -1,7 +1,7 @@
 // Module included in the following assemblies:
 // downstream/assemblies/assembly-hardening-aap.adoc
 
-[id="con-controller-configuration_{contexts}"]
+[id="proc-configure-centralized-logging_{context}"]
 
 = Configure centralized logging
 

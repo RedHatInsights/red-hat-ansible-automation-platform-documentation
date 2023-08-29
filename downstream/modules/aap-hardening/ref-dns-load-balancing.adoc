@@ -1,7 +1,7 @@
 // Module included in the following assemblies:  
 // downstream/assemblies/assembly-hardening-aap.adoc
 
-[id="ref-dns-load-balancing_{context"]
+[id="ref-dns-load-balancing_{context}"]
 
 [role="_abstract"]
 

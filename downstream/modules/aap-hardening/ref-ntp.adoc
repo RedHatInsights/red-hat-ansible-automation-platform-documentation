@@ -1,7 +1,7 @@
 // Module included in the following assemblies: 
 // downstream/assemblies/assembly-hardening-aap.adoc
 
-[id="ref-ntp_{context"]
+[id="ref-ntp_{context}"]
 
 = NTP
 
