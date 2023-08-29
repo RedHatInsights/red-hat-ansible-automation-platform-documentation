@@ -34,7 +34,7 @@ The following is an example of rulebook with a given webhook:
 
 .Procedure
 
-. Create a Route (on OpenShift Container Platform) to expose the service. 
+. Create a Route (on {OCPShort}) to expose the service. 
 The following is an example Route for an ansible-rulebook source that expects POST's on port 5000 on the decision environment pod:
 +
 -----
@@ -45,16 +45,19 @@ metadata:
   namespace: dynatrace
   labels:
     app: eda
-    job-name: activation-job-1
+    job-name: activation-job-1-5000
 spec:
   host: test-sync-bug-dynatrace.apps.aap-dt.ocp4.testing.ansible.com
   to:
     kind: Service
-    name: activation-job-1
+    name: activation-job-1-5000
     weight: 100
   port:
     targetPort: 5000
-  wildcardPolicy: None
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None 
 -----
 +
 . When you create the Route, test it with a *Post to the Route URL*:
