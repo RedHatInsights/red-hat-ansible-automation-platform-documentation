@@ -1,13 +1,13 @@
-// Module included in the following assemblies:  
+// Module included in the following assemblies: 
 // downstream/assemblies/assembly-hardening-aap.adoc
 
 [id="ref-dns-load-balancing_{context}"]
 
 [role="_abstract"]
 
-When using a load balancer with {PlatformNameShort} (AAP) as described in the reference architecture, an additional FQDN is needed for each load-balanced component ({ControllerName} and {PrivateHubName}).
+When using a load balancer with {PlatformNameShort} as described in the reference architecture, an additional FQDN is needed for each load-balanced component ({ControllerName} and {PrivateHubName}).
 
-For example, if the following hosts are defined in the AAP installer inventory file:
+For example, if the following hosts are defined in the {PlatformNameShort} installer inventory file:
 
 -----
 [automationcontroller]
@@ -21,6 +21,6 @@ hub1.example.com
 hub2.example.com
 -----
 
-Then the load balancer can use the FQDNs `controller.example.com` and `hub.example.com` for the user-facing name of these AAP services.
+Then the load balancer can use the FQDNs `controller.example.com` and `hub.example.com` for the user-facing name of these {PlatformNameShort} services.
 
-When a load balancer is used in front of the private automation hub, the installer will need to be aware of the load balancer FQDN.  Before installing AAP, in the installation inventory file set the `automationhub_main_url` variable to the FQDN of the load balancer. For example, `automationhub_main_url = hub.example.com` to match the example above.
+When a load balancer is used in front of the private automation hub, the installer will need to be aware of the load balancer FQDN. Before installing {PlatformNameShort}, in the installation inventory file set the `automationhub_main_url` variable to the FQDN of the load balancer. For example, to match the example above, you would set the variable to `automationhub_main_url = hub.example.com`.

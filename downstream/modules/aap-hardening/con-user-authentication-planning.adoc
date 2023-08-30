@@ -7,16 +7,17 @@
 
 [role="_abstract"]
 
-When planning for access to the user interface or API of the {PlatformNameShort} (AAP) services, the user accounts can either be local or mapped to an external authentication source such as LDAP. Maintaining a full set of users exclusively within AAP can be a time-consuming task for a large organization. Using external account sources eliminates a source of error when working with permissions in this context. This guide recommends that where possible, all primary user accounts should be mapped to an external authentication source. This includes accounts assigned to individual persons as well as for non-person entities such as service accounts used for external application integration. Reserve any local administrator accounts such as the default "admin" account for emergency access or "break glass" scenarios where the external authentication mechanism isn't available.
+When planning for access to the {PlatformNameShort} user interface or API, be aware that user accounts can either be local or mapped to an external authentication source such as LDAP. This guide recommends that where possible, all primary user accounts should be mapped to an external authentication source. Using external account sources eliminates a source of error when working with permissions in this context and minimizes the amount of time devoted to maintaining a full set of users exclusively within {PlatformNameShort}. This includes accounts assigned to individual persons as well as for non-person entities such as service accounts used for external application integration. Reserve any local administrator accounts such as the default "admin" account for emergency access or "break glass" scenarios where the external authentication mechanism isn't available.
+
 
 [NOTE]
 ====
 The {EDAcontroller} does not currently support external authentication, only local accounts.
 ====
 
-For user accounts on the RHEL servers that run the AAP services, follow your organizational policies to determine if individual user accounts should be local or from an external authentication source. Only users who have a valid need to perform maintenance tasks on the AAP components themselves should be granted access to the underlying RHEL servers, as the servers will have configuration files that contain sensitive information such as encryption keys and service passwords.  Because these individuals will need privileged access to maintain the AAP services, minimizing the access to the underlying RHEL servers is critical. Do not grant sudo access to the root account or local AAP service accounts (awx, pulp, postgres) to untrusted users.
+For user accounts on the Red Hat Enterprise Linux servers that run the {PlatformNameShort} services, follow your organizational policies to determine if individual user accounts should be local or from an external authentication source. Only users who have a valid need to perform maintenance tasks on the {PlatformNameShort} components themselves should be granted access to the underlying Red Hat Enterprise Linux servers, as the servers will have configuration files that contain sensitive information such as encryption keys and service passwords. Because these individuals must have privileged access to maintain {PlatformNameShort} services, minimizing the access to the underlying Red Hat Enterprise Linux servers is critical. Do not grant sudo access to the root account or local {PlatformNameShort} service accounts (awx, pulp, postgres) to untrusted users.
 
 [NOTE]
 ====
-The local AAP service accounts such as awx, pulp, and postgres are created and managed by the AAP installer. These particular accounts on the underlying RHEL hosts cannot come from an external authentication source.
+The local {PlatformNameShort} service accounts such as awx, pulp, and postgres are created and managed by the {PlatformNameShort} installer. These particular accounts on the underlying Red Hat Enterprise Linux hosts cannot come from an external authentication source.
 ====

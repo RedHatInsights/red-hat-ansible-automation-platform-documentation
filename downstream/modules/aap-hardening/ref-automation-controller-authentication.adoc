@@ -18,9 +18,9 @@ The {ControllerName} currently supports the following external authentication me
 * TACACS+
 * Generic OIDC
 
-Choose an authentication mechanism that adheres to your organization's authentication policies, and refer to the link:https://docs.ansible.com/automation-controller/latest/html/administration/configure_tower_in_tower.html#authentication[Controller Configuration - Authentication] documentation to understand the prerequisites for the relevant authentication mechanism. The authentication method used must ensure that the authentication-related traffic between {PlatformNameShort} and the authentication back-end is encrypted when the traffic occurs on a public or non-secure network (for example, LDAPS or LDAP over TLS, HTTPS for OAuth2 and SAML providers, etc.).
+Choose an authentication mechanism that adheres to your organization's authentication policies, and refer to the link:https://docs.ansible.com/automation-controller/latest/html/administration/configure_tower_in_tower.html#authentication[Controller Configuration - Authentication] documentation to understand the prerequisites for the relevant authentication mechanism. The authentication mechanism used must ensure that the authentication-related traffic between {PlatformNameShort} and the authentication back-end is encrypted when the traffic occurs on a public or non-secure network (for example, LDAPS or LDAP over TLS, HTTPS for OAuth2 and SAML providers, etc.).
 
-In the {ControllerName}, any “system administrator” account can edit, change, and update any inventory or automation definition. Restrict these account privileges to the minimum set of users possible for low-level {ControllerName} configuration and disaster recovery.
+In {ControllerName}, any “system administrator” account can edit, change, and update any inventory or automation definition. Restrict these account privileges to the minimum set of users possible for low-level {ControllerName} configuration and disaster recovery.
 
 
 
