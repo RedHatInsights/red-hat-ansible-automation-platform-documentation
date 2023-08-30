@@ -7,10 +7,10 @@
 
 [role="_abstract"]
 
-When planning an {PlatformNameShort} installation, first review the system requirements in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[system requirements] in the _{PlatformName} Planning Guide_ for the relevant {PlatformNameShort} components, namely:
+When planning an {PlatformNameShort} installation, ensure that the following components are included:
 
 * Installer-manged components
-** {ControllerNameShort}
+** {ControllerNameStart}
 ** {EDAcontroller}
 ** {PrivateHubNameStart}
 * PostgreSQL database (if not external)
@@ -18,3 +18,5 @@ When planning an {PlatformNameShort} installation, first review the system requi
 ** {InsightsName}
 ** {HubNameStart}
 ** `registry.redhat.o` (default {ExecEnvShort} container registry)
+
+See the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[system requirements] section of the _{PlatformName} Planning Guide_ for additional information.

@@ -1,0 +1,28 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="proc-disaster-recovery-operations_{context}"]
+
+= Disaster recovery and continuity of operations
+
+[role="_abstract"]
+
+The contingency planning security control indicates that information system backups reflect the requirements in contingency plans and other organizational requirements for backing up information. Recommendations exist for High Availability and Backup complex operations and architectures. We will cover them briefly here, but they are outside the scope of the {PlatformNameShort} STIG. As the {PlatformNameShort} STIG indicates, the operations normally require significant planning, people, and processes outside a single product.
+
+An important aspect of backups is that they contain a copy of the database as well as the secret key used to decrypt credentials stored in the database, so the backup files should be stored in a secure encrypted location. This means that access to endpoint credentials are protected properly. Access to backups should be limited only to {PlatformNameShort} administrators who have root shell access to the controller.
+
+The two main reasons an {PlatformNameShort} administrator needs to back up their {PlatformNameShort} environment are:
+
+* To save a copy of the data from your {PlatformNameShort} environment, so you can restore it if needed.
+* To use the backup to restore the environment into a different set of servers if you're creating a new {PlatformNameShort} cluster or preparing for an upgrade.
+
+In all cases, the recommended and safest process is to always use the same versions of PostgreSQL and {PlatformNameShort} to back up and restore the environment.
+
+Using some redundancy on the system is highly recommended. If the secrets system is down, the {ControllerName} cannot fetch the information and can fail in a way that would be recoverable once the service is restored. If you believe the SECRET_KEY {ControllerName} generated for you has been compromised and has to be regenerated, you can run a tool from the installer that behaves much like the {ControllerName} backup and restore tool.
+
+To generate a new secret key, perform the following steps: 
+
+. Backup your {PlatformNameShort} database before you do anything else! Follow the procedure described in the link:https://docs.ansible.com/automation-controller/latest/html/administration/backup_restore.html[Backing Up and Restoring Controller] section.
+. Using the inventory from your install (same inventory with which you run backups/restores), run `setup.sh -k`.
+
+A backup copy of the prior key is saved in `/etc/tower/``.

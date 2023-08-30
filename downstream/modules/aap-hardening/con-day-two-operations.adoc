@@ -1,0 +1,10 @@
+// Module included in the following assemblies:
+// downstream/assemblies/aap-hardening/assembly-intro-to-aap-hardening.adoc
+
+[id="con-day-two-operations_{context}"]
+
+= Day two operations
+
+[role="_abstract"]
+
+Day 2 Operations include Cluster Health and Scaling Checks, including Host, Project, and environment level Sustainment. You should continually analyze configuration and security drift.

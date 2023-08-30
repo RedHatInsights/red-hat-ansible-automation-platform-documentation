@@ -1,0 +1,134 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="proc-controller-stig-considerations_{context}"]
+
+= {ControllerNameStart} STIG considerations
+
+[role="_abstract"]
+
+{ControllerNameStart} must install security-relevant software updates within the time period specified by your organizational policy and any security profiles you require to maintain the integrity and confidentiality of the system and its orgainzational assets.
+
+Security flaws with software applications are discovered daily. Red Hat constantly updates and patches {ControllerName} to address newly discovered security vulnerabilities. Organizations (including any contractor to the organization) are required to promptly install security-relevant software updates (for example, patches, service packs, and hot fixes). Flaws discovered during security assessments, continuous monitoring, incident response activities, or information system error handling must also be addressed expeditiously.
+
+As a system administrator for each {ControllerName} host, perform the following: 
+
+. Inspect the status of the DNF Automatic timer:
++
+====
+systemctl status dnf-automatic.timer
+====
+
+. If "Active: active" is not included in the output, this is a finding.
+
+. Inspect the configuration of DNF Automatic:
++
+====
+grep apply_updates /etc/dnf/automatic.conf
+====
+
+. If "apply_updates = yes" is not displayed, this is a finding.
+
+. Install and enable DNF Automatic:
++
+====
+dnf install dnf-automatic
+(run the install)
+systemctl enable --now dnf-automatic.timer
+====
+
+. Modify /etc/dnf/automatic.conf and set "apply_updates = yes".
+
+All {ControllerName} nginx front-end web server files must be verified for their integrity (e.g., checksums and hashes) before becoming part of the production web server. Verifying that a patch, upgrade, certificate, and so on, being added to the web server is unchanged from the producer of the file is essential for file validation and nonrepudiation of the information. The {ControllerName} nginx web server host must have a mechanism to verify that files are valid prior to installation.
+
+As a System Administrator, for each {ControllerName} nginx web server host, perform the following:
+
+. Verify the integrity of the {ControllerName} nginx web server hosts files:
++
+====
+aide --check
+====
+
+. Verify the displayed checksums against previously reserved checksums of the Advanced Intrusion Detection Environment (AIDE) database.
+
+. If there are any unauthorized or unexplained changes against previous checksums, this is a finding.
+
+As a System Administrator, for each {ControllerName} nginx web server host, perform the following:
+
+. Check for existing or install AIDE:
++
+====
+yum install -y aide
+====
+
+. Create or update the AIDE database immediately after initial installation of each {ControllerName} nginx web server host:
++
+====
+aide --init && mv /var/lib/aide/aide.db.new.gz /var/lib/aide/aide.db.gz
+====
+
+. Accept any expected changes to the host by updating the AIDE database:
++
+====
+aide --update
+====
+
+. The output will provide checksums for the AIDE database. Save in a protected location.
+
+All {ControllerName} nginx web server accounts not utilized by installed features (for example, tools, utilities, specific services, and so on) must not be created and must be deleted when the web server feature is uninstalled. If web server accounts are not being used, they must be deleted when the web server is uninstalled. This is because the accounts become stale over time and are not tended to. Also, if accounts are not going to be used, they must not be created for the same reason. Both situations create an opportunity for web server exploitation.
+
+When accounts used for web server features such as documentation, sample code, example applications, tutorials, utilities, and services are created, even though the feature is not installed, they become an exploitable threat to a web server. These accounts become inactive and are not monitored through regular use, and passwords for the accounts are not created or updated. An attacker can use these accounts to gain access to the web server and begin investigating ways to elevate the account privileges.
+
+The accounts used for all {ControllerName} nginx web server features not installed must not be created and must be deleted when these features are uninstalled.
+
+As a System Administrator for each {ControllerName} nginx web server, perform the following: 
+
+. Examine nginx users in `/etc/passwd`.
+
+. Verify a single user "nginx" exists using the command:
++
+====
+[ `grep -c nginx /etc/passwd` == 1 ] || echo FAILED
+====
+
+. If "FAILED" is displayed, this is a finding.
+
+As a System Administrator for each {ControllerName} nginx web server, perform the following: 
+
+. Reinstall {ControllerName} if no "nginx" users exist in `/etc/passwd`
+
+. Review all users enumerated in `/etc/passwd`, and remove any that are not attributable to RHEL or {ControllerName} and/or organizationally disallowed.
+
+The {ControllerName} nginx web server is configured to check for and install security-relevant software updates from an authoritative source within an organizationally identified time period from the availability of the update. By default, this time period will be every 24 hours.
+
+As a System Administrator for each {ControllerName} nginx web server host, perform the following: 
+
+. Verify the system is configured to receive updates from an organizationally defined source for authoritative system updates:
++
+====
+yum -v repolist
+====
+
+. If each URL is not valid and consistent with organizationally defined requirements, this is a finding.
+
+. If each repository is not enabled in accordance with organizationally defined requirements, this is a finding.
+
+. If the system is not configured to automatically receive and apply system updates from this source at least every 30 days, or manually receive and apply updates at least every 30 days, this is a finding.
+
+As a system administrator, for each {ControllerName} nginx web server host, perform the following:
+
+. Either configure update repositories in accordance with organizationally defined requirements or subscribe to Red Hat update repositories for the underlying operating system.
+. Execute an update from these repositories:
++
+====
+$ yum update -y
+====
+. Perform one of the following:
+.. Schedule an update to occur every 30 days, or in accordance with organizationally defined policy:
++ 
+====
+$ yum install -y dnf-automatic && sed -i '/apply_updates/s/no/yes/' /etc/dnf/automatic.conf && sed -i '/OnCalendar/s/^OnCalendar\s*=.*/OnCalendar=*-1-* 6:00/' /usr/lib/systemd/system/dnf-automatic.timer && systemctl enable --now dnf-automatic.timer
+====
++
+.. Schedule manual updates to occur at least every 30 days, or in accordance with organizationally defined policy.
+. Restart the {ControllerName} nginx web server host.

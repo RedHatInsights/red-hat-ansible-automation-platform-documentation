@@ -1,0 +1,15 @@
+// Module included in the following assemblies:
+// downstream/assemblies/assembly-hardening-aap.adoc
+
+[id="proc-configure-external-authentication_{context}"]
+
+= Configure an external authentication source
+
+[role="_abstract"]
+
+As noted in the link:(add external link) external authentication is recommended for user access to the automation controller. After you choose the authentication type that best suits your needs, navigate to menu:Settings[Authentication] in the automation controller UI, click on the relevant link for your authentication back-end, and follow the relevant instructions for link:https://docs.ansible.com/automation-controller/latest/html/administration/configure_tower_in_tower.html#authentication[configuring the authentication] connection.
+
+When using LDAP for external authentication with the automation controller, navigate to menu:Settings[Authentication > LDAP] settings on the controller and ensure that one of the following is configured:
+
+* For LDAP over SSL, the LDAP Server URI setting must begin with "ldaps://" and use port 636, for example "ldaps://ldap-server.example.com:636".
+* For LDAP over TLS, the LDAP Start TLS setting must be set to "On".
