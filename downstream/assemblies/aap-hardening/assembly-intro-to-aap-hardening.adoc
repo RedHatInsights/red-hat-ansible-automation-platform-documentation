@@ -8,9 +8,11 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-This document provides guidance for improving the security posture (referred to as “hardening” throughout this guide) of your {PlatformName} deployment on Red Hat Enterprise Linux (RHEL).
+This document provides guidance for improving the security posture (referred to as “hardening” throughout this guide) of your {PlatformName} deployment on Red Hat Enterprise Linux.
 
 Other deployment targets, such as OpenShift, are not currently within the scope of this guide. {PlatformNameShort} managed services available through cloud service provider marketplaces are also not within the scope of this guide.
+
+This guide takes a practical approach to hardening the {PlatformNameShort} security posture, starting with the planning and architecture phase of deployment and then covering specific guidance for installation, initial configuration, and day two operations. As this guide specifically covers {PlatformNameShort} running on Red Hat Enterprise Linux, hardening guidance for Red Hat Enterprise Linux will be covered where it affects the automation platform components. Additional considerations with regards to the Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIGs) are provided for those organizations that integrate the DISA STIG as a part of their overall security strategy.
 
 [NOTE]
 ====
