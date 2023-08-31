@@ -11,7 +11,7 @@ In addition to IT-related tasks, {EDAName} can automate a variety of tasks acros
 [cols="a,a",options="header"]
 |===
 h| Requirement | Required
-| *RAM* | 8 GB
+| *RAM* | 16 GB
 | *CPUs* | 4
 | *Local disk* | 40 GB minimum
 |===
