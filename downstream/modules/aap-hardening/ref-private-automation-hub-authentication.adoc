@@ -1,4 +1,4 @@
-// Module included in teh following assemblies: 
+// Module included in teh following assemblies:
 // downstream/assemblies/assembly-hardening-aap.adoc
 
 [id="ref-private-automation-hub-authentication_{context}"]
@@ -14,7 +14,12 @@
 
 For production use, LDAP is the preferred external authentication mechanism for {PrivateHubName}. {PlatformNameShort} central authentication is an option that can be deployed with the {PlatformNameShort} installer, but it only deploys one central authentication server instance, making it a potential single point of failure. Standalone mode for {PlatformNameShort} central authentication is not recommended in a production environment. However, if you already have the separate {RHSSO} (RHSSO) product deployed in your production environment, it can be used as an external authentication source for {PrivateHubName}.
 
-LDAP authentication for {PrivateHubName} is configured at installation time with the {PlatformNameShort} installer. See, link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#ref-ldap-config-on-pah_platform-install-scenario[LDAP configuration on a {PrivateHubName}] for details. The following installer inventory file variables will need to be filled out prior to installation:
+
+The {PlatformNameShort} Installer configures LDAP authentication for {PrivateHubName} during installation. For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#ref-ldap-config-on-pah_platform-install-scenario[LDAP configuration on a {PrivateHubName}].
+
+
+The following installer inventory file variables must be filled out prior to installation:
+
 
 .Inventory variable for automation hub LDAP settings
 |===
@@ -22,7 +27,7 @@ LDAP authentication for {PrivateHubName} is configured at installation time with
 
 | `automationhub_authentication_backend` | Set to "ldap" in order to use LDAP authentication.
 
-| `automationhub_ldap_server_uri` | The LDAP server URI, for example "ldap://ldap-server.example.com" or "ldaps://ldap-server.example.com:636". 
+| `automationhub_ldap_server_uri` | The LDAP server URI, for example "ldap://ldap-server.example.com" or "ldaps://ldap-server.example.com:636".
 
 | `automationhub_ldap_bind_dn` | The account used to connect to the LDAP server. This account should be one with sufficient privileges to query the LDAP server for users and groups, but it should not be an administrator account or one with the ability to modify LDAP records.
 

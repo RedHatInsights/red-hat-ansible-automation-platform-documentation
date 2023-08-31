@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-The {ControllerName} currently supports the following external authentication mechanisms:
+{ControllerNameStart} currently supports the following external authentication mechanisms:
 
 * Azure Activity Directory
 * GitHub single sign-on

@@ -23,4 +23,4 @@ hub2.example.com
 
 Then the load balancer can use the FQDNs `controller.example.com` and `hub.example.com` for the user-facing name of these {PlatformNameShort} services.
 
-When a load balancer is used in front of the private automation hub, the installer will need to be aware of the load balancer FQDN. Before installing {PlatformNameShort}, in the installation inventory file set the `automationhub_main_url` variable to the FQDN of the load balancer. For example, to match the example above, you would set the variable to `automationhub_main_url = hub.example.com`.
+When a load balancer is used in front of the private automation hub, the installer must be aware of the load balancer FQDN. Before installing {PlatformNameShort}, in the installation inventory file set the `automationhub_main_url` variable to the FQDN of the load balancer. For example, to match the previous example, you would set the variable to `automationhub_main_url = hub.example.com`.
