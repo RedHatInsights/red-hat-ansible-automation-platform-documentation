@@ -19,10 +19,7 @@ NOTE: The collection is added to the "Published" repository regardless of its so
 
 . Import any dependency for the collection using these same steps.
 
-Recommended collections depend on your use case. Ansible and Red Hat provide the following collections:
-
-* https://console.redhat.com/ansible/automation-hub/repo/published/ansible
-* https://console.redhat.com/ansible/automation-hub/repo/published/redhat
+Recommended collections depend on your use case. Ansible and Red Hat provide link:https://console.redhat.com/ansible/automation-hub[these collections.]
 
 == Custom Execution Environments
 
