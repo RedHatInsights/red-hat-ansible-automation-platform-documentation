@@ -2,6 +2,9 @@
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.4</productnumber>
 <subtitle>Install, configure, and maintain Ansible Automation Platform running on Red Hat Enterprise Linux in a secure manner.</subtitle>
+<abstract>
+    <para>This guide provides recommended practices for various processes needed to install, configure, and maintain {PlatformNameShort} on Red Hat Enterprise Linux in a secure manner.</para>
+</abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>
 </authorgroup>

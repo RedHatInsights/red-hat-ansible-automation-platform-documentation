@@ -21,7 +21,8 @@ For further detail on Role Hierarchy, access inheritance, Built in Roles, permis
 
 The following is an example of an organization with roles and resource permissions:
 
-// image::<image-name>.png[Reference architecture for an exmaple of an organization with roles and resource permissions.]
+.RBAC role scopes within automation controller
+image::aap_ref_arch_2.4.1.png[Reference architecture for an exmaple of an organization with roles and resource permissions.]
 
 User access is based on managing permissions to system objects (users, groups, namespaces) rather than by assigning permissions individually to specific users. You can assign permissions to the groups you create. You can then assign users to these groups. This means that each user in a group has the permissions assigned to that group.
 
