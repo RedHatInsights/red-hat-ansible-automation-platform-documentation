@@ -12,6 +12,8 @@ include::attributes/attributes.adoc[]
 
 This guide provides recommended practices for various processes needed to install, configure, and maintain {PlatformNameShort} on Red Hat Enterprise Linux in a secure manner.
 
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 include::aap-hardening/assembly-intro-to-aap-hardening.adoc[leveloffset=+1]
 include::aap-hardening/assembly-hardening-aap.adoc[leveloffset=+1]
 // include::aap-hardening/assembly-aap-compliance.adoc[leveloffset=+1]

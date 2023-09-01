@@ -2,10 +2,6 @@
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.4</productnumber>
 <subtitle>Install, configure, and maintain Ansible Automation Platform running on Red Hat Enterprise Linux in a secure manner.</subtitle>
-<abstract>
-    <para><emphasis role="strong">Providing Feedback:</emphasis></para>
-    <para> If you have a suggestion to improve this documentation, or find an error, please contact technical support at <link xlink:href="https://access.redhat.com"></link> to create an issue on the <emphasis role="strong">Ansible Automation Platform</emphasis> Jira project using the <emphasis role="strong">Docs</emphasis> component.</para>
-</abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>
 </authorgroup>
