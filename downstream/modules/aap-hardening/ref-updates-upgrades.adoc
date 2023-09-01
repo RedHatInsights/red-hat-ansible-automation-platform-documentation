@@ -7,4 +7,4 @@
 
 [role="_abstract"]
 
-All upgrades should be no more than two major versions behind what you are currently upgrading to. For example, to upgrade to {ControllerName} 4.3, you must first be on version 4.1.x because there is no direct upgrade path from version 3.8.x or earlier. Refer to the recommended upgrade path article on the Red Hat customer portal. To run {ControllerName} 4.3, you must also have Ansible 2.12 or later.
+All upgrades should be no more than two major versions behind what you are currently upgrading to. For example, to upgrade to {ControllerName} 4.3, you must first be on version 4.1.x because there is no direct upgrade path from version 3.8.x or earlier. Refer to link:https://docs.ansible.com/automation-controller/latest/html/upgrade-migration-guide/upgrade_considerations.html[Upgrading to Ansible Automation Platform] for additional information. To run {ControllerName} 4.3, you must also have Ansible 2.12 or later.

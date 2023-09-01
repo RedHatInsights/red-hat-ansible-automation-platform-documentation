@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-The installation inventory file defines the architecture of the {PlatformNameShort} (AAP) infrastructure, and provides a number of variables that can be used to alter the initial configuration of the infrastructure components. For more information on the installer inventory, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-editing-installer-inventory-file_platform-install-scenario[Ansible Automation Platform Installation Guide].
+The installation inventory file defines the architecture of the {PlatformNameShort} infrastructure, and provides a number of variables that can be used to modify the initial configuration of the infrastructure components. For more information on the installer inventory, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-editing-installer-inventory-file_platform-install-scenario[Ansible Automation Platform Installation Guide].
 
 The following table lists a number of security-relevant variables and their recommended values for creating the installation inventory.
 
@@ -24,12 +24,12 @@ The following table lists a number of security-relevant variables and their reco
 
 | `automationhub_disable_https` | false | If set to "true", this variable disables HTTPS connections to the private automation hub. The default is "false", so if this variable is absent from the installer inventory it is effectively the same as explicitly defining the variable to "false".
 
-| `automationedacontroller_disable_https` | fale | If set to "true", this variable disables HTTPS connections to the EDA controller. The default is "false", so if this variable is absent from the installer inventory it is effectively the same as explicitly defining the variable to "false".
+| `automationedacontroller_disable_https` | false | If set to "true", this variable disables HTTPS connections to the {EDAcontroller}. The default is "false", so if this variable is absent from the installer inventory it is effectively the same as explicitly defining the variable to "false".
 |===
 
-In scenarios such as the reference architecture where a load balancer is used with multiple controllers or hubs, SSL client connections may be terminated at the load balancer or passed through to the individual AAP servers. If SSL is being terminated at the load balancer, this guide recommends that the traffic gets re-encrypted from the load balancer to the individual AAP servers, to ensure that end-to-end encryption is in use. In this scenario the `*_disable_https` variables listed above would remain the default value of "false".
+In scenarios such as the reference architecture where a load balancer is used with multiple controllers or hubs, SSL client connections can be terminated at the load balancer or passed through to the individual {PlatformNameShort} servers. If SSL is being terminated at the load balancer, this guide recommends that the traffic gets re-encrypted from the load balancer to the individual {PlatformNameShort} servers, to ensure that end-to-end encryption is in use. In this scenario the `*_disable_https` variables listed above would remain the default value of "false".
 
 [NOTE]
 ====
-This guide recommends using an external database in production environments, but for development and testing scenarios the database could be co-located on the controller. Due to current PostgreSQL 13 limitations, setting `pg_sslmode = verify-full` when the database is co-located on the controller results in an error validating the host name during TLS negotiation.  Until this issue is resolved, an external database must be used in order to ensure mutual TLS authentication between the controller and the database.
+This guide recommends using an external database in production environments, but for development and testing scenarios the database could be co-located on the {ControllerName}. Due to current PostgreSQL 13 limitations, setting `pg_sslmode = verify-full` when the database is co-located on the {ControllerName} results in an error validating the host name during TLS negotiation. Until this issue is resolved, an external database must be used to ensure mutual TLS authentication between the {ControllerName} and the database.
 ====

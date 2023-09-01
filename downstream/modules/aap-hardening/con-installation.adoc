@@ -7,4 +7,4 @@
 
 [role="_abstract"]
 
-There are installation-time decisions that affect the security posture of {PlatformNameShort} (AAP). The installation process includes setting a number of variables, some of which are relevant to the hardening of the AAP infrastructure. Before installing AAP, consider the guidance in the installation section of this guide.
+There are installation-time decisions that affect the security posture of {PlatformNameShort}. The installation process includes setting a number of variables, some of which are relevant to the hardening of the {PlatformNameShort} infrastructure. Before installing {PlatformNameShort}, consider the guidance in the installation section of this guide.

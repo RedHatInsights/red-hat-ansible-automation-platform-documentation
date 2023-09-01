@@ -6,9 +6,8 @@ ifdef::context[:parent-context: {context}]
 :context: hardening-aap
 
 [role="_abstract"]
-This guide takes a practical approach to hardening the {PlatformNameShort} security posture, starting with the planning and architecture phase of deployment and then covering specific guidance for the installation phase.  As this guide specifically covers {PlatformNameShort} running on Red Hat Enterprise Linux (RHEL), hardening guidance for RHEL will be covered where it affects the automation platform components.
 
-This guide takes a practical approach to hardening the {PlatformNameShort} (AAP) security posture, starting with the planning and architecture phase of deployment and then covering specific guidance for the installation phase. As this guide specifically covers AAP running on Red Hat Enterprise Linux (RHEL), hardening guidance for RHEL will be covered where it affects the automation platform components.
+This guide takes a practical approach to hardening the {PlatformNameShort} security posture, starting with the planning and architecture phase of deployment and then covering specific guidance for the installation phase. As this guide specifically covers {PlatformNameShort} running on Red Hat Enterprise Linux, hardening guidance for Red Hat Enterprise Linux will be covered where it affects the automation platform components.
 
 include::aap-hardening/con-planning-considerations.adoc[leveloffset=+1]
 include::aap-hardening/ref-architecture.adoc[leveloffset=+2]
@@ -22,7 +21,7 @@ include::aap-hardening/ref-automation-controller-authentication.adoc[leveloffset
 include::aap-hardening/ref-private-automation-hub-authentication.adoc[leveloffset=+3]
 include::aap-hardening/con-credential-management-planning.adoc[leveloffset=+2]
 include::aap-hardening/ref-automation-controller-operational-secrets.adoc[leveloffset=+3]
-include::aap-hardening/con-automation-credentials.adoc[leveloffset=+3]
+include::aap-hardening/con-automation-use-secrets.adoc[leveloffset=+3]
 include::aap-hardening/con-logging-log-capture.adoc[leveloffset=+2]
 include::aap-hardening/ref-auditing-incident-detection.adoc[leveloffset=+2]
 include::aap-hardening/con-rhel-host-planning.adoc[leveloffset=+2]

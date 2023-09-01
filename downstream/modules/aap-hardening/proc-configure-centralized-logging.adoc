@@ -5,12 +5,12 @@
 
 = Configure centralized logging
 
-A critical capability of logging is the ability for the {ControllerName} to detect and take action to mitigate a failure, such as storage capacity reached, which by default shuts down the controller. When the application server is part of a high availability system, which is a recommended practice, then one of the following can be done:
+A critical capability of logging is the ability for the {ControllerName} to detect and take action to mitigate a failure, such as reaching storage capacity, which by default shuts down the controller. This guide recommends that the application server be part of a high availability system. When this is the case, {ControllerName} will take the following steps to mitigate failure: 
 
 * If the failure was caused by the lack of log record storage capacity, the application must continue generating log records if possible (automatically restarting the log service if necessary), overwriting the oldest log records in a first-in-first-out manner.
 * If log records are sent to a centralized collection server and communication with this server is lost or the server fails, the application must queue log records locally until communication is restored or until the log records are retrieved manually. Upon restoration of the connection to the centralized collection server, action must be taken to synchronize the local log data with the collection server.
 
-To modify or verify this is configured in the system, follow these steps on each {ControllerName}:
+To verify the rsyslog configuration for each {ControllerName} host, complete the following steps for each {ControllerName}:
 
 The administrator must check the rsyslog configuration for each automation controller host to verify the log rollover against a organizationally defined log capture size. To do this, follow the two steps below and correct using the configuration steps as required:
 
@@ -22,45 +22,45 @@ awx-manage print_settings LOG_AGGREGATOR_MAX_DISK_USAGE_GB
 +
 If this field is not set to the organizationally defined log capture size, then follow the configuration steps.
 
-. Check `LOG_AGGREGATOR_MAX_DISK_USAGE_PATH` field in the Automation Controller configuration for the log file location to "/var/log/awx".  On the host, execute:
+. Check `LOG_AGGREGATOR_MAX_DISK_USAGE_PATH` field in the {ControllerName} configuration for the log file location to `/var/log/awx`.  On the host, execute:
 +
 ----
 awx-manage print_settings LOG_AGGREGATOR_MAX_DISK_USAGE_PATH
 ----
 +
-If this field is not set to "/var/log/awx", then follow these configuration steps: 
+If this field is not set to `/var/log/awx`, then follow these configuration steps: 
 +
 --
-.. Open a web browser and navigate to: link:https://<Automation Controller server>/api/v2/settings/logging/ (If the "Log In" button is displayed, click it, enter an Automation Controller administrator's credentials, and continue).
+.. Open a web browser and navigate to https://<automation controller server>/api/v2/settings/logging/, where <FQDN> is the fully-qualified hostname of your {ControllerName}. If the btn:[Log In]" button is displayed, click it, log in as an {ControllerName} adminstrator account, and continue.
 
-.. In the Content section, modify the following values, then click "PUT":
+.. In the Content section, modify the following values, then click btn:[PUT]:
 +
 * LOG_AGGREGATOR_MAX_DISK_USAGE_GB = <new log buffer in GB>
-* LOG_AGGREGATOR_MAX_DISK_USAGE_PATH = "/var/lib/awx"
+* LOG_AGGREGATOR_MAX_DISK_USAGE_PATH = `/var/lib/awx`
 --
 + 
 Note that this change will need to be made on each {ControllerName} in a load-balanced scenario.
 
-All user session data must be logged in order to support the troubleshooting, debugging and forensic analysis for visibility and analytics. Without this data from the controller’s web server, important auditing and analysis for event investigations will be lost. To modify or verify this is configured in the system, follow these steps:
+All user session data must be logged to support troubleshooting, debugging and forensic analysis for visibility and analytics. Without this data from the controller’s web server, important auditing and analysis for event investigations will be lost. To verify that the system is configured to ensure that user session data is logged, use the following steps:
 
-For each Automation Controller host, navigate to console Settings >> System >> Miscellaneous System.
+For each {ControllerName} host, navigate to console Settings >> System >> Miscellaneous System.
 
-. Click "Edit".
+. Click btn:[Edit].
 . Set the following:
 * Enable Activity Stream = On
 * Enable Activity Stream for Inventory Sync = On
 * Organization Admins Can Manage Users and Teams = Off
 * All Users Visible to Organization Admins = On
-. Click "Save"
+. Click btn:[Save]
 
-To set up logging to any of the aggregator types, read the documentation on the link:https://docs.ansible.com/automation-controller/latest/html/administration/logging.html#logging-aggregator-services[supported log aggregators] and configure your log aggregator using the following steps:
+To set up logging to any of the aggregator types, read the documentation on link:https://docs.ansible.com/automation-controller/latest/html/administration/logging.html#logging-aggregator-services[supported log aggregators] and configure your log aggregator using the following steps:
 
-. Navigate to the Ansible Automation Platform.
-. Click *Settings*.
+. Navigate to {PlatformNameShort}.
+. Click btn:[Settings].
 . Under the list of System options, select Logging settings.
-. At the bottom of the Logging settings screen, click *Edit*.
+. At the bottom of the Logging settings screen, click btn:[Edit].
 . Set the configurable options from the fields provided:
-* Enable External Logging: Click the toggle button to ON if you want to send logs to an external log aggregator. The UI requires the Logging Aggregator and Logging Aggregator Port fields to be filled in before this can be done.
+* Enable External Logging: Click the toggle button to btn:[ON] if you want to send logs to an external log aggregator. The UI requires the Logging Aggregator and Logging Aggregator Port fields to be filled in before this can be done.
 * Logging Aggregator: Enter the hostname or IP address you want to send logs.
 * Logging Aggregator Port: Specify the port for the aggregator if it requires one.
 * Logging Aggregator Type: Select the aggregator service from the drop-down menu:
@@ -68,26 +68,26 @@ To set up logging to any of the aggregator types, read the documentation on the 
 ** Loggly
 ** Sumologic
 ** Elastic stack (formerly ELK stack)
-* Logging Aggregator Username: Enter the username of the logging aggregator if it requires it.
-* Logging Aggregator Password/Token: Enter the password of the logging aggregator if it requires it.
+* Logging Aggregator Username: Enter the username of the logging aggregator if required.
+* Logging Aggregator Password/Token: Enter the password of the logging aggregator if required.
 * Log System Tracking Facts Individually: Click the tooltip icon for additional information, whether or not you want to turn it on, or leave it off by default.
-* Logging Aggregator Protocol: Click to select a connection type (protocol) to communicate with the log aggregator. Subsequent options vary depending on the selected protocol.
+* Logging Aggregator Protocol: Select a connection type (protocol) to communicate with the log aggregator. Subsequent options vary depending on the selected protocol.
 * Logging Aggregator Level Threshold: Select the level of severity you want the log handler to report.
 * TCP Connection Timeout: Specify the connection timeout in seconds. This option is only applicable to HTTPS and TCP log aggregator protocols.
-* Enable/disable HTTPS certificate verification: Certificate verification is enabled by default for HTTPS log protocol. Click the toggle button to OFF if you do not want the log handler to verify the HTTPS certificate sent by the external log aggregator before establishing a connection.
+* Enable/disable HTTPS certificate verification: Certificate verification is enabled by default for HTTPS log protocol. Click the toggle button to btn:[OFF] if you do not want the log handler to verify the HTTPS certificate sent by the external log aggregator before establishing a connection.
 * Loggers to Send Data to the Log Aggregator Form: All four types of data are pre-populated by default. Click the tooltip icon next to the field for additional information on each data type. Delete the data types you do not want.
 * Log Format For API 4XX Errors: Configure a specific error message.
-. When done, click *Save* to apply the settings or Cancel to abandon the changes.
-. To verify if your configuration is set up correctly, click *Save* first then click Test. This sends a test log message to the log aggregator using the current logging configuration in the automation controller. You should check to make sure this test message was received by your external log aggregator.
+. Click btn:[Save] to apply the settings or btn:[Cancel] to abandon the changes.
+. To verify if your configuration is set up correctly, btn:[Save] first then click btn:[Test]. This sends a test log message to the log aggregator using the current logging configuration in the automation controller. You should check to make sure this test message was received by your external log aggregator.
 
-A user who logs in with an LDAP username and password automatically gets a controller account created for them and they can be automatically placed into organizations as either regular users or organization administrators. This means that logging should be turned on when LDAP integration is in use. You can enable logging messages for the SAML adapter the same way you can enable logging for LDAP.
+A {ControllerName} account is automatically created for any user who logs in with an LDAP username and password. These users can automatically be placed into organizations as regular users or organization administrators. This means that logging should be turned on when LDAP integration is in use. You can enable logging messages for the SAML adapter the same way you can enable logging for LDAP.
 
 The following steps enable the LDAP logging:
 
 To enable logging for LDAP, you must set the level to DEBUG in the Settings configuration window.
 
-. Click *Settings* from the left navigation pane and select Logging settings from the System list of options.
-. Click *Edit*.
+. Click btn:[Settings] from the left navigation pane and select Logging settings from the System list of options.
+. Click btn:[Edit].
 . Set the Logging Aggregator Level Threshold field to Debug.
-. Click *Save* to save your changes.
+. Click btn:[Save] to save your changes.
 

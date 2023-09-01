@@ -7,12 +7,12 @@
 
 [role="_abstract"]
 
-The Red Hat Enterprise Linux (RHEL) 8 STIG requires that the kernel setting `user.max_user_namespaces` is set to "0", but only if Linux containers are not in use. Because {PlatformNameShort} (AAP) uses containers as part of its execution environment capability, this STIG control does not apply to the {ControllerName}.
+The Red Hat Enterprise Linux 8 STIG requires that the kernel setting `user.max_user_namespaces` is set to "0", but only if Linux containers are not in use. Because {PlatformNameShort} uses containers as part of its execution environment capability, this STIG control does not apply to the {ControllerName}.
 
-To check the `user.max_user_namespaces` kernel setting, do the following:
+To check the `user.max_user_namespaces` kernel setting, complete the following steps:
 
 . Log in to your {ControllerName} at the command line.
 . Run the command `sudo sysctl user.max_user_namespaces`.
-. If the output indicates that the value is zero, look at the contents of the file `/etc/sysctl.conf` and all files under `/etc/sysctl.d/``, edit the file containing the `user.max_user_namespaces` setting, and set the value to "65535".
-. To apply this new value, run the command `sudo sysctl -p <file>``, where `<file>`` is the file just modified.
+. If the output indicates that the value is zero, look at the contents of the file `/etc/sysctl.conf` and all files under `/etc/sysctl.d/`, edit the file containing the `user.max_user_namespaces` setting, and set the value to "65535".
+. To apply this new value, run the command `sudo sysctl -p <file>`, where `<file>` is the file just modified.
 . Re-run the command `sudo sysctl user.max_user_namespaces` and verify that the value is now set to "65535".

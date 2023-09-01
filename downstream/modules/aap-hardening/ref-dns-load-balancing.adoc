@@ -3,6 +3,8 @@
 
 [id="ref-dns-load-balancing_{context}"]
 
+= DNS and load balancing
+
 [role="_abstract"]
 
 When using a load balancer with {PlatformNameShort} as described in the reference architecture, an additional FQDN is needed for each load-balanced component ({ControllerName} and {PrivateHubName}).

@@ -7,9 +7,9 @@
 
 [role="_abstract"]
 
-The contingency planning security control indicates that information system backups reflect the requirements in contingency plans and other organizational requirements for backing up information. Recommendations exist for High Availability and Backup complex operations and architectures. We will cover them briefly here, but they are outside the scope of the {PlatformNameShort} STIG. As the {PlatformNameShort} STIG indicates, the operations normally require significant planning, people, and processes outside a single product.
+Taking regular backups of Ansible Automation Platform is a critical part of disaster recovery planning. Both backups and restores are performed using the installer, so these actions should be performed from the dedicated installation host described earlier in this document. Refer to the link:https://docs.ansible.com/automation-controller/latest/html/administration/backup_restore.html[Backing Up and Restoring] section of the automation controller documentation for further details on how to perform these operations.
 
-An important aspect of backups is that they contain a copy of the database as well as the secret key used to decrypt credentials stored in the database, so the backup files should be stored in a secure encrypted location. This means that access to endpoint credentials are protected properly. Access to backups should be limited only to {PlatformNameShort} administrators who have root shell access to the controller.
+An important aspect of backups is that they contain a copy of the database as well as the secret key used to decrypt credentials stored in the database, so the backup files should be stored in a secure encrypted location. This means that access to endpoint credentials are protected properly. Access to backups should be limited only to {PlatformNameShort} administrators who have root shell access to {ControllerName} and the dedicated installation host.
 
 The two main reasons an {PlatformNameShort} administrator needs to back up their {PlatformNameShort} environment are:
 
@@ -25,4 +25,4 @@ To generate a new secret key, perform the following steps:
 . Backup your {PlatformNameShort} database before you do anything else! Follow the procedure described in the link:https://docs.ansible.com/automation-controller/latest/html/administration/backup_restore.html[Backing Up and Restoring Controller] section.
 . Using the inventory from your install (same inventory with which you run backups/restores), run `setup.sh -k`.
 
-A backup copy of the prior key is saved in `/etc/tower/``.
+A backup copy of the prior key is saved in `/etc/tower/`.

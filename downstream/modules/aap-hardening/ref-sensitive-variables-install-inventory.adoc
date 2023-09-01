@@ -7,12 +7,12 @@
 
 [role="_abstract"]
 
-The installation inventory file contains a number of sensitive variables, mainly those used to set the initial passwords used by {PlatformNameShort} (AAP), and these are normally kept in plain text in the inventory file. These variables can be kept in an encrypted link:https://docs.ansible.com/ansible/latest/vault_guide/index.html[Ansible vault] instead to prevent unauthorized viewing. To do this, go to the installer directory and create a vault file:
+The installation inventory file contains a number of sensitive variables, mainly those used to set the initial passwords used by {PlatformNameShort}, that are normally kept in plain text in the inventory file. To prevent unauthorized viewing of these variables, you can keep these variables in an encrypted link:https://docs.ansible.com/ansible/latest/vault_guide/index.html[Ansible vault]. To do this, go to the installer directory and create a vault file:
 
 * `cd /path/to/ansible-automation-platform-setup-bundle-2.4-1-x86_64`
 * `ansible-vault create vault.yml`
 
-You will be prompted for a password to the new Ansible vault. Note that this password will be used every time the vault file needs to be accessed – including day-two operations such as taking a backup – so take care not to lose the vault password (for example, store it in an encrypted password manager or in accordance with your organizational policy for storing passwords securely).
+You will be prompted for a password to the new Ansible vault. Do not lose the vault password because it is required every time you need to access the vault file, including during day-two operations and performing backup procedures. You can secure the vault password by storing it in an encrypted password manager or in accordance with your organizational policy for storing passwords securely.
 
 Add the sensitive variables to the vault, for example:
 

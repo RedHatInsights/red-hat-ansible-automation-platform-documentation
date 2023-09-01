@@ -7,7 +7,9 @@
 
 [role="_abstract"]
 
-By default, {PlatformNameShort} (AAP) creates self-signed PKI certificates for the infrastructure components of the platform. Where an existing PKI infrastructure is available, certificates must be generated for the {ControllerName}, {PrivateHubName}, {EDAcontroller}, and the postgres database server. Copy the certificate files and their relevant key files to the installer directory, along with the CA certificate used to verify the certificates.
+By default, {PlatformNameShort} creates self-signed PKI certificates for the infrastructure components of the platform. Where an existing PKI infrastructure is available, certificates must be generated for the {ControllerName}, {PrivateHubName}, {EDAcontroller}, and the postgres database server. Copy the certificate files and their relevant key files to the installer directory, along with the CA certificate used to verify the certificates.
+
+Use the following inventory variables to configure the infrastructure components with the new certificates.
 
 .PKI certificate inventory variables
 |===
@@ -31,7 +33,7 @@ By default, {PlatformNameShort} (AAP) creates self-signed PKI certificates for t
 | `automationedacontroller_ssl_key` | The file name of the {EDAcontroller} PKI key located in the installer directory.
 |===
 
-When multiple {ControllerName} are deployed with a load balancer, the `web_server_ssl_cert` and `web_server_ssl_key` will be shared by each controller. To prevent hostname mismatches, the certificate's Common Name (CN) will need to match the DNS FQDN used by the load balancer. This also applies when deploying multiple {PrivateHubName} and the `automationhub_ssl_cert` and `automationhub_ssl_key` variables. If your organizational policies require unique certificates for each service, each certificate will need a Subject Alt Name (SAN) that matches the DNS FQDN used for the load-balanced service. In order to install unique certificates and keys on each {ControllerName}, the certificate and key variables in the installation inventory file must be defined as per-host variables instead of in the `[all:vars]` section. For example:
+When multiple {ControllerName} are deployed with a load balancer, the `web_server_ssl_cert` and `web_server_ssl_key` are shared by each controller. To prevent hostname mismatches, the certificate's Common Name (CN) must match the DNS FQDN used by the load balancer. This also applies when deploying multiple {PrivateHubName} and the `automationhub_ssl_cert` and `automationhub_ssl_key` variables. If your organizational policies require unique certificates for each service, each certificate requires a Subject Alt Name (SAN) that matches the DNS FQDN used for the load-balanced service. To install unique certificates and keys on each {ControllerName}, the certificate and key variables in the installation inventory file must be defined as per-host variables instead of in the `[all:vars]` section. For example:
 
 ----
 [automationcontroller]

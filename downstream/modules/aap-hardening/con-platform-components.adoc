@@ -3,7 +3,7 @@
 
 [id="con-platform-components_{context}"]
 
-= {PlatformName} components
+= {PlatformNameShort} components
 
 [role="_abstract"]
 
@@ -11,4 +11,4 @@
 
 [role="_additional-resources"]
 .Additional resources
-For more information about the components provided within {PlatformNameShort}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/planning-installation#ref-platform-components[Red Hat Ansible Automation Platform components] in the _Red Hat Ansible Automation Platform Planning Guide_.
+For more information about the components provided within {PlatformNameShort}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/ref-aap-components[Red Hat Ansible Automation Platform components] in the _Red Hat Ansible Automation Platform Planning Guide_.

@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-The Red Hat Enterprise Linux (RHEL) 8 STIG requires the fapolicyd daemon to be running. However, {PlatformNameShort} (AAP) is not currently supported with fapolicyd enforcing policy, as this causes failures during the installation and operation of AAP. The AAP installer runs a preflight check that will fail if this is the case. This guide recommends setting fapolicyd to permissive mode on the automation controller using the following steps:
+The Red Hat Enterprise Linux 8 STIG requires the fapolicyd daemon to be running. However, {PlatformNameShort} is not currently supported when fapolicyd enforcing policy, as this causes failures during the installation and operation of {PlatformNameShort}. Because of this, the installer runs a pre-flight check that will halt installation if it discovers that fapolicyd is enforcing policy. This guide recommends setting fapolicyd to permissive mode on the {ControllerName} using the following steps:
 
 . Edit the file `/etc/fapolicyd/fapolicyd.conf` and set "permissive = 1".
 . Restart the service with the command `sudo systemctl restart fapolicyd.service`.
@@ -16,5 +16,5 @@ In environments where STIG controls are routinely audited, discuss waiving the f
 
 [NOTE]
 ====
-If the RHEL 8 STIG is also applied to the installation host, the default fapolicyd configuration causes the AAP installer to fail. In this case, the recommendation is to set fapolicyd to permissive on the installation host.
+If the Red Hat Enterprise Linux 8 STIG is also applied to the installation host, the default fapolicyd configuration causes the {PlatformNameShort} installer to fail. In this case, the recommendation is to set fapolicyd to permissive mode on the installation host.
 ====

@@ -17,8 +17,8 @@
 
 This can be done through 5 steps of the cybersecurity framework:
 
-* IDENTIFY- Define the requirements to be implemented according to the security policy.
-* PROTECT - Implement and apply the requirements as an Ansible playbook.
-* DETECT - Monitor for drift and generate an audit report.
-* RESPOND - Explore actions that could be taken when an incident is detected.
-* RECOVER - Use Ansible to restore the systems to the known good configuration.
+IDENTIFY:: Define the requirements to be implemented according to the security policy.
+PROTECT:: Implement and apply the requirements as an Ansible playbook.
+DETECT:: Monitor for drift and generate an audit report.
+RESPOND:: Explore actions that could be taken when an incident is detected.
+RECOVER:: Use Ansible to restore the systems to the known good configuration.

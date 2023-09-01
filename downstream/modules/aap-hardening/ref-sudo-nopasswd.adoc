@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-The Red Hat Enterprise Linux (RHEL) 8 STIG requires that all users with sudo privileges must provide a password (that is, the "NOPASSWD" directive must not be used in a sudoers file). The {PlatformNameShort} (AAP) installer runs many tasks as a privileged user, and by default expects to be able to elevate privileges without a password. To provide a password to the installer for elevating privileges, append the following options when launching the installer script: `./setup.sh <setup options> -- –-ask-become-pass`.
+The Red Hat Enterprise Linux 8 STIG requires that all users with sudo privileges must provide a password (that is, the "NOPASSWD" directive must not be used in a sudoers file). The {PlatformNameShort} installer runs many tasks as a privileged user, and by default expects to be able to elevate privileges without a password. To provide a password to the installer for elevating privileges, append the following options when launching the installer script: `./setup.sh <setup options> -- –-ask-become-pass`.
 
 This also applies when running the installer script for day-two operations such as backup and restore.
 

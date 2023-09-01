@@ -5,4 +5,4 @@
 
 = Controller configuration
 
-// [role="_abstract"]
+[role="_abstract"]

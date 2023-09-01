@@ -19,7 +19,7 @@ As a system administrator for each {ControllerName} host, perform the following:
 systemctl status dnf-automatic.timer
 ====
 
-. If "Active: active" is not included in the output, this is a finding.
+. If `Active: active` is not included in the output, this is a finding.
 
 . Inspect the configuration of DNF Automatic:
 +
@@ -27,7 +27,7 @@ systemctl status dnf-automatic.timer
 grep apply_updates /etc/dnf/automatic.conf
 ====
 
-. If "apply_updates = yes" is not displayed, this is a finding.
+. If `apply_updates = yes` is not displayed, this is a finding.
 
 . Install and enable DNF Automatic:
 +
@@ -37,7 +37,7 @@ dnf install dnf-automatic
 systemctl enable --now dnf-automatic.timer
 ====
 
-. Modify /etc/dnf/automatic.conf and set "apply_updates = yes".
+. Modify `/etc/dnf/automatic.conf` and set `apply_updates = yes`.
 
 All {ControllerName} nginx front-end web server files must be verified for their integrity (e.g., checksums and hashes) before becoming part of the production web server. Verifying that a patch, upgrade, certificate, and so on, being added to the web server is unchanged from the producer of the file is essential for file validation and nonrepudiation of the information. The {ControllerName} nginx web server host must have a mechanism to verify that files are valid prior to installation.
 
@@ -85,19 +85,19 @@ As a System Administrator for each {ControllerName} nginx web server, perform th
 
 . Examine nginx users in `/etc/passwd`.
 
-. Verify a single user "nginx" exists using the command:
+. Verify a single user nginx exists using the command:
 +
 ====
-[ `grep -c nginx /etc/passwd` == 1 ] || echo FAILED
+[ grep -c nginx /etc/passwd == 1 ] || echo FAILED
 ====
 
-. If "FAILED" is displayed, this is a finding.
+. If `FAILED` is displayed, this is a finding.
 
 As a System Administrator for each {ControllerName} nginx web server, perform the following: 
 
-. Reinstall {ControllerName} if no "nginx" users exist in `/etc/passwd`
+. Reinstall {ControllerName} if no nginx users exist in `/etc/passwd`
 
-. Review all users enumerated in `/etc/passwd`, and remove any that are not attributable to RHEL or {ControllerName} and/or organizationally disallowed.
+. Review all users enumerated in `/etc/passwd`, and remove any that are not attributable to Red Hat Enterprise Linux or {ControllerName} and/or organizationally disallowed.
 
 The {ControllerName} nginx web server is configured to check for and install security-relevant software updates from an authoritative source within an organizationally identified time period from the availability of the update. By default, this time period will be every 24 hours.
 
