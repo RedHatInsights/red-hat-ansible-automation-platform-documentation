@@ -59,7 +59,7 @@ execution-plane-1.example.com node_type=hop
 execution-plane-2.example.com
 -----
 
-If you want to set the `node-type` at the group level, you must create separate groups for the execution nodes and the hop nodes.
+If you want to set the `node_type` at the group level, you must create separate groups for the execution nodes and the hop nodes.
 
 -----
 [execution_nodes]
