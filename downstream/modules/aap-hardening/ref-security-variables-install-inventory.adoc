@@ -27,7 +27,7 @@ The following table lists a number of security-relevant variables and their reco
 | `automationedacontroller_disable_https` | false | If set to "true", this variable disables HTTPS connections to the {EDAcontroller}. The default is "false", so if this variable is absent from the installer inventory it is effectively the same as explicitly defining the variable to "false".
 |===
 
-In scenarios such as the reference architecture where a load balancer is used with multiple controllers or hubs, SSL client connections can be terminated at the load balancer or passed through to the individual {PlatformNameShort} servers. If SSL is being terminated at the load balancer, this guide recommends that the traffic gets re-encrypted from the load balancer to the individual {PlatformNameShort} servers, to ensure that end-to-end encryption is in use. In this scenario the `*_disable_https` variables listed above would remain the default value of "false".
+In scenarios such as the reference architecture where a load balancer is used with multiple controllers or hubs, SSL client connections can be terminated at the load balancer or passed through to the individual {PlatformNameShort} servers. If SSL is being terminated at the load balancer, this guide recommends that the traffic gets re-encrypted from the load balancer to the individual {PlatformNameShort} servers, to ensure that end-to-end encryption is in use. In this scenario, the `*_disable_https` variables listed in Table 2.3 would remain the default value of "false".
 
 [NOTE]
 ====

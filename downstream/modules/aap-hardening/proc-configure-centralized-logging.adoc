@@ -12,7 +12,7 @@ A critical capability of logging is the ability for the {ControllerName} to dete
 
 To verify the rsyslog configuration for each {ControllerName} host, complete the following steps for each {ControllerName}:
 
-The administrator must check the rsyslog configuration for each automation controller host to verify the log rollover against a organizationally defined log capture size. To do this, follow the two steps below and correct using the configuration steps as required:
+The administrator must check the rsyslog configuration for each automation controller host to verify the log rollover against a organizationally defined log capture size. To do this, use the following steps, and correct using the configuration steps as required:
 
 . Check the `LOG_AGGREGATOR_MAX_DISK_USAGE_GB` field in the {ControllerName} configuration. On the host, execute:
 +
