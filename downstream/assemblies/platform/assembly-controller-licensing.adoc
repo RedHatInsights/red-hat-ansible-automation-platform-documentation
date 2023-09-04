@@ -1,0 +1,17 @@
+ifdef::context[:parent-context: {context}]
+
+[id="assembly-controller-licensing"]
+= {ControllerNameStart} licensing, updates and support
+
+:context: licensing-controller
+
+{PlatformName} controller ("{Controller Name}") is a software product provided as part of an annual {PlatformName} subscription entered into between you and Red Hat, Inc. ("Red Hat").
+
+Ansible is an open source software project and is licensed under the GNU General Public License version 3, as described in the link:https://github.com/ansible/ansible/blob/devel/COPYING[Ansible Source Code]
+
+You must have valid subscriptions attached before installing {PlatformNameShort}. See Attaching Subscriptions for detail.
+
+include::platform/ref-controller-license-support.adoc[leveloffset=+1]
+include::platform/ref-controller-trial-evaluation.adoc[leveloffset=+1]
+include::platform/ref-controller-licenses.adoc[leveloffset=+1]
+include::platform/ref-controller-node-counting.adoc[leveloffset=+1]
