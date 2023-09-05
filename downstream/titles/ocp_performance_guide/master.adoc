@@ -25,4 +25,5 @@ include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 include::platform/assembly-pod-spec-modifications.adoc[leveloffset=+1]
 include::platform/assembly-control-plane-adjustments.adoc[leveloffset=+1]
 include::platform/assembly-specify-dedicated-nodes.adoc[leveloffset=+1]
+include::platform/assembly-configure-controller-OCP.adoc[leveloffset=+1]
 

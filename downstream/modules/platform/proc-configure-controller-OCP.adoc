@@ -1,0 +1,115 @@
+[id="configure-controller-OCP"]
+
+= Minimizing downtime during {OCPShort} upgrade
+
+Make the following configuration changes in {ControllerName} to minimize downtime during the upgrade.
+
+.Prerequisites
+
+* {PlatformNameShort} 2.4
+* Ansible {ControllerName} 4.4
+* {OCPShort}
+** > 4.10.42
+** > 4.11.16
+** > 4.12.0
+* High availability (HA) deployment of Postgres
+* Multiple worker node that {ControllerName} pods can be scheduled on
+
+.Procedure
+
+. Enable `RECEPTOR_KUBE_SUPPORT_RECONNECT` in AutomationController specification:
++
+-----
+apiVersion: automationcontroller.ansible.com/v1beta1
+kind: AutomationController
+metadata:
+  ...
+spec:
+  ...
+  ee_extra_env: |
+    - name: RECEPTOR_KUBE_SUPPORT_RECONNECT
+      value: enabled
+    ```
+-----
++
+. Enable the graceful termination feature in AutomationController specification:
++
+-----
+termination_grace_period_seconds: <time to wait for job to finish>
+-----
++
+. Configure `podAntiAffinity` for web and task pod to spread out the deployment in AutomationController specification:
++
+-----
+task_affinity:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+            - key: app.kubernetes.io/name
+              operator: In
+              values:
+              - awx-task
+          topologyKey: topology.kubernetes.io/zone
+        weight: 100
+  web_affinity:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+            - key: app.kubernetes.io/name
+              operator: In
+              values:
+              - awx-web
+          topologyKey: topology.kubernetes.io/zone
+        weight: 100
+
+-----
++
+. Configure `PodDisruptionBudget` in {OCPShort}:
++
+-----
+
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: automationcontroller-job-pods
+spec:
+  maxUnavailable: 0
+  selector:
+    matchExpressions:
+      - key: ansible-awx-job-id
+        operator: Exists
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: automationcontroller-web-pods
+spec:
+  minAvailable: 1
+  selector:
+    matchExpressions:
+      - key: app.kubernetes.io/name
+        operator: In
+        values:
+          - <automationcontroller_instance_name>-web
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: automationcontroller-task-pods
+spec:
+  minAvailable: 1
+  selector:
+    matchExpressions:
+      - key: app.kubernetes.io/name
+        operator: In
+        values:
+          - <automationcontroller_instance_name>-task
+
+
+-----
+

@@ -1,0 +1,8 @@
+[id="assembly-configure-controller-OCP"]
+
+= Configuring Ansible {ControllerName} on {OCPShort}
+
+During a Kubernetes upgrade, {ControllerName} must be running.
+
+include::platform/proc-configure-controller-OCP.adoc[leveloffset=+1]
+
