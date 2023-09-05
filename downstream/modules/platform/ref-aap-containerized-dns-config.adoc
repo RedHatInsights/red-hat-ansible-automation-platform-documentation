@@ -1,0 +1,20 @@
+:_content-type: REFERENCE
+
+[id="aap-containerized-dns-config_{context}"]
+
+= {PlatformNameShort} Containerized DNS Configuration
+
+[role="_abstract"]
+
+Using unbound DNS
+
+To configure unbound DNS refer to link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/managing_networking_infrastructure_services/ssembly_setting-up-an-unbound-dns-server_networking-infrastructure-services#proc_configuring-unbound-as-a-caching-dns-server_assembly_setting-up-an-unbound-dns-server[Chapter 2. Setting up an unbound DNS server Red Hat Enterprise Linux 9].
+
+Using BIND DNS
+
+To configure DNS using BIND refer to link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/managing_networking_infrastructure_services/assembly_setting-up-and-configuring-a-bind-dns-server_networking-infrastructure-services[Chapter 1. Setting up and configuring a BIND DNS server Red Hat Enterprise Linux 9].
+
+Optional: To have the installer automatically pick up and apply your AAP subscription manifest license, then follow this guide up to and including step 11, Tp generate a manifest file which can be downloaded for the installer refer to link:https://docs.ansible.com/ansible-tower/latest/html/userguide/import_license.html#obtain-sub-manifest[4. Import a Subscription — Ansible Tower User Guide v3.8.6].
+
+
+

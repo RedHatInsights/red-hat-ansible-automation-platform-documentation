@@ -1,0 +1,14 @@
+:imagesdir: images
+:toclevels: 4
+:experimental:
+
+
+include::attributes/attributes.adoc[]
+
+// Book Title
+= Containerized Ansible Automation Platform Installation Guide
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+
+include::platform/assembly-aap-containerized-installation.adoc[leveloffset=+1]

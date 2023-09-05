@@ -1,0 +1,105 @@
+:_content-type: PROCEDURE
+
+[id="installing-containerized-aap_{context}"]
+= installing containerized aap
+
+[role="_abstract"]
+
+
+Installation of {PlatformNameShort} is controlled with inventory files. Inventory files define the hosts and containers used and created, variables for components, and other information needed to customize the installation.
+
+For convenience an example inventory file is provided, that you can copy and modify to quidkly get started.
+
+The boilerplate inventory file is included in the collection directory. Follow the instructions in the file to complete your configuration.
+
+* Edit the inventory file by replacing the *< >* placeholders with your specific variables, and uncommenting any lines specific to your needs.
+
+
+----
+# This is the AAP installer inventory file
+# Please consult the docs if you're unsure what to add
+# For all optional variables please consult the included README.md
+
+# This section is for your AAP Controller host(s)
+# If one of these components is not being installed, comment out the <fqdn> line.
+# -------------------------------------------------
+[automationcontroller]
+fqdn_of_your_rhel_host ansible_connection=local
+
+# This section is for your AAP Automation Hub host(s)
+# -----------------------------------------------------
+[automationhub]
+fqdn_of_your_rhel_host ansible_connection=local
+
+# This section is for your AAP EDA Controller host(s)
+# -----------------------------------------------------
+[automationeda]
+fqdn_of_your_rhel_host ansible_connection=local
+
+# This section is for the AAP database(s)
+# -----------------------------------------
+# Uncomment the lines below and amend appropriately if you want AAP to install and manage the postgres databases
+# Leave commented out if you intend to use your own external database and just set appropriate _pg_hosts vars
+# see mandatory sections under each AAP component
+#[database]
+#fqdn_of_your_rhel_host ansible_connection=local
+
+[all:vars]
+
+# Common variables needed for installation
+# ----------------------------------------
+postgresql_admin_username=postgres
+postgresql_admin_password=<set your own>
+# If using the online (non-bundled) installer, you need to set RHN registry credentials
+registry_username=<your RHN username>
+registry_password=<your RHN password>
+# If using the bundled installer, you need to alter defaults by using:
+#bundle_install= true
+#bundle_dir: <full path to the bundle directory/bundle name>
+
+# AAP Controller - mandatory
+# ------------------------------
+controller_admin_password=<set your own>
+controller_pg_host=fqdn_of_your_rhel_host
+controller_pg_password=<set your own>
+
+# AAP Controller - optional
+# ------------------------------
+# To use the postinstall feature you need to set these variables
+#controller_postinstall=true
+#controller_license_file=<full path to your manifest .zip file>
+#controller_postinstall_dir=<full path to your config-as-code directory>
+#controller_postinstall_repo_url=<git based config-as-code source URL>
+
+# AAP Automation Hub - mandatory
+# ------------------------------
+hub_admin_password=<set your own>
+hub_pg_host=fqdn_of_your_rhel_host
+hub_pg_password=<set your own>
+
+# AAP Automation Hub - optional
+# -----------------------------
+
+# AAP EDA Controller - mandatory
+# ------------------------------
+eda_admin_password=<set your own>
+eda_pg_host=fqdn_of_your_rhel_host
+eda_pg_password=<set your own>
+controller_main_url=https://fqdn_of_your_rhel_host
+
+# AAP EDA Controller - optional
+# -----------------------------
+----
+
+Use the following command to install containerized AAP{PlatformNameShort}:
+
+----
+ansible-playbook -i </path/to/inventory> ansible.containerized_installer.install
+----
+
+
+NOTE: If your privilege escalation requires a password to be entered, append *-K* to the command line. You will then be prompted for the *BECOME* password. 
+
+You can use increasing verbosity, up to 4 v's (-vvvv) to see the details of the installation process.
+
+NOTE: This can significantly increase installation time, so it is recommended that you use it only as needed or requested by Red Hat support.

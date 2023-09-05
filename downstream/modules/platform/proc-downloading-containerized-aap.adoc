@@ -1,0 +1,33 @@
+:_content-type: PROCEDURE
+
+[id="downloading-containerizzed-aap_{context}"]
+= Downloading {PlatformShortName}
+
+[role="_abstract"]
+
+.Procedure
+
+If you have not already downloaded the latest installer tarball then do so now from link:https://access.redhat.com/downloads/content/480/ver=2.4/rhel---9/2.4/x86_64/product-software[access.redhat.com]. If you can do this directly within the RHEL host, then do so as that will save you copying the installer over. If you have also exported a subscription manifest file, copy this over now also.
+
+. Download the tarball:
+----
+$ wget <tar.gz>
+----
++
+. If you have downloaded the tarball and optional manifest zip file onto your laptop, copy them onto your RHEL host.
+
+Decide where you would like the installer to reside on the filesystem. Installation related files will be created under this location and will need at least 10Gb for the initial installation.
++
+. Unpack the installer tarball into your installation directory. 
+
+----
+$ tar xfvz <tar.gz>
+----
++
+. Install the link:https://gitlab.cee.redhat.com/ansible/aap-containerized-installer[containerized installer collection]. Make certain to include the trailing dot with the command.
+
+----
+ansible-galaxy collection install .
+----
+
+NOTE: Internet access will be required for these steps. If in an offline environment, download and copy the collections listed in the *requirements.yml* to the server and install them.

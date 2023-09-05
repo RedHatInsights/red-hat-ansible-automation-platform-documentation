@@ -1,0 +1,22 @@
+:_content-type: PROCEDURE
+
+[id="installing-ansible-core_{context}"]
+= Installing ansible-core
+
+[role="_abstract"]
+
+
+
+.Procedure
+
+. Install ansible-core and other tools:
+
+----
+sudo dnf install -y ansible-core wget git
+----
+
+. Set a fully qualified hostname:
+
+----
+sudo hostnamectl set-hostname your-FQDN-hostname
+----

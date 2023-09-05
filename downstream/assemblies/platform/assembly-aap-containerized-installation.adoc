@@ -1,0 +1,57 @@
+ifdef::context[:parent-context-of-aap-containerized-installation: {context}]
+
+:_content-type: ASSEMBLY
+
+ifndef::context[]
+[id="aap-containerized-installation"]
+endif::[]
+
+ifdef::context[]
+[id="aap-containerized-installation_{context}"]
+endif::[]
+
+= aap-containerized-installation
+
+:context: aap-containerized-installation
+
+[role="_abstract"]
+Ansible Automation Platform is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
+
+This guide helps you to understand the installation requirements and processes behind our new containerized version of Ansible Automation Platform. This initial version is based upon {PlatformNameShort} 2.4 and is being released as a Technical Preview. Please refer to this article link:https://access.redhat.com/support/offerings/techpreview[Technology Preview Features Support Scope]to understand what a technical preview entails.
+
+
+.Prerequisites
+
+* A RHEL 9.2 based host. Minimal OS base install is recommended.
+* A non-root user for the RHEL host, with sudo or other Ansible supported privilege escalation (sudo recommended). This user is responsible for the installation of containerized {PlatformNameShort}.
+* It is recommended setting up an *SSH public key authentication* for the non-root user. For guidelines on setting up an SSH public key authentication for the non-root user, see link:https://access.redhat.com/solutions/4110681[How to configure SSH public key authentication for passwordless login].
+* SSH keys are only required when installing on remote hosts. If doing a self contained local VM based installation, you can use *ansible_connection: local* as per the example which does not require SSH.
+* Internet access from the RHEL host if using the default online installation method.
+
+== System Requirements
+Your system must meet the following minimum system requirements to install and run Red Hat Containerized Ansible Automation Platform. 
+
+[cols=2]
+|======================
+| Memory     | 16Gb RAM
+| CPU        | 4 CPU   
+| Disk space | 40Gb    
+| Disk IOPs  | 1500    
+|======================
+
+
+
+
+
+include::platform/proc-preparing-the-rhel-host-for-containerized-installation.adoc[leveloffset=+1]
+include::platform/ref-aap-containerized-dns-config.adoc[leveloffset=+1]
+include::platform/proc-installing-ansible-core.adoc[leveloffset=+1]
+include::platform/proc-downloading-containerized-aap.adoc[leveloffset=+1]
+include::platform/proc-using-postinstall.adoc[leveloffset=+1]
+include::platform/proc-installing-containerized-aap.adoc[leveloffset=+1]
+include::platform/ref-accessing-control-auto-hub-eda-control.adoc[leveloffset=+1]
+
+
+ifdef::parent-context-of-aap-containerized-installation[:context: {parent-context-of-aap-containerized-installation}]
+ifndef::parent-context-of-aap-containerized-installation[:!context:]
+
