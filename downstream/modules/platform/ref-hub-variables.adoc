@@ -22,7 +22,7 @@ When this is set to `ldap`, you must also set the following variables:
 * `automationhub_ldap_bind_dn`
 * `automationhub_ldap_bind_password`
 * `automationhub_ldap_user_search_base_dn`
-* `automationhub_ldap_group_seach_base_dn`
+* `automationhub_ldap_group_search_base_dn`
 
 | *`automationhub_auto_sign_collections`* | If a collection signing service is enabled, collections are not signed automatically by default. 
 
