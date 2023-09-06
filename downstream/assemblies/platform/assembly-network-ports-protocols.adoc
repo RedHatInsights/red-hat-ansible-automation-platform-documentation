@@ -220,8 +220,8 @@ a|Open *only* if the internal database is used along with another component. Oth
 |URL |Required for
 |link:http://api.access.redhat.com:443[http://api.access.redhat.com:443] |General account services, subscriptions
 |link:https://cert-api.access.redhat.com:443[https://cert-api.access.redhat.com:443] |Insights data upload
-|link:https://cert.cloud.redhat.com:443[https://cert.cloud.redhat.com:443] |Inventory upload and Cloud Connector connection
-|link:https://cloud.redhat.com[https://cloud.redhat.com] |Access to Insights dashboard
+|link:https://cert.console.redhat.com:443[https://cert.console.redhat.com:443] |Inventory upload and Cloud Connector connection
+|link:https://{Console}[https://console.redhat.com] |Access to Insights dashboard
 |===
 
 .Automation Hub
@@ -235,7 +235,7 @@ a|Open *only* if the internal database is used along with another component. Oth
 |link:https://galaxy.ansible.com[https://galaxy.ansible.com] |Ansible Community curated Ansible content
 |link:https://ansible-galaxy.s3.amazonaws.com[https://ansible-galaxy.s3.amazonaws.com] |
 |link:https://registry.redhat.io:44[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
-|link:https://cert.cloud.redhat.com:443[https://cert.cloud.redhat.com:443] |Red Hat and partner curated Ansible Collections
+|link:https://cert.console.redhat.com:443[https://cert.console.redhat.com:443] |Red Hat and partner curated Ansible Collections
 |===
 
 .Execution Environments (EE)

@@ -5,7 +5,7 @@
 When building a custom execution environment, the ansible-builder tool defaults
 to downloading the following requirements from the internet:
 
-* Ansible Galaxy (galaxy.ansible.com) or Automation Hub (cloud.redhat.com) for any collections added to the EE image.
+* Ansible Galaxy (galaxy.ansible.com) or Automation Hub ({Console}) for any collections added to the EE image.
 * PyPI (pypi.org) for any python packages required as collection dependencies.
 * The UBI repositories (cdn.redhat.com) for updating any UBI-based EE images.
 ** The RHEL repositories might also be needed to meet certain collection requirements.

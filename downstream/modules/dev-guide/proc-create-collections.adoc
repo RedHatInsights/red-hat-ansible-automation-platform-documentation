@@ -5,7 +5,7 @@
 = Creating collections
 
 [role="_abstract"]
-You can create your own Collections locally with the Ansible Galaxy CLI tool. All of the Collection-specific commands can be activated by using the `collection` subcommand.
+You can create your own Collections locally with the {Galaxy} CLI tool. All of the Collection-specific commands can be activated by using the `collection` subcommand.
 
 
 .Prerequisites
@@ -24,7 +24,7 @@ $ ansible-galaxy collection init <my_namespace>.<my_collection_name>
 +
 [NOTE]
 ====
-Make sure you have the proper permissions to upload to a namespace by checking under the "My Content" tab on galaxy.ansible.com or cloud.redhat.com/ansible/automation-hub
+Make sure you have the proper permissions to upload to a namespace by checking under the "My Content" tab on galaxy.ansible.com or {Console}/ansible/automation-hub
 ====
 
 The above command will create a directory named from the namespace argument above (if one does not already exist) and then create a directory under that with the Collection name. Inside of that directory will be the default or "skeleton" Collection. This is where you can add your roles or plugins and start working on developing your own Collection.
