@@ -10,7 +10,7 @@ ifdef::context[]
 [id="aap-containerized-installation_{context}"]
 endif::[]
 
-= aap-containerized-installation
+= {PlatformHameShort} containerized installation
 
 :context: aap-containerized-installation
 

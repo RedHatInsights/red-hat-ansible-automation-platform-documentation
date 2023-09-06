@@ -6,11 +6,11 @@
 
 [role="_abstract"]
 
-Using unbound DNS
+.Using unbound DNS
 
 To configure unbound DNS refer to link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/managing_networking_infrastructure_services/ssembly_setting-up-an-unbound-dns-server_networking-infrastructure-services#proc_configuring-unbound-as-a-caching-dns-server_assembly_setting-up-an-unbound-dns-server[Chapter 2. Setting up an unbound DNS server Red Hat Enterprise Linux 9].
 
-Using BIND DNS
+.Using BIND DNS
 
 To configure DNS using BIND refer to link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/managing_networking_infrastructure_services/assembly_setting-up-and-configuring-a-bind-dns-server_networking-infrastructure-services[Chapter 1. Setting up and configuring a BIND DNS server Red Hat Enterprise Linux 9].
 

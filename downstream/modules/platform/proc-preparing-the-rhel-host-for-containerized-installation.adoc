@@ -1,6 +1,7 @@
 :_content-type: PROCEDURE
 
 [id="preparing-the-rhel-host-for-containerized-installation_{context}"]
+
 = Preparing-the-rhel-host-for-containerized-installation
 
 [role="_abstract"]

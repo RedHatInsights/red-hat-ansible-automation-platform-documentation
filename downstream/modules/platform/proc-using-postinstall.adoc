@@ -1,12 +1,13 @@
 :_content-type: PROCEDURE
 
 [id="using-postinstall_{context}"]
-= Using postinstall feature of containerized Ansible Automation Platform
+
+= Using postinstall feature of containerized {PlatformNameShort}
 
 [role="_abstract"]
 
 
-Use the experimental postinstaller feature of containerized {ShortPlatformName} to define and load the configuration during the initial installation. This uses a configuration-as-code approach, where you simply define your configuration to be loaded as simple YAML files. 
+Use the experimental postinstaller feature of containerized {PlatformNameShort} to define and load the configuration during the initial installation. This uses a configuration-as-code approach, where you simply define your configuration to be loaded as simple YAML files. 
 
 . To use this optional feature, you need to uncomment the following vars in the inventory file:
 

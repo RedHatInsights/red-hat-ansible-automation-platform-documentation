@@ -1,12 +1,11 @@
 :_content-type: REFERENCE
 
 [id="accessing-control-auto-hub-eda-control_{context}"]
-= accessing control auto hub {EDAName} controller
+
+= Accessing controller, automation hub, and {EDAName} controller
 
 [role="_abstract"]
-Write a short introductory paragraph that provides an overview of the module.
 
-Accessing controller, automation hub, and EDA controller
 
 Once the installation completes, these are the default protocol and ports used:
 
@@ -30,7 +29,7 @@ https://<your_rhel_host>:443
 
 Login as the admin user with the password you created for *controller_admin_password*.
 
-If you supplied the license manifest as part of the installation, the AAP dashboard is displayed.If you did not supply a license file, the Subscription screen is displayed where you must supply your license details. This is documented here: https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_operations_guide/assembly-aap-activate. 
+If you supplied the license manifest as part of the installation, the {PlatformNameShort} dashboard is displayed.If you did not supply a license file, the Subscription screen is displayed where you must supply your license details. This is documented here: https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_operations_guide/assembly-aap-activate. 
 
 .Accessing Automation Hub UI
 

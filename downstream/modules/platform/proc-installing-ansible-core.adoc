@@ -1,6 +1,7 @@
 :_content-type: PROCEDURE
 
 [id="installing-ansible-core_{context}"]
+
 = Installing ansible-core
 
 [role="_abstract"]
