@@ -1,0 +1,7 @@
+[id="controller-groups-and-hosts"]
+
+= Managing groups and hosts
+
+Inventories are divided into groups and hosts. 
+Groups can represent a particular environment (such as a "Datacenter 1" or "Stage Testing"), a server type (such as "Application Servers" or "DB Servers"), or any other representation of your environment. 
+The groups and hosts that belong to the Demo inventory are shown in the *Groups* and *Hosts* tabs.

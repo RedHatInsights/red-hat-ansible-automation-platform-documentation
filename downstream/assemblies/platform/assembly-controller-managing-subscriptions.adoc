@@ -1,0 +1,10 @@
+[id="controller-managing-subscriptions"]
+
+= Managing your Ansible {ControllerName} subscription
+
+Before you can use {ControllerName}, you must have a valid subscription, which authorizes using the controller.
+
+include::platform/proc-controller-obtaining-subscriptions.adoc[leveloffset=+1]
+include::platform/proc-controller-importing-subscriptions.adoc[leveloffset=+1]
+include::platform/con-controller-keep-subscription-in-compliance.adoc[leveloffset=+1]
+include::platform/con-controller-host-metric-utilities.adoc[leveloffset=+1]

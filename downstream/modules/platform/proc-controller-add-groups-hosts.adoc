@@ -1,0 +1,22 @@
+[id="controller-add-groups-and-hosts"]
+
+= Adding new groups and hosts
+
+Groups are only applicable to standard inventories and are not configurable directly through a Smart Inventory. 
+You can associate an existing group through hosts that are used with standard inventories. 
+For more information, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/inventories.html#ug-inventories-add-groups[Add groups] in the Automation Controller User Guide. 
+
+.Procedure
+. To add new groups, select menu:Groups[Add].
+. To add new hosts to groups, select menu:Hosts[Add].
+
+As part of the initial setup and to test that {ControllerName} is set up properly, a local host is added for your use.
+
+image::controller-inventories-default-access-list-view.png[localhost]
+
+.Example
+
+If the organization that you created has a group of web server hosts supporting a particular application, complete the following steps:
+
+. Create a group and add the web server hosts, to add these hosts to the inventory.
+. Click btn:[Cancel] (if no changes were made) or use the breadcrumb navigational links at the top of the {ControllerName} browser to return to the *Inventories* list view. Clicking btn:[Save] does not exit the *Details* dialog.

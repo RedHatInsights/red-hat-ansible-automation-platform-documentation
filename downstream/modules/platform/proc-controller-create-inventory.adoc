@@ -1,0 +1,21 @@
+[id="controller-creating-inventory"]
+
+= Creating a new Inventory
+
+The Inventories window displays a list of the inventories that are currently available. 
+You can sort the inventory list by name and searched type, organization, description, owners and modifiers of the inventory, or additional criteria.
+
+.Procedure
+. To view existing inventories, select *Inventories* from the navigation panel.
+** {ControllerNameStart} provides a demonstration inventory for you to use as you learn how the controller works. 
+You can use it as it is or edit it later.
+You can create another inventory, if necessary. 
+. To add another inventory, see link:https://docs.ansible.com/automation-controller/4.4/html/userguide/inventories.html#ug-inventories-add[Add a new inventory] in the Automation Controller User Guide for more information.
+. Click btn:[Demo Inventory] to view its details.
+
+image::controller-inventories-demo-details.png[Demo inventory]
+
+As with organizations, inventories also have associated users and teams that you can view through the *Access* tab.
+For more information, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/inventories.html[Inventories] in the Automation Controller User Guide.
+
+A user with the role of *System Administrator* has been automatically populated for this.

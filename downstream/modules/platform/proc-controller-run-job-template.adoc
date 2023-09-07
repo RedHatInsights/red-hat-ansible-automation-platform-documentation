@@ -1,0 +1,28 @@
+[id="controller-run-job-template"]
+
+= Running a job template
+
+A benefit of {ControllerName} is the push-button deployment of Ansible playbooks. 
+You can configure a template to store all the parameters that you would normally pass to the Ansible playbook on the command line.  
+In addition to the playbooks, the template passes the inventory, credentials, extra variables, and all options and settings that you can specify on the command line.
+
+.Procedure
+
+* From the navigation panel, select menu:Templates[Launch] next to the job template.
+
+image::controller-gs-job-templates-launch.png[Launch template]
+
+The initial job launch generates a status page, which updates automatically using {ControllerName}'s Live Event feature, until the job is complete. 
+
+For more information on the job results, see link:http://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#ug-jobs[Jobs] in the Automation Controller User Guide.
+
+.Additional resources
+
+To learn more about these {ControllerName} features or to learn about administration tasks and the controller API, see the following documentation sets:
+
+* link:http://docs.ansible.com/automation-controller/4.4/html/userguide/index.html#ug-star[Automation Controller User Guide]
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html-single/red_hat_ansible_automation_platform_installation_guide/index[Red Hat Ansible Automation Platform Installation Guide]
+* link:http://docs.ansible.com/automation-controller/4.4/html/administration/index.html#ag-start[Automation Controller Administration Guide]
+* link:http://docs.ansible.com/automation-controller/4.4/html/controllerapi/index.html#api-start[Automation Controller API Guide]
+* link:http://docs.ansible.com/automation-controller/4.4/html/release-notes/index.html#releasenotes-start[Automation Controller Release Notes]
+* link:http://docs.ansible.com/[Ansible Documentation]

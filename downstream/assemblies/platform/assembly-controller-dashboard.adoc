@@ -1,0 +1,13 @@
+[id="controller-dashboard"]
+
+= Using the {ControllerName} Dashboard for IT orchestration
+
+The Dashboard offers a graphical framework for your IT orchestration needs. 
+Use the navigation menu to complete the following tasks: 
+
+* Display different views 
+* Navigate to your resources
+* Grant users access
+* Administer {ControllerName} features in the UI
+
+include::platform/proc-controller-viewing-dashboard.adoc[leveloffset=+1]

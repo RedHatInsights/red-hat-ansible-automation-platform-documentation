@@ -1,0 +1,13 @@
+[id="controller-organizations"]
+
+= Managing organizations in {ControllerName}
+
+An organization is a logical collection of users, teams, projects, and inventories. 
+It is the highest level object in the controller object hierarchy.
+After you have created an organization, {ControllerName} displays the organization details. 
+You can then manage access and execution environments for the organization.
+
+image::controller-tower-hierarchy.png[Hierarchy]
+
+include::platform/proc-controller-review-organizations.adoc[leveloffset=+1]
+include::platform/proc-controller-edit-an-organization.adoc[leveloffset=+1]

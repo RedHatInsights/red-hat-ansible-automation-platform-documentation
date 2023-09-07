@@ -1,0 +1,23 @@
+[id="controller-review-organizations"]
+
+= Reviewing the organization
+
+The Organizations page displays the existing organizations for your installation.
+
+.Procedure
+
+* From the navigation panel, select *Organizations*.
++
+[NOTE]
+====
+{ControllerNameStart} automatically creates a default organization. 
+If you have a Self-support level license, you have only the default organization available and must not delete it.
+====
+You can use the default organization as it is initially set up and edit it later.
++
+[NOTE]
+====
+Only Enterprise or Premium licenses can add new organizations.
+====
+
+Enterprise and Premium license users who want to add a new organization should refer to the link:https://docs.ansible.com/automation-controller/4.4/html/userguide/organizations.html#ug-organizations[Organizations] section in the Automation Controller User Guide.

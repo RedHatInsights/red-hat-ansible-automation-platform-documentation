@@ -1,0 +1,12 @@
+[id="controller-edit-organization"]
+
+= Editing an organization
+
+During initial setup, you can leave the default organization as it is, but you can edit it later.
+
+.Procedure 
+. Edit the organization by using one of these methods:
+** Go to menu:Details[Edit].
+** From the navigation panel, select menu:Organizations[Edit Organization] next to the organization name and edit the appropriate details. 
+. Save your changes.
+

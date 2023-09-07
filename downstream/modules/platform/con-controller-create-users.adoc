@@ -1,0 +1,13 @@
+[id="controller-create-users"]
+
+Users associated with an organization are shown in the *Access* tab of the organization.
+
+image::controller-users-access-view.png[Access view]
+
+A default administrator user with the role of *System Administrator* is automatically created and is available to all users of {ControllerName}. 
+You can use it as it is or edit it later. 
+You can add other users to an organization, including a *Normal User*, *System Auditor*, or *System Administrator*, but you must create them first.
+
+For more information, see the link:https://docs.ansible.com/automation-controller/4.4/html/userguide/users.html#ug-users-create[Users] section in the Automation Controller User Guide.
+
+For the purpose of the getting started guide, leave the default user as it is.

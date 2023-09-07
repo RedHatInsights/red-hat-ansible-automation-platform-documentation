@@ -1,0 +1,12 @@
+[id="controller-job-templates"]
+
+= Working with job templates
+
+A job template combines an Ansible playbook from a project and the settings required to launch it. 
+Job templates are useful to execute the same job many times. Job templates also encourage the reuse of Ansible playbook content and collaboration between teams. 
+For more information, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/job_templates.html[Job Templates] in the Automation Controller User Guide. 
+
+include::platform/proc-controller-getting-started-with-job-templates.adoc[leveloffset=+1]
+include::platform/proc-controller-edit-job-template.adoc[leveloffset=+1]
+include::platform/proc-controller-run-job-template.adoc[leveloffset=+1]
+

@@ -1,0 +1,17 @@
+[id="controller-edit-job-templates"]
+
+= Editing a job template
+
+As part of the initial setup, you can leave the default *Demo Job Template* as it is, but you can edit it later.
+
+.Procedure
+
+. Open the template to edit it by using one of these methods:
+** Click menu:Details[Edit].
+** From the navigation panel, select menu:Templates[Edit Template] next to the template name and edit the appropriate details.
+. Save your changes.
++
+image::controller-gs-templates-demo.png[Job templates]
++
+. To exit after saving and return to the *Templates* list view, use the breadcrumb navigation links or click btn:[Cancel]. 
+Clicking btn:[Save] does not exit the *Details* dialog.

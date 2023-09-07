@@ -1,0 +1,12 @@
+[id="controller-keep-subscription-in-compliance"]
+
+= Troubleshooting: Keeping your subscription in compliance
+
+Your subscription has two possible statuses:
+
+* *Compliant*: Indicates that your subscription is appropriate for the number of hosts that you have automated within your subscription count. 
+* *Out of compliance*: Indicates that you have exceeded the number of hosts in your subscription.
+
+image::gs-controller-license-non-compliant.png[Subscription out of compliance]
+
+For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#subscription-compliance[Subscription compliance] in the Automation Controller User Guide.

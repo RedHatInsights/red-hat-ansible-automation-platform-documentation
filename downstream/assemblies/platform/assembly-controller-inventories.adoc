@@ -1,0 +1,16 @@
+[id="controller-inventories"]
+
+= Inventories
+
+An inventory is a collection of hosts managed by {ControllerName}. 
+Organizations are assigned to inventories, while permissions to launch playbooks against inventories are controlled at the user or team level. 
+
+For more information, see the following documentation:
+
+* link:http://docs.ansible.com/automation-controller/4.4/html/userguide/users.html#ug-users-permissions[Inventories, Users - Permissions] 
+* link:http://docs.ansible.com/automation-controller/4.4/html/userguide/teams.html#ug-teams-permissions[Teams - Permissions] 
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#about_the_installer_inventory_file[About the installer inventory file]
+
+include::platform/proc-controller-create-inventory.adoc[leveloffset=+1]
+include::platform/con-controller-groups-hosts.adoc[leveloffset=+1]
+include::platform/proc-controller-add-groups-hosts.adoc[leveloffset=+2]

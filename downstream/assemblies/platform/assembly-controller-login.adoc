@@ -1,0 +1,7 @@
+[id="controller-login"]
+
+=  Logging into the {ControllerName} dashboard after installation
+
+After you install {ControllerName}, you must log in to the Dashboard.
+
+include::platform/proc-controller-logging-in.adoc[leveloffset=+1]
