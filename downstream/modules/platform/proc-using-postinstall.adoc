@@ -10,14 +10,14 @@
 Use the experimental postinstaller feature of containerized {PlatformNameShort} to define and load the configuration during the initial installation. This uses a configuration-as-code approach, where you simply define your configuration to be loaded as simple YAML files. 
 
 . To use this optional feature, you need to uncomment the following vars in the inventory file:
-
++
 ----
 controller_postinstall=true
 ----
 +
 
 . The default is false, so this must be enabled to activate the postinstaller. An AAP license is required for this feature and must reside on the local filesystem so it can be automatically loaded:
-
++
 ----
 controller_license_file=/full_path_to/manifest_file.zip
 ----
