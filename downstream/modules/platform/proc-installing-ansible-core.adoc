@@ -11,11 +11,11 @@
 .Procedure
 
 . Install ansible-core and other tools:
-
++
 ----
 sudo dnf install -y ansible-core wget git
 ----
-
++
 . Set a fully qualified hostname:
 
 ----
