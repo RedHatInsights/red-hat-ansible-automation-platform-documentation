@@ -1,7 +1,14 @@
 [id="controller-login"]
 
+ifdef::controller-GS[]
 =  Logging into the {ControllerName} dashboard after installation
 
 After you install {ControllerName}, you must log in to the Dashboard.
+endif::controller-GS[]
+ifdef::controller-UG[]
+=  Logging into the {ControllerName} after installation
+
+After you install {ControllerName}, you must log in.
+endif::controller-UG[]
 
 include::platform/proc-controller-logging-in.adoc[leveloffset=+1]

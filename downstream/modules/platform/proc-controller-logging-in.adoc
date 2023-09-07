@@ -7,6 +7,6 @@
 The default username is *admin*. 
 The password for *admin* is the value specified for *admin_password* in your inventory file.
 . Edit these defaults by selecting *Users* from the navigation panel:
-** Click the the btn:[More Actions] icon *{MoreActionsIcon}* next to the desired user.
-** Click btn:[Edit].
-** Edit the required details and click btn:[Save].
+* Click the the btn:[More Actions] icon *{MoreActionsIcon}* next to the desired user.
+* Click btn:[Edit].
+* Edit the required details and click btn:[Save].
