@@ -1,0 +1,17 @@
+ifdef::context[:parent-context: {context}]
+
+[id="assembly-controller-search"]
+= {ControllerNameStart} search
+
+:context: search-controller
+
+Use {ControllerName}'s' search tool for search and filter capabilities across multiple functions. 
+An expandable "cheat-sheet" is available from the *Advanced* option from the *Name* menu in the search field. 
+
+From there, use the combination of *Set Type*, *Key*, and *Lookup type* to filter.
+
+image:search-bar-key.png[key sheet]
+
+include::platform/ref-controller-search-tips.adoc[leveloffset=+1]
+include::platform/ref-controller-search-sort.adoc[leveloffset=+1]
+

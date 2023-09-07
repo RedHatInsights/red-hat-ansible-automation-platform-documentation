@@ -23,18 +23,35 @@ include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 
 include::platform/assembly-UG-overview.adoc[leveloffset=+1]
 include::platform/assembly-controller-licensing.adoc[leveloffset=+1]
-//3
-//4
-//5
-//6
-//7
-//8
-//9
-//10
-//11
-//12
-//13
-//14
-//15
-
-
+//3 Login
+//4 Subscriptions
+//5 User Interface
+//6 -> Either combine or move to Admin?
+include::platform/assembly-controller-search.adoc[leveloffset=+1]
+//8 Organizations
+//9 Users
+//10 Teams
+//11 Credentials
+//12 Custom Credential Types
+//13 Secret Management System
+//14 Applications
+//15 Execution Environments
+//16 Execution Environment Setup Reference
+//17 Projects
+//18 Project Signing and Verification
+//19 Inventories
+//20 Supported Inventory Plugin Templates
+//21 Job Templates
+//22 Job Slicing
+//23 Workflows
+//24 Workflow Job Templates
+//25 Instance Groups
+//26 Jobs
+//27 Working with Webhooks
+//28 Notifications
+//29 Supported Attributes for Custom Notifications
+//30 Schedules
+//31 Setting up Insights Remediations
+//32 Best Practices
+//33 Security
+//34 Glossary

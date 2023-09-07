@@ -1,0 +1,42 @@
+[id="ref-controller-values-for-search-fields"]
+
+= Values for search fields
+
+To find values for certain fields, refer to the API endpoint for extensive options and their valid values. 
+For example, if you want to search against `/api/v2/jobs` *>* `type` field, you can find the values by performing an *OPTIONS* request to `/api/v2/jobs` and look for entries in the API for `"type"`. 
+Additionally, you can view the related searches by scrolling to the bottom of each screen. 
+In the example for `/api/v2/jobs`, the related search shows:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+"related_search_fields": [
+       "modified_by__search",
+       "project__search",
+       "project_update__search",
+       "credentials__search",
+       "unified_job_template__search",
+       "created_by__search",
+       "inventory__search",
+       "labels__search",
+       "schedule__search",
+       "webhook_credential__search",
+       "job_template__search",
+       "job_events__search",
+       "dependent_jobs__search",
+       "launch_config__search",
+       "unifiedjob_ptr__search",
+       "notifications__search",
+       "unified_job_node__search",
+       "instance_group__search",
+       "hosts__search",
+       "job_host_summaries__search"
+----
+
+The values for Fields come from the keys in a *GET* request. 
+`url`, `related`, and `summary_fields` are not used. 
+The values for Related Fields also come from the *OPTIONS* response, but from a different attribute. 
+Related Fields is populated by taking all the values from `related_search_fields` and stripping off the `__search` from the end.
+
+Any search that does not start with a value from Fields or a value from the Related Fields, is treated as a generic string search.
+Searching for `localhost`, for example, results in the UI sending `?search=localhost` as a query parameter to the API endpoint. 
+This is a shortcut for an `icontains` search on the name and description fields.

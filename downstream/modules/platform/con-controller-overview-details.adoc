@@ -129,7 +129,7 @@ Inventory updates fail if an inventory synchronization brings an organization ou
 Additionally, superusers are able to over-allocate their licenses, with a warning.
 
 = Inventory plugins
-{ControllerNameStart} uses the following inventory plugins from upstream collections if inventory updates are run with Ansible 2.9:
+Beginning with Ansible 2.9, the following inventory plugins are used from upstream collections:
 
 * `amazon.aws.aws_ec2`
 * `community.vmware.vmware_vm_inventory`

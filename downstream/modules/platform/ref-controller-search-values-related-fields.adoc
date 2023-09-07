@@ -1,0 +1,17 @@
+[id="ref-controller-search-values-related-fields"]
+
+= Searching using values from related fields
+
+Searching a Related Field requires you to start the search string with the Related Field. 
+The following example describes how to search using values from the Related Field, _organization_.
+
+The left-hand side of the search string must start with `organization`, for example, `organization:Default`. 
+Depending on the related field, you can provide more specific direction for the search by providing secondary and tertiary fields. 
+An example of this is to specify that you want to search for all job templates that use a project matching a certain name. 
+The syntax on this would look like: `job_template.project.name:"A Project"`.
+
+[NOTE]
+====
+This query executes against the `unified_job_templates` endpoint which is why it starts with `job_template`. 
+If you were searching against the `job_templates` endpoint, then you would not need the `job_template` portion of the query.
+====

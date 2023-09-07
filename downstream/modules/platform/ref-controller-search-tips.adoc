@@ -1,0 +1,33 @@
+[id="ref-controller-search-tips"]
+
+= Tips for searching in {ControllerName}
+
+These searching tips assume that you are not searching hosts. 
+Most of this section still applies to hosts but with some subtle differences. 
+
+* The typical syntax of a search consists a field (left-hand side) and a value (right-hand side). 
+* A colon is used to separate the field that you want to search from the value. 
+* If the seach has no colon (see example 3) it is treated as a simple string search where `?search=foobar` is sent. 
+
+The following are examples of syntax used for searching:
+
+. `name:localhost` In this example, the string before the colon represents the field that you want to search on. 
+If that string does not match something from *Fields* or *Related Fields* then it is treated the same way as in Example 3 (string search). 
+The string after the colon is the string that you want to search for within the name attribute.
+. `organization.name:Default` This example shows a Related Field Search.
+The period in `organization.name` separates the model from the field. 
+Depending on how deep or complex the search is, you can have multiple periods in that part of the query.
+. `foobar` This is a simple string (key term) search that finds all instances of the search term using an `icontains` search against the name and description fields. 
+If you use a space between terms, for example `foo bar`, then results that contain both terms are returned. 
+If the terms are wrapped in quotes, for example, `"foo bar"`, {ControllerName} searches for the string with the terms appearing together. 
+
+Specific name searches search against the API name. For example, `Management job` in the user interface is `system_job` in the API.
+. `organization:Default` This example shows a Related Field search but without specifying a field to go along with the organization. 
+This is supported by the API and is analogous to a simple string search but carried out against the organization (does an `icontains` search against both the name and description).
+
+include::ref-controller-values-for-search-fields.adoc[leveloffset=+1]
+include::ref-controller-search-values-related-fields.adoc[leveloffset=+1]
+include::ref-controller-other-search-considerations.adoc[leveloffset=+1]
+
+
+
