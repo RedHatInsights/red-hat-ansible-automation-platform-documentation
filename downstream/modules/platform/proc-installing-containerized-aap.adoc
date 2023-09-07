@@ -86,7 +86,6 @@ hub_pg_password=<set your own>
 eda_admin_password=<set your own>
 eda_pg_host=fqdn_of_your_rhel_host
 eda_pg_password=<set your own>
-controller_main_url=https://fqdn_of_your_rhel_host
 
 # AAP EDA Controller - optional
 # -----------------------------

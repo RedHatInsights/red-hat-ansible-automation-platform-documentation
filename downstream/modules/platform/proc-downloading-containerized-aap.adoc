@@ -19,7 +19,7 @@ $ wget <tar.gz>
 ----
 +
 . If you have downloaded the tarball and optional manifest zip file onto your laptop, copy them onto your RHEL host.
-
++
 Decide where you would like the installer to reside on the filesystem. Installation related files will be created under this location and require at least 10Gb for the initial installation.
 +
 . Unpack the installer tarball into your installation directory. 
@@ -28,8 +28,14 @@ Decide where you would like the installer to reside on the filesystem. Installat
 $ tar xfvz <tar.gz>
 ----
 +
+. Set *ANSIBLE_COLLECTIONS_PATH*: 
++
+----
+export ANSIBLE_COLLECTIONS_PATH=/path/to/collections
+----
++
 . Install the link:https://gitlab.cee.redhat.com/ansible/aap-containerized-installer[containerized installer collection]. Make certain to include the trailing dot with the command.
-
++
 ----
 ansible-galaxy collection install .
 ----
