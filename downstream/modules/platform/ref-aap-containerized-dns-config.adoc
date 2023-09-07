@@ -2,7 +2,7 @@
 
 [id="aap-containerized-dns-config_{context}"]
 
-= {PlatformNameShort} Containerized DNS Configuration
+= {PlatformNameShort} containerized DNS configuration
 
 [role="_abstract"]
 

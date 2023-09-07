@@ -16,7 +16,7 @@ controller_postinstall=true
 ----
 +
 
-. The default is false, so this must be enabled to activate the postinstaller. An AAP license is required for this feature and must reside on the local filesystem so it can be automatically loaded:
+. The default is false, so this must be enabled to activate the postinstaller. An {PlatformNameShort} license is required for this feature and must reside on the local filesystem so it can be automatically loaded:
 +
 ----
 controller_license_file=/full_path_to/manifest_file.zip
@@ -30,9 +30,9 @@ controller_postinstall_repo_url=https://your_cac_scm_repo
 controller_postinstall_dir=/full_path_to_where_you_want_the pulled_content_to_reside
 ----
 
-Definition files use the link:https://console.redhat.com/ansible/automation-hub/namespaces/infra/[infra certified collections]. The link:https://console.redhat.com/ansible/automation-hub/repo/validated/infra/controller_configuration/[controller_configuration] collection is preloaded as part of the installation and use the installation controller credentials you supply in the inventory file for access into the AAP controller, so you simply need to provide the YAML configuration files. Refer to the YAML Example for automatically creating a local link:https://console.redhat.com/ansible/automation-hub/repo/validated/infra/controller_configuration/content/role/users/[user account]. You can setup {PlatformNameShort} configuration attributes such as credentials, LDAP settings, users/teams, organizations, projects, inventory/hosts, job and workflow templates.
+Definition files use the link:https://console.redhat.com/ansible/automation-hub/namespaces/infra/[infra certified collections]. The link:https://console.redhat.com/ansible/automation-hub/repo/validated/infra/controller_configuration/[controller_configuration] collection is preloaded as part of the installation and use the installation controller credentials you supply in the inventory file for access into the {PlatformNameShort} controller, so you simply need to provide the YAML configuration files. Refer to the *YAML Example* for automatically creating a local link:https://console.redhat.com/ansible/automation-hub/repo/validated/infra/controller_configuration/content/role/users/[user account]. You can setup {PlatformNameShort} configuration attributes such as credentials, LDAP settings, users/teams, organizations, projects, inventory/hosts, job and workflow templates.
 
-The following example shows a sample *your-config.yml* file defining and loading controller job templates. The example demonstrates a simple change to the preloaded demo example provided with an AAP installation."
+The following example shows a sample *your-config.yml* file defining and loading controller job templates. The example demonstrates a simple change to the preloaded demo example provided with an AAP installation.
 
 ----
 /full_path_to_your_configuration_as_code/

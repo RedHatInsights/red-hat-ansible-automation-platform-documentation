@@ -25,4 +25,4 @@ rhel-9-for-x86_64-baseos-rpms                              Red Hat Enterprise Li
 . Ensure that these repos and only these repos are available to the host OS. If you need to know how to do this use this guide:
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/package_manifest/repositories.
 
-. Ensure that the host has DNS configured and can resolve hos
+. Ensure that the host has DNS configured and can resolve hostnames and IPs using a fully qualified domain name (FQDN). This is essential to ensure services can talk to one another.

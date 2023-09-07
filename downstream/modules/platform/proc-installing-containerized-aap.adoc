@@ -9,7 +9,7 @@
 
 Installation of {PlatformNameShort} is controlled with inventory files. Inventory files define the hosts and containers used and created, variables for components, and other information needed to customize the installation.
 
-For convenience an example inventory file is provided, that you can copy and modify to quidkly get started.
+For convenience an example inventory file is provided, that you can copy and modify to quickly get started.
 
 The boilerplate inventory file is included in the collection directory. Follow the instructions in the file to complete your configuration.
 
@@ -91,7 +91,7 @@ eda_pg_password=<set your own>
 # -----------------------------
 ----
 
-Use the following command to install containerized AAP{PlatformNameShort}:
+Use the following command to install containerized {PlatformNameShort}:
 
 ----
 ansible-playbook -i </path/to/inventory> ansible.containerized_installer.install

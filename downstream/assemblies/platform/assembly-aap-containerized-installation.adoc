@@ -17,7 +17,7 @@ endif::[]
 [role="_abstract"]
 Ansible Automation Platform is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
 
-This guide helps you to understand the installation requirements and processes behind our new containerized version of Ansible Automation Platform. This initial version is based upon {PlatformNameShort} 2.4 and is being released as a Technical Preview. Please refer to this article link:https://access.redhat.com/support/offerings/techpreview[Technology Preview Features Support Scope]to understand what a technical preview entails.
+This guide helps you to understand the installation requirements and processes behind our new containerized version of Ansible Automation Platform. This initial version is based upon {PlatformNameShort} 2.4 and is being released as a Technical Preview. Please see link:https://access.redhat.com/support/offerings/techpreview[Technology Preview Features Support Scope] to understand what a technical preview entails.
 
 
 .Prerequisites
