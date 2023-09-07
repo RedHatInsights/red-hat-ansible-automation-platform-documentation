@@ -22,16 +22,16 @@ awx-manage print_settings LOG_AGGREGATOR_MAX_DISK_USAGE_GB
 +
 If this field is not set to the organizationally defined log capture size, then follow the configuration steps.
 
-. Check `LOG_AGGREGATOR_MAX_DISK_USAGE_PATH` field in the {ControllerName} configuration for the log file location to `/var/log/awx`.  On the host, execute:
+. Check `LOG_AGGREGATOR_MAX_DISK_USAGE_PATH` field in the {ControllerName} configuration for the log file location to `/var/lib/awx`.  On the host, execute:
 +
 ----
 awx-manage print_settings LOG_AGGREGATOR_MAX_DISK_USAGE_PATH
 ----
 +
-If this field is not set to `/var/log/awx`, then follow these configuration steps: 
+If this field is not set to `/var/lib/awx`, then follow these configuration steps: 
 +
 --
-.. Open a web browser and navigate to https://<automation controller server>/api/v2/settings/logging/, where <FQDN> is the fully-qualified hostname of your {ControllerName}. If the btn:[Log In]" button is displayed, click it, log in as an {ControllerName} adminstrator account, and continue.
+.. Open a web browser and navigate to \https://<automation controller server>/api/v2/settings/logging/, where <automation controller server> is the fully-qualified hostname of your {ControllerName}. If the btn:[Log In] option is displayed, click it, log in as an {ControllerName} adminstrator account, and continue.
 
 .. In the Content section, modify the following values, then click btn:[PUT]:
 +
