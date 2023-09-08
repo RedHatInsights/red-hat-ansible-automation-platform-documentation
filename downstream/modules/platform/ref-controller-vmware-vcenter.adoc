@@ -1,0 +1,63 @@
+[id="controller-vmware-vcenter"]
+
+= VMware vCenter
+
+[literal, options="nowrap" subs="+attributes"]
+----
+compose:
+  ansible_host: guest.ipAddress
+  ansible_ssh_host: guest.ipAddress
+  ansible_uuid: 99999999 | random | to_uuid
+  availablefield: availableField
+  configissue: configIssue
+  configstatus: configStatus
+  customvalue: customValue
+  effectiverole: effectiveRole
+  guestheartbeatstatus: guestHeartbeatStatus
+  layoutex: layoutEx
+  overallstatus: overallStatus
+  parentvapp: parentVApp
+  recenttask: recentTask
+  resourcepool: resourcePool
+  rootsnapshot: rootSnapshot
+  triggeredalarmstate: triggeredAlarmState
+filters:
+- runtime.powerState == "poweredOn"
+keyed_groups:
+- key: config.guestId
+  prefix: ''
+  separator: ''
+- key: '"templates" if config.template else "guests"'
+  prefix: ''
+  separator: ''
+plugin: community.vmware.vmware_vm_inventory
+properties:
+- availableField
+- configIssue
+- configStatus
+- customValue
+- datastore
+- effectiveRole
+- guestHeartbeatStatus
+- layout
+- layoutEx
+- name
+- network
+- overallStatus
+- parentVApp
+- permission
+- recentTask
+- resourcePool
+- rootSnapshot
+- snapshot
+- triggeredAlarmState
+- value
+- capability
+- config
+- guest
+- runtime
+- storage
+- summary
+strict: false
+with_nested_properties: true   
+----

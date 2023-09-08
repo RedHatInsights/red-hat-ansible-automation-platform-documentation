@@ -40,7 +40,7 @@ include::platform/assembly-controller-search.adoc[leveloffset=+1]
 //17 Projects
 //18 Project Signing and Verification
 //19 Inventories
-//20 Supported Inventory Plugin Templates
+include::platform/assembly-controller-inventory-templates.adoc[leveloffset=+1]
 //21 Job Templates
 //22 Job Slicing
 //23 Workflows
