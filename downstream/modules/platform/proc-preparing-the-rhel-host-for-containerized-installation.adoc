@@ -2,7 +2,7 @@
 
 [id="preparing-the-rhel-host-for-containerized-installation_{context}"]
 
-= Preparing-the-rhel-host-for-containerized-installation
+= Preparing the RHEL host for containerized installation
 
 [role="_abstract"]
 
