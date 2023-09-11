@@ -44,7 +44,6 @@ Your system must meet the following minimum system requirements to install and r
 
 
 include::platform/proc-preparing-the-rhel-host-for-containerized-installation.adoc[leveloffset=+1]
-include::platform/ref-aap-containerized-dns-config.adoc[leveloffset=+1]
 include::platform/proc-installing-ansible-core.adoc[leveloffset=+1]
 include::platform/proc-downloading-containerized-aap.adoc[leveloffset=+1]
 include::platform/proc-using-postinstall.adoc[leveloffset=+1]

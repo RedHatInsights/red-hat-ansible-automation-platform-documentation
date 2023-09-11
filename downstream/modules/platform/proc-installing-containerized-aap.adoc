@@ -11,8 +11,6 @@ Installation of {PlatformNameShort} is controlled with inventory files. Inventor
 
 For convenience an example inventory file is provided, that you can copy and modify to quickly get started.
 
-The boilerplate inventory file is included in the collection directory. Follow the instructions in the file to complete your configuration.
-
 * Edit the inventory file by replacing the *< >* placeholders with your specific variables, and uncommenting any lines specific to your needs.
 
 
@@ -55,8 +53,8 @@ postgresql_admin_password=<set your own>
 registry_username=<your RHN username>
 registry_password=<your RHN password>
 # If using the bundled installer, you need to alter defaults by using:
-#bundle_install= true
-#bundle_dir: <full path to the bundle directory/bundle name>
+#bundle_install=true
+#bundle_dir=<full path to the bundle directory/bundle name>
 
 # AAP Controller - mandatory
 # ------------------------------
@@ -94,7 +92,7 @@ eda_pg_password=<set your own>
 Use the following command to install containerized {PlatformNameShort}:
 
 ----
-ansible-playbook -i </path/to/inventory> ansible.containerized_installer.install
+ansible-playbook -i ansible.containerized_installer.install
 ----
 
 

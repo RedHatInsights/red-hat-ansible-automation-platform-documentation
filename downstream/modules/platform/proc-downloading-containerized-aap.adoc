@@ -10,27 +10,30 @@
 
 . Download the latest installer tarball from link:https://access.redhat.com/downloads/content/480/ver=2.4/rhel---9/2.4/x86_64/product-software[access.redhat.com]. This can be done directly within the RHEL host, which saves time.
 
-. Copy the exported subscription manifest file.
-
 . If you have downloaded the tarball and optional manifest zip file onto your laptop, copy them onto your RHEL host.
-+
-----
-$ wget <tar.gz>
-----
 +
 Decide where you would like the installer to reside on the filesystem. Installation related files will be created under this location and require at least 10Gb for the initial installation.
 +
-. Unpack the installer tarball into your installation directory. 
+. Unpack the installer tarball into your installation directory, and cd into the unpacked directory. 
++
+.. online installer
 +
 ----
-$ tar xfvz <tar.gz>
+$ tar xfvz ansible-automation-platform-containerized-setup-2.4-1.tar.gz
 ----
++
+.. bundled installer
++
+----
+$ tar xfvz ansible-automation-platform-containerized-setup-bundle-2.4-1-<arch name>.tar.gz
+----
++
+Ansible collections will already be installed inside the directory called *collections*. You will have to set *ANSIBLE_COLLECTIONS_PATH* environment variable to the directory path to consume the ansible collections.
+
 +
 . Set *ANSIBLE_COLLECTIONS_PATH*: 
-+
 ----
-export ANSIBLE_COLLECTIONS_PATH=/path/to/collections
+$ export ANSIBLE_COLLECTIONS_PATH=/path/to/ansible-automation-platform-containerized-setup-2.4-1/collections
+
 ----
 
-
-NOTE: Internet access is required for this. If in an offline environment, download and copy the collections listed in the *requirements.yml* to the server and install them.
