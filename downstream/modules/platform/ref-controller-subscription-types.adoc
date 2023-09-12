@@ -1,0 +1,24 @@
+[id="ref-controller-subscription-types"]
+
+= Subscription Types
+
+{PlatformName} is provided at various levels of support and number of machines as an annual subscription.
+
+* *Standard:*
+** Manage any size environment
+** Enterprise 8x5 support and SLA
+** Maintenance and upgrades included
+** Review the SLA at https://access.redhat.com/support/offerings/production/sla
+** Review the Red Hat Support Severity Level Definitions at https://access.redhat.com/support/policy/severity
++
+* *Premium:*
+** Manage any size environment, including mission-critical environments
+** Premium 24x7 support and SLA
+** Maintenance and upgrades included
+** Review the SLA at https://access.redhat.com/support/offerings/production/sla
+** Review the Red Hat Support Severity Level Definitions at https://access.redhat.com/support/policy/severity
+
+All subscription levels include regular updates and releases of {ControllerName}, Ansible, and any other components of the Platform.
+
+For more information, contact Ansible through the Red Hat Customer Portal at https://access.redhat.com/ 
+or at http://www.ansible.com/contact-us/.

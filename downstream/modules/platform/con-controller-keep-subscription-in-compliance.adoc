@@ -9,4 +9,47 @@ Your subscription has two possible statuses:
 
 image::gs-controller-license-non-compliant.png[Subscription out of compliance]
 
+ifdef::controller-UG[]
+Compliance is computed as follows:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+managed > manifest_limit    =>  non-compliant
+managed =< manifest_limit   =>  compliant
+----
+
+Where:
+`managed` is the number of unique managed hosts without deletions, and
+`manifest_limit` is the number of managed hosts in the subscription manifest.
+
+Other important information displayed are:
+
+* *Hosts automated*: Host count automated by the job, which consumes the license count.
+* *Hosts imported*: Host count considering unique host names across all inventory sources (does not impact hosts remaining).
+* *Hosts remaining*: Total host count minus hosts automated.
+* *Hosts deleted*: Hosts that were deleted, freeing the license capacity.
+* *Active hosts previously deleted*: Number of hosts now active that were previously deleted.
+
+For demonstration purposes, suppose you have a subscription capacity of 10 hosts:
+
+* Starting with 9 hosts, 2 hosts were added and 3 hosts were deleted, you now have 8 hosts (compliant).
+* 3 hosts were automated again, now you have 11 hosts, which puts you over the subscription limit of 10 (non-compliant).
+* If you were to delete hosts, be sure to refresh the subscription details to see the change in count and status.
+
+Select btn:[Host Metrics] in the navigation panel to view the activity associated with hosts, such as those that have been automated and deleted. 
+Each unique hostname is listed and sorted by the user's preference.
+
+image::ug-host-metrics.png[Host metrics]
+
+[NOTE]
+====
+A scheduled task automatically updates these values on a weekly basis and deletes jobs with hosts that were last automated more than year ago.
+====
+
+Delete unnecessary hosts directly from the Host Metrics view by selecting the desired hosts and clicking btn:[Delete]. 
+These are soft-deleted, meaning their records are not removed, but are not being used and thereby not counted towards your subscription.
+endif::controller-UG[]
+
+ifdef::controller-GS[]
 For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#subscription-compliance[Subscription compliance] in the Automation Controller User Guide.
+endif::controller-GS[]

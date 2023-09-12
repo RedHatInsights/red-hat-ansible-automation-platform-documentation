@@ -4,4 +4,11 @@
 
 {ControllerNameStart} provides a way to generate a CSV output of the host metric data and host metric summary through the Command Line Interface (CLI) and to soft delete hosts in bulk through the API.
 
+ifdef::controller-GS[]
 For more information, see the link:https://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#host-metrics-utilities[Host metrics utilities] section of the Automation Controller User Guide.
+endif::controller-GS[]
+
+ifdef::controller-UG[]
+include::proc-controller-awx-manage-utility.adoc[leveloffset=+1]
+include::proc-controller-api-endpoint-functions.adoc[leveloffset=+1]
+endif::controller-UG[]

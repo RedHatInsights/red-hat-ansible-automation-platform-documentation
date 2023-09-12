@@ -2,9 +2,19 @@
 
 = Managing your Ansible {ControllerName} subscription
 
-Before you can use {ControllerName}, you must have a valid subscription, which authorizes using the controller.
+Before you can use {ControllerName}, you must have a valid subscription, which authorizes its use.
 
+ifdef::controller-UG[]
+include::platform/ref-controller-subscription-types.adoc[leveloffset=+1]
+endif::controller-UG[]
 include::platform/proc-controller-obtaining-subscriptions.adoc[leveloffset=+1]
+ifdef::controller-UG[]
+include::platform/proc-controller-obtaining-subscriptions-manifest.adoc[leveloffset=+1]
+endif::controller-UG[]
 include::platform/proc-controller-importing-subscriptions.adoc[leveloffset=+1]
+ifdef::controller-UG[]
+include::platform/proc-controller-adding-subscription-manually.adoc[leveloffset=+1]
+include::platform/proc-controller-attaching-subscriptions.adoc[leveloffset=+1]
+endif::controller-UG[]
 include::platform/con-controller-keep-subscription-in-compliance.adoc[leveloffset=+1]
 include::platform/con-controller-host-metric-utilities.adoc[leveloffset=+1]

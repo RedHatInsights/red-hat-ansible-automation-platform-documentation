@@ -1,0 +1,14 @@
+[id="proc-controller-apo-endpoint-functions"]
+
+= API endpoint functions
+
+The API lists only non-deleted records and are sortable by `last_automation` and `used_in_inventories` columns.
+
+Alternatively, you can use the host metric API endpoint,`api/v2/host_metric` to soft-delete hosts:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+api/v2/host_metric <n> DELETE
+----
+
+A monthly scheduled task automatically deletes jobs that uses hosts from the Host Metric table that were last automated more than year ago.

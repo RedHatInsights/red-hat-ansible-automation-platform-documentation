@@ -1,0 +1,60 @@
+[id="proc-controller-attaching-subscriptions"]
+
+= Attaching Subscriptions
+
+You *must* have valid subscriptions attached before installing {PlatformNameShort}.
+
+[NOTE]
+====
+Attaching subscriptions is unnecessary if your Red Hat account has enabled link:https://access.redhat.com/articles/simple-content-access[Simple Content Access Mode]. 
+However, you must register to _Red Hat Subscription Management_ (RHSM) or Red Hat Satellite before installing  {PlatformNameShort}.
+====
+
+Use the following method to attach your subscription:
+
+.Procedure
+. To find out the `pool_id` of your subscription:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+# subscription-manager list --available --all | grep "Ansible Automation Platform" -B 3 -A 6
+----
+
+. The command returns the following:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+Subscription Name: Red Hat Ansible Automation Platform, Premium (5000 Managed Nodes)
+Provides: Red Hat Ansible Engine
+Red Hat Single Sign-On
+Red Hat Ansible Automation Platform
+SKU: MCT3695
+Contract: ********
+Pool ID: ********************
+Provides Management: No
+Available: 4999
+Suggested: 1
+----
+
+. To attach this subscription:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+# subscription-manager attach --pool=<pool_id>
+----
+
+. If this is correct, and all nodes have attached, then the repositories will be found.
+. To check whether the subscription attached successfully:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+# subscription-manager list --consumed
+----
+
+. To remove this subscription:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+#subscription-manager remove --pool=<pool_id>
+----
+

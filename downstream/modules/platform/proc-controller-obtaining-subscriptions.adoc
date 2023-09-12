@@ -13,10 +13,20 @@ See xref:controller-importing-subscriptions[Importing a subscription].
 * If you have a non-Ansible Red Hat or Satellite subscription, access {ControllerName} with one of these methods:
 ** Enter your username and password on the license page.
 ** Obtain a subscriptions manifest from the link:https://access.redhat.com/management/subscription_allocations[Subscription Allocations] page on the Red Hat Customer Portal. 
+ifdef::controller-GS[]
 For detailed information, see link:http://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#obtain-sub-manifest[Obtaining a subscriptions manifest] in the Automation Controller User Guide.
+endif::controller-GS[]
+ifdef::controller-UG[]
+For more information, see xref:proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest].
+endif::controller-UG[]
 ** If you do not have a {PlatformName} subscription, go to link:https://www.redhat.com/en/technologies/management/ansible/trial[Try {PlatformName}] and request a trial subscription.
 
 .Additional resources
 
+ifdef::controller-GS[]
 To understand what is supported with your subscription, see link:http://docs.ansible.com/automation-controller/4.4/html/userguide/license-support.html#licenses-feat-support[Red Hat Ansible Automation Platform Controller Licensing, Updates, and Support]. 
+endif::controller-GS[]
+ifdef::controller-UG[]
+To understand what is supported with your subscription, see xref:assembly-controller-licensing[{ControllerNameStart} licensing, updates and support]. 
+endif::controller-UG[]
 If you have issues with your subscription, contact your Sales Account Manager or Red Hat Customer Service at: https://access.redhat.com/support/contact/customerService/.

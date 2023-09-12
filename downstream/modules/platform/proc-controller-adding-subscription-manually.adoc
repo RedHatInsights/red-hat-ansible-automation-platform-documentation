@@ -1,0 +1,14 @@
+[id="proc-controller-adding-subscription-manually"]
+
+= Adding a subscription manually
+
+If you are unable to apply or update the subscription information using the user interface, you can upload the subscriptions manifest manually in an Ansible playbook using the license module in the `ansible.controller` collection:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+- name: Set the license using a file
+  license:
+  manifest: "/tmp/my_manifest.zip"
+----
+
+For more information, see the link:https://console.redhat.com/ansible/automation-hub/repo/published/ansible/controller/content/module/license/[Automation controller license module].
