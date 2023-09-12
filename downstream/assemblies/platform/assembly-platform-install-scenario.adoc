@@ -21,8 +21,8 @@ There are a number of supported installation scenarios for {PlatformName}. To in
 * xref:ref-example-platform-ext-database-customer-provided_platform-install-scenario[{PlatformNameShort} with an external (customer provided) database]
 * xref:ref-single-eda-controller-with-internal-db_platform-install-scenario[Single {EDAcontroller} node with internal database]
 * xref:ref-standlone-hub-inventory_platform-install-scenario[Standalone {HubName} with internal database]
-* xref:ref-standlone-hub-ext-database-inventory_platform-install-scenario[Single {ControllerName} with external (installer managed) database]
-* xref:ref-standalone-hub-ext-database-customer-provided_platform-install-scenario[Single {ControllerName} with external (customer provided) database]
+* xref:ref-standlone-hub-ext-database-inventory_platform-install-scenario[Single {HubName} with external (installer managed) database]
+* xref:ref-standalone-hub-ext-database-customer-provided_platform-install-scenario[Single {HubName} with external (customer provided) database]
 * xref:ref-ldap-config-on-pah_platform-install-scenario[LDAP configuration on {PrivateHubName}]
 
 
