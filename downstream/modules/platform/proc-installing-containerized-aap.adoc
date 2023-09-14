@@ -92,7 +92,7 @@ eda_pg_password=<set your own>
 Use the following command to install containerized {PlatformNameShort}:
 
 ----
-ansible-playbook -i ansible.containerized_installer.install
+ansible-playbook -i inventory ansible.containerized_installer.install
 ----
 
 
