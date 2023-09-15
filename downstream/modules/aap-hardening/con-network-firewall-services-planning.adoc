@@ -10,7 +10,7 @@
 {PlatformNameShort} requires access to a network to integrate to external auxiliary services and to manage target environments and resources such as hosts, other network devices, applications, cloud services. The link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#ref-network-ports-protocols_planning[network ports and protocols] section of the {PlatformNameShort} planning guide describes how {PlatformNameShort} components interact on the network as well as which ports and protocols are used, as shown in the following diagram:
 
 .{PlatformNameShort} Network ports and protocols
-image::ansible-network-ports-protocols.png[Interaction of Ansible Automation Platform components on the network with information about the ports and protocols that are used.]
+image::aap-network-ports-protocols-314.png[Interaction of Ansible Automation Platform components on the network with information about the ports and protocols that are used.]
 
 When planning firewall or cloud network security group configurations related to {PlatformNameShort}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#ref-network-ports-protocols_planning[Network ports and protocols] section of the {PlatformNameShort} Planning Guide to understand what network ports need to be opened on a firewall or security group.
 
