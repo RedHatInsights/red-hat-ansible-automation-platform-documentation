@@ -1,0 +1,36 @@
+ifdef::context[:parent-context: {context}]
+
+[id="assembly-controller-user-interface"]
+
+:context: controller-UI
+
+= The User Interface
+
+The {ControllerName} _User Interface_ (UI) provides a graphical framework for your IT orchestration requirements. 
+The navigation panel provides quick access to {ControllerName} resources, such as *Projects*, *Inventories*, *Job Templates*, and *Jobs*.
+
+[NOTE]
+====
+The {ControllerName} UI is available for technical preview and is subject to change in future releases. 
+To preview the new UI, click the *Enable Preview of New User Interface* toggle to *On* from the *Miscellaneous System* option of the *Settings* menu.
+
+//image:configure-tower-system-misc-preview-newui.png[image]
+
+After saving, logout and log back in to access the new UI from the preview banner. 
+To return to the current UI, click the link on the top banner where indicated.
+
+//image:ug-dashboard-preview-banner.png[image]
+====
+
+Access your user profile, the *About* page, view related documentation, or log out using the icons in the page header. 
+
+You can view the activity stream for that user by clicking the btn:[Activity Stream] image:activitystream.png[activitystream,15,15] icon.
+
+include::platform/con-controller-views.adoc[leveloffset=+1]
+include::platform/con-controller-resources.adoc[leveloffset=+1]
+include::platform/con-controller-access.adoc[leveloffset=+1]
+include::platform/con-controller-administration.adoc[leveloffset=+1]
+//For next version/tech preview
+//include::platform/con-controller-analytics.adoc[leveloffset=+1] not created yet
+//Settings not included in tech preview
+include::platform/con-controller-settings.adoc[leveloffset=+1]

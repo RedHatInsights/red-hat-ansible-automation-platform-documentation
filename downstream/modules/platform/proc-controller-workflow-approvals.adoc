@@ -1,0 +1,8 @@
+[id="proc-controller-workflow-approvals"]
+
+= Workflow Approvals
+
+* From the navigation panel, select btn:[Workflow Approvals] to see your workflow approval queue.
+The list contains actions that require you to approve or deny before a job can proceed.
+
+//See xref:ug_wf_approval_nodes[] for further detail.

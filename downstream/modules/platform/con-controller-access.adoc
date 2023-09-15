@@ -1,0 +1,9 @@
+[id="con-controller-access"]
+
+= Access Menu
+
+The *Access* menu enables you to configure who has permissions to {ControllerName} resources:
+
+* Organizations
+* Users
+* Teams

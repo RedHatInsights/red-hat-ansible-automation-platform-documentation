@@ -1,0 +1,9 @@
+[id="proc-controller-host-metrics"]
+
+= Host Metrics
+
+* From the navigation panel, select btn:[Host Metrics] to see the activity associated with hosts, which includes counts on those that have been automated, used in inventories, and deleted.
+
+image:ug-host-metrics.png[Host Metrics]
+
+For further information, see xref:controller-keep-subscription-in-compliance[Troubleshooting: Keeping your subscription in compliance].

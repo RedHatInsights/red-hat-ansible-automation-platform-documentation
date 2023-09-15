@@ -25,8 +25,7 @@ include::platform/assembly-UG-overview.adoc[leveloffset=+1]
 include::platform/assembly-controller-licensing.adoc[leveloffset=+1]
 include::platform/assembly-controller-login.adoc[leveloffset=+1]
 include::platform/assembly-controller-managing-subscriptions.adoc[leveloffset=+1]
-//5 User Interface
-//6 -> Either combine or move to Admin?
+include::platform/assembly-controller-user-interface.adoc[leveloffset=+1]
 include::platform/assembly-controller-search.adoc[leveloffset=+1]
 //8 Organizations
 //9 Users

@@ -1,0 +1,24 @@
+[id="con-controller-views"]
+
+= Views
+
+The {ControllerName} UI provides several options for viewing information.
+
+* xref:proc-controller-viewing-dashboard[Dashboard view]
+* xref:proc-controller-jobs-view[Jobs view]
+//The following aren't included in the Views menu for the tech preview. 
+* xref:proc-controller-schedules-view[Schedules view]
+* xref:proc-controller-activity-stream[Activity Stream]
+* xref:proc-controller-workflow-approvals[Workflow Approvals]
+//Host Metrics is included in the Analytics menu
+* xref:proc-controller-host-metrics[Host Metrics]
+
+include::proc-controller-viewing-dashboard.adoc[leveloffset=+1]
+include::proc-controller-jobs-view.adoc[leveloffset=+1]
+include::proc-controller-schedules-view.adoc[leveloffset=+1]
+include::proc-controller-activity-stream.adoc[leveloffset=+1]
+include::proc-controller-workflow-approvals.adoc[leveloffset=+1]
+include::proc-controller-host-metrics.adoc[leveloffset=+1]
+
+
+

@@ -88,6 +88,7 @@ Custom Ansible environment support enables you to have different Ansible environ
 
 = Authentication enhancements
 Automation controller supports:
+
 * LDAP
 * SAML
 * token-based authentication

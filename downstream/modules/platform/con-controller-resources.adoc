@@ -1,0 +1,11 @@
+[id="con-controller-resources"]
+
+= Resources Menu
+
+The *Resources* menu provides access to the following components of {ControllerName}:
+
+* Templates
+* Credentials
+* Projects
+* Inventories
+* Hosts

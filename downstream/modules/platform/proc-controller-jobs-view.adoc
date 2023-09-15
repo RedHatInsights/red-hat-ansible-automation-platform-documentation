@@ -1,0 +1,8 @@
+[id="proc-controller-jobs-view"]
+
+= Jobs view
+
+* From the navigation panel, select btn:[Jobs].
+This view displays the jobs that have run, including projects, templates, management jobs, SCM updates, and playbook runs.
+
+image:ug-dashboard-jobs-view.png[Jobs view]

@@ -1,0 +1,20 @@
+[id="proc-controller-activity-stream"]
+
+= Activity Stream
+
+* From the navigation panel, select btn:[Activity Stream] to display Activity Streams.
+Most screens have an Activity Stream image:activitystream.png[activitystream,15,15] icon. 
+
+image:users-activity-stream.png[Activity Stream]
+
+An Activity Stream shows all changes for a particular object. 
+For each change, the Activity Stream shows the time of the event, the user that initiated the event, and the action. 
+The information displayed varies depending on the type of event. 
+Click the btn:[Examine] image:examine.png[View Event Details,15,15] icon to display the event log for the change.
+
+image:activity-stream-event-log.png[event log]
+
+You can filter the Activity Stream by the initiating user, by system (if it was system initiated), or by any related object, such as a credential, job template, or schedule.
+
+The Activity Stream on the main Dashboard shows the Activity Stream for the entire instance. 
+Most pages permit viewing an activity stream filtered for that specific object.

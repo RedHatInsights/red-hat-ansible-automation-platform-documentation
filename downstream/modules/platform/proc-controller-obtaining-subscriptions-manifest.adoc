@@ -24,7 +24,7 @@ Contact an `access.redhat.com` administrator, or organization administrator who 
 
 . Enter a *Name* for your subscription and select *Satellite 6.13* from the *Type* drop-down menu.
 +
-image::subscriptions-allocation-create.png[Create a Subscriptions Allocation]
+image::subscription-allocations-create.png[Create a Subscriptions Allocation]
 +
 . Click btn:[Create].
 . When your subscriptions manifest is successfully created, the relevant information is displayed. 
@@ -42,7 +42,7 @@ To obtain a subscriptions manifest, you must add an entitlement to your subscrip
 . If there are no subscriptions to display, click btn:[Add Subscriptions].
 . The following screen enables you to select and add entitlements to put in the manifest file. 
 +
-image::aap-subscription.png[{PlatformNameShort} subscriptions]
+image::aap-subscriptions.png[{PlatformNameShort} subscriptions]
 +
 You can select multiple {PlatformNameShort} subscriptions in your subscription allocation. 
 Valid {PlatformNameShort} subscriptions commonly go by the name _"Red Hat Ansible Automation…"_.

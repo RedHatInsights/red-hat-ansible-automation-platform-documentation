@@ -1,30 +1,70 @@
-[id="controller-viewing-dashboard"]
+[id="proc-controller-viewing-dashboard"]
 
+ifdef::controller-GS[]
 = Viewing the Dashboard
 
 .Procedure
 
 * Click the *Menu* icon to hide or display the navigation panel.
-** On the main dashboard, a summary appears listing your current *Job status*. 
-You can filter the job status within a period of time or by job type. 
-** You can view summaries of *Recent Jobs* ran and *Recent Templates* in their respective tabs. 
-These can be sorted by various attributes.
+** On the main dashboard, a summary appears listing your current *Job status*.
+** You can filter the job status within a period of time or by job type. 
+** You can view summaries of *Recent Jobs* and *Recent Templates* in their respective tabs.
 
 image::controller-home-dashboard.png[Dashboard home]
 
+endif::controller-GS[]
+ifdef::controller-UG[]
+= Dashboard View
+
+Use the navigation menu to complete the following tasks:
+
+* Display different views
+* Navigate to your resources
+* Grant access to users
+* Administer automation controller features in the UI
+
+.Procedure
+
+* From the navigation panel, select btn:[Views] to hide or display the *Views* options.
+* The dashboard displays a summary of your current *Job status*.
+** You can filter the job status within a period of time or by job type. 
+
+image::controller-home-dashboard.png[Dashboard home]
+//New image for next version
+//image::ug-dashboard-job-activity.png[Job Activity]
+
+** You can also display summaries of *Recent Jobs* and *Recent Templates*.
+
+The *Recent Jobs* tab displays which jobs were most recently run, their status, and the time at which they were run.
+
+image::ug-dashboard-recent-jobs.png[Recent jobs]
+
+The *Recent Templates* tab displays a summary of the most recently used templates. 
+You can also access this summary by selecting btn:[Templates] from the navigation menu.
+
+image:ug-dashboard-recent-templates.png[Recent templates]
+
+[NOTE]
+====
+Click btn:[Dashboard] on the navigation panel, or the *{PlatformNameShort}* logo at any time to return to the Dashboard.
+====
+endif::controller-UG[]
+
+ifdef::controller-GS[]
 The last item in the navigation panel is *Settings*, which provides access to {ControllerName} configuration settings.
 
-The *Settings* page allows administrators to configure  the following settings:
+The *Settings* page allows administrators to configure the following settings:
 
 * Authentication
 * Jobs
 * System-level attributes
 * Customize the UI, and product license information
 
-For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/configure_tower_in_tower.html#ag-configure-tower[Controller Configuration]  in the Automation Controller Administration Guide.
+For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/configure_tower_in_tower.html#ag-configure-tower[Controller Configuration] in the Automation Controller Administration Guide.
 
 [NOTE]
 ====
 To launch a simple playbook, you must set up a number of configuration options. 
 Completing the getting started configuration tasks now ensures that {ControllerName} is configured properly and permits easier executions of more involved playbooks later on.
 ====
+endif::controller-GS[]

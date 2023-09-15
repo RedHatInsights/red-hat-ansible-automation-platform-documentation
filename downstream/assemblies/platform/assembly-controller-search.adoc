@@ -1,6 +1,7 @@
 ifdef::context[:parent-context: {context}]
 
 [id="assembly-controller-search"]
+
 = {ControllerNameStart} search
 
 :context: search-controller

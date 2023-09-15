@@ -1,0 +1,8 @@
+[id="proc-controller-schedules-view"]
+
+= Schedules view
+
+
+This view shows all the scheduled jobs that are configured.
+
+image:ug-dashboard-schedule-view.png[image]
