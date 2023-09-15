@@ -1,0 +1,14 @@
+[id="event-driven-ansible-system-requirements"]
+
+= {EDAcontroller} system requirements
+
+The {EDAcontroller} is a single-node system capable of handling a variable number of long-running processes (such as, Rulebook activations) on-demand, depending on the number of CPU cores. Use the following minimum requirements to execute a maximum of 9 simultaneous activations:
+
+[cols="a,a",options="header"]
+|===
+h| Requirement | Required
+| *RAM* | 16 GB
+| *CPUs* | 4
+| *Local disk* | 40 GB minimum
+|===
+
