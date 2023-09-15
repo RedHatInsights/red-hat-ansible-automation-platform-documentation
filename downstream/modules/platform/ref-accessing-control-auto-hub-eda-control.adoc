@@ -31,14 +31,16 @@ Login as the admin user with the password you created for *controller_admin_pass
 
 If you supplied the license manifest as part of the installation, the {PlatformNameShort} dashboard is displayed. If you did not supply a license file, the *Subscription* screen is displayed where you must supply your license details. This is documented here: link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_operations_guide/assembly-aap-activate[Chapter 1. Activating Red Hat Ansible Automation Platform]. 
 
-.Accessing Automation Hub UI
+.Accessing {HubNameStart} UI
 
-The automation hub UI is available by default at:
+The {HubName} UI is available by default at:
+
 ----
 https://<hub node>:444
 ----
 
-Login as the admin user with the password you created for *controller_admin_password*.
+Login as the admin user with the password you created for *hub_admin_password*.
+
 
 .Accessing {EDAName} UI
 
@@ -47,4 +49,24 @@ The {EDAName} UI is available by default at:
 https://<eda node>:445
 ----
 
-Login as the admin user with the password you created for *controller_admin_password*.
+Login as the admin user with the password you created for *eda_admin_password*.
+
+
+.Uninstalling containerized {PlatformNameShort}
+
+To uninstall a containerized deployment, execute the *uninstall.yml* playbook.
+----
+$ ansible-playbook -i inventory ansible.containerized_installer.uninstall
+----
+
+This will stop all systemd units and containers and then delete all resources used by the containerized installer such as:
+
+* config and data directories/files
+* systemd unit files
+* podman containers and images
+* RPM packages
+
+To keep container images, you can set the *container_keep_images* variable to true.
+----
+$ ansible-playbook -i inventory ansible.containerized_installer.uninstall -e container_keep_images=true
+----
