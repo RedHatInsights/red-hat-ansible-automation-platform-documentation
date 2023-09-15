@@ -38,9 +38,13 @@ The automation hub UI is available by default at:
 https://<hub node>:444
 ----
 
-.Accessing Automation EDA UI
+Login as the admin user with the password you created for *controller_admin_password*.
 
-The Automation EDA UI is available by default at:
+.Accessing {EDAName} UI
+
+The {EDAName} UI is available by default at:
 ----
 https://<eda node>:445
 ----
+
+Login as the admin user with the password you created for *controller_admin_password*.

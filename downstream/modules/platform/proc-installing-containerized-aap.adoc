@@ -54,7 +54,7 @@ registry_username=<your RHN username>
 registry_password=<your RHN password>
 # If using the bundled installer, you need to alter defaults by using:
 #bundle_install=true
-#bundle_dir=<full path to the bundle directory/bundle name>
+#bundle_dir=</path/to/ansible-automation-platform-containerized-setup-bundle-2.4-1-<arch name>/bundle>
 
 # AAP Controller - mandatory
 # ------------------------------
