@@ -5,9 +5,9 @@
 
 [role="_abstract"]
 
-Using Ansible on the command line is a useful way to execute tasks that you don't repeat very frequently; for repeated tasks, writing a playbook is recommended.
+Using Ansible on the command line is a useful way to run tasks that you do not repeat very often. The recommended way to handle repeated tasks is to write a playbook.
 
-An ad-hoc command for Ansible on the command line follows this structure:
+An ad hoc command for Ansible on the command line follows this structure:
 
 -----
 $ ansible [pattern] -m [module] -a "[module options]"
