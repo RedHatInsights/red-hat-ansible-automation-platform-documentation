@@ -52,7 +52,7 @@ https://<eda node>:445
 Login as the admin user with the password you created for *eda_admin_password*.
 
 
-.Uninstalling containerized {PlatformNameShort}
+== Uninstalling containerized {PlatformNameShort}
 
 To uninstall a containerized deployment, execute the *uninstall.yml* playbook.
 ----
