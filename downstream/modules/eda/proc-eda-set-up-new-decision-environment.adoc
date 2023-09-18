@@ -8,8 +8,7 @@ The following steps describe how to import a decision environment into your {EDA
 
 * You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
 * You have set up a credential, if necessary. 
-For more information, refer to the link:https://docs.ansible.com/automation-controller/latest/html/userguide/credentials.html[Credentials] section
-of the {ControllerNameStart} documentation.
+For more information, see the xref:eda-set-up-credential[Setting up credentials] section.
 * You have pushed a decision environment image to an image repository or you chose to use the image `de-supported` provided at link:http://registry.redhat.io/[registry.redhat.io].
 
 .Procedure

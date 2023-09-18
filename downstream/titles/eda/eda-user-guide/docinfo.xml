@@ -3,7 +3,7 @@
 <productnumber>2.4</productnumber>
 <subtitle>Learn to configure and use {EDAcontroller} to enhance and expand automation</subtitle>
 <abstract>
-    <para> This guide helps you configure your {EDAcontroller} to set up new projects, decision environments, tokens to authenticate to Ansible Automation Platform Controller, and rulebook activation.</para>
+    <para> Learn how to configure your {EDAcontroller} to set up credentials, new projects, decision environments, tokens to authenticate to Ansible Automation Platform Controller, and rulebook activation.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>

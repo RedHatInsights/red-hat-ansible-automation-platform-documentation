@@ -6,6 +6,7 @@
 
 The following procedures form the user configuration:
 
+* xref:eda-set-up-credential[Setting up credentials]
 * xref:eda-set-up-new-project[Setting up a new project]
 * xref:eda-set-up-new-decision-environment[Setting up a new decision environment]
 * xref:eda-set-up-token[Setting up a token to authenticate to {PlatformNameShort} Controller]

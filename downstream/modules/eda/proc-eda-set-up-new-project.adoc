@@ -6,8 +6,7 @@
 
 * You are logged in to the {EDAcontroller} Dashboard as a Content Consumer.
 * You have set up a credential, if necessary. 
-For more information, refer to the link:https://docs.ansible.com/automation-controller/latest/html/userguide/credentials.html[Credentials]
-section of the {ControllerName} documentation.
+For more information, see the xref:eda-set-up-credential[Setting up credentials] section.
 * You have an existing repository containing rulebooks that are integrated with playbooks contained in a repository to be used by {ControllerName}.
 
 .Procedure
