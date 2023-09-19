@@ -49,6 +49,7 @@ include::platform/proc-downloading-containerized-aap.adoc[leveloffset=+1]
 include::platform/proc-using-postinstall.adoc[leveloffset=+1]
 include::platform/proc-installing-containerized-aap.adoc[leveloffset=+1]
 include::platform/ref-accessing-control-auto-hub-eda-control.adoc[leveloffset=+1]
+include::platform/proc-uninstalling-containerized-aap.adoc[leveloffset=+1]
 
 
 ifdef::parent-context-of-aap-containerized-installation[:context: {parent-context-of-aap-containerized-installation}]

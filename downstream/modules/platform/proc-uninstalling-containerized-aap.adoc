@@ -1,0 +1,24 @@
+:_content-type: PROCEDURE
+
+[id="uninstalling-containerized-aap_{context}"]
+= Uninstalling containerized {PlatformNameShort}
+
+[role="_abstract"]
+
+
+To uninstall a containerized deployment, execute the *uninstall.yml* playbook.
+----
+$ ansible-playbook -i inventory ansible.containerized_installer.uninstall
+----
+
+This will stop all systemd units and containers and then delete all resources used by the containerized installer such as:
+
+* config and data directories/files
+* systemd unit files
+* podman containers and images
+* RPM packages
+
+To keep container images, you can set the *container_keep_images* variable to true.
+----
+$ ansible-playbook -i inventory ansible.containerized_installer.uninstall -e container_keep_images=true
+----

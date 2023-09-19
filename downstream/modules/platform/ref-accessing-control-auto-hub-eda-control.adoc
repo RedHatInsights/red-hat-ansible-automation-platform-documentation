@@ -50,23 +50,3 @@ https://<eda node>:445
 ----
 
 Login as the admin user with the password you created for *eda_admin_password*.
-
-
-== Uninstalling containerized {PlatformNameShort}
-
-To uninstall a containerized deployment, execute the *uninstall.yml* playbook.
-----
-$ ansible-playbook -i inventory ansible.containerized_installer.uninstall
-----
-
-This will stop all systemd units and containers and then delete all resources used by the containerized installer such as:
-
-* config and data directories/files
-* systemd unit files
-* podman containers and images
-* RPM packages
-
-To keep container images, you can set the *container_keep_images* variable to true.
-----
-$ ansible-playbook -i inventory ansible.containerized_installer.uninstall -e container_keep_images=true
-----
