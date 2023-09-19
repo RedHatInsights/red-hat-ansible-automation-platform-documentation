@@ -1,0 +1,14 @@
+[id="red-controller-oganization-notifications"]
+
+= Work with Notifications
+
+Selecting the *Notifications* tab enables you to review any notification integrations you have set up.
+
+image:organizations-notifications-samples-list.png[Notifications]
+
+Use the toggles to enable or disable the notifications to use with your particular organization. 
+For more information, see [Enable and Disable Notifications].
+
+If no notifications have been set up, select btn:[Notifications] from the navigation panel.
+
+For information on configuring notification types, see [Notification Types.]

@@ -1,0 +1,25 @@
+[id="con-controller-access-organizations"]
+
+= Access to organizations
+
+* Select btn:[Access] when viewing your organization to display the users associated with this organization, and their
+roles.
+
+image:organizations-show-users-permissions-organization.png[Organization access]
+
+Use this page to complete the following tasks: 
+
+* manage the user membership for this organization. 
+Click btn:[Users] on the navigation panel to manage user membership on a per-user basis from the *Users* page. 
+* assign specific users certain levels of permissions within your organization.
+* enable them to act as an administrators for a particular resource. 
+For more information, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/security.html#rbac-ug[Role-Based Access Controls].
+
+Click a user to brings up that user's details.
+You can review, grant, edit, and remove associated permissions for that user.
+For more information, see Users
+//xref to come.
+
+include::proc-controller-add-organization-user.adoc[leveloffset=+1]
+include::ref-controller-organization-notifications.adoc[leveloffset=+1]
+

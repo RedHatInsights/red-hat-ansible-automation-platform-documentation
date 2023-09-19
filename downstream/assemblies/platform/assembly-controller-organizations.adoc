@@ -1,5 +1,6 @@
 [id="controller-organizations"]
 
+ifdef::controller-GS[]
 = Managing organizations in {ControllerName}
 
 An organization is a logical collection of users, teams, projects, and inventories. 
@@ -11,3 +12,26 @@ image::controller-tower-hierarchy.png[Hierarchy]
 
 include::platform/proc-controller-review-organizations.adoc[leveloffset=+1]
 include::platform/proc-controller-edit-an-organization.adoc[leveloffset=+1]
+endif::controller-GS[]
+ifdef::controller-UG[]
+= Organizations
+
+An organization is a logical collection of users, teams, projects, and inventories. 
+It is the highest level object in the controller object hierarchy.
+
+image::controller-tower-hierarchy.png[Hierarchy]
+
+From the navigation menu, select btn:[Organizations] to display the existing organizations for your installation. 
+
+image:organizations-home-showing-example-organization.png[Organizations]
+
+Organizations can be searched by *Name* or *Description*. 
+
+Modify organizations using the image:leftpencil.png[Edit,15,15] icon.
+Click btn:[Delete] to remove a selected organization.
+
+include::platform/proc-controller-create-organization.adoc[leveloffset=+1]
+include::platform/con-controller-access-organizations.adoc[leveloffset=+1]
+
+endif::controller-UG[]
+

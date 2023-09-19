@@ -1,0 +1,51 @@
+[id="proc-controller-create-organization"]
+
+= Creating an organization
+
+[NOTE]
+====
+{ControllerNameStart} automatically creates a default organization. 
+If you have a Self-support level license, you have only the default organization available and must not delete it.
+
+You can use the default organization as it is initially set up and edit it later.
+====
+
+. Click btn:[Add] to create a new organization.
++
+image:organizations-new-organization-form.png[Organizations- new organization form]
+
+. You can configure several attributes of an organization:
+
+* Enter the *Name* for your organization (required).
+* Enter a *Description* for the organization.
+* *Max Hosts* is only editable by a superuser to set an upper limit on the number of license hosts that an organization can have. 
+Setting this value to *0* signifies no limit. 
+If you try to add a host to an organization that has reached or exceeded its cap on hosts, an error message displays:
++
+The inventory sync output view also shows the host limit error.
++
+image:organizations-max-hosts-error-output-view.png[Error]
++
+Click btn:[Details] for additional information about the error.
++
+* Enter the name of the *Instance Groups* on which to run this organization.
+* Enter the name of the {ExecEnvShort} or search for one that exists on which to run this organization. 
+For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/upgrade-migration-guide/upgrade_to_ees.html#upgrade-venv[Upgrading to Execution Environments]
+* Optional: Enter the *Galaxy Credentials* or search from a list of existing ones.
+. Click btn:[Save] to finish creating the organization.
+
+When the organization is created, {ControllerName} displays the Organization details, and enable you to manage access and {ExecEnvShort} for the organization.
+
+image:organizations-show-record-for-example-organization.png[Organization details]
+
+From the *Details* tab, you can edit or delete the organization.
+
+[NOTE]
+====
+If you attempt to delete items that are used by other work items, a message lists the items are affected by the deletion and prompts you to confirm the deletion. 
+Some screens contain items that are invalid or have been deleted peviously, and will fail to run.
+====
+ 
+The following is an example of such a message:
+
+image:warning-deletion-dependencies.png[Warning]
