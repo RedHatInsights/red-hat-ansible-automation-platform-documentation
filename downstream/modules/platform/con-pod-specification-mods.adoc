@@ -103,4 +103,4 @@ In this case, it provides an ephemeral volume for the registry storage and a sec
 
 You can  modify the pod used to run jobs in a Kubernetes-based cluster using {ControllerName} by editing the pod specification in the {ControllerName} UI.  
 The pod specification that is used to create the pod that runs the job is in YAML format. 
-For further information on editing the pod specifications, see link:proc-customizing-pod-specs[Customizing the pod specification].
+For further information on editing the pod specifications, see xref:proc-customizing-pod-specs[Customizing the pod specification].
