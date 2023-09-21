@@ -1,0 +1,38 @@
+[id="proc-controller-user-permissions"]
+
+= Adding and removing user permissions
+
+To add permissions to a particular user:
+
+.Procedure
+. From the *Users* list view , click on the desired user.
+. On the *Details* page, click btn:[Add]. 
+This opens the *Add Permissions* wizard.
++
+image:users-add-permissions-form.png[Add Permissions Form]
+. Select the object for which the user will have access.
+. Click btn:[Next].
+. Click to select the resource to assign team roles and click btn:[Next].
++
+image:users-permissions-IG-select.png[image]
+
+. Click the checkbox beside the role to assign that role to your chosen type of resource. 
+Different resources have different options available.
++
+image:users-permissions-IG-roles.png[image]
+
+. Click btn:[Save].
+. The *Roles* page displays the updated profile for the user with the roles assigned for each selected resource.
+
+[NOTE]
+====
+You can also add teams, individual, or multiple users and assign them permissions at the object level.
+This includes templates, credentials, inventories, projects, organizations, or instance groups. 
+This feature reduces the time for an organization to onboard many users at one time.
+====
+
+.To remove permissions:
+* Click the image:disassociate.png[Disassociate,10,10] icon next to the resource. 
+This launches a confirmation dialog asking you to confirm the disassociation.
+
+

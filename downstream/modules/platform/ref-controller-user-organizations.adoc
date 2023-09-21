@@ -1,0 +1,14 @@
+[id="ref-cnontroller-user-organizations"]
+
+= Users - Organizations
+
+From the *Users > Details* page, select *Organizations* tab to display the list of organizations of which that user is a member.
+
+You can search this list by *Organization Name* or *Description*.
+
+[NOTE]
+====
+Organization membership cannot be modified from this display panel.
+====
+
+image:users-organizations-list-for-example-user.png[Users - Organizations list]

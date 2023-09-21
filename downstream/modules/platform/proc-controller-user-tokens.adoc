@@ -1,0 +1,35 @@
+[id="proc-controller-user-tokens"]
+
+= Users - Tokens
+
+The *Tokens* tab is only present for your user (yourself). 
+Before you add a token for your user, you may want to link:https://docs.ansible.com/automation-controller/latest/html/userguide/applications_auth.html#ug-applications-auth-create[Create an application] if you want to
+associate your token with it. 
+
+You can also create a _Personal Access Token_(PAT) without associating it with any application. 
+
+Use the following method to create a token for your user:
+
+.Procedure
+. Select your user from the *Users* list view to configure your OAuth 2 tokens.
+. Select the *Tokens* tab from your user's profile.
+. Click btn:[Add] to open the *Create Token* window.
+. Enter the following information:
+* *Application*: Enter the name of the application with which you want to associate your token. 
++
+Alternatively, you can search for the application name clicking the image:search.png[Search,15,15] icon. 
+This opens a separate window that enables you to choose from the available options. 
+Use the Search bar to filter by name if the list is extensive. 
++
+Leave this field blank if you want to create a PAT that is not linked to any application.
+* Optional: *Description* provide a short description for your token.
+* *Scope*: specify the level of access you want this token to have.
+. Click btn:[Save] or btn:[Cancel] to abandon your changes.
+. After the token is saved, the newly created token for the user is displayed.
++
+image:users-token-information-example.png[User -token information]
++
+This is the only time the token value and associated refresh token value are ever shown.
+In the user's profile, the application to which it is assigned and its expiration are displayed in the token list view.
++
+image:users-token-assignment-example.png[Token assignment]

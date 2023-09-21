@@ -1,0 +1,17 @@
+[id="ref-controller-user-teams"]
+
+= Users - Teams
+
+From the *Users > Details* page, select *Organizations* tab to display the list of teams of which that user is a member. 
+
+You can search this list by *Team Name* or *Description*. 
+
+[NOTE]
+====
+Team membership cannot be modified from this display panel. 
+For more information, see [Teams].
+====
+
+Until a Team has been created and a user has been assigned to that team, the assigned Teams Details for that User will appear empty.
+
+//image:users-teams-list-for-example-user.png[Users - teams list]

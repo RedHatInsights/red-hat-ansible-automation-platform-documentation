@@ -1,0 +1,16 @@
+[id="proc-controller-deleting-a-user"]
+
+= Deleting a user
+
+Before you can delete a user, you must have user permissions. 
+When you delete a user account, the name and email of the user are permanently removed from {ControllerName}.
+
+.Procedure
+. From the navigation panel, select menu:Access[Users].
+. Click btn:[Users] to display a list of the current users.
+. Select the check box for the user that you want to remove.
+. Click btn:[Delete].
++
+image:users-home-users-checked-delete.png[image]
+
+. Click btn:[Delete] in the confirmation warning message to permanently delete the user.

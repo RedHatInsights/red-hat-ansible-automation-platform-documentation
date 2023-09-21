@@ -4,10 +4,21 @@ Users associated with an organization are shown in the *Access* tab of the organ
 
 image::controller-users-access-view.png[Access view]
 
+ifdef::controller-GS[]
 A default administrator user with the role of *System Administrator* is automatically created and is available to all users of {ControllerName}. 
 You can use it as it is or edit it later. 
+endif::controller-GS[]
 You can add other users to an organization, including a *Normal User*, *System Auditor*, or *System Administrator*, but you must create them first.
 
+ifdef::controller-GS[]
 For more information, see the link:https://docs.ansible.com/automation-controller/4.4/html/userguide/users.html#ug-users-create[Users] section in the Automation Controller User Guide.
 
 For the purpose of the getting started guide, leave the default user as it is.
+endif::controller-GS[]
+
+ifdef::controller-UG[]
+You can sort or search the User list by *Username*, *First Name*, or *Last Name*. 
+Click the headers to toggle your sorting preference.
+
+You can view user permissions and user type beside the user name on the *Users* page. 
+endif::controller-UG[]

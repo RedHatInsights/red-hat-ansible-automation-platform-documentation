@@ -1,5 +1,18 @@
 [id="controller-users"]
 
+ifdef::controller-GS[]
 = User roles in {ControllerName}
+endif::controller-GS[]
+ifdef::controller-UG[]
+= Users
+endif::controller-UG[]
 
 include::platform/con-controller-create-users.adoc[leveloffset=+1]
+ifdef::controller-UG[]
+include::platform/proc-controller-creating-a-user.adoc[leveloffset=+1]
+include::platform/proc-controller-deleting-a-user.adoc[leveloffset=+1]
+include::platform/ref-controller-user-organizations.adoc[leveloffset=+1]
+include::platform/ref-controller-user-teams.adoc[leveloffset=+1]
+include::platform/ref-controller-user-roles.adoc[leveloffset=+1]
+include::platform/proc-controller-user-tokens.adoc[leveloffset=+1]
+endif::controller-UG[]

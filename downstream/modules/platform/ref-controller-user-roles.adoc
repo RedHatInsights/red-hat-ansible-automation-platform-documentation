@@ -1,0 +1,24 @@
+[id="ref-controller-user-roles"]
+
+= Users - Roles
+
+From the *Users > Details* page, select *Organizations* tab to display the set of roles assigned to this user. 
+These provide the ability to read, modify, and administer projects, inventories, job templates, and other elements.
+
+You can sort or search the list by *Name*, *Type*, or *Role*.
+
+image:users-permissions-list-for-example-user.png[Users- permissions list]
+
+include::proc-controller-user-permissions.adoc[leveloffset=+1]
+
+//This doesn't seem to fit here.
+//[NOTE]
+//====
+//The job template administrator may not have access to other resources (inventory, project, credentials, or instance groups) associated with the template. 
+//
+//Without access to these, certain fields in the job template are not editable. 
+//
+//System Administrators can grant individual users permissions to certain resources as necessary.
+//
+//For more information, see xref:proc-controller-user-permissions[Adding permissions to a user].
+//====
