@@ -1,0 +1,41 @@
+[id="proc-controller-add-permissions"]
+
+= Adding and removing team permissions
+
+To add permissions to a Team:
+
+.Procedure
+. From the *Team* list view , click on the desired user.
+. On the *Details* page, click btn:[Add]. 
+This opens the *Add Permissions* wizard.
++
+image:teams-users-add-permissions-form.png[Add Permissions Form]
+
+. Select the object to which the team requires access.
+. Click btn:[Next].
+. Click to select the resource to assign team roles.
+. Click btn:[Next].
++
+image:teams-permissions-templates-select.png[Select teams permissions]
+
+. Click the checkbox beside the role to assign that role to your chosen type of resource. 
+Different resources have different options available.
++
+image:teams-permissions-template-roles.png[Assign roles]
+
+. Click btn:[Save]. 
+. The updated profile for the user with the roles assigned for each selected resource is displayed.
++
+image:teams-permissions-sample-roles.png[Teams sample roles]
+
+.Removing team permissions
+
+* To remove Permissions for a particular resource, click the image:disassociate.png[Disassociate, 10,10] icon next to its resource. 
+This launches a confirmation dialog, asking you to confirm the disassociation.
+
+[NOTE]
+====
+You can also add teams, individual, or multiple users and assign them permissions at the object level. 
+This includes projects, inventories, job templates, and workflow templates. 
+This feature reduces the time for an organization to onboard many users at one time.
+====

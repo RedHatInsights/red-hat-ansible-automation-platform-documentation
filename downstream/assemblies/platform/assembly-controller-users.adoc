@@ -1,4 +1,4 @@
-[id="controller-users"]
+[id="assembly-controller-users"]
 
 ifdef::controller-GS[]
 = User roles in {ControllerName}

@@ -1,0 +1,24 @@
+[id="proc-controller-creating-a-team"]
+
+= Create a Team
+
+Use the following procedure to create a new Team:
+
+.Procedure
+. On the *Teams* page, click btn:[Add].
++
+image:teams-create-new-team.png[Teams -create new team]
+. Enter the appropriate details into the following fields:
+
+* *Name*
+* Optional: *Description*
+* *Organization*: Choose from an existing organization
+. Click *Save*.
+. The *Details* dialog opens, enabling you to review and edit your Team information.
++
+image:teams-example-team-successfully-created.png[Teams- Details dialog]
+
+include::ref-controller-team-access.adoc[leveloffset=+1]
+include::proc-controller-team-add-user.adoc[leveloffset=+1]
+include::ref-controller-team-roles.adoc[leveloffset=+1]
+include::proc-controller-team-add-permissions.adoc[leveloffset=+1]

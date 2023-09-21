@@ -1,0 +1,28 @@
+ifdef::context[:parent-context: {context}]
+
+[id="assembly-controller-teams"]
+
+:context: controller-teams
+= Teams
+
+A *Team* is a subdivision of an organization with associated users, projects, credentials, and permissions. 
+Teams provide a means to implement role-based access control schemes and delegate responsibilities across organizations. 
+For instance, you can grant permissions to a whole Team rather than each user on the Team.
+
+You can create as many Teams of users as make sense for your Organization. 
+Each Team can be assigned permissions, just as with Users.
+Teams can also scalably assign ownership for credentials, preventing multiple interface click-throughs to assign the same credentials to the same user.
+
+From the navigation panel, select menu:Access[Teams].
+
+image:organizations-teams-list.png[Teams list]
+
+The team list may be sorted and searched by *Name* or *Organization*.
+
+Click the Edit image:leftpencil.png[Edit,15,15] icon next to the entry to edit information about the team.
+You can also review *Users* and *Permissions* associated with this Team.
+
+include::platform/proc-controller-creating-a-team.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

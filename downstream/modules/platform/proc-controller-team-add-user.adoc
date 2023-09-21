@@ -1,0 +1,24 @@
+[id="proc-controller-team-add-user"]
+
+= Adding or removing a user
+
+To add a user to a team, the user must already have been created.
+For more information, see xref:proc-controller-creating-a-user[Creating a user]. 
+Adding a user to a team adds them as a member only.
+Use the *Access* tab to specify a role for the user on different resources. 
+
+Use the following procedure to add existing users to the team:
+
+.Procedure
+. In the *Access* tab of the *Details* page click btn:[Add].
+. Follow the prompts to add a user and assign them to roles.
+. Click btn:[Save].
+
+.Removing roles for a user
+* To remove roles for a particular user, click the image:disassociate.png[Disassociate,10,10] icon next to its resource.
+
+//image:permissions-disassociate.png[image]
+
+This launches a confirmation dialog, asking you to confirm the disassociation.
+
+//image:permissions-disassociate-confirm.png[image]

@@ -1,4 +1,4 @@
-[id="controller-organizations"]
+[id="assembly-controller-organizations"]
 
 ifdef::controller-GS[]
 = Managing organizations in {ControllerName}

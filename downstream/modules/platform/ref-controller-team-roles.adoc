@@ -1,0 +1,13 @@
+[id="ref-controller-team-roles"]
+
+= Team Roles
+
+Select menu:Details[Roles] to displays a list of the permissions that are currently available for this Team. 
+
+image:teams-permissions-sample-roles.png[Teams- permissions list]
+
+You can sort or search the permissions list by *Resource Name*, *Type*, or *Role*.
+
+The set of privileges assigned to Teams that provide the ability to read, modify, and administer projects, inventories, and other elements are permissions. By default, the Team is given the "read" permission.
+
+Permissions must be set explicitly through an Inventory, Project, Job Template, or within the xref:assembly-controller-organizations[Organizations] view.
