@@ -1,0 +1,32 @@
+[id="controller-pre-scan-setup"]
+
+= Pre-scan setup
+
+The following are examples of playbooks that configure certain distributions so that scan jobs can be run against them:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+Bootstrap Ubuntu (16.04)
+---
+- name: Get Ubuntu 16, and on ready
+ hosts: all
+ sudo: yes
+ gather_facts: no
+ tasks:
+ - name: install python-simplejson
+   raw: sudo apt-get -y update
+   raw: sudo apt-get -y install python-simplejson
+   raw: sudo apt-get install python-apt
+
+Bootstrap Fedora (23, 24)
+---
+- name: Get Fedora ready
+ hosts: all
+ sudo: yes
+ gather_facts: no
+ tasks:
+ - name: install python-simplejson
+   raw: sudo dnf -y update
+   raw: sudo dnf -y install python-simplejson
+   raw: sudo dnf -y install rpm-python
+----

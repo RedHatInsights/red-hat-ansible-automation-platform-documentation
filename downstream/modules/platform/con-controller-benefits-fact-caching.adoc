@@ -1,0 +1,34 @@
+[id="controller-benefits-of-fact-caching"]
+
+= Benefits of fact caching
+
+Fact caching saves you time over running fact gathering. 
+If you have a playbook in a job that runs against a thousand hosts and forks, you can spend 10 minutes gathering facts across all of those hosts.
+However, if you run a job on a regular basis, the first run of it caches these facts and the next run pulls them from the database. 
+This reduces the runtime of jobs against large inventories, including Smart Inventories.
+
+[NOTE]
+====
+Do not modify the ansible.cfg file to apply fact caching. 
+Custom fact caching could conflict with the controller's fact caching feature.
+You must use the fact caching module that comes with {ControllerName}.
+====
+
+You can choose to use cached facts in your job by enabling it in the *Options* field of the job templates window.
+
+image::ug-job-templates-options-use-factcache[Cached facts]
+
+To clear facts, run the Ansible `clear_facts` link:https://docs.ansible.com/ansible/latest/collections/ansible/builtin/meta_module.html#examples[meta task].
+The following is an example playbook that uses the Ansible `clear_facts` meta task.
+
+----
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: Clear gathered facts from all currently targeted hosts
+      meta: clear_facts
+----
+
+You can find the API endpoint for fact caching at:
+
+\http://<controller server name>/api/v2/hosts/x/ansible_facts

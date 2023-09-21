@@ -1,0 +1,17 @@
+[id="controller-supported-oses"]
+
+= Supported OSes for scan_facts.yml
+
+If you use the `scan_facts.yml` playbook with use fact cache, ensure that you are using one of the following supported operating systems:
+
+* Red Hat Enterprise Linux 5, 6, 7, 8 & 9
+* Ubuntu 23.04 (Support for Ubuntu is deprecated and will be removed in a future release)
+* OEL 6 & 7
+* SLES 11 & 12
+* Debian 6, 7, 8, 9, 10, 11, & 12
+* Fedora 22, 23, 24
+* Amazon Linux 2023.1.20230912
+* Windows Server 2008 and later
+
+Some of these operating systems require initial configuration to run python or have access to the python packages, such as `python-apt`, that the scan modules depend on.
+

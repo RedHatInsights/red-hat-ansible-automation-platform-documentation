@@ -40,7 +40,7 @@ include::platform/assembly-controller-users.adoc[leveloffset=+1]
 //18 Project Signing and Verification
 //19 Inventories
 include::platform/assembly-controller-inventory-templates.adoc[leveloffset=+1]
-//21 Job Templates
+include::platform/assembly-ug-controller-job-templates.adoc[leveloffset=+1]
 //22 Job Slicing
 //23 Workflows
 //24 Workflow Job Templates

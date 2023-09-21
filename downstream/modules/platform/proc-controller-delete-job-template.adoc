@@ -1,0 +1,19 @@
+[id="controller-delete-job-template"]
+
+= Deleting a job template
+
+Before deleting a job template, ensure that it is not used in a workflow job template.
+
+.Procedure
+
+. Delete a job template by using one of these methods:
+* Select the checkbox next to one or more job templates and click btn:[Delete].
+* Click the desired job template and click btn:[Delete], on the *Details* page.
+
+[NOTE]
+====
+If deleting items that are used by other work items, a message opens listing the items that are affected by the deletion and prompts you to confirm the deletion. 
+Some screens contain items that are invalid or previously deleted, and will fail to run. The following is an example of that message:
+
+image::ug-warning-deletion.png[Deletion warning]
+====

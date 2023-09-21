@@ -1,0 +1,20 @@
+[id="controller-view-completed-jobs"]
+
+= View completed jobs
+
+The *Jobs* tab provides the list of job templates that have run. 
+Click the expand icon next to each job to view the following details:
+
+* Status 
+* ID and name 
+* Type of job 
+* Time started and completed
+* Who started the job and which template, inventory, project, and credential were used. 
+
+You can filter the list of completed jobs using any of these criteria.
+
+image::ug-job-template-completed-jobs-view[Completed jobs view]
+
+Sliced jobs that display on this list are labeled accordingly, with the number of sliced jobs that have run:
+
+image::ug-sliced-job-shown-jobs-list-view.png[Sliced jobs shown]

@@ -1,0 +1,14 @@
+[id="controller-work-with-notifications"]
+
+= Work with notifications
+
+From the navigation panel, select menu:Administration[Notifications]. 
+This enables you to review any notification integrations you have set up and their statuses, if they have run.
+
+image::ug-job-template-completed-notifications-view.png[Job template completed notifications]
+
+Use the toggles to enable or disable the notifications to use with your particular template. 
+For more information, see [ADD XREF] Enable and Disable Notifications.
+
+If no notifications have been set up, click btn:[Add] to create a new notification. 
+For more information on configuring various notification types and extended messaging, see [ADD XREF]:Notification Types.

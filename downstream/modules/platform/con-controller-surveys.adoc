@@ -1,0 +1,14 @@
+[id="controller-surveys-in-job-templates"]
+
+= Surveys in job templates
+
+Job types of *Run* or *Check* provide a way to set up surveys in the *Job Template* creation or editing screens. 
+Surveys set extra variables for the playbook similar to *Prompt for Extra Variables* does, but in a user-friendly question and answer way. 
+Surveys also permit for validation of user input. 
+Select the *Survey* tab to create a survey.
+
+.Example
+Surveys can be used for a number of situations. For example, operations want to give developers a "push to stage" button that they can run without advance knowledge of Ansible.
+When launched, this task could prompt for answers to questions such as "What tag should we release?".
+
+Many types of questions can be asked, including multiple-choice questions.

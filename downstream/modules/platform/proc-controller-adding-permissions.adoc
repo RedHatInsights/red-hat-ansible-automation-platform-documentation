@@ -1,0 +1,30 @@
+[id="controller-adding-permissions"]
+
+= Adding permissions to templates
+
+Use the following steps to add permissions for the team.
+
+.Procedure
+
+. From the navigation panel, select menu:Resources[Templates].
+. Select a template, and in the *Access tab*, click btn:[Add].
+. Select *Users* or *Teams* and click btn:[Next].
+. Select one or more users or teams from the list by clicking the check boxes next to the names to add them as members and click btn:[Next].
++
+The following example shows two users have been selected to be added:
++
+image::ug-organizations-add-users-for-example-organization.png[Add users to example organization]
++
+. Choose the roles that you want users or teams to have.
+Ensure that you scroll down for a complete list of roles. 
+Each resource has different options available.
+. Click btn:[Save] to apply the roles to the selected users or teams and to add them as members.
+
+The window to add users and teams closes to display the the updated roles assigned for each user and team:
+
+image::ug-permissions-tab-roles-assigned.png[Permissions tab roles assigned]
+
+To remove roles for a particular user, click the image:disassociate.png[Disassociate,10,10] icon next to its resource.
+
+This launches a confirmation dialog, asking you to confirm the disassociation.
+

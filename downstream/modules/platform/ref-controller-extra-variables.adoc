@@ -1,0 +1,50 @@
+[id="controller-extra-variables"]
+
+= Extra variables
+
+When you pass survey variables, they are passed as extra variables (`extra_vars`) within the controller. 
+However,  passing extra variables to a job template (as you would do with a survey) can override other variables being passed from the inventory and project.
+
+[NOTE]
+====
+`extra_vars` passed to the job launch API are only honored if one of the following is true:
+
+* They correspond to variables in an enabled survey.
+* `ask_variables_on_launch` is set to *True*.
+====
+
+.Example 
+You have a defined variable for an inventory for `debug = true`. 
+It is possible that this variable, `debug = true`, can be overridden in a job template survey.
+
+To ensure the variables that you pass are not overridden, ensure they are included by redefining them in the survey. 
+Extra variables can be defined at the inventory, group, and host levels.
+
+If you are specifying the `ALLOW_JINJA_IN_EXTRA_VARS` parameter, see the link:http://docs.ansible.com/automation-controller/4.4/html/administration/tipsandtricks.html#ag-tips-jinja-extravars[Controller Tips and Tricks] section of the Automation Controller Administration Guide to configure it in the *Jobs Settings* screen of the controller UI.
+
+The job template extra variables dictionary is merged with the survey variables.
+
+The following are some simplified examples of extra_vars in YAML and JSON formats:
+
+* The configuration in YAML format:
+---- 
+launch_to_orbit: true
+satellites:
+  - sputnik
+  - explorer
+  - satcom
+----
+
+* The configuration in JSON format:
+----
+{
+  "launch_to_orbit": true,
+  "satellites": ["sputnik", "explorer", "satcom"]
+}
+----
+
+The following table notes the behavior (hierarchy) of variable precedence in {ControllerName} as it compares to variable precedence in Ansible.
+
+.Automation Controller Variable Precedence Hierarchy (last listed wins)
+
+image::ug-Variable_Precedence_Hierarchy.png[Variable precedence]

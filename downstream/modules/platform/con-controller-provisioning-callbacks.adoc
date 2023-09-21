@@ -1,0 +1,20 @@
+[id="controller-provisioning-callbacks"]
+
+= Provisioning Callbacks
+
+Provisioning Callbacks are a feature of {ControllerName} that enable a host to initiate a playbook run against itself, rather than waiting for a user to launch a job to manage the host from the {ControllerName} console.
+
+Provisioning Callbacks are only used to run playbooks on the calling host and are meant for cloud bursting.
+Cloud bursting is a cloud computing configuration that enables a private cloud to access public cloud resources by "bursting" into a public cloud when computing demand spikes.
+
+.Example
+
+New instances with a need for client to server communication for configuration, such as transmitting an authorization key, not to run a job against another host. 
+This provides for automatically configuring the following:
+
+* A system after it has been provisioned by another system (such as AWS auto-scaling, or an OS provisioning system like kickstart or preseed).
+* Launching a job programmatically without invoking the {ControllerName} API directly. 
+
+The job template launched only runs against the host requesting the provisioning.
+
+This is often accessed with a firstboot type script or from `cron`.

@@ -1,0 +1,91 @@
+[id="controller-enable-provision-callbacks"]
+
+= Enabling Provisioning Callbacks
+
+.Procedure
+
+* To enable callbacks, check the *Provisioning Callbacks* checkbox in the job template.
+This displays *Provisioning Callback URL* for the job template.
++
+[NOTE]
+====
+If you intend to use {ControllerName}'s provisioning callback feature with a dynamic inventory, set *Update on Launch* for the inventory group used in the job template.
+
+image::ug-provisioning-callbacks-config.png[Provisioning Callback details]
+====
+
+Callbacks also require a Host Config Key, to ensure that foreign hosts with the URL cannot request configuration. 
+Provide a custom value for Host Config Key. 
+The host key can be reused across multiple hosts to apply this job template against multiple hosts.
+If you want to control what hosts are able to request configuration, the key may be changed at any time.
+
+To callback manually using REST:
+
+.Procedure
+
+. Look at the callback URL in the UI, in the form:
+\https://<CONTROLLER_SERVER_NAME>/api/v2/job_templates/7/callback/
+* The "7" in the sample URL is the job template ID in {ControllerName}.
+. Ensure that the request from the host is a POST. 
+The following is an example using curl (all on a single line):
++
+----
+curl -k -f -i -H 'Content-Type:application/json' -XPOST -d '{"host_config_key": "redhat"}' \
+                  https://<CONTROLLER_SERVER_NAME>/api/v2/job_templates/7/callback/
++
+----
+. Ensure that the requesting host is defined in your inventory for the callback to succeed.
+
+.Troubleshooting
+
+If {ControllerName} fails to locate the host either by name or IP address in one of your defined inventories, the request is denied.
+When running a job template in this way, ensure that the host initiating the playbook run against itself is in the inventory. 
+If the host is missing from the inventory, the job template fails with a *No Hosts Matched* type error message.
+
+If your host is not in the inventory and *Update on Launch* is set for the inventory group {ControllerName} attempts to update cloud based inventory sources before running the callback.
+
+.Verification
+
+Successful requests result in an entry on the *Jobs* tab, where you can view the results and history.
+You can access the callback using REST, but the suggested method of using the callback is to use one of the example scripts that ships with {ControllerName}:
+
+* `/usr/share/awx/request_tower_configuration.sh` (Linux/UNIX)
+* `/usr/share/awx/request_tower_configuration.ps1` (Windows)
+
+Their usage is described in the source code of the file by passing the `-h` flag, as the following shows:
+----
+./request_tower_configuration.sh -h
+Usage: ./request_tower_configuration.sh <options>
+
+
+Request server configuration from Ansible Tower.
+
+
+OPTIONS:
+ -h      Show this message
+ -s      Controller server (e.g. https://ac.example.com) (required)
+ -k      Allow insecure SSL connections and transfers
+ -c      Host config key (required)
+ -t      Job template ID (required)
+ -e      Extra variables
+----
+
+This script can retry commands and is therefore a more robust way to use callbacks than a simple `curl` request. 
+The script retries once per minute for up to ten minutes.
+
+[NOTE]
+====
+This is an example script. 
+Edit this script if you need more dynamic behavior when detecting failure scenarios, as any non-200 error code may not be a transient error requiring retry.
+====
+
+You can use callbacks with dynamic inventory in {ControllerName}. 
+For example, when pulling cloud inventory from one of the supported cloud providers. 
+In these cases, along with setting *Update On Launch*, ensure that you configure an inventory cache timeout for the inventory source, to avoid hammering of your cloud's API endpoints.
+Since the `request_tower_configuration.sh` script polls once per minute for up to ten minutes, a suggested cache invalidation time for inventory (configured on the inventory source itself) would be one or two minutes.
+
+Running the `request_tower_configuration.sh` script from a cron job is not recommended, however, a suggested cron interval is every 30 minutes.
+Repeated configuration can be handled by scheduling {ControllerName} so that the primary use of callbacks by most users is to enable a base image that is bootstrapped into the latest configuration when coming online.
+Running at first boot is best practice. 
+First boot scripts are init scripts that typically self-delete, so you set up an init script that calls a copy of the `request_tower_configuration.sh` script and make that into an auto scaling image.
+

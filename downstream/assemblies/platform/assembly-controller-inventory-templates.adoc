@@ -1,4 +1,4 @@
-[id="assembly-inventory-templates"]
+[id="controller-inventory-templates"]
 
 = Supported Inventory plugin templates
 

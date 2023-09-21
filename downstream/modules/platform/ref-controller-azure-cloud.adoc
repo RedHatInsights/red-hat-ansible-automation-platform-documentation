@@ -1,0 +1,11 @@
+[id="controller-azure-cloud"]
+
+= Azure
+
+Azure cloud credentials are exposed as the following environment variables during playbook execution (in the job template, choose the cloud credential needed for your setup):
+
+* `AZURE_SUBSCRIPTION_ID`
+* `AZURE_CERT_PATH`
+
+Each Azure module implicitly uses these credentials when run via the controller without having to set the `subscription_id` or `management_cert_path` module options.
+

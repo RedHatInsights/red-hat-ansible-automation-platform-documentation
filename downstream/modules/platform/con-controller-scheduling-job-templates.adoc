@@ -1,0 +1,25 @@
+[id="controller-scheduling-job-templates"]
+
+= Scheduling job templates
+
+Access the schedules for a particular job template from the *Schedules* tab.
+
+image::ug-job-templates-schedules.png[Job templates schedules]
+
+.Procedure
+
+* To schedule a job template, select the *Schedules* tab, and choose the appropriate method:
+** If schedules are already set up, review, edit, enable or disable your schedule preferences.
+** If schedules have not been set up, see ADD XREF:[Schedules] for more information.
+
+If you select *Prompt on Launch* for the *Credentials field*, and you create or edit scheduling information for your job template, a *Prompt* option displays on the Schedules form. 
+
+You cannot remove the default machine credential in the *Prompt* dialog without replacing it with another machine credential before you can save it. 
+
+[NOTE]
+====
+To set `extra_vars` on schedules, you must select *Prompt on Launch* for *Variables* on the job template, or configure and enable a survey on the job template.
+
+The answered survey questions then become extra_vars.
+====
+

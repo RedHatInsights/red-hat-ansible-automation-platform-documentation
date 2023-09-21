@@ -1,0 +1,25 @@
+[id="controller-vmware-cloud"]
+
+= VMware
+
+VMware cloud credentials are exposed as the following environment variables during playbook execution (in the job template, choose the cloud credential needed for your setup):
+
+* `VMWARE_USER`
+* `VMWARE_PASSWORD`
+* `VMWARE_HOST`
+
+The following sample playbook demonstrates the usage of these credentials:
+
+----
+- vsphere_guest:
+    vcenter_hostname: "{{ lookup('env', 'VMWARE_HOST') }}"
+    username: "{{ lookup('env', 'VMWARE_USER') }}"
+    password: "{{ lookup('env', 'VMWARE_PASSWORD') }}"
+    guest: newvm001
+    from_template: yes
+    template_src: linuxTemplate
+    cluster: MainCluster
+    resource_pool: "/Resources"
+    vm_extra_config:
+      folder: MyFolder
+----

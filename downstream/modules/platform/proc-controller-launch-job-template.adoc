@@ -1,0 +1,55 @@
+[id="controller-launch-job-template"]
+
+= Launching a job template
+
+A benefit of {ControllerName} is the push-button deployment of Ansible playbooks. 
+You can configure a template to store all the parameters that you would normally pass to the Ansible playbook on the command line. 
+In addition to the playbooks, the template passes the inventory, credentials, extra variables, and all options and settings that you can specify on the command line.
+
+Easier deployments drive consistency, by running your playbooks the same way each time, and allowing you to delegate responsibilities.
+
+.Procedure
+
+* Launch a job template by using one of these methods:
+** From the navigation panel, select menu:Templates[Launch] next to the job template.
++
+image::ug-job-template-launch.png[Job template launch]
++
+** In the job template *Details* view of the job template you want to launch, click btn:[Launch].
+
+A job can require additional information to run. 
+The following data can be requested at launch:
+
+* Credentials that were setup
+* The option *Prompt on Launch* is selected for any parameter
+* Passwords or passphrases that have been set to *Ask*
+* A survey, if one has been configured for the job templates
+* Extra variables, if requested by the job template
+
+[NOTE]
+====
+If a job has user-provided values, then those are respected upon relaunch. 
+If the user did not specify a value, then the job uses the default value from the job template. 
+Jobs are not relaunched as-is. 
+They are relaunched with the user prompts re-applied to the job template.
+====
+
+If you provide values on one tab, return to a previous tab, continuing to the next tab results in having to re-provide values on the rest of the tabs.
+Ensure that you fill in the tabs in the order that the prompts appear.
+
+When launching, {ControllerName} automatically redirects the web browser to the *Job Status* page for this job under the *Jobs* tab.
+
+You can re-launch the most recent job from the list view to re-run on all hosts or just failed hosts in the specified inventory.
+For more information, see the [ADD XREF] Jobs section.
+
+When slice jobs are running, job lists display the workflow and job slices, as well as a link to view their details individually.
+
+[NOTE]
+====
+You can launch jobs in bulk using the newly added endpoint in the API, `/api/v2/bulk/job_launch`. 
+This endpoint accepts JSON and you can specify a list of unified job templates (such as job templates and project updates) to launch. 
+The user must have the appropriate permission to launch all the jobs. 
+If all jobs are not launched an error is returned indicating why the operation was not able to complete. 
+Use the `OPTIONS` request to return relevant schema. 
+For more information, see the link:https://docs.ansible.com/automation-controller/latest/html/controllerapi/api_ref.html#/Bulk[Bulk endpoint] of the Reference section of the Automation Controller API Guide.
+====

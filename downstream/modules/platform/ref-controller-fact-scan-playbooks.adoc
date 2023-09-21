@@ -1,0 +1,37 @@
+[id="controller-fact-scan-playbooks"]
+
+= Fact scan playbooks
+
+The scan job playbook, `scan_facts.yml`, contains invocations of three `fact scan modules` - packages, services, and files, along with Ansible's standard fact gathering. 
+The `scan_facts.yml` playbook file is similar to this:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+- hosts: all
+  vars:
+    scan_use_checksum: false
+    scan_use_recursive: false
+  tasks:
+    - scan_packages:
+    - scan_services:
+    - scan_files:
+        paths: '{{ scan_file_paths }}'
+        get_checksum: '{{ scan_use_checksum }}'
+        recursive: '{{ scan_use_recursive }}'
+      when: scan_file_paths is defined
+----
+The `scan_files` fact module is the only module that accepts parameters, passed through `extra_vars` on the scan job template:
+
+`scan_file_paths`: `/tmp/`
+`scan_use_checksum`: true
+`scan_use_recursive`: true
+
+* The `scan_file_paths` parameter may have multiple settings (such as `/tmp/` or `/var/log`).
+* The `scan_use_checksum` and `scan_use_recursive` parameters may also be set to false or omitted. 
+An omission is the same as a false setting.
+
+Scan job templates should enable `become` and use `credentials` for which `become` is a possibility. 
+You can enable `become` by checking *Privilege Escalation* from the options menu:
+
+image::ug-job-template-become.png[Job template become]
+

@@ -1,0 +1,18 @@
+[id="controller-copy-a-job-template"]
+
+= Copying a job template
+
+If you copy a job template, it does not copy any associated schedule, notifications, or permissions. 
+Schedules and notifications must be recreated by the user or administrator creating the copy of the job template. 
+The user copying the Job Template is be granted administrator permission, but no permissions are assigned (copied) to the job template.
+
+.Procedure
+
+. From the navigation panel, select menu:Resources[Templates].
+. Click the image:copy.png[Copy,15,15] icon associated with the template that you want to copy.
+* The new template with the name of the template from which you copied and a timestamp displays in the list of templates.
+. Click to open the new template and click btn:[Edit].
+. Replace the contents of the *Name* field with a new name, and provide or modify the entries in the other fields to complete this page.
+. Click btn:[Save].
+
+

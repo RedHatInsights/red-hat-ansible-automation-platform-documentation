@@ -1,0 +1,59 @@
+[id="controller-create-survey"]
+
+= Creating a survey
+
+.Procedure
+
+. From the *Survey* tab, click btn:[Add].
+. A survey can consist of any number of questions. 
+For each question, enter the following information:
+Question:: The question to ask the user.
+Description:: (Optional) A description of what is being asked of the user.
+Answer variable name:: The Ansible variable name to store the user's response in. 
+This is the variable to be used by the playbook. 
+Variable names cannot contain spaces.
+Answer type:: Choose from the following question types:
+* *Text*: A single line of text. 
+You can set the minimum and maximum length (in characters) for this answer.
+* *Textarea*: A multi-line text field. 
+You can set the minimum and maximum length (in characters) for this answer.
+* *Password*: Responses are treated as sensitive information, much like an actual password is treated. 
+You can set the minimum and maximum length (in characters) for this answer.
+* *Multiple Choice (single select)*: A list of options, of which only one can be selected at a time. 
+Enter the options, one per line, in the *Multiple Choice Options* field.
+* *Multiple Choice (multiple select)*: A list of options, any number of which can be selected at a time. 
+Enter the options, one per line, in the *Multiple Choice Options* field.
+* *Integer*: An integer number. 
+You can set the minimum and maximum length (in characters) for this answer.
+* *Float*: A decimal number. 
+You can set the minimum and maximum length (in characters) for this answer.
+Required:: Whether or not an answer to this question is required from the user.
+Minimum length and Maximum length:: Specify if a certain length in the answer is required.
+Default answer:: The default answer to the question. 
+This value is pre-filled in the interface and is used if the answer is not provided by the user.
++
+image::ug-job-template-create-survey.png[Job template survey]
++
+. Once you have entered the question information, click btn:[Save] to add the question.
++
+The survey question displays in the *Survey* list. 
+For any question, you can click image:leftpencil.png[Pencil,15,15] to edit it.
++
+Check the box next to each question and click btn:[Delete] to delete the question, or use the toggle option in the menu bar to enable or disable the survey prompts.
++
+If you have more than one survey question, click btn:[Edit Order] to rearrange the order of the questions by clicking and dragging on the grid icon.
++
+image::ug-job-template-rearrange-survey.png[Rearrange survey]
++
+. To add more questions, click btn:[Add].
+
+
+
+
+
+
+
+
+
+
+

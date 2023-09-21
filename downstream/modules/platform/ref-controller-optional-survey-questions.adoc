@@ -1,0 +1,12 @@
+[id="controller-optional-survey-questions"]
+
+= Optional survey questions
+
+The *Required* setting on a survey question determines whether the answer is optional or not for the user interacting with it.
+
+Optional survey variables can also be passed to the playbook in `extra_vars`.
+
+* If a non-text variable (input type) is marked as optional, and is not filled in, no survey `extra_var` is passed to the playbook.
+* If a text input or text area input is marked as optional, is not filled in, and has a minimum `length > 0`, no survey `extra_var` is passed to the playbook.
+* If a text input or text area input is marked as optional, is not filled in, and has a minimum `length === 0`, that survey `extra_var` is passed to the playbook, with the value set to an empty string ( “” ).
+

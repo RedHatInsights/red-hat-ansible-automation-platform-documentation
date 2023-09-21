@@ -1,0 +1,34 @@
+[id="controller-fact-caching"]
+
+= Fact caching
+
+{ControllerNameStart} can store and retrieve facts on a per-host basis through an Ansible Fact Cache plugin. 
+This behavior is configurable on a per-job template basis. 
+Fact caching is turned off by default but can be enabled to serve fact requests for all hosts in an inventory related to the job running. 
+This enables you to use job templates with `--limit` while still having access to the entire inventory of host facts. 
+A global timeout setting that the plugin enforces per-host, can be specified (in seconds) through the *Jobs* settings menu:
+
+image::ug-jobs-fact-cache-timeout.png[Jobs fact cache]
+
+After launching a job that uses fact cache (`use_fact_cache=True`), each host's `ansible_facts` are all stored by the controller in the job's inventory.
+
+The Ansible Fact Cache plugin that ships with {ControllerName} is enabled on jobs with fact cache enabled (`use_fact_cache=True`).
+
+When a job that has fact cache enabled (`use_fact_cache=True`) has run, {ControllerName} restores all records for the hosts in the inventory. 
+Any records with update times newer than the currently stored facts per-host are updated in the database.
+
+New and changed facts are logged through {ControllerName}'s logging facility. 
+Specifically, to the `system_tracking namespace` or logger. 
+The logging payload includes the following fields:
+
+* `host_name`
+* `inventory_id`
+* `ansible_facts`
+
+`ansible facts` is a dictionary of all Ansible facts for `host_name` in the {ControllerName} inventory, `inventory_id`.
+
+[NOTE]
+====
+If a hostname includes a forward slash (/), fact cache will not work for that host. 
+If you have an inventory with 100 hosts and one host has a / in the name, the remaining 99 hosts still collect facts.
+====
