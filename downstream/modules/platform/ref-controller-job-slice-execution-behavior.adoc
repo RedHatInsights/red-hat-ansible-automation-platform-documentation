@@ -1,0 +1,20 @@
+[id="controller-job-slice-execution-behavior"]
+
+= Job slice execution behavior
+
+When jobs are sliced, they can run on any node. Insufficient capacity in the system can cause some to run at a different time. 
+When slice jobs are running, job details display the workflow and job slices currently running, as well as a link to view their details individually.
+
+image::ug-sliced-job-shown-jobs-output-view.png[Sliced jobs output view]
+
+By default, job templates are not normally configured to execute simultaneously (`allow_simultaneous` must be checked in the API or *Enable Concurrent Jobs* in the UI). 
+Slicing overrides this behavior and implies `allow_simultaneous` even if that setting is clear.
+See xref:controller-job-templates[Job templates] for information on how to specify this, as well as the number of job slices on your job template configuration.
+
+The xref:controller-job-templates[Job templates] section provides additional detail on performing the following operations in the UI:
+
+* Launch workflow jobs with a job template that has a slice number greater than one.
+* Cancel the whole workflow or individual jobs after launching a slice job template.
+* Relaunch the whole workflow or individual jobs after slice jobs finish running.
+* View the details about the workflow and slice jobs after a launching a job template.
+* Search slice jobs specifically after you create them, as per the subsequent section, "Search job slices").

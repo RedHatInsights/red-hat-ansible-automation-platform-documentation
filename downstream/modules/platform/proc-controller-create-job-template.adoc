@@ -151,4 +151,3 @@ image::ug-job-template-details.png[Job template details]
 
 . From the navigation panel, select menu:Resources[Templates].
 . Verify that the newly created template appears on the *Templates* list view.
-
