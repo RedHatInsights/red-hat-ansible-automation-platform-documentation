@@ -95,6 +95,7 @@ Default = `awx`.
 
 `/path/to/pgsql.key`
 | *`postgres_use_ssl`* | If postgres is to use SSL.
+| *`postgres_max_connections`* | Max database connections setting to apply, if using installer-managed postgres. See the administration guide for help selecting a value.
 | *`receptor_listener_port`* | Port to use for recptor connection.
 
 Default = 27199.
