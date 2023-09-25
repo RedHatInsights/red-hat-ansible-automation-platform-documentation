@@ -1,0 +1,29 @@
+
+[id="deploying-your-system-for-container-signing"]
+
+= Deploying your system for container signing
+
+{HubNameStart} implements image signing to provided better security for the {ExecEnvShort} container images.
+
+To deploy your system so that it is ready for container signing, you must confirm if an {ExecEnvShort} or container is already signed or use the proper tools to sign and verify the signature yourself. 
+
+.Procedure
+. Deploy your system with support for container signing activated.
+
+    _automation_hub:
+        automationhub_create_default_container_signing_service: true
+        automationhub_container_signing_service_key: _path/to/gpg.key_
+        automationhub_container_signing_service_script: _path/to/executable_
+
+
+. Navigate to {HubName}.
+
+. From the navigation panel, select menu:Signature Keys[].
+
+. Ensure that you have a key titled *container-default*, or *container*-_anyname_.
+
+[NOTE]
+==== 
+The `container-default` service is created by the {PlatformNameShort} installer.
+====
+

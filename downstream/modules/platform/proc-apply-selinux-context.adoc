@@ -1,0 +1,29 @@
+[id="proc-apply-selinux-context"]
+
+= Applying the SELinux context
+
+. Shut down the Pulp service:
++ 
+----
+$ systemctl stop pulpcore.service
+----
+. Unmount `/var/lib/pulp/pulpcore_static`:
++
+----
+$ umount /var/lib/pulp/pulpcore_static
+----
+. Unmount `/var/lib/pulp/`:
++
+----
+$ umount /var/lib/pulp/
+----
+. Open `/etc/fstab` using a text editor, then replace the existing value for `/var/lib/pulp` with the following:
++
+----
+srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev,nosharecache,context="system_u:object_r:pulpcore_var_lib_t:s0" 0 0
+----
+. Run the mount command:
++
+----
+$ mount -a
+----

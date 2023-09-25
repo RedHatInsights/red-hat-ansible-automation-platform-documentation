@@ -1,0 +1,37 @@
+[id="ref-ha-hub-reqs"]
+
+= High availability {HubName} requirements
+
+Before deploying a high availability (HA) {HubName}, ensure that you have a shared filesystem installed in your environment and that you have configured your network storage system, if applicable.
+
+== Required shared filesystem
+
+A high availability {HubName} requires you to have a shared file system, such as NFS, already installed in your environment. 
+Before you run the {PlatformName} installer, verify that you installed the `/var/lib/pulp` directory across your cluster as part of the shared file system installation. 
+The {PlatformName} installer returns an error if `/var/lib/pulp` is not detected in one of your nodes, causing your high availability {HubName} setup to fail.
+
+== Network Storage Installation Requirements
+
+If you intend to install a HA {HubName} using a network storage on the {HubName} nodes itself, you must first install and use `firewalld` to open the necessary ports as required by your shared storage system before running the {PlatformNameShort} installer.
+
+Install and configure `firewalld` by executing the following commands:
+
+. Install the `firewalld` daemon:
++
+-----
+$ dnf install firewalld
+-----
++
+. Add your network storage under <service> using the following command:
++
+-----
+$ firewall-cmd --permanent --add-service=<service>
+-----
+[NOTE]
+For a list of supported services, use the `*$ firewall-cmd --get-services*` command
++
+. Reload to apply the configuration:
++
+-----
+$ firewall-cmd --reload
+-----

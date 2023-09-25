@@ -1,0 +1,19 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-create-super-users"]
+
+= Creating a super user
+
+If you want to spread administration across your team, you can create a super user in {HubName}. 
+
+.Prerequisites
+
+* You must be a *Super user*.  
+
+.Procedure
+. Log in to your local {HubName}.
+. From the navigation panel, select menu:User Access[Users].
+. Select the user that you want to make a super user. The *User details* for that user are displayed.
+. Under *User type*, select *Super User*.
+
+The user now has *Super user* permissions.

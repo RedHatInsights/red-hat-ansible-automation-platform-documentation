@@ -1,0 +1,24 @@
+ifdef::context[:parent-context: {context}]
+
+[id="managing-collections-hub"]
+= Managing collections in {HubName}
+
+:context: managing-collections-hub
+
+[role="_abstract"]
+As a content creator, you can use namespaces in {HubName} to curate and manage collections for the following purposes:
+
+* Create groups with permissions to curate namespaces and upload collections to {PrivateHubName}
+* Add information and resources to the namespace to help end users of the collection in their automation tasks
+* Upload collections to the namespace
+* Review the namespace import logs to determine the success or failure of uploading the collection and its current approval status
+
+include::assembly-working-with-namespaces.adoc[leveloffset=+1]
+include::assembly-managing-private-collections.adoc[leveloffset=+1]
+include::assembly-repo-management.adoc[leveloffset=+1]
+include::assembly-remote-management.adoc[leveloffset=+2]
+include::assembly-repo-sync.adoc[leveloffset=+2]
+include::assembly-collection-import-export.adoc[leveloffset=+2]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

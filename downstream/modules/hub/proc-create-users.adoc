@@ -1,0 +1,21 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-create-users"]
+
+= Creating new users and giving them permissons
+
+After you create a user in {HubName}, you can give them permissions by adding them to groups. Each group that can access features in the system associated to the level of assigned permissions.
+
+.Prerequisites
+
+* You have *user* permissions and can create users in {HubName}.
+
+.Procedure
+. Log in to your local {HubName}.
+. From the navigation panel, select menu:User Access[Users].
+. Click btn:[Create user].
+. Enter information in the field. *Username* and *Password* are required.
+. Optional: To assign the user to a group, click the *Groups* field and select from the list of groups.
+. Click btn:[Save].
+
+The new user is now displayed in the list on the *Users* page.

@@ -1,0 +1,31 @@
+
+[id="adding-an-execution-environment"]
+
+= Adding an {ExecEnvShort}
+{ExecEnvNameStart} are container images that make it possible to incorporate system-level dependencies and collection-based content. 
+Each {ExecEnvShort} allows you to have a customized image to run jobs, and each of them contain only what you need when running the job.
+
+.Procedure
+. From the navigation panel, select menu:Execution Environments[Execution Environments].
+
+. Click btn:[Add execution environment].
+
+. Enter the name of the {ExecEnvShort}.
+
+. Optional: Enter the upstream name.
+
+. Under *Registry*, select the name of the registry from the drop-down menu.
+
+. Enter tags in the *Add tag(s) to include* field. 
+If the field is blank, all the tags are passed. 
+You must specify which repository specific tags to pass.
+
+. The remaining fields are optional:
+* *Currently included tags*
+* *Add tag(s) to exclude*
+* *Currently excluded tag(s)*
+* *Description*
+
+. Click btn:[Save].
+
+. Synchronize the image.

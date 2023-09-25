@@ -3,7 +3,7 @@
 
 {PlatformName} includes {Valid}, which complements existing {CertifiedCon}.
 
-{Valid} provides an expert-led path for performing operational tasks on a variety of platforms including both Red Hat and our trusted partners.
+{Valid} provides an expert-led path for performing operational tasks on a variety of platforms from both Red Hat and our trusted partners.
 
 == Configuring validated collections with the installer
 
@@ -13,25 +13,20 @@ Validated collections are uploaded into the `validated` repository.
 
 You can change to default configuration by using two variables:
 
-[cols="20%,50%",options="header"]
-|====
-| Name | Description
-| `automationhub_seed_collections` | A boolean that defines whether or not preloading is enabled.
-| `automationhub_collection_seed_repository` | If `automationhub_seed_collections` is set to `true`, this variable enables you to specify the type of content to upload.
+* `automationhub_seed_collections` is a boolean that defines whether or not preloading is enabled.
+* `automationhub_collection_seed_repository`. A variable that enables you to specify the type of content to upload when it is set to `true`.
 Possible values are `certified` or `validated`.
 If missing both content sets will be uploaded.
-|====
 
 == Installing validated content using the tarball
 
-If you are not using the bundle installer, a standalone tarball, `ansible-validated-content-bundle-1.tar.gz` can be used instead.
-The standalone tarball can also be used later to update validated contents later in any environment, when a newer tarball becomes available, and without having to re-run the bundle installer.
+If you are not using the bundle installer, you can use a standalone tarball, `ansible-validated-content-bundle-1.tar.gz`.
+You can also use this standalone tarball later to update validated contents in any environment, when a newer tarball becomes available, without having to re-run the bundle installer.
 
-To obtain the tarball, navigate to the link:{PlatformDownloadUrl}[{PlatformName} download] page and select *Ansible Validated Content*.
-
+.Prerequisites
 You require the following variables to run the playbook. 
 
-[cols="20%,50%",options="header"]
+[cols="50%,50%",options="header"]
 |====
 | Name | Description
 | *`automationhub_admin_password`* | Your administration password.
@@ -44,13 +39,10 @@ This must match the value used during {HubName} deployment.
 This variable is set to `true` by the installer.
 |====
 
-[NOTE]
-====
-Use either `automationhub_admin_password` or `automationhub_api_token`, not both.
-====
-
-Upload the content and define the variables (this example uses `automationhub_api_token`):
-
+.Procedure
+. To obtain the tarball, navigate to the link:{PlatformDownloadUrl}[{PlatformName} download] page and select *Ansible Validated Content*.
+. Upload the content and define the variables (this example uses `automationhub_api_token`):
++
 [options="nowrap" subs="+quotes,attributes"]
 ----
 ansible-playbook collection_seed.yml
@@ -58,7 +50,16 @@ ansible-playbook collection_seed.yml
 -e automationhub_main_url=https://automationhub.example.com
 -e automationhub_require_content_approval=true
 ----
-
-For more information on running ansible playbooks, see link:https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook].
++
+[NOTE]
+====
+Use either `automationhub_admin_password` or `automationhub_api_token`, not both.
+====
 
 When complete, the collections are visible in the validated collection section of {PrivateHubName}.
+Users can now view and download collections from your {PrivateHubName}.
+
+.Additional Resources
+For more information on running ansible playbooks, see link:https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook].
+
+

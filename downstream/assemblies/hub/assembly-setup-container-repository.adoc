@@ -13,17 +13,18 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-You can setup your container repository to add a description, include a README, add groups who can access the repository, and tag images.
+When you set up your container repository, you must add a description, include a README, add groups that can access the repository, and tag images.
 
-== Prerequisites
+== Prerequisites to setting up your container registry
 
-* You are logged in to a {PrivateHubName} with permissions to change the repository.
+* You are logged in to a {PrivateHubName}.
+* You have permissions to change the repository.
 
 
-include::automation-hub/proc-add-container-readme.adoc[leveloffset=+1]
-include::automation-hub/proc-add-group-to-container-repo.adoc[leveloffset=+1]
-include::automation-hub/proc-tag-image.adoc[leveloffset=+1]
-include::automation-hub/proc-create-credential.adoc[leveloffset=+1]
+include::hub/proc-add-container-readme.adoc[leveloffset=+1]
+include::hub/proc-add-group-to-container-repo.adoc[leveloffset=+1]
+include::hub/proc-tag-image.adoc[leveloffset=+1]
+include::hub/proc-create-credential.adoc[leveloffset=+1]
 
 
 

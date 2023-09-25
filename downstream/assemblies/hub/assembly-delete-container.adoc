@@ -6,13 +6,21 @@ ifdef::context[:parent-context: {context}]
 :context: delete-container
 
 [role="_abstract"]
-Delete a container repository from your local {HubName} to manage your disk space. You can delete repositories from the {PlatformName} interface in the *Container Repository* list view.
+Delete a container repository from your local {HubName} to manage your disk space. 
+You can delete repositories from the {PlatformName} interface in the *Container Repository* list view.
 
-include::automation-hub/proc-delete-container.adoc[leveloffset=+1]
+.Prerequisites
+* You have permissions to manage repositories.
+
+.Procedure
+. Navigate to {HubName}.
+. From the navigation panel, select menu:Execution Environments[Execution Environments].
+. On the container repository that you want to delete, click the btn:[More Actions] icon *{MoreActionsIcon}*, and click btn:[Delete].
+. When the confirmation message is displayed, click the checkbox and click btn:[Delete].
 
 .Verification
-* Return to the *Execution Environments* list view. The container repository should be removed from the list.
-
+* Return to the *Execution Environments* list view. 
+If the container repository has been successfully deleted, the container repository is no longer on the list.
 
 
 ifdef::parent-context[:context: {parent-context}]

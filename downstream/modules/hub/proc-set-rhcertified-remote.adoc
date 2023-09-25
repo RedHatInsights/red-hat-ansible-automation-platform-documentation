@@ -1,0 +1,41 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-set-rhcertified-remote"]
+= Configuring the rh-certified remote repository and synchronizing {CertifiedColl}
+
+You can edit the *rh-certified* remote repository to synchronize collections from {HubName} hosted on {Console} to your {PrivateHubName}.
+By default, your {PrivateHubName} `rh-certified` repository includes the URL for the entire group of {CertifiedName}.
+
+To use only those collections specified by your organization, a {PrivateHubName} administrator can upload manually-created requirements files from the `rh-certified` remote.
+
+For more information about using requirements files, see link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file[Install multiple collections with a requirements file] in the {Galaxy} User Guide.
+
+If you have collections `A`, `B`, and `C` in your requirements file, and a new collection `X` is added to {Console} that you want to use, you must add `X` to your requirements file for {PrivateHubName} to synchronize it.
+
+
+.Prerequisites
+
+* You have valid *Modify Ansible repo content* permissions.
+For more information on permissions, see xref:[Managing user access in Automation Hub].
+* You have retrieved the Sync URL and API Token from the {HubName} hosted service on {Console}.
+* You have configured access to port 443. This is required for synchronizing certified collections. For more information, see the {HubName} table in the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/ref-network-ports-protocols_planning[Network ports and protocols] chapter of the {PlatformName} Planning Guide.
+
+.Procedure
+
+. Log in to your {PrivateHubName}.
+. From the navigation panel, select menu:Collections[Remotes].
+. In the *rh-certified* remote repository, click the btn:[More Actions] icon *{MoreActionsIcon}* and click btn:[Edit].
+. In the *URL* field, paste the *Sync URL*.
+. In the *Token* field, paste the token you acquired from {Console}.
+. Click btn:[Save].
++
+You can now synchronize collections between your organization synclist on {Console} and your {PrivateHubName}.
++
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Sync*.
+
+.Verification
+The *Sync status* notification updates to notify you that the Red Hat Certified Content Collections synchronization is complete.
+
+.Verification
+
+* Select *Red Hat Certified* from the collections content drop-down list to confirm that your collections content has synchronized successfully.

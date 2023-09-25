@@ -6,5 +6,5 @@ To connect {HubName} to a {RHSSO} installation, configure inventory variables in
 
 You must configure a different set of variables when connecting to a {RHSSO} installation managed by {PlatformNameShort} than when connecting to an external {RHSSO} installation.
 
-include::automation-hub/ref-variables-connect-hub-sso.adoc[leveloffset=+1]
+include::hub/ref-variables-connect-hub-sso.adoc[leveloffset=+1]
 

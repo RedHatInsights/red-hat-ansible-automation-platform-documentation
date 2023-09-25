@@ -6,19 +6,12 @@ ifdef::context[:parent-context: {context}]
 :context: pulling-images-container-repository
 
 [role="_abstract"]
-Pull images from the {HubName} container registry to make a copy to your local machine. {HubNameStart} provides the `podman pull` command for each `latest` image in the container repository. You can copy and paste this command into your terminal, or use `podman pull` to copy an image based on an image tag.
+Pull images from the {HubName} container registry to make a copy to your local machine. 
+{HubNameStart} provides the `podman pull` command for each `latest` image in the container repository. 
+You can copy and paste this command into your terminal, or use `podman pull` to copy an image based on an image tag.
 
-== Prerequisites
-
-You must have permission to view and pull from a private container repository.
-
-include::automation-hub/proc-pull-image.adoc[leveloffset=+1]
-include::automation-hub/proc-sync-image.adoc[leveloffset=+1]
-
-[role="_additional-resources"]
-== Additional resources
-
-* See the link:http://docs.podman.io/en/latest/index.html[What is Podman?] documentation for options to use when pulling images.
+include::hub/proc-pull-image.adoc[leveloffset=+1]
+include::hub/proc-sync-image.adoc[leveloffset=+1]
 
 
 ifdef::parent-context[:context: {parent-context}]

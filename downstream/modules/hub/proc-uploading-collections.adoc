@@ -1,0 +1,25 @@
+[id="proc-uploading-collections"]
+
+= Uploading collections to your namespaces
+
+You can upload internally developed collections in `tar.gz` file format to your local {HubName} namespace for review and approval by an {HubName} administrator.
+When approved, the collection moves to the *Published* content repository where {HubName} users can view and download it.
+
+[NOTE]
+====
+Format your collection file name as follows: <my_namespace-my_collection-1.0.0.tar.gz>
+====
+
+.Prerequisites
+* You have a namespace to which you can upload the collection.
+
+
+.Procedure
+. Log in to your local {HubName}.
+. From the navigation panel, select menu:Collections[Namespaces] and select a namespace.
+. Click btn:[Upload collection].
+. Click btn:[Select file] from the *New collection* dialog.
+. Select the collection to upload.
+. Click btn:[Upload].
+
+The *My Imports* screen shows a summary of tests and notifies you if the collection uploaded successfully or if it failed.

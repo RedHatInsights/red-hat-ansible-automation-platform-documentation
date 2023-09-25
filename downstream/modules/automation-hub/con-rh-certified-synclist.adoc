@@ -1,9 +1,0 @@
-[id="con-rh-certified-synclist"]
-
-= About Red Hat {CertifiedName} synclists
-
-A synclist is a curated group of Red Hat Certified collections that is assembled by your organization administrator that synchronizes with your local {HubNameMain}. 
-You can use synclists to manage only the content that you want and exclude unnecessary collections.
-You can design and manage your synclist from the content available as part of Red Hat content on {Console}
-
-Each synclist has its own unique repository URL that you can use to designate as a remote source for content in {HubName} and is securely accessed using an API token.

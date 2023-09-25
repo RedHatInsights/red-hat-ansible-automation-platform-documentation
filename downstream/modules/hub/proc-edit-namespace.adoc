@@ -1,0 +1,21 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-edit-namespace"]
+
+= Adding additional information and resources to a namespace
+
+You can add information and provide resources for your users to accompany collections included in the namespace. Add a logo and a description, and link users to your GitHub repository, issue tracker, or other online assets. You can also enter markdown text in the *Edit resources* tab to include more information. This is helpful to users who use your collection in their automation tasks.
+
+.Prerequisites
+
+* You have *Change Namespaces* permissions.
+
+.Procedure
+. Log in to your local {HubName}.
+. From the navigation panel, select menu:Collections[Namespaces].
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Edit namespace*.
+. In the *Edit details* tab, enter information in the fields.
+. Click the *Edit resources* tab to enter markdown in the text field.
+. Click btn:[Save].
+
+Your content developers can now upload collections to your new namespace, or allow users in groups assigned as owners to upload collections.

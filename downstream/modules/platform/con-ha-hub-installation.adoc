@@ -1,0 +1,44 @@
+[id="ha-hub-installation"]
+
+= High availability {HubName}
+
+Use the following examples to populate the inventory file to install a highly available {HubName}. This inventory file includes a highly available {HubName} with a clustered setup.
+
+//dcdacosta - include a link to the RHSSO content once it's added.
+You can configure your HA deployment further to implement {RHSSO} and enable a xref:proc-install-ha-hub-selinux[high availability deployment of {HubName} on SELinux].
+
+.Specify database host IP
+
+Specify the IP address for your database host, using the `automation_pg_host` and `automation_pg_port` inventory variables. For example:
+
+-----
+automationhub_pg_host='192.0.2.10'
+automationhub_pg_port='5432'
+-----
+
+also specify the IP address for your database host in the [database] section, using the value in the `automationhub_pg_host` inventory variable:
+-----
+[database]
+192.0.2.10
+-----
+
+.List all instances in a clustered setup
+If installing a clustered setup, replace `localhost ansible_connection=local` in the [automationhub] section with the hostname or IP of all instances. For example:
+-----
+[automationhub]
+automationhub1.testing.ansible.com ansible_user=cloud-user ansible_host=192.0.2.18
+automationhub2.testing.ansible.com ansible_user=cloud-user ansible_host=192.0.2.20
+automationhub3.testing.ansible.com ansible_user=cloud-user ansible_host=192.0.2.22
+-----
+
+.Next steps
+Check that the directives below are present in ``/etc/pulp/settings.py`` in each of the {PrivateHubName} servers:
+----
+USE_X_FORWARDED_PORT = True
+USE_X_FORWARDED_HOST = True
+----
+
+[NOTE]
+====
+If `automationhub_main_url` is not specified, the first node in the [automationhub] group will be used as default.
+====

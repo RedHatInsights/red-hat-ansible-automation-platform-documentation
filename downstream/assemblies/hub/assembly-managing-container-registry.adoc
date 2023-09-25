@@ -4,12 +4,18 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="managing-container-registry"]
-= Managing your private {HubName} container registry
+= Manage your {PrivateHubName} container registry
 
 :context: managing-container-registry
 
 [role="_abstract"]
-Manage container image repositories in your {PlatformNameShort} infrastructure using the {HubName} container registry. {HubNameStart} provides features to govern who can access individual container repositories, change tags on images, view activity and image layers, and provide additional information related to each container repository.
+Manage container image repositories in your {PlatformNameShort} infrastructure by using the {HubName} container registry. 
+You can perform the following tasks with {HubNameStart}:
+
+* Control who can access individual container repositories
+* Change tags on images
+* View activity and image layers 
+* Provide additional information related to each container repository
 
 
 
@@ -17,7 +23,7 @@ Manage container image repositories in your {PlatformNameShort} infrastructure u
 The following include statements pull in the module files that comprise the assembly. Include any combination of concept, procedure, or reference modules required to cover the user story. You can also include other assemblies.
 ////
 
-include::automation-hub/con-container-registry.adoc[leveloffset=+1]
+include::hub/con-container-registry.adoc[leveloffset=+1]
 
 
 .Next steps

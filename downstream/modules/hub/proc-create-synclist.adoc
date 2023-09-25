@@ -1,0 +1,35 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-create-synclist"]
+
+= Creating a synclist of Red Hat {CertifiedName}
+
+You can create a synclist of curated {CertifiedCon} in {HubNameMain} on {Console}.
+Your synclist repository is located under menu:Automation Hub[Repositories], which is updated whenever you manage content within {CertifiedName}.
+
+All {CertifiedName} are included by default in your initial organization synclist.
+
+.Prerequisites
+
+* You have a valid {PlatformNameShort} subscription.
+* You have Organization Administrator permissions for {Console}.
+* The following domain names are part of either the firewall or the proxy's allowlist.
+They are required for successful connection and download of collections from {HubName} or Galaxy server:
+** `galaxy.ansible.com`
+** `cloud.redhat.com`
+** `{Console}`
+** `sso.redhat.com`
+* {HubNameMain} resources are stored in Amazon Simple Storage.
+The following domain names must be in the allow list:
+** `automation-hub-prd.s3.us-east-2.amazonaws.com`
+** `ansible-galaxy.s3.amazonaws.com`
+* SSL inspection is disabled either when using self signed certificates or for the Red Hat domains.
+
+.Procedure
+
+. Log in to `{Console}`.
+. Navigate to menu:Automation Hub[Collections > Collections].
+. Set the toggle switch on each collection to exclude or include it on your synclist.
+. To initiate the remote repository synchronization, navigate to menu:Automation Hub[Repositories].
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Sync* to initiate the remote repository synchronization to your {PrivateHubName}.
+. Optional: If your remote repository is already configured, update the collections content that you made available to local users by manually synchronizing Red Hat {CertifiedName} to your {PrivateHubName}.

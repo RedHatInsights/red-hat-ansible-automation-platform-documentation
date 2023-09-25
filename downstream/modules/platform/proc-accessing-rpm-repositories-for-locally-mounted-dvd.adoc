@@ -1,13 +1,13 @@
 [id="accessing-rpm-repositories-for-locally-mounted-dvd_{context}"]
 
-= Accessing RPM Repositories for Locally Mounted DVD
+= Accessing RPM repositories from a locally mounted DVD
 
 
-If you are going to access the repositories from the DVD, it is necessary to set up a local repository. This section shows how to do that.
+If you plan to access the repositories from the RHEL binary DVD, you must first set up a local repository. 
 
 .Procedure
 
-. Mount DVD or ISO
+. Mount DVD or ISO:
 
 .. DVD
 +
@@ -39,7 +39,7 @@ gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 ----
 
-. Import the gpg key
+. Import the gpg key:
 +
 ----
 # rpm --import /media/rheldvd/RPM-GPG-KEY-redhat-release
@@ -52,4 +52,4 @@ https://www.redhat.com/security/data/fd431d51.txt [Could not resolve host:
 www.redhat.com]
 ----
 
-In order to set up a repository see link:https://access.redhat.com/solutions/3776721[Need to set up yum repository for locally-mounted DVD on Red Hat Enterprise Linux 8].
+For further detail on setting up a repository see link:https://access.redhat.com/solutions/3776721[Need to set up yum repository for locally-mounted DVD on Red Hat Enterprise Linux 8].

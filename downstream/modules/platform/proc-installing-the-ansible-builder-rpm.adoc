@@ -12,10 +12,10 @@
 +
 [NOTE]
 ====
-This is preferred if a Satellite exists because the EE images can use RHEL content from the Satellite if the underlying build host is registered.
+This is preferred if a Satellite exists because the {ExecEnvShort} images can use RHEL content from the Satellite if the underlying build host is registered.
 ====
 +
-. Unarchive the AAP setup bundle.
+. Unarchive the {PlatformNameShort} setup bundle.
 . Install the ansible-builder RPM and its dependencies from the included content:
 +
 ----
@@ -25,15 +25,15 @@ $ sudo yum install ansible-builder-1.0.1-2.el8ap.noarch.rpm
 python38-requirements-parser-0.2.0-3.el8ap.noarch.rpm
 ----
 +
-. Create a directory for your custom EE build artifacts.
+. Create a directory for your custom {ExecEnvShort} build artifacts.
 +
 ----
 $ mkdir custom-ee
 $ cd custom-ee/
 ----
 +
-. Create an __execution-environment.yml__ file that defines the requirements for your custom EE following the documentation at
-https://ansible-builder.readthedocs.io/en/stable/definition/.  Override the `EE_BASE_IMAGE` and `EE_BUILDER_IMAGE` variables to point to the EEs available in your private automation hub.
+. Create an __execution-environment.yml__ file that defines the requirements for your custom {ExecEnvShort} following the documentation at
+https://ansible-builder.readthedocs.io/en/stable/definition/.  Override the `EE_BASE_IMAGE` and `EE_BUILDER_IMAGE` variables to point to the {ExecEnvShort} available in your {PrivateHubName}.
 +
 ----
 $ cat execution-environment.yml
@@ -48,7 +48,7 @@ dependencies:
   galaxy: requirements.yml
 ----
 +
-. Create an __ansible.cfg__ file that points to your private automation hub and contains credentials that allow uploading, such as an admin user token.
+. Create an __ansible.cfg__ file that points to your {PrivateHubName} and contains credentials that allow uploading, such as an admin user token.
 +
 ----
 $ cat ansible.cfg
@@ -81,15 +81,15 @@ gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 gpgcheck = 1
 ----
 
-. Add the CA certificate used to sign the private automation hub web server certificate.
+. Add the CA certificate used to sign the {PrivateHubName} web server certificate.
 
-.. For self-signed certificates (the installer default), make a copy of the file __/etc/pulp/certs/root.crt__ from your private automation hub and name it *hub-root.crt*.
+.. For self-signed certificates (the installer default), make a copy of the file __/etc/pulp/certs/root.crt__ from your {PrivateHubName} and name it *hub-root.crt*.
 
-.. If an internal certificate authority was used to request and sign the private automation hub web server certificate, make a copy of that CA certificate called *hub-root.crt*.
+.. If an internal certificate authority was used to request and sign the {PrivateHubName} web server certificate, make a copy of that CA certificate called *hub-root.crt*.
 
-. Create your python requirements.txt and ansible collection requirements.yml with the content needed for your custom EE image.  Note that any collections you require should already be uploaded into your private automation hub.
+. Create your python requirements.txt and ansible collection requirements.yml with the content needed for your custom {ExecEnvShort} image. Note that any collection required must already be uploaded into your {PrivateHubName}.
 
-. Use ansible-builder to create the context directory used to build the EE image.
+. Use ansible-builder to create the context directory used to build the {ExecEnvShort} image.
 +
 ----
 $ ansible-builder create
@@ -170,15 +170,14 @@ COPY --from=builder /output/ /output/
 RUN /output/install-from-bindep && rm -rf /output/wheels
 ----
 +
-. Create the EE image in the local podman cache using the `podman` command.
+. Create the {ExecEnvShort} image in the local podman cache by using the `podman` command.
 +
 ----
 $ podman build -f context/Containerfile \
     -t <hub_fqdn>/custom-ee:latest
 ----
 +
-. Once the custom EE image builds successfully, push it to the private
-automation hub.
+. Once the custom {ExecEnvShort} image builds successfully, push it to the {PrivateHubName}.
 +
 ----
 $ podman push <hub_fqdn>/custom-ee:latest
@@ -186,11 +185,11 @@ $ podman push <hub_fqdn>/custom-ee:latest
 
 == Workflow for upgrading between minor AAP releases
 
-To upgrade between minor releases of AAP 2, use this general workflow.
+To upgrade between minor releases of {PlatformNameShort} 2, use this general workflow.
 
 .Procedure
 
-. Download and unarchive the latest AAP 2 setup bundle.
+. Download and unarchive the latest {PlatformNameShort} 2 setup bundle.
 
 . Take a backup of the existing installation.
 

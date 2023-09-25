@@ -1,16 +1,16 @@
 [id="adding-a-subscription-manifest-to-aap-without-an-internet-connection_{context}"]
 
-= Adding a Subscription Manifest to AAP without an Internet connection
+= Adding a subscription manifest to {PlatformNameShort} without an internet connection
 
-In order to add a subscription to AAP without an Internet connection, create and import a subscription manifest.
+To add a subscription to {PlatformNameShort} without an internet connection, create and import a subscription manifest.
 
 .Procedure
 
-. Login to *access.redhat.com*.
+. Log in to *access.redhat.com*.
 
-. Navigate to menu:Subscriptions[Subscriptions].
+. From the navigation panel, select menu:Subscriptions[Subscriptions].
 
-. Click btn:[Subscription Allocations].
+. Select menu:Subscription Allocations[Subscription Allocations].
 
 . Click btn:[Create New subscription allocation].
 
@@ -20,14 +20,14 @@ In order to add a subscription to AAP without an Internet connection, create and
 
 . Click btn:[Create]. The Details tab will open for your subscription allocation.
 
-. Click btn:[Subscriptions] tab.
+. Select the menu:Subscriptions[Subscriptions] tab.
 
 . Click btn:[Add Subscription].
 
-. Find your AAP subscription, in the Entitlements box *add* the number of entitlements you want to assign to your environment. A single entitlement is needed for each node that will be managed by AAP: server, network device, etc.
+. Find your {PlatformNameShort} subscription, and in the Entitlements box *add* the number of entitlements you want to assign to your environment. A single entitlement is needed for each node that will be managed by {PlatformNameShort}: server, network device, etc.
 
 . Click btn:[Submit].
 
 . Click btn:[Export Manifest].
 
-. This downloads a file __manifest_<allocation name>_<date>.zip__ that be imported with Automation Controller after installation.
+. This downloads a file __manifest_<allocation name>_<date>.zip__ that be imported with {ControllerName} after installation.

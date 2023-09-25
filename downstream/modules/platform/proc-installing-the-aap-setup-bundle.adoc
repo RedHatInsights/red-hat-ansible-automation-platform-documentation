@@ -1,21 +1,17 @@
+// this info is duplicated here: https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/installing_and_upgrading_private_automation_hub/installing_online_or_offline#doc-wrapper
 
 [id="installing-the-aap-setup-bundle_{context}"]
 
-= Installing the AAP Setup Bundle
+= Downloading and installing the {PlatformNameShort} setup bundle
 
-The “bundle” version is strongly recommended for disconnected installations as it comes with the RPM content for AAP as well as the default execution environment images that will be uploaded to your Private Automation Hub during the installation process.
+[role="_abstract"]
+The “bundle” version is strongly recommended for disconnected installations because it includes the RPM content for {PlatformNameShort} as well as the default {ExecEnvShort} images that will be uploaded to your {PrivateHubName} during the installation process.
 
 .Procedure
 
-== Downloading the Setup Bundle
+. Download the {PlatformNameShort} setup bundle package by navigating to the link:{PlatformDownloadUrl}[{PlatformName} download] page and clicking btn:[Download Now] for the {PlatformNameShort} {PlatformVers} setup bundle.
 
-. Download the AAP setup bundle package by navigating to the link:{PlatformDownloadUrl}[{PlatformName} download] page and clicking btn:[Download Now] for the Ansible Automation Platform {PlatformVers} Setup Bundle.
-
-=== Installing the Setup Bundle
-
-The download and installation of the setup bundle needs to be located on the automation controller. From the controller, untar the bundle, edit the inventory file, and run the setup.
-
-. Untar the bundle
+. From {ControllerName}, untar the bundle:
 +
 ----
 $ tar xvf \
@@ -23,7 +19,7 @@ $ tar xvf \
 $ cd ansible-automation-platform-setup-bundle-2.4-1
 ----
 +
-. Edit the inventory file to include the required options
+. Edit the inventory file to include the required options:
 
 .. automationcontroller group
 .. automationhub group
@@ -64,9 +60,8 @@ automationhub_pg_username='automationhub'
 automationhub_pg_password='dbpassword123'
 automationhub_pg_sslmode='prefer'
 ----
-NOTE: The inventory should be kept intact after installation since it is used for backup, restore, and upgrade functions.  Consider keeping a backup copy in a secure location, given that the inventory file contains passwords.
 +
-. Run the AAP setup bundle executable as the root user
+. Run the {PlatformNameShort} setup bundle executable as the root user:
 +
 ----
 $ sudo -i
@@ -74,6 +69,11 @@ $ sudo -i
 # ./setup.sh
 ----
 +
-. Once installation is complete, navigate to the Fully Qualified Domain Name (FQDN) for the Automation controller node that was specified in the installation inventory file.
+. When installation is complete, navigate to the Fully Qualified Domain Name (FQDN) for the {ControllerName} node that was specified in the installation inventory file.
 
-. Log in with the administrator credentials specified in the installation inventory file.
+. Log in using the administrator credentials specified in the installation inventory file.
+
+[NOTE]
+====
+The inventory must be kept intact after installation because it is used for backup, restore, and upgrade functions. Consider keeping a backup copy in a secure location, given that the inventory file contains passwords.
+====

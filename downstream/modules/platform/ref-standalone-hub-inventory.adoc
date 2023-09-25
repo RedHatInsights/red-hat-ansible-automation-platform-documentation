@@ -45,3 +45,11 @@ automationhub_pg_sslmode='prefer'
 # automationhub_ssl_cert=/path/to/automationhub.cert
 # automationhub_ssl_key=/path/to/automationhub.key
 -----
+
+== Connecting {HubName} to a {RHSSO} environment
+
+You can configure the inventory file further to connect {HubName} to a {RHSSO} installation.
+
+You must configure a different set of variables when connecting to a {RHSSO} installation managed by {PlatformNameShort} than when connecting to an external {RHSSO} installation.
+
+For more information about these inventory variables, refer to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-hub-variables[{HubNameMain} variables].

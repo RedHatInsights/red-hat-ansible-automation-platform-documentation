@@ -1,0 +1,53 @@
+[id="proc-configure-automation-hub-server-gui"]
+= Using the web console to configure Red Hat {HubName} as the primary content source
+
+To configure {HubName}, you must create a credential and add it to the Organization’s Galaxy Credentials field. With {HubName}, you have access to certified, supported collections.
+
+.Prerequisites
+
+* You have obtained the API token for the {HubName} server. See xref:hub-create-api-token[Creating the Red Hat {HubName} API token] for more information.
+
+[IMPORTANT]
+====
+Creating a new token revokes any previous tokens generated for {HubName}. Update any {ControllerName} or scripts created with the previous token.
+====
+
+.Procedure
+
+. Navigate to your {ControllerName}.
+. Create a new credential.
+.. Navigate to menu:Resources[Credentials].
+.. Click btn:[Add].
+.. Enter the name for your new credential in the *Name* field.
+.. Optional: Enter a description and enter or select the name of the organization with which the credential is associated.
+.. Under *Organization*, select the organization that you want to use the credential for.
+.. Select *Ansible Galaxy/Automation Hub API Token* as the credential type.
+.. Under *Type Details*, enter the *Galaxy Server URL*, *Authentication Server URL*, and *API Token* previously created.
+.. Click btn:[Save].
+. Select the credential that you created from the Organization’s *Galaxy Credentials* field.
+.. Navigate to menu:Access[Organizations].
+.. Select the organization where want to add your Galaxy credentials.
+.. Click btn:[Edit].
+.. Under Galaxy Credentials, click the btn:[Search] icon.
+.. Select the credential that you created for {HubName}, and place it at the beginning of the list.
+.. Optional: If you have a secondary source of content, such as Ansible Galaxy, place this credential after the credential that you created for {HubName}.
+.. Click btn:[Select].
+.. Click btn:[Save].
+
+.Verification
+
+To validate the credential, update an existing source control management (SCM)-based project by selecting the project and clicking the btn:[Sync Project] icon.
+
+. Navigate to your project repository.
+. Select a project that uses a `collections/requirements.yml` file.
+. Update the project by clicking the btn:[Sync Project] icon.
+
+If the *Status* of the project is *Successful*, then the credential is valid.
+
+You have now configured {HubName} as your primary server. You can begin to download and install supported collections.
+
+[role="_additional-resources"]
+
+.Additional resources
+. For more information about server list configuration options and using Ansible Galaxy as an Ansible content source, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
+. For more information about creating and using credentials, see the link:https://docs.ansible.com/automation-controller/4.2.1/html/userguide/credentials.html[Credentials] section of Automation Controller User Guide v4.2.1.

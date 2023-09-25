@@ -1,0 +1,60 @@
+[id="proc-install-ha-hub-selinux"]
+
+= Enabling a high availability (HA) deployment of {HubName} on SELinux
+
+You can configure the inventory file further to enable high availability deployment of {HubName} on SELinux by creating two mount points for `/var/lib/pulp` and `/var/lib/pulp/pulpcore_static`, then assigning the appropriate SELinux contexts to each.
+
+[NOTE]
+====
+You must add the context for `/var/lib/pulp` pulpcore_static and run the {PlatformNameShort} installer before adding the context for `/var/lib/pulp`.
+====
+
+.Prerequisites
+* You have already configured a NFS export on your server.
+
+.Procedure
+. Create a mount point at `/var/lib/pulp`:
++
+----
+$ mkdir /var/lib/pulp/
+----
+. Open `/etc/fstab` using a text editor, then add the following values:
++
+----
+srv_rhel8:/data /var/lib/pulp nfs defaults,_netdev,nosharecache 0 0
+srv_rhel8:/data/pulpcore_static /var/lib/pulp/pulpcore_static nfs defaults,_netdev,nosharecache,context="system_u:object_r:httpd_sys_content_rw_t:s0" 0 0
+----
+. Run the following command:
++
+----
+$ systemctl daemon-reload
+----
+. Run the mount command for `/var/lib/pulp`:
++
+----
+$ mount /var/lib/pulp
+----
+. Create a mount point at `/var/lib/pulp/pulpcore_static`:
++
+----
+$ mkdir /var/lib/pulp/pulpcore_static
+----
+. Run the mount command:
++
+----
+$ mount -a
+----
+. With the mount points set up, run the {PlatformNameShort} installer:
++
+----
+$ setup.sh -- -b --become-user root
+----
+
+.Next steps
+* After the installation is complete, unmount the `/var/lib/pulp/` mount point.
+* xref:proc-apply-selinux-context[Apply the appropriate SELinux context].
+* xref:proc-configure-pulpcore-service[Configure the pulpcore.serivce].
+
+.Additional Resources
+* See the link:https://docs.pulpproject.org/en/2.16/user-guide/scaling.html#selinux-requirements[SELinux Requirements on the Pulp Project documentation] for a list of SELinux contexts.
+* See the link:https://docs.pulpproject.org/pulpcore/installation/hardware-requirements.html#filesystem-layout[Filesystem Layout] for a full description of Pulp folders.

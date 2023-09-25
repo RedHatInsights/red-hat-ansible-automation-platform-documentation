@@ -6,22 +6,22 @@ ifdef::context[:parent-context: {context}]
 :context: repo-management
 
 [role="_abstract"]
-As an automation hub administrator, you can create, edit, delete, and move automation content collections between repositories.
+As an {HubName} administrator, you can create, edit, delete, and move automation content collections between repositories.
 
-{HubNameStart} includes two types of repositories where you can publish collections:
+In {HubName} you can publish collections to two types of repositories, depending on whether you want your collection to be public or private:
 
 Staging repositories:: Any user with permission to upload to a namespace can publish collections into these repositories. Collections in these repositories are not available in the search page, but rather, are displayed on the approval dashboard for an administrator to verify.
 
-Custom repositories:: Any user with write permissions on the repository can publish collections to these repositories. Custom repositories can be private repositories where only users with view permissions can see them, or public where all users can see them. These repositories are not displayed on the approval dashboard. If search is enabled by the repository owner, they can appear in search results.
+Custom repositories:: Any user with write permissions on the repository can publish collections to these repositories. Custom repositories can be private repositories where only users with view permissions can see them, or public where all users can see them. These repositories are not displayed on the approval dashboard. If the repository owner enables search, the collection can appear in search results.
 
 Staging repositories are marked with the `pipeline=staging` label. By default, {HubName} ships with one staging repository that is automatically used when a repository is not specified for uploading collections. However, users can create new staging repositories during xref:proc-create-repository[repository creation].
 
-include::automation-hub/con-approval-pipeline.adoc[leveloffset=+1]
-include::automation-hub/con-repo-rbac.adoc[leveloffset=+1]
-include::automation-hub/proc-create-repository.adoc[leveloffset=+1]
-include::automation-hub/proc-provide-repository-access.adoc[leveloffset=+1]
-include::automation-hub/proc-adding-collections-repository.adoc[leveloffset=+1]
-include::automation-hub/proc-revert-repository-version.adoc[leveloffset=+1]
+include::hub/con-approval-pipeline.adoc[leveloffset=+1]
+include::hub/con-repo-rbac.adoc[leveloffset=+1]
+include::hub/proc-create-repository.adoc[leveloffset=+1]
+include::hub/proc-provide-repository-access.adoc[leveloffset=+1]
+include::hub/proc-adding-collections-repository.adoc[leveloffset=+1]
+include::hub/proc-revert-repository-version.adoc[leveloffset=+1]
 
 
 ifdef::parent-context[:context: {parent-context}]

@@ -14,6 +14,8 @@ include::platform/con-about-automation-hub.adoc[leveloffset=+1]
 
 include::platform/con-about-pa-hub.adoc[leveloffset=+1]
 
+include::platform/con-about-ha-hub.adoc[leveloffset=+1]
+
 //[dcd-moved this description to the intro to platform components since it is the only "required" component. include::platform/con-about-automation-controller.adoc[leveloffset=+1]
 
 //include::platform/con-about-services-catalog.adoc[leveloffset=+1]

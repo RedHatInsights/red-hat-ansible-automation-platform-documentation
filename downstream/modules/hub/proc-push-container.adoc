@@ -1,0 +1,44 @@
+
+
+[id="push-containers"]
+
+
+= Pushing a container image to {PrivateHubName}
+
+
+[role="_abstract"]
+You can push tagged container images to {PrivateHubName} to create new containers and populate the container registry.
+
+.Prerequisites
+
+* You have permissions to create new containers.
+* You have the FQDN or IP address of the {HubName} instance.
+
+.Procedure
+
+. Log in to Podman using your {HubName} location and credentials:
++
+[subs="+quotes"]
+-----
+$ podman login -u=__<username>__ -p=__<password>__ __<automation_hub_url>__
+-----
++
+. Push your container image to your {HubName} container registry:
++
+[subs="+quotes"]
+-----
+$ podman push __<automation_hub_url>__/__<container_image_name>__ 
+-----
+
+.Troubleshooting
+
+The `push` operation re-compresses image layers during the upload, which is not guaranteed to be reproducible and is client-implementation dependent. 
+This may lead to image-layer digest changes and a failed push operation, resulting in `Error: Copying this image requires changing layer representation, which is not possible (image is signed or the destination specifies a digest)`.
+
+.Verification
+
+. Log in to your {HubName}.
+
+. Navigate to menu:Container Registry[].
+
+. Locate the container in the container repository list.

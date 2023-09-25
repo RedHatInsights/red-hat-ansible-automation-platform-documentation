@@ -1,0 +1,46 @@
+
+
+[id="obtain-images"]
+
+
+= Pulling images for use in {HubName}
+
+[role="_abstract"]
+Before you can push container images to your {PrivateHubName}, you must first pull them from an existing registry and tag them for use. The following example details how to pull an image from the Red Hat Ecosystem Catalog (registry.redhat.io).
+
+.Prerequisites
+You have permissions to pull images from registry.redhat.io.
+
+.Procedure
+
+. Log in to Podman by using your registry.redhat.io credentials:
++
+-----
+$ podman login registry.redhat.io
+-----
++
+. Enter your username and password.
+. Pull a container image:
++
+[subs="+quotes"]
+-----
+$ podman pull registry.redhat.io/__<container_image_name>__:__<tag>__
+-----
+
+
+.Verification
+
+To verify that the image you recently pulled is contained in the list, take these steps:
+
+. List the images in local storage:
++
+-----
+$ podman images
+-----
++
+. Check the image name, and verify that the tag is correct.
+
+[role="_additional-resources"]
+.Additional resources
+
+* See link:https://redhat-connect.gitbook.io/catalog-help/[Red Hat Ecosystem Catalog Help] for information on registering and getting images.

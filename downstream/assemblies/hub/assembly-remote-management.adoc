@@ -8,8 +8,8 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 You can set up remote configurations to any server that is running {HubName}. Remote configurations allow you to sync content to your custom repositories from an external collection source.
 
-include::automation-hub/proc-create-remote.adoc[leveloffset=+1]
-include::automation-hub/proc-provide-remote-access.adoc[leveloffset=+1]
+include::hub/proc-create-remote.adoc[leveloffset=+1]
+include::hub/proc-provide-remote-access.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

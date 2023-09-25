@@ -1,0 +1,25 @@
+
+
+[id="proc-tag-image"]
+
+= Tagging container images
+
+[role="_abstract"]
+Tag images to add an additional name to images stored in your {HubName} container repository. If no tag is added to an image, {HubName} defaults to `latest` for the name.
+
+.Prerequisites
+
+* You have *change image tags* permissions.
+
+.Procedure
+
+. From the navigation panel, select menu:Execution Environments[Execution Environments].
+. Select your container repository.
+. Click the *Images* tab.
+. Click the btn:[More Actions] icon *{MoreActionsIcon}*, and click btn:[Manage tags].
+. Add a new tag in the text field and click btn:[Add].
+. Optional: Remove *current tags* by clicking btn:[x] on any of the tags for that image.
+. Click btn:[Save].
+
+.Verification
+* Click the *Activity* tab and review the latest changes.

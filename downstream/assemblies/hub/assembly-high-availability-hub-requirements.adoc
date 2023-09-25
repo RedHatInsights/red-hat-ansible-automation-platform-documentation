@@ -1,9 +1,0 @@
-[id="high-availability-requirements"]
-
-= Requirements for a high availability {HubName}
-
-[role="_abstract"]
-Before deploying a high availability (HA) {HubName}, ensure that you have a shared filesystem installed in your environment and that you have configured your network storage system, if applicable.
-
-include::automation-hub/con-required-shared-filesystem.adoc[leveloffset=+1]
-include::automation-hub/con-network-storage-reqs.adoc[leveloffset=+1]

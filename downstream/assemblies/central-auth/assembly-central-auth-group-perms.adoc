@@ -25,6 +25,6 @@ You can group permissions into roles with specific user access to features in th
 
 You have created a new role with specific permissions. You can now assign this role to groups.
 
-include::automation-hub/proc-assigning-roles.adoc[leveloffset=+2]
+include::hub/proc-assigning-roles.adoc[leveloffset=+2]
 
-include::automation-hub/ref-permissions.adoc[leveloffset=+2]
+include::hub/ref-permissions.adoc[leveloffset=+2]

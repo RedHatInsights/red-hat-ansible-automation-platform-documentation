@@ -10,33 +10,36 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-By default, {PrivateHubName} does not include container images. To populate your container registry, you need to push a container image to it. The procedures in this section describe how to pull images from the Red Hat Ecosystem Catalog (registry.redhat.io), tag them, and push them to your {PrivateHubName} container registry.
+By default, {PrivateHubName} does not include container images. 
+To populate your container registry, you must push a container image to it. 
+
+You must follow a specific workflow to populate your {PrivateHubName} container registry: 
+
+* Pull images from the Red Hat Ecosystem Catalog (registry.redhat.io)
+* Tag them
+* Push them to your {PrivateHubName} container registry
 
 [IMPORTANT]
 ====
-Image manifests and filesystem blobs are served directly from `registry.redhat.io` and `registry.access.redhat.com`. 
-However, from 1st of May 2023, filesystem blobs are served from `quay.io` instead. 
-To avoid problems pulling container images, you must enable outbound connections to the following hostnames:
+Image manifests and filesystem blobs were both originally served directly from `registry.redhat.io` and `registry.access.redhat.com`. 
+As of 1 May 2023, filesystem blobs are served from `quay.io` instead. 
+To avoid problems pulling container images, enable outbound connections to the following hostnames:
 
 * `cdn.quay.io`
 * `cdn01.quay.io`
 * `cdn02.quay.io`
 * `cdn03.quay.io`
 
-This change should be made to any firewall configuration that specifically enables outbound connections to `registry.redhat.io` or `registry.access.redhat.com`.
+Make this change to any firewall configuration that specifically enables outbound connections to `registry.redhat.io` or `registry.access.redhat.com`.
 
 Use the hostnames instead of IP addresses when configuring firewall rules. 
 
 After making this change you can continue to pull images from `registry.redhat.io` and `registry.access.redhat.com`. You do not require a `quay.io` login, or need to interact with the `quay.io` registry directly in any way to continue pulling Red Hat container images.
 ====
 
-== Prerequisites
-
-* You have permissions to create new containers and push containers to {PrivateHubName}.
-
-include::automation-hub/proc-obtain-images.adoc[leveloffset=+1]
-include::automation-hub/proc-tag-pulled-image.adoc[leveloffset=+1]
-include::automation-hub/proc-push-container.adoc[leveloffset=+1]
+include::hub/proc-obtain-images.adoc[leveloffset=+1]
+include::hub/proc-tag-pulled-image.adoc[leveloffset=+1]
+include::hub/proc-push-container.adoc[leveloffset=+1]
 
 
 

@@ -1,0 +1,27 @@
+
+[id="delete-collection"]
+
+= Deleting a collection on {HubName}
+
+You can further manage your collections by deleting unwanted  collections, if the collection is not dependent on other collections. The *Dependencies* tab on a collection displays a list of other collections that use the current collection.
+
+.Prerequisites
+* The collection being deleted does not have dependencies with other collections.
+* You have *Delete Collections* permissions.
+
+.Procedure
+. Log in to {PlatformName}.
+. From the navigation panel, select menu:Automation Hub[Collections].
+. Before deleting the collection, check to see if it has collections that are dependent on it:
+.. Click the *Dependencies* tab for that collection. If it is blank, you will be able to delete the collection. If the *Dependencies* tab is not blank, you must delete these dependencies before you can delete the collection. 
+. Click the collection to delete.
+. Click the btn:[More Actions] icon *{MoreActionsIcon}*, and then select an option:
+.. *Delete entire collection* to delete all versions in this collection.
+.. *Delete version [number]* to delete the current version of this collection. You can change versions by using the *Version* drop-down menu.
++
+[NOTE]
+====
+If the selected collection has any dependencies with other collections, these actions are disabled until you delete those dependencies. Click the *Dependencies* tab to see a list of dependencies to delete.
+====
++
+. When the confirmation window opens, verify that the collection or version number is correct, and then select *Delete*.

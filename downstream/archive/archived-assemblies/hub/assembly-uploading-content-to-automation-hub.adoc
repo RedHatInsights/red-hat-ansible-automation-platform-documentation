@@ -8,6 +8,6 @@ You can upload collections using the Automation Hub user interface or the `ansib
 .Prerequisites
 * You are a Red Hat Connect Partner. Learn more at https://connect.redhat.com/[Red Hat Partner Connect].
 
-include::automation-hub/proc-upload-collection.adoc[leveloffset=+1]
+include::hub/proc-upload-collection.adoc[leveloffset=+1]
 
 Once uploaded, your collections will enter the partner certification process. Our Partner Engineering team will contact you with the certification status of your collection.

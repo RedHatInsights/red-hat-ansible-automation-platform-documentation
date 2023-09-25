@@ -1,0 +1,24 @@
+ifdef::context[:parent-context: {context}]
+
+[id="hub-create-api-token"]
+= Creating the API token in {HubName}
+
+:context: api-token
+
+[role="_abstract"]
+Before you can interact with {HubName} by uploading or downloading collections, you must create an API token. The {HubName} API token authenticates your `ansible-galaxy` client to the Red Hat {HubName} server.
+
+Your method for creating the API token differs according to the type of {HubName} that you are using:
+
+* {HubNameStart} uses Offline token management. See xref:proc-create-api-token[Creating the API token in {HubName}].
+
+* {PrivateHubNameStart} uses API token management. See xref:proc-create-api-token-pah[Creating the API token in {PrivateHubName}].
+
+
+include::hub/proc-create-api-token.adoc[leveloffset=+1]
+include::hub/proc-create-api-token-pah.adoc[leveloffset=+1]
+include::hub/con-offline-token-active.adoc[leveloffset=+1]
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

@@ -1,9 +1,0 @@
-[id="installing-high-availability-hub"]
-
-= Installing a high availability automation hub
-
-[role="_abstract"]
-Configure the {PlatformNameShort} installer to install {HubName} in a highly available (HA) configuration. Install HA {HubName} on SELinux by creating mount points and adding the appropriate SELinux contexts to your {PlatformNameShort} environment.
-
-include::automation-hub/con-ha-hub-installation.adoc[leveloffset=+1]
-include::automation-hub/proc-install-ha-hub-selinux.adoc[leveloffset=+1]

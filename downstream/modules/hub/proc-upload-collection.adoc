@@ -1,0 +1,38 @@
+[id="proc-upload-collection"]
+= Uploading a collection to {HubName}
+
+[role="_abstract"]
+If you want to share a collection that you have created with the rest of the Ansible community, you can upload it to {HubName}. When you upload a collection to {HubName}, our Partner Engineering team reviews it for certification.
+
+You can upload the collection by using either the {HubName} user interface or the `ansible-galaxy` client.
+
+.Prerequisites
+
+* You have configured the `ansible-galaxy` client for Red Hat Automation Hub.
+* You have at least one namespace.
+* You have run all content through `ansible-test sanity`.
+* You are a Red Hat Connect Partner. Learn more at https://connect.redhat.com/[Red Hat Partner Connect].
+
+.Procedure
+
+Using the {HubName} user interface:
+
+. Log in to {PlatformName}.
+. From the navigation panel, select menu:Automation Hub[Collections > Namespaces].
+. On the *My namespaces* tab, locate the namespace to which you want to upload a collection.
+. Click *View collections* and click btn:[Upload collection].
+. In the *New collection* modal, click btn:[Select file]. Locate the file on your system.
+. Click btn:[Upload].
+
+Using the `ansible-galaxy` client:
+
+
+* Enter the following command:
++
+-----
+ansible-galaxy collection publish path/to/my_namespace-my_collection-1.0.0.tar.gz --api-key=SECRET
+-----
+
+[role="_additional-resources"]
+.Next steps
+* After you upload your collections, they enter the partner certification process. Our Partner Engineering team will contact you with the certification status of your collection.

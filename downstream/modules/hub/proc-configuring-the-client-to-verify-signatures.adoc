@@ -1,0 +1,73 @@
+
+[id="configuring-the-client-to-verify-signatures"]
+
+= Configuring the client to verify signatures
+
+.Prerequisites
+* The client must have sudo privileges configured to verify signatures.
+
+.Procedure
+
+. In a terminal type:
++
+----
+>  sudo <name of editor> __/etc/containers/policy.json
+----
++
+The file that is displayed is similar to this:
++
+----
+    {
+        "default": [{"type": "reject"}],
+        "transports": {
+            "docker": {
+              "quay.io": [{"type": "insecureAcceptAnything}],
+              "docker.io": [{"type": "insecureAcceptAnything}],
+              "_<server-address>_": [
+                {
+                    "type": "signedBy",
+                    "keyType": "GPGKeys",
+                    "keyPath": "/tmp/containersig.txt"
+    }
+----
++
+This file shows that neither `quay.io`, or `docker.io` will perform the verification, because the type is `insecureAcceptAnything` which overrides the default type of `reject`. However, `_<server-address>_` will perform the verification, because the parameter `type` is set to `"signedBy"`.
++
+[NOTE]
+====
+The only `keyType`` currently supported is GPG keys.
+====
++
+. Under the `_<server-address>_` entry, modify the `keyPath` <1> to include the
+name of your key file.
++
+----
+    {
+        "default": [{"type": "reject"}],
+        "transports": {
+            "docker": {
+              "quay.io": [{"type": "insecureAcceptAnything}],
+              "docker.io": [{"type": "insecureAcceptAnything}],
+              "_<server-address>_1": [
+                {
+                    "type": "signedBy",
+                    "keyType": "GPGKeys",
+                    "keyPath": "/tmp/<key file name", <1>
+                    "signedIdentity": {
+                      "type": "remapIdentity",
+                      "prefix": "_<server-address>_",
+                      "signedPrefix": "0.0.0.0:8002"
+    }
+----
++
+. Save and close the file.
+
+.Verification
+* Pull the file using Podman, or your client of choice:
+
+----
+> podman pull _<server-address>_/<container-name>:<tag name>
+--tls-verify=false
+----
+
+This response verifies the signature with no errors.

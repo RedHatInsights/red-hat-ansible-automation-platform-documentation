@@ -1,0 +1,46 @@
+// Module included in the following assemblies:
+// assembly-view-only-access.adoc
+
+[id="con-enable-view-only"]
+
+//= Enabling view-only access for your {PrivateHubName}
+
+To enable view-only access for your {PrivateHubName}, you must edit the inventory file on your {PlatformName} installer.
+
+* If you are installing a new instance of {PlatformNameShort}, add the `automationhub_enable_unauthenticated_collection_access` and `automationhub_enable_unauthenticated_collection_download` parameters to your `inventory` file along with your other installation configurations:
+* If you are updating an existing {PlatformNameShort} installation to include view-only access, add the `automationhub_enable_unauthenticated_collection_access` and `automationhub_enable_unauthenticated_collection_download` parameters to your `inventory` file and then run the `setup.sh` script to apply the updates:
+
+.Procedure
+. Navigate to the installer.
+Bundled installer::
++
+-----
+$ cd ansible-automation-platform-setup-bundle-<latest-version>
+-----
++
+Online installer::
++
+-----
+$ cd ansible-automation-platform-setup-<latest-version>
+-----
++
+. Open the `inventory` file with a text editor.
+. Add the `automationhub_enable_unauthenticated_collection_access` and `automationhub_enable_unauthenticated_collection_download` parameters to the inventory file and set both to `True`, following the example below:
++
+----
+[all:vars]
+
+automationhub_enable_unauthenticated_collection_access = True <1>
+automationhub_enable_unauthenticated_collection_download = True <2>
+----
+<1> Allows unauthorized users to view collections
+<2> Allows unathorized users to download collections
+. Run the `setup.sh` script. The installer will now enable view-only access to your {HubName}.
+
+.Verification
+After the installation is complete, verify that you have view-only access on your private {HubName} by attempting to view content on your {HubName} without logging in.
+
+. Navigate to your private {HubName}.
+. On the login screen, click btn:[View only mode].
+
+Verify that you are able to view content on your {HubName}, such as namespaces or collections, without having to log in.

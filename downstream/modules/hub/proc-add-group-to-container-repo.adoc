@@ -1,0 +1,21 @@
+[id="providing-access-to-containers"]
+
+= Providing access to your container repository
+
+[role="_abstract"]
+Provide access to your container repository for users who need to work with the images. 
+Adding a group allows you to modify the permissions the group can have to the container repository. 
+You can use this option to extend or restrict permissions based on what the group is assigned.
+
+.Prerequisites
+
+* You have *change container namespace* permissions.
+
+.Procedure
+
+. From the navigation panel, select menu:Execution Environments[Execution Environments].
+. Select your container repository.
+. From the *Access* tab, click btn:[Select a group].
+. Select the group or groups to which you want to grant access and click btn:[Next].
+. Select the roles that you want to add to this {ExecEnvShort} and click btn:[Next].
+. Click btn:[Add].

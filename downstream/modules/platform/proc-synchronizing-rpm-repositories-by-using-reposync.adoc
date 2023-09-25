@@ -1,8 +1,11 @@
+// Module included in the following assemblies:
+// assembly-disconnected-installation.adoc
+
 [id="proc-synchronizing-rpm-repositories-by-using-reposync_{context}"]
 
-= Synchronizing RPM repositories by using reposync
+= Synchronizing RPM repositories using reposync
 
-To perform a reposync you need a RHEL host that has access to the Internet. After the repositories are synced,  you can move the repositories to the disconnected network hosted from a web server.
+To perform a reposync you need a RHEL host that has access to the internet. After the repositories are synced,  you can move the repositories to the disconnected network hosted from a web server.
 
 .Procedure
 
@@ -28,7 +31,7 @@ To perform a reposync you need a RHEL host that has access to the Internet. Afte
 
 .. If using `--newest-only` the repos downloaded will be ~14GB.
 
-. If you plan to use Red Hat Single Sign-On (RHSSO) sync these repositories.
+. If you plan to use {RHSSO}, sync these repositories:
 
 .. jb-eap-7.3-for-rhel-8-x86_64-rpms
 .. rh-sso-7.4-for-rhel-8-x86_64-rpms

@@ -12,4 +12,4 @@ Optionally, you can configure Ansible Galaxy as a secondary source of content.
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 
-include::automation-hub/proc-configure-automation-hub-server-cli.adoc[leveloffset=+1]
+include::hub/proc-configure-automation-hub-server-cli.adoc[leveloffset=+1]

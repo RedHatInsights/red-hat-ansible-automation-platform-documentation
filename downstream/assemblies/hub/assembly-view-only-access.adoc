@@ -1,6 +1,7 @@
 [id="assembly-view-only-access"]
-= Enabling view-only access for your private automation hub
 
-By enabling view-only access, you can grant access for users to view collections or namespaces on your private automation hub without the need for them to log in. View-only access allows you to share content with unauthorized users while restricting their ability to only view or download source code, without permissions to edit anything on your private automation hub.
+= Enable view-only access for your {PrivateHubName}
 
-include::automation-hub/con-enable-view-only.adoc[leveloffset=+1]
+By enabling view-only access, you can grant access for users to view collections or namespaces on your {PrivateHubName} without requiring them to log in. View-only access allows you to share content with unauthorized users while restricting their ability to view or download source code. They will not have permissions to edit anything on your {PrivateHubName}.
+
+include::hub/con-enable-view-only.adoc[leveloffset=+1]

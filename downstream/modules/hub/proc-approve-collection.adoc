@@ -1,0 +1,21 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-approve-collection"]
+
+= Approving collections for internal publication
+
+You can approve collections uploaded to individual namespaces for internal publication and use. All collections awaiting review are located under the *Approval* tab in the *Staging* repository.
+
+.Prerequisites
+
+* You have *Modify Ansible repo content* permissions.
+
+.Procedure
+
+. From the navigation panel, select menu:Collections[Approval].
+Collections requiring approval have the status *Needs review*.
+. Select a collection to review.
+. Click the *Version* to view the contents of the collection.
+. Click btn:[Certify] to approve the collection.
+
+Approved collections are moved to the *Published* repository where users can view and download them for use.

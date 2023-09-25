@@ -1,0 +1,15 @@
+[id="con-user-access"]
+
+= Implementing user access
+
+User access is based on managing permissions to system objects (users, groups, namespaces) rather than by assigning permissions individually to specific users.
+
+You assign permissions to the groups that you create. You can then assign users to these groups. This means that each user in a group has the permissions assigned to that group.
+
+Groups created in {HubName} can range from system administrators responsible for governing internal collections, configuring user access, and repository management to groups with access to organize and upload internally developed content to {HubName}.
+
+*  See xref:ref-permissions[Automation Hub permissions] for information on system permissions.
+
+== Default user access for {HubName}
+
+When you install {HubName}, the system automatically creates the default *admin* user in the *Admin* group. The *Admin* group is assigned all permissions in the system.

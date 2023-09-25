@@ -1,0 +1,25 @@
+[id="proc-using-content-signing-services-in-pah"]
+
+= Using content signing services in private automation hub
+
+After you have configured content signing on your {PrivateHubName}, you can manually sign a new collection or replace an existing signature with a new one.
+When users download a specific collection, this signature indicates that the collection is for them and has not been modified after certification.
+
+You can use content signing on {PrivateHubName} in the following scenarios:
+
+* Your system does not have automatic signing configured and you must use a manual signing process to sign collections.
+* The current signatures on the automatically configured collections are corrupted and need new signatures.
+* You need additional signatures for previously signed content.
+* You want to rotate signatures on your collections.
+
+.Procedure
+
+. Log in to your {PrivateHubName} instance in the {HubName} UI.
+
+. From the navigation panel, select menu:Collections[Approval].
+The Approval dashboard opens and displays a list of collections.
+
+. Click btn:[Sign and approve] for each collection that you want to sign.
+
+.Verification
+* Verify that the collections you signed and manually approved are displayed in the *Collections* tab.

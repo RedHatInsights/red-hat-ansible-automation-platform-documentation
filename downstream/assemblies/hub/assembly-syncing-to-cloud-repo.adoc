@@ -1,21 +1,50 @@
 [id="assembly-creating-tokens-in-automation-hub"]
 = Configuring {HubNameMain} remote repositories to synchronize content
 
-You can configure your {PrivateHubName} to synchronize with {CertifiedName} hosted on `{Console}` or to your choice of collections in {Galaxy}, using remote configurations.
+Use remote configurations to configure your {PrivateHubName} to synchronize with {CertifiedName} hosted on `{Console}` or with your collections in {Galaxy}.
 
 [IMPORTANT]
 ====
 As of the 2.4 release you can still synchronize content, but synclists are deprecated, and will be removed in a future version.
 
-From Ansible Automation Platform 2.4 a private automation hub administrator can go to the rh-certified remote and upload a manually-created requirements file. 
+To synchronize content, you can now upload a manually-created requirements file from the rh-certified remote. 
 
 Remotes are configurations that allow you to synchronize content to your custom repositories from an external collection source.
 ====
 
-include::automation-hub/con-remote-repos.adoc[leveloffset=+1]
+[discrete]
+== What’s the difference between {Galaxy} and {HubNameMain}?
 
-include::automation-hub/proc-obtaining-org-collection-url.adoc[leveloffset=+1]
+Collections published to {Galaxy} are the latest content published by the Ansible community and have no joint support claims associated with them. 
+{Galaxy} is the recommended frontend directory for the Ansible community accessing content.
 
-include::automation-hub/proc-set-rhcertified-remote.adoc[leveloffset=+1]
+Collections published to {HubNameMain} are targeted for joint customers of Red Hat and selected partners. 
+Customers need an Ansible subscription to access and download collections on {HubNameMain}. 
+A certified collection means that Red Hat and partners have a strategic relationship in place and are ready to support joint customers, and may have had additional testing and validation done against them.
 
-include::automation-hub/proc-set-community-remote.adoc[leveloffset=+1]
+[discrete]
+== How do I request a namespace on {Galaxy}?
+
+To request a namespace through an {Galaxy} GitHub issue, follow these steps:
+
+* Send an email to ansiblepartners@redhat.com 
+* Include the GitHub username used to sign up on {Galaxy}.
+
+You must have logged in at least once for the system to validate.
+
+After users are added as administrators of the namespace, you can use the self-serve process to add more administrators.
+
+[discrete]
+== Are there any restrictions for {Galaxy} namespace naming?
+
+Collection namespaces must follow python module name convention. 
+This means collections should have short, all lowercase names. 
+You can use underscores in the collection name if it improves readability.
+
+include::hub/con-remote-repos.adoc[leveloffset=+1]
+
+include::hub/proc-obtaining-org-collection-url.adoc[leveloffset=+1]
+
+include::hub/proc-set-rhcertified-remote.adoc[leveloffset=+1]
+
+include::hub/proc-set-community-remote.adoc[leveloffset=+1]

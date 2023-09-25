@@ -4,13 +4,12 @@
 The following is a list of Frequently Asked Questions for the {PlatformName} Certification Program. 
 If you have any questions regarding the following items, email ansiblepartners@redhat.com.
 
-
 == Why certify Ansible collections?
 
 The Ansible certification program enables a shared statement of support for {CertifiedCon} between Red Hat and the ecosystem partner. 
 An end customer, experiencing trouble with Ansible and certified partner content, can open a support ticket, for example, a request for information, or a problem with Red Hat, and expect the ticket to be resolved by Red Hat and the ecosystem partner. 
 
-Red Hat offers go-to-market benefits for Certified Partners to grow market awareness, demand generation and collaborative selling.
+Red Hat offers go-to-market benefits for Certified Partners to grow market awareness, generate demand, and sell collaboratively.
 
 Red Hat {CertifiedName} are distributed through {HubNameMain} (subscription required), a centralized repository for jointly supported Ansible Content. 
 As a certified partner, publishing collections to {HubNameMain} provides end customers the power to manage how trusted automation content is used in their production environment with a well-known support life cycle.
@@ -19,12 +18,12 @@ For more information about getting started with certifying a solution, see link:
 
 == How do I get a collection certified?
 
-Refer to link:http://www.ansible.com/partners[Red Hat Partner Connect] for the Ansible certification policy guide to understand how to certify your collection.
+For instructions on certifying your collection, see the Ansible certification policy guide on link:http://www.ansible.com/partners[Red Hat Partner Connect].
 
 == What’s the difference between {Galaxy} and {HubNameMain}?
 
-Collections published to {Galaxy} are the latest content published by the Ansible community and have no joint support claims associated. 
-{Galaxy} is the recommended frontend directory for the Ansible community accessing all content.
+Collections published to {Galaxy} are the latest content published by the Ansible community and have no joint support claims associated with them. 
+{Galaxy} is the recommended frontend directory for the Ansible community accessing content.
 
 Collections published to {HubNameMain} are targeted for joint customers of Red Hat and selected partners. 
 Customers need an Ansible subscription to access and download collections on {HubNameMain}. 
@@ -32,9 +31,14 @@ A certified collection means that Red Hat and partners have a strategic relation
 
 == How do I request a namespace on {Galaxy}?
 
-After you request a namespace through an {Galaxy} GitHub issue, send an email to ansiblepartners@redhat.com 
-You must provide us with the GitHub username that you used to sign up on {Galaxy}, and you must have logged in at least once for the system to validate. 
-When users are added as administrators of the namespace, then additional administrators can be added by the self-serve process.
+To request a namespace through an {Galaxy} GitHub issue, follow these steps:
+
+* Send an email to ansiblepartners@redhat.com 
+* Include the GitHub username used to sign up on {Galaxy}.
+
+You must have logged in at least once for the system to validate.
+
+After users are added as administrators of the namespace, you can use the self-serve process to add more administrators.
 
 == Are there any restrictions for {Galaxy} namespace naming?
 
@@ -44,8 +48,8 @@ You can use underscores in the collection name if it improves readability.
 
 == Are there any recommendations for collection naming?
 
-A general suggestion is to create a collection with `company_name.product` format. 
-This way multiple products may have different collections under the company namespace.
+Create a collection with `company_name.product` format. 
+This format means that multiple products can have different collections under the company namespace.
 
 == How do I get a namespace on {HubNameMain}?
 
@@ -54,16 +58,17 @@ For any queries and clarifications contact ansiblepartners@redhat.com.
 
 == How do I run sanity tests on my collection?
 
-Ansible sanity tests are made up of scripts and tools used to perform static code analysis. 
+Ansible sanity tests are compsed of scripts and tools used to perform static code analysis. 
 The primary purpose of these tests is to enforce Ansible coding standards and requirements. 
-Ansible collections must be in a specific path, such as the following example:
+Ansible collections must be in a specific path, as in the following example:
 
 [options="nowrap" subs="+quotes, attributes"]
+[literal, options="nowrap" subs="+attributes"]
 ----
 {...}/ansible_collections/{namespace}/{collection}/
 ----
 
-Ensure that your collection is in that specific path, and that you have three directories:
+In addition to that specific path, you must have three directories:
 
 * An empty directory named `ansible_collections`
 * A directory for the namespace
@@ -75,14 +80,14 @@ No, {Galaxy} does not house the source for the collections.
 The actual collection source must be housed outside of {Galaxy}, for example, in GitHub. 
 {Galaxy} contains the collection build tarball to publish the collection. 
 You can include the link to the source for community users in the `galaxy.yml` file contained in the collection. 
-This shows users where they should go if they want to contribute to the collection or even file issues against it.
+This shows users where they can go if they want to contribute to the collection or even file issues against it.
 
 == Does Red Hat officially support collections downloaded and installed from {Galaxy}
 
 No, collections downloaded from Galaxy do not have any support claims associated and are 100% community supported.
-Users and contributors of any such collection must contact the collection developers directly.
+Users and contributors of these collections must contact the collection developers directly.
 
-== How does the joint support agreement on certified collections work?
+== How does the joint support agreement on Certified Collections work?
 
 If a customer raises an issue with the Red Hat support team about a certified collection, Red Hat support assesses the issue and checks whether the problem exists within Ansible or Ansible usage. 
 They also check whether the issue is with a certified collection. 
@@ -92,4 +97,4 @@ If there is a problem with the certified collection, support teams transfer the 
 
 You can create and certify collections that contain only roles. 
 Current testing requirements are focused on collections containing modules, and additional resources are currently in progress for testing collections only containing roles. 
-Please contact ansiblepartners@redhat.com for more information.
+Contact ansiblepartners@redhat.com for more information.

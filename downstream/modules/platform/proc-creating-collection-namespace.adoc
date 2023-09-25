@@ -1,14 +1,14 @@
 [id="creating-collection-namespace_{context}"]
 
-= Creating Collection Namespace
+= Creating a collection namespace
 
-The namespace of the collection must exist for the import to be successful. You can find the namespace name by looking at the first part of the collection tarball filename.  For example the namespace of the collection __ansible-netcommon-3.0.0.tar.gz__ is __ansible__.
+Before importing a collection, you must first create a namespace for the collection in your {PrivateHubName}. You can find the namespace name by looking at the first part of the collection tarball filename. For example, the namespace of the collection __ansible-netcommon-3.0.0.tar.gz__ is __ansible__.
 
 .Procedure
 
-. Login to private automation hub web console.
+. Log in to the link:https://console.redhat.com/ansible/automation-hub/[{HubName} Hybrid Cloud Console].
 
-. Navigate to menu:Collections[Namespaces].
+. From the navigation panel, select menu:Collections[Namespaces].
 
 . Click btn:[Create].
 
@@ -18,9 +18,11 @@ The namespace of the collection must exist for the import to be successful. You 
 
 == Importing the collection tarball with GUI
 
-. Login to {PrivateHubName} web console.
+.Procedure
 
-. Navigate to menu:Collections[Namespaces].
+. Log in to link:https://console.redhat.com/ansible/automation-hub/[{HubName} Hybrid Cloud Console].
+
+. From the navigation panel, select menu:Collections[Namespaces].
 
 . Click on btn:[View collections] of the namespace you will be importing the collection into.
 
@@ -33,15 +35,17 @@ The namespace of the collection must exist for the import to be successful. You 
 This opens the 'My Imports' page.  You can see the status of the import and various details of the files and modules that have been imported.
 
 
-=== Importing the collection tarball using ansible-galaxy via CLI
+== Importing the collection tarball using ansible-galaxy via CLI
 
 You can import collections into the private automation hub by using the command-line interface rather than the GUI.
 
+.Procedure
+
 . Copy the collection tarballs to the private automation hub.
 +
-. Log in to the private automation hub server via SSH.
+. Log in to the {PrivateHubName} server via SSH.
 +
-. Add the self-signed root CA cert to the trust store on the automation hub.
+. Add the self-signed root CA cert to the trust store on {HubName}.
 +
 ----
 # cp /etc/pulp/certs/root.crt \
@@ -67,4 +71,3 @@ token=<token_from_private_hub>
 $ ansible-galaxy collection publish <collection_tarball>
 ----
 
-NOTE: Create the namespace that the collection belongs to in advance or publishing the collection will fail.

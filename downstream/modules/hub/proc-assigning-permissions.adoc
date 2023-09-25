@@ -1,0 +1,32 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-assigning-permissions"]
+
+= Assigning permissions to groups
+
+By default, new groups do not have any assigned permissions.
+You can assign permissions to groups in {HubName} that enable users to access specific features in the system.
+
+You can add permissions when first creating a group or edit an existing group to add or remove permissions
+
+.Prerequisites
+
+* You have *Change group* permissions and can edit group permissions in {HubName}.
+
+.Procedure
+. Log in to your local {HubName}.
+. From the navigation panel, select menu:User Access[Roles].
+. Click btn:[Add roles].
+. In the name field, enter the role name.
+. In the description field, enter a description.
+. Complete the *Permissions* section. For each permission type, select permissions from the list.
+. Click btn:[Save].
+. From the navigation panel, select menu:User Access[Groups].
+. Click a group name.
+. Click the *Access* tab.
+. Click btn:[Add roles].
+. Select the role saved in step 7.
+. To confirm the selected role, click btn:[Next].
+. Click btn:[Add].
+
+The group can now access features in {HubName} associated with their assigned permissions.

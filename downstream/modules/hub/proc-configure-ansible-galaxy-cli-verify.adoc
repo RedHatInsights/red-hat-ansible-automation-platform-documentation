@@ -1,0 +1,68 @@
+[id="proc-configure-ansible-galaxy-cli-verify"]
+
+= Configuring Ansible-Galaxy CLI to verify collections
+
+You can configure Ansible-Galaxy CLI to verify collections. 
+This ensures that downloaded collections are approved by your organization and have not been changed after they were uploaded to {HubName}.
+
+If a collection has been signed by {HubName}, the server provides ASCII armored, GPG-detached signatures to verify the authenticity of `MANIFEST.json` before using it to verify the collection’s contents. 
+You must opt into signature verification by link:https://docs.ansible.com/ansible/devel/reference_appendices/config.html#galaxy-gpg-keyring[configuring a keyring] for `ansible-galaxy` or providing the path with the `--keyring` option.
+
+.Prerequisites
+
+* Signed collections are available in {HubName} to verify signature.
+* Certified collections can be signed by approved roles within your organization.
+* Public key for verification has been added to the local system keyring.
+
+.Procedure
+
+. To import a public key into a non-default keyring for use with `ansible-galaxy`, run the following command.
++
+----
+gpg --import --no-default-keyring --keyring ~/.ansible/pubring.kbx my-public-key.asc
+----
++
+[NOTE]
+====
+In addition to any signatures provided by the {HubName}, signature sources can also be provided in the requirements file and on the command line. 
+Signature sources should be URIs.
+====
++
+. To verify the collection name provided on the CLI with an additional signature, run the following command:
++
+----
+ansible-galaxy collection install namespace.collection
+--signature https://examplehost.com/detached_signature.asc
+--signature file:///path/to/local/detached_signature.asc --keyring ~/.ansible/pubring.kbx
+----
+You can use this option multiple times to provide multiple signatures.
+. Confirm that the collections in a requirements file list any additional signature sources following the collection's signatures key, as in the following example.
++
+[source,yaml]
+----
+# requirements.yml
+collections:
+  - name: ns.coll
+    version: 1.0.0
+    signatures:
+      - https://examplehost.com/detached_signature.asc
+      - file:///path/to/local/detached_signature.asc
+
+ansible-galaxy collection verify -r requirements.yml --keyring ~/.ansible/pubring.kbx
+----
++
+When you install a collection from {HubName}, the signatures provided by the server are saved along with the installed collections to verify the collection's authenticity.
+. (Optional) If you need to verify the internal consistency of your collection again without querying the {Galaxy} server, run the same command you used previously using the `--offline` option.
+
+[discrete]
+= Are there any recommendations for collection naming?
+
+Create a collection with `company_name.product` format. 
+This format means that multiple products can have different collections under the company namespace.
+
+[discrete]
+= How do I get a namespace on {HubNameMain}?
+
+By default namespaces used on {Galaxy} are also used on {HubNameMain} by the Ansible partner team. 
+For any queries and clarifications contact ansiblepartners@redhat.com.
+

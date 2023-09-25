@@ -4,6 +4,6 @@
 
 Run the installer setup script after you have configured the appropriate inventory variables.
 
-include::automation-hub/proc-run-setup-script-hub.adoc[leveloffset=+1]
-include::automation-hub/proc-verify-sso-install.adoc[leveloffset=+1]
+include::hub/proc-run-setup-script-hub.adoc[leveloffset=+1]
+include::hub/proc-verify-sso-install.adoc[leveloffset=+1]
 

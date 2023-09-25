@@ -1,26 +1,25 @@
 [id="building-an-execution-environment-in-a-disconnected-environment_{context}"]
 
-= Building an Execution Environment in a Disconnected Environment
+= Building an {ExecEnvShort} in a disconnected environment
 
-When building a custom execution environment, the ansible-builder tool defaults
+When building a custom {ExecEnvShort}, the ansible-builder tool defaults
 to downloading the following requirements from the internet:
 
-* Ansible Galaxy (galaxy.ansible.com) or Automation Hub ({Console}) for any collections added to the EE image.
+* {Galaxy} (galaxy.ansible.com) or {HubName} ({Console}) for any collections added to the {ExecEnvShort} image.
 * PyPI (pypi.org) for any python packages required as collection dependencies.
-* The UBI repositories (cdn.redhat.com) for updating any UBI-based EE images.
+* The UBI repositories (cdn.redhat.com) for updating any UBI-based {ExecEnvShort} images.
 ** The RHEL repositories might also be needed to meet certain collection requirements.
 * registry.redhat.io for access to the ansible-builder-rhel8 container image.
 
-Building an EE image in a disconnected environment requires a subset of all of these mirrored, or otherwise made available on the disconnected network.
-See xref:importing-collections-into-private-automation-hub_disconnected-installation[Importing Collections into Private Automation Hub] for information on importing collections from Galaxy or Automation Hub into a private automation hub.
+Building an {ExecEnvShort} image in a disconnected environment requires a subset of all of these mirrored, or otherwise made available on the disconnected network.
+See xref:importing-collections-into-private-automation-hub_disconnected-installation[Importing Collections into {PrivateHubName}] for information on importing collections from {Galaxy} or {HubName} into a {PrivateHubName}.
 
 Mirrored PyPI content once transferred into the high-side network can be made available using a web server or an artifact repository like Nexus.
 
-The UBI repositories can be mirrored on the low-side using a tool like `reposync`, imported to the disconnected environment, and made available from Satellite or a simple web server (since the content is freely redistributable).
+The UBI repositories can be mirrored on the low-side using a tool like `reposync`, imported to the disconnected environment, and made available from Satellite or a simple web server (because the content is freely redistributable).
 
-The `ansible-builder-rhel8` container image can be imported into a private automation hub in the same way a custom EE can be imported.
-See xref:approving-the-imported-collection_disconnected-installation[Transferring a Custom EE Images Across a Disconnected Boundary] for details substituting `localhost/custom-ee` for
-`registry.redhat.io/ansible-automation-platform-21/ansible-builder-rhel8`. This will make the ansible-builder-rhel8 image available in the private automation hub registry along with the default EE images.
+The `ansible-builder-rhel8` container image can be imported into a {PrivateHubName} in the same way a custom {ExecEnvShort} can be imported.
+See xref:approving-the-imported-collection_disconnected-installation[Transferring Custom {ExecEnvShort} Images Across a Disconnected Boundary] for details substituting `localhost/custom-ee` for `registry.redhat.io/ansible-automation-platform-21/ansible-builder-rhel8`. This makes the ansible-builder-rhel8 image available in the {PrivateHubName} registry along with the default {ExecEnvShort} images.
 
 Once all of the prerequisites are available on the high-side network,
-ansible-builder and podman can be used to create a custom execution environment image.
+ansible-builder and podman can be used to create a custom {ExecEnvShort} image.

@@ -1,0 +1,22 @@
+ifdef::context[:parent-context: {context}]
+
+[id="hub-overview"]
+= Distinctions between {HubName} and {PrivateHubName}
+
+:context: hub-overview
+
+[role="_abstract"]
+{PlatformName} uses an {HubName} as a central location for automation content that you can download and integrate into your Ansible automation. Two types of hubs are available:
+
+{HubNameStart}:: Hosted by Red Hat, it contains only Red Hat supported or certified content.
+{PrivateHubNameStart}:: This is a self-hosted content management system. You can use it to access and manage all types of Ansible content and choose which Ansible content collections and versions are made available to your automation consumers.
+
+With a {PrivateHubName}, you can access these three types of content:
+
+* Red Hat certified and supported content found in {HubName} on the link:https://console.redhat.com/[Red Hat Hybrid Cloud Console].
+* Community content from {Galaxy}.
+* Private content created and curated by an organization and shared locally.
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

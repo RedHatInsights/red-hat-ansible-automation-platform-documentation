@@ -1,0 +1,28 @@
+//Module included in the following assemblies:
+
+[id="adding-containers-remotely-to-the-automation-hub"]
+
+= Adding containers remotely to {HubName}
+
+You can add containers remotely to {HubName} in one of the following two ways:
+
+* Create Remotes
+* Execution Environment
+
+.Procedure
+
+. Navigate to {HubName}.
+
+. From the navigation panel, select menu:Execution Environments[Remote Registries].
+
+. Click btn:[Add remote registry].
+
+* In the *Name* field, enter the name of the registry where the container resides.
+
+* In the *URL* field, enter the URL of the registry where the container resides.
+
+* In the *Username* field, enter the username if necessary.
+
+* In the *Password* field, enter the password if necessary.
+
+* Click btn:[Save].

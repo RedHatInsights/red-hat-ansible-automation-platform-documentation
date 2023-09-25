@@ -6,9 +6,9 @@ ifdef::context[:parent-context: {context}]
 :context: repository-sync
 
 [role="_abstract"]
-You can distribute relevant automation content collections to your users by synchronizing repositories from one {HubName} to another. You should periodically synchronize your custom repository with the remote to ensure you have the latest collection updates.
+You can distribute relevant automation content collections to your users by synchronizing repositories from one {HubName} to another. To ensure you have the latest collection updates, synchronize your custom repository with the remote regularly.
 
-include::automation-hub/proc-basic-repo-sync.adoc[leveloffset=+1]
+include::hub/proc-basic-repo-sync.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

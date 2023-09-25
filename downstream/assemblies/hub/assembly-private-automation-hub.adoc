@@ -6,8 +6,8 @@
 With {PrivateHubName}, automation developers can collaborate and publish their own automation content and deliver Ansible code more easily within their organization. 
 It is also the central repository for {Valid}, which is not supported, but is trusted and tested by Red Hat and our partners. 
 
-include::automation-hub/con-required-shared-filesystem.adoc[leveloffset=+1]
-include::automation-hub/proc-shared-filesystem.adoc[leveloffset=+1]
-include::automation-hub/proc-enabling-firewall-services.adoc[leveloffset=+1]
+include::hub/con-required-shared-filesystem.adoc[leveloffset=+1]
+include::hub/proc-shared-filesystem.adoc[leveloffset=+1]
+include::hub/proc-enabling-firewall-services.adoc[leveloffset=+1]
 
 

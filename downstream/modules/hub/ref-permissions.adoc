@@ -1,0 +1,126 @@
+[id="ref-permissions"]
+
+= {HubNameStart} permissions
+
+Permissions provide a defined set of actions each group can perform on a given object. Determine the required level of access for your groups based on the permissions described in this table.
+
+.Permissions Reference Table
+[cols="15%,35%,50%"]
+|===
+| Object | Permission | Description
+
+h| collection namespaces |
+
+Add namespace
+
+Upload to namespace
+
+Change namespace
+
+Delete namespace |
+
+Groups with these permissions can create, upload collections, and delete a namespace.
+
+h| collections |
+
+Modify Ansible repo content
+
+Delete collections |
+
+Groups with this permission can perform these actions:
+
+Move content between repositories by using the Approval feature.
+
+Certify or reject features to move content from the *staging* to *published* or *rejected* repositories.
+
+Delete collections.
+
+h| users |
+
+View user
+
+Delete user
+
+Add user
+
+Change user |
+
+Groups with these permissions can manage user configuration and access in {HubName}.
+
+h| groups |
+
+View group
+
+Delete group
+
+Add group
+
+Change group |
+
+Groups with these permissions can manage group configuration and access in {HubName}.
+
+
+h| collection remotes |
+
+Change collection remote
+
+View collection remote |
+
+Groups with these permissions can configure remote repository by navigating to menu:Collections[Repo Management].
+
+h| containers |
+
+Change container namespace permissions
+
+Change containers
+
+Change image tags
+
+Create new containers
+
+Push to existing containers
+
+Delete container repository |
+
+Groups with these permissions can manage container repositories in {HubName}.
+
+h| remote registries |
+
+Add remote registry
+
+Change remote registry
+
+Delete remote registry |
+
+Groups with these permissions can add, change, or delete remote registries added to {HubName}.
+
+h| task management |
+
+Change task
+
+Delete task
+
+View all tasks |
+
+Groups with these permissions can manage tasks added to *Task Management* in {HubName}.
+|===
+
+////
+h| distribution |
+
+Change Ansible distribution
+
+View Ansible distribution |
+
+Groups with these permissions can view or modify the remote repository a collections comes from.
+
+h| synclists |
+
+Add synclist
+
+Change synclist
+
+Delete synclist |
+
+Groups with these permissions can create, modify or remove unique synclists created in Automation Hub.
+////

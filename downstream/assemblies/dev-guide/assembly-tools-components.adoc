@@ -18,7 +18,7 @@ include::builder/con-about-builder.adoc[leveloffset=+1]
 
 include::navigator/con-about-ansible-navigator.adoc[leveloffset=+1]
 
-include::automation-hub/con-about-automation-hub.adoc[leveloffset=+1]
+include::hub/con-about-automation-hub.adoc[leveloffset=+1]
 
 include::core/con-about-ansible-cli.adoc[leveloffset=+1]
 

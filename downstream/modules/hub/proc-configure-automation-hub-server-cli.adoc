@@ -1,0 +1,68 @@
+[id="proc-configure-automation-hub-server-cli"]
+= Using the CLI to configure Red Hat {HubName} as the primary content source
+
+To configure {HubName}, you must modify the `ansible.cfg` configuration file. By default, the `ansible.cfg` configuration file is located in the `/etc/ansible/` directory. With {HubName}, you have access to certified, supported collections.
+
+.Prerequisites
+
+* You have obtained the API token for the {HubName} server. See xref:hub-create-api-token[Creating the Red Hat {HubName} API token] for more information.
+
+[IMPORTANT]
+====
+Creating a new token revokes any previous tokens generated for {HubName}. Update any {ControllerName} or scripts created with the previous token.
+====
+
+.Procedure
+
+. Open the `ansible.cfg` file.
+. Add the `server_list` option under the `[galaxy]` section and provide one or more server names.
+. Create a new section for each server name:
++
+-----
+[galaxy_server._<server_name>_]
+-----
+
+. Set the `url` option for each server name:
+//You must include the `api/galaxy/` subdirectory in the server URL:
++
+[subs="+quotes"]
+-----
+https://__<server_fully_qualified_domain_name>__/api/galaxy/
+-----
+. Optional: Set the `auth_url` option. The community {Galaxy} does not require an `auth_url`.
+. Set the API token for the {HubName} server.
+
+.Example
+
+The following `ansible.cfg` configuration file example shows how to configure multiple servers in prioritized order. {HubNameStart} is configured as your primary source and an {Galaxy} server as a secondary source:
+
+.ansible.cfg
+
+-----
+[galaxy]
+server_list = automation_hub, my_org_hub
+
+[galaxy_server.automation_hub]
+url=https://console.redhat.com/api/automation-hub/content/published/ <1>
+auth_url=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
+
+token=my_ah_token
+
+[galaxy_server.my_org_hub]
+url=https://automation.my_org/api/galaxy/ <2>
+username=my_user
+password=my_pass
+-----
+<1> Include a trailing slash */* after the server URL.
+//<2> Include the `/api/galaxy/` subdirectory in the Ansible Galaxy server URL.
+<2> Include the `/api/galaxy/` subdirectory in the {HubName} server URL.
+
+[NOTE]
+====
+To prevent a 301 redirect, all API URLs must end with a trailing slash */*.
+====
+You have now configured {HubName} as your primary server. You can begin to download and install supported collections.
+
+[role="_additional-resources"]
+.Additional resources
+For more information about server list configuration options and using {Galaxy} as an Ansible content source, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[{Galaxy} User Guide].

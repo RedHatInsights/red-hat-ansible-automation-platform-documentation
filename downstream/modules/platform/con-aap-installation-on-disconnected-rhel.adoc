@@ -1,34 +1,25 @@
 
-
 [id="con-aap-installation-on-disconnected-rhel_{context}"]
-
 
 = {PlatformNameShort} installation on disconnected RHEL
 
 [role="_abstract"]
-Install Ansible Automation Platform (AAP) automation controller and a private automation hub, with an installer-managed database located on the automation controller without an Internet connection.
-
-== Prerequisites
-
-To install AAP on a disconnected network, complete the following prerequisites:
-
-. Create a subscription manifest.
-. Download the AAP setup bundle.
-. Create DNS records for the automation controller and private automation hub servers.
-
-NOTE: The setup bundle includes additional components that make installing AAP easier in a disconnected environment. These include the AAP RPMs and the default execution environment (EE) images.
+You can install {PlatformNameShort} {ControllerName} and a {PrivateHubName} without an internet connection using the installer-managed database located on the {ControllerName}. The setup bundle is recommended for disconnected installation because it includes additional components that make installing {PlatformNameShort} easier in a disconnected environment. These include the {PlatformNameShort} Red Hat package managers (RPMs) and the default {ExecEnvShort} (EE) images.
 
 == System Requirements
 
-Hardware requirements are documented in the Automation Platform Installation Guide. Reference the "Red Hat Ansible Automation Platform Installation Guide" in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform[AAP Product Documentation] for your version of AAP.
-
+Hardware requirements are documented in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/platform-system-requirements#ref-controller-system-requirements[{PlatformNameShort} Installation Guide].
 
 == RPM Source
 
-RPM dependencies for AAP that come from the BaseOS and AppStream repositories are not included in the setup bundle.To add these dependencies, you must obtain access to BaseOS and AppStream repositories.
+RPM dependencies for {PlatformNameShort} that come from the BaseOS and AppStream repositories are not included in the setup bundle. To add these dependencies, you must first obtain access to BaseOS and AppStream repositories. Use any of the following tools to sync repositories and add dependencies.
 
-* link:https://access.redhat.com/documentation/en-us/red_hat_satellite/6.11/html/installing_satellite_server_in_a_disconnected_network_environment/index[Satellite] is the recommended method from Red Hat to synchronize repositories
-* reposync - Makes full copies of the required RPM repositories and hosts them on the disconnected network
-* RHEL Binary DVD - Use the RPMs available on the RHEL 8 Binary DVD
+* link:https://access.redhat.com/documentation/en-us/red_hat_satellite/6.11/html/installing_satellite_server_in_a_disconnected_network_environment/index[Satellite] is the recommended method from Red Hat to synchronize repositories.
+* Reposync makes full copies of the required RPM repositories and hosts them on the disconnected network.
+* The RHEL Binary DVD contains RPMs available for use. 
 
-NOTE: The RHEL Binary DVD method requires the DVD for supported versions of RHEL, including version 8.6 or higher. See link:https://access.redhat.com/support/policy/updates/errata[Red Hat Enterprise Linux Life Cycle] for information on which versions of RHEL are currently supported.
+[NOTE]
+
+====
+The RHEL Binary DVD method requires the DVD for supported versions of RHEL, including version 8.6 or higher. See link:https://access.redhat.com/support/policy/updates/errata[Red Hat Enterprise Linux Life Cycle] for information on which versions of RHEL are currently supported.
+====

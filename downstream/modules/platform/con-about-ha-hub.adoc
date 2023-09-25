@@ -1,0 +1,8 @@
+[id="con-about-ha-automation-hub_{context}"]
+
+= High availability {HubName}
+
+A high availability (HA) configuration increases reliability and scalablility for {HubName} deployments.
+
+HA deployments of {HubName} have multiple nodes that concurrently run the same service with a load balancer distributing workload (an "active-active" configuration).
+This configuration eliminates single points of failure to minimize service downtime and allows you to easily add or remove nodes to meet workload demands.

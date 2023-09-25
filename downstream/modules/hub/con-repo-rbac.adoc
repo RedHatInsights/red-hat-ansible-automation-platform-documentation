@@ -1,0 +1,9 @@
+// Module included in the following assemblies:
+// assembly-repo-management.adoc
+
+
+[id="con-repo-rbac"]
+
+= Role Based Access Control
+
+Use Role Based Access Control (RBAC) to restrict user access to custom repositories by defining access permissions based on user roles. By default, users can view all public repositories in their {HubName}, but they cannot modify a repository unless their role allows them access to do so. The same logic applies to other operations on the repository. For example, you can remove a user's ability to download content from a custom repository by changing their role permissions. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/assembly-user-access[Configuring user access for your local {HubName}] for information about managing user access in {HubName}.

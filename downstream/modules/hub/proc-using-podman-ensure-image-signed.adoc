@@ -1,0 +1,13 @@
+[id="using-podman-ensure-image-signed"]
+
+= Using podman to ensure an image is signed by a specific signature
+When ensuring a signature is signed by specific signatures, the signature must be on your local environment.
+
+.Procedure
+
+. From the navigation panel, select menu:Signature Keys[].
+. Click the btn:[More Actions] icon *{MoreActionsIcon}* next to the signature that you are using.
+. Select *Download key* from the drop-down menu. 
+A new window opens.
+. In the *Name* field, enter the name of the key.
+. Click btn:[Save].

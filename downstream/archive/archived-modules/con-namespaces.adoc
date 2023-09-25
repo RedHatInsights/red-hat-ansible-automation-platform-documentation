@@ -1,0 +1,10 @@
+// Module included in the following assemblies:
+// assembly-running-managing-scans-standard-gui.adoc
+
+
+[id="con-namespaces"]
+
+= About namespaces
+
+Namespaces are unique locations in {HubName} to which you can upload and publish content collections. Access to namespaces in {HubName} is governed by groups with permission to manage the content and related information that appears there.
+

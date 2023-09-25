@@ -6,6 +6,6 @@ Before you can interact with Automation Hub by uploading or downloading collecti
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
-include::automation-hub/proc-create-api-token.adoc[leveloffset=+1]
+include::hub/proc-create-api-token.adoc[leveloffset=+1]
 
 The API token is now available to include in the `ANSIBLE_CONFIG` file or when uploading collections using the `ansible-galaxy` command line tool.

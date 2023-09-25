@@ -10,8 +10,8 @@ Ansible {HubName} stores automation content collections within repositories. The
 
 Collections are stored as tar files that can be imported and exported. This ensures the collection you are importing to a new repository is the same one that was originally created and exported.
 
-include::automation-hub/proc-export-collection.adoc[leveloffset=+1]
-include::automation-hub/proc-import-collection.adoc[leveloffset=+1]
+include::hub/proc-export-collection.adoc[leveloffset=+1]
+include::hub/proc-import-collection.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

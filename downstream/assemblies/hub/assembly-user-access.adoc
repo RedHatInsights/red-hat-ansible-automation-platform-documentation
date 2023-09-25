@@ -1,23 +1,26 @@
 [id="assembly-user-access"]
-= Configuring user access for your local Automation Hub
+= Configuring user access for your local {HubName}
 
-include::automation-hub/con-user-access.adoc[leveloffset=+1]
+You can manage user access to content and features in {HubName} by creating groups of users that have specific permissions.
 
-The following sections describe the workflows associated with organizing your users who will access Automation Hub and providing them with required permissions to reach their goals. See the permissions reference table for a full list and description of all permissions available.
+include::hub/con-user-access.adoc[leveloffset=+1]
 
-include::automation-hub/proc-create-groups.adoc[leveloffset=+1]
+The following sections describe the workflows associated with organizing your users who will access {HubName} and providing them with required permissions to reach their goals. See the permissions reference table for a full list and description of all permissions available.
 
-include::automation-hub/proc-assigning-permissions.adoc[leveloffset=+1]
+include::hub/proc-create-groups.adoc[leveloffset=+2]
 
-include::automation-hub/proc-create-users.adoc[leveloffset=+1]
+include::hub/proc-assigning-permissions.adoc[leveloffset=+2]
 
-include::automation-hub/proc-create-super-users.adoc[leveloffset=+1]
+include::hub/proc-create-users.adoc[leveloffset=+2]
 
-include::automation-hub/proc-add-user-to-group.adoc[leveloffset=+1]
+include::hub/proc-create-super-users.adoc[leveloffset=+2]
 
-include::automation-hub/proc-create-content-developers.adoc[leveloffset=+1]
+include::hub/proc-add-user-to-group.adoc[leveloffset=+2]
 
-include::automation-hub/ref-permissions.adoc[leveloffset=+1]
+include::hub/proc-create-content-developers.adoc[leveloffset=+2]
 
-include::automation-hub/proc-delete-user.adoc[leveloffset=+1]
+include::hub/ref-permissions.adoc[leveloffset=+2]
 
+include::hub/proc-delete-user.adoc[leveloffset=+2]
+
+include::assembly-view-only-access.adoc[leveloffset=+1]

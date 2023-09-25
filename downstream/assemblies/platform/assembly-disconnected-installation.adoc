@@ -6,6 +6,17 @@ ifdef::context[:parent-context: {context}]
 [id="disconnected-installation"]
 = Disconnected installation
 
+[role="_abstract"]
+If you are not connected to the internet or do not have access to online repositories, you can install {PlatformName} without an active internet connection.
+
+== Prerequisites
+
+Before installing {PlatformNameShort} on a disconnected network, you must:
+
+. Create a subscription manifest. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_operations_guide/assembly-aap-obtain-manifest-files#doc-wrapper[Obtaining a manifest file] for more information.
+. Download the {PlatformNameShort} setup bundle at {PlatformDownloadUrl}.
+. Create link:https://docs.ansible.com/ansible/latest/collections/community/general/nsupdate_module.html[DNS records] for the {ControllerName} and {PrivateHubName} servers.
+
 include::platform/con-aap-installation-on-disconnected-rhel.adoc[leveloffset=+1]
 
 include::platform/proc-synchronizing-rpm-repositories-by-using-reposync.adoc[leveloffset=+1]

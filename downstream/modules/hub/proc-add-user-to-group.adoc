@@ -1,0 +1,21 @@
+// Module included in the following assemblies:
+// obtaining-token/master.adoc
+[id="proc-add-users-to-group"]
+
+= Adding users to existing groups
+
+You can add users to groups when you create a group. But, you can also manually add users to existing groups.
+
+.Prerequisites
+
+* You have *groups* permissions and can create and manage group configuration and access in {HubName}.
+
+.Procedure
+
+. Log in to your local {HubName}.
+. From the navigation panel, select menu:User Access[Groups].
+. Click on a *Group* name.
+. Navigate to the *Users* tab and click btn:[Add].
+. Select users to add from the list and click btn:[Add].
+
+You have added selected users to the group. These users now have the permissions for {HubName} that are assigned to the group.

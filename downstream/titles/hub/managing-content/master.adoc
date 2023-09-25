@@ -1,0 +1,17 @@
+:imagesdir: images
+:numbered:
+:toclevels: 1
+:experimental:
+include::attributes/attributes.adoc[]
+
+= Managing content in your private automation hub
+
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+
+include::hub/assembly-managing-cert-valid-content.adoc[leveloffset=+1]
+
+include::hub/assembly-managing-collections-hub.adoc[leveloffset=+1]
+
+include::hub/assembly-managing-containers-hub.adoc[leveloffset=+1]

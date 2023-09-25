@@ -1,0 +1,41 @@
+[id="proc-configure-pulpcore-service"]
+
+= Configure pulpcore.serivce
+
+. With the two mount points set up, shut down the Pulp service to configure `pulpcore.service`:
++
+----
+$ systemctl stop pulpcore.service
+----
+. Edit `pulpcore.service` using `systemctl`:
++
+----
+$ systemctl edit pulpcore.service
+----
+. Add the following entry to `pulpcore.service` to ensure that {HubName} services starts only after starting the network and mounting the remote mount points:
++
+----
+[Unit]
+After=network.target var-lib-pulp.mount
+----
+. Enable `remote-fs.target`:
++
+----
+$ systemctl enable remote-fs.target
+----
+. Reboot the system:
++
+----
+$ systemctl reboot
+----
+
+[NOTE]
+====
+A bug in the pulpcore SELinux policies can cause the token authentication public/private keys in `etc/pulp/certs/` to not have the proper SELinux labels, causing the pulp process to fail. When this occurs, run the following command to temporarily attach the proper labels:
+
+----
+$ chcon system_u:object_r:pulpcore_etc_t:s0 /etc/pulp/certs/token_{private,public}_key.pem
+----
+
+Repeat this command to reattach the proper SELinux labels whenever you relabel your system.
+====

@@ -2,11 +2,11 @@
 
 = Creating a new web server to host repositories
 
-If you do not have an existing web server to host your repositories, create one with the synced repositories.
+If you do not have an existing web server to host your repositories, you can create one with your synced repositories.
 
 .Procedure
 
-Use the following steps if creating a new web server.
+Use the following steps to create a new web server.
 
 . Install prerequisites:
 +

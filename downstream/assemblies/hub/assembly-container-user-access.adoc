@@ -3,27 +3,23 @@
 ifdef::context[:parent-context: {context}]
 
 [id="configuring-user-access-containers"]
-= Configuring user access for container repositories in private {HubName}
+= Configuring user access for container repositories in {PrivateHubName}
 
 
 :context: configuring-user-access-containers
 
 [role="_abstract"]
-Configure user access for container repositories in your {PrivateHubName} to provide permissions that determine who can access and manage images in your {PlatformNameShort}.
+To determine who can access and manage images in your {PlatformNameShort}, you must configure user access for container repositories in your {PrivateHubName}.
 
-== Prerequisites
-
-* You can create groups and assign permissions in {PrivateHubName}.
-
-include::automation-hub/ref-container-permissions.adoc[leveloffset=+1]
-include::automation-hub/proc-create-groups.adoc[leveloffset=+1]
-include::automation-hub/proc-assigning-permissions.adoc[leveloffset=+1]
+include::hub/ref-container-permissions.adoc[leveloffset=+1]
+include::hub/proc-create-groups.adoc[leveloffset=+1]
+include::hub/proc-assigning-permissions.adoc[leveloffset=+1]
 
 .Additional resources
 
 * See <<container-registry-group-permissions, Container registry group permissions>> to learn more about specific permissions.
 
-include::automation-hub/proc-add-user-to-group.adoc[leveloffset=+1]
+include::hub/proc-add-user-to-group.adoc[leveloffset=+1]
 
 
 ifdef::parent-context[:context: {parent-context}]
