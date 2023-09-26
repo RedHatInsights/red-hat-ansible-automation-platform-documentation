@@ -18,19 +18,19 @@ Ansible validated collections are available in your {PrivateHubName} through the
 When you download {PlatformName} with the bundled installer, validated content is pre-populated into the {PrivateHubName} by default, but only if you enable the {PrivateHubName} as part of the inventory.
 
 If you are not using the bundle installer, you can use a Red Hat supplied Ansible playbook to install validated content.
-For further information, see xref:assembly-validated-content[{Valid}]
+For further information, see xref:assembly-validated-content[{Valid}].
 
 You can update these collections manually by downloading their packages.
 
 [discrete]
 == Why certify Ansible collections?
 
-The Ansible certification program enables a shared statement of support for {CertifiedCon} between Red Hat and the ecosystem partner. 
-An end customer, experiencing trouble with Ansible and certified partner content, can open a support ticket, for example, a request for information, or a problem with Red Hat, and expect the ticket to be resolved by Red Hat and the ecosystem partner. 
+The Ansible certification program enables a shared statement of support for {CertifiedCon} between Red Hat and the ecosystem partner.
+An end customer, experiencing trouble with Ansible and certified partner content, can open a support ticket, for example, a request for information, or a problem with Red Hat, and expect the ticket to be resolved by Red Hat and the ecosystem partner.
 
 Red Hat offers go-to-market benefits for Certified Partners to grow market awareness, generate demand, and sell collaboratively.
 
-Red Hat {CertifiedName} are distributed through {HubNameMain} (subscription required), a centralized repository for jointly supported Ansible Content. 
+Red Hat {CertifiedName} are distributed through {HubNameMain} (subscription required), a centralized repository for jointly supported Ansible Content.
 As a certified partner, publishing collections to {HubNameMain} provides end customers the power to manage how trusted automation content is used in their production environment with a well-known support life cycle.
 
 For more information about getting started with certifying a solution, see link:https://connect.redhat.com/en/partner-with-us/red-hat-ansible-automation-certification[Red Hat Partner Connect].
@@ -43,15 +43,15 @@ For instructions on certifying your collection, see the Ansible certification po
 [discrete]
 == How does the joint support agreement on Certified Collections work?
 
-If a customer raises an issue with the Red Hat support team about a certified collection, Red Hat support assesses the issue and checks whether the problem exists within Ansible or Ansible usage. 
-They also check whether the issue is with a certified collection. 
+If a customer raises an issue with the Red Hat support team about a certified collection, Red Hat support assesses the issue and checks whether the problem exists within Ansible or Ansible usage.
+They also check whether the issue is with a certified collection.
 If there is a problem with the certified collection, support teams transfer the issue to the vendor owner of the certified collection through an agreed upon tool such as TSANet.
 
 [discrete]
 == Can I create and certify a collection containing only Ansible Roles?
 
-You can create and certify collections that contain only roles. 
-Current testing requirements are focused on collections containing modules, and additional resources are currently in progress for testing collections only containing roles. 
+You can create and certify collections that contain only roles.
+Current testing requirements are focused on collections containing modules, and additional resources are currently in progress for testing collections only containing roles.
 Contact ansiblepartners@redhat.com for more information.
 
 include::assembly-synclists.adoc[leveloffset=+1]

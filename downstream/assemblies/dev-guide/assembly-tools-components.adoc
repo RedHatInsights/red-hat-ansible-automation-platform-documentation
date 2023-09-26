@@ -29,7 +29,7 @@ include::core/con-about-ansible-cli.adoc[leveloffset=+1]
 == Additional resources
 
 * For more information on how to use Ansible as a command line tool, refer to link:https://docs.ansible.com/ansible/latest/command_guide/command_line_tools.html[Working with command line tools] in the Ansible _User Guide_.
-* To upload content to {HubName}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/uploading_content_to_red_hat_automation_hub/index[Uploading content to automation hub] in the {PlatformNameShort} product documentation.
+* To upload content to {HubName}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/index#uploading_content_to_red_hat_automation_hub[Uploading content to automation hub] in the {PlatformNameShort} product documentation.
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

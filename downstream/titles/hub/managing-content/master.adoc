@@ -4,7 +4,7 @@
 :experimental:
 include::attributes/attributes.adoc[]
 
-= Managing content in your private automation hub
+= Managing content in automation hub
 
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]

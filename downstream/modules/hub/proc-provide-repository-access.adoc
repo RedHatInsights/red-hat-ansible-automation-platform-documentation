@@ -14,7 +14,7 @@ By default, private repositories and the automation content collections are hidd
 . Select the *Access* tab.
 . Select a group for *Repository owners*.
 +
-See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/assembly-user-access[Configuring user access for your local {HubName}] for information about implementing user access.
+See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/index#assembly-user-access[Configuring user access for your local {HubName}] for information about implementing user access.
 +
 . Select the roles you want assigned to the selected group.
 . Click btn:[Save].

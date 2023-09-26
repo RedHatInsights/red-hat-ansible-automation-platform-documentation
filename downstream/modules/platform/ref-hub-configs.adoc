@@ -8,7 +8,7 @@ See the following resources to explore additional {HubName} configurations.
 [options="header"]
 |====
 |Resource link|Description
-|link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_user_access_in_private_automation_hub/index[Managing user access in private {HubName}]|Configure user access for {HubName}
-|link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_red_hat_certified_validated_and_ansible_galaxy_content_in_automation_hub/index[Managing Red Hat Certified, validated, and Ansible Galaxy content in {HubName}]|Add content to your {HubName}
-|link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/publishing_proprietary_content_collections_in_automation_hub/index[Publishing proprietary content collections in {HubName}]|Publish internally developed collections on your {HubName}
+|link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/index#assembly-user-access[Managing user access in private {HubName}]|Configure user access for {HubName}
+|link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_content_in_automation_hub/index#managing-cert-valid-content[Managing Red Hat Certified, validated, and Ansible Galaxy content in {HubName}]|Add content to your {HubName}
+|link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/managing_content_in_automation_hub/index#assembly-managing-private-collections[Publishing proprietary content collections in {HubName}]|Publish internally developed collections on your {HubName}
 |====
