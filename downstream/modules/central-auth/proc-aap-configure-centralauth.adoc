@@ -23,7 +23,7 @@ $ cd ansible-automation-platform-setup-bundle-<latest-version>
 . Open the *inventory* file using a text editor.
 . Edit the inventory file parameters under `[automationhub]` to specify an installation of {HubName} host:
 .. Add group host information under `[automationhub]` using an IP address or FQDN for the {HubName} location.
-.. Enter passwords for `automationhub_admin_password`, `automation_pg_password`, and any additional parameters based on your installation specifications.
+.. Enter passwords for `automationhub_admin_password`, `automationhub_pg_password`, and any additional parameters based on your installation specifications.
 . Enter a password in the `sso_keystore_password` field.
 . Edit the inventory file parameters under `[SSO]` to specify a host on which to install {centralauth}:
 .. Enter a password in the `sso_console_admin_password` field, and any additional parameters based on your installation specifications.

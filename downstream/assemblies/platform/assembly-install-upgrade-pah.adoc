@@ -106,7 +106,7 @@ $ cd ansible-automation-platform-setup-<latest-version>
 Provide a reachable IP address for the `[automationhub]` host to ensure users can sync content from {PrivateHubName} from a different node.
 ====
 +
-.. Update the values for `automationhub_admin_password` and `automation_pg_password` and any additional parameters based on your installation specifications:
+.. Update the values for `automationhub_admin_password` and `automationhub_pg_password` and any additional parameters based on your installation specifications:
 +
 .Example
 -----
