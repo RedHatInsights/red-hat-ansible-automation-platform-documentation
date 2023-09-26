@@ -30,7 +30,7 @@ include::platform/assembly-controller-search.adoc[leveloffset=+1]
 include::platform/assembly-controller-organizations.adoc[leveloffset=+1]
 include::platform/assembly-controller-users.adoc[leveloffset=+1]
 include::platform/assembly-controller-teams.adoc[leveloffset=+1]
-//11 Credentials
+include::platform/assembly-controller-credentials.adoc[leveloffset=+1]
 //12 Custom Credential Types
 //13 Secret Management System
 //14 Applications

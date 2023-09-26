@@ -16,7 +16,7 @@ You must use the fact caching module that comes with {ControllerName}.
 
 You can choose to use cached facts in your job by enabling it in the *Options* field of the job templates window.
 
-image::ug-job-templates-options-use-factcache[Cached facts]
+image::ug-job-templates-options-use-factcache.png[Cached facts]
 
 To clear facts, run the Ansible `clear_facts` link:https://docs.ansible.com/ansible/latest/collections/ansible/builtin/meta_module.html#examples[meta task].
 The following is an example playbook that uses the Ansible `clear_facts` meta task.

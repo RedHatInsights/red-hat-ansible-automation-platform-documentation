@@ -20,6 +20,7 @@
 :AAPonAzureNameShort: Ansible Automation Platform on Microsoft Azure
 :AWS: Amazon Web Services
 :GCP: Google Cloud Platform
+:Azure: Microsoft Azure
 
 // Automation Mesh
 :AutomationMesh: automation mesh
