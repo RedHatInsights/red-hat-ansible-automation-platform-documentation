@@ -2,7 +2,7 @@
 
 = {HubNameStart} system requirements
 
-{HubNameStart} enables you to discover and use new certified automation content from Red Hat Ansible and Certified Partners. 
+{HubNameStart} enables you to discover and use new certified automation content from Red Hat Ansible and Certified Partners.
 On {HubNameMain}, you can discover and manage Ansible Collections, which are supported automation content developed by Red Hat and its partners for use cases such as cloud automation, network automation, and security automation.
 
 {HubNameStart} has the following system requirements:
@@ -19,7 +19,7 @@ h|Requirement | Required | Notes
 | *CPUs* | 2 minimum |
 
 For capacity based on forks in your configuration, see additional resources.
-| *Local disk* |  60 GB disk | A minimum of 40GB should be  dedicated to /var for collection storage.
+| *Local disk* | 60 GB disk | A minimum of 40GB should be dedicated to /var for collection storage.
 
 |===
 
@@ -36,5 +36,3 @@ This implies that you only want to use the external address.
 
 For information on inventory file variables, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars[Inventory File Variables] in the _{PlatformName} Installation Guide_.
 ====
-
-

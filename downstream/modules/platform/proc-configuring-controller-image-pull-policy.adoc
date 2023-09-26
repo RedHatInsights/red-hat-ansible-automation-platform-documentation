@@ -27,4 +27,4 @@ Use this procedure to configure the image pull policy on your {ControllerName}.
 .. Under *Limits*, and *Requests*, enter values for *CPU cores*, *Memory*, and *Storage*.
 . Under Replicas, enter the number of instance replicas.
 . Under *Remove used secrets on instance removal*, select *true* or *false*. The default is false.
-.  Under *Preload instance with data upon creation*, select *true* or *false*. The default is true.
+. Under *Preload instance with data upon creation*, select *true* or *false*. The default is true.

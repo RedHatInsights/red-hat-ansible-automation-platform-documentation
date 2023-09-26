@@ -10,7 +10,7 @@
 . Click btn:[Install].
 . Select a Project to install the Operator into.
 Red Hat recommends using the Operator recommended Namespace name.
-.. If  you want to install the Operator into a project other than the recommended one, select *Create Project* from the drop down menu.
+.. If you want to install the Operator into a project other than the recommended one, select *Create Project* from the drop down menu.
 .. Enter the Project name.
 .. Click btn:[Create].
 . Click btn:[Install].

@@ -7,7 +7,7 @@ To create a new user:
 .Procedure
 . On the *Users* page, click btn:[Add].
 . The *Create User* dialog opens.
-. Enter the appropriate details about your new user. 
+. Enter the appropriate details about your new user.
 Fields marked with an asterisk (*) are required.
 +
 [NOTE]
@@ -19,15 +19,15 @@ You can assign three types of users:
 
 * *Normal User*: Normal Users have read and write access limited to the resources (such as inventory, projects, and job templates) for which that user has been granted the appropriate roles and privileges.
 * *System Auditor*: Auditors inherit the read-only capability for all objects within the environment.
-* *System Administrator*: A System Administrator (also known as a Superuser) has full system administration privileges -- with full read and write privileges over the entire installation. 
+* *System Administrator*: A System Administrator (also known as a Superuser) has full system administration privileges -- with full read and write privileges over the entire installation.
 A System Administrator is typically responsible for managing all aspects of and delegating responsibilities for day-to-day work to various users.
 +
 image:users-create-user-form-types.png[User Types]
 +
 [NOTE]
 ====
-A default administrator with the role of *System Administrator* is automatically created by the installation process and is available to all users of {ControllerName}.  
-One *System Administrator* must always exist. 
+A default administrator with the role of *System Administrator* is automatically created by the installation process and is available to all users of {ControllerName}.
+One *System Administrator* must always exist.
 To delete the *System Administrator* account, you must first create another *System Administrator* account.
 ====
 
@@ -37,7 +37,7 @@ When the user is successfully created, the *User* dialog opens.
 +
 image:users-edit-user-form.png[Edit User Form]
 
-. Click btn:[Delete] to delete the user, or you can delete users from a list of current users. 
+. Click btn:[Delete] to delete the user, or you can delete users from a list of current users.
 For more information, see xref:proc-controller-deleting-a-user[Deleting a user].
 +
 The same window opens whether you click on the user's name, or the Edit image:leftpencil.png[Edit, 15,15] icon beside the user. You can use this window to review and modify the User's *Organizations*, *Teams*, *Roles*, and other user membership details.
@@ -49,7 +49,7 @@ If the user is not newly-created, the details screen displays the last login act
 //image:users-last-login-info.png[image]
 ====
 
-If you log in as yourself, and view the details of your user profile, you can manage tokens from your user profile. 
+If you log in as yourself, and view the details of your user profile, you can manage tokens from your user profile.
 
 For more information, see xref:proc-controller-user-tokens[Adding a user token].
 

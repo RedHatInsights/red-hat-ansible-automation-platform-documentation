@@ -31,7 +31,7 @@ If {PlatformName} is on a version of RHEL older than RHEL 8 and you want to upgr
 
 This process ensures that the PostgreSQL database is also properly migrated to the latest version if you are upgrading an embedded-database Tower. Depending on the size of your |aap| installation, this may take some time. Note that if you upgrade a Tower with an external database, the client libraries will be upgraded as well, but you will need to upgrade your external PostgreSQL server manually. Be sure the check the release notes to see if this applies to you before upgrading.
 
-If the upgrade of Tower fails or if you need assistance, please contact Ansible via the Red Hat Customer portal at https://access.redhat.com/.
+If the upgrade of Tower fails or if you need assistance, please contact Ansible via the https://access.redhat.com/[Red Hat Customer portal].
 
 == Requirements
 

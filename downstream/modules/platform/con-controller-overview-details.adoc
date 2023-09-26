@@ -1,32 +1,32 @@
 [id="con-controller-overview-details"]
 
 = Real-time playbook output and exploration
-{ControllerNameStart} enables you to watch playbooks run in real time, seeing each host as they check in. 
+{ControllerNameStart} enables you to watch playbooks run in real time, seeing each host as they check in.
 You can go back and explore the results for specific tasks and hosts in great detail; search for specific plays or hosts and see just those results, or locate errors that need to be corrected.
 
-=  “Push Button” automation
-{ControllerNameStart} enables you to access your favorite projects and re-trigger execution from the web interface. 
+= “Push Button” automation
+{ControllerNameStart} enables you to access your favorite projects and re-trigger execution from the web interface.
 {ControllerNameStart} asks for input variables, prompts for your credentials, starts and monitors jobs, and displays results and host history.
 
 = Simplified role-based access control and auditing
 {ControllerNameStart} enables you to:
 
 * Grant permissions to perform a specific task (such as to view, create, or modify a file) to different teams or explicit users through _role-based access control_ (RBAC).
-* Keep some projects private, while enabling some users to edit inventories, and others to run playbooks against certain systems, either in check (dry run) or live mode. 
-* Enable certain users to use credentials without exposing the credentials to them. 
+* Keep some projects private, while enabling some users to edit inventories, and others to run playbooks against certain systems, either in check (dry run) or live mode.
+* Enable certain users to use credentials without exposing the credentials to them.
 
 Regardless of what you do, {ControllerName} records the history of operations and who made them, including objects edited and jobs launched.
 
 If you want to give any user or team permissions to use a job template, you can assign permissions directly on the job template. Credentials are full objects in the {ControllerName} RBAC system, and can be assigned to multiple users or teams for use.
 
-{ControllerNameStart} includes an _Auditor_ type, who can see all aspects of the systems automation, but has no permission to run or change automation, for those that need a system-level auditor. 
-This can also be useful for a service account that scrapes automation information from the REST API. 
+{ControllerNameStart} includes an _Auditor_ type, who can see all aspects of the systems automation, but has no permission to run or change automation, for those that need a system-level auditor.
+This can also be useful for a service account that scrapes automation information from the REST API.
 For more information, see Role-Based Access Controls.
 
 = Cloud and autoscaling flexibility
-{ControllerNameStart} features a powerful optional provisioning callback feature that enables nodes to request configuration on demand. 
-This is an ideal solution for a cloud auto-scaling scenario, integrating with provisioning servers like Cobbler, or when dealing with managed systems with unpredictable uptimes. 
-It requires no management software to be installed on remote nodes, the callback solution can be triggered by a call to `curl` or `wget`, and can be embedded in `init` scripts, kickstarts, or preseeds. 
+{ControllerNameStart} features a powerful optional provisioning callback feature that enables nodes to request configuration on demand.
+This is an ideal solution for a cloud auto-scaling scenario, integrating with provisioning servers like Cobbler, or when dealing with managed systems with unpredictable uptimes.
+It requires no management software to be installed on remote nodes, the callback solution can be triggered by a call to `curl` or `wget`, and can be embedded in `init` scripts, kickstarts, or preseeds.
 Access is controlled such that only machines listed in the inventory can request configuration.
 
 = The ideal RESTful API
@@ -36,7 +36,7 @@ The {ControllerName} REST API is the ideal RESTful API for a systems management 
 {PlatformNameShort} can backup and restore your systems or systems, making it easy for you to backup and replicate your instance as required.
 
 = Ansible Galaxy integration
-By including an {Galaxy} `requirements.yml` file in your project directory, {ControllerName} automatically fetches the roles your playbook needs from Galaxy, GitHub, or your local source control. 
+By including an {Galaxy} `requirements.yml` file in your project directory, {ControllerName} automatically fetches the roles your playbook needs from Galaxy, GitHub, or your local source control.
 For more information, see {Galaxy} Support.
 
 = Inventory support for OpenStack
@@ -44,19 +44,19 @@ Dynamic inventory support is available for OpenStack. This enables you to easily
 
 = Remote command execution
 When you want to perform a simple task on a few hosts, whether adding a single user, updating a single security vulnerability, or restarting a misbehaving service, {ControllerName} includes remote command execution.
-Any task that you can describe as a single Ansible play can be run on a host or group of hosts in your inventory, enabling you to manage your systems quickly and easily. 
+Any task that you can describe as a single Ansible play can be run on a host or group of hosts in your inventory, enabling you to manage your systems quickly and easily.
 Plus, it is all backed by an RBAC engine and detailed audit logging, removing any questions regarding who has done what to what machines.
 
 = System tracking
 You can collect facts using the fact caching feature. For more information, see Fact Caching.
 
 = Integrated notifications
-{ControllerNameStart} enables you to easily keep track of the status of your automation. 
+{ControllerNameStart} enables you to easily keep track of the status of your automation.
 
 You can configure the following notifications:
 
 * stackable notifications for job templates, projects, or entire organizations
-* different notifications for job start, job success, job failure, and job approval (for workflow nodes) 
+* different notifications for job start, job success, job failure, and job approval (for workflow nodes)
 
 The following notification sources are supported:
 
@@ -79,8 +79,8 @@ Dynamic inventory sources for Red Hat Satellite 6 are supported.
 {ControllerNameStart} supports integration with Red Hat Insights, enabling Insights playbooks to be used as an {PlatformNameShort} project.
 
 = User Interface
-The user interface is organized with intuitive navigational elements. 
-Information is displayed at-a-glance, so you can find and use the automation you need. 
+The user interface is organized with intuitive navigational elements.
+Information is displayed at-a-glance, so you can find and use the automation you need.
 Compact and expanded viewing modes show and hide information as required, and built-in attributes make it easy to sort.
 
 = Custom Virtual Environments
@@ -93,7 +93,7 @@ Automation controller supports:
 * SAML
 * token-based authentication
 
-LDAP and SAML support enable you to integrate your enterprise account information in a more flexible manner. 
+LDAP and SAML support enable you to integrate your enterprise account information in a more flexible manner.
 
 Token-based authentication permits authentication of third-party tools and services with {ControllerName} through integrated OAuth 2 token support.
 
@@ -106,27 +106,27 @@ Run-time management of cluster groups enables configurable scaling.
 = Workflow enhancements
 To model your complex provisioning, deployment, and orchestration workflows, you can use {ControllerName} expanded workflows in several ways:
 
-* *Inventory overrides for Workflows* You can override an inventory across a workflow at workflow definition time, or at launch time. 
+* *Inventory overrides for Workflows* You can override an inventory across a workflow at workflow definition time, or at launch time.
 {ControllerNameStart} enables you to define your application deployment workflows, and then re-use them in multiple environments.
-* *Convergence nodes for Workflows* When modeling complex processes, you must sometimes wait for multiple steps to finish before proceeding. 
+* *Convergence nodes for Workflows* When modeling complex processes, you must sometimes wait for multiple steps to finish before proceeding.
 {ControllerNameStart} workflows can replicate this; workflow steps can wait for any number of previous workflow steps to complete properly before proceeding.
-* *Workflow Nesting* You can re-use individual workflows as components of a larger workflow. 
+* *Workflow Nesting* You can re-use individual workflows as components of a larger workflow.
 Examples include combining provisioning and application deployment workflows into a single workflow.
-* *Workflow Pause and Approval* You can build workflows containing approval nodes that require user intervention. 
+* *Workflow Pause and Approval* You can build workflows containing approval nodes that require user intervention.
 This makes it possible to pause workflows in between playbooks so that a user can give approval (or denial) for continuing on to the next step in the workflow.
 
 = Job distribution
-{ControllerNameStart} offers the ability to take a fact gathering or configuration job running across thousands of machines and divide it into slices that can be distributed across your automation controller cluster for increased reliability, faster job completion, and improved cluster use. 
+{ControllerNameStart} offers the ability to take a fact gathering or configuration job running across thousands of machines and divide it into slices that can be distributed across your automation controller cluster for increased reliability, faster job completion, and improved cluster use.
 If you need to change a parameter across 15,000 switches at scale, or gather information across your multi-thousand-node RHEL estate, automation controller provides the means.
 
 = Support for deployment in a FIPS-enabled environment
 {ControllerNameStart} deploys and runs in restricted modes such as FIPS.
 
 = Limit the number of hosts per organization
-Many large organizations have instances shared among many organizations. 
-To ensure that one organization cannot use all the licensed hosts, this feature enables superusers to set a specified upper limit on how many licensed hosts can be allocated to each organization. 
-The {ControllerName} algorithm factors changes in the limit for an organization and the number of total hosts across all organizations. 
-Inventory updates fail if an inventory synchronization brings an organization out of compliance with the policy. 
+Many large organizations have instances shared among many organizations.
+To ensure that one organization cannot use all the licensed hosts, this feature enables superusers to set a specified upper limit on how many licensed hosts can be allocated to each organization.
+The {ControllerName} algorithm factors changes in the limit for an organization and the number of total hosts across all organizations.
+Inventory updates fail if an inventory synchronization brings an organization out of compliance with the policy.
 Additionally, superusers are able to over-allocate their licenses, with a warning.
 
 = Inventory plugins
@@ -146,6 +146,3 @@ With a secret management system, external credentials are stored and supplied fo
 
 = Automation hub integration
 {HubNameStart} acts as a content provider for {ControllerName}, requiring both an {ControllerName} deployment and an {HubName} deployment running alongside each other.
-
-
-

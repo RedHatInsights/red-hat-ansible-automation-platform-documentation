@@ -54,7 +54,7 @@ You can import collections into the private automation hub by using the command-
 ----
 +
 
-. Update the `/etc/ansible/ansible.cfg` file with your hub configuration.  Use either a token or a username and password for authentication.
+. Update the `/etc/ansible/ansible.cfg` file with your hub configuration. Use either a token or a username and password for authentication.
 +
 ----
 [galaxy]
@@ -70,4 +70,3 @@ token=<token_from_private_hub>
 ----
 $ ansible-galaxy collection publish <collection_tarball>
 ----
-

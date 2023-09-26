@@ -3,8 +3,8 @@
 = Support
 Red Hat offers support to paid {PlatformName} customers.
 
-If you or your company has purchased a subscription for {PlatformNameShort}, you can contact the support team at https://access.redhat.com
+If you or your company has purchased a subscription for {PlatformNameShort}, you can contact the support team on the https://access.redhat.com[Red Hat Customer Portal].
 
-For more information on the levels of support for your {PlatformNameShort} subscription, see Subscription Types. 
+For more information on the levels of support for your {PlatformNameShort} subscription, see Subscription Types.
 
 For information on what is covered under an {PlatformNameShort} subscription, see link:https://access.redhat.com/support/policy/updates/ansible-tower#scope-of-coverage-4[Scope of Coverage] and https://access.redhat.com/support/policy/updates/ansible-engine[Scope of Support]

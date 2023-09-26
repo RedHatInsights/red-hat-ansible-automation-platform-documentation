@@ -6,8 +6,8 @@ You *must* have valid subscriptions attached before installing {PlatformNameShor
 
 [NOTE]
 ====
-Attaching subscriptions is unnecessary if your Red Hat account has enabled link:https://access.redhat.com/articles/simple-content-access[Simple Content Access Mode]. 
-However, you must register to _Red Hat Subscription Management_ (RHSM) or Red Hat Satellite before installing  {PlatformNameShort}.
+Attaching subscriptions is unnecessary if your Red Hat account has enabled link:https://access.redhat.com/articles/simple-content-access[Simple Content Access Mode].
+However, you must register to _Red Hat Subscription Management_ (RHSM) or Red Hat Satellite before installing {PlatformNameShort}.
 ====
 
 Use the following method to attach your subscription:
@@ -57,4 +57,3 @@ Suggested: 1
 ----
 #subscription-manager remove --pool=<pool_id>
 ----
-

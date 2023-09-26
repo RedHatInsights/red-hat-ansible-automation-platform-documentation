@@ -19,7 +19,7 @@ The following table lists the available options for your identity provider confi
 .Identity Broker Configuration Options
 [cols="a,a"]
 |===
-h|Configuration Option  h|Description
+h|Configuration Option h|Description
 | Alias | The alias is a unique identifier for an identity provider. It is used to reference an identity provider internally. Some protocols such as `OpenID Connect` require a redirect URI or callback url in order to communicate with an identity provider. In this case, the alias is used to build the redirect URL.
 | Enabled | Turns the provider on/off.
 | Hide on Login Page | If enabled, this provider will not be shown as a login option on the login page. Clients can still request to use this provider by using the `kc_idp_hint` parameter in the URL they use to request a login.

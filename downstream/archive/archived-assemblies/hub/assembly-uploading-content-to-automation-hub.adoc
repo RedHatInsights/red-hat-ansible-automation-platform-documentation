@@ -6,7 +6,7 @@ Red Hat Automation Hub distributes certified, supported collections from partner
 You can upload collections using the Automation Hub user interface or the `ansible-galaxy` client.
 
 .Prerequisites
-* You are a Red Hat Connect Partner. Learn more at https://connect.redhat.com/[Red Hat Partner Connect].
+* You are a Red Hat Connect Partner. Learn more at link:https://connect.redhat.com/[Red Hat Partner Connect].
 
 include::hub/proc-upload-collection.adoc[leveloffset=+1]
 

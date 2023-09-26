@@ -5,7 +5,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="assembly-introduction"]
-=  Introduction to content creator workflows and {ExecEnvName}
+= Introduction to content creator workflows and {ExecEnvName}
 
 
 :context: introduction

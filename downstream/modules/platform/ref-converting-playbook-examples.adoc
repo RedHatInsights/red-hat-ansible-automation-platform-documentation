@@ -51,14 +51,14 @@ You will use a simple playbook to launch the automation with sleep defined to al
         dest: "{{ myfile }}_write"
         content: |
           This is the file I've just written to.
-          
+
     - name: "Read written out file..."
       ansible.builtin.debug:
         msg: "{{ lookup('file', '{{ myfile }}_write') }}"
 
 ----
 
-In Ansible Automation Platform 2 from the Settings menu, select menu:Job Settings[Jobs]. 
+In Ansible Automation Platform 2 from the Settings menu, select menu:Job Settings[Jobs].
 
 Paths to expose isolated jobs:
 
@@ -72,7 +72,7 @@ The volume mount is mapped with the same name in the container and has read-writ
 
 The _prompt on launch_ should be set for _extra_vars_ so you can adjust the sleep duration for each run, The default is 30 seconds.
 
-Once launched, and the _wait_for_ module is invoked for the sleep, you can go onto the execution node and look at what is running.   
+Once launched, and the _wait_for_ module is invoked for the sleep, you can go onto the execution node and look at what is running. 
 
 To verify the run has completed successfully, run this command to get an output of the job:
 
@@ -103,7 +103,7 @@ ok: [localhost] =>  {
     “Msg”: “This is the file I am reading in.”
 
 TASK {Write to a new file...}********************************* 10:50:12
-An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/mydata/.ansible_tmpazyqyqdrfile_write' -> b' /mydata/file_write' 
+An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/mydata/.ansible_tmpazyqyqdrfile_write' -> b' /mydata/file_write'
 Fatal: [localhost]: FAILED! => {"changed": false, :checksum": "9f576o85d584287a3516ee8b3385cc6f69bf9ce", "msg": "Unable to make b'/root/.ansible/tmp/anisible-tim-1651139412.9808054-40-91081834383738/source' into /mydata/file_write, failed final rename from b'/mydata/.ansible_tmpazyqyqdrfile_write': [Errno 13] Permission denied: b'/mydata/.ansible_tmpazyqyqdrfile_write' -> b'/mydata/file_write}
 ...ignoring
 
@@ -112,7 +112,7 @@ Fatal: [localhost]: FAILED: => {"msg": "An unhandled exception occurred while ru
 ...ignoring
 ----
 
-The job failed, even though *:rw* is set, so it should have write capability. 
+The job failed, even though *:rw* is set, so it should have write capability.
 The process was able to read the existing file, but not write out. This is due to SELinux protection that requires proper labels to be placed on the volume content mounted into the container. If the label is missing, SELinux may prevent the process from running inside the container. Labels set by the OS are not changed by Podman. See the Podman documentation for more information.
 
 This could be a common misinterpretation. We have set the default to *:z*, which tells Podman to relabel file objects on shared volumes.
@@ -176,11 +176,11 @@ hostPath:
   path: /mnt2
   type: “”
 name: volume-0
-hostPath: 
+hostPath:
   path: /mnt3
   type: “”
 name: volume-1
-hostPath: 
+hostPath:
   path: /mnt4
   type: “”
 name: volume-2

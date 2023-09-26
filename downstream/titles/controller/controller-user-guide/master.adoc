@@ -11,12 +11,12 @@ include::attributes/attributes.adoc[]
 // Book Title
 = Automation Controller User Guide
 
-Thank you for your interest in {PlatformName} {ControllerName}. 
+Thank you for your interest in {PlatformName} {ControllerName}.
 {ControllerNameStart} helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
 
-The {ControllerNameStart} User Guide describes all of the functionality available in {ControllerName}. 
-It assumes moderate familiarity with Ansible, including concepts such as Playbooks, Variables, and Tags. 
-For more information on these and other Ansible concepts, see the Ansible documentation at https://docs.ansible.com/
+The {ControllerNameStart} User Guide describes all of the functionality available in {ControllerName}.
+It assumes moderate familiarity with Ansible, including concepts such as Playbooks, Variables, and Tags.
+For more information on these and other Ansible concepts, see the link:https://docs.ansible.com/[Ansible documentation].
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]

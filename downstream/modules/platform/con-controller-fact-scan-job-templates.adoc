@@ -1,14 +1,13 @@
 [id="controller-fact-scan-job-templates"]
 
-=  Scan job templates
+= Scan job templates
 
-Scan jobs are no longer supported starting with {ControllerName} 3.2. 
-This system tracking feature was used as a way to capture and store facts as historical data. Facts are now stored in the controller through fact caching. 
+Scan jobs are no longer supported starting with {ControllerName} 3.2.
+This system tracking feature was used as a way to capture and store facts as historical data. Facts are now stored in the controller through fact caching.
 For more information, see [ADD XREF]]Fact Caching.
 
 Job template scan jobs in your system before {ControllerName} 3.2, are converted to type run, like normal job templates.
 They retain their associated resources, such as inventories and credentials.
 By default, job template scan jobs that do not have a related project are assigned a special playbook.
-You can also specify a project with your own scan playbook. 
+You can also specify a project with your own scan playbook.
 A project is created for each organization that points to link:https://github.com/ansible/tower-fact-modules[awx-facts-playbooks] and the job template was set to the playbook: https://github.com/ansible/tower-fact-modules/blob/master/scan_facts.yml.
-

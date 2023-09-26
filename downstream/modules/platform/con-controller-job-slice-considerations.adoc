@@ -2,13 +2,13 @@
 
 = Job slice considerations
 
-When setting up job slices, consider the following: 
+When setting up job slices, consider the following:
 
 * A sliced job creates a workflow job, which then creates jobs.
 * A job slice consists of a job template, an inventory, and a slice count.
-* When executed, a sliced job splits each inventory into a number of "slice size" chunks. 
-It then queues jobs of ansible-playbook runs on each chunk of the appropriate inventory. 
-The inventory fed into ansible-playbook is a shortened version of the original inventory that only contains the hosts in that particular slice. 
+* When executed, a sliced job splits each inventory into a number of "slice size" chunks.
+It then queues jobs of ansible-playbook runs on each chunk of the appropriate inventory.
+The inventory fed into ansible-playbook is a shortened version of the original inventory that only contains the hosts in that particular slice.
 The completed sliced job that displays on the *Jobs* list are labeled accordingly, with the number of sliced jobs that have run:
 +
 image::ug-sliced-job-shown-jobs-list-view.png[Sliced jobs list view]
@@ -19,17 +19,14 @@ image::ug-sliced-job-shown-jobs-list-view.png[Sliced jobs list view]
 ====
 Job slicing is intended to scale job executions horizontally. Enabling job slicing on a job template divides an inventory to be acted upon in the number of slices configured at launch time and then starts a job for each slice.
 
-Normally, the number of slices is  equal to or less than the number of {ControllerName} nodes. 
+Normally, the number of slices is equal to or less than the number of {ControllerName} nodes. 
 Setting an extremely high number of job slices, such as thousands, while permitted, can cause performance degradation as the job scheduler is not designed to simultaneously schedule thousands of workflow nodes, which are what the sliced jobs become.
 
-* Sliced job templates with prompts or extra variables behave the same as standard job templates, applying all variables and limits to the entire set of slice jobs in the resulting workflow job. 
+* Sliced job templates with prompts or extra variables behave the same as standard job templates, applying all variables and limits to the entire set of slice jobs in the resulting workflow job.
 However, when passing a limit to a sliced job, if the limit causes slices to have no hosts assigned, those slices will fail, causing the overall job to fail.
 * A job slice job status of a distributed job is calculated in the same manner as workflow jobs.
 It fails if there are any unhandled failures in its sub-jobs.
 ====
 
-* Any job that intends to orchestrate across hosts (rather than just applying changes to individual hosts) must not be configured as a slice job. 
+* Any job that intends to orchestrate across hosts (rather than just applying changes to individual hosts) must not be configured as a slice job.
 * Any job that does, can fail, and {ControllerName} does not attempt to discover or account for playbooks that fail when run as slice jobs.
-
-
-

@@ -5,7 +5,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="tools"]
-=  Tools and components
+= Tools and components
 
 
 :context: tools

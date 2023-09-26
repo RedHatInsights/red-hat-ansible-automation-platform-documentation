@@ -16,7 +16,7 @@ If you have collections `A`, `B`, and `C` in your requirements file, and a new c
 .Prerequisites
 
 * You have valid *Modify Ansible repo content* permissions.
-For more information on permissions, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformName}/html/getting_started_with_automation_hub/index#assembly-user-access[Managing user access in Automation Hub].
+For more information on permissions, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/index#assembly-user-access[Managing user access in Automation Hub].
 * You have retrieved the Sync URL and API Token from the {HubName} hosted service on {Console}.
 * You have configured access to port 443. This is required for synchronizing certified collections. For more information, see the {HubName} table in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/ref-network-ports-protocols_planning[Network ports and protocols] chapter of the {PlatformName} Planning Guide.
 

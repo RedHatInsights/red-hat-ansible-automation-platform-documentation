@@ -2,14 +2,14 @@
 
 == Resource types
 
-CPU and memory are both resource types. 
-A resource type has a base unit. 
-CPU represents compute processing and is specified in units of Kubernetes CPUs. 
-Memory is specified in units of bytes. 
+CPU and memory are both resource types.
+A resource type has a base unit.
+CPU represents compute processing and is specified in units of Kubernetes CPUs.
+Memory is specified in units of bytes.
 
-CPU and memory are collectively referred to as compute resources, or resources. 
-Compute resources are measurable quantities that can be requested, allocated, and consumed. 
-They are distinct from API resources. 
+CPU and memory are collectively referred to as compute resources, or resources.
+Compute resources are measurable quantities that can be requested, allocated, and consumed.
+They are distinct from API resources.
 API resources, such as Pods and Services, are objects that can be read and modified through the Kubernetes API server.
 
 == Specifying resource requests and limits for pods and containers
@@ -23,32 +23,32 @@ spec.containers[].resources.requests.cpu
 spec.containers[].resources.requests.memory
 ----
 
-Although you can only specify requests and limits for individual containers, it is also useful to think about the overall resource requests and limits for a Pod. 
+Although you can only specify requests and limits for individual containers, it is also useful to think about the overall resource requests and limits for a Pod.
 For a particular resource, a Pod resource request/limit is the sum of the resource requests/limits of that type for each container in the Pod.
 
 == Resource units in Kubernetes
 
 .CPU resource units
-Limits and requests for CPU resources are measured in CPU units. 
+Limits and requests for CPU resources are measured in CPU units.
 In Kubernetes, 1 CPU unit is equivalent to 1 physical processor core, or 1 virtual core, depending on whether the node is a physical host or a virtual machine running inside a physical machine.
 
-Fractional requests are allowed. 
-When you define a container with `spec.containers[].resources.requests.cpu` set to `0.5`, you are requesting half as much CPU time compared to if you asked for 1.0 CPU. 
-For CPU resource units, the quantity expression 0.1 is equivalent to the expression 100m, which can be read as one hundred millicpu or one hundred millicores. 
+Fractional requests are allowed.
+When you define a container with `spec.containers[].resources.requests.cpu` set to `0.5`, you are requesting half as much CPU time compared to if you asked for 1.0 CPU.
+For CPU resource units, the quantity expression 0.1 is equivalent to the expression 100m, which can be read as one hundred millicpu or one hundred millicores.
 millicpu and millicores mean the same thing.
-CPU resource is always specified as an absolute amount of resource, never as a relative amount. 
+CPU resource is always specified as an absolute amount of resource, never as a relative amount.
 For example, 500m CPU represents the same amount of computing power whether that container runs on a single-core, dual-core, or 48-core machine.
 
 [NOTE]
 ====
-To specify CPU units less than 1.0 or 1000m you must use the milliCPU form. 
+To specify CPU units less than 1.0 or 1000m you must use the milliCPU form.
 For example, use 5m, not 0.005 CPU.
 ====
 
 .Memory resource units
-Limits and requests for memory are measured in bytes. 
-You can express memory as a plain integer or as a fixed-point number using one of these quantity suffixes: E, P, T, G, M, k. 
-You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki. 
+Limits and requests for memory are measured in bytes.
+You can express memory as a plain integer or as a fixed-point number using one of these quantity suffixes: E, P, T, G, M, k.
+You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki.
 For example, the following represent roughly the same value:
 
 [options="nowrap" subs="+quotes,attributes"]
@@ -56,12 +56,12 @@ For example, the following represent roughly the same value:
 128974848, 129e6, 129M,  128974848000m, 123Mi
 ----
 
-Pay attention to the case of the suffixes. 
+Pay attention to the case of the suffixes.
 If you request 400m of memory, this is a request for 0.4 bytes, not 400 mebibytes (400Mi) or 400 megabytes (400M).
 
 .Example CPU and memory specification
-The following cluster has enough free resources to schedule a task pod with a dedicated 100m CPU and 250Mi. 
-The cluster can also withstand bursts over that dedicated usage up to 2000m CPU and 2Gi memory.  
+The following cluster has enough free resources to schedule a task pod with a dedicated 100m CPU and 250Mi.
+The cluster can also withstand bursts over that dedicated usage up to 2000m CPU and 2Gi memory.
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
@@ -75,24 +75,23 @@ spec:
       memory: 2Gi
 ----
 
-{ControllerNameStart} will not schedule jobs that use more resources than the limit set. 
-If the task pod does use more resources than the limit set, the container is OOMKilled by kubernetes and restarted.  
+{ControllerNameStart} will not schedule jobs that use more resources than the limit set.
+If the task pod does use more resources than the limit set, the container is OOMKilled by kubernetes and restarted.
 
 == Size recommendations for resource requests
 
-All jobs that use a container group use the same Pod Specification. 
-The Pod Specification includes the resource requests for the pod that runs the job. 
+All jobs that use a container group use the same Pod Specification.
+The Pod Specification includes the resource requests for the pod that runs the job.
 
-All jobs use the same resource requests. 
-The specified resource requests for your particular job on the pod specification affect how Kubernetes schedules the job pod based on resources available on worker nodes. 
-These are the default values. 
+All jobs use the same resource requests.
+The specified resource requests for your particular job on the pod specification affect how Kubernetes schedules the job pod based on resources available on worker nodes.
+These are the default values.
 
-* One fork typically requires 100Mb of memory. 
-This is set using `system_task_forks_mem`. 
+* One fork typically requires 100Mb of memory.
+This is set using `system_task_forks_mem`.
 If your jobs have five forks, the job pod specification must request 500Mb of memory.
-* For job templates that have a particularly high forks value or otherwise need larger resource requests, you should create a separate container group with a different pod spec that indicates larger resource requests. 
-Then you can assign it to the job template. 
-For example, a job template with the forks value of 50 must be paired with a container group that requests 5GB of memory. 
-* If the fork value for a job is high enough that no single pod would be able to contain the job, use the job slicing feature. 
+* For job templates that have a particularly high forks value or otherwise need larger resource requests, you should create a separate container group with a different pod spec that indicates larger resource requests.
+Then you can assign it to the job template.
+For example, a job template with the forks value of 50 must be paired with a container group that requests 5GB of memory.
+* If the fork value for a job is high enough that no single pod would be able to contain the job, use the job slicing feature.
 This splits the inventory up such that the individual job “slices” fit in an automation pod provisioned by the container group.
-

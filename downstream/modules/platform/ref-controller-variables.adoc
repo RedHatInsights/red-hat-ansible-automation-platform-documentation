@@ -4,7 +4,7 @@
 
 [cols="50%,50%",options="header"]
 |====
-| *Variable* | *Description* 
+| *Variable* | *Description*
 | *`admin_password`* | The password for an administration user to access the UI upon install completion.
 | *`automation_controller_main_url`* | For an alternative front end URL needed for SSO configuration, provide the URL.
 
@@ -24,7 +24,7 @@ Default = 63072000 seconds, or two years.
 Default = `TLSv1.2`.
 | *`node_state`* | _Optional_
 
-The status of a node or group of nodes. 
+The status of a node or group of nodes.
 Valid options are `active`, `deprovision` to remove a node from a cluster or `iso_migrate` to migrate a legacy isolated node to an execution node.
 
 Default = `active`.
@@ -51,10 +51,10 @@ Default for this group = `execution`.
 
 The `peers` variable is used to indicate which nodes a specific host or group connects to. Wherever the peers variable is defined, an outbound connection will be established to the specific host or group.
 
-This variable is used to add `tcp-peer` entries in the `receptor.conf` file used for establishing network connections with other nodes. 
+This variable is used to add `tcp-peer` entries in the `receptor.conf` file used for establishing network connections with other nodes.
 See link:https://receptor.readthedocs.io/en/latest/connecting_nodes.html?highlight=tcp-peer[Peering]
 
-The peers variable can be a comma-separated list of hosts and/or groups from the inventory.  
+The peers variable can be a comma-separated list of hosts and/or groups from the inventory.
 This is resolved into a set of hosts that is used to construct the `receptor.conf` file.
 
 | *`pg_database`* | The name of the postgres database.
@@ -63,12 +63,12 @@ Default = `awx`.
 | *`pg_host`* | The postgreSQL host, which can be an externally managed database.
 | *`pg_password`* | The password for the postgreSQL database.
 
-Do not use special characters for `pg_password`. 
+Do not use special characters for `pg_password`.
 They can cause the password to fail.
 
 NOTE
 
-You no longer have to provide a `pg_hashed_password` in your inventory file at the time of installation because PostgreSQL 13 can now store user passwords more securely. 
+You no longer have to provide a `pg_hashed_password` in your inventory file at the time of installation because PostgreSQL 13 can now store user passwords more securely.
 
 When you supply `pg_password` in the inventory file for the installer, PostgreSQL uses the SCRAM-SHA-256 hash to secure that password as part of the installation process.
 | *`pg_port`* | The postgreSQL port to use.
@@ -88,10 +88,10 @@ Default = `awx`.
 | *`postgres_ssl_key`* | location of postgres ssl key.
 
 `/path/to/pgsql_ssl.key`
-| *`postgres_use_cert`* | Location of postgres user certificate. 
+| *`postgres_use_cert`* | Location of postgres user certificate.
 
 `/path/to/pgsql.crt`
-| *`postgres_use_key`* | Location of postgres user key. 
+| *`postgres_use_key`* | Location of postgres user key.
 
 `/path/to/pgsql.key`
 | *`postgres_use_ssl`* | If postgres is to use SSL.
@@ -103,18 +103,14 @@ Default = 27199.
 
 See link:http://supervisord.org/configuration.html#program-x-section-values[program:x Section Values] for further explanation about `startretries`.
 
-| *`web_server_ssl_cert`* |  _Optional_ 
+| *`web_server_ssl_cert`* | _Optional_
 
 `/path/to/webserver.cert`
 
 Same as `automationhub_ssl_cert` but for web server UI and API.
-| *`web_server_ssl_key`* |  _Optional_
+| *`web_server_ssl_key`* | _Optional_
 
 `/path/to/webserver.key`
 
 Same as `automationhub_server_ssl_key` but for web server UI and API.
 |====
-
-
-
-

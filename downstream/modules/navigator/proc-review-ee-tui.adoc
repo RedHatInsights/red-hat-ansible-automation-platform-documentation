@@ -33,12 +33,12 @@ You can review the packages and versions of each installed {ExecEnvNameSing} and
 . Optional: pass in the {ExecEnvNameSing} that you want to use. This becomes the primary and is the {ExecEnvNameSing} that {Navigator} uses.
 +
 ----
-$ ansible-navigator images --eei  registry.example.com/example-enterprise-ee:latest
+$ ansible-navigator images --eei registry.example.com/example-enterprise-ee:latest
 ----
 
 
 .Verification
 
-*  Review the {ExecEnvNameSing} output.
+* Review the {ExecEnvNameSing} output.
 +
 image::navigator-image-details.png[Automation execution environment output]

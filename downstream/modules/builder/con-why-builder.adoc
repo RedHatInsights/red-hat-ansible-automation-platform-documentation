@@ -2,6 +2,6 @@
 
 = Why use {Builder}?
 
-Before {Builder} was developed, {PlatformName} users could run into dependency issues and errors when  creating custom virtual environments or containers that included all of the required dependencies installed.
+Before {Builder} was developed, {PlatformName} users could run into dependency issues and errors when creating custom virtual environments or containers that included all of the required dependencies installed.
 
 Now, with {Builder}, you can easily create a customizable {ExecEnvName} definition file that specifies the content you want included in your {ExecEnvName} such as, collections, requirements, and system level packages. This allows you to fulfill all of the necessary requirements and dependencies to get jobs running.

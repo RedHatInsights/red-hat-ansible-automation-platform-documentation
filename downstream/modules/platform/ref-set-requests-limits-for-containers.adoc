@@ -2,10 +2,10 @@
 
 = Requests and limits for task containers
 
-You must set a value for the task container's CPU and memory resource limits. 
-For each job that is run in an execution node, processing must occur on the control plane to schedule, launch, and receive callback events for that job.  
+You must set a value for the task container's CPU and memory resource limits.
+For each job that is run in an execution node, processing must occur on the control plane to schedule, launch, and receive callback events for that job.
 
-For Operator deployments of {ControllerName}, this control plane capacity usage is tracked on the *controlplane* instance group. 
+For Operator deployments of {ControllerName}, this control plane capacity usage is tracked on the *controlplane* instance group.
 The available capacity is determined based on the limits the user sets on the task container, using the *task_resource_requirements* field in the {ControllerName} specification, or in the OpenShift UI, when creating {ControllerName}.
 
-You can also set memory and CPU resource limits that make sense for your cluster.  
+You can also set memory and CPU resource limits that make sense for your cluster.

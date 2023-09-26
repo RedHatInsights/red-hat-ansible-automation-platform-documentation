@@ -31,7 +31,7 @@ None:: Any user with permissions on the repository can publish to the repository
 . To sync the content from a remote into this repository, select *Remote* and select the remote that contains the collections you want included in your custom repository. For more information, see xref:proc-basic-repo-sync[Repository sync].
 . Click btn:[Save].
 
-[role="_next-steps"]
+[role="_additional-resources"]
 .Next steps
 * After the repository is created, the details page is displayed.
 +

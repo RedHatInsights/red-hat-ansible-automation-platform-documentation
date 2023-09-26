@@ -21,7 +21,7 @@ When using an LDAP User Federation in {RHSSOshort}, a group mapper must be added
 The following table lists the available options for your LDAP configuration:
 [cols="a,a"]
 |===
-h|Configuration Option  h|Description
+h|Configuration Option h|Description
 |Storage mode| Set to *On* if you want to import users into the {CentralAuth} user database. See link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/{RHSSOVers}/html/server_administration_guide/user-storage-federation#storage_mode[Storage Mode] for more information.
 |Edit mode| Determines the types of modifications that admins can make on user metadata. See link:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/{RHSSOVers}/html/server_administration_guide/user-storage-federation#edit_mode[Edit Mode] for more information.
 |Console Display Name |Name used when this provider is referenced in the admin console

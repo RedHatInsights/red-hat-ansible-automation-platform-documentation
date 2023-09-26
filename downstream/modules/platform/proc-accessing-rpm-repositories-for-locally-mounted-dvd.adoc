@@ -3,7 +3,7 @@
 = Accessing RPM repositories from a locally mounted DVD
 
 
-If you plan to access the repositories from the RHEL binary DVD, you must first set up a local repository. 
+If you plan to access the repositories from the RHEL binary DVD, you must first set up a local repository.
 
 .Procedure
 
@@ -45,11 +45,14 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
 # rpm --import /media/rheldvd/RPM-GPG-KEY-redhat-release
 ----
 
-NOTE:  If the key is not imported you will see an error similar to
+[NOTE]
+====
+If the key is not imported you will see an error similar to
 ----
 # Curl error (6): Couldn't resolve host name for
 https://www.redhat.com/security/data/fd431d51.txt [Could not resolve host:
 www.redhat.com]
 ----
+====
 
 For further detail on setting up a repository see link:https://access.redhat.com/solutions/3776721[Need to set up yum repository for locally-mounted DVD on Red Hat Enterprise Linux 8].

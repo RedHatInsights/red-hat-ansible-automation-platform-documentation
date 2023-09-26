@@ -6,17 +6,14 @@ A Project is a logical collection of Ansible playbooks, represented in the contr
 You can manage playbooks and playbook directories different ways:
 
 * By placing them manually under the Project Base Path on your {ControllerName} server.
-* By placing your playbooks into a source code management (SCM) system supported by the {ControllerName}. 
+* By placing your playbooks into a source code management (SCM) system supported by the {ControllerName}.
 These include Git, Subversion, and Mercurial.
 
 [NOTE]
 ====
-This Getting Started Guide uses lightweight examples to get you up and running. 
-But for production purposes, you must use source control to manage your playbooks. 
-It is  best practice to treat your infrastructure as code, and this practice is in line with DevOps ideals.  
+This Getting Started Guide uses lightweight examples to get you up and running. But for production purposes, you must use source control to manage your playbooks. The best practice is to treat your infrastructure as code which is in line with DevOps ideals.
 ====
 
 include::platform/proc-controller-set-up-project.adoc[leveloffset=+1]
 include::platform/proc-controller-edit-project.adoc[leveloffset=+1]
 include::platform/proc-controller-sync-project.adoc[leveloffset=+1]
-

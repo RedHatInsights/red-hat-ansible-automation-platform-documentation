@@ -13,7 +13,7 @@ You can alter the default {Navigator} settings through:
 
 * `ANSIBLE_NAVIGATOR_CONFIG` - The settings file path environment variable if set.
 * `./ansible-navigator.<ext>` - The settings file within the current project directory, with no dot in the file name.
-* `\~/.ansible-navigator.<ext>` - Your home directory, with a  dot in the file name.
+* `\~/.ansible-navigator.<ext>` - Your home directory, with a dot in the file name.
 
 Consider the following when you create an {Navigator} settings file:
 

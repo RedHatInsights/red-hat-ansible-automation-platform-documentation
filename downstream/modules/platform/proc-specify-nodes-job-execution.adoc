@@ -2,8 +2,8 @@
 
 = Specify nodes for job execution
 
-You can add a node selector to the container group pod specification to ensure they only run against certain nodes.  
-First add a label to the nodes you want to run jobs against. 
+You can add a node selector to the container group pod specification to ensure they only run against certain nodes.
+First add a label to the nodes you want to run jobs against.
 
 The following procedure adds a label to a node.
 
@@ -60,8 +60,8 @@ kubectl get nodes --show-labels
 +
 You can see that the `worker0` node now has a `disktype=ssd` label.
 +
-. In the {ControllerName} UI, specify that label in the metadata section of your customized pod specification in the container group. 
- 
+. In the {ControllerName} UI, specify that label in the metadata section of your customized pod specification in the container group.
+
 [options="nowrap" subs="+quotes,attributes"]
 ----
 apiVersion: v1

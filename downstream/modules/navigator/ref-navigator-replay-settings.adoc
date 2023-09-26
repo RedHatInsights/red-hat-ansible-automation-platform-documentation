@@ -4,7 +4,7 @@
 
 [role="_abstract"]
 
-The following table describes each parameter and setting options for the  {Navigator} `replay` subcommand.
+The following table describes each parameter and setting options for the {Navigator} `replay` subcommand.
 
 .{Navigator} `replay` subcommand parameters settings
 [options="header"]

@@ -3,4 +3,4 @@
 = Enable sticky sessions
 
 [role="_abstract"]
-By default, an Application Load Balancer routes each request independently to a registered target based on the chosen load-balancing algorithm. To avoid authentication errors when running multiple instances of {HubName} behind a load balancer, you must enable sticky sessions. Enabling sticky sessions sets a custom application cookie that matches the cookie configured on the load balancer to  enable stickiness. This custom cookie can include any of the cookie attributes required by the application.
+By default, an Application Load Balancer routes each request independently to a registered target based on the chosen load-balancing algorithm. To avoid authentication errors when running multiple instances of {HubName} behind a load balancer, you must enable sticky sessions. Enabling sticky sessions sets a custom application cookie that matches the cookie configured on the load balancer to enable stickiness. This custom cookie can include any of the cookie attributes required by the application.

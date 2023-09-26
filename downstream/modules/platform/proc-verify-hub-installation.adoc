@@ -12,7 +12,7 @@ Verify that you installed your {HubName} successfully by logging in with the adm
 
 [IMPORTANT]
 ====
-If the installation fails and you are a customer who has purchased a valid license for {PlatformName}, contact Ansible through the  link:https://access.redhat.com/[Red Hat Customer portal].
+If the installation fails and you are a customer who has purchased a valid license for {PlatformName}, contact Ansible through the link:https://access.redhat.com/[Red Hat Customer portal].
 ====
 
 Upon a successful login to {HubName}, your installation of {PlatformName} {PlatformVers} is complete.

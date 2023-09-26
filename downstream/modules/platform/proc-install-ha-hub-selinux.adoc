@@ -50,6 +50,7 @@ $ mount -a
 $ setup.sh -- -b --become-user root
 ----
 
+[role="_additional-resources"]
 .Next steps
 * After the installation is complete, unmount the `/var/lib/pulp/` mount point.
 * xref:proc-apply-selinux-context[Apply the appropriate SELinux context].

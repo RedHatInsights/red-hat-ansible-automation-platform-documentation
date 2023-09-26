@@ -15,7 +15,7 @@
 * Render Ansible module documentation and extract examples you can use in your playbooks.
 * View a detailed command output on the user interface.
 
-//// 
+////
 comment outfor now:
-{Navigator} makes the previous methods of inspecting and executing automation easy and frictionless since all that is required for {PlatformName} is to add {ControllerName} credentials into an {Navigator} configuration file. In this way, {Navigator} is a bridge between the worlds of the automation content creator who is used to working with the command line and the platform administrator, auditor or user who is more familiar with {PlatformName}.  
+{Navigator} makes the previous methods of inspecting and executing automation easy and frictionless since all that is required for {PlatformName} is to add {ControllerName} credentials into an {Navigator} configuration file. In this way, {Navigator} is a bridge between the worlds of the automation content creator who is used to working with the command line and the platform administrator, auditor or user who is more familiar with {PlatformName}.
 ////

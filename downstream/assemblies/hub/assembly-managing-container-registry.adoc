@@ -9,12 +9,12 @@ ifdef::context[:parent-context: {context}]
 :context: managing-container-registry
 
 [role="_abstract"]
-Manage container image repositories in your {PlatformNameShort} infrastructure by using the {HubName} container registry. 
+Manage container image repositories in your {PlatformNameShort} infrastructure by using the {HubName} container registry.
 You can perform the following tasks with {HubNameStart}:
 
 * Control who can access individual container repositories
 * Change tags on images
-* View activity and image layers 
+* View activity and image layers
 * Provide additional information related to each container repository
 
 
@@ -26,7 +26,8 @@ The following include statements pull in the module files that comprise the asse
 include::hub/con-container-registry.adoc[leveloffset=+1]
 
 
-.Next steps
+[role="_additional-resources"]
+== Next steps
 
 * Push a container image to the {HubName} container registry.
 * Create a group with access to the container repository in the registry.

@@ -9,7 +9,7 @@ The `build_arg_defaults` section of the definition file is a dictionary whose ke
 | Value | Description
 
 | `ANSIBLE_GALAXY_CLI_COLLECTION_OPTS`
-| Allows the user to pass arbitrary arguments to the ansible-galaxy CLI during the collection installation phase. For example, the –pre flag to enable the installation of pre-release collections, or -c  to disable verification of the server's SSL certificate.
+| Allows the user to pass arbitrary arguments to the ansible-galaxy CLI during the collection installation phase. For example, the –pre flag to enable the installation of pre-release collections, or -c to disable verification of the server's SSL certificate.
 
 | `EE_BASE_IMAGE`
 | Specifies the parent image for the automation execution environment, enabling a new image to be built that is based off of an already-existing image. This is typically a supported execution environment base image like ee-minimal or ee-supported, but it can also be an execution environment image that you've created previously and want to customize further.

@@ -12,7 +12,7 @@ You must set the following six variables in your {PlatformName} installer invent
 * `automationhub_ldap_user_search_base_dn`
 * `automationhub_ldap_group_search_base_dn`
 
-If any of these variables are missing, the Ansible Automation installer will  not complete the installation. 
+If any of these variables are missing, the Ansible Automation installer will not complete the installation.
 
 
 == Setting up your inventory file variables
@@ -40,7 +40,7 @@ automationhub_ldap_user_search_base_dn = "ou=people,dc=ansible,dc=com"
 automationhub_ldap_group_search_base_dn = "ou=people,dc=ansible,dc=com"
 -----
 +
-[NOTE] 
+[NOTE]
 ====
 The following variables will be set with default values, unless you set them with other options.
 
@@ -54,7 +54,7 @@ auth_ldap_group_type_class= 'django_auth_ldap.config:GroupOfNamesType'
 
 ====
 
-. If you plan to set up extra parameters in  your {PrivateHubName} (such as user groups, super user access, mirroring, or others), proceed to the next section.
+. If you plan to set up extra parameters in your {PrivateHubName} (such as user groups, super user access, mirroring, or others), proceed to the next section.
 
 
 == Configuring extra LDAP parameters
@@ -66,7 +66,7 @@ If you plan to set up super user access, user groups, mirroring or other extra p
 . Create a yaml file that will contain `ldap_extra_settings`, such as the following:
 +
 ----
-#ldapextras.yml   
+#ldapextras.yml
 ---
 ldap_extra_settings:
   AUTH_LDAP_USER_ATTR_MAP: '{"first_name": "givenName", "last_name": "sn", "email": "mail"}'
@@ -124,7 +124,7 @@ ldap_extra_settings:
 Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
 
 . Use the following examples to grant or deny access based on LDAP group membership.
-.. To grant {PrivateHubName} access (for example, members of the `cn=pah-nosoupforyou,ou=groups,dc=example,dc=com` group): 
+.. To grant {PrivateHubName} access (for example, members of the `cn=pah-nosoupforyou,ou=groups,dc=example,dc=com` group):
 +
 ----
 #ldapextras.yml

@@ -4,7 +4,7 @@
 
 [role="_abstract"]
 
-The following table describes each parameter and setting options for the  {Navigator} `config` subcommand.
+The following table describes each parameter and setting options for the {Navigator} `config` subcommand.
 
 .{Navigator} `config` subcommand parameters settings
 [options="header"]
@@ -25,7 +25,7 @@ The following table describes each parameter and setting options for the  {Navig
 ansible-navigator:
   ansible:
     config:
-      path: 
+      path:
 ----
 
 |help-config

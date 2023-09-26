@@ -31,6 +31,7 @@ automationhub2.testing.ansible.com ansible_user=cloud-user ansible_host=192.0.2.
 automationhub3.testing.ansible.com ansible_user=cloud-user ansible_host=192.0.2.22
 -----
 
+[role="_additional-resources"]
 .Next steps
 Check that the directives below are present in ``/etc/pulp/settings.py`` in each of the {PrivateHubName} servers:
 ----

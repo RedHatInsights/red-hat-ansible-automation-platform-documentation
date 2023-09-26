@@ -4,7 +4,7 @@
 
 .Procedure
 
-. On a RHEL system, install the ansible-builder RPM.  This can be done in one of several  ways:
+. On a RHEL system, install the ansible-builder RPM. This can be done in one of several ways:
 
 .. Subscribe the RHEL box to a Satellite on the disconnected network.
 .. Attach the Ansible Automation Platform subscription and enable the AAP repo.
@@ -33,7 +33,7 @@ $ cd custom-ee/
 ----
 +
 . Create an __execution-environment.yml__ file that defines the requirements for your custom {ExecEnvShort} following the documentation at
-https://ansible-builder.readthedocs.io/en/stable/definition/.  Override the `EE_BASE_IMAGE` and `EE_BUILDER_IMAGE` variables to point to the {ExecEnvShort} available in your {PrivateHubName}.
+https://ansible-builder.readthedocs.io/en/stable/definition/. Override the `EE_BASE_IMAGE` and `EE_BUILDER_IMAGE` variables to point to the {ExecEnvShort} available in your {PrivateHubName}.
 +
 ----
 $ cat execution-environment.yml

@@ -1,6 +1,6 @@
 
 [id="using-policies-with-signed-images_{context}"]
 
-=   Policies with signed images
+= Policies with signed images
 
 Policies can be used by podman or other image clients to ensure the validity of the image by assigning specific policies to that signature.

@@ -2,8 +2,8 @@
 
 = Running a job template
 
-A benefit of {ControllerName} is the push-button deployment of Ansible playbooks. 
-You can configure a template to store all the parameters that you would normally pass to the Ansible playbook on the command line.  
+A benefit of {ControllerName} is the push-button deployment of Ansible playbooks.
+You can configure a template to store all the parameters that you would normally pass to the Ansible playbook on the command line.
 In addition to the playbooks, the template passes the inventory, credentials, extra variables, and all options and settings that you can specify on the command line.
 
 .Procedure
@@ -12,7 +12,7 @@ In addition to the playbooks, the template passes the inventory, credentials, ex
 
 image::controller-gs-job-templates-launch.png[Launch template]
 
-The initial job launch generates a status page, which updates automatically using {ControllerName}'s Live Event feature, until the job is complete. 
+The initial job launch generates a status page, which updates automatically using {ControllerName}'s Live Event feature, until the job is complete.
 
 For more information on the job results, see link:http://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#ug-jobs[Jobs] in the Automation Controller User Guide.
 

@@ -4,7 +4,7 @@
 
 [role="_abstract"]
 
-The following table describes each parameter and setting options for the  {Navigator} `doc` subcommand.
+The following table describes each parameter and setting options for the {Navigator} `doc` subcommand.
 
 .{Navigator} `doc` subcommand parameters settings
 [options="header"]
@@ -12,7 +12,7 @@ The following table describes each parameter and setting options for the  {Navig
 |====
 |Parameter | Description|Setting options
 |help-doc
-|Help options for the  `ansible-doc` command in `stdout` mode.
+|Help options for the `ansible-doc` command in `stdout` mode.
 | *Choices:* `True` or `False`
 
 *Default:* `False`

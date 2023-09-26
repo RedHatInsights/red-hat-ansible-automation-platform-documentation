@@ -2,12 +2,10 @@
 
 = Using {EDAcontroller}
 
-After you have successfully installed the {EDAcontroller}, you can access the interface to manage your IT responses across all event sources. Since {EDAcontroller} is integrated with {ControllerName}, you can automate a combination of processes, including issue remediation, user administration tasks, operational logic, and the like. 
+After you have successfully installed the {EDAcontroller}, you can access the interface to manage your IT responses across all event sources. Since {EDAcontroller} is integrated with {ControllerName}, you can automate a combination of processes, including issue remediation, user administration tasks, operational logic, and the like.
 
 include::eda/ref-eda-controller-tasks.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
-.Additional resources (or Next steps)
+.Next steps
 * For further details on using Event-Driven Ansible controller, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/event-driven_ansible_controller_user_guide/index[Event-Driven Ansible controller User's Guide].
-
-

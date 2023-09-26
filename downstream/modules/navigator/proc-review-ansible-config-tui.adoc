@@ -32,12 +32,12 @@ Optional: type `ansible-navigator config` from the command line to access the An
 +
 image::navigator-ansible-config.png[Ansible configuration]
 +
-Some values reflect settings from within the {ExecEnvName} needed for the {ExecEnvName} to function.  These display as non-default settings you cannot set in your Ansible configuration file.
+Some values reflect settings from within the {ExecEnvName} needed for the {ExecEnvName} to function. These display as non-default settings you cannot set in your Ansible configuration file.
 
 . Type the number corresponding to the setting you want to delve into, or type `:<number>` for numbers greater than 9.
 +
 ----
-ANSIBLE COW ACCEPTLIST (current: ['bud-frogs', 'bunny', 'cheese']) (default: 
+ANSIBLE COW ACCEPTLIST (current: ['bud-frogs', 'bunny', 'cheese']) (default:
  0│---
  1│current:
  2│- bud-frogs
@@ -54,7 +54,7 @@ The output shows the current `setting` as well as the `default`. Note the `sourc
 
 .Verification
 
-*  Review the configuration output.
+* Review the configuration output.
 +
 image::navigator-ansible-config.png[Configuration output]
 

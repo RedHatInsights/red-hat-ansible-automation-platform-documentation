@@ -70,10 +70,9 @@ h| Requirement | Required
 To avoid possible resource conflicts, Ansible recommends 1 GB of memory per 10 forks + 2 GB reservation for {ControllerName}, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#at-capacity-determination-and-job-impact[Automation controller Capacity Determination and Job Impact] for further details. If `forks` is set to 400, 42 GB of memory is recommended.
 * A larger number of hosts can of course be addressed, though if the fork number is less than the total host count, more passes across the hosts are required.
 These RAM limitations are avoided when using rolling updates or when using the provisioning callback system built into {ControllerName}, where each system requesting configuration enters a queue and is processed as quickly as possible; or in cases where {ControllerName} is producing or deploying images such as AMIs.
-All of these are great approaches to managing larger environments. For further questions, please contact Ansible support through the Red Hat Customer portal at https://access.redhat.com/.
+All of these are great approaches to managing larger environments. For further questions, please contact Ansible support through the link:https://access.redhat.com/[Red Hat Customer portal].
 
 [role="_additional-resources"]
 .Additional resources
 
 * link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription].
-

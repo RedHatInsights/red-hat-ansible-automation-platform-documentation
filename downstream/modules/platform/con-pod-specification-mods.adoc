@@ -4,19 +4,19 @@
 
 The Kubernetes concept of a pod is one or more containers deployed together on one host, and the smallest compute unit that can be defined, deployed, or managed.
 
-Pods are the equivalent of a machine instance (physical or virtual) to a container. 
+Pods are the equivalent of a machine instance (physical or virtual) to a container.
 Each pod is allocated its own internal IP address, therefore owning its entire port space, and containers within pods can share their local storage and networking.
 
-Pods have a life cycle. 
-They are defined, then they are assigned to run on a node, then they run until their container(s) exit or they are removed for some other reason. 
+Pods have a life cycle.
+They are defined, then they are assigned to run on a node, then they run until their container(s) exit or they are removed for some other reason.
 Pods, depending on policy and exit code, may be removed after exiting, or may be retained to enable access to the logs of their containers.
 
-{PlatformName} provides a simple default Pod specification, however, you can provide a custom YAML, or JSON document that overrides the default Pod specification. 
-This custom document uses custom fields, such as `ImagePullSecrets`, that can be serialized as valid Pod JSON or YAML. 
+{PlatformName} provides a simple default Pod specification, however, you can provide a custom YAML, or JSON document that overrides the default Pod specification.
+This custom document uses custom fields, such as `ImagePullSecrets`, that can be serialized as valid Pod JSON or YAML.
 
 A full list of options can be found in the link:https://docs.openshift.com/online/pro/architecture/core_concepts/pods_and_services.html[Openshift documentation].
 
-.Example of a pod that provides a long-running service. 
+.Example of a pod that provides a long-running service.
 
 This example demonstrates many features of pods, most of which are discussed in other topics and thus only briefly mentioned here:
 
@@ -26,14 +26,14 @@ apiVersion: v1
 kind: Pod
 metadata:
   annotations: { ... }                      <1>
-  labels:                                
+  labels:
     deployment: docker-registry-1
     deploymentconfig: docker-registry
     docker-registry: default
-  generateName: docker-registry-1-          <2>    
+  generateName: docker-registry-1-          <2>
 spec:
-  containers:                               <3>                       
-  - env:         	            	  <4>                        
+  containers:                               <3>
+  - env:         	            	  <4>
     - name: OPENSHIFT_CA_DATA
       value: ...
     - name: OPENSHIFT_CERT_DATA
@@ -47,11 +47,11 @@ spec:
     image: openshift/origin-docker-registry:v0.6.2 <5>
     imagePullPolicy: IfNotPresent
     name: registry
-    ports:   		                          <6>                           
+    ports:   		                          <6>
     - containerPort: 5000
       protocol: TCP
     resources: {}                                    <7>
-    securityContext: { ... }    		 <8>        
+    securityContext: { ... }    		 <8>
     volumeMounts:                       	   <9>
     - mountPath: /registry
       name: registry-storage
@@ -61,9 +61,9 @@ spec:
   dnsPolicy: ClusterFirst
   imagePullSecrets:                                  <10>
   - name: default-dockercfg-at06w
-  restartPolicy: Always  			     <11>               
-  serviceAccount: default			    <12>               
-  volumes:        	                            <13>                          
+  restartPolicy: Always  			     <11>
+  serviceAccount: default			    <12>
+  volumes:        	                            <13>
   - emptyDir: {}
     name: registry-storage
   - name: default-token-br6yz
@@ -74,33 +74,33 @@ spec:
 [cols="30%,70%",options="header"]
 |====
 | Label | Description
-| `annotations:` | Pods can be "tagged" with one or more labels, which can then be used to select and manage groups of pods in a single operation. 
-The labels are stored in key:value format in the metadata hash. 
+| `annotations:` | Pods can be "tagged" with one or more labels, which can then be used to select and manage groups of pods in a single operation.
+The labels are stored in key:value format in the metadata hash.
 One label in this example is `docker-registry=default`.
-| `generateName:` | Pods must have a unique name within their namespace. 
+| `generateName:` | Pods must have a unique name within their namespace.
 A pod definition can specify the basis of a name with the `generateName` attribute, and add random characters automatically to generate a unique name.
 | `containers:` | `containers` specifies an array of container definitions. In this case (as with most), defines only one container.
 | `env:` | Environment variables pass necessary values to each container.
 | `image:` | Each container in the pod is instantiated from its own Docker-formatted container image.
-| `ports:` |  The container can bind to ports made available on the pod’s IP.
-| `resources` | When you specify a Pod, you can optionally describe how much of each resource a container needs. 
-The most common resources to specify are CPU and memory (RAM). 
+| `ports:` | The container can bind to ports made available on the pod’s IP.
+| `resources` | When you specify a Pod, you can optionally describe how much of each resource a container needs.
+The most common resources to specify are CPU and memory (RAM).
 Other resources are available.
-| `securityContext` | OpenShift Online defines a security context for containers that specifies whether they are permitted to run as privileged containers, run as a user of their choice, and more. 
+| `securityContext` | OpenShift Online defines a security context for containers that specifies whether they are permitted to run as privileged containers, run as a user of their choice, and more.
 The default context is very restrictive but administrators can modify this as required.
-| `volumeMounts:` | The container specifies where external storage volumes should be mounted within the container. 
+| `volumeMounts:` | The container specifies where external storage volumes should be mounted within the container.
 In this case, there is a volume for storing the registry’s data, and one for access to credentials the registry needs for making requests against the OpenShift Online API.
-| `ImagePullSecrets` | A pod can contain one or more containers, which must be pulled from some registry. 
-If containers come from registries that require authentication, you can provide a list of `ImagePullSecrets` that refer to `ImagePullSecrets` present in the namespace. 
-Having these specified enables {OCP} to authenticate with the container registry when pulling the image. 
+| `ImagePullSecrets` | A pod can contain one or more containers, which must be pulled from some registry.
+If containers come from registries that require authentication, you can provide a list of `ImagePullSecrets` that refer to `ImagePullSecrets` present in the namespace.
+Having these specified enables {OCP} to authenticate with the container registry when pulling the image.
 For further information, see link:https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/[Managing resource containers] in the kubernetes documentation.
-| `restartPolicy:` | The pod restart policy with possible values `Always`, `OnFailure`, and `Never`. 
+| `restartPolicy:` | The pod restart policy with possible values `Always`, `OnFailure`, and `Never`.
 The default value is `Always`.
 | `serviceAccount:` | Pods making requests against the OpenShift Online API is a common enough pattern that there is a `serviceAccount` field for specifying which service account user the pod should authenticate as when making the requests. This enables fine-grained access control for custom infrastructure components.
-| `volumes:` | The pod defines storage volumes that are available to its container(s) to use. 
+| `volumes:` | The pod defines storage volumes that are available to its container(s) to use.
 In this case, it provides an ephemeral volume for the registry storage and a secret volume containing the service account credentials.
 |====
 
-You can  modify the pod used to run jobs in a Kubernetes-based cluster using {ControllerName} by editing the pod specification in the {ControllerName} UI.  
-The pod specification that is used to create the pod that runs the job is in YAML format. 
+You can modify the pod used to run jobs in a Kubernetes-based cluster using {ControllerName} by editing the pod specification in the {ControllerName} UI.
+The pod specification that is used to create the pod that runs the job is in YAML format.
 For further information on editing the pod specifications, see xref:proc-customizing-pod-specs[Customizing the pod specification].

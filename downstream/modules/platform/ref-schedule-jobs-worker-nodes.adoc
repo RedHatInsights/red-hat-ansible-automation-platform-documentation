@@ -2,22 +2,21 @@
 
 = Jobs scheduled on the worker nodes
 
-Both {ControllerName} and Kubernetes play a role in scheduling a job.  
+Both {ControllerName} and Kubernetes play a role in scheduling a job.
 
 When a job is launched, its dependencies are fulfilled, meaning any project updates or inventory updates are launched by {ControllerName} as required by the job template, project, and inventory settings.
 
-If the job is not blocked by other business logic in {Controllername} and there is control capacity in the control plane to start the job, the job is submitted to the dispatcher. 
-The default settings of the "cost" to control a job is 1 _capacity_. 
-So, a control pod with 100 capacity is able to control up to 100 jobs at a time. 
-Given control capacity, the job transitions from _pending_ to _waiting_. 
+If the job is not blocked by other business logic in {Controllername} and there is control capacity in the control plane to start the job, the job is submitted to the dispatcher.
+The default settings of the "cost" to control a job is 1 _capacity_.
+So, a control pod with 100 capacity is able to control up to 100 jobs at a time.
+Given control capacity, the job transitions from _pending_ to _waiting_.
 
 The dispatcher, which is a background process in the control plan pod, starts a worker process to run the job.
-This communicates with the kubernetes API using a service account associated with the container group and uses the pod specification as defined on the Container Group in {ControllerName} to provision the pod. 
+This communicates with the kubernetes API using a service account associated with the container group and uses the pod specification as defined on the Container Group in {ControllerName} to provision the pod.
 The job status in {ControllerName} is shown as _running_.
 
-Kubernetes now schedules the pod. 
-A pod can remain in the _pending_ state for `AWX_CONTAINER_GROUP_POD_PENDING_TIMEOUT`. 
-If the pod is denied through a `ResourceQuota`, the job starts over at _pending_. 
-You can configure a resource quota on a namespace to limit how many resources may be consumed by pods in the namespace. 
+Kubernetes now schedules the pod.
+A pod can remain in the _pending_ state for `AWX_CONTAINER_GROUP_POD_PENDING_TIMEOUT`.
+If the pod is denied through a `ResourceQuota`, the job starts over at _pending_.
+You can configure a resource quota on a namespace to limit how many resources may be consumed by pods in the namespace.
 For further information on ResourceQuotas, see link:https://kubernetes.io/docs/concepts/policy/resource-quotas/[Resource Quotas].
-
