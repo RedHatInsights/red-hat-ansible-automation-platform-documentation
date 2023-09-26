@@ -18,8 +18,15 @@
 Name:: Insert the name.
 Description:: This field is optional.
 Project:: Projects are a logical collection of rulebooks.
-Rulebook:: Rulebooks will be shown according to the project selected.
+Rulebook:: Rulebooks are shown according to the project selected.
 Decision environment:: Decision environments are a container image to run Ansible rulebooks.
++
+[NOTE]
+====
+In {EDAcontroller}, you cannot customize the pull policy of the decision environment. 
+By default, it follows the behavior of the *always* policy.
+Every time an activation is started, the system tries to pull the most recent version of the image.
+====
 Restart policy:: This is a policy to decide when to restart a rulebook.
 *** Policies:
 ... Always: Restarts when a rulebook finishes
@@ -29,7 +36,7 @@ Rulebook activation enabled?:: This automatically enables the rulebook activatio
 Variables:: The variables for the rulebook are in a JSON/YAML format. 
 The content would be equivalent to the file passed through the `--vars` flag of ansible-rulebook command.
 
-. Select btn:[Create rulebook activation].
+. Click btn:[Create rulebook activation].
 
 Your rulebook activation is now created and can be managed in the *Rulebook Activations* screen.
 
