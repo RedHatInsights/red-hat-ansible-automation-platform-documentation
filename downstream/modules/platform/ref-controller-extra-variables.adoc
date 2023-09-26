@@ -45,6 +45,6 @@ satellites:
 
 The following table notes the behavior (hierarchy) of variable precedence in {ControllerName} as it compares to variable precedence in Ansible.
 
-.Automation Controller Variable Precedence Hierarchy (last listed wins)
+.{ControllerNameStart} Variable Precedence Hierarchy (last listed wins)
 
 image::ug-Variable_Precedence_Hierarchy.png[Variable precedence]

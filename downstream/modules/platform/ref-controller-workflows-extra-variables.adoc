@@ -1,0 +1,75 @@
+[id="controller-workflow-extra-variables"]
+
+= Workflow extra variables
+
+Workflows use surveys to specify variables to be used in the playbooks in the workflow, called `extra_vars`.
+Survey variables are combined with `extra_vars` defined on the workflow job template, and saved to the workflow job `extra_vars`. 
+`extra_vars` in the workflow job are combined with job template variables when spawning jobs within the workflow.
+
+Workflows use the same behavior (hierarchy) of variable precedence as job templates with the exception of three additional variables. 
+See the xref:controller-extra-variables[{ControllerNameStart} Variable Precedence Hierarchy] in the Extra variables section of Job templates. 
+The three additional variables include:
+
+* Workflow job template extra variables
+* Workflow job template survey (defaults)
+* Workflow job launch extra variables
+
+Workflows included in a workflow follow the same variable precedence, they only inherit variables if they are specifically prompted for, or defined as part of a survey.
+
+In addition to the workflow `extra_vars`, jobs and workflows run as part of a workflow can inherit variables in the artifacts dictionary of a parent job in the workflow (also combining with ancestors further upstream in its branch). 
+These can be defined by the `set_stats` link:https://docs.ansible.com/ansible/latest/collections/ansible/builtin/set_stats_module.html[Ansible module].
+
+If you use the `set_stats` module in your playbook, you can produce results that can be consumed downstream by another job. 
+
+.Example
+Notifying users as to the success or failure of an integration run. 
+In this example, there are two playbooks that can be combined in a workflow to exercise artifact passing:
+
+* invoke_set_stats.yml: first playbook in the workflow:
+
+----
+---
+- hosts: localhost
+  tasks:
+    - name: "Artifact integration test results to the web"
+      local_action: 'shell curl -F "file=@integration_results.txt" https://file.io'
+      register: result
+
+
+    - name: "Artifact URL of test results to Workflows"
+      set_stats:
+        data:
+          integration_results_url:  "{{ (result.stdout|from_json).link }}"
+----
+
+* use_set_stats.yml: second playbook in the workflow
+
+----
+---
+- hosts: localhost
+  tasks:
+    - name: "Get test results from the web"
+      uri:
+        url: "{{ integration_results_url }}"
+        return_content: true
+      register: results
+
+
+    - name: "Output test results"
+      debug:
+        msg: "{{ results.content }}"
+----
+
+The `set_stats` module processes this workflow as follows:
+
+. The contents of an integration result is uploaded to the web.
+. Through the `invoke_set_stats` playbook, `set_stats` is then invoked to artifact the URL of the uploaded `integration_results.txt` into the Ansible variable "integration_results_url".
+. The second playbook in the workflow consumes the Ansible extra variable "integration_results_url".
+It calls out to the web using the uri module to get the contents of the file uploaded by the previous job template job.
+Then, it prints out the contents of the obtained file.
+
+[NOTE]
+====
+For artifacts to work, keep the default setting, `per_host = False` in the `set_stats` module.
+====
+

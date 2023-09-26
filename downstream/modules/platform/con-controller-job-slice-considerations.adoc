@@ -2,7 +2,7 @@
 
 = Job slice considerations
 
-When setting up job slices consider the following: 
+When setting up job slices, consider the following: 
 
 * A sliced job creates a workflow job, which then creates jobs.
 * A job slice consists of a job template, an inventory, and a slice count.

@@ -1,0 +1,26 @@
+[id="controller-workflows"]
+
+= Workflows in {ControllerName}
+
+Workflows enable you to configure a sequence of disparate job templates (or workflow templates) that may or may not share inventory, playbooks, or permissions. 
+However, workflows have `admin` and `execute` permissions, similar to job templates. 
+A workflow accomplishes the task of tracking the full set of jobs that were part of the release process as a single unit.
+
+Job or workflow templates are linked together using a graph-like structure called nodes. 
+These nodes can be jobs, project syncs, or inventory syncs. 
+A template can be part of different workflows or used multiple times in the same workflow. 
+A copy of the graph structure is saved to a workflow job when you launch the workflow.
+
+The following example shows a workflow that contains all three, as well as a workflow job template:
+
+image::ug-node-all-scenarios-wf.png[Node in workflow]
+
+As the workflow runs, jobs are spawned from the node's linked template. 
+Nodes linking to a job template which has prompt-driven fields (job_type, job_tags, skip_tags, limit) can contain those fields, and is not prompted on launch.
+Job templates that prompt for a credential or inventory, without defaults, are not available for inclusion in a workflow.
+
+include::platform/con-controller-workflow-scenarios.adoc[leveloffset=+1]
+include::platform/ref-controller-workflows-extra-variables.adoc[leveloffset=+1]
+include::platform/con-controller-workflow-states.adoc[leveloffset=+1]
+include::platform/con-controller-role-based-access-controls.adoc[leveloffset=+1]
+
