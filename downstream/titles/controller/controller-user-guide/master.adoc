@@ -43,7 +43,7 @@ include::platform/assembly-controller-inventory-templates.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-job-templates.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-job-slicing.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-workflows.adoc[leveloffset=+1]
-//24 Workflow Job Templates
+include::platform/assembly-ug-controller-workflow-job-templates.adoc[leveloffset=+1]
 //25 Instance Groups
 //26 Jobs
 //27 Working with Webhooks

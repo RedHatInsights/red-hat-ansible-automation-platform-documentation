@@ -9,8 +9,8 @@
 +
 [NOTE]
 ====
-If a field has the *Prompt on launch* checkbox selected, launching the job prompts you for the value for that field when launching.
-Most prompted values will override any values set in the job template.
+If a field has the *Prompt on launch* checkbox selected, launching the job prompts you for the value for that field when launching. 
+Most prompted values override any values set in the job template.
 Exceptions are noted in the following table.
 ====
 +
@@ -27,12 +27,12 @@ Exceptions are noted in the following table.
 Tasks that do not support check mode are missed and do not not report potential changes.
 
 For more information on job types see the link:http://docs.ansible.com/playbooks_special_topics.html[Playbooks: Special Topics] section of the Ansible documentation.| Yes
-| Inventory | Choose the inventory to be used with this job template from the inventories available to the currently logged in user.
+| Inventory | Choose the inventory to be used with this job template from the inventories available to the logged in user. 
 
 A System Administrator must grant you or your team permissions to be able to use certain inventories in a job template. | Yes. Inventory prompts will show up as its own step in a subsequent prompt window.
-| Project | Choose the project to be used with this job template from the projects available to the user that is currently logged in. | N/A
-| SCM branch | This field is only present if you chose a project that allows branch override.
-Specify the overriding branch to use in your job run.
+| Project | Choose the project to be used with this job template from the projects available to the user that is logged in. | N/A
+| SCM branch | This field is only present if you chose a project that allows branch override. 
+Specify the overriding branch to use in your job run. 
 If left blank, the specified SCM branch (or commit hash or tag) from the project is used.
 
 For more information, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#ug-job-branching[Job branch overriding]. | Yes
@@ -62,9 +62,9 @@ a|
 
 - Labels can be used to group and filter job templates and completed jobs in the display.
 
-- Labels are created when they are added to the Job Template.
-Labels are associated to a single Organization using the Project that is provided in the Job Template.
-Members of the Organization can create labels on a Job Template if they have edit permissions (such as the admin role).
+- Labels are created when they are added to the job template. 
+Labels are associated to a single Organization using the Project that is provided in the job template. 
+Members of the Organization can create labels on a job template if they have edit permissions (such as the admin role).
 
 - Once the job template is saved, the labels appear in the *Job Templates* overview in the Expanded view.
 

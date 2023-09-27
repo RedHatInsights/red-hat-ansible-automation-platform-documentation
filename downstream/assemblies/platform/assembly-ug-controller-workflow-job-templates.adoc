@@ -1,0 +1,29 @@
+[id="controller-workflow-job-templates"]
+
+= Workflow job templates
+
+A workflow job template links together a sequence of disparate resources that tracks the full set of jobs that were part of the release process as a single unit. 
+These resources include the following:
+
+* Job templates
+* Workflow templates
+* Project syncs
+* Inventory source syncs
+
+The *Templates* list view shows the workflow and job templates that are currently available. 
+The default view is collapsed (Compact), showing the template name, template type, and the statuses of the jobs that have run using that template, but you can click the arrow next to each entry to expand and view more information. 
+This list is sorted alphabetically by name, but you can sort by other criteria, or search by various fields and attributes of a template.
+From this screen you can launch (image:rightrocket.png[Rightrocket,15,15]), edit (image:leftpencil.png[Leftpencil,15,15]), and copy (image:copy.png[Copy,15,15]) a workflow job template.
+
+Only workflow templates have the workflow visualizer (image:visualizer.png[Workflow visualizer,15,15]) icon as a shortcut for accessing the workflow editor.
+
+image::ug-wf-templates-home.png[Workflow templates home]
+
+[NOTE]
+====
+Workflow templates can be used as building blocks for another workflow template. 
+You can enable *Prompt on Launch* by setting up a number of settings in a workflow template, which you can edit at the workflow job template level.
+These do not affect the values assigned at the individual workflow template level. For instructions, see the [ADD XREF] Workflow Visualizer section.
+====
+
+include::platform/proc-controller-create-workflow-template.adoc[leveloffset=+1]

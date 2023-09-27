@@ -13,7 +13,7 @@ This list is sorted alphabetically by name, but you can sort by other criteria, 
 
 image::ug-job-templates-home.png[Job templates home]
 
-From this screen, you can launch, edit, and copy a job template. 
+From this screen you can launch (image:rightrocket.png[Rightrocket,15,15]), edit (image:leftpencil.png[Leftpencil,15,15]), and copy (image:copy.png[Copy,15,15]) a workflow job template. 
 
 [NOTE]
 ====
