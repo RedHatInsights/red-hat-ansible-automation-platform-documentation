@@ -29,9 +29,9 @@ You can use the same `inventory` file from an existing {PlatformNameShort} 2.1 i
 +
 [NOTE]
 ====
-Provide a reachable IP address or fully qualified domain name (FDQN) for the [automationhub] and [automationcontroller] hosts to ensure that users can synchronize and install content from Ansible automation hub from a different node. 
+Provide a reachable IP address or fully qualified domain name (FQDN) for the `[automationhub]` and `[automationcontroller]` hosts to ensure that users can synchronize and install content from {HubNameMain} from a different node. 
 Do not use `localhost`.
-If `localhost is used`, the upgrade will be stopped as part of preflight checks.
+If `localhost` is used, the upgrade will be stopped as part of preflight checks.
 ====
 
 .Provisioning new nodes in a cluster
@@ -49,7 +49,7 @@ include::ini/clustered-nodes.ini[]
 
 .Importing and generating API tokens
 
-When upgrading from {PlatformName} 2.0 or earlier to {PlatformName} 2.1 or later, you can use your existing automation hub API token or generate a new token. In the inventory file, edit one of the following fields before running the {PlatformName} installer setup script `setup.sh`:
+When upgrading from {PlatformName} 2.0 or earlier to {PlatformName} 2.1 or later, you can use your existing {HubName} API token or generate a new token. In the inventory file, edit one of the following fields before running the {PlatformName} installer setup script `setup.sh`:
 
 * Import an existing API token with the `automationhub_api_token` flag as follows:
 +

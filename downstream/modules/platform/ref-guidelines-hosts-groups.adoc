@@ -9,21 +9,21 @@
 
 .{HubNameStart}
 * If there is an `[automationhub]` group, you must include the variables `automationhub_pg_host` and `automationhub_pg_port`.
-* Add {HubNameMain} information in the `[automationhub]` group
-* Do not install {HubNamemain} and {ControllerName} on the same node.
-* Provide a reachable IP address or fully qualified domain name (FDQN) for the `[automationhub]` and `[automationcontroller]` hosts to ensure that users can synchronize and install content from {HubNameMain} and {ControllerName} from a different node. 
+* Add {HubNameMain} information in the `[automationhub]` group.
+* Do not install {HubNameMain} and {ControllerName} on the same node.
+* Provide a reachable IP address or fully qualified domain name (FQDN) for the `[automationhub]` and `[automationcontroller]` hosts to ensure that users can synchronize and install content from {HubNameMain} and {ControllerName} from a different node. 
 Do not use `localhost`.
 
 .{PrivateHubNameStart}
 * Do not install {PrivateHubName} and {ControllerName} on the same node.
-* You can use the same Postgresql (database) instance, but they must use a different (database) name.
+* You can use the same PostgreSQL (database) instance, but they must use a different (database) name.
 * If you install {PrivateHubName} from an internal address, and have a certificate which only encompasses the external address, it can result in an installation you cannot use as a container registry without certificate issues.
 
 [IMPORTANT]
 ====
-You must separate the installation of {Controllername} and {HubNameMain} because the `[database]` group does not distinguish between the two if both are installed at the same time. 
+You must separate the installation of {ControllerName} and {HubNameMain} because the `[database]` group does not distinguish between the two if both are installed at the same time. 
 
-If you use one value in `[database]` and both {Controllername} and {HubNameMain} define it, they would use the same database.
+If you use one value in `[database]` and both {ControllerName} and {HubNameMain} define it, they would use the same database.
 ====
 
 .{ControllerNameStart}
@@ -35,11 +35,11 @@ If you use one value in `[database]` and both {Controllername} and {HubNameMain}
 * When upgrading an existing cluster, you can also reconfigure your cluster to omit existing instances or instance groups. 
 Omitting the instance or the instance group from the inventory file is not enough to remove them from the cluster. 
 In addition to omitting instances or instance groups from the inventory file, you must also deprovision instances or instance groups before starting the upgrade. See xref:ref-deprovisioning[Deprovisioning nodes or groups]. 
-Otherwise, omitted instances or instance groups continue to communicate with the cluster, which can cause issues with {Controllername} services during the upgrade.
+Otherwise, omitted instances or instance groups continue to communicate with the cluster, which can cause issues with {ControllerName} services during the upgrade.
 * If you are creating a clustered installation setup, you must replace `[localhost]` with the hostname or IP address of all instances. 
 Installers for {ControllerName} and {HubName} do not accept `[localhost]`
-All nodes and instances must be able to reach any others using this hostname or address. 
-In other words, you cannot use the localhost `ansible_connection=local` on one of the nodes. 
+All nodes and instances must be able to reach any others by using this hostname or address. 
+You cannot use the localhost `ansible_connection=local` on one of the nodes. 
 Use the same format for the host names of all the nodes.
 +
 Therefore, this does not work:
