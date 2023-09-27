@@ -1,0 +1,33 @@
+[id="ref-controller-content-sourcing"]
+
+= Content sourcing from collections
+
+A "managed" credential type of `kind=galaxy` represents a content source for fetching collections defined in `requirements.yml` when project
+updates are run, for example, galaxy.ansible.com, {Console}, or on-premise {HubName}. 
+This new credential type represents a URL and (optional) authentication details necessary to construct the environment variables when a project update runs `ansible-galaxy collection install` as described in the Ansible documentation, link:
+https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html#configuring-the-ansible-galaxy-client[Configuring the ansible-galaxy client]. 
+It has fields which map directly to the configuration options exposed to the {Galaxy} CLI, for example, per-server. 
+
+An endpoint in the API reflects an ordered list of these credentials at the Organization level:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+/api/v2/organizations/N/galaxy_credentials/
+----
+
+When installations of {ControllerName} migrate existing Galaxy-oriented setting values, post-upgrade proper credentials are created and
+attached to every Organization. 
+After upgrading to the latest version, every organization that existed before upgrade now has a list of one or more "Galaxy" credentials associated with it.
+
+Additionally, post-upgrade, these settings are not visible (or editable) from the `/api/v2/settings/jobs/` endpoint.
+
+{ControllerNameStart} continues to fetch roles directly from public Galaxy even if `galaxy.ansible.com` is not the first credential in the list for the Organization. The global "Galaxy" settings are no longer configured at the jobs level, but at the Organization level in the User Interface.
+
+The Organization's *Add* and *Edit* windows have an optional *Credential* lookup field for credentials of `kind=galaxy`.
+
+image:organizations-galaxy-credentials.png[Create organization]
+
+It is important to specify the order of these credentials as order sets precedence for the sync and lookup of the content. 
+For more information, see xref:proc-controller-create-organization[Creating an organization]. 
+
+For more information on how to set up a project using collections, see [Using Collections via Hub].

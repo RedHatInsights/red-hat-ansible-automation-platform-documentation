@@ -1,0 +1,35 @@
+[id="ref-controller-api-considerations"]
+
+= Backwards-Compatible API Considerations
+
+Support for version 2 of the API (`api/v2/`) means a one-to-many relationship for Job Templates to credentials (including multi-cloud
+support). 
+
+Credentials can be filtered using the v2 API:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ curl "https://controller.example.org/api/v2/credentials/?credential_type__namespace=aws"
+----
+
+In the V2 CredentialType model, the relationships are defined as follows:
+
+[cols="15%,40%",options="header"]
+|===
+| Machine | SSH
+| Vault | Vault
+| Network |S ets environment variables, for example `ANSIBLE_NET_AUTHORIZE`
+| SCM | Source Control
+| Cloud | EC2, AWS
+| | Lots of others
+| Insights |Insights
+| Galaxy | galaxy.ansible.com, console.redhat.com
+| | on-premise {HubName}
+|===
+
+= Content verification
+
+{ControllerNameStart} uses GNU Privacy Guard (GPG) to verify content. 
+
+For more information, see
+link:https://www.gnupg.org/gph/en/manual/c14.html#:~:text=GnuPG%20uses%20public%2Dkey%20cryptography,the%20user%20wants%20to%20communicate[The GNU Privacy Handbook].
