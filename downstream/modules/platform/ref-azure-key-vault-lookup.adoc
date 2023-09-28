@@ -1,0 +1,15 @@
+[id="ref-azure-key-vault-lookup"]
+
+= {Azure} Key Vault
+
+When *{Azure} Key Vault* is selected for *Credential Type*, provide the following metadata to configure your lookup:
+
+* *Vault URL (DNS Name)* (required): provide the URL used for communicating with {Azure}'s key management system
+* *Client ID* (required): provide the identifier as obtained by the Azure Active Directory
+* *Client Secret* (required): provide the secret as obtained by the Azure Active Directory
+* *Tenant ID* (required): provide the unique identifier that is associated with an Azure Active Directory instance within an Azure subscription
+* *Cloud Environment*: select the applicable cloud environment to apply
+
+The following is an example of a configured {Azure} KMS credential.
+
+image:credentials-create-azure-kms-credential.png[Azure KMS credential]

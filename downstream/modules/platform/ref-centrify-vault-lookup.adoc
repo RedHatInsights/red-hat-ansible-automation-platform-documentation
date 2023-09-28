@@ -1,0 +1,16 @@
+[id="ref-centrify-vault-lookup"]
+
+= Centrify Vault Credential Provider Lookup
+
+You need the Centrify Vault web service running to store secrets for this integration to work. 
+When *Centrify Vault Credential Provider Lookup* is selected for *Credential Type*, provide the following metadata to configure your lookup:
+
+* *Centrify Tenant URL* (required): provide the URL used for communicating with Centrify's secret management system
+* *Centrify API User* (required): provide the username
+* *Centrify API Password* (required): provide the password
+* *OAuth2 Application ID* : specify the identifier given associated with the OAuth2 client
+* *OAuth2 Scope* : specify the scope of the OAuth2 client
+
+The following is an example of a configured Centrify Vault credential.
+
+image:credentials-create-centrify-vault-credential.png[Centrify Vault credential]

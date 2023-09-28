@@ -1,0 +1,22 @@
+[id="ref-cyberark-ccp-lookup"]
+
+= CyberArk Central Credential Provider (CCP) Lookup
+
+The CyberArk Central Credential Provider web service must be running to store secrets for this integration to work. 
+When *CyberArk Central Credential Provider Lookup* is selected for *Credential Type*, it requires the following metadata to properly configure your lookup:
+
+* *CyberArk CCP URL* (required): provide the URL used for communicating with CyberArk CCP's secret management system. 
+It must include URL scheme (http, https, etc.)
+* Optional: *Web Service ID*: specify the identifier for the web service. 
+Leaving this blank defaults to AIMWebService
+* *Application ID* (required): specify the identifier given by CyberArk CCP services
+* *Client Key*: paste the client key if provided by CyberArk
+* *Client Certificate*: include the `BEGIN CERTIFICATE` and `END CERTIFICATE` lines when pasting the certificate, if provided by
+CyberArk
+* *Verify SSL Certificates*: this option is only available when the URL uses HTTPS. 
+Check this option to verify the server's SSL certificate is valid and trusted. 
+Environments that use internal or private CA's must leave this option unchecked to disable verification.
+
+The following is an example of a configured CyberArk CCP credential.
+
+image:credentials-create-cyberark-ccp-credential.png[CyberArk credential]

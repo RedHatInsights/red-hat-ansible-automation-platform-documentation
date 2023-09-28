@@ -1,0 +1,19 @@
+[id="ref-cyberark-conjur-lookup"]
+
+= CyberArk Conjur Secrets Manager Lookup
+
+With a Conjur Cloud tenant available to target, configure the CyberArk Conjur Secrets Lookup external management system credential plugin as
+shown.
+
+When *CyberArk Conjur Secrets Manager Lookup* is selected for *Credential Type*, provide the following metadata to configure your lookup:
+
+* *Conjur URL* (required): provide the URL used for communicating with CyberArk Conjur's secret management system. 
+This must include the URL scheme, such as http, https.
+* *API Key* (required): provide the key given by your Conjur admin
+* *Account* (required): the organization's account name
+* *Username* (required): the specific authenticated user for this service
+* *Public Key Certificate*: include the `BEGIN CERTIFICATE` and `END CERTIFICATE` lines when pasting the public key, if provided by CyberArk
+
+The following is an example of a configured CyberArk Conjur credential.
+
+image:credentials-create-cyberark-conjur-credential.png[CyberArk Conjur credential]

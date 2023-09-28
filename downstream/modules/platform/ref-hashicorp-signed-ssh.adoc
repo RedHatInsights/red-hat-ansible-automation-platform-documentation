@@ -1,0 +1,18 @@
+[id="ref-hashicorp-signed-ssh"]
+
+= HashiCorp Vault Signed SSH
+
+When *HashiCorp Vault Signed SSH* is selected for *Credential Type*, provide the following metadata to configure your lookup:
+
+* *Server URL* (required): provide the URL used for communicating with HashiCorp Signed SSH's secret management system
+* *Token*: specify the access token used to authenticate HashiCorp's server
+* *CA Certificate*: specify the CA certificate used to verify HashiCorp's server
+* *Approle Role_ID*: specify the ID for Approle authentication
+* *Approle Secret_ID*: specify the corresponding secret ID for Approle authentication
+* *Path to Approle Auth*: specify a path if other than the default path of `/approle`
+
+For more information about Approle and its fields, see the link:https://www.vaultproject.io/docs/auth/approle[Vault documentation for Approle Auth Method].
+
+The following is an example of a configured HashiCorp SSH Secrets Engine credential.
+
+image:credentials-create-hashicorp-ssh-credential.png[HashiCorp SSH Secrets Engine credential]

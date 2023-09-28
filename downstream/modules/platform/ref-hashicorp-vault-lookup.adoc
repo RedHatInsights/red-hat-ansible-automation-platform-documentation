@@ -1,0 +1,20 @@
+[id="ref-hashicorp-vault-lookup"]
+
+= HashiCorp Vault Secret Lookup
+
+When *HashiCorp Vault Secret Lookup* is selected for *Credential Type*, provide the following metadata to configure your lookup:
+
+* *Server URL* (required): provide the URL used for communicating with HashiCorp Vault's secret management system
+* *Token*: specify the access token used to authenticate HashiCorp's server
+* *CA Certificate*: specify the CA certificate used to verify HashiCorp's server
+* *Approle Role_ID*: specify the ID for Approle authentication
+* *Approle Secret_ID*: specify the corresponding secret ID for Approle authentication
+* *Path to Approle Auth*: specify a path if other than the default path of `/approle`
+* *API Version* (required): select v1 for static lookups and v2 for versioned lookups
+
+For more information about Approle and its fields, see the
+link:https://www.vaultproject.io/docs/auth/approle[Vault documentation for AppRole auth method]. 
+
+The following is an example of a configured HashiCorp Vault Secret Lookup credential.
+
+image:credentials-create-hashicorp-kv-credential.png[HashiCopt vault credential]
