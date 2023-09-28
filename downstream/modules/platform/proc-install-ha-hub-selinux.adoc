@@ -56,6 +56,7 @@ $ setup.sh -- -b --become-user root
 * xref:proc-apply-selinux-context[Apply the appropriate SELinux context].
 * xref:proc-configure-pulpcore-service[Configure the pulpcore.serivce].
 
+[role="_additional-resources"]
 .Additional Resources
 * See the link:https://docs.pulpproject.org/en/2.16/user-guide/scaling.html#selinux-requirements[SELinux Requirements on the Pulp Project documentation] for a list of SELinux contexts.
 * See the link:https://docs.pulpproject.org/pulpcore/installation/hardware-requirements.html#filesystem-layout[Filesystem Layout] for a full description of Pulp folders.

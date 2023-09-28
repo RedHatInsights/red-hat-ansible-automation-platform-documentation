@@ -24,7 +24,7 @@ If you are not using the bundle installer, you can use a standalone tarball, `an
 You can also use this standalone tarball later to update validated contents in any environment, when a newer tarball becomes available, without having to re-run the bundle installer.
 
 .Prerequisites
-You require the following variables to run the playbook. 
+You require the following variables to run the playbook.
 
 [cols="50%,50%",options="header"]
 |====
@@ -59,7 +59,6 @@ Use either `automationhub_admin_password` or `automationhub_api_token`, not both
 When complete, the collections are visible in the validated collection section of {PrivateHubName}.
 Users can now view and download collections from your {PrivateHubName}.
 
+[role="_additional-resources"]
 .Additional Resources
 For more information on running ansible playbooks, see link:https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html[ansible-playbook].
-
-

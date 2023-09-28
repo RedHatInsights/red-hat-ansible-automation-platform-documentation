@@ -47,7 +47,6 @@ If the *Status* of the project is *Successful*, then the credential is valid.
 You have now configured {HubName} as your primary server. You can begin to download and install supported collections.
 
 [role="_additional-resources"]
-
 .Additional resources
-. For more information about server list configuration options and using Ansible Galaxy as an Ansible content source, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
-. For more information about creating and using credentials, see the link:https://docs.ansible.com/automation-controller/4.2.1/html/userguide/credentials.html[Credentials] section of Automation Controller User Guide v4.2.1.
+* For more information about server list configuration options and using Ansible Galaxy as an Ansible content source, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
+* For more information about creating and using credentials, see the link:https://docs.ansible.com/automation-controller/4.2.1/html/userguide/credentials.html[Credentials] section of Automation Controller User Guide v4.2.1.

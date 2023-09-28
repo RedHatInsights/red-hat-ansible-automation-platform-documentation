@@ -25,14 +25,5 @@ The following include statements pull in the module files that comprise the asse
 
 include::hub/con-container-registry.adoc[leveloffset=+1]
 
-
-[role="_additional-resources"]
-== Next steps
-
-* Push a container image to the {HubName} container registry.
-* Create a group with access to the container repository in the registry.
-* Add the new group to the container repository.
-* Add a README to the container repository to provide users with information and relevant links.
-
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

@@ -8,6 +8,8 @@ You assign permissions to the groups that you create. You can then assign users 
 
 Groups created in {HubName} can range from system administrators responsible for governing internal collections, configuring user access, and repository management to groups with access to organize and upload internally developed content to {HubName}.
 
+[role="_additional-resources"]
+.Additional resources
 * See xref:ref-permissions[Automation Hub permissions] for information on system permissions.
 
 == Default user access for {HubName}

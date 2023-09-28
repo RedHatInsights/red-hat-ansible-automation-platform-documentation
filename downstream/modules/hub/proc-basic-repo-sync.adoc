@@ -16,5 +16,6 @@ All collections in the configured remote are downloaded to your custom repositor
 To limit repository synchronization to specific collections within a remote, you can identify specific collections to be pulled using a requirements.yml file. See xref:proc-create-remote_remote-management[Create a remote] for more information.
 ====
 
+[role="_additional-resources"]
 .Additional resources
-For more information about using requirements files, see link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file[Install multiple collections with a requirements file] in the Galaxy User Guide.
+For more information about using requirements files, see link:https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html#install-multiple-collections-with-a-requirements-file[Install multiple collections with a requirements file] in the _Using Ansible collections_ guide.

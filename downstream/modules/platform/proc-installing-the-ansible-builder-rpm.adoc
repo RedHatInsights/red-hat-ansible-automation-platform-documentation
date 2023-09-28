@@ -183,7 +183,7 @@ $ podman build -f context/Containerfile \
 $ podman push <hub_fqdn>/custom-ee:latest
 ----
 
-== Workflow for upgrading between minor AAP releases
+== Workflow for upgrading between minor {PlatformNameShort} releases
 
 To upgrade between minor releases of {PlatformNameShort} 2, use this general workflow.
 

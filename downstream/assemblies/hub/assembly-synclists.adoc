@@ -10,7 +10,7 @@ To synchronize content, you can now upload a manually-created requirements file 
 Remotes are configurations that enable you to synchronize content to your custom repositories from an external collection source.
 ====
 
-You can use {HubNameMain} to distribute the relevant {CertifiedColl}s to your users by creating synclists or a requirements file. For more information about using requirements files, see link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file[Install multiple collections with a requirements file] in the {Galaxy} User Guide.
+You can use {HubNameMain} to distribute the relevant {CertifiedColl}s to your users by creating synclists or a requirements file. For more information about using requirements files, see link:https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html#install-multiple-collections-with-a-requirements-file[Install multiple collections with a requirements file] in the _Using Ansible collections_ guide.
 
 include::hub/con-rh-certified-synclist.adoc[leveloffset=+1]
 include::hub/proc-create-synclist.adoc[leveloffset=+1]

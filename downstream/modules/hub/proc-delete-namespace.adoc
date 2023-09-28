@@ -17,6 +17,6 @@ You must first ensure that the namespace does not contain a collection with depe
 . Click the namespace to be deleted.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}*, then click btn:[Delete namespace].
 +
-NOTE: If the btn:[Delete namespace] button is disabled, the namespace contains a collection with dependencies. Review the collections in this namespace, and delete any dependencies. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/index#delete-collection[Deleting a collection on automation hub] for information.
+NOTE: If the btn:[Delete namespace] button is disabled, the namespace contains a collection with dependencies. Review the collections in this namespace, and delete any dependencies. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/uploading-content-hub#delete-collection[Deleting a collection on automation hub] for information.
 
 The namespace that you deleted, as well as its associated collections, is now deleted and removed from the namespace list view.
