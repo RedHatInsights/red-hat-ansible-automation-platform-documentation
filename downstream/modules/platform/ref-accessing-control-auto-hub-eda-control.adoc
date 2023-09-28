@@ -19,6 +19,8 @@ Once the installation completes, these are the default protocol and ports used:
 
 These can be changed. Consult the *README.md* for further details. It is recommended that you leave the defaults unless you need to change them due to port conflicts or other factors.
 
+NOTE: Port 445 has been known to be blocked by some ISPs. If port 445 is blocked, please refer to the *README.md* file for more information on changing port values. 
+
 .Accessing Automation Controller UI
 
 The automation controller UI is available by default at:
