@@ -34,7 +34,7 @@ include::platform/assembly-controller-credentials.adoc[leveloffset=+1]
 //In the new UI, Credential types is part of Credentials.
 include::platform/assembly-controller-custom-credentials.adoc[leveloffset=+1]
 include::platform/assembly-controller-secret-management.adoc[leveloffset=+1]
-//14 Applications
+include::platform/assembly-controller-applications.adoc[leveloffset=+1]
 //15 Execution Environments
 //16 Execution Environment Setup Reference
 //17 Projects

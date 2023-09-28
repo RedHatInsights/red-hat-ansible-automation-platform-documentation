@@ -1,0 +1,13 @@
+[id="ref-controller-applications-getting-started"]
+
+= Getting Started with Applications
+
+From the navigation menu select menu:Administration[Applications].
+The *Applications* page displays a searchable list of all available Applications currently managed by {ControllerName} and can be
+sorted by *Name*.
+
+image:apps-list-view-examples.png[Applications- with example apps]
+
+If no applications exist, you are requested to add applications.
+
+image:apps-list-view-empty.png[Add applications]

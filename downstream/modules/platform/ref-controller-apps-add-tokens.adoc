@@ -1,0 +1,9 @@
+[id="ref-controller-apps-add-tokens"]
+
+= Applications - Tokens
+
+Select menu:Tokens[] to display a list of the users that have tokens to access the application.
+
+image:apps-tokens-list-view-examples.png[Applications- tokens list]
+
+Tokens can only access resources that an associated user can access, and can be limited further by specifying the scope of the token.

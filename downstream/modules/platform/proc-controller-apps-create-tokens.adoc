@@ -1,0 +1,48 @@
+[id="proc-controller-apps-create-tokens"]
+
+= Adding tokens
+
+Add tokens through the menu:Access[Users] page. 
+Tokens can be associated with an application from the User's page. 
+Specifying an application can be performed in the User's token settings. 
+You can create a token for _your_ username in the Tokens configuration tab, meaning only you can create and see your tokens in your own user screen. 
+
+Use the following procedure to add a token:
+
+[arabic]
+. From the navigation panel, select menu:Access[Users]
+. Select the user for which you want to configure the OAuth 2 tokens.
++
+[NOTE]
+====
+You can only create OAuth 2 Tokens for your user through the API or UI, which means you can only access your own user profile to configure or view your tokens. 
+If you are an system administrator and have to create or remove tokens for other users, see the revoke and create commands in the
+[Token and session management] section of the _Automation Controller Administration Guide_
+====
+. Select the *Tokens* tab on the user's profile.
+. When no tokens are present, the *Tokens* screen prompts you to add them:
+. Click btn:[Add] to open the *Create Token* window.
+. Enter the following details:
+
+* *Application*: enter the name of the application with which you want to associate your token. 
+Alternatively, you can search for it by clicking the image:search.png[Search,15,15] icon. 
+This opens a separate window that enables you to choose from the available options. 
+Use the Search bar to filter by name if the list is extensive. 
+Leave this field blank if you want to create a Personal Access Token (PAT) that is not linked to any application.
+* Optional: *Description*: provide a short description for your token.
+* *Scope* (required): specify the level of access you want this token to have.
+
+. Click btn:[Save], or click btn:[Cancel] to abandon your changes.
+
+. After the token is saved, the newly created token for the user is displayed with the token information and when it expires.
++
+image:users-token-information-example.png[Token information]
+
+. In the user's profile, the application to which it is assigned to and its expiration are displayed in the token list view.
++
+image:users-token-assignment-example.png[Token assignment]
+
+.Verifying
+To verify that the application now shows the user with the appropriate token, open the *Tokens* tab of the Applications window:
+
+image:apps-tokens-list-view-example2.png[image]
