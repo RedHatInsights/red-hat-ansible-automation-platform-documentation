@@ -1,0 +1,46 @@
+[id="proc-controller-ee-mount-options"]
+
+= Execution environment mount options
+
+Rebuilding an {ExecEnvShort} is one way to add certificates, but inheriting certificates from the host provides a more convenient solution. 
+For VM-based installs, {ControllerName} automatically mounts the system trust store in the {ExecEnvShort} when jobs run.
+
+Additionally, you may customize {ExecEnvShort} mount options and mount paths in the *Paths to expose to isolated jobs* field of the *Job Settings* page, where it supports podman-style volume mount syntax. 
+
+For more information, see the link:https://docs.podman.io/en/latest/markdown/podman-run.1.html#volume-v-source-volume-host-dir-container-dir-options[Podman documentation].
+
+In some cases where the `/etc/ssh/*` files were added to the {ExecEnvShort} image due to customization of an {ExecEnvShort}, an SSH error can occur. 
+For example, exposing the `/etc/ssh/ssh_config.d:/etc/ssh/ssh_config.d:O` path enables the container to be mounted, but the ownership permissions are not mapped correctly.
+
+Use the following procedure if you encounter this error, or have upgraded from an older version of {ControllerName}:
+
+.Procedure
+. Change the container ownership on the mounted volume to `root`.
+. In the *Paths to expose to isolated jobs* field of the Job Settings page, using the current example, expose the path as follows:
++
+image:settings-paths2expose-iso-jobs.png[Paths]
++
+[NOTE]
+====
+The `:O` option is only supported for directories. 
+Be as detailed as possible, especially when specifying system paths. 
+Mounting `/etc` or `/usr` directly has an impact that make it difficult to troubleshoot.
+====
++
+This informs Podman to run a command similar to the following example, where the configuration is mounted and the `ssh` command works as expected.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+podman run -v /ssh_config:/etc/ssh/ssh_config.d/:O ...
+----
+
+To expose isolated paths in OpenShift or Kubernetes containers as HostPath, use the following configuration:
+
+image:settings-paths2expose-iso-jobs-mount-containers.png[Expose isolated jobs]
+
+Set *Expose host paths for Container Groups* to *On* to enable it.
+
+When the playbook runs, the resulting Pod specification is similar to the following example. 
+Note the details of the `volumeMounts` and `volumes` sections.
+
+image:mount-containers-playbook-run-podspec.png[Pod specification]

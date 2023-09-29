@@ -1,0 +1,21 @@
+[id="ref-controller-build-exec-envs"]
+
+= Building an Execution Environment
+
+Using Ansible content that depends on non-default dependencies (custom virtual environments) can complicate matters. 
+Packages must be installed on each node, interact well with other software installed on the host system, and be kept in synchronization. Previously, jobs ran in a virtual environment at `/var/lib/awx/venv/ansible`, which was pre-loaded with dependencies for ansible-runner and certain types of Ansible content used by the Ansible control machine.
+
+To simplify this process, container images can be built that serve as Ansible
+link:https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html#control-node[Control nodes]. 
+These container images are referred to as automation {ExecEnvShort}s, which you can create with ansible-builder.
+Ansible-runner can then make use of those images.
+
+include::ref-controller-install-builder.adoc[leveloffset=+1]
+include::ref-controller-building-exec-env.adoc[leveloffset=+1]
+include::ref-controller-run-the-builder.adoc[leveloffset=+1]
+include::proc-controller-ee-mount-options.adoc[leveloffset=+1]
+
+
+
+
+

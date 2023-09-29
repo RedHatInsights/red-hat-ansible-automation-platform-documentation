@@ -1,0 +1,43 @@
+[id="ref-controller-run-the-builder"]
+
+= Run the builder
+
+The `ansible-builder build` command takes an {ExecEnvShort} definition as an input. 
+It outputs the build context necessary for building an {ExecEnvShort} image, and then builds that image. 
+The image can be re-built with the build context elsewhere, and produces the same result. 
+By default, it searches for a file named `execution-environment.yml` in the current directory.
+
+The following example `execution-environment.yml` file can be used as a starting point:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+---
+version: 3
+dependencies:
+  galaxy: requirements.yml
+----
+
+The content of `requirements.yml`:
+
+[literal, options="nowrap" subs="+attributes"]
+---
+collections:
+  - name: awx.awx
+----
+
+To build an {ExecEnvShort} using the files above, run the following command:
+
+[literal, options="nowrap" subs="+attributes"]
+---
+$ ansible-builder build
+...
+STEP 7: COMMIT my-awx-ee
+--> 09c930f5f6a
+09c930f5f6ac329b7ddb321b144a029dbbfcc83bdfc77103968b7f6cdfc7bea2
+Complete! The build context can be found at: context
+----
+
+In addition to producing a ready-to-use container image, the build context is preserved, which can be rebuilt at a different time or
+location with the tooling of your choice, such as `docker build` or `podman build`.
+
+For additional information about the `ansible-builder build` command, refer to Ansible's link:https://ansible.readthedocs.io/projects/builder/en/latest/usage/#cli-usage[CLI Usage] documentation.

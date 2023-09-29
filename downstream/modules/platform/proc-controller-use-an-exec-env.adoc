@@ -1,0 +1,43 @@
+[id="proc-controller-use-an-exec-env"]
+
+= Using an execution environment in jobs
+
+.Prerequisites
+
+* An {ExecEnvShort} must have been created using ansible-builder as described in xref:ref-controller-building-exec-env[Build an {ExecEnvShort}]. 
+When an {ExecEnvShort} has been created, you can use it to run jobs. Use the {ControllerName} UI to specify the {ExecEnvShort} to use in your job templates.
+* Depending on whether an {ExecEnvShort} is made available for global use or tied to an organization, you must have the appropriate level of administrator privileges to use an {ExecEnvShort} in a job. 
+Execution environments tied to an organization require Organization administrators to be able to run jobs with those {ExecEnvShort}s.
+* Before running a job or job template that uses an {ExecEnvShort} that has a credential assigned to it, be sure that the credential contains a username, host, and password.
+
+To use an {ExecEnvShort} in a job, use the following procedure:
+
+.Procedure
+. On the navigation panel, select menu:Administration[Execution Environments].
+. Click btn:[Add] to add an {ExecEnvShort}.
+. Enter the appropriate details into the following fields:
+
+* *Name*: Enter a name for the {ExecEnvShort}(required).
+* *Image*: Enter the image name (required). 
+The image name requires its full location (repo), the registry, image name, and version tag in the example format of `quay.io/ansible/awx-ee:latestrepo/project/image-name:tag`.
+* Optional: *Pull*: choose the type of pull when running jobs:
+** *Always pull container before running*: Pulls the latest image file for the container.
+** *Only pull the image if not present before running*: Only pulls the latest image if none is specified.
+** *Never pull container before running*: Never pull the latest version of the container image.
+* Optional: *Description*:
+* Optional: *Organization*: assign the organization to specifically use this {ExecEnvShort}. To make the {ExecEnvShort} available for use across multiple organizations, leave this field blank.
+* *Registry credential*: If the image has a protected container registry, provide the credential to access it.
++
+image:ee-new-ee-form-filled.png[New execution environment]
+
+. Click btn:[Save].
+
+Your newly added {ExecEnvShort} is ready to be used in a job template. 
+
+To add an {ExecEnvShort} to a job template, specify it in the *Execution Environment* field of the job template, as shown in the following example. 
+
+image:job-template-with-example-ee-selected.png[Execution Environment added]
+
+When you have added an {ExecEnvShort} to a job template, those templates are listed in the *Templates* tab of the {ExecEnvShort}:
+
+image:ee-details-templates-list.png[Execution environment templates]

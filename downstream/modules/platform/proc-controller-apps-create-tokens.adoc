@@ -9,8 +9,8 @@ You can create a token for _your_ username in the Tokens configuration tab, mean
 
 Use the following procedure to add a token:
 
-[arabic]
-. From the navigation panel, select menu:Access[Users]
+.Procedure
+. From the navigation panel, select menu:Access[Users].
 . Select the user for which you want to configure the OAuth 2 tokens.
 +
 [NOTE]
