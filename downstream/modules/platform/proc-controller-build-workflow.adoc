@@ -1,0 +1,111 @@
+[id="controller-build-workflow"]
+
+= Building a workflow
+
+You can set up any combination of two or more of the following node types to build a workflow: 
+
+* Template (Job Template or Workflow Job Template)
+* Project Sync
+* Inventory Sync
+* Approval
+
+Each node is represented by a rectangle while the relationships and their associated edge types are represented by a line (or link) that connects them.
+
+.Procedure
+
+. To launch the workflow visualizer, use one of these methods:
+.. From the navigation panel, select menu:Resources[Templates]. 
+... Select a workflow template, in the *Details* tab click btn:[Edit]. 
+... Select the *Visualizer* tab.
+.. From the *Templates* list view, click the image:visualizer.png[Visualizer,15,15] icon.
++
+image::ug-wf-editor-create.png[Launch visualizer]
++
+. Click btn:[Start] to display a list of nodes to add to your workflow.
++
+image::ug-wf-add-template-nodes.png[Add Node workflow job template]
++
+. From the drop-down menu, select the type of node that you want to add:
++
+image::ug-wf-add-node-selections.png[Node type]
++
+* If you select an *Approval* node, see [ADD XREF]Approval nodes for more information.
++
+Selecting a node provides the available valid options associated with it.
++
+[NOTE]
+====
+If you select a job template that does not have a default inventory when populating a workflow graph, the inventory of the parent workflow is used. 
+Though a credential is not required in a job template, you cannot choose a job template for your workflow if it has a credential that requires a password, unless the credential is replaced by a prompted credential.
+====
++
+. When you select a node type, the workflow begins to build, and you must specify the type of action to be taken for the selected node. 
+This action is also referred to as edge type.
+. If the node is a root node, the edge type defaults to *Always* and is non-editable.
+For subsequent nodes, you can select one of the following scenarios (edge type) to apply to each:
+* *Always*: Continue to execute regardless of success or failure.
+* *On Success*: After successful completion, execute the next template.
+* *On Failure*: After failure, execute a different template.
+. Select the behavior of the node if it is a convergent node from the *Convergence* field:
+* *Any* is the default behavior, allowing any of the nodes to complete as specified, before triggering the next converging node. 
+As long as the status of one parent meets one of those run conditions, an *any* child node will run. 
+An *any* node requires all nodes to complete, but only one node must complete with the expected outcome.
+* Choose *All* to ensure that all nodes complete as specified, before converging and triggering the next node. 
+The purpose of *all** nodes is to make sure that every parent meets it's expected outcome in order to run the child node. 
+The workflow checks to make sure every parent behaves as expected in order to run the child node. 
+Otherwise, it will not run the child node.
++
+If selected, the node is labelled as *ALL* in the graphical view:
++
+image:ug-wf-editor-convergent-node-all.png[Convergent node all]
++
+[NOTE]
+==== 
+If a node is a root node, or a node that does not have any nodes converging into it, setting the Convergence rule does not apply, as its behavior is dictated by the action that triggers it.
+====
++
+. If a job template used in the workflow has *Prompt on Launch* selected for any of its parameters, a btn:[PROMPT] option appears, enabling you to change those values at the node level. 
+Use the wizard to change the values in each of the tabs and click btn:[Confirm] in the *Preview* tab.
++
+image::ug-wf-prompt-button-wizard.png[Prompt option] 
++
+If a workflow template used in the workflow has *Prompt on Launch* selected for the inventory option, use the wizard to supply the inventory at the prompt. 
+If the parent workflow has its own inventory, it overrides any inventory that is supplied here.
++
+image::ug-wf-prompt-button-inventory-wizard.png[Prompt button inventory]
++
+[NOTE]
+====
+For workflow job templates with required fields that prompt details, but do not have a default, you must provide those values when creating a node before the *Select* option is enabled.
+
+The following two cases disable the btn:[SELECT] option until a value is provided by the btn:[PROMPT] option:
+
+.. When you select the *Prompt on Launch* checkbox in a workflow job template, but do not provide a default.
+.. When you create a survey question that is required but do not provide a default answer.
+
+However, this is not the case with credentials. 
+Credentials that require a password on launch are not permitted when creating a workflow node, because everything required to launch the node must be provided when the node is created. 
+If you are prompted for credentials in a workflow job template, it is not possible to select a credential that requires a password in {ControllerName}.
+
+You must also click btn:[SELECT] when the prompt wizard closes, to apply the changes at that node. 
+Otherwise, any changes you make revert back to the values set in the job template.
+====
++
+When the node is created, it is labeled with its job type. 
+A template that is associated with each workflow node runs based on the selected run scenario as it proceeds. 
+Click the compass (image:compass.png[Compass, 15,15]) icon to display the legend for each run scenario and their job types.
++
+image::ug-wf-dropdown-list.png[Worfklow dropdown list]
++
+. Hover over a node to add another node, view info about the node, edit the node details, edit an existing link, or delete the selected node:
++
+image::ug-wf-add-template.png[Node options]
++
+. When you have added or edited a node, click btn:[SELECT] to save any modifications and render it on the graphical view.
+For possible ways to build your workflow, see xref:controller-building-nodes-scenarios[Building nodes scenarios].
+. When you have built your workflow job template, click btn:[Save] to save your entire workflow template and return to the new workflow job template details page.
+
+[IMPORTANT]
+====
+Clicking btn:[Close] does not save your work, but instead, it closes the entire Workflow Visualizer so that you have to start again.
+====

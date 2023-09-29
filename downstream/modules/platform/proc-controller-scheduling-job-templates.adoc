@@ -20,6 +20,6 @@ You cannot remove the default machine credential in the *Prompt* dialog without 
 ====
 To set `extra_vars` on schedules, you must select *Prompt on Launch* for *Variables* on the job template, or configure and enable a survey on the job template.
 
-The answered survey questions then become extra_vars.
+The answered survey questions then become `extra_vars`.
 ====
 

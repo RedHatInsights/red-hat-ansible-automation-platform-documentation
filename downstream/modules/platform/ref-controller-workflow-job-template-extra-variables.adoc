@@ -1,0 +1,5 @@
+[id="controller-workflow-job-template-extra-variables"]
+
+= Workflow job template extra variables
+
+For more information see the xref:controller-extra-variables[Extra variables] section.

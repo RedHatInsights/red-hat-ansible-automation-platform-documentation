@@ -1,0 +1,10 @@
+[id="controller-scheduling-workflow-job-templates"]
+
+= Scheduling a workflow job template
+
+Select the *Schedules* tab to access the schedules for a particular workflow job template..
+
+For more information on scheduling a workflow job template run, see the xref:controller-scheduling-job-templates[Scheduling job templates] section.
+
+If a workflow job template used in a nested workflow has a survey, or the *Prompt on Launch* is selected for the inventory option, the btn:[PROMPT] option displays next to the btn:[SAVE] and btn:[CANCEL] options on the schedule form. 
+Click btn:[PROMPT] to show an optional *INVENTORY* step where you can provide or remove an inventory or skip this step without any changes.

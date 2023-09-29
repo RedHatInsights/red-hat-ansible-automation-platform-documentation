@@ -6,7 +6,7 @@ A workflow job template links together a sequence of disparate resources that tr
 These resources include the following:
 
 * Job templates
-* Workflow templates
+* Workflow job templates
 * Project syncs
 * Inventory source syncs
 
@@ -23,7 +23,21 @@ image::ug-wf-templates-home.png[Workflow templates home]
 ====
 Workflow templates can be used as building blocks for another workflow template. 
 You can enable *Prompt on Launch* by setting up a number of settings in a workflow template, which you can edit at the workflow job template level.
-These do not affect the values assigned at the individual workflow template level. For instructions, see the [ADD XREF] Workflow Visualizer section.
+These do not affect the values assigned at the individual workflow template level. 
+For further instructions, see the xref:controller-workflow-visualizer[Workflow Visualizer] section.
 ====
 
 include::platform/proc-controller-create-workflow-template.adoc[leveloffset=+1]
+include::platform/con-controller-work-with-permissions.adoc[leveloffset=+1]
+include::platform/con-controller-workflow-notifications.adoc[leveloffset=+1]
+include::platform/con-controller-view-completed-workflow-jobs.adoc[leveloffset=+1]
+include::platform/proc-controller-scheduling-workflow-job-templates.adoc[leveloffset=+1]
+include::platform/con-controller-workflow-job-surveys.adoc[leveloffset=+1]
+include::platform/con-controller-workflow-visualizer.adoc[leveloffset=+1]
+include::platform/proc-controller-build-workflow.adoc[leveloffset=+2]
+include::platform/ref-controller-approval-nodes.adoc[leveloffset=+2]
+include::platform/proc-controller-building-nodes-scenarios.adoc[leveloffset=+2]
+include::platform/proc-controller-edit-nodes.adoc[leveloffset=+2]
+include::platform/proc-controller-launch-workflow-template.adoc[leveloffset=+1]
+include::platform/proc-controller-copy-workflow-job-template.adoc[leveloffset=+1]
+include::platform/ref-controller-workflow-job-template-extra-variables.adoc[leveloffset=+1]

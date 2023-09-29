@@ -1,0 +1,13 @@
+[id="controller-view-completed-workflow-jobs"]
+
+= View completed workflow jobs
+
+The *Jobs* tab provides the list of job templates that have run. 
+Click the expand image:arrow.png[Expand,15,15]icon next to each job to view the details of each job.
+
+From this view, you can click the job ID, name of the workflow job and see its graphical representation. The following example shows the job details of a workflow job:
+
+image::ug-wf-template-jobID-detail.png[Workflow template job ID]
+
+The nodes are marked with labels to help you identify them.
+For more information, see the legend in the xref:controller-build-workflow[Workflow visualizer] section.

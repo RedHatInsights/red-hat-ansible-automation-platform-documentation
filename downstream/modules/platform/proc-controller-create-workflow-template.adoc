@@ -94,3 +94,12 @@ There you can complete the following tasks:
 ** View completed jobs
 ** Build a workflow template
 
+* Click btn:[Launch] to launch the workflow.
++
+[NOTE]
+====
+Save  the template before launching, or btn:[Launch] remains disabled. 
+The *Notifications* tab is only present after you save the template.
+====
+
+image::ug-wf-template-saved.png[Template saved]

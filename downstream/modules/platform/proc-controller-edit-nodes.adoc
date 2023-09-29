@@ -1,0 +1,31 @@
+[id="controller-edit-nodes"]
+
+= Editing a node
+
+.Procedure
+
+* Edit a node by using one of these methods:
+** If you want to edit a node, click on the node you want to edit. 
+The pane displays the current selections. 
+Make your changes and click btn:[Select] to apply them to the graphical view.
+** To edit the edge type for an existing link, *success*, *failure*, *always*), click the link. 
+The pane displays the current selection. 
+Make your changes and click btn:[Save] to apply them to the graphical view.
+** Click the link (image:link-icon.png[Link icon,15,15]) icon that appears on each node, to add a new link from one node to another.
+Doing this highlights the nodes that are possible to link to. 
+These options are indicated by the dotted lines. 
+Invalid options are indicated by disabled boxes (nodes) that would otherwise produce an invalid link. 
+The following example shows the *Demo Project* as a possible option for the *e2e-ec20de52-project* to link to, indicated by the arrows:
++
+image::ug-wf-node-link-scenario.png[Node link scenario]
++
+
+** To remove a link, click the link and click btn:[UNLINK].
+This option only appears in the pane if the target or child node has more than one parent. 
+All nodes must be linked to at least one other node at all times so you must create a new link before removing an old one.
+
+* Edit the view of the workflow diagram by using one of these methods:
+
+** Click the settings icon to zoom, pan, or reposition the view. 
+** Drag the workflow diagram to reposition it on the screen or use the scroll on your mouse to zoom.
+

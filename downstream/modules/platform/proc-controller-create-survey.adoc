@@ -46,14 +46,3 @@ If you have more than one survey question, click btn:[Edit Order] to rearrange t
 image::ug-job-template-rearrange-survey.png[Rearrange survey]
 +
 . To add more questions, click btn:[Add].
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,6 @@
+[id="controller-workflow-visualizer"]
+
+= Workflow visualizer
+
+The Workflow Visualizer provides a graphical way of linking together job templates, workflow templates, project syncs, and inventory syncs to build a workflow template. 
+Before you build a workflow template, see the xref:controller-workflows[Workflows] section for considerations associated with various scenarios on parent, child, and sibling nodes.

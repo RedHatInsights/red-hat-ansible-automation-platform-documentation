@@ -1,0 +1,5 @@
+[id="controller-workflow-notifications"]
+
+= Work with notifications
+
+For information on working with notifications in worfklow job templates, see xref:controller-work-with-notifications[Work with notifications].

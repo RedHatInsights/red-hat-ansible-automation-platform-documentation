@@ -1,0 +1,50 @@
+[id="controller-building-nodes-scenarios"]
+
+= Building nodes scenarios
+
+Learn how to manage nodes in the following scenarios.
+
+.Procedure
+
+* Click the (image:plus_icon_dark.png[Plus icon,15,15]) icon on the parent node to add a sibling node:
+
+image::ug-wf-create-sibling-node.png[Create sibling node]
+
+* Hover over the line that connects two nodes and click the plus (image:plus_icon_dark.png[Plus icon,15,15]), to insert another node in between nodes.
+Clicking the plus (image:plus_icon_dark.png[Plus icon,15,15]) icon automatically inserts the node between the two nodes:
+
+image::ug-wf-editor-insert-node-template.png[Insert node template]
+
+* Click btn:[START] again, to add a root node to depict a split scenario:
+
+image::ug-wf-create-new-add-template-split.png[Node split scenario]
+
+* At any node where you want to create a split scenario, hover over the node from which the split scenario begins and click the plus (image:plus_icon_dark.png[Plus icon,15,15]) icon.
+This adds multiple nodes from the same parent node, creating sibling nodes:
+
+image::ug-wf-create-siblings.png[Node create siblings]
+
+[NOTE]
+====
+When adding a new node, the btn:[PROMPT] option also applies to workflow templates. 
+Workflow templates prompt for inventory and surveys.
+====
+
+* You can undo the last inserted node by using one of these methods:
+** Click on another node without making a selection. 
+** Click btn:[Cancel].
+
+The following example workflow contains all three types of jobs initiated by a job template. 
+If it fails to run, you must protect the sync job.
+Regardless of whether it fails or succeeds, proceed to the inventory sync job:
+
+image::ug-wf-add-template-example.png[Workflow template example]
+
+Refer to the key by clicking the compass (image:compass.png[Compass, 15,15]) icon to identify the meaning of the symbols and colors associated with the graphical depiction.
+
+[NOTE]
+====
+If you remove a node that has a follow-on node attached to it in a workflow with a set of sibling nodes that has varying edge types, the attached node automatically joins the set of sibling nodes and retains its edge type:
+
+image::ug-wf-node-delete-scenario.png[Node delete scenario]
+====

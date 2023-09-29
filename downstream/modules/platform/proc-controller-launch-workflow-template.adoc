@@ -1,0 +1,16 @@
+[id="controller-launch-workflow-template"]
+
+= Launching a workflow job template
+
+.Procedure
+
+* Launch a workflow job template by using one of these methods:
+** From the navigation panel, select menu:Templates[Launch] next to the job template:
++
+image::ug-wf-template-launch.png[Launch workflow template]
++
+** Click btn:[Launch] in the *Details* tab of the workflow job template that you want to launch.
+
+Variables added for a workflow job template are automatically added in {ControllerName} when launching, along with any extra variables set in the workflow job template and survey.
+
+Events related to approvals on workflows are displayed in the activity stream (image:activitystream.png[Activity stream,15,15]) with detailed information about the approval requests, if any.
