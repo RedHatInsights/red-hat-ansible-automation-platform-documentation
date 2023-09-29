@@ -27,11 +27,7 @@ h| Database | PostgreSQL version 13 |
 
 The following are necessary for you to work with project updates and collections:
 
-* Ensure that the following domain names are part of either the firewall or the proxy's allowlist for successful connection and download of collections from {HubName} or Galaxy server:
-** `galaxy.ansible.com`
-** `cloud.redhat.com`
-** `console.redhat.com`
-** `sso.redhat.com`
+* Ensure that the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/ref-network-ports-protocols_planning[network ports and protocols] listed in _Table 5.9. Automation Hub_ are available for successful connection and download of collections from {HubName} or {Galaxy} server.
 * SSL inspection must be disabled either when using self signed certificates or for the Red Hat domains.
 
 [NOTE]
