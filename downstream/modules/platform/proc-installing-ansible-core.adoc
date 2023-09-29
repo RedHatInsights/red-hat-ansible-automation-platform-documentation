@@ -13,7 +13,7 @@
 . Install ansible-core and other tools:
 +
 ----
-sudo dnf install -y ansible-core wget git
+sudo dnf install -y ansible-core wget git rsync
 ----
 . Set a fully qualified hostname:
 +
