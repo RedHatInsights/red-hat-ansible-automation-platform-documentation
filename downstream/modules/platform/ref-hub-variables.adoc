@@ -6,6 +6,8 @@
 |====
 | *Variable* | *Description*
 | *`automationhub_admin_password`* | Required
+
+Passwords must be enclosed in quotes when they are provided in plain text in the inventory file.
 | *`automationhub_api_token`* a| If upgrading from {PlatformNameShort} 2.0 or earlier, you must either:
 
 * provide an existing {HubNameMain} token as `automationhub_api_token`, or

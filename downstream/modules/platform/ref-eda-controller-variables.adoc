@@ -1,38 +1,39 @@
 
 [id="event-driven-ansible-controller_{context}"]
 = {EDAcontroller} variables
- 
+
 [cols="50%,50%",options="header"]
 |====
-| *Variable* | *Description* 
+| *Variable* | *Description*
 | *`automationedacontroller_admin_password`* | The admin password used by the {EdaController} instance.
 
+Passwords must be enclosed in quotes when they are provided in plain text in the inventory file.
 | *`automationedacontroller_admin_username`* | Username used by django to identify and create the admin superuser in {EDAcontroller}.
 
 Default = `admin`
-| *`automationedacontroller_admin_email`* | Email address used by django for the admin user for {EDAcontroller}. 
+| *`automationedacontroller_admin_email`* | Email address used by django for the admin user for {EDAcontroller}.
 
 Default = `admin@example.com`
-| *`automationedacontroller_disable_https`* | Boolean flag to disable HTTPS {EDAcontroller}. 
+| *`automationedacontroller_disable_https`* | Boolean flag to disable HTTPS {EDAcontroller}.
 
 Default = `false`
-| *`automationedacontroller_disable_hsts`* | Boolean flag to disable HSTS {EDAcontroller}. 
+| *`automationedacontroller_disable_hsts`* | Boolean flag to disable HSTS {EDAcontroller}.
 
 Default = `false`
-| *`automationedacontroller_user_headers`* | List of additional nginx headers to add to {EDAcontroller}'s nginx configuration. 
+| *`automationedacontroller_user_headers`* | List of additional nginx headers to add to {EDAcontroller}'s nginx configuration.
 
 Default = empty list
-| *`automationedacontroller_nginx_tls_files_remote`* | Boolean flag to specify whether cert sources are on the remote host (true) or local (false). 
+| *`automationedacontroller_nginx_tls_files_remote`* | Boolean flag to specify whether cert sources are on the remote host (true) or local (false).
 
 Default = `false`
 | *`automationedacontroller_allowed_hostnames`* | List of additional addresses to enable for user access to {EDAcontroller}.
 
 Default = empty list
-| *`automationedacontroller_controller_verify_ssl`* | Boolean flag used to verify Automation Controller's web certificates when making calls from {EDAcontroller}. Verified is `true`; not verified is `false`. 
+| *`automationedacontroller_controller_verify_ssl`* | Boolean flag used to verify Automation Controller's web certificates when making calls from {EDAcontroller}. Verified is `true`; not verified is `false`.
 
 Default = `false`
 //Add this variable back for the next release, as long as approved by development.
-//| *`automationedacontroller_websocket_ssl_verify`* | 
+//| *`automationedacontroller_websocket_ssl_verify`* |
 //SSL verification for the Daphne websocket used by podman to communicate from the pod to the host. Default is false to disable SSL connection as verified
 
 //Default = false
@@ -46,7 +47,7 @@ Default = `automtionedacontroller`.
 | *`automationedacontroller_pg_password`* | The password for the postgres database used by {EDAController}.
 
 Use of special characters for `automationedacontroller_pg_password` is limited.
-The `!`, `#`, `0` and `@` characters are supported. 
+The `!`, `#`, `0` and `@` characters are supported.
 Use of other special characters can cause the setup to fail.
 | *`automationedacontroller_pg_port`* | The port number of the postgres database used by {EDAController}.
 
@@ -58,5 +59,3 @@ Default = `automationedacontroller`.
 
 Default =  (# of cores or threads) * 2 + 1
 |====
-
-

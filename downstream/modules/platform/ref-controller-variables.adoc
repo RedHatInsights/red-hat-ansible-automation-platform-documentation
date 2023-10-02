@@ -6,9 +6,13 @@
 |====
 | *Variable* | *Description*
 | *`admin_password`* | The password for an administration user to access the UI upon install completion.
+
+Passwords must be enclosed in quotes when they are provided in plain text in the inventory file.
 | *`automation_controller_main_url`* | For an alternative front end URL needed for SSO configuration, provide the URL.
 
 | *`automationcontroller_password`* | Password for your {ControllerName} instance.
+
+Passwords must be enclosed in quotes when they are provided in plain text in the inventory file.
 | *`automationcontroller_username`* | Username for your {ControllerName} instance.
 | *`nginx_http_port`* | The nginx HTTP server listens for inbound connections.
 
