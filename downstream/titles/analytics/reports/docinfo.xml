@@ -3,7 +3,7 @@
 <productnumber>2.4</productnumber>
 <subtitle>Monitor your automation environment with the reports feature</subtitle>
 <abstract>
-<para>This guide shows how to use the reports feature on Insights for Red Hat Ansible Automation Platform to generate an overview report to monitor your automation environment.
+<para>This guide shows how to use the reports feature within Automation Analytics to generate an overview report to monitor your automation environment.
 </para>
 </abstract>
 <authorgroup>
