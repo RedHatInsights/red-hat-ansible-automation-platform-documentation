@@ -17,10 +17,11 @@ The download and installation of the setup bundle needs to be located on the aut
 
 . Untar the bundle
 +
+[literal, options="nowrap" subs="+attributes"]
 ----
 $ tar xvf \
-   ansible-automation-platform-setup-bundle-2.4-1.tar.gz
-$ cd ansible-automation-platform-setup-bundle-2.4-1
+   ansible-automation-platform-setup-bundle-{AnsibleInstallVers}.tar.gz
+$ cd ansible-automation-platform-setup-bundle-{AnsibleInstallVers}
 ----
 +
 . Edit the inventory file to include the required options
@@ -68,9 +69,10 @@ NOTE: The inventory should be kept intact after installation since it is used fo
 +
 . Run the AAP setup bundle executable as the root user
 +
+[literal, options="nowrap" subs="+attributes"]
 ----
 $ sudo -i
-# cd /path/to/ansible-automation-platform-setup-bundle-2.4-1
+# cd /path/to/ansible-automation-platform-setup-bundle-{AnsibleInstallVers}
 # ./setup.sh
 ----
 +

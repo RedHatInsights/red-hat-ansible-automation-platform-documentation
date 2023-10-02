@@ -10,16 +10,16 @@ You can keep the same parameters from your existing {PlatformNameShort} deployme
 . Navigate to the installation program directory.
 Bundled installer::
 +
-[source,options="nowrap",subs=attributes+]
+[source,options="nowrap",subs="+attributes"]
 -----
-$ cd ansible-automation-platform-setup-bundle-2.4-1-x86_64
+$ cd ansible-automation-platform-setup-bundle-{AnsibleInstallVers}-x86_64
 -----
 +
 Online installer::
 +
 [source,options="nowrap",subs=attributes+]
 -----
-$ cd ansible-automation-platform-setup-2.4-1
+$ cd ansible-automation-platform-setup-{AnsibleInstallVers}
 -----
 
 . Open the `inventory` file for editing.
