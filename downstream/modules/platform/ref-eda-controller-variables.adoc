@@ -45,8 +45,9 @@ Default = `automtionedacontroller`.
 | *`automationnedacontroller_pg_host`* | The hostname of the postgres database used by {EDAController}, which can be an externally managed database.
 | *`automationedacontroller_pg_password`* | The password for the postgres database used by {EDAController}.
 
-Do not use special characters for `edacontroller_pg_password`. 
-They can cause the password to fail.
+Use of special characters for `automationedacontroller_pg_password` is limited.
+The `!`, `#`, `0` and `@` characters are supported. 
+Use of other special characters can cause the setup to fail.
 | *`automationedacontroller_pg_port`* | The port number of the postgres database used by {EDAController}.
 
 Default = `5432`.

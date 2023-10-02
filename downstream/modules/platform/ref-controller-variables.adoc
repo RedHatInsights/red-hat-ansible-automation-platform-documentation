@@ -63,8 +63,9 @@ Default = `awx`.
 | *`pg_host`* | The postgreSQL host, which can be an externally managed database.
 | *`pg_password`* | The password for the postgreSQL database.
 
-Do not use special characters for `pg_password`.
-They can cause the password to fail.
+Use of special characters for `pg_password` is limited.
+The `!`, `#`, `0` and `@` characters are supported. 
+Use of other special characters can cause the setup to fail.
 
 NOTE
 

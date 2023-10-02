@@ -15,7 +15,8 @@ The database host set to be installed needs to be a unique host.
 This can cause contention issues and heavy resource use.
 * Provide a reachable IP address or fully qualified domain name (FQDN) for the `[automationhub]` and `[automationcontroller]` hosts to ensure users can sync and install content from {HubName} from a different node. 
 Do not use 'localhost'.
-* Do not use special characters for `pg_password`. It can cause the setup to fail.
+* Use of special characters for `pg_password` is limited. The `!`, `#`, `0` and `@` characters are supported. Use of other special characters can cause the setup to fail.
 * Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
 * The inventory file variables `registry_username` and `registry_password` are only required if a non-bundle installer is used.
 ====
+ 
