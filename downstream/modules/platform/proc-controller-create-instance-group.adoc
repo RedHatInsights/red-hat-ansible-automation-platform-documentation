@@ -1,0 +1,37 @@
+[id="controller-create-instance-group"]
+
+= Creating an instance group
+
+Learn how to create a new instance group.
+
+.Procedure
+
+. From the navigation panel, select menu:Administration[Instance Groups].
+. Click menu:Add[Add instance group].
+. Enter the appropriate details into the following fields:
+Name:: Names must be unique and must not be named "controller".
+Policy instance minimum:: Enter the minimum number of instances to automatically assign to this group when new instances come online.
+Policy instance percentage:: Use the slider to select a minimum percentage of instances to automatically assign to this group when new instances come online.
++
+[NOTE]
+====
+Policy instance fields are not required to create a new instance group. 
+If you do not specify values, then the *Policy instance minimum* and *Policy instance percentage* default to 0.
+====
++
+Max concurrent jobs:: Specify the maximum number of forks that can be run for any given job.
+Max forks:: Specify the maximum number of concurrent jobs that can be run for any given job.
++
+[NOTE]
+====
+The default value of 0 for *Max concurrent jobs* and *Max forks* denotes no limit. 
+For more information, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instancegrp-cpacity[Instance group capacity limits] in the Automation Controller Administration Guide.
+====
++
+. Click btn:[Save].
+
+When you have successfully created the instance group the *Details* tab of the newly created instance group remains, enabling you to review and edit your instance group information. 
+This is the same screen that opens when you click the Edit (image:leftpencil.png[Edit,15,15]) icon from the *Instance Groups* list view. 
+You can also edit *Instances* and review *Jobs* associated with this instance group:
+
+image::ug-instance-group-created.png[Instance group successfully created]

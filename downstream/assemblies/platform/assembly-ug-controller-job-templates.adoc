@@ -8,7 +8,7 @@ They also encourage the reuse of Ansible playbook content and collaboration betw
 
 The *Templates* list view shows job templates that are currently available. 
 The default view is collapsed (Compact), showing the template name, template type, and the timestamp of the last job that ran using that template. 
-You can click the arrow next to each entry to expand and view more information. 
+You can click the arrow (image:arrow.png[Arrow,15,15]) next to each entry to expand and view more information. 
 This list is sorted alphabetically by name, but you can sort by other criteria, or search by various fields and attributes of a template.
 
 image::ug-job-templates-home.png[Job templates home]

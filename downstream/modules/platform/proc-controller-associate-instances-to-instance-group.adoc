@@ -1,0 +1,18 @@
+[id="controller-associate-instances-to-instance-group"]
+
+= Associating instances to an instance group
+
+.Procedure
+
+. Select the *Instances* tab of the *Instance Groups* window.
+. Click btn:[Associate].
+. Click the checkbox next to one or more available instances from the list to select the instances you want to associate with the instance group:
++
+image::instance-group-assoc-instances.png[Associate instances]
++
+. In the following example, the instances added to the instance group displays along with information about their capacity:
++
+
+image::ug-instances-example-callouts.png[Instances callouts]
+
+
