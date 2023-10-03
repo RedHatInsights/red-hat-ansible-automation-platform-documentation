@@ -1,0 +1,12 @@
+[id="ref-controller-image-verification"]
+
+= Image verification
+
+You can verify signed container images if you are using the `podman` container runtime. 
+
+Set the `container-policy` CLI option to control how this data is used in relation to a Podman `policy.json` file for container image signature validation.
+
+* *`ignore_all`* policy: Generate a `policy.json` file in the build `context directory <context>` where no signature validation is performed.
+* *`system`* policy: Signature validation is performed using pre-existing `policy.json` files in standard system locations. `ansible-builder` assumes no responsibility for the content within these files, and the user has complete control over the content.
+* *`signature_required`* policy: `ansible-builder` uses the container image definitions to generate a `policy.json` file in the build
+`context directory <context>` that is used during the build to validate the images.

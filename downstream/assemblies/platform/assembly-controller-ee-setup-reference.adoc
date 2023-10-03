@@ -1,0 +1,24 @@
+[id="assembly-controller-ee-setup-reference"]
+
+= Execution Environment Setup Reference
+
+This section contains reference information associated with the definition of an {ExecEnvShort}.
+You define the content of your {ExecEnvShort} in a YAML file. 
+By default, this file is called `execution_environment.yml`. 
+This file tells Ansible Builder how to create the build instruction file (Containerfile for Podman, Dockerfile for Docker) and build context for your container image.
+
+[NOTE]
+====
+The definition schema for Ansible Builder 3.x is documented here. 
+If you are running an older version of Ansible Builder, you need an older schema version. 
+For more information, refer to older versions of link:https://ansible.readthedocs.io/projects/builder/en/latest/[this] documentation. 
+We recommend using version 3, which offers substantially more configurable options and functionality than previous versions.
+====
+
+include::platform/ref-controller-ee-definition.adoc[leveloffset=+1]
+include::platform/ref-controller-ee-configuration-options.adoc[leveloffset=+1]
+include::platform/ref-controller-awx-default-ee.adoc[leveloffset=+1]
+
+
+
+

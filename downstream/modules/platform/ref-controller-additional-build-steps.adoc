@@ -1,0 +1,25 @@
+[id="ref-controller-additional-build-steps"]
+
+= additional_build_steps
+
+These specify custom build commands for any build phase. 
+These commands are inserted directly into the build instruction file for the container runtime, for example, Containerfile or Dockerfile. The commands must conform to any rules required by the containerization tool.
+
+You can add build steps before or after any stage of the image creation process. 
+For example, if you need `git` to be installed before you install your dependencies, you can add a build step at the end of the base build stage.
+
+The following are the valid keys for this section. 
+Each supports either a multi-line string, or a list of strings.
+
+[cols="10%,40%"]
+|====
+| *append_base* | Commands to insert after building of the base image.
+| *append_builder* | Commands to insert after building of the builder image.
+| *append_final* | Commands to insert after building of the final image.
+| *append_galaxy* | Commands to insert after building of the galaxy image.
+| *prepend_base* | Commands to insert before building of the base image.
+| *prepend_builder* | Commands to insert before building of the builder image.
+| *prepend_final* | Commands to insert before building of the final image.
+| *prepend_galaxy* | Commands to insert before building of the galaxy image.
+|====
+

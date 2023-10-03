@@ -1,0 +1,9 @@
+[id="ref-controller-config-version"]
+
+= version
+
+An integer value that sets the schema version of the {ExecEnvShort} definition file. 
+
+Defaults to `1`. 
+
+The value must be `3` if you are using Ansible Builder 3.x.

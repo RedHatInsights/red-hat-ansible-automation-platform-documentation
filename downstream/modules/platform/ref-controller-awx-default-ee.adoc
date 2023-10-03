@@ -1,0 +1,21 @@
+[id="ref-controller-awx-default-ee"]
+
+= Default {ExecEnvShort} for AWX
+
+The example in `test/data/pytz` requires the `awx.awx` collection in the definition. 
+The lookup plugin `awx.awx.tower_schedule_rrule` requires the PyPI `pytz` and another library to work. 
+If the `test/data/pytz/execution-environment.yml` file is provided to the `ansible-builder build` command, it installs the collection inside the image, reads the `requirements.txt` file inside of the collection, and then installs `pytz` into the image.
+
+The image produced can be used inside of an `ansible-runner` project by placing these variables inside the `env/settings` file, inside the private data directory.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+---
+container_image: image-name
+process_isolation_executable: podman # or docker
+process_isolation: true
+----
+
+The `awx.awx` collection is a subset of content included in the default AWX . 
+
+For further information, see the link:https://github.com/ansible/awx-ee[awx-ee repository].

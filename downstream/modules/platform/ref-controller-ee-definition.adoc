@@ -1,0 +1,36 @@
+[id="ref-controller-ee-definition"]
+
+= Execution environment definition
+
+A definition file is a `.yml` file that is required to build an image for an {ExecEnvShort}. 
+The following is a sample version 3 {ExecEnvShort} definition schema file. 
+To use Ansible Builder 3.x, you must specify the schema version. 
+If your {ExecEnvShort} file does not specify version 3, version 1 is supplied.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+version: 3
+build_arg_defaults:
+  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: '--pre'
+dependencies:
+  galaxy: requirements.yml
+  python:
+    - six
+    - psutil
+  system: bindep.txt
+images:
+  base_image:
+    name: registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel8:latest
+additional_build_files:
+    - src: files/ansible.cfg
+      dest: configs
+additional_build_steps:
+  prepend_galaxy:
+    - ADD _build/configs/ansible.cfg ~/.ansible.cfg
+  prepend_final: |
+    RUN whoami
+    RUN cat /etc/os-release
+  append_final:
+    - RUN echo This is a post-install command!
+    - RUN ls -la /etc
+----

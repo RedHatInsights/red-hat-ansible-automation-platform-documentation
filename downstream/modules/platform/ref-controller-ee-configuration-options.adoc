@@ -1,0 +1,28 @@
+[id="ref-controller-ee-configuration-options"]
+
+= Configuration options
+
+Use the configuration YAML keys listed here in your v3 definition file. 
+
+The Ansible Builder 3.x {ExecEnvShort} definition file accepts seven top-level sections:
+
+* xref:ref-controller-additional-build-files[additional_build_files]
+* xref:ref-controller-additional-build-steps[additional_build_steps]
+* xref:ref-controller-build-arg-defaults[build_arg_defaults]
+* xref:ref_controller-dependencies[dependencies]
+* xref:ref-controller-images[images]
+** xref:ref-controller-image-verification[image verification]
+* xref:ref-controller-config-options[options]
+* xref:ref-controller-config-version[version]
+
+include::ref-controller-additional-build-files.adoc[leveloffset=+1]
+include::ref-controller-additional-build-steps.adoc[leveloffset=+1]
+include::ref-controller-build-arg-defaults.adoc[leveloffset=+1]
+include::ref-controller-dependences.adoc[leveloffset=+1]
+include::ref-controller-images.adoc[leveloffset=+1]
+include::ref-controller-image-verification.adoc[leveloffset=+1]
+include::ref-controller-config-options.adoc[leveloffset=+1]
+include::ref-controller-config-version.adoc[leveloffset=+1]
+
+
+
