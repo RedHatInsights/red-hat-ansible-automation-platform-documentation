@@ -1,0 +1,43 @@
+[id="proc-scm-git-subversion"]
+
+= SCM Types - Git and Subversion
+
+Use the following procedure to configure playbooks to use source control.
+
+.Procedure
+. In the Project *Details* tab, select the appropriate option (Git or Subversion) from the *SCM Type* menu.
++
+image:projects-create-scm-project.png[Select scm]
+
+. Enter the appropriate details into the following fields:
+
+* *SCM URL* - See an example in the tooltip .
+* Optional: *SCM Branch/Tag/Commit*: Enter the SCM branch, tags, commit hashes, arbitrary refs, or revision number (if applicable) from the source control (Git or Subversion) to checkout. 
+Some commit hashes and referencess might not be available unless you also provide a custom refspec in the next field. 
+If left blank, the default is `HEAD` which is the last checked out Branch, Tag, or Commit for this project.
+* *SCM Refspec* - This field is an option specific to git source control and only advanced users familiar and comfortable with git should specify which references to download from the remote repository. 
+For more information, see [Job branch overriding].
+* *Source Control Credential* - If authentication is required, select the appropriate source control credential
+.  Optional: *SCM Update Options* - select the launch behavior, if applicable:
+* *Clean* - Removes any local modifications before performing an update.
+* *Delete* - Deletes the local repository in its entirety before  performing an update. 
+Depending on the size of the repository this can significantly increase the amount of time required to complete an update.
+* *Track submodules* - Tracks the latest commit. There is more information in the tooltip image:question_circle.png[Tooltip,15,15].
+* *Update Revision on Launch* - Updates the revision of the project to the current revision in the remote source control, as well as cacheing the roles directory from link:https://docs.ansible.com/automation-controller/latest/html/userguide/projects.html#ug-galaxy[Galaxy]  or
+[Collections support]. 
+{ControllerNameStart} ensures that the local revision matches and that the roles and collections are up-to-date with the last update.
+In addition, to avoid job overflows if jobs are spawned faster than the project can synchronize, selecting this enables you to configure a Cache Timeout to cache previous project synchronizations for a given number of seconds.
+* *Allow Branch Override* - Enables a job template or an inventory source that uses this project to launch with a specified SCM branch or revision other than that of the project. 
+For more information, see [Job branch overriding].
++
+image:projects-create-scm-project-branch-override-checked.png[Override options]
+. Click *Save* to save your project.
+
+[TIP]
+====
+Using a GitHub link is an easy way to use a playbook. 
+To help get you started, use the `helloworld.yml` file available link:https://github.com/ansible/tower-example.git[here].
+
+This link offers a very similar playbook to the one created manually in the instructions found in link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_automation_controller/index[Getting Started with Automation Controller]. 
+Using it will not alter or harm your system in anyway.
+====

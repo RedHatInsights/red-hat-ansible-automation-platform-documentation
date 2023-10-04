@@ -1,0 +1,17 @@
+[id="ref-work-with-notifications"]
+
+= Work with Notifications
+
+On the *Projects* page, select menu:Notifications[] to enable you to review any notification integrations you have setup.
+
+image:projects-notifications-example-list.png[Project notifications]
+
+Use the toggles to enable or disable the notifications for a particular project. 
+For further information, see [Enable and Disable Notifications]
+
+If no notifications have been set up, you can configure them from the *Notifications* link from the navigation panel to create a new
+notification.
+
+image:project-notifications-empty.png[Notifications empty]
+
+For more information of configuring notification types, see [Notification types].

@@ -1,0 +1,37 @@
+[id="proc-controller-project-add-permission"]
+
+= Adding and removing project permissions
+
+Use the following procedure to add permissions:
+
+.Procedure
+. On the *Projects* page, select the *Access* tab.
+. Click btn:[Add].
+. Select a user or team to add and click btn:[Next].
+. Select one or more users or teams from the list by clicking the check box next to the name to add them as members.
++
+image:organizations-add-users-for-example-organization.png[Adding permissions]
++
+In this example, two users have been selected.
+
+. Click btn:[Next].
+. Select the roles you want the selected users or teams to have. 
+Be sure to scroll down for a complete list of roles. 
+Different resources have different options available.
++
+image:organizations-add-users-roles.png[Add user roles]
+
+. Click btn:[Save] to apply the roles to the selected users or teams and to add them as members.
+The updated roles assigned for each user and team are displayed.
++
+image:permissions-tab-roles-assigned.png[Permissions assigned]
+
+.Removing permissions from a project
+* To remove roles for a particular user, click the image:disassociate.png[Disassociate,10,10] icon next to the resource.
+This launches a confirmation window, asking you to confirm the disassociation.
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+[id="ref-projects-manage-playbooks-with-source-control"]
+
+= Managing playbooks using source control
+
+* xref:proc-scm-git-subversion[SCM Types - Git and Subversion]
+* xref:proc-scm-insights[SCM Type - Red Hat Insights]
+* xref:proc-scm-remote-archive[SCM Type - Remote Archive]
+
+include::proc-scm-git-subversion.adoc[leveloffset=+1]
+include::proc-scm-insights.adoc[leveloffset=+1]
+include::proc-scm-remote-archive.adoc[leveloffset=+1]
+

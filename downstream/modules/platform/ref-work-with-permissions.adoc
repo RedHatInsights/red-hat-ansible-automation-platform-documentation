@@ -1,0 +1,15 @@
+[id="ref-work-with-permissions"]
+
+= Work with Permissions
+
+The set of permissions assigned to this project (role-based access controls) that provide the ability to read, modify, and administer
+projects, inventories, job templates, and other elements are Privileges.
+
+To access the project permissions, select the *Access* tab of the *Projects* page. 
+This screen displays a list of users that currently have permissions to this project. 
+
+The list may be sorted and searched by *Username*, *First Name*, or *Last Name*.
+
+image:projects-permissions-example.png[Projects - permissions list]
+
+include::proc-controller-project-add-permissions.adoc[leveloffset=+1]

@@ -37,7 +37,7 @@ include::platform/assembly-controller-secret-management.adoc[leveloffset=+1]
 include::platform/assembly-controller-applications.adoc[leveloffset=+1]
 include::platform/assembly-controller-execution-environments.adoc[leveloffset=+1]
 include::platform/assembly-controller-ee-setup-reference.adoc[leveloffset=+1]
-//17 Projects
+include::platform/assembly-controller-projects.adoc[leveloffset=+1]
 //18 Project Signing and Verification
 //19 Inventories
 include::platform/assembly-controller-inventory-templates.adoc[leveloffset=+1]

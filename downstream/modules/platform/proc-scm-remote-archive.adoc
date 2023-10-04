@@ -1,0 +1,33 @@
+[id="proc-scm-remote-archive"]
+
+= SCM Type - Remote Archive
+
+Playbooks that use a remote archive enable projects to be based on a build process that produces a versioned artifact, or release,
+containing all the requirements for that project in a single archive.
+
+Use the following procedure to configure playbooks to use a remote archive.
+
+.Procedure
+. In the Project *Details* page, select *Remote Archive* from the *SCM Type* menu.
+. Enter the appropriate details into the following fields:
+
+* *SCM URL* - requires a URL to a remote archive, such as a _GitHub Release_ or a build artifact stored in _Artifactory_ and unpacks it into
+the project path for use.
+* *SCM Credential* - If authentication is required, select the appropriate SCM credential
+. Optional: In the *SCM Update Options* field, select the launch behavior, if applicable:
+
+* *Clean* - Removes any local modifications before performing an update.
+* *Delete* - Deletes the local repository in its entirety before performing an update. 
+Depending on the size of the repository this may significantly increase the amount of time required to complete an
+update.
+* *Update Revision on Launch* - Not recommended. This option updates the revision of the project to the current revision in the remote source control, and caches the roles directory from [{Galaxy} support] or [Collections].
+* *Allow Branch Override* - Not recommended. This option enables a job template that uses this project to launch with a specified SCM branch or revision other than that of the project's.
++
+image:projects-create-scm-rm-archive.png[Remote archived project]
++
+[NOTE]
+====
+Since this SCM type is intended to support the concept of unchanging artifacts, it is advisable to disable Galaxy integration (for roles, at a minimum).
+====
+
+. Click btn:[Save].

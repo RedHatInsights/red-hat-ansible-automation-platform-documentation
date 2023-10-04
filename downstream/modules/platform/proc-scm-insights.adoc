@@ -1,0 +1,24 @@
+[id="proc-scm-insights"]
+
+= SCM Type - Red Hat Insights
+
+Use the following procedure to configure playbooks to use Red Hat Insights.
+
+.Procedure
+. In the  Project *Details* page, select *Red Hat Insights* from the *SCM Type* menu.
+. In the *Credential* field, select the appropriate credential for use with Insights, as Red Hat Insights requires a credential for authentication. 
+. Optional: In the *SCM Update Options* field, select the launch behavior, if applicable.
+
+* *Clean* - Removes any local modifications before performing an update.
+* *Delete* - Deletes the local repository in its entirety before performing an update. 
+Depending on the size of the repository this may significantly increase the amount of time required to complete an
+update.
+* *Update Revision on Launch* - Updates the revision of the project to the current revision in the remote source control, and caches the
+roles directory from [{Galaxy} support] or [Collections]. 
+{ControllerNamdeStart} ensures that the local revision matches, and that the roles and collections are up-to-date.
+If jobs are spawned faster than the project can synchronize, selecting this enables you to configure a Cache Timeout to
+cache previous project synchronizations for a certain number of seconds, to avoid job overflow.
++
+image:projects-create-scm-insights.png[SCM insights]
+
+. Click btn:[Save].

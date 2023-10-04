@@ -1,0 +1,19 @@
+[id="ref-projects-collections-support"]
+
+= Collections Support
+
+{ControllerNameStart} supports project-specific link:https://docs.ansible.com/ansible/latest/user_guide/collections_using.html[Ansible collections] in job runs. 
+If you specify a collections requirements file in the SCM at `collections/requirements.yml`, {ControllerName} installs collections in that file in the implicit project synchronization before a job run.
+
+{ControllerNameStart} has a system-wide setting that enables collections to be dynamically downloaded from the `collections/requirements.yml` file for SCM projects. 
+You can turn off this setting in the *Jobs settings* tab of the *Settings* menu by switching the *Enable Collections Download*
+toggle button to *OFF*.
+
+image:configure-controller-jobs-download-collections.png[Download collections]
+
+Roles and collections are locally cached for performance reasons, and you select *Update Revision on Launch* in the project SCM
+Update Options to ensure this:
+
+image:projects-scm-update-options-update-on-launch-checked.png[update-on-launch]
+
+include::proc-projects-using-collections-with-hub.adoc[leveloffset=+1]

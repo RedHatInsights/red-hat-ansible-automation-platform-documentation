@@ -1,0 +1,18 @@
+[id="proc-controller-updating-a-project"]
+
+= Updating projects from source control
+
+Use the following procedure to update a project.
+
+.Procedure
+. In the *Projects* page, select the project you want to update and click the image:sync.png[Sync,15,15] icon.
++
+[NOTE]
+====
+Immediately after adding a project setup to use source control, a "Sync" starts that fetches the project details from the
+configured source control.
+====
+
+. Click on project's status under the *Status* column for further information about the update process.
++
+image:projects-update-status.png[Project -update status]

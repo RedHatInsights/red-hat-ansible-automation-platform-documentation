@@ -1,14 +1,98 @@
 [id="controller-projects"]
-
+ifdef::controller-GS[]
 = Managing projects
+endif::controller-GS[]
+ifdef::controller-UG[]
+= Projects
+endif::controller-UG[]
 
-A Project is a logical collection of Ansible playbooks, represented in the controller.
+A Project is a logical collection of Ansible playbooks, represented in {ControllerName}.
 You can manage playbooks and playbook directories different ways:
 
 * By placing them manually under the Project Base Path on your {ControllerName} server.
 * By placing your playbooks into a source code management (SCM) system supported by the {ControllerName}.
+ifdef::controller-GS[]
 These include Git, Subversion, and Mercurial.
+endif::controller-GS[]
+ifdef::controller-UG[]
+These include Git, Subversion, Mercurial and Red Hat Insights.
 
+For more information on creating a Red Hat Insights project, see [Setting up insights remediations].
+
+[NOTE]
+====
+The Project Base Path is `/var/lib/awx/projects`. However, this can be modified by the system administrator. 
+It is configured in `/etc/tower/conf.d/custom.py`. 
+
+Use caution when editing this file, as incorrect settings can disable your installation.
+====
+
+The Projects page displays the list of the projects that are currently available. 
+
+{ControllerNameStart} provides you with a *Demo Project* that you can work with initially.
+
+image::controller-demo-project-details.png[Demo Project]
+
+image:projects-list-all.png[Projects - home]
+
+The default view is collapsed (*Compact*) with project name and its status, but you can use the image:arrow.png[Arrow,15,15] next to each entry to expand for more information.
+
+image:projects-list-all-expanded.png[Projects - expanded]
+
+For each project listed, you can get the latest SCM revision image:sync.png[Refresh,15,15], edit image:leftpencil.png[Edit,15,15] the project, or copy image:copy.png[Copy,15,15] the project attributes, using the icons next to each project. 
+
+Projects can be updated while a related job is running. 
+
+In cases where you have a large project (around 10 GB), disk space on `/tmp` may be an issue.
+
+*Status* indicates the state of the project and may be one of the following (note that you can also filter your view by specific status
+types):
+
+* *Pending* - The source control update has been created, but not queued or started yet. 
+Any job (not just source control updates) stays in pending until it is ready to be run by the system. 
+Possible reasons for it not being ready are:
+
+* It has dependencies that are currently running so it has to wait until they are done. 
+* There is not enough capacity to run in the locations it is configured to.
+* *Waiting* - The source control update is in the queue waiting to be executed.
+* *Running* - The source control update is currently in progress.
+* *Successful* - The last source control update for this project succeeded.
+* *Failed* - The last source control update for this project failed.
+* *Error* - The last source control update job failed to run at all. (To
+be deprecated.)
+* *Canceled* - The last source control update for the project was canceled.
+* *Never updated* - The project is configured for source control, but has never been updated.
+* *OK* - The project is not configured for source control, and is correctly in place. (To be deprecated.)
+* *Missing* - Projects are absent from the project base path of `/var/lib/awx/projects`.  
+This is applicable for manual or source control managed projects.
+
+[NOTE]
+====
+Projects of credential type `Manual` cannot update or schedule source control-based actions without being reconfigured as an SCM type
+credential.
+====
+
+//[NOTE]
+//====
+//If you delete items that are used by other work items, a message opens listing the items that are affected by the deletion and prompts you to confirm the deletion. 
+//Some screens contain items that are invalid or previously deleted, and will fail to run. 
+//
+//The following is an example of such a message:
+//+
+//image:warning-deletion-dependencies.png[Deletion dependencies]
+//====
+
+include::platform/proc-controller-adding-a-project.adoc[leveloffset=+1]
+include::platform/proc-controller-updating-a-project.adoc[leveloffset=+1]
+include::platform/ref-work-with-permissions.adoc[leveloffset=+1]
+include::platform/ref-work-with-notifications.adoc[leveloffset=+1]
+include::platform/ref-work-with-job-templates.adoc[leveloffset=+1]
+include::platform/ref-work-with-schedules.adoc[leveloffset=+1]
+include::platform/ref-projects-galaxy-support.adoc[leveloffset=+1]
+include::platform/ref-projects-collections-support.adoc[leveloffset=+1]
+endif::controller-UG[]
+
+ifdef::controller-GS[]
 [NOTE]
 ====
 This Getting Started Guide uses lightweight examples to get you up and running. But for production purposes, you must use source control to manage your playbooks. The best practice is to treat your infrastructure as code which is in line with DevOps ideals.
@@ -17,3 +101,4 @@ This Getting Started Guide uses lightweight examples to get you up and running. 
 include::platform/proc-controller-set-up-project.adoc[leveloffset=+1]
 include::platform/proc-controller-edit-project.adoc[leveloffset=+1]
 include::platform/proc-controller-sync-project.adoc[leveloffset=+1]
+endif::controller-GS[]

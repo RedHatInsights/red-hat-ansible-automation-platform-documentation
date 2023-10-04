@@ -1,0 +1,70 @@
+[id="ref-projects-galaxy-support"]
+
+= {Galaxy} support
+
+At the end of a Project update, {ControllerName} searches for the `requirements.yml` file in the `roles` directory, located at
+`<project-top-level-directory>/roles/requirements.yml`. 
+
+If this file is found, the following command automatically runs:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+ansible-galaxy role install -r roles/requirements.yml -p <project-specific cache location>/requirements_roles -vvv
+----
+
+This file enables you to reference {Galaxy} roles or roles within other repositories which can be checked out in conjunction with your own
+project. 
+The addition of {Galaxy} support eliminates the need to create git submodules to achieve this result. 
+Given that SCM projects, along with roles or collections, are pulled into and executed from a private job environment, a `<private job directory>` specific to the project within `/tmp` is created by default. 
+However, you can specify another *Job Execution Path* based on your environment in the *Jobs Settings* tab of the *Settings* window:
+
+image:configure-controller-jobs-execution-path.png[Configure execution path]
+
+The cache directory is a subdirectory inside the global projects folder.
+The content can be copied from the cache location to `<job private directory>/requirements_roles`.
+
+By default, {ControllerName} has a system-wide setting that enables you to dynamically download roles from the `roles/requirements.yml` file for SCM projects. 
+You can turn off this setting in the *Jobs settings* screen of the *Settings* menu by switching the *Enable Role Download* toggle button
+to *OFF*.
+
+//image:configure-tower-jobs-download-roles.png[image]
+
+Whenever a project synchronization runs, {ControllerName} determines if the project source and any roles from Galaxy or Collections are out of date with the project.
+Project updates download the roles inside the update.
+
+If jobs need to pick up a change made to an upstream role, updating the project ensures that this happens. 
+A change to the role means that a new commit was pushed to the _provision-role_ source control. 
+
+To make this change take effect in a job, you do not have to push a new commit to the _playbooks_ repo, but you must update the project, which downloads roles to a local cache. 
+
+For instance, say you have two git repositories in source control. 
+The first one is _playbooks_ and the project in {ControllerName} points to this URL. 
+The second one is _provision-role_ and it is referenced by the `roles/requirements.yml` file inside of the _playbooks_ git repo.
+
+Jobs download the most recent roles before every job run. 
+Roles and collections are locally cached for performance reasons, and you must select *Update Revision on Launch* in the project *SCM Update Options* to ensure that the upstream role is re-downloaded before each job run:
+
+image:projects-scm-update-options-update-on-launch-checked.png[update-on-launch]
+
+The update happens much earlier in the process than the sync, so this identifies errors and details faster and in a more logical location.
+
+For more information and examples on the syntax of the `requirements.yml` file, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#installing-multiple-roles-from-a-file[role requirements section] in the Ansible documentation.
+
+If there are any directories that must be specifically be exposed, you can specify those in the *Jobs* section of the *Settings* screen in *Paths to Expose to Isolated Jobs* or by updating the following entry in the settings file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+AWX_ISOLATION_SHOW_PATHS = ['/list/of/', '/paths']
+----
+
+[NOTE]
+====
+If your playbooks need to use keys or settings defined in `AWX_ISOLATION_SHOW_PATHS`, you must add `AWX_ISOLATION_SHOW_PATHS` to `/var/lib/awx/.ssh`.
+====
+
+If you made changes in the settings file, be sure to restart services with the `automation-controller-service restart` command after your
+changes have been saved.
+
+In the UI, you can configure these settings in the *Jobs settings* window.
+
+image:configure-controller-jobs-path-to-expose.png[Configure jobs]

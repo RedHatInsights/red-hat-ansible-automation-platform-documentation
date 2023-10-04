@@ -1,0 +1,32 @@
+[id="proc-projects-manage-playbooks-manually"]
+
+= Managing playbooks manually
+
+* Create one or more directories to store playbooks under the Project Base Path, for example, `/var/lib/awx/projects/`.
+* Create or copy playbook files into the playbook directory.
+* Ensure that the playbook directory and files are owned by the same UNIX user and group that the service runs as.
+* Ensure that the permissions are appropriate for the playbook directories and files.
+
+If adding a manual project, each project path inside of the project root folder can only be assigned to one project. 
+If you receive the following message, ensure that you have not already assigned the project path to an existing project:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+All of the project paths have been assigned to existing projects, or there are no directories found in the base path.
+You will need to add a project path before creating a new project.
+----
+
+If you have trouble adding a project path, check the permissions and SELinux context settings for the project directory and files.
+
+[WARNING]
+====
+If you have not added any Ansible playbook directories to the base project path, the following message is displayed:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+There are no available playbook directories in /var/lib/awx/projects. Either the directory is empty, or all of the contentds are aleady assigned to other projects.
+Create a new directory there and make sure the playbook can be read by the "awx" system user, or have {PlatformNameShort} directly retrieve your playbooks from source control using the Source Control option above
+----
+
+Correct this issue by creating the appropriate playbook directories and checking out playbooks from your SCM or otherwise copying playbooks into the appropriate playbook directories.
+====

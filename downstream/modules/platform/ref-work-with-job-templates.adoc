@@ -1,0 +1,16 @@
+[id="ref-work-with-job-templates"]
+
+= Work with Job Templates
+
+On the *Projects* page, select menu:[Job Templates] to enable you to add and review any job templates or workflow templates associated with this project.
+
+image:projects-templates-example-list.png[Job template list]
+
+Select recent jobs that ran using that template to see its details and other useful information. 
+You can sort this list by various criteria, and perform a search to filter the templates of interest.
+
+image:projects-templates-search-dropdown.png[image]
+
+From this view, you can also launch image:rightrocket.png[Launch,15,15], edit image:leftpencil.png[Edit,15,15], or copy image:copy.png[Copy,15,15] the template configuration.
+
+For more information on Job templates, see xref:controller-job-templates[Job Templates]
