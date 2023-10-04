@@ -1,0 +1,51 @@
+[id="change-ssl-hub_{context}"]
+
+= Changing the SSL certificate and key manually on {HubName}
+
+[role="_abstract"]
+The following procedure describes how to change the SSL certificate and key manually on {HubName}.
+
+.Procedure
+
+. Backup the current SSL certificate:
++
+----
+cp /etc/pulp/certs/pulp_webserver.crt /etc/pulp/certs/pulp_webserver.crt-$(date +%F)
+----
+. Backup the current key files:
++
+----
+cp /etc/pulp/certs/pulp_webserver.key /etc/pulp/certs/pulp_webserver.key-$(date +%F)
+----
+. Copy the new SSL certificate to `/etc/pulp/certs/pulp_webserver.crt`.
+. Copy the new key to `/etc/pulp/certs/pulp_webserver.key`.
+. Restore the SELinux context:
++
+----
+restorecon -v /etc/pulp/certs/pulp_webserver.crt /etc/pulp/certs/pulp_webserver.key
+----
+. Set appropriate permissions for the certificate and key files:
++
+----
+chown root:pulp /etc/pulp/certs/pulp_webserver.crt /etc/pulp/certs/pulp_webserver.key
+----
++
+----
+chmod 0600 /etc/pulp/certs/pulp_webserver.crt /etc/pulp/certs/pulp_webserver.key
+----
+. Test the NGINX configuration:
++
+----
+nginx -t
+----
+. Reload NGINX:
++
+----
+systemctl reload nginx.service
+----
+. Verify that new SSL certificate and key have been installed:
++
+----
+true | openssl s_client -showcerts -connect ${CONTROLLER_FQDN}:443
+----
+

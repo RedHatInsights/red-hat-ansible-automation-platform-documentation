@@ -1,0 +1,39 @@
+[id="change-ssl-controller-ocp_{context}"]
+
+= Changing the SSL certificate and key on {ControllerName} on {OCPShort}
+
+[role="_abstract"]
+The following procedure describes how to change the SSL certificate and key for {ControllerName} running on {OCPShort}.
+
+.Procedure
+
+. Copy the signed SSL certificate and key to a secure location.
+. Create a TLS secret within OpenShift:
++
+----
+oc create secret tls ${CONTROLLER_INSTANCE}-certs-$(date +%F) --cert=/path/to/ssl.crt --key=/path/to/ssl.key
+----
+. Modify the {ControllerName} custom resource to add `route_tls_secret` and the name of the new secret to the spec section.
++
+----
+oc edit automationcontroller/${CONTROLLER_INSTANCE}
+----
++
+----
+...
+spec:
+  route_tls_secret: automation-controller-certs-2023-04-06
+...
+----
+[NOTE]
+====
+The name of the TLS secret is arbitrary.
+In this example, it is timestamped with the date that the secret is created, to differentiate it from other TLS secrets applied to the {ControllerName} instance.
+====
+. Wait a few minutes for the changes to be applied.
+. Verify that new SSL certificate and key have been installed:
++
+----
+true | openssl s_client -showcerts -connect ${CONTROLLER_FQDN}:443
+----
+

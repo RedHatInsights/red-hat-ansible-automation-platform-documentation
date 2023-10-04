@@ -1,0 +1,48 @@
+[id="change-ssl-controller_{context}"]
+
+= Changing the SSL certificate and key manually on {ControllerName}
+
+[role="_abstract"]
+The following procedure describes how to change the SSL certificate and key manually on Automation Controller.
+
+.Procedure
+
+. Backup the current SSL certificate:
++
+----
+cp /etc/tower/tower.cert /etc/tower/tower.cert-$(date +%F)
+----
+. Backup the current key files:
++
+----
+cp /etc/tower/tower.key /etc/tower/tower.key-$(date +%F)+
+----
+. Copy the new SSL certificate to `/etc/tower/tower.cert`.
+. Copy the new key to `/etc/tower/tower.key`.
+. Restore the SELinux context:
++
+----
+restorecon -v /etc/tower/tower.cert /etc/tower/tower.key
+----
+. Set appropriate permissions for the certificate and key files:
++
+----
+chown root:awx /etc/tower/tower.cert /etc/tower/tower.key
+chmod 0600 /etc/tower/tower.cert /etc/tower/tower.key
+----
+. Test the NGINX configuration:
++
+----
+nginx -t
+----
+.  Reload NGINX:
++
+----
+systemctl reload nginx.service
+----
+. Verify that new SSL certificate and key have been installed:
++
+----
+true | openssl s_client -showcerts -connect ${CONTROLLER_FQDN}:443
+----
+

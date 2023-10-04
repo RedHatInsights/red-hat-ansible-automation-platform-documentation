@@ -1,48 +1,28 @@
-[id="change-ssl-controller_{context}"]
+[id="change-ssl-installer_{context}"]
 
-= Changing the SSL certificate and key manually on {ControllerName}
+= Changing the SSL certificate and key using the installer
 
 [role="_abstract"]
-The following procedure describes how to change the SSL certificate and key manually on Automation Controller.
+The following procedure describes how to change the SSL certificate and key in the inventory file.
 
 .Procedure
 
-. Backup the current SSL certificate:
+. Copy the new SSL certificates and keys to a path relative to the {PlatformNameShort} installer.
+. Add the absolute paths of the SSL certificates and keys to the inventory file. 
+Refer to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index#ref-hub-variables[{ControllerNameStart} variables] and
+link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index#ref-controller-variables[{HubNameStart} variables] sections of the 
+link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} Installation Guide]
+for guidance on setting these variables.
 +
-----
-cp /etc/tower/tower.cert /etc/tower/tower.cert-$(date +%F)
-----
-. Backup the current key files:
+--
+** {ControllerNameStart}: `web_server_ssl_cert`, `web_server_ssl_key`, `custom_ca_cert`
+** {HubNameStart}: `automationhub_ssl_cert`, `automationhub_ssl_key`, `custom_ca_cert`
+--
 +
-----
-cp /etc/tower/tower.key /etc/tower/tower.key-$(date +%F)+
-----
-. Copy the new SSL certificate to `/etc/tower/tower.cert`
-. Copy the new key to `/etc/tower/tower.key`.
-. Restore the SELinux context:
-+
-----
-restorecon -v /etc/tower/tower.cert /etc/tower/tower.key
-----
-. Set appropriate permissions for the certificate and key files:
-+
-----
-chown root:awx /etc/tower/tower.cert /etc/tower/tower.key
-chmod 0600 /etc/tower/tower.cert /etc/tower/tower.key
-----
-. Test the NGINX configuration:
-+
-----
-nginx -t
-----
-.  Reload NGINX
-+
-----
-systemctl reload nginx.service
-----
-. Verify that new SSL certificate and key have been installed
-+
-----
-true | openssl s_client -showcerts -connect ${CONTROLLER_FQDN}:443
-----
+[NOTE]
+====
+The `custom_ca_cert` must be the root certificate authority that signed the intermediate certificate authority.
+This file is installed in `/etc/pki/ca-trust/source/anchors`.
+====
+. Run the installer.
 

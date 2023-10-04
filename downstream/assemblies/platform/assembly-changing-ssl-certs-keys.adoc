@@ -1,0 +1,46 @@
+ifdef::context[:parent-context: {context}]
+
+[id="changing-ssl-certs-keys"]
+= Renewing and changing the SSL certificate
+
+:context: renewing-changing-ssl-certs-keys
+
+If your current SSL certificate has expired or will expire soon, you can either renew or replace the SSL certificate used by {PlatformNameShort}.
+
+You must renew the SSL certificate if you need to regenerate the SSL certificate with new information such as new hosts.
+
+You must replace the SSL certificate if you want to use an SSL certificate signed by an internal certificate authority.
+
+//  Renewing the self-signed SSL certificate
+
+include::platform/proc-renew-ssl-cert.adoc[leveloffset=+1]
+
+== Changing SSL certificates
+
+To change the SSL certificate, you can edit the inventory file and run the installer.
+The installer verifies that all {PlatformNameShort} components are working. The installer can take a long time to run.
+
+Alternatively, you can change the SSL certificates manually. This is quicker, but there is no automatic verification.
+
+Red Hat recommends that you use the installer to make changes to your {PlatformNameShort} instance.
+
+=== Prerequisites
+
+* If there is an intermediate certificate authority, you must append it to the server certificate.
+* Both {ControllerName} and {HubName} use NGINX so the server certificate must be in PEM format.
+* Use the correct order for the certificates: The server certificate comes first, followed by the intermediate certificate authority.
+
+For further information, see the link:http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_certificate[ssl certificate section of the NGINX documentation].
+
+include::platform/proc-change-ssl-installer.adoc[leveloffset=+2]
+
+=== Changing the SSL certificate manually
+
+include::platform/proc-change-ssl-controller.adoc[leveloffset=+3]
+include::platform/proc-change-ssl-controller-ocp.adoc[leveloffset=+3]
+include::platform/proc-change-ssl-eda-controller.adoc[leveloffset=+3]
+include::platform/proc-change-ssl-hub.adoc[leveloffset=+3]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
+

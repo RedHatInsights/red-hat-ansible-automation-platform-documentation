@@ -1,0 +1,16 @@
+[id="renew-ssl-cert_{context}"]
+
+= Renewing the self-signed SSL certificate
+
+[role="_abstract"]
+The following steps regenerate a new SSL certificate for both {ControllerName} and {HubName}.
+
+.Procedure
+. Add `aap_service_regen_cert=true` to the inventory file in the `[all:vars]` section:
++
+----
+[all:vars]
+aap_service_regen_cert=true
+----
+. Run the installer.
+
