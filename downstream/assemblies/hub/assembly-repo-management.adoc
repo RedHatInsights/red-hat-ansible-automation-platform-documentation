@@ -8,7 +8,7 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 As an {HubName} administrator, you can create, edit, delete, and move automation content collections between repositories.
 
-In {HubName} you can publish collections to two types of repositories, depending on whether you want your collection to be public or private:
+In {HubName} you can publish collections to two types of repositories, depending on whether you want your collection to be verified:
 
 Staging repositories:: Any user with permission to upload to a namespace can publish collections into these repositories. Collections in these repositories are not available in the search page, but rather, are displayed on the approval dashboard for an administrator to verify.
 

@@ -6,7 +6,7 @@ ifdef::context[:parent-context: {context}]
 :context: managing-cert-validated-content
 
 [role="_abstract"]
-{CertifiedColl} is included in your subscription to {PlatformName}. Red Hat Ansible content inclues two types of content: {CertifiedName} and {Valid}.
+{CertifiedName} are included in your subscription to {PlatformName}. Red Hat Ansible content includes two types of content: {CertifiedName} and {Valid}.
 Using {HubNameMain}, you can access and curate a unique set of collections from all forms of Ansible content.
 
 Red Hat Ansible content contains two types of content:
