@@ -11,7 +11,7 @@ You can add information and provide resources for your users to accompany collec
 * You have *Change Namespaces* permissions.
 
 .Procedure
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . From the navigation panel, select menu:Collections[Namespaces].
 . Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Edit namespace*.
 . In the *Edit details* tab, enter information in the fields.

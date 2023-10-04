@@ -7,7 +7,7 @@
 [role="_abstract"]
 
 The {HubName} container registry is used for storing and managing container images.
-When you have built or sourced a container image, you can push that container image to the registry portion of private {HubName} to create a container repository.
+When you have built or sourced a container image, you can push that container image to the registry portion of {PrivateHubName} to create a container repository.
 
 [role="_additional-resources"]
 .Next steps

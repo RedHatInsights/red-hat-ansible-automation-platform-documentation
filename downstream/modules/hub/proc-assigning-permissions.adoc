@@ -5,16 +5,16 @@
 = Assigning permissions to groups
 
 By default, new groups do not have any assigned permissions.
-You can assign permissions to groups in {HubName} that enable users to access specific features in the system.
+You can assign permissions to groups in {PrivateHubName} that enable users to access specific features in the system.
 
 You can add permissions when first creating a group or edit an existing group to add or remove permissions
 
 .Prerequisites
 
-* You have *Change group* permissions and can edit group permissions in {HubName}.
+* You have *Change group* permissions and can edit group permissions in {PrivateHubName}.
 
 .Procedure
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . From the navigation panel, select menu:User Access[Roles].
 . Click btn:[Add roles].
 . In the name field, enter the role name.
@@ -29,4 +29,4 @@ You can add permissions when first creating a group or edit an existing group to
 . To confirm the selected role, click btn:[Next].
 . Click btn:[Add].
 
-The group can now access features in {HubName} associated with their assigned permissions.
+The group can now access features in {PrivateHubName} associated with their assigned permissions.

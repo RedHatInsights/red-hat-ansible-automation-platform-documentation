@@ -2,17 +2,17 @@
 
 = Creating a new group for content curators
 
-You can create a new group in {HubName} designed to support content curation in your organization. This group can contribute internally developed collections for publication in {HubName}.
+You can create a new group in {PrivateHubName} designed to support content curation in your organization. This group can contribute internally developed collections for publication in {PrivateHubName}.
 
-To help content developers create a namespace and upload their internally developed collections to {HubName}, you must first create and edit a group and assign the required permissions.
+To help content developers create a namespace and upload their internally developed collections to {PrivateHubName}, you must first create and edit a group and assign the required permissions.
 
 .Prerequisites
 
-* You have administrative permissions in {HubName} and can create groups.
+* You have administrative permissions in {PrivateHubName} and can create groups.
 
 .Procedure
 
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . From the navigation panel, select menu:User Access[Groups] and click btn:[Create].
 . Enter *Content Engineering* as a *Name* for the group in the modal and click btn:[Create]. You have created the new group and the *Groups* page opens.
 . On the *Permissions* tab, click btn:[Edit].

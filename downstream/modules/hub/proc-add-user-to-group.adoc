@@ -8,14 +8,14 @@ You can add users to groups when you create a group. But, you can also manually 
 
 .Prerequisites
 
-* You have *groups* permissions and can create and manage group configuration and access in {HubName}.
+* You have *groups* permissions and can create and manage group configuration and access in {PrivateHubName}.
 
 .Procedure
 
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . From the navigation panel, select menu:User Access[Groups].
 . Click on a *Group* name.
 . Navigate to the *Users* tab and click btn:[Add].
 . Select users to add from the list and click btn:[Add].
 
-You have added selected users to the group. These users now have the permissions for {HubName} that are assigned to the group.
+You have added selected users to the group. These users now have the permissions for {PrivateHubName} that are assigned to the group.

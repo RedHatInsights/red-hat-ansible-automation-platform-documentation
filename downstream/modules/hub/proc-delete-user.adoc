@@ -1,16 +1,16 @@
 // Module included in the following assemblies:
 [id="proc-delete-user"]
 
-= Deleting a user from {HubName}
+= Deleting a user from {PrivateHubName}
 
-When you delete a user account, the name and email of the user are permanently removed from {HubName}.
+When you delete a user account, the name and email of the user are permanently removed from {PrivateHubName}.
 
 .Prerequisites
 
-* You have *user* permissions in {HubName}.
+* You have *user* permissions in {PrivateHubName}.
 
 .Procedure
-. Log in to {HubName}.
+. Log in to {PrivateHubName}.
 . From the navigation panel, select menu:User Access[].
 . Click btn:[Users] to display a list of the current users.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}* icon beside the user that you want to remove, then click btn:[Delete].

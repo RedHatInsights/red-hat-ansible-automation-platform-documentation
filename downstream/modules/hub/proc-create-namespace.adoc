@@ -11,7 +11,7 @@ When creating a namespace, you can assign a group in {HubName} as owners of that
 
 .Procedure
 
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . From the navigation panel, select menu:Collections[Namespaces].
 . Click btn:[Create] and enter a *namespace name*.
 . Assign a group of *Namespace owners*.

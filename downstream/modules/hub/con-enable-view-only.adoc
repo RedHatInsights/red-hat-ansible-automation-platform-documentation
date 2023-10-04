@@ -35,12 +35,12 @@ automationhub_enable_unauthenticated_collection_download = True <2>
 ----
 <1> Allows unauthorized users to view collections
 <2> Allows unathorized users to download collections
-. Run the `setup.sh` script. The installer will now enable view-only access to your {HubName}.
+. Run the `setup.sh` script. The installer enables view-only access to your {PrivateHubName}.
 
 .Verification
-After the installation is complete, verify that you have view-only access on your private {HubName} by attempting to view content on your {HubName} without logging in.
+After the installation is complete, verify that you have view-only access on your {PrivateHubName} by attempting to view content on your {PrivateHubName} without logging in.
 
-. Navigate to your private {HubName}.
+. Navigate to your {PrivateHubName}.
 . On the login screen, click btn:[View only mode].
 
 Verify that you are able to view content on your {HubName}, such as namespaces or collections, without having to log in.

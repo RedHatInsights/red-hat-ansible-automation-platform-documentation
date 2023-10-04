@@ -12,7 +12,7 @@ You must first ensure that the namespace does not contain a collection with depe
 * You have *Delete namespace* permissions.
 
 .Procedure
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . From the navigation panel, select menu:Collections[Namespaces].
 . Click the namespace to be deleted.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}*, then click btn:[Delete namespace].

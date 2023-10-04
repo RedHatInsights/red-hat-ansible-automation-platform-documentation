@@ -15,7 +15,7 @@ Import log:: activities executed during the collection import
 
 .Procedure
 
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . From the navigation panel, select menu:Collections[Namespaces].
 . Select a namespace.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *My imports*.

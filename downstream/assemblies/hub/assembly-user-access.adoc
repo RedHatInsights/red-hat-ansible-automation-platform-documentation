@@ -1,11 +1,11 @@
 [id="assembly-user-access"]
-= Configuring user access for your local {HubName}
+= Configuring user access for your {PrivateHubName}
 
 You can manage user access to content and features in {HubName} by creating groups of users that have specific permissions.
 
 include::hub/con-user-access.adoc[leveloffset=+1]
 
-The following sections describe the workflows associated with organizing your users who will access {HubName} and providing them with required permissions to reach their goals. See the permissions reference table for a full list and description of all permissions available.
+The following sections describe the workflows associated with organizing your users who will access {PrivateHubName} and providing them with required permissions to reach their goals. See the permissions reference table for a full list and description of all permissions available.
 
 include::hub/proc-create-groups.adoc[leveloffset=+2]
 
@@ -24,4 +24,3 @@ include::hub/ref-permissions.adoc[leveloffset=+2]
 include::hub/proc-delete-user.adoc[leveloffset=+2]
 
 include::assembly-view-only-access.adoc[leveloffset=+1]
- 

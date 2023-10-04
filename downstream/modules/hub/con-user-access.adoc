@@ -6,12 +6,12 @@ User access is based on managing permissions to system objects (users, groups, n
 
 You assign permissions to the groups that you create. You can then assign users to these groups. This means that each user in a group has the permissions assigned to that group.
 
-Groups created in {HubName} can range from system administrators responsible for governing internal collections, configuring user access, and repository management to groups with access to organize and upload internally developed content to {HubName}.
+Groups created in {PrivateHubName} can range from system administrators responsible for governing internal collections, configuring user access, and repository management to groups with access to organize and upload internally developed content to the {PrivateHubName}.
 
 [role="_additional-resources"]
 .Additional resources
 * See xref:ref-permissions[Automation Hub permissions] for information on system permissions.
 
-== Default user access for {HubName}
+== Default user access for {PrivateHubName}
 
 When you install {HubName}, the system automatically creates the default *admin* user in the *Admin* group. The *Admin* group is assigned all permissions in the system.

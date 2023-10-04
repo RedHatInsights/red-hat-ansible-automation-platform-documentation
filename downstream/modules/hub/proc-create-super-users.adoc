@@ -4,14 +4,14 @@
 
 = Creating a super user
 
-If you want to spread administration across your team, you can create a super user in {HubName}.
+If you want to spread administration across your team, you can create a super user in {PrivateHubName}.
 
 .Prerequisites
 
 * You must be a *Super user*.
 
 .Procedure
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . From the navigation panel, select menu:User Access[Users].
 . Select the user that you want to make a super user. The *User details* for that user are displayed.
 . Under *User type*, select *Super User*.

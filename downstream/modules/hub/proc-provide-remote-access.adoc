@@ -12,6 +12,6 @@ After a remote configuration is created, you can provide access to it by doing t
 . From the navigation panel, select menu:Collections[Remotes].
 . Locate your repository in the list and click the btn:[More Actions] icon *{MoreActionsIcon}*, then select *Edit*.
 . Select the *Access* tab.
-. Select a group for *Repository owners*. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/assembly-user-access[Configuring user access for your local {HubName}] for information about implementing user access.
+. Select a group for *Repository owners*. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/assembly-user-access[Configuring user access for your {PrivateHubName}] for information about implementing user access.
 . Select the appropriate roles for the selected group.
 . Click btn:[Save].

@@ -2,17 +2,17 @@
 // obtaining-token/master.adoc
 [id="proc-create-group"]
 
-= Creating a new group in {HubName}
+= Creating a new group in {PrivateHubName}
 
-You can create and assign permissions to a group in {HubName} that enables users to access specified features in the system. 
-By default, the *Admin* group in {HubName} has all permissions assigned ans is available on initial login. Use the credentials created when installing {HubName}.
+You can create and assign permissions to a group in {PrivateHubName} that enables users to access specified features in the system.
+By default, the *Admin* group in the {HubName} has all permissions assigned and is available on initial login. Use the credentials created when installing {PrivateHubName}.
 
 .Prerequisites
 
-* You have *Groups* permissions and can create and manage group configuration and access in {HubName}.
+* You have *Groups* permissions and can create and manage group configuration and access in {PrivateHubName}.
 
 .Procedure
-. Log in to your local {HubName} by using credentials for the *admin* user configured during installation.
+. Log in to your {PrivateHubName} by using credentials for the *admin* user configured during installation.
 . From the navigation panel, select menu:User Access[Groups].
 . Click btn:[Create].
 . Provide a *Name* and click btn:[Create].

@@ -45,7 +45,7 @@ Add user
 
 Change user |
 
-Groups with these permissions can manage user configuration and access in {HubName}.
+Groups with these permissions can manage user configuration and access in {PrivateHubName}.
 
 h| groups |
 
@@ -57,7 +57,7 @@ Add group
 
 Change group |
 
-Groups with these permissions can manage group configuration and access in {HubName}.
+Groups with these permissions can manage group configuration and access in {PrivateHubName}.
 
 
 h| collection remotes |
@@ -82,7 +82,7 @@ Push to existing containers
 
 Delete container repository |
 
-Groups with these permissions can manage container repositories in {HubName}.
+Groups with these permissions can manage container repositories in {PrivateHubName}.
 
 h| remote registries |
 
@@ -92,7 +92,7 @@ Change remote registry
 
 Delete remote registry |
 
-Groups with these permissions can add, change, or delete remote registries added to {HubName}.
+Groups with these permissions can add, change, or delete remote registries added to {PrivateHubName}.
 
 h| task management |
 
@@ -102,7 +102,7 @@ Delete task
 
 View all tasks |
 
-Groups with these permissions can manage tasks added to *Task Management* in {HubName}.
+Groups with these permissions can manage tasks added to *Task Management* in {PrivateHubName}.
 |===
 
 ////

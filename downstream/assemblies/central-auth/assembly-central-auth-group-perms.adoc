@@ -14,7 +14,7 @@ You can group permissions into roles with specific user access to features in th
 * You are signed in as a `hubadmin` user.
 
 .Procedure
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . Navigate to the *User Access* drop-down menu.
 . Click btn:[Roles].
 . Click btn:[Add roles].

@@ -15,7 +15,7 @@ You can assign roles to groups, giving users access to specific features in the 
 
 Assigning roles from the *Groups* menu.
 
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . Navigate to the *User Access* drop-down menu.
 . Click btn:[Groups] and select a group name.
 . Click btn:[Add roles].
@@ -30,7 +30,7 @@ Click btn:[Back] to return to the roles menu, or click btn:[Cancel] to return to
 
 Assigning roles from the *Namespaces* menu.
 
-. Log in to your local {HubName}.
+. Log in to your {PrivateHubName}.
 . Navigate to the *Collections* drop-down menu.
 . Click the *My Namespaces* tab, and select a namespace.
 . Click the *Namespace owners* tab to edit.
