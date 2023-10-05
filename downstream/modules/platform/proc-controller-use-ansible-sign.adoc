@@ -1,0 +1,26 @@
+[id="proc-controller-use-ansible-sign"]
+
+= Installing the ansible-sign CLI utility
+
+Use the `ansible-sign` utility to provide options for the user to sign and verify whether the project is signed.
+
+.Procedure
+. Run the following command to install `ansible-sign`:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+$ dnf install ansible-sign
+----
+. Verify that `ansible-sign` was successfully installed using the following command:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+$ ansible-sign --version
+----
++
+Output similar to the following indicates that you have successfully installed `ansible-sign`:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+ansible-sign 0.1
+----

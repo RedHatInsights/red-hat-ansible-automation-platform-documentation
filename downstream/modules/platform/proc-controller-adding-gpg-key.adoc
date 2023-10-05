@@ -1,0 +1,36 @@
+[id="ref-controller-adding-gpg-key"]
+
+= Adding a GPG key to {ControllerName}
+
+To use the GPG key for content singing and validation in {ControllerName}, add it by running the following command in the CLI:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ gpg --list-keys
+$ gpg --export --armour <key fingerprint> > my_public_key.asc
+----
+
+[arabic]
+. In the navigation panel, select menu:Credentials[].
+. Click btn:[Add].
+. Provide a meaningful name for the new credential, for example, “Infrastructure team public GPG key”.
+. In the *Credential Type* field, select *GPG Public Key*.
+. Click *Browse* to locate and select the public key file, for example, `my_public_key.asc`.
+. Click btn:[Save].
++
+image:credentials-gpg-details.png[image]
++
+This credential can now be selected in `projects <ug_projects_add>`, and content verification automatically takes place on future project
+synchronizations.
+//image:project-create-with-gpg-creds.png[image]
+
+[NOTE]
+
+====
+Use the project cache SCM timeout to control how often you want {ControllerName} to re-validate the signed content. 
+When a project is configured to update on launch (of any job template configured to use that project), you can enable the cache timeout setting, which sets it to update after `N` seconds have passed since the last update. 
+If validation is running too frequently, you can slow down how often project updates occur by specifying the time in the *Cache Timeout*
+field of the *Option Details* pane of the project.
+
+image:project-update-launch-cache-timeout.png[image]
+====

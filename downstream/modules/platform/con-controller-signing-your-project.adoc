@@ -1,0 +1,95 @@
+[id="con-controller-signing-your-project"]
+
+= Sign a project
+
+Signing a project involves an Ansible project directory. 
+For more information more sophisticated examples of project directory
+structures, see link:https://docs.ansible.com/ansible/latest/tips_tricks/sample_setup.html[Sample Ansible setup] in the Ansible documentation.
+
+The following sample project has a very simple structure: an inventory file, and two small playbooks under a playbooks directory:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ cd sample-project/
+$ tree -a .
+.
+├── inventory
+└── playbooks
+    └── get_uptime.yml
+    └── hello.yml
+
+    1 directory, 3 files
+----
+
+[NOTE]
+====
+The commands used assume that your working directory is the root of your project. 
+`ansible-sign project` commands take the project root directory as their last argument. 
+
+Use `.` to indicate the current working directory.
+====
+
+`ansible-sign` protects content from tampering by taking checksums (SHA256) of all of the secured files in the project, compiling those into a checksum manifest file, and then signing that manifest file.
+
+To sign content, create a `MANIFEST.in` file in the project root directory that tells `ansible-sign` which files to protect. 
+
+Internally, `ansible-sign` uses the `distlib.manifest` module of Python's distlib library, therefore `MANIFEST.in` must follow the syntax that this library specifies. 
+For an explanation of the 'MANIFEST.in` file directives, see the link:https://packaging.python.org/en/latest/guides/using-manifest-in/#manifest-in-commands[Python Packaging User Guide].
+
+In the sample project, two directives are included, resulting in the following `MANIFEST.in` file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+include inventory
+recursive-include playbooks *.yml
+----
+
+With this file in place, generate your checksum manifest file and sign it. 
+Both of these steps are achieved in a single `ansible-sign` command:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ ansible-sign project gpg-sign .
+----
+Successful execution displays output similar to the following:
+[literal, options="nowrap" subs="+attributes"]
+---- 
+[OK   ] GPG signing successful!
+[NOTE ] Checksum manifest: ./.ansible-sign/sha256sum.txt
+[NOTE ] GPG summary: signature created
+----
+
+The project has now been signed.
+
+Note that the `gpg-sign` subcommand resides under the `project` subcommand. 
+
+For signing project content, every command starts with `ansible-sign project`. 
+
+Every `ansible-sign project` command takes the project root directory `.` as its final argument.
+
+`ansible-sign` makes use of your default keyring and looks for the first available secret key that it can find, to sign your project. 
+You can specify a specific secret key to use with the `--fingerprint` option, or even a completely independent GPG home directory with the `--gnupg-home` option.
+
+[NOTE]
+====
+If you are using a desktop environment, GnuPG automatically prompts you for your secret key's passphrase. 
+
+If this functionality does not work, or you are working without a desktop environment, for example, through SSH, you can use the `-p --prompt-passphrase` flag after `gpg-sign` , which causes `ansible-sign` to prompt for the password instead.
+====
+
+Note that an `.ansible-sign` directory was created in the project directory. 
+This directory contains the checksum manifest and a detached GPG signature for it.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ tree -a .
+.
+├── .ansible-sign
+│   ├── sha256sum.txt
+│   └── sha256sum.txt.sig
+├── inventory
+├── MANIFEST.in
+└── playbooks
+    ├── get_uptime.yml
+    └── hello.yml
+----

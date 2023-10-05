@@ -1,0 +1,48 @@
+[id="assembly-controller-project-signing"]
+
+= Project Signing and Verification
+
+Project signing and verification lets you sign files in your project directory, then verify whether or not that content has
+changed in any way, or files have been added or removed from the project unexpectedly. 
+To do this, you require a private key for signing and a matching public key for verifying.
+
+For project maintainers, the supported way to sign content is to use the `ansible-sign` utility, using the _command-line
+interface_ (CLI) supplied with it.
+
+The CLI aims to make it easy to use cryptographic technology such as _GNU Privacy Guard_ (GPG) to validate that files within a project have not been tampered with in any way. 
+Currently, GPG is the only supported means of signing and validation.
+
+{ControllerNameStart} is used to verify the signed content. 
+After a matching public key has been associated with the signed project, {ControllerName} verifies that the files included during signing have not changed, and that files have been added or removed unexpectedly. 
+If the signature is not valid or a file has changed, the project fails to update, and jobs making use of the project will not launch. Verification status of the project ensures that only secure, untampered content can be run in jobs.
+
+If the repository has already been configured for signing and verification, the usual workflow for altering the project becomes the following:
+
+. You have a project repository set up already and want to make a change to a file.
+. You make the change, and run the following command:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+ansible-sign project gpg-sign /path/to/project
+----
++
+This command updates a checksum manifest and signs it.
+. You commit the change, the updated checksum manifest, and the signature to the repository.
+. When you synchronizes the project, {ControllerName} pulls in the new changes, checks that the public key associated with the project in {ControllerName} matches the private key that the checksum manifest was signed with (this prevents tampering with the checksum manifest itself), then re-calculates the checksums of each file in the manifest to ensure that the checksum matches (and thus that no file has changed). It also ensures that all files are accounted for: 
+
+Files must be included in, or excluded from, the `MANIFEST.in` file. 
+For more information on this file, see xref:con-controller-signing-your-project[Sign a project]
+If files have been added or removed unexpectedly, verification fails.
+
+image:content-sign-diagram.png[Content signing]
+
+include::platform/ref-controller-proj-sign-prerequisites.adoc[leveloffset=+1]
+include::platform/proc-controller-adding-gpg-key.adoc[leveloffset=+1]
+include::platform/proc-controller-use-ansible-sign.adoc[leveloffset=+1]
+include::platform/con-controller-signing-your-project.adoc[leveloffset=+1]
+include::platform/ref-controller-verify-your-project.adoc[leveloffset=+1]
+include::platform/ref-controller-automate-signing.adoc[leveloffset=+1]
+
+
+
+

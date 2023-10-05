@@ -1,0 +1,29 @@
+[id="ref-controller-proj-sign-prerequisites"]
+
+= Prerequisites
+
+* RHEL nodes must properly be subscribed to:
+** RHEL subscription* with *baseos* and *appstream* repositories must be enabled.
+** Your {PlatformName} subscription and the proper channel must be enabled:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+ansible-automation-platform-2.4-for-rhel-8-x86_64-rpms for RHEL 8
+ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms for RHEL 9
+----
+* A valid GPG public/private keypair is required for signing content.
+For more information, see link:https://www.redhat.com/sysadmin/creating-gpg-keypairs[How to create GPG keypairs].
++
+For more information on GPG keys, see the link:https://www.gnupg.org/documentation/index.html[GnuPG documentation].
++
+Verify that you have a valid GPG keypair in your default GnuPG keyring, with the following command:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+$ gpg --list-secret-keys
+----
++
+If this command produces no output, or one line of output that states, `trustdb was created`, then you do not have a secret key in your
+default keyring. 
+In this case, refer to link:https://www.redhat.com/sysadmin/creating-gpg-keypairs[How to create GPG keypairs] to learn how to create a new keypair before proceeding. 
+If it produces any other output, you have a valid secret key and are ready to use `ansible-sign`.
