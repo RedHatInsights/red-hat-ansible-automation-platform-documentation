@@ -10,10 +10,10 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 
 .Prerequisites
-* You have installed the {PlatformName} catalog in Operator Hub.
-* You have created a `StorageClass` object for your platform and a persistant volume claim (PVC) with `ReadWriteMany` access mode. See link:https://docs.openshift.com/container-platform/4.10/storage/dynamic-provisioning.html[Dyamic Provisioning] for details.
-* To run {OCP} clusters on Amazon Web Services with `ReadWriteMany` access mode, you must add NFS or other storage.
-** For information on the AWS Elastic Block Store (EBS) or to use the `aws-ebs` storage class, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.10/html-single/storage/index#persistent-storage-aws[Persistent storage using AWS Elastic Block Store].
+* You have installed the {PlatformName} catalog in OperatorHub.
+* You have created a `StorageClass` object for your platform and a persistent volume claim (PVC) with `ReadWriteMany` access mode. See link:https://docs.openshift.com/container-platform/4.10/storage/dynamic-provisioning.html[Dynamic provisioning] for details.
+* To run {OCP} clusters on Amazon Web Services (AWS) with `ReadWriteMany` access mode, you must add NFS or other storage.
+** For information about the AWS Elastic Block Store (EBS) or to use the `aws-ebs` storage class, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.10/html-single/storage/index#persistent-storage-aws[Persistent storage using AWS Elastic Block Store].
 ** To use multi-attach `ReadWriteMany` access mode for AWS EBS, see link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes-multi.html[Attaching a volume to multiple instances with Amazon EBS Multi-Attach].
 
 
