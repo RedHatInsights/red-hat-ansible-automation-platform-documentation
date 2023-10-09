@@ -6,15 +6,15 @@
 
 = Approval pipeline for custom repositories in {HubName}
 
-In {HubName} you can approve collections into any repository that is marked with the `pipeline=approved` label. By default, {HubName} ships with one repository for approved content, but you have the option to add more from the repository creation screen. Note that you cannot directly publish into a repository marked with this label. A collection must first go through a staging repository for approval before being published into a 'pipleline=approved' repository. 
+In {HubName} you can approve collections into any repository marked with the `pipeline=approved` label. By default, {HubName} ships with one repository for approved content, but you have the option to add more from the repository creation screen. You cannot directly publish into a repository marked with the `pipeline=approved` label. A collection must first go through a staging repository and be approved before being published into a 'pipleline=approved' repository. 
 
 Auto approval::
 When auto approve is enabled, any collection you upload to a staging repository is automatically promoted to all of the repositories marked as `pipeline=approved`.
 
 Approval required::
-From the approval dashboard, the administrator can see collections that have been uploaded into any of the staging repositories. Clicking btn:[Approve] displays a list of approved repositories. From this list, the administrator can select one or more repositories to which the content should be promoted.
+When auto approve is disabled, the administrator can view the approval dashboard and see collections that have been uploaded into any of the staging repositories. Clicking btn:[Approve] displays a list of approved repositories. From this list, the administrator can select one or more repositories to which the content should be promoted.
 +
 If only one approved repository exists, the collection is automatically promoted into it and the administrator is not prompted to select a repository.
 
 Rejection::
-Rejected collections are automatically placed into the pre-installed rejected repository.
+Rejected collections are automatically placed into the rejected repository, which is pre-installed.

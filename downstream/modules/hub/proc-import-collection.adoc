@@ -5,17 +5,17 @@
 
 = Importing an automation content collection in {HubName}
 
-As an automation content creator, you can import a collection for use in a custom repository. To use a collection in your custom repository, you must first import the collection into your namespace so the {HubName} adminstrator can approve it. 
+As an automation content creator, you can import a collection to use in a custom repository. To use a collection in your custom repository, you must first import the collection into your namespace so the {HubName} administrator can approve it. 
 
 .Procedure
 . Log in to {PlatformName}.
-. From the navigation panel, select menu:Collections[Namespaces]. The *Namepaces* page displays all of the namespaces available.
+. From the navigation panel, select menu:Collections[Namespaces]. The *Namespaces* page displays all of the namespaces available.
 . Click btn:[View Collections].
 . Click btn:[Upload Collection].
 . Navigate to the collection tarball file, select the file and click btn:[Open].
 . Click btn:[Upload].
 +
-The *My Imports* screen provides a summary of tests and notifies you whether the collection uploaded successfully or failed.
+The *My Imports* screen displays a summary of tests and notifies you if the collection upload is successful or has failed.
 +
 [NOTE]
 ====

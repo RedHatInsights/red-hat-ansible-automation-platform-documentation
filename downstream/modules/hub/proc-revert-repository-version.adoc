@@ -5,11 +5,11 @@
 
 = Revert to a different {HubName} repository version
 
-When automation content collections are added or removed from a repository, a new version is created. If there are issues with a change to your repository, you can revert to a previous version. Reverting is a safe operation and does not delete collections from the system, but rather, changes the content associated with the repository. The number of versions saved is defined in the *Retained number of versions* setting when a xref:proc-create-repository[repository is created].
+When automation content collections are added or removed from a repository, a new version is created. If a change to your repository causes a problem, you can revert to a previous version. Reverting is a safe operation and does not delete collections from the system, but rather, changes the content associated with the repository. The number of versions saved is defined in the *Retained number of versions* setting when a xref:proc-create-repository[repository is created].
 
 .Procedure
 . Log in to {PlatformName}.
 . From the navigation panel, select menu:Collections[Repositories].
 . Locate your repository in the list and click the btn:[More Actions] icon *{MoreActionsIcon}*, then select *Edit*.
-. Locate the version you want to revert to and click the btn:[More Actions] icon *{MoreActionsIcon}*, then select *Revert to this version*.
+. Locate the version you want to revert to and click the btn:[More Actions] icon *{MoreActionsIcon}*, and select *Revert to this version*.
 . Click btn:[Revert].

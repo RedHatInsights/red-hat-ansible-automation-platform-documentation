@@ -8,13 +8,15 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 As an {HubName} administrator, you can create, edit, delete, and move automation content collections between repositories.
 
+== Types of repositories in automation hub
+
 In {HubName} you can publish collections to two types of repositories, depending on whether you want your collection to be verified:
 
-Staging repositories:: Any user with permission to upload to a namespace can publish collections into these repositories. Collections in these repositories are not available in the search page, but rather, are displayed on the approval dashboard for an administrator to verify.
+Staging repositories:: Any user with permission to upload to a namespace can publish collections into these repositories. Collections in these repositories are not available in the search page. Instead, they are displayed on the approval dashboard for an administrator to verify. Staging repositories are marked with the `pipeline=staging` label.
 
-Custom repositories:: Any user with write permissions on the repository can publish collections to these repositories. Custom repositories can be private repositories where only users with view permissions can see them, or public where all users can see them. These repositories are not displayed on the approval dashboard. If the repository owner enables search, the collection can appear in search results.
+Custom repositories:: Any user with write permissions on the repository can publish collections to these repositories. Custom repositories can be public where all users can see them, or private  where only users with view permissions can see them. These repositories are not displayed on the approval dashboard. If the repository owner enables search, the collection can appear in search results.
 
-Staging repositories are marked with the `pipeline=staging` label. By default, {HubName} ships with one staging repository that is automatically used when a repository is not specified for uploading collections. However, users can create new staging repositories during xref:proc-create-repository[repository creation].
+By default, {HubName} ships with one staging repository that is automatically used when a repository is not specified for uploading collections. Users can create new staging repositories during xref:proc-create-repository[repository creation].
 
 include::hub/con-approval-pipeline.adoc[leveloffset=+1]
 include::hub/con-repo-rbac.adoc[leveloffset=+1]

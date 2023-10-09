@@ -1,16 +1,16 @@
 // Module included in the following assemblies:
-// assembly-basic-remote-management.adoc
+// assembly-remote-management.adoc
 
 [id="proc-provide-remote-access_{context}"]
 
 = Providing access to a remote configuration
 
-After a remote configuration is created, you can provide access to it by doing the following.
+After you create a remote configuration, you must provide access to it before anyone can use it.
 
 .Procedure
 . Log in to {PlatformName}.
 . From the navigation panel, select menu:Collections[Remotes].
-. Locate your repository in the list and click the btn:[More Actions] icon *{MoreActionsIcon}*, then select *Edit*.
+. Locate your repository in the list, click the btn:[More Actions] icon *{MoreActionsIcon}*, and select *Edit*.
 . Select the *Access* tab.
 . Select a group for *Repository owners*. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/assembly-user-access[Configuring user access for your {PrivateHubName}] for information about implementing user access.
 . Select the appropriate roles for the selected group.

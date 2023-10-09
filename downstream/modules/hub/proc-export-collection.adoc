@@ -9,6 +9,6 @@ After collections are finalized, you can import them to a location where they ca
 
 .Procedure
 . Log in to {PlatformName}.
-. From the navigation panel, select menu:Collections[Collections]. The Collections page displays all of the collections across all of the repositories and allows you to search for a specific collection.
-. Select the collection you want to export. The collection details page is displayed.
-. From the *Installation* tab, select *Download tarball*. The tar file is downloaded to your default browser downloads folder and available to be imported to the location of your choosing.
+. From the navigation panel, select menu:Collections[Collections]. The *Collections* page displays all collections across all repositories. You can search for a specific collection.
+. Select the collection that you want to export. The collection details page opens.
+. From the *Install* tab, select *Download tarball*. The .tar file is downloaded to your default browser downloads folder. You can now import it to the location of your choosing.

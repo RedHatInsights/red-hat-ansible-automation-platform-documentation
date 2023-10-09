@@ -1,11 +1,11 @@
 // Module included in the following assemblies:
-// assembly-basic-remote-management.adoc
+// assembly-remote-management.adoc
 
 [id="proc-create-remote_{context}"]
 
 = Creating a remote configuration in {HubName}
 
-You can use {PlatformName} to create a remote configuration to an external collection source and sync the content from those collections to your custom repositories.
+You can use {PlatformName} to create a remote configuration to an external collection source. Then, you can sync the content from those collections to your custom repositories.
 
 .Procedure
 . Log in to {PlatformName}.
@@ -16,18 +16,18 @@ You can use {PlatformName} to create a remote configuration to an external colle
 +
 [NOTE]
 ====
-You can find the remote server URL and repository path by navigating to menu:Automation Hub[Repositories], selecting your repository, and clicking btn:[Copy CLI configuration].
+To find the remote server URL and repository path, navigate to menu:Automation Hub[Repositories], select your repository, and click btn:[Copy CLI configuration].
 ====
 +
 . Configure the credentials to the remote server by entering a *Token* or *Username* and *Password* required to access the external collection.
 +
 [NOTE]
 ====
-Generate a token from the navigation panel, by selecting menu:Collections[API token], clicking btn:[Load token] and copying the token that is loaded.
+To generate a token from the navigation panel, select menu:Collections[API token], click btn:[Load token] and copy the token that is loaded.
 ====
 +
 . To access collections from {Console}, enter the *SSO URL* to sign in to the identity provider (IdP).
-. Select or create a *YAML requirements* file to identify the collections and version ranges to synchronize with your custom repository. For example, to only download the kubernetes and AWS collection versions 5.0.0 or later the requirements file would look like this:
+. Select or create a *YAML requirements* file to identify the collections and version ranges to synchronize with your custom repository. For example, to download only the kubernetes and AWS collection versions 5.0.0 or later the requirements file would look like this:
 +
 -----
 Collections:
@@ -51,5 +51,5 @@ All collection dependencies are downloaded during the Sync process.
 +
 [NOTE]
 ====
-Some servers can have a specific rate limit set and if exceeded, synchronization will fail.
+Some servers can have a specific rate limit set, and if exceeded, synchronization fails.
 ====

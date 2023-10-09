@@ -1,7 +1,7 @@
 ifdef::context[:parent-context: {context}]
 
 [id="remote-management"]
-= Remote management in {HubName}
+= Managing remote configurations in {HubName}
 
 :context: remote-management
 
