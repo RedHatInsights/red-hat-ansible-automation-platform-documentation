@@ -1,0 +1,58 @@
+[id="controller-playbook-run-search"]
+
+= Search
+
+Use *Search* to look up specific events, hostnames, and their statuses. 
+To filter only certain hosts with a particular status, specify one of the following valid statuses:
+
+ok:: Indicates that a task completed successfully but no change was executed on the host.
+changed:: The playbook task executed. 
+Since Ansible tasks should be written to be idempotent, tasks may exit successfully without executing anything on the host. 
+In these cases, the task returns *ok*, but not *changed*.
+failed:: The task failed. 
+Further playbook execution stopped for this host.
+unreachable:: The host is unreachable from the network or has another fatal error associated with it.
+skipped:: The playbook task skipped because no change was necessary for the host to reach the target state.
+rescued:: This shows the tasks that failed and then executes a rescue section.
+ignored:: This shows the tasks that failed and have `ignore_errors: yes configured`.
+
+These statuses also display in each *Stdout* pane, in a group of "stats" called the host summary fields:
+
+image::ug-job-std-out-host-summary-status.png[Host summary status]
+
+The following example shows a search with only unreachable hosts:
+
+image::ug-std-out-unreachable.png[Stdout pane unreachable]
+
+For more information on using the search, see the xref:assembly-controller-search[Search] section.
+
+The standard output view displays the events that occur on a particular job. 
+By default, all rows are expanded so that the details are displayed. 
+Use the collapse-all (image:ug-collapse-all-icon.png[Collapse,15,15]) icon to switch to a view that only contains the headers for plays and tasks. 
+Click the plus (image:plus_icon_dark.png[Plus icon,15,15]) icon to view all the lines of the standard output.
+
+You can display all the details of a specific play or task by clicking the arrow icons next to them. 
+Click an arrow from sideways to downward to expand the lines associated with that play or task. 
+Click the arrow back to the sideways position to collapse and hide the lines.
+
+image::ug-std-out-expand-collapse-icons.png[Collapse icons]
+
+When viewing details in the expand or collapse mode, note the following:
+
+* Each displayed line that is not collapsed has a corresponding line number and start time.
+* An expand or collapse icon is at the start of any play or task after the play or task has completed.
+* If querying for a particular play or task, it appears collapsed at the end of its completed process.
+* In some cases, an error message appears, stating that the output may be too large to display. 
+This occurs when there are more than 4000 events. 
+Use the search and filter for specific events to bypass the error.
+
+Click on a line of an event from the *Stdout* pane and a *Host Events* window displays in a separate window. 
+This window shows the host that was affected by that particular event.
+
+[NOTE]
+====
+Upgrading to the latest versions of {PlatformNameShort} involves progressively migrating all historical playbook output and events.
+This migration process is gradual, and happens automatically in the background after installation is complete. 
+Installations with very large amounts of historical job output (tens or hundreds of GB of output) can have missing job output until migration is complete. 
+The most recent data shows up at the top of the output, followed by older events.
+====

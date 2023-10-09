@@ -1,8 +1,8 @@
 [id="controller-instance-groups"]
 
-= Instance Groups
+= Managing Instance Groups
 
-An [ADD XREF]Instance Group allows you to group instances in a clustered environment. 
+An [ADD XREF]Instance Group enables you to group instances in a clustered environment. 
 Policies dictate how instance groups behave and how jobs are executed. 
 The following view displays the capacity levels based on policy algorithms:
 
@@ -12,3 +12,7 @@ image::ug-instance-groups_list_view.png[Instance groups list view]
 
 * For more information about the policy or rules associated with instance groups, see the link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instance-groups[Instance Groups] section of the Automation Controller Administration Guide.
 * For more information on connecting your instance group to a container, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-container-groups[Container Groups].
+
+include::platform/proc-controller-create-instance-group.adoc[leveloffset=+1]
+include::platform/proc-controller-associate-instances-to-instance-group.adoc[leveloffset=+2]
+include::platform/proc-controller-view-jobs-associated-with-instance-group.adoc[leveloffset=+2]

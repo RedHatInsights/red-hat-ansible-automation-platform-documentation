@@ -1,4 +1,4 @@
-[id="controller-job-templates"]
+[id="controller-work-with-job-templates"]
 
 = Working with job templates
 
@@ -9,4 +9,3 @@ For more information, see link:https://docs.ansible.com/automation-controller/la
 include::platform/proc-controller-getting-started-with-job-templates.adoc[leveloffset=+1]
 include::platform/proc-controller-edit-job-template.adoc[leveloffset=+1]
 include::platform/proc-controller-run-job-template.adoc[leveloffset=+1]
-

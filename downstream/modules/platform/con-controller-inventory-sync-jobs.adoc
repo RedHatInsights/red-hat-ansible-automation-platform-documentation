@@ -1,0 +1,22 @@
+[id="controller-inventory-sync-jobs"]
+
+= Inventory sync jobs
+
+When an inventory synchronization is executed, the results display in the *Output* tab. 
+If used, the Ansible CLI displays the same information. 
+This can be useful for debugging.
+The `ANSIBLE_DISPLAY_ARGS_TO_STDOUT` parameter is set to `False` for all playbook runs. 
+This parameter matches Ansible's default behavior and does not display task arguments in task headers in the *Job Detail* interface to avoid leaking certain sensitive module parameters to `stdout`. 
+To restore the previous behavior, set `ANSIBLE_DISPLAY_ARGS_TO_STDOUT` to `True` through the `AWX_TASK_ENV` configuration setting. 
+
+For more information, see link:http://docs.ansible.com/ansible/latest/reference_appendices/config.html#envvar-ANSIBLE_DISPLAY_ARGS_TO_STDOUT[ANSIBLE_DISPLAY_ARGS_TO_STDOUT].
+
+Use the icons to relaunch (image:rightrocket.png[Rightrocket,15,15]), download (image:download.png[Download,15,15]) the job output, or delete (image:delete-button.png[Delete,15,15]) the job.
+
+image::ug-show-job-results-for-inv-sync.png[Job results inventory sync]
+
+[NOTE]
+====
+You can perform an inventory update while a related job is running. 
+In cases where you have a large project (around 10 GB), disk space on `/tmp` can be an issue.
+====

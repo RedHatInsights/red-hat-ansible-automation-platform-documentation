@@ -1,0 +1,17 @@
+[id="controller-host-details"]
+
+= Host Details
+
+The *Host Details* window displays the following information about the host affected by the selected event and its associated play and task:
+
+* The *Host*.
+* The *Status*
+* The type of run in the *Play* field.
+* The type of *Task*.
+* If applicable, the Ansible Module task, and any arguments for that module.
+
+image::ug-job-details-hostevent.png[Host details]
+
+To view the results in JSON format, click the *JSON* tab. 
+To view the output of the task, click *Standard Out*. 
+To view errors from the output, click *Standard Error*.

@@ -1,0 +1,16 @@
+[id="controller-project-revision-behavior"]
+
+= Project revision behavior
+
+During a project update, the revision of the default branch (specified in the *SCM Branch* field of the project) is stored when updated. 
+If providing a non-default *SCM Branch* (not a commit hash or tag) in a job, the newest revision is pulled from the source control remote immediately before the job starts. 
+This revision is shown in the *Source Control Revision* field of the job and its project update.
+
+image::ug-output-branch-override.png[Jobs output override example]
+
+As a result, offline job runs are impossible for non-default branches. 
+To ensure that a job is running a static version from source control, use tags or commit hashes. 
+Project updates do not save all branches, only the project default branch.
+
+The *SCM Branch* field is not validated, so the project must update to assure it is valid. 
+If this field is provided or prompted for, the *Playbook* field of job templates is not validated, and you have to launch the job template in order to verify presence of the expected playbook.

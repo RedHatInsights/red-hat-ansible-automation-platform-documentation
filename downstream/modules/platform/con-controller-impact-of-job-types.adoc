@@ -1,0 +1,25 @@
+[id="controller-impact-of-job-types"]
+
+= Impact of job types in {ControllerName}
+
+Jobs and ad hoc jobs follow the preceding model, forks +1. 
+If you set a fork value on your job template, your job capacity value is the minimum of the forks value supplied and the number of hosts that you have, plus one. 
+The +1 is to account for the parent Ansible process.
+
+Instance capacity determines which jobs get assigned to any specific instance. 
+Jobs and ad hoc commands use more capacity if they have a higher forks value.
+
+Job types including the following, have a fixed impact:
+
+* Inventory updates: 1
+* Project updates: 1
+* System jobs: 5
+
+[NOTE]
+====
+If you do not set a forks value on your job template, your job uses Ansible's default forks value of five. 
+However, it uses fewer if your job has fewer than five hosts. 
+In general, setting a forks value higher than what the system is capable of can cause issues by running out of memory or over-committing CPU. 
+The job template fork values that you use must fit on the system. 
+If you have playbooks using 1000 forks but none of your systems individually has that much capacity, then your systems are undersized and at risk of performance or resource issues.
+====

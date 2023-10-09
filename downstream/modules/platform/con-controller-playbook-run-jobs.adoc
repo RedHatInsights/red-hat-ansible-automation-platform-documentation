@@ -1,0 +1,24 @@
+[id="controller-playbook-run-jobs"]
+
+= Playbook run jobs
+
+When a playbook is executed, the results display in the *Output* tab. 
+If used, the Ansible CLI displays the same information. This can be useful for debugging.
+
+image::ug-results-for-example-job.png[Results for example job]
+
+The events summary displays the following events that are run as part of this playbook:
+
+* The number of times this playbook has run is shown in the *Plays* field
+* The number of tasks associated with this playbook is shown in the *Tasks* field
+* The number of hosts associated with this playbook is shown in the *Hosts* field
+* The amount of time it took to complete the playbook run is shown in the *Elapsed* field
+
+image::ug-jobs-events-summary.png[Job events summary]
+
+Use the icons next to the events to relaunch (image:rightrocket.png[Rightrocket,15,15]), download (image:download.png[Download,15,15]) the job output, or delete (image:delete-button.png[Delete,15,15]) the job.
+
+Hover over a section of the host status bar in the *Output* view and the number of hosts associated with that status displays.
+
+The output for a playbook job is also available after launching a job from the *Jobs* tab of its *Jobs Templates* page.
+View its host details by clicking on the line item tasks in the output.

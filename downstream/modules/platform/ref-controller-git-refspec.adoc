@@ -1,0 +1,28 @@
+[id="controller-git-refspec"]
+
+= Git Refspec
+
+The *SCM Refspec* field specifies which extra references the update should download from the remote. 
+Examples include the following:
+
+* `refs/*:refs/remotes/origin/*`: This fetches all references, including remotes of the remote
+* `refs/pull/*:refs/remotes/origin/pull/*` (GitHub-specific): This fetches all refs for all pull requests
+* `refs/pull/62/head:refs/remotes/origin/pull/62/head`: This fetches the ref for one GitHub pull request
+
+For large projects, consider performance impact when using the first or second previous examples.
+
+The *SCM Refspec* parameter affects the availability of the project branch, and can enable access to references not otherwise available. 
+The previous examples enable you to supply a pull request from the *SCM Branch*, which is not possible without the *SCM Refspec* field.
+
+The Ansible git module fetches `refs/heads/` by default. 
+This means that a project's branches, tags and commit hashes, can be used as the *SCM Branch* if *SCM Refspec* is blank. 
+The value specified in the *SCM Refspec* field affects which *SCM Branch* fields can be used as overrides. 
+Project updates (of any type) perform an extra `git fetch` command to pull that refspec from the remote.
+
+.Example
+You can set up a project that enables branch override with the first or second refspec example.
+Use this in a job template that prompts for the *SCM Branch*.
+A client can then launch the job template when a new pull request is created, providing the branch `pull/N/head` and the job template can run against the provided GitHub pull request reference.
+
+.Additional resources
+For more information, see the link:https://docs.ansible.com/ansible/latest/modules/git_module.html[Ansible git module].

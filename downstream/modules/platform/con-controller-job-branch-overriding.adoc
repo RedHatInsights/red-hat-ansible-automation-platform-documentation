@@ -1,0 +1,11 @@
+[id="controller-job-branch-overriding"]
+
+= Job branch overriding
+
+Projects specify the branch, tag, or reference to use from source control in the `scm_branch` field. 
+These are represented by the values specified in the *Type Details* fields:
+
+image::ug-scm-project-branching-emphasized.png[Project branching emphasized]
+
+When creating or editing a job you have the option to *Allow Branch Override*. 
+When this option is checked, project administrators can delegate branch selection to the job templates that use that project, requiring only project `use_role`.

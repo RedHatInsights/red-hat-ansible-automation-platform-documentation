@@ -21,7 +21,7 @@ Job templates can be used to build a workflow template.
 Templates that show the *Workflow Visualizer* image:visualizer.png[Visualizer, 15,15] icon next to them are workflow templates.
 Clicking the icon allows you to build a workflow graphically.
 Many parameters in a job template enable you to enable *Prompt on Launch* that can be modified at the workflow level, and do not affect the values assigned at the job template level. 
-For instructions, see the ADD XREF WHEN PAGE BUILT [Workflow Visualizer] section.
+For instructions, see the xref:controller-workflow-visualizer[Workflow Visualizer] section.
 ====
 
 include::platform/proc-controller-create-job-template.adoc[leveloffset=+1]
