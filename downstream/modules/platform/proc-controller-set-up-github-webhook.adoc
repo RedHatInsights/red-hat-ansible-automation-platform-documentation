@@ -1,0 +1,62 @@
+[id="controller-set-up-github-webhook"]
+
+= Setting up a GitHub webhook
+
+{ControllerNameStart} has the ability to run jobs based on a triggered webhook event coming in. 
+Job status information (pending, error, success) can be sent back only for pull request events. 
+If you do not need {ControllerName} to post job statuses back to the webhook service, go directly to step 3.
+
+.Procedure
+
+. Generate a _ Personal Access Token _ (PAT) for use with {ControllerName}:
+.. In the profile settings of your GitHub account, select *Settings*.
+.. From the navigation panel, select menu:<> Developer Settings[].
+.. On the *Developer Settings* page, select *Personal access tokens*.
+.. From the *Personal access tokens* screen, click btn:[Generate a personal access token].
+.. When prompted, enter your GitHub account password to continue.
+.. In the *Note* field, enter a brief description about what this PAT is used for.
+.. In the *Select scopes* fields, check the boxes next to *repo:status*, *repo_deployment*, and *public_repo*. 
+The automation webhook only needs repository scope access, with the exception of invites.
+For more information, see link:https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps[Scopes for OAuth apps documentation].
+.. Click btn:[Generate token].
++
+[IMPORTANT]
+====
+When the token is generated, ensure that you copy the PAT, as you need it in step 2. 
+You cannot access this token again in GitHub.
+====
++
+. Use the PAT to optionally create a GitHub credential:
+.. Go to your instance, and xref:ref-controller-credential-gitHub-pat[Create a new credential for the GitHub PAT] using the generated token.
+.. Make note of the name of this credential, as you use it in the job template that posts back to GitHub.
++
+image::ug-webhooks-github-PAT-token.png[GitHub PAT token]
++
+.. Go to the job template with which you want to enable webhooks, and select the webhook service and credential you created in the preceding step.
++
+image::ug-webhooks-webhook-credential.png[GitLab webhook credential]
++
+.. Click btn:[Save]. Your job template is set up to post back to GitHub.
+. Go to a GitHub repository where you want to configure webhooks and select menu:Settings[].
+. From the navigation panel, select menu:Webhooks[Add webhook].
+. To complete the *Add webhook* page, you must check the *Enable Webhook* option in a job template or workflow job template. 
+For more information, see step 3 in both xref:controller-create-job-template[Creating a job template] and xref:controller-create-workflow-template[Creating a workflow template].
+. Complete the following fields:
+Payload URL:: Copy the contents of the *Webhook URL* from the job template and paste it here.
+The results are sent to this address from GitHub.
+Content type:: Set it to *application/json*.
+Secret:: Copy the contents of the *Webhook Key* from the job template and paste it here.
+Which events would you like to trigger this webhook?:: Select the types of events you want to trigger a webhook. 
+Any such event will trigger the job or workflow. 
+To have the job status (pending, error, success) sent back to GitHub, you must select *Pull requests* in the *Let me select individual events* section.
++
+image::ug-webhooks-github-repo-choose-events.png[Github repo choose events]
++
+Active:: Leave this checked.
+. Click btn:[Add webhook].
+. When your webhook is configured, it is displayed in the list of webhooks active for your repository, along with the ability to edit or delete it.
+Click on a webhook, to go to the *Manage webhook* screen. 
+. Scroll to view the delivery attempts made to your webhook and whether they succeeded or failed.
+
+.Additional resources
+For more information, see the link:https://docs.github.com/en/webhooks[Webhooks documentation].

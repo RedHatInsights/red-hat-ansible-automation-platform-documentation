@@ -1,0 +1,21 @@
+[id="controller-work-with-webhooks"]
+
+= Working with Webhooks
+
+A [ADD XREF]Webhook enables you to execute specified commands between applications over the web. 
+{ControllerNameStart} currently provides webhook integration with GitHub and GitLab. 
+
+Set up a webhook using the following services:
+
+* xref:controller-set-up-github-webhook[Setting up a GitHub webhook]
+* xref:controller-set-up-gitlab-webhook[Setting up a GitLab webhook]
+* xref:controller-view-payload-output[Viewing a payload output]
+
+The webhook post-status-back functionality for GitHub and GitLab is designed to work only under certain CI events. 
+Receiving another kind of event results in messages such as the following in the service log:
+
+`awx.main.models.mixins Webhook event did not have a status API endpoint associated, skipping.`
+
+include::platform/proc-controller-set-up-github-webhook.adoc[leveloffset=+1]
+include::platform/proc-controller-set-up-gitlab-webhook.adoc[leveloffset=+1]
+include::platform/proc-controller-view-payload-output.adoc[leveloffset=+1]

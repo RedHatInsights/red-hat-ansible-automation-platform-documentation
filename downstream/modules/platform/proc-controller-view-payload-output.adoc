@@ -1,0 +1,15 @@
+[id="controller-view-payload-output"]
+
+= Viewing the payload output
+
+You can view the entire payload exposed as an extra variable. 
+
+.Procedure
+
+. From the navigation panel, select menu:Views[Jobs].
+. Select the job template with the webhook enabled.
+. Select the *Details* tab.
+. In the *Extra Variables* field, view the payload output from the `awx_webhook_payload` variable, as shown in the following example:
+
+image::ug-webhooks-jobs-extra-vars-payload.png[Webhooks extra variables payload]
+image::ug-webhooks-jobs-extra-vars-payload-expanded.png[Webhook extra variables payload expanded]
