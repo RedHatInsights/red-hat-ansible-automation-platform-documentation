@@ -30,6 +30,8 @@ If you use one value in `[database]` and both {ControllerName} and {HubNameMain}
 * {ControllerNameStart} does not configure replication or failover for the database that it uses.
 * {ControllerName} works with any replication that you have.
 
+.{EDAcontroller}
+* {EDAcontroller} must be installed on a separate server and cannot be installed on the same host as {HubName} and {ControllerName}.
 
 .Clustered installations
 * When upgrading an existing cluster, you can also reconfigure your cluster to omit existing instances or instance groups. 

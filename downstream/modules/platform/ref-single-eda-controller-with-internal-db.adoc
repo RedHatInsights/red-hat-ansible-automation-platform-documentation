@@ -10,6 +10,10 @@ Use this example to populate the inventory file to install {EDAcontroller}. This
 {ControllerNameStart} must be installed before you populate the inventory file with the following {EDAName} variables.
 ====
 
+[IMPORTANT]
+====
+{EDAcontroller} must be installed on a separate server and cannot be installed on the same host as {HubName} and {ControllerName}.
+====
 -----
 # Automation EDA Controller Configuration
 #
