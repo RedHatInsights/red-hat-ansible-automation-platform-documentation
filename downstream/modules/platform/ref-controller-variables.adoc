@@ -26,6 +26,11 @@ Default = 63072000 seconds, or two years.
 | *`nginx_tls_protocols`* | Defines support for `ssl_protocols` in Nginx.
 
 Default = `TLSv1.2`.
+| *`nginx_user_headers`* | List of nginx headers for the {ControllerName} web server.
+
+Each element in the list is provided to the web server's nginx configuration as a separate line. 
+
+Default = empty list
 | *`node_state`* | _Optional_
 
 The status of a node or group of nodes.

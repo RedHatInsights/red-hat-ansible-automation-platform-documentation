@@ -14,24 +14,24 @@ Default = `admin`
 | *`automationedacontroller_admin_email`* | Email address used by django for the admin user for {EDAcontroller}.
 
 Default = `admin@example.com`
-| *`automationedacontroller_disable_https`* | Boolean flag to disable HTTPS {EDAcontroller}.
-
-Default = `false`
-| *`automationedacontroller_disable_hsts`* | Boolean flag to disable HSTS {EDAcontroller}.
-
-Default = `false`
-| *`automationedacontroller_user_headers`* | List of additional nginx headers to add to {EDAcontroller}'s nginx configuration.
-
-Default = empty list
-| *`automationedacontroller_nginx_tls_files_remote`* | Boolean flag to specify whether cert sources are on the remote host (true) or local (false).
-
-Default = `false`
 | *`automationedacontroller_allowed_hostnames`* | List of additional addresses to enable for user access to {EDAcontroller}.
 
 Default = empty list
 | *`automationedacontroller_controller_verify_ssl`* | Boolean flag used to verify Automation Controller's web certificates when making calls from {EDAcontroller}. Verified is `true`; not verified is `false`.
 
 Default = `false`
+| *`automationedacontroller_disable_https`* | Boolean flag to disable HTTPS {EDAcontroller}. 
+
+Default = `false`
+| *`automationedacontroller_disable_hsts`* | Boolean flag to disable HSTS {EDAcontroller}. 
+
+Default = `false`
+| *`automationedacontroller_nginx_tls_files_remote`* | Boolean flag to specify whether cert sources are on the remote host (true) or local (false). 
+
+Default = `false`
+| *`automationedacontroller_user_headers`* | List of additional nginx headers to add to {EDAcontroller}'s nginx configuration. 
+
+Default = empty list
 //Add this variable back for the next release, as long as approved by development.
 //| *`automationedacontroller_websocket_ssl_verify`* |
 //SSL verification for the Daphne websocket used by podman to communicate from the pod to the host. Default is false to disable SSL connection as verified

@@ -178,6 +178,11 @@ Default = `false`.
 For Ansible Automation Platform 2.2.1 and later, the value of this has been fixed at true.
 
 {HubNameStart} always updates with the latest packages.
+| *`automationhub_user_headers`* | List of nginx headers for {HubNameMain}'s web server. 
+
+Each element in the list is provided to the web server's nginx configuration as a separate line. 
+
+Default = empty list
 | *`ee_from_hub_only`* | When deployed with {HubName} the installer pushes execution environment images to {HubName} and configures {ControllerName} to pull images from the {HubName} registry.
 
 To make {HubName} the only registry to pull execution environment images from, set 'ee_from_hub_only' to `true`.

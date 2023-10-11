@@ -9,6 +9,11 @@
 Set to `False` to disable.
 
 Default = `true`
+| *`nginx_user_http_config`* | List of nginx configurations for `/etc/nginx/nginx.conf` under the http section. 
+
+Each element in the list is provided into `http nginx config` as a separate line. 
+
+Default = empty list
 | *`registry_password`* | `registry_password` is only required if a non-bundle installer is used.
 
 Password credential for access to `registry_url`.
