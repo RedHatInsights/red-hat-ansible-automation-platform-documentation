@@ -9,24 +9,4 @@ You can assign permissions to groups in {PrivateHubName} that enable users to ac
 
 You can add permissions when first creating a group or edit an existing group to add or remove permissions
 
-.Prerequisites
-
-* You have *Change group* permissions and can edit group permissions in {PrivateHubName}.
-
-.Procedure
-. Log in to your {PrivateHubName}.
-. From the navigation panel, select menu:User Access[Roles].
-. Click btn:[Add roles].
-. In the name field, enter the role name.
-. In the description field, enter a description.
-. Complete the *Permissions* section. For each permission type, select permissions from the list.
-. Click btn:[Save].
-. From the navigation panel, select menu:User Access[Groups].
-. Click a group name.
-. Click the *Access* tab.
-. Click btn:[Add roles].
-. Select the role saved in step 7.
-. To confirm the selected role, click btn:[Next].
-. Click btn:[Add].
-
-The group can now access features in {PrivateHubName} associated with their assigned permissions.
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/getting_started_with_automation_hub/index#proc-assigning-permissions[Assigning permissions to groups] in the Getting started with automation hub guide.
