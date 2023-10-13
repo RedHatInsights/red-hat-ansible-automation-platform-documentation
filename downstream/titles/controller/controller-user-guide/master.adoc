@@ -54,4 +54,4 @@ include::platform/assembly-ug-controller-notifications.adoc[leveloffset=+1]
 //31 Setting up Insights Remediations
 //32 Best Practices
 //33 Security
-//34 Glossary
+include::platform/assembly-controller-glossary.adoc[leveloffset=+1]
