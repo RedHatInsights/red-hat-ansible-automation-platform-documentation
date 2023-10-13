@@ -1,0 +1,19 @@
+[id="controller-notification-slack"]
+
+= Slack
+
+Slack is a collaborative team communication and messaging tool.
+
+Provide the following details to set up a Slack notification:
+
+* A Slack application.
+For more information, see the link:https://api.slack.com/authentication/basics[Quickstart] page of the Slack documentation on how to create one.
+* A token.
+For more information, see link:https://api.slack.com/legacy/enabling-bot-users[Legacy bots] and specific details on bot tokens on the link:https://api.slack.com/authentication/token-types#bot[Current token types] documentation page.
+
+When you have a bot or app set up, you must complete the following steps:
+
+. Navigate to *Apps*.
+. Click the newly-created app and then go to *Add features and functionality*, which enables you to configure incoming webhooks, bots, and permissions, as well as *Install your app to your workspace*.
+
+image::ug-notification-template-slack.png[Notification template slack]

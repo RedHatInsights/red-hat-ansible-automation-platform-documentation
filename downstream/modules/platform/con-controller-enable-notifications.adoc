@@ -1,0 +1,28 @@
+[id="controller-enable-disable-notifications"]
+
+= Enable and disable notifications
+
+You can set up notifications to notify you when a specific job starts, as well as on the success or failure at the end of the job run. 
+Note the following behaviors:
+
+* If a workflow job template has notification on start enabled, and a job template within that workflow also has notification on start enabled, you receive notifications for both.
+* You can enable notifications to run on many job templates within a workflow job template.
+* You can enable notifications to run on a sliced job template start and each slice generates a notification.
+* When you enable a notification to run on job start, and that notification gets deleted, the job template continues to run, but results in an error message.
+
+You can enable notifications on job start, job success, and job failure, or a combination of these, from the *Notifications* tab of the following resources:
+
+* Job Templates
+* Workflow Templates
+* Projects (shown in the following example)
+* Inventory Sources
+* Organizations
+
+image::ug-projects-notifications-example-list.png[Projects notification example] 
+
+For workflow templates that have approval nodes, in addition to *Start*, *Success*, and *Failure*, you can enable or disable certain approval-related events:
+
+image::ug-completed-notifications-view.png[Completed notifications view]
+
+.Additional resources
+For more information on working with these types of nodes, see xref:controller-approval-nodes[Approval nodes].

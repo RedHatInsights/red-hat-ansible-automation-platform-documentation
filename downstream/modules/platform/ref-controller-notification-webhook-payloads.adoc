@@ -1,0 +1,67 @@
+[id="controller-notification-webhook-payloads"]
+
+= Webhook payloads
+
+The following data is sent by {ControllerName} at the webhook endpoint:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+job id
+name
+url
+created_by
+started
+finished
+status
+traceback
+inventory
+project
+playbook
+credential
+limit
+extra_vars
+hosts
+http method
+----
+
+The following is an example of a `started` notification through a webhook message as returned by {ControllerName}:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{"id": 38, "name": "Demo Job Template", "url": "https://host/#/jobs/playbook/38", "created_by": "bianca", "started":
+"2020-07-28T19:57:07.888193+00:00", "finished": null, "status": "running", "traceback": "", "inventory": "Demo Inventory",
+"project": "Demo Project", "playbook": "hello_world.yml", "credential": "Demo Credential", "limit": "", "extra_vars": "{}",
+"hosts": {}}POST / HTTP/1.1
+----
+
+The following data is returned by {ControllerName} at the webhook endpoint for a `success/fail` status:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+job id
+name
+url
+created_by
+started
+finished
+status
+traceback
+inventory
+project
+playbook
+credential
+limit
+extra_vars
+hosts
+----
+
+The following is an example of a `success/fail` notification as returned by {ControllerName} through a webhook message:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{"id": 46, "name": "AWX-Collection-tests-awx_job_wait-long_running-XVFBGRSAvUUIrYKn", "url": "https://host/#/jobs/playbook/46",
+"created_by": "bianca", "started": "2020-07-28T20:43:36.966686+00:00", "finished": "2020-07-28T20:43:44.936072+00:00", "status": "failed",
+"traceback": "", "inventory": "Demo Inventory", "project": "AWX-Collection-tests-awx_job_wait-long_running-JJSlglnwtsRJyQmw", "playbook":
+"fail.yml", "credential": null, "limit": "", "extra_vars": "{\"sleep_interval\": 300}", "hosts": {"localhost": {"failed": true, "changed": 0,
+"dark": 0, "failures": 1, "ok": 1, "processed": 1, "skipped": 0, "rescued": 0, "ignored": 0}}}
+----

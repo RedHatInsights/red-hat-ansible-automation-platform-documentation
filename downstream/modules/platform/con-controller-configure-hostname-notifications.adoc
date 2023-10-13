@@ -1,0 +1,10 @@
+[id="controller-configure-hostname-notifications"]
+
+= Configure the host hostname for notifications
+
+In link:https://docs.ansible.com/automation-controller/4.4/html/administration/configure_tower_in_tower.html#configure-tower-system[System settings], you can replace the default value in the *Base URL of the service* field with your preferred hostname to change the notification hostname.
+
+image::ug-system-misc-baseurl.png[System Base URL]
+
+Refreshing your license also changes the notification hostname. 
+New installations of {ControllerName} do not have to set the hostname for notifications.

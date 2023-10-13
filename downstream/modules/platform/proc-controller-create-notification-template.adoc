@@ -1,0 +1,17 @@
+[id="controller-create-notification-template"]
+
+= Creating a notification template
+
+Use the following procedure to create a notification template.
+
+.Procedure
+
+. From the navigation panel, select menu:Administration[Notifications].
+. Click btn:[Add].
+. Complete the following fields:
+Name:: Enter the name of the notification.
+Description:: Enter a description for the notification. This field is optional.
+Organization:: Specify the organization that the notification belongs to.
+Type:: Choose a type of notification from the drop-down menu.
+For more information, see the xref:controller-notification-types[Notification types] section.
+. Click btn:[Save].

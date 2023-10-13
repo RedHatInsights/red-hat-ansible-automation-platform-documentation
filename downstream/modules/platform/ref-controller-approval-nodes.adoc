@@ -17,7 +17,7 @@ The approver is anyone who meets the following criteria:
 * A user who has organization administrator or above privileges (for the organization associated with that workflow job template).
 * A user who has the *Approve* permission explicitly assigned to them within that specific workflow job template.
 
-image::ug-wf-node-approval-notifications.png[NOde approval notifications]
+image::ug-wf-node-approval-notifications.png[Node approval notifications]
 
 If pending approval nodes are not approved within the specified time limit (if an expiration was assigned) or they are denied, then they are marked as "timed out" or "failed", and move on to the next "on fail node" or "always node". 
 If approved, the "on success" path is taken. 

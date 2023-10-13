@@ -60,15 +60,15 @@ You can configure the following notifications:
 
 The following notification sources are supported:
 
-* Email
-* Grafana
-* IRC
-* Mattermost
-* PagerDuty
-* Rocket.Chat
-* Slack
-* Twilio
-* Webhook (post to an arbitrary webhook, for integration into other tools)
+* xref:controller-notification-email[Email]
+* xref:controller-notification-grafana[Grafana]
+* xref:controller-notification-irc[IRC]
+* xref:controller-notification-mattermost[Mattermost]
+* xref:controller-notification-pagerduty[PagerDuty]
+* xref:controller-notification-rocketchat[Rocket.Chat]
+* xref:controller-notification-slack[Slack]
+* xref:controller-notification-twilio[Twilio]
+* xref:controller-notification-webhook[Webhook] (post to an arbitrary webhook, for integration into other tools)
 
 You can also customize notification messages for each of the preceding notification types.
 

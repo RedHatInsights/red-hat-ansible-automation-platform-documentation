@@ -48,7 +48,7 @@ include::platform/assembly-ug-controller-workflow-job-templates.adoc[leveloffset
 include::platform/assembly-ug-controller-instance-groups.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-jobs.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-work-with-webhooks.adoc[leveloffset=+1]
-//28 Notifications
+include::platform/assembly-ug-controller-notifications.adoc[leveloffset=+1]
 //29 Supported Attributes for Custom Notifications
 //30 Schedules
 //31 Setting up Insights Remediations

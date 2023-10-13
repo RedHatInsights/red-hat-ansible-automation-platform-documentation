@@ -1,0 +1,156 @@
+[id="controller-create-custom-notifications"]
+
+= Creating custom notifications
+
+You can [ADD XREF]:customize the text content of each xref:controller-notification-types[Notification type] on the notification form.
+
+.Procedure
+
+. On the *Notification Templates* list view click btn:[Add].
+. Choose a notification type from the *Type* list.
+. Enable *Customize messages* using the toggle.
++
+image::ug-notification-template-customize.png[Customize notification]
++
+. You can provide a custom message for various job events, such as the following:
+
+* *Start message*
+* *Success message body*
+* *Error message*
+* *Workflow approved message*
+* *Workflow denied message*
+* *Workflow running message*
+* *Workflow pending message*
+* *Workflow timed out message*
+
+The message forms vary depending on the type of notification that you are configuring. 
+For example, messages for Email and PagerDuty notifications appear to be a typical email, with a body and a subject, in which case, {ControllerName} displays the fields as *Message* and *Message Body*. 
+Other notification types only expect a *Message* for each type of event.
+
+The *Message* fields are pre-populated with a template containing a top-level variable, `job` coupled with an attribute, such as `id` or `name`. 
+Templates are enclosed in curly brackets and can draw from a fixed set of fields provided by {ControllerName}, as shown in the pre-populated message fields:
+
+image::ug-notification-template-customize-simple-syntax.png[Customize notification syntax]
+
+This pre-populated field suggests commonly displayed messages to a recipient who is notified of an event. 
+You can customize these messages with different criteria by adding your own attributes for the job as needed. 
+Custom notification messages are rendered using Jinja; the same templating engine used by Ansible playbooks.
+
+Messages and message bodies have different types of content, as the following points outline:
+
+* Messages are always just strings, one-liners only. 
+New lines are not supported.
+* Message bodies are either a dictionary or a block of text:
+** The message body for Webhooks and PagerDuty uses dictionary definitions. 
+The default message body for these is `{{ job_metadata }}`, you can either leave that as it is or provide your own dictionary.
+** The message body for email uses a block of text or a multi-line string. The default message body is:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{{ job_friendly_name }} #{{ job.id }} had status {{ job.status }}, view details at {{ url }} {{ job_metadata }}
+----
++
+You can edit this text leaving `{{ job_metadata }}` in, or drop `{{ job_metadata }}`. 
+Since the body is a block of text, it can be any string you want.
+`{{ job_metadata }}` is rendered as a dictionary containing fields that describe the job being executed. 
+In all cases, {{ job_metadata }} includes the following fields:
+
+*** `id`
+*** `name`
+*** `url`
+*** `created_by`
+*** `started`
+*** `finished`
+*** `status`
+*** `traceback`
++
+[NOTE]
+====
+You cannot query individual fields within `{{ job_metadata }}`. 
+When you use `{{ job_metadata }}` in a notification template, all data is returned.
+====
++
+The resulting dictionary looks like the following:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{"id": 18,
+ "name": "Project - Space Procedures",
+ "url": "https://host/#/jobs/project/18",
+ "created_by": "admin",
+ "started": "2019-10-26T00:20:45.139356+00:00",
+ "finished": "2019-10-26T00:20:55.769713+00:00",
+ "status": "successful",
+ "traceback": ""
+}
+----
++
+If `{{ job_metadata }}` is rendered in a job, it includes the following additional fields:
++
+*** `inventory`
+*** `project`
+*** `playbook`
+*** `credential`
+*** `limit`
+*** `extra_vars`
+*** `hosts`
++
+The resulting dictionary looks like the following:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{"id": 12,
+ "name": "JobTemplate - Launch Rockets",
+ "url": "https://host/#/jobs/playbook/12",
+ "created_by": "admin",
+ "started": "2019-10-26T00:02:07.943774+00:00",
+ "finished": null,
+ "status": "running",
+ "traceback": "",
+ "inventory": "Inventory - Fleet",
+ "project": "Project - Space Procedures",
+ "playbook": "launch.yml",
+ "credential": "Credential - Mission Control",
+ "limit": "",
+ "extra_vars": "{}",
+ "hosts": {}
+}
+----
++
+If `{{ job_metadata }}` is rendered in a workflow job, it includes the following additional field:
++
+*** `body` (This enumerates the nodes in the workflow job and includes a description of the job associated with each node)
++
+The resulting dictionary looks like the following:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{"id": 14,
+ "name": "Workflow Job Template - Launch Mars Mission",
+ "url": "https://host/#/workflows/14",
+ "created_by": "admin",
+ "started": "2019-10-26T00:11:04.554468+00:00",
+ "finished": "2019-10-26T00:11:24.249899+00:00",
+ "status": "successful",
+ "traceback": "",
+ "body": "Workflow job summary:
+
+         node #1 spawns job #15, \"Assemble Fleet JT\", which finished with status successful.
+         node #2 spawns job #16, \"Mission Start approval node\", which finished with status successful.\n
+         node #3 spawns job #17, \"Deploy Fleet\", which finished with status successful."
+}
+----
+
+If you create a notification template that uses invalid syntax or references unusable fields, an error message displays indicating the nature of the error. 
+If you delete a notification's custom message, the default message is shown in its place.
+
+[IMPORTANT]
+====
+If you save the notifications template without editing the custom message (or edit and revert back to the default values), the *Details* screen assumes the defaults and does not display the custom message tables. If you edit and save any of the values, the entire table displays in the *Details* screen.
+====
+
+.Additional resources
+
+* For more information, see link:https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#using-variables-with-jinja2[Using variables with Jinja2].
+* {ControllerNameStart} requires valid syntax to retrieve the correct data to display the messages. 
+For a list of supported attributes and the proper syntax construction, see the [ADD XREF]Supported Attributes for Custom Notifications section.

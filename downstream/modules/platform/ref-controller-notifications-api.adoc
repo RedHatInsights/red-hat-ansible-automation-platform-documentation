@@ -1,0 +1,21 @@
+[id="controller-notifications-api"]
+
+= Notifications API
+
+Use the `started`, `success`, or `error` endpoints:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+/api/v2/organizations/N/notification_templates_started/
+/api/v2/organizations/N/notification_templates_success/
+/api/v2/organizations/N/notification_templates_error/
+----
+
+Additionally, the `../../../N/notification_templates_started` endpoints have `GET` and `POST` actions for:
+
+* Organizations
+* Projects
+* Inventory Sources
+* Job Templates
+* System Job Templates
+* Workflow Job Templates

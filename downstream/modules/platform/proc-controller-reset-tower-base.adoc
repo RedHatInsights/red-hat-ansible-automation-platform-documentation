@@ -1,0 +1,16 @@
+[id="controller-reset-tower-base"]
+
+= Resetting TOWER_URL_BASE
+
+{ControllerNameStart} determines how the base URL (`TOWER_URL_BASE`) is defined by looking at an incoming request and setting the server address based on that incoming request.
+
+{ControllerNameStart} takes settings values from the database first. 
+If no settings values are found, it uses the values from the settings files. 
+If you post a license by navigating to the {ControllerName} host's IP address, the posted license is written to the settings entry in the database.
+
+Use the following procedure to reset `TOWER_URL_BASE` if the wrong address has been picked up:
+
+.Procedure
+
+. From the navigation panel, select menu:Settings[Misc. system settings].
+. Re-add your license for the DNS entry you wish to appear in notifications.

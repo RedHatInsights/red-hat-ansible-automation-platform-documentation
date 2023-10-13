@@ -1,0 +1,19 @@
+[id="controller-notification-pagerduty"]
+
+= PagerDuty
+
+To integrate PagerDuty, you must first create an API key in the link:http://docs.grafana.org/tutorials/api_org_token_howto/[PagerDuty system].
+This is the token that is given to {ControllerName}.
+Then create a *Service* which provides an *Integration Key* that is also be given to {ControllerName}. 
+
+Provide the following details to set up a PagerDuty notification:
+
+API Token:: You must first create an API key in the PagerDuty system.
+This is the token that is given to {ControllerName}.
+PagerDuty subdomain:: When you sign up for the PagerDuty account, you receive a unique subdomain to communicate with. 
+For example, if you signed up as "testuser", the web dashboard is at `testuser.pagerduty.com` and you give the API `testuser` as the subdomain, not the full domain.
+API service/integration Key:: Enter the API service/integration key created in PagerDuty.
+Client identifier:: This is sent along with the alert content to the PagerDuty service to help identify the service that is using the API key and service. 
+This is helpful if multiple integrations are using the same API key and service.
+
+image::ug-notification-template-pagerduty.png[Notification template PagerDuty]

@@ -1,0 +1,37 @@
+[id="controller-notification-webhook"]
+
+= Webhook
+
+The webhook notification type provides a simple interface for sending `POSTs` to a predefined web service.
+{ControllerNameStart} `POSTs` to this address using application and JSON content type with the data payload containing the relevant details in JSON format.
+Some web service APIs expect HTTP requests to be in a certain format with certain fields.
+
+Configure the webhook notification with the following:
+
+* Configure the HTTP method, using `POST` or `PUT`.
+* The body of the outgoing request.
+* Configure authentication, using basic auth.
+
+Provide the following details to set up a webhook notification:
+
+Username (optional):: Enter a username.
+Basic auth password (optional)::
+Target URL:: Enter the full URL to which the webhook notification is `PUT` or `POSTed`.
+Disable SSL Verification:: SSL verification is on by default, but you can choose to turn off verification of the authenticity of the target's certificate. 
+Select this option to disable verification for environments that use internal or private CA's.
+HTTP Headers:: Enter Headers in JSON format where the keys and values are strings. 
+For example:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+ {"Authentication": "988881adc9fc3655077dc2d4d757d480b5ea0e11", "MessageType": "Test"}`.
+----
+
+HTTP Method:: Select the method for your webhook:
+* *POST*: Creates a new resource. 
+It also acts as a catch-all for operations that do not fit into the other categories. 
+It is likely that you need to *POST* unless you know your webhook service expects a *PUT*.
+* *PUT*: Updates a specific resource (by an identifier) or a collection of resources. 
+You can also use *PUT* to create a specific resource if the resource identifier is known beforehand.
+
+image::ug-notification-template-webhook.png[Notification template webhook]

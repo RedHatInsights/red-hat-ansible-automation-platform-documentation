@@ -1,0 +1,42 @@
+[id="controller-notifications"]
+
+= Notifications
+
+A [ADD XREF]Notification Template is an instance of a xref:controller-notification-types[Notification type] such as Email, Slack or a Webhook, has a name, description and configuration defined in a Notification template. 
+
+The following include examples of details needed to add a notification template:
+
+* A username, password, server, and recipients are needed for an Email notification template
+* The token and a list of channels are needed for a Slack notification template
+* The URL and Headers are needed for a Webhook notification template
+
+When a job fails, a notification is sent using the configuration that you define in the notification template.
+
+The following shows the typical flow for the notification system:
+
+* You create a notification template to the `REST API` at the `/api/v2/notification_templates endpoint`, either through the API or through the UI.
+* You assign the notification template to any of the various objects that support it (all variants of job templates as well as organizations and projects) and at the appropriate trigger level for which you want the notification (started, success, or error). 
+For example, you might want to assign a particular notification template to trigger when Job Template 1 fails. 
+In this case, you associate the notification template with the job template at `/api/v2/job_templates/n/notification_templates_error` API endpoint.
+* You can set notifications on job start and job end. 
+Users and teams are also able to define their own notifications that can be attached to arbitrary jobs.
+
+include::platform/con-controller-notification-hierarchy.adoc[leveloffset=+1]
+include::platform/con-controller-notification-workflow.adoc[leveloffset=+1]
+include::platform/proc-controller-create-notification-template.adoc[leveloffset=+1]
+include::platform/con-controller-notification-types.adoc[leveloffset=+1]
+include::platform/ref-controller-notification-email.adoc[leveloffset=+2]
+include::platform/ref-controller-notification-grafana.adoc[leveloffset=+2]
+include::platform/ref-controller-notification-irc.adoc[leveloffset=+2]
+include::platform/ref-controller-notification-mattermost.adoc[leveloffset=+2]
+include::platform/ref-controller-notification-pager-duty.adoc[leveloffset=+2]
+include::platform/ref-controller-notification-rocketchat.adoc[leveloffset=+2]
+include::platform/ref-controller-notification-slack.adoc[leveloffset=+2]
+include::platform/ref-controller-notification-twilio.adoc[leveloffset=+2]
+include::platform/ref-controller-notification-webhook.adoc[leveloffset=+2]
+include::platform/ref-controller-notification-webhook-payloads.adoc[leveloffset=+3]
+include::platform/proc-controller-create-custom-notifications.adoc[leveloffset=+1]
+include::platform/con-controller-enable-notifications.adoc[leveloffset=+1]
+include::platform/con-controller-configure-hostname-notifications.adoc[leveloffset=+1]
+include::platform/proc-controller-reset-tower-base.adoc[leveloffset=+2]
+include::platform/ref-controller-notifications-api.adoc[leveloffset=+1]

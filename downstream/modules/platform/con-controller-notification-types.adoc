@@ -1,0 +1,24 @@
+[id="controller-notification-types"]
+
+= Notification types
+
+The following notification types are supported with {ControllerName}:
+
+* xref:controller-notification-email[Email]
+* xref:controller-notification-grafana[Grafana]
+* xref:controller-notification-irc[IRC]
+* xref:controller-notification-mattermost[Mattermost]
+* xref:controller-notification-pagerduty[PagerDuty]
+* xref:controller-notification-rocketchat[Rocket.Chat]
+* xref:controller-notification-slack[Slack]
+* xref:controller-notification-twilio[Twilio]
+* xref:controller-notification-webhook[Webhook]
+** xref:controller-notification-webhook-payloads[Webhook payloads]
+
+Each notification type has its own configuration and behavioral semantics.
+You might need to test them in different ways. 
+Additionally, you can customize each type of notification down to a specific detail or a set of criteria to trigger a notification. 
+
+.Additional resources
+For more information on configuring custom notifications, see [ADD XREF]Create custom notifications. 
+The following sections give further details on each type of notification.

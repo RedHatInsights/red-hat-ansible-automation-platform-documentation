@@ -1,0 +1,15 @@
+[id="controller-notification-email"]
+
+= Email
+
+The email notification type supports a wide variety of SMTP servers and has support for TLS/SSL connections.
+
+Provide the following details to set up an email notification:
+
+* *Host*
+* *Recipient list*
+* *Sender e-mail*
+* *Port*
+* *Timeout* (in seconds): Enables you to specify up to 120 seconds, the length of time that {ControllerName} attempts to connect to the email server before failure.
+
+image::ug-notification-template-email.png[Notification template email]

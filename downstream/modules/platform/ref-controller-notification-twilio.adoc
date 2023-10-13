@@ -1,0 +1,24 @@
+[id="controller-notification-twilio"]
+
+= Twilio
+
+Twilio is a voice and SMS automation service.
+When you are signed in, you must create a phone number from which the messages are sent.
+You can then define a *Messaging Service* under *Programmable SMS* and associate the number you previously created with it.
+
+You might need to verify this number or some other information before you are permitted to use it to send to any numbers. 
+The *Messaging Service* does not require a status callback URL and it does not need the ability to process inbound messages.
+
+Under your individual (or sub) account settings, you have API credentials. 
+Twilio uses two credentials to determine which account an API request is coming from. 
+The *Account SID*, which acts as a username, and the *Auth Token* which acts as a password.
+
+Provide the following details to set up a Twilio notification:
+
+Account token:: Enter the account token.
+Source phone number:: Enter the number associated with the messaging service in the form of "+15556667777".
+Destination SMS number(s):: Enter the list of numbers you want to receive the SMS. 
+It must be a 10 digit phone number.
+Account SID:: Enter the account SID.
+
+image::ug-notification-template-twilio.png[Notification template Twilio]
