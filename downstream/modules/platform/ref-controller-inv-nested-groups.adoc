@@ -1,0 +1,64 @@
+[id="ref-controller-inv-nested-groups"]
+
+= Nested groups
+
+A nested group consists of two groups where one is a child of the other.
+In the following example, the child group has another host inside of it, and the parent group has a variable defined. 
+
+Because of the way Ansible core operates, the variable of the parent group is available in the namespace as a playbook is running, and can be used for
+filtering.
+
+The following example inventory file, `nested.yml` is in YAML format:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+all:
+  children:
+    groupA:
+      vars:
+        filter_var: filter_val
+      children:
+        groupB:
+          hosts:
+            host1: {}
+    ungrouped:
+      hosts:
+        host2: {}
+----
+
+Because `host1` is in `groupB`, it is also in `groupA`.
+
+
+.Filter on nested group names
+
+Use the following YAML format to filter on nested group names:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+`source_vars`:
+
+plugin: constructed
+
+`limit`: `groupA`
+----
+
+.Filter on nested group property
+
+Use the following YAML format to filter on a group variable, even if the host is indirectly a member of that group.
+
+In the inventory content, note that `host2` is not expected to have the variable `filter_var` defined, because it is not in any of the groups. 
+Because `strict: true` is used, use a default value so that hosts without that variable are defined. 
+Using this, `host2`, returns `false` from the expression, instead of producing an error. 
+`host1` inherits the variable from its groups, and is returned.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+source_vars:
+
+plugin: constructed
+strict: true
+groups:
+  filter_var_is_filter_val: filter_var | default("") == "filter_val"
+
+limit: filter_var_is_filter_val
+----

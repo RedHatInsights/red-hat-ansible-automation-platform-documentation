@@ -1,0 +1,46 @@
+[id="proc-controller-add-groups"]
+
+= Adding groups to inventories
+
+Inventories are divided into groups, which can contain hosts and other groups. 
+Groups are only applicable to standard inventories and are not a configurable directly through a Smart Inventory. 
+You can associate an existing group through hosts that are used with standard inventories. 
+
+The following actions are available for standard inventories:
+
+* Create a new Group
+* Create a new Host
+* Run a command on the selected Inventory
+* Edit Inventory properties
+* View activity streams for Groups and Hosts
+* Obtain help building your Inventory
+
+[NOTE]
+====
+Inventory sources are not associated with groups. 
+Spawned groups are top-level and can still have child groups. 
+All of these spawned groups can have hosts.
+====
+
+Use the following procedure to create a new group for an inventory:
+
+.Procedure
+. Select the Inventory name you want to add groups to.
+. In the Inventory *Details* page, select menu:Groups[].
+. Click btn:[Add] to open the *Create Group* window.
+//+
+//image:inventories-add-group-new.png[Inventories_manage_group_add]
+
+. Enter the appropriate details:
+
+* *Name*: Required
+* Optional: *Description*: Enter a description as appropriate.
+* *Variables*: Enter definitions and values to be applied to all hosts in this group. 
+Enter variables using either JSON or YAML syntax. 
+Use the radio button to toggle between the two.
+. Click btn:[Save].
+. When you have added a group to a template, the *Group details* page is displayed. 
+
+include::proc-controller-add-groups-to-groups.adoc[leveloffset=+1]
+include::ref-controller-view-edit-inv-groups.adoc[leveloffset=+1]
+

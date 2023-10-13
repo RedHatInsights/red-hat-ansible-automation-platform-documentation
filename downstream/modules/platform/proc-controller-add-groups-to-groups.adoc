@@ -1,0 +1,33 @@
+[id="proc-controller-add-groups-to-groups"]
+
+= Adding groups within groups
+
+Use the following procedure to add groups within groups:
+
+.Procedure
+. When you have added a group to a template, the *Group details* page is displayed. 
+. Select the menu:Related Groups[] tab.
+. Click btn:[Add].
+. Select whether to add a group that already exists in your configuration or create a new group.
+. If creating a new group, enter the appropriate details into the required and optional fields:
+
+* *Name*: Required
+* Optional: *Description*: Enter a description as appropriate.
+* *Variables*: Enter definitions and values to be applied to all hosts in this group. 
+Enter variables using either JSON or YAML syntax. 
+Use the radio button to toggle between the two.
+. Click btn:[Save].
+. The *Create Group* window closes and the newly created group is displayed as an entry in the list of groups associated with the group that it was
+created for.
+//+
+//image:inventories-add-group-subgroup-added.png[Inventories add group subgroup]
+
+If you choose to add an existing group, available groups appear in a separate selection window.
+//+
+//image:inventories-add-group-existing-subgroup.png[Inventories add group existing subgroup]
+
+When a group is selected, it is displayed in the list of groups associated with the group.
+
+* To configure additional groups and hosts under the subgroup, click the name of the subgroup from the list of groups and repeat the steps listed in this section.
+
+

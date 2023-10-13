@@ -39,7 +39,7 @@ include::platform/assembly-controller-execution-environments.adoc[leveloffset=+1
 include::platform/assembly-controller-ee-setup-reference.adoc[leveloffset=+1]
 include::platform/assembly-controller-projects.adoc[leveloffset=+1]
 include::platform/assembly-controller-project-signing.adoc[leveloffset=+1]
-//19 Inventories
+include::platform/assembly-controller-inventories.adoc[leveloffset=+1]
 include::platform/assembly-controller-inventory-templates.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-job-templates.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-job-slicing.adoc[leveloffset=+1]

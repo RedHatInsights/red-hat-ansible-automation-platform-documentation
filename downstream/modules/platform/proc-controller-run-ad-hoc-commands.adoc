@@ -1,0 +1,62 @@
+[id="proc-controller-run-ad-hoc-commands"]
+
+= Running Ad Hoc commands
+
+_Ad hoc_ refers to using Ansible to perform a quick command, using /usr/bin/ansible, rather than the orchestration language, which is /usr/bin/ansible-playbook. 
+An example of an ad hoc command might be rebooting 50 machines in your infrastructure. 
+Anything you can do ad hoc can be accomplished by writing a Playbook. 
+Playbooks can also glue lots of other operations together.
+
+Use the following procedure to run an ad hoc command:
+
+.Procedure
+. Select an inventory source from the list of hosts or groups. 
+The inventory source can be a single group or host, a selection of multiple hosts, or a selection of multiple groups.
++
+image:inventories-add-group-host-added.png[ad hoc-commands-inventory-home]
+
+. Click btn:[Run Command].
+The Run command window opens.
++
+image:ad-hoc-run-execute-command.png[Run command  window]
+
+. Enter the following information:
+
+* *Module*: Select one of the modules that the supports running commands against.
++
+[width="72%",cols="21%,32%,21%,26%",]
+|===
+| command | apt_repository | mount | win_service
+| shell | apt_rpm | ping | win_updates
+| yum | service | selinux | win_group
+| apt | group | setup | win_user
+| apt_key | user | win_ping | win_user
+|===
+* *Arguments*: Provide arguments to be used with the module you selected.
+* *Limit*: Enter the limit used to target hosts in the inventory. 
+To target all hosts in the inventory enter `all` or `*`, or leave the field blank. 
+This is automatically populated with whatever was selected in the previous view before clicking the launch button.
+* *Machine Credential*: Select the credential to use when accessing the remote hosts to run the command. 
+Choose the credential containing the username and SSH key or password that Ansbile needs to log into the remote hosts.
+* *Verbosity*: Select a verbosity level for the standard output.
+* *Forks*: If needed, select the number of parallel or simultaneous processes to use while executing the command.
+* *Show Changes*: Select to enable the display of Ansible changes in the
+standard output. 
+The default is OFF.
+* *Enable Privilege Escalation*: If enabled, the playbook is run with administrator privileges. 
+This is the equivalent of passing the `--become` option to the `ansible` command.
+* *Extra Variables*: Provide extra command line variables to be applied when running this inventory. 
+Enter variables using either JSON or YAML syntax. 
+Use the radio button to toggle between the two.
++
+image:ad-hoc-commands-inventory-run-command.png[ad hoc-commands-inventory-run-command]
+
+. Click btn:[Next] to choose the {ExecEnvShort} you want the ad hoc command to be run against.
++
+image:ad-hoc-commands-inventory-run-command-ee.png[Chose execution ennvironment]
+
+. Click btn:[Next] to choose the credential you want to use.
+. Click the *Launch* button.
+The results display in the *Output* tab of the module's job window.
++
+image:ad-hoc-commands-inventory-results-example.png[ad hoc-commands-inventory-results-example]

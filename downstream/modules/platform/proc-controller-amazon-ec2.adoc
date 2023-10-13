@@ -1,0 +1,34 @@
+[id="proc-controller-amazon-ec2"]
+
+= {AWS} EC2
+
+Use the following procedure to configure an AWS EC2-sourced inventory, 
+
+.Procedure
+. In the *Create new source* page, select menu:Source[]
+. From the menu, select *Amazon EC2*.
+. The *Create Source* window expands with additional fields. 
+Enter the following details:
+
+* Optional: *Credential*: Choose from an existing AWS credential (for more information, refer to xref:controller-credentials[Credentials]).
++
+If {ControllerName} is running on an EC2 instance with an assigned IAM Role, the credential can be omitted, and the security credentials from
+the instance metadata are used instead. 
+For more information on using IAM Roles, see link:http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-%20roles-for-amazon-ec2.html[IAM_Roles_for_Amazon_EC2_documentation_at_Amazon].
+
+. Optional: You can specify the verbosity, host filter, enabled variables or values, and update options as described in
+xref:proc-controller-add-source[Adding a source].
+. Use the *Source Variables* field to override variables used by the `aws_ec2` inventory plugin. 
+Enter variables using either JSON or YAML syntax. 
+Use the radio button to toggle between the two. 
+For more information on these variables, see the
+link:https://console.redhat.com/ansible/automation-hub/repo/published/amazon/aws/content/inventory/aws_ec2[aws inventory plugin documenation].
+//+
+//image:inventories-create-source-AWS-example.png[Inventories- create source - AWS EC2 example]
+
+[NOTE]
+====
+If you only use `include_filters`, the AWS plugin always returns all the hosts. 
+To use this correctly, the first condition on the `or` must be on `filters` and then build the rest of the `OR` conditions on a list of
+`include_filters`.
+====

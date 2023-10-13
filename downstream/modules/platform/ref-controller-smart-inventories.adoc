@@ -1,0 +1,68 @@
+[id="ref-controller-smart-inventories"]
+
+= Smart Inventories
+
+Smart Inventories are collections of hosts defined by a stored search that can be viewed like a standard inventory and can be easily used with job runs. 
+Organization administrators have admin permission for inventories in their organization and can create a Smart Inventories. 
+
+A Smart Inventory is identified by `KIND=smart`. 
+
+You can define a Smart Inventory using the same method being used with Search. 
+`InventorySource` is directly associated with an Inventory.
+
+[NOTE]
+====
+Smart inventories are deprecated and will be removed in a future release. 
+Consider moving to constructed inventories for enhancements and replacement.
+====
+
+The `Inventory` model has the following new fields that are blank by default but are set accordingly for Smart Inventories:
+
+* `kind` is set to `smart` for Smart Inventories
+* `host_filter` is set AND `kind` is set to `smart` for Smart Inventories.
+
+The `host` model has a related endpoint, `smart_inventories` that identifies a set of all the Smart Inventories a host is associated with.
+The membership table is updated every time a job runs against a smart inventory.
+
+[NOTE]
+====
+To update the memberships more frequently, you can change the `AWX_REBUILD_SMART_MEMBERSHIP` file-based setting to `True`. (The default is False).
+This updates memberships in the following events:
+
+* a new host is added
+* an existing host is modified (updated or deleted)
+* a new Smart Inventory is added
+* an existing Smart Inventory is modified (updated or deleted)
+====
+
+You can view inventories without being editable:
+
+* Names of Host and Group created as a result of an inventory source synchronization.
+* Group records cannot be edited or moved
+
+You cannot create hosts from a Smart Inventory host endpoint (`/inventories/N/hosts/`) as with a normal inventory. 
+The administrator of a Smart Inventory has permission to edit fields such as the name, description, variables, and the ability to delete, but does not have the permission to modify the `host_filter`, because that affects which hosts (that have a primary membership inside another inventory) are included in the smart inventory. 
+
+`host_filter` only applies to hosts inside of inventories inside the Smart Inventory's organization.
+
+To modify `host_filter`, you must be the organization administrator of the inventory's organization. 
+Organization administrators have implicit "admin" access to all inventories inside the organization, therefore, this does not convey any permissions they did not already possess.
+
+Administrators of the Smart Inventory can grant other users (who are not also admins of your organization) permissions such as "use" and "adhoc" to the smart inventory. 
+These permit the actions indicated by the role, as with other standard inventories. 
+However, this does not grant any special permissions to hosts (which live in a different inventory).
+It does not permit direct read permission to hosts, or permit them to see additional hosts under `/#/hosts/`, although they can still view
+the hosts under the smart inventory host list.
+
+In some situations, you can modify the following:
+
+* A new Host manually created on Inventory w/ inventory sources
+* In Groups that were created as a result of inventory source syncs
+* Variables on Host and Group are changeable
+
+Hosts associated with the Smart Inventory are manifested at view time.
+If the results of a Smart Inventory contains more than one host with identical hostnames, only one of the matching hosts is included as
+part of the Smart Inventory, ordered by Host ID.
+
+include::ref-controller-smart-host-filter.adoc[leveloffset=+1]
+include::proc-controller-define-filter-with-facts.adoc[leveloffset=+1]

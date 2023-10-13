@@ -1,0 +1,45 @@
+[id="proc-controller-define-filter-with-facts"]
+
+= Defining a host filter with ansible_facts
+
+Use the following procedure to use `ansible_facts` to define the host filter when creating Smart Inventories.
+
+.Procedure
+. In the navigation panel, select menu:Resources[Inventories].
+. Click btn:[Add] and select *Add Smart Inventory* from the menu.
+. In the *Create new smart inventory* page, click the image:search.png[Search,15,15] icon in the *Smart host filter* field.
+This opens a window to filter hosts for this inventory.
++
+image:define_host_filter.png[Dfine host filter]
+
+. In the search menu, change the search criteria from *Name* to *Advanced* and select *ansible_facts* from the *Key* field.
++
+image:inventories-smart-define-host-filter.png[Define host filter facts]
++
+If you wanted to add the following ansible fact:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+/api/v2/hosts/?host_filter=ansible_facts__ansible_processor[]="GenuineIntel"
+----
++
+In the search field, enter `ansible_processor[]="GenuineIntel"` (no extra spaces or `__` before the value) and click btn:[Enter].
++
+image:inventories-smart-define-host-filter-facts.png[image]
++
+The search criteria for the specified ansible fact is displayed.
++
+//image:inventories-smart-define-host-filter-facts2.png[image]
+
+. Click btn:[Select] to add it to the *Smart host filter* field.
++
+//image:inventories-smart-create-filter-added.png[image]
+
+. Click btn:[Save].
+. The *Details* tab of the new Smart Inventory opens and displays the specified ansible facts in the *Smart host filter* field.
++
+//image:inventories-smart-create-details.png[image]
+
+. From the *Details* view, you can edit the *Smart host filter* field by clicking *Edit* and delete existing filter, clear all existing filters, or add new ones.
++
+image:inventories-smart-define-host-filter-facts-group.png[image]

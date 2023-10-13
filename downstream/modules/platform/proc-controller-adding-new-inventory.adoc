@@ -1,0 +1,86 @@
+[id="proc-controller-adding-new-inventory"]
+
+= Add a new inventory
+
+Adding a new inventory involves the following components:
+
+* xref:proc-controller-adding-inv-permissions[Adding permissions to inventories]
+* xref:proc-controller-add-groups[Adding groups to inventories]
+* xref:proc-controller-add-hosts[Adding a host]
+* xref:proc-controller-add-source[Adding a source]
+* xref:ref-controller-view-completed-jobs[View completed jobs]
+
+Use the following procedure to create a inventory:
+
+.Procedure
+. From the navigation panel, select menu:Resources[Inventories].
+The *Inventories* window displays a list of the inventories that are currently available. 
+. Click btn:[Add], and select the type of inventory to create.
+. Enter the appropriate details into the following fields:
+
+* *Name*: Enter a name appropriate for this inventory.
+* Optional: *Description*: Enter an arbitrary description as appropriate.
+* *Organization*: Required. Choose among the available organizations.
+* Only applicable to Smart Inventories: *Smart Host Filter*: Click the image:search.png[Search,15,15] icon to open a separate window to filter hosts for this inventory. 
+These options are based on the organization you chose.
++
+Filters are similar to tags in that tags are used to filter certain hosts that contain those names. 
+Therefore, to populate the *Smart Host Filter* field, specify a tag that contains the hosts you want, not the hosts themselves. 
+Enter the tag in the *Search* field and click btn:[Enter]. 
+Filters are case-sensitive. 
+For more information, see xref:ref-controller-smart-host-filter[Smart host filters].
+* *Instance Groups*: Click the image:search.png[Search,15,15] icon to open a separate window. 
+Select the instance group or groups for this inventory to run on. 
+If the list is extensive, use the search to narrow the options. 
+You can select multiple instance groups and sort them in the order that you want them run.
++
+image:select-instance-groups-modal.png[image]
+
+* Optional: *Labels*: Supply labels that describe this inventory, so they can be used to group and filter inventories and jobs.
+* Only applicable to constructed inventories: *Input inventories*: Specify the source inventories to include in this constructed inventory.
+Click the image:search.png[Search,15,15] icon to select from available inventories. 
+Empty groups from input inventories are copied into the constructed inventory.
+* Optional:(Only applicable to constructed inventories): *Cached timeout (seconds)*: Set the length of time you want the cache plugin
+data to timeout.
+* Only applicable to constructed inventories: *Verbosity*: Control the level of output that Ansible produces as the playbook executes related to inventory sources associated with constructed inventories. 
+Select the verbosity from Normal to various Verbose or Debug settings. 
+This only appears in the "details" report view. 
+** Verbose logging includes the output of all commands. 
+** Debug logging is exceedingly verbose and includes information on SSH operations that can be useful in certain
+support instances. Most users do not need to see debug mode output.
+* Only applicable to constructed inventories: *Limit*: Restricts the number of returned hosts for the inventory source associated with the constructed inventory. 
+You can paste a group name into the limit field to only include hosts in that group. 
+For more information, ses the *Source vars* setting.
+* Only applicable to standard inventories: *Options*: Check the *Prevent Instance Group Fallback* option to enable only the instance groups listed in the *Instance Groups* field to execute the job. 
+If unchecked, all available instances in the execution pool will be used based on the hierarchy described in
+[Control where a job runs] in the _Automation Controller Administration Guide_. 
+Click the image:question_circle.png[Help,15,15] icon for additional information.
++
+[NOTE]
+====
+Set the `prevent_instance_group_fallback` option for Smart Inventories through the API.
+====
+
+* *Variables* (*Source vars* for constructed inventories):
+
+** *Variables* Variable definitions and values to apply to all hosts in this inventory. 
+Enter variables using either JSON or YAML syntax. 
+Use the radio button to toggle between the two.
+** *Source vars* for constructed inventories creates groups, specifically under the `groups` key of the data. 
+It accepts Jinja2 template syntax, renders it for every host, makes a `true` or `false` evaluation, and includes the host in the group (from the key of the entry) if the result is `true`. 
+This is particularly useful because you can paste that group name into the limit field to only include hosts in that group. 
+See Example 1 in xref:ref-controller-smart-host-filter[Smart host filters].
+. Click btn:[Save].
+
+After saving the new inventory, you can proceed with configuring permissions, groups, hosts, sources, and view completed jobs, if
+applicable to the type of inventory. 
+
+include::proc-controller-adding-inv-permissions.adoc[leveloffset=+1]
+include::proc-controller-add-groups.adoc[leveloffset=+1]
+include::proc-controller-add-hosts.adoc[leveloffset=+1]
+include::proc-controller-add-source.adoc[leveloffset=+1]
+include::ref-controller-view-completed-jobs.adoc[leveloffset=+1]
+
+
+
+

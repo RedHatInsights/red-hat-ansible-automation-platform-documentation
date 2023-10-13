@@ -1,0 +1,27 @@
+[id="proc-controller-inv-source-satellite"]
+
+= Red Hat Satellite 6
+
+Use the following procedure to configure a Red Hat Satellite-sourced inventory.
+
+.Procedure
+. In the *Create new source* page, select menu:Source[]
+. From the menu, select *Red Hat Satellite*.
+. The *Create Source* window expands with the required *Credential* field.
+Choose from an existing Satellite Credential. 
+For more information, refer to xref:controller-credentials[Credentials].
+. Optional: You can specify the verbosity, host filter, enabled variables or values, and update options as described in xref:proc-controller-add-source[Adding a source].
+. Use the *Source Variables* field to specify parameters used by the `foreman` inventory source. 
+Enter variables using either JSON or YAML syntax. 
+Use the radio button to toggle between the two. 
+For more information on these variables, see the link:https://docs.ansible.com/ansible/latest/collections/theforeman/foreman/foreman_inventory.html[Foreman inventory source] in the Ansible documentation.
+//+
+//image:inventories-create-source-rhsat6-example.png[Inventories - create source - RH Satellite example]
+
+If you encounter an issue with the {ControllerName} inventory not having the "related groups" from Satellite, you might need to define these variables in the inventory source. 
+For more information, see xref:controller-rh-satellite[Red Hat Satellite 6].
+
+If you see the message, `"no foreman.id" variable(s) when syncing the inventory`, refer to the solution on the Red Hat Customer Portal at:
+https://access.redhat.com/solutions/5826451. 
+//This article is out of date, it still refers to Ansible Tower.
+Be sure to login with your customer credentials to access the full article.

@@ -1,0 +1,83 @@
+[id="proc-controller-add-hosts"]
+
+= Adding hosts to an inventory
+
+You can configure hosts for the inventory as well as for groups and groups within groups. 
+
+Use the following procedure to add hosts:
+
+.Procedure
+. Select the Inventory name you want to add groups to.
+. In the Inventory *Details* page, select menu:Hosts[].
+. Click btn:[Add].
+. Select whether to add a host that already exists in your configuration or create a new host.
+. If creating a new host, set the toggle to 'on' to include this host while running jobs.
+. Enter the appropriate details:
+
+* *Host Name*: Required
+* Optional: *Description*: Enter a description as appropriate.
+* *Variables*: Enter definitions and values to be applied to all hosts in this group, as in the following example:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+  ansible_user : <username to ssh into>
+  ansible_ssh_pass : <password for the username>
+  ansible_become_pass: <password for becoming the root>
+} 
+----
++
+Enter variables using either JSON or YAML syntax.
+Use the radio button to toggle between the two.
+. Click btn:[Save].
+. The *Create Host* window closes and the newly created host is displayed in the list of hosts associated with the group that it was created for.
++
+image:inventories-add-group-host-added.png[Inventories add group host]
++
+If you choose to add an existing host, available hosts appear in a separate selection window.
+//+
+//image:inventories-add-existing-host.png[Inventories add existing host]
++
+When a host is selected, it is displayed in the list of hosts associated with the group. 
+
+. You can disassociate a host from this screen by selecting the host and clicking the image:disassociate.png[Disassociate,10,10] icon.
++
+[NOTE]
+====
+You can also run ad hoc commands from this screen. 
+For more information, see [Running ad hoc commands].
+====
+
+. To configure additional groups for the host, click the name of the host from the list of hosts.
++
+image:inventories-add-group-host-added-emphasized.png[Inventories add group host emphasized]
++
+This opens the *Details* tab of the selected host.
+//+
+//image:inventories-add-group-host-details.png[Inventories add group host details]
+
+. Select menu:Groups[] to configure groups for the host.
+. Click btn:[Add] to associate the host with an existing group.
+Available groups appear in a separate selection window.
++
+image:inventories-add-group-hosts-add-groups.png[image]
+
+. Select the groups to associate with the host and click btn:[Save].
++
+When a group is associated, it is displayed in the list of groups associated with the host.
+
+. If a host was used to run a job, you can view details about those jobs in the *Completed Jobs* tab of the host.
+. Click btn:[Expanded] to view details about each job.
++
+image:inventories-add-host-view-completed-jobs.png[image]
+
+[NOTE]
+====
+You can create hosts in bulk using the newly added endpoint in the API, `/api/v2/bulk/host_create`. 
+This endpoint accepts JSON and you can specify the target inventory and a list of hosts to add to the inventory. 
+These hosts must be unique within the inventory. 
+Either all hosts are added, or an error is returned indicating why the operation was not able to complete. 
+Use the *OPTIONS* request to return the relevant schema. 
+
+For more information, see https://docs.ansible.com/automation-controller/latest/html/controllerapi/api_ref.html#/Bulk[Bulk endpoints] in the _Automation Controller API Guide_.
+====

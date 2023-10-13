@@ -1,0 +1,11 @@
+[id="ref-controller-view-edit-inv-groups"]
+
+= View or edit inventory groups
+
+The groups list view displays all your inventory groups, or you can filter it to only display the root groups. 
+An inventory group is considered a root group if it is not a subset of another group.
+
+You can delete a subgroup without concern for dependencies, because {ControllerName} looks for dependencies such as child groups or hosts. 
+If any exist, a confirmation window displays for you to choose whether to delete the root group and all of its subgroups and hosts; or to promote the subgroups so they become the top-level inventory groups, along with their hosts.
+
+image:inventories-groups-delete-root-with-children.png[Delete group]

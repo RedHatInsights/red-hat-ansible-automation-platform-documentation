@@ -25,7 +25,9 @@ For instructions, see the xref:controller-workflow-visualizer[Workflow Visualize
 ====
 
 include::platform/proc-controller-create-job-template.adoc[leveloffset=+1]
+:context: templates
 include::platform/proc-controller-adding-permissions.adoc[leveloffset=+1]
+:!context: templates
 include::platform/proc-controller-delete-job-template.adoc[leveloffset=+1]
 include::platform/con-controller-work-with-notifications.adoc[leveloffset=+1]
 include::platform/con-controller-view-completed-jobs.adoc[leveloffset=+1]

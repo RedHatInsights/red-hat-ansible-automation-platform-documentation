@@ -1,0 +1,18 @@
+[id="ref-controller-filter-environ-variables"]
+
+= Filter on environment variables
+
+The following example involves filtering on environmental variables using the YAML format:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+
+source_vars:
+
+plugin: constructed
+strict: true
+groups:
+  hosts_using_xterm: ansible_env.TERM == "xterm"
+
+limit: hosts_using_xterm
+----

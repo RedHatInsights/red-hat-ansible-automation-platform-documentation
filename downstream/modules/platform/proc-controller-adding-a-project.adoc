@@ -22,7 +22,7 @@ Options in the following sections become available depending on the type chosen.
 For more information, see [Manage playbooks manually] or [Manage playbooks using source control].
 * Optional: *Content Signature Validation Credential* - Use this field to enable content verification. 
 Specify the GPG key to use for validating content signature during project synchronization. 
-If the content has been tamperedowith, the job will not run. 
+If the content has been tampered with, the job will not run. 
 Fro more information, see [Project signing and verification].
 . Click btn:[Save].
 

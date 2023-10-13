@@ -1,0 +1,35 @@
+[id="proc-controller-adding-inv-permissions"]
+
+= Adding permissions to inventories
+
+Use the following procedure to add permissions to inventories:
+
+.Procedure
+. From the navigation panel, select menu:Resources[Inventories].
+. Select a template, and in the *Access tab*, click btn:[Add].
+. Select a user or team to add and click btn:[Next].
+. Select the check box next to a name to add one or more users or teams from the list as members.
+. Click btn:[Next].
++
+image:organizations-add-users-for-example-organization.png[image]
++
+In this example, two users have been selected to be added.
+
+. Select the roles you want the selected users or teams to have.
+Scroll down for a complete list of roles. 
+Different resources have different options available.
++
+image:organizations-add-users-roles.png[Add user roles]
+
+. Click btn:[Save] to apply the roles to the selected users or teams and to add them as members.
+
+The Add Users/Teams window closes to display the updated roles assigned for each user and team.
+
+image:permissions-tab-roles-assigned.png[Permissions tab with Role Assignments]
+
+.Removing a permission
+* To remove roles for a particular user, click the image:disassociate.png[Disassociate,10,10] icon next to its resource.
+
+This launches a confirmation window, asking you to confirm the disassociation.
+
+//image:permissions-disassociate-confirm.png[image]

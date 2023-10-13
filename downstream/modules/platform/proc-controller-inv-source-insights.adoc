@@ -1,0 +1,19 @@
+[id="proc-controller-inv-source-insights"]
+
+= Red Hat Insights
+
+Use the following procedure to configure a Red Hat Insights-sourced inventory.
+
+.Procedure
+. In the *Create new source* page, select menu:Source[]
+. From the menu, select *Red Hat Insights*.
+. The *Create Source* window expands with the required *Credential* field.
+Choose from an existing GCE Credential. 
+For more information, refer to xref:controller-credentials[Credentials].
+. Optional: You can specify the verbosity, host filter, enabled variables or values, and update options as described in xref:proc-controller-add-source[Adding a source].
+. Use the *Source Variables* field to override variables used by the `gcp_compute` inventory plugin. 
+Enter variables using either JSON or YAML syntax. 
+Use the radio button to toggle between the two. 
+For more information on these variables, see link:https://console.redhat.com/ansible/automation-hub/repo/published/redhat/insights/content/inventory/insights[insights inventory plugin].
+//+
+//image:inventories-create-source-insights-example.png[Inventories - create source - RH Insights example]

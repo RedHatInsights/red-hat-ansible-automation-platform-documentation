@@ -1,0 +1,115 @@
+[id="proc-controller-add-source"]
+
+= Adding a source
+
+Inventory sources are not associated with groups. 
+Spawned groups are top-level and can still have child groups. 
+All of these spawned groups can have hosts. 
+Adding a source to an inventory only applies to standard inventories. 
+Smart inventories inherit their source from the standard inventories they are associated with. 
+
+Use the following procedure to configure the source for the inventory:
+
+.Procedure
+. Select the Inventory name you want to add a source to.
+. In the Inventory *Details* page, select menu:Sources[].
+. Click btn:[Add]. This opens the *Create Source* window.
++
+image:inventories-create-source.png[Inventories create source]
+
+. Enter the appropriate details:
+
+* *Name*: Required
+* Optional: *Description*: Enter a description as appropriate.
+* Optional: *Execution Environment*: Click the image:search.png[Search,15,15] icon or enter the name of the execution environment with which you want to run your inventory imports. For more information on building an {ExecEnvShort}, see xref:assembly-controller-execution-environments[Execution environments].
+* *Source*: Choose a source for your inventory. 
+For more information on sources, and supplying the appropriate information, see [Inventory sources].
+
+. When the information for your chosen [Inventory sources] is complete, you can optionally specify other common parameters, such as verbosity, host filters, and variables.
+
+. Use the *Verbosity* menu to select the level of output on any inventory source's update jobs.
+. Use the *Host Filter* field to specify only matching host names to be imported into {ControllerName}.
+. In the *Enabled Variable* field, specify that {ControllerName} retrieves the enabled state from the dictionary of host variables. 
+You can specify the enabled variable using dot notation as 'foo.bar', in which case the lookup searches nested dictionaries, equivalent to: `from_dict.get('foo', {}).get('bar', default)`.
+. If you specified a dictionary of host variables in the *Enabled Variable* field, you can provide a value to enable on import. 
+For example, for `enabled_var='status.power_state'` and `'enabled_value='powered_on'` in the following host variables, the host is marked `enabled`:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+"status": {
+"power_state": "powered_on",
+"created": "2020-08-04T18:13:04+00:00",
+"healthy": true
+},
+"name": "foobar",
+"ip_address": "192.168.2.1"
+}
+----
++
+If `power_state` is any value other than `powered_on`, then the host is disabled when imported into {ControllerName}. 
+If the key is not found, then the host is enabled.
+
+. All cloud inventory sources have the following update options:
+
+* *Overwrite*: If checked, any hosts and groups that were previously present on the external source but are now removed, are removed from
+the {ControllerName} inventory. 
+Hosts and groups that were not managed by the inventory source are promoted to the next manually created group, or, if there is no manually created group to promote them into, they are left in the "all" default group for the inventory.
++
+When not checked, local child hosts and groups not found on the external source remain untouched by the inventory update process.
+* *Overwrite Variables*: If checked, all variables for child groups and hosts are removed and replaced by those found on the external source. 
++
+When not checked, a merge is performed, combining local variables with those found on the external source.
+* *Update on Launch*: Each time a job runs using this inventory, refresh the inventory from the selected source before executing job tasks. 
++
+To avoid job overflows if jobs are spawned faster than the inventory can synchronize, selecting this enables you to configure a *Cache Timeout* to previous cache inventory synchronizations for a certain number of seconds.
+
+
+The *Update on Launch* setting refers to a dependency system for projects and inventory, and does not specifically exclude two jobs from running at the same time. 
++
+If a cache timeout is specified, then the dependencies for the second job are created, and it uses the project and inventory update that the first job spawned.
++ 
+Both jobs then wait for that project or inventory update to finish before proceeding. 
+If they are different job templates, they can then both start and run at the same time, if the system has the capacity to do so. 
+If you intend to use {ControllerName}'s provisioning callback feature with a dynamic inventory source, *Update on Launch* must be set for the inventory
+group.
+
+If you synchronize an inventory source that uses a project that has *Update On Launch* set, then the project might automatically update (according to
+cache timeout rules) before the inventory update starts.
+
+You can create a job template that uses an inventory that sources from the same project that the template uses. 
+In such a case, the project updates and then the inventory updates (if updates are not already in progress, or if the cache timeout has not already expired).
+. Review your entries and selections. 
+This enables you to configure additional details, such as schedules and notifications.
+. To configure schedules associated with this inventory source, click the *Schedules* tab.
+. If schedules are already set up, then review, edit, enable or disable your schedule preferences.
+. If schedules have not been set up, for more information about setting up schedules, see [Schedules].
+
+= Configuring notifications for the source
+
+Use the following procedure to configure notifications for the source.
+
+. In the Inventory *Details* page, select menu:Notifications[].
++
+[NOTE]
+====
+The *Notifications* tab is only present when you have saved the newly-created source.
+
+image:inventories-create-source-with-notifications-tab.png[+Notification tab]
+====
+. If notifications are already set up, use the toggles to enable or disable the notifications to use with your particular source. 
+For more information, see [Enable and Disable Notifications].
+. If notifications have not been set up, see [Notifications] for more information.
+. Review your entries and selections. 
+. Click btn:[Save].
+
+When a source is defined, it is displayed in the list of sources associated with the inventory. 
+From the *Sources* tab you can perform a sync on a single source, or sync all of them at once. 
+You can also perform additional actions such as scheduling a sync process, and edit or delete the source.
+
+image:inventories-view-sources.png[Inventories view sources]
+
+include::ref-controller-inventory-sources.adoc[leveloffset=+1]
+include::ref-controller-export-old-scripts.adoc[leveloffset=+1]
+
+

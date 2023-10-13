@@ -1,0 +1,27 @@
+[id="proc-controller-inv-source-vm-vcenter"]
+
+= VMware vCenter
+
+Use the following procedure to configure a VMWare-sourced inventory.
+
+.Procedure
+. In the *Create new source* page, select menu:Source[]
+. From the menu, select *VMware vCenter*.
+. The *Create Source* window expands with the required *Credential* field.
+Choose from an existing VMware Credential. 
+For more information, refer to xref:controller-credentials[Credentials].
+
+. Optional: You can specify the verbosity, host filter, enabled variables or values, and update options as described in xref:proc-controller-add-source[Adding a source].
+. Use the *Source Variables* field to override variables used by the `vmware_inventory` inventory plugin. 
+Enter variables using either JSON or YAML syntax. 
+Use the radio button to toggle between the two. 
+For mor information on these variables, see the link:https://github.com/ansible-collections/community.vmware/blob/main/plugins/inventory/vmware_vm_inventory.py[vmware_inventory inventory plugin].
+
+[NOTE]
+====
+From Ansible 2.9 VMWare properties have changed from lower case to camelCase. 
+{ControllerNameStart} provides aliases for the top-level keys, but lower case keys in nested properties have been discontinued.
+For a list of valid and supported properties, refer to link:https://docs.ansible.com/ansible/latest/collections/community/vmware/docsite/vmware_scenarios/vmware_inventory_vm_attributes.html[Using Virtual machine attributes in VMware dynamic inventory plugin].
+====
+
+//image:inventories-create-source-vmware-example.png[Inventories- create source - VMWare example]

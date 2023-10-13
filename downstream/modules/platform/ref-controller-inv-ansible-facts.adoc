@@ -1,0 +1,10 @@
+[id="ref-controller-inv-ansible-facts"]
+
+= Ansible facts
+
+To create an inventory with Ansible facts, you must run a playbook against the inventory that has the setting `gather_facts: true`. 
+The facts differ system-to-system. 
+The following examples are not intended to address all known scenarios.
+
+include::ref-controller-filter-environ-variables.adoc[leveloffset=+1]
+include::ref-controller-filter-hosts-cpu-type.adoc[leveloffset=+1]

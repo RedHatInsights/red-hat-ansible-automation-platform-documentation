@@ -1,0 +1,8 @@
+[id="ref-controller-view-completed-jobs"]
+
+= View completed jobs
+
+If an inventory was used to run a job, you can view details about those jobs in the *Completed Jobs* tab of the inventory and click *Expanded*
+to view details about each job.
+
+image:inventories-view-completed-jobs.png[Inventories view completed jobs]

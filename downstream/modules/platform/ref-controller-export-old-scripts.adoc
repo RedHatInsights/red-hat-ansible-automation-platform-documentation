@@ -1,0 +1,72 @@
+[id="ref-controller-export-old-scripts"]
+
+= Export old inventory scripts
+
+Despite the removal of the custom inventory scripts API, the scripts are still saved in the database. 
+The commands described in this section enable you to recover the scripts from the database in a format that is suitable for you to subsequently check into source control. 
+
+Use the following commands:
+
+[options="nowrap" subs="+attributes"]
+----
+$ awx-manage export_custom_scripts --filename=my_scripts.tar
+
+Dump of old custom inventory scripts at my_scripts.tar
+----
+
+Making use of the output:
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+$ mkdir my_scripts
+$ tar -xf my_scripts.tar -C my_scripts
+----
+
+The name of the scripts has the form: `_<pk>__<name>`. 
+This is the naming scheme used for project folders.
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+$ ls my_scripts
+_10__inventory_script_rawhook             _19__                                       _30__inventory_script_listenhospital
+_11__inventory_script_upperorder          _1__inventory_script_commercialinternet45   _4__inventory_script_whitestring
+_12__inventory_script_eastplant           _22__inventory_script_pinexchange           _5__inventory_script_literaturepossession
+_13__inventory_script_governmentculture   _23__inventory_script_brainluck             _6__inventory_script_opportunitytelephone
+_14__inventory_script_bottomguess         _25__inventory_script_buyerleague           _7__inventory_script_letjury
+_15__inventory_script_wallisland          _26__inventory_script_lifesport             _8__random_inventory_script_
+_16__inventory_script_wallisland          _27__inventory_script_exchangesomewhere     _9__random_inventory_script_
+_17__inventory_script_bidstory            _28__inventory_script_boxchild
+_18__p                                    _29__inventory_script_wearstress
+----
+
+Each file contains a script. 
+Scripts can be `bash/python/ruby/more`, so the extension is not included. 
+They are all directly executable. 
+Executing the script dumps the inventory data.
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+$ ./my_scripts/_11__inventory_script_upperorder
+{"group_\ud801\udcb0\uc20e\u7b0e\ud81c\udfeb\ub12b\ub4d0\u9ac6\ud81e\udf07\u6ff9\uc17b": {"hosts":
+["host_\ud821\udcad\u68b6\u7a51\u93b4\u69cf\uc3c2\ud81f\uddbe\ud820\udc92\u3143\u62c7",
+"host_\u6057\u3985\u1f60\ufefb\u1b22\ubd2d\ua90c\ud81a\udc69\u1344\u9d15",
+"host_\u78a0\ud820\udef3\u925e\u69da\ua549\ud80c\ude7e\ud81e\udc91\ud808\uddd1\u57d6\ud801\ude57",
+"host_\ud83a\udc2d\ud7f7\ua18a\u779a\ud800\udf8b\u7903\ud820\udead\u4154\ud808\ude15\u9711",
+"host_\u18a1\u9d6f\u08ac\u74c2\u54e2\u740e\u5f02\ud81d\uddee\ufbd6\u4506"], "vars": {"ansible_host": "127.0.0.1", "ansible_connection":
+"local"}}}
+----
+
+You can verify functionality with `ansible-inventory`. 
+This gives the same data, but reformatted.
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+$ ansible-inventory -i ./my_scripts/_11__inventory_script_upperorder --list --export
+----
+
+In the preceding example, you can `cd` into `my_scripts` and then issue a `git init` command, add the scripts you want, push it to source control,
+and then create an SCM inventory source in the user interface.
+
+For more information on syncing or using custom inventory scripts, refer
+to [Inventory file importing] in the _Automation Controller Administration Guide_.
+

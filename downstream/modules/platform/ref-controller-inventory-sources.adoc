@@ -1,0 +1,33 @@
+[id="ref-controller-inventory-sources"]
+
+= Inventory sources
+
+Choose a source which matches the inventory type against which a host can be entered:
+
+* xref:proc-controller-sourced-from-project[Sourcing from a Project]
+* xref:proc-controller-amazon-ec2[{AWS} EC2]
+* xref:proc-controller-inv-source-gce[Google Compute Engine]
+* xref:proc-controller-azure-resource-manager[{Azure} Resource Manager]
+* xref:proc-controller-inv-source-vm-vcenter[VMware vCenter]
+* xref:proc-controller-inv-source-satellite[Red Hat Satellite 6]
+* xref:proc-controller-inv-source-insights[Red Hat Insights]
+* xref:proc-controller-inv-source-openstack[OpenStack]
+* xref:proc-controller-inv-source-rh-virt[Red Hat Virtualization]
+* xref:proc-controller-inv-source-aap[{PlatformName}]
+
+include::proc-controller-sourced-from-project.adoc[leveloffset=+1]
+include::proc-controller-amazon-ec2.adoc[leveloffset=+1]
+include::proc-controller-inv-source-gce.adoc[leveloffset=+1]
+include::proc-controller-azure-resource-manager.adoc[leveloffset=+1]
+include::proc-controller-inv-source-vm-vcenter.adoc[leveloffset=+1]
+include::proc-controller-inv-source-satellite.adoc[leveloffset=+1]
+include::proc-controller-inv-source-insights.adoc[leveloffset=+1]
+include::proc-controller-inv-source-openstack.adoc[leveloffset=+1]
+include::proc-controller-inv-source-rh-virt.adoc[leveloffset=+1]
+include::proc-controller-inv-source-aap.adoc[leveloffset=+1]
+
+
+
+
+
+

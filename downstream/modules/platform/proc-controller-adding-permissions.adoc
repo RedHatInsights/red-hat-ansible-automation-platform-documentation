@@ -1,11 +1,10 @@
-[id="controller-adding-permissions"]
+[id="controller-adding-permissions_{context}"]
 
 = Adding permissions to templates
 
 Use the following steps to add permissions for the team.
 
 .Procedure
-
 . From the navigation panel, select menu:Resources[Templates].
 . Select a template, and in the *Access tab*, click btn:[Add].
 . Select *Users* or *Teams* and click btn:[Next].

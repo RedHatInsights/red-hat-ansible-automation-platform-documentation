@@ -1,0 +1,38 @@
+[id="ref-controller-constructed-inventories"]
+
+= Constructed Inventories
+//As Smart inventories are deprecated, I'm removing comparisons from the souce text. 
+You can create a new inventory (called a constructed inventory) from a list of input inventories. 
+
+A constructed inventory contains copies of hosts and groups in its input inventories, permitting jobs to target groups of servers across multiple inventories. 
+Groups and hostvars can be added to the inventory content, and hosts can be filtered to limit the size of the constructed inventory. 
+
+Constructed inventories use the link:https://docs.ansible.com/ansible/latest/collections/ansible/builtin/constructed_inventory.html#ansible-builtin-constructed-inventory-uses-jinja2-to-construct-vars-and-groups-based-on-existing-inventory[ansible.builtin.constructed inventory] model.
+
+The key factors of a constructed inventory are:
+
+* The normal Ansible hostvars namespace is available
+* They provide groups
+
+//Smart inventories take a `host_filter` as input and create a resultant inventory with hosts from inventories in its organization. 
+Constructed inventories take `source_vars` and `limit` as inputs and transform its `input_inventories` into a new inventory, complete with groups. Groups (existing or constructed) can then be referenced in the `limit` field to reduce the number of hosts produced.
+
+You can construct groups based on these host properties:
+
+* RHEL major/minor versions
+* Windows hosts
+* Cloud based instances tagged in a certain region
+* other
+
+The following is an example of a constructed inventory details view:
+
+image:inventories-constructed-inventory-details.png[Constructed inventory details]
+
+The examples described in subsequent sections are organized by the structure of the input inventories.
+
+include::ref-controller-group-name-vars-filtering.adoc[leveloffset=+1]
+include::ref-controller-inv-debugging-tips.adoc[leveloffset=+1]
+include::ref-controller-inv-nested-groups.adoc[leveloffset=+1]
+include::ref-controller-inv-ansible-facts.adoc[leveloffset=+1]
+
+
