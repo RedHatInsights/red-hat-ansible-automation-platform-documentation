@@ -5,17 +5,17 @@
 
 [role="_abstract"]
 
-{PlatformName} (AAP) uses a number of ports to communicate with its services. These ports must be open and available for incoming connection to the {PlatformName} server in order for it to work. Ensure that these ports are available and are not being blocked by the server firewall.
+{PlatformName} (AAP) uses several ports to communicate with its services. These ports must be open and available for incoming connections to the {PlatformName} server in order for it to work. Ensure that these ports are available and are not being blocked by the server firewall.
 
 The following architectural diagram is an example of a fully deployed {PlatformNameShort} with all possible components.
 
 .{PlatformNameShort} Network ports and protocols 
 image::aap-network-ports-protocols-314.png[Interaction of Ansible Automation Platform components on the network with information about the ports and protocols that are used.]
 
-The following tables provide the default {PlatformName} destination ports required for each application.
+The following tables show the default {PlatformName} destination ports required for each application.
 
 [NOTE]
-The default destination ports and installer inventory listed below are configurable. If you choose to configure them to suit your environment, you may experience a change in behavior.
+The following default destination ports and installer inventory listed are configurable. If you choose to configure them to suit your environment, you might experience a change in behavior.
 
 
 
@@ -78,7 +78,7 @@ Hybrid mode in a cluster
 |Receptor
 |Inbound and Outbound
 |`receptor_listener_port`
-|ALLOW receptor listener port across all controllers for mandatory & automatic control plane clustering
+|ALLOW receptor listener port across all controllers for mandatory and automatic control plane clustering
 |===
 
 .Hop Nodes
@@ -234,7 +234,7 @@ a|Open *only* if the internal database is used along with another component. Oth
 |link:https://sso.redhat.com:443[https://sso.redhat.com:443] |TCP
 |link:https://automation-hub-prd.s3.amazonaws.com[https://automation-hub-prd.s3.amazonaws.com] link:https://automation-hub-prd.s3.us-east-2.amazonaws.com/[https://automation-hub-prd.s3.us-east-2.amazonaws.com/]| Firewall access
 |link:https://galaxy.ansible.com[https://galaxy.ansible.com] |Ansible Community curated Ansible content
-|link:https://ansible-galaxy.s3.amazonaws.com[https://ansible-galaxy.s3.amazonaws.com] |
+|link:https://ansible-galaxy-ng.s3.dualstack.us-east-1.amazonaws.com[https://ansible-galaxy-ng.s3.dualstack.us-east-1.amazonaws.com] |
 |link:https://registry.redhat.io:44[https://registry.redhat.io:443] |Access to container images provided by Red Hat and partners
 |link:https://cert.console.redhat.com:443[https://cert.console.redhat.com:443] |Red Hat and partner curated Ansible Collections
 |===
