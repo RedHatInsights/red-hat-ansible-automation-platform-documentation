@@ -1,0 +1,139 @@
+[id="controller-supported-attributes"]
+
+The following are the supported job attributes:
+
+* `allow_simultaneous` - (boolean) Indicates if multiple jobs can run simultaneously from the job template associated with this job.
+* `controller_node` - (string) The instance that manages the isolated {ExecEnvShort}.
+* `created` - (datetime) The timestamp when this job was created.
+* `custom_virtualenv` - (string) The custom virtual environment used to execute the job.
+* `description` - (string) An optional description of the job.
+* `diff_mode` - (boolean) If enabled, textual changes made to any templated files on the host are shown in the standard output.
+* `elapsed` - (decimal) The elapsed time in seconds that the job has run.
+* `execution_node` - (string) The node that the job executes on.
+* `failed` - (boolean) True if the job failed.
+* `finished` - (datetime) The date and time the job finished execution.
+* `force_handlers` - (boolean) When handlers are forced, they run when notified even if a task fails on that host. 
+Note that some conditions, such as unreachable hosts can still prevent handlers from running.
+* `forks` - (int) The number of forks requested for this job.
+* `id` - (int) The database ID for this job.
+* `job_explanation` - (string) The status field to indicate the state of the job if it was not able to run and capture `stdout`.
+* `job_slice_count` - (integer) If run as part of a sliced job, this is the total number of slices (if 1, job is not part of a sliced job).
+* `job_slice_number` - (integer) If run as part of a sliced job, this is the ID of the inventory slice operated on (if not part of a sliced job, attribute is not used).
+* `job_tags` - (string) Only tasks with specified tags execute.
+* `job_type` - (choice) This can be `run`, `check`, or `scan`.
+* `launch_type` - (choice) This can be `manual`, `relaunch`, `callback`, `scheduled`, `dependency`, `workflow`, `sync`, or `scm`.
+* `limit` - (string) The playbook execution limited to this set of hosts, if specified.
+* `modified` - (datetime) The timestamp when this job was last modified.
+* `name` - (string) The name of this job.
+* `playbook` - (string) The playbook executed.
+* `scm_revision` - (string) The scm revision from the project used for this job, if available.
+* `skip_tags` - (string) The playbook execution skips over this set of tags, if specified.
+* `start_at_task` - (string) The playbook execution begins at the task matching this name, if specified.
+* `started`- (datetime) The date and time the job was queued for starting.
+* `status` - (choice) This can be `new`, `pending`, `waiting`, `running`, `successful`, `failed`, `error`, or `canceled`.
+* `timeout` - (int) The amount of time, in seconds, to run before the task is canceled.
+* `type` - (choice) The data type for this job.
+* `url` - (string) The URL for this job.
+* `use_fact_cache` - (boolean) If enabled for the job, {ControllerName} acts as an Ansible Fact Cache Plugin at the end of a playbook run to the database and caches facts for use by Ansible.
+* `verbosity` - (choice) 0 through 5 (corresponding to Normal through WinRM Debug).
+** `host_status_counts` (The count of hosts uniquely assigned to each status)
+*** `skipped` (integer)
+*** `ok` (integer)
+*** `changed` (integer)
+*** `failures` (integer)
+*** `dark` (integer)
+*** `processed` (integer)
+*** `rescued` (integer)
+*** `ignored` (integer)
+*** `failed` (boolean)
+** `summary_fields`:
+*** `inventory`
+**** `id` - (integer) The database ID for the inventory.
+**** `name` - (string) The name of the inventory.
+**** `description` - (string) An optional description of the inventory.
+**** `has_active_failures`- (boolean) (deprecated) flag indicating whether any hosts in this inventory have failed.
+**** `total_hosts` - (deprecated) (int) The total number of hosts in this inventory.
+**** `hosts_with_active_failures` - (deprecated) (int) The number of hosts in this inventory with active failures.
+**** `total_groups` - (deprecated) (int) The total number of groups in this inventory.
+**** `groups_with_active_failures` - (deprecated) (int) The number of hosts in this inventory with active failures.
+**** `has_inventory_sources` - (deprecated) (boolean) The flag indicating whether this inventory has external inventory sources.
+**** `total_inventory_sources` - (int) The total number of external inventory sources configured within this inventory.
+**** `inventory_sources_with_failures` - (int) The number of external inventory sources in this inventory with failures.
+**** `organization_id` - (id) The organization containing this inventory.
+**** `kind` - (choice) (empty string) (indicating hosts have direct link with inventory) or `smart`
+*** `project`
+**** `id` - (int) The database ID for the project.
+**** `name` - (string) The name of the project.
+**** `description` (string) An optional description of the project.
+**** `status` - (choices) One of `new`, `pending`, `waiting`, `running`, `successful`, `failed`, `error`, `canceled`, `never updated`, `ok`, or `missing`.
+**** `scm_type` (choice) One of (empty string), `git`, `hg`, `svn`, `insights`.
+*** `job_template`
+**** `id` - (int) The database ID for the job template.
+**** `description` - (string) The optional description of the project.
+**** `status` - (choices) One of `new`, `pending`, `waiting`, `running`, `successful`, `failed`, `error`, `canceled`, `never updated`, `ok`, or `missing`.
+*** `job_template`
+**** `id`- (int) The database ID for the job template.
+**** `name`- (string) The name of the job template.
+**** `description`- (string) An optional description for the job template.
+*** `unified_job_template`
+**** `id` - (int) The database ID for the unified job template.
+**** `name` - (string) The name of the unified job template.
+**** `description` - (string) An optional description for the unified job template.
+**** `unified_job_type` - (choice) The unified job type, such as `job`, `workflow_job`, or `project_update`.
+*** `instance_group`
+**** `id` - (int) The database ID for the instance group.
+**** `name`- (string) The name of the instance group.
+*** `created_by`
+**** `id` - (int) The database ID of the user that launched the operation.
+**** `username` - (string) The username that launched the operation.
+**** `first_name` - (string) The first name.
+**** `last_name` - (string) The last name.
+*** `labels`
+**** `count` - (int) The number of labels.
+**** `results` - The list of dictionaries representing labels. 
+For example, {"id": 5, "name": "database jobs"}).
+
+You can reference information about a job in a custom notification message using grouped curly braces {{ }}. 
+Specific job attributes are accessed using dotted notation, for example {{ job.summary_fields.inventory.name }}. 
+You can add any characters used in front or around the braces, or plain text, for clarification, such as "#" for job ID and single-quotes to denote some descriptor. 
+Custom messages can include a number of variables throughout the message:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{{ job_friendly_name }} {{ job.id }} ran on {{ job.execution_node }} in {{ job.elapsed }} seconds.
+----
+
+The following are additional variables that can be added to the template:
+
+* `approval_node_name` - (string) The approval node name.
+* `approval_status` - (choice) One of `approved`, `denied`, and `timed_out`.
+* `url` - (string) The URL of the job for which the notification is emitted (this applies to `start`, `success`, `fail`, and `approval notifications`).
+* `workflow_url` - (string) The URL to the relevant approval node. 
+This allows the notification recipient to go to the relevant workflow job page to examine the situation.
+For example, `This node can be viewed at: {{workflow_url }}`.
+In cases of approval-related notifications, both `url` and `workflow_url` are the same.
+* `job_friendly_name` - (string) The friendly name of the job.
+* `job_metadata` - (string) The job metadata as a JSON string, for example:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{'url': 'https://towerhost/$/jobs/playbook/13',
+ 'traceback': '',
+ 'status': 'running',
+ 'started': '2019-08-07T21:46:38.362630+00:00',
+ 'project': 'Stub project',
+ 'playbook': 'ping.yml',
+ 'name': 'Stub Job Template',
+ 'limit': '',
+ 'inventory': 'Stub Inventory',
+ 'id': 42,
+ 'hosts': {},
+ 'friendly_name': 'Job',
+ 'finished': False,
+ 'credential': 'Stub credential',
+ 'created_by': 'admin'}
+----
+
+
+
+
