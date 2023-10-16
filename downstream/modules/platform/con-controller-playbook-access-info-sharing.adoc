@@ -1,0 +1,12 @@
+[id="con-controller-playbook-access-info-sharing"]
+
+= Playbook Access and Information Sharing
+
+{ControllerNameStart}'s use of automation {ExecEnvShort}s and Linux containers prevents playbooks from reading files outside of their project
+directory.
+
+By default, the only data exposed to the ansible-playbook process inside the container is the current project being used.
+
+You can customize this in the Job Settings and expose additional directories from the host into the container.
+
+include::ref-controller-isolation-functionality.adoc[leveloffset=+1]

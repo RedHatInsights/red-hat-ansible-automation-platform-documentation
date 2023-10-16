@@ -1,0 +1,26 @@
+[id="ref-controller-rbac-built-in-roles"]
+
+= Built-in roles
+
+The following table lists the RBAC system roles with a brief description of how that role is defined with regard to privileges in {ControllerName}:
+
+[cols="45%,55%",options="header",]
+|===
+| System Role | What it can do
+| System Administrator - System wide singleton | Manages all aspects of the system
+| System Auditor - System wide singleton | Views all aspects of the system
+| Ad Hoc Role - Inventory | Runs ad hoc commands on an Inventory
+| Admin Role - Organizations, Teams, Inventory, Projects, Job Templates |Manages all aspects of a defined Organization, Team, Inventory, Project, or Job Template
+| Auditor Role - All | Views all aspects of a defined Organization, Project, Inventory, or Job Template
+| Execute Role - Job Templates | Runs assigned Job Template
+| Member Role - Organization, Team | User is member of a defined Organization or Team.
+| Read Role - Organizations, Teams, Inventory, Projects, Job Templates | Views all aspects of a defined Organization, Team, Inventory, Project,
+or Job Template
+| Update Role - Project | Updates the Project from the configured source control management system
+| Update Role - Inventory |Updates the Inventory using the cloud source update system
+| Owner Role - Credential |Owns and manages all aspects of this Credential
+| Use Role - Credential, Inventory, Project, IGs, CGs | Uses the Credential, Inventory, Project, IGs, or CGs in a Job Template
+|===
+
+A Singleton Role is a special role that grants system-wide permissions.
+{ControllerNameStart} currently provides two built-in Singleton Roles but the ability to create or customize a Singleton Role is not supported at this time.

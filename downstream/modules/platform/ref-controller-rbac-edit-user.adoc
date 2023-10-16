@@ -1,0 +1,8 @@
+[id="ref-controller-rbac-edit-user"]
+
+= Edit Users
+
+When editing a user, an {ControllerName} system administrator can specify the user as being either a _System Administrator_ (also referred to as the Superuser) or a _System Auditor_:
+
+* System administratos implicitly inherit all capabilities (read/write/execute) for all objects within the environment.
+* System Auditors implicitly inherit the read-only capability for all objects within the environment.

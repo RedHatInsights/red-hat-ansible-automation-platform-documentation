@@ -1,0 +1,17 @@
+[id="ref-controller-applying-rbac"]
+
+= Use of RBAC
+
+The following describe how to apply {ControllerName}'s RBAC system in your environment.
+
+include::ref-controller-rbac-edit-user.adoc[leveloffset=+1]
+include::ref-controller-rbac-edit-orgs.adoc[leveloffset=+1]
+include::ref-controller-rbac-edit-projects.adoc[leveloffset=+1]
+include::ref-controller-rbac-create-inventory.adoc[leveloffset=+1]
+include::ref-controller-rbac-edit-job-template.adoc[leveloffset=+1]
+include::ref-controller-rbac-user-view.adoc[leveloffset=+1]
+
+
+
+
+

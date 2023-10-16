@@ -1,0 +1,13 @@
+[id="ref-controller-rbac-create-inventory"]
+
+= Create Inventories and Credentials within an Organization
+
+All access that is granted to use, read, or write credentials is handled through roles, which use {ControllerName}'s RBAC system to grant ownership, auditor, or usage roles.
+
+System administrators and organization administrators can create inventories and credentials within organizations under their administrative capabilities.
+
+Whether editing an inventory or a credential, System administrators and organization administrators can specify one or more users or teams (from those that are members of that organization) to be granted the usage capability for that inventory or credential.
+
+System administrators and organization administrators can specify one or more users or teams (from those that are members of that organization) that
+have the capabilities to update (dynamic or manually) an inventory.
+Administrators can also execute ad hoc commands for an inventory.

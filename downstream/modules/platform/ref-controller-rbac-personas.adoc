@@ -1,0 +1,30 @@
+[id="ref-controller-rbac-personas"]
+
+= Common Team Roles - "Personas"
+
+{ControllerNameStart} support personnel typically works to ensure that {controllername} is available, and manage it a way as to balance supportability and ease-of-use for users. 
+{ControllerNameStart} support personnel often assign _Organization Owner_ or _Administrator_ roles to users to enable them to create a new Organization or add members from their team that the respective access requires. 
+This minimizes the number of supporting individuals and focuses more on maintaining uptime of the service and assisting users who are using {ControllerName}.
+
+The following table lists some common roles managed by the {ControllerName} Organization:
+
+[cols="17%,15%,68%", header]
+|===
+| System Role (for Organizations) | Common User Roles | Description
+| Owner | Team Lead - Technical Lead | This user can control access for other users in their organization.
+They can add, remove and grant users specific access to projects, inventories, and job templates.
+This type of user can also create, remove or modify any aspect of an organization's projects, templates, inventories, teams, and credentials.
+| Auditor | Security Engineer - Project Manager | This account can view all aspects of the organization in read-only mode.
+This might be a good role for a user who checks in and maintains compliance.
+This might also be a good role for a service account who manages or ships job data from {ControllerName} to some other data collector.
+| Member - Team | All other users | By default, these users as an organization member do not receive any access to any aspect of the organization. 
+To grant them access the respective organization owner must add them to their respective team and grant them Administrator, Execute, Use, Update, and Ad-hoc permissions to each component of the organization's projects, inventories, and job templates.
+| Member - Team "Owner" | Power users - Lead Developer | Organization Owners can provide “admin” through the team interface, over any component of their organization including projects, inventories, and job templates. 
+These users are able to modify and use the respective component given access.
+| Member - Team "Execute" | Developers - Engineers | This is the most common role and enables the organization member to execute job templates and read permission to the specific components. 
+This permission applies to templates.
+| Member - Team "Use" | Developers - Engineers | This permission applies to an organization's credentials, inventories, and projects.
+This permission enables a user to use the respective component within their job template.
+| Member - Team “Update” | Developers - Engineers | This permission applies to projects. 
+Enables the user to run an SCM update on a project.
+|===

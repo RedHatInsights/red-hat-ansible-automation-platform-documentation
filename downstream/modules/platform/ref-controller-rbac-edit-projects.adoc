@@ -1,0 +1,15 @@
+[id="ref-controller-rbac-edit-projects"]
+
+= Edit Projects in an Organization
+
+When editing a project in an organization for which they are the administrator, system administrators and organization administrators can specify:
+
+* One or more users or teams that are project administrators
+* One or more users or teams that are project members
+* One or more users or teams that can update the project from SCM, from among the users and teams that are members of that organization.
+
+Users who are members of a project can view their project administrators.
+
+Project administrators implicitly inherit the capability to update the project from SCM.
+
+Administrators can also specify one or more users/teams (from those that are members of that project) that can use that project in a job template.

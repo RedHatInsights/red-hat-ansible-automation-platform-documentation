@@ -1,0 +1,11 @@
+[id="ref-controller-rbac-edit-job-template"]
+
+= Edit Job Templates
+
+System administrators, organization administrators, and project administrators, within a project under their administrative capabilities, can create and modify new job templates for that project.
+
+When editing a job template, administrators ({ControllerName}, organization, and project) can select inventory and credentials in the organization for which they have usage capabilities, or they can leave those fields blank so that they are selected at runtime.
+
+Additionally, they can specify one or more users or teams (from those that are members of that project) that have execution capabilities for that
+job template. 
+The execution capability is valid regardless of any explicit capabilities the user or team have been granted against the inventory or credential specified in the job template.

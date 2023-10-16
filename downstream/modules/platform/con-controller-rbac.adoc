@@ -1,0 +1,26 @@
+[id="con-controller-rbac"]
+
+= Role-Based Access Controls
+
+_Role-Based Access Controls_ (RBAC) are built into {ControllerName} and enable administrators to delegate access to server inventories, organizations,
+and more. 
+Administrators can also centralize the management of various credentials, enabling users to use a required secret without exposing that secret to the user. 
+You can use RBAC to enable {ContollerName} to increase security and streamline management.
+
+RBAC is the practice of granting roles to users or teams.
+RBACs can be thought of in terms of Roles which define precisely who or what can see, change, or delete an "object" for which a specific capability is being set. 
+
+The main concepts of {ControllerName}'s RBAC design roles, resources, and users are as follows: 
+
+* Users can be members of a role, which gives them certain access to any resources associated with that role, or any resources associated with "descendant" roles.
+* A role is a collection of capabilities. 
+* Users are granted access to these capabilities and the {ControllerName}'s' resources through the roles to which they are assigned or through roles inherited through the role hierarchy.
+* Roles associate a group of capabilities with a group of users. 
+All capabilities are derived from membership within a role. 
+Users receive capabilities only through the roles to which they are assigned or through roles they inherit through the role hierarchy. 
+All members of a role have all capabilities granted to that role. 
+Within an organization, roles are relatively stable, while users and capabilities are both numerous and may change rapidly. 
+* Users can have many roles.
+
+include::con-controller-role-hierarchy.adoc[leveloffset=+1]
+

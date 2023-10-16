@@ -1,0 +1,10 @@
+[id="con-independence-of-resource-roles"]
+
+= Independence of resource roles and organization membership roles
+
+Resource-specific organization roles are independent of the organization roles of administrator and member. 
+Having the "workflow administrator role" for the "Default" organization does not enable a user to view all users in the organization, but having a "member" role in the "Default" organization does. 
+The two types of roles are delegated independently of each other.
+
+include::ref-necessary-permissions-job-templates.adoc[leveloffset=+1]
+include::con-controller-rbac-permissions.adoc[leveloffset=+1]

@@ -1,0 +1,65 @@
+[id="con-controller-rbac-permissions"]
+
+= RBAC permissions
+
+Each role must have a content object, for instance, the organization administrator role has a content object of the organization. 
+To delegate a role, you must have administrator permission for the content object, with some exceptions that would result in you being able to reset a user's password.
+
+*Parent* is the organization.
+
+*Allow* is what this new permission will explicitly allow.
+
+*Scope* is the parent resource that this new role is created on. For example: `Organization.project_create_role`.
+
+It is assumed that the creator of the resource is given the administrator role for that resource. 
+Instances where resource creation does not also imply resource administration, re explicitly called out.
+
+The rules associated with each administrator type are as follows:
+
+*Project Admin*
+
+* Allow: Create, read, update, delete any project
+* Scope: Organization
+* User Interface: _Project Add Screen - Organizations_
+
+*Inventory Admin*
+
+* Parent: Org admin
+* Allow: Create, read, update, delete any inventory
+* Scope: Organization
+* User Interface: _Inventory Add Screen - Organizations_
+
+[NOTE]
+====
+As with the *Use* role, if you assign Project Administrator and Inventory Administrator roles to a user, it enables them to create Job Templates (not workflows) for your organization.
+====
+
+*Credential Admin*
+
+* Parent: Org admin
+* Allow: Create, read, update, delete shared credentials
+* Scope: Organization
+* User Interface: _Credential Add Screen - Organizations_
+
+*Notification Admin*
+
+* Parent: Org admin
+* Allow: Assignment of notifications
+* Scope: Organization
+
+*Workflow Admin*
+
+* Parent: Org admin
+* Allow: Create a workflow
+* Scope: Organization
+
+*Org Execute*
+
+* Parent: Org admin
+* Allow: Executing JTs and WFJTs
+* Scope: Organization
+
+The following is a sample scenario showing an organization with its
+roles and which resource(s) each have access to:
+
+image:rbac-multiple-resources-scenario.png[RBAC resources]

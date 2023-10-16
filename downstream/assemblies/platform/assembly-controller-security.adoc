@@ -1,0 +1,17 @@
+[id="assembly-controller-security"]
+
+= Security
+
+The following sections describe how {ControllerName} handles and enables you to control file system security.
+
+All playbooks are executed through the `awx` file system user. 
+For running jobs, {ControllerName} offers job isolation through the use of Linux containers. 
+This protection ensures that jobs can only access playbooks, roles, and data from the Project directory for that job template.
+
+For credential security, you can choose to upload locked SSH keys and set the unlock password to "ask". 
+You can also choose to have the system prompt for SSH credentials or sudo passwords rather than having the system store them in the database.
+
+include::platform/con-controller-playbook-access-info-sharing.adoc[leveloffset=+1]
+include::platform/con-controller-rbac.adoc[leveloffset=+1]
+include::platform/con-controller-function-of-roles.adoc[leveloffset=+1]
+

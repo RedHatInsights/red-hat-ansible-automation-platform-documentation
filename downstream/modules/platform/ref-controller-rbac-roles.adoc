@@ -1,0 +1,9 @@
+[id="ref-controller-rbac-roles"]
+
+= Roles
+
+All access that is granted to use, read, or write credentials is handled through roles, and roles are defined for a resource.
+
+include::ref-controller-rbac-built-in-roles.adoc[leveloffset=+1]
+include::ref-controller-rbac-personas.adoc[levelffset=+1]
+

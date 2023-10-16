@@ -1,0 +1,15 @@
+[id="ref-controller-rbac-edit-orgs"]
+
+= Edit Organizations
+
+When editing an organization, system administrators can specify the following roles:
+
+* One or more users as organization administrators
+* One or more users as organization auditors
+* One or more users (or teams) as organization members
+
+Users and teams that are members of an organization can view their organization administrator.
+
+Users who are organization administrators implicitly inherit all capabilities for all objects within that organization.
+
+Users who are organization auditors implicitly inherit the read-only capability for all objects within that organization.

@@ -1,0 +1,24 @@
+[id="ref-necessary-permissions-job-templates"]
+
+= Necessary permissions to edit job templates
+
+Users can edit fields not impacting job runs (non-sensitive fields) with a Job Template administrator role alone. 
+However, to edit fields that impact job runs in a job template, a user must have the following:
+
+* An *admin* role for the job template and container groups
+* A *use* role for related projects
+* A *use* role for related inventories
+* A *use* role for related instance groups
+
+An "organization job template admin" role was introduced, but having this role is not sufficient by itself to edit a job template within the organization if the user does not have a _use_ role for the project, inventory, or instance group, or an administrator role to the container group that
+a job template uses.
+
+To delegate _full_ job template control (within an organization) to a user or team, you must grant the team or user all three organization-level roles:
+
+* job template administrator
+* project administrator
+* inventory administrator
+
+This ensures that the user (or all users who are members of the team with these roles) has full access to modify job templates in the organization. 
+If a job template uses an inventory or project from another organization, the user with these organization roles can still not have permission to modify that job template. 
+For clarity of permission management, do not mix projects or inventories from different organizations.

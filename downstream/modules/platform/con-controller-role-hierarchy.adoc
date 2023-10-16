@@ -1,0 +1,33 @@
+[id="con-controller-role-hierarchy"]
+
+= Role hierarchy and access inheritance
+
+Imagine that you have an organization named "SomeCompany" and want to give two people, "Josie" and "Carter", access to manage all the
+settings associated with that organization. 
+To do this, you must make both people members of the organization's `admin_role`.
+
+image:user-role-relationship.png[user-role-relationship]
+
+There are frequently many Roles in a system, some of which you want to include all of the capabilities of other roles. 
+For example, you might want a System Administrator to have access to everything that an Organization Administrator has access to, who has everything that a Project Administrator has access to, and so on.
+
+This concept is referred to as the 'Role Hierarchy':
+
+* Parent roles get all capabilities bestowed on any child roles.
+* Members of roles automatically get all capabilities for the role they are a member of, as well as any child roles.
+
+The Role Hierarchy is represented by permitting Roles to have "Parent Roles". 
+Any capability that a Role has is implicitly granted to any parent roles (or parents of those parents, and so on).
+
+image:rbac-role-hierarchy.png[rbac-role-hierarchy]
+
+Roles can have more than one parent, and capabilities are implicitly granted to all parents.
+
+image:rbac-heirarchy-morecomplex.png[rbac-heirarchy-morecomplex]
+
+RBACs also enable you to explicitly permit Users and Teams of Users to run playbooks against certain sets of hosts. 
+Users and teams are restricted to just the sets of playbooks and hosts to which they are granted capabilities. 
+With {ControllerName}, you can create or import as many Users and Teams as you require, create Users and Teams manually, or import them from LDAP or Active Directory.
+
+include::ref-controller-applying-rbac.adoc[leveloffset=+1]
+include::ref-controller-rbac-roles.adoc[leveloffset=+1]

@@ -1,0 +1,16 @@
+[id="con-controller-function-of-roles"]
+
+= Function of roles: editing and creating
+
+Organization “resource roles” functionality are specific to a certain resource type - such as workflows. 
+Being a member of such a role usually provides two types of permissions.
+If a user is given a "workflow admin role" for the organization "Default", then they have the following permissions:
+
+* This user can create new workflows in the organization "Default"
+* This user can edit all workflows in the "Default" organization
+
+One exception is job templates, where having the role is independent of creation permission.
+For more information, see xref:controller-job-templates[Job Templates].
+
+include::con-independence-of-resource-roles.adoc[leveloffset=+1]
+
