@@ -11,7 +11,12 @@ Installation of {PlatformNameShort} is controlled with inventory files. Inventor
 
 For convenience an example inventory file is provided, that you can copy and modify to quickly get started.
 
-* Edit the inventory file by replacing the *< >* placeholders with your specific variables, and uncommenting any lines specific to your needs.
+[NOTE]
+====
+There is no default database choice given in the inventory file. You must follow the instructions in the inventory file to make the appropriate choice between an internally provided postgres, or provide your own externally managed and supported database option.
+====
+
+* Edit the inventory file by replacing the `< >` placeholders with your specific variables, and uncommenting any lines specific to your needs.
 
 
 ----
