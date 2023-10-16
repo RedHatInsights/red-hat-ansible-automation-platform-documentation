@@ -52,6 +52,6 @@ include::platform/assembly-ug-controller-notifications.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-attributes-custom-notifications.adoc[leveloffset=+1]
 //30 Schedules
 //31 Setting up Insights Remediations
-//32 Best Practices
+include::platform/assembly-controller-best-practices.adoc[leveloffset=+1]
 include::platform/assembly-controller-security.adoc[leveloffset=+1]
 include::platform/assembly-controller-glossary.adoc[leveloffset=+1]

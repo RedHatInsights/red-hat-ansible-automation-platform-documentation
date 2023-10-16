@@ -1,0 +1,61 @@
+[id="assembly-controller-best-practices"]
+
+= Best practices for {ControllerName}
+
+The following describe best practice for the use of {ControllerName}:
+
+== Use Source Control
+
+{ControllerName} supports playbooks stored directly on the server. Therefore, it is recommended to store your playbooks, roles, and any associated details in source control. 
+This way you have an audit trail describing when and why you changed the rules that are automating your infrastructure. 
+Additionally, it permits sharing of playbooks with other parts of your infrastructure or team.
+
+== Ansible file and directory structure
+
+If you are creating a common set of roles to use across projects, these should be accessed through source control submodules, or a common location such as `/opt`. 
+Projects should not expect to import roles or content from other projects.
+
+For more information, see the link https://docs.ansible.com/ansible/latest/tips_tricks/ansible_tips_tricks.html[General tips] from the Ansible documentation. 
+
+[NOTE]
+====
+* Avoid using the playbooks `vars_prompt` feature, as {ControllerName} does not interactively permit `vars_prompt` questions. 
+If you cannot avoid using `vars_prompt`, see the xref:controller-surveys-in-job-templates[Surveys] functionality.
+
+* Avoid using the playbooks `pause` feature without a timeout, as {ControllerName} does not permit cancelling a pause interactively.
+If you cannot avoid using `pause`, you must set a timeout.
+====
+
+Jobs use the playbook directory as the current working directory, although jobs must be coded to use the `playbook_dir` variable rather
+than relying on this.
+
+== Use Dynamic Inventory Sources
+
+If you have an external source of truth for your infrastructure, whether it is a cloud provider or a local CMDB, it is best to define an
+inventory sync process and use the support for dynamic inventory (including cloud inventory sources). 
+This ensures your inventory is always up to date.
+
+[NOTE]
+====
+Edits and additions to Inventory host variables persist beyond an inventory synchronization as long as `--overwrite_vars` is *not* set.
+====
+
+== Variable Management for Inventory
+
+Keep variable data along with the hosts and groups definitions (see [the inventory editor]), rather than using `group_vars/` and `host_vars/`. 
+If you use dynamic inventory sources, {ControllerName} can synchronize such variables with the database as long as the *Overwrite Variables* option is not set.
+
+== Autoscaling
+
+Use the "callback" feature to permit newly booting instances to request configuration for auto-scaling scenarios or provisioning integration.
+
+== Larger Host Counts
+
+Set "forks" on a job template to larger values to increase parallelism of execution runs. 
+For more information on tuning Ansible, see link:https://www.ansible.com/blog/ansible-performance-tuning[the Ansible blog].
+
+== Continuous integration / Continuous Deployment
+
+For a Continuous Integration system, such as Jenkins, to spawn a job, it must make a `curl` request to a job template. 
+The credentials to the job template must not require prompting for any particular passwords.
+For configuration and use instructions, see link:https://docs.ansible.com/automation-controller/latest/html/controllercli/usage.html[Installation] in the Ansible docmentation.
