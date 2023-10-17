@@ -50,7 +50,7 @@ include::platform/assembly-ug-controller-jobs.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-work-with-webhooks.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-notifications.adoc[leveloffset=+1]
 include::platform/assembly-ug-controller-attributes-custom-notifications.adoc[leveloffset=+1]
-//30 Schedules
+include::platform/assembly-ug-controller-schedules.adoc[leveloffset=+1]
 //31 Setting up Insights Remediations
 include::platform/assembly-controller-best-practices.adoc[leveloffset=+1]
 include::platform/assembly-controller-security.adoc[leveloffset=+1]

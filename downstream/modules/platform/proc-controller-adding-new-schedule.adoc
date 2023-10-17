@@ -1,0 +1,36 @@
+[id="controller-adding-new-schedule"]
+
+= Adding a new schedule
+
+You can only create schedules from a template, project, or inventory source, and not directly on the main *Schedules* screen. 
+
+To create a new schedule:
+
+.Procedure
+
+. Click the *Schedules* tab of the resource that you are configuring.
+This can be a template, project, or inventory source.
+. Click btn:[Add]. This opens the *Create New Schedule* window.
++
+image::ug-generic-create-schedule.png[Create schedule]
++
+. Enter the appropriate details into the following fields:
+Name:: Enter the name.
+Description (optional)::  Enter a description.
+Start date/time:: Enter the date and time to start the schedule.
+Local time zone:: The start time that you enter must be in this time zone.
+Repeat frequency:: Appropriate scheduling options display depending on the frequency you select.
++
+The *Schedule Details* display when you establish a schedule, enabling you to review the schedule settings and a list of the scheduled occurrences in the selected *Local Time Zone*.
++
+[IMPORTANT]
+====
+Jobs are scheduled in UTC. 
+Repeating jobs that run at a specific time of day can move relative to a local time zone when Daylight Savings Time shifts occur. 
+The system resolves the local time zone based time to UTC when the schedule is saved. 
+To ensure your schedules are correctly created, set your schedules in UTC time.
+====
++
+. Click btn:[Save].
+
+Use the *On* or *Off* toggle to stop an active schedule or activate a stopped schedule.
