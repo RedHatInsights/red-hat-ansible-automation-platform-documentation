@@ -1,0 +1,16 @@
+[id="controller-setting-up-insights"]
+
+= Setting up {InsightsName} Remediations
+
+{ControllerNameStart} supports integration with Red Hat Insights. 
+When a host is registered with Red Hat Insights, it is scanned continually for vulnerabilities and known configuration conflicts.
+Each problem identified can have an associated fix in the form of an Ansible playbook. 
+Red Hat Insights users create a maintenance plan to group the fixes and can create a playbook to mitigate the problems. 
+{ControllerNameStart} tracks the maintenance plan playbooks through a Red Hat Insights project.
+Authentication to Red Hat Insights through Basic Authorization is backed by a special credential, which must first be established in {ControllerName}.
+To run an Red Hat Insights maintenance plan, you need an Red Hat Insights project and inventory.
+
+include::platform/proc-controller-create-insights-credential.adoc[leveloffset=+1]
+include::platform/proc-controller-create-insights-project.adoc[leveloffset=+1]
+include::platform/con-controller-create-insights-inventory.adoc[leveloffset=+1]
+include::platform/proc-controller-remediate-insights-inventory.adoc[leveloffset=+1]

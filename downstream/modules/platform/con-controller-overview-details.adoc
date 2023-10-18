@@ -78,6 +78,8 @@ Dynamic inventory sources for Red Hat Satellite 6 are supported.
 = Red Hat Insights integration
 {ControllerNameStart} supports integration with Red Hat Insights, enabling Insights playbooks to be used as an {PlatformNameShort} project.
 
+For more information, see xref:controller-setting-up-insights[Setting up Insights Remediations].
+
 = User Interface
 The user interface is organized with intuitive navigational elements.
 Information is displayed at-a-glance, so you can find and use the automation you need.
