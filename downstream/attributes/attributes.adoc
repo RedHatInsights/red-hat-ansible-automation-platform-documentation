@@ -123,5 +123,5 @@
 :OperatorRHSSO: Red Hat Single Sign-On Operator
 
 // Icons
-:MoreActionsIcon: &vellip;
+:MoreActionsIcon: &#8942;
 :SettingsIcon: &#9881;
