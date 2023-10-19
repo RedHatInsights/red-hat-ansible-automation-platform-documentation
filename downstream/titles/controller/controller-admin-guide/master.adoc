@@ -1,0 +1,15 @@
+:imagesdir: images
+:numbered:
+:toclevels: 1
+
+:experimental:
+:controller-AG:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Automation Controller Administration Guide
+
+The {ControllerName} Administration Guide describes the administration of {ControllerName} through custom scripts, management jobs, and more. 
+Written for DevOps engineers and administrators, the {ControllerName} Administration Guide assumes a basic understanding of the systems requiring management with the with {ControllerName}s easy-to-use graphical interface. 
