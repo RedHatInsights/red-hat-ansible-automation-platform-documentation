@@ -2,7 +2,7 @@
 
 = Updating projects from source control
 
-Use the following procedure to update a project.
+Use the following procedure to update a project:
 
 .Procedure
 . In the *Projects* page, select the project you want to update and click the image:sync.png[Sync,15,15] icon.

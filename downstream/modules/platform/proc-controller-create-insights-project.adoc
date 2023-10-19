@@ -8,13 +8,14 @@ Use the following steps to create a new project for use with Red Hat Insights:
 . Click btn:[Add].
 . Enter the appropriate details in the following fields. 
 Note that the following fields require specific Red Hat Insights related entries:
-Name:: Enter the name for your Red Hat Insights project.
-Description (optional):: Enter a description for the project.
-Organization:: Enter the name of the organization with which the credential is associated, or click the search (image:magnify.png[Search,15,15]) icon and select it from the *Select organization* window.
-Execution Environment (optional):: The {ExecEnvShort} that is used for jobs that use this project. 
-Source Control Type:: Select *Red Hat Insights*.
-Content Signature Validation Credential (optional):: Enable content signing to verify that the content has remained secure when a project is synced. 
-Insights Credential:: This is pre-populated with the Red Hat Insights credential you previously created. 
+
+* *Name*: Enter the name for your Red Hat Insights project.
+* Optional: *Description*: Enter a description for the project.
+* *Organization*: Enter the name of the organization with which the credential is associated, or click the search (image:magnify.png[Search,15,15]) icon and select it from the *Select organization* window.
+* Optional: *Execution Environment*: The {ExecEnvShort} that is used for jobs that use this project. 
+* *Source Control Type*: Select *Red Hat Insights*.
+* Optional: *Content Signature Validation Credential*: Enable content signing to verify that the content has remained secure when a project is synced. 
+* *Insights Credential*: This is pre-populated with the Red Hat Insights credential you previously created. 
 If not, enter the credential, or click the search (image:magnify.png[Search,15,15]) icon and select it from the *Select Insights Credential* window.
 . Select the update options for this project from the *Options* field and provide any additional values, if applicable.
 For more information about each option click the tooltip (image:question_circle.png[Tooltip,15,15]) icon next to each one.

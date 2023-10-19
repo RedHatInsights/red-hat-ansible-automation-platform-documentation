@@ -7,8 +7,8 @@ The Mattermost notification type provides a simple interface to Mattermost's mes
 Provide the following details to set up a Mattermost notification:
 
 Target URL:: The full URL that is posted to.
-Username (optional):: Enter a username for the notification.
-Channel (optional):: Enter a channel for the notification.
+Optional: Username:: Enter a username for the notification.
+Optional: Channel:: Enter a channel for the notification.
 Icon URL:: Specifies the icon to display for this notification.
 Disable SSL verification:: Turns off verification of the authenticity of the target's certificate.
 Select this option to disable verification for environments that use internal or private CA's.

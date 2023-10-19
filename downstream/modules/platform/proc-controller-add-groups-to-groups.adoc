@@ -11,7 +11,7 @@ Use the following procedure to add groups within groups:
 . Select whether to add a group that already exists in your configuration or create a new group.
 . If creating a new group, enter the appropriate details into the required and optional fields:
 
-* *Name*: Required
+* *Name* (required): 
 * Optional: *Description*: Enter a description as appropriate.
 * *Variables*: Enter definitions and values to be applied to all hosts in this group. 
 Enter variables using either JSON or YAML syntax. 

@@ -19,7 +19,7 @@ image:inventories-create-source.png[Inventories create source]
 
 . Enter the appropriate details:
 
-* *Name*: Required
+* *Name* (required):
 * Optional: *Description*: Enter a description as appropriate.
 * Optional: *Execution Environment*: Click the image:search.png[Search,15,15] icon or enter the name of the execution environment with which you want to run your inventory imports. For more information on building an {ExecEnvShort}, see xref:assembly-controller-execution-environments[Execution environments].
 * *Source*: Choose a source for your inventory. 
@@ -66,9 +66,9 @@ To avoid job overflows if jobs are spawned faster than the inventory can synchro
 
 
 The *Update on Launch* setting refers to a dependency system for projects and inventory, and does not specifically exclude two jobs from running at the same time. 
-+
+
 If a cache timeout is specified, then the dependencies for the second job are created, and it uses the project and inventory update that the first job spawned.
-+ 
+
 Both jobs then wait for that project or inventory update to finish before proceeding. 
 If they are different job templates, they can then both start and run at the same time, if the system has the capacity to do so. 
 If you intend to use {ControllerName}'s provisioning callback feature with a dynamic inventory source, *Update on Launch* must be set for the inventory
@@ -87,7 +87,7 @@ This enables you to configure additional details, such as schedules and notifica
 
 = Configuring notifications for the source
 
-Use the following procedure to configure notifications for the source.
+Use the following procedure to configure notifications for the source:
 
 . In the Inventory *Details* page, select menu:Notifications[].
 +

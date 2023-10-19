@@ -11,7 +11,7 @@ image::gs-controller-license-non-compliant.png[Subscription out of compliance]
 
 ifdef::controller-UG[]
 Compliance is computed as follows:
-+
+
 [literal, options="nowrap" subs="+attributes"]
 ----
 managed > manifest_limit    =>  non-compliant

@@ -3,7 +3,7 @@
 = Prerequisites
 
 * RHEL nodes must properly be subscribed to:
-** RHEL subscription* with *baseos* and *appstream* repositories must be enabled.
+** RHEL subscription with *baseos* and *appstream* repositories must be enabled.
 ** Your {PlatformName} subscription and the proper channel must be enabled:
 +
 [literal, options="nowrap" subs="+attributes"]

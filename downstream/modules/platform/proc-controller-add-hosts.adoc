@@ -14,7 +14,7 @@ Use the following procedure to add hosts:
 . If creating a new host, set the toggle to 'on' to include this host while running jobs.
 . Enter the appropriate details:
 
-* *Host Name*: Required
+* *Host Name* (required):
 * Optional: *Description*: Enter a description as appropriate.
 * *Variables*: Enter definitions and values to be applied to all hosts in this group, as in the following example:
 +

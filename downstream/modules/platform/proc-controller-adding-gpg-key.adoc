@@ -11,7 +11,7 @@ $ gpg --export --armour <key fingerprint> > my_public_key.asc
 ----
 
 [arabic]
-. In the navigation panel, select menu:Credentials[].
+. From the navigation panel, select menu:Credentials[].
 . Click btn:[Add].
 . Provide a meaningful name for the new credential, for example, “Infrastructure team public GPG key”.
 . In the *Credential Type* field, select *GPG Public Key*.

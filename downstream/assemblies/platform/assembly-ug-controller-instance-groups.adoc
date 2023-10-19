@@ -2,7 +2,7 @@
 
 = Managing Instance Groups
 
-An [ADD XREF]Instance Group enables you to group instances in a clustered environment. 
+An Instance Group enables you to group instances in a clustered environment. 
 Policies dictate how instance groups behave and how jobs are executed. 
 The following view displays the capacity levels based on policy algorithms:
 

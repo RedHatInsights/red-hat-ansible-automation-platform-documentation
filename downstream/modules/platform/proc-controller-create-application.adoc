@@ -5,7 +5,7 @@
 Use the following procedure to configure token-based authentication for users.
 
 .Procedure
-. On the navigation panel, select menu:Administration[Applications].
+. From the navigation panel, select menu:Administration[Applications].
 . Click btn:[Add].
 The *Create New Application* page opens.
 +

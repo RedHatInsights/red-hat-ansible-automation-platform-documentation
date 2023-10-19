@@ -10,12 +10,12 @@ The failure scenario is reserved specifically for connectivity.
 
 Provide the following details to set up an IRC notification:
 
-IRC server password (optional):: IRC servers can require a password to connect. 
+Optional: IRC server password:: IRC servers can require a password to connect. 
 If the server does not require one, leave it blank.
 IRC server port:: The IRC server port.
 IRC server address:: The host name or address of the IRC server.
 IRC nick:: The bot's nickname once it connects to the server.
 Destination channels or users:: A list of users or channels to which the notification is sent.
-Disable SSL verification (optional):: Check if you want the bot to use SSL when connecting.
+Optional: Disable SSL verification:: Check if you want the bot to use SSL when connecting.
 
 image::ug-notification-template-irc.png[Notification template IRC]

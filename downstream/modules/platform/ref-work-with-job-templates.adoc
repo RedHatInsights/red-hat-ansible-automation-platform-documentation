@@ -2,7 +2,7 @@
 
 = Work with Job Templates
 
-On the *Projects* page, select menu:[Job Templates] to enable you to add and review any job templates or workflow templates associated with this project.
+On the *Projects* page, select *Job Templates* to enable you to add and review any job templates or workflow templates associated with this project.
 
 image:projects-templates-example-list.png[Job template list]
 

@@ -11,9 +11,9 @@ If you do not need {ControllerName} to post job statuses back to the webhook ser
 .. From the navigation panel in GitLab, select your avatar and menu:Edit profile[].
 .. From the navigation panel, select menu:Access tokens[].
 .. Complete the following fields:
-Token name:: Enter a brief description about what this PAT is used for.
-Expiration date:: Skip this field unless you want to set an expiration date for your webhook.
-Select scopes:: Select those that are applicable to your integration. 
+* *Token name*: Enter a brief description about what this PAT is used for.
+* *Expiration date*: Skip this field unless you want to set an expiration date for your webhook.
+* *Select scopes*: Select those that are applicable to your integration. 
 For {ControllerName}, *api* is the only selection necessary.
 .. Click btn:[Create personal access token].
 +
@@ -39,13 +39,13 @@ image::ug-gitlab-webhook-credential.png[GitLab webhook credential]
 . To complete the *Add webhook* page, you must check the *Enable Webhook* option in a job template or workflow job template. 
 For more information, see step 3 in both xref:controller-create-job-template[Creating a job template] and xref:controller-create-workflow-template[Creating a workflow template].
 . Complete the following fields:
-URL:: Copy the contents of the *Webhook URL* from the job template and paste it here.
+* *URL*: Copy the contents of the *Webhook URL* from the job template and paste it here.
 The results are sent to this address from GitLab.
-Secret Token:: Copy the contents of the *Webhook Key* from the job template and paste it here.
-Trigger:: Select the types of events you want to trigger a webhook. 
+* *Secret Token*: Copy the contents of the *Webhook Key* from the job template and paste it here.
+* *Trigger*: Select the types of events you want to trigger a webhook. 
 Any such event will trigger the job or workflow. 
 To have job status (pending, error, success) sent back to GitLab, you must select *Merge request events* in the *Trigger* section.
-SSL verification:: Leave *Enable SSL verification* selected.
+* *SSL verification*: Leave *Enable SSL verification* selected.
 . Click btn:[Add webhook].
 . When your webhook is configured, it is displayed in the list *Project Webhooks* for your repository, along with the ability to test events, edit or delete the webhook. 
 Testing a webhook event displays the results on each page whether it succeeded or failed.

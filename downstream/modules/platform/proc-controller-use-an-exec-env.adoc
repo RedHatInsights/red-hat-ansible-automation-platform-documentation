@@ -13,12 +13,12 @@ Execution environments tied to an organization require Organization administrato
 To use an {ExecEnvShort} in a job, use the following procedure:
 
 .Procedure
-. On the navigation panel, select menu:Administration[Execution Environments].
+. From the navigation panel, select menu:Administration[Execution Environments].
 . Click btn:[Add] to add an {ExecEnvShort}.
 . Enter the appropriate details into the following fields:
 
-* *Name*: Enter a name for the {ExecEnvShort}(required).
-* *Image*: Enter the image name (required). 
+* *Name* (required): Enter a name for the {ExecEnvShort}.
+* *Image* (required): Enter the image name . 
 The image name requires its full location (repo), the registry, image name, and version tag in the example format of `quay.io/ansible/awx-ee:latestrepo/project/image-name:tag`.
 * Optional: *Pull*: choose the type of pull when running jobs:
 ** *Always pull container before running*: Pulls the latest image file for the container.

@@ -10,14 +10,14 @@ Use the following procedure to connect to {PrivateHubName} or a public collectio
 . Navigate to https://console.redhat.com/ansible/automation-hub/token
 . Click btn:[Load token].
 . Click the copy image:copy.png[Copy,15,15] icon to copy the API token to the clipboard.
-
++
 //image:projects-ah-loaded-token-shown.png[image]
-
++
 . To use {HubName}, create an {HubName} credential using the copied token and pointing to the URLs shown in the *Server URL* and *SSO URL* fields of the token page:
-
++
 * *Galaxy Server URL* = `https://console.redhat.com/api/automation-hub/`
 * *AUTH SEVER URL* = `https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token`
-
++
 . To use {PrivateHubName}, create an {HubName} credential using a token retrieved from the *Repo Management* dashboard of your {PrivateHubName} and pointing to the published repository URL as shown:
 //+
 //image:projects-ah-repo-mgmt-get-token.png[image]

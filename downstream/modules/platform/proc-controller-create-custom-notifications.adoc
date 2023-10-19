@@ -2,7 +2,7 @@
 
 = Creating custom notifications
 
-You can [ADD XREF]:customize the text content of each xref:controller-notification-types[Notification type] on the notification form.
+You can xref:controller-attributes-custom-notifications[customize the text content] of each xref:controller-notification-types[Notification type] on the notification form.
 
 .Procedure
 
@@ -153,4 +153,4 @@ If you save the notifications template without editing the custom message (or ed
 
 * For more information, see link:https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#using-variables-with-jinja2[Using variables with Jinja2].
 * {ControllerNameStart} requires valid syntax to retrieve the correct data to display the messages. 
-For a list of supported attributes and the proper syntax construction, see the [ADD XREF]Supported Attributes for Custom Notifications section.
+For a list of supported attributes and the proper syntax construction, see the xref:controller-attributes-custom-notifications[Supported Attributes for Custom Notifications] section.

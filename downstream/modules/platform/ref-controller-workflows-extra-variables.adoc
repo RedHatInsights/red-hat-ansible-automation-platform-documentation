@@ -42,7 +42,7 @@ In this example, there are two playbooks that can be combined in a workflow to e
           integration_results_url:  "{{ (result.stdout|from_json).link }}"
 ----
 
-* use_set_stats.yml: second playbook in the workflow
+* use_set_stats.yml: second playbook in the workflow:
 
 ----
 ---

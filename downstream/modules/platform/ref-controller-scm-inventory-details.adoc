@@ -8,21 +8,21 @@ image::ug-details-for-scm-job.png[Details for SCM job]
 
 You can view the following details for an executed job:
 
-Status:: It can be any of the following:
-* *Pending*: The SCM job has been created, but not queued or started yet. 
+* *Status*: It can be any of the following:
+** *Pending*: The SCM job has been created, but not queued or started yet. 
 Any job, not just SCM jobs, stay in pending until it is ready to be run by the system. 
 Reasons for SCM jobs not being ready include dependencies that are currently running (all dependencies must be completed before the next step can execute), or there is not enough capacity to run in the locations it is configured to.
-* *Waiting*: The SCM job is in the queue waiting to be executed.
-* *Running*: The SCM job is currently in progress.
-* *Successful*: The last SCM job succeeded.
-* *Failed*: The last SCM job failed.
-Job Type:: SCM jobs display Source Control Update.
-Project:: The name of the project.
-Project Status:: Indicates whether the associated project was successfully updated.
-Revision:: Indicates the revision number of the sourced project that was used in this job.
-Execution Environment:: Specifies the {ExecEnvShort} used to run this job.
-Execution Node:: Indicates the node on which the job ran.
-Instance Group:: Indicates the instance group on which the job ran, if specified.
-Job Tags:: Tags show the various job operations executed.
+** *Waiting*: The SCM job is in the queue waiting to be executed.
+** *Running*: The SCM job is currently in progress.
+** *Successful*: The last SCM job succeeded.
+** *Failed*: The last SCM job failed.
+* *Job Type*: SCM jobs display Source Control Update.
+* *Project*: The name of the project.
+* *Project Status*: Indicates whether the associated project was successfully updated.
+* *Revision*: Indicates the revision number of the sourced project that was used in this job.
+* *Execution Environment*: Specifies the {ExecEnvShort} used to run this job.
+* *Execution Node*: Indicates the node on which the job ran.
+* *Instance Group*: Indicates the instance group on which the job ran, if specified.
+* *Job Tags*: Tags show the various job operations executed.
 
 Selecting these items enables you to view the corresponding job templates, projects, and other objects.

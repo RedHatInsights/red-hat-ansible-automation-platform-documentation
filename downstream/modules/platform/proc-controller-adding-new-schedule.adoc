@@ -15,11 +15,12 @@ This can be a template, project, or inventory source.
 image::ug-generic-create-schedule.png[Create schedule]
 +
 . Enter the appropriate details into the following fields:
-Name:: Enter the name.
-Description (optional)::  Enter a description.
-Start date/time:: Enter the date and time to start the schedule.
-Local time zone:: The start time that you enter must be in this time zone.
-Repeat frequency:: Appropriate scheduling options display depending on the frequency you select.
+
+* *Name*: Enter the name.
+* Optional: *Description*: Enter a description.
+* *Start date/time*: Enter the date and time to start the schedule.
+* *Local time zone*: The start time that you enter must be in this time zone.
+* *Repeat frequency*: Appropriate scheduling options display depending on the frequency you select.
 +
 The *Schedule Details* display when you establish a schedule, enabling you to review the schedule settings and a list of the scheduled occurrences in the selected *Local Time Zone*.
 +

@@ -31,7 +31,7 @@ One *System Administrator* must always exist.
 To delete the *System Administrator* account, you must first create another *System Administrator* account.
 ====
 
-. Click btn:[Save]
+. Click btn:[Save].
 +
 When the user is successfully created, the *User* dialog opens.
 +

@@ -2,7 +2,7 @@
 
 = Best practices for {ControllerName}
 
-The following describe best practice for the use of {ControllerName}:
+The following describes best practice for the use of {ControllerName}:
 
 == Use Source Control
 

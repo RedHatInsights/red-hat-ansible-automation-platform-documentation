@@ -2,7 +2,7 @@
 
 = Working with Webhooks
 
-A [ADD XREF]Webhook enables you to execute specified commands between applications over the web. 
+A Webhook enables you to execute specified commands between applications over the web. 
 {ControllerNameStart} currently provides webhook integration with GitHub and GitLab. 
 
 Set up a webhook using the following services:

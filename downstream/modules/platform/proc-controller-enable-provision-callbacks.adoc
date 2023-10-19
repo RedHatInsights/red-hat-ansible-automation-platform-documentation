@@ -32,8 +32,8 @@ The following is an example using curl (all on a single line):
 ----
 curl -k -f -i -H 'Content-Type:application/json' -XPOST -d '{"host_config_key": "redhat"}' \
                   https://<CONTROLLER_SERVER_NAME>/api/v2/job_templates/7/callback/
-+
 ----
++
 . Ensure that the requesting host is defined in your inventory for the callback to succeed.
 
 .Troubleshooting

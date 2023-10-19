@@ -5,7 +5,7 @@
 The *Host Details* window displays the following information about the host affected by the selected event and its associated play and task:
 
 * The *Host*.
-* The *Status*
+* The *Status*.
 * The type of run in the *Play* field.
 * The type of *Task*.
 * If applicable, the Ansible Module task, and any arguments for that module.

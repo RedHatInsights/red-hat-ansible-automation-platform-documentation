@@ -2,16 +2,17 @@
 
 = Creating an instance group
 
-Learn how to create a new instance group.
+Use the following procedure to create a new instance group.
 
 .Procedure
 
 . From the navigation panel, select menu:Administration[Instance Groups].
 . Click menu:Add[Add instance group].
 . Enter the appropriate details into the following fields:
-Name:: Names must be unique and must not be named "controller".
-Policy instance minimum:: Enter the minimum number of instances to automatically assign to this group when new instances come online.
-Policy instance percentage:: Use the slider to select a minimum percentage of instances to automatically assign to this group when new instances come online.
+
+* *Name*: Names must be unique and must not be named "controller".
+* *Policy instance minimum*: Enter the minimum number of instances to automatically assign to this group when new instances come online.
+* *Policy instance percentage*: Use the slider to select a minimum percentage of instances to automatically assign to this group when new instances come online.
 +
 [NOTE]
 ====
@@ -19,8 +20,8 @@ Policy instance fields are not required to create a new instance group.
 If you do not specify values, then the *Policy instance minimum* and *Policy instance percentage* default to 0.
 ====
 +
-Max concurrent jobs:: Specify the maximum number of forks that can be run for any given job.
-Max forks:: Specify the maximum number of concurrent jobs that can be run for any given job.
+* *Max concurrent jobs*: Specify the maximum number of forks that can be run for any given job.
+* *Max forks*: Specify the maximum number of concurrent jobs that can be run for any given job.
 +
 [NOTE]
 ====

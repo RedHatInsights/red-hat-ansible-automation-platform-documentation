@@ -2,7 +2,7 @@
 
 = Google Compute Engine
  
- [literal, options="nowrap" subs="+attributes"]
+[literal, options="nowrap" subs="+attributes"]
 ----
 auth_kind: serviceaccount
 compose:

@@ -5,7 +5,7 @@
 Use the following procedure to use `ansible_facts` to define the host filter when creating Smart Inventories.
 
 .Procedure
-. In the navigation panel, select menu:Resources[Inventories].
+. From the navigation panel, select menu:Resources[Inventories].
 . Click btn:[Add] and select *Add Smart Inventory* from the menu.
 . In the *Create new smart inventory* page, click the image:search.png[Search,15,15] icon in the *Smart host filter* field.
 This opens a window to filter hosts for this inventory.

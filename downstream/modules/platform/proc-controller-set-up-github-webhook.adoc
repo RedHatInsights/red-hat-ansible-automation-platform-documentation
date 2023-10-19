@@ -42,17 +42,17 @@ image::ug-webhooks-webhook-credential.png[GitLab webhook credential]
 . To complete the *Add webhook* page, you must check the *Enable Webhook* option in a job template or workflow job template. 
 For more information, see step 3 in both xref:controller-create-job-template[Creating a job template] and xref:controller-create-workflow-template[Creating a workflow template].
 . Complete the following fields:
-Payload URL:: Copy the contents of the *Webhook URL* from the job template and paste it here.
+* *Payload URL*: Copy the contents of the *Webhook URL* from the job template and paste it here.
 The results are sent to this address from GitHub.
-Content type:: Set it to *application/json*.
-Secret:: Copy the contents of the *Webhook Key* from the job template and paste it here.
-Which events would you like to trigger this webhook?:: Select the types of events you want to trigger a webhook. 
+* *Content type*: Set it to *application/json*.
+* *Secret*: Copy the contents of the *Webhook Key* from the job template and paste it here.
+* *Which events would you like to trigger this webhook?*: Select the types of events you want to trigger a webhook. 
 Any such event will trigger the job or workflow. 
 To have the job status (pending, error, success) sent back to GitHub, you must select *Pull requests* in the *Let me select individual events* section.
 +
 image::ug-webhooks-github-repo-choose-events.png[Github repo choose events]
 +
-Active:: Leave this checked.
+* *Active*: Leave this checked.
 . Click btn:[Add webhook].
 . When your webhook is configured, it is displayed in the list of webhooks active for your repository, along with the ability to edit or delete it.
 Click on a webhook, to go to the *Manage webhook* screen. 

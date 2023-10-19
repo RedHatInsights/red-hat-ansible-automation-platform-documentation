@@ -14,8 +14,8 @@ Configure the webhook notification with the following:
 
 Provide the following details to set up a webhook notification:
 
-Username (optional):: Enter a username.
-Basic auth password (optional)::
+Optional: Username:: Enter a username.
+Optional: Basic auth password::
 Target URL:: Enter the full URL to which the webhook notification is `PUT` or `POSTed`.
 Disable SSL Verification:: SSL verification is on by default, but you can choose to turn off verification of the authenticity of the target's certificate. 
 Select this option to disable verification for environments that use internal or private CA's.
