@@ -3,24 +3,24 @@
 //Only include release note types that have updates for a given release. For example, if there are no Technology previews for the release, remove that section from this file.
 
 
-= Ansible Automation Platform 2.4
+= {PlatformNameShort} 2.4
 
-Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
+{PlatformName} simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across many IT domains including operations, networking, security, development, and across diverse hybrid environments. Simple to adopt, use, and understand, {PlatformName} provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
 
 == New features and enhancements
 
-This release of Ansible Automation Platform features the following enhancements:
+This release of {PlatformNameShort} features the following enhancements:
 
-* Previously, the Execution Environment container images were based on RHEL 8 only. With Ansible Automation Platform 2.4 onwards, the Execution Environment container images are now also available on RHEL 9. 
-The Execution Environment includes the following container images:
+* Before this update, the {ExecEnvShort} container images were based on RHEL 8 only. With {PlatformNameShort} 2.4 onwards, the {ExecEnvShort} container images are now also available on RHEL 9. 
+The {ExecEnvShort} includes the following container images:
 ** ansible-python-base
 ** ansible-python-toolkit
 ** ansible-builder
 ** ee-minimal
 ** ee-supported
 
-* The ansible-builder project recently released Ansible Builder version 3, a much-improved and simplified approach to creating execution environments. 
-You can use the following configuration YAML keys with Ansible Builder version 3:
+* The ansible-builder project recently released {Builder} version 3, a much-improved and simplified approach to creating execution environments. 
+You can use the following configuration YAML keys with {Builder} version 3:
 ** additional_build_files
 ** additional_build_steps
 ** build_arg_defaults
@@ -29,45 +29,44 @@ You can use the following configuration YAML keys with Ansible Builder version 3
 ** options
 ** version
 
-For more information about using Ansible Builder version 3, see 
+For more information about using {Builder} version 3, see 
 link:https://ansible.readthedocs.io/projects/builder/en/stable/[Ansible Builder Documentation] and link:https://docs.ansible.com/automation-controller/latest/html/userguide/ee_reference.html[Execution Environment Setup Reference].
 
-* Ansible Automation Platform 2.4 and later versions can now be run on ARM platforms, including both the control plane and the execution environments.
+* {PlatformNameShort} 2.4 and later versions can now be run on ARM platforms, including both the control plane and the execution environments.
 
-* Added an option to configure SSO logout URL for automation hub.
+* Added an option to configure the SSO logout URL for {HubName} if you need to change it from the default value.
 
 * Updated the ansible-lint RPM package to version 6.14.3.
 
-* Updated django for potential denial-of-service vulnerability in file uploads (CVE-2023-24580).
+* Updated Django for potential denial-of-service vulnerability in file uploads (CVE-2023-24580).
 
 * Updated sqlparse for ReDOS vulnerability (CVE-2023-30608).
 
-* Updated django for potential denial-of-service in Accept-Language headers (CVE-2023-23969).
-
+* Updated Django for potential denial-of-service in Accept-Language headers (CVE-2023-23969).
 
 == Deprecated and removed features
 
-Some features available in previous releases have been deprecated or removed. Deprecated functionality is still included in Ansible Automation Platform and continues to be supported; however, it will be removed in a future release of this product and is not recommended for new deployments. 
+Some features available in earlier releases have been deprecated or removed. Deprecated functionality is still included in {PlatformNameShort} and continues to be supported. However, it will be removed in a future release of this product and is not recommended for new deployments. 
 
-The following is a list of major functionality deprecated and removed within Ansible Automation Platform 2.4:
+The following is a list of major functionality deprecated and removed within {PlatformNameShort} 2.4:
 
-* On-premise component Automation Services Catalog is now removed from Ansible Automation Platform 2.4 onwards.
+* On-premise component {CatalogName} is now removed from {PlatformNameShort} 2.4 onwards.
 
-* With the Ansible Automation Platform 2.4 release, the Execution Environment container image for Ansible 2.9 (*ee-29-rhel-8*) is no longer loaded into the Automation Controller configuration by default.
+* With the {PlatformNameShort} 2.4 release, the {ExecEnvShort} container image for Ansible 2.9 (*ee-29-rhel-8*) is no longer loaded into the Automation Controller configuration by default.
 
-* Although you can still synchronize content, the use of synclists is deprecated and will be removed in a later release. Instead, private automation hub administrators can upload manually-created requirements files from the `rh-certified` remote.
+* Although you can still synchronize content, the use of synclists is deprecated and will be removed in a later release. Instead, {PrivateHubName} administrators can upload manually-created requirements files from the `rh-certified` remote.
 
-* You can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the old `tower_auth_secret` parameter.  This change is backwards compatible, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
+* You can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the old `tower_auth_secret` parameter. This change is compatible with earlier versions, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
 
 * Smart inventories have been deprecated in favor of constructed inventories and will be removed in a future release.
 
 == Bug fixes
 
-The following bugs were fixed in this release of Ansible Automation Platform:
+The following bugs were fixed in this release of {PlatformNameShort}:
 
-* Installer now ensures that collection auto signing cannot be enabled without enabling the collection signing service.
+* The installer now ensures that collection auto signing cannot be enabled without enabling the collection signing service.
 
-* Fixed an issue with restoring backups when the installed automation controller version is different from the backup version.
+* Fixed an issue with restoring backups when the installed {ControllerName} version is different from the backup version.
 
 * Fixed an issue with not adding user defined galaxy-importer settings to `galaxy-importer.cfg` file.
 
@@ -77,31 +76,31 @@ The following bugs were fixed in this release of Ansible Automation Platform:
 
 * Updated the `outdated base_packages.txt` file that is included in the bundle installer.
 
-* Fixed an issue where upgrading the Ansible Automation Platform did not update the nginx package by default.
+* Fixed an issue where upgrading the {PlatformNameShort} did not update the nginx package by default.
 
 * Fixed an issue where an *awx* user was created without creating an *awx* group on execution nodes.
 
 * Fixed the assignment of package version variable to work with flat file inventories. 
 
-* Added a FQDN check for the automation hub hostname required to run the Skopeo commands.
+* Added a FQDN check for the {HubName} hostname required to run the Skopeo commands.
 
 * Fixed an issue such that the front end URL for Red Hat Single Sign On (SSO) is now properly configured after you specify the `sso_redirect_host` variable.
 
 * Fixed the variable precedence for all component `nginx_tls_files_remote` variables.
 
-* Fixed the *setup.sh* script to escalate privileges if necessary for installing Ansible Automation Platform. 
+* Fixed the *setup.sh* script to escalate privileges if necessary for installing {PlatformNameShort}. 
 
-* Fixed an issue when restoring a backup to an automation hub with a different hostname.
+* Fixed an issue when restoring a backup to an {HubName} with a different hostname.
 
 == Technology Preview
 
-Some features in this release are currently classified as Technology Preview. Technology Preview features provide early access to upcoming product features, enabling customers to test functionality and provide feedback during the development process. Please note that Red Hat does not recommend using technology preview features for production, and Red Hat SLAs do not support technology preview functions.
+Some features in this release are currently classified as Technology Preview. Technology Preview features offer early access to upcoming product features, enabling customers to test functionality and give feedback during the development process. Note that Red Hat does not recommend using Technology Preview features for production, and Red Hat SLAs do not support Technology Preview functions.
 
-Following are the technology preview features: 
+The following are Technology Preview features: 
 
-* Ansible Automation Platform 2.4 adds the ability to install the automation controller for IBM Power (ppc64le), IBM Z (s390x), and IBM(R) LinuxONE (s390x) architectures.
+* {PlatformNameShort} 2.4 adds the ability to install the {ControllerName} for IBM Power (ppc64le), IBM Z (s390x), and IBM(R) LinuxONE (s390x) architectures.
 
-* Starting with Ansible Automation Platform 2.4, the Platform Resource Operator can be used to create the following resources in automation controller by applying YAML to your OpenShift cluster:
+* Starting with {PlatformNameShort} 2.4, the Platform Resource Operator can be used to create the following resources in {ControllerName} by applying YAML to your OpenShift cluster:
 ** Inventories
 ** Projects
 ** Instance Groups
@@ -110,14 +109,14 @@ Following are the technology preview features:
 ** Workflow Job Templates
 ** Launch Workflows
 
-One notable change is that you can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the old `tower_auth_secret` parameter. This change is backwards compatible, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
+One notable change is that you can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the old `tower_auth_secret` parameter. This change is compatible with earlier versions, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
 
 [role="_additional-resources"]
 .Additional resources
 
-* For the most recent list of technology preview features, see link:https://access.redhat.com/articles/ansible-automation-platform-preview-features[Ansible Automation Platform - Preview Features].
+* For the most recent list of Technology Preview features, see link:https://access.redhat.com/articles/ansible-automation-platform-preview-features[Ansible Automation Platform - Preview Features].
 
-* For more information about support for technology preview features, see link:https://access.redhat.com/support/offerings/techpreview[Red Hat Technology Preview Features Support Scope].
+* For more information about support for Technology Preview features, see link:https://access.redhat.com/support/offerings/techpreview[Red Hat Technology Preview Features Support Scope].
 
 * For information regarding execution node enhancements on OpenShift deployments, see link:https://docs.ansible.com/automation-controller/latest/html/administration/instances.html[Managing Capacity With Instances].
 

@@ -1,16 +1,18 @@
 // Templates for release notes are contained in the ..downstream/snippets folder.
 // For each release, make a copy of assembly-rn-template.adoc, rename and save as instructed in the template and add an include statement to this file.
+include::attributes/attributes.adoc[]
 
-= Red Hat Ansible Automation Platform Release Notes
+= {PlatformName} Release Notes
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+
 include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 
 include::topics/platform-intro.adoc[leveloffset=+1]
 
 [[anchor-aap_2.4-release]]
-== Red Hat Ansible Automation Platform 2.4
-This release includes a number of enhancements, additions, and fixes that have been implemented in the Red Hat Ansible Automation Platform.
+== {PlatformName} 2.4
+This release includes several enhancements, additions, and fixes that have been implemented in the {PlatformName}.
 
 include::topics/aap-24.adoc[leveloffset=+2]
 
@@ -23,3 +25,13 @@ include::topics/eda-24.adoc[leveloffset=+2]
 include::topics/operator-240.adoc[leveloffset=+2]
 
 include::topics/docs-24.adoc[leveloffset=+2]
+
+include::topics/errata-24-sep-24.adoc[leveloffset=+2]
+
+include::topics/errata-24-sep-12.adoc[leveloffset=+2]
+
+include::topics/errata-24-aug-28.adoc[leveloffset=+2]
+
+include::topics/errata-24-aug-10.adoc[leveloffset=+2]
+
+include::topics/errata-24-jul-26.adoc[leveloffset=+2]

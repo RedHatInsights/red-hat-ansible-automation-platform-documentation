@@ -1,7 +1,7 @@
 [[upgrading]]
-= Upgrading Ansible Automation platform
+= Upgrading {PlatformName}
 
-Perform upgrades to maintenance versions of Ansible Automation Platform using the installer. The installer performs all necessary actions required to upgrade to the latest versions of Ansible Automation Platform, including Ansible Tower and Private Automation Hub.
+Perform upgrades to maintenance versions of {PlatformNameShort} using the installer. The installer performs all necessary actions required to upgrade to the latest versions of {PlatformNameShort}, including {ControllerName} and {PrivateHubName}.
 
 
 [IMPORTANT]
@@ -9,8 +9,8 @@ Perform upgrades to maintenance versions of Ansible Automation Platform using th
 Do not use `yum update` to run upgrades.
 ====
 
-Refer to the table in xref:whats-included[What's included in Ansible Automation Platform] for information on maintenance releases of Ansible Automation Platform.
+Refer to the table in xref:whats-included[What's included in Ansible Automation Platform] for information on maintenance releases of {PlatformNameShort}.
 
-See the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[Red Hat Ansible Automation Platform Upgrade Guide] for information on upgrading your Ansible Automation Platform.
+See the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[Red Hat Ansible Automation Platform Upgrade Guide] for information on upgrading your {PlatformNameShort}.
 
-See the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide] for procedures on using the Ansible Automation Platform installer.
+See the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide] for procedures on using the {PlatformNameShort} installer.

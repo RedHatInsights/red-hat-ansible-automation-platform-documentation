@@ -1,0 +1,111 @@
+// This is the release notes file for AAP 2.4 errata bundle dated September 24 2023.
+
+= {PlatformNameShort} 2.4 - September 25, 2023
+
+link:https://access.redhat.com/errata/RHBA-2023:5347[Red Hat Errata Release]
+
+== {PlatformNameShort}
+
+.New features and enhancements
+
+* automation-controller has been updated to 4.4.2.
+
+.Bug fixes
+
+* Podman configurations are now correctly aligned to the {EDAName} home directory.
+
+* Fixed an issue where the restore process failed to stop `pulpcore-worker` services on RHEL 9.
+
+* Fixed an issue with the `awx-rsyslogd` process where it starts with the wrong user.
+
+* Updated the inventory file to include SSL key and cert parameters for provided SSL web certificates.
+
+* Fixed postgres sslmode for `verify-full` that affected external postgres and postgres signed for 127.0.0.1 for internally managed postgres.
+
+* Subject alt names for component hosts will now only be checked for signing certificates when https is enabled.
+
+* Fixed the values used for signing installer managed certificates for internal postgres installations.
+
+* Fixed the linger configuration for an {EDAName} user.
+
+* You can now mount the `/var/lib/awx` directory as a separate filesystem on execution nodes.
+
+* *awx* user configuration now supports rootless Podman.
+
+* You are now able to sync {ExecEnvShort} images in {HubName} to {ControllerName} on upgrade.
+
+* The installer now correctly enforces only 1 {EDAName} host per {PlatformNameShort} installation.
+
+* Added new variables for additional nginx configurations per component.
+
+* Added temporary file cleanup for Podman to prevent `cannot re-exec process` error during job execution.
+
+* The installer will now properly generate a new `SECRET_KEY` for controller when running `setup.sh` with the `-k` option.
+
+== {ControllerNameStart}
+
+.New features and enhancements
+
+* automation-controller has been updated to 4.4.4.
+
+.Security fixes
+
+* python3-django/python39-django: Potential denial of service vulnerability in django.utils.encoding.uri_to_iri() (CVE-2023-41164)
+
+.Bug fixes
+
+* Fixed job error handling so that error text from `ansible-runner` or Receptor is correctly reported in cases that were previously shown as `Job terminated due to error`. 
+
+* The constructed inventory edit form no longer hangs indefinitely in the loading state for users with edit permissions.
+
+* Added views for a monthly summary of host metrics.
+
+* Added host metrics to exported analytics data.
+
+* Introduced a periodic task and management command for cleaning up old host metrics.
+
+* Fixed a bug where rapidly clicking the *launch* button in the preview step would start many jobs.
+
+* Fixed incorrect capacity allocation for remote execution nodes when resource limits are set in OpenShift.
+
+== {HubNameStart}
+
+.New features and enhancements
+
+* automation-hub has been updated to 4.7.3.
+
+* python3-galaxy-ng/python39-galaxy-ng has been updated to 4.7.3.
+
+* python3-pulp-ansible/python39-pulp-ansible has been updated to 0.17.4.
+
+.Bug fixes
+
+* Fixed an issue where the default remote URL for the `rh-certified` repository would not work.
+
+* Added a legacy role download count to the UI.
+
+* Added a collection upload modal.
+
+* Added repository-related actions to the collection detail screen.
+
+* Added the ability to delete a collection and a collection version from the current repository only.
+
+* Enhanced the *Repository List* page with several UI updates:
+
+** Combined the *sync status* and *last sync* columns into a single column.
+
+** Added *Labels* and *Private* columns.
+
+** Added *Pipeline*, *Private*, and *Remote* filters.
+
+* Added *Mirror* and *Optimize* sync options when performing a repository sync.
+
+* Resolved an issue in community mode where the token page handled null expiration incorrectly.
+
+* Resolved an issue with the filter in the Repository list where it would partially reset when loading.
+
+* Resolved an issue on the approval dashboard where a `Repository name not found` error occurred when the origin repository was not listed in the first page of results.
+
+Resolved an issue on the *Collections* page where using the filter and resetting it would cause all collection versions to display instead of just the latest collection version.
+
+* Improved the logic to select the most suitable distribution to use when uploading a collection to staging.

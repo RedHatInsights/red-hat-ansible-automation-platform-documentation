@@ -1,0 +1,105 @@
+// This is the release notes file for AAP 2.4 errata bundle dated August 28 2023.
+
+= {PlatformNameShort} 2.4 - August 28, 2023
+
+link:https://access.redhat.com/errata/RHBA-2023:4782[Red Hat Errata Release]
+
+== {ControllerNameStart}
+
+.New features and enhancements
+
+* automation-controller has been updated to 4.4.2.
+
+.Security fixes
+
+* automation-controller: python-django: Potential regular expression denial of service vulnerability in EmailValidator/URLValidator (CVE-2023-36053)
+
+* automation-controller: python-django: Potential denial-of-service vulnerability in file uploads (CVE-2023-24580)
+
+.Bug fixes
+
+* Changing credential types by using the drop-down list in the *Launch prompt* window no longer causes the screen to disappear.
+
+* Upgraded python dependencies which include upgrades from Django 3.2 to 4.2.3, psycopg2 to psycopg3, and additional libraries as needed. Also added a new setting in the UI exposing the `CSRF_TRUSTED_ORIGIN` settings.
+
+* Fixed slow database UPDATE statements on the job events table which could cause a task manager timeout.
+
+* Fixed an issue where adding a new label to a job through the *Prompt On Launch* option would not add the label to the job details.
+
+* Added `noopener` and `noreferrer` attributes to controller UI links that were missing these attributes.
+
+* Fixed the broken *User Guide* link in the *Edit Subscription Details* page.
+
+* Turned off auto-complete on the remaining controller UI forms that were missing that attribute.
+
+* The *Add* button on the credentials page is now accessible for users with the correct permissions.
+
+* Fixed an unexpected error that occurred when adding a new host while using a manifest with size 10.
+
+* Fixed the Trial toggle when using a manifest file.
+
+* Applied environment variables from the `AWX_TASK_ENV` setting when running credential lookup plugins.
+
+* Interrupted jobs (such as canceled jobs) no longer clear facts from hosts if the job ran on an execution node.
+
+* Using a license that is missing a `usage` attribute no longer returns a 400 error.
+
+* Fixed sub-keys under `data` from HashiCorp Vault Secret Lookup responses to check for secrets, if found.
+
+* Fixed Ansible facts to retry saving to hosts if there is a database deadlock.
+
+== {EDAName}
+
+.New features and enhancements
+
+* automation-eda-controller has been updated to 1.0.1.
+
+.Security fixes
+
+* automation-eda-controller: token exposed at importing project (CVE-2023-4380)
+
+* python3-cryptography/python39-cryptography: memory corruption via immutable objects (CVE-2023-23931)
+
+* python3-django/python39-django: Potential regular expression denial of service vulnerability in EmailValidator/URLValidator (CVE-2023-36053)
+
+* python3-requests/python39-requests: Unintended leak of Proxy-Authorization header (CVE-2023-32681)
+
+.Bug fixes
+
+* Contributor and editor roles now have permissions to access users and set the AWX token.
+
+* The onboarding wizard now requests controller token creation.
+
+* Corrected the filtering capability of the *Rule Audit* screens so that a search yields results with the `starts with` function.
+
+* Enabling or disabling rulebook activation no longer increases the restarts counter by 1.
+
+* Filtering by a text string now displays all applicable items in the UI, including those that are not visible in the list at that time.
+
+* Audit records are no longer missing when running activations with multiple jobs.
+
+* The event payload is no longer missing key attributes when a job template fails.
+
+* Fixed the Git token leak that occurs when importing a project fails.
+
+* The restart policy in Kubernetes (k8s) now restarts a successful activation that is incorrectly marked as failed.
+
+* Activation statuses are now reported correctly, whether you are disabling or enabling them.
+
+* When the `run_job_template` action fails, ansible-rulebook prints an error log in the activation output and creates an entry in rule audit so the user is alerted that the rule has failed.
+
+* When a user tries to bulk delete rulebook activations from the list, the request now completes successfully and consistently.
+
+* The *Rulebook Activation* link now functions correctly in the *Rule Audit Detail* UI.
+
+* The ansible-rulebook now only connects to the controller if the rulebook being processed has a `run_job_template` action.
+
+* Fixed a bug where some audit rule records had the wrong rulebook link.
+
+* Fixed a bug where only the first 10 audit rules had the right link.
+
+* Before this update, project credentials could not be updated if there was a change to the credential used in the project. With this update credentials can be updated in a project with a new or different credential.
+
+* The *User Access* section of the navigation panel no longer disappears after creating a decision environment.
+
+* Fixed a bug where filtering for audit rules did not work properly on {OCPShort}.

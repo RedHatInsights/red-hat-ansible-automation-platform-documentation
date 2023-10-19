@@ -1,11 +1,11 @@
 // This is the release notes for Event-Driven Ansible 1.0 for AAP 2.4 release, the version number is removed from the topic title as part of the release notes restructuring efforts.
 
 [[eda-24-intro]]
-= Event-Driven Ansible
+= {EDAName}
 
-Event-Driven Ansible is the newest capability of Ansible Automation Platform that is designed to enable automated response with user-defined, rules-based workflows. Event-Driven Ansible works by receiving events from third party tools, deciding on the actions to take, and acting automatically.
+{EDAName} is the newest capability of {PlatformNameShort} that is designed to enable automated response with user-defined, rules-based workflows. {EDAName} works by receiving events from third party tools, deciding on the actions to take, and acting automatically.
 
-Event-Driven Ansible is included in Ansible Automation Platform, making the platform even more capable as a single enterprise automation solution. Using Event-Driven Ansible, domain experts can easily create end-to-end fully automated OpsAsCode scenarios for a broad array of use cases across the IT landscape. By eliminating high-volume routine tasks and automatically responding to changing conditions, teams are free to innovate more efficiently, and act consistently and accurately at scale.
+{EDAName} is included in {PlatformNameShort}, making the platform even more capable as a single enterprise automation solution. Using {EDAName}, domain experts can easily create end-to-end fully automated Ops As Code scenarios for a broad array of use cases across the IT landscape. By eliminating high-volume routine tasks and automatically responding to changing conditions, teams are free to innovate more efficiently, and act consistently and accurately at scale.
 
 .Known issues
 
@@ -17,11 +17,11 @@ Event-Driven Ansible is included in Ansible Automation Platform, making the plat
 
 * The onboarding wizard does not request a controller token creation.
 
-* Users cannot filter through a list of tokens under the Controller Token tab. 
+* Users cannot filter through a list of tokens under the *Controller Token* tab. 
 
 * Only the users with administrator rights can set or modify their passwords. 
 
-* In the event of a failure, an activation with restart policy set to `Always` is unable to restart the failed activation. 
+* If there is a failure, an activation with restart policy set to `Always` is unable to restart the failed activation. 
 
 * Disabling and enabling an activation causes the restart count to increase by one count. This behavior results in an incorrect `restart` count. 
 
@@ -29,7 +29,7 @@ Event-Driven Ansible is included in Ansible Automation Platform, making the plat
 
 * Podman pods must be executed with memory limits.
 
-* Long running activations with loads of events can cause out of disk space issue.
+* Long running activations with loads of events can cause an out of disk space issue.
 
 * Users can add multiple tokens even when only the first AWX token is used. 
 
@@ -45,15 +45,15 @@ Event-Driven Ansible is included in Ansible Automation Platform, making the plat
 
 * An incorrect status is reported for activations that are disabled or enabled. 
 
-* If the *run_job_template* action fails, the rule is not counted as executed. 
+* If the `run_job_template` action fails, the rule is not counted as executed. 
 
 * RHEL 9.2 activations cannot connect to the host.
 
 * When there are more activations than available workers, disabling the activations incorrectly shows them in running state. 
 
-* Event-Driven Ansible activation pods are running out of memory on RHEL 9.
+* {EDAName} activation pods are running out of memory on RHEL 9.
 
-* Restarting the Event-Driven Ansible server can cause activation states to become stale.
+* Restarting the {EDAName} server can cause activation states to become stale.
 
 * Bulk deletion of rulebook activation lists is not consistent, and the deletion can be either successful or unsuccessful.
 

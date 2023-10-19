@@ -1,0 +1,25 @@
+// This is the release notes file for AAP 2.4 errata bundle dated September 12 2023.
+
+= {PlatformNameShort} 2.4 - September 12, 2023
+
+link:https://access.redhat.com/errata/RHBA-2023:5140[Red Hat Errata Release]
+
+== {ControllerNameStart}
+
+.New features and enhancements
+
+* automation-controller has been updated to 4.4.3.
+
+.Security fixes
+
+* automation-controller: cryptography: memory corruption via immutable objects (CVE-2023-23931)
+
+* automation-controller: GitPython: Insecure non-multi options in clone and clone_from is not blocked (CVE-2023-40267)
+
+* python3-gitpython/python39-gitpython: Insecure non-multi options in clone and clone_from is not blocked (CVE-2023-40267)
+
+.Bug fixes
+
+* Fixed a bug that caused a deadlock on shutdown when Redis was unavailable.
+
+* The login form no longer supports autocomplete on the password field due to security concerns.

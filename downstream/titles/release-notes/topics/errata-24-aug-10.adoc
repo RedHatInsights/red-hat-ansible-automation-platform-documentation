@@ -1,0 +1,101 @@
+// This is the release notes file for AAP 2.4 errata bundle dated August 10 2023.
+
+= {PlatformNameShort} 2.4 - August 10, 2023
+
+link:https://access.redhat.com/errata/RHBA-2023:4621[Red Hat Errata Release]
+
+== {ControllerNameStart}
+
+.New features and enhancements
+
+* automation-controller has been updated to 4.4.1.
+
+.Security fixes
+
+* automation controller: Html injection in custom login info (CVE-2023-3971)
+
+.Bug fixes
+
+* Organization admin users are no longer shown an error on the Instances list.
+
+* Fixed the workflow job within workflow approval to display the correct details.
+
+* Credential name search in the ad hoc commands prompt no longer requires case-sensitive input.
+
+* The *Back to list* button in the controller UI now maintains previous search filters.
+
+* *Topology view* and *Instances* are only available as sidebar menu options to System Administrators and System Auditors.
+
+* Fixed the frequency of the scheduler to run on the correct day of the week as specified by the user.
+
+* Fixed an issue with slow database UPDATE statements when using nested tasks (include_tasks) causing task manager timeout.
+
+* Added a setting to enable the queuing for Rsyslog to handle higher work volumes (`LOG_AGGREGATOR_ACTION_MAX_DISK_USAGE_GB`).
+
+* Added the ability to add execution and hop nodes to VM-based controller installations from the UI.
+
+* Added the `awx-manage` command for creating future events table partitions.
+
+* Re-enabled Pendo support by providing the correct Pendo API key.
+
+* Added the ability to filter teams by using partial names in the dialog for granting teams access to a resource.
+
+* Fixed a bug where a weekly rrule string without a BYDAY value would result in the UI throwing a TypeError.
+
+* Fixed a server error that happened when deleting workflow jobs ran before event partitioning migration.
+
+* Added API reference documentation for the new bulk API endpoint.
+
+* Fixed a bug where forms provided in the custom login information would render and run.
+
+* Fixed an issue where related items were not visible in some cases. For example, job template instance groups, organization galaxy credentials, and organization instance groups.
+
+== {EDAName}
+
+.New features and enhancements
+
+* ansible-rulebook has been updated to 1.0.1.
+
+.Bug fixes
+
+* Fixed an issue where the `rule_run_at` field was not sent to the websocket.
+
+* Do not try to connect with AWX when the no `run_job_template` action is used.
+
+* The number of simultaneously open connections to controller is now limited to 30.
+
+== {HubNameStart}
+
+.New features and enhancements
+
+* automation-hub has been updated to 4.7.1-2.
+
+.Bug fixes
+
+* Fixed issue with using gpg key with passphrase for signing services.
+
+== Automation Platform Operator
+
+.New features and enhancements
+
+* automation-controller 4.4.1 RPM updates.
+
+* Added support for scaling {ControllerName} down to replicas 0 for maintenance.
+
+* Added the ability to provision Mesh and Execution nodes in limited network connectivity environments.
+
+== Creator Tools
+
+.New features and enhancements
+
+* ansible-navigator has been updated to 3.4.1.
+
+.Bug fixes
+
+* Removed the `introspect` script from `image_manager` directory.
+
+* Fixed image introspect for long python metadata.
+
+* Fixed logging dependencies.
+
+* Fixed collections in `stdout` mode.

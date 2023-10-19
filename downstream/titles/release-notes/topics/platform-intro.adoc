@@ -18,23 +18,23 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 |===
 
-== Red Hat Ansible Automation Platform life cycle
+== {PlatformName} life cycle
 
-Red Hat publishes a product life cycle page that identifies the levels of maintenance for each Ansible Automation Platform release.
+Red Hat publishes a product life cycle page that identifies the levels of maintenance for each {PlatformNameShort} release.
 Refer to link:https://access.redhat.com/support/policy/updates/ansible-automation-platform[Red Hat Ansible Automation Platform Life Cycle].
 
-== Upgrading Ansible Automation platform
+== Upgrading {PlatformNameShort}
 
-Use installer to perform upgrades to maintenance versions of Ansible Automation Platform. The installer performs all necessary actions required to upgrade to the latest versions of Ansible Automation Platform, including Ansible Tower and Private Automation Hub.
+Use the installer to perform upgrades to maintenance versions of {PlatformNameShort}. The installer performs all necessary actions required to upgrade to the latest versions of {PlatformNameShort}, including {ControllerName} and {PrivateHubName}.
 
 [IMPORTANT]
 ====
-Do not use `yum update` to run upgrades. Use installer instead.
+Do not use `yum update` to run upgrades. Use the installer instead.
 ====
 
 .Additional resources
-* Refer to the table in xref:whats-included[What's included in Ansible Automation Platform] for information on maintenance releases of Ansible Automation Platform.
+* Refer to the table in xref:whats-included[What's included in Ansible Automation Platform] for information on maintenance releases of {PlatformNameShort}.
 
-* For more information on upgrading your Ansible Automation Platform, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[Red Hat Ansible Automation Platform Upgrade and Migration Guide].
+* For more information on upgrading your {PlatformNameShort}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[Red Hat Ansible Automation Platform Upgrade and Migration Guide].
 
-* For procedures related to using the Ansible Automation Platform installer, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide].
+* For procedures related to using the {PlatformNameShort} installer, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide].

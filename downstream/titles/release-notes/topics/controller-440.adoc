@@ -1,12 +1,8 @@
 // This is the release notes for Automation Controller 4.4, the version number is removed from the topic title as part of the release notes restructuring efforts.
 
 [[controller-440-intro]]
-= Automation Controller
+= {ControllerNameStart}
 
-Automation controller replaces Ansible Tower.
-Automation controller introduces a distributed, modular architecture with a decoupled control and execution plane.
-The name change reflects these enhancements and the overall position within the Ansible Automation Platform suite.
-
-Automation controller provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.
+{ControllerNameStart} provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.
 
 See link:https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[Automation Controller Release Notes for 4.x] for a full list of new features and enhancements.

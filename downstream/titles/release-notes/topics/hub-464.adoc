@@ -1,22 +1,22 @@
 // This is the release notes for Automation Hub 4.6.4, the version number is removed from the topic title as part of the release notes restructuring efforts.
 
 [[hub-464-intro]]
-= Automation Hub
+= {HubNameStart}
 
-Automation hub allows you to discover and utilize new certified automation content from Red Hat Ansible and Certified Partners. On Ansible automation hub, you can discover and manage Ansible Collections, which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.
+{HubNameStart} allows you to discover and use new certified automation content from Red Hat Ansible and Certified Partners. On {HubNameMain}, you can discover and manage Ansible Collections, which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.
 
-.Enhancement
+.New features and enhancements
 
-* This release of automation hub provides repository management functionality. With repository management, you can create, edit, delete, and move content between repositories.
+* This release of {HubName} provides repository management functionality. With repository management, you can create, edit, delete, and move content between repositories.
 
 .Bug fixes
 
 * Fixed an issue in the collection keyword search which was returning an incorrect number of results.
 
-* Added the ability to set *OPT_REFERRALS* option for LDAP, so that users can now successfully log in to the automation hub using their LDAP credentials.
+* Added the ability to set *OPT_REFERRALS* option for LDAP, so that users can now successfully log in to the {HubName} by using their LDAP credentials.
 
 * Fixed an error on the UI when *redhat.openshift* collection's core dependency was throwing a `404 Not Found` error.
 
-* Fixed an error such that the deprecated execution environments are now skipped while syncing with *registry.redhat.io*.
+* Fixed an error such that the deprecated execution environments are now skipped while syncing with `registry.redhat.io`.
 
 
