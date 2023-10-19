@@ -17,7 +17,7 @@ image:apps-create-new.png[Create application]
 * Optional: *Description*: provide a short description for your application
 * *Organization* (required): provide an organization with which this application is associated
 * *Authorization Grant Type* (required): Select one of the grant types to use for the user to acquire tokens for this application. 
-For more information, see [Grant types] in the Applications section of the _Automation Controller Administation Guide_.
+For more information, see [Grant types] in the Applications section of the _Automation Controller Administration Guide_.
 * *Redirect URIS*: Provide a list of allowed URIs, separated by spaces.
 This is required if you specified the grant type to be *Authorization code*.
 * *Client Type* (required): Select the level of security of the client device

@@ -6,5 +6,5 @@ The *Access* tab displays the list of Users that are members of this Team.
 
 image:teams-users-list.png[Teams - users list]
 
-This list may be searched by *Username*, *First Name*, or *Last Name*. 
+This list can be searched by *Username*, *First Name*, or *Last Name*. 
 For more information, see xref:assembly-controller-users[Users].

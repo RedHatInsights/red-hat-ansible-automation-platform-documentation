@@ -3,7 +3,9 @@
 = Add a User or Team
 
 To add a user or team to an organization, the user or team must already exist. 
-//For more information, see [Creating a User] and [Creating a Team].
+
+For more information, see xref:proc-controller-creating-a-user[Creating a User] and xref:proc-controller-creating-a-team[Creating a Team].
+
 To add existing users or team to the Organization:
 
 .Procedure
@@ -15,7 +17,7 @@ To add existing users or team to the Organization:
 +
 image:organizations-add-users-for-example-organization.png[Add roles]
 +
-In this example, two users have been selected to be added.
+In this example, two users have been selected.
 . Select the role you want the selected user or team to have. 
 Scroll down for a complete list of roles. 
 Different resources have different options available.

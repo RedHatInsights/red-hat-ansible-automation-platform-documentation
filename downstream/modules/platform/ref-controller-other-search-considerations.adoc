@@ -5,7 +5,7 @@
 Be aware of the following issues when searching in {ControllerName}:
 
 * There is currently no supported syntax for *OR* queries. 
-All search terms are *AND*ed in the query parameters.
+All search terms are **AND**ed in the query parameters.
 * The left-hand portion of a search parameter can be wrapped in quotes
 to support searching for strings with spaces. For more information, see xref:ref-controller-search-tips[Tips for searching].
 * Currently, the values in the Fields are direct attributes expected to be returned in a *GET* request. 

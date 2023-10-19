@@ -14,12 +14,14 @@ An {ExecEnvShort} is expected to contain:
 ** content in ansible-base
 ** custom user needs
 
-Building a new {ExecEnvShort} involves a definition (a `.yml` file) that specifies which content you would like to include in your {ExecEnvShort}, such as collections, Python requirements, and system-level packages. 
-The content from the output generated from migrating to {ExecEnvShort}s has some of the required data that can be piped to a file or pasted into this definition file. 
+Building a new {ExecEnvShort} involves a definition (a `.yml` file) that specifies which content you want to include in your {ExecEnvShort}, such as collections, Python requirements, and system-level packages. 
+
+The content from the output generated from migrating to {ExecEnvShort}s has some of the required data that can be piped to a file or pasted into this definition file.
+
 For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/upgrade-migration-guide/upgrade_to_ees.html#migrate-new-venv[Migrate legacy venvs to execution environments]. 
-If you did not migrate from a virtual environment, you can create a definition file with the required data described in the [Execution Environment Setup Reference].
+If you did not migrate from a virtual environment, you can create a definition file with the required data described in the xref:assembly-controller-ee-setup-reference[Execution Environment Setup Reference].
 
 Collection developers can declare requirements for their content by providing the appropriate metadata. 
 
-For more information, refer to [Dependencies].
+For more information, refer to xref:ref-controller-dependencies[Dependencies].
 

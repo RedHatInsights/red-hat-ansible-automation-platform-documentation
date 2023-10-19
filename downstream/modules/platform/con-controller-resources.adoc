@@ -5,7 +5,7 @@
 The *Resources* menu provides access to the following components of {ControllerName}:
 
 * Templates
-* Credentials
-* Projects
-* Inventories
+* xref:controller-credentials[Credentials]
+* xref:controller-projects[Projects]
+* xref:controller-inventories[Inventories]
 * Hosts

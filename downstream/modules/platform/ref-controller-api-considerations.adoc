@@ -12,19 +12,19 @@ Credentials can be filtered using the v2 API:
 $ curl "https://controller.example.org/api/v2/credentials/?credential_type__namespace=aws"
 ----
 
-In the V2 CredentialType model, the relationships are defined as follows:
+In the V2 Credential Type model, the relationships are defined as follows:
 
 [cols="15%,40%",options="header"]
 |===
 | Machine | SSH
 | Vault | Vault
-| Network |S ets environment variables, for example `ANSIBLE_NET_AUTHORIZE`
+| Network |Sets environment variables, for example `ANSIBLE_NET_AUTHORIZE`
 | SCM | Source Control
 | Cloud | EC2, AWS
-| | Lots of others
+| Cloud | Lots of others
 | Insights |Insights
 | Galaxy | galaxy.ansible.com, console.redhat.com
-| | on-premise {HubName}
+| Galaxy | on-premise {HubName}
 |===
 
 = Content verification

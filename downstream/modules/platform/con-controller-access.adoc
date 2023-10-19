@@ -4,6 +4,6 @@
 
 The *Access* menu enables you to configure who has permissions to {ControllerName} resources:
 
-* Organizations
-* Users
-* Teams
+* xref:assembly-controller-organizations[Organizations]
+* xref:assembly-controller-users[Users]
+* xref:assembly-controller-teams[Teams]

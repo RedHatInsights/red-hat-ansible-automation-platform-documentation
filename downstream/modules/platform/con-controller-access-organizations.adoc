@@ -9,10 +9,10 @@ image:organizations-show-users-permissions-organization.png[Organization access]
 
 Use this page to complete the following tasks: 
 
-* manage the user membership for this organization. 
+* Manage the user membership for this organization. 
 Click btn:[Users] on the navigation panel to manage user membership on a per-user basis from the *Users* page. 
-* assign specific users certain levels of permissions within your organization.
-* enable them to act as an administrators for a particular resource. 
+* Assign specific users certain levels of permissions within your organization.
+* Enable them to act as an administrators for a particular resource. 
 For more information, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/security.html#rbac-ug[Role-Based Access Controls].
 
 Click a user to brings up that user's details.

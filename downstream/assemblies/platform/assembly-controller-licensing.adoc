@@ -5,7 +5,7 @@ ifdef::context[:parent-context: {context}]
 
 :context: licensing-controller
 
-{PlatformName} controller ("{Controller Name}") is a software product provided as part of an annual {PlatformName} subscription entered into between you and Red Hat, Inc. ("Red Hat").
+{PlatformName} controller ("automation controller") is a software product provided as part of an annual {PlatformName} subscription entered into between you and Red Hat, Inc. ("Red Hat").
 
 Ansible is an open source software project and is licensed under the GNU General Public License version 3, as described in the link:https://github.com/ansible/ansible/blob/devel/COPYING[Ansible Source Code]
 

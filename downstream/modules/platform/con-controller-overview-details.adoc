@@ -21,7 +21,8 @@ If you want to give any user or team permissions to use a job template, you can 
 
 {ControllerNameStart} includes an _Auditor_ type, who can see all aspects of the systems automation, but has no permission to run or change automation, for those that need a system-level auditor.
 This can also be useful for a service account that scrapes automation information from the REST API.
-For more information, see Role-Based Access Controls.
+
+For more information, see xref:con-controller-rbac[Role-Based Access Controls].
 
 = Cloud and autoscaling flexibility
 {ControllerNameStart} features a powerful optional provisioning callback feature that enables nodes to request configuration on demand.
@@ -42,13 +43,15 @@ For more information, see {Galaxy} Support.
 = Inventory support for OpenStack
 Dynamic inventory support is available for OpenStack. This enables you to easily target any of the virtual machines or images running in your OpenStack cloud.
 
+For more information, see xref:con-controller-rbac[Openstack].
+
 = Remote command execution
 When you want to perform a simple task on a few hosts, whether adding a single user, updating a single security vulnerability, or restarting a misbehaving service, {ControllerName} includes remote command execution.
 Any task that you can describe as a single Ansible play can be run on a host or group of hosts in your inventory, enabling you to manage your systems quickly and easily.
 Plus, it is all backed by an RBAC engine and detailed audit logging, removing any questions regarding who has done what to what machines.
 
 = System tracking
-You can collect facts using the fact caching feature. For more information, see Fact Caching.
+You can collect facts using the fact caching feature. For more information, see xref:controller-fact-caching[Fact Caching].
 
 = Integrated notifications
 {ControllerNameStart} enables you to easily keep track of the status of your automation.
@@ -75,6 +78,8 @@ You can also customize notification messages for each of the preceding notificat
 = Red Hat Satellite integration
 Dynamic inventory sources for Red Hat Satellite 6 are supported.
 
+For more information, see xref:proc-controller-inv-source-satellite[Red Hat Satellite 6].
+
 = Red Hat Insights integration
 {ControllerNameStart} supports integration with Red Hat Insights, enabling Insights playbooks to be used as an {PlatformNameShort} project.
 
@@ -84,6 +89,8 @@ For more information, see xref:controller-setting-up-insights[Setting up Insight
 The user interface is organized with intuitive navigational elements.
 Information is displayed at-a-glance, so you can find and use the automation you need.
 Compact and expanded viewing modes show and hide information as required, and built-in attributes make it easy to sort.
+
+For more information,see xref:assembly-controller-user-interface[The User Interface].
 
 = Custom Virtual Environments
 Custom Ansible environment support enables you to have different Ansible environments and specify custom paths for different teams and jobs.
@@ -117,9 +124,13 @@ Examples include combining provisioning and application deployment workflows int
 * *Workflow Pause and Approval* You can build workflows containing approval nodes that require user intervention.
 This makes it possible to pause workflows in between playbooks so that a user can give approval (or denial) for continuing on to the next step in the workflow.
 
+For more information, see xref:controller-workflows[Workflows in {ControllerName}]
+
 = Job distribution
 {ControllerNameStart} offers the ability to take a fact gathering or configuration job running across thousands of machines and divide it into slices that can be distributed across your automation controller cluster for increased reliability, faster job completion, and improved cluster use.
 If you need to change a parameter across 15,000 switches at scale, or gather information across your multi-thousand-node RHEL estate, automation controller provides the means.
+
+For more information, see xref:controller-job-slicing[Job Slicing].
 
 = Support for deployment in a FIPS-enabled environment
 {ControllerNameStart} deploys and runs in restricted modes such as FIPS.

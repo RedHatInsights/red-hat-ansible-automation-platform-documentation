@@ -11,4 +11,4 @@ For more information, see [Enable and Disable Notifications].
 
 If no notifications have been set up, select btn:[Notifications] from the navigation panel.
 
-For information on configuring notification types, see [Notification Types.]
+For information on configuring notification types, see xref:controller-notification-types[Notification Types].
