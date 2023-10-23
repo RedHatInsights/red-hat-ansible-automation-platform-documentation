@@ -8,7 +8,7 @@ This minimizes the number of supporting individuals and focuses more on maintain
 
 The following table lists some common roles managed by the {ControllerName} Organization:
 
-[cols="17%,15%,68%", header]
+[cols="17%,15%,68%", options="header"]
 |===
 | System Role (for Organizations) | Common User Roles | Description
 | Owner | Team Lead - Technical Lead | This user can control access for other users in their organization.

@@ -6,7 +6,7 @@ A job is an instance of {ControllerName} launching an Ansible playbook against a
 
 The *Jobs* list view displays a list of jobs and their statuses, shown as completed successfully, failed, or as an active (running) job. 
 The default view is collapsed (Compact) with the job name, status, job type, start, and finish times. 
-You can click the arrow (image:arrow.png[Arrow,15,15]) to expand and see more information. 
+You can click the arrow image:arrow.png[Arrow,15,15] icon to expand and see more information. 
 You can sort this list by various criteria, and perform a search to filter the jobs of interest.
 
 image::ug-jobs-list-all-expanded.png[Jobs list expanded]
@@ -14,7 +14,7 @@ image::ug-jobs-list-all-expanded.png[Jobs list expanded]
 From this screen you can complete the following tasks:
 
 * View details and standard output of a particular job 
-* Re-launch (image:rightrocket.png[Rightrocket,15,15]) jobs
+* Re-launch image:rightrocket.png[Launch,15,15] jobs
 * Remove selected jobs
 
 The relaunch operation only applies to relaunches of playbook runs and does not apply to project or inventory updates, system jobs, and workflow jobs.

@@ -3,7 +3,8 @@
 = Workflows in {ControllerName}
 
 Workflows enable you to configure a sequence of disparate job templates (or workflow templates) that may or may not share inventory, playbooks, or permissions. 
-However, workflows have `admin` and `execute` permissions, similar to job templates. 
+
+Workflows have `admin` and `execute` permissions, similar to job templates. 
 A workflow accomplishes the task of tracking the full set of jobs that were part of the release process as a single unit.
 
 Job or workflow templates are linked together using a graph-like structure called nodes. 

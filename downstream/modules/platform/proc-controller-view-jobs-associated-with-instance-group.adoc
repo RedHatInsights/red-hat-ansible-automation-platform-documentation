@@ -5,7 +5,7 @@
 .Procedure
 
 . Select the *Jobs* tab of the *Instance Group* window.
-. Click the arrow (image:arrow.png[Arrow,15,15]) next to a job to expand the view and show details about each job.
+. Click the arrow image:arrow.png[Arrow,15,15] icon next to a job to expand the view and show details about each job.
 +
 Each job displays the following details:
 +

@@ -2,7 +2,7 @@
 
 = Workflow scenarios and considerations
 
-When building workflows, consider the following details:
+When building workflows, consider the following:
 
 * A root node is set to *ALWAYS* by default and cannot be edited.
 
@@ -39,7 +39,10 @@ You can set notifications on workflows, such as when a job completes, similar to
 [NOTE]
 ====
 Job slicing is intended to scale job executions horizontally. 
-Enabling job slicing on a job template divides an inventory to be acted upon in the number of slices configured at launch time and then starts a job for each slice.
+
+If you enable job slicing on a job template,  it divides the inventory to be acted on in the number of slices configured at launch time. 
+Then starts a job for each slice.
+
 For more information see the xref:controller-job-slicing[Job slicing] section.
 ====
 

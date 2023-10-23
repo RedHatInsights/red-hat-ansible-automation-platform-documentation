@@ -7,5 +7,5 @@ These algorithms control how many systems Ansible can communicate with simultane
 Increasing the number of forks an {ControllerName} system is running enables jobs to run faster by performing more work in parallel.
 However, this increases the load on the system, which can cause work to slow down.
 
-The default, `mem_capacity`, enables you to over-commit CPU resources while protecting the system from running out of memory. 
-If most of your work is not CPU-bound, then selecting this mode maximizes the number of forks.
+The default, `mem_capacity`, enables you to over-commit processing resources while protecting the system from running out of memory. 
+If most of your work is not processor-bound, then selecting this mode maximizes the number of forks.

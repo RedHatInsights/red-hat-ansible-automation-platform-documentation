@@ -32,7 +32,7 @@ For more information, see link:http://docs.ansible.com/automation-controller/4.4
 . Click btn:[Save].
 
 When you have successfully created the instance group the *Details* tab of the newly created instance group remains, enabling you to review and edit your instance group information. 
-This is the same screen that opens when you click the Edit (image:leftpencil.png[Edit,15,15]) icon from the *Instance Groups* list view. 
+This is the same screen that opens when you click the Edit image:leftpencil.png[Edit,15,15] icon from the *Instance Groups* list view. 
 You can also edit *Instances* and review *Jobs* associated with this instance group:
 
 image::ug-instance-group-created.png[Instance group successfully created]

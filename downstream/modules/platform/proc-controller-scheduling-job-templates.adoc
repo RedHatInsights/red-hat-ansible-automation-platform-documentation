@@ -10,7 +10,7 @@ image::ug-job-templates-schedules.png[Job templates schedules]
 
 * To schedule a job template, select the *Schedules* tab, and choose the appropriate method:
 ** If schedules are already set up, review, edit, enable or disable your schedule preferences.
-** If schedules have not been set up, see ADD XREF:[Schedules] for more information.
+** If schedules have not been set up, see xref:controller-schedules[Schedules] for more information.
 
 If you select *Prompt on Launch* for the *Credentials field*, and you create or edit scheduling information for your job template, a *Prompt* option displays on the Schedules form. 
 

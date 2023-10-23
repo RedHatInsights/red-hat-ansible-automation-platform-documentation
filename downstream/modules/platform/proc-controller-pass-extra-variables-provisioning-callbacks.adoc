@@ -22,4 +22,4 @@ root@localhost:~$ curl -f -H 'Content-Type: application/json' -XPOST \
 https://<CONTROLLER_SERVER_NAME>/api/v2/job_templates/7/callback
 ----
 
-For more information, see [ADD XREF]Launching Jobs with Curl.
+For more information, see [Launching Jobs with Curl] in the _Automation Controller Administration Guide_.

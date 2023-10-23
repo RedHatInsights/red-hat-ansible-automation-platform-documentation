@@ -11,4 +11,6 @@ You must have `execute` access to a job template to add it to a workflow job tem
 You can also perform other tasks, such as making a duplicate copy or re-launching a workflow, depending on the which permissions are granted to a user. 
 You must have permissions to all the resources used in a workflow, such as job templates, before relaunching or making a copy.
 
+For more information, see xref:con-controller-rbac[Role-based access controls]
+
 For more information on performing the tasks described in this section, see the link:http://docs.ansible.com/automation-controller/4.4/html/administration/index.html#ag-start[Administration Guide].

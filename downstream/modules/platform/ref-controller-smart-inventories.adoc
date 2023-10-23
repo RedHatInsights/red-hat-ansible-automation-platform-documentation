@@ -27,12 +27,12 @@ The membership table is updated every time a job runs against a smart inventory.
 [NOTE]
 ====
 To update the memberships more frequently, you can change the `AWX_REBUILD_SMART_MEMBERSHIP` file-based setting to `True`. (The default is False).
-This updates memberships in the following events:
+This updates memberships if the following events occur:
 
-* a new host is added
-* an existing host is modified (updated or deleted)
-* a new Smart Inventory is added
-* an existing Smart Inventory is modified (updated or deleted)
+* A new host is added
+* An existing host is modified (updated or deleted)
+* A new Smart Inventory is added
+* An existing Smart Inventory is modified (updated or deleted)
 ====
 
 You can view inventories without being editable:
@@ -56,9 +56,8 @@ the hosts under the smart inventory host list.
 
 In some situations, you can modify the following:
 
-* A new Host manually created on Inventory w/ inventory sources
-* In Groups that were created as a result of inventory source syncs
-* Variables on Host and Group are changeable
+* A new Host created manually on Inventory with Inventory sources, in Groups that were created as a result of inventory source synchronizations
+* Variables on Hosts and Groups.
 
 Hosts associated with the Smart Inventory are manifested at view time.
 If the results of a Smart Inventory contains more than one host with identical hostnames, only one of the matching hosts is included as

@@ -11,7 +11,7 @@ To restore the previous behavior, set `ANSIBLE_DISPLAY_ARGS_TO_STDOUT` to `True`
 
 For more information, see link:http://docs.ansible.com/ansible/latest/reference_appendices/config.html#envvar-ANSIBLE_DISPLAY_ARGS_TO_STDOUT[ANSIBLE_DISPLAY_ARGS_TO_STDOUT].
 
-Use the icons to relaunch (image:rightrocket.png[Rightrocket,15,15]), download (image:download.png[Download,15,15]) the job output, or delete (image:delete-button.png[Delete,15,15]) the job.
+Use the icons to relaunch image:rightrocket.png[Launch,15,15], download image:download.png[Download,15,15] the job output, or delete image:delete-button.png[Delete,15,15] the job.
 
 image::ug-show-job-results-for-inv-sync.png[Job results inventory sync]
 

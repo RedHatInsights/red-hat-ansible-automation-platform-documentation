@@ -2,7 +2,7 @@
 
 = Notifications
 
-A [ADD XREF]Notification Template is an instance of a xref:controller-notification-types[Notification type] such as Email, Slack or a Webhook, has a name, description and configuration defined in a Notification template. 
+A xref:controller-notification-types[Notification type] such as Email, Slack or a Webhook, is an instance of a Notification Template, and has a name, description and configuration defined in the Notification template. 
 
 The following include examples of details needed to add a notification template:
 

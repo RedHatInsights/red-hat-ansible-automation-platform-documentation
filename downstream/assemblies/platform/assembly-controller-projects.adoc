@@ -17,7 +17,7 @@ endif::controller-GS[]
 ifdef::controller-UG[]
 These include Git, Subversion, Mercurial and Red Hat Insights.
 
-For more information on creating a Red Hat Insights project, see [Setting up insights remediations].
+For more information on creating a Red Hat Insights project, see xref:controller-setting-up-insights[Setting up insights remediations].
 
 [NOTE]
 ====
