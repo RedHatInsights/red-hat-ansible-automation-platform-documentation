@@ -11,9 +11,17 @@ Ansible is an open source software project and is licensed under the GNU General
 
 You must have valid subscriptions attached before installing {PlatformNameShort}. 
 
-For more information, ee xref:proc-controller-attaching-subscriptions[Attaching Subscriptions].
+For more information, see xref:proc-controller-attaching-subscriptions[Attaching Subscriptions].
 
 include::platform/ref-controller-license-support.adoc[leveloffset=+1]
 include::platform/ref-controller-trial-evaluation.adoc[leveloffset=+1]
+ifdef::controller-UG[]
 include::platform/ref-controller-licenses.adoc[leveloffset=+1]
 include::platform/ref-controller-node-counting.adoc[leveloffset=+1]
+endif::controller-UG[]
+ifdef::controller-AG[]
+include::platform/ref-controller-subscription-types.adoc[leveloffset=+1]
+include::platform/ref-controller-node-counting.adoc[leveloffset=+1]
+include::platform/proc-controller-attaching-subscriptions.adoc[leveloffset=+1]
+include::platform/ref-controller-licenses.adoc[leveloffset=+1]
+endif::controller-AG[]

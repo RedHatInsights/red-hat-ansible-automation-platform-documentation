@@ -4,6 +4,6 @@
 You require a license to run {ControllerName}. 
 However, there is no fee for a trial license.
 
-Trial licenses for {PlatformNameShort} are available at: http://ansible.com/license
+* Trial licenses for {PlatformNameShort} are available at: http://ansible.com/license
 
-Support is not included in a trial license or during an evaluation of the {ControllerName} software.
+* Support is not included in a trial license or during an evaluation of the {ControllerName} software.
