@@ -1,0 +1,31 @@
+[id="controller-start-stop"]
+
+External databases must be explicitly managed by the administrator. 
+You can find the services script in `/usr/bin/automation-controller-service` and can be invoked as follows:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+root@localhost:~$ automation-controller-service restart
+----
+
+[NOTE]
+====
+In clustered installs, the `automation-controller-service` restart does not include PostgreSQL as part of the services that are restarted.
+This is because it exists external to {ControllerName}, and PostgreSQL does not always need to be restarted. 
+Use `systemctl restart automation-controller` to restart services on clustered environments instead. 
+
+You must also restart each cluster node for certain changes to persist as opposed to a single node for a localhost install. 
+
+For more information on clustered environments, see the [ADD XREF]Clustering section.
+====
+
+You can also invoke the services script using distribution-specific service management commands. 
+Distribution packages often provide a similar script, sometimes as an init script, to manage services. 
+For more information, see your distribution-specific service management system.
+
+[IMPORTANT]
+====
+When running {ControllerName} in a container, do not use the `automation-controller-service` script.
+Restart the pod using the container environment instead.
+====
+
