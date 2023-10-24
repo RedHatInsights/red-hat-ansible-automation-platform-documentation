@@ -1,0 +1,22 @@
+[id="con-controller-custom-dynamic-inv-scripts"]
+
+= Custom Dynamic Inventory Scripts
+
+A custom dynamic inventory script stored in version control can be imported and run. 
+This makes it much easier to make changes to an inventory script.
+Rather than having to copy and paste a script into {ControllerName}, it is pulled directly from source control and then executed.
+The script must handle any credentials required for its task. 
+You are responsible for installing any Python libraries required by the script. 
+(Custom dynamic inventory scripts have the same requirement.) 
+This applies to both user-defined inventory source scripts and SCM sources as they are both exposed to Ansible _virtualenv_ requirements related to playbooks.
+
+You can specify environment variables when you edit the SCM inventory source. 
+For some scripts, this is sufficient. 
+However, this is not a secure way to store secret information that gives access to cloud providers or inventory.
+
+A better way is to create a new credential type for the inventory script you are going to use. 
+The credential type must specify all the necessary types of inputs. 
+Then, when you create a credential of this type, the secrets are stored in an encrypted form. 
+If you apply that credential to the inventory source, the script has access to those inputs.
+
+For more information, see [Credential types] in the {ControllerUG}.

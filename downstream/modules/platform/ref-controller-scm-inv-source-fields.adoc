@@ -1,0 +1,38 @@
+[id="ref-controller-scm-inv-source-fields"]
+
+= SCM Inventory Source Fields
+
+The source fields used are:
+
+* `source_project`: the project to use.
+* `source_path`: the relative path inside the project indicating a directory or a file. 
+If left blank, "" is still a relative path indicating the root directory of the project.
+* `source_vars`: if set on a "file" type inventory source then they are passed to the environment variables when running.
+
+Additionally:
+
+* An update of the project automatically triggers an inventory update where it is used. 
+* An update of the project is scheduled immediately after creation of the inventory source. 
+* Neither inventory nor project updates are blocked while a related job is running. 
+* In cases where you have a large project (around 10 GB), disk space on `/tmp` may be an issue.
+
+You can specify a location manually in the {ControllerName} UI from the *Create Inventory Source* page. 
+Refer to the [Inventories] section of the _{ControllerUG}_ for instructions on creating an inventory source.
+//It's in proc-controller-add-source.adoc
+
+When you update a project, refresh the listing to use the latest SCM information. 
+If no inventory sources use a project as an SCM inventory source, then the inventory listing might not be refreshed on update.
+
+For inventories with SCM sources, the *Job Details* page for inventory updates display a status indicator for the project update and the name of the project. 
+
+The status indicator links to the project update job. 
+
+The project name links to the project.
+
+image:jobs-details-scm-sourced-inventories.png[SCM sourced inventories]
+
+An inventory update can be performed while a related job is running.
+
+== Supported File Syntax
+
+{ControllerNameStart} uses the `ansible-inventory` module from Ansible to process inventory files, and supports all valid inventory syntax that {ControllerName} requires.

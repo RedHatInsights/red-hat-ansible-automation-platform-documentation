@@ -73,6 +73,9 @@
 :MessageQueue: message queue/cache/KV store
 :MeshConnect: automation mesh connector
 :MeshReceptor: automation mesh receptor
+:ControllerGS: Getting started with automation controller
+:ControllerUG: Automation controller User Guide
+:ControllerAG: Automation controller Administration Guide
 
 // Automation Mesh
 :MeshName: automation mesh
