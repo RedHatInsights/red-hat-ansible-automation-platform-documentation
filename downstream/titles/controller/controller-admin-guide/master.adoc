@@ -17,9 +17,9 @@ Written for DevOps engineers and administrators, the {ControllerName} Administra
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 
-include::/platform/assembly-controller-licensing.adoc[leveloffset=+1]
+include::platform/assembly-controller-licensing.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-start-stop-controller.adoc[leveloffset=+1]
-//3 Custom Inventory Scripts
+include::platform/assembly-custom-inventory-scripts.adoc[leveloffset=+1]
 //4 Inventory File Importing
 //5 Multi-Credential Assignment
 //6 Management Jobs

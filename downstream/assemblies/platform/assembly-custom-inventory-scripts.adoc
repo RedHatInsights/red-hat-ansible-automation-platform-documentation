@@ -1,0 +1,26 @@
+[id="assembly-custom-inventory-scripts"]
+
+= Custom Inventory Scripts
+
+[NOTE]
+====
+Inventory scripts have been discontinued. 
+
+For more information, see [Export old inventory scripts] in the _Automation Controller User Guide.
+====
+
+If you use custom inventory scripts, migrate to sourcing these scripts from a project.
+For more information, see [Inventory File Importing], and [Inventory Sources] in the _Automation Controller User Guide_.
+
+If you are setting up an inventory file, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/assembly-platform-install-scenario#proc-editing-installer-inventory-file_platform-install-scenario[Red Hat Ansible Automation Platform Installation Guide] and find examples specific to your setup.
+
+If you are migrating to {ExecEnvShort}s, see:
+
+* link:https://docs.ansible.com/automation-controller/4.4/html/upgrade-migration-guide/upgrade_to_ees.html#upgrade-venv[Upgrading to {ExecEnvShort}s].
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/creating_and_consuming_execution_environments/index[Creating and consuming execution environments].
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_automation_mesh_guide/design-patterns[Automation mesh design patterns].
+* link:https://docs.ansible.com/automation-controller/4.4/html/upgrade-migration-guide/upgrade_to_ees.html#mesh-topology-ee[Mesh Topology] in the _Ansible Automation Platform Upgrade and Migration Guide_ to validate your topology.
+
+For more information on automation mesh, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[Red Hat Ansible Automation Mesh Guide].
+
+If you already have a mesh topology set up and want to view node type, node health, and specific details about each node, see [Topology Viewer].
