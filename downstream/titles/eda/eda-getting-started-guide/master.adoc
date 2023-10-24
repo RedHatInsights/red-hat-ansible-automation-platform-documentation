@@ -16,7 +16,7 @@ Thank you for your interest in {EDAname}. {EDAname} is a new way to enhance and 
 This guide provides the conceptual framework of {EDAname} and links you to information on installing and using {EDAcontroller}.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::eda/assembly-about-event-driven-ansible-automation.adoc[leveloffset=+1]
 include::eda/assembly-ansible-rulebooks.adoc[leveloffset=+1]

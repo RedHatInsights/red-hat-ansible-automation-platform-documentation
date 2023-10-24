@@ -12,7 +12,7 @@ include::attributes/attributes.adoc[]
 Use {Builder} to create consistent and reproducible {ExecEnvName} for your {PlatformName} needs.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::builder/assembly-intro-to-builder.adoc[leveloffset=+1]
 include::builder/assembly-using-builder.adoc[leveloffset=+1]

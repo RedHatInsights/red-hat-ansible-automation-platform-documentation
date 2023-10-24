@@ -13,7 +13,7 @@ include::attributes/attributes.adoc[]
 After installing Red Hat Ansible Automation Platform, your system might need extra configuration to ensure your deployment runs smoothly. This guide provides procedures for configuration tasks that you can perform after installing {PlatformName}.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 include::platform/assembly-aap-activate.adoc[leveloffset=+1]
 include::platform/assembly-aap-manifest-files.adoc[leveloffset=+1]
 include::platform/assembly-configuring-proxy-support.adoc[leveloffset=+1]

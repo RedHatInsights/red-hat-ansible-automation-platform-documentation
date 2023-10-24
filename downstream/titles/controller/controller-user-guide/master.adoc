@@ -19,7 +19,7 @@ It assumes moderate familiarity with Ansible, including concepts such as Playboo
 For more information on these and other Ansible concepts, see the link:https://docs.ansible.com/[Ansible documentation].
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::platform/assembly-UG-overview.adoc[leveloffset=+1]
 include::platform/assembly-controller-licensing.adoc[leveloffset=+1]

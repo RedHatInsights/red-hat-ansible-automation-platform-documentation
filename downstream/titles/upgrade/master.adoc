@@ -9,7 +9,7 @@ include::attributes/attributes.adoc[]
 = Red Hat Ansible Automation Platform Upgrade and Migration Guide
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::platform/assembly-aap-upgrades.adoc[leveloffset=+1]
 include::platform/assembly-aap-upgrading-platform.adoc[leveloffset=+1]

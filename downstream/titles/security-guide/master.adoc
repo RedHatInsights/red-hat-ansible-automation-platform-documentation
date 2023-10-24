@@ -10,7 +10,7 @@ include::attributes/attributes.adoc[]
 = Red Hat Ansible Security Automation Guide
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::security/assembly-firewall-policy-manage.adoc[leveloffset=+1]
 

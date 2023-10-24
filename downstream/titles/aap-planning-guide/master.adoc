@@ -15,7 +15,7 @@ Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commerci
 Use the information in this guide to plan your Red Hat Ansible Automation Platform installation.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 include::platform/assembly-planning-installation.adoc[leveloffset=+1]
 include::platform/assembly-aap-architecture.adoc[leveloffset=+1]
 include::platform/assembly-aap-platform-components.adoc[leveloffset=+1]

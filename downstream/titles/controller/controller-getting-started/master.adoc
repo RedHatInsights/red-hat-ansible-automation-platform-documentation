@@ -25,7 +25,7 @@ For more information about subscriptions and features, see link:https://docs.ans
 ====
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::platform/assembly-controller-login.adoc[leveloffset=+1]
 include::platform/assembly-controller-managing-subscriptions.adoc[leveloffset=+1]

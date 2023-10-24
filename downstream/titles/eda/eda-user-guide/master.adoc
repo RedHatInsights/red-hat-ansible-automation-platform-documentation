@@ -12,7 +12,7 @@ include::attributes/attributes.adoc[]
 Developed by Red Hat, this feature is designed for simplicity and flexibility. 
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 include::eda/assembly-eda-user-guide-overview.adoc[leveloffset=+1]
 include::eda/assembly-eda-credentials.adoc[leveloffset=+1]
 include::eda/assembly-eda-projects.adoc[leveloffset=+1]

@@ -12,7 +12,7 @@ include::attributes/attributes.adoc[]
 {AAPCentralAuth} is a third-party identity provider (idP) solution, allowing for a simplified single sign-on solution that can be used across the {PlatformNameShort}. Platform administrators can utilize {CentralAuth} to test connectivity and authentication, as well as onboard new users and manage user permissions by configuring and assigning them to groups. Along with OpenID Connect-based and LDAP support, {CentralAuth} also provides a supported REST API which can be used to bootstrap customer usage.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::central-auth/assembly-central-auth-hub.adoc[leveloffset=+1]
 include::central-auth/assembly-central-auth-add-user-storage.adoc[leveloffset=+1]

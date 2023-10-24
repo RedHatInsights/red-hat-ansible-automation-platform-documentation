@@ -16,7 +16,7 @@ The {Galaxy} client, `ansible-galaxy`, manages roles and collections from the co
 To ensure that the `ansible-galaxy` client uses certified, supported Ansible collections whenever possible, update your `ansible.cfg` file to use Red Hat {HubName} as your primary source of Ansible collections.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::hub/assembly-hub-overview.adoc[leveloffset=+1]
 include::hub/assembly-hub-create-api-token.adoc[leveloffset=+1]

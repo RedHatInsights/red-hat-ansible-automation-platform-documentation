@@ -16,7 +16,7 @@ Use the procedures in this guide to create backup resources that can be used for
 
 //Downstream only content
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::platform/assembly-aap-backup-recovery.adoc[leveloffset=+1]
 

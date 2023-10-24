@@ -4,6 +4,7 @@
 :imagesdir: images
 :experimental:
 :toclevels: 4
+include::attributes/attributes.adoc[]
 
 :analytics_automation_savings:
 
@@ -12,7 +13,7 @@
 
 //Downstream only content
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 // Contents
 include::analytics/assembly-evaluating-automation-return.adoc[leveloffset=+1]

@@ -125,3 +125,6 @@
 // Icons
 :MoreActionsIcon: &#8942;
 :SettingsIcon: &#9881;
+
+// Feedback module
+:DocumentationFeedback: aap-common/providing-direct-documentation-feedback.adoc

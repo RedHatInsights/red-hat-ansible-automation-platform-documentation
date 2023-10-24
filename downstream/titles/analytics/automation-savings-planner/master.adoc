@@ -12,6 +12,6 @@ include::attributes/attributes.adoc[]
 = Planning your automation jobs using the automation savings planner
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::analytics/assembly-automation-savings-planner.adoc[leveloffset=+1]

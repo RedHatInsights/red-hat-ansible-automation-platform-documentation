@@ -2,13 +2,15 @@
 :experimental:
 :toclevels: 4
 
+include::attributes/attributes.adoc[]
+
 :analytics_automation_savings:
 
 [[analytics_automation_savings]]
 = Evaluating your Automation controller job runs using the Job Explorer
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 // Contents
 include::analytics/assembly-using-job-explorer.adoc[leveloffset=+1]

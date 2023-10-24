@@ -10,7 +10,7 @@ include::attributes/attributes.adoc[]
 = Automation Content Navigator Creator Guide
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
 
 include::navigator/assembly-intro-navigator.adoc[leveloffset=+1]
 include::navigator/assembly-installing-on-rhel.adoc[leveloffset=+1]
