@@ -2,7 +2,7 @@
 
 = Getting Started with Applications
 
-From the navigation menu select menu:Administration[Applications].
+From the navigation panel, select menu:Administration[Applications].
 The *Applications* page displays a searchable list of all available Applications currently managed by {ControllerName} and can be
 sorted by *Name*.
 

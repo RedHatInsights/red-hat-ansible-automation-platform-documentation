@@ -6,7 +6,7 @@ ifdef::context[:parent-context: {context}]
 
 :context: search-controller
 
-Use {ControllerName}'s' search tool for search and filter capabilities across multiple functions. 
+Use {ControllerName}'s search tool for search and filter capabilities across multiple functions. 
 An expandable "cheat-sheet" is available from the *Advanced* option from the *Name* menu in the search field. 
 
 From there, use the combination of *Set Type*, *Key*, and *Lookup type* to filter.

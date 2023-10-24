@@ -19,16 +19,20 @@ Regardless of what you do, {ControllerName} records the history of operations an
 
 If you want to give any user or team permissions to use a job template, you can assign permissions directly on the job template. Credentials are full objects in the {ControllerName} RBAC system, and can be assigned to multiple users or teams for use.
 
-{ControllerNameStart} includes an _Auditor_ type, who can see all aspects of the systems automation, but has no permission to run or change automation, for those that need a system-level auditor.
+{ControllerNameStart} includes an _Auditor_ type. For those that need a system-level auditor, it can see all aspects of the systems automation. 
+It does not have permission to run or change automation.
 This can also be useful for a service account that scrapes automation information from the REST API.
 
 For more information, see xref:con-controller-rbac[Role-Based Access Controls].
 
 = Cloud and autoscaling flexibility
 {ControllerNameStart} features a powerful optional provisioning callback feature that enables nodes to request configuration on demand.
-This is an ideal solution for a cloud auto-scaling scenario, integrating with provisioning servers like Cobbler, or when dealing with managed systems with unpredictable uptimes.
-It requires no management software to be installed on remote nodes, the callback solution can be triggered by a call to `curl` or `wget`, and can be embedded in `init` scripts, kickstarts, or preseeds.
-Access is controlled such that only machines listed in the inventory can request configuration.
+This is an ideal solution for a cloud auto-scaling scenario and includes the following features:
+
+* It integrates with provisioning servers like Cobbler and deals with managed systems with unpredictable uptimes.
+* It requires no management software to be installed on remote nodes.
+* The callback solution can be triggered by a call to `curl` or `wget`, and can be embedded in `init` scripts, kickstarts, or preseeds.
+* You can control access so that only machines listed in the inventory can request configuration.
 
 = The ideal RESTful API
 The {ControllerName} REST API is the ideal RESTful API for a systems management application, with all resources fully discoverable, paginated, searchable, and well modeled. A styled API browser enables API exploration from the API root at `\http://<server name>/api/`, showing off every resource and relation. Everything that can be done in the user interface can be done in the API.
@@ -38,10 +42,10 @@ The {ControllerName} REST API is the ideal RESTful API for a systems management 
 
 = Ansible Galaxy integration
 By including an {Galaxy} `requirements.yml` file in your project directory, {ControllerName} automatically fetches the roles your playbook needs from Galaxy, GitHub, or your local source control.
-For more information, see {Galaxy} Support.
+For more information, see xref:ref-projects-galaxy-support[Ansible Galaxy Support].
 
 = Inventory support for OpenStack
-Dynamic inventory support is available for OpenStack. This enables you to easily target any of the virtual machines or images running in your OpenStack cloud.
+Dynamic inventory support is available for OpenStack. This enables you to target any of the virtual machines or images running in your OpenStack cloud.
 
 For more information, see xref:con-controller-rbac[Openstack].
 
@@ -110,7 +114,7 @@ Token-based authentication permits authentication of third-party tools and servi
 Run-time management of cluster groups enables configurable scaling.
 
 = Container platform support
-{PlatformNameShort} is available as a containerized pod service for {OCP} that can be scaled up and down as required.
+{PlatformNameShort} is available as a containerized pod service for {OCP} that you can scale up and down as required.
 
 = Workflow enhancements
 To model your complex provisioning, deployment, and orchestration workflows, you can use {ControllerName} expanded workflows in several ways:

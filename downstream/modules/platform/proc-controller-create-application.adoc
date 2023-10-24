@@ -13,9 +13,9 @@ image:apps-create-new.png[Create application]
 
 . Enter the following details in *Create New Application* window:
 
-* *Name* (required): provide a name for the application you want to create
-* Optional: *Description*: provide a short description for your application
-* *Organization* (required): provide an organization with which this application is associated
+* *Name* (required): Provide a name for the application you want to create
+* Optional: *Description*: Provide a short description for your application
+* *Organization* (required): Provide an organization with which this application is associated
 * *Authorization Grant Type* (required): Select one of the grant types to use for the user to acquire tokens for this application. 
 For more information, see [Grant types] in the Applications section of the _Automation Controller Administration Guide_.
 * *Redirect URIS*: Provide a list of allowed URIs, separated by spaces.

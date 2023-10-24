@@ -2,7 +2,7 @@
 
 = Team Roles
 
-Select menu:Details[Roles] to displays a list of the permissions that are currently available for this Team. 
+Select menu:Details[Roles] to display a list of the permissions that are currently available for this Team. 
 
 image:teams-permissions-sample-roles.png[Teams- permissions list]
 

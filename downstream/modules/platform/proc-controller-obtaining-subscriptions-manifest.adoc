@@ -9,7 +9,7 @@ To upload a subscriptions manifest, first set up your subscription allocations:
 
 .Procedure
 . Navigate to https://access.redhat.com/management/subscription_allocations.
-The Subscriptions Allocations page contains no subscriptions until you create one.
+The *Subscriptions Allocations* page contains no subscriptions until you create one.
 
 image::subscription-allocations-empty.png[Subscriptions allocation]
 
@@ -17,7 +17,7 @@ image::subscription-allocations-empty.png[Subscriptions allocation]
 +
 [NOTE]
 ====
-If the *Create New subscription allocation* button is not present, or disabled, you do not have the proper permissions to create subscription allocations. 
+If *Create New subscription allocation* is not present, or disabled, you do not have the proper permissions to create subscription allocations. 
 To create a subscription allocation, you must either be an Administrator on the Customer Portal, or have the Manage Your Subscriptions role. 
 Contact an `access.redhat.com` administrator, or organization administrator who can grant you permission to manage subscriptions.
 ====
@@ -33,9 +33,9 @@ The number indicated next to *Entitlements* indicates the number of entitlements
 image::subscription-allocations-details-bottom.png[Details of subscription allocations]
 
 [discrete]
-== Setting up a subscripions manifest
+== Setting up a subscriptions manifest
 
-To obtain a subscriptions manifest, you must add an entitlement to your subscriptions through the Subscriptions tab.
+To obtain a subscriptions manifest, you must add an entitlement to your subscriptions through the *Subscriptions* tab.
 
 .Procedure
 . Click the btn:[Subscriptions] tab.
@@ -56,11 +56,11 @@ Similarly, a subset of a subscription can be applied by only allocating a portio
 ====
 
 . Click btn:[Submit].
-. The allocations you specified, when successfully added, are displayed in the Subscriptions tab.
+. The allocations you specified, when successfully added, are displayed in the *Subscriptions* tab.
 . Click the *Details* tab to access the subscription manifest file.
 . Click btn:[Export Manifest] to export the manifest file for this subscription.
 A folder pre-pended with `manifest_` is downloaded to your local drive. 
-Multiple subscriptions with the same SKU are be aggregated.
+Multiple subscriptions with the same SKU are aggregated.
 . When you have a subscription manifest, go to the Subscription screen. 
 . Click btn:[Browse] to upload the entire manifest file. 
 . Navigate to the location where the file is saved. 

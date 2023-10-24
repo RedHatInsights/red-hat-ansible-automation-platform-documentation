@@ -8,7 +8,7 @@ From here, you can create, view, and edit:
 * xref:assembly-controller-custom-credentials[Credential_types]
 * xref:controller-notifications[Notifications]
 * Management_jobs
-* Instance_groups
+* xref:controller-instance-groups[Instance_groups]
 * Instances
 * xref:assembly-controller-applications[Applications]
 * xref:assembly-controller-execution-environments[Execution_environments]

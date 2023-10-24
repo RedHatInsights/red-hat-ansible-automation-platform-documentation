@@ -17,8 +17,7 @@ For more information, see link:https://docs.ansible.com/automation-controller/la
 
 Click a user to brings up that user's details.
 You can review, grant, edit, and remove associated permissions for that user.
-For more information, see Users
-//xref to come.
+For more information, see xref:assembly-controller-users[Users].
 
 include::proc-controller-add-organization-user.adoc[leveloffset=+1]
 include::ref-controller-organization-notifications.adoc[leveloffset=+1]

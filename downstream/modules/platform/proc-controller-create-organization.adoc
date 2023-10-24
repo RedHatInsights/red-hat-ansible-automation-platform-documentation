@@ -34,7 +34,7 @@ For more information, see link:https://docs.ansible.com/automation-controller/4.
 * Optional: Enter the *Galaxy Credentials* or search from a list of existing ones.
 . Click btn:[Save] to finish creating the organization.
 
-When the organization is created, {ControllerName} displays the Organization details, and enable you to manage access and {ExecEnvShort} for the organization.
+When the organization is created, {ControllerName} displays the Organization details, and enables you to manage access and {ExecEnvShort}s for the organization.
 
 image:organizations-show-record-for-example-organization.png[Organization details]
 

@@ -13,7 +13,7 @@ However, you must register to _Red Hat Subscription Management_ (RHSM) or Red Ha
 Use the following method to attach your subscription:
 
 .Procedure
-. To find out the `pool_id` of your subscription:
+. To find out the `pool_id` of your subscription, enter the following command:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -36,7 +36,7 @@ Available: 4999
 Suggested: 1
 ----
 
-. To attach this subscription:
+. To attach this subscription, enter the following command:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -44,14 +44,14 @@ Suggested: 1
 ----
 
 . If this is correct, and all nodes have attached, then the repositories will be found.
-. To check whether the subscription attached successfully:
+. To check whether the subscription attached successfully, enter the following command:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
 # subscription-manager list --consumed
 ----
 
-. To remove this subscription:
+. To remove this subscription, enter the following command:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
