@@ -4,6 +4,7 @@
 
 link:https://access.redhat.com/errata/RHBA-2023:5347[Red Hat Errata Release]
 
+//Ansible Automation Platform
 == {PlatformNameShort}
 
 .New features and enhancements
@@ -42,6 +43,7 @@ link:https://access.redhat.com/errata/RHBA-2023:5347[Red Hat Errata Release]
 
 * The installer will now properly generate a new `SECRET_KEY` for controller when running `setup.sh` with the `-k` option.
 
+//Automation controller
 == {ControllerNameStart}
 
 .New features and enhancements
@@ -68,6 +70,7 @@ link:https://access.redhat.com/errata/RHBA-2023:5347[Red Hat Errata Release]
 
 * Fixed incorrect capacity allocation for remote execution nodes when resource limits are set in OpenShift.
 
+//Automation hub
 == {HubNameStart}
 
 .New features and enhancements

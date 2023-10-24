@@ -4,6 +4,7 @@
 
 link:https://access.redhat.com/errata/RHBA-2023:4782[Red Hat Errata Release]
 
+//Automation controller
 == {ControllerNameStart}
 
 .New features and enhancements
@@ -48,6 +49,7 @@ link:https://access.redhat.com/errata/RHBA-2023:4782[Red Hat Errata Release]
 
 * Fixed Ansible facts to retry saving to hosts if there is a database deadlock.
 
+//Event-Driven Ansible
 == {EDAName}
 
 .New features and enhancements

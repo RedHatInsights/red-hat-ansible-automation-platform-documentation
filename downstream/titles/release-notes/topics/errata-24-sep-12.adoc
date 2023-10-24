@@ -4,6 +4,7 @@
 
 link:https://access.redhat.com/errata/RHBA-2023:5140[Red Hat Errata Release]
 
+//Automation controller
 == {ControllerNameStart}
 
 .New features and enhancements

@@ -4,6 +4,7 @@
 
 link:https://access.redhat.com/errata/RHBA-2023:4621[Red Hat Errata Release]
 
+//Automation controller
 == {ControllerNameStart}
 
 .New features and enhancements
@@ -50,20 +51,7 @@ link:https://access.redhat.com/errata/RHBA-2023:4621[Red Hat Errata Release]
 
 * Fixed an issue where related items were not visible in some cases. For example, job template instance groups, organization galaxy credentials, and organization instance groups.
 
-== {EDAName}
-
-.New features and enhancements
-
-* ansible-rulebook has been updated to 1.0.1.
-
-.Bug fixes
-
-* Fixed an issue where the `rule_run_at` field was not sent to the websocket.
-
-* Do not try to connect with AWX when the no `run_job_template` action is used.
-
-* The number of simultaneously open connections to controller is now limited to 30.
-
+//Automation hub
 == {HubNameStart}
 
 .New features and enhancements
@@ -99,3 +87,18 @@ link:https://access.redhat.com/errata/RHBA-2023:4621[Red Hat Errata Release]
 * Fixed logging dependencies.
 
 * Fixed collections in `stdout` mode.
+
+//Event-Driven Ansible
+== {EDAName}
+
+.New features and enhancements
+
+* ansible-rulebook has been updated to 1.0.1.
+
+.Bug fixes
+
+* Fixed an issue where the `rule_run_at` field was not sent to the websocket.
+
+* Do not try to connect with AWX when the no `run_job_template` action is used.
+
+* The number of simultaneously open connections to controller is now limited to 30.

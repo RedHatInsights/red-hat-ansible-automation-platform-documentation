@@ -15,15 +15,21 @@ This release includes several enhancements, additions, and fixes that have been 
 
 include::topics/aap-24.adoc[leveloffset=+2]
 
-include::topics/hub-464.adoc[leveloffset=+2]
-
 include::topics/controller-440.adoc[leveloffset=+2]
 
 include::topics/eda-24.adoc[leveloffset=+2]
 
+include::topics/hub-464.adoc[leveloffset=+2]
+
 include::topics/operator-240.adoc[leveloffset=+2]
 
 include::topics/docs-24.adoc[leveloffset=+2]
+
+include::topics/errata-24-oct-19.adoc[leveloffset=+2]
+
+include::topics/errata-24-oct-17.adoc[leveloffset=+2]
+
+include::topics/errata-24-oct-10.adoc[leveloffset=+2]
 
 include::topics/errata-24-sep-24.adoc[leveloffset=+2]
 

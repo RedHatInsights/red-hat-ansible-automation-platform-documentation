@@ -1,0 +1,52 @@
+// This is the release notes file for AAP 2.4 errata bundle dated October 10 2023.
+
+= {PlatformNameShort} 2.4 - October 10, 2023
+
+link:https://access.redhat.com/errata/RHBA-2023:5653[Red Hat Errata Release]
+
+//Ansible Automation Platform
+== {PlatformNameShort}
+
+.New features and enhancements
+
+* Updated amazon.aws certified collection to 6.4.0. 
+
+.Bug fixes
+
+* Fixed ansible-compat dependency issue with ansible-lint. 
+
+//Automation controller
+== {ControllerNameStart}
+
+.New features and enhancements
+
+* automation-controller has been updated to 4.4.5. 
+
+.Bug fixes
+
+* Fixed settings lookup to no longer leave some services in a `supervisord` `FATAL` unresponsive state. 
+
+* Replaced the SQL commands for creating a partition with the use of `ATTACH PARTITION` to avoid exclusive table lock on event tables. 
+
+* Fixed settings to allow simultaneous use of `SOCIAL_AUTH_SAML_ORGANIZATION_ATTR` and `SOCIAL_AUTH_SAML_ORGANIZATION_MAP` for a given organization. 
+
+* Fixed Content Security Policy (CSP) to enable Pendo retrieval. 
+
+* Updated the Thycotic DevOps Secrets Vault credential plugin to allow for filtering based on `secret_field`. 
+
+//Automation hub
+== {HubNameStart}
+
+.New features and enhancements
+
+* python3-galaxy-importer/python39-galaxy-importer has been updated to 0.4.13. 
+
+* Added `Event-Driven Ansible Content` to the list of predefined tags.
+
+* python3-pulp-ansible/python39-pulp-ansible has been updated to 0.17.5. 
+
+.Bug fixes
+
+* Updated ansible-lint to include an offline mode, which is enabled by default, to prevent outbound network calls.
+
+* The `users` field in namespace data is now ignored during sync.

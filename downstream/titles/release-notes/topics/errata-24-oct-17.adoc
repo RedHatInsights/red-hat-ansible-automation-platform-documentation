@@ -1,0 +1,41 @@
+// This is the release notes file for AAP 2.4 errata bundle dated October 17 2023.
+
+= {PlatformNameShort} 2.4 - October 17, 2023
+
+link:https://access.redhat.com/errata/RHBA-2023:5812[Red Hat Errata Release]
+
+//Ansible Automation Platform
+== {PlatformNameShort}
+
+.New features and enhancements
+
+* ansible-core has been updated to 2.15.5.
+
+* python3-django/python39-django has been updated to 3.2.22.
+
+* galaxy-importer has been updated to 0.4.13. 
+
+* Updated amazon.aws collection to 6.4.0 in ee-supported. 
+
+.Security fixes
+
+* ansible-core: malicious role archive can cause ansible-galaxy to overwrite arbitrary files (CVE-2023-5115)
+
+* python3-django/python39-django: Denial-of-service possibility in django.utils.text.Truncator (CVE-2023-43665)
+
+.Bug fixes
+
+* Fixed ansible-compat dependency issue with ansible-lint. 
+
+//Automation controller
+== {ControllerNameStart}
+
+.New features and enhancements
+
+* automation-controller has been updated to 4.4.6.
+
+* Added a new *Subscription Usage* page to the controller UI to view historical usage of licenses. 
+
+.Security fixes
+
+* automation-controller: Django: Potential denial of service vulnerability in django.utils.encoding.uri_to_iri() (CVE-2023-41164)

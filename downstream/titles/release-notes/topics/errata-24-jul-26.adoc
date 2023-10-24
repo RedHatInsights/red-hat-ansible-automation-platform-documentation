@@ -4,6 +4,7 @@
 
 link:https://access.redhat.com/errata/RHBA-2023:4288[Red Hat Errata Release]
 
+//Ansible Automation Platform
 == {PlatformNameShort}
 
 .New features and enhancements
@@ -14,6 +15,7 @@ link:https://access.redhat.com/errata/RHBA-2023:4288[Red Hat Errata Release]
 
 * Fixed file permissions in setup bundle.
 
+//Automation hub
 == {HubNameStart}
 
 .New features and enhancements
