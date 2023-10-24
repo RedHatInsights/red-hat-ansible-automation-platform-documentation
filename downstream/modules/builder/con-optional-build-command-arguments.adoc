@@ -24,6 +24,6 @@ $ ansible-builder build -f another-definition-file.yml -t another_ee_image
 ----
 ====
 
-In <<example1, the example above,>> {Builder} will use the specifications provided in the file `another-definition-file.yml` instead of the default `execution-environment.yml` to build an {ExecEnvNameSing} image named `another_ee_image`.
+In <<example1, the previous example,>> {Builder} will use the specifications provided in the file `another-definition-file.yml` instead of the default `execution-environment.yml` to build an {ExecEnvNameSing} image named `another_ee_image`.
 
 For other specifications and flags that are possible to use with the build command, enter `ansible-builder build --help` to see a list of additional options.

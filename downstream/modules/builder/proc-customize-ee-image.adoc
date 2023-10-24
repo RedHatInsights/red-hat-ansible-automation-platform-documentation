@@ -5,7 +5,7 @@
 Ansible Controller ships with three default execution environments:
 
 * `Ansible 2.9` - no collections are installed other than Controller modules
-* `Minimal` - contains the latest Ansible 2.13 release along with Ansible Runner, but contains no collections or other additional content
+* `Minimal` - contains the latest Ansible 2.15 release along with Ansible Runner, but contains no collections or other additional content
 * `EE Supported` - Minimal, plus all Red Hat-supported collections and dependencies
 
 While these environments cover many automation use cases, you can add additional items to customize these containers for your specific needs. The following procedure adds the `kubernetes.core` collection to the `ee-minimal` default image:
@@ -16,14 +16,14 @@ While these environments cover many automation use cases, you can add additional
 ----
 $ podman login -u="[username]" -p="[token/hash]" registry.redhat.io
 ----
-. Ensure that you can pull the desired {ExecEnvNameSing} base image
+. Ensure that you can pull the desired {ExecEnvNameSing} base image:
 +
 -----
-podman pull registry.redhat.io/ansible-automation-platform-22/ee-minimal-rhel8:latest
+podman pull registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel8:latest
 -----
 +
 . Configure your {Builder} files to specify the desired base image and any additional content to add to the new execution environment image.
-.. For example, to add the link:https://galaxy.ansible.com/kubernetes/core[Kubernetes Core Collection from Galaxy] to the image, fill out the `requirements.yml` file as follows:
+.. For example, to add the link:https://galaxy.ansible.com/kubernetes/core[Kubernetes Core Collection from Galaxy] to the image, use the Galaxy entry:
 +
 ====
 ----
@@ -38,13 +38,15 @@ collections:
 [example]
 ====
 ----
-version: 1
+version: 3
 
-build_arg_defaults:
-  EE_BASE_IMAGE: 'registry.redhat.io/ansible-automation-platform-22/ee-minimal-rhel8:latest'
+images:
+  base_image: 'registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel9:latest'
 
 dependencies:
-  galaxy: requirements.yml
+  galaxy:
+    collections:
+      - kubernetes.core
 ----
 ====
 +
@@ -56,16 +58,16 @@ Since this example uses the community version of `kubernetes.core` and not a cer
 +
 [subs=+quotes]
 ----
-$ ansible-builder build -t registry.redhat.io/_[username]_/_new-ee_
+$ ansible-builder build -t _[username]_/_new-ee_
 ----
 where `[username]` specifies your username, and `new-ee` specifies the name of your new container image.
-
++
 [NOTE]
 ====
 If you do not use `-t` with `build`, an image called `ansible-execution-env` is created and loaded into the local container registry.
 ====
-
-.. Use the `podman images` command to confirm that your new container image is in that list:
++
+* Use the `podman images` command to confirm that your new container image is in that list:
 +
 .Output of a `podman images` command with the image `new-ee`
 ====
@@ -77,13 +79,13 @@ localhost/new-ee    latest  f5509587efbb  3 minutes ago  769 MB
 . Verify that the collection is installed:
 +
 -----
-$ podman run registry.redhat.io/[username]/new-ee ansible-doc -l kubernetes.core
+$ podman run [username]/new-ee ansible-doc -l kubernetes.core
 -----
 +
 . Tag the image for use in your {HubName}:
 +
 -----
-$ podman tag registry.redhat.io/[username]/new-ee [automation-hub-IP-address]/[username]/new-ee
+$ podman tag [username]/new-ee [automation-hub-IP-address]/[username]/new-ee
 -----
 +
 . Log in to your {HubName} using Podman:
@@ -105,7 +107,7 @@ $ podman push [automation-hub-IP-address]/[username]/new-ee
 +
 . Pull your new image into your {ControllerName} instance:
 .. Navigate to {ControllerName}.
-.. From the side-navigational bar, click menu:Administration[Execution Environments].
+.. From the navigation panel, click menu:Administration[Execution Environments].
 .. Click btn:[Add].
 .. Enter the appropriate information then click btn:[Save] to pull in the new image.
 +

@@ -2,34 +2,74 @@
 
 = Building a definition file
 
-Once you have {Builder} installed, you can create a definition file that {Builder} uses to create your {ExecEnvNameSing} image. The high level process to build an {ExecEnvNameSing} image is for {Builder} to read and validate your definition file, then create a `Containerfile`, and finally pass the `Containerfile` to Podman which then packages and creates your {ExecEnvNameSing} image. The definition file created is in `yaml` format and contains different sections. For more information about the definition file content, see xref:assembly-definition-file-breakdown[Breakdown of definition file content].
+After you have {Builder} installed, you can create a definition file that {Builder} uses to create your {ExecEnvNameSing} image. The high level process to build an {ExecEnvNameSing} image is for {Builder} to read and validate your definition file, then create a `Containerfile`, and finally pass the `Containerfile` to Podman, which then packages and creates your {ExecEnvNameSing} image. The definition file created is in `yaml` format and contains different sections.
 
-The following is an example of a definition file:
+The following is an example of a version 3 definition file. Each definition file should specify the major version number of the Ansible Builder feature set it uses. If not specified, the default version is 1, and most new features and definition keywords will be unavailable.
 
-.A definition file
+// ddacosta - there is a Ansible Builder version 3 Porting Guide in progress that discusses the changes from v1/2 to v3. A link should be included to that document once its published.
+
+.Definition file example
 ====
 ----
-version: 1
+version: 3
 
 build_arg_defaults: <1>
-  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: "-v"
+  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: '--pre'
 
 dependencies: <2>
+  ansible_core:
+    package_pip: ansible-core==2.14.4
+  ansible_runner:
+    package_pip: ansible-runner
   galaxy: requirements.yml
-  python: requirements.txt
+  python:
+    - six
+    - psutil
   system: bindep.txt
 
-additional_build_steps: <3>
-  prepend: |
+images: <3>
+  base_image:
+    name: registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel9:latest
+    # Other available base images:
+    #   - docker.io/redhat/ubi9:latest
+    #   - quay.io/rockylinux/rockylinux:9
+    #   - quay.io/centos/centos:stream9
+    #   - registry.fedoraproject.org/fedora:38
+    #     (needs an account)
+
+# Custom package manager path for the RHEL based images
+# options: <4>
+#  package_manager_path: /usr/bin/microdnf
+
+additional_build_files: <5>
+    - src: files/ansible.cfg
+      dest: configs
+
+additional_build_steps: <6>
+  prepend_base:
+    - RUN echo This is a prepend base command!
+    # Enable Non-default stream before packages provided by it can be installed. (optional)
+    # - RUN $PKGMGR module enable postgresql:15 -y
+    # - RUN $PKGMGR install -y postgresql
+  prepend_galaxy:
+    - COPY _build/configs/ansible.cfg /etc/ansible/ansible.cfg
+
+  prepend_final: |
     RUN whoami
     RUN cat /etc/os-release
-  append:
+  append_final:
     - RUN echo This is a post-install command!
     - RUN ls -la /etc
-
 ----
 ====
 
-<1> Lists default values for build arguments
-<2> Specifies the location of various requirements files
-<3> Commands for additional custom build steps
+<1> Lists default values for build arguments.
+<2> Specifies the location of various requirements files.
+<3> Specifies the base image to be used. Red Hat support is only provided for the redhat.registry.io base image.
+<4> Specifies options that can affect builder runtime functionality.
+<5> Specifies files to be added to the build context directory.
+<6> Commands for additional custom build steps.
+
+[role="_additional-resources"]
+.Additional resources
+* For more information about the definition file content, see xref:assembly-definition-file-breakdown[Breakdown of definition file content].

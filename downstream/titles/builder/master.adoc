@@ -16,6 +16,7 @@ include::aap-common/providing-direct-documentation-feedback.adoc[leveloffset=+1]
 
 include::builder/assembly-intro-to-builder.adoc[leveloffset=+1]
 include::builder/assembly-using-builder.adoc[leveloffset=+1]
+include::builder/assembly-common-ee-scenarios.adoc[leveloffset=+1]
 include::builder/assembly-publishing-exec-env.adoc[leveloffset=+1]
 //include::builder/assembly-building-off-existing-ee.adoc[leveloffset=+1]
 include::hub/assembly-populate-container-registry.adoc[leveloffset=+1]

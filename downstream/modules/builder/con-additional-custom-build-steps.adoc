@@ -2,9 +2,43 @@
 
 = Additional custom build steps
 
-The `prepend` and `append` commands may be specified in the `additional_build_steps section`. These will add commands to the `Containerfile` which will run either before or after the main build steps are executed.
+You can specify custom build commands for any build phase in the `additional_build_steps` section of the definition file.
 
-The syntax for `additional_build_steps` must be one of the following:
+Use `prepend_` and `append_` commands to add commands to the `Containerfile` which will run either before or after the main build steps are executed. The commands must conform to any rules required for the runtime system.
+
+See the following table for a list of values that can be used in `additional_build_steps`:
+
+[cols="a,a"]
+|===
+| Value | Description
+
+| `prepend_base`
+| Allows you to insert commands before building the base image.
+
+| `append_base`
+| Allows you to insert commands after building the base image.
+
+| `prepend_galaxy`
+| Allows you to insert before building the galaxy image.
+
+| `append_galaxy`
+| Allows you to insert after building the galaxy image.
+
+| `prepend_builder`
+| Allows you to insert commands before building the builder image.
+
+| `append_builder`
+| Allows you to insert commands after building the builder image.
+
+| `prepend_final`
+| Allows you to insert before building the final image.
+
+| `append_final`
+| Allows you to insert after building the final image.
+
+|===
+
+The syntax for `additional_build_steps` supports both of the following:
 
 * a multi-line string
 +
@@ -12,7 +46,7 @@ The syntax for `additional_build_steps` must be one of the following:
 [example]
 ====
 ----
-prepend: |
+prepend_final: |
    RUN whoami
    RUN cat /etc/os-release
 ----
@@ -24,7 +58,7 @@ prepend: |
 [example]
 ====
 ----
-append:
+append_final:
 - RUN echo This is a post-install command!
 - RUN ls -la /etc
 ----

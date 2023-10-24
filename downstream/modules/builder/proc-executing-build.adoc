@@ -1,17 +1,19 @@
 [id="proc-executing-build"]
 
-= Executing the build and creating commands
+= Building the {ExecEnvNameSing} image
+
+After you create a definition file, you can proceed to build an {ExecEnvNameSing} image.
 
 .Prerequisites
-* You have created a definition file
+* You have created a definition file.
 
 .Procedure
-To build an {ExecEnvNameSing} image, run:
+To build an {ExecEnvNameSing} image, run the following from the command line:
 ----
 $ ansible-builder build
 ----
 
-By default, {Builder} will look for a definition file named `execution-environment.yml` but a different file path can be specified as an argument via the `-f` flag:
+By default, {Builder} looks for a definition file named `execution-environment.yml` but a different file path can be specified as an argument with the `-f` flag:
 [subs=+quotes]
 ----
 $ ansible-builder build -f _definition-file-name_.yml

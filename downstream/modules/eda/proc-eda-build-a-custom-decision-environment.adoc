@@ -12,7 +12,7 @@ Refer to this section if you need a custom decision environment to provide a cus
 
 .Procedure
 
-* Add the `de-supported` decision environment. This image is built from a base image provided by Red Hat called `de-minimal`. 
+* Add the `de-supported` decision environment. This image is built from a base image provided by Red Hat called `de-minimal`.
 +
 [NOTE]
 ====

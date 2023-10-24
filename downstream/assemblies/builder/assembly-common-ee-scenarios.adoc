@@ -1,0 +1,13 @@
+[id="assembly-common-ee-scenarios"]
+
+= Common {ExecEnvNameSing} scenarios
+
+Use the following example definition files to address common configuration scenarios.
+
+include::builder/ref-scenario-update-hub-ca-cert.adoc[leveloffset=+1]
+include::builder/ref-scenario-using-authentication-ee.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+== Additional resources
+* For information regarding the different parts of an {ExecEnvNameSing} definition file, see xref:assembly-definition-file-breakdown[Breakdown of definition file content].
+* For additional example definition files for common scenarios, see link:https://ansible.readthedocs.io/projects/builder/en/latest/scenario_guides/scenario_copy/[Common scenarios section] of the _Ansible Builder Documentation_

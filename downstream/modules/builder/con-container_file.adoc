@@ -4,10 +4,11 @@
 
 Once your definition file is created, Ansible Builder reads and validates it, then creates a `Containerfile`, and finally passes the `Containerfile` to Podman to package and create your automation execution environment image using the following instructions:
 
-. Fetch base image
+. Fetch base image.
 . In the ephemeral copy of base image, collections are downloaded and the list of declared Python and system dependencies, if any, are collected for later.
 . In the ephemeral builder image, Python wheels for all Python dependencies listed in the definition file are downloaded and built (as needed), including all Python dependencies declared by collections listed in the definition file.
-. `prepend` for additional_build_steps from the definition file are run.
+. Any `prepend_` commands defined for additional_build_steps from the definition file are run.
 . In the final {ExecEnvName} image, system dependencies listed in the definition file are installed, including all system dependencies declared by collections listed in the definition file.
 . In the final {ExecEnvName} image, the downloaded collections are copied and the previously fetched Python dependencies are installed.
-. `append` for additional_build_steps from the definition file are run.
+. Any `append_` commands defined for additional_build_steps from the definition file are run.
+//Note if a diagram with the Main step actions gets created, it should be included here. Check with @nitzmahone

@@ -1,0 +1,36 @@
+[id="ref-scenario-using-authentication-ee"]
+
+= Using {HubName} authentication details when building {ExecEnvName}
+
+
+[role="_abstract"]
+Use this example to customize the default definition file to pass {HubName} authentication details into the {ExecEnvNameSing} build without exposing them in the final {ExecEnvNameSing} image.
+
+.Prerequisites
+
+* You have link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/hub-create-api-token[created an {HubName} API token] and stored it in a secure location, for example in a file named `token.txt`.
+* Define a build argument that gets populated with the {HubName} API token:
+----
+export ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_TOKEN=$(cat <token.txt>)
+----
+
+-----
+additional_build_files:
+  # copy arbitrary files next to this EE def into the build context- we can refer to them later.
+  - src: files
+    dest: configs
+
+additional_build_steps:
+  prepend_galaxy:
+    # Copy ansible.cfg from build directory to EE
+    - COPY _build/configs/ansible.cfg /etc/ansible/ansible.cfg
+    # Environment variables used for Galaxy client configurations
+    - ENV ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_URL=https://console.redhat.com/api/automation-hub/content/xxxxxxx-synclist/
+    - ENV ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_AUTH_URL=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
+    # define a custom build arg env passthru - we still also have to pass
+    # `--build-arg ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_TOKEN` to get it to pick it up from the env
+    - ARG ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_TOKEN
+
+options:
+  package_manager_path: /usr/bin/microdnf  # downstream images use non-standard package manager
+-----

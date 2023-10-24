@@ -3,3 +3,13 @@
 = Publishing an {ExecEnvNameSing}
 
 include::builder/proc-customize-ee-image.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+== Additional resources (or Next steps)
+
+For more details on customizing {ExecEnvNameShort} based on common scenarios, see the following topics in the _Ansible Builder Documentation_:
+
+* link:https://ansible.readthedocs.io/projects/builder/en/latest/scenario_guides/scenario_copy/[Copying arbitratory files to an execution enviornment]
+* link:https://ansible.readthedocs.io/projects/builder/en/latest/scenario_guides/scenario_using_env/[Building execution environments with environment variables]
+* link:https://ansible.readthedocs.io/projects/builder/en/latest/scenario_guides/scenario_custom/[Building execution environments with environment variables and `ansible.cfg`]
+ 

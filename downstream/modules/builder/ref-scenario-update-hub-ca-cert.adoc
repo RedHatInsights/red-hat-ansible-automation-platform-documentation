@@ -1,0 +1,35 @@
+[id="ref-scenario-update-hub-ca-cert"]
+
+= Updating the {HubName} CA certificate
+
+
+[role="_abstract"]
+Use this example to customize the default definition file to include a CA certificate to the `additional-build-files` section, move the file to the appropriate directory and, finally, run the command to update the dynamic configuration of CA certificates to allow the system to trust this CA certificate.
+
+.Prerequisites
+* A custom CA certificate, for example `rootCA.crt`.
+
+[NOTE]
+====
+Customizing the CA certificate using `prepend_base` means that the resulting CA configuration appears in all other build stages and the final image, because all other build stages inherit from the base image.
+====
+
+-----
+additional_build_files:
+  # copy the CA public key into the build context, we will copy and use it in the base image later
+  - src: files/rootCA.crt
+    dest: configs
+
+additional_build_steps:
+  prepend_base:
+    # copy a custom CA cert into the base image and recompute the trust database
+    # because this is in "base", all stages will inherit (including the final EE)
+    - COPY _build/configs/rootCA.crt /usr/share/pki/ca-trust-source/anchors
+    - RUN update-ca-trust
+
+options:
+  package_manager_path: /usr/bin/microdnf  # downstream images use non-standard package manager
+
+[galaxy]
+server_list = automation_hub
+-----

@@ -8,8 +8,6 @@ include::builder/con-why-builder.adoc[leveloffset=+1]
 include::builder/proc-installing-builder.adoc[leveloffset=+1]
 include::builder/con-building-definition-file.adoc[leveloffset=+1]
 
-For more information about these definition file parameters, see xref:assembly-definition-file-breakdown[Breakdown of definition file content].
-
 include::builder/proc-executing-build.adoc[leveloffset=+1]
 
 include::assembly-definition-file-breakdown.adoc[leveloffset=+1]

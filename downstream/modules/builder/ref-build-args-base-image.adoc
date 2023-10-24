@@ -11,15 +11,9 @@ The `build_arg_defaults` section of the definition file is a dictionary whose ke
 | `ANSIBLE_GALAXY_CLI_COLLECTION_OPTS`
 | Allows the user to pass arbitrary arguments to the ansible-galaxy CLI during the collection installation phase. For example, the –pre flag to enable the installation of pre-release collections, or -c to disable verification of the server's SSL certificate.
 
-| `EE_BASE_IMAGE`
-| Specifies the parent image for the automation execution environment, enabling a new image to be built that is based off of an already-existing image. This is typically a supported execution environment base image like ee-minimal or ee-supported, but it can also be an execution environment image that you've created previously and want to customize further.
+| `ANSIBLE_GALAXY_CLI_ROLE_OPTS`
+| Allows the user to pass any flags, such as –no-deps, to the role installation.
 
-The default image is `registry.redhat.io/ansible-automation-platform-23/ee-minimal-rhel8:latest`.
-
-| `EE_BUILDER_IMAGE`
-| Specifies the intermediate builder image used for Python dependency collection and compilation; must contain a matching Python version with `EE_BASE_IMAGE` and have ansible-builder installed.
-
-The default image is `registry.redhat.io/ansible-automation-platform-23/ansible-builder-rhel8:latest`.
 |===
 
 The values given inside `build_arg_defaults` will be hard-coded into the `Containerfile`, so these values will persist if `podman build` is called manually.
