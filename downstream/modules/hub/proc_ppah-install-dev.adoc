@@ -1,0 +1,20 @@
+:_content-type: PROCEDURE
+
+[id="ppah-install-dev_{context}"]
+= Installing {HubName} for development
+
+Use the playbook `install_devel` to install an all-in-one {HubName} for development.
+
+This option supports only optional parameters:
+
+* xref:tk[Common]. See xref:tk[Online vs Offline Installation] for details.
+* `hub_admin_password`: if not set, the installer will set one and print it as part of its output. 
+
+.Procedure
+
+* Run the installation playbook using the following command:
+
+----
+ansible-playbook -i </path/to/inventory> ansible.private_partner_automation_hub_installer.install_devel
+----
+

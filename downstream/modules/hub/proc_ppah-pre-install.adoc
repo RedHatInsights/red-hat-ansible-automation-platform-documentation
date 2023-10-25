@@ -1,0 +1,19 @@
+:_content-type: PROCEDURE
+
+[id="ppah-pre-install_{context}"]
+= Pre Installation Steps
+
+Find the requirements for the private-partner-automation-hub installer collection in the `requirements.yml` file. Use the following command to install the requirements for the collection.
+
+----
+$ ansible-galaxy collection install -r requirements.yml
+----
+
+.Procedure
+
+Install the collection using {Galaxy}. Run the following command:
+----
+$ ansible-galaxy collection install .
+----
+
+

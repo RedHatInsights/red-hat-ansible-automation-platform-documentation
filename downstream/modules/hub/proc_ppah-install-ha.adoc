@@ -1,0 +1,34 @@
+:_content-type: PROCEDURE
+
+[id="ppah-install-ha_{context}"]
+= Installing a high availability {HubName}
+
+Use the playbook `install_prod` to install a production-ready, highly available {PlatformNameShort}. This option requires that all supporting services are managed by the user.
+
+.Prerequisites
+
+* External PostgreSQL server
+* LDAP server
+* NFS server
+
+The playbook requires the following parameters:
+
+* PostgreSQL
+** See xref:tk[Database]
+* LDAP
+** hub_authentication_backend must be set to `ldap`
+** see xref:tk[LDAP]
+* NFS 
+** See xref:tk[Shared storage]
+
+NOTE: See xref:tk[Online vs. Offline Installation] for instructions on fetching the container images. You can use the link:https://gitlab.cee.redhat.com/ansible/private-partner-automation-hub-installer/-/blob/main/all-in-one-sample-values.yml[Sample] as a reference.
+
+.Procedure
+
+Run the installation playbook using the following command: 
+----
+ansible-playbook -i </path/to/inventory> -e @</path/to/values> ansible.private_partner_automation_hub_installer.install_prod
+----
+
+
+

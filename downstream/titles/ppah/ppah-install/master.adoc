@@ -9,5 +9,6 @@ include::attributes/attributes.adoc[]
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]
+include::assembly_ppah-installation.adoc[leveloffset=+1]
 
 

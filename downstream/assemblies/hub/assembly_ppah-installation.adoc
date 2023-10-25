@@ -1,0 +1,36 @@
+ifdef::context[:parent-context: {context}]
+
+:_content-type: ASSEMBLY
+
+[id="ppah-installation_{context}"]
+
+= Private Partner Ansible Automation Hub Installer Guide
+
+:context: ppah-installation
+
+This guide contains an Ansible collection of playbooks to install the containerized {HubNameMain}.
+
+.Prerequisites
+
+* Install ansible-core using the following command: 
+
+[source,bash]
+----
+$ dnf install ansible-core
+or
+$ pip install --user ansible-core
+----
+
+include::hub/proc_ppah-pre-install.adoc[leveloffset=+1]
+
+== Installation options
+
+include::hub/proc_ppah-install-dev.adoc[leveloffset=+1]
+include::hub/proc_ppah-install-ha.adoc[leveloffset=+1]
+include::hub/ref_ppah-config.adoc[leveloffset=+1]
+include::hub/proc_ppah-online-offline-install.adoc[leveloffset=+1]
+include::hub/ref_ppah-access.adoc[leveloffset=+1]
+
+
+ifdef::parent-context[:context: {parent-context}]
+
