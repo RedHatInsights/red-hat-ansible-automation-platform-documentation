@@ -1,0 +1,20 @@
+[id="ref-controller-multi-cred-launch-considerations"]
+
+= Launch Time Considerations
+
+Before {Controllername} v3.3, job templates used a configurable attribute, `ask_credential_on_launch`. 
+This value was used at launch time to determine which missing credential values were necessary for launch. 
+This was a way to specify a Machine or SSH credential to satisfy the minimum credential requirement.
+
+Under the unified credential list model, this attribute still exists, but it no longer _requires_ a credential. 
+Now when `ask_credential_on_launch` is `true`, it signifies that you can specify a list of credentials at launch time to override those defined on the job template. For example:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+POST /api/v2/job_templates/N/launch/ {'credentials': [A, B, C]}`
+----
+
+If `ask_credential_on_launch` is `false`, it signifies that custom credentials provided in the `POST /api/v2/job_templates/N/launch/` are ignored.
+
+Under this model, the only purpose for `ask_credential_on_launch` is to signal API clients to prompt the user for (optional) changes at launch
+time.

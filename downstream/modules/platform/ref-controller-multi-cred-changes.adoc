@@ -1,0 +1,23 @@
+[id="ref-controller-multi-cred-changes"]
+
+= Important Changes
+
+At {ControllerName} 4.4 Job templates have a single interface for credential assignment.
+
+From the API endpoint:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+GET /api/v2/job_templates/N/credentials/
+----
+
+You can associate and disassociate credentials using `POST` requests, similar to the behavior in the deprecated `extra_credentials` endpoint:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+POST /api/v2/job_templates/N/credentials/ {'associate': true, 'id': 'X'}
+POST /api/v2/job_templates/N/credentials/ {'disassociate': true, 'id': 'Y'}
+----
+
+With this model, a job template is considered valid even when there are _no_ credentials assigned to it. 
+This model also provides users the ability to assign multiple Vault credentials to a job template.

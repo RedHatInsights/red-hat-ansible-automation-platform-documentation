@@ -1,0 +1,13 @@
+[id="con-controller-multi-cred-backgound"]
+
+= Background
+
+Before {ControllerName} v3.3, job templates had the following requirements with respect to credentials:
+
+* All job templates (and jobs) were required to have exactly _one_ Machine/SSH or Vault credential (or one of both).
+* All job templates (and jobs) could have zero or more "extra" credentials.
+* Extra credentials represented "Cloud" and "Network" credentials that could be used to provide authentication to external services through environment variables, for example, `AWS_ACCESS_KEY_ID`.
+
+This model required a variety of disjoint interfaces for specifying credentials on a job template and it lacked the ability associate multiple Vault credentials with a playbook run, a use case supported by Ansible core from Ansible 2.4 onwards.
+
+This model also poses a stumbling block for certain playbook execution workflows, such as having to attach a "dummy" Machine/SSH credential to the job template to satisfy the requirement.

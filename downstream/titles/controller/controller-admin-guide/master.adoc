@@ -21,7 +21,7 @@ include::platform/assembly-controller-licensing.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-start-stop-controller.adoc[leveloffset=+1]
 include::platform/assembly-custom-inventory-scripts.adoc[leveloffset=+1]
 include::platform/assembly-inventory-file-importing.adoc[leveloffset=+1]
-//5 Multi-Credential Assignment
+include::platform/assembly-multi-credential-assignment.adoc[leveloffset=+1]
 //6 Management Jobs
 //7 Clustering
 //8 Container and Instance Groups
