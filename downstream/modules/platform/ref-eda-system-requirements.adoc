@@ -1,0 +1,18 @@
+[id="event-driven-ansible-system-requirements"]
+
+= {EDAName} system requirements
+
+{EDAName} provides event-handling capability to automate time-consuming tasks that are required for remediation.
+
+{EDAName} processes events about conditions in your IT environment, determines the appropriate response to the event, and executes automated actions to remediate the event. 
+
+In addition to IT-related tasks, {EDAName} can automate a variety of tasks across your automation environment.
+
+[cols="a,a",options="header"]
+|===
+h| Requirement | Required
+| *RAM* | 16 GB
+| *CPUs* | 4
+| *Local disk* | 40 GB minimum
+|===
+
