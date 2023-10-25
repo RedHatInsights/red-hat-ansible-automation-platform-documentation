@@ -12,5 +12,7 @@ Use the following procedure to reset `TOWER_URL_BASE` if the wrong address has b
 
 .Procedure
 
-. From the navigation panel, select menu:Settings[Misc. system settings].
-. Re-add your license for the DNS entry you wish to appear in notifications.
+. From the navigation panel, select menu:Settings[Miscellaneous System settings].
+. Click btn:[Edit].
+. Enter the address in the *Base URL of the service* field for the DNS entry you wish to appear in notifications.
+. Re-add your license in menu:Settings[Subscription settings].

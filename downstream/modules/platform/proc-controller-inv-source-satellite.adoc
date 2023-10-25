@@ -5,11 +5,11 @@
 Use the following procedure to configure a Red Hat Satellite-sourced inventory.
 
 .Procedure
-. In the *Create new source* page, select menu:Source[]
+. In the *Create new source* page, select menu:Source[].
 . From the menu, select *Red Hat Satellite*.
 . The *Create Source* window expands with the required *Credential* field.
 Choose from an existing Satellite Credential. 
-For more information, refer to xref:controller-credentials[Credentials].
+For more information, see xref:controller-credentials[Credentials].
 . Optional: You can specify the verbosity, host filter, enabled variables or values, and update options as described in xref:proc-controller-add-source[Adding a source].
 . Use the *Source Variables* field to specify parameters used by the `foreman` inventory source. 
 Enter variables using either JSON or YAML syntax. 

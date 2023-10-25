@@ -25,11 +25,11 @@ image::ug-wf-editor-create.png[Launch visualizer]
 +
 image::ug-wf-add-template-nodes.png[Add Node workflow job template]
 +
-. From the drop-down menu, select the type of node that you want to add:
+. From the *Node Type* list, select the type of node that you want to add:
 +
 image::ug-wf-add-node-selections.png[Node type]
 +
-* If you select an *Approval* node, see [ADD XREF]Approval nodes for more information.
+* If you select an *Approval* node, see xref:controller-approval-nodes[Approval nodes] for more information.
 +
 Selecting a node provides the available valid options associated with it.
 +

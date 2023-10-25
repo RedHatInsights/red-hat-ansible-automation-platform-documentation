@@ -25,7 +25,7 @@ The content can be copied from the cache location to `<job private directory>/re
 
 By default, {ControllerName} has a system-wide setting that enables you to dynamically download roles from the `roles/requirements.yml` file for SCM projects. 
 You can turn off this setting in the *Jobs settings* screen of the *Settings* menu by switching the *Enable Role Download* toggle button
-to *OFF*.
+to *Off*.
 
 //image:configure-tower-jobs-download-roles.png[image]
 

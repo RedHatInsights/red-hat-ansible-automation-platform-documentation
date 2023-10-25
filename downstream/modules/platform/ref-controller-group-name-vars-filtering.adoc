@@ -40,7 +40,7 @@ account_alias=sustaining
 The goal here is to return only shutdown hosts that are present in the group with the `account_alias` variable equal to `product_dev`. 
 There are two approaches to this, both shown in YAML format. The first one suggested is recommended.
 
-. *Construct 2 groups, limit to intersection*
+. *Construct 2 groups, limit to intersection*:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -56,13 +56,13 @@ limit: is_shutdown:&product_dev
 ----
 +
 This constructed inventory input creates a group for both categories and uses the `limit` (host pattern) to only return hosts that
-are in the intersection of those two groups, which is documented in link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_patterns.htm[Patterns: targeting hosts and groups].
+are in the intersection of those two groups, which is documented in link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_patterns.htm[Patterns: targeting hosts and groups].
 +
 When a variable is or is not defined (depending on the host), you can give a default.
 For example, use `| default("running")` if you know what value it should have when it is not defined. 
-This helps with debugging, as described in [Debugging tips].
+This helps with debugging, as described in xref:ref-controller-inv-debugging-tips[Debugging tips].
 +
-. *Construct 1 group, limit to group*
+. *Construct 1 group, limit to group*:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----

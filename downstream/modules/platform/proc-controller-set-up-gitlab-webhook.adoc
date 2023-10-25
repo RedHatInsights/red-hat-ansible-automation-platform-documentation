@@ -7,7 +7,7 @@ Job status information (pending, error, success) can be sent back only for pull 
 If you do not need {ControllerName} to post job statuses back to the webhook service, go directly to step 3.
 
 .Procedure
-. Generate a _ Personal Access Token _ (PAT) for use with {ControllerName}:
+. Generate a _Personal Access Token_ (PAT) for use with {ControllerName}:
 .. From the navigation panel in GitLab, select your avatar and menu:Edit profile[].
 .. From the navigation panel, select menu:Access tokens[].
 .. Complete the following fields:

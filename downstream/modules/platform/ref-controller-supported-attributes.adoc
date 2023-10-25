@@ -91,10 +91,10 @@ Note that some conditions, such as unreachable hosts can still prevent handlers 
 *** `labels`
 **** `count` - (int) The number of labels.
 **** `results` - The list of dictionaries representing labels. 
-For example, {"id": 5, "name": "database jobs"}).
+For example, {"id": 5, "name": "database jobs"}.
 
-You can reference information about a job in a custom notification message using grouped curly braces {{ }}. 
-Specific job attributes are accessed using dotted notation, for example {{ job.summary_fields.inventory.name }}. 
+You can reference information about a job in a custom notification message using grouped curly brackets {{ }}. 
+Specific job attributes are accessed using dotted notation, for example, {{ job.summary_fields.inventory.name }}. 
 You can add any characters used in front or around the braces, or plain text, for clarification, such as "#" for job ID and single-quotes to denote some descriptor. 
 Custom messages can include a number of variables throughout the message:
 

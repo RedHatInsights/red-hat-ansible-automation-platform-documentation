@@ -46,7 +46,7 @@ ansible_runner:
 | *galaxy* | Ansible Collections to be installed from Galaxy. 
 
 This can be a filename, a dictionary, or a multi-line string representation of an Ansible Galaxy `requirements.yml` file. 
-For more information about the requirements file format, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file[Galaxy user guide].
+For more information about the requirements file format, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file[Galaxy User Guide].
 | *python* | The Python installation requirements. 
 
 This can be a filename, or a list of requirements. 
@@ -117,7 +117,7 @@ dependencies:
 
 [NOTE]
 ====
-If any of these dependency files (`requirementa.txt, bindep.txt, and requirements.yml`) are in the `build_ignore` of the collection, it will not work correctly.
+If any of these dependency files (`requirementa.txt, bindep.txt, and requirements.yml`) are in the `build_ignore` of the collection, it does not work correctly.
 
 Collection maintainers can verify that ansible-builder recognizes the requirements they expect by using the `introspect` command, for example:
 
@@ -128,6 +128,6 @@ $ ansible-builder introspect --sanitize ~/.ansible/collections/
 ====
 
 The `--sanitize` option reviews all of the collection requirements and removes duplicates. 
-It also removes any Python requirements that are normally be excluded (see *python* dependencies).
+It also removes any Python requirements that are normally excluded (see *python* dependencies).
 
 Use the `-v3` option to `introspect` to see logging messages about requirements that are being excluded.

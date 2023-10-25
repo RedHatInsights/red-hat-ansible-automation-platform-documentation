@@ -10,7 +10,7 @@ image::ug-instance-groups_list_view.png[Instance groups list view]
 
 .Additional resources
 
-* For more information about the policy or rules associated with instance groups, see the link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instance-groups[Instance Groups] section of the Automation Controller Administration Guide.
+* For more information about the policy or rules associated with instance groups, see the link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instance-groups[Instance Groups] section of the _{ControllerAG}_.
 * For more information on connecting your instance group to a container, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-container-groups[Container Groups].
 
 include::platform/proc-controller-create-instance-group.adoc[leveloffset=+1]

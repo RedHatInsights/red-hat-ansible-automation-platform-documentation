@@ -23,7 +23,7 @@ image:organizations-add-users-roles.png[Add user roles]
 
 . Click btn:[Save] to apply the roles to the selected users or teams and to add them as members.
 
-The Add Users/Teams window closes to display the updated roles assigned for each user and team.
+The Add Users or Teams window closes to display the updated roles assigned for each user and team.
 
 image:permissions-tab-roles-assigned.png[Permissions tab with Role Assignments]
 

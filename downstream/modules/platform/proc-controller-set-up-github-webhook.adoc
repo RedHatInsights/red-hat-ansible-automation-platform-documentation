@@ -8,7 +8,7 @@ If you do not need {ControllerName} to post job statuses back to the webhook ser
 
 .Procedure
 
-. Generate a _ Personal Access Token _ (PAT) for use with {ControllerName}:
+. Generate a _Personal Access Token_ (PAT) for use with {ControllerName}:
 .. In the profile settings of your GitHub account, select *Settings*.
 .. From the navigation panel, select menu:<> Developer Settings[].
 .. On the *Developer Settings* page, select *Personal access tokens*.

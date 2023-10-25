@@ -25,7 +25,7 @@ collections:
   - name: awx.awx
 ----
 
-To build an {ExecEnvShort} using the files above, run the following command:
+To build an {ExecEnvShort} using the preceding files and run the following command:
 
 [literal, options="nowrap" subs="+attributes"]
 ---

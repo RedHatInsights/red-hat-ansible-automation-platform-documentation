@@ -67,6 +67,5 @@ $ ansible-inventory -i ./my_scripts/_11__inventory_script_upperorder --list --ex
 In the preceding example, you can `cd` into `my_scripts` and then issue a `git init` command, add the scripts you want, push it to source control,
 and then create an SCM inventory source in the user interface.
 
-For more information on syncing or using custom inventory scripts, refer
-to [Inventory file importing] in the _Automation Controller Administration Guide_.
+For more information on syncing or using custom inventory scripts, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/scm-inv-source.html#ag-inv-import[Inventory file importing] in the _{ControllerAG}_.
 

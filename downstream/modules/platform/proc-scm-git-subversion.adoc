@@ -16,7 +16,7 @@ image:projects-create-scm-project.png[Select scm]
 Some commit hashes and referencess might not be available unless you also provide a custom refspec in the next field. 
 If left blank, the default is `HEAD` which is the last checked out Branch, Tag, or Commit for this project.
 * *SCM Refspec* - This field is an option specific to git source control and only advanced users familiar and comfortable with git should specify which references to download from the remote repository. 
-For more information, see [Job branch overriding].
+For more information, see xref:controller-job-branch-overriding[Job branch overriding].
 * *Source Control Credential* - If authentication is required, select the appropriate source control credential
 .  Optional: *SCM Update Options* - select the launch behavior, if applicable:
 * *Clean* - Removes any local modifications before performing an update.
@@ -24,11 +24,11 @@ For more information, see [Job branch overriding].
 Depending on the size of the repository this can significantly increase the amount of time required to complete an update.
 * *Track submodules* - Tracks the latest commit. There is more information in the tooltip image:question_circle.png[Tooltip,15,15].
 * *Update Revision on Launch* - Updates the revision of the project to the current revision in the remote source control, as well as cacheing the roles directory from link:https://docs.ansible.com/automation-controller/latest/html/userguide/projects.html#ug-galaxy[Galaxy]  or
-[Collections support]. 
+xref:ref-projects-collections-support[Collections support]. 
 {ControllerNameStart} ensures that the local revision matches and that the roles and collections are up-to-date with the last update.
 In addition, to avoid job overflows if jobs are spawned faster than the project can synchronize, selecting this enables you to configure a Cache Timeout to cache previous project synchronizations for a given number of seconds.
 * *Allow Branch Override* - Enables a job template or an inventory source that uses this project to launch with a specified SCM branch or revision other than that of the project. 
-For more information, see [Job branch overriding].
+For more information, see xref:controller-job-branch-overriding[Job branch overriding].
 +
 image:projects-create-scm-project-branch-override-checked.png[Override options]
 . Click *Save* to save your project.

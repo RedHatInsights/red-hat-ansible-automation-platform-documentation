@@ -5,12 +5,12 @@
 Use the following procedure to configure an AWS EC2-sourced inventory, 
 
 .Procedure
-. In the *Create new source* page, select menu:Source[]
+. In the *Create new source* page, select menu:Source[].
 . From the menu, select *Amazon EC2*.
 . The *Create Source* window expands with additional fields. 
 Enter the following details:
 
-* Optional: *Credential*: Choose from an existing AWS credential (for more information, refer to xref:controller-credentials[Credentials]).
+* Optional: *Credential*: Choose from an existing AWS credential (for more information, see xref:controller-credentials[Credentials]).
 +
 If {ControllerName} is running on an EC2 instance with an assigned IAM Role, the credential can be omitted, and the security credentials from
 the instance metadata are used instead. 
@@ -22,7 +22,7 @@ xref:proc-controller-add-source[Adding a source].
 Enter variables using either JSON or YAML syntax. 
 Use the radio button to toggle between the two. 
 For more information on these variables, see the
-link:https://console.redhat.com/ansible/automation-hub/repo/published/amazon/aws/content/inventory/aws_ec2[aws inventory plugin documenation].
+link:https://console.redhat.com/ansible/automation-hub/repo/published/amazon/aws/content/inventory/aws_ec2[aws inventory plugin documentation].
 //+
 //image:inventories-create-source-AWS-example.png[Inventories- create source - AWS EC2 example]
 

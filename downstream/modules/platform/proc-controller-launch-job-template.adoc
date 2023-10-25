@@ -40,7 +40,7 @@ Ensure that you fill in the tabs in the order that the prompts appear.
 When launching, {ControllerName} automatically redirects the web browser to the *Job Status* page for this job under the *Jobs* tab.
 
 You can re-launch the most recent job from the list view to re-run on all hosts or just failed hosts in the specified inventory.
-For more information, see the [ADD XREF] Jobs section.
+For more information, see the xref:controller-jobs[Jobs] section.
 
 When slice jobs are running, job lists display the workflow and job slices, as well as a link to view their details individually.
 

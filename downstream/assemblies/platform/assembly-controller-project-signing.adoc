@@ -28,7 +28,7 @@ ansible-sign project gpg-sign /path/to/project
 +
 This command updates a checksum manifest and signs it.
 . You commit the change, the updated checksum manifest, and the signature to the repository.
-. When you synchronizes the project, {ControllerName} pulls in the new changes, checks that the public key associated with the project in {ControllerName} matches the private key that the checksum manifest was signed with (this prevents tampering with the checksum manifest itself), then re-calculates the checksums of each file in the manifest to ensure that the checksum matches (and thus that no file has changed). It also ensures that all files are accounted for: 
+. When you synchronize the project, {ControllerName} pulls in the new changes, checks that the public key associated with the project in {ControllerName} matches the private key that the checksum manifest was signed with (this prevents tampering with the checksum manifest itself), then re-calculates the checksums of each file in the manifest to ensure that the checksum matches (and thus that no file has changed). It also ensures that all files are accounted for: 
 
 Files must be included in, or excluded from, the `MANIFEST.in` file. 
 For more information on this file, see xref:con-controller-signing-your-project[Sign a project]

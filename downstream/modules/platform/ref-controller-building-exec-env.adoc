@@ -9,8 +9,8 @@ An {ExecEnvShort} is expected to contain:
 * Ansible
 * Ansible Runner
 * Ansible Collections
-* Python and/or system dependencies of:
-** modules/plugins in collections
+* Python and system dependencies of:
+** modules or plugins in collections
 ** content in ansible-base
 ** custom user needs
 
@@ -23,5 +23,5 @@ If you did not migrate from a virtual environment, you can create a definition f
 
 Collection developers can declare requirements for their content by providing the appropriate metadata. 
 
-For more information, refer to xref:ref-controller-dependencies[Dependencies].
+For more information, see xref:ref-controller-dependencies[Dependencies].
 

@@ -13,7 +13,7 @@ Since groups are made up of instances, instances can also be assigned to multipl
 This means that impact to one instance can affect the overall capacity of other groups.
 
 Instance groups, not instances themselves, can be assigned to be used by jobs at various levels. 
-For more information, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/clustering.html#ag-clustering[Clustering] in the Automation Controller Administration Guide.
+For more information, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/clustering.html#ag-clustering[Clustering] in the _{ControllerAG}_.
 
 When the Task Manager prepares its graph to determine which group a job runs on, it commits the capacity of an instance group to a job that is not ready to start yet.
 
@@ -22,5 +22,5 @@ This guarantees that jobs do not get stuck as a result of an under-provisioned s
 
 .Additional resources
 
-* For information on container groups, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-container-capacity[Container capacity limits] in the Automation Controller Administration Guide.
+* For information on container groups, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-container-capacity[Container capacity limits] in the _{ControllerAG}_.
 * For information on sliced jobs and their impact to capacity, see xref:controller-job-slice-execution-behavior[Job slice execution behavior].

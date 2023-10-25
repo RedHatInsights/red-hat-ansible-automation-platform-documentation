@@ -5,7 +5,7 @@
 Use the following procedure to configure an OpenStack-sourced inventory.
 
 .Procedure
-. In the *Create new source* page, select menu:Source[]
+. In the *Create new source* page, select menu:Source[].
 . From the menu, select *Openstack*.
 . The *Create Source* window expands with the required *Credential* field.
 Choose from an existing GCE Credential. 

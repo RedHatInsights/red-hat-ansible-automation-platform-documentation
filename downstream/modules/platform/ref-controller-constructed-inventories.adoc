@@ -19,7 +19,7 @@ Constructed inventories take `source_vars` and `limit` as inputs and transform i
 
 You can construct groups based on these host properties:
 
-* RHEL major/minor versions
+* RHEL major or minor versions
 * Windows hosts
 * Cloud based instances tagged in a certain region
 * other

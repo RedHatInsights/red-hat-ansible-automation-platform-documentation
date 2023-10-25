@@ -26,7 +26,7 @@ If you do not specify values, then the *Policy instance minimum* and *Policy ins
 [NOTE]
 ====
 The default value of 0 for *Max concurrent jobs* and *Max forks* denotes no limit. 
-For more information, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instancegrp-cpacity[Instance group capacity limits] in the Automation Controller Administration Guide.
+For more information, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instancegrp-cpacity[Instance group capacity limits] in the _{ControllerAG}_.
 ====
 +
 . Click btn:[Save].

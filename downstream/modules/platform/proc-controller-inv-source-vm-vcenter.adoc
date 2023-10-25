@@ -5,17 +5,17 @@
 Use the following procedure to configure a VMWare-sourced inventory.
 
 .Procedure
-. In the *Create new source* page, select menu:Source[]
+. In the *Create new source* page, select menu:Source[].
 . From the menu, select *VMware vCenter*.
 . The *Create Source* window expands with the required *Credential* field.
 Choose from an existing VMware Credential. 
-For more information, refer to xref:controller-credentials[Credentials].
+For more information, see xref:controller-credentials[Credentials].
 
 . Optional: You can specify the verbosity, host filter, enabled variables or values, and update options as described in xref:proc-controller-add-source[Adding a source].
 . Use the *Source Variables* field to override variables used by the `vmware_inventory` inventory plugin. 
 Enter variables using either JSON or YAML syntax. 
 Use the radio button to toggle between the two. 
-For mor information on these variables, see the link:https://github.com/ansible-collections/community.vmware/blob/main/plugins/inventory/vmware_vm_inventory.py[vmware_inventory inventory plugin].
+For more information on these variables, see the link:https://github.com/ansible-collections/community.vmware/blob/main/plugins/inventory/vmware_vm_inventory.py[vmware_inventory inventory plugin].
 
 [NOTE]
 ====

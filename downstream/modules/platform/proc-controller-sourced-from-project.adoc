@@ -8,7 +8,7 @@ For example, if the project's source is from GitHub, then the inventory uses the
 Use the following procedure to configure a project-sourced inventory:
 
 .Procedure
-. In the *Create new source* page, select menu:Source[]
+. In the *Create new source* page, select menu:Source[].
 . From the menu, select *Sourced from a Project*.
 . The Create Source window expands with additional fields. Enter the following details:
 
@@ -33,7 +33,7 @@ image:inventories-create-source-sourced-from-project-filter.png[image]
 . Optional: You can specify the verbosity, host filter, enabled variable/value, and update options as described in xref:proc-controller-add-source[Adding a source].
 . Optional: To pass to the custom inventory script, you can set environment variables in the *Environment Variables* field. 
 You can also place inventory scripts in source control and then run it from a project. 
-For more information, see [Inventory File Importing] in _Automation Controller Administration Guide_.
+For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/scm-inv-source.html#ag-inv-import[Inventory File Importing] in _ControllerNameStart} Administration Guide_.
 //+
 //image:inventories-create-source-sourced-from-project-example.png[Inventories - create source - sourced from project example]
 

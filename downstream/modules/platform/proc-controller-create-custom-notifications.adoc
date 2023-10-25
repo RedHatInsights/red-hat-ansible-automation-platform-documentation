@@ -53,7 +53,7 @@ The default message body for these is `{{ job_metadata }}`, you can either leave
 You can edit this text leaving `{{ job_metadata }}` in, or drop `{{ job_metadata }}`. 
 Since the body is a block of text, it can be any string you want.
 `{{ job_metadata }}` is rendered as a dictionary containing fields that describe the job being executed. 
-In all cases, {{ job_metadata }} includes the following fields:
+In all cases, `{{ job_metadata }}` includes the following fields:
 
 *** `id`
 *** `name`
@@ -122,7 +122,7 @@ If `{{ job_metadata }}` is rendered in a workflow job, it includes the following
 *** `body` (This enumerates the nodes in the workflow job and includes a description of the job associated with each node)
 +
 The resulting dictionary looks like the following:
-
++
 [literal, options="nowrap" subs="+attributes"]
 ----
 {"id": 14,

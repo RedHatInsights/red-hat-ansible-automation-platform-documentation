@@ -7,7 +7,7 @@ A dictionary of keywords or options that can affect builder runtime functionalit
 Valid keys for this section are:
 
 * *container_init*: A dictionary with keys that allow for customization of the container `ENTRYPOINT` and `CMD` directives (and related behaviors). 
-Customizing these behaviors is an advanced task, and may result in subtle, difficult-to-debug failures. 
+Customizing these behaviors is an advanced task, and can result in subtle, difficult-to-debug failures. 
 As the provided defaults for this section control a number of intertwined behaviors, overriding any value skips all remaining defaults in this dictionary. 
 +
 Valid keys are:

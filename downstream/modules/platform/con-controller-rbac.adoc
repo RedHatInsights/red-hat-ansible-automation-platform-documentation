@@ -5,7 +5,7 @@
 _Role-Based Access Controls_ (RBAC) are built into {ControllerName} and enable administrators to delegate access to server inventories, organizations,
 and more. 
 Administrators can also centralize the management of various credentials, enabling users to use a required secret without exposing that secret to the user. 
-You can use RBAC to enable {ContollerName} to increase security and streamline management.
+You can use RBAC to enable {ControllerName} to increase security and streamline management.
 
 RBAC is the practice of granting roles to users or teams.
 RBACs can be thought of in terms of Roles which define precisely who or what can see, change, or delete an "object" for which a specific capability is being set. 

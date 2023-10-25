@@ -29,6 +29,6 @@ The logging payload includes the following fields:
 
 [NOTE]
 ====
-If a hostname includes a forward slash (/), fact cache will not work for that host. 
+If a hostname includes a forward slash (/), fact cache does not work for that host. 
 If you have an inventory with 100 hosts and one host has a / in the name, the remaining 99 hosts still collect facts.
 ====

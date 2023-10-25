@@ -9,15 +9,15 @@ To do this, you must make both people members of the organization's `admin_role`
 image:user-role-relationship.png[user-role-relationship]
 
 There are frequently many Roles in a system, some of which you want to include all of the capabilities of other roles. 
-For example, you might want a System Administrator to have access to everything that an Organization Administrator has access to, who has everything that a Project Administrator has access to, and so on.
+For example, you might want a System Administrator to have access to everything that an Organization Administrator has access to, who has everything that a Project Administrator has access to.
 
-This concept is referred to as the 'Role Hierarchy':
+This concept is referred to as the "Role Hierarchy":
 
 * Parent roles get all capabilities bestowed on any child roles.
 * Members of roles automatically get all capabilities for the role they are a member of, as well as any child roles.
 
 The Role Hierarchy is represented by permitting Roles to have "Parent Roles". 
-Any capability that a Role has is implicitly granted to any parent roles (or parents of those parents, and so on).
+Any capability that a Role has is implicitly granted to any parent roles (or parents of those parents).
 
 image:rbac-role-hierarchy.png[rbac-role-hierarchy]
 

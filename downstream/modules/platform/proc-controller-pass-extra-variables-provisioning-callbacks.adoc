@@ -22,4 +22,4 @@ root@localhost:~$ curl -f -H 'Content-Type: application/json' -XPOST \
 https://<CONTROLLER_SERVER_NAME>/api/v2/job_templates/7/callback
 ----
 
-For more information, see [Launching Jobs with Curl] in the _Automation Controller Administration Guide_.
+For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/tipsandtricks.html#launch-jobs-curl[Launching Jobs with Curl] in the _{ControllerAG}_.

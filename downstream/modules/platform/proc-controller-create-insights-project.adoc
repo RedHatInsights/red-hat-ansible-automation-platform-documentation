@@ -4,6 +4,8 @@
 
 Use the following steps to create a new project for use with Red Hat Insights:
 
+.Procedure
+
 . From the navigation panel, select menu:Resources[Projects].
 . Click btn:[Add].
 . Enter the appropriate details in the following fields. 

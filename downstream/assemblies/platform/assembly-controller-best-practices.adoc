@@ -6,7 +6,7 @@ The following describes best practice for the use of {ControllerName}:
 
 == Use Source Control
 
-{ControllerName} supports playbooks stored directly on the server. Therefore, it is recommended to store your playbooks, roles, and any associated details in source control. 
+{ControllerNameStart} supports playbooks stored directly on the server. Therefore, you must store your playbooks, roles, and any associated details in source control. 
 This way you have an audit trail describing when and why you changed the rules that are automating your infrastructure. 
 Additionally, it permits sharing of playbooks with other parts of your infrastructure or team.
 
@@ -42,7 +42,7 @@ Edits and additions to Inventory host variables persist beyond an inventory sync
 
 == Variable Management for Inventory
 
-Keep variable data along with the hosts and groups definitions (see [the inventory editor]), rather than using `group_vars/` and `host_vars/`. 
+Keep variable data with the hosts and groups definitions (see the inventory editor), rather than using `group_vars/` and `host_vars/`. 
 If you use dynamic inventory sources, {ControllerName} can synchronize such variables with the database as long as the *Overwrite Variables* option is not set.
 
 == Autoscaling

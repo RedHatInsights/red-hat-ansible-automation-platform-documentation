@@ -6,11 +6,11 @@
 Use the following procedure to configure a Google-sourced inventory.
 
 .Procedure
-. In the *Create new source* page, select menu:Source[]
+. In the *Create new source* page, select menu:Source[].
 . From the menu, select *Google Compute Engine*.
 . The *Create Source* window expands with the required *Credential* field.
 Choose from an existing GCE Credential. 
-For more information, refer to xref:controller-credentials[Credentials].
+For more information, see xref:controller-credentials[Credentials].
 //+
 //image:inventories-create-source-GCE-example.png[Inventories- create source - GCE example]
 
@@ -18,4 +18,4 @@ For more information, refer to xref:controller-credentials[Credentials].
 . Use the *Source Variables* field to override variables used by the `gcp_compute` inventory plugin. 
 Enter variables using either JSON or YAML syntax. 
 Use the radio button to toggle between the two. 
-For more information on these variables, see the link:https://console.redhat.com/ansible/automation-hub/repo/published/google/cloud/content/inventory/gcp_compute[gcp_compute inventory plugin documenation].
+For more information on these variables, see the link:https://console.redhat.com/ansible/automation-hub/repo/published/google/cloud/content/inventory/gcp_compute[gcp_compute inventory plugin documentation].

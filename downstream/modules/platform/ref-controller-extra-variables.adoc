@@ -2,7 +2,7 @@
 
 = Extra variables
 
-When you pass survey variables, they are passed as extra variables (`extra_vars`) within the controller.
+When you pass survey variables, they are passed as extra variables (`extra_vars`) within {ControllerName}.
 However, passing extra variables to a job template (as you would do with a survey) can override other variables being passed from the inventory and project.
 
 [NOTE]
@@ -20,7 +20,7 @@ It is possible that this variable, `debug = true`, can be overridden in a job te
 To ensure the variables that you pass are not overridden, ensure they are included by redefining them in the survey.
 Extra variables can be defined at the inventory, group, and host levels.
 
-If you are specifying the `ALLOW_JINJA_IN_EXTRA_VARS` parameter, see the link:http://docs.ansible.com/automation-controller/4.4/html/administration/tipsandtricks.html#ag-tips-jinja-extravars[Controller Tips and Tricks] section of the Automation Controller Administration Guide to configure it in the *Jobs Settings* screen of the controller UI.
+If you are specifying the `ALLOW_JINJA_IN_EXTRA_VARS` parameter, see the link:http://docs.ansible.com/automation-controller/4.4/html/administration/tipsandtricks.html#ag-tips-jinja-extravars[Controller Tips and Tricks] section of the _{ControllerAG}_ to configure it in the *Jobs Settings* screen of the controller UI.
 
 The job template extra variables dictionary is merged with the survey variables.
 

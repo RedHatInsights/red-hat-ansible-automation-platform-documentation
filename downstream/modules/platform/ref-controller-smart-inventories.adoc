@@ -18,7 +18,7 @@ Consider moving to constructed inventories for enhancements and replacement.
 
 The `Inventory` model has the following new fields that are blank by default but are set accordingly for Smart Inventories:
 
-* `kind` is set to `smart` for Smart Inventories
+* `kind` is set to `smart` for Smart Inventories.
 * `host_filter` is set AND `kind` is set to `smart` for Smart Inventories.
 
 The `host` model has a related endpoint, `smart_inventories` that identifies a set of all the Smart Inventories a host is associated with.
@@ -38,7 +38,7 @@ This updates memberships if the following events occur:
 You can view inventories without being editable:
 
 * Names of Host and Group created as a result of an inventory source synchronization.
-* Group records cannot be edited or moved
+* Group records cannot be edited or moved.
 
 You cannot create hosts from a Smart Inventory host endpoint (`/inventories/N/hosts/`) as with a normal inventory. 
 The administrator of a Smart Inventory has permission to edit fields such as the name, description, variables, and the ability to delete, but does not have the permission to modify the `host_filter`, because that affects which hosts (that have a primary membership inside another inventory) are included in the smart inventory. 
@@ -56,7 +56,7 @@ the hosts under the smart inventory host list.
 
 In some situations, you can modify the following:
 
-* A new Host created manually on Inventory with Inventory sources, in Groups that were created as a result of inventory source synchronizations
+* A new Host created manually on Inventory with Inventory sources, in Groups that were created as a result of inventory source synchronizations.
 * Variables on Hosts and Groups.
 
 Hosts associated with the Smart Inventory are manifested at view time.

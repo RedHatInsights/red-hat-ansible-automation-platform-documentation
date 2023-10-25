@@ -18,14 +18,14 @@ To use an {ExecEnvShort} in a job, use the following procedure:
 . Enter the appropriate details into the following fields:
 
 * *Name* (required): Enter a name for the {ExecEnvShort}.
-* *Image* (required): Enter the image name . 
+* *Image* (required): Enter the image name. 
 The image name requires its full location (repo), the registry, image name, and version tag in the example format of `quay.io/ansible/awx-ee:latestrepo/project/image-name:tag`.
-* Optional: *Pull*: choose the type of pull when running jobs:
+* Optional: *Pull*: Choose the type of pull when running jobs:
 ** *Always pull container before running*: Pulls the latest image file for the container.
 ** *Only pull the image if not present before running*: Only pulls the latest image if none is specified.
 ** *Never pull container before running*: Never pull the latest version of the container image.
 * Optional: *Description*:
-* Optional: *Organization*: assign the organization to specifically use this {ExecEnvShort}. To make the {ExecEnvShort} available for use across multiple organizations, leave this field blank.
+* Optional: *Organization*: Assign the organization to specifically use this {ExecEnvShort}. To make the {ExecEnvShort} available for use across multiple organizations, leave this field blank.
 * *Registry credential*: If the image has a protected container registry, provide the credential to access it.
 +
 image:ee-new-ee-form-filled.png[New execution environment]
@@ -34,7 +34,7 @@ image:ee-new-ee-form-filled.png[New execution environment]
 
 Your newly added {ExecEnvShort} is ready to be used in a job template. 
 
-To add an {ExecEnvShort} to a job template, specify it in the *Execution Environment* field of the job template, as shown in the following example. 
+To add an {ExecEnvShort} to a job template, specify it in the *Execution Environment* field of the job template, as shown in the following example:
 
 image:job-template-with-example-ee-selected.png[Execution Environment added]
 

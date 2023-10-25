@@ -11,7 +11,7 @@ Each list item must be a dictionary containing the following (non-optional) keys
 
 [cols= "10%, 40%"]
 |====
-| *src* | Specifies the source file(s) to copy into the build context directory.
+| *src* | Specifies the source files to copy into the build context directory.
   
 This can be an absolute path, for example, `/home/user/.ansible.cfg`, or a path that is relative to the file. 
 Relative paths can be a glob expression matching one or more files, for example, `files/\*.cfg`. 

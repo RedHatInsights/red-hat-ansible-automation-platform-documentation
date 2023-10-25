@@ -7,7 +7,7 @@ If you specify a collections requirements file in the SCM at `collections/requir
 
 {ControllerNameStart} has a system-wide setting that enables collections to be dynamically downloaded from the `collections/requirements.yml` file for SCM projects. 
 You can turn off this setting in the *Jobs settings* tab of the *Settings* menu by switching the *Enable Collections Download*
-toggle button to *OFF*.
+toggle button to *Off*.
 
 image:configure-controller-jobs-download-collections.png[Download collections]
 

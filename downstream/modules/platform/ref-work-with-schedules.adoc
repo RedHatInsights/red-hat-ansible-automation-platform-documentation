@@ -2,7 +2,7 @@
 
 = Work with Schedules
 
-On the *Projects* page, select menu:[Schedules] to enable you to review any schedules set up for this project.
+On the *Projects* page, select menu:Schedules[] to enable you to review any schedules set up for this project.
 
 image:generic-schedules-list-configured.png[Schedules list]
 
@@ -10,5 +10,5 @@ image:generic-schedules-list-configured.png[Schedules list]
 
 To schedule a project run, click the *Schedules* tab.
 
-* If schedules are already set up; review, edit, or enable/disable your schedule preferences.
-* If schedules have not been set up, refer to [Schedules] for more information.
+* If schedules are already set up; review, edit, or enable and disable your schedule preferences.
+* If schedules have not been set up, see xref:controller-schedules[Schedules] for more information.

@@ -27,7 +27,7 @@ To callback manually using REST:
 \https://<CONTROLLER_SERVER_NAME>/api/v2/job_templates/7/callback/
 * The "7" in the sample URL is the job template ID in {ControllerName}.
 . Ensure that the request from the host is a POST. 
-The following is an example using curl (all on a single line):
+The following is an example using `curl` (all on a single line):
 +
 ----
 curl -k -f -i -H 'Content-Type:application/json' -XPOST -d '{"host_config_key": "redhat"}' \

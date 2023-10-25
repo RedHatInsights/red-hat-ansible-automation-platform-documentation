@@ -2,14 +2,14 @@
 
 = {Azure} resource manager
 
-Use the following procedure to configure a Azure Resource Manager-sourced inventory:
+Use the following procedure to configure an Azure Resource Manager-sourced inventory:
 
 .Procedure
-. In the *Create new source* page, select menu:Source[]
+. In the *Create new source* page, select menu:Source[].
 . From the menu, select *Microsoft Azure Resource Manager*.
 . The *Create Source* window expands with the required *Credential* field.
 Choose from an existing Azure Credential. 
-For more information, refer to xref:controller-credentials[Credentials].
+For more information, see xref:controller-credentials[Credentials].
 
 . Optional: You can specify the verbosity, host filter, enabled variables or values, and update options as described in xref:proc-controller-add-source[Adding a source].
 . Use the *Source Variables* field to override variables used by the `azure_rm` inventory plugin. 

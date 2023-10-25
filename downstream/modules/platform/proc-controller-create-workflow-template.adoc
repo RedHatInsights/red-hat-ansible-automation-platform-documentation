@@ -48,7 +48,7 @@ Members of the Organization can create labels on a workflow template if they hav
 - Select image:disassociate.png[Disassociate,10,10] beside a label to remove it. 
 When a label is removed, it is no longer associated with that particular Job or Job Template, but it will remain associated with any other jobs that reference it.
 
-a| - Yes. 
+a| Yes
 
 If selected, even if a default value is supplied, you are prompted when launching to supply additional labels, if needed.
 - You cannot delete existing labels, selecting image:disassociate.png[Disassociate,10,10] only removes the newly added labels, not existing default labels.
@@ -57,7 +57,7 @@ If selected, even if a default value is supplied, you are prompted when launchin
 This is the "-e" or "-extra-vars" command line parameter for ansible-playbook that is documented in the Ansible documentation at link:http://docs.ansible.com/playbooks_variables.html#passing-variables-on-the-command-line[Passing Variables on the Command Line].
 - Provide key or value pairs using either YAML or JSON. These variables have a maximum value of precedence and overrides other variables specified elsewhere. The following is an example value:
 `git_branch: production
-release_version: 1.5` | Yes. 
+release_version: 1.5` | Yes
 
 If you want to be able to specify extra_vars on a schedule, you must select *Prompt on launch* for Variables on the workflow job template, or enable a survey on the job template. Those answered survey questions become `extra_vars`.
 For more information about extra variables, seexref:controller-extra-variables[Extra Variables]. 
@@ -79,15 +79,15 @@ For more information, see link:https://docs.ansible.com/automation-controller/la
 *** *Webhook URL*: Automatically populated with the URL for the webhook service to POST requests to.
 *** *Webhook Key*: Generated shared secret to be used by the webhook service to sign payloads sent to {ControllerName}.
 You must configure this in the settings on the webhook service so that webhooks from this service are accepted in {ControllerName}.
-For additional information on setting up webhooks, see [ADD XREF]]Working with Webhooks.
+For additional information on setting up webhooks, see xref:controller-work-with-webhooks[Working with Webhooks].
 +
 Check *Enable Concurrent Jobs* to allow simultaneous runs of this workflow. 
-For more information, see [ADD XREF]Automation Controller Capacity Determination and Job Impact.
+For more information, see xref:controller-capacity-determination[{ControllerNameStart} capacity determination and job impact].
 +
 . When you have completed configuring the workflow template, click btn:[Save].
 
 Saving the template exits the workflow template page and the workflow visualizer opens to allow you to build a workflow. 
-For more information, see the [Workflow visualizer] section of the _Automation Controller Administration Guide_.
+For more information, see the xref:controller-workflow-visualizer[Workflow visualizer] section.
 Otherwise, choose one of these methods:
 
 * Close the workflow visualizer to return to the *Details* tab of the newly saved template. 

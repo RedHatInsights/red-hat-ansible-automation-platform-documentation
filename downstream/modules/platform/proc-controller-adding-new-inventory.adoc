@@ -53,7 +53,7 @@ You can paste a group name into the limit field to only include hosts in that gr
 For more information, ses the *Source vars* setting.
 * Only applicable to standard inventories: *Options*: Check the *Prevent Instance Group Fallback* option to enable only the instance groups listed in the *Instance Groups* field to execute the job. 
 If unchecked, all available instances in the execution pool will be used based on the hierarchy described in
-[Control where a job runs] in the _Automation Controller Administration Guide_. 
+link:https://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instance-groups-control-where-job-runs[Control where a job runs] in the _{ControllerAG}_. 
 Click the image:question_circle.png[Help,15,15] icon for additional information.
 +
 [NOTE]

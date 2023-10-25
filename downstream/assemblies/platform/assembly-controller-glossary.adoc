@@ -226,4 +226,5 @@ A human-readable language that is often used for writing configuration files.
 Ansible and {ControllerName} use YAML to define playbook configuration languages and also variable files. 
 YAML has a minimum of syntax, is very clean, and is easy for people to skim. 
 It is a good data format for configuration files and humans, but is also machine readable. 
-YAML is popular in the dynamic language community and the format has libraries available for serialization in many languages (Python, Perl, Ruby, etc.).
+YAML is popular in the dynamic language community and the format has libraries available for serialization in many languages.
+Examples include Python, Perl, or Ruby.

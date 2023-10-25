@@ -8,7 +8,7 @@
 ** If you want to edit a node, click on the node you want to edit. 
 The pane displays the current selections. 
 Make your changes and click btn:[Select] to apply them to the graphical view.
-** To edit the edge type for an existing link, *success*, *failure*, *always*), click the link. 
+** To edit the edge type for an existing link, (*success*, *failure*, *always*), click the link. 
 The pane displays the current selection. 
 Make your changes and click btn:[Save] to apply them to the graphical view.
 ** Click the link (image:link-icon.png[Link icon,15,15]) icon that appears on each node, to add a new link from one node to another.

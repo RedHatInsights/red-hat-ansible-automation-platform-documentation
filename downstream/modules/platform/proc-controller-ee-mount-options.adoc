@@ -5,7 +5,7 @@
 Rebuilding an {ExecEnvShort} is one way to add certificates, but inheriting certificates from the host provides a more convenient solution. 
 For VM-based installs, {ControllerName} automatically mounts the system trust store in the {ExecEnvShort} when jobs run.
 
-Additionally, you may customize {ExecEnvShort} mount options and mount paths in the *Paths to expose to isolated jobs* field of the *Job Settings* page, where it supports podman-style volume mount syntax. 
+Additionally, you can customize {ExecEnvShort} mount options and mount paths in the *Paths to expose to isolated jobs* field of the *Job Settings* page, where it supports podman-style volume mount syntax. 
 
 For more information, see the link:https://docs.podman.io/en/latest/markdown/podman-run.1.html#volume-v-source-volume-host-dir-container-dir-options[Podman documentation].
 
@@ -24,7 +24,7 @@ image:settings-paths2expose-iso-jobs.png[Paths]
 ====
 The `:O` option is only supported for directories. 
 Be as detailed as possible, especially when specifying system paths. 
-Mounting `/etc` or `/usr` directly has an impact that make it difficult to troubleshoot.
+Mounting `/etc` or `/usr` directly has an impact that makes it difficult to troubleshoot.
 ====
 +
 This informs Podman to run a command similar to the following example, where the configuration is mounted and the `ssh` command works as expected.

@@ -1,6 +1,6 @@
 [id="proc-controller-adding-a-project"]
 
-= Add a new project
+= Adding a new project
 
 Use the following procedure to create a new project:
 
@@ -19,11 +19,11 @@ image:projects-create-new-project.png[Projects- create new project]
 For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/upgrading-to-ees[ Migrating to Execution Environments] in the _Red Hat Ansible Automation Platform Upgrade and Migration Guide_.
 * *Source Control Type* (required): Select an SCM type associated with this project from the menu. 
 Options in the following sections become available depending on the type chosen. 
-For more information, see [Manage playbooks manually] or [Manage playbooks using source control].
+For more information, see xref:proc-projects-manage-playbooks-manually[Manage playbooks manually] or xref:ref-projects-manage-playbooks-with-source-control[Manage playbooks using source control].
 * Optional: *Content Signature Validation Credential*: Use this field to enable content verification. 
 Specify the GPG key to use for validating content signature during project synchronization. 
 If the content has been tampered with, the job will not run. 
-Fro more information, see [Project signing and verification].
+Fro more information, see xref:assembly-controller-project-signing[Project signing and verification].
 . Click btn:[Save].
 
 .Additional resources

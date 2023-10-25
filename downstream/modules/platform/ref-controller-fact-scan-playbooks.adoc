@@ -26,8 +26,8 @@ The `scan_files` fact module is the only module that accepts parameters, passed 
 `scan_use_checksum`: true
 `scan_use_recursive`: true
 
-* The `scan_file_paths` parameter may have multiple settings (such as `/tmp/` or `/var/log`).
-* The `scan_use_checksum` and `scan_use_recursive` parameters may also be set to false or omitted. 
+* The `scan_file_paths` parameter can have multiple settings (such as `/tmp/` or `/var/log`).
+* The `scan_use_checksum` and `scan_use_recursive` parameters can also be set to false or omitted. 
 An omission is the same as a false setting.
 
 Scan job templates should enable `become` and use `credentials` for which `become` is a possibility. 

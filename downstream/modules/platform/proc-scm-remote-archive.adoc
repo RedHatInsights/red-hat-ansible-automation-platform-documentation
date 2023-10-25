@@ -13,14 +13,14 @@ Use the following procedure to configure playbooks to use a remote archive.
 
 * *SCM URL* - requires a URL to a remote archive, such as a _GitHub Release_ or a build artifact stored in _Artifactory_ and unpacks it into
 the project path for use.
-* *SCM Credential* - If authentication is required, select the appropriate SCM credential
+* *SCM Credential* - If authentication is required, select the appropriate SCM credential.
 . Optional: In the *SCM Update Options* field, select the launch behavior, if applicable:
 
 * *Clean* - Removes any local modifications before performing an update.
 * *Delete* - Deletes the local repository in its entirety before performing an update. 
 Depending on the size of the repository this may significantly increase the amount of time required to complete an
 update.
-* *Update Revision on Launch* - Not recommended. This option updates the revision of the project to the current revision in the remote source control, and caches the roles directory from [{Galaxy} support] or [Collections].
+* *Update Revision on Launch* - Not recommended. This option updates the revision of the project to the current revision in the remote source control, and caches the roles directory from xref:ref-projects-galaxy-support[{Galaxy} support] or xref:ref-projects-collections-support[Collections support].
 * *Allow Branch Override* - Not recommended. This option enables a job template that uses this project to launch with a specified SCM branch or revision other than that of the project's.
 +
 image:projects-create-scm-rm-archive.png[Remote archived project]

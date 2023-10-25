@@ -35,7 +35,7 @@ Groups may be sourced manually, by entering host names into {Controllername}, or
 ====
 If you have a custom dynamic inventory script, or a cloud provider that is not yet supported natively in {ControllerName}, you can also import that into {ControllerName}. 
 
-For more information, see [Inventory file importing] in the _Automation Controller Administration Guide_.
+For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/scm-inv-source.html#ag-inv-import[Inventory file importing] in the _{ControllerAG}_.
 ====
 
 From the navigation panel, select menu:Resources[Inventories].
