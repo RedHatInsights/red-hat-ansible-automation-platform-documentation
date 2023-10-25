@@ -25,8 +25,7 @@ Creating a new token revokes any previous tokens generated for Private Automatio
 [galaxy_server._<server_name>_]
 -----
 
-. Set the `url` option for each server name:
-//You must include the `api/galaxy/` subdirectory in the server URL:
+. Set the `url` option for each server name. You must include the `api/galaxy/` subdirectory in the server URL:
 +
 [subs="+quotes"]
 -----
@@ -43,7 +42,7 @@ The following `ansible.cfg` configuration file example shows how to configure mu
 server_list = automation_hub, my_org_hub
 
 [galaxy_server.automation_hub]
-url=https://console.redhat.com/api/automation-hub/api/galaxy/ <1> <2>
+url=https://cloud.redhat.com/api/automation-hub/api/galaxy/ <1> <2>
 auth_url=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
 
 token=my_ah_token
