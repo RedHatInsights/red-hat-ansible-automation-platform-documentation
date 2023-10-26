@@ -43,7 +43,7 @@ image::ug-host-metrics.png[Host metrics]
 
 [NOTE]
 ====
-A scheduled task automatically updates these values on a weekly basis and deletes jobs with hosts that were last automated more than year ago.
+A scheduled task automatically updates these values on a weekly basis and deletes jobs with hosts that were last automated more than a year ago.
 ====
 
 Delete unnecessary hosts directly from the Host Metrics view by selecting the desired hosts and clicking btn:[Delete]. 

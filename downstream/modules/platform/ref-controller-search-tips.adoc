@@ -5,9 +5,9 @@
 These searching tips assume that you are not searching hosts. 
 Most of this section still applies to hosts but with some subtle differences. 
 
-* The typical syntax of a search consists a field (left-hand side) and a value (right-hand side). 
+* The typical syntax of a search consists of a field (left-hand side) and a value (right-hand side). 
 * A colon is used to separate the field that you want to search from the value. 
-* If the seach has no colon (see example 3) it is treated as a simple string search where `?search=foobar` is sent. 
+* If the search has no colon (see example 3) it is treated as a simple string search where `?search=foobar` is sent. 
 
 The following are examples of syntax used for searching:
 

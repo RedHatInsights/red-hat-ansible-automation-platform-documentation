@@ -18,16 +18,16 @@ Note that the following fields require specific Red Hat Insights related entries
 * *Source Control Type*: Select *Red Hat Insights*.
 * Optional: *Content Signature Validation Credential*: Enable content signing to verify that the content has remained secure when a project is synced. 
 * *Insights Credential*: This is pre-populated with the Red Hat Insights credential you previously created. 
-If not, enter the credential, or click the search (image:magnify.png[Search,15,15]) icon and select it from the *Select Insights Credential* window.
+If not, enter the credential, or click the search image:search.png[Search,15,15] icon and select it from the *Select Insights Credential* window.
 . Select the update options for this project from the *Options* field and provide any additional values, if applicable.
-For more information about each option click the tooltip (image:question_circle.png[Tooltip,15,15]) icon next to each one.
+For more information about each option click the tooltip image:question_circle.png[Tooltip,15,15] icon next to each one.
 +
 image::ug-insights-create-project-insights-form.png[Insights create project]
 +
 . Click btn:[Save].
 
 All SCM and project synchronizations occur automatically the first time you save a new project.
-If you want them to be updated to what is current in Red Hat Insights, manually update the SCM-based project by clicking the update (image:ug-update-button.png[Update,15,15]) icon under the project's available actions.
+If you want them to be updated to what is current in Red Hat Insights, manually update the SCM-based project by clicking the update image:ug-update-button.png[Update,20,20] icon under the project's available actions.
 
 This process syncs your Red Hat Insights project with your Red Hat Insights account solution. 
 Note that the status dot beside the name of the project updates once the sync has run.

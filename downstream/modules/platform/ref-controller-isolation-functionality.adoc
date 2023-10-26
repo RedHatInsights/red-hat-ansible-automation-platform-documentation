@@ -26,7 +26,7 @@ AWX_ISOLATION_SHOW_PATHS = ['/list/of/', '/paths']
 
 [NOTE]
 ====
-If your playbooks need use keys or settings defined in `AWX_ISOLATION_SHOW_PATHS` add this file to `/var/lib/awx/.ssh`.
+If your playbooks need to use keys or settings defined in `AWX_ISOLATION_SHOW_PATHS`, then add this file to `/var/lib/awx/.ssh`.
 ====
 
 The fields described here can be found on the *Jobs settings* page:

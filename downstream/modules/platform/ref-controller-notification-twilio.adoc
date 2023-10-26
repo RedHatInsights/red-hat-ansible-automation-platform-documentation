@@ -15,10 +15,10 @@ The *Account SID*, which acts as a username, and the *Auth Token* which acts as 
 
 Provide the following details to set up a Twilio notification:
 
-Account token:: Enter the account token.
-Source phone number:: Enter the number associated with the messaging service in the form of "+15556667777".
-Destination SMS number(s):: Enter the list of numbers you want to receive the SMS. 
+* *Account token*: Enter the account token.
+* *Source phone number*: Enter the number associated with the messaging service in the form of "+15556667777".
+* *Destination SMS number(s)*: Enter the list of numbers you want to receive the SMS. 
 It must be a 10 digit phone number.
-Account SID:: Enter the account SID.
+* *Account SID*: Enter the account SID.
 
 image::ug-notification-template-twilio.png[Notification template Twilio]

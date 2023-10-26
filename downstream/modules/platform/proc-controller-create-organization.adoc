@@ -42,8 +42,8 @@ From the *Details* tab, you can edit or delete the organization.
 
 [NOTE]
 ====
-If you attempt to delete items that are used by other work items, a message lists the items are affected by the deletion and prompts you to confirm the deletion. 
-Some screens contain items that are invalid or have been deleted peviously, and will fail to run.
+If you attempt to delete items that are used by other work items, a message lists the items that are affected by the deletion and prompts you to confirm the deletion. 
+Some screens contain items that are invalid or have been deleted previously, and will fail to run.
 ====
  
 The following is an example of such a message:

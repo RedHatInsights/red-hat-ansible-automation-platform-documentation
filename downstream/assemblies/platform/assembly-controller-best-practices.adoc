@@ -22,7 +22,7 @@ For more information, see the link https://docs.ansible.com/ansible/latest/tips_
 * Avoid using the playbooks `vars_prompt` feature, as {ControllerName} does not interactively permit `vars_prompt` questions. 
 If you cannot avoid using `vars_prompt`, see the xref:controller-surveys-in-job-templates[Surveys] functionality.
 
-* Avoid using the playbooks `pause` feature without a timeout, as {ControllerName} does not permit cancelling a pause interactively.
+* Avoid using the playbooks `pause` feature without a timeout, as {ControllerName} does not permit canceling a pause interactively.
 If you cannot avoid using `pause`, you must set a timeout.
 ====
 
@@ -58,4 +58,4 @@ For more information on tuning Ansible, see link:https://www.ansible.com/blog/an
 
 For a Continuous Integration system, such as Jenkins, to spawn a job, it must make a `curl` request to a job template. 
 The credentials to the job template must not require prompting for any particular passwords.
-For configuration and use instructions, see link:https://docs.ansible.com/automation-controller/latest/html/controllercli/usage.html[Installation] in the Ansible docmentation.
+For configuration and use instructions, see link:https://docs.ansible.com/automation-controller/latest/html/controllercli/usage.html[Installation] in the Ansible documentation.

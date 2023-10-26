@@ -8,7 +8,7 @@ A user can:
 * Create their own credential objects which only belong to them
 * See and execute any job template for which they have been granted execution capabilities
 
-If a job template for which a user has been granted execution capabilities does not specify an inventory or credential, the user is prompted at run-time to select among the inventory and credentials in then organization they own or have been granted usage capabilities.
+If a job template for which a user has been granted execution capabilities does not specify an inventory or credential, the user is prompted at run-time to select among the inventory and credentials in the organization they own or have been granted usage capabilities.
 
 Users that are job template administrators can make changes to job templates. 
 However, to change to the inventory, project, playbook, credentials, or instance groups used in the job template, the user must also have the "Use" role for the project and inventory currently being used or being set.

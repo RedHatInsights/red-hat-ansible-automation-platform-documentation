@@ -14,4 +14,4 @@ notification.
 
 image:project-notifications-empty.png[Notifications empty]
 
-For more information of configuring notification types, see xref:controller-notification-types[Notification types].
+For more information on configuring notification types, see xref:controller-notification-types[Notification types].

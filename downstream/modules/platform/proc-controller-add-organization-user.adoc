@@ -12,7 +12,7 @@ To add existing users or team to the Organization:
 . In the *Access tab* of the *Organization* page, click btn:[Add].
 . Select a user or team to add. 
 . Click btn:[Next].
-. Select one or more users or teams from the list by clicking the check box next to the name to add them as members.
+. Select one or more users or teams from the list by clicking the checkbox next to the name to add them as members.
 . Click btn:[Next].
 +
 image:organizations-add-users-for-example-organization.png[Add roles]

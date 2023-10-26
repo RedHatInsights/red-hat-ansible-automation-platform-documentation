@@ -14,12 +14,12 @@ Configure the webhook notification with the following:
 
 Provide the following details to set up a webhook notification:
 
-Optional: Username:: Enter a username.
-Optional: Basic auth password::
-Target URL:: Enter the full URL to which the webhook notification is `PUT` or `POSTed`.
-Disable SSL Verification:: SSL verification is on by default, but you can choose to turn off verification of the authenticity of the target's certificate. 
+* Optional: *Username*: Enter a username.
+* Optional: *Basic auth password*:
+* *Target URL*: Enter the full URL to which the webhook notification is `PUT` or `POSTed`.
+* *Disable SSL Verification*: SSL verification is on by default, but you can choose to turn off verification of the authenticity of the target's certificate. 
 Select this option to disable verification for environments that use internal or private CA's.
-HTTP Headers:: Enter Headers in JSON format where the keys and values are strings. 
+* *HTTP Headers*: Enter Headers in JSON format where the keys and values are strings. 
 For example:
 
 [literal, options="nowrap" subs="+attributes"]
@@ -27,7 +27,7 @@ For example:
  {"Authentication": "988881adc9fc3655077dc2d4d757d480b5ea0e11", "MessageType": "Test"}`.
 ----
 
-HTTP Method:: Select the method for your webhook:
+* *HTTP Method*: Select the method for your webhook:
 * *POST*: Creates a new resource. 
 It also acts as a catch-all for operations that do not fit into the other categories. 
 It is likely that you need to *POST* unless you know your webhook service expects a *PUT*.

@@ -22,7 +22,7 @@ This opens a separate window that enables you to choose from the available optio
 Use the Search bar to filter by name if the list is extensive. 
 +
 Leave this field blank if you want to create a PAT that is not linked to any application.
-* Optional: *Description* provide a short description for your token.
+* Optional: *Description*: Provide a short description for your token.
 * *Scope*: Specify the level of access you want this token to have.
 . Click btn:[Save] or btn:[Cancel] to abandon your changes.
 . After the token is saved, the newly created token for the user is displayed.

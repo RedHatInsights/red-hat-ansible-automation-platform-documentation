@@ -63,7 +63,7 @@ If you want to be able to specify extra_vars on a schedule, you must select *Pro
 For more information about extra variables, seexref:controller-extra-variables[Extra Variables]. 
 | Job tags | Type and select the *Create* drop-down to specify which parts of the playbook should be executed.
 For more information and examples see link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_tags.html[Tags] in the Ansible documentation. | Yes 
-| Skip Tags | Type and select the the *Create* drop-down to specify certain tasks or parts of the playbook to skip.
+| Skip Tags | Type and select the *Create* drop-down to specify certain tasks or parts of the playbook to skip.
 For more information and examples see link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_tags.html[Tags] in the Ansible documentation. | Yes
 |===
 + 

@@ -51,11 +51,11 @@ For subsequent nodes, you can select one of the following scenarios (edge type) 
 As long as the status of one parent meets one of those run conditions, an *any* child node will run. 
 An *any* node requires all nodes to complete, but only one node must complete with the expected outcome.
 * Choose *All* to ensure that all nodes complete as specified, before converging and triggering the next node. 
-The purpose of *all** nodes is to make sure that every parent meets it's expected outcome in order to run the child node. 
+The purpose of *all** nodes is to make sure that every parent meets its expected outcome in order to run the child node. 
 The workflow checks to make sure every parent behaves as expected in order to run the child node. 
 Otherwise, it will not run the child node.
 +
-If selected, the node is labelled as *ALL* in the graphical view:
+If selected, the node is labeled as *ALL* in the graphical view:
 +
 image:ug-wf-editor-convergent-node-all.png[Convergent node all]
 +

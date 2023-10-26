@@ -13,7 +13,7 @@ The following table lists the RBAC system roles with a brief description of how 
 | Admin Role - Organizations, Teams, Inventory, Projects, Job Templates |Manages all aspects of a defined Organization, Team, Inventory, Project, or Job Template
 | Auditor Role - All | Views all aspects of a defined Organization, Project, Inventory, or Job Template
 | Execute Role - Job Templates | Runs assigned Job Template
-| Member Role - Organization, Team | User is member of a defined Organization or Team.
+| Member Role - Organization, Team | User is a member of a defined Organization or Team.
 | Read Role - Organizations, Teams, Inventory, Projects, Job Templates | Views all aspects of a defined Organization, Team, Inventory, Project,
 or Job Template
 | Update Role - Project | Updates the Project from the configured source control management system

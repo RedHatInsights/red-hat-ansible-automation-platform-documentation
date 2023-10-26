@@ -16,7 +16,7 @@ Use the following procedure to add a token:
 [NOTE]
 ====
 You can only create OAuth 2 Tokens for your user through the API or UI, which means you can only access your own user profile to configure or view your tokens. 
-If you are an system administrator and have to create or remove tokens for other users, see the revoke and create commands in the
+If you are a system administrator and have to create or remove tokens for other users, see the revoke and create commands in the
 link:https://docs.ansible.com/automation-controller/4.4/html/administration/tower-manage.html#ag-token-utility[Token and session management] section of the _{ControllerAG}_.
 ====
 . Select the *Tokens* tab on the user's profile.

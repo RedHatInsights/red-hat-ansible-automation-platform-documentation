@@ -4,7 +4,7 @@
 
 {ControllerNameStart} has the ability to run jobs based on a triggered webhook event coming in. 
 Job status information (pending, error, success) can be sent back only for pull request events. 
-If you do not need {ControllerName} to post job statuses back to the webhook service, go directly to step 3.
+If {ControllerName} is not required to post job statuses back to the webhook service, go directly to step 3.
 
 .Procedure
 . Generate a _Personal Access Token_ (PAT) for use with {ControllerName}:

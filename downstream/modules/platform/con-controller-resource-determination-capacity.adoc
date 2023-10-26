@@ -2,7 +2,7 @@
 
 = Resource determination for capacity algorithm
 
-Capacity algorithms determine how many how many forks a system is capable of running simultaneously. 
+Capacity algorithms determine how many forks a system is capable of running simultaneously. 
 These algorithms control how many systems Ansible can communicate with simultaneously. 
 Increasing the number of forks an {ControllerName} system is running enables jobs to run faster by performing more work in parallel.
 However, this increases the load on the system, which can cause work to slow down.

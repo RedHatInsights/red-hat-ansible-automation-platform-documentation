@@ -2,7 +2,7 @@
 
 = Common Team Roles - "Personas"
 
-{ControllerNameStart} support personnel typically works to ensure that {controllername} is available, and manage it a way as to balance supportability and ease-of-use for users. 
+{ControllerNameStart} support personnel typically works to ensure that {controllername} is available, and manage it in a way as to balance supportability and ease-of-use for users. 
 {ControllerNameStart} support personnel often assign _Organization Owner_ or _Administrator_ roles to users to enable them to create a new Organization or add members from their team that the respective access requires. 
 This minimizes the number of supporting individuals and focuses more on maintaining uptime of the service and assisting users who are using {ControllerName}.
 

@@ -7,7 +7,7 @@ This functions as a means to pause the workflow in between playbooks so that you
 This gives the user a specified amount of time to intervene, but also enables you to continue as quickly as possible without having to wait on another trigger.
 
 The default for the timeout is none, but you can specify the length of time before the request expires and is automatically denied.
-After you select and supply the the information for the approval node, it displays on the graphical view with a pause icon beside it.
+After you select and supply the information for the approval node, it displays on the graphical view with a pause icon beside it.
 
 image::ug-wf-approval-node.png[Approval node]
 

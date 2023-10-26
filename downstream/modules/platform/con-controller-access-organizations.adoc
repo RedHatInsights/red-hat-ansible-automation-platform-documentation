@@ -12,10 +12,10 @@ Use this page to complete the following tasks:
 * Manage the user membership for this organization. 
 Click btn:[Users] on the navigation panel to manage user membership on a per-user basis from the *Users* page. 
 * Assign specific users certain levels of permissions within your organization.
-* Enable them to act as an administrators for a particular resource. 
+* Enable them to act as an administrator for a particular resource. 
 For more information, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/security.html#rbac-ug[Role-Based Access Controls].
 
-Click a user to brings up that user's details.
+Click a user to display that user's details.
 You can review, grant, edit, and remove associated permissions for that user.
 For more information, see xref:assembly-controller-users[Users].
 

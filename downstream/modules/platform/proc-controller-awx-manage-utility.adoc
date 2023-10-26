@@ -24,7 +24,7 @@ To specify the number of rows (`<n>`) to output to each file:
 $ awx-manage host_metric --tarball --rows_per_file <n>
 ----
 
-The folllowing is an example of a configuration file:
+The following is an example of a configuration file:
 
 image:ug-host-metrics-awx-manage-config.png[Configuration file]
 

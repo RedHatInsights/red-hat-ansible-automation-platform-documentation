@@ -7,12 +7,12 @@ This is the token that is given to {ControllerName}.
 
 Provide the following details to set up a Grafana notification:
 
-Grafana URL:: The URL of the Grafana API service, such as: \http://yourcompany.grafana.com.
-Grafana API key:: You must first create an API key in the Grafana system.
-Optional: ID of the dashboard:: When you create an API key for the Grafana account, you can set up a dashboard with its own unique ID. 
-Optional: ID of the panel:: If you added panels and graphs to your Grafana interface, you can specify its ID here.
-Optional:Tags for the annotation:: Enter keywords that help identify the types of events of the notification that you are configuring.
-Disable SSL verification:: SSL verification is on by default, but you can choose to turn off verification of the authenticity of the target's certificate. 
+* *Grafana URL*: The URL of the Grafana API service, such as: \http://yourcompany.grafana.com.
+* *Grafana API key*: You must first create an API key in the Grafana system.
+* Optional: *ID of the dashboard*: When you create an API key for the Grafana account, you can set up a dashboard with its own unique ID. 
+* Optional: *ID of the panel*: If you added panels and graphs to your Grafana interface, you can specify its ID here.
+* Optional: *Tags for the annotation*: Enter keywords that help identify the types of events of the notification that you are configuring.
+* *Disable SSL verification*: SSL verification is on by default, but you can choose to turn off verification of the authenticity of the target's certificate. 
 Select this option to disable verification for environments that use internal or private CA's.
 
 image::ug-notification-template-grafana.png[Notification template Grafana]

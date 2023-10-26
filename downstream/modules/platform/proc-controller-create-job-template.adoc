@@ -67,7 +67,7 @@ for the following types in order to proceed: Machine.`
 - Labels can be used to group and filter job templates and completed jobs in the display.
 
 - Labels are created when they are added to the job template. 
-Labels are associated to a single Organization using the Project that is provided in the job template. 
+Labels are associated with a single Organization using the Project that is provided in the job template. 
 Members of the Organization can create labels on a job template if they have edit permissions (such as the admin role).
 
 - Once the job template is saved, the labels appear in the *Job Templates* overview in the Expanded view.
