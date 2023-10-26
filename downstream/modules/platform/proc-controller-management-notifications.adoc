@@ -1,0 +1,18 @@
+[id="proc-controller-management-notifications"]
+
+= Setting notifications
+
+Use the following procedure to review or set notifications associated with a management job:
+
+.Procedure
+. For a particular cleanup job, select the menu:Notifications[] tab.
+
+image:management-job-notifications.png[Notifications]
+
+If none exist, for more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-notifications[Notifications] in the _{ControllerUG}_.
+
+image:management-job-notifications-empty.png[No notifications set]
+
+The following shows an example of a notifications with details specified:
+
+image:management-job-add-notification-details.png[New notification template]

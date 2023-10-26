@@ -1,0 +1,36 @@
+[id="proc-controller-scheduling-deletion"]
+
+= Scheduling deletion
+
+Use the following procedure to review or set a schedule for purging data marked for deletion:
+
+.Procedure
+. For a particular cleanup job, click the *Schedules* tab.
++
+image:management-jobs-remove-activity-stream-schedule.png[Schedules tab]
++
+Note that you can turn this scheduled management job on and off using the *ON/OFF* toggle button.
+
+. Click the name of the job, "Cleanup Activity Schedule" in this example, to review the schedule settings. 
+. Click btn:[Edit] to modify them. 
+You can also click:[Add] to create a new schedule for this management job.
++
+image:management-jobs-remove-activity-stream-schedule-details.png[Create new schedule]
++
+. Enter the appropriate details into the following fields and click *Save*:
+
+* *Name* required
+* *Start Date* required
+* *Start Time* required
+* *Local time zone* the entered Start Time should be in this timezone)
+* *Repeat frequency* the appropriate options display as the update frequency is modified including data you do not want to include by specifying exceptions.
+* *Days of Data to Keep* required - specify how much data you want to retain
+
+The *Details* tab displays a description of the schedule and a list of the scheduled occurrences in the selected Local Time Zone.
+
+[NOTE]
+====
+Jobs are scheduled in UTC. 
+Repeating jobs that runs at a specific time of day can move relative to a local timezone when Daylight Saving Time shifts occur.
+====
+

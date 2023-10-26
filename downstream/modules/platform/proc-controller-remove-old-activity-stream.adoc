@@ -1,0 +1,9 @@
+[id="proc-controller-remove-old-activity-stream"]
+
+= Removing Old Activity Stream Data
+
+To remove older activity stream data, click the launch image:rightrocket.png[Launch,15,15] icon beside *Cleanup Activity Stream*.
+
+image:management-jobs-remove-activity-stream-launch.png[Activity stream launch - remove activity stream launch]
+
+Enter the number of days of data you would like to save and click btn:[Launch].

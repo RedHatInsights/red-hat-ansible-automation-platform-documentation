@@ -22,7 +22,7 @@ include::platform/assembly-ag-controller-start-stop-controller.adoc[leveloffset=
 include::platform/assembly-custom-inventory-scripts.adoc[leveloffset=+1]
 include::platform/assembly-inventory-file-importing.adoc[leveloffset=+1]
 include::platform/assembly-multi-credential-assignment.adoc[leveloffset=+1]
-//6 Management Jobs
+include::platform/assembly-controller-managment-jobs.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-clustering.adoc[leveloffset=+1]
 //8 Container and Instance Groups
 //9 Managing Capacity With Instances

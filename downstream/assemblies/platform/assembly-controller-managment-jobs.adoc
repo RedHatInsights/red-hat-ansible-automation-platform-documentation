@@ -1,0 +1,28 @@
+[id="assembly-controller-managment-jobs"]
+
+= Management Jobs
+
+*Management Jobs* assist in the cleaning of old data from {ControllerName}, including system tracking information, tokens, job histories, and activity streams. 
+You can use this if you have specific retention policies or need to decrease the storage used by your {ControllerName} database. 
+
+From the navigation panel, select menu:Management Jobs[].
+
+image:management-jobs.png[Management jobs]
+
+The following job types are available for you to schedule and launch:
+
+* *Cleanup Activity Stream*: Remove activity stream history older than a specified number of days
+* *Cleanup Expired OAuth 2 Tokens*: Remove expired OAuth 2 access tokens and refresh tokens
+* *Cleanup Expired Sessions*: Remove expired browser sessions from the database
+* *Cleanup Job Details*: Remove job history older than a specified number of days
+
+include::platform/proc-controller-remove-old-activity-stream.adoc[leveloffset=+1]
+include::platform/proc-controller-scheduling-deletion.adoc[leveloffset=+2]
+include::platform/proc-controller-management-notifications.adoc[leveloffset=+2]
+include::platform/ref-controller-cleanup-expired-tokens.adoc[leveloffset=+1]
+include::platform/con-controller-cleanup-expired-sessions.adoc[leveloffset=+1]
+include::platform/ref-controller-remove-old-job-history.adoc[levelofset=+1]
+
+
+
+
