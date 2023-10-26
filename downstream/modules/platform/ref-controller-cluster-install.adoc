@@ -1,0 +1,65 @@
+[id="controller-cluster-install"]
+
+= Install and configure
+
+Provisioning new instances involves updating the `inventory` file and re-running the setup playbook. 
+It is important that the inventory file contains all passwords and information used when installing the cluster or other instances might be reconfigured. 
+The inventory file contains a single inventory group, `automationcontroller`.
+
+[NOTE]
+====
+All instances are responsible for various housekeeping tasks related to task scheduling, such as determining where jobs are supposed to be launched and processing playbook events, as well as periodic cleanup.
+====
+
+[literal, options="nowrap" subs="+attributes"]
+----
+[automationcontroller]
+hostA
+hostB
+hostC
+[instance_group_east]
+hostB
+hostC
+[instance_group_west]
+hostC
+hostD
+----
+
+[NOTE]
+====
+If no groups are selected for a resource then the `automationcontroller` group is used, but if any other group is selected, then the `automationcontroller` group is not used in any way.
+====
+
+The database group remains for specifying an external PostgreSQL. 
+If the database host is provisioned separately, this group must be empty:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+[automationcontroller]
+hostA
+hostB
+hostC
+[database]
+hostDB
+----
+
+When a playbook runs on an individual controller instance in a cluster, the output of that playbook is broadcast to all of the other nodes as part of {ControllerName}'s websocket-based streaming output functionality. 
+You must handle this data broadcast using internal addressing by specifying a private routable address for each node in your inventory:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+[automationcontroller]
+hostA routable_hostname=10.1.0.2
+hostB routable_hostname=10.1.0.3
+hostC routable_hostname=10.1.0.4
+routable_hostname
+----
+
+For more information on `routable_hostname`, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-genera-inventory-variables[General variables] in the _Red Hat Ansible Automation Platform Installation Guide_.
+
+[IMPORTANT]
+====
+Previous versions of {ControllerName} used the variable name `rabbitmq_host`. 
+If you are upgrading from a previous version of the platform, and you previously specified `rabbitmq_host` in your inventory, rename `rabbitmq_host` to `routable_hostname` before upgrading.
+====
+

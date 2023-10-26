@@ -1,0 +1,9 @@
+[id="controller-cluster-instances"]
+
+= Instances and ports used by {ControllerName} and {HubName}
+
+Ports and instances used by {ControllerName} and also required by the on-premise {HubName} node are as follows:
+
+* 80, 443 (normal {ControllerName} and {HubName} ports)
+* 22 (ssh - ingress only required)
+* 5432 (database instance - if the database is installed on an external instance, it must be opened to {ControllerName} instances)

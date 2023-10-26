@@ -1,0 +1,21 @@
+[id="controller-cluster-job-runtime"]
+
+= Job runtime behavior
+
+The way jobs are run and reported to a _normal_ user of {ControllerName} does not change. 
+On the system side, note the following differences:
+
+* When a job is submitted from the API interface it is pushed into the dispatcher queue. 
+Each {ControllerName} instance connects to and receives jobs from that queue using a scheduling algorithm. 
+Any instance in the cluster is just as likely to receive the work and execute the task. 
+If an instance fails while executing jobs, then the work is marked as permanently failed.
++
+image::ug-clustering-visual.png[Clustering visual]
++
+* Project updates run successfully on any instance that could potentially run a job. 
+Projects synchronize themselves to the correct version on the instance immediately before running the job. 
+If the required revision is already locally checked out and Galaxy or Collections updates are not required, then a sync cannot be performed.
+* When the synchronization happens, it is recorded in the database as a project update with a `launch_type = sync` and `job_type =  run`. 
+Project syncs do not change the status or version of the project; instead, they update the source tree only on the instance where they run.
+* If updates are required from Galaxy or Collections, a sync is performed that downloads the required roles, consuming more space in your `/tmp file`. 
+In cases where you have a large project (around 10 GB), disk space on `/tmp` can be an issue.

@@ -1,0 +1,10 @@
+[id="controller-cluster-job-runs"]
+
+= Job runs
+
+By default, when a job is submitted to the {ControllerName} queue, it can be picked up by any of the workers. 
+However, you can control where a particular job runs, such as restricting the instances from which a job runs on.
+
+To support taking an instance offline temporarily, there is a property enabled defined on each instance. 
+When this property is disabled, no jobs are assigned to that instance. 
+Existing jobs finish, but no new work is assigned.

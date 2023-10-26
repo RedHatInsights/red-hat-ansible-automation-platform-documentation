@@ -1,0 +1,40 @@
+[id="controller-clustering"]
+
+= Clustering
+
+Clustering is sharing load between hosts. 
+Each instance must be able to act as an entry point for UI and API access. 
+This must enable the {ControllerName} administrators to use load balancers in front of as many instances as they wish and maintain good data visibility.
+
+[NOTE]
+====
+Load balancing is optional and it is entirely possible to have ingress on one or all instances as needed.
+====
+
+Each instance must be able to join the {ControllerName} cluster and expand its ability to execute jobs. 
+This is a simple system where jobs can run anywhere rather than be directed on where to run. 
+Also, clustered instances can be grouped into different pools or queues, called [ADD XREF]Instance Groups.
+
+{PlatformNameShort} supports container-based clusters using Kubernetes, meaning new controller instances can be installed on this platform without any variation or diversion in functionality. 
+You can create instance groups to point to a Kubernetes container. 
+For more information, see the [ADD XREF]Container and Instance Groups section.
+
+.Supported operating systems
+
+The following operating systems are supported for establishing a clustered environment:
+
+* Red Hat Enterprise Linux 7 or later (RHEL8 recommended, can be either RHEL 7 or Centos 7 instances)
+
+[NOTE]
+====
+Isolated instances are not supported in conjunction with running automation controller in OpenShift.
+====
+
+include::platform/ref-controller-setup-considerations.adoc[leveloffset=+1]
+include::platform/ref-controller-cluster-install.adoc[leveloffset=+1]
+include::platform/ref-controller-cluster-instances.adoc[leveloffset=+2]
+include::platform/ref-controller-cluster-status-api.adoc[leveloffset=+1]
+include::platform/ref-controller-cluster-instance-behavior.adoc[leveloffset=+1]
+include::platform/ref-controller-cluster-job-runtime.adoc[leveloffset=+1]
+include::platform/con-controller-cluster-job-runs.adoc[leveloffset=+2]
+include::platform/proc-controller-cluster-deprovision-instances.adoc[leveloffset=+1]

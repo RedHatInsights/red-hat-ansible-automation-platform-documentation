@@ -1,0 +1,12 @@
+[id="controller-cluster-status-api"]
+
+= Status and monitoring by browser API
+
+{ControllerNameStart} reports as much status as it can using the browser API at `/api/v2/ping` to validate the health of the cluster.
+This includes the following:
+
+* The instance servicing the HTTP request
+* The timestamps of the last heartbeat of all other instances in the cluster
+* Instance Groups and Instance membership in those groups
+
+View more details about Instances and Instance Groups, including running jobs and membership information at `/api/v2/instances/` and `/api/v2/instance_groups/`.

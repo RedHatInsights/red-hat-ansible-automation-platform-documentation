@@ -1,0 +1,16 @@
+[id="controller-cluster-instance-behavior"]
+
+= Instance services and failure behavior
+
+Each controller instance is made up of the following different services working collaboratively:
+
+HTTP services:: This includes the {ControllerName} application itself as well as external web services.
+Callback receiver:: Receives job events from running Ansible jobs.
+Dispatcher:: The worker queue that processes and runs all jobs.
+Redis:: This key value store is used as a queue for event data propagated from ansible-playbook to the application.
+Rsyslog:: The log processing service used to deliver logs to various external logging services.
+
+{ControllerNameStart} is configured so that if any of these services or their components fail, then all services are restarted. 
+If these fail often in a short span of time, then the entire instance is placed offline in an automated fashion to allow remediation without causing unexpected behavior.
+
+For backing up and restoring a clustered environment, see the [ADD XREF]Backup and Restore for Clustered Environments section.
