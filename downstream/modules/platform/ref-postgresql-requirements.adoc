@@ -12,16 +12,16 @@
 [cols="a,a,a",options="header"]
 |===
 h| Service |Required |Notes
-| *Each {ControllerName}* | 40 GB dedicated hard disk space |
+// [ddacosta - removed based on AAP-15617]| *Each {ControllerName}* | 40 GB dedicated hard disk space |
 
-* Dedicate a minimum of 20 GB to `/var/` for file and working directory storage.
-* Storage volume must be rated for a minimum baseline of 1500 IOPS.
-* Projects are stored on control and hybrid nodes, and for the duration of jobs, are also stored on execution nodes. If the cluster has many large projects, consider having twice the GB in /var/lib/awx/projects, to avoid disk space errors.
+//* Dedicate a minimum of 20 GB to `/var/` for file and working directory storage.
+//* Storage volume must be rated for a minimum baseline of 1500 IOPS.
+//* Projects are stored on control and hybrid nodes, and for the duration of jobs, are also stored on execution nodes. If the cluster has many large projects, consider having twice the GB in /var/lib/awx/projects, to avoid disk space errors.
 
-* 150 GB+ recommended
-| *Each {HubName}* | 60 GB dedicated hard disk space |
+//* 150 GB+ recommended
+// | *Each {HubName}* | 60 GB dedicated hard disk space |
 
-Storage volume must be rated for a minimum baseline of 1500 IOPS.
+//Storage volume must be rated for a minimum baseline of 1500 IOPS.
 | *Database* | 20 GB dedicated hard disk space |
 
 * 150 GB+ recommended
