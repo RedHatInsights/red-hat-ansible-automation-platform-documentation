@@ -37,16 +37,14 @@ Refer to link:https://docs.ansible.com/ansible-tower/3.8.3/html/administration/m
 .PostgreSQL Configurations
 
 Optionally, you can configure the PostgreSQL database as separate nodes that are not managed by the {PlatformName} installer.
-When the {PlatformNameShort} installer manages the database server, it configures the server with defaults that are generally recommended for most workloads.
-However, you can adjust these PostgreSQL settings for standalone database server node where `ansible_memtotal_mb` is the total memory size of the database server:
-
------
-max_connections == 1024
-shared_buffers == ansible_memtotal_mb*0.3
-work_mem == ansible_memtotal_mb*0.03
-maintenance_work_mem == ansible_memtotal_mb*0.04
------
+When the {PlatformNameShort} installer manages the database server, it configures the server with defaults that are generally recommended for most workloads. See link:https://docs.ansible.com/automation-controller/latest/html/administration/performance.html#database-settings[Database Settings] for more information on the settings you can use to improve database performance.
+//-----
+//max_connections == 1024
+//shared_buffers == ansible_memtotal_mb*0.3
+//work_mem == ansible_memtotal_mb*0.03
+//maintenance_work_mem == ansible_memtotal_mb*0.04
+//-----
 
 [role="_additional-resources"]
 .Additional resources
-For more detail on tuning your PostgreSQL server, see the link:https://wiki.postgresql.org/wiki/Main_Page[PostgreSQL documentation].
+For more information on tuning your PostgreSQL server, see the link:https://wiki.postgresql.org/wiki/Main_Page[PostgreSQL documentation].
