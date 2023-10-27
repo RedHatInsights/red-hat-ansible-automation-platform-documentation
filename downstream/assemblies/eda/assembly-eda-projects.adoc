@@ -4,7 +4,7 @@
 
 Projects are a logical collection of rulebooks. 
 They must be a git repository and only http protocol is supported. 
-The rulebooks of a project must be located in the `/rulebooks` folder at the root of the project or at the path defined for {EDAName} content in Ansible collections: `/extensions/eda/rulebooks`.
+The rulebooks of a project must be located in the path defined for {EDAName} content in Ansible collections: `/extensions/eda/rulebooks` at the root of the project.
 
 include::eda/proc-eda-set-up-new-project.adoc[leveloffset=+1]
 include::eda/con-eda-projects-list-view.adoc[leveloffset=+1]
