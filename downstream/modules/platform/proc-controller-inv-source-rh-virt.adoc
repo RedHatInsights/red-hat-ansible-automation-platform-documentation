@@ -2,7 +2,7 @@
 
 = Red hat virtualization
 
-Use the following procedure to configure an Red Hat virtualization-sourced inventory.
+Use the following procedure to configure a Red Hat virtualization-sourced inventory.
 
 .Procedure
 . In the *Create new source* page, select menu:Source[].

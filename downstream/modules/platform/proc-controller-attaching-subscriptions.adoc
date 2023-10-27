@@ -43,7 +43,7 @@ Suggested: 1
 # subscription-manager attach --pool=<pool_id>
 ----
 
-. If this is correct, and all nodes have attached, then the repositories will be found.
+. If this is correct, and all nodes have attached, then the repositories are found.
 . To check whether the subscription attached successfully, enter the following command:
 +
 [literal, options="nowrap" subs="+attributes"]

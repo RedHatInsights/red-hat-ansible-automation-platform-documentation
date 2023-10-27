@@ -3,7 +3,7 @@
 = Smart Inventories
 
 Smart Inventories are collections of hosts defined by a stored search that can be viewed like a standard inventory and can be easily used with job runs. 
-Organization administrators have admin permission for inventories in their organization and can create a Smart Inventories. 
+Organization administrators have admin permission for inventories in their organization and can create Smart Inventories. 
 
 A Smart Inventory is identified by `KIND=smart`. 
 

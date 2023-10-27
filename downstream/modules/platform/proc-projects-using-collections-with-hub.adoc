@@ -46,10 +46,10 @@ Suppose you have two repos:
 * _Stage_: `Namespace 1` with only collection `A` so: `namespace1.collectionA:v1.5.0` on , you will have a repo URL for _Prod_
 and _Stage_.
 
-You can create an credential for each one. 
+You can create a credential for each one. 
 
 Then you can assign different levels of access to different organizations. 
-For example, you can create a `Developers` organization has access to both repos, while an Operations
+For example, you can create a `Developers` organization that has access to both repos, while an Operations
 organization just has access to the *Prod* repo only.
 
 For UI specific instructions, see link https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/managing_user_access_in_private_automation_hub/index[Managing user access in Private Automation Hub].
@@ -66,7 +66,7 @@ For information on the syntax to use, see link:https://docs.ansible.com/ansible/
 +
 image:projects-add-ah-source-repo.png[Project source repository]
 
-. In the Projects list view, click image:sync.png[Update,15,15] to update this project. {ControllerNameStart} fetches the Galaxy collections from the `collections/requirements.yml` file and report it as changed. 
+. In the Projects list view, click image:sync.png[Update,15,15] to update this project. {ControllerNameStart} fetches the Galaxy collections from the `collections/requirements.yml` file and reports it as changed. 
 The collections will be installed for any job template using this project.
 
 [NOTE]

@@ -12,7 +12,7 @@ To delegate a role, you must have administrator permission for the content objec
 *Scope* is the parent resource that this new role is created on. For example: `Organization.project_create_role`.
 
 It is assumed that the creator of the resource is given the administrator role for that resource. 
-Instances where resource creation does not also imply resource administration, re explicitly called out.
+Instances where resource creation does not also imply resource administration are explicitly called out.
 
 The rules associated with each administrator type are as follows:
 
@@ -60,6 +60,6 @@ As with the *Use* role, if you assign Project Administrator and Inventory Admini
 * Scope: Organization
 
 The following is a sample scenario showing an organization with its
-roles and which resource(s) each have access to:
+roles and which resources each have access to:
 
 image:rbac-multiple-resources-scenario.png[RBAC resources]

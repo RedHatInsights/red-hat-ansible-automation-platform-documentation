@@ -11,7 +11,7 @@ Use the following procedure to add hosts:
 . In the Inventory *Details* page, select menu:Hosts[].
 . Click btn:[Add].
 . Select whether to add a host that already exists in your configuration or create a new host.
-. If creating a new host, set the toggle to 'on' to include this host while running jobs.
+. If creating a new host, set the toggle to *On* to include this host while running jobs.
 . Enter the appropriate details:
 
 * *Host Name* (required):

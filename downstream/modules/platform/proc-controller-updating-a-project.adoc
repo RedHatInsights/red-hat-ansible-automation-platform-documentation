@@ -13,6 +13,6 @@ Immediately after adding a project setup to use source control, a "Sync" starts 
 configured source control.
 ====
 
-. Click on project's status under the *Status* column for further information about the update process.
+. Click on the project's status under the *Status* column for further information about the update process.
 +
 image:projects-update-status.png[Project -update status]

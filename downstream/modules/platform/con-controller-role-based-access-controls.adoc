@@ -8,7 +8,7 @@ However, you can run a workflow job template that contains job templates that yo
 System administrators can create a blank workflow and then grant an `admin_role` to a low-level user, after which they can delegate more access and build the graph. 
 You must have `execute` access to a job template to add it to a workflow job template.
 
-You can also perform other tasks, such as making a duplicate copy or re-launching a workflow, depending on the which permissions are granted to a user. 
+You can also perform other tasks, such as making a duplicate copy or re-launching a workflow, depending on which permissions are granted to a user. 
 You must have permissions to all the resources used in a workflow, such as job templates, before relaunching or making a copy.
 
 For more information, see xref:con-controller-rbac[Role-based access controls].

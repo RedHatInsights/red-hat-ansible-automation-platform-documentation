@@ -5,7 +5,7 @@
 To add permissions to a particular user:
 
 .Procedure
-. From the *Users* list view , click on the desired user.
+. From the *Users* list view, click on the desired user.
 . On the *Details* page, click btn:[Add]. 
 This opens the *Add Permissions* wizard.
 +

@@ -40,6 +40,6 @@ The search criteria for the specified ansible fact is displayed.
 +
 //image:inventories-smart-create-details.png[image]
 
-. From the *Details* view, you can edit the *Smart host filter* field by clicking *Edit* and delete existing filter, clear all existing filters, or add new ones.
+. From the *Details* view, you can edit the *Smart host filter* field by clicking *Edit* and delete existing filters, clear all existing filters, or add new ones.
 +
 image:inventories-smart-define-host-filter-facts-group.png[image]

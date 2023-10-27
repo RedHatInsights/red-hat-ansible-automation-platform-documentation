@@ -6,4 +6,4 @@ To build images, you must have Podman or Docker installed, along with the `ansib
 
 The `--container-runtime` option must correspond to the Podman or Docker executable you intend to use.
 
-For more information, see link:https://ansible.readthedocs.io/projects/builder/en/latest/#quickstart-for-ansible-builder[Quickstart for Ansible Builder], or link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/creating_and_consuming_execution_environments/index[Creating and consuming execution environments]
+For more information, see link:https://ansible.readthedocs.io/projects/builder/en/latest/#quickstart-for-ansible-builder[Quickstart for Ansible Builder], or link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/creating_and_consuming_execution_environments/index[Creating and consuming execution environments].

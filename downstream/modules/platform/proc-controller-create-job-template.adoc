@@ -86,7 +86,7 @@ The following is an example value:
 `git_branch: production
 release_version: 1.5` | Yes. 
 
-If you want to be able to specify `extra_vars` on a schedule, you must select *Prompt on launch* for Variables on the job template, or a enable a survey on the job template. Those answered survey questions become `extra_vars`.
+If you want to be able to specify `extra_vars` on a schedule, you must select *Prompt on launch* for Variables on the job template, or enable a survey on the job template. Those answered survey questions become `extra_vars`.
 | Forks | The number of parallel or simultaneous processes to use while executing the playbook.
 A value of zero uses the Ansible default setting, which is five parallel processes unless overridden in `/etc/ansible/ansible.cfg`. | Yes
 | Limit a| A host pattern to further constrain the list of hosts managed or affected by the playbook. Multiple patterns can be separated by colons (:).
@@ -127,7 +127,7 @@ If selected, you are providing the jobs preferred instance groups in order of pr
 - The Instance Groups prompt shows up as its own step in a subsequent prompt window.
 | Job Tags | Type and select the *Create* menu to specify which parts of the playbook should be executed.
 For more information and examples see link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_tags.html[Tags] in the Ansible documentation. | Yes
-| Skip Tags | Type and select the the *Create* menu to specify certain tasks or parts of the playbook to skip.
+| Skip Tags | Type and select the *Create* menu to specify certain tasks or parts of the playbook to skip.
 For more information and examples see link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_tags.html[Tags] in the Ansible documentation. | Yes
 |===
 +

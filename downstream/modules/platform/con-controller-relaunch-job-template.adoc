@@ -13,7 +13,7 @@ It uses the same `extra_vars` that were calculated for the job being relaunched.
 You launch a job template with no `extra_vars` which results in the creation of a job called *j1*.
 Then you edit the job template and add `extra_vars` (such as adding `"{ "hello": "world" }"`).
 
-Relaunching *j1* results in the creation of *j2*, but because there is no inherit logic and *j1* had no extra_vars, *j2* does not have any `extra_vars`.
+Relaunching *j1* results in the creation of *j2*, but because there is no inherit logic and *j1* has no extra_vars, *j2* does not have any `extra_vars`.
 
-If you launched the job template with the `extra_vars` that you added after the creation of *j1*, the relaunch job created (*j3*) includes the extra_vars. 
+If you launch the job template with the `extra_vars` that you added after the creation of *j1*, the relaunch job created (*j3*) includes the extra_vars. 
 Relaunching *j3* results in the creation of *j4*, which also includes `extra_vars`.

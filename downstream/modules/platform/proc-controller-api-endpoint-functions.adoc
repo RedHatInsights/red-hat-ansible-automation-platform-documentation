@@ -11,4 +11,4 @@ Alternatively, you can use the host metric API endpoint,`api/v2/host_metric` to 
 api/v2/host_metric <n> DELETE
 ----
 
-A monthly scheduled task automatically deletes jobs that uses hosts from the Host Metric table that were last automated more than year ago.
+A monthly scheduled task automatically deletes jobs that uses hosts from the Host Metric table that were last automated more than a year ago.

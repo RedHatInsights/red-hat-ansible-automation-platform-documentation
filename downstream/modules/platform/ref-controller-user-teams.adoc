@@ -12,6 +12,6 @@ Team membership cannot be modified from this display panel.
 For more information, see [Teams].
 ====
 
-Until a Team has been created and a user has been assigned to that team, the assigned Teams Details for that User will appear empty.
+Until a Team has been created and a user has been assigned to that team, the assigned Teams Details for that User appears empty.
 
 //image:users-teams-list-for-example-user.png[Users - teams list]

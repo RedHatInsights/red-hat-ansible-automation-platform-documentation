@@ -2,7 +2,7 @@
 
 = Use of RBAC
 
-The following describe how to apply {ControllerName}'s RBAC system in your environment.
+The following describes how to apply {ControllerName}'s RBAC system in your environment.
 
 include::ref-controller-rbac-edit-user.adoc[leveloffset=+1]
 include::ref-controller-rbac-edit-orgs.adoc[leveloffset=+1]

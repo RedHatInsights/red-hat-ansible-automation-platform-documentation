@@ -30,7 +30,7 @@ Click btn:[Details] for additional information about the error.
 +
 * Enter the name of the *Instance Groups* on which to run this organization.
 * Enter the name of the {ExecEnvShort} or search for one that exists on which to run this organization. 
-For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/upgrade-migration-guide/upgrade_to_ees.html#upgrade-venv[Upgrading to Execution Environments]
+For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/upgrade-migration-guide/upgrade_to_ees.html#upgrade-venv[Upgrading to Execution Environments].
 * Optional: Enter the *Galaxy Credentials* or search from a list of existing ones.
 . Click btn:[Save] to finish creating the organization.
 

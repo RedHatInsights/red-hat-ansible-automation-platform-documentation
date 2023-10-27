@@ -10,9 +10,9 @@ To upload a subscriptions manifest, first set up your subscription allocations:
 .Procedure
 . Navigate to https://access.redhat.com/management/subscription_allocations.
 The *Subscriptions Allocations* page contains no subscriptions until you create one.
-
++
 image::subscription-allocations-empty.png[Subscriptions allocation]
-
++
 . Click btn:[Create New subscription allocation] to create a new subscription allocation.
 +
 [NOTE]

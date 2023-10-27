@@ -5,7 +5,7 @@
 When *Thycotic DevOps Secrets Vault* is selected for *Credential Type*, provide the following metadata to configure your lookup:
 
 * *Tenant* (required): provide the URL used for communicating with Thycotic's secret management system
-* *Top-level Domain (TLD)* : provide the top-level domain designation, for example .com, .edu, or .org, associated with the secret vault you want to
+* *Top-level Domain (TLD)*: provide the top-level domain designation, for example .com, .edu, or .org, associated with the secret vault you want to
 integrate
 * *Client ID* (required): provide the identifier as obtained by the Thycotic secret management system
 * *Client Secret* (required): provide the secret as obtained by the Thycotic secret management system

@@ -8,7 +8,7 @@ Use the following procedure to add permissions:
 . On the *Projects* page, select the *Access* tab.
 . Click btn:[Add].
 . Select a user or team to add and click btn:[Next].
-. Select one or more users or teams from the list by clicking the check box next to the name to add them as members.
+. Select one or more users or teams from the list by clicking the checkbox next to the name to add them as members.
 +
 image:organizations-add-users-for-example-organization.png[Adding permissions]
 +

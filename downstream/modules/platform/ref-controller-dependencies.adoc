@@ -32,7 +32,7 @@ ansible_core:
 | *ansible_runner* a| The version of the Ansible Runner Python package to be installed. 
 This value is a dictionary with a single key, `package_pip`. 
 The `package_pip` value is passed directly to pip for installation and can be in any format that pip supports. 
-The following are some example values: :
+The following are some example values:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

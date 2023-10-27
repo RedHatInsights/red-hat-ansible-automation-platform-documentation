@@ -37,7 +37,7 @@ image:ad-hoc-run-execute-command.png[Run command  window]
 To target all hosts in the inventory enter `all` or `*`, or leave the field blank. 
 This is automatically populated with whatever was selected in the previous view before clicking the launch button.
 * *Machine Credential*: Select the credential to use when accessing the remote hosts to run the command. 
-Choose the credential containing the username and SSH key or password that Ansbile needs to log into the remote hosts.
+Choose the credential containing the username and SSH key or password that Ansible needs to log into the remote hosts.
 * *Verbosity*: Select a verbosity level for the standard output.
 * *Forks*: If needed, select the number of parallel or simultaneous processes to use while executing the command.
 * *Show Changes*: Select to enable the display of Ansible changes in the

@@ -16,5 +16,5 @@ The xref:controller-job-templates[Job templates] section provides additional det
 * Launch workflow jobs with a job template that has a slice number greater than one.
 * Cancel the whole workflow or individual jobs after launching a slice job template.
 * Relaunch the whole workflow or individual jobs after slice jobs finish running.
-* View the details about the workflow and slice jobs after a launching a job template.
+* View the details about the workflow and slice jobs after launching a job template.
 * Search slice jobs specifically after you create them, as per the subsequent section, "Search job slices").

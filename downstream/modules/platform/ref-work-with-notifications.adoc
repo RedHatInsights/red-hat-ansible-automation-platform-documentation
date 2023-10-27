@@ -2,7 +2,7 @@
 
 = Work with Notifications
 
-On the *Projects* page, select menu:Notifications[] to enable you to review any notification integrations you have setup.
+On the *Projects* page, select menu:Notifications[] to enable you to review any notification integrations you have set up.
 
 image:projects-notifications-example-list.png[Project notifications]
 

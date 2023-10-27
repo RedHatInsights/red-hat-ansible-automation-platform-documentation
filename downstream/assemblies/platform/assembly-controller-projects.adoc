@@ -31,8 +31,6 @@ The Projects page displays the list of the projects that are currently available
 
 {ControllerNameStart} provides you with a *Demo Project* that you can work with initially.
 
-image::controller-demo-project-details.png[Demo Project]
-
 image:projects-list-all.png[Projects - home]
 
 The default view is collapsed (*Compact*) with project name and its status, but you can use the image:arrow.png[Arrow,15,15] next to each entry to expand for more information.
