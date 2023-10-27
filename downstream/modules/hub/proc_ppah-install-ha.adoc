@@ -3,7 +3,7 @@
 [id="ppah-install-ha_{context}"]
 = Installing a high availability {HubName}
 
-Use the playbook `install_prod` to install a production-ready, highly available {PlatformNameShort}. This option requires that all supporting services are managed by the user.
+Use the playbook `install_prod` to install a production-ready, highly available {HubName}. This option requires that all supporting services are managed by the user.
 
 .Prerequisites
 
