@@ -7,17 +7,16 @@ Use this example to populate the inventory file to install {EDAcontroller}. This
 
 [IMPORTANT]
 ====
-{ControllerNameStart} must be installed before you populate the inventory file with the following {EDAName} variables.
-====
-
-[IMPORTANT]
-====
 {EDAcontroller} must be installed on a separate server and cannot be installed on the same host as {HubName} and {ControllerName}.
 ====
 -----
 # Automation EDA Controller Configuration
 #
 
+[automationedacontroller]
+automationedacontroller.example.com ansible_connection=local
+
+[all:vars]
 automationedacontroller_admin_password='<eda-password>'
 
 automationedacontroller_pg_host=''
