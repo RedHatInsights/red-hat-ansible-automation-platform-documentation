@@ -1,0 +1,83 @@
+[id="proc-controller-adding-an-instance"]
+
+= Adding an instance
+
+One way to expand capacity is to create an instance, to serve as a node in your topology.
+
+.Procedure
+. From the navigation menu, select menu:Instances[].
+. In the *Instances* list view, click btn:[Add]. 
+The *Create new Instance* window opens.
+
+image:instances_create_new.png[Create new Instance]
+
+An instance requires the following attributes:
+
+* *Host Name*: (required) Enter a fully qualified domain name (ping-able DNS) or IP address for your instance. 
+This field is equivalent to `hostname` in the API.
+* Optional: *Description*: Enter a description for the instance.
+* *Instance State*: This field is auto-populated, indicating that it is being installed, and cannot be modified.
+* *Listener Port*: This port is pre-populated with the most optimal port. 
+However, you can change the port to one that is more appropriate for your configuration. 
+This field is equivalent to `listener_port` in the API.
+* *Instance Type*: This field is auto-populated and cannot be modified.
+Only execution nodes can be created at this time.
+* *Enable Instance*: Check this box to make it available for jobs to run on it
+. When the attributes are configured, click btn:[Save].
++
+The Details of the created instance opens.
+
+image:instances_create_details.png[Create Instance details]
+
+[NOTE]
+====
+The proceeding steps are intended to be run from any computer that has SSH access to the newly created instance. 
+It should not be run from a machine that is part of the AAP deployment.
+====
+
+. Click the download image:download.png[Download,15,15] icon next to *Install Bundle* to download the tarball that includes this new instance and the files necessary to install the node into the {AutomationMesh}.
++
+image:instances_install_bundle.png[Install instance]
+
+. Extract the downloaded `tar.gz` file from the location you downloaded it. 
+The install bundle contains yaml files, certificates, and keys that are used in the installation process.
+. Before running the `ansible-playbook` command, edit the following fields in the `inventory.yml` file:
+
+* `ansible_user` with the username running the installation
+* `ansible_ssh_private_key_file` to contain the filename of the private key used to connect to the instance
++
+[literal, options="nowrap" subs="+attributes"]
+----
+all:
+  hosts:
+    remote-execution:
+      ansible_host: 18.206.206.34
+      ansible_user: <username> # user provided
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
+----
++
+The content of the `inventory.yml` file serves as a template and contains variables for roles that are applied during the installation and configuration of a receptor node in a mesh topology. 
+You can modify some of the other fields, or replace the file in its entirety for advanced scenarios. 
+For more information, see link:https://github.com/ansible/receptor-collection/blob/main/README.md[Role Variables].
+
+. Save the file to continue.
+. Run the following command on the machine where you want to update your {AutomationMesh}:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+ansible-playbook -i inventory.yml install_receptor.yml
+----
+
+. To view other instances within the same topology, select the menu:[Peers] tab associated with the control node.
++
+[NOTE]
+====
+You can only view peers of the control plane nodes at this time, which are the execution nodes. 
+Because you are limited to creating execution nodes in this release, you cannot create or view peers of execution nodes.
+====
++
+image:instances_peers_tab.png[Perers tab]
++
+You can run a health check by selecting the node and clicking btn:[Run health check] on its *Details* page.
+
+. To view a graphical representation of your updated topology, see [Topology Viewer].

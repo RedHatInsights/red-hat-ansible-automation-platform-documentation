@@ -25,7 +25,7 @@ include::platform/assembly-multi-credential-assignment.adoc[leveloffset=+1]
 include::platform/assembly-controller-managment-jobs.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-clustering.adoc[leveloffset=+1]
 //8 Container and Instance Groups
-//9 Managing Capacity With Instances
+include::platform/assembly-controller-instances.adoc[leveloffset=+1]
 //10 Topology Viewer
 //11 Controller Logfiles
 //12 Logging and Aggregation

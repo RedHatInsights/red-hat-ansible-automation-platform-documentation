@@ -1,0 +1,82 @@
+[id="proc-controller-manage-instances"]
+
+= Managing instances
+
+Use the following procedure to manage instances.
+
+.Procedure
+. From the navigation panel, select menu:Instances[] to access the Instances list.
++
+image:instances_list_view.png[Instances list]
++
+The Instances list displays all the current nodes in your topology, along with relevant details:
+
+* *Host Name*
+* *Status*: Indicates the state of the node:
+
+** *Installed*: A node that has successfully installed and configured, but has not yet passed the periodic health check.
+** *Ready*: A node that is available to run jobs or route traffic between nodes on the mesh. 
+This replaces the previously “Healthy” node state used in the mesh topology.
+** *Provisioning*: A node that is in the process of being added to a current mesh, but is awaiting the job to install all of the packages.
++
+[NOTE]
+====
+This is currently not supported and is subject to change in a future release.
+====
+** *Deprovisioning*: A node that is in the process of being removed from a current mesh and is completing jobs currently running on it.
+** *Unavailable*: A node that did not pass the most recent health check, indicating connectivity or receptor problems
+** *Provisioning Failure*: A node that failed during provisioning.
++
+[NOTE]
+====
+This is currently not supported and is subject to change in a future release.
+====
+** *De-provisioning Failure*: A node that failed during deprovisioning.
++
+[NOTE]
+====
+This is currently not supported and is subject to change in a future release.
+====
+* *Node Type*: Specifies whether the node is a control, hybrid, hop, or execution node. 
+//See `node` for further detail.
+//Can't see this reference.
+* *Capacity Adjustment*: Allows you to adjust the number of forks in your nodes.
+* *Used Capacity*: Indicates how much capacity has been used.
+* *Actions*: Enables you to enable or disable the instance to control whether jobs can be assigned to it.
++
+From this page, you can add, remove or run health checks on your nodes.
++
+Use the check boxes next to an instance to select it to remove or run a health check against it. 
+When a button is disabled, you do not have permission for that particular action. 
+Contact your Administrator to grant you the required level of access. 
+If you are able to remove an instance, you will receive a prompt for confirmation, similar to the following:
++
+image:instances_delete_prompt.png[Instance delete prompt]
++
+[NOTE]
+.Note
+====
+You can still remove an instance even if it is active and jobs are running on it. 
+{ControllerNameStart} waits for any jobs running on this node to complete actually removing the instance.
+====
+
+. Click btn:[Remove] to confirm.
++
+If running a health check on an instance, a message displays that the health check is in progress.
++
+image:instances_health_check.png[Health Check]
+
+. Click btn:[Reload] to refresh the instance status.
+
+[NOTE]
+====
+Health checks are run asynchronously, and it can take up to a minute for the instance status to update, even with a refresh. 
+The status might or might not change after the health check. 
+On the *Details* page, a clock icon displays next to the last known health check date and time stamp, if the health check task is running.
++
+image:instances_health_check_pending.png[Health check pending]
+====
+
+The following example health check shows the status updates with an error on node `one`:
+
+image:topology-viewer-instance-with-errors.png[Health check with error]

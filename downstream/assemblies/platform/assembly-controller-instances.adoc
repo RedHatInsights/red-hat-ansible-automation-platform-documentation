@@ -1,0 +1,10 @@
+[id="assembly-controller-instances"]
+
+= Managing Capacity With Instances
+
+Scaling your {AutomationMesh} is only available on Openshift deployments of {PlatformmNameShort} and is possible through adding or removing nodes from your cluster dynamically, through the *Instances* resource of the {ControllerName} UI, without running the installation script.
+
+include::platform/ref-instances-prerequisites.adoc[leveloffset=+1]
+include::platform/proc-controller-pulling-secret.adoc[leveloffset=+1]
+include::platform/proc-controller-manage-instances.adoc[leveloffset=+1]
+include::platform/proc-controller-adding-an-instance.adoc[leveloffset=+1]
