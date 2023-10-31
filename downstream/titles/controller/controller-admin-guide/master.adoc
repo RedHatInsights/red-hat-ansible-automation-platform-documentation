@@ -27,7 +27,7 @@ include::platform/assembly-ag-controller-clustering.adoc[leveloffset=+1]
 //8 Container and Instance Groups
 include::platform/assembly-controller-instances.adoc[leveloffset=+1]
 include::platform/assembly-controller-topology-viewer.adoc[leveloffset=+1]
-//11 Controller Logfiles
+include::platform/assembly-controller-log-files.adoc[leveloffset=+1]
 //12 Logging and Aggregation
 //13 Metrics
 //14 Improving Controller Performance
