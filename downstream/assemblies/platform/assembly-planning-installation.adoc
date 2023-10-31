@@ -8,9 +8,9 @@ ifdef::context[:parent-context: {context}]
 :context: planning
 
 [role="_abstract"]
-Red Hat Ansible Automation Platform is supported on both Red Hat Enterprise Linux and Red Hat Openshift. Use this guide to plan your Red Hat Ansible Automation Platform installation on Red Hat Enterprise Linux.
+{PlatformName} is supported on both {RHEL} and Red Hat OpenShift. Use this guide to plan your {PlatformName} installation on {RHEL}.
 
-To install {PlatformName} on your Red Hat OpenShift Container Platform environment, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform].
+To install {PlatformName} on your {OCP} environment, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform].
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
