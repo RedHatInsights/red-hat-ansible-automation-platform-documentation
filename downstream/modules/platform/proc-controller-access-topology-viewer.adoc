@@ -1,0 +1,52 @@
+[id="proc-controller-access-topology-viewer"]
+
+= Accessing the topology viewer
+
+Use the following procedure to access the topology viewer from the {ControllerName} UI.
+
+.Procedure
+. From the navigation panel, select menu:Administration[Topology View].
+The *Topology View* opens and displays a graphical representation of how each receptor node links together.
++
+image:topology-viewer-initial-view.png[Initial view]
+
+. To adjust the zoom levels, or manipulate the graphic views, use the control icons: zoom-in (image:examine.png[Examine,15,15]), zoom-out (image:reduce.png[Reduce,15,15]), expand (image:expand.png[Expand,15,15]), and reset (image:reset.png[Reset,15,15]) on the top bar.
++
+You can also click and drag to pan around; and scroll using your mouse or trackpad to zoom. 
+The fit-to-screen feature automatically scales the graphic to fit on the screen and repositions it in the center. 
+It is particularly useful when you want to see a large mesh in its entirety.
++
+image:topology-viewer-zoomed-view.png[image]
++
+To reset the view to its default view, click the *Reset zoom* image:reset.png[Reset,15,15] icon.
+
+. Refer to the *Legend* to identify the type of nodes that are represented. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/assembly-planning-mesh#con-automation-mesh-node-types[Control and execution planes] for more information on each type of node.
++
+[NOTE]
+====
+If the Legend is not present, use the toggle on the top bar to enable it.
+====
++
+The Legend shows the `node status <node_statuses>` by color, which is indicative of the health of the node. 
+An *Error* status in the Legend includes the *Unavailable* state (as displayed in the Instances list view) plus any future error conditions encountered in later versions of {ControllerName}. 
++
+The following link statuses are also shown in the Legend:
++
+* *Established*: This is a link state that indicates a peer connection between nodes that are either ready, unavailable, or disabled.
+* *Adding*: This is a link state indicating a peer connection between nodes that were selected to be added to the mesh topology.
+* *Removing*: This is a link state indicating a peer connection between nodes that were selected to be removed from the topology.
+
+. Hover over a node and the connectors highlight to show its immediate connected nodes (peers) or click on a node to retrieve details about it, such as its hostname, node type, and status.
++
+image:topology-viewer-node-hover-click.png[Node details]
+
+. Click on the link for instance hostname from the details displayed to be redirected to its *Details* page that provides more information about that node, most notably for information about an `Error` status, as in the following example.
++
+image:topology-viewer-node-view.png[Node error status]
++
+image:topology-viewer-instance-details.png[Node error details]
++
+You can use the *Details* page to remove the instance, run a health check on the instance on an as-needed basis, or unassign jobs from the instance. By default, jobs can be assigned to each node.
+However, you can disable it to exclude the node from having any jobs running on it.
+
+For more information on creating new nodes and scaling the mesh, see xref:assembly-controller-instances[Managing Capacity with Instances].

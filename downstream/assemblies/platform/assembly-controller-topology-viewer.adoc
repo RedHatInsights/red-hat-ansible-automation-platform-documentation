@@ -1,0 +1,11 @@
+[id="assembly-controller-topology-viewer"]
+
+= Topology viewer
+
+The topology viewer enables you to view node type, node health, and specific details about each node if you already have a mesh topology deployed. 
+
+To access the topology viewer from the {ControllerName} UI, you must have *System Administrator* or *System Auditor* permissions. 
+
+For more information about {AutomationMesh}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[Red Hat Ansible Automation Platform automation mesh guide].
+
+include::platform/proc-controller-access-topology-viewer.adoc[leveloffset=+1]
