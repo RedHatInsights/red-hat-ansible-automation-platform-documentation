@@ -1,0 +1,51 @@
+[id="assembly-controller-logging-aggregation"]
+
+= Logging and Aggregation
+
+Logging provides the capability to send detailed logs to third-party external log aggregation services.
+Services connected to this data feed serve as a means of gaining insight into {ControllerName} use or technical trends. 
+The data can be used to analyze events in the infrastructure, monitor for anomalies, and correlate events in one service with events in another. 
+
+The types of data that are most useful to {ControllerName} are job fact data, job events or job runs, activity stream data, and log messages. 
+The data is sent in JSON format over a HTTP connection using minimal service-specific adjustments engineered in a custom handler or through an imported library.
+
+Installing {ControllerName} installs a newer version of `rsyslog`, which replaces the version that comes with the RHEL base. 
+The version of `rsyslog` that is installed by {ControllerName} does not include the following `rsyslog` modules:
+
+* rsyslog-udpspoof.x86_64
+* rsyslog-libdbi.x86_64
+
+After installing {ControllerName}, you must only use the {ControllerName} provided `rsyslog` package for any logging outside of {ControllerName} that might have previously been done with the RHEL provided `rsyslog` package. 
+
+If you already use `rsyslog` for logging system logs on the {ControllerName} instances, you can continue to use `rsyslog` to handle logs from outside of {ControllerName} by running a separate `rsyslog` process (using the same version of rsyslog that {ControllerName} uses), and pointing it to a separate `/etc/rsyslog.conf` file.
+
+[NOTE]
+====
+For systems that use `rsyslog` outside of {ControllerName} (on the {ControllerName} VM or machine), you must also consider any conflict that might arise from also using the new version of `rsyslog` that comes with {ControllerName}.
+====
+
+Use the  `/api/v2/settings/logging/` endpoint to configure how the {ControllerName} `rsyslog` process handles messages that have not yet been sent in the event that your external logger goes offline:
+
+* `LOG_AGGREGATOR_MAX_DISK_USAGE_GB`: Specifies the amount of data to store (in gigabytes) during an outage of the external log aggregator (defaults to 1). 
+Equivalent to the `rsyslogd queue.maxdiskspace` setting.
+* `LOG_AGGREGATOR_MAX_DISK_USAGE_PATH`: Specifies the location to store logs that should be retried after an outage of the external log aggregator (defaults to `/var/lib/awx`). 
+Equivalent to the `rsyslogd queue.spoolDirectory` setting.
+
+For example, if `Splunk` goes offline, `rsyslogd` stores a queue on the disk until `Splunk` comes back online. 
+By default, it stores up to 1GB of events (while Splunk is offline) but you can increase that to more than 1GB if necessary, or change the path where you save the queue.
+
+include::platform/ref-controller-loggers.adoc[leveloffset=+1]
+include::platform/ref-controller-log-message-schema.adoc[leveloffset=+2]
+include::platform/ref-controller-activity-stream-schema.adoc[leveloffset=+2]
+include::platform/ref-controller-job-event-schema.adoc[leveloffset=+2]
+include::platform/ref-controller-scan-fact-tracking-schema.adoc[leveloffset=+2]
+include::platform/ref-controller-job-status-changes.adoc[leveloffset=+2]
+include::platform/ref-controller-logs.adoc[leveloffset=+2]
+include::platform/ref-controller-log-aggregators.adoc[leveloffset=+2]
+include::platform/ref-controller-logging-splunk.adoc[leveloffset=+3]
+include::platform/ref-controller-logging-loggly.adoc[leveloffset=+3]
+include::platform/ref-controller-logging-sumologic.adoc[leveloffset=+3]
+include::platform/ref-controller-logging-elastic-stack.adoc[leveloffset=+3]
+include::platform/proc-controller-set-up-logging.adoc[leveloffset=+1]
+include::platform/proc-controller-api-4xx-error-config.adoc[leveloffset=2]
+include::platform/ref-controller-troubleshoot-logging.adoc[leveloffset=+1]

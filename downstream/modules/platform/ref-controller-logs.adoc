@@ -1,0 +1,9 @@
+[id="ref-controller-logs"]
+
+= {ControllerNameStart} logs
+
+This logger also includes the common fields in xref:ref-controller-log-message-schema[Log message schema].
+
+In addition, this contains a `msg` field with the log message. 
+Errors contain a separate `traceback` field. 
+From the navigation panel, select menu:Settings[Logging Settings] and use the `ENABLE EXTERNAL LOGGING` option to enable or disable the logging components.

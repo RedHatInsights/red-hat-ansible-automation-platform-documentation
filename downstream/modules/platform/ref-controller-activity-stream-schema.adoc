@@ -1,0 +1,13 @@
+[id="ref-controller-activity-stream-schema"]
+
+= Activity stream schema
+
+This uses the fields common to all loggers listed in xref:ref-controller-log-message-schema[Log message schema].
+
+It has the following additional fields:
+
+* `actor`: Username of the user who took the action documented in the log.
+* `changes`: JSON summary of what fields changed, and their old or new values.
+* `operation`: The basic category of the changed logged in the activity stream, for instance, "associate".
+* `object1`: Information about the primary object being operated on, consistent with what is shown in the activity stream.
+* `object2`: If applicable, the second object involved in the action.

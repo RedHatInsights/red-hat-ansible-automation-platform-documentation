@@ -1,0 +1,18 @@
+[id="ref-controller-scan-fact-tracking-schema"]
+
+= Scan / fact / system tracking data schema
+
+These contain a detailed dictionary-type fields that are either services, packages, or files.
+
+* `services`: For services scans, this field is included and has keys based on the name of the service.
++
+[NOTE]
+====
+Periods are not allowed by elastic search in names, and are replaced with "_" by the log formatter.
+====
+* `package`: Included for log messages from package scans.
+* `files`: Included for log messages from file scans.
+* `host`: Name of the host the scan applies to.
+* `inventory_id`: The inventory id the host is inside of.
+
+This logger also includes the common fields in xref:ref-controller-log-message-schema[Log message schema].

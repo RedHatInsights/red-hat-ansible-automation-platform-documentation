@@ -1,0 +1,18 @@
+[id="ref-controller-loggers"]
+
+= Loggers
+
+The following are special loggers (except for `awx`, which constitutes generic server logs) that provide large amounts of information in a predictable structured or semi-structured format, using the same structure as if obtaining the data from the API:
+
+* `job_events`: Provides data returned from the Ansible callback module.
+* `activity_stream`: Displays the record of changes to the objects within the application.
+* `system_tracking`: Provides fact data gathered by Ansible `setup` module, that is, `gather_facts: true` when job templates are run with *Enable Fact Cache* selected.
+* `awx`: Provides generic server logs, which include logs that would normally be written to a file. 
+It contains the standard metadata that all logs have, except it only has the message from the log statement.
+
+These loggers only use log-level of `INFO`, except for the `awx` logger, which can be any given level.
+
+Additionally, the standard {ControllerName} logs are deliverable through this same mechanism. 
+It should be apparent how to enable or disable each of these five sources of data without manipulating a complex dictionary in your local settings file, and how to adjust the log-level consumed from the standard {ControllerName} logs.
+
+From the navigation panel, select menu:Settings[Logging Settings] to configure the logging components in {ControllerName}.

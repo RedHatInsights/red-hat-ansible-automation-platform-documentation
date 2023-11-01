@@ -1,0 +1,39 @@
+[id="ref-controller-logging-splunk"]
+
+= Splunk
+
+{ControllerNameStart}'s Splunk logging integration uses the Splunk HTTP Collector. 
+When configuring a SPLUNK logging aggregator, add the full URL to the HTTP Event Collector host, as in the following example:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+https://<yourcontrollerfqdn>/api/v2/settings/logging
+
+{
+    "LOG_AGGREGATOR_HOST": "https://<yoursplunk>:8088/services/collector/event",
+    "LOG_AGGREGATOR_PORT": null,
+    "LOG_AGGREGATOR_TYPE": "splunk",
+    "LOG_AGGREGATOR_USERNAME": "",
+    "LOG_AGGREGATOR_PASSWORD": "$encrypted$",
+    "LOG_AGGREGATOR_LOGGERS": [
+        "awx",
+        "activity_stream",
+        "job_events",
+        "system_tracking"
+    ],
+    "LOG_AGGREGATOR_INDIVIDUAL_FACTS": false,
+    "LOG_AGGREGATOR_ENABLED": true,
+    "LOG_AGGREGATOR_CONTROLLER_UUID": ""
+}
+----
+
+[NOTE]
+====
+The Splunk HTTP Event Collector listens on port 8088 by default, so you must provide the full HEC event URL (with the port number) for `LOG_AGGREGATOR_HOST` for incoming requests to be processed successfully. 
+====
+
+Typical values are shown in the following example:
+
+image:logging-splunk-tower-example.png[Splunk logging example]
+
+For more information on configuring the HTTP Event Collector, see the link:https://docs.splunk.com/Documentation/Splunk/latest/Data/UsetheHTTPEventCollector[Splunk documentation].

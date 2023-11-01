@@ -1,0 +1,7 @@
+[id="ref-controller-job-status-changes"]
+
+= Job status changes
+
+This is a lower-volume source of information about changes in job states compared to job events, and captures changes to types of unified jobs other than job template based jobs.
+
+This logger also includes the common fields in xref:ref-controller-log-message-schema[Log message schema] and fields present on the job model.

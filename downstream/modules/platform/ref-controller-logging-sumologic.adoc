@@ -1,0 +1,7 @@
+[id="ref-controller-logging-sumologic"]
+
+= Sumologic
+
+In Sumologic, create a search criteria containing the JSON files that provide the parameters used to collect the data you need.
+
+image:logging_sumologic_main.png[Sumologic logging]

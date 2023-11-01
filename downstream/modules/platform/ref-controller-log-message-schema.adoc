@@ -1,0 +1,12 @@
+[id="ref-controller-log-message-schema"]
+
+= Log message schema
+
+Common schema for all loggers:
+
+* `cluster_host_id`: Unique identifier of the host within the {ControllerName} cluster.
+* `level`: Standard python log level, roughly reflecting the significance of the event. 
+All of the data loggers as a part of 'level' use `INFO` level, but the other {ControllerName} logs use different levels as appropriate.
+* `logger_name`: Name of the logger we use in the settings, for example, "activity_stream"
+* `@timestamp`: Time of log.
+* `path`: File path in code where the log was generated.

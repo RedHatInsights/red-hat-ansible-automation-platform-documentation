@@ -1,0 +1,7 @@
+[id="ref-controller-job-event-schema"]
+
+This logger reflects the data being saved into job events, except when they would otherwise conflict with expected standard fields from the logger, in which case the fields are nested. 
+Notably, the field host on the `job_event` model is given as `event_host`. 
+There is also a sub-dictionary field, `event_data` within the payload, which contains different fields depending on the specifics of the Ansible event.
+
+This logger also includes the common fields in xref:ref-controller-log-message-schema[Log message schema].

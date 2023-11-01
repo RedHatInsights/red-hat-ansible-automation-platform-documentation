@@ -1,0 +1,20 @@
+[id="ref-controller-logging-elastic-stack"]
+
+= Elastic stack (formerly ELK stack)
+
+If you are setting up your own version of the elastic stack, the only change you require is to add the following lines to the logstash `logstash.conf` file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+filter {
+  json {
+    source => "message"
+  }
+}
+----
+
+[NOTE]
+====
+Backward-incompatible changes were introduced with Elastic 5.0.0, and different configurations might be required depending on what version you
+are using.
+====

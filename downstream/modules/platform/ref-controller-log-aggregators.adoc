@@ -1,0 +1,10 @@
+[id="ref-controller-log-aggregators"]
+
+= Logging Aggregator Services
+
+The logging aggregator service works with the following monitoring and data analysis systems:
+
+* xref:ref-controller-logging-splunk[Splunk]
+* xref:ref-controller-logging-loggly[Loggly]
+* xref:ref-controller-logging-sumologic[Sumologic]
+* xref:ref-controller-logging-elastic-stack[Elastic Stack (formerly ELK stack)]
