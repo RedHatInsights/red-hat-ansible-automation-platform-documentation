@@ -1,7 +1,7 @@
 [id="proc-configure-automation-hub-server-cli"]
 = Using the CLI to configure Red Hat {HubName} as the primary content source
 
-To configure {HubName}, you must modify the `ansible.cfg` configuration file. By default, the `ansible.cfg` configuration file is located in the `/etc/ansible/` directory. With {HubName}, you have access to certified, supported collections.
+To configure {HubName}, you must update the `ansible.cfg` configuration file. By default, the `ansible.cfg` configuration file is located in the `/etc/ansible/` directory. With {HubName}, you have access to certified, supported collections.
 
 .Prerequisites
 
@@ -9,13 +9,13 @@ To configure {HubName}, you must modify the `ansible.cfg` configuration file. By
 
 [IMPORTANT]
 ====
-Creating a new token revokes any previous tokens generated for {HubName}. Update any {ControllerName} or scripts created with the previous token.
+Creating a new token revokes any previous tokens generated for {HubName}. Update any {ControllerName} or scripts created with the previous token to include the new token.
 ====
 
 .Procedure
 
 . Open the `ansible.cfg` file.
-. Add the `server_list` option under the `[galaxy]` section and provide one or more server names.
+. Add the `server_list` option under the `[galaxy]` section and include one or more server names.
 . Create a new section for each server name:
 +
 -----
@@ -49,13 +49,13 @@ auth_url=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-conn
 token=my_ah_token
 
 [galaxy_server.my_org_hub]
-url=https://automation.my_org/api/galaxy/ <2>
+url=https://automation.my_org/api/galaxy/content/rh-certified/ <2>
 username=my_user
 password=my_pass
 -----
 <1> Include a trailing slash */* after the server URL.
 //<2> Include the `/api/galaxy/` subdirectory in the Ansible Galaxy server URL.
-<2> Include the `/api/galaxy/` subdirectory in the {HubName} server URL.
+<2> Include the `/api/galaxy/content/rh-certified/` subdirectory in the {HubName} server URL. You can replace `rh-certified` with `community` to reference the community repository if you prefer.
 
 [NOTE]
 ====
