@@ -1,0 +1,50 @@
+[id="proc-controller-set-up-prometheus"]
+
+= Setting up Prometheus
+
+To set up and use Prometheus, you must install Prometheus on a virtual machine or container. 
+
+For more information, see the link:https://prometheus.io/docs/introduction/first_steps/[Prometheus documentation].
+
+Use the following procedure to install Prometheus.
+
+.Procedure
+. In the Prometheus configuration file (typically `prometheus.yml`), specify a `<token_value>`, a valid username and password for an {ControllerName} user that you have created, and a `<controller_host>`.
++
+[NOTE]
+====
+Alternatively, you can provide an OAuth2 token (which can be generated at `/api/v2/users/N/personal_tokens/`). 
+By default, the configuration assumes a user with username=`admin` and password=`password`.
+====
++
+Using an OAuth2 Token, created at the `/api/v2/tokens` endpoint to authenticate Prometheus with {ControllerName}, the following example provides a valid scrape configuration if the URL for your {ControllerName}'s metrics endpoint is `https://controller_host:443/metrics`.
++
+[literal, options="nowrap" subs="+attributes"]
+----
+scrape_configs
+
+  - job_name: 'controller'
+    tls_config:
+        insecure_skip_verify: True
+    metrics_path: /api/v2/metrics
+    scrape_interval: 5s
+    scheme: https
+    bearer_token: <token_value>
+    # basic_auth:
+    #   username: admin
+    #   password: password
+    static_configs:
+        - targets: 
+            - <controller_host>
+----
++
+For help configuring other aspects of Prometheus, such as alerts and service discovery configurations, see the link:https://prometheus.io/docs/prometheus/latest/configuration/configuration/[Prometheus configuration documentation].
++
+If Prometheus is already running, you must restart it to apply the configuration changes by making a *POST* to the reload endpoint, or by killing the Prometheus process or service.
+
+. Use a browser to navigate to your graph in the Prometheus UI at `http://<your_prometheus>:9090/graph` and test out some queries. 
+For example, you can query the current number of active controller user sessions by executing: `awx_sessions_total{type="user"}`.
++
+image:metrics-prometheus-ui-query-example.png[Prometheus queries]
+
+Refer to the metrics endpoint in the {ControllerName} API for your instance (`api/v2/metrics`) for more ways to query.

@@ -10,7 +10,7 @@ This is where errors are stored if they occurred when authenticating rsyslog wit
 Note that if there are no errors, this file does not exist.
 
 [discrete]
-== API 4XX Errors
+=== API 4XX Errors
 
 You can include the API error message for 4XX errors by modifying the log format for those messages. 
 Refer to the xref:proc-controller-api-4xx-error-config[API 4XX Error Configuration].

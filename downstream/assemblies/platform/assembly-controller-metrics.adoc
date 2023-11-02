@@ -1,0 +1,16 @@
+[id="assembly-controller-metrics"]
+
+= Metrics
+
+A metrics endpoint, `/api/v2/metrics/` is available in the API that produces instantaneous metrics about the controller, which can be
+consumed by system monitoring software such as the open source project Prometheus.
+
+The types of data shown at the `metrics/` endpoint are `Content-type: text/plain` and `application/json`. 
+
+This endpoint contains useful information, such as counts of how many active user sessions there are, or how many jobs are actively running on each {ControllerName} node. 
+
+Prometheus can be configured to scrape these metrics from {ControllerName} by hitting the {ControllerName} metrics endpoint and storing this data in a time-series database. 
+
+Clients can later use Prometheus in conjunction with other software such as Grafana or Metricsbeat to visualize that data and set up alerts.
+
+include::platform/proc-controller-set-up-prometheus.adoc[leveloffset=+1]

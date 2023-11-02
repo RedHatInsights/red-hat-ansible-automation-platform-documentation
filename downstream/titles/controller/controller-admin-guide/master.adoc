@@ -29,7 +29,7 @@ include::platform/assembly-controller-instances.adoc[leveloffset=+1]
 include::platform/assembly-controller-topology-viewer.adoc[leveloffset=+1]
 include::platform/assembly-controller-log-files.adoc[leveloffset=+1]
 include::platform/assembly-controller-logging-aggregation.adoc[leveloffset=+1]
-//13 Metrics
+include::platform/assembly-controller-metrics.adoc[leveloffset=+1]
 //14 Improving Controller Performance
 //15 Secret handling and connection security
 //16 Security Best Practices
