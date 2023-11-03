@@ -23,24 +23,14 @@ and the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_autom
 _Getting started with automation hub_::
 Use this guide to perform the initial steps required to use Red Hat {HubName} as the default source for Ansible collections content.
 
-_Managing content with automation hub_::
+_Managing content in automation hub_::
 Use this guide to understand how to create and manage collections, content and repositories in {HubName}.
 
 _Red Hat Ansible Automation Platform Installation Guide_::
 Use this guide to learn how to install {PlatformNameShort} based on supported installation scenarios.
 
-* The name of the _Managing Red Hat Certified and Ansible Galaxy collections in automation hub Guide_ has changed to include validated content and is now _Managing Red Hat Certified, validated, and Ansible Galaxy content in automation hub_.
-+
-[NOTE]
-====
-This content has been moved to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/managing_content_in_automation_hub/index#managing-cert-valid-content[Managing Red Hat Certified, validated, and Ansible Galaxy content in automation hub] topic in the _Managing content with automation hub_ guide.
-====
+* The _Managing Red Hat Certified and Ansible Galaxy collections in automation hub guide_ has been moved to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/managing_content_in_automation_hub/index#managing-cert-valid-content[_Red Hat Certified, validated, and Ansible Galaxy content in automation hub_] topic in the _Managing content in automation hub_ guide.
 
 * The {PlatformNameShort} 2.4 Release Notes are restructured to improve the experience for our customers and the Ansible Community. Users can now view the latest updates based on the {PlatformNameShort} versions, instead of their release timeline.
 
-* The document link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/managing_repositories_in_automation_hub/index[Managing repositories in automation hub] is created to help you create and manage custom repositories in {HubName}.
-+
-[NOTE]
-====
-This content has been moved to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/managing_content_in_automation_hub/index#repo-management[Repository management with automation hub] topic in the _Managing content with automation hub_ guide.
-====
+* The topic link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/managing_content_in_automation_hub/index#repo-management[Repository management with automation hub] is created to help you create and manage custom repositories in {HubName}. This topic is found in the _Managing content in automation hub_ guide.
