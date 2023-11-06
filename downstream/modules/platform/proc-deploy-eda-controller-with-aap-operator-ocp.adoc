@@ -18,9 +18,16 @@
 +
 This takes you to the Form View to customize your installation.
 
+. In the *Name* field, enter the name you want for your new {EDAcontroller} deployment. 
++
+[IMPORTANT]
+====
+If you have other {PlatformNameShort} components installed in your current {OCPShort} namespace, ensure that you provide a unique name for your {EDAcontroller} when you create your {EDAName} custom resource. Otherwise, naming conflicts can occur and impact {EDAcontroller} deployment.
+====
++
 . Specify your controller URL. 
 +
-If you deployed {ControllerName} in Openshift as well, you can find the URL on the Routes page.
+If you deployed {ControllerName} in Openshift as well, you can find the URL in the navigation panel under menu:Networking[Routes].
 +
 [NOTE]
 ====

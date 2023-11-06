@@ -12,7 +12,6 @@ ifdef::context[:parent: {context}]
 
 Use the following instructions to install {EDAName} with your {OperatorPlatform} on {OCPShort}.
 
-
 include::platform/proc-deploy-eda-controller-with-aap-operator-ocp.adoc[leveloffset=+1]
 
 ifdef::parent-context-of-deploy-eda-controller-with-aap-operator-ocp[:context: {parent-context-of-deploy-eda-controller-with-aap-operator-ocp}]
