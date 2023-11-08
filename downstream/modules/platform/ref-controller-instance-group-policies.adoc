@@ -1,0 +1,23 @@
+[id="controller-instance-group-policies"]
+
+= Instance group policies
+
+You can configure {ControllerName} instances to automatically join instance groups when they come online by defining a policy. 
+These policies are evaluated for every new instance that comes online.
+
+Instance group policies are controlled by the following three optional fields on an `Instance Group`:
+
+* `policy_instance_percentage`: This is a number between 0 - 100. 
+It guarantees that this percentage of active {ControllerName} instances are added to this instance group. 
+As new instances come online, if the number of instances in this group relative to the total number of instances is less than the given percentage, then new ones are added until the percentage condition is satisfied.
+* `policy_instance_minimum`: This policy attempts to keep at least this many instances in the instance group. 
+If the number of available instances is lower than this minimum, then all instances are placed in this instance group.
+* `policy_instance_list`: This is a fixed list of instance names to always include in this instance group.
+
+The *Instance Groups* list view from the {ControllerName} user interface (UI) provides a summary of the capacity levels for each instance group according to instance group policies:
+
+image::ug-instance-groups_list_view[Instance Groups list view]
+
+.Additional resources
+
+For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-instance-groups[Managing Instance Groups] section of the _{ControllerUG}_.

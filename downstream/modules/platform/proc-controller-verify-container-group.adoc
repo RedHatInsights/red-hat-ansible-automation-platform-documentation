@@ -1,0 +1,32 @@
+[id="controller-verify-container-group"]
+
+= Verifying container group functions
+
+To verify the deployment and termination of your container:
+
+.Procedure
+
+. Create a mock inventory and associate the container group to it by populating the name of the container group in the *Instance Group* field. 
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-adding-new-inventory[Add a new inventory] in the {ControllerUG}.
++
+image::ag-inventories-create-new-test-inventory.png[Create test inventory]
++
+. Create the "localhost" host in the inventory with variables:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{'ansible_host': '127.0.0.1', 'ansible_connection': 'local'}
+----
++
+image::ag-inventories-create-new-test-localhost.png[Create test localhost]
++
+. Launch an ad hoc job against the localhost using the _ping_ or _setup_ module. 
+Even though the *Machine Credential* field is required, it does not matter which one is selected for this test:
++
+image::ag-inventories-launch-adhoc-localhost.png[Launch ad hoc localhost]
+image::ag-inventories-launch-adhoc-localhost2.png[Launch ad hoc localhost 2]
+
+You can see in the *Jobs* details view that the container was reached successfully using one of the ad hoc jobs.
+
+If you have an OpenShift UI, you can see pods appear and disappear as they deploy and terminate. 
+Alternatively, you can use the CLI to perform a `get pod` operation on your namespace to watch these same events occurring in real-time.

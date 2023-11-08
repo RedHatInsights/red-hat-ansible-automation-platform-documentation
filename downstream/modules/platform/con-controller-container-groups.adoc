@@ -1,0 +1,18 @@
+[id="controller-container-groups"]
+
+= Container groups
+
+{PlatformNameShort} supports container groups, which enable you to execute jobs in {ControllerName} regardless of whether {ControllerName} is installed as a standalone, in a virtual environment, or in a container. 
+Container groups act as a pool of resources within a virtual environment. 
+You can create instance groups to point to an OpenShift container, which are job environments that are provisioned on-demand as a pod that exists only for the duration of the playbook run. 
+This is known as the ephemeral execution model and ensures a clean environment for every job run.
+
+In some cases, you might want to set container groups to be "always-on", which you can configure through the creation of an instance.
+
+[NOTE]
+====
+Container groups upgraded from versions prior to {ControllerName} 4.0 revert back to default and remove the old pod definition, clearing out all custom pod definitions in the migration.
+====
+
+Container groups are different from {ExecEnvShort}s in that {ExecEnvShort}s are container images and do not use a virtual environment. 
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#assembly-controller-execution-environments[Execution environments] in the _{ControllerUG}_.

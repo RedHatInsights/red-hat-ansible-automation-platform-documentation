@@ -1,0 +1,33 @@
+[id="controller-instance-group-capacity"]
+
+= Instance group capacity limits
+
+There is external business logic that can drive the need to limit the concurrency of jobs sent to an instance group, or the maximum number of forks to be consumed.
+
+For traditional instances and instance groups, you might want to enable two organizations to run jobs on the same underlying instances, but limit each organization's total number of concurrent jobs. 
+This can be achieved by creating an instance group for each organization and assigning the value for `max_concurrent_jobs`.
+
+For {ControllerName} groups, {ControllerName} is generally not aware of the resource limits of the OpenShift cluster. 
+You can set limits on the number of pods on a namespace, or only resources available to schedule a certain number of pods at a time if no auto-scaling is in place. 
+In this case, you can adjust the value for `max_concurrent_jobs`.
+
+Another parameter available is `max_forks`. 
+This provides additional flexibility for capping the capacity consumed on an instance group or container group. 
+You can use this if jobs with a wide variety of inventory sizes and "forks" values are being run. 
+This enables you to limit an organization to run up to 10 jobs concurrently, but consume no more than 50 forks at a time:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+max_concurrent_jobs: 10
+max_forks: 50
+----
+
+If 10 jobs that use 5 forks each are run, an eleventh job waits until one of these finishes to run on that group (or be scheduled on a different group with capacity).
+
+If 2 jobs are running with 20 forks each, then a third job with a `task_impact` of 11 or more waits until one of these finishes to run on that group (or be scheduled on a different group with capacity).
+
+For container groups, using the `max_forks` value is useful given that all jobs are submitted using the same `pod_spec` with the same resource requests, irrespective of the "forks" value of the job. 
+The default `pod_spec` sets requests and not limits, so the pods can "burst" above their requested value without being throttled or reaped. 
+By setting the `max_forks value`, you can help prevent a scenario where too many jobs with large forks values get scheduled concurrently and cause the OpenShift nodes to be oversubscribed with multiple pods using more resources than their requested value.
+
+To set the maximum values for the concurrent jobs and forks in an instance group, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-create-instance-group[Creating an instance group] in the _{ControllerUG}_.

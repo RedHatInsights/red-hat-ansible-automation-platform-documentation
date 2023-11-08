@@ -1,0 +1,7 @@
+[id="controller-view-container-group-jobs"]
+
+= View container group jobs
+
+When you run a job associated with a container group, you can see the details of that job in the *Details* view along with its associated container group and the {ExecEnvShort} that spun up.
+
+image::ag-instance-group-job-details.png[Instance group job details]

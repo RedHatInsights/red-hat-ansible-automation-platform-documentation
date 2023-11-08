@@ -1,0 +1,28 @@
+[id="controller-instance-and-container-groups"]
+
+= Instance and container groups
+
+{ControllerNameStart} enables you to execute jobs through Ansible playbooks run directly on a member of the cluster or in a namespace of an OpenShift cluster with the necessary service account provisioned.
+This is called a container group.
+You can execute jobs in a container group only as-needed per playbook. 
+For more information, see xref:controller-container-groups[Container groups].
+
+For {ExecEnvShort}'s, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#assembly-controller-execution-environments[Execution environments] in the _{ControllerUG}_.
+
+include::platform/con-controller-instance-groups.adoc[leveloffset=+1]
+include::platform/ref-controller-group-policies-automationcontroller.adoc[leveloffset=+2]
+include::platform/con-controller-configure-instance-groups.adoc[leveloffset=+2]
+include::platform/ref-controller-instance-group-policies.adoc[leveloffset=+2]
+include::platform/ref-controller-policy-considerations.adoc[leveloffset=+2]
+include::platform/proc-controller-pin-instances.adoc[leveloffset=+2]
+include::platform/ref-controller-job-runtime-behavior.adoc[leveloffset=+2]
+include::platform/con-controller-control-job-run.adoc[leveloffset=+2]
+include::platform/ref-controller-instance-group-capacity.adoc[leveloffset=+2]
+include::platform/con-controller-deprovision-instance-groups.adoc[leveloffset=+2]
+include::platform/con-controller-container-groups.adoc[leveloffset=+1]
+include::platform/proc-controller-create-container-group.adoc[leveloffset=+2]
+include::platform/proc-controller-customize-pod-spec.adoc[leveloffset=+2]
+include::platform/proc-controller-verify-container-group.adoc[leveloffset=+2]
+include::platform/ref-controller-view-container-group-jobs.adoc[leveloffset=+2]
+include::platform/ref-controller-kubernetes-API-failure.adoc[leveloffset=+2]
+include::platform/ref-controller-container-capacity.adoc[leveloffset=+2]

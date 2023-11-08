@@ -1,0 +1,11 @@
+[id="controller-kubernetes-API-failure"]
+
+= Kubernetes API failure conditions
+
+When running a container group and the Kubernetes API responds that the resource quota has been exceeded, {ControllerName} keeps the job in pending state. 
+Other failures result in the traceback of the *Error Details* field showing the failure reason, similar to the following example:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+Error creating pod: pods is forbidden: User "system: serviceaccount: aap:example" cannot create resource "pods" in API group "" in the namespace "aap"
+----

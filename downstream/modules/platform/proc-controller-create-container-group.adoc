@@ -1,0 +1,63 @@
+[id="controller-create-container-group"]
+
+= Creating a container group
+
+A `ContainerGroup` is a type of `InstanceGroup` that has an associated credential that enables you to connect to an OpenShift cluster. 
+
+.Prerequisites
+
+* A namespace that you can launch into.
+Every cluster has a "default" namespace, but you can use a specific namespace.
+* A service account that has the roles that enable it to launch and manage pods in this namespace.
+* If you are using {ExecEnvShort}s in a private registry, and have a container registry credential associated with them in {ControllerName}, the service account also needs the roles to get, create, and delete secrets in the namespace. 
+If you do not want to give these roles to the service account, you can pre-create the `ImagePullSecrets` and specify them on the pod spec for the `ContainerGroup`. 
+In this case, the {ExecEnvShort} should not have a container registry credential associated, or {ControllerName} attempts to create the secret for you in the namespace.
+* A token associated with that service account. 
+An OpenShift or Kubernetes Bearer Token.
+* A CA certificate associated with the cluster.
+
+The following procedure explains how to create a service account in an OpenShift cluster or Kubernetes, to be used to run jobs in a container group through {ControllerName}. 
+After the service account is created, its credentials are provided to {ControllerName} in the form of an OpenShift or Kubernetes API Bearer Token credential. 
+
+.Procedure
+
+. To create a service account, download and use the sample service account, `containergroup sa` and modify it as needed to obtain the credentials.
+. Apply the configuration from `containergroup-sa.yml`:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+oc apply -f containergroup-sa.yml
+----
++
+. Get the secret name associated with the service account:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+export SA_SECRET=$(oc get sa containergroup-service-account -o json | jq '.secrets[0].name' | tr -d '"')
+----
++
+. Get the token from the secret:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+oc get secret $(echo ${SA_SECRET}) -o json | jq '.data.token' | xargs | base64 --decode > containergroup-sa.token
+----
++
+. Get the CA certificate:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+oc get secret $SA_SECRET -o json | jq '.data["ca.crt"]' | xargs | base64 --decode > containergroup-ca.crt
+----
++
+. Use the contents of `containergroup-sa.token` and `containergroup-ca.crt` to provide the information for the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#ref-controller-credential-openShift[OpenShift or Kubernetes API Bearer Token] required for the container group.
+
+To create a container group:
+
+.Procedure 
+
+. Use the {ControllerName} UI to create an link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#ref-controller-credential-openShift[OpenShift or Kubernetes API Bearer Token] credential to use with your container group.
+For more information, see https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-getting-started-create-credential[Creating a credential] in the _{ControllerUG}_.
+. From the navigation panel select menu:Administration[Instance Groups].
+. Click btn:[Add] and select *Create Container Group*.
+. Enter a name for your new container group and select the credential previously created to associate it to the container group.

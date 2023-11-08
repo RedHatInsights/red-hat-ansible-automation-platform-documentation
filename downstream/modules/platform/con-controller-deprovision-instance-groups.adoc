@@ -1,0 +1,47 @@
+[id="controller-deprovision-instance-group"]
+
+= Deprovisioning instance groups
+
+Re-running the setup playbook does not deprovision instances since clusters do not currently distinguish between an instance that you took offline intentionally or due to failure. 
+Instead, shut down all services on the {ControllerName} instance and then run the deprovisioning tool from any other instance.
+
+.Procedure
+
+. Shut down the instance or stop the service with the following command:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+automation-controller-service stop
+----
++
+. Run the following deprovision command from another instance to remove it from the controller cluster registry:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage deprovision_instance --hostname=<name used in inventory file>
+----
++
+.Example
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage deprovision_instance --hostname=hostB
+----
+
+Deprovisioning instance groups in {ControllerName} does not automatically deprovision or remove instance groups, even though re-provisioning often causes these to be unused. They can still show up in API endpoints and stats monitoring. 
+You can remove these groups with the following command:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage unregister_queue --queuename=<name>
+----
+
+Removing an instance's membership from an instance group in the inventory file and re-running the setup playbook does not ensure that the instance is not added back to a group. To be sure that an instance is not added back to a group, remove it through the API and also remove it in your inventory file. 
+You can also stop defining instance groups in the inventory file. 
+You can manage instance group topology through the {ControllerName} UI. 
+For more information on managing instance groups in the UI, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-instance-groups[Managing Instance Groups] in the _{ControllerUG}_.
+
+[NOTE]
+====
+If you have isolated instance groups created in older versions of {ControllerName} (3.8.x and earlier) and want to migrate them to execution nodes to make them compatible for use with the automation mesh architecture, see link:https://docs.ansible.com/automation-controller/4.4/html/upgrade-migration-guide/upgrade_to_ees.html#migrate-iso-to-exe[Migrate isolated instances to execution nodes] in the _Ansible Automation Platform Upgrade and Migration Guide_.
+====

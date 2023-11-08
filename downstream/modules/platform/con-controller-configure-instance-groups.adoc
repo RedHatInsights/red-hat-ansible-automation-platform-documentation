@@ -1,0 +1,15 @@
+[id="controller-configure-instance-groups"]
+
+= Configure instance groups from the API
+
+You can create instance groups by POSTing to `/api/v2/instance_groups` as a system administrator.
+
+Once created, you can associate instances with an instance group using:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+HTTP POST /api/v2/instance_groups/x/instances/ {'id': y}`
+----
+
+An instance that is added to an instance group automatically reconfigures itself to listen on the group's work queue. 
+For more information, see the following section _Instance group policies_.

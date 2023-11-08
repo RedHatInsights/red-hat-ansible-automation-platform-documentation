@@ -1,0 +1,18 @@
+[id="controller-job-runtime-behavior"]
+
+= Job runtime behavior
+
+When you run a job associated with an instance group, note the following behaviors:
+
+* If you divide a cluster into separate instance groups, then the behavior is similar to the cluster as a whole. 
+If you assign two instances to a group then either one is as likely to receive a job as any other in the same group.
+* As {ControllerName} instances are brought online, it effectively expands the work capacity of the system. 
+If you place those instances into instance groups, then they also expand that group's capacity. 
+If an instance is performing work and it is a member of multiple groups, then capacity is reduced from all groups for which it is a member. 
+De-provisioning an instance removes capacity from the cluster wherever that instance was assigned. 
+For more information, see the xref:controller-deprovision-instance-group[Deprovision Instances] section for more detail.
+
+[NOTE]
+====
+Not all instances are required to be provisioned with an equal capacity.
+====
