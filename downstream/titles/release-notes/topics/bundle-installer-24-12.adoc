@@ -1,8 +1,8 @@
-// This is the release notes file for AAP 2.4 errata bundle dated August 10 2023.
+// This is the release notes file for AAP 2.4 bundle installer release 2.4-1.2 dated August 10, 2023
 
-= {PlatformNameShort} 2.4 - August 10, 2023
+= {PlatformNameShort} 2.4 - Bundle installer release 2.4-1.2
 
-link:https://access.redhat.com/errata/RHBA-2023:4621[Red Hat Errata Release]
+link:https://access.redhat.com/errata/RHBA-2023:4621[Red Hat Errata Advisory - Issued August 10, 2023]
 
 //Automation controller
 == {ControllerNameStart}
@@ -50,17 +50,6 @@ link:https://access.redhat.com/errata/RHBA-2023:4621[Red Hat Errata Release]
 * Fixed a bug where forms provided in the custom login information would render and run.
 
 * Fixed an issue where related items were not visible in some cases. For example, job template instance groups, organization galaxy credentials, and organization instance groups.
-
-//Automation hub
-== {HubNameStart}
-
-.New features and enhancements
-
-* automation-hub has been updated to 4.7.1-2.
-
-.Bug fixes
-
-* Fixed issue with using gpg key with passphrase for signing services.
 
 == Automation Platform Operator
 

@@ -1,15 +1,11 @@
-// This is the release notes file for AAP 2.4 errata bundle dated September 24 2023.
+// This is the release notes file for AAP 2.4 bundle installer release 2.4-2 dated September 25, 2023
 
-= {PlatformNameShort} 2.4 - September 25, 2023
+= {PlatformNameShort} 2.4 - Bundle installer release 2.4-2
 
-link:https://access.redhat.com/errata/RHBA-2023:5347[Red Hat Errata Release]
+link:https://access.redhat.com/errata/RHBA-2023:5347[Red Hat Errata Advisory - Issued September 25, 2023]
 
 //Ansible Automation Platform
 == {PlatformNameShort}
-
-.New features and enhancements
-
-* automation-controller has been updated to 4.4.2.
 
 .Bug fixes
 

@@ -25,18 +25,18 @@ include::topics/operator-240.adoc[leveloffset=+2]
 
 include::topics/docs-24.adoc[leveloffset=+2]
 
-include::topics/errata-24-oct-19.adoc[leveloffset=+2]
+include::topics/bundle-installer-24-23.adoc[leveloffset=+2]
 
-include::topics/errata-24-oct-17.adoc[leveloffset=+2]
+include::topics/bundle-installer-24-22.adoc[leveloffset=+2]
 
-include::topics/errata-24-oct-10.adoc[leveloffset=+2]
+include::topics/bundle-installer-24-21.adoc[leveloffset=+2]
 
-include::topics/errata-24-sep-24.adoc[leveloffset=+2]
+include::topics/bundle-installer-24-2.adoc[leveloffset=+2]
 
-include::topics/errata-24-sep-12.adoc[leveloffset=+2]
+include::topics/bundle-installer-24-14.adoc[leveloffset=+2]
 
-include::topics/errata-24-aug-28.adoc[leveloffset=+2]
+include::topics/bundle-installer-24-13.adoc[leveloffset=+2]
 
-include::topics/errata-24-aug-10.adoc[leveloffset=+2]
+include::topics/bundle-installer-24-12.adoc[leveloffset=+2]
 
-include::topics/errata-24-jul-26.adoc[leveloffset=+2]
+include::topics/bundle-installer-24-11.adoc[leveloffset=+2]
