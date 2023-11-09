@@ -1,0 +1,9 @@
+[id="controller-external-access"]
+
+=  External access
+
+{ControllerNameStart} is accessed via standard HTTP/HTTPS on standard ports, provided by Nginx. 
+A self-signed certificate or key is installed by default; you can provide a locally appropriate certificate and key. 
+SSL/TLS algorithm support is configured in the `/etc/nginx/nginx.conf` configuration file. 
+An "intermediate" profile is used by default, that you can configure. 
+You must reapply changes after each update.

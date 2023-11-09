@@ -24,14 +24,14 @@ include::platform/assembly-inventory-file-importing.adoc[leveloffset=+1]
 include::platform/assembly-multi-credential-assignment.adoc[leveloffset=+1]
 include::platform/assembly-controller-managment-jobs.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-clustering.adoc[leveloffset=+1]
-//8 Container and Instance Groups
+include::platform/assembly-ag-instance-and-container-groups.adoc[leveloffset=+1]
 include::platform/assembly-controller-instances.adoc[leveloffset=+1]
 include::platform/assembly-controller-topology-viewer.adoc[leveloffset=+1]
 include::platform/assembly-controller-log-files.adoc[leveloffset=+1]
 include::platform/assembly-controller-logging-aggregation.adoc[leveloffset=+1]
 include::platform/assembly-controller-metrics.adoc[leveloffset=+1]
 //14 Improving Controller Performance
-//15 Secret handling and connection security
+include::platform/assembly-ag-controller-secret-handling.adoc[leveloffset=+1]
 //16 Security Best Practices
 //17 The awx-manage Utility
 //18 Controller Configuration
