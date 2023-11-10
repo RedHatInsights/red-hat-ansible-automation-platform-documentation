@@ -1,0 +1,31 @@
+// This is the release notes file for AAP 2.4 bundle installer release 2.4-2.4 dated November 08, 2023
+
+= Bundle installer release 2.4-2.4 - November 08, 2023
+
+link:https://access.redhat.com/errata/RHBA-2023:6831[Red Hat Errata Advisory - Issued November 08, 2023]
+
+//Ansible Automation Platform
+== {PlatformNameShort}
+
+.New features and enhancements
+
+* python3-urllib3/python39-urllib3 has been updated to 1.26.18.
+
+.Security fixes
+
+* python3-urllib3/python39-urllib3: Cookie request header is not stripped during cross-origin redirects (CVE-2023-43804).
+
+//Automation controller
+== {ControllerNameStart}
+
+.New features and enhancements
+
+* automation-controller has been updated to 4.4.7.
+
+.Security fixes
+
+* automation-controller: Django: Denial-of-service possibility in django.utils.text.Truncator (CVE-2023-43665).
+
+.Bug fixes
+
+* Customers using the `infra.controller_configuration` collection (which uses `ansible.controller` collection) to update their {PlatformNameShort} environment no longer receive an HTTP 499 response.

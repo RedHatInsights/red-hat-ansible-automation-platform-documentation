@@ -25,6 +25,8 @@ include::topics/operator-240.adoc[leveloffset=+2]
 
 include::topics/docs-24.adoc[leveloffset=+2]
 
+include::topics/bundle-installer-24-24.adoc[leveloffset=+2]
+
 include::topics/bundle-installer-24-23.adoc[leveloffset=+2]
 
 include::topics/bundle-installer-24-22.adoc[leveloffset=+2]
