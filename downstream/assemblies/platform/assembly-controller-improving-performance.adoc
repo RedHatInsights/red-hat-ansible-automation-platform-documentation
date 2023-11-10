@@ -1,0 +1,29 @@
+[id="assembly-controller-improving-performance"]
+
+= Improving Controller Performance
+
+This section aims to provide the guidelines for tuning for performance and scalability. 
+Although care has been taken to make the content applicable to a wide set of use cases, if you have a use case not covered here, you can contact Red Hat Support.
+
+include::platform/ref-controller-performance-improvements.adoc[leveloffset=+1]
+include::platform/con-controller-vertical-scaling-improvement.adoc[leveloffset=+2]
+include::platform/con-controller-job-scheduling-improvements.adoc[leveloffset=+2]
+include::platform/con-controller-database-use-improvements.adoc[leveloffset=+2]
+include::platform/con-controller-stability-improvements.adoc[leveloffset=+2]
+include::platform/con-controller-metrics-enhancements.adoc[leveloffset=+2]
+include::platform/con-controller-ldap-enhancements.adoc[leveloffset=+2]
+include::platform/ref-controller-capacity-planning.adoc[leveloffset=+1]
+include::platform/ref-controller-capacity-planning-exercise.adoc[leveloffset=+2]
+include::platform/con-controller-node-size-choice.adoc[leveloffset=+2]
+include::platform/con-controller-control-nodes.adoc[leveloffset=+3]
+include::platform/con-controller-execution-nodes.adoc[leveloffset=+3]
+include::platform/con-controller-hop-nodes.adoc[leveloffset=+3]
+include::platform/con-controller-hybrid-nodes.adoc[leveloffset=+3]
+include::platform/con-controller-capacity-planning-operator.adoc[leveloffset=+2]
+include::platform/con-controller-monitor-controller.adoc[leveloffset=+1]
+include::platform/ref-controller-database-settings.adoc[leveloffset=+1]
+include::platform/ref-controller-controller-settings.adoc[leveloffset=+1]
+include::platform/ref-controller-live-events.adoc[leveloffset=+2]
+include::platform/con-controller-job-events-processing.adoc[leveloffset=+2]
+include::platform/con-controller-task-manager-settings.adoc[leveloffset=+2]
+include::platform/ref-controller-internal-cluster-routing.adoc[leveloffset=+2]

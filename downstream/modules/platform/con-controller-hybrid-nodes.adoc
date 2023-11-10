@@ -1,0 +1,5 @@
+[id="con-controller-hybrid-nodes"]
+
+= Hybrid nodes
+
+Hybrid nodes perform both execution and control tasks, so vertically scaling these nodes both increases the number of jobs they can run, and how many events they can process.

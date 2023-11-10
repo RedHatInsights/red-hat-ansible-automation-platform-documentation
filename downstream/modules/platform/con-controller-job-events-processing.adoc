@@ -1,0 +1,13 @@
+[id="con-controller-job-events-processing"]
+
+= Job Event Processing (Callback Receiver) Settings
+
+The callback receiver is a process with multiple workers. 
+The number of workers spawned is determined by the `JOB_EVENT_WORKERS` parameter. 
+These workers pull events off of a queue in Redis where unprocessed events are placed by a job's respective dispatch workers as results become available. 
+As mentioned in the xref:ref-controller-performance-improvements[Performance improvements], this number of workers increases based on the number of CPUs detected on the control instance. 
+Previously, this setting was hardcoded to four workers, and administrators had to set this file based setting through a custom settings file on each control node.
+
+This setting is still available for administrators to modify, with the knowledge that that values greater than one worker per CPU or less than four workers is not recommended. 
+Greater values make more workers available to clear the Redis queue as events stream to {ControllerName}, but might compete with other processes for CPU seconds. 
+Lower values of workers might compete less for CPU on a node that also has had its number of UWSGI workers increased significantly, to prioritize serving web requests.

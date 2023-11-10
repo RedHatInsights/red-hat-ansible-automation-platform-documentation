@@ -1,0 +1,28 @@
+[id="con-controller-database-use-improvements"]
+
+= Database resource use improvements
+
+From {ControllerName} v4.3, the use of database connections by running jobs has dramatically decreased, which removes a previous limit to concurrent
+running jobs, thus reducing memory consumption by PostgreSQL.
+
+Each job in {ControllerName} has a _worker_ process, called the dispatch worker, on the control node that started the process.
+
+The dispatch worker completes the following actions:
+
+* Submits the work to the execution node through the Receptor.
+* Consumes the output of the job. 
+* Puts the job in the Redis queue for the callback receiver to serialize the output and writes it to the database as job events.
+
+The dispatch worker is also responsible for noticing if the job has been canceled by the user to then cancel the receptor work unit. 
+In the past, the worker maintained multiple open database connections per job. 
+
+This caused two main problems:
+
+* PostgreSQL is configured with a maximum number of connections at startup, which the installer sets to 1024 by default. 
+However, given that the previous version of {ControllerName} had up to three database connections open per job, this means that the application began to experience errors attempting to open new database connections (for API calls or other essential processes) when there were more than 350 jobs running concurrently, unless users increased the maximum number of connections.
+* Even idle connections consume memory. 
+For example, in experiments done by _{AWS}_ (AWS), idle connections to PostgreSQL were shown to consume at least 1.5 MB of memory. 
+So if an {ControllerName} administrator wanted to support running 2,000 concurrent jobs, this might result in 9GB of memory consumed on for idle connections.
+
+From {Controllername} v4.3, the dispatch process closes database connections after the job has started. 
+This means that the number of concurrent running jobs is no longer limited by the maximum number of database connections, and the risk of over-consuming memory on PostgreSQL is greatly reduced.

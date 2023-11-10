@@ -1,0 +1,9 @@
+[id="con-controller-stability-improvements"]
+
+= Stability improvements
+
+Notable stability improvements are:
+
+*Improvements to job reaping*:: Fixed root cause of jobs in waiting being reaped before the job ever started, which often occurred when running near 100% capacity on control and hybrid nodes.
+*Improvements in stability for Operator-based deployments*:: Resolved issues with multiple control pod deployments erroneously marking each
+other as offline. Now scaling operator-based deployments horizontally is more stable.

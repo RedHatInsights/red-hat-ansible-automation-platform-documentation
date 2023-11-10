@@ -1,0 +1,8 @@
+[id="con-controller-node-size-choice"]
+
+= Factors influencing node size choice
+
+The previous exercise assumed that the cluster administrator already had a preferred node size, which happened to be the minimum
+recommended node size for {ControllerName}. 
+Increasing the RAM and CPU on nodes increases the calculated capacity of the instances. 
+For each instance type, there are different considerations as to why you may want to vertically scale the node.

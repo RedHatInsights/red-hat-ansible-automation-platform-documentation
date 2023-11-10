@@ -1,0 +1,67 @@
+[id="ref-controller-database-settings"]
+
+= Database Settings
+
+Configure the following settings in the database to improve performance:
+
+* *Autovacuuming*. Setting this PostgreSQL setting to `true` is a good practice. 
+However, autovacuuming does not occur if there is never any idle time on the database. 
+If you see that autovacuuming is not sufficiently cleaning up space on the database disk, then scheduling specific vacuum tasks during specific maintenance windows can provide a solution.
+* *GUC* parameters. 
+The following are _Grand Unified Configuration_ (GUC) parameters recommended for memory management in PostgreSQL, which are helpful for improving the performance of the database server. 
+Recommended settings for each parameter are also provided:
+
+* `shared_buffers` (integer)
+* `work_mem` (integer)
+* `maintenance_work_mem` (integer)
+
+These parameters are found in the `postgresql.conf` file, inside the `$PDATA` directory, which manages the configurations of the database server.
+
+The 'shared_buffers' parameter determines how much memory is dedicated to the server for caching data. 
+Set in `postgresql.conf`, the default value for this parameter is:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+#sharedPostgres_buffers = 128MB
+----
+
+Set the value at 15%-25% of the machine's total RAM. 
+For example: if your machine's RAM size is 32 GB, then the recommended value for `shared_buffers` is 8 GB. 
+Note that the database server needs to be restarted after this change.
+
+The `work_mem`` parameter provides the amount of memory to be used by internal sort operations and hash tables before writing to temporary disk files. Sort operations are used for order by distinct, and merge join operations. 
+Hash tables are used in hash joins and hash based aggregation. 
+Set in `postgresql.conf`, the default value for this parameter is:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+#work_mem = 4MB
+----
+
+Setting the correct value of `work_mem` parameter can result in less disk-swapping, and therefore far quicker queries.
+
+Use the following formula to calculate the optimal `work_mem` value for the database server:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+Total RAM * 0.25 / max_connections 
+----
+
+The `max_connections` parameter is one of the GUC parameters to specify the maximum number of concurrent connections to the database server.
+
+Note that setting a large `work_mem` can cause issues such as the PostgreSQL server going out of memory (OOM) if there are too many open connections to the database.
+
+The `maintenance_work_mem` parameter basically provides the maximum amount of memory to be used by maintenance operations like vacuum, create index, and alter table add foreign key operations. 
+Set in `postgresql.conf`, the default value for this parameter is:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+#maintenance_work_mem = 64MB
+----
+
+You must set this value higher than `work_mem` to improve performance for vacuuming. In general, it should calculated as:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+Total RAM * 0.05
+----

@@ -1,0 +1,33 @@
+[id="ref-controller-capacity-planning"]
+
+= Capacity Planning in virtual machine deployments
+
+There are two types of capacity that {ControllerName} administrators should plan for when designing their deployments.
+
+* Control Capacity:
+
+** In traditional VM deployments, “control” and “hybrid” type nodes have control capacity.
+** Every job is assigned a control node. 
+This control node is responsible for starting the work and processing the output.
+** Being assigned as a control node for a job consumes a constant amount of capacity on a control node (see `AWX_CONTROL_NODE_TASK_IMPACT`). 
+The default value is 1. 
+Therefore, a control node with a capacity of 100 can control a maximum of 100 jobs.
+
+* Execution Capacity
+
+** In traditional VM deployments, “execution” and “hybrid” type nodes have execution capacity.
+** Jobs that are assigned a VM execution node or hybrid node consume the number of capacity units that are equal to the “forks” set on the job template or the number of hosts in the inventory, whichever is less, plus one additional capacity unit to account for the main ansible process. 
+For example, a job template with the default forks value of five acting on an inventory with 50 hosts will consume six capacity units from
+the execution node it is assigned to.
+** Jobs that are assigned to a container group do not consume capacity.
+There is no concept of the maximum capacity of a container group at this time.
+
+Assuming default forks per job (five forks) and the default `AWX_CONTROL_NODE_TASK_IMPACT` (one fork), the maximum recommended ratio of control capacity to execution capacity is 1:5 in traditional VM deployments. 
+This ensures that there is enough control capacity to run jobs on all the execution capacity available, and process the output. 
+If there were less control capacity in relation to the execution capacity, it would not be able to launch enough jobs to use the execution capacity.
+
+There are cases where you may want to modify this ratio closer to 1:1. 
+
+If a job produces a high level of job events, reducing the amount of execution capacity in relation to the control capacity helps relieve pressure on the control nodes to process that output. 
+
+See xref:ref-controller-capacity-planning-exercise[Example capacity planning exercise] for a scenario described in more detail.

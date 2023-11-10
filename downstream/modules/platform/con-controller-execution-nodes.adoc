@@ -1,0 +1,19 @@
+[id="con-controller-execution-nodes"]
+
+= Execution Nodes
+
+Vertical scaling an execution node provides more forks for job execution. 
+As mentioned in the xref:ref-controller-capacity-planning-exercise[Example capacity planning exercise], a host with 16 GB of memory is, by default, assigned the capacity to run 137 “forks”, which at the default setting of five forks per job, can run around 22 jobs concurrently. 
+
+In general, scaling CPU alongside memory in the same proportion is recommended. 
+Like control and hybrid nodes, there is a “capacity adjustment” on each execution instance that can be used to align use with the estimation of capacity consumption made by {ControllerName}. 
+By default, all nodes are set to the top range of the capacity {ControllerName} estimates the node to have. 
+If monitoring data reveals the node to be over-used, decreasing the capacity adjustment can help bring this in line with actual use.
+
+Vertically scaling execution increases the number of concurrent jobs an instance can run. 
+
+One disadvantage is that concurrently running jobs on the same execution node, while isolated from each other, and unable to access the other's data, can impact the other's performance. For example, if a particular job is very resource-consumptive and overwhelms the node it can degrade the performance of the entire node. 
+
+Horizontally scaling the execution plane, for example, by deploying more execution nodes, can provide additional isolation of workloads, and enable administrators to assign different instances to different instance groups, which can then be assigned to Organizations, Inventories, or Job Templates. 
+This might enable an instance group that can only be used for running jobs against a “production” Inventory. 
+In this way, jobs for development do not end up eating up capacity and causing higher priority jobs to queue waiting for capacity.

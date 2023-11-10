@@ -1,0 +1,5 @@
+[id="con-controller-capacity-planning-operator"]
+
+= Capacity planning for Operator based Deployments
+
+For more information on Operator based deployments, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_performance_considerations_for_operator_based_installations/index[{PlatformName} Performance Considerations for Operator Based Installations], which includes pertinent adjustments for that specific deployment.
