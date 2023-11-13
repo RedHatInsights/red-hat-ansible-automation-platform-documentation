@@ -5,7 +5,7 @@
 From {ControllerName} v4.3, the use of database connections by running jobs has dramatically decreased, which removes a previous limit to concurrent
 running jobs, thus reducing memory consumption by PostgreSQL.
 
-Each job in {ControllerName} has a _worker_ process, called the dispatch worker, on the control node that started the process.
+Each job in {ControllerName} has a _worker_ process, called the _dispatch worker_, on the control node that started the process.
 
 The dispatch worker completes the following actions:
 

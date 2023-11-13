@@ -2,7 +2,7 @@
 
 = Task Manager (Job Scheduling) Settings
 
-The task manager is a periodic task that collects tasks to be scheduled and determines what instances have capacity and are eligible to run them. 
+The _task manager_ is a periodic task that collects tasks to be scheduled and determines what instances have capacity and are eligible to run them. 
 Its job is to find and assign the control and execution instances, update the job's status to waiting, and send the message to the control node through `pg_notify` for the dispatcher to pick up the task and start running it.
 
 //Avoid talking about what used to happen.

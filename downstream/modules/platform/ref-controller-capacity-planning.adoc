@@ -2,7 +2,7 @@
 
 = Capacity Planning in virtual machine deployments
 
-There are two types of capacity that {ControllerName} administrators should plan for when designing their deployments.
+{ControllerNameStart} administrators must plan for two types of capacity when designing their deployments.
 
 * Control Capacity:
 
@@ -22,7 +22,7 @@ the execution node it is assigned to.
 ** Jobs that are assigned to a container group do not consume capacity.
 There is no concept of the maximum capacity of a container group at this time.
 
-Assuming default forks per job (five forks) and the default `AWX_CONTROL_NODE_TASK_IMPACT` (one fork), the maximum recommended ratio of control capacity to execution capacity is 1:5 in traditional VM deployments. 
+Assuming default five forks per job (the default) and the default `AWX_CONTROL_NODE_TASK_IMPACT` (one fork), the maximum recommended ratio of control capacity to execution capacity is 1:5 in traditional VM deployments. 
 This ensures that there is enough control capacity to run jobs on all the execution capacity available, and process the output. 
 If there were less control capacity in relation to the execution capacity, it would not be able to launch enough jobs to use the execution capacity.
 

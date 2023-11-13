@@ -17,7 +17,7 @@ Recommended settings for each parameter are also provided:
 
 These parameters are found in the `postgresql.conf` file, inside the `$PDATA` directory, which manages the configurations of the database server.
 
-The 'shared_buffers' parameter determines how much memory is dedicated to the server for caching data. 
+The `shared_buffers` parameter determines how much memory is dedicated to the server for caching data. 
 Set in `postgresql.conf`, the default value for this parameter is:
 
 [literal, options="nowrap" subs="+attributes"]
@@ -29,7 +29,8 @@ Set the value at 15%-25% of the machine's total RAM.
 For example: if your machine's RAM size is 32 GB, then the recommended value for `shared_buffers` is 8 GB. 
 Note that the database server needs to be restarted after this change.
 
-The `work_mem`` parameter provides the amount of memory to be used by internal sort operations and hash tables before writing to temporary disk files. Sort operations are used for order by distinct, and merge join operations. 
+The `work_mem` parameter provides the amount of memory to be used by internal sort operations and hash tables before writing to temporary disk files. 
+Sort operations are used for order by distinct, and merge join operations. 
 Hash tables are used in hash joins and hash based aggregation. 
 Set in `postgresql.conf`, the default value for this parameter is:
 

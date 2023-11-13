@@ -3,7 +3,7 @@
 = Monitoring {ControllerName}
 
 It is best practice to monitor your hosts both from a system level as well as at the application level. 
-System level monitoring would include information about disk I/O, RAM utilization, CPU utilization, and network traffic.
+System level monitoring includes information about disk I/O, RAM use, CPU use, and network traffic.
 
 For application level monitoring, {ControllerName} provides Prometheus-style metrics on an API endpoint `/api/v2/metrics`. 
 This can be used to monitor aggregate data about job status and subsystem performance, such as for job output processing or job scheduling.
