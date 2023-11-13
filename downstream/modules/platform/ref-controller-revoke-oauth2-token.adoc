@@ -1,0 +1,36 @@
+[id="ref-controller-revoke-oauth2-token]
+
+= `revoke_oauth2_tokens`
+
+Use this command to revoke OAuth2 tokens (both application tokens and personal access tokens (PAT)). 
+It revokes all application tokens (but not their associated refresh tokens), and revokes all
+personal access tokens. However, you can also specify a user for whom to
+revoke all tokens.
+
+To revoke all existing OAuth2 tokens use the following command:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ awx-manage revoke_oauth2_tokens
+----
+
+To revoke all OAuth2 tokens and their refresh tokens use the following command:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ awx-manage revoke_oauth2_tokens --revoke_refresh
+----
+
+To revoke all OAuth2 tokens for the user with `id=example_user` (specify the username for `example_user` below):
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ awx-manage revoke_oauth2_tokens --user example_user
+----
+
+To revoke all OAuth2 tokens and refresh token for the user with `id=example_user`:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ awx-manage revoke_oauth2_tokens --user example_user --revoke_refresh
+----

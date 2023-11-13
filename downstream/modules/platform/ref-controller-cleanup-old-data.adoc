@@ -1,0 +1,20 @@
+[id="ref-controller-cleanup-old-data"]
+
+= Cleanup of old data
+
+`awx-manage` has a variety of commands used to clean old data from {ControllerName}. 
+{ControllerNameStart} administrators can use the controller Management Jobs interface for access or use the command line.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage cleanup_jobs [--help]
+---
+
+This permanently deletes the job details and job output for jobs older than a specified number of days.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage cleanup_activitystream [--help]
+----
+
+This permanently deletes any link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/assembly-controller-user-interface#proc-controller-activity-stream[Activity stream] data older than a specific number of days.

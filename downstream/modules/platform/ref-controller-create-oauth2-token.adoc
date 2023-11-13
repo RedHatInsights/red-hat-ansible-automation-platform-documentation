@@ -1,0 +1,15 @@
+[id="ref-controller-create-oauth2-token"]
+
+= `create_oauth2_token`
+
+Use this command to create OAuth2 tokens (specify the username for `example_user` below):
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ awx-manage create_oauth2_token --user example_user
+
+New OAuth2 token for example_user: j89ia8OO79te6IAZ97L7E8bMgXCON2
+----
+
+Ensure that you provide a valid user when creating tokens. 
+Otherwise, an error message that you attempted to issue the command without specifying a user, or supplied a username that does not exist, is displayed.

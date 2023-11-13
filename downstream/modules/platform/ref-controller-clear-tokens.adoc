@@ -1,0 +1,7 @@
+[id="ref-controller-clear-tokens"]
+
+= `cleartokens`
+
+Use this command to clear tokens which have already been revoked. 
+
+For more information, see link:https://django-oauth-toolkit.readthedocs.io/en/latest/management_commands.html[Django's Oauth Toolkit documentation on cleartokens].

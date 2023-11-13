@@ -1,0 +1,9 @@
+[id="ref-controller-clear-sessions"]
+
+= `clearsessions`
+
+Use this command to delete all sessions that have expired. 
+
+For more information, see link:https://docs.djangoproject.com/en/4.2/topics/http/sessions/#clearing-the-session-store[Django's Oauth Toolkit documentation on clearing the session store].
+
+For more information on OAuth2 token management in the UI, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/assembly-controller-applicationsassembly-controller-applications[Applications] section of the {ControllerUG}.

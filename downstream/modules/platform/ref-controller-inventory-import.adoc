@@ -1,0 +1,41 @@
+[id="ref-controller-inventory-import"]
+
+= Inventory Import
+
+`awx-manage` is a mechanism by which an {ControllerName} administrator can import inventory directly into {ControllerName}, for those who cannot use Custom Inventory Scripts.
+
+To use `awx-manage` properly, you must first create an inventory in {ControllerName} to use as the destination for the import.
+
+For help with `awx-manage`, run the following command: 
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage inventory_import [--help]
+----
+
+The `inventory_import` command synchronizes an {ControllerName} inventory object with a text-based inventory file, dynamic inventory script, or a directory of one or more, as supported by core Ansible.
+
+When running this command, specify either an `--inventory-id` or `--inventory-name`, and the path to the Ansible inventory source (`--source`).
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage inventory_import --source=/ansible/inventory/ --inventory-id=1 
+----
+
+By default, inventory data already stored in {ControllerName} blends with data from the external source. 
+
+To use only the external data, specify `--overwrite`. 
+
+To specify that any existing hosts get variable data exclusively from the `--source`, specify `--overwrite_vars`. 
+
+The default behavior adds any new variables from the external source, overwriting keys that already exist, but preserving any variables that were not sourced from the external data source.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage inventory_import --source=/ansible/inventory/ --inventory-id=1 --overwrite
+----
+
+[NOTE]
+====
+Edits and additions to Inventory host variables persist beyond an inventory synchronization as long as `--overwrite_vars` is not set.
+====

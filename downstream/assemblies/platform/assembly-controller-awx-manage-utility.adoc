@@ -1,0 +1,18 @@
+[id="assembly-controller-awx-manage-utility"]
+
+= The _awx-manage_ Utility
+
+The `awx-manage` utility is used to access detailed internal information of {ControllerName}.
+Commands for `awx-manage` should run as the `awx` or `root` user.
+
+include::platform/ref-controller-inventory-import.adoc[leveloffset=+1]
+include::platform/ref-controller-cleanup-old-data.adoc[leveloffset=+1]
+include::platform/ref-controller-cluster-management.adoc[leveloffset=+1]
+include::platform/ref-controller-token-session-management.adoc[leveloffset=+1]
+include::platform/ref-controller-create-oauth2-token.adoc[leveloffset=+2]
+include::platform/ref-controller-revoke-oauth2-token.adoc[leveloffset=+2]
+include::platform/ref-controller-clear-tokens.adoc[leveloffset=+2]
+include::platform/ref-controller-expire-sessions.adoc[leveloffset=+2]
+include::platform/ref-controller-clear-sessions.adoc[leveloffset=+2]
+include::platform/ref-controller-analytics-gathering.adoc[leveloffset=+1]
+

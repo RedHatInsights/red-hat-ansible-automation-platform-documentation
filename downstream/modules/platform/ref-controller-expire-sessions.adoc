@@ -1,0 +1,20 @@
+[id="ref-controller-expire-sessions"]
+
+= `expire_sessions`
+
+Use this command to terminate all sessions or all sessions for a specific user. 
+Consider using this command when a user changes role in an organization, is removed from assorted groups in LDAP/AD, or the administrator wants to ensure the user can no longer execute jobs due to membership in these groups.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ awx-manage expire_sessions
+----
+
+This command terminates all sessions by default. 
+The users associated with those sessions are logged out. 
+To only expire the sessions of a specific user, you can pass their username using the `--user` flag (replace `example_user` with the username in the following example):
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ awx-manage expire_sessions --user example_user
+----

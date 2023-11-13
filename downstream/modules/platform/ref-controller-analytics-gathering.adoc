@@ -1,0 +1,22 @@
+[id="ref-controller-analytics-gathering"]
+
+= Analytics gathering
+
+Use this command to gather analytics on-demand outside of the predefined window (the default is 4 hours):
+
+[literal, options="nowrap" subs="+attributes"]
+----
+$ awx-manage gather_analytics --ship
+----
+
+For customers with disconnected environments who want to collect usage information about unique hosts automated across a time period, use this
+command:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage host_metric --since YYYY-MM-DD --until YYYY-MM-DD --json
+----
+
+The parameters `--since` and `--until` specify date ranges and are optional, but one of them has to be present. 
+
+The `--json` flag specifies the output format and is optional.
