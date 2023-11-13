@@ -1,0 +1,6 @@
+[id="controller-minimize-system-access"]
+
+= Minimize local system access
+
+When you use {ControllerName} with best practices, it does not require local user access except for administrative purposes. 
+Non-administrator users do not have access to the {ControllerName} system.

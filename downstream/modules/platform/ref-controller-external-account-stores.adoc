@@ -1,0 +1,7 @@
+[id="controller-external-account-stores"]
+
+= External account stores
+
+Maintaining a full set of users in {ControllerName} can be a time-consuming task in a large organization. 
+{ControllerNameStart} supports connecting to external account sources by LDAP, SAML 2.0, and certain OAuth providers. 
+Using this eliminates a source of error when working with permissions.

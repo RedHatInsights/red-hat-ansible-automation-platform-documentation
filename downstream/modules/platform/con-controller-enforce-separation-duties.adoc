@@ -1,0 +1,7 @@
+[id="controller-enforce-separation-duties"]
+
+= Enforce separation of duties
+
+Different pieces of automation might require access to a system at different levels. 
+For example, you can have low-level system automation that applies patches and performs security baseline checking, while a higher-level piece of automation deploys applications. 
+By using different keys or credentials for each piece of automation, the effect of any one key vulnerability is minimized, while also enabling baseline auditing.

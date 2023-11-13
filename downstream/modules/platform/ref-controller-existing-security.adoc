@@ -1,0 +1,10 @@
+[id="controller-existing-security"]
+
+= Existing security functionality
+
+Do not disable SELinux or {ControllerName}'s existing multi-tenant containment. 
+Use {ControllerName}'s role-based access control (RBAC) to delegate the minimum level of privileges required to run automation. 
+Use teams in {ControllerName} to assign permissions to groups of users rather than to users individually. 
+
+.Additional resources
+For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/userguide/security.html#rbac-ug[Role-Based Access Controls] in the _{ControllerUG}_.

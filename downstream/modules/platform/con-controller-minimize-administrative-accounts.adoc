@@ -1,0 +1,13 @@
+[id="controller-minimize-administrative-accounts"]
+
+= Minimize administrative accounts
+
+Minimizing the access to system administrative accounts is crucial for maintaining a secure system. 
+A system administrator or root user can access, edit, and disrupt any system application. 
+Limit the number of people or accounts with root access, where possible. 
+Do not give out _sudo_ to _root_ or _awx_ (the {ControllerName} user) to untrusted users. 
+Note that when restricting administrative access through mechanisms like _sudo_, restricting to a certain set of commands can still give a wide range of access. 
+Any command that enables execution of a shell or arbitrary shell commands, or any command that can change files on the system, is equal to full root access.
+
+With {ControllerName}, any {ControllerName} "system administrator" or "superuser" account can edit, change, and update an inventory or automation definition in {ControllerName}. 
+Restrict this to the minimum set of users possible for low-level {ControllerName} configuration and disaster recovery only.

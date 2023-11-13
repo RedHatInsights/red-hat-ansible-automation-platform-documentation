@@ -1,0 +1,11 @@
+[id="controller-available-resources"]
+
+= Available resources
+
+Several resources exist in {ControllerName} and elsewhere to ensure a secure platform. 
+Consider using the following functionalities:
+
+* xref:controller-audit-functionality[Audit and logging functionality]
+* xref:controller-existing-security[Existing security functionality]
+* xref:controller-external-account-stores[External account stores]
+* xref:controller-django-password-policies[Django password policies]

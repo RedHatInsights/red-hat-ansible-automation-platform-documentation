@@ -32,7 +32,7 @@ include::platform/assembly-controller-logging-aggregation.adoc[leveloffset=+1]
 include::platform/assembly-controller-metrics.adoc[leveloffset=+1]
 include::platform/assembly-controller-improving-performance.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-secret-handling.adoc[leveloffset=+1]
-//16 Security Best Practices
+include::platform/assembly-ag-controller-security-best-practices.adoc[leveloffset=+1]
 //17 The awx-manage Utility
 //18 Controller Configuration
 //19 Isolation functionality and variables

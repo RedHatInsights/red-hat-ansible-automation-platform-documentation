@@ -1,0 +1,29 @@
+[id="controller-understand-architecture"]
+
+= Understand the architecture of {PlatformNameShort} and {ControllerName}
+
+{PlatformNameShort} and {ControllerName} comprise a general-purpose, declarative automation platform. 
+That means that once an Ansible playbook is launched (by {ControllerName}, or directly on the command line), the playbook, inventory, and credentials provided to Ansible are considered to be the source of truth. 
+If you want policies around external verification of specific playbook content, job definition, or inventory contents, you must complete these processes before the automation is launched, either by the {ControllerName} web UI, or the {ControllerName} API.
+
+The use of source control, branching, and mandatory code review is best practice for Ansible automation. 
+There are tools that can help create process flow around using source control in this manner.
+
+At a higher level, tools exist that enable creation of approvals and policy-based actions around arbitrary workflows, including automation. 
+These tools can then use Ansible through the {ControllerName}'s API to perform automation.
+
+You must use a secure default administration password at the time of {ControllerName} installation.
+For more information, see [ADD XREF]Changing the Controller Admin Password.
+
+{ControllerNameStart} exposes services on certain well-known ports, such as port 80 for HTTP traffic and port 443 for HTTPS traffic. 
+Do not expose {ControllerName} on the open internet, which reduces the threat surface of your installation.
+
+== Granting access
+
+Granting access to certain parts of the system exposes security risks. 
+Apply the following practices to help secure access:
+
+* xref:controller-minimize-administrative-accounts[Minimize administrative accounts]
+* xref:controller-minimize-system-access[Minimize local system access]
+* xref:controller-remove-access-credentials[Remove access to credentials from users]
+* xref:controller-enforce-separation-duties[Enforce separation of duties]

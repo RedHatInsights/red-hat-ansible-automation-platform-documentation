@@ -1,0 +1,23 @@
+[id="controller-security-best-practices"]
+
+= Security best practices
+
+Deploy {ControllerName} to automate typical environments securely.
+However, managing certain operating system environments, automation, and automation platforms, can require additional best practices to ensure security.
+
+To secure {RHEL}  start with the following release-appropriate security guide:
+
+* For Red Hat Enterprise Linux 8, see link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/index[Security hardening].
+
+* For Red Hat Enterprise Linux 9, see link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/security_hardening[Security hardening].
+
+include::platform/con-controller-understand-architecture.adoc[leveloffset=+1]
+include::platform/con-controller-minimize-administrative-accounts.adoc[leveloffset=+2]
+include::platform/con-controller-minimize-system-access.adoc[leveloffset=+2]
+include::platform/con-controller-remove-access-credentials.adoc[leveloffset=+2]
+include::platform/con-controller-enforce-separation-duties.adoc[leveloffset=+2]
+include::platform/ref-controller-available-resources.adoc[leveloffset=+1]
+include::platform/ref-controller-audit-functionality.adoc[leveloffset=+2]
+include::platform/ref-controller-existing-security.adoc[leveloffset=+2]
+include::platform/ref-controller-external-account-stores.adoc[leveloffset=+2]
+include::platform/ref-controller-django-password-policies.adoc[leveloffset=+2]
