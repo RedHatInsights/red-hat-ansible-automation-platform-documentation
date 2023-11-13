@@ -23,6 +23,11 @@ These groups must be prefixed with `instance_group_`.
 Instances are required to be in the `automationcontroller` or `execution_nodes` group alongside other `instance_group_` groups. 
 In a clustered setup, at least one instance must be present in the `automationcontroller` group, which appears as `controlplane` in the API instance groups. 
 For more information and example scenarios, see xref:controller-group-policies-automationcontroller[Group policies for `automationcontroller`].
+
+* You cannot modify the `controlplane` instance group, and attempting to do so results in a permission denied error for any user. 
++
+Therefore, the *Disassociate* option is not available in the *Instances* tab of `controlplane`.
++
 * A `default` API instance group is automatically created with all nodes capable of running jobs. 
 This is like any other instance group but if a specific instance group is not associated with a specific resource, then the job execution always falls back to the default instance group. 
 The default instance group always exists, and you cannot delete or rename it.

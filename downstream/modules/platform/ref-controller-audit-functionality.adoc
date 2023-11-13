@@ -12,4 +12,4 @@ You must configure {ControllerName} to use standard IDs or logging and auditing 
 {ControllerName} includes built-in logging integrations such as Elastic Stack, Splunk, Sumologic, and Loggly. 
 
 .Additional resources
-For more information, see xref:controller-logging-aggregation[Logging and Aggregation].
+For more information, see xref:assembly-controller-logging-aggregation[Logging and Aggregation].
