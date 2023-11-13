@@ -1,0 +1,7 @@
+[preface]
+:_module-type: CONCEPT
+[id="providing-feedback"]
+= Providing feedback on Red Hat documentation
+
+If you have a suggestion to improve this documentation, or find an error, please contact technical support at link:https://access.redhat.com[https://access.redhat.com] to create an issue on the {PlatformNameShort} Jira project using the *Product Docs* component.
+
