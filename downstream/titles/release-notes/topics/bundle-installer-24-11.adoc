@@ -25,13 +25,3 @@ link:https://access.redhat.com/errata/RHBA-2023:4288[Red Hat Errata Advisory - I
 .Bug fixes
 
 * Fixed issue using gpg key with passphrase for signing services.
-
-== Automation Platform Operator
-
-.Bug fixes
-
-* Resolved an issue where the Hub Operator Ansible signing key was not mounted in the hub worker container.
-
-* Updated the `ansible.eda` collection to 1.4.2 in `de-supported` container image.
-
-* Updated `automation-hub` 4.7.1-2 to add the pinentry dependency for signing collections with a passphrase.

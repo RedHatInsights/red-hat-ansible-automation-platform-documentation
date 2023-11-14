@@ -51,16 +51,6 @@ link:https://access.redhat.com/errata/RHBA-2023:4621[Red Hat Errata Advisory - I
 
 * Fixed an issue where related items were not visible in some cases. For example, job template instance groups, organization galaxy credentials, and organization instance groups.
 
-== Automation Platform Operator
-
-.New features and enhancements
-
-* automation-controller 4.4.1 RPM updates.
-
-* Added support for scaling {ControllerName} down to replicas 0 for maintenance.
-
-* Added the ability to provision Mesh and Execution nodes in limited network connectivity environments.
-
 == Creator Tools
 
 .New features and enhancements
