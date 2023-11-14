@@ -4,9 +4,9 @@
 
 {ControllerNameStart} supports the following commands for OAuth2 token management:
 
-* create_oauth2_token
-* revoke_oauth2_tokens
-* cleartokens
-* expire_sessions
-* clearsessions
+* xref:ref-controller-create-oauth2-token[`create_oauth2_token`]
+* xref:ref-controller-revoke-oauth2-token[`revoke_oauth2_tokens`]
+* xref:ref-controller-clear-sessions[`cleartokens`]
+* xref:ref-controller-expire-sessions[`expire_sessions`]
+* xref:ref-controller-clear-sessions[`clearsessions`]
 

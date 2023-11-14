@@ -1,4 +1,4 @@
-[id="ref-controller-revoke-oauth2-token]
+[id="ref-controller-revoke-oauth2-token"]
 
 = `revoke_oauth2_tokens`
 

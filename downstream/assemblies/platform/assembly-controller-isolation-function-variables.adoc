@@ -1,0 +1,34 @@
+[id="assembly-controller-isolation-function-variables"]
+
+= Isolation functionality and variables
+
+{ControllerNameStart} uses container technology to isolate jobs from each other. 
+By default, only the current project is exposed to the container running a job template.
+
+You might find that you need to customize your playbook runs to expose additional directories. 
+
+To fine tune your use of job isolation, there are certain variables that can be set.
+
+By default, {ControllerName} uses the system's `/tmp` directory as its staging area. 
+You can change this in the *Job Execution Path* field on the *Jobs settings* page, or in the REST API at `/api/v2/settings/jobs`, using:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+AWX_ISOLATION_BASE_PATH = "/opt/tmp"
+----
+
+If there are any additional directories to be exposed from the host to the container that playbooks run in, you can specify those in the *Paths to Expose to Isolated Jobs* field of the *Jobs settings* page, or in the REST API at `/api/v2/settings/jobs`, using:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+AWX_ISOLATION_SHOW_PATHS = ['/list/of/', '/paths']
+----
+
+[NOTE]
+====
+If your playbooks use keys or settings defined in `/var/lib/awx/.ssh` you must add it to `AWX_ISOLATION_SHOW_PATHS`.
+====
+
+These fields can be found on the *Jobs Settings* page.
+
+image:configure-controller-jobs-isolated-jobs-fields.png[Job Settings page]
