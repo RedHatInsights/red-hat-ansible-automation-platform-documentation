@@ -1,0 +1,24 @@
+[id="controller-custom-logos"]
+
+= Custom logos and images
+
+{ControllerNameStart} supports the use of a custom logo. 
+You can add a custom logo by uploading an image and supplying a custom login message from the *User Interface settings* page of the *Settings* menu.
+
+image::ag-configure-aap-ui.png[Custom logo]
+
+For the best results, use a `.png` file with a transparent background.
+GIF, PNG, and JPEG formats are supported.
+
+You can add specific information (such as a legal notice or a disclaimer) to a text box in the login modal by adding it to the *Custom Login Info* text field.
+
+.Example
+You upload a specific logo and add the following text:
+
+image::ag-configure-tower-ui-logo-filled.png[Logo example]
+
+The {PlatformNameShort} login dialog looks like the following:
+
+image::ag-configure-aap-ui-angry-spud-login.png[Logo example 2]
+
+Select btn:[Revert] to use the standard {ControllerName} logo.

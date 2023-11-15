@@ -1,0 +1,25 @@
+[id="controller-configure-usability-analytics"]
+
+= Configuring usability analytics and data collection
+
+Usability data collection is included with {ControllerName} to collect data to understand how users interact with it, to enhance future releases, and to streamline your user experience.
+
+Only users installing a trial of {PlatformName} or a fresh installation of {ControllerName} are opted-in for this data collection.
+
+{ControllerNameStart} collects user data automatically to help improve the product. 
+You can opt out or control the way {ControllerName} collects data by setting your participation level in the *User Interface settings* in the *Settings* menu.
+
+.Procedure
+
+. From the navigation panel, select menu:Settings[].
+. Select *User Interface settings* from the *User Interface* tab.
+. Click btn:[Edit].
+. Select the desired level of data collection from the *User Analytics Tracking State* menu:
+* *Off*: Prevents any data collection.
+* *Anonymous*: Enables data collection without your specific user data.
+* *Detailed*: Enables data collection including your specific user data.
+. Click btn:[Save] to apply the settings or btn:[Cancel] to abandon the changes.
+
+.Additional resources
+
+For more information, see the link:https://www.redhat.com/en/about/privacy-policy[Red Hat Privacy Statement].

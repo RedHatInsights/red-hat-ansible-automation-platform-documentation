@@ -9,7 +9,7 @@ Your subscription has two possible statuses:
 
 image::gs-controller-license-non-compliant.png[Subscription out of compliance]
 
-ifdef::controller-UG[]
+ifdef::controller-UG,controller-AG[]
 Compliance is computed as follows:
 
 [literal, options="nowrap" subs="+attributes"]
@@ -48,8 +48,8 @@ A scheduled task automatically updates these values on a weekly basis and delete
 
 Delete unnecessary hosts directly from the Host Metrics view by selecting the desired hosts and clicking btn:[Delete]. 
 These are soft-deleted, meaning their records are not removed, but are not being used and thereby not counted towards your subscription.
-endif::controller-UG[]
+endif::controller-UG,controller-AG[]
 
-ifdef::controller-GS[]
-For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#subscription-compliance[Subscription compliance] in the Automation Controller User Guide.
-endif::controller-GS[]
+ifdef::controller-GS, controller-AG[]
+For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#subscription-compliance[Subscription compliance] in the _{ControllerUG}_.
+endif::controller-GS, controller-AG[]

@@ -1,0 +1,23 @@
+[id="controller-authentication"]
+
+= Authenticating {ControllerName}
+
+Through the {ControllerName} UI, you can set up a simplified login through various authentication types, such as GitHub, Google, LDAP, RADIUS, and SAML. 
+Once you create and register your developer application with the appropriate service, you can set up authorizations for them.
+
+.Procedure
+
+. From the navigation panel, select menu:Settings[].
+. Select from the following options in the *Authentication* tab:
+** [ADD XREF]Azure AD settings
+** [ADD XREF]GitHub settings
+** [ADD XREF]Google OAuth2 settings
+** [ADD XREF]LDAP settings
+** [ADD XREF]RADIUS settings
+** [ADD XREF]SAML settings
+** [ADD XREF]TACACS+ settings
+** [ADD XREF]Generic OIDC settings
++
+Different authentication types require you to enter different information. //redundant?? 
+Ensure that you include all the required information.
+. Click btn:[Save] to apply the settings or btn:[Cancel] to abandon the changes.

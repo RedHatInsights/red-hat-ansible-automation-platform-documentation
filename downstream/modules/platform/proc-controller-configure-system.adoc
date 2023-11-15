@@ -1,0 +1,38 @@
+[id="controller-configure-system"]
+
+= Configuring system settings
+
+The *System* tab enables you to complete the following actions:
+
+* Define the base URL for the {ControllerName} host
+* Configure alerts
+* Enable activity capturing
+* Control visibility of users
+* Enable certain {ControllerName} features and functionality through a license file
+* Configure logging aggregation options
+
+.Procedure
+
+. From the navigation panel, select menu:Settings[].
+. From the *System* tab, choose from the following options:
+* *Miscellaneous System settings*: Enable activity streams, specify the default {ExecEnvShort}, define the base URL for the {ControllerName} host, enable {ControllerName} administration alerts, set user visibility, define analytics, specify usernames and passwords, and configure proxies.
+* *Miscellaneous Authentication settings*: Configure options associated with authentication methods (built-in or SSO), sessions (timeout, number of sessions logged in, tokens), and social authentication mapping.
+* *Logging settings*: Configure logging options based on the type you choose:
++
+image::ag-configure-aap-system-logging-types.png[Logging settings]
++
+For more information about each of the logging aggregation types, see the xref:assembly-controller-logging-aggregation[Logging and Aggregation] section.
+. Set the configurable options from the fields provided. 
+Click the tooltip image:tooltips-icon.png[Tool tip,15,15] icon next to the field that you need additional information about. 
++
+The following is an example of the *Miscellaneous System* settings:
++
+image::ag-configure-aap-system.png[Misc. system settings]
++
+[NOTE]
+====
+The *Allow External Users to Create Oauth2 Tokens* setting is disabled by default. 
+This ensures external users cannot create their own tokens. 
+If you enable then disable it, any tokens created by external users in the meantime will still exist, and are not automatically revoked.
+====
+. Click btn:[Save] to apply the settings and btn:[Cancel] to abandon the changes.

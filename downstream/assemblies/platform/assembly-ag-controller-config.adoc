@@ -1,0 +1,23 @@
+[id="controller-config"]
+
+= {ControllerNameStart} configuration
+
+You can configure {ControllerName} settings within the *Settings* screen in the following tabs:
+
+image::ag-settings-menu-screen.png[Settings]
+
+Each tab contains fields with a *Reset* option, enabling you to revert any value entered back to the default value. 
+*Reset All* enables you to revert all the values to their factory default values.
+
+*Save* applies the changes you make, but it does not exit the edit dialog. 
+To return to the *Settings* page, from the navigation panel select *Settings* or use the breadcrumbs at the top of the current view.
+
+include::platform/proc-controller-authentication.adoc[leveloffset=+1]
+include::platform/proc-controller-configure-jobs.adoc[leveloffset=+1]
+include::platform/proc-controller-configure-system.adoc[leveloffset=+1]
+include::platform/proc-controller-configure-user-interface.adoc[leveloffset=+1]
+include::platform/proc-controller-configure-usability-analytics.adoc[leveloffset=+2]
+include::platform/con-controller-custom-logos.adoc[leveloffset=+2]
+include::platform/proc-controller-obtaining-subscriptions.adoc[leveloffset=+1]
+include::platform/con-controller-keep-subscription-in-compliance.adoc[leveloffset=+2]
+include::platform/con-controller-host-metric-utilities.adoc[leveloffset=+2]

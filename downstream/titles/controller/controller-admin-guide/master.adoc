@@ -34,7 +34,7 @@ include::platform/assembly-controller-improving-performance.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-secret-handling.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-security-best-practices.adoc[leveloffset=+1]
 include::platform/assembly-controller-awx-manage-utility.adoc[leveloffset=+1]
-//18 Controller Configuration
+include::platform/assembly-ag-controller-config.adoc[leveloffset=+1]
 include::platform/assembly-controller-isolation-function-variables.adoc[leveloffset=+1]
 include::platform/assembly-controller-token-based-authentication.adoc[leveloffset=+1]
 //21 Setting up Social Authentication

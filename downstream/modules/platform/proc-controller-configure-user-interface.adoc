@@ -1,0 +1,11 @@
+[id="controller-configure-user-interface"]
+
+= Configuring the user interface
+
+The *User Interface* tab enables you to set {ControllerName} analytics settings, and configure custom logos and login messages.
+
+.Procedure
+
+. From the navigation panel, select menu:Settings[].
+. Select *User Interface settings* from the *User Interface* tab. 
+. Click btn:[Edit] to configure your preferences.
