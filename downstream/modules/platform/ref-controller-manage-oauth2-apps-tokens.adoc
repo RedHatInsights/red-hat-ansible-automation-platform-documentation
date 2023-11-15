@@ -1,0 +1,57 @@
+[id="ref-controller-manage-oauth2-apps-tokens"]
+
+= Managing OAuth 2 Applications and Tokens
+
+Applications and tokens can be managed as a top-level resource at `/api/<version>/applications` and `/api/<version>/tokens`. 
+These resources can also be accessed respective to the user at `/api/<version>/users/N/<resource>`.
+You can create applications by making a *POST* to either `api/<version>/applications` or `/api/<version>/users/N/applications`.
+
+Each OAuth 2 application represents a specific API client on the server side. 
+For an API client to use the API via an application token, it must first have an application and issue an access token. 
+Individual applications are accessible through their primary keys in: `/api/<version>/applications/<pk>/`. 
+
+The following is a typical application:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "id": 1,
+    "type": "o_auth2_application",
+    "url": "/api/v2/applications/2/",
+    "related": {
+        "tokens": "/api/v2/applications/2/tokens/"
+    },
+    "summary_fields": {
+        "organization": {
+            "id": 1,
+            "name": "Default",
+            "description": ""
+        },
+        "user_capabilities": {
+            "edit": true,
+            "delete": true
+        },
+        "tokens": {
+            "count": 0,
+            "results": []
+        }
+    },
+    "created": "2018-07-02T21:16:45.824400Z",
+    "modified": "2018-07-02T21:16:45.824514Z",
+    "name": "My Application",
+    "description": "",
+    "client_id": "Ecmc6RjjhKUOWJzDYEP8TZ35P3dvsKt0AKdIjgHV",
+    "client_secret": "7Ft7ym8MpE54yWGUNvxxg6KqGwPFsyhYn9QQfYHlgBxai74Qp1GE4zsvJduOfSFkTfWFnPzYpxqcRsy1KacD0HH0vOAQUDJDCidByMiUIH4YQKtGFM1zE1dACYbpN44E",
+    "client_type": "confidential",
+    "redirect_uris": "",
+    "authorization_grant_type": "password",
+    "skip_authorization": false,
+    "organization": 1
+}
+----
+
+Where `name` is the human-readable identifier of the application. 
+The rest of the fields, like `client_id` and `redirect_uris`, are mainly used for OAuth2 authorization, which is covered in xref:ref-controller-use-oauth2-token-system[Using OAuth 2 Token System for Personal Access Tokens (PAT)].
+
+The values for the `client_id` and `client_secret` fields are generated during creation and are non-editable identifiers of applications, while
+`organization` and `authorization_grant_type` are required upon creation and become non-editable.

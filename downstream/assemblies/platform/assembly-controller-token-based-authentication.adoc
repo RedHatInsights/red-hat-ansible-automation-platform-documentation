@@ -1,0 +1,29 @@
+[id="assembly-controller-token-based-authentication"]
+
+= Token-Based Authentication
+
+OAuth 2 is used for token-based authentication. 
+You can manage OAuth tokens and applications, a server-side representation of API clients used to generate tokens. 
+By including an OAuth token as part of the HTTP authentication header, you can authenticate yourself and adjust the degree of restrictive permissions in addition to the base RBAC permissions. 
+
+For more information on the OAuth2 secification, see link:https://datatracker.ietf.org/doc/html/rfc6749[The OAuth 2.0 Authorization Framework].
+
+For more information on using the `manage` utility to create tokens, see xref:ref-controller-token-session-management[Token and session management].
+
+include::platform/ref-controller-manage-oauth2-apps-tokens.adoc[leveloffset=+1]
+include::platform/ref-controller-access-rules-for-apps.adoc[leveloffset=+2]
+include::platform/ref-controller-access-rules-for-tokens.adoc[leveloffset=+2]
+include::platform/ref-controller-use-oauth2-token-system.adoc[leveloffset=+1]
+include::platform/proc-controller-token-scope-mask-rbac.adoc[leveloffset=+2]
+include::platform/ref-controller-application-functions.adoc[leveloffset=+1]
+include::platform/ref-controller-auth-code-grant-type.adoc[leveloffset=+2]
+include::platform/ref-controller-password-grant-type.adoc[leveloffset=+2]
+include::platform/ref-controller-app-token-functions.adoc[leveloffset=+1]
+include::platform/ref-controller-refresh-existing-token.adoc[leveloffset=+2]
+include::platform/ref-controller-revoke-access-token.adoc[leveloffset=+2]
+
+
+
+
+
+

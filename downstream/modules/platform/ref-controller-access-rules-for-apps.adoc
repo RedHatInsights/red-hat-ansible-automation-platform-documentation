@@ -1,0 +1,67 @@
+[id="ref-controller-access-rules-for-apps"]
+
+= Access Rules for Applications
+
+Access rules for applications are as follows:
+
+* System administrators can view and manipulate all applications in the system.
+* Organization administrators can view and manipulate all applications belonging to Organization members.
+* Other users can only view, update, and delete their own applications, but cannot create any new applications.
+
+Tokens, on the other hand, are resources used to authenticate incoming requests and mask the permissions of the underlying user. 
+
+There are two ways to create a token:
+
+* POST to the `/api/v2/tokens/` endpoint and set the `application` and `scope` fields to point to the related application and specify the token scope.
+* POST to the `/api/v2/applications/<pk>/tokens/` endpoint with the `scope` field (the parent application is automatically linked).
+
+Individual tokens are accessible through their primary keys at `/api/<version>/tokens/<pk>/`. 
+
+The following is an example of a typical token:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "id": 4,
+    "type": "o_auth2_access_token",
+    "url": "/api/v2/tokens/4/",
+    "related": {
+        "user": "/api/v2/users/1/",
+        "application": "/api/v2/applications/1/",
+        "activity_stream": "/api/v2/tokens/4/activity_stream/"
+},
+    "summary_fields": {
+        "application": {
+            "id": 1,
+            "name": "Default application for root",
+            "client_id": "mcU5J5uGQcEQMgAZyr5JUnM3BqBJpgbgL9fLOVch"
+        },
+        "user": {
+            "id": 1,
+            "username": "root",
+            "first_name": "",
+            "last_name": ""
+        }
+    },
+    "created": "2018-02-23T14:39:32.618932Z",
+    "modified": "2018-02-23T14:39:32.643626Z",
+    "description": "App Token Test",
+    "user": 1,
+    "token": "*************",
+    "refresh_token": "*************",
+    "application": 1,
+    "expires": "2018-02-24T00:39:32.618279Z",
+    "scope": "read"
+},
+----
+
+For an OAuth 2 token, the only fully editable fields are `scope` and `description`. 
+The `application` field is non-editable on update, and all other fields are entirely non-editable, and are auto-populated during creation, as follows:
+
+* `user` field corresponds to the user the token is created for, and in this case, is also the user creating the token.
+* `expires` is generated according to the {ControllerName} configuration setting `OAUTH2_PROVIDER`.
+* `token` and `refresh_token` are auto-generated to be non-clashing random strings.
+
+Both application tokens and personal access tokens are shown at the `/api/v2/tokens/` endpoint. 
+The `application` field in the personal access tokens is always *null*. 
+This is a good way to differentiate the two types of tokens.

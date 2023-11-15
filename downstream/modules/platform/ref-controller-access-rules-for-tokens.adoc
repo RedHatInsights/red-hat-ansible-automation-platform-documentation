@@ -1,0 +1,16 @@
+[id="ref-controller-access-rules-for-tokens"]
+
+= Access rules for tokens
+
+Access rules for tokens are as follows:
+
+* Users can create a token if they are able to view the related application and can also create a personal token for themselves.
+* System administrators are able to view and manipulate every token in the system.
+* Organization administrators are able to view and manipulate all tokens belonging to Organization members.
+* System Auditors can view all tokens and applications.
+* Other normal users are only able to view and manipulate their own tokens.
+
+[NOTE]
+====
+Users can only view the token or refresh the token value at the time of creation.
+====

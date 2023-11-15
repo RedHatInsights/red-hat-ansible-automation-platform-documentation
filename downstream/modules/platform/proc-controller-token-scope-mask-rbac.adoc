@@ -1,0 +1,72 @@
+[id="proc-controller-token-scope-mask-rbac"]
+
+= Token scope mask over RBAC system
+
+The scope of an OAuth 2 token is a space-separated string composed of valid scope keywords, 'read' and 'write'. 
+These keywords are configurable and used to specify permission level of the authenticated API client. 
+Read and write scopes provide a mask layer over the _Role-Based Access Control_ (RBAC) permission system of {ControllerName}. 
+A 'write' scope gives the authenticated user the full permissions the RBAC system provides, while a 'read' scope gives the authenticated user only the read permissions the RBAC system provides. 
+Note that 'write' implies 'read' as well.
+
+For example, if you have administrative permissions to a job template, you can view, modify, launch, and delete the job template if authenticated through session or basic authentication. 
+
+In contrast, if you are authenticated using an OAuth 2 token, and the related token scope is 'read', you can only view, but not manipulate or launch the job template, despite being an administrator. 
+
+If the token scope is 'write' or 'read write', you can take full advantage of the job template as its administrator.
+
+To acquire and use a token, first you must create an application token.
+
+Use the following procedure:
+
+.Procedure
+. Make an application with `authorization_grant_type` set to `password`.
+. HTTP POST the following to the `/api/v2/applications/` endpoint (supplying your own organization ID):
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "name": "Admin Internal Application",
+    "description": "For use by secure services & clients. ",
+    "client_type": "confidential",
+    "redirect_uris": "",
+    "authorization_grant_type": "password",
+    "skip_authorization": false,
+    "organization": <organization-id>
+}
+----
+. Make a token and POST to the `/api/v2/tokens/` endpoint, using:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "description": "My Access Token",
+    "application": <application-id>,
+    "scope": "write"
+}
+----
+
+This returns a <token-value> that you can use to authenticate with for future requests (this is not shown again).
+. Use the token to access a resource. The following uses curl as an example:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -H "Authorization: Bearer <token-value>" -H "Content-Type: application/json" -X GET https://<controller>/api/v2/users/ 
+----
+
+The `-k` flag might be required if you have not set up a Certificate Authority yet and are using SSL.
+
+To revoke a token, you can use a `DELETE` on the *Details* page for that token, using that token's ID. 
+
+For example:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -ku <user>:<password> -X DELETE https://<controller>/api/v2/tokens/<pk>/
+----
+
+Similarly, using a token:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -H "Authorization: Bearer <token-value>" -X DELETE https://<controller>/api/v2/tokens/<pk>/ -k
+----

@@ -1,0 +1,9 @@
+[id="ref-controller-application-functions"]
+
+= Application Functions
+
+Sevveral OAuth 2 utility endpoints are used for authorization, token refresh, and revoke. 
+The `/api/o/` endpoints are not meant to be used in browsers and do not support HTTP GET. 
+The endpoints prescribed here strictly follow RFC specifications for OAuth 2, so use that for detailed reference. 
+
+The following are examples of the typical use of these endpoints in {ControllerName}, in particular, when creating an application using various grant types:

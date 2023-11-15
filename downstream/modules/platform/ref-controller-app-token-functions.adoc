@@ -1,0 +1,5 @@
+[id="ref-controller-app-token-functions"]
+
+= Application Token Functions
+
+The `refresh` and `revoke` functions associated with tokens, for tokens at the `/api/o/` endpoints can currently only be carried out with application tokens.

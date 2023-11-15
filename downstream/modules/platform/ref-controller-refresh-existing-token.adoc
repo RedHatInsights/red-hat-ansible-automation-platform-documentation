@@ -1,0 +1,63 @@
+[id="ref-controller-refresh-existing-token"]
+
+= Refresh an existing access token
+
+The following example shows an existing access token with a refresh token provided:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "id": 35,
+    "type": "access_token",
+    ...
+    "user": 1,
+    "token": "omMFLk7UKpB36WN2Qma9H3gbwEBSOc",
+    "refresh_token": "AL0NK9TTpv0qp54dGbC4VUZtsZ9r8z",
+    "application": 6,
+    "expires": "2017-12-06T03:46:17.087022Z",
+    "scope": "read write"
+}
+----
+
+The `/api/o/token/` endpoint is used for refreshing the access token:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -X POST \
+    -d "grant_type=refresh_token&refresh_token=AL0NK9TTpv0qp54dGbC4VUZtsZ9r8z" \
+    -u "gwSPoasWSdNkMDtBN3Hu2WYQpPWCO9SwUEsKK22l:fI6ZpfocHYBGfm1tP92r0yIgCyfRdDQt0Tos9L8a4fNsJjQQMwp9569eIaUBsaVDgt2eiwOGe0bg5m5vCSstClZmtdy359RVx2rQK5YlIWyPlrolpt2LEpVeKXWaiybo" \
+    http://<controller>/api/o/token/ -i
+----
+
+Where `refresh_token` is provided by `refresh_token` field of the preceding access token. 
+
+The authentication information is of format `<client_id>:<client_secret>`, where `client_id` and `client_secret` are the corresponding fields of the underlying related application of the access token.
+
+[NOTE]
+====
+The special OAuth 2 endpoints only support using the `x-www-form-urlencoded` *Content-type*, so as a result, none of the
+`api/o/*` endpoints accept `application/json`.
+====
+
+On success, a response displays in JSON format containing the new (refreshed) access token with the same scope information as the previous one:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+HTTP/1.1 200 OK
+Server: nginx/1.12.2
+Date: Tue, 05 Dec 2017 17:54:06 GMT
+Content-Type: application/json
+Content-Length: 169
+Connection: keep-alive
+Content-Language: en
+Vary: Accept-Language, Cookie
+Pragma: no-cache
+Cache-Control: no-store
+Strict-Transport-Security: max-age=15768000
+
+{"access_token": "NDInWxGJI4iZgqpsreujjbvzCfJqgR", "token_type": "Bearer", "expires_in": 315360000000, "refresh_token": "DqOrmz8bx3srlHkZNKmDpqA86bnQkT", "scope": "read write"}
+----
+
+The refresh operation replaces the existing token by deleting the original and then immediately creating a new token with the same scope and related application as the original one. 
+
+Verify that the new token is present and the old one is deleted in the `/api/v2/tokens/` endpoint.

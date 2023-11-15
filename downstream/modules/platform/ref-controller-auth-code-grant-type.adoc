@@ -1,0 +1,65 @@
+[id="ref-controller-auth-code-grant-type"]
+
+= Application using `authorization code` grant type
+
+The application `authorization code` grant type should be used when access tokens must be issued directly to an external application or service.
+
+[NOTE]
+====
+You can only use the `authorization code` type to acquire an access token when using an application. 
+When integrating an external web application with {ControllerName}, that web application might need to create OAuth2 Tokens on behalf of users in that other web application. 
+Creating an application in {ControllerName} with the `authorization code` grant type is the preferred way to do this because:
+
+* this allows an external application to obtain a token from {ControllerName} for a user, using their credentials.
+* compartmentalized tokens issued for a particular application enables those tokens to be easily managed. For example, revoking all tokens associated with that application without having to revoke _all_ tokens in the system.
+
+.Example
+To create an application named _AuthCodeApp_ with the `authorization-code` grant type, perform a POST to the `/api/v2/applications/` endpoint:
+====
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "name": "AuthCodeApp",
+    "user": 1,
+    "client_type": "confidential",
+    "redirect_uris": "http://<controller>/api/v2",
+    "authorization_grant_type": "authorization-code",
+    "skip_authorization": false
+}
+
+.. _`Django-oauth-toolkit simple test application`: http://django-oauth-toolkit.herokuapp.com/consumer/
+----
+
+The workflow that occurs when you issue a *GET* to the `authorize` endpoint from the client application with the `response_type`, `client_id`, `redirect_uris`, and `scope`:
+
+. The controller responds with the authorization code and status to the `redirect_uri` specified in the application.
+. The client application then makes a *POST* to the `api/o/token/` endpoint on the controller with the `code`, `client_id`,
+`client_secret`, `grant_type`, and `redirect_uri`.
+. The controller responds with the `access_token`, `token_type`, `refresh_token`, and `expires_in`.
+
+For more information, and to test this flow, see link:https://django-oauth-toolkit.readthedocs.io/en/latest/tutorial/tutorial_01.html#test-your-authorization-server[Django's Test Your Authorization Server].
+
+You can specify the number of seconds an authorization code remains valid on the *System settings* page:
+
+image:configure-controller-system-misc-sys-authcode-expire.png[System settings]
+
+Requesting an access token after this duration fails. 
+
+The duration defaults to 600 seconds (10 minutes), based on the link:https://tools.ietf.org/html/rfc6749[RFC6749] recommendation.
+
+The best way to set up app integrations with using the Authorization Code grant type is to allowlist the origins for those cross-site requests. 
+More generally, you must allowlist the service or application you are integrating with {ControllerName}, for which you want
+to provide access tokens. 
+
+To do this, have your Administrator add this allowlist to their local {ControllerName} settings:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"http://django-oauth-toolkit.herokuapp.com*",
+    r"http://www.example.com*"
+]
+----
+
+Where `http://django-oauth-toolkit.herokuapp.com` and `http://www.example.com` are applications requiring tokens with which to access {ControllerName}.
