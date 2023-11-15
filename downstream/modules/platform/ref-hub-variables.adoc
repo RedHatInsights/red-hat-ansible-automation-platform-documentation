@@ -39,6 +39,11 @@ Default = `false`.
 You can also set `automationhub_backup_collections = false` and the backup/restore process does not then backup or restore `/var/lib/pulp`.
 
 Default = `true`
+| *`automationhub_collection_download_count`* | _Optional_
+
+Determines whether download count is displayed on the UI.
+
+Default = `false`
 | *`automationhub_collection_seed_repository`* a| When the bundle installer is run, validated content is uploaded to the `validated` repository, and certified content is uploaded to the `rh-certified` repository.
 
 By default, both certified and validated content are uploaded.
@@ -314,7 +319,7 @@ The password to use with `automationhub_ldap_bind_dn`.
 If your configuration makes any references to LDAP groups, this and `automationhub_ldap_group_type` must be set.
 
 Default = `None`
-| *`automatiohub_ldap_group_search_filter`* | _Optional_
+| *`automationhub_ldap_group_search_filter`* | _Optional_
 
 Search filter for finding group membership.
 
