@@ -1,0 +1,39 @@
+[id="proc-controller-github-enterprise-org-settings"]
+
+= GitHub Enterprise Organization settings
+
+To set up social authentication for a GitHub Enterprise Organization, you must obtain a GitHub Enterprise Organization URL, an Organization API URL, an Organization OAuth2 key and secret for a web application. 
+
+To obtain the URLs, refer to the GitHub documentation on link:https://docs.github.com/en/enterprise-server@3.1/rest/reference/enterprise-admin[GitHub Enterprise administration]. 
+
+To obtain the key and secret, you must first register your enterprise organization-owned application at `https://github.com/organizati ons/<yourorg>/settings/applications` 
+
+To register the application, you must supply it with your Authorization callback URL, which is the *Callback URL* shown in the *Details* page. 
+
+Because it is hosted on site and not `github.com`, you must specify which authentication adapter it communicates with.
+
+Each key and secret must belong to a unique application and cannot be shared or reused between different authentication backends. 
+The OAuth2 key (Client ID) and secret (Client Secret) are used to supply the required fields in the UI.
+
+.Procedure
+. On the navigation panel, select menu:Settings[].
+. On the *Settings* page, select *GitHub settings* from the list of Authentication options.
+. Click the *GitHub Enterprise Organization* tab.
++
+The *GitHub Enterprise Organization OAuth2 Callback URL* field is already pre-populated and non-editable. 
+When the application is registered, GitHub displays the Client ID and Client Secret.
+
+. Click btn:[Edit] to configure GitHub Enterprise Organization settings.
+. In the *GitHub Enterprise Organization URL* field, enter the hostname of the GitHub Enterprise Organization instance, for example, https://github.orgexample.com.
+. In the *GitHub Enterprise Organization API URL* field, enter the API URL of the GitHub Enterprise Organiztion instance, for example, https://github.orgexample.com/api/v3
+. Copy and paste GitHub's Client ID into the *GitHub Enterprise Organization OAuth2 Key* field.
+. Copy and paste GitHub's Client Secret into the *GitHub Enterprise Organization OAuth2 Secret* field.
+. Enter the name of your GitHub Enterprise organization, as used in your organization's URL, for example, https://github.com/<yourorg>/ in the *GitHub Enterprise Organization Name* field.
+. For more information on completing the mapping fields, see xref:ref-controller-organization-mapping[Organization mapping] and xref:ref-controller-team-mapping[Team mapping].
+. Click btn:[Save].
+
+.Verification
+To verify that the authentication was configured correctly, logout of {ControllerName}.
+The login screen displays the GitHub Enterprise Organization logo to enable logging in with those credentials.
+
+image:configure-controller-auth-github-ent-org-logo.png[image]

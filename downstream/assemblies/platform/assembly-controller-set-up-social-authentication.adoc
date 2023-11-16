@@ -1,0 +1,34 @@
+[id="assembly-controller-set-up-social-authentication"]
+
+= Setting up Social Authentication
+
+Authentication methods simplify logins for end users, offering single sign-ons using existing login information to sign into a third party website rather than creating a new login account specifically for that website.
+
+Account authentication can be configured in the User Interface and saved to the PostgreSQL database. 
+
+For more information, see the xref:controller-config[Controller configuration] section.
+
+Account authentication in {Controllername} can be configured to centrally use OAuth2, while enterprise-level account authentication can be configured for SAML, RADIUS, or even LDAP as a source for authentication information.
+See [Setting up Enterprise Authentication].
+
+For websites, such as {Azure}, Google or GitHub, that provide account information, account information is often implemented using the OAuth standard. 
+
+OAuth is a secure authorization protocol which is commonly used in conjunction with account authentication to grant third
+party applications a "session token" allowing them to make API calls to providers on the user's behalf.
+
+_Security Assertion Markup Language_ (SAML) is an XML-based, open-standard data format for exchanging account authentication and authorization data between an identity provider and a service provider.
+
+The RADIUS distributed client/server system enables you to secure networks against unauthorized access and can be implemented in network environments requiring high levels of security while maintaining network access for remote users.
+
+include::platform/proc-controller-github-settings.adoc[leveloffset=+1]
+include::platform/proc-controller-github-organization-setttings.adoc[leveloffset=+2]
+include::platform/proc-controller-github-team-settings.adoc[leveloffset=+2]
+include::platform/proc-controller-github-enterprise-settings.adoc[leveloffset=+2]
+include::platform/proc-controller-github-enterprise-org-settings.adoc[leveloffset=+2]
+include::platform/proc-controller-github-enterprise-team-settings.adoc[Leveloffset=+2]
+include::platform/proc-controller-google-oauth2-settings.adoc[leveloffset=+1]
+include::platform/ref-controller-organization-mapping.adoc[leveloffset=+1]
+include::platform/ref-controller-team-mapping.adoc[leveloffset=+1]
+
+
+

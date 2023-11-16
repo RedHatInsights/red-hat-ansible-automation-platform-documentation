@@ -1,0 +1,36 @@
+[id="proc-controller-google-oauth2-settings"]
+
+= Google OAuth2 settings
+
+To set up social authentication for Google, you must obtain an OAuth2 key and secret for a web application. 
+To do this, you must first create a project and set it up with Google. 
+
+For instructions, see link:https://support.google.com/googleapi/answer/6158849[Setting up OAuth 2.0] in the Google API Console Help documentation.
+
+If you have already completed the setup process, you can access those credentials by going to the Credentials section of the
+link:https://console.developers.google.com/[Google API Manager Console]. 
+The OAuth2 key (Client ID) and secret (Client secret) are used to supply the required fields in the UI.
+
+.Procedure
+. On the navigation panel, select menu:Settings[].
+. On the *Settings* page, select *Google OAuth 2 settings* from the list of Authentication options.
++
+The *Google OAuth2 Callback URL* field is already pre-populated and non-editable.
+
+. The following fields are also pre-populated. 
+If not, use the credentials Google supplied during the web application setup process, and look for the values with the same format as the ones shown in the example below:
+
+* Click *Edit* and copy and paste Google's Client ID into the *Google OAuth2 Key* field.
+* Copy and paste Google's Client secret into the *Google OAuth2 Secret* field.
++
+image:configure-controller-auth-google.png[image]
+
+. To complete the remaining optional fields, refer to the tooltips in each of the fields for instructions and required format.
+. For more information on completing the mapping fields, see xref:ref-controller-organization-mapping[Organization mapping] and xref:ref-controller-team-mapping[Team mapping].
+. Click btn:[Save].
+
+.Verification
+To verify that the authentication was configured correctly, logout of {controllerName}.
+The login screen displays the Google logo to indicate it as a alternate method of logging into {ControllerName}.
+
+image:configure-controller-auth-google-logo.png[image]

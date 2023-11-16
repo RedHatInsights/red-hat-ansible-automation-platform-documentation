@@ -1,0 +1,32 @@
+[id="proc-controller-github-team-settings"]
+
+= GitHub Team settings
+
+To set up social authentication for a GitHub Team, you must obtain an OAuth2 key and secret for a web application. 
+To do this, you must first register your team-owned application at `https://github.com/organizations/<yourorg>/settings/applications`. 
+To register the application, you must supply it with your Authorization callback URL, which is the *Callback URL* shown in the *Details* page. 
+Each key and secret must belong to a unique application and cannot be shared or reused between different authentication
+backends. 
+The OAuth2 key (Client ID) and secret (Client Secret) are used to supply the required fields in the UI.
+
+.Procedure
+. Find the numeric team ID using the link:https://fabian-kostadinov.github.io/2015/01/16/how-to-find-a-github-team-id/[GitHub API].
+The Team ID is used to supply a required field in the UI.
+. On the navigation panel, select menu:Settings[].
+. On the *Settings* page, select *GitHub settings* from the list of Authentication options..
+. Click the *GitHub Team* tab.
++
+The *GitHub Team OAuth2 Callback URL* field is already pre-populated and non-editable. 
+When the application is registered, GitHub displays the Client ID and Client Secret.
+
+. Click btn:[Edit] and copy and paste GitHub's Client ID into the *GitHub Team OAuth2 Key* field.
+. Copy and paste GitHub's Client Secret into the *GitHub Team OAuth2 Secret* field.
+. Copy and paste GitHub's team ID in the *GitHub Team ID* field.
+. For more information on completing the mapping fields, see xref:ref-controller-organization-mapping[Organization mapping] and xref:ref-controller-team-mapping[Team mapping].
+. Click btn:[Save]
+
+.Verification
+. To verify that the authentication was configured correctly, logout of {ControlleName}.
+The login screen displays the GitHub Team logo to enable logging in with those credentials.
+
+image:configure-controller-auth-github-teams-logo.png[image]

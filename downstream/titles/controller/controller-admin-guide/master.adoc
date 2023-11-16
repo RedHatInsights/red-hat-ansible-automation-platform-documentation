@@ -37,7 +37,7 @@ include::platform/assembly-controller-awx-manage-utility.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-config.adoc[leveloffset=+1]
 include::platform/assembly-controller-isolation-function-variables.adoc[leveloffset=+1]
 include::platform/assembly-controller-token-based-authentication.adoc[leveloffset=+1]
-//21 Setting up Social Authentication
+include::platform/assembly-controller-set-up-social-authentication.adoc[leveloffset=+1]
 //22 Setting up Enterprise Authentication
 //23 Setting up LDAP Authentication
 //24 Changing the Default Timeout for Authentication

@@ -1,0 +1,60 @@
+[id="ref-controller-team-mapping"]
+
+= Team mapping
+
+Team mapping is the mapping of team members (users) from social authentication accounts. 
+Keys are team names (which are created if not present). 
+Values are dictionaries of options for each team's membership, where each can contain the following parameters:
+
+* *organization*: String. The name of the organization to which the team belongs. 
+The team is created if the combination of organization and team name does not exist. 
+The organization is created first if it does not exist. 
+If the license does not permit multiple organizations, the team is always assigned to the single default organization.
+
+* *users*: None, True/False, string or list/tuple of strings.
+
+*** If *None*, team members are not be updated.
+*** If *True*, all social authentication users are added as team members.
+*** If *False*, all social authentication users are removed as team members.
+* If a string or list of strings, specifies expressions used to match users, the user is added as a team member if the username or email matches. 
+Strings beginning and ending with `/` are compiled into regular expressions.
+The modifiers `i` (case-insensitive) and `m` (multi-line) can be specified after the ending `/`.
+
+*remove*: True/False. Defaults to *True*. When *True*, a user who does not match the preceding rules is removed from the team.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "My Team": {
+        "organization": "Test Org",
+        "users": ["/^[^@]+?@test\\.example\\.com$/"],
+        "remove": true
+    },
+    "Other Team": {
+        "organization": "Test Org 2",
+        "users": ["/^[^@]+?@test\\.example\\.com$/"],
+        "remove": false
+    }
+}
+----
+
+Team mappings can be specified separately for each account authentication backend, based on which of these you setup. 
+When defined, these configurations take precedence over the preceding global configuration.
+
+[literal, options="nowrap" subs="+attributes"]
+----
+SOCIAL_AUTH_GOOGLE_OAUTH2_TEAM_MAP = {}
+SOCIAL_AUTH_GITHUB_TEAM_MAP = {}
+SOCIAL_AUTH_GITHUB_ORG_TEAM_MAP = {}
+SOCIAL_AUTH_GITHUB_TEAM_TEAM_MAP = {}
+SOCIAL_AUTH_SAML_TEAM_MAP = {}
+----
+
+Uncomment the following line, that is, set `SOCIAL_AUTH_USER_FIELDS` to an empty list, to prevent new user accounts from being created. 
+
+[literal, options="nowrap" subs="+attributes"]
+----
+SOCIAL_AUTH_USER_FIELDS = []
+----
+
+Only users who have previously logged in to {ControllerName} using social or enterprise-level authentication, or have a user account with a matching email address can then login.
