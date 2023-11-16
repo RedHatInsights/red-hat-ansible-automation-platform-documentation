@@ -6,8 +6,6 @@ If you do not have an existing web server to host your repositories, you can cre
 
 .Procedure
 
-Use the following steps to create a new web server.
-
 . Install prerequisites:
 +
 ----
@@ -55,13 +53,11 @@ $ sudo systemctl enable --now httpd.service
 . Open firewall:
 +
 ----
-$ sudo firewall-cmd --zone=public --add-service=http –add-service=https
---permanent
+$ sudo firewall-cmd --zone=public --add-service=http –add-service=https --permanent
 $ sudo firewall-cmd --reload
 ----
 
-. On {ControllerName} and {HubName}, add a repo file at __/etc/yum.repos.d/local.repo__, add
-the optional repos if needed:
+. On {ControllerName} and {HubName}, add a repo file at __/etc/yum.repos.d/local.repo__, and add the optional repos if needed:
 +
 ----
 [Local-BaseOS]

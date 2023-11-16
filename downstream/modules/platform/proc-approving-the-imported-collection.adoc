@@ -1,20 +1,20 @@
 [id="approving-the-imported-collection_{context}"]
 
-= Approving the Imported Collection
+= Approving the imported collections
 
-After you have imported collections with either the GUI or the CLI method, you must approve them by using the GUI. After they are approved, they are available for use.
+After you have imported collections by using either the GUI or the CLI method, you must approve them by using the GUI. After they are approved, they are available for use.
 
 .Procedure
 
 . Log in to link:https://console.redhat.com/ansible/automation-hub/[{HubName} Hybrid Cloud Console].
 
-. From the navigation panel, select menu:Collections[Approval].
+. From the navigation panel, select *menu:Collections[Approval]*.
 
-. Click btn:[Approve] for the collection you want to approve.
+. Click *btn:[Approve]* for the collection you want to approve.
 
 . The collection is now available for use in your {PrivateHubName}.
 
-. Import any dependency for the collection using these steps.
+. Import any dependency for the collection by repeating steps 2 and 3.
 
 [NOTE]
 ====
@@ -32,19 +32,22 @@ disconnected environment.
 * Build an {ExecEnvShort} image entirely on the disconnected environment with some modifications to the normal process of using ansible-builder.
 * Create a minimal base container image that includes all of the necessary modifications for a disconnected environment, then build custom {ExecEnvShort} images from the base container image.
 
-=== Transferring Custom {ExecEnvShort} Images Across a Disconnected Boundary
+=== Transferring custom {ExecEnvShort} images across a disconnected boundary
 
-A custom {ExecEnvShort} image can be built on an internet-facing machine using the existing documentation. After an {ExecEnvShort} has been created it is available in the local podman image cache. You can then transfer the custom {ExecEnvShort} image across a disconnected boundary.
+You can build a custom {ExecEnvShort} image on an internet-facing machine. After you create an {ExecEnvShort}, it is available in the local podman image cache. You can then transfer the custom {ExecEnvShort} image across a disconnected boundary.
 
 .Procedure
 
 . Save the image:
-
++
 ----
 $ podman image save localhost/custom-ee:latest | gzip -c custom-ee-latest.tar.gz
 ----
++
+Transfer the file across the disconnected boundary by using an existing mechanism such as sneakernet or one-way diode. 
++
+. After the image is available on the disconnected side, import it into the local podman cache, tag it, and push it to the disconnected hub:
 
-. Transfer the file across the disconnected boundary by using an existing mechanism such as sneakernet or one-way diode. After the image is available on the disconnected side, import it into the local podman cache, tag it, and push it to the disconnected hub:
 ----
 $ podman image load -i custom-ee-latest.tar.gz
 $ podman image tag localhost/custom-ee <hub_fqdn>/custom-ee:latest

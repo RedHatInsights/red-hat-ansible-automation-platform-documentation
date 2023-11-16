@@ -25,11 +25,11 @@ To perform a reposync you need a RHEL host that has access to the internet. Afte
     -p /path/to/download
 ----
 
-.. Make certain that you use reposync with `--download-metadata` and without `--newest-only`. See [RHEL 8] Reposync.
+.. Use reposync with `--download-metadata` and without `--newest-only`. See link://https://access.redhat.com/solutions/5186621[RHEL 8] Reposync.
 
-.. If not using `--newest-only` the repos downloaded will be ~90GB.
+* If you are not using `--newest-only,` the repos downloaded will be ~90GB.
 
-.. If using `--newest-only` the repos downloaded will be ~14GB.
+* If you are using `--newest-only,` the repos downloaded will be ~14GB.
 
 . If you plan to use {RHSSO}, sync these repositories:
 
@@ -37,7 +37,7 @@ To perform a reposync you need a RHEL host that has access to the internet. Afte
 .. rh-sso-7.4-for-rhel-8-x86_64-rpms
 
 +
-After the reposync is completed your repositories are ready to use with a web server.
+After the reposync is completed, your repositories are ready to use with a web server.
 
 
 . Move the repositories to your disconnected network.

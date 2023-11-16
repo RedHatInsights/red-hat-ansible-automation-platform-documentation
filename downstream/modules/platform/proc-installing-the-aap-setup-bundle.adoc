@@ -5,11 +5,12 @@
 = Downloading and installing the {PlatformNameShort} setup bundle
 
 [role="_abstract"]
-The “bundle” version is strongly recommended for disconnected installations because it includes the RPM content for {PlatformNameShort} as well as the default {ExecEnvShort} images that will be uploaded to your {PrivateHubName} during the installation process.
+Choose the setup bundle to download {PlatformNameShort} (AAP)for disconnected installations. This bundle includes the RPM content for AAP and the default {ExecEnvShort} images that will be uploaded to your {PrivateHubName} during the installation process.
+
 
 .Procedure
 
-. Download the {PlatformNameShort} setup bundle package by navigating to the link:{PlatformDownloadUrl}[{PlatformName} download] page and clicking btn:[Download Now] for the {PlatformNameShort} {PlatformVers} setup bundle.
+. Download the {PlatformNameShort} setup bundle package by navigating to the link:{PlatformDownloadUrl}[{PlatformName} download] page and clicking btn:[Download Now] for the {PlatformNameShort} {PlatformVers} Setup Bundle.
 
 . From {ControllerName}, untar the bundle:
 +
@@ -29,7 +30,7 @@ $ cd ansible-automation-platform-setup-bundle-2.4-1
 .. automationhub_pg_host, automationhub_pg_port
 .. automationhub_pg_password
 +
-*Example Inventory*
+*Example Inventory file*
 +
 ----
 [automationcontroller]
@@ -75,5 +76,5 @@ $ sudo -i
 
 [NOTE]
 ====
-The inventory must be kept intact after installation because it is used for backup, restore, and upgrade functions. Consider keeping a backup copy in a secure location, given that the inventory file contains passwords.
+The inventory file must be kept intact after installation because it is used for backup, restore, and upgrade functions. Keep a backup copy in a secure location, given that the inventory file contains passwords.
 ====

@@ -8,9 +8,9 @@ To add a subscription to {PlatformNameShort} without an internet connection, cre
 
 . Log in to *access.redhat.com*.
 
-. From the navigation panel, select menu:Subscriptions[Subscriptions].
+. From the navigation panel, select *menu:Subscriptions[Subscriptions]*.
 
-. Select menu:Subscription Allocations[Subscription Allocations].
+. Select *menu:Subscription Allocations[Subscription Allocations]*.
 
 . Click btn:[Create New subscription allocation].
 
@@ -18,16 +18,16 @@ To add a subscription to {PlatformNameShort} without an internet connection, cre
 
 . Select menu:Satellite 6.8[Satellite 6.8] as the type.
 
-. Click btn:[Create]. The Details tab will open for your subscription allocation.
+. Click btn:[Create]. The *Details* tab opens for your subscription allocation.
 
 . Select the menu:Subscriptions[Subscriptions] tab.
 
 . Click btn:[Add Subscription].
 
-. Find your {PlatformNameShort} subscription, and in the Entitlements box *add* the number of entitlements you want to assign to your environment. A single entitlement is needed for each node that will be managed by {PlatformNameShort}: server, network device, etc.
+. Find your {PlatformNameShort} subscription, and in the *Entitlements* box, *add* the number of entitlements you want to assign to your environment. A single entitlement is needed for each node that will be managed by {PlatformNameShort}: server, network device, etc.
 
 . Click btn:[Submit].
 
 . Click btn:[Export Manifest].
 
-. This downloads a file __manifest_<allocation name>_<date>.zip__ that be imported with {ControllerName} after installation.
+This downloads a file __manifest_<allocation name>_<date>.zip__ that be imported with {ControllerName} after installation.

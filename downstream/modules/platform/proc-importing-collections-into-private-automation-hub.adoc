@@ -1,8 +1,8 @@
 [id="importing-collections-into-private-automation-hub_{context}"]
 
-= Importing Collections into {PrivateHubName}
+= Importing collections into {PrivateHubName}
 
-You can download a collection as a tarball file from {HubNameMain} for use in your {PrivateHubName}. Certified collections are available on the link:https://console.redhat.com/ansible/automation-hub/[{HubName} Hybrid Cloud Console], and community collections are at link:https://galaxy.ansible.com/[{Galaxy}]. If the collection has dependencies, they will also need to be downloaded and installed. 
+You can download a collection as a tarball file from {HubNameMain} for use in your {PrivateHubName}. Certified collections are available on the link:https://console.redhat.com/ansible/automation-hub/[{HubName} Hybrid Cloud Console], and community collections are on link:https://galaxy.ansible.com/[{Galaxy}]. You must also download and install any dependencies needed for the collection.
 
 .Procedure
 

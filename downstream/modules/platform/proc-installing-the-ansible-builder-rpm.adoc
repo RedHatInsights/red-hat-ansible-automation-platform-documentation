@@ -2,19 +2,25 @@
 
 = Installing the ansible-builder RPM
 
-.Procedure
+[role="_abstract"]
 
-. On a RHEL system, install the ansible-builder RPM. This can be done in one of several ways:
+In order to create custom {ExecEnvShort} images in a disconnected environment, you will need to have a working copy of ansible-builder installed. On a RHEL system there are several ways to do this.
 
-.. Subscribe the RHEL box to a Satellite on the disconnected network.
-.. Attach the Ansible Automation Platform subscription and enable the AAP repo.
-.. Install the ansible-builder RPM.
-+
+* Subscribe the RHEL box to a Satellite on the disconnected network.
+* Attach the Ansible Automation Platform subscription and enable the AAP repo.
+
 [NOTE]
 ====
 This is preferred if a Satellite exists because the {ExecEnvShort} images can use RHEL content from the Satellite if the underlying build host is registered.
 ====
-+
+
+.Prerequisites
+
+* Any collection required must already be uploaded into your {PrivateHubName}.
+
+
+.Procedure
+
 . Unarchive the {PlatformNameShort} setup bundle.
 . Install the ansible-builder RPM and its dependencies from the included content:
 +
@@ -85,9 +91,9 @@ gpgcheck = 1
 
 .. For self-signed certificates (the installer default), make a copy of the file __/etc/pulp/certs/root.crt__ from your {PrivateHubName} and name it *hub-root.crt*.
 
-.. If an internal certificate authority was used to request and sign the {PrivateHubName} web server certificate, make a copy of that CA certificate called *hub-root.crt*.
+.. If you used an internal certificate authority to request and sign the {PrivateHubName} web server certificate, make a copy of that CA certificate called *hub-root.crt*.
 
-. Create your python requirements.txt and ansible collection requirements.yml with the content needed for your custom {ExecEnvShort} image. Note that any collection required must already be uploaded into your {PrivateHubName}.
+. Create your python requirements.txt and ansible collection requirements.yml with the content needed for your custom {ExecEnvShort} image.
 
 . Use ansible-builder to create the context directory used to build the {ExecEnvShort} image.
 +
@@ -177,13 +183,13 @@ $ podman build -f context/Containerfile \
     -t <hub_fqdn>/custom-ee:latest
 ----
 +
-. Once the custom {ExecEnvShort} image builds successfully, push it to the {PrivateHubName}.
+. After the custom {ExecEnvShort} image builds successfully, push it to the {PrivateHubName}.
 +
 ----
 $ podman push <hub_fqdn>/custom-ee:latest
 ----
 
-== Workflow for upgrading between minor {PlatformNameShort} releases
+== Upgrading between minor {PlatformNameShort} releases
 
 To upgrade between minor releases of {PlatformNameShort} 2, use this general workflow.
 
@@ -191,7 +197,7 @@ To upgrade between minor releases of {PlatformNameShort} 2, use this general wor
 
 . Download and unarchive the latest {PlatformNameShort} 2 setup bundle.
 
-. Take a backup of the existing installation.
+. Create a backup of the existing installation.
 
 . Copy the existing installation inventory file into the new setup bundle directory.
 

@@ -8,25 +8,27 @@ Before importing a collection, you must first create a namespace for the collect
 
 . Log in to the link:https://console.redhat.com/ansible/automation-hub/[{HubName} Hybrid Cloud Console].
 
-. From the navigation panel, select menu:Collections[Namespaces].
+. From the navigation panel, select *menu:Collections[Namespaces]*.
 
-. Click btn:[Create].
+. Click *btn:[Create]*.
 
 . Provide the namespace name.
 
-. Click btn:[Create].
+. Click *btn:[Create]*.
 
-== Importing the collection tarball with GUI
+== Importing the collection tarball by using the web console
+
+Once the namespace has been created, you can import the collection by using the web console.
 
 .Procedure
 
 . Log in to link:https://console.redhat.com/ansible/automation-hub/[{HubName} Hybrid Cloud Console].
 
-. From the navigation panel, select menu:Collections[Namespaces].
+. From the navigation panel, select *menu:Collections[Namespaces]*.
 
-. Click on btn:[View collections] of the namespace you will be importing the collection into.
+. Click *btn:[View collections]* next to the namespace you will be importing the collection into.
 
-. Click btn:[Upload collection].
+. Click *btn:[Upload collection]*.
 
 . Click the *folder icon* and select the tarball of the collection.
 
@@ -35,13 +37,13 @@ Before importing a collection, you must first create a namespace for the collect
 This opens the 'My Imports' page.  You can see the status of the import and various details of the files and modules that have been imported.
 
 
-== Importing the collection tarball using ansible-galaxy via CLI
+== Importing the collection tarball by using the CLI
 
-You can import collections into the private automation hub by using the command-line interface rather than the GUI.
+You can import collections into your {PrivateHubName} by using the command-line interface rather than the GUI.
 
 .Procedure
 
-. Copy the collection tarballs to the private automation hub.
+. Copy the collection tarballs to the {PrivateHubName}.
 +
 . Log in to the {PrivateHubName} server via SSH.
 +
@@ -54,7 +56,7 @@ You can import collections into the private automation hub by using the command-
 ----
 +
 
-. Update the `/etc/ansible/ansible.cfg` file with your hub configuration. Use either a token or a username and password for authentication.
+. Update the `/etc/ansible/ansible.cfg` file with your {HubName} configuration. Use either a token or a username and password for authentication.
 +
 ----
 [galaxy]

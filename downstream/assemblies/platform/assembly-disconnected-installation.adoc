@@ -11,11 +11,14 @@ If you are not connected to the internet or do not have access to online reposit
 
 == Prerequisites
 
-Before installing {PlatformNameShort} on a disconnected network, you must:
+Before installing {PlatformNameShort} on a disconnected network, you must meet the following prerequisites:
 
-. Create a subscription manifest. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_operations_guide/assembly-aap-obtain-manifest-files#doc-wrapper[Obtaining a manifest file] for more information.
-. Download the {PlatformNameShort} setup bundle at {PlatformDownloadUrl}.
-. Create link:https://docs.ansible.com/ansible/latest/collections/community/general/nsupdate_module.html[DNS records] for the {ControllerName} and {PrivateHubName} servers.
+. A created subscription manifest. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_operations_guide/assembly-aap-obtain-manifest-files#doc-wrapper[Obtaining a manifest file] for more information.
+
+. The {PlatformNameShort}setup bundle at link:{PlatformDownloadUrl}[Customer Portal] is downloaded.
+
+. The link:https://docs.ansible.com/ansible/latest/collections/community/general/nsupdate_module.html[DNS records] for the {ControllerName} and {PrivateHubName} servers are created.
+
 
 include::platform/con-aap-installation-on-disconnected-rhel.adoc[leveloffset=+1]
 

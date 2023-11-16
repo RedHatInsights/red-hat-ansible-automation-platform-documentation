@@ -3,11 +3,13 @@
 = Completing post installation tasks
 
 [role="_abstract"]
-After you have completed the installation, review the post-installation tasks in this section to ensure that {HubName} and {ControllerName} deploy properly.
+After you have completed the installation of {PlatformNameShort}, ensure that {HubName} and {ControllerName} deploy properly.
 
 // the section on adding a controller subscription duplicates content in https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_automation_controller/controller-managing-subscriptions#doc-wrapper
 
 == Adding a controller subscription
+
+
 
 .Procedure
 
@@ -17,7 +19,7 @@ After you have completed the installation, review the post-installation tasks in
 
 . Click btn:[Next].
 
-. Uncheck btn:[User analytics] and btn:[Automation analytics]. These rely on an internet connection and should be turned off.
+. Uncheck btn:[User analytics] and btn:[Automation analytics]. These rely on an internet connection and must be turned off.
 
 . Click btn:[Next].
 
@@ -25,18 +27,19 @@ After you have completed the installation, review the post-installation tasks in
 
 == Updating the CA trust store
 
-As part of your post-installation tasks, you may need to update the software's certificates.
-By default, {PlatformNameShort} {HubName} and {ControllerName} are installed using self-signed certificates. This creates an issue where the controller does not trust the hub’s certificate and will not download the {ExecEnvShort} from the hub. 
+As part of your post-installation tasks, you must update the software's certificates.
+By default, {PlatformNameShort} {HubName} and {ControllerName} are installed using self-signed certificates. Because of this, the controller does not trust the hub’s certificate and will not download the {ExecEnvShort} from the hub. 
 
-To address this issue, you must import the hub’s CA cert as a trusted cert on the controller. You can do this in one of two ways, depending on whether SSH is available as root user between {ControllerName} and {PrivateHubName}. The steps in these procedures are adapted from the Knowledgebase article link:https://access.redhat.com/solutions/6707451[Project sync fails with unknown certificate authority error in {PlatformNameShort} 2.1].
+To ensure that automation controller downloads the execution environment from automation hub, you must import the hub’s Certificate Authority (CA) certificate as a trusted certificate on the controller. You can do this in one of two ways, depending on whether SSH is available as root user between {ControllerName} and {PrivateHubName}. 
 
-=== Copying the root certificate on the {PrivateHubName} to the {ControllerName} using secure copy (SCP)
+=== Using secure copy (SCP) as a root user
+
+If SSH is available as the root user between the controller and {PrivateHubName}, use SCP to copy the root certificate on the {PrivateHubName} to the controller.
+
 
 .Procedure
 
-. If SSH is available as the root user between the controller and {PrivateHubName}, use SCP to copy the root certificate on the {PrivateHubName} to the controller.
- 
- . Run `update-ca-trust` on the controller to update the CA trust store. On the {ControllerName}, run:
+ . Run `update-ca-trust` on the controller to update the CA trust store:
 
 ----
 $ sudo -i
@@ -45,13 +48,13 @@ $ sudo -i
 # update-ca-trust
 ----
 
-=== Copying and pasting
+=== Copying and pasting as a non root user
+
+If SSH is unavailable as root between the {PrivateHubName} and the controller, copy the contents of the file __/etc/pulp/certs/root.crt__ on the {PrivateHubName} and paste it into a new file on the controller called __/etc/pki/ca-trust/source/anchors/automationhub-root.crt__. 
 
 .Procedure
 
-. If SSH is unavailable as root between the {PrivateHubName} and the controller, copy the contents of the file __/etc/pulp/certs/root.crt__ on the {PrivateHubName} and paste it into a new file on the controller called __/etc/pki/ca-trust/source/anchors/automationhub-root.crt__. 
-
-. After the new file is created, run the command `update-ca-trust` in order to update the CA trust store with the new certificate. On the {PrivateHubName}, run:
+. Run `update-ca-trust` to update the CA trust store with the new certificate. On the {PrivateHubName}, run:
 
 ----
 $ sudo -i
@@ -60,10 +63,16 @@ $ sudo -i
 'END CERTIFICATE')
 ----
 
-. On the {ControllerName}, run:
+. On the {ControllerName}:
+
 ----
 $ sudo -i
 # vi /etc/pki/ca-trust/source/anchors/automationhub-root.crt
 (paste the contents of the root.crt file from the private automation hub into the new file and write to disk)
 # update-ca-trust
 ----
+
+
+.Additional Resources
+
+* For further information on unknown certificate authority, see link:https://access.redhat.com/solutions/6707451[Project sync fails with unknown certificate authority error in {PlatformNameShort} 2.1].

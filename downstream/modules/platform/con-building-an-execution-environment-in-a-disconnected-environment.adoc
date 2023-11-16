@@ -1,6 +1,6 @@
 [id="building-an-execution-environment-in-a-disconnected-environment_{context}"]
 
-= Building an {ExecEnvShort} in a disconnected environment
+= Custom {ExecEnvShort} in a disconnected environment
 
 When building a custom {ExecEnvShort}, the ansible-builder tool defaults
 to downloading the following requirements from the internet:
@@ -11,15 +11,20 @@ to downloading the following requirements from the internet:
 ** The RHEL repositories might also be needed to meet certain collection requirements.
 * registry.redhat.io for access to the ansible-builder-rhel8 container image.
 
-Building an {ExecEnvShort} image in a disconnected environment requires a subset of all of these mirrored, or otherwise made available on the disconnected network.
-See xref:importing-collections-into-private-automation-hub_disconnected-installation[Importing Collections into {PrivateHubName}] for information on importing collections from {Galaxy} or {HubName} into a {PrivateHubName}.
+Building an {ExecEnvShort} image in a disconnected environment requires a subset of all of these requirements mirrored, or otherwise made available on the disconnected network.
 
-Mirrored PyPI content once transferred into the high-side network can be made available using a web server or an artifact repository like Nexus.
+
+Mirrored PyPI content when transferred into the high-side network can be made available using a web server or an artifact repository like Nexus.
 
 The UBI repositories can be mirrored on the low-side using a tool like `reposync`, imported to the disconnected environment, and made available from Satellite or a simple web server (because the content is freely redistributable).
 
 The `ansible-builder-rhel8` container image can be imported into a {PrivateHubName} in the same way a custom {ExecEnvShort} can be imported.
 See xref:approving-the-imported-collection_disconnected-installation[Transferring Custom {ExecEnvShort} Images Across a Disconnected Boundary] for details substituting `localhost/custom-ee` for `registry.redhat.io/ansible-automation-platform-21/ansible-builder-rhel8`. This makes the ansible-builder-rhel8 image available in the {PrivateHubName} registry along with the default {ExecEnvShort} images.
 
-Once all of the prerequisites are available on the high-side network,
-ansible-builder and podman can be used to create a custom {ExecEnvShort} image.
+When all of the prerequisites are available on the high-side network, you can use ansible-builder and podman to create a custom {ExecEnvShort} image.
+
+
+[role="_additional-resources"]
+.Additional Resources
+
+* See xref:importing-collections-into-private-automation-hub_disconnected-installation[Importing Collections into {PrivateHubName}] for information on importing collections from {Galaxy} or {HubName} into a {PrivateHubName}.
