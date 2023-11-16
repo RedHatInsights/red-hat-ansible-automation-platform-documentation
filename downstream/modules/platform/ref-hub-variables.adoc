@@ -26,6 +26,8 @@ When this is set to `ldap`, you must also set the following variables:
 * `automationhub_ldap_user_search_base_dn`
 * `automationhub_ldap_group_search_base_dn`
 
+If any of these are absent, the installation will be halted.
+
 | *`automationhub_auto_sign_collections`* | If a collection signing service is enabled, collections are not signed automatically by default.
 
 Setting this parameter to `true` signs them by default.
@@ -312,11 +314,18 @@ A list of other LDAP related variables (not covered by the `automationhub_ldap_x
 |====
 | *Variable* | *Description*
 | *`automationhub_ldap_bind_dn`* | The name to use when binding to the LDAP server with `automationhub_ldap_bind_password`.
+
+Must be set when integrating {PrivateHubName} with LDAP, or the installation will fail.
+
 | *`automationhub_ldap_bind_password`* | _Required_
 
 The password to use with `automationhub_ldap_bind_dn`.
+
+Must be set when integrating {PrivateHubName}  LDAP, or the installation will fail.
 | *`automationhub_ldap_group_search_base_dn`* | An LDAPSearch object that finds all LDAP groups that users might belong to.
 If your configuration makes any references to LDAP groups, this and `automationhub_ldap_group_type` must be set.
+
+Must be set when integrating {PrivateHubName} with LDAP, or the installation will fail.
 
 Default = `None`
 | *`automationhub_ldap_group_search_filter`* | _Optional_
@@ -333,17 +342,38 @@ Scope to search for groups in an LDAP tree using the django framework for LDAP a
 Used for installing {HubName} with LDAP.
 
 Default = `SUBTREE`
+| *`automationhub_ldap_group_type`* | 
+
+Describes the type of group returned by *automationhub_ldap_group_search*.
+
+This is set dynamically based on the the values of *automationhub_ldap_group_type_params* and *automationhub_ldap_group_type_class*, otherwise it is the default value coming from django-ldap which is 'None'
+
+Default  = `django_auth_ldap.config:GroupOfNamesType`
 | *`automationhub_ldap_group_type_class`* | _Optional_
+
+The importable path for the django-ldap group type class.
 
 Variable identifies the group type used during group searches within the django framework for LDAP authentication.
 Used for installing {HubName} with LDAP.
 
 Default =`django_auth_ldap.config:GroupOfNamesType`
+//Removed as it seems not to be an inventory file variable, but is used in ldapextras.yml
+//| *`automationhub_ldap_group_type_params`* | 
+//
+//Default = "name_attr": "cn"
 | *`automationhub_ldap_server_uri`* | The URI of the LDAP server.
+
 This can be any URI that is supported by your underlying LDAP libraries.
+
+Must be set when integrating {PrivateHubName}  LDAP, or the installation will fail.
 | *`automationhub_ldap_user_search_base_dn`* | An LDAPSearch object that locates a user in the directory.
 The filter parameter should contain the placeholder %(user)s for the username.
 It must return exactly one result for authentication to succeed.
+
+Must be set when integrating {PrivateHubName} with LDAP, or the installation will fail.
+| *`automationhub_ldap_user_search_filter`* | _Optional_
+
+Default = `'(uid=%(user)s)'`
 | *`automationhub_ldap_user-search_scope`* | _Optional_
 
 Scope to search for users in an LDAP tree using django framework for LDAP authentication.
