@@ -31,7 +31,7 @@ Copy the *Ansible CLI URL* from the UI in the format of `/https://$<hub_url>/api
 +
 image:projects-create-ah-credential.png[Create hub credential]
 +
-For UI specific instructions, see https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/managing_red_hat_certified_validated_and_ansible_galaxy_content_in_automation_hub/index[Managing Red Hat Certified, validated, and Ansible Galaxy content in automation hub].
+For UI specific instructions, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/managing_content_in_automation_hub/managing-cert-valid-content[Red Hat Certified, validated, and Ansible Galaxy content in automation hub].
 
 . Navigate to the organization for which you want to synchronize content from and add the new credential to the organization. 
 This enables you to associate each organization with the credential, or repository, that you want to use content from.
@@ -52,7 +52,7 @@ Then you can assign different levels of access to different organizations.
 For example, you can create a `Developers` organization that has access to both repos, while an Operations
 organization just has access to the *Prod* repo only.
 
-For UI specific instructions, see link https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/managing_user_access_in_private_automation_hub/index[Managing user access in Private Automation Hub].
+For UI specific instructions, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/managing_content_in_automation_hub/index#configuring-user-access-containers[Configuring user access for container repositories in private automation hub].
 ====
 
 . If {HubName} has self-signed certificates, use the toggle to enable the setting *Ignore Ansible Galaxy SSL Certificate Verification*. 
