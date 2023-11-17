@@ -8,11 +8,11 @@
 * You are installing on a machine that meets base system requirements.
 * You have updated all of the packages to the recent version of your RHEL nodes.
 
-WARNING: You may experience errors if you do not fully upgrade your RHEL nodes prior to your {PlatformNameShort} installation.
+WARNING: To prevent errors, upgrade your RHEL nodes fully before installing {PlatformNameShort}.
 
-* You have created a Red Hat Registry Service Account, using the instructions in the link:https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts guide].
+* You have created a Red Hat Registry Service Account, by using the instructions in link:https://access.redhat.com/RegistryAuthentication#creating-registry-service-accounts-6[Creating Registry Service Accounts].
 
 
 [role="_additional-resources"]
 .Additional resources
-For more information about obtaining a platform installer or system requirements, refer to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[{PlatformName} system requirements] in the _{PlatformName} Planning Guide_.
+For more information about obtaining a platform installer or system requirements, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[{PlatformName} system requirements] in the _{PlatformName} Planning Guide_.

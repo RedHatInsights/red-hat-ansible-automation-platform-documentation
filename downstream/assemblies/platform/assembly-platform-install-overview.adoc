@@ -9,13 +9,13 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-The {PlatformName} installation program offers you flexibility, allowing you to install {PlatformNameShort} using a number of supported installation scenarios. Starting with {PlatformNameShort} {PlatformVers}, the installation scenarios include the optional deployment of {EDAcontroller}, which introduces the automated resolution of IT requests. 
+The {PlatformName} installation program offers you flexibility, allowing you to install {PlatformNameShort} by using a number of supported installation scenarios. Starting with {PlatformNameShort} {PlatformVers}, the installation scenarios include the optional deployment of {EDAcontroller}, which introduces the automated resolution of IT requests. 
 
 Regardless of the installation scenario you choose, installing {PlatformNameShort} involves the following steps:
 
 xref:proc-editing-installer-inventory-file_platform-install-scenario[Editing the {PlatformName} installer inventory file]:: The {PlatformNameShort} installer inventory file allows you to specify your installation scenario and describe host deployments to Ansible. The examples provided in this document show the parameter specifications needed to install that scenario for your deployment.
 
-xref:proc-running-setup-script_platform-install-scenario[Running the {PlatformName} installer setup script]:: The setup script installs your Private Automation Hub using the required parameters defined in the inventory file.
+xref:proc-running-setup-script_platform-install-scenario[Running the {PlatformName} installer setup script]:: The setup script installs your private automation hub by using the required parameters defined in the inventory file.
 
 xref:proc-verify-controller-installation_platform-install-scenario[Verifying {ControllerName} installation]:: After installing {PlatformNameShort}, you can verify that the installation has been successful by logging in to the {ControllerName}.
 
