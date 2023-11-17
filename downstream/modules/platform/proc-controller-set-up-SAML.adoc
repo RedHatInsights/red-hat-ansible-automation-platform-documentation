@@ -1,0 +1,384 @@
+[id="controller-set-up-SAML"]
+
+= Setting up SAML authentication
+
+SAML enables the exchange of authentication and authorization data between an Identity Provider (IdP - a system of servers that provide the Single Sign On service) and a service provider, in this case, {ControllerName}. 
+
+You can configure {ControllerName} to communicate with SAML to authenticate (create/login/logout) {ControllerName} users. 
+You can embed User, Team, and Organization membership in the SAML response to {ControllerName}.
+
+image::ag-configure-auth-saml-topology.png[SAML topology]
+
+The following instructions describe {ControllerName} as the service provider. 
+To authenticate users through RHSSO (keycloak), see link:https://www.ansible.com/blog/red-hat-single-sign-on-integration-with-ansible-tower[Red Hat Single Sign On Integration with the Automation Controller].
+
+.Procedure
+
+. From the navigation panel, select menu:Settings[].
+. Select *SAML settings* from the list of *Authentication* options.
++
+[NOTE]
+====
+The *SAML Assertion Consume Service (ACS) URL* and *SAML Service Provider Metadata URL* fields are pre-populated and are non-editable. Contact the IdP administrator and provide the information contained in these fields.
+====
+. Click btn:[Edit] and set the *SAML Service Provider Entity ID* to be the same as the *Base URL* of the {ControllerName} host field, found in the *Miscellaneous System settings* screen.
+You can view it through the API in the `/api/v2/settings/system`, under the `CONTROLLER_BASE_URL` variable. 
+You can set the *Entity ID* to any one of the individual {ControllerName} cluster nodes, but it is good practice to set it to the URL of the service provider. 
+Ensure that the *Base URL* matches the FQDN of the load balancer, if used.
++
+[NOTE]
+====
+The *Base URL* is different for each node in a cluster. 
+A load balancer often sits in front of {ControllerName} cluster nodes to provide a single entry point, the {ControllerName} Cluster FQDN. 
+The SAML service provider must be able establish an outbound connection and route to the {ControllerName} Cluster Node or the {ControllerName} Cluster FQDN that you set in the *SAML Service Provider Entity ID*.
+====
++
+In the following example, the service provider is the {ControllerName} cluster, and therefore, the ID is set to the {ControllerName} Cluster FQDN:
++
+image::configure-auth-saml-service-provider.png[SAML service provider]
++
+. Create a server certificate for the Ansible cluster. 
+Typically when an Ansible cluster is configured, the {ControllerName} nodes are configured to handle HTTP traffic only and the load balancer is an SSL Termination Point. 
+In this case, an SSL certificate is required for the load balancer, and not for the individual {ControllerName} Cluster Nodes. 
+You can enable or disable SSL per individual {ControllerName} node, but you must disable it when using an SSL terminated load balancer. 
+Use a non-expiring self signed certificate to avoid periodically updating certificates. 
+This way, authentication does not fail in case someone forgets to update the certificate.
++
+[NOTE]
+====
+The *SAML Service Provider Public Certificate* field must contain the entire certificate, including the `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`.
+====
++
+If you are using a CA bundle with your certificate, include the entire bundle in this field.
++
+.Example
++
+[literal, options="nowrap" subs="+attributes"]
+----
+-----BEGIN CERTIFICATE-----
+... cert text ...
+-----END CERTIFICATE-----
+----
++
+. Create an optional private key for the controller to use as a service provider and enter it in the *SAML Service Provider Private Key* field.
++
+.Example
++
+[literal, options="nowrap" subs="+attributes"]
+----
+-----BEGIN PRIVATE KEY-----
+... key text ...
+-----END PRIVATE KEY-----
+----
++
+. Provide the IdP with details about the {ControllerName} cluster during the SSO process in the *SAML Service Provider Organization Info* field:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+  "en-US": {
+    "url": "http://www.example.com",
+    "displayname": "Example",
+    "name": "example"
+  }
+}
+----
++
+[IMPORTANT]
+====
+You must complete these fields to configure SAML correctly within {ControllerName}.
+====
++
+. Provide the IdP with the technical contact information in the *SAML Service Provider Technical Contact* field. 
+Do not remove the contents of this field:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+"givenName": "Some User",
+"emailAddress": "suser@example.com"
+}
+----
++
+. Provide the IdP with the support contact information in the *SAML Service Provider Support Contact* field. 
+Do not remove the contents of this field:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+"givenName": "Some User",
+"emailAddress": "suser@example.com"
+}
+----
++
+. In the *SAML Enabled Identity Providers* field, provide information on how to connect to each IdP listed. 
+{ControllerNameStart} expects the following SAML attributes in the following example:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+Username(urn:oid:0.9.2342.19200300.100.1.1)
+Email(urn:oid:0.9.2342.19200300.100.1.3)
+FirstName(urn:oid:2.5.4.42)
+LastName(urn:oid:2.5.4.4)
+----
++
+If these attributes are not known, map existing SAML attributes to `Username`, `Email`, `FirstName`, and `LastName`.
++
+Configure the required keys for each IdP:
++
+* `attr_user_permanent_id` - The unique identifier for the user. 
+It can be configured to match any of the attributes sent from the IdP. 
+It is normally set to `name_id` if the `SAML:nameid` attribute is sent to the {ControllerName} node.
+It can be the username attribute or a custom unique identifier.
+* `entity_id` - The Entity ID provided by the IdP administrator. 
+The administrator creates a SAML profile for {ControllerName} and it generates a unique URL.
+* `url`- The Single Sign On (SSO) URL that {ControllerName} redirects the user to, when SSO is activated.
+* `x509_cert` - The certificate provided by the IdP administrator that is generated from the SAML profile created on the IdP. 
+Remove the `---BEGIN CERTIFICATE---`and `---END CERTIFICATE---` headers, then enter the certificate as one non-breaking string.
++
+Multiple SAML IdPs are supported. 
+Some IdPs might provide user data using attribute names that differ from the default OIDs. 
+The SAML NameID is a special attribute used by some IdPs to tell the service provider (the {ControllerName} cluster) what the unique user identifier is. 
+If it is used, set the `attr_user_permanent_id` to `name_id` as shown in the following example. 
+Other attribute names can be overridden for each IdP:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+"myidp": {
+  "entity_id": "https://idp.example.com",
+  "url": "https://myidp.example.com/sso",
+  "x509cert": ""
+},
+"onelogin": {
+  "entity_id": "https://app.onelogin.com/saml/metadata/123456",
+  "url": "https://example.onelogin.com/trust/saml2/http-post/sso/123456",
+"x509cert": "",
+  "attr_user_permanent_id": "name_id",
+  "attr_first_name": "User.FirstName",
+  "attr_last_name": "User.LastName",
+  "attr_username": "User.email",
+  "attr_email": "User.email"
+  }
+}
+----
++
+[WARNING]
+====
+Do not create a SAML user that shares the same email with another user (including a non-SAML user). 
+Doing so results in the accounts being merged. 
+Note that this same behavior exists for system administrators.
+Therefore, a SAML login with the same email address as the system administrator can login with system administrator privileges. 
+To avoid this, you can remove (or add) administrator privileges based on SAML mappings.
+====
++
+. Optional: Provide the *SAML Organization Map*. 
+For more information, see [ADD XREF]Organization and Team Mapping.
+. You can configure {ControllerName} to look for particular attributes that contain Team and Organization membership to associate with users when they log into {ControllerName}. 
+The attribute names are defined in the *SAML Organization Attribute Mapping* and the *SAML Team Attribute Mapping* fields.
++
+.Example SAML Organization Attribute Mapping
++
+The following is an example SAML attribute that embeds user organization membership in the attribute `member-of`:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+<saml2:AttributeStatement>
+    <saml2:Attribute FriendlyName="member-of" Name="member-of"
+NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+        <saml2:AttributeValue>Engineering</saml2:AttributeValue>
+        <saml2:AttributeValue>IT</saml2:AttributeValue>
+        <saml2:AttributeValue>HR</saml2:AttributeValue>
+        <saml2:AttributeValue>Sales</saml2:AttributeValue>
+    </saml2:Attribute>
+    <saml2:Attribute FriendlyName="admin-of" Name="admin-of"
+NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+        <saml2:AttributeValue>Engineering</saml2:AttributeValue>
+    </saml2:Attribute>
+</saml2:AttributeStatement>
+----
++
+The following is the corresponding {ControllerName} configuration:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+  "saml_attr": "member-of",
+  "saml_admin_attr": "admin-of",
+  "remove": true,
+  "remove_admins": false
+}
+----
++
+* `saml_attr`: The SAML attribute name where the organization array can be found and `remove` is set to `true` to remove a user from all organizations before adding the user to the list of organizations. 
+To keep the user in the organizations they are in while adding the user to the organizations in the SAML attribute, set `remove` to `false`.
+* `saml_admin_attr`: Similar to the `saml_attr` attribute, but instead of conveying organization membership, this attribute conveys administrator organization permissions.
++
+.Example SAML Team Attribute Mapping
++
+The following example is another SAML attribute that contains a team membership in a list:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+<saml:AttributeStatement>
+     <saml:Attribute
+        xmlns:x500="urn:oasis:names:tc:SAML:2.0:profiles:attribute:X500"
+        x500:Encoding="LDAP"
+        NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+        Name="urn:oid:1.3.6.1.4.1.5923.1.1.1.1"
+        FriendlyName="eduPersonAffiliation">
+        <saml:AttributeValue
+            xsi:type="xs:string">member</saml:AttributeValue>
+        <saml:AttributeValue
+            xsi:type="xs:string">staff</saml:AttributeValue>
+        </saml:Attribute>
+</saml:AttributeStatement>
+{
+    "saml_attr": "eduPersonAffiliation",
+    "remove": true,
+    "team_org_map": [
+    {
+        "team": "member",
+        "organization": "Default1"
+    },
+    {
+        "team": "staff",
+        "organization": "Default2"
+    }
+  ]
+}
+----
++
+* `saml_attr`: The SAML attribute name where the team array can be found.
+* `remove`: Set `remove` to `true` to remove the user from all teams before adding the user to the list of teams. 
+To keep the user in the teams they are in while adding the user to the teams in the SAML attribute, set `remove` to `false`.
+* `team_org_map`: An array of dictionaries of the form `{ "team": "<AWX Team Name>", "organization": "<AWX Org Name>" }` that defines mapping from controller Team -> {ControllerName} organization. 
+You need this because the same named team can exist in multiple organizations in {ControllerName}. 
+The organization to which a team listed in a SAML attribute belongs to, is ambiguous without this mapping.
++
+You can create an alias to override both teams and organizations in the *SAML Team Attribute Mapping* field. 
+This option is useful in cases when the SAML backend sends out complex group names, as show in the following example:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+ "remove": false,
+ "team_org_map": [
+  {
+   "team": "internal:unix:domain:admins",
+   "organization": "Default",
+   "team_alias": "Administrators"
+  },
+  {
+   "team": "Domain Users",
+   "organization_alias": "OrgAlias",
+   "organization": "Default"
+  }
+ ],
+ "saml_attr": "member-of"
+}
+----
++
+Once the user authenticates, {ControllerName} creates organization and team aliases.
++
+. Optional: Provide team membership mapping in the *SAML Team Map* field. 
+For more information, see [ADD XREF]Organization and Team Mapping.
+. Optional: Provide security settings in the *SAML Security Config* field. 
+This field is the equivalent to the `SOCIAL_AUTH_SAML_SECURITY_CONFIG` field in the API. 
+For more information, see link:https://github.com/SAML-Toolkits/python-saml#settings[OneLogin's SAML Python Toolkit].
++
+{ControllerNameStart} uses the `python-social-auth` library when users log in through SAML. 
+This library relies on the `python-saml` library to make the settings available for the next two optional fields, *SAML Service Provider extra configuration data* and *SAML IDP to extra_data attribute mapping*.
++
+* The *SAML Service Provider extra configuration data* field is equivalent to the `SOCIAL_AUTH_SAML_SP_EXTRA` in the API. 
+For more information, see link:https://github.com/SAML-Toolkits/python-saml#settings[OneLogin's SAML Python Toolkit] to learn about the valid service provider extra (`SP_EXTRA`) parameters.
+* The *SAML IDP to extra_data attribute mapping* field is equivalent to the `SOCIAL_AUTH_SAML_EXTRA_DATA` in the API. 
+For more information, see Python's SAML link:https://python-social-auth.readthedocs.io/en/latest/backends/saml.html#advanced-settings [Advanced Settings] documentation.
+* The *SAML User Flags Attribute Mapping* field enables you to map SAML roles and attributes to special user flags. 
+The following attributes are valid in this field:
+** `is_superuser_role`: Specifies one or more SAML roles which grants a user the superuser flag.
+** `is_superuser_attr`: Specifies a SAML attribute which grant a user the superuser flag.
+** `is_superuser_value`: Specifies one or more values required for `is_superuser_attr` that is required for the user to be a superuser.
+** `remove_superusers`: Boolean indicating if the superuser flag should be removed for users or not. 
+This defaults to `true`. 
+** `is_system_auditor_role`: Specifies one or more SAML roles which will grant a user the system auditor flag.
+** `is_system_auditor_attr`: Specifies a SAML attribute which will grant a user the system auditor flag.
+** `is_system_auditor_value`: Specifies one or more values required for `is_system_auditor_attr` that is required for the user to be a system auditor.
+** `remove_system_auditors`: Boolean indicating if the `system_auditor` flag should be removed for users or not. 
+This defaults to `true`. 
++
+The `role` and `value` fields are lists and are 'OR' logic. 
+If you specify two roles: [ “Role 1”, “Role 2” ] and the SAML user has either role, the logic considers them to have the required role for the flag.
+This is the same with the `value` field, if you specify: [ “Value 1”, “Value 2”] and the SAML user has either value for their attribute the logic considers their attribute value to have matched.
++
+If you specify `role` and `attr` for either `superuser` or `system_auditor`, the settings for `attr` take precedence over a role. 
+System administrators and System auditor roles are evaluated at login for a SAML user. 
+If you grant a SAML user one of these roles through the UI and not through the SAML settings, the roles are removed on the user's next login unless the `remove` flag is set to `false`. 
+The `remove` flag, if `false`, never enables the SAML adapter to remove the corresponding flag from a user. 
+The following table describes how the logic works:
++
+[cols="33%,33%,33%,33%,33%,33%",options="header"]
+|===
+| *Has one or more roles* | *Has `attr`* | *Has one or more `attr Values`* | *Remove flag* | *Previous Flag* | *Is flagged*
+| No | No | N/A | True | False | No 
+| No | No | N/A | False | False | No 
+| No | No | N/A | True | True | No 
+| No | No | N/A | False | True | Yes
+| Yes | No | N/A | True | False | Yes
+| Yes | No | N/A | False | False | Yes
+| Yes | No | N/A | True | True | Yes
+| Yes | No | N/A | False | False | Yes
+| No | Yes | Yes | True | True | Yes
+| No | Yes | Yes | True | False | Yes
+| No | Yes | Yes | False | False | Yes
+| No | Yes | Yes | True | True | Yes
+| No | Yes | Yes | False | True | Yes
+| No | Yes | No | True | False | No
+| No | Yes | No | False | False | No
+| No | Yes | No | True | True | No
+| No | Yes | No | False | True | Yes
+| No | Yes | Unset | True | False | Yes
+| No | Yes | Unset | False | False | Yes
+| No | Yes | Unset | True | True | Yes
+| No | Yes | Unset | False | True | Yes
+| Yes | Yes | Yes | True | False | Yes
+| Yes | Yes | Yes | False | False | Yes
+| Yes | Yes | Yes | True | True | Yes
+| Yes | Yes | Yes | False | True | Yes
+| Yes | Yes | No | True | False | No
+| Yes | Yes | No | False | False | No
+| Yes | Yes | No | True | True | No
+| Yes | Yes | No | False | True | Yes
+| Yes | Yes | Unset | True | False | Yes
+| Yes | Yes | Unset | False | False | Yes
+| Yes | Yes | Unset | True | True | Yes
+| Yes | Yes | Unset | False | True | Yes
+|===
++ 
+Each time a SAML user authenticates to {ControllerName}, these checks are performed and the user flags are altered as needed.
+If `System Administrator` or `System Auditor` is set for a SAML user within the UI, the SAML adapter overrides the UI setting based on the preceding rules. 
+If you prefer that the user flags for SAML users do not get removed when a SAML user logs in, you can set the `remove_` flag to `false`. 
+With the `remove` flag set to `false`, a user flag set to `true` through either the UI, API or SAML adapter is not removed. 
+However, if a user does not have the flag, and the preceding rules determine the flag should be added, it is added, even if the flag is `false`.
++
+.Example
++ 
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "is_superuser_attr": "blueGroups",
+    "is_superuser_role": ["is_superuser"],
+    "is_superuser_value": ["cn=My-Sys-Admins,ou=memberlist,ou=mygroups,o=myco.com"],
+    "is_system_auditor_attr": "blueGroups",
+    "is_system_auditor_role": ["is_system_auditor"],
+    "is_system_auditor_value": ["cn=My-Auditors,ou=memberlist,ou=mygroups,o=myco.com"]
+}
+----
+. Click btn:[Save].
+
+.Verification
+To verify that the authentication is configured correctly, load the auto-generated URL found in the *SAML Service Provider Metadata URL* into a browser. 
+It should output XML output, otherwise, it is not configured correctly.
+
+Alternatively, logout of {ControllerName} and the login screen displays the SAML logo to indicate it as a alternate method of logging into {ControllerName}:
+
+image::ag-configure-auth-saml-logo.png[SAML logo]

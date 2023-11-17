@@ -1,0 +1,34 @@
+[id="controller-set-up-generic-oidc"]
+
+= Setting up Generic OIDC authentication
+
+OpenID Connect (OIDC) uses the OAuth 2.0 framework. 
+It enables third-party applications to verify the identity and obtain basic end-user information. 
+The main difference between OIDC and SMAL is that SAML has a service provider (SP)-to-IdP trust relationship, whereas OIDC establishes the trust with the channel (HTTPS) that is used to obtain the security token. 
+To obtain the credentials needed to setup OIDC with {ControllerName}, see the documentation from the IdP of your choice that has OIDC support.
+
+.Procedure
+
+. From the navigation panel, select menu:Settings[].
+. Select *Generic OIDC settings* from the list of *Authentication* options.
+. Click btn:[Edit] and enter the following information:
+* *OIDC Key*: The client ID from your third-party IdP.
+* *OIDC Secret*: The client secret from your IdP.
+* *OIDC Provider URL*: The URL for your OIDC provider.
+* *Verify OIDC Provider Certificate*: Use the toggle to enable or disable the OIDC provider SSL certificate verification.
+. Click btn:[Save].
++
+[NOTE]
+====
+Team and organization mappings for OIDC is currently not supported. 
+The OIDC adapter does authentication only and not authorization. 
+It is only capable of authenticating whether this user is who they say they are. 
+It does not authorize what this user is enabled to do.
+Configuring generic OIDC creates the UserID appended with an ID or key to differentiate the same user ID originating from two different sources and therefore, considered different users. 
+So you get an ID of just the user name and the second is the username-<random number>.
+====
+
+.Verification
+To verify that the authentication is configured correctly, logout of {ControllerName} and the login screen displays the OIDC logo to indicate it as a alternative method of logging into {ControllerName}:
+
+image:ag-configure-auth-oidc-logo.png[OIDClogo]

@@ -1,0 +1,25 @@
+[id="controller-set-up-tacacs"]
+
+= Setting up TACACS Plus authentication
+
+Terminal Access Controller Access-Control System Plus (TACACS+) is a protocol that handles remote authentication and related services for networked access control through a centralized server. 
+TACACS+ provides authentication, authorization and accounting (AAA) services, in which you can configure {ControllerName} to use as a source for authentication.
+
+[NOTE]
+====
+This feature is deprecated and will be removed in a future release.
+====
+
+.Procedure
+. From the navigation panel, select menu:Settings[].
+. Select *TACACs+ settings* from the list of *Authentication* options.
+. Click btn:[Edit] and enter the following information:
+* *TACACS+ Server*: Provide the hostname or IP address of the TACACS+ server with which to authenticate. 
+If you leave this field blank, TACACS+ authentication is disabled.
+* *TACACS+ Port*: TACACS+ uses port 49 by default, which is already pre-populated.
+* *TACACS+ Secret*: The secret key for TACACS+ authentication server.
+* *TACACS+ Auth Session Timeout*: The session timeout value in seconds. 
+The default is 5 seconds.
+* *TACACS+ Authentication Protocol*: The protocol used by TACACS+ client. 
+The options are *ascii* or *pap*.
+. Click btn:[Save].

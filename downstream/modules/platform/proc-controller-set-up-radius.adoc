@@ -1,0 +1,14 @@
+[id="controller-set-up-radius"]
+
+= Setting up RADIUS authentication
+
+You can configure {ControllerName} to centrally use RADIUS as a source for authentication information.
+
+.Procedure
+
+. From the navigation panel, select menu:Settings[].
+. Select *RADIUS settings* from the list of *Authentication* options.
+. Click btn:[Edit] and enter the host or IP of the RADIUS server in the *RADIUS Server* field. 
+If you leave this field blank, RADIUS authentication is disabled.
+. Enter the port and secret information in the next two fields.
+. Click btn:[Save].

@@ -1,0 +1,43 @@
+[id="controller-set-up-enterprise-authentication"]
+
+= Set up enterprise authentication
+
+Set up authentication for the following enterprise systems:
+
+* xref:controller-set-up-azure[Azure AD settings]
+* [ADD XREF TO SECTION 23]LDAP Authentication 
+* xref:controller-set-up-radius[RADIUS settings]
+* xref:controller-set-up-SAML[SAML settings]
+** xref:controller-configure-transparent-SAML[Transparent SAML Logins]
+** xref:controller-enable-logging-SAML[Enabling Logging for SAML]
+* xref:controller-set-up-tacacs[TACACS+ settings]
+* xref:controller-set-up-generic-oidc[Generic OIDC settings]
+
+[NOTE]
+====
+For LDAP autentication, see [ADD XREF] Setting up LDAP Authentication.
+====
+
+SAML, RADIUS, and TACACS+ users are categorized as "Enterprise" users. 
+The following rules apply to Enterprise users:
+
+* Enterprise users can only be created through the first successful login attempt from the remote authentication backend.
+
+* Enterprise users cannot be created or authenticated if non-enterprise users with the same name have already been created in {ControllerName}.
+
+* {ControllerNameStart} passwords of enterprise users must always be empty and cannot be set by any user if they are enterprise backend-enabled.
+
+* If enterprise backends are disabled, an enterprise user can be converted to a normal {ControllerName} user by setting the password field. 
++
+[WARNING]
+====
+This operation is irreversible, as the converted {ControllerName} user can no longer be treated as an enterprise user.
+====
+
+include::platform/proc-controller-set-up-azure.adoc[leveloffset=+1]
+include::platform/proc-controller-set-up-radius.adoc[leveloffset=+1]
+include::platform/proc-controller-set-up-SAML.adoc[leveloffset=+1]
+include::platform/proc-controller-configure-transparent-SAML.adoc[leveloffset=+2]
+include::platform/con-controller-enable-logging-SAML.adoc[leveloffset=+2]
+include::platform/proc-controller-set-up-tacacs+.adoc[leveloffset=+1]
+include::platform/proc-controller-set-up-generic-oidc.adoc[leveloffset=+1]
