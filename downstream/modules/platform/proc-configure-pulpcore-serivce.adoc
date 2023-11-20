@@ -1,6 +1,10 @@
 [id="proc-configure-pulpcore-service"]
 
-= Configure pulpcore.serivce
+= Configuring pulpcore.service
+
+After you have configured the inventory file, and applied the SELinux context, you now need to configure the pulp service. 
+
+.Procedure
 
 . With the two mount points set up, shut down the Pulp service to configure `pulpcore.service`:
 +
@@ -29,8 +33,7 @@ $ systemctl enable remote-fs.target
 $ systemctl reboot
 ----
 
-[NOTE]
-====
+.Troubleshooting 
 A bug in the pulpcore SELinux policies can cause the token authentication public/private keys in `etc/pulp/certs/` to not have the proper SELinux labels, causing the pulp process to fail. When this occurs, run the following command to temporarily attach the proper labels:
 
 ----
@@ -38,4 +41,3 @@ $ chcon system_u:object_r:pulpcore_etc_t:s0 /etc/pulp/certs/token_{private,publi
 ----
 
 Repeat this command to reattach the proper SELinux labels whenever you relabel your system.
-====

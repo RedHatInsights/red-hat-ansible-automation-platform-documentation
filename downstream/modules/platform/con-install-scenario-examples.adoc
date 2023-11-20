@@ -5,18 +5,4 @@
 
 [role="_abstract"]
 Red Hat supports several installation scenarios for {PlatformNameShort}. Review the following examples and select those suitable for your preferred installation scenario.
-
-[IMPORTANT]
-====
-* For {PlatformName} or {HubName}: Add an {HubName} host in the `[automationhub]` group.
-* For internal databases: `[database]` cannot be used to point to another host in the {PlatformNameShort} cluster. 
-The database host set to be installed needs to be a unique host.
-* Do not install {ControllerName} and {HubName} on the same node for versions of {PlatformNameShort} in a production or customer environment.
-This can cause contention issues and heavy resource use.
-* Provide a reachable IP address or fully qualified domain name (FQDN) for the `[automationhub]` and `[automationcontroller]` hosts to ensure users can sync and install content from {HubName} from a different node. 
-Do not use 'localhost'.
-* Use of special characters for `pg_password` is limited. The `!`, `#`, `0` and `@` characters are supported. Use of other special characters can cause the setup to fail.
-* Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
-* The inventory file variables `registry_username` and `registry_password` are only required if a non-bundle installer is used.
-====
  

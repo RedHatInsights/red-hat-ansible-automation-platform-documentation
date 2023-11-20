@@ -12,7 +12,7 @@ You must set the following six variables in your {PlatformName} installer invent
 * `automationhub_ldap_user_search_base_dn`
 * `automationhub_ldap_group_search_base_dn`
 
-If any of these variables are missing, the Ansible Automation installer will not complete the installation.
+If any of these variables are missing, the Ansible Automation installer cannot complete the installation.
 
 
 == Setting up your inventory file variables
@@ -54,7 +54,7 @@ auth_ldap_group_type_class= 'django_auth_ldap.config:GroupOfNamesType'
 
 ====
 
-. If you plan to set up extra parameters in your {PrivateHubName} (such as user groups, super user access, mirroring, or others), proceed to the next section.
+. Optional: Set up extra parameters in your {PrivateHubName} such as user groups, super user access, or mirroring. Go to xref:ref-ldap-config-on-pah_platform-install-scenario#configuring_extra_ldap_parameters[Configuring extra LDAP parameters] to complete this optional step.
 
 
 == Configuring extra LDAP parameters
@@ -63,7 +63,8 @@ If you plan to set up super user access, user groups, mirroring or other extra p
 
 .Procedure
 
-. Create a yaml file that will contain `ldap_extra_settings`, such as the following:
+. Create a yaml file that contains `ldap_extra_settings`. 
+* Example:
 +
 ----
 #ldapextras.yml
@@ -123,7 +124,7 @@ ldap_extra_settings:
 +
 Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
 
-. Use the following examples to grant or deny access based on LDAP group membership.
+. Use the following examples to grant or deny access based on LDAP group membership:
 .. To grant {PrivateHubName} access (for example, members of the `cn=pah-nosoupforyou,ou=groups,dc=example,dc=com` group):
 +
 ----
@@ -143,7 +144,7 @@ ldap_extra_settings:
 ...
 ----
 +
-Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
+.. Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
 
 . Use this example to enable LDAP debug logging.
 +
@@ -174,4 +175,5 @@ ldap_extra_settings:
 +
 Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
 
-You can view all of your settings in the `/etc/pulp/settings.py` file on your {PrivateHubName}.
+.Verification
+To verify you have set up correctly, confirm you can view all of your settings in the `/etc/pulp/settings.py` file on your {PrivateHubName}.

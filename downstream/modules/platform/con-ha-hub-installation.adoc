@@ -9,21 +9,21 @@ You can configure your HA deployment further to implement {RHSSO} and enable a x
 
 .Specify database host IP
 
-Specify the IP address for your database host, using the `automation_pg_host` and `automation_pg_port` inventory variables. For example:
+* Specify the IP address for your database host, using the `automation_pg_host` and `automation_pg_port` inventory variables. For example:
 
 -----
 automationhub_pg_host='192.0.2.10'
 automationhub_pg_port='5432'
 -----
 
-also specify the IP address for your database host in the [database] section, using the value in the `automationhub_pg_host` inventory variable:
+* Also specify the IP address for your database host in the [database] section, using the value in the `automationhub_pg_host` inventory variable:
 -----
 [database]
 192.0.2.10
 -----
 
 .List all instances in a clustered setup
-If installing a clustered setup, replace `localhost ansible_connection=local` in the [automationhub] section with the hostname or IP of all instances. For example:
+* If installing a clustered setup, replace `localhost ansible_connection=local` in the [automationhub] section with the hostname or IP of all instances. For example:
 -----
 [automationhub]
 automationhub1.testing.ansible.com ansible_user=cloud-user ansible_host=192.0.2.18
@@ -33,7 +33,7 @@ automationhub3.testing.ansible.com ansible_user=cloud-user ansible_host=192.0.2.
 
 [role="_additional-resources"]
 .Next steps
-Check that the directives below are present in ``/etc/pulp/settings.py`` in each of the {PrivateHubName} servers:
+Check that the following directives are present in ``/etc/pulp/settings.py`` in each of the {PrivateHubName} servers:
 ----
 USE_X_FORWARDED_PORT = True
 USE_X_FORWARDED_HOST = True

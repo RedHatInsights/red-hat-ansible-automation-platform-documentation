@@ -27,7 +27,7 @@ automationedacontroller_pg_username='automationedacontroller'
 automationedacontroller_pg_password='<password>'
 
 # The full routable URL used by EDA to connect to a controller host.
-# This URL is required if there is no Automation Controller configured
+# This URL is required if there is no automation controller configured
 # in inventory.
 #
 automation_controller_main_url = 'https://controller.example.com/'

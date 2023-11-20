@@ -33,4 +33,4 @@ $ cd ansible-automation-platform-setup-<latest-version>
 
 [role="_additional-resources"]
 .Additional resources
-For a comprehensive list of pre-defined variables used in Ansible installation inventory files, see xref:appendix-inventory-files-vars[Inventory file variables].
+* For a comprehensive list of pre-defined variables used in Ansible installation inventory files, see xref:appendix-inventory-files-vars[Inventory file variables].

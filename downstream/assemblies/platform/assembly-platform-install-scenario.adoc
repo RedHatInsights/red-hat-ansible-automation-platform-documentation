@@ -10,9 +10,9 @@ ifdef::context[:parent-context: {context}]
 :context: platform-install-scenario
 
 [role="_abstract"]
-{PlatformNameShort} is a modular platform and you can deploy {ControllerName} with other automation platform components, such as {HubName} and {EDAcontroller}. For more information about the components provided with {PlatformNameShort}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/planning-installation#ref-platform-components[{PlatformName} components] in the {PlatformName} Planning Guide.
+{PlatformNameShort} is a modular platform. You can deploy {ControllerName} with other automation platform components, such as {HubName} and {EDAcontroller}. For more information about the components provided with {PlatformNameShort}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/planning-installation#ref-platform-components[{PlatformName} components] in the {PlatformName} Planning Guide.
 
-There are a number of supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario using one of the following examples:
+There are several supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario by using one of the following examples:
 
 * xref:ref-standlone-platform-inventory_platform-install-scenario[Standalone automation controller with internal database]
 * xref:ref-single-controller-ext-installer-managed-db_platform-install-scenario[Single {ControllerName} with external (installer managed) database]
@@ -28,6 +28,7 @@ There are a number of supported installation scenarios for {PlatformName}. To in
 
 include::platform/proc-editing-inventory-file.adoc[leveloffset=+1]
 include::platform/con-install-scenario-examples.adoc[leveloffset=+2]
+include::platform/con-install-scenario-recommendations.adoc[leveloffset=+3]
 include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=+3]
 include::platform/ref-single-controller-ext-installer-managed-db.adoc[leveloffset=+3]
 include::platform/ref-single-controller-ext-customer-managed-db.adoc[leveloffset=+3]
