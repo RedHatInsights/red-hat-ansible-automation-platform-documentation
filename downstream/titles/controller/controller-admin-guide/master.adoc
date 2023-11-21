@@ -40,8 +40,8 @@ include::platform/assembly-controller-token-based-authentication.adoc[leveloffse
 include::platform/assembly-controller-set-up-social-authentication.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-set-up-enterprise-authentication.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-LDAP-auth.adoc[leveloffset=+1]
-//24 Changing the Default Timeout for Authentication
-//25 User Authentication with Kerberos
+//24 Removed and combined with 23
+include::platform/assembly-controller-kerberos-authentication.adoc[leveloffset=+1]
 //26 Working with Session Limits
 //27 Backing Up and Restoring
 //28 Using Custom Logos in automation controller

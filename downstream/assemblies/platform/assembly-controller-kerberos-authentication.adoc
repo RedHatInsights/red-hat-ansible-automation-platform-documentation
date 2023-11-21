@@ -1,0 +1,9 @@
+[id="assembly-controller-kerberos-authentication"]
+
+= User Authentication with Kerberos
+
+User authentication using _Active Directory_ (AD), also referred to as authentication through Kerberos, is supported through {ControllerName}.
+
+include::platform/ref-controller-set-up-kerberos-packages.adoc[leveloffset=+1]
+include::platform/ref-controller-AD-and-kerberos-credentials.adoc[leveloffset=+1]
+include::platform/ref-controller-work-with-kerberos-tickets.adoc[leveloffset=+1]
