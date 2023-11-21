@@ -1,0 +1,33 @@
+[id="controller-work-with-session-limits"]
+
+= Working with session limits
+
+In {ControllerName}, a session is created for each browser that a user logs in with. 
+This forces the user to log out of any extra sessions after they exceed the administrator-defined maximum.
+
+Session limits can be important, depending on your setup. 
+
+.Example
+You only want a single user on your system with a single login per device (where the user can log in on their work laptop, phone, or home computer). 
+In this case, you want to create a session limit equal to 1 (one). 
+If the user logs in on their laptop, for example, then logs in using their phone, their laptop session expires (times out) and only the login on the phone persists. 
+Proactive session limits kick the user out when the session is idle. 
+The default value is `-1`, which disables the maximum sessions allowed.
+This means that you can have as many sessions without an imposed limit.
+
+While session counts can be very limited, you can also expand them to cover as many session logins as are needed by your organization.
+
+When a user logs in resulting in other users being logged out, the session limit has been reached and those users who are logged out are notified as to why the logout occurred.
+
+.Procedure
+
+. To make changes to your session limits, from the navigation panel, select menu:Settings[].
+. Select *Miscellaneous Authentication settings* from the list of *System* options. 
+. Click btn:[Edit]. 
+. Edit the *Maximum number of simultaneous logged in sessions* setting or use the link:https://docs.ansible.com/automation-controller/4.4/html/controllerapi/browseable.html#api-browsable-api[Browsable API] if you are comfortable with making REST requests.
++
+[NOTE]
+====
+To make the best use of session limits, disable `AUTH_BASIC_ENABLED` by changing the value to `false`, as it falls outside of the scope of session limit enforcement. Alternatively, in the **Miscellaneous Authentication settings*, toggle the *Enable HTTP Basic Auth* to off.
+====
+

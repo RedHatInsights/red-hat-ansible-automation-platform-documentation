@@ -1,0 +1,6 @@
+[id="controller-backup-and-restore"]
+
+= Backup and restore
+
+The ability to backup and restore your systems is integrated into the platform setup playbook. 
+For more information, see Backup and Restore for Clustered Environments.

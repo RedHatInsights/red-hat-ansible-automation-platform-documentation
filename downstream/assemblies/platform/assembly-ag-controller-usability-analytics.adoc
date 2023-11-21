@@ -1,0 +1,6 @@
+[id="controller-usability-analytics-data-collection"]
+
+= Usability Analytics and Data Collection
+
+Usability data collection is included with {ControllerName} to collect data to better understand how {ControllerName} users specifically interact with it, to help enhance future releases, and to continue streamlining your user experience.
+

@@ -1,0 +1,7 @@
+[id="controller-session-limits"]
+
+= Sessions limits
+
+Setting a session limit enables administrators to limit the number of simultaneous sessions per user or per IP address.
+
+include::platform/proc-controller-work-with-session-limits.adoc[leveloffset=+1]

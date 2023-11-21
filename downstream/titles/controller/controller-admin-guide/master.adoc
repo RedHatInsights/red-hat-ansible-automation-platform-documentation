@@ -42,9 +42,9 @@ include::platform/assembly-ag-controller-set-up-enterprise-authentication.adoc[l
 include::platform/assembly-ag-controller-LDAP-auth.adoc[leveloffset=+1]
 //24 Removed and combined with 23
 include::platform/assembly-controller-kerberos-authentication.adoc[leveloffset=+1]
-//26 Working with Session Limits
-//27 Backing Up and Restoring
-//28 Using Custom Logos in automation controller
-//29 Usability Analytics and Data Collection
-//30 Troubleshooting the controller
-//31 Controller Tips and Tricks
+include::platform/assembly-ag-controller-session-limits.adoc[leveloffset=+1]
+include::platform/assembly-ag-controller-backup-and-restore.adoc[leveloffset=+1]
+//section 28 is a replica of section 18.4.2, so removing it
+include::platform/assembly-ag-controller-usability-analytics.adoc[leveloffset=+1]
+include::platform/assembly-ag-controller-troubleshooting.adoc[leveloffset=+1]
+include::platform/assembly-ag-controller-tips-and-tricks.adoc[leveloffset=+1]
