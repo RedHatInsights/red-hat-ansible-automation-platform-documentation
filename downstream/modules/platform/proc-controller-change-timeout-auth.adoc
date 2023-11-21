@@ -1,0 +1,20 @@
+[id="controller-change-timeout-auth"]
+
+= Changing the default timeout for authentication
+
+You can change the default length of time, in seconds, that your supplied token is valid in the *Settings* screen of the {ControllerName} UI.
+
+.Procedure
+
+. From the navigation panel, select menu:Settings[].
+. Select *Miscellaneous Authentication settings* from the list of *System* options.
+. Click btn:[Edit].
+. Enter the timeout period in seconds in the *Idle Time Force Log Out* text field.
+. Click btn:[Save].
+
+[NOTE]
+====
+If you access {ControllerName} and have trouble logging in, clear your web browser's cache. 
+In situations such as this, it is common for the authentication token to be cached during the browser session. 
+It must cleared to continue.
+====

@@ -1,0 +1,15 @@
+[id="controller-referrals"]
+
+= Referrals
+
+Active Directory uses "referrals" in case the queried object is not available in its database. 
+This does not work correctly with the django LDAP client and it helps to disable referrals. 
+
+Disable LDAP referrals by adding the following lines to your `/etc/tower/conf.d/custom.py` file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+AUTH_LDAP_GLOBAL_OPTIONS = {
+    ldap.OPT_REFERRALS: False,
+}
+----

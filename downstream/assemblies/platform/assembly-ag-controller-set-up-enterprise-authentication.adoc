@@ -5,7 +5,7 @@
 Set up authentication for the following enterprise systems:
 
 * xref:controller-set-up-azure[Azure AD settings]
-* [ADD XREF TO SECTION 23]LDAP Authentication 
+* xref:controller-LDAP-authentication[LDAP Authentication]
 * xref:controller-set-up-radius[RADIUS settings]
 * xref:controller-set-up-SAML[SAML settings]
 ** xref:controller-configure-transparent-SAML[Transparent SAML Logins]
@@ -15,7 +15,7 @@ Set up authentication for the following enterprise systems:
 
 [NOTE]
 ====
-For LDAP autentication, see [ADD XREF] Setting up LDAP Authentication.
+For LDAP authentication, see xref:controller-set-up-LDAP[Setting up LDAP Authentication].
 ====
 
 SAML, RADIUS, and TACACS+ users are categorized as "Enterprise" users. 

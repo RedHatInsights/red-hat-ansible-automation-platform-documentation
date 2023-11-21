@@ -1,0 +1,93 @@
+[id="controller-LDAP-organization-team-mapping"]
+
+= LDAP organization and team mapping
+
+You can control which users are placed into which {ControllerName} organizations based on LDAP attributes (mapping out between your organization administrators, users and LDAP groups).
+
+Keys are organization names. 
+Organizations are created if not present. 
+Values are dictionaries defining the options for each organization's membership. 
+For each organization, you can specify what groups are automatically users of the organization and also what groups can administer the organization.
+
+`admins`: `none`, `true`, `false`, `string` or `list/tuple` of strings:
+
+* If `none`, organization administrators are not updated based on LDAP values.
+* If `true`, all users in LDAP are automatically added as administrators of the organization.
+* If `false`, no LDAP users are automatically added as administrators of the organization.
+* If a string or list of strings specifies the group DNs that are added to the organization if they match any of the specified groups.
+
+`remove_admins: True/False. Defaults to False`:
+
+* When `true`, a user who is not a member of the given group is removed from the organization's administrative list.
+
+`users`: `none`, `true`, `false`, `string` or `list/tuple` of strings. 
+The same rules apply as for administrators.
+
+`remove_users`: `true` or `false`. 
+Defaults to `false`. 
+The same rules apply as for administrators.
+
+.Example
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+"LDAP Organization": {
+  "admins": "cn=engineering_admins,ou=groups,dc=example,dc=com",
+  "remove_admins": false,
+  "users": [
+    "cn=engineering,ou=groups,dc=example,dc=com",
+    "cn=sales,ou=groups,dc=example,dc=com",
+    "cn=it,ou=groups,dc=example,dc=com"
+  ],
+  "remove_users": false
+},
+"LDAP Organization 2": {
+  "admins": [
+    "cn=Administrators,cn=Builtin,dc=example,dc=com"
+  ],
+  "remove_admins": false,
+  "users": true,
+"remove_users": false
+}
+}
+----
+When mapping between users and LDAP groups keys are team names and are created if not present. 
+Values are dictionaries of options for each team's membership, where each can contain the following parameters:
+
+`organization`: `string`. The name of the organization to which the team belongs.
+The team is created if the combination of organization and team name does not exist. 
+The organization is first created if it does not exist.
+
+`users`: `none`, `true`, `false`, `string`, or `list/tuple` of strings:
+
+* If `none`, team members are not updated.
+* If `true` or `false`, all LDAP users are added or removed as team members.
+* If a string or list of strings specifies the group DNs, the user is added as a team member if the user is a member of _any_ of these groups.
+
+`remove`: `true` or `false`. 
+Defaults to `false`.
+When`true`, a user who is not a member of the given group is removed from the team.
+
+.Example
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+"LDAP Engineering": {
+  "organization": "LDAP Organization",
+  "users": "cn=engineering,ou=groups,dc=example,dc=com",
+  "remove": true
+},
+"LDAP IT": {
+  "organization": "LDAP Organization",
+  "users": "cn=it,ou=groups,dc=example,dc=com",
+  "remove": true
+},
+"LDAP Sales": {
+  "organization": "LDAP Organization",
+  "users": "cn=sales,ou=groups,dc=example,dc=com",
+  "remove": true
+}
+}
+----

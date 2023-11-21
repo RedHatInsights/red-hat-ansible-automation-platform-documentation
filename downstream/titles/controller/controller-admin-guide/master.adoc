@@ -39,7 +39,7 @@ include::platform/assembly-controller-isolation-function-variables.adoc[leveloff
 include::platform/assembly-controller-token-based-authentication.adoc[leveloffset=+1]
 include::platform/assembly-controller-set-up-social-authentication.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-set-up-enterprise-authentication.adoc[leveloffset=+1]
-//23 Setting up LDAP Authentication
+include::platform/assembly-ag-controller-LDAP-auth.adoc[leveloffset=+1]
 //24 Changing the Default Timeout for Authentication
 //25 User Authentication with Kerberos
 //26 Working with Session Limits
