@@ -2,5 +2,57 @@
 
 = Backup and restore
 
-The ability to backup and restore your systems is integrated into the platform setup playbook. 
-For more information, see Backup and Restore for Clustered Environments.
+The ability to backup and restore your system is integrated into the {PlatformNameShort} setup playbook. 
+For more information, see the xref:controller-backup-restore-playbooks[Backup and restore for clustered environments] section.
+
+[NOTE]
+====
+Ensure that you restore to the same version from which it was backed up.
+However, you must use the most recent minor version of a release to backup or restore your {PlatformNameShort} installation version.
+For example, if the current {PlatformNameShort} version you are on is 2.0.x, use only the latest 2.0 installer.
+
+Backup and restore only works on PostgreSQL versions supported by your current platform version. 
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#red_hat_ansible_automation_platform_system_requirements[{PlatformName} system requirements] in the _{PlatformName} Installation Guide_.
+====
+
+The {PlatformNameShort} setup playbook is invoked as `setup.sh` from the path where you unpacked the platform installer tarball. 
+It uses the same inventory file used by the install playbook. 
+The setup script takes the following arguments for backing up and restoring:
+
+* `-b`: Perform a database backup rather than an installation.
+* `-r`: Perform a database restore rather than an installation.
+
+As the root user, call `setup.sh` with the appropriate parameters and the {PlatformNameShort} backup or restored as configured:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+root@localhost:~# ./setup.sh -b
+root@localhost:~# ./setup.sh -r
+----
+
+Backup files are created on the same path that `setup.sh` script exists. 
+You can change it by specifying the following `EXTRA_VARS`:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+root@localhost:~# ./setup.sh -e 'backup_dest=/path/to/backup_dir/' -b
+----
+
+A default restore path is used unless you provide `EXTRA_VARS` with a non-default path, as shown in the following example:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+root@localhost:~# ./setup.sh -e 'restore_backup_file=/path/to/nondefault/backup.tar.gz' -r
+----
+
+Optionally, you can override the inventory file used by passing it as an argument to the setup script:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+setup.sh -i <inventory file>
+----
+
+include::platform/con-controller-backup-restore-playbooks.adoc[leveloffset=+1]
+include::platform/ref-controller-backup-restore-considerations.adoc[leveloffset=+1]
+include::platform/ref-controller-backup-restore-clustered-environments.adoc[leveloffset=+1]
+include::platform/con-controller-restore-different-cluster.adoc[leveloffset=+2]

@@ -1,4 +1,4 @@
-[id="assembly-controller-managment-jobs"]
+[id="assembly-controller-management-jobs"]
 
 = Management Jobs
 
@@ -20,9 +20,5 @@ include::platform/proc-controller-remove-old-activity-stream.adoc[leveloffset=+1
 include::platform/proc-controller-scheduling-deletion.adoc[leveloffset=+2]
 include::platform/proc-controller-management-notifications.adoc[leveloffset=+2]
 include::platform/ref-controller-cleanup-expired-tokens.adoc[leveloffset=+1]
-include::platform/con-controller-cleanup-expired-sessions.adoc[leveloffset=+1]
-include::platform/ref-controller-remove-old-job-history.adoc[levelofset=+1]
-
-
-
-
+include::platform/con-controller-cleanup-expired-sessions.adoc[leveloffset=+2]
+include::platform/ref-controller-remove-old-job-history.adoc[levelofset=+2]

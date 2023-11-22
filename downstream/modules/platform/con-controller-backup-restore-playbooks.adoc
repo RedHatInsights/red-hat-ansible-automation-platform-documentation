@@ -1,0 +1,23 @@
+[id="controller-backup-restore-playbooks"]
+
+= Backup and restore playbooks
+
+In addition to the `install.yml` file included with your `setup.sh` setup playbook, there are also `backup.yml` and `restore.yml` files for your backup and restoration needs.
+
+These playbooks serve to backup and restore.
+
+* The overall backup, backs up:
+** The database
+** The `SECRET_KEY` file
+* The per-system backups include:
+** Custom configuration files
+** Manual projects
+* The restore backup restores the backed up files and data to a freshly installed and working second instance of {ControllerName}.
+
+When restoring your system, the installer checks to see that the backup file exists before beginning the restoration. 
+If the backup file is not available, your restoration fails.
+
+[NOTE]
+====
+Ensure that your {ControllerName} hosts are properly set up with SSH keys, user or pass variables in the hosts file, and that the user has sudo access.
+====

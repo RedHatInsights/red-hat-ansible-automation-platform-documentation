@@ -19,4 +19,4 @@ jobs.
 
 For more information, see xref:proc-controller-scheduling-deletion[Scheduling deletions].
 
-You can also set or review notifications associated with this management job the same way as described in xref:proc-controller-management-notifications[Notifications] for activity stream management jobs, or for more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-notifications[Notifications] in the _{ControllerUG}_.
+You can also set or review notifications associated with this management job in the same way as described in xref:proc-controller-management-notifications[Notifications] for activity stream management jobs, or for more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-notifications[Notifications] in the _{ControllerUG}_.

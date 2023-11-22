@@ -1,0 +1,20 @@
+[id="controller-backup-restore-considerations"]
+
+= Backup and restoration considerations
+
+Consider the following points when you backup and restore your system:
+
+Disk space:: Review your disk space requirements to ensure you have enough room to backup configuration files, keys, other relevant files, and the database of the {PlatformNameShort} installation.
+
+System credentials:: Confirm you have the required system credentials when working with a local database or a remote database. 
+On local systems, you might need root or sudo access, depending on how credentials are set up. 
+On remote systems, you might need different credentials to grant you access to the remote system you are trying to backup or restore.
+
+Version:: You must always use the most recent minor version of a release to backup or restore your {PlatformNameShort} installation version. 
+For example, if the current platform version you are on is 2.0.x, use only the latest 2.0 installer.
+
+File path:: When using `setup.sh` in order to do a restore from the default restore file path, `/var/lib/awx`, `-r` is still required in order to do the restore, but it no longer accepts an argument. 
+If a non-default restore file path is needed, you must provide this as an `extra_var` (`root@localhost:~# ./setup.sh -e 'restore_backup_file=/path/to/nondefault/backup.tar.gz' -r`).
+
+Directory:: If the backup file is placed in the same directory as the `setup.sh` installer, the restore playbook automatically locates the restore files. 
+In this case, you do not need to use the `restore_backup_file` extra var to specify the location of the backup file.
