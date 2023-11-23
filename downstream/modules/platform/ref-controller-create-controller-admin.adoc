@@ -1,0 +1,13 @@
+[id="ref-controller-create-controller-admin"]
+
+= Create an {ControllerName} Administrator from the command line
+
+Occasionally you might find it helpful to create a system administrator (superuser) account from the command line. 
+
+To create a superuser, run the following command as root on the {ControllerName} server and enter the administrator
+information as prompted:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage createsuperuser
+----

@@ -1,0 +1,30 @@
+[id="ref-controller-use-callback-plugins"]
+
+= Use callback plugins with the controller
+
+Ansible has a flexible method of handling actions during playbook runs, called callback plugins. 
+You can use these plugins with {ControllerName} to do things such as notify services upon playbook runs or failures, or send
+emails after every playbook run. 
+
+For official documentation on the callback plugin architecture, see link:http://docs.ansible.com/developing_plugins.html#callbacks[Developing plugins].
+
+[NOTE]
+====
+{ControllerNameStart} does not support the `stdout` callback plugin because Ansible only permits one, and it is already being used by for streaming event data.
+====
+
+You might also want to review some example plugins, which should be modified for site-specific purposes, such as those available at: https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/callback
+
+To use these plugins, put the callback plugin `.py` file into a directory called `/callback_plugins` alongside your playbook in your {Controllername} Project. 
+Then, specify their paths (one path per line) in the *Ansible Callback Plugins* field of the Job settings:
+
+image:configure-controller-jobs-callback.png[Ansible Callback plugins]
+
+[NOTE]
+====
+To have most callbacks shipped with Ansible applied globally, you must add them to the `callback_whitelist` section of your `ansible.cfg`. 
+====
+//Is it still called whitelist? Apparently so.
+
+If you have a custom callbacks, see link:https://docs.ansible.com/ansible/latest/plugins/callback.html#enabling-callback-plugins[Enabling callback plugins].
+====

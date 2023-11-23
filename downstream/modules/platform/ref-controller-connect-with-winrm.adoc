@@ -1,0 +1,17 @@
+[id="ref-controller-connect-with-winrm"]
+
+= Connect to Windows with winrm
+
+By default, {ControllerName} attempts to `ssh` to hosts. 
+
+You must add the `winrm` connection information to the group variables to which the Windows hosts belong. 
+
+To get started, edit the Windows group in which the hosts reside and place the variables in the source/edit screen for the group.
+
+To add `winrm` connection info:
+
+* Edit the properties for the selected group by clicking on the Edit image:leftpencil.png[Edit,15,15] icon of the group name that contains the Windows servers. 
+In the "variables" section, add your connection information as follows: `ansible_connection: winrm`
+
+When complete, save your edits. 
+If Ansible was previously attempting an SSH connection and failed, you should re-run the job template.

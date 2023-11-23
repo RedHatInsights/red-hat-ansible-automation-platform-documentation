@@ -1,0 +1,34 @@
+[id="ref-controller-set-up-jump-host"]
+
+= Set up a jump host to use with {ControllerName}
+
+Credentials supplied by {ControllerName} do not flow to the jump host through ProxyCommand. 
+They are only used for the end-node when the tunneled connection is set up.
+
+You can configure a fixed user/keyfile in the AWX user's SSH configuration in the ProxyCommand definition that sets up the connection through the jump host. 
+
+For example:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+Host tampa
+Hostname 10.100.100.11
+IdentityFile [privatekeyfile]
+
+Host 10.100..
+Proxycommand ssh -W [jumphostuser]@%h:%p tampa
+----
+
+You can also add a jump host to your {ControllerName} instance through Inventory variables. 
+
+These variables can be set at either the inventory,
+group, or host level. 
+To add this, navigate to your inventory and in the `variables` field of whichever level you choose, add the following
+variables:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+ansible_user: <user_name>
+ansible_connection: ssh
+ansible_ssh_common_args: '-o ProxyCommand="ssh -W %h:%p -q <user_name>@<jump_server_name>"'
+----

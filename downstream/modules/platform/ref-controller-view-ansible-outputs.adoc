@@ -1,0 +1,7 @@
+[id="ref-controller-view-ansible-outputs"]
+
+= View Ansible outputs for JSON commands when using {ControllerName}
+
+When working with {ControllerName}, you can use the API to obtain the Ansible outputs for commands in JSON format.
+
+To view the Ansible outputs, browse to \https://<controller server name>/api/v2/jobs/<job_id>/job_events/

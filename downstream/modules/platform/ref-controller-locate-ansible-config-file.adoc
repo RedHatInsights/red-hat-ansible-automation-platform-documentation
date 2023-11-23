@@ -1,0 +1,20 @@
+[id="ref-controller-locate-ansible-config-file"]
+
+= Locate and configure the Ansible configuration file
+
+While Ansible does not require a configuration file, OS packages often include a default one in `/etc/ansible/ansible.cfg` for possible customization. 
+
+To use a custom `ansible.cfg` file, place it at the root of your project. 
+{ControllerNameStart} runs `ansible-playbook` from the root of the project directory, where it finds the custom `ansible.cfg` file. 
+
+[NOTE]
+====
+An `ansible.cfg` file anywhere else in the project is ignored.
+====
+
+To learn which values you can use in this file, see link:https://docs.ansible.com/ansible/latest/reference_appendices/config.html#generating-a-sample-ansible-cfg-file[Generating a sample ansible.cfg file].
+
+Using the defaults are acceptable for starting out, but you can configure the default module path or connection type here, as well as other things.
+
+{ControllerNameStart} overrides some `ansible.cfg` options. 
+For example, {ControllerName} stores the SSH ControlMaster sockets, the SSH agent socket, and any other per-job run items in a per-job temporary directory that is passed to the container used for job execution.

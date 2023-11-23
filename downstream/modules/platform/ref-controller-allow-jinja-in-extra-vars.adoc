@@ -1,0 +1,16 @@
+[id="ref-controller-allow-jinja-in-extra-vars"]
+
+= The ALLOW_JINJA_IN_EXTRA_VARS variable
+
+Setting `ALLOW_JINJA_IN_EXTRA_VARS = template` only works for saved job template extra variables. 
+
+Prompted variables and survey variables are excluded from the 'template'. 
+
+This parameter has three values:
+* `template` to allow usage of Jinja saved directly on a job template definition (the default).
+* `never` to disable all Jinja usage (recommended). 
+* `always` to always allow Jinja (strongly discouraged, but an option for prior compatibility).
+
+This parameter is configurable in the *Jobs Settings* page of the {ControllerName} UI.
+
+image:settings-jobs-jinja.png[Setting JINJA]

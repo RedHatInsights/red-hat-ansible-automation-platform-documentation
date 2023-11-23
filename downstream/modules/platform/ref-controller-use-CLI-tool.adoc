@@ -1,0 +1,7 @@
+[id="ref-controller-use-CLI-tool"]
+
+= The {ControllerName} CLI Tool
+
+{ControllerNameStart} has a full-featured command line interface. 
+
+For more information on configuration and use, see the link:https://docs.ansible.com/automation-controller/latest/html/controllercli/usage.html[AWX Command Line Interface] and the xref:assembly-controller-awx-manage-utility[AWX manage utility] section.

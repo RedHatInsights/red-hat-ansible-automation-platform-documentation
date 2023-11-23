@@ -1,0 +1,58 @@
+[id="ref-controller-import-inventory-files"]
+
+= Import existing inventory files and host/group vars into {ControllerName}
+
+To import an existing static inventory and the accompanying host and group variables into {ControllerName}, your inventory must be in a structure similar to the following:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+inventory/
+|-- group_vars
+|   `-- mygroup
+|-- host_vars
+|   `-- myhost
+`-- hosts
+----
+
+To import these hosts and vars, run the `awx-manage` command:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage inventory_import --source=inventory/ \
+  --inventory-name="My Controller Inventory"
+----
+
+If you only have a single flat file of inventory, a file called ansible-hosts, for example, import it as follows:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage inventory_import --source=./ansible-hosts \
+  --inventory-name="My Controller Inventory"
+----
+
+In case of conflicts or to overwrite an inventory named "My Controller Inventory", run:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+awx-manage inventory_import --source=inventory/ \
+  --inventory-name="My Controller Inventory" \
+  --overwrite --overwrite-vars
+----
+
+If you receive an error, such as:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+ValueError: need more than 1 value to unpack
+----
+
+Create a directory to hold the hosts file, as well as the group_vars:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+mkdir -p inventory-directory/group_vars
+----
+
+Then, for each of the groups that have :vars listed, create a file called `inventory-directory/group_vars/<groupname>` and format the variables in YAML format.
+
+The importer then handles the conversion correctly.

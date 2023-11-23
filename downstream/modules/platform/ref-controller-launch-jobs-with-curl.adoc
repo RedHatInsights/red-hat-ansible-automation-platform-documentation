@@ -1,0 +1,34 @@
+[id="ref-controller-launch-jobs-with-curl"]
+
+= Launching Jobs with curl
+
+Launching jobs with the {ControllerName} API is simple. 
+
+The following are some easy to follow examples using the `curl` tool.
+
+Assuming that your Job Template ID is '1', your controller IP is 192.168.42.100, and that `admin` and `awxsecret` are valid login credentials, you can create a new job this way:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -f -k -H 'Content-Type: application/json' -XPOST \
+    --user admin:awxsecret \
+    ht p://192.168.42.100/api/v2/job_templates/1/launch/
+----
+
+This returns a JSON object that you can parse and use to extract the 'id' field, which is the ID of the newly created job.
+You can also pass extra variables to the Job Template call, as in the following example:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -f -k -H 'Content-Type: application/json' -XPOST \
+    -d '{"extra_vars": "{\"foo\": \"bar\"}"}' \
+    --user admin:awxsecret http://192.168.42.100/api/v2/job_templates/1/launch/
+----
+
+//You can view the live API documentation by logging into http://192.168.42.100/api/ and browsing around to the various objects available.
+//No you can't
+[NOTE]
+====
+The `extra_vars` parameter must be a string which contains JSON, not just a JSON dictionary. 
+Use caution when escaping the quotes, etc.
+====

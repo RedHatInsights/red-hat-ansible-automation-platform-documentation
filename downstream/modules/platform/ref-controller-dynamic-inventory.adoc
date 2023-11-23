@@ -1,0 +1,19 @@
+[id="ref-controller-dynamic-inventory"]
+
+= Dynamic Inventory and private IP addresses
+
+By default, {ControllerName} only shows instances in a VPC that have an Elastic IP (EIP) address associated with them. 
+
+To view all of your VPC instances, perform the following steps:
+
+* In the controller interface, select your inventory.
+* Select the group that has the Source set to AWS, and select the *Source* tab.
+* In the "Source Variables" box, enter: `vpc_destination_variable: private_ip_address`
+
+Save and trigger an update of the group. 
+All of your VPC instances are displayed.
+
+[NOTE]
+====
+The controller must be running inside the VPC with access to those instances in order to usefully configure them.
+====

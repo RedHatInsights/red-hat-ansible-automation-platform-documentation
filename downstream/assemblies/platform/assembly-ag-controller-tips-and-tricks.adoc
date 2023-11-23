@@ -1,3 +1,48 @@
 [id="controller-tips-and-tricks"]
 
 = {ControllerNameStart} tips and tricks
+
+* xref:ref-controller-use-CLI-tool[Use the {ControllerName} CLI Tool]
+* xref:ref-controller-change-admin-password[Change the {ControllerName} Admin Password]
+* xref:ref-controller-create-controller-admin[Create an {ControllerName} Admin from the commandline]
+* xref:ref-controller-set-up-jump-host[Set up a jump host to use with {ControllerName}]
+* xref:ref-controller-view-ansible-outputs[View Ansible outputs for JSON commands when using {ControllerName}]
+* xref:ref-controller-locate-ansible-config-file[Locate and configure the Ansible configuration file]
+* xref:ref-controller-list-ansible-variables[View a listing of all ansible_ variables]
+* xref:ref-controller-allow-jinja-in-extra-vars[The ALLOW_JINJA_IN_EXTRA_VARS variable]
+* xref:ref-controller-configure-host-name-notifications[Configure the controllerhost hostname for notifications]
+* xref:ref-controller-launch-jobs-with-curl[Launch Jobs with curl]
+//* xref:ref-controller-dynamic-inventory[Dynamic Inventory and private IP addresses]
+* xref:ref-controller-filter-instances[Filter instances returned by the dynamic inventory sources in {ControllerName}]
+* xref:ref-controller-use-an-unreleased-module[Use an unreleased module from Ansible source with {ControllerName}]
+* xref:ref-controller-use-callback-plugins[Use callback plugins with {ControllerName}]
+* xref:ref-controller-connect-with-winrm[Connect to Windows with winrm]
+* xref:ref-controller-import-inventory-files[Import existing inventory files and host/group vars into {ControllerName}]
+
+include::platform/ref-controller-use-CLI-tool.adoc[leveloffset=+1]
+include::platform/ref-controller-change-admin-password.adoc[leveloffset=+1]
+include::platform/ref-controller-create-controller-admin.adoc[leveloffset=+1]
+include::platform/ref-controller-set-up-jump-host.adoc[leveloffset=+1]
+include::platform/ref-controller-view-ansible-outputs.adoc[leveloffset=+1]
+include::platform/ref-controller-locate-ansible-config-file.adoc[leveloffset=+1]
+include::platform/ref-controller-list-ansible-variables.adoc[leveloffset=+1]
+include::platform/ref-controller-allow-jinja-in-extra-vars.adoc[leveloffset=+1]
+include::platform/ref-controller-configure-host-name-notifications.adoc[leveloffset=+1]
+include::platform/ref-controller-launch-jobs-with-curl.adoc[leveloffset=+1]
+//include::platform/ref-controller-dynamic-inventory.adoc[leveloffset=+1]
+include::platform/ref-controller-filter-instances.adoc[leveloffset=+1]
+include::platform/ref-controller-use-an-unreleased-module.adoc[leveloffset=+1]
+include::platform/ref-controller-use-callback-plugins.adoc[leveloffset=+1]
+include::platform/ref-controller-connect-with-winrm.adoc[leveloffset=+1]
+include::platform/ref-controller-import-inventory-files.adoc[leveloffset=+1]
+
+
+
+
+
+
+
+
+
+
+
