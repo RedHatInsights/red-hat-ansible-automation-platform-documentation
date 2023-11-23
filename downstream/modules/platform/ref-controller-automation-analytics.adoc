@@ -1,0 +1,55 @@
+[id="ref-controller-automation-analytics"]
+
+= Automation Analytics
+
+When you imported your license for the first time, you were given options related to the collection of data that powers {Analytics}, a cloud service that is part of the {PlatformNameShort} subscription. 
+
+[IMPORTANT]
+====
+For opt-in of {Analytics} to have any effect, your instance of {ControllerName} must be running on {RHEL}.
+====
+
+As with Red Hat Insights, {Analytics} is built to collect the minimum amount of data needed. 
+No credential secrets, personal data, automation variables, or task output is gathered. 
+
+For more information, see xref:ref-controller-data-collection-details[Details of data collection].
+
+To enable this feature, turn on data collection for {Analytics} and enter your Red Hat customer credentials in the *Miscellaneous System settings* of the System configuration list of options in the *Settings* menu.
+
+image:configure-controller-system-misc-analytics.png[Miscellaneous System Settings]
+
+You can view the location to which the collection of insights data is uploaded in the *{Analytics} upload URL* field on the *Details* page.
+
+image:misc-system-details-analytics-url.png[Insights location]
+
+By default, the data is collected every four hours. 
+When you enable this feature, data is collected up to a month in arrears (or until the previous collection). 
+You can turn off this data collection at any time in the *Miscellaneous System settings* of the System configuration
+window.
+
+This setting can also be enabled through the API by specifying `INSIGHTS_TRACKING_STATE = true` in either of these endpoints:
+
+* `api/v2/settings/all`
+* `api/v2/settings/system`
+
+The {Analytics} generated from this data collection can be found on the link:https://cloud.redhat.com[Red Hat Cloud Services] portal.
+
+image:aa-dashboard.png[Analytics dashboard]
+
+*Clusters* data is the default view. 
+This graph represents the number of job runs across all {ContrllerName} clusters over a period of time.
+The example above shows a span of a week in a stacked bar-style chart that is organized by the number of jobs that ran successfully (in green) and jobs that failed (in red).
+
+Alternatively, you can select a single cluster to view its job status information.
+
+image:aa-job-run-status-over-time-period.png[Job run status]
+
+This multi-line chart represents the number of job runs for a single {ControllerName} cluster for a specified period of time.  
+The preceding example shows a span of a week, organized by the number of successfully running jobs (in green) and jobs that failed (in red). 
+You can specify the number of successful and failed job runs for a selected cluster over a span of one week, two weeks, and monthly increments.
+
+On the clouds navigation panel, select menu:Organization Statistics[] to view information for the following:
+
+* xref:ref-controller-use-by-organization[Use by organization]
+* xref:ref-controller-jobs-run-by-organization[Job runs by organization]
+* xref:ref-controller-organization-status[Organization status]

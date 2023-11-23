@@ -2,5 +2,40 @@
 
 = Usability Analytics and Data Collection
 
-Usability data collection is included with {ControllerName} to collect data to better understand how {ControllerName} users specifically interact with it, to help enhance future releases, and to continue streamlining your user experience.
+Usability data collection is included with {ControllerName} to collect data to better understand how {ControllerName} users interact with it.
+
+Only users installing a trial of or a fresh installation of are opted-in for this data collection.
+
+{ControllerNameStart} collects user data automatically to help improve the product. 
+You can opt out or control the way {ControllerName} collects data by setting your participation level in the *User Interface settings* in the Settings menu.
+
+//Should Settings menu be a link?
+
+include::platform/proc-controller-control-data-collection.adoc[leveloffset=+1]
+include::platform/ref-controller-automation-analytics.adoc[leveloffset=+1]
+include::platform/ref-controller-use-by-organization.adoc[leveloffset=+2]
+include::platform/ref-controller-jobs-run-by-organization.adoc[leveloffset=+2]
+include::platform/ref-controller-organization-status.adoc[leveloffset=+2]
+include::platform/ref-controller-data-collection-details.adoc[leveloffset=+1]
+include::platform/ref-controller-manifest-json.adoc[leveloffset=+2]
+include::platform/ref-controller-config-json.adoc[leveloffset=+2]
+include::platform/ref-controller-instance-info-json.adoc[leveloffset=+2]
+include::platform/ref-controller-counts-json.adoc[leveloffset=+2]
+include::platform/ref-controller-org-counts-json.adoc[leveloffset=+2]
+include::platform/ref-controller-cred-type-counts-json.adoc[leveloffset=+2]
+include::platform/ref-controller-inventory-counts-json.adoc[leveloffset=+2]
+include::platform/ref-controller-projects-scm-type-json.adoc[leveloffset=+2]
+include::platform/ref-controller-query-info-json.adoc[leveloffset=+2]
+include::platform/ref-controller-job-counts-json.adoc[leveloffset=+2]
+include::platform/ref-controller-job-instance-counts-json.adoc[leveloffset=+2]
+include::platform/ref-controller-unified-job-template-table-csv.adoc[leveloffset=+2]
+include::platform/ref-controller-unified-jobs-table-csv.adoc[leveloffset=+2]
+include::platform/ref-controller-workflow-job-template-node-table-csv.adoc[leveloffset=+2]
+include::platform/ref-controller-workflow-job-node-table-csv.adoc[leveloffset=+2]
+include::platform/ref-controller-events-table-csv.adoc[leveloffset=+2]
+include::platform/ref-controller-analytics-reports.adoc[leveloffset=+1]
+
+
+
+
 

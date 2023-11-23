@@ -1,0 +1,10 @@
+[id="ref-controller-organization-status"]
+
+= Organization status
+
+This bar chart represents {ControllerName} use by organization and date, which is calculated by the number of jobs run by that organization on a particular date. 
+
+Alternatively, you can specify to show the number of job runs per organization in one week, two weeks, and monthly
+increments.
+
+image:aa-usage-by-org-by-date.png[Organization status]

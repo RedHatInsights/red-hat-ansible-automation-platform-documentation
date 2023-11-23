@@ -1,0 +1,26 @@
+[id="ref-controller-job-counts-json"]
+
+= job_counts.json
+
+The `job_counts.json` file provides details on the job history of the cluster, describing both how jobs were launched, and what their finishing status is. 
+
+The following is an example `job_counts.json` file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+    "launch_type": {
+        "dependency": 3628,
+        "manual": 799,
+        "relaunch": 6,
+        "scheduled": 1286,
+        "scm": 6,
+        "workflow": 1348
+    },
+    "status": {
+        "canceled": 7,
+        "failed": 108,
+        "successful": 6958
+    },
+    "total_jobs": 7073
+}
+----

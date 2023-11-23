@@ -1,0 +1,18 @@
+[id="ref-controller-query-info-json"]
+
+= query_info.json
+
+The `query_info.json` file provides details on when and how the data collection happened. 
+
+The following is an example `query_info.json` file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "collection_type": "manual",
+    "current_time": "2019-11-22 20:10:27.751267+00:00",
+    "last_run": "2019-11-22 20:03:40.361225+00:00"
+}
+----
+
+collection_type is one of "manual" or "automatic".

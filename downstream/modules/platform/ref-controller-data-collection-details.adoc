@@ -1,0 +1,43 @@
+[id="ref-controller-data-collection-details"]
+
+= Details of data collection
+
+{Analytics} collects the following classes of data from {ControllerName}:
+
+* Basic configuration, such as which features are enabled, and what operating system is being used
+* Topology and status of the {ControllerName} environment and hosts, including capacity and health
+* Counts of automation resources:
+
+** organizations, teams, and users
+** inventories and hosts
+** credentials (indexed by type)
+** projects (indexed by type)
+** templates
+** schedules
+** active sessions
+** running and pending jobs
+* Job execution details (start time, finish time, launch type, and success)
+* Automation task details (success, host id, playbook/role, task name, and module used)
+
+You can use `awx-manage gather_analytics` (without `--ship`) to inspect the data that {ControllerName} sends, so that you can satisfy your data collection concerns. 
+This creates a tarball that contains the analytics data that is sent to Red Hat.
+
+This file contains a number of JSON and CSV files. 
+Each file contains a different set of analytics data.
+
+* xref:ref-controller-manifest-json[manifest.json]
+* xref:ref-controller-config-json[config.json]
+* xref:ref-controller-instance-info-json[instance_info.json]
+* xref:ref-controller-counts-json[counts.json]
+* xref:ref-controller-org-counts-json[org_counts.json]
+* xref:ref-controller-cred-type-counts-json[cred_type_counts.json]
+* xref:ref-controller-inventory-counts-json[inventory_counts.json]
+* xref:ref-controller-projects-scm-type-json[projects_by_scm_type.json]
+* xref:ref-controller-query-info-json[query_info.json]
+* xref:ref-controller-job-counts-json[job_counts.json]
+* xref:ref-controller-job-instance-counts-json[job_instance_counts.json]
+* xref:ref-controller-unified-job-template-table-csv[unified_job_template_table.csv]
+* xref:ref-controller-unified-jobs-table-csv[unified_jobs_table.csv]
+* xref:ref-controller-workflow-job-template-node-table-csv[workflow_job_template_node_table.csv]
+* xref:ref-controller-workflow-job-node-table-csv[workflow_job_node_table.csv]
+* xref:ref-controller-events-table-csv[events_table.csv]

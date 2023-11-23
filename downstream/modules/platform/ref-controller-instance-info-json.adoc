@@ -1,0 +1,44 @@
+[id="ref-controller-instance-info-json"]
+
+= instance_info.json
+
+The `instance_info.json` file contains detailed information on the instances that make up the cluster, organized by instance UUID. 
+
+The following is an example instance_info.json file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "bed08c6b-19cc-4a49-bc9e-82c33936e91b": {
+        "capacity": 57,
+        "cpu": 2,
+        "enabled": true,
+        "last_isolated_check": "2019-08-15T14:48:58.553005+00:00",
+        "managed_by_policy": true,
+        "memory": 8201400320,
+        "uuid": "bed08c6b-19cc-4a49-bc9e-82c33936e91b",
+        "version": "3.6.3"
+    }
+    "c0a2a215-0e33-419a-92f5-e3a0f59bfaee": {
+        "capacity": 57,
+        "cpu": 2,
+        "enabled": true,
+        "last_isolated_check": "2019-08-15T14:48:58.553005+00:00",
+        "managed_by_policy": true,
+        "memory": 8201400320,
+        "uuid": "c0a2a215-0e33-419a-92f5-e3a0f59bfaee",
+        "version": "3.6.3"
+    }
+}
+----
+
+Which includes the following fields:
+
+* *capacity*: The capacity of the instance for executing tasks.
+//The xref information is missing here
+//See <link> for details on how this is calculated.
+* *cpu*: Processor cores for the instance
+* *memory*: Memory for the instance
+* *enabled*: Whether the instance is enabled and accepting tasks
+* *managed_by_policy*: Whether the instance's membership in instance groups is managed by policy, or manually managed
+* *version*: Version of the software on the instance

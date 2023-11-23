@@ -1,0 +1,53 @@
+[id="ref-controller-inventory-counts-json"]
+
+= inventory_counts.json
+
+The `inventory_counts.json` file contains information on the different inventories in the cluster. 
+
+The following is an example `inventory_counts.json` file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "1": {
+        "hosts": 211,
+        "kind": "",
+        "name": "AWS Inventory",
+        "source_list": [
+            {
+                "name": "AWS",
+                "num_hosts": 211,
+                "source": "ec2"
+            }
+        ],
+        "sources": 1
+    },
+    "2": {
+        "hosts": 15,
+        "kind": "",
+        "name": "Manual inventory",
+        "source_list": [],
+        "sources": 0
+    },
+    "3": {
+        "hosts": 25,
+        "kind": "",
+        "name": "SCM inventory - test repo",
+        "source_list": [
+            {
+                "name": "Git source",
+                "num_hosts": 25,
+                "source": "scm"
+            }
+        ],
+        "sources": 1
+    }
+    "4": {
+        "num_hosts": 5,
+        "kind": "smart",
+        "name": "Filtered AWS inventory",
+        "source_list": [],
+        "sources": 0
+    }
+}
+----

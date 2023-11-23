@@ -1,0 +1,18 @@
+[id="ref-controller-projects-scm-type-json"]
+
+= projects_by_scm_type.json
+
+The `projects_by_scm_type.json` file provides a breakdown of all projects in the cluster, by source control type. 
+
+The following is an example `projects_by_scm_type.json` file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "git": 27,
+    "hg": 0,
+    "insights": 1,
+    "manual": 0,
+    "svn": 0
+}
+----

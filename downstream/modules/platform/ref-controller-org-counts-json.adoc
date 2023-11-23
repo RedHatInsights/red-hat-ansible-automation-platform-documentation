@@ -1,0 +1,28 @@
+[id="ref-controller-org-counts-json"]
+
+= org_counts.json
+
+The `org_counts.json` file contains information on each organization in the cluster, and the number of users and teams associated with that organization. 
+
+The following is an example org_counts.json:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "1": {
+        "name": "Operations",
+        "teams": 5,
+        "users": 17
+    },
+    "2": {
+        "name": "Development",
+        "teams": 27,
+        "users": 154
+    },
+    "3": {
+        "name": "Networking",
+        "teams": 3,
+        "users": 28
+    }
+}
+----

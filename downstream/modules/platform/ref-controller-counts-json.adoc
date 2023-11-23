@@ -1,0 +1,38 @@
+[id="ref-controller-counts-json"]
+
+= counts.json
+
+The counts.json file contains the total number of objects for each
+relevant category in a cluster. An example counts.json is: :
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "active_anonymous_sessions": 1,
+    "active_host_count": 682,
+    "active_sessions": 2,
+    "active_user_sessions": 1,
+    "credential": 38,
+    "custom_inventory_script": 2,
+    "custom_virtualenvs": 4,
+    "host": 697,
+    "inventories": {
+        "normal": 20,
+        "smart": 1
+    },
+    "inventory": 21,
+    "job_template": 78,
+    "notification_template": 5,
+    "organization": 10,
+    "pending_jobs": 0,
+    "project": 20,
+    "running_jobs": 0,
+    "schedule": 16,
+    "team": 5,
+    "unified_job": 7073,
+    "user": 28,
+    "workflow_job_template": 15
+}
+----
+
+Each entry in this file is for the corresponding API objects in `/api/v2`, with the exception of the active session counts.

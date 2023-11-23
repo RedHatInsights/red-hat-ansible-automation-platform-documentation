@@ -1,0 +1,7 @@
+[id="ref-controller-use-by-organization"]
+
+= Use by organization
+
+The following chart represents the number of tasks run inside all jobs by a particular organization.
+
+image:aa-usage-by-org-tasks.png[Tasks by organization]

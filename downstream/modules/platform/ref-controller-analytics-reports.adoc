@@ -1,0 +1,25 @@
+[id="ref-controller-analytics-reports"]
+
+= Analytics Reports
+
+Reports from collection are accessible through the {ControllerName} UI if you have superuser-level permissions. 
+By including the analytics view on-prem where it is most convenient, you can access data that can affect your day-to-day work. 
+This data is aggregated from the automation provided on link:https://console.redhat.com[{Console}]. 
+
+Currently available is a view-only version of the Automation Calculator utility that shows a report that represent (possible) savings to the subscriber.
+
+image:aa-automation-calculator.png[Automation calculator]
+
+[NOTE]
+====
+This option is available for technical preview and is subject to change in a future release. 
+To preview the analytic reports view, set the *Enable Preview of New User Interface* toggle to *On* from the *Miscellaneous System Settings* option of the *Settings* menu.
+
+After saving, logout and log back in to access the options under the *Analytics* section on the navigation panel.
+
+image:aa-options-navbar.png[Navigation panel]
+====
+
+Host Metrics is another analytics report collected for host data.
+The ability to access this option from this part of the UI is currently in tech preview and is subject to change in a future release. 
+For more information, see the _Host Metrics view_ in xref:controller-config[Controller configuration].

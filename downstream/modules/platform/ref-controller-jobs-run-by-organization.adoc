@@ -1,0 +1,7 @@
+[id="ref-controller-jobs-run-by-organization"]
+
+= Job runs by organization
+
+This chart represents {ControllerName} use across all {ControllerName} clusters by organization, calculated by the number of jobs run by that organization.
+
+image:aa-usage-by-org.png[Jobs by organization]

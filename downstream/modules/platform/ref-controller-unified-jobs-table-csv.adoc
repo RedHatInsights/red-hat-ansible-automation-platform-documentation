@@ -1,0 +1,30 @@
+[id="ref-controller-unified-jobs-table-csv"]
+
+= unified_jobs_table.csv
+
+The `unified_jobs_table.csv` file provides information on jobs run by the system. 
+
+Each line contains the following fields for a job:
+
+* *id*: Job id.
+* *name*: Job name (from the template).
+* *polymorphic_ctype_id*: The id of the type of job it is.
+* *model*: The name of the polymorphic_ctype_id for the job. 
+Examples include 'job', 'worfklow', and more.
+* *organization_id*: The organization ID for the job.
+* *organization_name*: Name for the organization_id.
+* *created*: When the job record was created.
+* *started*: When the job started executing.
+* *finished*: When the job finished.
+* *elapsed*: Elapsed time for the job in seconds.
+* *unified_job_template_id*: The template for this job.
+* *launch_type*: One of "manual", "scheduled", "relaunched", "scm", "workflow", or "dependency",
+* *schedule_id*: The id of the schedule that launched the job, if any,
+* *instance_group_id*: The instance group that executed the job.
+* *execution_node*: The node that executed the job (hostname, not UUID).
+* *controller_node*: The {ControllerName} node for the job, if run as an isolated job, or in a container group.
+* *cancel_flag*: Whether the job was cancelled.
+* *status*: Status of the job
+* *failed*: Whether the job failed
+* *job_explanation*: Any additional detail for jobs that failed to execute properly
+* *forks*: Number of forks executed for this job

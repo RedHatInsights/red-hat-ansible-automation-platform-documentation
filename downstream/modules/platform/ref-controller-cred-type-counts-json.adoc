@@ -1,0 +1,42 @@
+[id="ref-controller-cred-type-counts-json"]
+
+= cred_type_counts.json
+
+The `cred_type_counts.json` file contains information on the different credential types in the cluster, and how many credentials exist for each type. 
+
+The following is an example `cred_type_counts.json` file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "1": {
+        "credential_count": 15,
+        "managed_by_controller": true,
+        "name": "Machine"
+    },
+    "2": {
+        "credential_count": 2,
+        "managed_by_controller": true,
+        "name": "Source Control"
+    },
+    "3": {
+        "credential_count": 3,
+        "managed_by_controller": true,
+        "name": "Vault"
+    },
+    "4": {
+        "credential_count": 0,
+        "managed_by_controller": true,
+        "name": "Network"
+    },
+    "5": {
+        "credential_count": 6,
+        "managed_by_controller": true,
+        "name": "Amazon Web Services"
+    },
+    "6": {
+        "credential_count": 0,
+        "managed_by_controller": true,
+        "name": "OpenStack"
+    },
+----

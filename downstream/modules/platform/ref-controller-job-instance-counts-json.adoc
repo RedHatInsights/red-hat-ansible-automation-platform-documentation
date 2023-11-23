@@ -1,0 +1,30 @@
+[id="ref-controller-job-instance-counts-json"]
+
+= job_instance_counts.json
+
+The `job_instance_counts.json` file provides the same detail as `job_counts.json`, broken down by instance. 
+
+The following is an example `job_instance_counts.json` file:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "localhost": {
+        "launch_type": {
+            "dependency": 3628,
+            "manual": 770,
+            "relaunch": 3,
+            "scheduled": 1009,
+            "scm": 6,
+            "workflow": 1336
+        },
+        "status": {
+            "canceled": 2,
+            "failed": 60,
+            "successful": 6690
+        }
+    }
+}
+----
+
+Note that instances in this file are by hostname, not by UUID as they are in `instance_info`.

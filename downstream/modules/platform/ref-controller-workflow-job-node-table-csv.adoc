@@ -1,0 +1,21 @@
+[id="ref-controller-workflow-job-node-table-csv"]
+
+= workflow_job_node_table.csv
+
+The workflow_job_node_table.csv provides information on the jobs that
+have been executed as part of a workflow on the system.
+
+Each line contains the following fields for a job run as part of a workflow:
+
+* *id*: Node id.
+* *created*: When the node was created.
+* *modified*: When the node was last updated.
+* *job_id*: The job id for the job run for this node.
+* *unified_job_template_id*: The id of the job template, project, inventory, or other parent resource for this node.
+* *workflow_job_template_id*: The workflow job template that contains this node.
+* *inventory_id*: The inventory used by this node.
+* *success_nodes*: Nodes that are triggered after this node succeeds.
+* *failure_nodes*: Nodes that are triggered after this node fails.
+* *always_nodes*: Nodes that always are triggered after this node finishes.
+* *do_not_run*: Nodes that were not run in the workflow due to their start conditions not being triggered.
+* *all_parents_must_converge*: Whether this node requires all its parent conditions satisfied to start.

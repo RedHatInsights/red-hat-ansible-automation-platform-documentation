@@ -1,0 +1,18 @@
+[id="ref-controller-workflow-job-template-node-table-csv"]
+
+= workflow_job_template_node_table.csv
+
+The `workflow_job_template_node_table.csv` file provides information on the nodes defined in workflow job templates on the system.
+
+Each line contains the following fields for a worfklow job template node:
+
+* *id*: Node id.
+* *created*: When the node was created.
+* *modified*: When the node was last updated.
+* *unified_job_template_id*: The id of the job template, project, inventory, or other parent resource for this node.
+* *workflow_job_template_id*: The workflow job template that contains this node.
+* *inventory_id*: The inventory used by this node.
+* *success_nodes*: Nodes that are triggered after this node succeeds.
+* *failure_nodes*: Nodes that are triggered after this node fails.
+* *always_nodes*: Nodes that always are triggered after this node finishes.
+* *all_parents_must_converge*: Whether this node requires all its parent conditions satisfied to start.

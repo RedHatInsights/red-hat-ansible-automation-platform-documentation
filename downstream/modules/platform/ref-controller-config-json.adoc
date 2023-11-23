@@ -1,0 +1,66 @@
+[id="ref-controller-config-json"]
+
+= config.json
+
+The config.json file contains a subset of the configuration endpoint
+`/api/v2/config` from the cluster. An example config.json is:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+{
+    "ansible_version": "2.9.1",
+    "authentication_backends": [
+        "social_core.backends.azuread.AzureADOAuth2",
+        "django.contrib.auth.backends.ModelBackend"
+    ],
+    "external_logger_enabled": true,
+    "external_logger_type": "splunk",
+    "free_instances": 1234,
+    "install_uuid": "d3d497f7-9d07-43ab-b8de-9d5cc9752b7c",
+    "instance_uuid": "bed08c6b-19cc-4a49-bc9e-82c33936e91b",
+    "license_expiry": 34937373,
+    "license_type": "enterprise",
+    "logging_aggregators": [
+        "awx",
+        "activity_stream",
+        "job_events",
+        "system_tracking"
+    ],
+    "pendo_tracking": "detailed",
+    "platform": {
+        "dist": [
+            "redhat",
+            "7.4",
+            "Maipo"
+        ],
+        "release": "3.10.0-693.el7.x86_64",
+        "system": "Linux",
+        "type": "traditional"
+    },
+    "total_licensed_instances": 2500,
+    "controller_url_base": "https://ansible.rhdemo.io",
+    "controller_version": "3.6.3"
+}
+----
+
+Which includes the following fields:
+
+* *ansible_version*: The system Ansible version on the host
+* *authentication_backends*: The user authentication backends that are available. 
+For more information, see xref:assembly-controller-set-up-social-authentication[Setting up social authentication] or  xref:controller-LDAP-authentication[Setting up LDAP authentication].
+* *external_logger_enabled*: Whether external logging is enabled
+* *external_logger_type*: What logging backend is in use if enabled. 
+For more information, see xref:assembly-controller-logging-aggregation[Logging and aggregation].
+* *logging_aggregators*: What logging categories are sent to external logging.
+For more information, see xref:assembly-controller-logging-aggregation[Logging and aggregation].
+* *free_instances*: How many hosts are available in the license. 
+A value of zero means the cluster is fully consuming its license.
+* *install_uuid*: A UUID for the installation (identical for all cluster nodes)
+* *instance_uuid*: A UUID for the instance (different for each cluster node)
+* *license_expiry*: Time to expiry of the license, in seconds
+* *license_type*: The type of the license (should be 'enterprise' for most cases)
+* *pendo_tracking*: State of `usability_data_collection`
+* *platform*: The operating system the cluster is running on
+* *total_licensed_instances*: The total number of hosts in the license
+* *controller_url_base*: The base URL for the cluster used by clients (shown in {Analytics})
+* *controller_version*: Version of the software on the cluster

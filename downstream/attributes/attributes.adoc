@@ -75,6 +75,7 @@
 :ControllerGS: Getting started with automation controller
 :ControllerUG: Automation controller User Guide
 :ControllerAG: Automation controller Administration Guide
+:Analytics: Automation Analytics
 
 // Automation Mesh
 :MeshName: automation mesh
