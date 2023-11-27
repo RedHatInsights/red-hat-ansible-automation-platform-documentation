@@ -13,5 +13,7 @@ Use the following steps to create an AutomationController custom resource object
 . Select the *Automation Controller* tab.
 . Click btn:[Create AutomationController].
 . Enter a name for the new deployment.
-. In *Advanced configurations*, select your xref:create-secret-key-secret_aap-migration[secret key secret] and xref:create-postresql-secret_aap-migration[postgres configuration secret].
+. In *Advanced configurations*, do the following:
+.. From the *Admin Password Secret* list, select your xref:create-secret-key-secret_aap-migration[secret key secret].
+.. From the *Database Configuration Secret* list, select the xref:create-postresql-secret_aap-migration[postgres configuration secret].
 . Click btn:[Create].
