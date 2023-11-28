@@ -26,7 +26,7 @@ additional_build_files:
       dest: configs
 additional_build_steps:
   prepend_galaxy:
-    - ADD _build/configs/ansible.cfg ~/.ansible.cfg
+    - ADD _build/configs/ansible.cfg /home/runner/.ansible.cfg
   prepend_final: |
     RUN whoami
     RUN cat /etc/os-release

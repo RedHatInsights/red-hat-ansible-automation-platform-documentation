@@ -104,7 +104,7 @@ include::platform/proc-controller-inv-source-aap.adoc[leveloffset=+4]
 
 include::platform/ref-controller-export-old-scripts.adoc[leveloffset=+3]
 
-include::ref-controller-view-completed-jobs.adoc[leveloffset=+1]
+include::platform/ref-controller-view-completed-jobs.adoc[leveloffset=+1]
 include::platform/proc-controller-run-ad-hoc-commands.adoc[leveloffset=+1]
 
 endif::controller-UG[]
