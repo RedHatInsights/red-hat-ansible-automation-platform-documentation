@@ -23,7 +23,7 @@ image:configure-controller-jobs-callback.png[Ansible Callback plugins]
 [NOTE]
 ====
 To have most callbacks shipped with Ansible applied globally, you must add them to the `callback_whitelist` section of your `ansible.cfg`. 
-====
+
 //Is it still called whitelist? Apparently so.
 
 If you have a custom callbacks, see link:https://docs.ansible.com/ansible/latest/plugins/callback.html#enabling-callback-plugins[Enabling callback plugins].

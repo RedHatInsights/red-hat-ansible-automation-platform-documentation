@@ -80,4 +80,4 @@ image:instances_peers_tab.png[Perers tab]
 +
 You can run a health check by selecting the node and clicking btn:[Run health check] on its *Details* page.
 
-. To view a graphical representation of your updated topology, see [Topology Viewer].
+. To view a graphical representation of your updated topology, see xref:assembly-controller-topology-viewer[Topology Viewer].

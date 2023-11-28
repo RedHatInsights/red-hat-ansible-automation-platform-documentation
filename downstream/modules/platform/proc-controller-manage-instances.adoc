@@ -16,7 +16,7 @@ The Instances list displays all the current nodes in your topology, along with r
 
 ** *Installed*: A node that has successfully installed and configured, but has not yet passed the periodic health check.
 ** *Ready*: A node that is available to run jobs or route traffic between nodes on the mesh. 
-This replaces the previously “Healthy” node state used in the mesh topology.
+This replaces the previously "Healthy" node state used in the mesh topology.
 ** *Provisioning*: A node that is in the process of being added to a current mesh, but is awaiting the job to install all of the packages.
 +
 [NOTE]

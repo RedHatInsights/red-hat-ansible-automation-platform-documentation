@@ -1,7 +1,7 @@
 [id="controller-start-stop"]
 
 External databases must be explicitly managed by the administrator. 
-You can find the services script in `/usr/bin/automation-controller-service` and can be invoked as follows:
+You can find the services script in `/usr/bin/automation-controller-service`, which can be invoked as follows:
 
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -16,7 +16,7 @@ Use `systemctl restart automation-controller` to restart services on clustered e
 
 You must also restart each cluster node for certain changes to persist as opposed to a single node for a localhost install. 
 
-For more information on clustered environments, see the [ADD XREF]Clustering section.
+For more information on clustered environments, see the xref:controller-clustering[Clustering] section.
 ====
 
 You can also invoke the services script using distribution-specific service management commands. 

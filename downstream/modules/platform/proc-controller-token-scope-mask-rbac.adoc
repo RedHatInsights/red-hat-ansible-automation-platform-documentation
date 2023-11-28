@@ -44,7 +44,7 @@ Use the following procedure:
     "scope": "write"
 }
 ----
-
++
 This returns a <token-value> that you can use to authenticate with for future requests (this is not shown again).
 . Use the token to access a resource. The following uses curl as an example:
 

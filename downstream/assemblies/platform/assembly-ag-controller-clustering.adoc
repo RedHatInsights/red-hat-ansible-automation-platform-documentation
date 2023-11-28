@@ -17,7 +17,7 @@ Also, clustered instances can be grouped into different pools or queues, called 
 
 {PlatformNameShort} supports container-based clusters using Kubernetes, meaning new controller instances can be installed on this platform without any variation or diversion in functionality. 
 You can create instance groups to point to a Kubernetes container. 
-For more information, see the [ADD XREF]Container and Instance Groups section.
+For more information, see the xref:controller-instance-and-container-groups[Container and instance groups] section.
 
 .Supported operating systems
 

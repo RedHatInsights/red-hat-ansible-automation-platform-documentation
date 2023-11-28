@@ -23,7 +23,7 @@ image::ag-configure-aap-system-logging-types.png[Logging settings]
 +
 For more information about each of the logging aggregation types, see the xref:assembly-controller-logging-aggregation[Logging and Aggregation] section.
 . Set the configurable options from the fields provided. 
-Click the tooltip image:tooltips-icon.png[Tool tip,15,15] icon next to the field that you need additional information about. 
+Click the tooltip image:question_circle.png[Tool tip,15,15] icon next to the field that you need additional information about. 
 +
 The following is an example of the *Miscellaneous System* settings:
 +

@@ -33,10 +33,10 @@ To create an application named _AuthCodeApp_ with the `authorization-code` grant
 
 The workflow that occurs when you issue a *GET* to the `authorize` endpoint from the client application with the `response_type`, `client_id`, `redirect_uris`, and `scope`:
 
-. The controller responds with the authorization code and status to the `redirect_uri` specified in the application.
-. The client application then makes a *POST* to the `api/o/token/` endpoint on the controller with the `code`, `client_id`,
+. {ControllerNameStart} responds with the authorization code and status to the `redirect_uri` specified in the application.
+. The client application then makes a *POST* to the `api/o/token/` endpoint on {ControllerName} with the `code`, `client_id`,
 `client_secret`, `grant_type`, and `redirect_uri`.
-. The controller responds with the `access_token`, `token_type`, `refresh_token`, and `expires_in`.
+. {ControllerNameStart} responds with the `access_token`, `token_type`, `refresh_token`, and `expires_in`.
 
 For more information, and to test this flow, see link:https://django-oauth-toolkit.readthedocs.io/en/latest/tutorial/tutorial_01.html#test-your-authorization-server[Django's Test Your Authorization Server].
 

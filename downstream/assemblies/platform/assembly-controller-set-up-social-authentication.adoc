@@ -9,7 +9,7 @@ Account authentication can be configured in the User Interface and saved to the 
 For more information, see the xref:controller-config[Controller configuration] section.
 
 Account authentication in {Controllername} can be configured to centrally use OAuth2, while enterprise-level account authentication can be configured for SAML, RADIUS, or even LDAP as a source for authentication information.
-See [Setting up Enterprise Authentication].
+See xref:controller-set-up-enterprise-authentication[Setting up Enterprise Authentication].
 
 For websites, such as {Azure}, Google or GitHub, that provide account information, account information is often implemented using the OAuth standard. 
 
@@ -25,7 +25,7 @@ include::platform/proc-controller-github-organization-setttings.adoc[leveloffset
 include::platform/proc-controller-github-team-settings.adoc[leveloffset=+2]
 include::platform/proc-controller-github-enterprise-settings.adoc[leveloffset=+2]
 include::platform/proc-controller-github-enterprise-org-settings.adoc[leveloffset=+2]
-include::platform/proc-controller-github-enterprise-team-settings.adoc[Leveloffset=+2]
+include::platform/proc-controller-github-enterprise-team-settings.adoc[leveloffset=+2]
 include::platform/proc-controller-google-oauth2-settings.adoc[leveloffset=+1]
 include::platform/ref-controller-organization-mapping.adoc[leveloffset=+1]
 include::platform/ref-controller-team-mapping.adoc[leveloffset=+1]

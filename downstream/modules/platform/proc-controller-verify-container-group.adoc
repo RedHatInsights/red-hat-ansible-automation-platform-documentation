@@ -7,11 +7,11 @@ To verify the deployment and termination of your container:
 .Procedure
 
 . Create a mock inventory and associate the container group to it by populating the name of the container group in the *Instance Group* field. 
-For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-adding-new-inventory[Add a new inventory] in the {ControllerUG}.
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-adding-new-inventory[Add a new inventory] in the _{ControllerUG}_.
 +
 image::ag-inventories-create-new-test-inventory.png[Create test inventory]
 +
-. Create the "localhost" host in the inventory with variables:
+. Create the `localhost` host in the inventory with variables:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----

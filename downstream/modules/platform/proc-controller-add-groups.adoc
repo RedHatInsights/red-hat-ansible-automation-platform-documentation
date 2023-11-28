@@ -41,6 +41,3 @@ Use the radio button to toggle between the two.
 . Click btn:[Save].
 . When you have added a group to a template, the *Group details* page is displayed. 
 
-include::proc-controller-add-groups-to-groups.adoc[leveloffset=+1]
-include::ref-controller-view-edit-inv-groups.adoc[leveloffset=+1]
-

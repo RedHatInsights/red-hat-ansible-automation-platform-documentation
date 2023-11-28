@@ -15,16 +15,6 @@ Choose a source which matches the inventory type against which a host can be ent
 * xref:proc-controller-inv-source-rh-virt[Red Hat Virtualization]
 * xref:proc-controller-inv-source-aap[{PlatformName}]
 
-include::proc-controller-sourced-from-project.adoc[leveloffset=+1]
-include::proc-controller-amazon-ec2.adoc[leveloffset=+1]
-include::proc-controller-inv-source-gce.adoc[leveloffset=+1]
-include::proc-controller-azure-resource-manager.adoc[leveloffset=+1]
-include::proc-controller-inv-source-vm-vcenter.adoc[leveloffset=+1]
-include::proc-controller-inv-source-satellite.adoc[leveloffset=+1]
-include::proc-controller-inv-source-insights.adoc[leveloffset=+1]
-include::proc-controller-inv-source-openstack.adoc[leveloffset=+1]
-include::proc-controller-inv-source-rh-virt.adoc[leveloffset=+1]
-include::proc-controller-inv-source-aap.adoc[leveloffset=+1]
 
 
 

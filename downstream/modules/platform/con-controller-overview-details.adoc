@@ -4,7 +4,7 @@
 {ControllerNameStart} enables you to watch playbooks run in real time, seeing each host as they check in.
 You can go back and explore the results for specific tasks and hosts in great detail; search for specific plays or hosts and see just those results, or locate errors that need to be corrected.
 
-= “Push Button” automation
+= "Push Button" automation
 {ControllerNameStart} enables you to access your favorite projects and re-trigger execution from the web interface.
 {ControllerNameStart} asks for input variables, prompts for your credentials, starts and monitors jobs, and displays results and host history.
 

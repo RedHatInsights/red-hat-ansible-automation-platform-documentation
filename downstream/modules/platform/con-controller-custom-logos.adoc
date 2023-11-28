@@ -17,7 +17,7 @@ You upload a specific logo and add the following text:
 
 image::ag-configure-tower-ui-logo-filled.png[Logo example]
 
-The {PlatformNameShort} login dialog looks like the following:
+The {PlatformNameShort} login dialog resembles the following:
 
 image::ag-configure-aap-ui-angry-spud-login.png[Logo example 2]
 

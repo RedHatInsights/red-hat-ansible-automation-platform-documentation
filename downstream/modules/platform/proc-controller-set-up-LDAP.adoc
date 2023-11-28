@@ -46,7 +46,7 @@ The equivalent API endpoints show `AUTH_LDAP_*` repeated: `AUTH_LDAP_1_*`, `AUTH
 +
 [NOTE]
 ====
-You can specify multiple LDAP servers by separating each with spaces or commas. Click the image:tooltips-icon.png[Tooltip] icon to comply with the correct syntax and rules.
+You can specify multiple LDAP servers by separating each with spaces or commas. Click the image:question_circle.png[Tooltip,12,12] icon to comply with the correct syntax and rules.
 ====
 +
 . Enter the password to use for the binding user in the *LDAP Bind Password* text field. 
@@ -54,7 +54,7 @@ For more information on LDAP variables, see link:https://access.redhat.com/docum
 . Click to select a group type from the *LDAP Group Type* menu.
 +
 The LDAP group types that are supported by {ControllerName} use the underlying link:https://django-auth-ldap.readthedocs.io/en/latest/groups.html#types-of-groups[django-auth-ldap library].
-To specify the parameters for the selected group type, see step 15.
+To specify the parameters for the selected group type, see Step 15.
 . The *LDAP Start TLS* is disabled by default. 
 To enable TLS when the LDAP connection is not using SSL, set the toggle to *On*.
 . Enter the distinguished name in the *LDAP Bind DN* text field to specify the user that {ControllerName} uses to connect (Bind) to the LDAP server. 
@@ -162,7 +162,7 @@ The following example uses the syntax to set LDAP users as "Superusers" and "Aud
 }
 ----
 +
-. For more information on completing the mapping fields, *LDAP Organization Map* and *LDAP Team Map*, see the [ADD XREF]LDAP Organization and Team Mapping section.
+. For more information on completing the mapping fields, *LDAP Organization Map* and *LDAP Team Map*, see xref:controller-LDAP-organization-team-mapping[LDAP Organization and team mapping] section.
 . Click btn:[Save].
 
 [NOTE]

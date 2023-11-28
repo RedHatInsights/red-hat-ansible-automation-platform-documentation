@@ -19,12 +19,12 @@ This might be a good role for a user who checks in and maintains compliance.
 This might also be a good role for a service account who manages or ships job data from {ControllerName} to some other data collector.
 | Member - Team | All other users | By default, these users as an organization member do not receive any access to any aspect of the organization. 
 To grant them access the respective organization owner must add them to their respective team and grant them Administrator, Execute, Use, Update, and Ad-hoc permissions to each component of the organization's projects, inventories, and job templates.
-| Member - Team "Owner" | Power users - Lead Developer | Organization Owners can provide “admin” through the team interface, over any component of their organization including projects, inventories, and job templates. 
+| Member - Team "Owner" | Power users - Lead Developer | Organization Owners can provide "admin" through the team interface, over any component of their organization including projects, inventories, and job templates. 
 These users are able to modify and use the respective component given access.
 | Member - Team "Execute" | Developers - Engineers | This is the most common role and enables the organization member to execute job templates and read permission to the specific components. 
 This permission applies to templates.
 | Member - Team "Use" | Developers - Engineers | This permission applies to an organization's credentials, inventories, and projects.
 This permission enables a user to use the respective component within their job template.
-| Member - Team “Update” | Developers - Engineers | This permission applies to projects. 
+| Member - Team "Update" | Developers - Engineers | This permission applies to projects. 
 Enables the user to run an SCM update on a project.
 |===

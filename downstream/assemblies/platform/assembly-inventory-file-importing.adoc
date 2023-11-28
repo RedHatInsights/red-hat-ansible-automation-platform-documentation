@@ -8,9 +8,9 @@ This means that the files are non-editable, and as inventories are updated at th
 SCM types can consume both inventory files and scripts. 
 Both inventory files and custom inventory types use scripts.
 
-Imported hostss have a description of _imported_ by default.
+Imported hosts have a description of _imported_ by default.
 This can be overridden by setting the `_awx_description` variable on a given host. 
-For example, if importing from a sourced '.ini` file, you can add the following host variables:
+For example, if importing from a sourced `.ini` file, you can add the following host variables:
 
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -21,7 +21,7 @@ For example, if importing from a sourced '.ini` file, you can add the following 
 
 Similarly, group descriptions also default to _imported_, but can also be overridden by `_awx_description`.
 
-To use old inventory scripts in source control, see [Export old inventory scripts] in the _{ControllerUG}_.
+To use old inventory scripts in source control, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-inventories#ref-controller-export-old-scripts[Export old inventory scripts] in the _{ControllerUG}_.
 
 include::platform/con-controller-custom-dynamic-inv-scripts.adoc[leveloffset=+1]
 include::platform/ref-controller-scm-inv-source-fields.adoc[leveloffset=+1]

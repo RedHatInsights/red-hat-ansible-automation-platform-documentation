@@ -75,12 +75,6 @@ See Example 1 in xref:ref-controller-smart-host-filter[Smart host filters].
 After saving the new inventory, you can proceed with configuring permissions, groups, hosts, sources, and view completed jobs, if
 applicable to the type of inventory. 
 
-include::proc-controller-adding-inv-permissions.adoc[leveloffset=+1]
-include::proc-controller-add-groups.adoc[leveloffset=+1]
-include::proc-controller-add-hosts.adoc[leveloffset=+1]
-include::proc-controller-add-source.adoc[leveloffset=+1]
-include::ref-controller-view-completed-jobs.adoc[leveloffset=+1]
-
 
 
 

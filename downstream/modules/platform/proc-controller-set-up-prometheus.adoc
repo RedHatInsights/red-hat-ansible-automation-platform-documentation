@@ -43,7 +43,7 @@ For help configuring other aspects of Prometheus, such as alerts and service dis
 If Prometheus is already running, you must restart it to apply the configuration changes by making a *POST* to the reload endpoint, or by killing the Prometheus process or service.
 
 . Use a browser to navigate to your graph in the Prometheus UI at `http://<your_prometheus>:9090/graph` and test out some queries. 
-For example, you can query the current number of active controller user sessions by executing: `awx_sessions_total{type="user"}`.
+For example, you can query the current number of active {ControllerName} user sessions by executing: `awx_sessions_total{type="user"}`.
 +
 image:metrics-prometheus-ui-query-example.png[Prometheus queries]
 

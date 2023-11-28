@@ -281,7 +281,7 @@ This option is useful in cases when the SAML backend sends out complex group nam
 Once the user authenticates, {ControllerName} creates organization and team aliases.
 +
 . Optional: Provide team membership mapping in the *SAML Team Map* field. 
-For more information, see [ADD XREF]Organization and Team Mapping.
+For more information, see see xref:ref-controller-organization-mapping[Organization mapping] and xref:ref-controller-team-mapping[Team Mapping]..
 . Optional: Provide security settings in the *SAML Security Config* field. 
 This field is the equivalent to the `SOCIAL_AUTH_SAML_SECURITY_CONFIG` field in the API. 
 For more information, see link:https://github.com/SAML-Toolkits/python-saml#settings[OneLogin's SAML Python Toolkit].
@@ -307,8 +307,8 @@ This defaults to `true`.
 This defaults to `true`. 
 +
 The `role` and `value` fields are lists and are 'OR' logic. 
-If you specify two roles: [ “Role 1”, “Role 2” ] and the SAML user has either role, the logic considers them to have the required role for the flag.
-This is the same with the `value` field, if you specify: [ “Value 1”, “Value 2”] and the SAML user has either value for their attribute the logic considers their attribute value to have matched.
+If you specify two roles: [ "Role 1", "Role 2" ] and the SAML user has either role, the logic considers them to have the required role for the flag.
+This is the same with the `value` field, if you specify: [ "Value 1", "Value 2"] and the SAML user has either value for their attribute the logic considers their attribute value to have matched.
 +
 If you specify `role` and `attr` for either `superuser` or `system_auditor`, the settings for `attr` take precedence over a role. 
 System administrators and System auditor roles are evaluated at login for a SAML user. 

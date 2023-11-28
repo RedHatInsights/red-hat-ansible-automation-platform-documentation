@@ -79,7 +79,7 @@ When a label is removed, it is no longer associated with that particular Job or 
 If a label is deleted from a Job Template, it is also deleted from the Job. a| - If selected, even if a default value is supplied, you are prompted when launching to supply additional labels, if needed.
 - You cannot delete existing labels, selecting image:disassociate.png[Disassociate,10,10] only removes the newly added labels, not existing default labels.
 | Variables a| - Pass extra command line variables to the playbook. 
-This is the “-e” or “–extra-vars” command line parameter for ansible-playbook that is documented in the Ansible documentation at link:http://docs.ansible.com/playbooks_variables.html#passing-variables-on-the-command-line[Passing Variables on the Command Line].
+This is the "-e" or "-extra-vars" command line parameter for ansible-playbook that is documented in the Ansible documentation at link:http://docs.ansible.com/playbooks_variables.html#passing-variables-on-the-command-line[Passing Variables on the Command Line].
 - Provide key or value pairs using either YAML or JSON. 
 These variables have a maximum value of precedence and overrides other variables specified elsewhere. 
 The following is an example value:
@@ -110,7 +110,7 @@ For more information about job slices, see link:https://docs.ansible.com/automat
 | Timeout a| This enables you to specify the length of time (in seconds) that the job may run before it is canceled. Consider the following for setting the timeout value:
 
 - There is a global timeout defined in the settings which defaults to 0, indicating no timeout.
-- A negative timeout (<0) on a job template is a true “no timeout” on the job.
+- A negative timeout (<0) on a job template is a true "no timeout" on the job.
 - A timeout of 0 on a job template defaults the job to the global timeout (which is no timeout by default).
 - A positive timeout sets the timeout for that job template. | Yes
 | Show Changes | Enables you to see the changes made by Ansible tasks. | Yes

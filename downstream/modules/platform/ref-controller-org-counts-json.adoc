@@ -4,7 +4,7 @@
 
 The `org_counts.json` file contains information on each organization in the cluster, and the number of users and teams associated with that organization. 
 
-The following is an example org_counts.json:
+The following is an example `org_counts.json` file:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

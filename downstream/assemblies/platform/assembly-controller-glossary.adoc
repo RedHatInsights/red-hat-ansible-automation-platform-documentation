@@ -22,7 +22,7 @@ In addition to assigning resources to processes, cgroups can also report use of 
 [discrete]
 === Check Mode
 Refers to running Ansible with the `--check` option, which does not make any changes on the remote systems, but only outputs the changes that might occur if the command ran without this flag. 
-This is analogous to so-called “dry run” modes in other systems. 
+This is analogous to so-called "dry run" modes in other systems. 
 However, this does not take into account unexpected command failures or cascade effects (which is true of similar modes in other systems). 
 Use Check mode to get an idea of what might happen, but it is not a substitute for a good staging environment.
 
@@ -45,7 +45,7 @@ management system.
 [discrete]
 === Distributed Job
 A job that consists of a job template, an inventory, and slice size.
-When executed, a distributed job slices each inventory into a number of “slice size” chunks, which are then used to run smaller job slices.
+When executed, a distributed job slices each inventory into a number of "slice size" chunks, which are then used to run smaller job slices.
 
 [discrete]
 === External Credential Type
@@ -77,7 +77,7 @@ This is a convenient place to put variables that are provided to a given group, 
 
 [discrete]
 === Handlers
-Handlers are like regular tasks in an Ansible playbook (see *Tasks*), but are only run if the Task contains a “notify” directive and also indicates that it changed something. 
+Handlers are like regular tasks in an Ansible playbook (see *Tasks*), but are only run if the Task contains a "notify" directive and also indicates that it changed something. 
 For example, if a configuration file is changed then the task referencing the configuration file templating operation might notify a service restart handler. 
 This means services can be bounced only if they need to be restarted. 
 Handlers can be used for things other than service restarts, but service restarts are the most common use.
@@ -91,7 +91,7 @@ Sometimes referred to as a "node".
 [discrete]
 === Host Specifier
 Each Play in Ansible maps a series of tasks (which define the role, purpose, or orders of a system) to a set of systems. 
-This “hosts:” directive in each play is often called the hosts specifier. 
+This "hosts:" directive in each play is often called the hosts specifier. 
 It can select one system, many systems, one or more groups, or hosts that are in one group and explicitly not in another.
 
 [discrete]
@@ -106,7 +106,7 @@ A collection of hosts against which Jobs can be launched.
 [discrete]
 === Inventory Script
 A program that looks up hosts, group membership for hosts, and variable information from an external resource, whether that be a SQL database, a CMDB solution, or LDAP. 
-This concept was adapted from Puppet (where it is called an “External Nodes Classifier”) and works in a similar way.
+This concept was adapted from Puppet (where it is called an "External Nodes Classifier") and works in a similar way.
 
 [discrete]
 === Inventory Source

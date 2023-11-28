@@ -108,7 +108,4 @@ You can also perform additional actions such as scheduling a sync process, and e
 
 image:inventories-view-sources.png[Inventories view sources]
 
-include::ref-controller-inventory-sources.adoc[leveloffset=+1]
-include::ref-controller-export-old-scripts.adoc[leveloffset=+1]
-
 

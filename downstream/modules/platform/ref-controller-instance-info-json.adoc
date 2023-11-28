@@ -4,7 +4,7 @@
 
 The `instance_info.json` file contains detailed information on the instances that make up the cluster, organized by instance UUID. 
 
-The following is an example instance_info.json file:
+The following is an example `instance_info.json` file:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

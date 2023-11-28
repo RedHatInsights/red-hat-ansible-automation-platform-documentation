@@ -9,15 +9,18 @@ Once you create and register your developer application with the appropriate ser
 
 . From the navigation panel, select menu:Settings[].
 . Select from the following options in the *Authentication* tab:
-** [ADD XREF]Azure AD settings
-** [ADD XREF]GitHub settings
-** [ADD XREF]Google OAuth2 settings
-** [ADD XREF]LDAP settings
-** [ADD XREF]RADIUS settings
-** [ADD XREF]SAML settings
-** [ADD XREF]TACACS+ settings
-** [ADD XREF]Generic OIDC settings
+
+* xref:controller-set-up-azure[Azure AD settings]
+* xref:proc-controller-github-team-settings[Github settings]
+* xref:proc-controller-google-oauth2-settings[Google OAuth2 settings]
+* xref:controller-LDAP-authentication[LDAP Authentication]
+* xref:controller-set-up-radius[RADIUS settings]
+* xref:controller-set-up-SAML[SAML settings]
+** xref:controller-configure-transparent-SAML[Transparent SAML Logins]
+** xref:controller-enable-logging-SAML[Enabling Logging for SAML]
+* xref:controller-set-up-tacacs[TACACS+ settings]
+* xref:controller-set-up-generic-oidc[Generic OIDC settings]
 +
-Different authentication types require you to enter different information. //redundant?? 
+//Different authentication types require you to enter different information. //redundant?? 
 Ensure that you include all the required information.
 . Click btn:[Save] to apply the settings or btn:[Cancel] to abandon the changes.

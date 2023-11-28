@@ -62,6 +62,3 @@ In some situations, you can modify the following:
 Hosts associated with the Smart Inventory are manifested at view time.
 If the results of a Smart Inventory contains more than one host with identical hostnames, only one of the matching hosts is included as
 part of the Smart Inventory, ordered by Host ID.
-
-include::ref-controller-smart-host-filter.adoc[leveloffset=+1]
-include::proc-controller-define-filter-with-facts.adoc[leveloffset=+1]

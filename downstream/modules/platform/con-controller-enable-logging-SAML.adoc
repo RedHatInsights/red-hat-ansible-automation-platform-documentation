@@ -4,4 +4,4 @@
 
 You can enable logging messages for the SAML adapter in the same way that you can enable logging for LDAP. 
 
-For more information, see [ADD XREF]Enabling Logging for LDAP section.
+For more information, see the xref:controller-enable-logging-LDAP[Enabling Logging for LDAP] section.

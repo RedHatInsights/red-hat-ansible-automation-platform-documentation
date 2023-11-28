@@ -28,7 +28,7 @@ For more information, see the link:https://access.redhat.com/RegistryAuthenticat
 ====
 
 Once you have created the container group successfully, the *Details* tab of the newly created container group remains, which enables you to review and edit your container group information. 
-This is the same menu that is opened if you click the image:leftpencil.png[Edit] icon from the *Instance Group* link. 
+This is the same menu that is opened if you click the image:leftpencil.png[Edit,15,15] icon from the *Instance Group* link. 
 You can also edit *Instances* and review *Jobs* associated with this instance group.
 
 image::ag-instance-group-successfully-created.png[Instance group successfully created]

@@ -2,8 +2,9 @@
 
 = counts.json
 
-The counts.json file contains the total number of objects for each
-relevant category in a cluster. An example counts.json is: :
+The `counts.json` file contains the total number of objects for each relevant category in a cluster. 
+
+The following is an example `counts.json` file:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

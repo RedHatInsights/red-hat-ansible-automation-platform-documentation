@@ -10,7 +10,7 @@ Determining the number and size of instances to support the desired workload mus
 * Maximum number of forks set on jobs
 * Node size you prefer to deploy (CPU/Memory/Disk)
 
-With this data, you can calculate the number of tasks per hour, which the cluster needs control capacity to process; as well as the number of “forks” or capacity you need to be able to run your peak load, which the cluster needs execution capacity to run.
+With this data, you can calculate the number of tasks per hour, which the cluster needs control capacity to process; as well as the number of "forks" or capacity you need to be able to run your peak load, which the cluster needs execution capacity to run.
 
 For example, to plan for a cluster with:
 

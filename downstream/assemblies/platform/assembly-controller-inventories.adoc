@@ -67,9 +67,44 @@ inventory's groups and hosts.
 
 //Smart inventories are deprecated. 
 include::platform/ref-controller-smart-inventories.adoc[leveloffset=+1]
+include::platform/ref-controller-smart-host-filter.adoc[leveloffset=+2]
+include::platform/proc-controller-define-filter-with-facts.adoc[leveloffset=+2]
 include::platform/ref-controller-constructed-inventories.adoc[leveloffset=+1]
+
+include::platform/ref-controller-group-name-vars-filtering.adoc[leveloffset=+2]
+include::platform/ref-controller-inv-debugging-tips.adoc[leveloffset=+2]
+include::platform/ref-controller-inv-nested-groups.adoc[leveloffset=+2]
+include::platform/ref-controller-inv-ansible-facts.adoc[leveloffset=+2]
+include::platform/ref-controller-filter-environ-variables.adoc[leveloffset=+3]
+include::platform/ref-controller-filter-hosts-cpu-type.adoc[leveloffset=+3]
+
 include::platform/ref-controller-inventory-plugins.adoc[leveloffset=+1]
+
 include::platform/proc-controller-adding-new-inventory.adoc[leveloffset=+1]
+include::platform/proc-controller-adding-inv-permissions.adoc[leveloffset=+2]
+include::platform/proc-controller-add-groups.adoc[leveloffset=+2]
+
+include::platform/proc-controller-add-groups-to-groups.adoc[leveloffset=+3]
+include::platform/ref-controller-view-edit-inv-groups.adoc[leveloffset=+3]
+
+include::platform/proc-controller-add-hosts.adoc[leveloffset=+2]
+include::platform/proc-controller-add-source.adoc[leveloffset=+2]
+
+include::platform/ref-controller-inventory-sources.adoc[leveloffset=+3]
+include::platform/proc-controller-sourced-from-project.adoc[leveloffset=+4]
+include::platform/proc-controller-amazon-ec2.adoc[leveloffset=+4]
+include::platform/proc-controller-inv-source-gce.adoc[leveloffset=+4]
+include::platform/proc-controller-azure-resource-manager.adoc[leveloffset=+4]
+include::platform/proc-controller-inv-source-vm-vcenter.adoc[leveloffset=+4]
+include::platform/proc-controller-inv-source-satellite.adoc[leveloffset=+4]
+include::platform/proc-controller-inv-source-insights.adoc[leveloffset=+4]
+include::platform/proc-controller-inv-source-openstack.adoc[leveloffset=+4]
+include::platform/proc-controller-inv-source-rh-virt.adoc[leveloffset=+4]
+include::platform/proc-controller-inv-source-aap.adoc[leveloffset=+4]
+
+include::platform/ref-controller-export-old-scripts.adoc[leveloffset=+3]
+
+include::ref-controller-view-completed-jobs.adoc[leveloffset=+1]
 include::platform/proc-controller-run-ad-hoc-commands.adoc[leveloffset=+1]
 
 endif::controller-UG[]

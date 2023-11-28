@@ -2,7 +2,7 @@
 
 = Function of roles: editing and creating
 
-Organization “resource roles” functionality are specific to a certain resource type - such as workflows. 
+Organization "resource roles" functionality are specific to a certain resource type - such as workflows. 
 Being a member of such a role usually provides two types of permissions.
 If a user is given a "workflow admin role" for the organization "Default", then they have the following permissions:
 

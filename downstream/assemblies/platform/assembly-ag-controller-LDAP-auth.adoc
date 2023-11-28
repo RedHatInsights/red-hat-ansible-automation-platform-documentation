@@ -2,7 +2,7 @@
 
 = LDAP authentication
 
-Administrators use LDAP as a source for account authentication information for {ControllerName} users. 
+Administrators use the _Lightweight Directory Access Protocol_ (LDAP) as a source for account authentication information for {ControllerName} users. 
 User authentication is provided, but not the synchronization of user permissions and credentials. 
 Organization membership and team membership can be synchronized by the organization administrator.
 

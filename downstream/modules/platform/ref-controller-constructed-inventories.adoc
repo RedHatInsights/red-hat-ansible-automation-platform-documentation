@@ -30,9 +30,4 @@ image:inventories-constructed-inventory-details.png[Constructed inventory detail
 
 The examples described in subsequent sections are organized by the structure of the input inventories.
 
-include::ref-controller-group-name-vars-filtering.adoc[leveloffset=+1]
-include::ref-controller-inv-debugging-tips.adoc[leveloffset=+1]
-include::ref-controller-inv-nested-groups.adoc[leveloffset=+1]
-include::ref-controller-inv-ansible-facts.adoc[leveloffset=+1]
-
 

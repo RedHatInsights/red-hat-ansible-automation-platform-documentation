@@ -21,4 +21,8 @@ include::platform/proc-controller-scheduling-deletion.adoc[leveloffset=+2]
 include::platform/proc-controller-management-notifications.adoc[leveloffset=+2]
 include::platform/ref-controller-cleanup-expired-tokens.adoc[leveloffset=+1]
 include::platform/con-controller-cleanup-expired-sessions.adoc[leveloffset=+2]
+<<<<<<< HEAD
 include::platform/ref-controller-old-job-history.adoc[leveloffset=+2]
+=======
+include::platform/ref-controller-remove-old-job-history.adoc[leveloffset=+2]
+>>>>>>> d595899c (Corrections for Controller Admin Guide)

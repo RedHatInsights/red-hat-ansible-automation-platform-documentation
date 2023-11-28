@@ -50,6 +50,6 @@ Delete unnecessary hosts directly from the Host Metrics view by selecting the de
 These are soft-deleted, meaning their records are not removed, but are not being used and thereby not counted towards your subscription.
 endif::controller-UG,controller-AG[]
 
-ifdef::controller-GS, controller-AG[]
+ifdef::controller-GS,controller-AG[]
 For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#subscription-compliance[Subscription compliance] in the _{ControllerUG}_.
-endif::controller-GS, controller-AG[]
+endif::controller-GS,controller-AG[]

@@ -4,6 +4,6 @@
 
 Ports and instances used by {ControllerName} and also required by the on-premise {HubName} node are as follows:
 
-* 80, 443 (normal {ControllerName} and {HubName} ports)
-* 22 (ssh - ingress only required)
-* 5432 (database instance - if the database is installed on an external instance, it must be opened to {ControllerName} instances)
+* Port 80, 443 (normal {ControllerName} and {HubName} ports)
+* Port 22 (ssh - ingress only required)
+* Port 5432 (database instance - if the database is installed on an external instance, it must be opened to {ControllerName} instances)
