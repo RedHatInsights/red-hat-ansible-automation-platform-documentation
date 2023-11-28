@@ -1,0 +1,12 @@
+[id="controller-playbook-pending"]
+
+= Playbook stays in pending
+
+If you are attempting to run a playbook job and it stays in the `Pending` state indefinitely, try the following actions:
+
+* Ensure that all supervisor services are running through `supervisorctl status`.
+* Ensure that the `/var/ partition` has more than 1 GB of space available. 
+Jobs do not complete with insufficient space on the `/var/` partition.
+* Run `automation-controller-service restart` on the {ControllerName} server.
+
+If you continue to have issues, run `sosreport` as root on the {ControllerName} server, then file a link:http://support.ansible.com/[support request] with the result.

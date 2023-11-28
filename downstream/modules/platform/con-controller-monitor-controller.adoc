@@ -22,3 +22,16 @@ If you are working with Red Hat support or account teams, having information abo
 Additional insights into automation use are available when users enable data collection for Automation Analytics. 
 
 For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4[Product documentation for Automation Analytics], and link:https://www.ansible.com/products/insights-for-ansible[Automation analytics and Red Hat Insights for Red Hat Ansible Automation Platform].
+
+.Troubleshooting 
+
+The `sosreport` is a utility that collects diagnostic information for support to be able to use to analyze and investigate the issues that you report. 
+To provide technical support this information, see the Knowledgebase article link:https://access.redhat.com/solutions/3592[What is an sos report and how to create one in Red Hat Enterprise Linux?] from the Red Hat Customer portal.
+
+.Procedure
+
+. Install the `sosreport` utility.
+For more information see the link:https://access.redhat.com/solutions/3592#install[Installing sos package] section of the Knowledgebase article.
+. Generate an `sosreport`.
+For more information, see the link:https://access.redhat.com/solutions/3592#command[How can I generate an sos report?] section of the Knowledgebase article.
+. Provide the `sosreport` to Red Hat Support at: https://access.redhat.com/.

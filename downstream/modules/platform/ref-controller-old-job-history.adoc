@@ -1,4 +1,4 @@
-[id="ref-controller-remove-old-job-history"]
+[id="controller-remove-old-job-history"]
 
 = Removing Old Job History
 

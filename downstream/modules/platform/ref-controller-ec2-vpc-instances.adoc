@@ -1,0 +1,24 @@
+[id="controller-ec2-vpc-instances"]
+
+= Viewing private EC2 VPC instances in the {ControllerName} inventory
+
+By default, {ControllerName} only shows instances in a VPC that have an Elastic IP (EIP) associated with them. 
+
+.Procedure
+. From the navigation panel, select menu:Resources[Inventories].
+. Select the group that has the *Source* set to *AWS*, and click the *Source* tab.
+In the *Source variables* field, enter:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+vpc_destination_variable: private_ip_address
+----
++
+. Click btn:[Save] and trigger an update of the group.
+
+Once this is done you can see your VPC instances.
+
+[NOTE]
+====
+{ControllerNameStart} must be running inside the VPC with access to those instances if you want to configure them.
+====

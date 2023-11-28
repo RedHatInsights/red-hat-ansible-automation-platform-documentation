@@ -2,3 +2,14 @@
 
 = Troubleshooting {ControllerName}
 
+Useful troubleshooting information for {ControllerName}.
+
+include::platform/ref-controller-connect-to-host.adoc[leveloffset=+1]
+include::platform/ref-controller-unable-to-login-http.adoc[leveloffset=+1]
+include::platform/ref-controller-run-a-playbook.adoc[leveloffset=+1]
+include::platform/ref-controller-unable-to-run-job.adoc[leveloffset=+1]
+include::platform/ref-controller-playbooks-not-showing.adoc[leveloffset=+1]
+include::platform/ref-controller-playbook-pending.adoc[leveloffset=+1]
+include::platform/ref-controller-reuse-external-database-fail.adoc[leveloffset=+1]
+include::platform/ref-controller-ec2-vpc-instances.adoc[leveloffset=+1]
+

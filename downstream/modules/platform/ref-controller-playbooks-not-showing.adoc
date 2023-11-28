@@ -1,0 +1,14 @@
+[id="controller-playbooks-not-showing"]
+
+= Playbooks do not show up in the "Job Template" list
+
+If your playbooks are not showing up in the *Job Template* list, check the following:
+
+* Ensure that the playbook is valid YML and can be parsed by Ansible.
+* Ensure that the permissions and ownership of the project path (`/var/lib/awx/projects`) is set up so that the "awx" system user can view the files. 
+Run the following command to change the ownership:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+chown awx -R /var/lib/awx/projects/
+----

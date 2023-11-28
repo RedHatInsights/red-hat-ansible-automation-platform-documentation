@@ -1,0 +1,22 @@
+[id="controller-unable-to-login-http"]
+
+= Unable to login to {ControllerName} through HTTP
+
+Access to {ControllerName} is intentionally restricted through a secure protocol (HTTPS). 
+In cases where your configuration is set up to run an {ControllerName} node behind a load balancer or proxy as "HTTP only", and you only want to access it without SSL (for troubleshooting, for example), you must add the following settings in the `custom.py` file located at `/etc/tower/conf.d` of your {ControllerName} instance:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+----
+
+If you change these settings to `false` it enables {ControllerName} to manage cookies and login sessions when using the HTTP protocol. 
+You must do this on every node of a cluster installation.
+
+To apply the changes, run:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+automation-controller-service restart
+----

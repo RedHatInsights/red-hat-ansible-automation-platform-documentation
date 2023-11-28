@@ -33,3 +33,9 @@ MAX_WEBSOCKET_EVENT_RATE = 30
 # Note that this can be recreated if the stdout is downloaded
 LOCAL_STDOUT_EXPIRE_TIME = 2592000
 ----
+
+.Troubleshooting
+
+{ControllerNameStart} uses port 80/443 on the {ControllerName} server to stream live updates of playbook activity and other events to the client browser. 
+By default, these ports are configured for 80/443, but if they are blocked by firewalls, close any firewall rules that opened up or added for the previous websocket ports.
+This ensures that your firewall allows traffic through this port.
