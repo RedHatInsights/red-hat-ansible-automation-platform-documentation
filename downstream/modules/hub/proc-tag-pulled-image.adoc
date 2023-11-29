@@ -20,7 +20,7 @@ After you pull images from a registry, tag them for use in your {PrivateHubName}
 +
 [subs="+quotes"]
 -----
-$ podman tag registry.redhat.io/__<container_image_name>__:__<tag>__ __<automation_hub_URL>__/__<container_image_name>__
+$ podman tag registry.redhat.io/__<container_image_name>__:__<tag>__ __<automation_hub_hostname>__/__<container_image_name>__
 -----
 
 
