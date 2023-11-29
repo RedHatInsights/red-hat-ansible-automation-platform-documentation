@@ -17,7 +17,7 @@ In the `/var/log/tower/` directory, you can view logfiles captured by:
 * *rsyslog.err:* Captures rsyslog errors authenticating with external logging services when sending logs to them.
 * *task_system.log:* Captures the logs of tasks that {ControllerName} is running in the background, such as adding cluster instances and logs related to information gathering or processing for analytics.
 * *tower_rbac_migrations.log:* Captures the logs for rbac database migration or upgrade.
-* *tower_system_tracking_migrations.log:* Captures the logs the controller system tracking migration or upgrade.
+* *tower_system_tracking_migrations.log:* Captures the logs of the controller system tracking migration or upgrade.
 * *wsbroadcast.log:* Captures the logs of websocket connections in the controller nodes.
 
 In the `/var/log/supervisor/` directory, you can view logfiles captured by:

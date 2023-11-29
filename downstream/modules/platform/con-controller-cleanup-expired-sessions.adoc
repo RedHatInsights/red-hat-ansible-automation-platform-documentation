@@ -5,7 +5,7 @@
 To remove expired sessions, click the launch image:rightrocket.png[Launch,15,15] icon beside *Cleanup Expired Sessions*.
 
 You can review or set a schedule for cleaning up expired sessions by performing the same procedure described for activity stream management jobs. 
-For more information, see xref:proc-controller-scheduling-deletion[Scheduling deletions].
+For more information, see xref:proc-controller-scheduling-deletion[Scheduling deletion].
 
 You can also set or review notifications associated with this management job the same way as described in xref:proc-controller-management-notifications[Notifications] for activity stream management jobs.
 

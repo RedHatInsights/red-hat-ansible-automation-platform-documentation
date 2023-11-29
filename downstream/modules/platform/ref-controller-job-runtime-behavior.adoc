@@ -10,7 +10,7 @@ If you assign two instances to a group then either one is as likely to receive a
 If you place those instances into instance groups, then they also expand that group's capacity. 
 If an instance is performing work and it is a member of multiple groups, then capacity is reduced from all groups for which it is a member. 
 De-provisioning an instance removes capacity from the cluster wherever that instance was assigned. 
-For more information, see the xref:controller-deprovision-instance-group[Deprovision Instances] section for more detail.
+For more information, see the xref:controller-deprovision-instance-group[Deprovisioning instance groups] section for more detail.
 
 [NOTE]
 ====

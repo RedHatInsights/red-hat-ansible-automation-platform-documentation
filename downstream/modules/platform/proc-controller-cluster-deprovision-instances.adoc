@@ -22,4 +22,4 @@ awx-manage deprovision_instance --hostname=hostB
 ----
 
 Deprovisioning instance groups in {ControllerName} does not automatically deprovision or remove instance groups.
-For more information, see the [ADD XREF]Deprovision Instance Groups section.
+For more information, see the xref:controller-deprovision-instance-group[Deprovisioning instance groups] section.

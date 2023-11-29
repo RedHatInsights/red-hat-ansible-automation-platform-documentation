@@ -27,7 +27,7 @@ hostD
 
 [NOTE]
 ====
-If no groups are selected for a resource then the `automationcontroller` group is used, but if any other group is selected, then the `automationcontroller` group is not used in any way.
+If no groups are selected for a resource, then the `automationcontroller` group is used, but if any other group is selected, then the `automationcontroller` group is not used in any way.
 ====
 
 The database group remains for specifying an external PostgreSQL. 

@@ -10,7 +10,7 @@ The *Topology View* opens and displays a graphical representation of how each re
 +
 image:topology-viewer-initial-view.png[Initial view]
 
-. To adjust the zoom levels, or manipulate the graphic views, use the control icons: zoom-in (image:examine.png[Examine,15,15]), zoom-out (image:reduce.png[Reduce,15,15]), expand (image:expand.png[Expand,10,10]), and reset (image:reset.png[Reset,10,10]) on the top bar.
+. To adjust the zoom levels, or manipulate the graphic views, use the control icons: zoom-in (image:examine.png[Examine,15,15]), zoom-out (image:reduce.png[Reduce,15,15]), expand (image:expand.png[Expand,10,10]), and reset (image:reset.png[Reset,10,10]) on the toolbar.
 +
 You can also click and drag to pan around; and scroll using your mouse or trackpad to zoom. 
 The fit-to-screen feature automatically scales the graphic to fit on the screen and repositions it in the center. 
@@ -18,7 +18,7 @@ It is particularly useful when you want to see a large mesh in its entirety.
 +
 image:topology-viewer-zoomed-view.png[image]
 +
-To reset the view to its default view, click the *Reset zoom* image:reset.png[Reset,12,12] icon.
+To reset the view to its default view, click the *Reset zoom* (image:reset.png[Reset,12,12]) icon.
 
 . Refer to the *Legend* to identify the type of nodes that are represented. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/assembly-planning-mesh#con-automation-mesh-node-types[Control and execution planes] for more information on each type of node.
 +

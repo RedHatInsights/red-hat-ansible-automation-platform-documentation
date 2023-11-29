@@ -13,6 +13,6 @@ If none exist, for more information, see link:https://access.redhat.com/document
 
 image:management-job-notifications-empty.png[No notifications set]
 
-The following shows an example of a notifications with details specified:
+The following shows an example of a notification with details specified:
 
 image:management-job-add-notification-details.png[New notification template]

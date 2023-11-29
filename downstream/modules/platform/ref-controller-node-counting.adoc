@@ -4,9 +4,9 @@
 
 The {ControllerName} license defines the number of Managed Nodes that can be managed as part of a {PlatformName} subscription.
 
-A typical license says 'License Count: 500', which sets the maximum number of Managed Nodes at 500.
+A typical license says "License Count: 500", which sets the maximum number of Managed Nodes at 500.
 
-For more information on managed node requirements for licensing, see https://access.redhat.com/articles/3331481
+For more information on managed node requirements for licensing, see https://access.redhat.com/articles/3331481.
 
 [NOTE]
 ====

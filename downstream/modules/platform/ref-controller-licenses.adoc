@@ -2,10 +2,10 @@
 
 = {PlatformNameShort} component licenses
 
-To view the license information for the components included in {ControllerName}, refer to `/usr/share/doc/automation-controller-<version>/README`
+To view the license information for the components included in {ControllerName}, refer to `/usr/share/doc/automation-controller-<version>/README`.
 
 where `<version>` refers to the version of {ControllerName} you have installed.
 
-To view a specific license, refer to `/usr/share/doc/automation-controller-<version>/*.txt`
+To view a specific license, refer to `/usr/share/doc/automation-controller-<version>/*.txt`.
 
 where `*` is the license file name to which you are referring.

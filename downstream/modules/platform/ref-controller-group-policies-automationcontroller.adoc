@@ -5,7 +5,7 @@
 Use the following criteria when defining nodes:
 
 * Nodes in the `automationcontroller` group can define `node_type` hostvar to be `hybrid` (default) or `control`.
-* Nodes in the `execution_nodes group` can define `node_type` hostvar to be `execution` (default) or hop.
+* Nodes in the `execution_nodes group` can define `node_type` hostvar to be `execution` (default) or `hop`.
 
 You can define custom groups in the inventory file by naming groups with `instance_group_*` where `*` becomes the name of the group in the API. 
 You can also create custom instance groups in the API after the install has finished.
@@ -28,7 +28,7 @@ peers=execution_nodes
 110-addr.tatu.home ansible_host=192.168.111.110 receptor_listener_port=8928
 ----
 
-After you run the installer, following error appears:
+After you run the installer, the following error appears:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

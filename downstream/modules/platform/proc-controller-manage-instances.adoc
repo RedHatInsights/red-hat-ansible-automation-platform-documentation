@@ -57,7 +57,7 @@ image:instances_delete_prompt.png[Instance delete prompt]
 .Note
 ====
 You can still remove an instance even if it is active and jobs are running on it. 
-{ControllerNameStart} waits for any jobs running on this node to complete actually removing the instance.
+{ControllerNameStart} waits for any jobs running on this node to complete removing the instance.
 ====
 
 . Click btn:[Remove] to confirm.

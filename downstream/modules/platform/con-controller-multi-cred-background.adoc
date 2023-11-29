@@ -1,4 +1,4 @@
-[id="con-controller-multi-cred-backgound"]
+[id="con-controller-multi-cred-background"]
 
 = Background
 

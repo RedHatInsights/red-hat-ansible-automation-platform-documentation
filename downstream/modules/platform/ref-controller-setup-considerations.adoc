@@ -2,14 +2,14 @@
 
 = Setup considerations
 
-This section covers the initial setup of clusters only. 
+Learn about the initial setup of clusters. 
 To upgrade an existing cluster, see link:https://docs.ansible.com/automation-controller/4.4/html/upgrade-migration-guide/upgrade_considerations.html#upgrade-planning[Upgrade Planning] of the _Ansible Automation Platform Upgrade and Migration Guide_.
 
 Note the following important considerations in the new clustering environment:
 
 * PostgreSQL is  a standalone instance and is not clustered. 
 {ControllerNameStart} does not manage replica configuration or database failover (if the user configures standby replicas).
-* When you start a cluster, the database node must be a standalone server, and PostgreSQL must not be installed on one of the controller nodes.
+* When you start a cluster, the database node must be a standalone server, and PostgreSQL must not be installed on one of the {ControllerName} nodes.
 * PgBouncer is not recommended for connection pooling with {ControllerName}. 
 {ControllerNameStart} relies on `pg_notify` for sending messages across various components, and therefore, PgBouncer cannot readily be used in transaction pooling mode.
 * The maximum supported instances in a cluster is 20.

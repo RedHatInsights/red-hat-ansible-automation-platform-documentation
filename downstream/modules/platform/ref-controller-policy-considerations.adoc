@@ -6,6 +6,8 @@ Take the following policy considerations into account:
 
 * Both `policy_instance_percentage` and `policy_instance_minimum` set minimum allocations. 
 The rule that results in more instances assigned to the group takes effect. 
-For example, if you have a `policy_instance_percentage` of 50% and a `policy_instance_minimum` of 2 and you start 6 instances, 3 of them would be assigned to the instance group. If you reduce the number of total instances in the cluster to 2, then both of them are assigned to the instance group to satisfy `policy_instance_minimum`. 
+For example, if you have a `policy_instance_percentage` of 50% and a `policy_instance_minimum` of 2 and you start 6 instances, 3 of them are assigned to the instance group. 
+If you reduce the number of total instances in the cluster to 2, then both of them are assigned to the instance group to satisfy `policy_instance_minimum`. 
 This enables you to set a lower limit on the amount of available resources.
-* Policies do not actively prevent instances from being associated with multiple instance groups, but this can effectively be achieved by making the percentages add up to 100. If you have 4 instance groups, assign each a percentage value of 25 and the instances are distributed among them without any overlap.
+* Policies do not actively prevent instances from being associated with multiple instance groups, but this can be achieved by making the percentages add up to 100. 
+If you have 4 instance groups, assign each a percentage value of 25 and the instances are distributed among them without any overlap.

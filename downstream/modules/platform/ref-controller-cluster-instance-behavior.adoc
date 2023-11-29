@@ -2,7 +2,7 @@
 
 = Instance services and failure behavior
 
-Each controller instance is made up of the following different services working collaboratively:
+Each {ControllerName} instance is made up of the following different services working collaboratively:
 
 HTTP services:: This includes the {ControllerName} application itself as well as external web services.
 Callback receiver:: Receives job events from running Ansible jobs.
@@ -13,4 +13,4 @@ Rsyslog:: The log processing service used to deliver logs to various external lo
 {ControllerNameStart} is configured so that if any of these services or their components fail, then all services are restarted. 
 If these fail often in a short span of time, then the entire instance is placed offline in an automated fashion to allow remediation without causing unexpected behavior.
 
-For backing up and restoring a clustered environment, see the xref:controller-backup-restore-clustered-environments[Backup and Restore for Clustered Environments] section.
+For backing up and restoring a clustered environment, see the xref:controller-backup-restore-clustered-environments[Backup and restore clustered environments] section.

@@ -22,9 +22,9 @@ image:management-jobs-remove-activity-stream-schedule-details.png[Create new sch
 * *Name* required
 * *Start Date* required
 * *Start Time* required
-* *Local time zone* the entered Start Time should be in this timezone)
+* *Local time zone* the entered Start Time should be in this timezone.
 * *Repeat frequency* the appropriate options display as the update frequency is modified including data you do not want to include by specifying exceptions.
-* *Days of Data to Keep* required - specify how much data you want to retain
+* *Days of Data to Keep* required - specify how much data you want to retain.
 
 The *Details* tab displays a description of the schedule and a list of the scheduled occurrences in the selected Local Time Zone.
 

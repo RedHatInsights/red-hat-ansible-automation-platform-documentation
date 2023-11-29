@@ -2,7 +2,7 @@
 
 = Important Changes
 
-At {ControllerName} 4.4 Job templates have a single interface for credential assignment.
+All {ControllerName} 4.4 Job templates have a single interface for credential assignment.
 
 From the API endpoint:
 

@@ -7,4 +7,4 @@ If you or your company has purchased a subscription for {PlatformNameShort}, you
 
 For more information on the levels of support for your {PlatformNameShort} subscription, see xref:ref-controller-subscription-types[Subscription Types].
 
-For information on what is covered under an {PlatformNameShort} subscription, see link:https://access.redhat.com/support/policy/updates/ansible-tower#scope-of-coverage-4[Scope of Coverage] and https://access.redhat.com/support/policy/updates/ansible-engine[Scope of Support]
+For information on what is covered under an {PlatformNameShort} subscription, see link:https://access.redhat.com/support/policy/updates/ansible-tower#scope-of-coverage-4[Scope of Coverage] and https://access.redhat.com/support/policy/updates/ansible-engine[Scope of Support].

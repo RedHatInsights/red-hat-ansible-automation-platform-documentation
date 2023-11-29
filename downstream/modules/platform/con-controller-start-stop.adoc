@@ -1,7 +1,7 @@
 [id="controller-start-stop"]
 
 External databases must be explicitly managed by the administrator. 
-You can find the services script in `/usr/bin/automation-controller-service`, which can be invoked as follows:
+You can find the services script in `/usr/bin/automation-controller-service`, which can be invoked with the following command:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

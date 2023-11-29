@@ -19,4 +19,4 @@ The credential type must specify all the necessary types of inputs.
 Then, when you create a credential of this type, the secrets are stored in an encrypted form. 
 If you apply that credential to the inventory source, the script has access to those inputs.
 
-For more information, see [Credential types] in the {ControllerUG}.
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#assembly-controller-custom-credentials[Custom Credential Types] in the {ControllerUG}.
