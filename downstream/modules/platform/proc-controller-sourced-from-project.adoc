@@ -33,7 +33,7 @@ image:inventories-create-source-sourced-from-project-filter.png[image]
 . Optional: You can specify the verbosity, host filter, enabled variable/value, and update options as described in xref:proc-controller-add-source[Adding a source].
 . Optional: To pass to the custom inventory script, you can set environment variables in the *Environment Variables* field. 
 You can also place inventory scripts in source control and then run it from a project. 
-For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/scm-inv-source.html#ag-inv-import[Inventory File Importing] in _ControllerNameStart} Administration Guide_.
+For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/scm-inv-source.html#ag-inv-import[Inventory File Importing] in _{ControllerAG}_.
 //+
 //image:inventories-create-source-sourced-from-project-example.png[Inventories - create source - sourced from project example]
 
