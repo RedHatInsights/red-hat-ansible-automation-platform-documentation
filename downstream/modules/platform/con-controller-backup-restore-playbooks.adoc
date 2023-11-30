@@ -19,5 +19,5 @@ If the backup file is not available, your restoration fails.
 
 [NOTE]
 ====
-Ensure that your {ControllerName} hosts are properly set up with SSH keys, user or pass variables in the hosts file, and that the user has sudo access.
+Ensure that your {ControllerName} hosts are properly set up with SSH keys, user or pass variables in the hosts file, and that the user has `sudo` access.
 ====

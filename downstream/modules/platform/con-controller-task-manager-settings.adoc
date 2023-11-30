@@ -16,6 +16,6 @@ The Prometheus metrics, available in `/api/v2/metrics` observe how long individu
 
 For more information, see xref:assembly-controller-metrics[Metrics].
 
-As a safeguard against excessively long runs of the task manager, there is a timeout which is determined by the setting `TASK_MANAGER_TIMEOUT``.
+As a safeguard against excessively long runs of the task manager, there is a timeout which is determined by the `TASK_MANAGER_TIMEOUT` parameter (or option).
 This is when the task manager begins to exit any loops and attempts to commit any progress it made. 
 The task is not killed until `TASK_MANAGER_TIMEOUT` + `TASK_MANAGER_TIMEOUT_GRACE_PERIOD` seconds have passed.

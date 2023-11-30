@@ -5,7 +5,7 @@
 Determining the number and size of instances to support the desired workload must take the following into account:
 
 * Managed hosts
-* Tasks/hour per host
+* Tasks per hour per host
 * Maximum number of concurrent jobs you want to support
 * Maximum number of forks set on jobs
 * Node size you prefer to deploy (CPU/Memory/Disk)
@@ -15,7 +15,7 @@ With this data, you can calculate the number of tasks per hour, which the cluste
 For example, to plan for a cluster with:
 
 * 300 managed hosts
-* 1,000 tasks/hour per host, or 16 tasks per minute per host
+* 1,000 tasks per hour per host, or 16 tasks per minute per host
 * 10 concurrent jobs
 * Forks set to five on playbooks
 * Average event size 1 Mb
@@ -25,18 +25,18 @@ Known factors:
 
 * To run the 10 concurrent jobs, you must have at least (10 jobs * 5 forks) + (10 jobs * 1 base task impact of a job) = 60 execution capacity
 * To control 10 concurrent jobs, you must have at least 10 control capacity.
-* Running 1000 tasks * 300 managed hosts/hour produces at least 300,000 events/hour. 
+* Running 1000 tasks * 300 managed hosts per hour produces at least 300,000 events per hour. 
 +
 You might have to run the job to see exactly how many events it produces because this is dependent on the specific task and verbosity. 
 +
-For example, a debug task printing “Hello World” produces six job events with the verbosity of `1` on one host. 
+For example, a debug task printing "Hello World" produces six job events with the verbosity of `1` on one host. 
 With a verbosity of `3`, it produces 34 job events on one host. 
 Therefore, the task produces at least six events. 
-That means closer to 3,000,000 events/hour or approximately 833 events/second.
+That means closer to 3,000,000 events per hour or approximately 833 events per second.
 
 To determine how many execution and control nodes you require, refer to the experiment results in the following table that show the observed event processing rate of a single control node with five execution nodes of equal size (API Capacity column). 
 
-The default “forks” setting of job templates is five, so using this default the maximum number of jobs a control node can dispatch to execution nodes makes five execution nodes of equal CPU/RAM use 100% of their capacity, arriving at the previously mentioned 1:5 ratio of control to execution capacity.
+The default "forks" setting of job templates is five, so using this default, the maximum number of jobs a control node can dispatch to execution nodes makes five execution nodes of equal CPU/RAM use 100% of their capacity, arriving at the previously mentioned 1:5 ratio of control to execution capacity.
 
 [cols="26%,15%,12%,12%,12%,12%,12%",options="header",]
 |===
@@ -51,7 +51,7 @@ This table shows that controlling jobs competes with job event processing on the
 Therefore, over-provisioning control capacity can have a positive impact on reducing processing times. 
 When processing times are high, users can experience a delay between when the job runs and when they can view the output in the API or UI.
 
-For the example workload on 300 managed hosts, executing 1000 tasks/hour per host, 10 concurrent jobs with forks set to 5 on playbooks, and an average event size 1 Mb, do the following:
+For the example workload on 300 managed hosts, executing 1000 tasks per hour per host, 10 concurrent jobs with forks set to 5 on playbooks, and an average event size 1 Mb, do the following:
 
 * Deploy 1 execution node, 1 control node, 1 DB node of 4 CPU @ 2.5Ghz, 16 GB RAM with disk having ~3000 IOPs.
 * Keep default fork setting of 5 on job templates.
@@ -61,7 +61,7 @@ image:perf-capacity-adj-instances.png[image]
 
 .Additional Resources
 
-For more information on workloads with high levels of API interaction, see link: https://www.ansible.com/blog/scaling-automation-controller-for-api-driven-workloads[Scaling Automation Controller for API Driven Workloads]. 
+For more information on workloads with high levels of API interaction, see link:https://www.ansible.com/blog/scaling-automation-controller-for-api-driven-workloads[Scaling Automation Controller for API Driven Workloads]. 
 
 To summarize the guidance, best practices include:
 

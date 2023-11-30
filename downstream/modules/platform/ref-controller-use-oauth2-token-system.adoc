@@ -1,8 +1,8 @@
 [id="ref-controller-use-oauth2-token-system"]
 
-= Using OAuth 2 Token System for Personal Access Tokens (PAT)
+= Using OAuth 2 Token System for Personal Access Tokens
 
-The easiest and most common way to obtain an OAuth 2 token is to create a personal access token at the `/api/v2/users/<userid>/personal_tokens/` endpoint, as shown in the following example:
+The easiest and most common way to obtain an OAuth 2 token is to create a personal access token (PAT) at the `/api/v2/users/<userid>/personal_tokens/` endpoint, as shown in the following example:
 
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -11,7 +11,7 @@ curl -XPOST -k -H "Content-type: application/json" -d '{"description":"Personal 
 
 You could also pipe the JSON output through `jq`, if installed.
 
-The following is an example of using the personal token to access an API endpoint using curl:
+The following is an example of using the PAT to access an API endpoint using curl:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

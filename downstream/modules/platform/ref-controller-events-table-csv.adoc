@@ -13,9 +13,9 @@ Each line contains the following fields for a job event:
 * *event*: The Ansible event type.
 //this is incomplete 
 //(such as runner_on_failed
-* *task_action*: The module associated with this event, if any (such as 'command' or 'yum').
-* *failed*: Whether the event returned "failed".
-* *changed*: Whether the event returned "changed".
+* *task_action*: The module associated with this event, if any (such as `command` or `yum`).
+* *failed*: Whether the event returned `failed`.
+* *changed*: Whether the event returned `changed`.
 * *playbook*: Playbook associated with the event.
 * *play*: Play name from playbook.
 * *task*: Task name from playbook.

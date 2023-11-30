@@ -6,22 +6,10 @@ Administrators use the _Lightweight Directory Access Protocol_ (LDAP) as a sourc
 User authentication is provided, but not the synchronization of user permissions and credentials. 
 Organization membership and team membership can be synchronized by the organization administrator.
 
-.LDAP authentication performance tips
-
-By default, when an LDAP user authenticates, all user-related attributes are updated in the database on each login. 
-In some environments, you can skip this operation due to performance issues. 
-To avoid it, you can disable the option *AUTH_LDAP_ALWAYS_UPDATE_USER*.
-For more information, see link:https://access.redhat.com/solutions/5823061[How can I prevent the LDAP attributes to be updated on each login?].
-Note that new users are created and their attributes are pushed to the database on their first login.
-
-[WARNING]
-====
-Set this option to `false` to not update the LDAP user's attributes. 
-Attributes are only updated the first time the user is created.
-====
-
 include::platform/proc-controller-set-up-LDAP.adoc[leveloffset=+1]
 include::platform/ref-controller-LDAP-organization-team-mapping.adoc[leveloffset=+2]
 include::platform/proc-controller-enable-logging-LDAP.adoc[leveloffset=+2]
+include::platform/proc-controller-prevent-LDAP-attributes.adoc[leveloffset=+2]
+include::platform/proc-controller-import-CA-cert-LDAP.adoc[leveloffset=+2]
 include::platform/ref-controller-referrals.adoc[leveloffset=+2]
 include::platform/proc-controller-change-timeout-auth.adoc[leveloffset=+2]

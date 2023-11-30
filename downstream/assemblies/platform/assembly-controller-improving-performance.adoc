@@ -2,8 +2,8 @@
 
 = Improving Controller Performance
 
-This section aims to provide the guidelines for tuning for performance and scalability. 
-Although care has been taken to make the content applicable to a wide set of use cases, if you have a use case not covered here, you can contact Red Hat Support.
+Learn about the guidelines for tuning for performance and scalability. 
+Although care has been taken to make the content applicable to a wide set of use cases, if you have a use case not covered here, you can contact link:https://access.redhat.com/[Red Hat Support].
 
 include::platform/ref-controller-performance-improvements.adoc[leveloffset=+1]
 include::platform/con-controller-vertical-scaling-improvement.adoc[leveloffset=+2]

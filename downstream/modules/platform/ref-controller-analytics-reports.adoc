@@ -22,4 +22,4 @@ image:aa-options-navbar.png[Navigation panel]
 
 Host Metrics is another analytics report collected for host data.
 The ability to access this option from this part of the UI is currently in tech preview and is subject to change in a future release. 
-For more information, see the _Host Metrics view_ in xref:controller-config[Controller configuration].
+For more information, see the _Host Metrics view_ in xref:controller-config[{ControllerNameStart} configuration].

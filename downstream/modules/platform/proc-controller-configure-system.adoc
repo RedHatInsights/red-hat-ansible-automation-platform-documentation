@@ -33,6 +33,6 @@ image::ag-configure-aap-system.png[Misc. system settings]
 ====
 The *Allow External Users to Create Oauth2 Tokens* setting is disabled by default. 
 This ensures external users cannot create their own tokens. 
-If you enable then disable it, any tokens created by external users in the meantime will still exist, and are not automatically revoked.
+If you enable then disable it, any tokens created by external users in the meantime still exist, and are not automatically revoked.
 ====
 . Click btn:[Save] to apply the settings and btn:[Cancel] to abandon the changes.

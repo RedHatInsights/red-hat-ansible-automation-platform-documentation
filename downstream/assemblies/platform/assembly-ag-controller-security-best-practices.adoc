@@ -2,7 +2,7 @@
 
 = Security best practices
 
-Deploy {ControllerName} to automate typical environments securely.
+You can deploy {ControllerName} to automate typical environments securely.
 However, managing certain operating system environments, automation, and automation platforms, can require additional best practices to ensure security.
 
 To secure {RHEL}  start with the following release-appropriate security guide:

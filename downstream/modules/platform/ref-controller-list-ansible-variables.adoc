@@ -12,4 +12,4 @@ ansible -m setup hostname
 ----
 
 This prints out a dictionary of all facts available for that particular host. 
-For more information, see link:https://docs.ansible.com/ansible/playbooks_variableshtml[information-discovered-from-systems-facts].
+For more information, see link:https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html#facts[information-discovered-from-systems-facts].

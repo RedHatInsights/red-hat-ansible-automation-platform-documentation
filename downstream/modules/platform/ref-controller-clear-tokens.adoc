@@ -4,4 +4,4 @@
 
 Use this command to clear tokens which have already been revoked. 
 
-For more information, see link:https://django-oauth-toolkit.readthedocs.io/en/latest/management_commands.html[Django's Oauth Toolkit documentation on cleartokens].
+For more information, see link:https://django-oauth-toolkit.readthedocs.io/en/latest/management_commands.html[cleartokens] in Django's Oauth Toolkit documentation.

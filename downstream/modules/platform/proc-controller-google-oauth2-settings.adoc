@@ -12,7 +12,7 @@ link:https://console.developers.google.com/[Google API Manager Console].
 The OAuth2 key (Client ID) and secret (Client secret) are used to supply the required fields in the UI.
 
 .Procedure
-. On the navigation panel, select menu:Settings[].
+. From the navigation panel, select menu:Settings[].
 . On the *Settings* page, select *Google OAuth 2 settings* from the list of Authentication options.
 +
 The *Google OAuth2 Callback URL* field is already pre-populated and non-editable.

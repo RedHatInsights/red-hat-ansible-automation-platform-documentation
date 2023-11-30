@@ -1,6 +1,6 @@
 [id="controller-set-up-SAML"]
 
-= Setting up SAML authentication
+= SAML authentication
 
 SAML enables the exchange of authentication and authorization data between an Identity Provider (IdP - a system of servers that provide the Single Sign On service) and a service provider, in this case, {ControllerName}. 
 
@@ -112,7 +112,7 @@ Do not remove the contents of this field:
 ----
 +
 . In the *SAML Enabled Identity Providers* field, provide information on how to connect to each IdP listed. 
-{ControllerNameStart} expects the following SAML attributes in the following example:
+The following example shows what {ControllerName} expects SAML attributes to be:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -134,7 +134,7 @@ It can be the username attribute or a custom unique identifier.
 The administrator creates a SAML profile for {ControllerName} and it generates a unique URL.
 * `url`- The Single Sign On (SSO) URL that {ControllerName} redirects the user to, when SSO is activated.
 * `x509_cert` - The certificate provided by the IdP administrator that is generated from the SAML profile created on the IdP. 
-Remove the `---BEGIN CERTIFICATE---`and `---END CERTIFICATE---` headers, then enter the certificate as one non-breaking string.
+Remove the `---BEGIN CERTIFICATE---` and `---END CERTIFICATE---` headers, then enter the certificate as one non-breaking string.
 +
 Multiple SAML IdPs are supported. 
 Some IdPs might provide user data using attribute names that differ from the default OIDs. 
@@ -172,7 +172,7 @@ To avoid this, you can remove (or add) administrator privileges based on SAML ma
 ====
 +
 . Optional: Provide the *SAML Organization Map*. 
-For more information, see [ADD XREF]Organization and Team Mapping.
+For more information, see see xref:ref-controller-organization-mapping[Organization mapping] and xref:ref-controller-team-mapping[Team mapping].
 . You can configure {ControllerName} to look for particular attributes that contain Team and Organization membership to associate with users when they log into {ControllerName}. 
 The attribute names are defined in the *SAML Organization Attribute Mapping* and the *SAML Team Attribute Mapping* fields.
 +
@@ -253,7 +253,7 @@ The following example is another SAML attribute that contains a team membership 
 To keep the user in the teams they are in while adding the user to the teams in the SAML attribute, set `remove` to `false`.
 * `team_org_map`: An array of dictionaries of the form `{ "team": "<AWX Team Name>", "organization": "<AWX Org Name>" }` that defines mapping from controller Team -> {ControllerName} organization. 
 You need this because the same named team can exist in multiple organizations in {ControllerName}. 
-The organization to which a team listed in a SAML attribute belongs to, is ambiguous without this mapping.
+The organization to which a team listed in a SAML attribute belongs to is ambiguous without this mapping.
 +
 You can create an alias to override both teams and organizations in the *SAML Team Attribute Mapping* field. 
 This option is useful in cases when the SAML backend sends out complex group names, as show in the following example:
@@ -281,7 +281,7 @@ This option is useful in cases when the SAML backend sends out complex group nam
 Once the user authenticates, {ControllerName} creates organization and team aliases.
 +
 . Optional: Provide team membership mapping in the *SAML Team Map* field. 
-For more information, see see xref:ref-controller-organization-mapping[Organization mapping] and xref:ref-controller-team-mapping[Team Mapping]..
+For more information, see xref:ref-controller-organization-mapping[Organization mapping] and xref:ref-controller-team-mapping[Team Mapping].
 . Optional: Provide security settings in the *SAML Security Config* field. 
 This field is the equivalent to the `SOCIAL_AUTH_SAML_SECURITY_CONFIG` field in the API. 
 For more information, see link:https://github.com/SAML-Toolkits/python-saml#settings[OneLogin's SAML Python Toolkit].
@@ -292,7 +292,7 @@ This library relies on the `python-saml` library to make the settings available 
 * The *SAML Service Provider extra configuration data* field is equivalent to the `SOCIAL_AUTH_SAML_SP_EXTRA` in the API. 
 For more information, see link:https://github.com/SAML-Toolkits/python-saml#settings[OneLogin's SAML Python Toolkit] to learn about the valid service provider extra (`SP_EXTRA`) parameters.
 * The *SAML IDP to extra_data attribute mapping* field is equivalent to the `SOCIAL_AUTH_SAML_EXTRA_DATA` in the API. 
-For more information, see Python's SAML link:https://python-social-auth.readthedocs.io/en/latest/backends/saml.html#advanced-settings [Advanced Settings] documentation.
+For more information, see Python's SAML link:https://python-social-auth.readthedocs.io/en/latest/backends/saml.html#advanced-settings[Advanced Settings] documentation.
 * The *SAML User Flags Attribute Mapping* field enables you to map SAML roles and attributes to special user flags. 
 The following attributes are valid in this field:
 ** `is_superuser_role`: Specifies one or more SAML roles which grants a user the superuser flag.
@@ -377,7 +377,7 @@ However, if a user does not have the flag, and the preceding rules determine the
 
 .Verification
 To verify that the authentication is configured correctly, load the auto-generated URL found in the *SAML Service Provider Metadata URL* into a browser. 
-It should output XML output, otherwise, it is not configured correctly.
+If you do not get XML output, you have not configured it correctly.
 
 Alternatively, logout of {ControllerName} and the login screen displays the SAML logo to indicate it as a alternate method of logging into {ControllerName}:
 

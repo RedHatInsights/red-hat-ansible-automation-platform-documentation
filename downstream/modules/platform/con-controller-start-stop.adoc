@@ -10,7 +10,7 @@ root@localhost:~$ automation-controller-service restart
 
 [NOTE]
 ====
-In clustered installs, the `automation-controller-service` restart does not include PostgreSQL as part of the services that are restarted.
+In clustered installs, the `automation-controller-service restart` does not include PostgreSQL as part of the services that are restarted.
 This is because it exists external to {ControllerName}, and PostgreSQL does not always need to be restarted. 
 Use `systemctl restart automation-controller` to restart services on clustered environments instead. 
 

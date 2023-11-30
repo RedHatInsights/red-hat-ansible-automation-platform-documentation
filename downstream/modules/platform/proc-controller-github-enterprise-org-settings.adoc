@@ -6,7 +6,7 @@ To set up social authentication for a GitHub Enterprise Organization, you must o
 
 To obtain the URLs, refer to the GitHub documentation on link:https://docs.github.com/en/enterprise-server@3.1/rest/reference/enterprise-admin[GitHub Enterprise administration]. 
 
-To obtain the key and secret, you must first register your enterprise organization-owned application at `https://github.com/organizati ons/<yourorg>/settings/applications` 
+To obtain the key and secret, you must first register your enterprise organization-owned application at `https://github.com/organizations/<yourorg>/settings/applications` 
 
 To register the application, you must supply it with your Authorization callback URL, which is the *Callback URL* shown in the *Details* page. 
 
@@ -16,7 +16,7 @@ Each key and secret must belong to a unique application and cannot be shared or 
 The OAuth2 key (Client ID) and secret (Client Secret) are used to supply the required fields in the UI.
 
 .Procedure
-. On the navigation panel, select menu:Settings[].
+. From the navigation panel, select menu:Settings[].
 . On the *Settings* page, select *GitHub settings* from the list of Authentication options.
 . Click the *GitHub Enterprise Organization* tab.
 +

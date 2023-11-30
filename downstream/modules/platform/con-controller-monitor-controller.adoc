@@ -34,4 +34,4 @@ To provide technical support this information, see the Knowledgebase article lin
 For more information see the link:https://access.redhat.com/solutions/3592#install[Installing sos package] section of the Knowledgebase article.
 . Generate an `sosreport`.
 For more information, see the link:https://access.redhat.com/solutions/3592#command[How can I generate an sos report?] section of the Knowledgebase article.
-. Provide the `sosreport` to Red Hat Support at: https://access.redhat.com/.
+. Provide the `sosreport` to link:https://access.redhat.com/[Red Hat Support]. 

@@ -2,7 +2,7 @@
 
 = GitHub Enterprise Team settings
 
-To set up social authentication for a GitHub Enterprise teams, you must obtain a GitHub Enterprise Organization URL, an Organization API URL, an Organization OAuth2 key and secret for a web application. 
+To set up social authentication for a GitHub Enterprise team, you must obtain a GitHub Enterprise Organization URL, an Organization API URL, an Organization OAuth2 key and secret for a web application. 
 
 To obtain the URLs, refer to the GitHub documentation on link:https://docs.github.com/en/enterprise-server@3.1/rest/reference/enterprise-admin[GitHub Enterprise administration]. 
 
@@ -15,9 +15,9 @@ Each key and secret must belong to a unique application and cannot be shared or 
 The OAuth2key (Client ID) and secret (Client Secret) are used to supply the required fields in the UI.
 
 .Procedure
-. Find the numeric team ID using the GitHub API: https://fabian-kostadinov.github.io/2015/01/16 how-to-find-a-github-team-id/.
+. Find the numeric team ID using the link:https://fabian-kostadinov.github.io/2015/01/16/how-to-find-a-github-team-id/[GitHub API].
 The Team ID will be used to supply a required field in the UI.
-. On the navigation panel, select menu:Settings[].
+. From the navigation panel, select menu:Settings[].
 . On the *Settings* page, select *GitHub settings* from the list of Authentication options.
 . Click the *GitHub Enterprise Team* tab.
 +

@@ -15,4 +15,4 @@ The following is an example `query_info.json` file:
 }
 ----
 
-collection_type is one of "manual" or "automatic".
+`collection_type` is one of `manual` or `automatic`.

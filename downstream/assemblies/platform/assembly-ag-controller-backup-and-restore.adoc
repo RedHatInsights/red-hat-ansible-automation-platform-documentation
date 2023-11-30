@@ -3,7 +3,7 @@
 = Backup and restore
 
 The ability to backup and restore your system is integrated into the {PlatformNameShort} setup playbook. 
-For more information, see the xref:controller-backup-restore-playbooks[Backup and restore for clustered environments] section.
+For more information, see the xref:controller-backup-restore-clustered-environments[Backup and restore clustered environments] section.
 
 [NOTE]
 ====

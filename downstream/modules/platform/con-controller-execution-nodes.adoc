@@ -3,7 +3,7 @@
 = Execution Nodes
 
 Vertical scaling an execution node provides more forks for job execution. 
-As mentioned in the xref:ref-controller-capacity-planning-exercise[Example capacity planning exercise], a host with 16 GB of memory is, by default, assigned the capacity to run 137 “forks”, which at the default setting of five forks per job, can run around 22 jobs concurrently. 
+As mentioned in the xref:ref-controller-capacity-planning-exercise[Example capacity planning exercise], a host with 16 GB of memory is, by default, assigned the capacity to run 137 "forks", which at the default setting of five forks per job, can run around 22 jobs concurrently. 
 
 In general, scaling CPU alongside memory in the same proportion is recommended. 
 Like control and hybrid nodes, there is a "capacity adjustment" on each execution instance that can be used to align use with the estimation of capacity consumption made by {ControllerName}. 

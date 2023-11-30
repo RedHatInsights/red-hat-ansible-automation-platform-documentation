@@ -7,7 +7,7 @@ Usability data collection is included with {ControllerName} to collect data to b
 Only users installing a trial of or a fresh installation of are opted-in for this data collection.
 
 {ControllerNameStart} collects user data automatically to help improve the product. 
-You can opt out or control the way {ControllerName} collects data by setting your participation level in the *User Interface settings* in the Settings menu.
+You can opt out or control the way {ControllerName} collects data by setting your participation level in the *User Interface settings* in the *Settings* menu.
 
 //Should Settings menu be a link?
 

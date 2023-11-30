@@ -52,7 +52,7 @@ The `max_connections` parameter is one of the GUC parameters to specify the maxi
 
 Note that setting a large `work_mem` can cause issues such as the PostgreSQL server going out of memory (OOM) if there are too many open connections to the database.
 
-The `maintenance_work_mem` parameter basically provides the maximum amount of memory to be used by maintenance operations like vacuum, create index, and alter table add foreign key operations. 
+The `maintenance_work_mem` parameter provides the largest amount of memory to be used by maintenance operations like vacuum, create index, and alter table add foreign key operations. 
 Set in `postgresql.conf`, the default value for this parameter is:
 
 [literal, options="nowrap" subs="+attributes"]

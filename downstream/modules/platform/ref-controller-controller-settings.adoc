@@ -1,7 +1,7 @@
 [id="ref-controller-controller-settings"]
 
-= Controller Settings
+= {ControllerNameStart} settings
 
-Many {ControllerName} settings are available through the {Controllername} UI or API. 
+Many {ControllerName} settings are available through the {ControllerName} UI or API. 
 There are additional settings that are only available as file-based settings. 
 For more information on changing these settings, see xref:controller-config[Controller Configuration].

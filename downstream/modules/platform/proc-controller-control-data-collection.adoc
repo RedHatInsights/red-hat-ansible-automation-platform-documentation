@@ -18,4 +18,4 @@ image:configure-controller-ui-tracking_state.png[UI tracking state]
 
 . Click btn:[Save] to apply the settings, or btn:[Cancel] to abandon the changes.
 
-For more information, see the link:https://www.redhat.com/en/about/privacy-policy[Red Hat privacy policy].
+For more information, see the link:https://www.redhat.com/en/about/privacy-policy[Red Hat Privacy Statement].

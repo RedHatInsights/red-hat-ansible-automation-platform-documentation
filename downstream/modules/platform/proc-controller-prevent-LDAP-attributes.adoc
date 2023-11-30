@@ -1,0 +1,44 @@
+[id="controller-prevent-LDAP-attributes"]
+
+= Preventing LDAP attributes from updating on each login
+
+By default, when an LDAP user authenticates, all user-related attributes are updated in the database on each login. 
+In some environments, you can skip this operation due to performance issues. 
+To avoid it, you can disable the option *AUTH_LDAP_ALWAYS_UPDATE_USER*.
+
+[WARNING]
+====
+Set this option to `false` to not update the LDAP user's attributes. 
+Attributes are only updated the first time the user is created.
+====
+
+.Procedure
+
+. Create a custom file under `/etc/tower/conf.d/custom-ldap.py` with the following contents. 
+If you have multiple nodes, execute it on all nodes.
++
+[literal, options="nowrap" subs="+attributes"]
+----
+AUTH_LDAP_ALWAYS_UPDATE_USER = False
+----
++
+. Restart {ControllerName} on all nodes:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+automation-controller-service restart
+----
++
+With this option set to `False`, no changes to LDAP user's attributes are pushed to {ControllerName}. 
+Note that new users are created and their attributes are pushed to the database on their first login.
+
+By default, an LDAP user gets their attributes updated in the database upon each login. 
+For a playbook that runs multiple times with an LDAP credential, those queries can be avoided.
+
+.Verification
+
+Check the PostgreSQL for slow queries related to the LDAP authentication.
+
+.Additional resources
+
+For more information, see link:https://django-auth-ldap.readthedocs.io/en/latest/reference.html#auth-ldap-always-update-user[AUTH_LDAP_ALWAYS_UPDATE_USER] of the Django documentation.

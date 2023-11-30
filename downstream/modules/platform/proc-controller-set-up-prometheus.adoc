@@ -4,9 +4,7 @@
 
 To set up and use Prometheus, you must install Prometheus on a virtual machine or container. 
 
-For more information, see the link:https://prometheus.io/docs/introduction/first_steps/[Prometheus documentation].
-
-Use the following procedure to install Prometheus.
+For more information, see the link:https://prometheus.io/docs/introduction/first_steps/[First steps with Prometheus] documentation.
 
 .Procedure
 . In the Prometheus configuration file (typically `prometheus.yml`), specify a `<token_value>`, a valid username and password for an {ControllerName} user that you have created, and a `<controller_host>`.
@@ -38,7 +36,7 @@ scrape_configs
             - <controller_host>
 ----
 +
-For help configuring other aspects of Prometheus, such as alerts and service discovery configurations, see the link:https://prometheus.io/docs/prometheus/latest/configuration/configuration/[Prometheus configuration documentation].
+For help configuring other aspects of Prometheus, such as alerts and service discovery configurations, see the link:https://prometheus.io/docs/prometheus/latest/configuration/configuration/[Prometheus configuration] documentation.
 +
 If Prometheus is already running, you must restart it to apply the configuration changes by making a *POST* to the reload endpoint, or by killing the Prometheus process or service.
 

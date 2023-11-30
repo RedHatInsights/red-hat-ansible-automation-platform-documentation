@@ -2,7 +2,7 @@
 
 = Use an unreleased module from Ansible source with {ControllerName}
 
-If there is a feature that is available in the latest Ansible core branch that you want to use with your {ControllerName} system, making use of it in {ControllerNMame} is simple.
+If there is a feature that is available in the latest Ansible core branch that you want to use with your {ControllerName} system, making use of it in {ControllerName} is simple.
 
 First, determine which is the updated module you want to use from the available Ansible Core Modules or Ansible Extra Modules GitHub repositories.
 

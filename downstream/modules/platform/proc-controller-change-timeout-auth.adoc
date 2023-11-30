@@ -16,5 +16,5 @@ You can change the default length of time, in seconds, that your supplied token 
 ====
 If you access {ControllerName} and have trouble logging in, clear your web browser's cache. 
 In situations such as this, it is common for the authentication token to be cached during the browser session. 
-It must cleared to continue.
+You must clear it to continue.
 ====

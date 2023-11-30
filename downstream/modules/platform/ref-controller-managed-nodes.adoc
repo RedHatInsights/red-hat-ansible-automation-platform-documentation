@@ -4,4 +4,4 @@
 
 {ControllerNameStart} connects to managed machines and services as part of automation. 
 All connections to managed machines are done by standard secure mechanisms, such as SSH, WinRM, or SSL/TLS.
-Each of these inherits configuration from the system configuration for the feature in question, such as the system OpenSSL configuration).
+Each of these inherits configuration from the system configuration for the feature in question, such as the system OpenSSL configuration.

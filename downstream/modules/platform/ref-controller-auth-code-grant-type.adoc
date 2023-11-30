@@ -38,7 +38,7 @@ The workflow that occurs when you issue a *GET* to the `authorize` endpoint from
 `client_secret`, `grant_type`, and `redirect_uri`.
 . {ControllerNameStart} responds with the `access_token`, `token_type`, `refresh_token`, and `expires_in`.
 
-For more information, and to test this flow, see link:https://django-oauth-toolkit.readthedocs.io/en/latest/tutorial/tutorial_01.html#test-your-authorization-server[Django's Test Your Authorization Server].
+For more information, and to test this flow, see link:https://django-oauth-toolkit.readthedocs.io/en/latest/tutorial/tutorial_01.html#test-your-authorization-server[Test Your Authorization Server] in the Django OAuth Toolkit.
 
 You can specify the number of seconds an authorization code remains valid on the *System settings* page:
 
@@ -48,7 +48,7 @@ Requesting an access token after this duration fails.
 
 The duration defaults to 600 seconds (10 minutes), based on the link:https://tools.ietf.org/html/rfc6749[RFC6749] recommendation.
 
-The best way to set up app integrations with using the Authorization Code grant type is to allowlist the origins for those cross-site requests. 
+The best way to set up application integrations with using the Authorization Code grant type is to allowlist the origins for those cross-site requests. 
 More generally, you must allowlist the service or application you are integrating with {ControllerName}, for which you want
 to provide access tokens. 
 

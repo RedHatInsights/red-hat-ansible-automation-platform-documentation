@@ -1,6 +1,6 @@
 [id="controller-playbooks-not-showing"]
 
-= Playbooks do not show up in the "Job Template" list
+= Playbooks do not show up in the Job Template list
 
 If your playbooks are not showing up in the *Job Template* list, check the following:
 

@@ -1,6 +1,6 @@
 [id="controller-set-up-enterprise-authentication"]
 
-= Set up enterprise authentication
+= Setting up enterprise authentication
 
 Set up authentication for the following enterprise systems:
 

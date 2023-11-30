@@ -12,14 +12,14 @@ You can also configure this to restrict editing of other field names.
 If the LDAP server you want to connect to has a certificate that is self-signed or signed by a corporate internal certificate authority (CA), 
 you must add the CA certificate to the system's trusted CAs. 
 Otherwise, connection to the LDAP server results in an error that the certificate issuer is not recognized. 
-For more information, see link:https://access.redhat.com/solutions/5136201[How Do I Import CA Certificate (openldap, AD, IDM, FreeIPA) Required for LDAPS Integration?]. 
+For more information, see xref:controller-import-CA-cert-LDAP[Importing a certificate authority in {ControllerName} for LDAPS integration]. 
 If prompted, use your Red Hat customer credentials to login.
 ====
 
 .Procedure
 
 . Create a user in LDAP that has access to read the entire LDAP structure.
-. Use the `ldapsearch`` command to test if you can make successful queries to the LDAP server.
+. Use the `ldapsearch` command to test if you can make successful queries to the LDAP server.
 You can install this tool from {ControllerNames}'s system command line, and by using other Linux and OSX systems.
 +
 .Example
@@ -60,7 +60,7 @@ To enable TLS when the LDAP connection is not using SSL, set the toggle to *On*.
 . Enter the distinguished name in the *LDAP Bind DN* text field to specify the user that {ControllerName} uses to connect (Bind) to the LDAP server. 
 *  If that name is stored in key `sAMAccountName`, the *LDAP User DN Template* is populated from `(sAMAccountName=%(user)s)`. 
 Active Directory stores the username to `sAMAccountName`. 
-Similarly, for OpenLDAP, the key is `uid` and the line becomes `(uid=%(user)s)`.
+For OpenLDAP, the key is `uid` and the line becomes `(uid=%(user)s)`.
 . Enter the distinguished group name to enable users within that group to access {ControllerName} in the *LDAP Require Group* field, using the same format as the one shown in the text field, `CN=controller Users,OU=Users,DC=website,DC=com`.
 . Enter the distinguished group name to prevent users within that group from accessing {ControllerName} in the *LDAP Deny Group* field, using the same format as the one shown in the text field.
 . Enter where to search for users while authenticating in the *LDAP User Search* field using the same format as the one shown in the text field. 
@@ -122,7 +122,7 @@ For multiple search queries, use the following correct syntax:
 +
 * The first line specifies the BASE DN where the groups should be searched.
 * The second line specifies the scope and is the same as that for the user directive.
-* The third line specifies what the `objectclass` of a group object is in the LDAP that you are using.
+* The third line specifies what the `objectClass` of a group object is in the LDAP that you are using.
 +
 . Enter the user attributes in the *LDAP User Attribute Map* the text field. 
 In this example, use:
@@ -162,11 +162,11 @@ The following example uses the syntax to set LDAP users as "Superusers" and "Aud
 }
 ----
 +
-. For more information on completing the mapping fields, *LDAP Organization Map* and *LDAP Team Map*, see xref:controller-LDAP-organization-team-mapping[LDAP Organization and team mapping] section.
+. For more information on completing the mapping fields, *LDAP Organization Map* and *LDAP Team Map*, see the xref:controller-LDAP-organization-team-mapping[LDAP Organization and team mapping] section.
 . Click btn:[Save].
 
 [NOTE]
 ====
 {ControllerNameStart} does not actively synchronize users, but they are created during their initial login. 
-To improve performance associated with LDAP authentication, see xref:controller-LDAP-authentication[LDAP authentication performance tips] at beginning of this chapter.
+To improve performance associated with LDAP authentication, see xref:controller-prevent-LDAP-attributes[Preventing LDAP attributes from updating on each login].
 ====

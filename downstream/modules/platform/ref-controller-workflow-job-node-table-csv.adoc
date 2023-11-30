@@ -2,7 +2,7 @@
 
 = workflow_job_node_table.csv
 
-The workflow_job_node_table.csv provides information on the jobs that
+The `workflow_job_node_table.csv` provides information on the jobs that
 have been executed as part of a workflow on the system.
 
 Each line contains the following fields for a job run as part of a workflow:

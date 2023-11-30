@@ -11,11 +11,10 @@ For more information on installing clustered environments, see the xref:controll
 
 * If restoring to a new cluster, ensure that the old cluster is shut down before proceeding because they can conflict with each other when accessing the database.
 * Per-node backups are only restored to nodes bearing the same hostname as the backup.
+* When restoring to an existing cluster, the restore contains the following:
 
-When restoring to an existing cluster, the restore contains the following:
-
-* A dump of the PostgreSQL database
-* UI artifacts, included in the database dump
-* An {ControllerName} configuration (retrieved from `/etc/tower`)
-* An {ControllerName} secret key
-* Manual projects
+** A dump of the PostgreSQL database
+** UI artifacts, included in the database dump
+** An {ControllerName} configuration (retrieved from `/etc/tower`)
+** An {ControllerName} secret key
+** Manual projects

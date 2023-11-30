@@ -2,7 +2,7 @@
 
 = Loggly
 
-For more information on sending logs through Loggly's HTTP endpoint, see the link:https://documentation.solarwinds.com/en/success_center/loggly/content/admin/http-endpoint.htm?cshid=loggly_http-endpoint[Loggly documentation]
+For more information on sending logs through Loggly's HTTP endpoint, see the link:https://documentation.solarwinds.com/en/success_center/loggly/content/admin/http-endpoint.htm?cshid=loggly_http-endpoint[Loggly documentation].
 
 //Existing link invalid. This avoids the link, but there's no source for the URL convention.
 Loggly uses the URL convention shown in the *Logging Aggregator* field in the following example:

@@ -1,6 +1,6 @@
 [id="ref-controller-use-callback-plugins"]
 
-= Use callback plugins with the controller
+= Use callback plugins with {ControllerName}
 
 Ansible has a flexible method of handling actions during playbook runs, called callback plugins. 
 You can use these plugins with {ControllerName} to do things such as notify services upon playbook runs or failures, or send

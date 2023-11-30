@@ -1,6 +1,6 @@
 [id="ref-controller-live-events"]
 
-= Live events in the Controller UI
+= Live events in the {ControllerName} UI
 
 Events are broadcast to all control nodes in {ControllerName} so that the events can be served over websocket to any client that connects to a control node's web service. 
 This task is expensive, and becomes more expensive as the number of events that the cluster is producing increases. 

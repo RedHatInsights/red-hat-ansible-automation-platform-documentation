@@ -1,6 +1,6 @@
 [id="controller-set-up-radius"]
 
-= Setting up RADIUS authentication
+= RADIUS authentication
 
 You can configure {ControllerName} to centrally use RADIUS as a source for authentication information.
 

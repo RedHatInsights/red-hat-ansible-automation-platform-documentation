@@ -1,6 +1,6 @@
 [id="assembly-controller-set-up-social-authentication"]
 
-= Setting up Social Authentication
+= Setting up social authentication
 
 Authentication methods simplify logins for end users, offering single sign-ons using existing login information to sign into a third party website rather than creating a new login account specifically for that website.
 
@@ -8,10 +8,10 @@ Account authentication can be configured in the User Interface and saved to the 
 
 For more information, see the xref:controller-config[Controller configuration] section.
 
-Account authentication in {Controllername} can be configured to centrally use OAuth2, while enterprise-level account authentication can be configured for SAML, RADIUS, or even LDAP as a source for authentication information.
-See xref:controller-set-up-enterprise-authentication[Setting up Enterprise Authentication].
+Account authentication in {ControllerName} can be configured to centrally use OAuth2, while enterprise-level account authentication can be configured for SAML, RADIUS, or even LDAP as a source for authentication information.
+See xref:controller-set-up-enterprise-authentication[Set up enterprise authentication].
 
-For websites, such as {Azure}, Google or GitHub, that provide account information, account information is often implemented using the OAuth standard. 
+For websites, such as {Azure}, Google, or GitHub, that provide account information, account information is often implemented using the OAuth standard. 
 
 OAuth is a secure authorization protocol which is commonly used in conjunction with account authentication to grant third
 party applications a "session token" allowing them to make API calls to providers on the user's behalf.

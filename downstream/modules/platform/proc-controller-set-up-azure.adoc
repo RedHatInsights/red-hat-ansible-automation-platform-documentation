@@ -1,6 +1,6 @@
 [id="controller-set-up-azure"]
 
-= Setting up {Azure} active directory authentication
+= {Azure} active directory authentication
 
 To set up enterprise authentication for {Azure} Active Directory (AD), you need to obtain an OAuth2 key and secret by registering your organization-owned application from Azure at:
 https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app.
@@ -27,7 +27,7 @@ Following {Azure} AD's documentation for connecting your application to {Azure} 
 . Click btn:[Save].
 
 .Verification
-To verify that the authentication is configured correctly, logout of {ControllerName} and the login screen displays the {Azure} logo to enable logging in with those credentials:
+To verify that the authentication is configured correctly, log out of {ControllerName} and the login screen displays the {Azure} logo to enable logging in with those credentials:
 
 image::ag-configure-auth-azure-logo.png[Azure AD logo]
 

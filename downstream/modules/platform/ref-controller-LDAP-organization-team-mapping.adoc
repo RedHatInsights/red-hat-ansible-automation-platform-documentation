@@ -52,7 +52,7 @@ The same rules apply as for administrators.
 }
 }
 ----
-When mapping between users and LDAP groups keys are team names and are created if not present. 
+When mapping between users and LDAP groups, keys are team names and are created if not present. 
 Values are dictionaries of options for each team's membership, where each can contain the following parameters:
 
 `organization`: `string`. The name of the organization to which the team belongs.
@@ -67,7 +67,7 @@ The organization is first created if it does not exist.
 
 `remove`: `true` or `false`. 
 Defaults to `false`.
-When`true`, a user who is not a member of the given group is removed from the team.
+When `true`, a user who is not a member of the given group is removed from the team.
 
 .Example
 

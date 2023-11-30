@@ -1,6 +1,6 @@
 [id="controller-set-up-generic-oidc"]
 
-= Setting up Generic OIDC authentication
+= Generic OIDC authentication
 
 OpenID Connect (OIDC) uses the OAuth 2.0 framework. 
 It enables third-party applications to verify the identity and obtain basic end-user information. 

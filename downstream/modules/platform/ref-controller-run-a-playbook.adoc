@@ -2,7 +2,7 @@
 
 = Unable to run a playbook
 
-If you are unable to run the `helloworld.yml` example playbook from the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/getting_started_with_automation_controller/index[Managing projects] section of the _{ControllerGS}_ guide due to playbook errors, try the following:
+If you are unable to run the `helloworld.yml` example playbook from the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/getting_started_with_automation_controller/index#controller-projects[Managing projects] section of the _{ControllerGS}_ guide due to playbook errors, try the following:
 
 * Ensure that you are authenticating with the user currently running the commands.
 If not, check how the username has been set up or pass the `--user=username` or `-u username` commands to specify a user.

@@ -26,7 +26,7 @@ When the application is registered, GitHub displays the Client ID and Client Sec
 . Click btn:[Save]
 
 .Verification
-. To verify that the authentication was configured correctly, logout of {ControllerName}.
+To verify that the authentication was configured correctly, logout of {ControllerName}.
 The login screen displays the GitHub Team logo to enable logging in with those credentials.
 
 image:configure-controller-auth-github-teams-logo.png[image]

@@ -38,7 +38,7 @@ image:aa-dashboard.png[Analytics dashboard]
 
 *Clusters* data is the default view. 
 This graph represents the number of job runs across all {ControllerName} clusters over a period of time.
-The example above shows a span of a week in a stacked bar-style chart that is organized by the number of jobs that ran successfully (in green) and jobs that failed (in red).
+The previous example shows a span of a week in a stacked bar-style chart that is organized by the number of jobs that ran successfully (in green) and jobs that failed (in red).
 
 Alternatively, you can select a single cluster to view its job status information.
 

@@ -21,4 +21,4 @@ In this case it is an internal IP address.
 This is not used outside of the installer.
 
 Finally, `routable_hostname=somehost.somecompany.org` indicates the hostname is resolvable for the peers that connect to this node on the receptor mesh. 
-Because this can cross multiple networks, a hostname is used that maps to an ip address resolvable for the receptor peers.
+Because this can cross multiple networks, a hostname is used that maps to an IP address that is resolvable for the receptor peers.

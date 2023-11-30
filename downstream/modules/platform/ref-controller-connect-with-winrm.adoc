@@ -6,7 +6,7 @@ By default, {ControllerName} attempts to `ssh` to hosts.
 
 You must add the `winrm` connection information to the group variables to which the Windows hosts belong. 
 
-To get started, edit the Windows group in which the hosts reside and place the variables in the source/edit screen for the group.
+To get started, edit the Windows group in which the hosts reside and place the variables in the source or edit screen for the group.
 
 To add `winrm` connection info:
 

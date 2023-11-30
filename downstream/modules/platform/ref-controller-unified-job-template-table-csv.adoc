@@ -9,17 +9,17 @@ Each line contains the following fields for the job template:
 * *name*: Job template name.
 * *polymorphic_ctype_id*: The id of the type of template it is.
 * *model*: The name of the `polymorphic_ctype_id` for the template. 
-Examples include 'project', 'systemjobtemplate', 'jobtemplate', 'inventorysource', and 'workflowjobtemplate'.
+Examples include `project`, `systemjobtemplate`, `jobtemplate`, `inventorysource`, and `workflowjobtemplate`.
 * *created*: When the template was created.
 * *modified*: When the template was last updated.
-* *created_by_id*: The userid that created the template. 
+* *created_by_id*: The `userid` that created the template. 
 Blank if done by the system.
-* *modified_by_id*: The userid that last modified the template. 
+* *modified_by_id*: The `userid` that last modified the template. 
 Blank if done by the system.
 * *current_job_id*: Currently executing job id for the template, if any.
 * *last_job_id*: Last execution of the job.
 * *last_job_run*: Time of last execution of the job.
-* *last_job_failed*: Whether the last_job_id failed.
-* *status*: Status of last_job_id
+* *last_job_failed*: Whether the `last_job_id` failed.
+* *status*: Status of `last_job_id`.
 * *next_job_run*: Next scheduled execution of the template, if any.
 * *next_schedule_id*: Schedule id for `next_job_run`, if any.

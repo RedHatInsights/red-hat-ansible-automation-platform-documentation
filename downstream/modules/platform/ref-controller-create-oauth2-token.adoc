@@ -2,7 +2,7 @@
 
 = `create_oauth2_token`
 
-Use this command to create OAuth2 tokens (specify the username for `example_user` below):
+Use the following command to create OAuth2 tokens (specify the username for `example_user`):
 
 [literal, options="nowrap" subs="+attributes"]
 ----

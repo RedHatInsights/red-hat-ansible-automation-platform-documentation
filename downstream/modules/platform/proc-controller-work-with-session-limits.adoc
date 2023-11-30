@@ -28,6 +28,6 @@ When a user logs in resulting in other users being logged out, the session limit
 +
 [NOTE]
 ====
-To make the best use of session limits, disable `AUTH_BASIC_ENABLED` by changing the value to `false`, as it falls outside of the scope of session limit enforcement. Alternatively, in the **Miscellaneous Authentication settings*, toggle the *Enable HTTP Basic Auth* to off.
+To make the best use of session limits, disable `AUTH_BASIC_ENABLED` by changing the value to `false`, as it falls outside the scope of session limit enforcement. Alternatively, in the *Miscellaneous Authentication settings*, toggle the *Enable HTTP Basic Auth* to off.
 ====
 

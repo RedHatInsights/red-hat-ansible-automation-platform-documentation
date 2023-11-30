@@ -7,7 +7,7 @@ From {ControllerName} v4.3 multiple improvements have been made that support lar
 There is support for workloads with many more concurrent jobs. 
 In the past, there were issues with excessive database connections, job scheduling issues if there were thousands of pending and running jobs, and issues with successfully starting jobs when operating near 100% capacity of control nodes.
 
-Additionally, changes have been made by default to take advantage of processor capacity available on larger control nodes. 
+By default, changes have been made to take advantage of processor capacity available on larger control nodes. 
 If you provision larger control nodes and want to run thousands of concurrent jobs, you can take advantage of the following improvements in {ControllerName}:
 
 * xref:con-controller-vertical-scaling-improvement[Vertical scaling improvements]

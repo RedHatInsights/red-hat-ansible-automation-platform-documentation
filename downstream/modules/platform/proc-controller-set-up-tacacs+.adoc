@@ -1,6 +1,6 @@
 [id="controller-set-up-tacacs"]
 
-= Setting up TACACS Plus authentication
+= TACACS Plus authentication
 
 Terminal Access Controller Access-Control System Plus (TACACS+) is a protocol that handles remote authentication and related services for networked access control through a centralized server. 
 TACACS+ provides authentication, authorization and accounting (AAA) services, in which you can configure {ControllerName} to use as a source for authentication.
