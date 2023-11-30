@@ -7,8 +7,15 @@ Use this example to populate the inventory file to install {EDAcontroller}. This
 
 [IMPORTANT]
 ====
+This scenario requires a minimum of {ControllerName} 2.4 for successful deployment of {EDAcontroller}.
+====
+
+[IMPORTANT]
+====
 {EDAcontroller} must be installed on a separate server and cannot be installed on the same host as {HubName} and {ControllerName}.
 ====
+
+
 -----
 # Automation EDA Controller Configuration
 #
