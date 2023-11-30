@@ -5,13 +5,16 @@
 [role="_abstract"]
 Verify that you installed automation controller successfully by logging in with the admin credentials you inserted in the `inventory` file.
 
+.Prerequisite
+* Port 443 is available
+
 .Procedure
 . Navigate to the IP address specified for the {ControllerName} node in the `inventory` file.
-. Log in with the Admin credentials you set in the `inventory` file.
+. Log in with the admin credentials you set in the `inventory` file.
 
 [NOTE]
 ====
-The {ControllerName} server is accessible from port 80 (*\https://<CONTROLLER_SERVER_NAME>/*) but redirects to port 443, so port 443 must also be available.
+The {ControllerName} server is accessible from port 80 (*\https://<CONTROLLER_SERVER_NAME>/*) but redirects to port 443.
 ====
 
 [IMPORTANT]
@@ -19,4 +22,4 @@ The {ControllerName} server is accessible from port 80 (*\https://<CONTROLLER_SE
 If the installation fails and you are a customer who has purchased a valid license for {PlatformName}, contact Ansible through the link:https://access.redhat.com/[Red Hat Customer portal].
 ====
 
-Upon a successful login to {ControllerName}, your installation of {PlatformName} {PlatformVers} is complete.
+Upon a successful log in to {ControllerName}, your installation of {PlatformName} {PlatformVers} is complete.

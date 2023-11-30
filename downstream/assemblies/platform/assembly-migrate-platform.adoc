@@ -1,9 +1,11 @@
 ifdef::context[:parent-context: {context}]
 
 // [id="assembly-migrate-platform_{context}"]
-= Migrating data to {PlatformNameShort} {PlatformVers}
+= Steps to migrate data to {PlatformNameShort} {PlatformVers}
 
 For platform administrators looking to complete an upgrade to the {PlatformNameShort} {PlatformVers}, there may be additional steps needed to migrate data to a new instance:
+
+To complete an upgrade to {PlatformNameShort} {PlatformVers}, you must migrate your data. Migrating data to a new instance requires additional steps.
 
 include::platform/con-why-migrate-venvs-ee.adoc[leveloffset=+1]
 include::platform/con-why-migrate-ansible-29.adoc[leveloffset=+1]

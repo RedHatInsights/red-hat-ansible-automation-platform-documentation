@@ -2,8 +2,8 @@
 
 = Migrating to Ansible Engine 2.9 images using {Builder}
 
-To migrate Ansible Engine 2.9 images for use with {PlatformNameShort} {PlatformVers}, the `ansible-builder` tool automates the process of rebuilding images (including its custom plugins and dependencies) for use with {ExecEnvName}.
+To migrate Ansible Engine 2.9 images for use with {PlatformNameShort} {PlatformVers}, use the `ansible-builder` tool to automate the process of rebuilding images (including its custom plugins and dependencies) for use with {ExecEnvName}.
 
 [role="_additional-resources"]
 .Additional resources
-For more information on using Ansible Builder to build execution environments, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments].
+* See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments] for more information on using Ansible Builder to build execution environments.

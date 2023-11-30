@@ -10,7 +10,7 @@ Verify that you installed {EDAcontroller} successfully by logging in with the ad
 
 . Navigate to the IP address specified for the {EDAcontroller} node in the `inventory` file.
 
-. Log in with the Admin credentials you set in the `inventory` file.
+. Log in with the admin credentials you set in the `inventory` file.
 
 [IMPORTANT]
 ====

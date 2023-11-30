@@ -7,7 +7,7 @@ Verify that you installed your {HubName} successfully by logging in with the adm
 
 .Procedure
 . Navigate to the IP address specified for the {HubName} node in the `inventory` file.
-. Log in with the Admin credentials you set in the `inventory` file.
+. Log in with the admin credentials you set in the `inventory` file.
 
 
 [IMPORTANT]

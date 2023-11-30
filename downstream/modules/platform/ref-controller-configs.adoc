@@ -8,9 +8,9 @@ See the following resources to explore additional {ControllerName} configuration
 [options="header"]
 |====
 |Resource link|Description
-|link:https://docs.ansible.com/automation-controller/latest/html/quickstart/index.html[Automation Controller Quick Setup Guide]|Set up {ControllerName} and run your first playbook
+|link:https://docs.ansible.com/automation-controller/latest/html/quickstart/index.html[Automation Controller Quick Setup Guide]|Set up {ControllerName} and run your first playbook.
 |link:https://docs.ansible.com/automation-controller/latest/html/administration/index.html[Automation Controller Administration Guide]|Configure {ControllerName} administration through customer scripts, management jobs, etc.
-|link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_operations_guide/assembly-configuring-proxy-support[Configuring proxy support for {PlatformName}]|Set up {ControllerName} with a proxy server
-|link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_operations_guide/assembly-controlling-data-collection[Managing usability analytics and data collection from {ControllerName}]|Manage what {ControllerName} information you share with Red Hat
-|link:https://docs.ansible.com/automation-controller/latest/html/userguide/index.html[Automation Controller User Guide]|Review {ControllerName} functionality in more detail
+|link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_operations_guide/assembly-configuring-proxy-support[Configuring proxy support for {PlatformName}]|Set up {ControllerName} with a proxy server.
+|link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_operations_guide/assembly-controlling-data-collection[Managing usability analytics and data collection from {ControllerName}]|Manage what {ControllerName} information you share with Red Hat.
+|link:https://docs.ansible.com/automation-controller/latest/html/userguide/index.html[Automation Controller User Guide]|Review {ControllerName} functionality in more detail.
 |====

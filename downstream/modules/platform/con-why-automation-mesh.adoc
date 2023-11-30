@@ -1,11 +1,15 @@
 // [id="con-why-automation-mesh_{context}"]
 
-= Scale up your automation using {AutomationMesh}
+= Benefits of {AutomationMesh}
 
 The {AutomationMesh} component of the {PlatformName} simplifies the process of distributing automation across multi-site deployments. For enterprises with multiple isolated IT environments, {AutomationMesh} provides a consistent and reliable way to deploy and scale up automation across your execution nodes using a peer-to-peer mesh communication network.
 
-When upgrading from version 1.x to the latest version of the {PlatformNameShort}, you will need to migrate the data from your legacy isolated nodes into execution nodes necessary for {AutomationMesh}. You can implement {AutomationMesh} by planning out a network of hybrid and control nodes, then editing the inventory file found in the {PlatformNameShort} installer to assign mesh-related values to each of your execution nodes.
+When upgrading from version 1.x to the latest version of {PlatformNameShort}, you must migrate the data from your legacy isolated nodes into execution nodes necessary for {AutomationMesh}. You can implement {AutomationMesh} by planning out a network of hybrid and control nodes, then editing the inventory file found in the {PlatformNameShort} installer to assign mesh-related values to each of your execution nodes.
 
-For instructions on how to migrate from isolated nodes to execution nodes, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[Red Hat Ansible Automation Platform Upgrade and Migration Guide].
 
-For information about automation mesh and the various ways to design your automation mesh for your environment, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[Red Hat Ansible Automation Platform automation mesh guide].
+[role="_additional-resources"]
+.Additional resources
+
+* For instructions on how to migrate from isolated nodes to execution nodes, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[Red Hat Ansible Automation Platform Upgrade and Migration Guide].
+
+* For information about automation mesh and the various ways to design your automation mesh for your environment, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[Red Hat Ansible Automation Platform automation mesh guide].

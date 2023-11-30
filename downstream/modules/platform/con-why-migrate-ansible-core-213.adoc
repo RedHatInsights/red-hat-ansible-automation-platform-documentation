@@ -2,4 +2,10 @@
 
 = Migrating to Ansible Core 2.13
 
-When upgrading to Ansible Core 2.13, you need to update your playbooks, plugins, or other parts of your Ansible infrastructure in order to be supported by the latest version of Ansible Core. For instructions on updating your Ansible content for Ansible Core 2.13 compatibility, see the link:https://docs.ansible.com/ansible-core/devel/porting_guides/porting_guide_core_2.13.html[Ansible-core 2.13 Porting Guide].
+When upgrading to Ansible Core 2.13, you must update your playbooks and plugins, or other parts of your Ansible infrastructure to be supported by the latest version of Ansible Core. 
+
+
+[role="_additional-resources"]
+.Additional resources
+
+For instructions on updating your Ansible content for Ansible Core 2.13 compatibility, see the link:https://docs.ansible.com/ansible-core/devel/porting_guides/porting_guide_core_2.13.html[Ansible-core 2.13 Porting Guide].
