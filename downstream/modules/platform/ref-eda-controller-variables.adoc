@@ -17,7 +17,7 @@ Default = `admin@example.com`
 | *`automationedacontroller_allowed_hostnames`* | List of additional addresses to enable for user access to {EDAcontroller}.
 
 Default = empty list
-| *`automationedacontroller_controller_verify_ssl`* | Boolean flag used to verify Automation Controller's web certificates when making calls from {EDAcontroller}. Verified is `true`; not verified is `false`.
+| *`automationedacontroller_controller_verify_ssl`* | Boolean flag used to verify automation controller's web certificates when making calls from {EDAcontroller}. Verified is `true`; not verified is `false`.
 
 Default = `false`
 | *`automationedacontroller_disable_https`* | Boolean flag to disable HTTPS {EDAcontroller}. 
@@ -40,22 +40,22 @@ Default = empty list
 | *`automationedacontroller_gunicorn_workers`* | Number of workers for the API served through gunicorn.
 
 Default = (# of cores or threads) * 2 + 1
-| *`automationedacontroller_pg_database`* | The postgres database used by {EDAController}.
+| *`automationedacontroller_pg_database`* | The Postgres database used by {EDAController}.
 
 Default = `automtionedacontroller`.
-| *`automationnedacontroller_pg_host`* | The hostname of the postgres database used by {EDAController}, which can be an externally managed database.
-| *`automationedacontroller_pg_password`* | The password for the postgres database used by {EDAController}.
+| *`automationnedacontroller_pg_host`* | The hostname of the Postgres database used by {EDAController}, which can be an externally managed database.
+| *`automationedacontroller_pg_password`* | The password for the Postgres database used by {EDAController}.
 
 Use of special characters for `automationedacontroller_pg_password` is limited.
 The `!`, `#`, `0` and `@` characters are supported.
 Use of other special characters can cause the setup to fail.
-| *`automationedacontroller_pg_port`* | The port number of the postgres database used by {EDAController}.
+| *`automationedacontroller_pg_port`* | The port number of the Postgres database used by {EDAController}.
 
 Default = `5432`.
-| *`automationedacontroller_pg_username`* | The username for your {EDAController} postgres database.
+| *`automationedacontroller_pg_username`* | The username for your {EDAController} Postgres database.
 
 Default = `automationedacontroller`.
-| *`automationedacontroller_rq_workers`* | Number of rq workers (Python processes that run in the background) used by {EDAcontroller}.
+| *`automationedacontroller_rq_workers`* | Number of Redis Queue (RQ) workers used by {EDAcontroller}. RQ workers are Python processes that run in the background.
 
 Default =  (# of cores or threads) * 2 + 1
 |====

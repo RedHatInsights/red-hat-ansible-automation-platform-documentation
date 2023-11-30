@@ -4,49 +4,51 @@
 
 The following variables control how {PlatformNameShort} interacts with remote hosts.
 
-Additional information on variables specific to certain plugins can be found in the documentation for link:https://docs.ansible.com/ansible-core/devel/collections/ansible/builtin/index.html[Ansible.Builtin].
+For more information about variables specific to certain plugins, see the documentation for link:https://docs.ansible.com/ansible-core/devel/collections/ansible/builtin/index.html[Ansible.Builtin].
 
-A list of global configuration options can be found in link:https://docs.ansible.com/ansible-core/devel/reference_appendices/config.html[Ansible Configuration Settings].
+For a list of global configuration options, see link:https://docs.ansible.com/ansible-core/devel/reference_appendices/config.html[Ansible Configuration Settings].
 
 [cols="50%,50%",options="header"]
 |====
 | *Variable* | *Description*
 | *`ansible_connection`* | The connection plugin used for the task on the target host.
 
-This can be the name of any of ansible connection plugin.
+This can be the name of any of Ansible connection plugin.
 SSH protocol types are `smart`, `ssh` or `paramiko`.
 
 Default = `smart`
 | *`ansible_host`* | The ip or name of the target host to use instead of *`inventory_hostname`*.
-| *`ansible_port`* | The connection port number, if not, the default (22 for ssh).
+| *`ansible_port`* | The connection port number.
+
+Default: 22 for ssh
 | *`ansible_user`* | The user name to use when connecting to the host.
-| *`ansible_password`* | The password to use to authenticate to the host.
+| *`ansible_password`* | The password to authenticate to the host.
 
 Never store this variable in plain text.
 
 Always use a vault.
-| *`ansible_ssh_private_key_file`* | Private key file used by ssh.
+| *`ansible_ssh_private_key_file`* | Private key file used by SSH.
 Useful if using multiple keys and you do not want to use an SSH agent.
 | *`ansible_ssh_common_args`* | This setting is always appended to the default command line for `sftp`, `scp`, and `ssh`.
-Useful to configure a ProxyCommand for a certain host (or group).
+Useful to configure a ProxyCommand for a certain host or group.
 | *`ansible_sftp_extra_args`* | This setting is always appended to the default `sftp` command line.
 | *`ansible_scp_extra_args`* | This setting is always appended to the default `scp` command line.
 | *`ansible_ssh_extra_args`* | This setting is always appended to the default `ssh` command line.
 | *`ansible_ssh_pipelining`* | Determines if SSH pipelining is used.
 This can override the pipelining setting in `ansible.cfg`.
-If using SSH key-based authentication, then the key must be managed by an SSH agent.
-| *`ansible_ssh_executable`* | (added in version 2.2)
+If using SSH key-based authentication, the key must be managed by an SSH agent.
+| *`ansible_ssh_executable`* | Added in version 2.2.
 
-This setting overrides the default behavior to use the system ssh.
+This setting overrides the default behavior to use the system SSH.
 This can override the ssh_executable setting in `ansible.cfg`.
 | *`ansible_shell_type`* | The shell type of the target system.
-You should not use this setting unless you have set the `ansible_shell_executable` to a non-Bourne (sh) compatible shell.
+Do not use this setting unless you have set the `ansible_shell_executable` to a non-Bourne (sh) compatible shell.
 By default commands are formatted using sh-style syntax.
 Setting this to `csh` or `fish` causes commands executed on target systems to follow the syntax of those shells instead.
-| *`ansible_shell_executable`* | This sets the shell that the ansible controller uses on the target machine, and overrides the executable in `ansible.cfg` which defaults to `/bin/sh`.
+| *`ansible_shell_executable`* | This sets the shell that the Ansible controller uses on the target machine, and overrides the executable in `ansible.cfg` which defaults to `/bin/sh`.
 
-You should only change if it is not possible to use `/bin/sh`, that is, if `/bin/sh` is not installed on the target machine or cannot be run from sudo.
-| *`inventory_hostname`* | This variable takes the hostname of the machine from the inventory script or the ansible configuration file.
+Do not change this variable unless `/bin/sh` is not installed on the target machine or cannot be run from sudo.
+| *`inventory_hostname`* | This variable takes the hostname of the machine from the inventory script or the Ansible configuration file.
 
 You cannot set the value of this variable.
 

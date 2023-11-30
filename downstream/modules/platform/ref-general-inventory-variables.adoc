@@ -22,7 +22,7 @@ Used for both `[automationcontroller]` and `[automationhub]` groups.
 
 Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
 
-When `registry_url` is `registry.redhat.io`, username and password are required if not using bundle installer.
+When `registry_url` is `registry.redhat.io`, username and password are required if not using a bundle installer.
 | *`registry_url`* | Used for both `[automationcontroller]` and `[automationhub]` groups.
 
 Default = `registry.redhat.io`.
@@ -35,10 +35,10 @@ Used for both `[automationcontroller]` and `[automationhub]` groups, but only if
 Enter your Red Hat Registry Service Account credentials in `registry_username` and `registry_password` to link to the Red Hat container registry.
 | *`routable_hostname`* | `routable hostname` is used if the machine running the installer can only route to the target host through a specific URL, for example, if you use shortnames in your inventory, but the node running the installer can only resolve that host using FQDN.
 
-If `routable_hostname` is not set, it should default to `ansible_host`. Then if, and only if `ansible_host` is not set, `inventory_hostname` is used as a last resort.
+If `routable_hostname` is not set, it should default to `ansible_host`. If you do not set `ansible_host`, `inventory_hostname` is used as a last resort.
 
-Note that this variable is used as a host variable for particular hosts and not under the `[all:vars]` section. 
-For further information, see link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html#assigning-a-variable-to-one-machine-host-variables[Assigning a variable to one machine:host variables]
+This variable is used as a host variable for particular hosts and not under the `[all:vars]` section. 
+For further information, see link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html#assigning-a-variable-to-one-machine-host-variables[Assigning a variable to one machine:host variables].
 |====
 
 

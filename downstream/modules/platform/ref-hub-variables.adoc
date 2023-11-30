@@ -38,15 +38,15 @@ Default = `false`.
 {HubNameMain} provides artifacts in `/var/lib/pulp`.
 {ControllerNameStart} automatically backs up the artifacts by default.
 
-You can also set `automationhub_backup_collections = false` and the backup/restore process does not then backup or restore `/var/lib/pulp`.
+You can also set `automationhub_backup_collections` to false and the backup/restore process does not then backup or restore `/var/lib/pulp`.
 
-Default = `true`
+Default = `true`.
 | *`automationhub_collection_download_count`* | _Optional_
 
 Determines whether download count is displayed on the UI.
 
-Default = `false`
-| *`automationhub_collection_seed_repository`* a| When the bundle installer is run, validated content is uploaded to the `validated` repository, and certified content is uploaded to the `rh-certified` repository.
+Default = `false`.
+| *`automationhub_collection_seed_repository`* a| When you run the bundle installer, validated content is uploaded to the `validated` repository, and certified content is uploaded to the `rh-certified` repository.
 
 By default, both certified and validated content are uploaded.
 
@@ -61,47 +61,40 @@ If you only want one type of content, set `automationhub_seed_collections` to `t
 | *`automationhub_collection_signing_service_script`* | If a collection signing service is enabled, you must provide this variable to ensure that collections can be properly signed.
 
 `/absolute/path/to/script/that/signs`
-| *`automationhub_create_default_collection_signing_service`* | The default install does not create a collection signing service.
-If set to `true` a signing service is created.
+| *`automationhub_create_default_collection_signing_service`* | Set this variable to true to create a collection signing service.
 
-Default = `false`
+Default = `false`.
 | *`automationhub_container_signing_service_key`* | If a container signing service is enabled, you must provide this variable to ensure that containers can be properly signed.
 
 `/absolute/path/to/key/to/sign`
 | *`automationhub_container_signing_service_script`* | If a container signing service is enabled, you must provide this variable to ensure that containers can be properly signed.
 
 `/absolute/path/to/script/that/signs`
-| *`automationhub_create_default_container_signing_service`* | The default install does not create a container signing service.
-If set to `true` a signing service is created.
+| *`automationhub_create_default_container_signing_service`* | Set this variable to true to create a container signing service.
 
-Default = `false`
-| *`automationhub_disable_hsts`* | The default install deploys a TLS enabled {HubNameMain}.
-Use if {HubName} is deployed with _HTTP Strict Transport Security_ (HSTS) web-security policy enabled.
-Unless specified otherwise, the HSTS web-security policy mechanism is enabled.
-This setting allows you to disable it if required.
+Default = `false`.
+| *`automationhub_disable_hsts`* | The default installation deploys a TLS enabled {HubNameMain}.
+Use this variable if you deploy {HubName} with _HTTP Strict Transport Security_ (HSTS) web-security policy enabled.
+This variable disables, the HSTS web-security policy mechanism.
 
-Default = `false`
+Default = `false`.
 | *`automationhub_disable_https`* | _Optional_
 
 If {HubNameMain} is deployed with HTTPS enabled.
 
 Default = `false`.
-| *`automationhub_enable_api_access_log`* | When set to `true`, creates a log file at `/var/log/galaxy_api_access.log` that logs all user actions made to the platform, including their username and IP address.
+| *`automationhub_enable_api_access_log`* | When set to `true`, this variable creates a log file at `/var/log/galaxy_api_access.log` that logs all user actions made to the platform, including their username and IP address.
 
 Default = `false`.
 | *`automationhub_enable_analytics`* | A Boolean indicating whether to enable pulp analytics for the version of pulpcore used in {HubName} in {PlatformNameShort} {PlatformVers}.
 
-To enable pulp analytics, set `automationhub_enable_analytics = true`.
+To enable pulp analytics, set `automationhub_enable_analytics` to true.
 
 Default = `false`.
-| *`automationhub_enable_unauthenticated_collection_access`* | Enables unauthorized users to view collections.
-
-To enable unauthorized users to view collections, set `automationhub_enable_unauthenticated_collection_access = true`.
+| *`automationhub_enable_unauthenticated_collection_access`* | Set this variable to true to enable unauthorized users to view collections.
 
 Default = `false`.
-| *`automationhub_enable_unauthenticated_collection_download`* | Enables unauthorized users to download collections.
-
-To enable unauthorized users to download collections, set `automationhub_enable_unauthenticated_collection_download = true`.
+| *`automationhub_enable_unauthenticated_collection_download`* | Set this variable to true to enable unauthorized users to download collections.
 
 Default = `false`.
 | *`automationhub_importer_settings`* | _Optional_
@@ -119,45 +112,45 @@ This parameter enables you to drive this configuration.
 
 For example, \https://<load balancer host>.
 
-If not specified, the first node in the `[automationhub]` group is used.
-
 Use `automationhub_main_url` to specify the main {HubName} URL that clients connect to if you are implementing {RHSSO} on your {HubName} environment.
+
+If not specified, the first node in the `[automationhub]` group is used.
 | *`automationhub_pg_database`* | _Required_
 
 The database name.
 
-Default = `automationhub`
-| *`automationhub_pg_host`* | Required if not using internal database.
+Default = `automationhub`.
+| *`automationhub_pg_host`* | Required if not using an internal database.
 
-The hostname of the remote postgres database used by {HubName}
+The hostname of the remote PostgreSQL database used by {HubName}.
 
-Default = `127.0.0.1`
+Default = `127.0.0.1`.
 | *`automationhub_pg_password`* | The password for the {HubName} PostgreSQL database.
 
 Use of special characters for `automationhub_pg_password` is limited.
 The `!`, `#`, `0` and `@` characters are supported. 
 Use of other special characters can cause the setup to fail.
-| *`automationhub_pg_port`* | Required if not using internal database.
+| *`automationhub_pg_port`* | Required if not using an internal database.
 
-Default = 5432
+Default = 5432.
 | *`automationhub_pg_sslmode`* | Required.
 
-Default = `prefer`
+Default = `prefer`.
 | *`automationhub_pg_username`* | Required
 
-Default = `automationhub`
+Default = `automationhub`.
 | *`automationhub_require_content_approval`* | _Optional_
 
 Value is `true` if {HubName} enforces the approval mechanism before collections are made available.
 
-By default when you upload collections to {HubName} an administrator must approve it before it is made available to the users.
+By default when you upload collections to {HubName} an administrator must approve it before they are made available to the users.
 
 If you want to disable the content approval flow, set the variable to `false`.
 
-Default = `true`
-| *`automationhub_seed_collections`* | A boolean that defines whether or not preloading is enabled.
+Default = `true`.
+| *`automationhub_seed_collections`* | A Boolean that defines whether or not preloading is enabled.
 
-When the bundle installer is run, validated content is uploaded to the `validated` repository, and certified content is uploaded to the `rh-certified` repository.
+When you run the bundle installer, validated content is uploaded to the `validated` repository, and certified content is uploaded to the `rh-certified` repository.
 
 By default, both certified and validated content are uploaded.
 
@@ -169,15 +162,15 @@ Default = `true`.
 | *`automationhub_ssl_cert`* | _Optional_
 
 `/path/to/automationhub.cert`
-Same as `web_server_ssl_cert` but for {HubName} UI and API
+Same as `web_server_ssl_cert` but for {HubName} UI and API.
 | *`automationhub_ssl_key`* | _Optional_
 
-`/path/to/automationhub.key`
+`/path/to/automationhub.key`.
 
 Same as `web_server_ssl_key` but for {HubName} UI and API
 | *`automationhub_ssl_validate_certs`* | For {PlatformName} 2.2 and later, this value is no longer used.
 
-Value is `true` if {HubName} should validate certificate when requesting itself because by default, {PlatformNameShort} deploys with self-signed certificates.
+Set value to `true` if {HubName} must validate certificates when requesting itself because by default, {PlatformNameShort} deploys with self-signed certificates.
 
 Default = `false`.
 | *`automationhub_upgrade`* | *Deprecated*
@@ -192,14 +185,14 @@ Each element in the list is provided to the web server's nginx configuration as 
 Default = empty list
 | *`ee_from_hub_only`* | When deployed with {HubName} the installer pushes execution environment images to {HubName} and configures {ControllerName} to pull images from the {HubName} registry.
 
-To make {HubName} the only registry to pull execution environment images from, set 'ee_from_hub_only' to `true`.
+To make {HubName} the only registry to pull execution environment images from, set this variable to `true`.
 
 If set to `false`, execution environment images are also taken directly from Red Hat.
 
 Default = `true` when the bundle installer is used.
-| *`generate_automationhub_token`* a| If upgrading from {PlatformName} 2.0 or earlier, you must either:
+| *`generate_automationhub_token`* a| If upgrading from {PlatformName} 2.0 or earlier, choose one of the following options:
 
-* provide an existing {HubNameMain} token as `automationhub_api_token` or
+* provide an existing {HubNameMain} token as `automationhub_api_token`
 
 * set `generate_automationhub_token` to `true` to generate a new token.
 Generating a new token will invalidate the existing token.
@@ -209,9 +202,9 @@ Default = 63072000 seconds, or two years.
 | *`nginx_tls_protocols`* | Defines support for `ssl_protocols` in Nginx.
 
 Default = `TLSv1.2`.
-| *`pulp_db_fields_key`* | Relative or absolute path to the Fernet symmetric encryption key you want to import.
+| *`pulp_db_fields_key`* | Relative or absolute path to the Fernet symmetric encryption key that you want to import.
 The path is on the Ansible management node.
-It is used to encrypt certain fields in the database (such as credentials.)
+It is used to encrypt certain fields in the database, such as credentials.
 If not specified, a new key will be generated.
 | *`sso_automation_platform_login_theme`* | _Optional_
 
@@ -220,21 +213,21 @@ Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 Path to the directory where theme files are located.
 If changing this variable, you must provide your own theme files.
 
-Default = `ansible-automation-platform`
+Default = `ansible-automation-platform`.
 | *`sso_automation_platform_realm`* | _Optional_
 
 Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
 The name of the realm in SSO.
 
-Default = `ansible-automation-platform`
+Default = `ansible-automation-platform`.
 | *`sso_automation_platform_realm_displayname`* | _Optional_
 
 Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
 Display name for the realm.
 
-Default = `Ansible Automation Platform`
+Default = `Ansible Automation Platform`.
 //| *`sso_http_port`* or *`sso_https_port`* | IP or routable hostname for SSO.
 //
 //Default = `8080` for http, `8443` for https
@@ -244,7 +237,7 @@ Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
 SSO administration username.
 
-Default = `admin`
+Default = `admin`.
 | *`sso_console_admin_password`* | _Required_
 
 Used for {PlatformNameShort} managed and externally managed {RHSSO}.
@@ -272,14 +265,14 @@ Used for {PlatformNameShort} managed {RHSSO} only.
 
 Set to `true` if the customer-provided keystore is on a remote node.
 
-Default = `false`
+Default = `false`.
 | *`sso_keystore_name`* | _Optional_
 
 Used for {PlatformNameShort} managed {RHSSO} only.
 
 Name of keystore for SSO.
 
-Default = `ansible-automation-platform`
+Default = `ansible-automation-platform`.
 | *`sso_keystore_password`* | Password for keystore for HTTPS enabled SSO.
 
 Required when using {PlatformNameShort} managed SSO and when HTTPS is enabled. The default install deploys SSO with `sso_use_https=true`.
@@ -294,21 +287,19 @@ This must be reachable from client machines.
 
 Used for {PlatformNameShort} managed and externally managed {RHSSO}.
 
-Set to `true` if the certificate is to be validated during connection.
+Set to `true` if the certificate must be validated during connection.
 
-Default = `true`
+Default = `true`.
 
 | *`sso_use_https`* | _Optional_
 
-Used for {PlatformNameShort} managed and externally managed {RHSSO}.
+Used for {PlatformNameShort} managed and externally managed {RHSSO} if Single Sign On uses HTTPS.
 
-If Single Sign On uses https.
-
-Default = `true`
+Default = `true`.
 |====
 
-For {HubNameMain} to connect to LDAP directly; the following variables must be configured.
-A list of other LDAP related variables (not covered by the `automationhub_ldap_xxx` variables below) that can be passed using the `ldap_extra_settings` variable can be found in the link:https://django-auth-ldap.readthedocs.io/en/latest/reference.html#settings[Django reference documentation].
+For {HubNameMain} to connect to LDAP directly, you must configure the following variables:
+A list of additional LDAP related variables that can be passed using the `ldap_extra_settings` variable, see the link:https://django-auth-ldap.readthedocs.io/en/latest/reference.html#settings[Django reference documentation].
 
 [cols="50%,50%",options="header"]
 |====
@@ -322,8 +313,9 @@ Must be set when integrating {PrivateHubName} with LDAP, or the installation wil
 The password to use with `automationhub_ldap_bind_dn`.
 
 Must be set when integrating {PrivateHubName}  LDAP, or the installation will fail.
-| *`automationhub_ldap_group_search_base_dn`* | An LDAPSearch object that finds all LDAP groups that users might belong to.
-If your configuration makes any references to LDAP groups, this and `automationhub_ldap_group_type` must be set.
+| *`automationhub_ldap_group_search_base_dn`* | An LDAP Search object that finds all LDAP groups that users might belong to.
+
+If your configuration makes any references to LDAP groups, you must set this variable and `automationhub_ldap_group_type`.
 
 Must be set when integrating {PrivateHubName} with LDAP, or the installation will fail.
 
@@ -363,11 +355,11 @@ Default =`django_auth_ldap.config:GroupOfNamesType`
 //Default = "name_attr": "cn"
 | *`automationhub_ldap_server_uri`* | The URI of the LDAP server.
 
-This can be any URI that is supported by your underlying LDAP libraries.
+Use any URI that is supported by your underlying LDAP libraries.
 
 Must be set when integrating {PrivateHubName}  LDAP, or the installation will fail.
-| *`automationhub_ldap_user_search_base_dn`* | An LDAPSearch object that locates a user in the directory.
-The filter parameter should contain the placeholder %(user)s for the username.
+| *`automationhub_ldap_user_search_base_dn`* | An LDAP Search object that locates a user in the directory.
+The filter parameter must contain the placeholder %(user)s for the username.
 It must return exactly one result for authentication to succeed.
 
 Must be set when integrating {PrivateHubName} with LDAP, or the installation will fail.
@@ -376,7 +368,7 @@ Must be set when integrating {PrivateHubName} with LDAP, or the installation wil
 Default = `'(uid=%(user)s)'`
 | *`automationhub_ldap_user-search_scope`* | _Optional_
 
-Scope to search for users in an LDAP tree using django framework for LDAP authentication.
+Scope to search for users in an LDAP tree by using the django framework for LDAP authentication.
 Used for installing {HubName} with LDAP.
 
 Default = `SUBTREE`

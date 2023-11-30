@@ -5,7 +5,7 @@
 [cols="50%,50%",options="header"]
 |====
 | *Variable* | *Description*
-| *`admin_password`* | The password for an administration user to access the UI upon install completion.
+| *`admin_password`* | The password for an administration user to access the UI when the installation is complete.
 
 Passwords must be enclosed in quotes when they are provided in plain text in the inventory file.
 | *`automation_controller_main_url`* | For an alternative front end URL needed for SSO configuration, provide the URL.
@@ -20,7 +20,7 @@ Default = 80
 | *`nginx_https_port`* | The nginx HTTPS server listens for secure connections.
 
 Default = 443
-| *`nginx_hsts_max_age`* | This variable specifies how long, in seconds, the system should be considered as a _HTTP Strict Transport Security_ (HSTS) host. That is, how long HTTPS is used exclusively for communication.
+| *`nginx_hsts_max_age`* | This variable specifies how long, in seconds, the system must be considered as a _HTTP Strict Transport Security_ (HSTS) host. That is, how long HTTPS is used exclusively for communication.
 
 Default = 63072000 seconds, or two years.
 | *`nginx_tls_protocols`* | Defines support for `ssl_protocols` in Nginx.
@@ -34,22 +34,22 @@ Default = empty list
 | *`node_state`* | _Optional_
 
 The status of a node or group of nodes.
-Valid options are `active`, `deprovision` to remove a node from a cluster or `iso_migrate` to migrate a legacy isolated node to an execution node.
+Valid options are `active`, `deprovision` to remove a node from a cluster, or `iso_migrate` to migrate a legacy isolated node to an execution node.
 
 Default = `active`.
 | *`node_type`* | For `[automationcontroller]` group.
 
 Two valid `node_types` can be assigned for this group.
 
-A `node_type=control` implies that the node only runs project and inventory updates, but not regular jobs.
+A `node_type=control` means that the node only runs project and inventory updates, but not regular jobs.
 
-A `node_type=hybrid` has the ability to run everything.
+A `node_type=hybrid` can run everything.
 
-Default for this group = `hybrid`.
+Default for this group = `hybrid`
 
-For `[execution_nodes]` group
+For `[execution_nodes]` group:
 
-Two valid node_types can be assigned for this group.
+Two valid `node_types` can be assigned for this group.
 
 A `node_type=hop` implies that the node forwards jobs to an execution node.
 
@@ -58,15 +58,14 @@ A `node_type=execution` implies that the node can run jobs.
 Default for this group = `execution`.
 | *`peers`* | _Optional_
 
-The `peers` variable is used to indicate which nodes a specific host or group connects to. Wherever the peers variable is defined, an outbound connection will be established to the specific host or group.
+The `peers` variable is used to indicate which nodes a specific host or group connects to. Wherever  this variable is defined, an outbound connection to the specific host or group is established.
 
 This variable is used to add `tcp-peer` entries in the `receptor.conf` file used for establishing network connections with other nodes.
-See link:https://receptor.readthedocs.io/en/latest/connecting_nodes.html?highlight=tcp-peer[Peering]
 
-The peers variable can be a comma-separated list of hosts and/or groups from the inventory.
+The peers variable can be a comma-separated list of hosts and groups from the inventory.
 This is resolved into a set of hosts that is used to construct the `receptor.conf` file.
 
-| *`pg_database`* | The name of the postgres database.
+| *`pg_database`* | The name of the postgreSQL database.
 
 Default = `awx`.
 | *`pg_host`* | The postgreSQL host, which can be an externally managed database.
@@ -84,34 +83,36 @@ When you supply `pg_password` in the inventory file for the installer, PostgreSQ
 | *`pg_port`* | The postgreSQL port to use.
 
 Default = 5432
-| *`pg_ssl_mode`* | One of `prefer` or `verify-full`.
+| *`pg_ssl_mode`* | Choose one of the two available modes: `prefer` and `verify-full`.
 
 Set to `verify-full` for client-side enforced SSL.
 
 Default = `prefer`.
-| *`pg_username`* | Your postgres database username.
+| *`pg_username`* | Your postgreSQL database username.
 
 Default = `awx`.
-| *`postgres_ssl_cert`* | location of postgres ssl certificate.
+| *`postgres_ssl_cert`* | Location of the postgreSQL SSL certificate.
 
 `/path/to/pgsql_ssl.cert`
-| *`postgres_ssl_key`* | location of postgres ssl key.
+| *`postgres_ssl_key`* | Location of the postgreSQL SSL key.
 
 `/path/to/pgsql_ssl.key`
-| *`postgres_use_cert`* | Location of postgres user certificate.
+| *`postgres_use_cert`* | Location of the postgreSQL user certificate.
 
 `/path/to/pgsql.crt`
-| *`postgres_use_key`* | Location of postgres user key.
+| *`postgres_use_key`* | Location of the postgreSQL user key.
 
 `/path/to/pgsql.key`
-| *`postgres_use_ssl`* | If postgres is to use SSL.
-| *`postgres_max_connections`* | Max database connections setting to apply, if using installer-managed postgres. See the administration guide for help selecting a value.
+| *`postgres_use_ssl`* | Use this variable if postgreSQL uses SSL.
+| *`postgres_max_connections`* | Max database connections setting to apply if you are using installer-managed postgreSQL. See the administration guide for help selecting a value.
 | *`receptor_listener_port`* | Port to use for recptor connection.
 
-Default = 27199.
-| *`supervisor_start_retry_count`* | When specified (no default value exists), adds `startretries = <value specified>` to the supervisor config file (/etc/supervisord.d/tower.ini).
+Default = 27199
+| *`supervisor_start_retry_count`* | When specified, it adds `startretries = <value specified>` to the supervisor config file (/etc/supervisord.d/tower.ini).
 
-See link:http://supervisord.org/configuration.html#program-x-section-values[program:x Section Values] for further explanation about `startretries`.
+See link:http://supervisord.org/configuration.html#program-x-section-values[program:x Section Values] for more information about `startretries`.
+
+No default value exists.
 
 | *`web_server_ssl_cert`* | _Optional_
 
