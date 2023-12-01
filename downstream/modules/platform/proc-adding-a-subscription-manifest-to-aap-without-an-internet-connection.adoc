@@ -12,7 +12,7 @@ To add a subscription to {PlatformNameShort} without an internet connection, cre
 
 . Select *menu:Subscription Allocations[Subscription Allocations]*.
 
-. Click btn:[Create New subscription allocation].
+. Click *btn:[Create New subscription allocation]*.
 
 . Name the new subscription allocation.
 

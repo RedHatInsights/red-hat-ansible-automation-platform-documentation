@@ -8,7 +8,7 @@ You can install {PlatformNameShort} {ControllerName} and a {PrivateHubName} with
 
 == System requirements for disconnected installation
 
-Ensure that your system has all the hardware requirements before performing a disconnected installation of Ansible Automation Platform. You can find these requirements in Chapter 2. System Requirements [link] in the {PlatformNameShort} Installation Guide..
+Ensure that your system has all the hardware requirements before performing a disconnected installation of Ansible Automation Platform. You can find these requirements in Chapter 2. System Requirements [link] in the {PlatformNameShort} Installation Guide.
 
 == RPM Source
 
