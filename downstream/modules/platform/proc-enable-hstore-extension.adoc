@@ -6,7 +6,7 @@ From {PlatformNameShort} {PlatformVers}, the database migration script uses `hst
 
 This process is automatic when using the {PlatformNameShort} installer and a managed PostgreSQL server.
 
-However, when the PostgreSQL database is external, you must carry out this step manually before {HubName} installation.
+If the PostgreSQL database is external, you must enable the `hstore` extension to the {HubName} PostreSQL database manually before {HubName} installation.
 
 If the `hstore` extension is not enabled before {HubName} installation, a failure is raised during database migration.
 
@@ -21,7 +21,7 @@ $ psql -d <{HubName} database> -c "SELECT * FROM pg_available_extensions WHERE n
 Where the default value for `<{HubName} database>` is `automationhub`.
 
 +
-This gives an output similar to the following:
+*Example output with `hstore` available*:
 +
 [options="nowrap" subs="+quotes,attributes"]
 ----
@@ -31,9 +31,8 @@ name  | default_version | installed_version |comment
 (1 row)
 ----
 
-. This indicates that the `hstore` 1.7 extension is available, but not enabled.
 +
-If the `hstore` extension is not available on the PostgreSQL server, the result is similar to the following:
+*Example output with `hstore` not available*:
 +
 [options="nowrap" subs="+quotes,attributes"]
 ----

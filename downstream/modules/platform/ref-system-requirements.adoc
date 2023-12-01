@@ -12,13 +12,13 @@ Your system must meet the following minimum system requirements to install and r
 |===
 | Requirement | Required | Notes
 
-h| Subscription | Valid Red Hat Ansible Automation Platform |
+h| Subscription | Valid {PlatformName} |
 
-h| OS | Red Hat Enterprise Linux 8.6 or later 64-bit (x86, ppc64le, s390x, aarch64) |{PlatformName} is also supported on OpenShift, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform] for more information.
+h| OS | {RHEL} 8.6 or later 64-bit (x86, ppc64le, s390x, aarch64) |{PlatformName} is also supported on OpenShift, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform] for more information.
 
 h| Ansible | version 2.14 (to install) | {PlatformNameShort} ships with execution environments that contain ansible-core {AnsibleCoreVers}.
 
-h| Python | 3.8 or later |
+h| Python | 3.9 or later |
 
 h| Browser | A currently supported version of Mozilla FireFox or Google Chrome |
 
@@ -28,7 +28,7 @@ h| Database | PostgreSQL version 13 |
 The following are necessary for you to work with project updates and collections:
 
 * Ensure that the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/ref-network-ports-protocols_planning[network ports and protocols] listed in _Table 5.9. Automation Hub_ are available for successful connection and download of collections from {HubName} or {Galaxy} server.
-* SSL inspection must be disabled either when using self signed certificates or for the Red Hat domains.
+* Disable SSL inspection either when using self-signed certificates or for the Red Hat domains.
 
 [NOTE]
 ====
@@ -38,13 +38,13 @@ See link:https://docs.ansible.com/ansible/latest/getting_started/index.html[Gett
 
 .Additional notes for {PlatformName} requirements
 
-* Although {PlatformName} depends on Ansible Playbooks and requires the installation of the latest stable version of Ansible before installing {ControllerName}, manual installations of Ansible are no longer required.
+* {PlatformName} depends on Ansible Playbooks and requires the installation of the latest stable version of ansible-core. You can download ansible-core manually or download it automatically as part of your installation of {PlatformName}.
 
-* For new installations, {ControllerName} installs the latest release package of Ansible 2.14.
+* For new installations, {ControllerName} installs the latest release package of ansbile-core.
 
-* If performing a bundled {PlatformNameShort} installation, the installation program attempts to install Ansible (and its dependencies) from the bundle for you.
+* If performing a bundled {PlatformNameShort} installation, the installation setup.sh script attempts to install ansible-core (and its dependencies) from the bundle for you.
 
-* If you choose to install Ansible on your own, the {PlatformNameShort} installation program detects that Ansible has been installed and does not attempt to reinstall it.
+* If you have installed Ansible manually, the {PlatformNameShort} installation setup.sh script detects that Ansible has been installed and does not attempt to reinstall it.
 
 [NOTE]
 ====

@@ -2,8 +2,7 @@
 
 = {HubNameStart} system requirements
 
-{HubNameStart} enables you to discover and use new certified automation content from Red Hat Ansible and Certified Partners.
-On {HubNameMain}, you can discover and manage Ansible Collections, which are supported automation content developed by Red Hat and its partners for use cases such as cloud automation, network automation, and security automation.
+{HubNameStart} enables you to discover and use new certified automation content from Red Hat Ansible and Certified Partners. On {HubNameMain}, you can discover and manage Ansible Collections, which are supported automation content developed by Red Hat and its partners for use cases such as cloud automation, network automation, and security automation.
 
 {HubNameStart} has the following system requirements:
 
@@ -15,11 +14,11 @@ h|Requirement | Required | Notes
 
 * 8 GB RAM (minimum and recommended for Vagrant trial installations)
 * 8 GB RAM (minimum for external standalone PostgreSQL databases)
-* For capacity based on forks in your configuration, see additional resources
+* For capacity based on forks in your configuration, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#automation-controller-capacity-determination-and-job-impact[Automation Controller Capacity Determination and Job Impact].
 | *CPUs* | 2 minimum |
 
-For capacity based on forks in your configuration, see additional resources.
-| *Local disk* | 60 GB disk | A minimum of 40GB should be dedicated to /var for collection storage.
+For capacity based on forks in your configuration, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#automation-controller-capacity-determination-and-job-impact[Automation Controller Capacity Determination and Job Impact].
+| *Local disk* | 60 GB disk | Dedicate a minimum of 40GB to `/var` for collection storage.
 
 |===
 

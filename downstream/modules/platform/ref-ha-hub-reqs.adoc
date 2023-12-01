@@ -6,11 +6,12 @@ Before deploying a high availability (HA) {HubName}, ensure that you have a shar
 
 == Required shared filesystem
 
-A high availability {HubName} requires you to have a shared file system, such as NFS, already installed in your environment. 
-Before you run the {PlatformName} installer, verify that you installed the `/var/lib/pulp` directory across your cluster as part of the shared file system installation. 
+A high availability {HubName} requires you to have a shared file system, such as NFS, already installed in your environment. Before you run the {PlatformName} installer, verify that you installed the `/var/lib/pulp` directory across your cluster as part of the shared file system installation. 
 The {PlatformName} installer returns an error if `/var/lib/pulp` is not detected in one of your nodes, causing your high availability {HubName} setup to fail.
 
-== Network Storage Installation Requirements
+If you receive an error stating `/var/lib/pulp` is not detected in one of your nodes, ensure `/var/lib/pulp` is properly mounted in all servers and re-run the installer.
+
+== Installing firewalld for network storage
 
 If you intend to install a HA {HubName} using a network storage on the {HubName} nodes itself, you must first install and use `firewalld` to open the necessary ports as required by your shared storage system before running the {PlatformNameShort} installer.
 

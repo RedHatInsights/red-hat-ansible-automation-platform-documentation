@@ -9,9 +9,9 @@ Use this information when planning your {PlatformName} installations and designi
 
 .Prerequisites
 
-* You must be able to obtain root access either through the `sudo` command, or through privilege escalation. For more on privilege escalation see link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_privilege_escalation.html[Understanding Privilege Escalation].
-* You must be able to de-escalate privileges from root to users such as: AWX, PostgreSQL, {EDAName}, or Pulp.
-* You must configure an NTP client on all nodes. For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/migrate-isolated-execution-nodes#automation_controller_configuration_requirements[Configuring NTP server using Chrony].
+* You can obtain root access either through the `sudo` command, or through privilege escalation. For more on privilege escalation see link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_privilege_escalation.html[Understanding Privilege Escalation].
+* You can de-escalate privileges from root to users such as: AWX, PostgreSQL, {EDAName}, or Pulp.
+* You have configured an NTP client on all nodes. For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/migrate-isolated-execution-nodes#automation_controller_configuration_requirements[Configuring NTP server using Chrony].
 
 include::platform/ref-system-requirements.adoc[leveloffset=+1]
 include::platform/ref-controller-system-requirements.adoc[leveloffset=+1]

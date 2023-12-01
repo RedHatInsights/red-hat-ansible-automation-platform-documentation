@@ -3,20 +3,7 @@
 = {ControllerNameStart} system requirements
 
 {ControllerNameStart} is a distributed system, where different software components can be co-located or deployed across multiple compute nodes.
-In the installer, node types of control, hybrid, execution, and hop are provided as abstractions to help you design the topology appropriate for your use case:
-
-Execution nodes::
-Run automation. Increase memory and CPU to increase capacity for running more forks.
-
-Hop nodes::
-Serve to route traffic from one part of the Automation Mesh to another (for example, could be a bastion host into another network). RAM could affect throughput, CPU activity is low. Network bandwidth and latency are generally a more important factor than either RAM or CPU.
-
-Control nodes::
-Process events and runs cluster jobs including project updates and cleanup jobs. Increasing CPU and memory can help with job event processing.
-
-Hybrid nodes::
-Run both automation and cluster jobs. Comments on CPU and memory for execution and control nodes also apply to this node type.
-
+In the installer, four node types are provided as abstractions to help you design the topology appropriate for your use case: control, hybrid, execution, and hop nodes.
 
 Use the following recommendations for node sizing:
 
@@ -25,7 +12,11 @@ Use the following recommendations for node sizing:
 On control and hybrid nodes, allocate a minimum of 20 GB to `/var/lib/awx` for execution environment storage.
 ====
 
-.Execution and hop nodes
+*Execution nodes* 
+
+Run automation. Increase memory and CPU to increase capacity for running more forks.
+
+.Execution nodes
 
 [cols="a,a",options="header"]
 |===
@@ -35,7 +26,11 @@ h| Requirement | Required
 | *Local disk* | 40GB minimum
 |===
 
-.Control and hybrid nodes
+*Control nodes*
+
+Process events and run cluster jobs including project updates and cleanup jobs. Increasing CPU and memory can help with job event processing.
+
+.Control nodes
 
 [cols="a,a",options="header"]
 |===
@@ -45,15 +40,31 @@ h| Requirement | Required
 | *Local disk* a|
 * 40GB minimum with at least 20GB available under /var/lib/awx
 * Storage volume must be rated for a minimum baseline of 1500 IOPS
-* Projects are stored on control and hybrid nodes, and for the duration of jobs, are also stored on execution nodes. If the cluster has many large projects, consider doubling the GB in /var/lib/awx/projects, to avoid disk space errors
+* Projects are stored on control and hybrid nodes, and for the duration of jobs, are also stored on execution nodes. If the cluster has many large projects, consider doubling the GB in /var/lib/awx/projects, to avoid disk space errors.
+|===
+
+*Hop nodes*
+
+Serve to route traffic from one part of the automation mesh to another (for example, could be a bastion host into another network). RAM could affect throughput, CPU activity is low. Netowrk bandwidth and latency are generally a more important factor than either RAM or CPU.
+
+.Hop nodes
+
+[cols="a,a",options="header"]
+|===
+h| Requirement | Required
+| *RAM* | 16 GB
+| *CPUS* | 4
+| *Local disk* | 40 GB
 |===
 * Actual RAM requirements vary based on how many hosts {ControllerName} will manage simultaneously (which is controlled by the `forks` parameter in the job template or the system `ansible.cfg` file).
 To avoid possible resource conflicts, Ansible recommends 1 GB of memory per 10 forks + 2 GB reservation for {ControllerName}, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#at-capacity-determination-and-job-impact[Automation controller Capacity Determination and Job Impact] for further details. If `forks` is set to 400, 42 GB of memory is recommended.
-* A larger number of hosts can of course be addressed, though if the fork number is less than the total host count, more passes across the hosts are required.
-These RAM limitations are avoided when using rolling updates or when using the provisioning callback system built into {ControllerName}, where each system requesting configuration enters a queue and is processed as quickly as possible; or in cases where {ControllerName} is producing or deploying images such as AMIs.
-All of these are great approaches to managing larger environments. For further questions, please contact Ansible support through the link:https://access.redhat.com/[Red Hat Customer portal].
+* A larger number of hosts can of course be addressed, but if the fork number is less than the total host count, more passes across the hosts are required. You can avoid these RAM limitations by using any of the following approaches:
+** Use rolling updates.
+** Use the provisioning callback system built into {ControllerName}, whereeach system requesting configuration enters a queue and is processed as quickly as possible.
+** In cases where {ControllerName} is producting or deploying images such as AMIs.
 
 [role="_additional-resources"]
 .Additional resources
 
-* link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription].
+* For more informatino about obtaining an {ControllerName} subscription, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription].
+* For questions, please contact Ansible support through the link:https://access.redhat.com/[Red Hat Customer portal].

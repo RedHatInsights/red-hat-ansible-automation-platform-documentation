@@ -2,10 +2,9 @@
 
 = PostgreSQL requirements
 
-{PlatformName} uses PostgreSQL 13.
+{PlatformName} uses PostgreSQL 13. PostgreSQL user passwords are hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
 
-* PostgreSQL user passwords are hashed with SCRAM-SHA-256 secure hashing algorithm before storing in the database.
-* To determine if your {ControllerName} instance has access to the database, you can do so with the command, `awx-manage check_db`.
+To determine if your {ControllerName} instance has access to the database, you can do so with the command, `awx-manage check_db` command.
 
 .Database
 
@@ -29,15 +28,12 @@ h| Service |Required |Notes
 * All {ControllerName} data is stored in the database.
 Database storage increases with the number of hosts managed, number of jobs run, number of facts stored in the fact cache, and number of tasks in any individual job.
 For example, a playbook run every hour (24 times a day) across 250 hosts, with 20 tasks, will store over 800000 events in the database every week.
-* If not enough space is reserved in the database, old job runs and facts must be cleaned on a regular basis.
-Refer to link:https://docs.ansible.com/ansible-tower/3.8.3/html/administration/management_jobs.html#ag-management-jobs[Management Jobs] in the _Automation Controller Administration Guide_ for more information
-
+* If not enough space is reserved in the database, the old job runs and facts must be cleaned on a regular basis. Refer to link:https://docs.ansible.com/ansible-tower/3.8.3/html/administration/management_jobs.html#ag-management-jobs[Management Jobs] in the _Automation Controller Administration Guide_ for more information.
 |===
 
 .PostgreSQL Configurations
 
-Optionally, you can configure the PostgreSQL database as separate nodes that are not managed by the {PlatformName} installer.
-When the {PlatformNameShort} installer manages the database server, it configures the server with defaults that are generally recommended for most workloads. See link:https://docs.ansible.com/automation-controller/latest/html/administration/performance.html#database-settings[Database Settings] for more information on the settings you can use to improve database performance.
+Optionally, you can configure the PostgreSQL database as separate nodes that are not managed by the {PlatformName} installer. When the {PlatformNameShort} installer manages the database server, it configures the server with defaults that are generally recommended for most workloads. See link:https://docs.ansible.com/automation-controller/latest/html/administration/performance.html#database-settings[Database Settings] for more information on the settings you can use to improve database performance.
 //-----
 //max_connections == 1024
 //shared_buffers == ansible_memtotal_mb*0.3
