@@ -6,10 +6,17 @@
 [role="_abstract"]
 You can configure websocket connections to enable {ControllerName} to automatically handle discovery of other {ControllerName} nodes through the Instance record in the database.
 
-* Edit {ControllerName} websocket information for port and protocol, and confirm whether to verify certificates with `True` or `False` when establishing the websocket connections.
+. Edit {ControllerName} websocket information for port and protocol, and confirm whether to verify certificates with `True` or `False` when establishing the websocket connections:
 +
 -----
 BROADCAST_WEBSOCKET_PROTOCOL = 'http'
 BROADCAST_WEBSOCKET_PORT = 80
 BROADCAST_WEBSOCKET_VERIFY_CERT = False
 -----
++
+. Restart {ControllerName} with the following command:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+$ automation-controller-service restart 
+----
