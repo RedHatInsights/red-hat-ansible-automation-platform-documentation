@@ -1,8 +1,8 @@
 // This is the release notes file for AAP 2.4 bundle installer release 2.4-1.3 dated August 28, 2023
 
-= {PlatformNameShort} 2.4 - Bundle installer release 2.4-1.3
+= Bundle installer release 2.4-1.3 - August 28, 2023
 
-link:https://access.redhat.com/errata/RHBA-2023:4782[Red Hat Errata Advisory - Issued August 28, 2023]
+link:https://access.redhat.com/errata/RHBA-2023:4782[Red Hat Errata Advisory]
 
 //Automation controller
 == {ControllerNameStart}

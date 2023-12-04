@@ -1,9 +1,9 @@
 // This is the release notes file for AAP 2.4 bundle installer release 2.4-3 dated November 28, 2023
 [id="bundle-installer-24-3"]
 
-= Bundle installer release 2.4-3
+= Bundle installer release 2.4-3 - November 28, 2023
 
-link:https://access.redhat.com/errata/RHBA-2023:7561[Red Hat Errata Advisory - Issued November 28, 2023]
+link:https://access.redhat.com/errata/RHBA-2023:7561[Red Hat Errata Advisory]
 
 //Ansible Automation Platform
 == {PlatformNameShort}
