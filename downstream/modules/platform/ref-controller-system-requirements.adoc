@@ -45,7 +45,7 @@ h| Requirement | Required
 
 *Hop nodes*
 
-Serve to route traffic from one part of the automation mesh to another (for example, could be a bastion host into another network). RAM could affect throughput, CPU activity is low. Netowrk bandwidth and latency are generally a more important factor than either RAM or CPU.
+Serve to route traffic from one part of the automation mesh to another (for example, could be a bastion host into another network). RAM could affect throughput, CPU activity is low. Network bandwidth and latency are generally a more important factor than either RAM or CPU.
 
 .Hop nodes
 
@@ -61,10 +61,10 @@ To avoid possible resource conflicts, Ansible recommends 1 GB of memory per 10 f
 * A larger number of hosts can of course be addressed, but if the fork number is less than the total host count, more passes across the hosts are required. You can avoid these RAM limitations by using any of the following approaches:
 ** Use rolling updates.
 ** Use the provisioning callback system built into {ControllerName}, whereeach system requesting configuration enters a queue and is processed as quickly as possible.
-** In cases where {ControllerName} is producting or deploying images such as AMIs.
+** In cases where {ControllerName} is producing or deploying images such as AMIs.
 
 [role="_additional-resources"]
 .Additional resources
 
-* For more informatino about obtaining an {ControllerName} subscription, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription].
+* For more information about obtaining an {ControllerName} subscription, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/import_license.html?extIdCarryOver=true&sc_cid=7013a00000388B5AAI[Import a subscription].
 * For questions, please contact Ansible support through the link:https://access.redhat.com/[Red Hat Customer portal].

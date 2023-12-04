@@ -40,7 +40,7 @@ See link:https://docs.ansible.com/ansible/latest/getting_started/index.html[Gett
 
 * {PlatformName} depends on Ansible Playbooks and requires the installation of the latest stable version of ansible-core. You can download ansible-core manually or download it automatically as part of your installation of {PlatformName}.
 
-* For new installations, {ControllerName} installs the latest release package of ansbile-core.
+* For new installations, {ControllerName} installs the latest release package of ansible-core.
 
 * If performing a bundled {PlatformNameShort} installation, the installation setup.sh script attempts to install ansible-core (and its dependencies) from the bundle for you.
 
