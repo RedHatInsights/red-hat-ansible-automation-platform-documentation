@@ -5,7 +5,7 @@
 
 [role="_abstract"]
 
-{PlatformName} (AAP) uses several ports to communicate with its services. These ports must be open and available for incoming connections to the {PlatformName} server in order for it to work. Ensure that these ports are available and are not being blocked by the server firewall.
+{PlatformName} uses several ports to communicate with its services. These ports must be open and available for incoming connections to the {PlatformName} server in order for it to work. Ensure that these ports are available and are not being blocked by the server firewall.
 
 The following architectural diagram is an example of a fully deployed {PlatformNameShort} with all possible components.
 

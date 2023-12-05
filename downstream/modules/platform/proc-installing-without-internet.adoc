@@ -4,7 +4,7 @@
 = Installing without internet access
 
 [role="_abstract"]
-Use the {PlatformName} (AAP) *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. Access to Red Hat Enterprise Linux repositories is still needed. All other dependencies are included in the tar archive.
+Use the {PlatformName} *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. Access to {RHEL} repositories is still needed. All other dependencies are included in the tar archive.
 
 .Procedure
 . Navigate to the link:{PlatformDownloadUrl}[{PlatformName} download] page.

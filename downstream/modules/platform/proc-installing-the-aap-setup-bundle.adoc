@@ -5,7 +5,7 @@
 = Downloading and installing the {PlatformNameShort} setup bundle
 
 [role="_abstract"]
-Choose the setup bundle to download {PlatformNameShort} (AAP)for disconnected installations. This bundle includes the RPM content for AAP and the default {ExecEnvShort} images that will be uploaded to your {PrivateHubName} during the installation process.
+Choose the setup bundle to download {PlatformNameShort} for disconnected installations. This bundle includes the RPM content for {PlatformNameShort} and the default {ExecEnvShort} images that will be uploaded to your {PrivateHubName} during the installation process.
 
 
 .Procedure

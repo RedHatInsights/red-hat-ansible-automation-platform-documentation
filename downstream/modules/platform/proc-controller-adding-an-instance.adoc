@@ -32,7 +32,7 @@ image:instances_create_details.png[Create Instance details]
 [NOTE]
 ====
 The proceeding steps are intended to be run from any computer that has SSH access to the newly created instance. 
-It should not be run from a machine that is part of the AAP deployment.
+It should not be run from a machine that is part of the {PlatformNameShort} deployment.
 ====
 +
 . Click the download image:download.png[Download,15,15] icon next to *Install Bundle* to download the tarball that includes this new instance and the files necessary to install the node into the {AutomationMesh}.

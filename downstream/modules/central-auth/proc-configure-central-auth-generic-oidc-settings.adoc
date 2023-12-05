@@ -19,13 +19,13 @@ NOTE: If you have an existing realm you may go to step 4.
 . From the Client Protocol menu, select menu:openid-connect.
 . From the Access Type menu, select menu:confidential.
 
-. In the Root URL field, enter your AAP server IP or hostname.
+. In the Root URL field, enter your {PlatformNameShort} server IP or hostname.
 
-. In the Valid Redirect field, enter your AAP server IP or hostname. If not in production, set to *.
+. In the Valid Redirect field, enter your {PlatformNameShort} server IP or hostname. If not in production, set to *.
 
-. In the Web origins field, enter your AAP server IP or hostname. If not in production, set to *.
+. In the Web origins field, enter your {PlatformNameShort} server IP or hostname. If not in production, set to *.
 
-. Click on *Credentials* tab.
+. Click on the *Credentials* tab.
 
 NOTE: Keep track of Secret to be used later.
 +
@@ -38,4 +38,4 @@ NOTE: Keep track of Secret to be used later.
 . In the OIDC Provider URL field, enter your keycloak server URL and port.
 . Click btn:[Save].
 
-OIDC should appear as an option for login. Click btn:[Sign in with OIDC] and it will redirect you to the SSO server for login and redirection back to AAP. 
+OIDC should appear as an option for login. Click btn:[Sign in with OIDC] and it will redirect you to the SSO server for login and redirection back to {PlatformNameShort}. 

@@ -4,7 +4,7 @@
 = Configuring {AAPCentralAuth} Generic OIDC settings and Red Hat SSO/keycloak for Red Hat SSO and {PlatformNameShort}
 
 
-{AAPCentralAuth} allows for the setting of generic OIDC settings and Red Hat SSO/keycloak for Red Hat SSO and AAP. 
+{AAPCentralAuth} allows for the setting of generic OIDC settings and Red Hat SSO/keycloak for Red Hat SSO and {PlatformNameShort}. 
 
 == Prerequisites
 

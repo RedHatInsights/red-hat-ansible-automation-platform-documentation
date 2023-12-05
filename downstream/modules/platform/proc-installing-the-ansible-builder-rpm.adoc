@@ -4,10 +4,10 @@
 
 [role="_abstract"]
 
-In order to create custom {ExecEnvShort} images in a disconnected environment, you will need to have a working copy of ansible-builder installed. On a RHEL system there are several ways to do this.
+To create custom {ExecEnvShort} images in a disconnected environment, you must have a working copy of ansible-builder installed. On a RHEL system there are several ways to do this.
 
 * Subscribe the RHEL box to a Satellite on the disconnected network.
-* Attach the Ansible Automation Platform subscription and enable the AAP repo.
+* Attach the {PlatformNameShort} subscription and enable the {PlatformNameShort} repo.
 
 [NOTE]
 ====

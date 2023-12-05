@@ -15,7 +15,7 @@ A valid Red Hat customer account is required to access {PlatformName} installer 
 
 .Installing with internet access
 
-Choose the {PlatformName} (AAP) installer if your Red Hat Enterprise Linux environment is connected to the internet. Installing with internet access retrieves the latest required repositories, packages, and dependencies. Choose one of the following ways to set up your AAP installer.
+Choose the {PlatformName} installer if your Red Hat Enterprise Linux environment is connected to the internet. Installing with internet access retrieves the latest required repositories, packages, and dependencies. Choose one of the following ways to set up your {PlatformNameShort} installer.
 
 *Tarball install*
 
@@ -50,7 +50,7 @@ When you use the RPM installer, the files are placed under the `/opt/ansible-aut
 
 .Installing without internet access
 
-Use the {PlatformName} (AAP) *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. Access to Red Hat Enterprise Linux repositories is still needed. All other dependencies are included in the tar archive.
+Use the {PlatformName} *Bundle* installer if you are unable to access the internet, or would prefer not to install separate components and dependencies from online repositories. Access to {RHEL} repositories is still needed. All other dependencies are included in the tar archive.
 
 . Navigate to the link:{PlatformDownloadUrl}[{PlatformName} download] page.
 . Click btn:[Download Now] for the *Ansible Automation Platform <latest-version> Setup Bundle*.

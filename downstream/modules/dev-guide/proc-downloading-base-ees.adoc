@@ -7,7 +7,7 @@
 = Downloading base {ExecEnvName}
 
 [role="_abstract"]
-Base images that ship with AAP 2.0 are hosted on the Red Hat Ecosystem Catalog (registry.redhat.io).
+Base images that ship with {PlatformNameShort} 2.0 are hosted on the Red Hat Ecosystem Catalog (registry.redhat.io).
 
 .Prerequisites
 

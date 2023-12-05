@@ -6,7 +6,7 @@
 = Installing with internet access
 
 [role="_abstract"]
-Choose the {PlatformName} (AAP) installer if your Red Hat Enterprise Linux environment is connected to the internet. Installing with internet access retrieves the latest required repositories, packages, and dependencies. Choose one of the following ways to set up your AAP installer.
+Choose the {PlatformName} installer if your {RHEL} environment is connected to the internet. Installing with internet access retrieves the latest required repositories, packages, and dependencies. Choose one of the following ways to set up your {PlatformNameShort} installer.
 
 .Tarball install
 
