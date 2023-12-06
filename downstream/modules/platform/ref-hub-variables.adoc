@@ -366,7 +366,7 @@ Must be set when integrating {PrivateHubName} with LDAP, or the installation wil
 | *`automationhub_ldap_user_search_filter`* | _Optional_
 
 Default = `'(uid=%(user)s)'`
-| *`automationhub_ldap_user-search_scope`* | _Optional_
+| *`automationhub_ldap_user_search_scope`* | _Optional_
 
 Scope to search for users in an LDAP tree by using the django framework for LDAP authentication.
 Used for installing {HubName} with LDAP.
