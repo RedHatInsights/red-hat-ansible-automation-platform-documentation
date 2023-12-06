@@ -1,9 +1,9 @@
 :_content-type: PROCEDURE
 
 [id="ppah-install-ha_{context}"]
-= Installing a high availability {HubName}
+= Installing a production {HubName}
 
-Use the playbook `install_prod` to install a production-ready, highly available {HubName}. This option requires that all supporting services are managed by the user.
+Use the playbook `install_prod` to install a production-ready, highly available {HubName}. This option requires the user to manage all supporting services.
 
 .Prerequisites
 
@@ -11,24 +11,23 @@ Use the playbook `install_prod` to install a production-ready, highly available 
 * LDAP server
 * NFS server
 
-The playbook requires the following parameters:
+The playbook requires the following parameters. For more detail, refer to the `production-sample-values` template in the tarball.
 
 * PostgreSQL
-** See xref:tk[Database]
-* LDAP
-** hub_authentication_backend must be set to `ldap`
-** see xref:tk[LDAP]
+* LDAP: `hub_authentication_backend` must be set to `ldap`
 * NFS 
-** See xref:tk[Shared storage]
-
-NOTE: See xref:tk[Online vs. Offline Installation] for instructions on fetching the container images. You can use the link:https://gitlab.cee.redhat.com/ansible/private-partner-automation-hub-installer/-/blob/main/all-in-one-sample-values.yml[Sample] as a reference.
 
 .Procedure
 
-Run the installation playbook using the following command: 
+. Run the installation playbook using the following command: 
 ----
 ansible-playbook -i </path/to/inventory> -e @</path/to/values> ansible.private_partner_automation_hub_installer.install_prod
 ----
 
+[NOTE]
 
+====
 
+The production option mandates a three-node installation, and installs automation hub on all hosts, so there is no need to assign the nodes to a group in the inventory file.
+
+====

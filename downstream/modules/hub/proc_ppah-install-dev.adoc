@@ -5,16 +5,25 @@
 
 Use the playbook `install_devel` to install an all-in-one {HubName} for development.
 
-This option supports only optional parameters:
+[NOTE]
+====
 
-* xref:tk[Common]. See xref:tk[Online vs Offline Installation] for details.
-* `hub_admin_password`: if not set, the installer will set one and print it as part of its output. 
+If you do not set the `hub_admin_password` parameter, the installer sets one and prints it as part of its output.
+
+====
 
 .Procedure
 
-* Run the installation playbook using the following command:
+. Run the installation playbook using the following command:
 
 ----
 ansible-playbook -i </path/to/inventory> ansible.private_partner_automation_hub_installer.install_devel
 ----
+
+[NOTE]
+====
+
+The development option installs automation hub and the database on the same host, so there is no need to assign the host to a group in the inventory file.
+
+====
 

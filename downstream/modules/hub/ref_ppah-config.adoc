@@ -1,34 +1,77 @@
 :_content-type: REFERENCE
 
 [id="ppah-config_{context}"]
-= ppah-config
+= Configuration
 
-Write a short introductory paragraph that provides an overview of the module.
+Use the variables in the following table to configure your Private Partner Automation Hub.
 
-A reference module provides data that users might want to look up, but do not need to remember. It has a very strict structure, often in the form of a list or a table.
-A well-organized reference module enables users to scan it quickly to find the details they want.
-AsciiDoc markup to consider for reference data:
 
-.Unordered list
-* For more details on writing reference modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles.
-For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-
-.Labeled list
-Term 1:: Definition
-Term 2:: Definition
-
-.Table
+.Common
 [options="header"]
 |====
-|Column 1|Column 2|Column 3
-|Row 1, column 1|Row 1, column 2|Row 1, column 3
-|Row 2, column 1|Row 2, column 2|Row 2, column 3
+| Name | Description | Required or Optional | Default
+| bundle_dir | Bundle directory | Optional | False
+| bundle_install| Use offline installation | Optional | False
+| registry_auth | Use registry authentication | Optional | True
+| registry_url | The registry URL | Optional | registry.redhat.io
+| registry_username | The registry username | Optional |
+| registry_password | The registry password | Optional |
 |====
 
-[role="_additional-resources"]
-.Additional resources
-* A bulleted list of links to other closely-related material. These links can include `link:` and `xref:` macros.
-* For more details on writing reference modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
+.Automation Hub
+[options="header"]
+|====
+| Name | Description | Required or Optional | Default
+| hub_admin_password | Automation Hub admin password| Required | 
+| hub_main_url | Automation Hub main URL| Optional | 
+| hub_pg_database | PostgreSQL Hub database | Optional | Pulp
+| hub_pg_host | PostgreSQL Hub host | Required | registry.redhat.io
+| hub_pg_password | PostgreSQL Hub password | Required |
+| hub_pg_port | PostgreSQL Hub port | Optional | 5432
+| hub_pg_socket | PostgreSQL Hub unix socket | Optional |
+| hub_pg_username | PosgreSQL Hub user | Optional | Pulp
+|====
 
+.Database
+[options="header"]
+|====
+| Name | Description | Required or Optional | Default
+| postgresql_admin_database | PostgreSQL admin database | Optional | postgres
+| postgresql_admin_username | PostgreSQL admin username | Optional | postgres
+| postgresql_admin_password | PostgreSQL admin password | Required |
+| postgresql_max_connections | PostgreSQL max connections | Optional | 1024
+|====
+
+.Table 4. LDAP
+By default, Automation Hub uses local users. In order to connect Automation Hub to an LDAP server, set `hub_authentication_backend: ldap` and see below for additional required and optional variables. 
+[options="header"]
+|====
+| Name | Description | Required or Optional | Default
+| hub_ldap_server_uri | URI for the LDAP server | Required | 
+| hub_ldap_bind_dn |DN to Bind to | Required | 
+| hub_ldap_bind_password | Bind password | Required |
+| hub_ldap_user_search_base_dn | User search bind DN | Required |
+| hub_ldap_user_search_scope | User search scope | Optional | SUBTREE
+| hub_ldap_user_search_filter | User search filter | Optional | (uid=%(user)s)
+| hub_ldap_group_search_base_dn | Group search bind DN | Required |
+| hub_ldap_group_search_scope | Group search scope |Optional | SUBTREE
+| hub_ldap_group_search_filter | Group search filter | Optional | (objectClass=Group)
+| hub_ldap_group_type_class | Group type class | Optional | django_auth_ldap.config:GroupOfNamesType
+|====
+
+Extra parameters will need to be passed through an Ansible `hub_ldap_extra_settings` dictionary.
+For example, in order to map user information fields, you can set:
+----
+hub_ldap_extra_settings:
+  AUTH_LDAP_USER_ATTR_MAP__first_name: givenName
+  AUTH_LDAP_USER_ATTR_MAP__last_name: sn
+  AUTH_LDAP_USER_ATTR_MAP__email: mail
+----
+
+.Table 5. Shared Storage
+Shared storage is required when installing more than one automation hub, and optional when installing a single instance of automation hub. 
+[options="header"]
+|====
+| Name | Description | Required or Optional | Default
+| hub_shared_data_path | Path to an NFS share with RWX access | Required | 
+|====

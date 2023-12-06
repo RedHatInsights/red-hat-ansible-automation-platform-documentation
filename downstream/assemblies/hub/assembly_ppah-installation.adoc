@@ -4,31 +4,43 @@ ifdef::context[:parent-context: {context}]
 
 [id="ppah-installation_{context}"]
 
-= Private Partner Ansible Automation Hub Installer Guide
+= Private Partner Ansible Automation Hub Installation Guide
 
 :context: ppah-installation
 
-This guide contains an Ansible collection of playbooks to install the containerized {HubNameMain}.
+Red Hat Ansible private partner automation hub enables Red Hat partners to curate, host, and serve their own Ansible content to their consultants, customers, or users. Private partner automation hub gives partners the ability to serve content to multiple different parties simultaneously using comprehensive role-based access controls. This offering is designed to help partners expedite their solutions using Ansible's proven automation technology.
+
+This guide contains a collection of Ansible playbooks that install a containerized private partner automation hub. You can choose from two types of installation based on your organization's needs:
+
+* a xref:ppah-install-dev[development option]
+* a xref:ppah-install-ha[production option]
 
 .Prerequisites
 
-* Install ansible-core using the following command: 
+* A RHEL 9.2 based host. A minimal OS base install is recommended.
+* A non-root user for the RHEL host, with sudo or other Ansible supported privilege escalation (sudo recommended). This user is responsible for the installation of the private partner automation hub.
+* It is recommended to set up an *SSH public key authentication* for the non-root user. For guidelines on setting up an SSH public key authentication for the non-root user, see link:https://access.redhat.com/solutions/4110681[How to configure SSH public key authentication for passwordless login].
+* SSH keys are only required when installing on remote hosts. If doing a self contained local VM based installation, you can use *ansible_connection: local*, which does not require SSH.
 
-[source,bash]
-----
-$ dnf install ansible-core
-or
-$ pip install --user ansible-core
-----
+== System requirements
 
-include::hub/proc_ppah-pre-install.adoc[leveloffset=+1]
+Your system must meet the following minimum system requirements to install and run private partner automation hub. 
 
-== Installation options
+[cols=2]
+|======================
+| Memory     | 8Gb RAM at minimum
+| CPU        | 2 CPU at minimum   
+| Disk space | 60Gb, with a minimum of 40Gb dedicated to `/var` for collection storage    
+| Disk IOPs  | 1500    
+|======================
 
+include::hub/proc_ppah-prepare-rhel-host.adoc[leveloffset=+1]
+include::hub/proc_ppah-install-ansible-core.adoc[leveloffset=+1]
+include::hub/proc_ppah-download-aap.adoc[leveloffset=+1]
+include::hub/proc_ppah-online-offline-install.adoc[leveloffset=+1]
 include::hub/proc_ppah-install-dev.adoc[leveloffset=+1]
 include::hub/proc_ppah-install-ha.adoc[leveloffset=+1]
-include::hub/ref_ppah-config.adoc[leveloffset=+1]
-include::hub/proc_ppah-online-offline-install.adoc[leveloffset=+1]
+//include::hub/ref_ppah-config.adoc[leveloffset=+1]
 include::hub/ref_ppah-access.adoc[leveloffset=+1]
 
 

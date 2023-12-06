@@ -1,40 +1,32 @@
 :_content-type: PROCEDURE
 
 [id="ppah-online-offline-install_{context}"]
-= ppah-online-offline-install
+= Online and offline installation
 
-Write a short introductory paragraph that provides an overview of the module. The introduction should include what the module will help the user do and why it will be beneficial to the user. Include key words that relate to the module to maximize search engine optimization.
+There are two ways to run the containerized installer:
 
-.Prerequisites
+* Online: The container images will be pulled from a registry.
+* Offline: The container images will be imported from a tarball.
 
-* A bulleted list of conditions that must be satisfied before the user starts the steps in this module.
-* Prerequisites can be full sentences or sentence fragments; however, prerequisite list items must be parallel.
+This workflow is controlled through the `bundle_install` variable.
+
+== Online installation
+
+Online installation is the default install scenario (`bundle_install: false`) and pulls the container images from `registry.redhat.io`, which requires authentication.
 
 .Procedure
 
-. Make each step an instruction.
+. Provide the registry username and password for authentication.
+----
+registry_username: foo@ansible.com
+registry_password: bar
+----
 
-. Include one command or action for each step with the exception of simple follow-step, for example:
-.. Do this thing and then select *Next*.
-.. Do this other thing and then select *Next*.
+== Offline installation
 
-. Use an unnumbered bullet (*) if the procedure includes only one step.
+.Procedure
 
-.Verification
-
-. Provide an example of expected command output or a pop-up window that the user receives when the procedure is successful.
-
-. List actions for the user to complete, such as entering a command, to determine the success or failure of the procedure.
-
-. Make each step an instruction.
-
-. Include one command or action per step.
-
-. Use an unnumbered bullet (*) if the verification includes only one step.
-
-[role="_additional-resources"]
-.Additional resources
-* A bulleted list of links to other closely-related material. These links can include `link:` and `xref:` macros.
-* For more details on writing procedure modules, see the link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-* Use a consistent system for file names, IDs, and titles. For tips, see _Anchor Names and File Names_ in link:https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide[Modular Documentation Reference Guide].
-
+. Set `bundle_install: true` in in your Ansible configuration and `bundle_dir`` with the path to the bundle directory without the images subdirectory:
+----
+$ ansible-playbook -i </path/to/inventory> ansible.containerized_installer.install -e bundle_install=true -e bundle_dir=$(pwd)/bundle
+----

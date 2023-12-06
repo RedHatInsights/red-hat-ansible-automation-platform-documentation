@@ -1,0 +1,17 @@
+:_content-type: PROCEDURE
+
+[id="ppah-install-ansible-core_{context}"]
+= Installing ansible-core
+
+.Procedure
+
+. Install ansible-core and other tools:
++
+----
+sudo dnf install -y ansible-core wget git rsync
+----
+. Set a fully qualified hostname:
++
+----
+sudo hostnamectl set-hostname your-FQDN-hostname
+----
