@@ -44,6 +44,8 @@ link:https://ansible.readthedocs.io/projects/builder/en/stable/[Ansible Builder 
 
 * Updated Django for potential denial-of-service in Accept-Language headers (CVE-2023-23969).
 
+* {PlatformNameShort} 2.4 adds the ability to install automation controller, automation hub, and {EDAName} on IBM Power (ppc64le), IBM Z (s390x), and IBM® LinuxONE (s390x) architectures.
+
 == Deprecated and removed features
 
 Some features available in earlier releases have been deprecated or removed. Deprecated functionality is still included in {PlatformNameShort} and continues to be supported. However, it will be removed in a future release of this product and is not recommended for new deployments. 
@@ -97,8 +99,6 @@ The following bugs were fixed in this release of {PlatformNameShort}:
 Some features in this release are currently classified as Technology Preview. Technology Preview features offer early access to upcoming product features, enabling customers to test functionality and give feedback during the development process. Note that Red Hat does not recommend using Technology Preview features for production, and Red Hat SLAs do not support Technology Preview functions.
 
 The following are Technology Preview features: 
-
-* {PlatformNameShort} 2.4 adds the ability to install the {ControllerName} for IBM Power (ppc64le), IBM Z (s390x), and IBM(R) LinuxONE (s390x) architectures.
 
 * Starting with {PlatformNameShort} 2.4, the Platform Resource Operator can be used to create the following resources in {ControllerName} by applying YAML to your OpenShift cluster:
 ** Inventories
