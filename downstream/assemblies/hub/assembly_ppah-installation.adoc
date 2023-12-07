@@ -4,7 +4,7 @@ ifdef::context[:parent-context: {context}]
 
 [id="ppah-installation_{context}"]
 
-= Private Partner Ansible Automation Hub Installation Guide
+= Private Partner Automation Hub Installation Guide
 
 :context: ppah-installation
 
