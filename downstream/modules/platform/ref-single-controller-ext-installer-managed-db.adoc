@@ -17,7 +17,7 @@ data.example.com
 [all:vars]
 admin_password='<password>'
 pg_host='data.example.com'
-pg_port='5432'
+pg_port=5432
 pg_database='awx'
 pg_username='awx'
 pg_password='<password>'

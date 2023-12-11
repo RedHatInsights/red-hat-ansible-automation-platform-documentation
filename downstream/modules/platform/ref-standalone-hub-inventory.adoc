@@ -21,7 +21,7 @@ registry_password='<registry password>'
 automationhub_admin_password= <PASSWORD>
 
 automationhub_pg_host=''
-automationhub_pg_port='5432'
+automationhub_pg_port=5432
 
 automationhub_pg_database='automationhub'
 automationhub_pg_username='automationhub'

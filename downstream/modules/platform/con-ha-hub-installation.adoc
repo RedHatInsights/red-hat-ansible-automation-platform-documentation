@@ -13,7 +13,7 @@ You can configure your HA deployment further to implement {RHSSO} and enable a x
 
 -----
 automationhub_pg_host='192.0.2.10'
-automationhub_pg_port='5432'
+automationhub_pg_port=5432
 -----
 
 * Also specify the IP address for your database host in the [database] section, using the value in the `automationhub_pg_host` inventory variable:

@@ -54,7 +54,7 @@ receptor_listener_port=27199
 automationhub_admin_password='hubpassword123'
 
 automationhub_pg_host='automationcontroller.example.org'
-automationhub_pg_port='5432'
+automationhub_pg_port=5432
 
 automationhub_pg_database='automationhub'
 automationhub_pg_username='automationhub'
