@@ -28,3 +28,9 @@ Before you begin the upgrade process, review the following considerations to pla
 [role="_additional-resources"]
 .Additional resources
 * <<editing-inventory-file-for-updates_{context}, Setting up the inventory file >>
+
+[discrete]
+== {EDAcontroller}
+//ATTENTION: Remove this section for EDA 1.0.4; customers will no longer need to perform deactivation because services will be automatically restored after upgrade and migration. 
+
+* If you are currently running {EDAcontroller} and plan to deploy it when you upgrade to {PlatformNameShort} {PlatformVers}, it is recommended that you disable all {EDAName} activations before upgrading to ensure that only new activations run after the upgrade process has completed. This prevents possibilities of orphaned containers running activations from the previous version.
