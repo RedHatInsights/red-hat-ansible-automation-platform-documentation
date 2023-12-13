@@ -1,0 +1,9 @@
+[id="con-controller-additional-settings"]
+
+= Additional settings for {ControllerName}
+
+There are additional advanced settings that can affect {ControllerName} behavior that are not available in the {ControllerName} UI. 
+	
+For traditional virtual machine based deployments, these settings can be provided to {ControllerName} by creating a file in `/etc/tower/conf.d/custom.py`. When settings are provided to {ControllerName} through file-based settings, the settings file must be present on all control plane nodes. These include all of the hybrid or control type nodes in the `automationcontroller` group in the installer inventory. 
+
+For these settings to be effective, restart the service with `automation-controller-service` restart on each node with the settings file. If the settings provided in this file are also visible in the {ControllerName} UI, then they are marked as "Read only" in the UI.
