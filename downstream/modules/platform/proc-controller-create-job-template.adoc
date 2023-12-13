@@ -96,7 +96,7 @@ As with core Ansible:
 * a:b:&c means "in a or b but must be in c"
 * a:!b means "in a, and definitely not in b"
 
-For more information see, link:http://docs.ansible.com/intro_patterns.html[Patterns] in the Ansible documentation. | Yes
+For more information see, link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_patterns.html[Patterns: targeting hosts and groups] in the Ansible documentation. | Yes
 | Verbosity | Control the level of output Ansible produces as the playbook executes.
 Choose the verbosity from Normal to various Verbose or Debug settings.
 This only appears in the *details* report view.
