@@ -1,7 +1,0 @@
-[id="con-controller-hop-nodes"]
-
-= Hop Nodes
-
-Hop nodes have very low memory and CPU use and there is no significant advantage in vertically scaling hop nodes. 
-A hop node that serves as the sole connection of many execution nodes to the control plane must be monitored for network bandwidth use. 
-If this is seen to be saturated, changes to the network might be worth considering.

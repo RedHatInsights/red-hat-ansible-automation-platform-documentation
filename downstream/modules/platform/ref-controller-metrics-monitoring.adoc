@@ -1,0 +1,21 @@
+[id="ref-controller-metrics-monitoring"]
+
+= Metrics for monitoring {ControllerName} application
+
+For application level monitoring, {ControllerName} provides Prometheus-style metrics on an API endpoint `/api/v2/metrics`. Use these metrics to monitor aggregate data about job status and subsystem performance, such as for job output processing or job scheduling. 
+
+The metrics endpoint includes descriptions of each metric. Metrics of particular interest for performance include:
+
+* `awx_status_total`
+** Current total of jobs in each status. Helps correlate other events to activity in system
+** Can monitor upticks in errored or failed jobs
+* awx_instance_remaining_capacity
+** Amount of capacity remaining for running additional jobs
+* `callback_receiver_event_processing_avg_seconds`
+** colloquially called “job events lag”
+** Running average of the lag time between when a task occurred in ansible and when the user is able to see it. This indicates how far behind the callback receiver is in processing events. When this number is very high, users can consider scaling up the control plane or using the capacity adjustment feature to reduce the number of jobs a control node controls.
+* `callback_receiver_events_insert_db`
+** Counter of events that have been inserted by a node. Can be used to calculate the job even insertion rate over a given time period
+* `callback_receiver_events_queue_size_redis`
+** Indicator of how far behind callback receiver is in processing events. If too high – Redis can cause the control node to run out of memory (OOM)
+ 

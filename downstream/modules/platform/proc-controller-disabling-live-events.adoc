@@ -1,0 +1,9 @@
+[id="proc-controller-disabling-live-events"]
+
+= Disabling live streaming events
+
+*Procedure* 
+
+. Disable live streaming events by using one of the following methods:
+.. In the API, set `UI_LIVE_UPDATES_ENABLED` to *False*.
+.. Navigate to your {ControllerName}. Open the *Miscellaneous System Settings* window. Set the *Enable Activity Stream* toggle to *Off*.

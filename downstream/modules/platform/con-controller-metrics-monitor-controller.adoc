@@ -1,0 +1,29 @@
+[id="con-controller-metrics-monitor-controller"]
+
+= Metrics to monitor {ControllerName}
+
+Monitor your {ControllerName} hosts at the system and application levels. 
+
+System level monitoring includes the following information:
+
+* Disk I/O
+* RAM use
+* CPU use
+* Network traffic 
+
+Application level metrics provide data that the application knows about the system. This data includes the following information: 
+
+* How many jobs are running in a given instance
+* Capacity information about instances in the cluster
+* How many inventories are present 
+* How many hosts are in those inventories
+
+Using system and application metrics can help you identify what was happening in the application when a service degradation occurred. Information about {ControllerName}'s performance over time helps when diagnosing problems or doing capacity planning for future growth.
+
+include::ref-controller-metrics-monitoring.adoc[leveloffset=+1]
+include::con-controller-system-level-monitoring.adoc[leveloffset=+1]
+
+.Additional resources
+
+* For more information about configuring monitoring, see xref:assembly-controller-metrics[Metrics].
+* Additional insights into automation usage are available when you enable data collection for automation analytics. For more information, see link:https://www.ansible.com/products/insights-for-ansible[Automation analytics and Red Hat Insights for Red Hat Ansible Automation Platform].

@@ -1,29 +1,36 @@
 [id="assembly-controller-improving-performance"]
 
-= Improving Controller Performance
+= Performance tuning for {ControllerName}
 
-Learn about the guidelines for tuning for performance and scalability. 
-Although care has been taken to make the content applicable to a wide set of use cases, if you have a use case not covered here, you can contact link:https://access.redhat.com/[Red Hat Support].
+Tune your {ControllerName} to optimize performance and scalability. When planning your workload, ensure that you identify your performance and scaling needs, adjust for any limitations, and monitor your deployment. 
 
-include::platform/ref-controller-performance-improvements.adoc[leveloffset=+1]
-include::platform/con-controller-vertical-scaling-improvement.adoc[leveloffset=+2]
-include::platform/con-controller-job-scheduling-improvements.adoc[leveloffset=+2]
-include::platform/con-controller-database-use-improvements.adoc[leveloffset=+2]
-include::platform/con-controller-stability-improvements.adoc[leveloffset=+2]
-include::platform/con-controller-metrics-enhancements.adoc[leveloffset=+2]
-include::platform/con-controller-ldap-enhancements.adoc[leveloffset=+2]
+{ControllerNameStart} is a distributed system with multiple components that you can tune, including the following:
+
+* Task system in charge of scheduling jobs
+* Control Plane in charge of controlling jobs and processing output
+* Execution plane where jobs run
+* Web server in charge of serving the API
+* Websocket system that serve and broadcast websocket connections and data
+* Database used by multiple components
+
 include::platform/ref-controller-capacity-planning.adoc[leveloffset=+1]
-include::platform/ref-controller-capacity-planning-exercise.adoc[leveloffset=+2]
-include::platform/con-controller-node-size-choice.adoc[leveloffset=+2]
-include::platform/con-controller-control-nodes.adoc[leveloffset=+3]
-include::platform/con-controller-execution-nodes.adoc[leveloffset=+3]
-include::platform/con-controller-hop-nodes.adoc[leveloffset=+3]
-include::platform/con-controller-hybrid-nodes.adoc[leveloffset=+3]
-include::platform/con-controller-capacity-planning-operator.adoc[leveloffset=+2]
-include::platform/con-controller-monitor-controller.adoc[leveloffset=+1]
+include::platform/ref-controller-workload-characteristics.adoc[leveloffset=+2]
+include::platform/ref-controller-node-types.adoc[leveloffset=+2]
+include::platform/ref-scaling-control-nodes.adoc[leveloffset=+3]
+include::platform/ref-scaling-execution-nodes.adoc[leveloffset=+3]
+include::platform/ref-scaling-hop-nodes.adoc[leveloffset=+3]
+include::platform/ref-ratio-control-execution.adoc[leveloffset=+3]
+include::platform/ref-controller-capacity-planning-exercise.adoc[leveloffset=+1]
+include::platform/ref-controller-performance-troubleshooting.adoc[leveloffset=+1]
+include::platform/con-controller-metrics-monitor-controller.adoc[leveloffset=+1]
 include::platform/ref-controller-database-settings.adoc[leveloffset=+1]
-include::platform/ref-controller-controller-settings.adoc[leveloffset=+1]
-include::platform/ref-controller-live-events.adoc[leveloffset=+2]
-include::platform/con-controller-job-events-processing.adoc[leveloffset=+2]
-include::platform/con-controller-task-manager-settings.adoc[leveloffset=+2]
+include::platform/con-controller-tuning.adoc[leveloffset=+1]
+include::platform/proc-controller-managing-live-events.adoc[leveloffset=+2]
+include::platform/proc-controller-disabling-live-events.adoc[leveloffset=+3]
+include::platform/ref-controller-settings-to-modify-events.adoc[leveloffset=+3]
+include::platform/ref-controller-settings-job-events.adoc[leveloffset=+2]
+include::platform/ref-controller-settings-control-execution-nodes.adoc[leveloffset=+2]
+include::platform/ref-controller-capacity-instance-container.adoc[leveloffset=+2]
+include::platform/ref-controller-settings-scheduling-jobs.adoc[leveloffset=+2]
 include::platform/ref-controller-internal-cluster-routing.adoc[leveloffset=+2]
+include::platform/ref-controller-web-service-tuning.adoc[leveloffset=+2]

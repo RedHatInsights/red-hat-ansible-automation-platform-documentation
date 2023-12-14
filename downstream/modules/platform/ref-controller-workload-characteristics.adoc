@@ -1,0 +1,12 @@
+[id="ref-controller-workload-characteristics"]
+
+= Characteristics of your workload
+
+Before planning your deployment, establish the workload that you want to support. Consider the following factors to characterize an {ControllerName} workload:
+
+* Managed hosts
+* Tasks per hour per host
+* Maximum number of concurrent jobs that you want to support
+* Maximum number of forks set on jobs. Forks determine the number of hosts that a job acts on concurrently.
+* Maximum API requests per second
+* Node size that you prefer to deploy (CPU/Memory/Disk)

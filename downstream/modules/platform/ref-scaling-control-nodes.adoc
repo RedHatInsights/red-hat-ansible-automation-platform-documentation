@@ -1,0 +1,15 @@
+[id="ref-scaling-control-nodes"]
+
+= Benefits of scaling control nodes
+
+Control and hybrid nodes provide control capacity. They provide the ability to start jobs and process their output into the database. Every job is assigned a control node. In the default configuration, each job requires one capacity unit to control. For example, a control node with 100 capacity units can control a maximum of 100 jobs.
+
+Vertically scaling a control node by deploying a larger virtual machine with more resources increases the following capabilities of the control plane:
+* The number of jobs that a control node can perform control tasks for, which requires both more CPU and memory
+* The number of job events a control node can process concurrently
+
+Scaling CPU and memory in the same proportion is recommended, for example, 1 CPU: 4 GB RAM. Even when memory consumption is high, increasing the CPU of an instance can often relieve pressure. The majority of the memory that control nodes consume is from unprocessed events that are stored in a memory-based queue. 
+
+NOTE: Vertically scaling a control node does not automatically increase the number of workers that handle web requests.
+
+An alternative to vertically scaling is horizontally scaling by deploying more control nodes. This allows spreading control tasks across more nodes as well as allowing web traffic to be spread over more nodes, given that you provision a load balancer to spread requests across nodes. Horizontally scaling by deploying more control nodes in many ways can be preferable as it additionally provides for more redundancy and workload isolation in the event that a control node goes down or experiences higher than normal load.

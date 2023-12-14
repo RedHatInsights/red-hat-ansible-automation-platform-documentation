@@ -1,5 +1,0 @@
-[id="con-controller-ldap-enhancements"]
-
-= LDAP login and basic authentication
-
-Enhancements to the authentication backend that syncs LDAP configuration with the organizations and teams in {ControllerName} ensures that logging in with large mappings between LDAP groups and organizations and teams is now much faster than in previous versions.

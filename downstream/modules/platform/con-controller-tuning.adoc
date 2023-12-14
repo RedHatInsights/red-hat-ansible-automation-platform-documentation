@@ -1,0 +1,13 @@
+[id="controller-tuning"]
+
+= {ControllerNameStart} tuning
+
+You can configure many {ControllerName} settings by using the {ControllerName} UI, API, and file based settings including:
+
+* Live events in the {ControllerName} UI
+* Job event processing
+* Control and execution node capacity 
+* Instance group and container group capacity
+* Task management (job scheduling)
+* Internal cluster routing
+* Web server tuning

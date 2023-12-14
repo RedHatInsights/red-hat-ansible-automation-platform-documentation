@@ -1,0 +1,10 @@
+[id="ref-controller-node-types"]
+
+= Types of nodes in {ControllerName}
+
+You can configure four types of nodes in an {ControllerName} deployment: 
+
+* Control nodes
+* Hybrid nodes
+* Execution nodes
+* Hop nodes
