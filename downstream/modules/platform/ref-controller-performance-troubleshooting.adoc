@@ -5,12 +5,12 @@
 *Users experience many request timeouts (504 or 503 errors), or in general high API latency. In the UI, clients face slow login and long wait times for pages to load. What system is the likely culprit?*
 
 * If these issues occur only on login, and you use external authentication, the problem is likely with the integration of your external authentication provider. See xref:controller-set-up-enterprise-authentication[Setting up enterprise authentication] or seek Red Hat Support.
-* For other issues with timeouts or high API latency, see xref:ref-controller-web-server-tuning[Web server tuning].
+* For other issues with timeouts or high API latency, see xref:ref-controller-web-service-tuning[Web server tuning].
 
 *Long wait times for job output to load.*
 
-* Job output streams from the execution node where the ansible-playbook is actually run to the associated control node. Then the callback receiver serializes this data and writes it to the database. Relevant settings to observe and tune can be found in xref:con-controller-job-events-processing[Job Event Processing (Callback Receiver) Settings] and xref:ref-controller-database-settings[PostgreSQL database configuration and maintenance for {ControllerName}].
-* In general, to resolve this symptom it is important to observe the CPU and memory use of the control nodes. If CPU or memory use is very high, you can either horizontally scale the control plane by deploying more virtual machines to be control nodes naturally spreads out work more, or to modify the number of jobs a control node will manage at a time. For more information, see xref:ref-capacity-settings-control-execution[Capacity settings for control and execution nodes ] for more information.
+* Job output streams from the execution node where the ansible-playbook is actually run to the associated control node. Then the callback receiver serializes this data and writes it to the database. Relevant settings to observe and tune can be found in xref:ref-controller-settings-job-events[Settings for managing job event processing] and xref:ref-controller-database-settings[PostgreSQL database configuration and maintenance for {ControllerName}].
+* In general, to resolve this symptom it is important to observe the CPU and memory use of the control nodes. If CPU or memory use is very high, you can either horizontally scale the control plane by deploying more virtual machines to be control nodes naturally spreads out work more, or to modify the number of jobs a control node will manage at a time. For more information, see xref:ref-controller-settings-control-execution-nodes[Capacity settings for control and execution nodes] for more information.
 
 *What can I do to increase the number of jobs that {ControllerName} can run concurrently?*
 
@@ -18,7 +18,7 @@
 ** *Waiting for “dependencies” to finish*: this includes project updates and inventory updates when “update on launch” behavior is enabled.
 ** *The “allow_simultaneous” setting of the job template*: if multiple jobs of the same job template are in “pending” status, check the “allow_simultaneous” setting of the job template (“Concurrent Jobs” checkbox in the UI). If this is not enabled, only one job from a job template can run at a time.
 ** *The “forks” value of your job template*: the default value is 5. The amount of capacity required to run the job is roughly the forks value (some small overhead is accounted for). If the forks value is set to a very large number, this will limit what nodes will be able to run it.
-** *Lack of either control or execution capacity*: see “awx_instance_remaining_capacity” metric from the application metrics available on /api/v2/metrics. See xref:con-controller-monitor-controller[Monitoring {ControllerName}] for more information about how to monitor metrics. See xref:ref-controller-capacity-planning[Capacity planning for deploying {ControllerName}] for information on how to plan your deployment to handle the number of jobs you are interested in.
+** *Lack of either control or execution capacity*: see “awx_instance_remaining_capacity” metric from the application metrics available on /api/v2/metrics. See xref:ref-controller-metrics-monitoring[Metrics for monitoring {ControllerName} application] for more information about how to monitor metrics. See xref:ref-controller-capacity-planning[Capacity planning for deploying {ControllerName}] for information on how to plan your deployment to handle the number of jobs you are interested in.
 
 *Jobs run more slowly on {ControllerName} than on a local machine.*
 
