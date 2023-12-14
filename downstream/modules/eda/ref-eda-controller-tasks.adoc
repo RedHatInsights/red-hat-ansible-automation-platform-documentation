@@ -1,8 +1,8 @@
 [id="eda-controller-tasks"]
 
-//= EDA controller tasks
+= {EDAcontroller} tasks
 
-Depending on your role, you can use Event-Driven Ansible controller for any of the following tasks:
+Depending on your role, you can use {EDAcontroller} for any of the following tasks:
 
 * Configuring a new project
 * Setting up a new decision environment

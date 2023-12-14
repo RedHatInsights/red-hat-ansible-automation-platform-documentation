@@ -2,38 +2,41 @@
 
 [id="accessing-control-auto-hub-eda-control_{context}"]
 
-= Accessing controller, automation hub, and {EDAName} controller
+= Accessing {ControllerName}, {HubName}, and {EDAcontroller}
 
 [role="_abstract"]
 
 
-Once the installation completes, these are the default protocol and ports used:
+After the installation completes, these are the default protocol and ports used:
 
 * https protocol
 
-* Port 443 for controller
+* Port 443 for {ControllerName}
 
-* Port 444 for automation hub
+* Port 444 for {HubName}
 
-* Port 445 for EDA controller
+* Port 445 for {EDAcontroller}
 
 These can be changed. Consult the *README.md* for further details. It is recommended that you leave the defaults unless you need to change them due to port conflicts or other factors.
 
-NOTE: Port 445 has been known to be blocked by some ISPs. If port 445 is blocked, please refer to the *README.md* file for more information on changing port values. 
+[NOTE]
+====
+Port 445 has been known to be blocked by some ISPs. If port 445 is blocked, refer to the *README.md* file for more information on changing port values.  
+====
 
-.Accessing Automation Controller UI
+.Accessing {ControllerName} UI
 
-The automation controller UI is available by default at:
+The {ControllerName} UI is available by default at:
 
 ----
 https://<your_rhel_host>:443
 ----
 
-Login as the admin user with the password you created for *controller_admin_password*.
+Log in as the admin user with the password you created for *controller_admin_password*.
 
 If you supplied the license manifest as part of the installation, the {PlatformNameShort} dashboard is displayed. If you did not supply a license file, the *Subscription* screen is displayed where you must supply your license details. This is documented here: link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_operations_guide/assembly-aap-activate[Chapter 1. Activating Red Hat Ansible Automation Platform]. 
 
-.Accessing {HubNameStart} UI
+.Accessing {HubName} UI
 
 The {HubName} UI is available by default at:
 
@@ -41,7 +44,7 @@ The {HubName} UI is available by default at:
 https://<hub node>:444
 ----
 
-Login as the admin user with the password you created for *hub_admin_password*.
+Log in as the admin user with the password you created for *hub_admin_password*.
 
 
 .Accessing {EDAName} UI
@@ -51,4 +54,4 @@ The {EDAName} UI is available by default at:
 https://<eda node>:445
 ----
 
-Login as the admin user with the password you created for *eda_admin_password*.
+Log in as the admin user with the password you created for *eda_admin_password*.
