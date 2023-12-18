@@ -5,7 +5,7 @@
 OpenID Connect (OIDC) uses the OAuth 2.0 framework. 
 It enables third-party applications to verify the identity and obtain basic end-user information. 
 The main difference between OIDC and SMAL is that SAML has a service provider (SP)-to-IdP trust relationship, whereas OIDC establishes the trust with the channel (HTTPS) that is used to obtain the security token. 
-To obtain the credentials needed to setup OIDC with {ControllerName}, see the documentation from the IdP of your choice that has OIDC support.
+To obtain the credentials needed to set up OIDC with {ControllerName}, see the documentation from the IdP of your choice that has OIDC support.
 
 .Procedure
 
@@ -20,7 +20,7 @@ To obtain the credentials needed to setup OIDC with {ControllerName}, see the do
 +
 [NOTE]
 ====
-Team and organization mappings for OIDC is currently not supported. 
+Team and organization mappings for OIDC are currently not supported. 
 The OIDC adapter does authentication only and not authorization. 
 It is only capable of authenticating whether this user is who they say they are. 
 It does not authorize what this user is enabled to do.

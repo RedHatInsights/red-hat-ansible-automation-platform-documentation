@@ -9,4 +9,4 @@ To reduce the overhead of displaying live events in the UI, administrators can c
 * Disable live streaming events.
 * Reduce the number of events shown per second or before truncating or hiding events in the UI.
 
-When you disable live streaming of events, they are only loaded on hard refresh to a job's output detail page. When you reduce the number of events shown per second, this limits the overhead of showing live events, but still provides lives updates in the UI without a hard refresh.
+When you disable live streaming of events, they are only loaded on hard refresh to a job's output detail page. When you reduce the number of events shown per second, this limits the overhead of showing live events, but still provides live updates in the UI without a hard refresh.

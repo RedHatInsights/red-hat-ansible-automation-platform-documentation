@@ -31,7 +31,7 @@ image:instances_create_details.png[Create Instance details]
 +
 [NOTE]
 ====
-The proceeding steps are intended to be run from any computer that has SSH access to the newly created instance. 
+The following steps are to be run from any computer that has SSH access to the newly created instance. 
 It should not be run from a machine that is part of the {PlatformNameShort} deployment.
 ====
 +
@@ -44,7 +44,7 @@ The install bundle contains YAML files, certificates, and keys that are used in 
 . Before running the `ansible-playbook` command, edit the following fields in the `inventory.yml` file:
 
 * `ansible_user` with the username running the installation
-* `ansible_ssh_private_key_file` to contain the filename of the private key used to connect to the instance
+* `ansible_ssh_private_key_file` to contain the filename of the private key used to connect to the instance:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----

@@ -4,6 +4,6 @@
 
 The callback receiver processes all the output of jobs and writes this output as job events to the {ControllerName} database. The callback receiver has a pool of workers that processes events in batches. The number of workers automatically increases with the number of CPU available on an instance.
 
-Administrators can override the number of callback receiver workers with the setting `JOB_EVENT_WORKERS`. Do no set more than 1 worker per CPU, and there must be at least 1 worker. Greater values have more workers available to clear the Redis queue as events stream to the {ControllerName}, but can compete with other processes such as the web server for CPU seconds, uses more database connections (1 per worker), and can reduce the batch size of events each worker commits.
+Administrators can override the number of callback receiver workers with the setting `JOB_EVENT_WORKERS`. Do not set more than 1 worker per CPU, and there must be at least 1 worker. Greater values have more workers available to clear the Redis queue as events stream to the {ControllerName}, but can compete with other processes such as the web server for CPU seconds, uses more database connections (1 per worker), and can reduce the batch size of events each worker commits.
 
 Each worker builds up a buffer of events to write in a batch. The default amount of time to wait before writing a batch is 1 second. This is controlled by the `JOB_EVENT_BUFFER_SECONDS` setting. Increasing the amount of time the worker waits between batches can result in larger batch sizes.

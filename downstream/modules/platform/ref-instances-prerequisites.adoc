@@ -5,7 +5,7 @@
 * Ensure that you have the minimum requirements for the RHEL virtual machine before proceeding. 
 For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[{PlatformName} system requirements].
 * RHEL nodes must properly be subscribed to.
-* RHEL subscription and with *baseos* and *appstream* repositories must be enabled.
+* RHEL subscription with *baseos* and *appstream* repositories must be enabled.
 * {PlatformNameShort} subscriptions and the proper {PlatformName} channel must be enabled:
 +
 [literal, options="nowrap" subs="+attributes"]

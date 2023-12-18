@@ -27,7 +27,7 @@ When the application is registered, GitHub displays the Client ID and Client Sec
 . Click btn:[Edit] to configure GitHub Enterprise Team settings.
 . In the *GitHub Enterprise Team URL* field, enter the hostname of the GitHub Enterprise team instance, for example, https://github.teamexample.com.
 . In the *GitHub Enterprise Team API URL* field, enter the API URL of the GitHub Enterprise team instance, for example,
-https://github.teamexample.com/api/v3
+https://github.teamexample.com/api/v3.
 . Copy and paste GitHub's Client ID into the *GitHub Enterprise Team OAuth2 Key* field.
 . Copy and paste GitHub's Client Secret into the *GitHub Enterprise Team OAuth2 Secret* field.
 . Copy and paste GitHub's team ID in the *GitHub Enterprise Team ID* field.

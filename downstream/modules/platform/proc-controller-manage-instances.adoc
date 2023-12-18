@@ -73,7 +73,7 @@ image:instances_health_check.png[Health Check]
 Health checks are run asynchronously, and it can take up to a minute for the instance status to update, even with a refresh. 
 The status might or might not change after the health check. 
 On the *Details* page, a clock icon displays next to the last known health check date and time stamp, if the health check task is running.
-+
+
 image:instances_health_check_pending.png[Health check pending]
 ====
 

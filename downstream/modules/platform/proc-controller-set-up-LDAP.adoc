@@ -20,7 +20,7 @@ If prompted, use your Red Hat customer credentials to login.
 
 . Create a user in LDAP that has access to read the entire LDAP structure.
 . Use the `ldapsearch` command to test if you can make successful queries to the LDAP server.
-You can install this tool from {ControllerNames}'s system command line, and by using other Linux and OSX systems.
+You can install this tool from {ControllerName}'s system command line, and by using other Linux and OSX systems.
 +
 .Example
 +

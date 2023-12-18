@@ -172,7 +172,7 @@ To avoid this, you can remove (or add) administrator privileges based on SAML ma
 ====
 +
 . Optional: Provide the *SAML Organization Map*. 
-For more information, see see xref:ref-controller-organization-mapping[Organization mapping] and xref:ref-controller-team-mapping[Team mapping].
+For more information, see xref:ref-controller-organization-mapping[Organization mapping] and xref:ref-controller-team-mapping[Team mapping].
 . You can configure {ControllerName} to look for particular attributes that contain Team and Organization membership to associate with users when they log into {ControllerName}. 
 The attribute names are defined in the *SAML Organization Attribute Mapping* and the *SAML Team Attribute Mapping* fields.
 +
@@ -296,7 +296,7 @@ For more information, see Python's SAML link:https://python-social-auth.readthed
 * The *SAML User Flags Attribute Mapping* field enables you to map SAML roles and attributes to special user flags. 
 The following attributes are valid in this field:
 ** `is_superuser_role`: Specifies one or more SAML roles which grants a user the superuser flag.
-** `is_superuser_attr`: Specifies a SAML attribute which grant a user the superuser flag.
+** `is_superuser_attr`: Specifies a SAML attribute which grants a user the superuser flag.
 ** `is_superuser_value`: Specifies one or more values required for `is_superuser_attr` that is required for the user to be a superuser.
 ** `remove_superusers`: Boolean indicating if the superuser flag should be removed for users or not. 
 This defaults to `true`. 

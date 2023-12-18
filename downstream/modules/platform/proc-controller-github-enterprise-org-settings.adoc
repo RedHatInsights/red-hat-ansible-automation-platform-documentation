@@ -25,7 +25,7 @@ When the application is registered, GitHub displays the Client ID and Client Sec
 
 . Click btn:[Edit] to configure GitHub Enterprise Organization settings.
 . In the *GitHub Enterprise Organization URL* field, enter the hostname of the GitHub Enterprise Organization instance, for example, https://github.orgexample.com.
-. In the *GitHub Enterprise Organization API URL* field, enter the API URL of the GitHub Enterprise Organiztion instance, for example, https://github.orgexample.com/api/v3
+. In the *GitHub Enterprise Organization API URL* field, enter the API URL of the GitHub Enterprise Organization instance, for example, https://github.orgexample.com/api/v3.
 . Copy and paste GitHub's Client ID into the *GitHub Enterprise Organization OAuth2 Key* field.
 . Copy and paste GitHub's Client Secret into the *GitHub Enterprise Organization OAuth2 Secret* field.
 . Enter the name of your GitHub Enterprise organization, as used in your organization's URL, for example, https://github.com/<yourorg>/ in the *GitHub Enterprise Organization Name* field.

@@ -23,7 +23,7 @@ This setting ensures external users cannot create their own tokens.
 If you enable then disable it, any tokens created by external users in the meantime will still exist, and are not automatically revoked.
 ====
 
-Alternatively, to revoke oauth 2 tokens, you can use the `manage` utility, see xref:ref-controller-revoke-oauth2-token[Revoke oauth2 tokens].
+Alternatively, to revoke OAuth2 tokens, you can use the `manage` utility, see xref:ref-controller-revoke-oauth2-token[Revoke oauth2 tokens].
 
 This setting can be configured at the system-level in the UI:
 

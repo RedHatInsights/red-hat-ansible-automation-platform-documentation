@@ -13,7 +13,7 @@ If the license does not permit multiple organizations, the team is always assign
 
 * *users*: None, True/False, string or list/tuple of strings.
 
-*** If *None*, team members are not be updated.
+*** If *None*, team members are not updated.
 *** If *True*, all social authentication users are added as team members.
 *** If *False*, all social authentication users are removed as team members.
 * If a string or list of strings, specifies expressions used to match users, the user is added as a team member if the username or email matches. 
@@ -38,7 +38,7 @@ The modifiers `i` (case-insensitive) and `m` (multi-line) can be specified after
 }
 ----
 
-Team mappings can be specified separately for each account authentication backend, based on which of these you setup. 
+Team mappings can be specified separately for each account authentication backend, based on which of these you set up. 
 When defined, these configurations take precedence over the preceding global configuration.
 
 [literal, options="nowrap" subs="+attributes"]

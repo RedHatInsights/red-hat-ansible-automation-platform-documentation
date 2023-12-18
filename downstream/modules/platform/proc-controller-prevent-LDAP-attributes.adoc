@@ -15,7 +15,7 @@ Attributes are only updated the first time the user is created.
 .Procedure
 
 . Create a custom file under `/etc/tower/conf.d/custom-ldap.py` with the following contents. 
-If you have multiple nodes, execute it on all nodes.
+If you have multiple nodes, execute it on all nodes:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----

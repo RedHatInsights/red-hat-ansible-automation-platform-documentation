@@ -22,7 +22,7 @@ Refer to link:https://access.redhat.com/documentation/en-us/red_hat_ansible_auto
 When you update a project, refresh the listing to use the latest SCM information. 
 If no inventory sources use a project as an SCM inventory source, then the inventory listing might not be refreshed on update.
 
-For inventories with SCM sources, the *Job Details* page for inventory updates display a status indicator for the project update and the name of the project. 
+For inventories with SCM sources, the *Job Details* page for inventory updates displays a status indicator for the project update and the name of the project. 
 
 The status indicator links to the project update job. 
 

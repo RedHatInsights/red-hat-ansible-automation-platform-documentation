@@ -31,6 +31,6 @@ The *Details* tab displays a description of the schedule and a list of the sched
 [NOTE]
 ====
 Jobs are scheduled in UTC. 
-Repeating jobs that runs at a specific time of day can move relative to a local timezone when Daylight Saving Time shifts occur.
+Repeating jobs that run at a specific time of day can move relative to a local timezone when Daylight Saving Time shifts occur.
 ====
 

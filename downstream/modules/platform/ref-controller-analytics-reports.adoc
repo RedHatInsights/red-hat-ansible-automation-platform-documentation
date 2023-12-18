@@ -6,7 +6,7 @@ Reports from collection are accessible through the {ControllerName} UI if you ha
 By including the analytics view on-prem where it is most convenient, you can access data that can affect your day-to-day work. 
 This data is aggregated from the automation provided on link:https://console.redhat.com[{Console}]. 
 
-Currently available is a view-only version of the Automation Calculator utility that shows a report that represent (possible) savings to the subscriber.
+Currently available is a view-only version of the Automation Calculator utility that shows a report that represents (possible) savings to the subscriber.
 
 image:aa-automation-calculator.png[Automation calculator]
 

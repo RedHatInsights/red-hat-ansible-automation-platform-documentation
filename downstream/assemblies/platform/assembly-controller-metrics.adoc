@@ -11,6 +11,6 @@ This endpoint contains useful information, such as counts of how many active use
 
 You can configure Prometheus to scrape these metrics from {ControllerName} by hitting the {ControllerName} metrics endpoint and storing this data in a time-series database. 
 
-Clients can later use Prometheus in conjunction with other software such as Grafana or Metricsbeat to visualize that data and set up alerts.
+Clients can later use Prometheus in conjunction with other software such as Grafana or Metricbeat to visualize that data and set up alerts.
 
 include::platform/proc-controller-set-up-prometheus.adoc[leveloffset=+1]

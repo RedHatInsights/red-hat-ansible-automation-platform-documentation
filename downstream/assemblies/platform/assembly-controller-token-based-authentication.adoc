@@ -6,7 +6,7 @@ OAuth 2 is used for token-based authentication.
 You can manage OAuth tokens and applications, a server-side representation of API clients used to generate tokens. 
 By including an OAuth token as part of the HTTP authentication header, you can authenticate yourself and adjust the degree of restrictive permissions in addition to the base RBAC permissions. 
 
-For more information on the OAuth2 secification, see link:https://datatracker.ietf.org/doc/html/rfc6749[The OAuth 2.0 Authorization Framework].
+For more information on the OAuth2 specification, see link:https://datatracker.ietf.org/doc/html/rfc6749[The OAuth 2.0 Authorization Framework].
 
 For more information on using the `manage` utility to create tokens, see xref:ref-controller-token-session-management[Token and session management].
 

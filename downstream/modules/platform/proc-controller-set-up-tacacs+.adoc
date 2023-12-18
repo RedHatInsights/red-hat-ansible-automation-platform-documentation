@@ -20,6 +20,6 @@ If you leave this field blank, TACACS+ authentication is disabled.
 * *TACACS+ Secret*: The secret key for TACACS+ authentication server.
 * *TACACS+ Auth Session Timeout*: The session timeout value in seconds. 
 The default is 5 seconds.
-* *TACACS+ Authentication Protocol*: The protocol used by TACACS+ client. 
+* *TACACS+ Authentication Protocol*: The protocol used by the TACACS+ client. 
 The options are *ascii* or *pap*.
 . Click btn:[Save].

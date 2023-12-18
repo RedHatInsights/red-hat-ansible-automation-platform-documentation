@@ -30,7 +30,7 @@ image:configure-controller-auth-google.png[image]
 . Click btn:[Save].
 
 .Verification
-To verify that the authentication was configured correctly, logout of {controllerName}.
-The login screen displays the Google logo to indicate it as a alternate method of logging into {ControllerName}.
+To verify that the authentication was configured correctly, logout of {ControllerName}.
+The login screen displays the Google logo to indicate it as an alternate method of logging into {ControllerName}.
 
 image:configure-controller-auth-google-logo.png[image]

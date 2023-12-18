@@ -2,7 +2,7 @@
 
 = Internal Cluster Routing
 
-{ControllerName} cluster hosts communicate across the network within the cluster. In the inventory file for the traditional VM installer, you can indicate multiple routes to the cluster nodes that are used in different ways:
+{ControllerNameStart} cluster hosts communicate across the network within the cluster. In the inventory file for the traditional VM installer, you can indicate multiple routes to the cluster nodes that are used in different ways:
 
 *Example*:
 
