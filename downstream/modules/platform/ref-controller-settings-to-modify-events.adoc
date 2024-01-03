@@ -6,15 +6,15 @@ If you cannot disable live streaming of events because of their size, reduce the
 
 *Settings available for editing in the UI or API*:
 
-* `EVENT_STDOUT_MAX_BYTES_DISPLAY`: Maximum amount of stdout to display (as measured in bytes). This truncates the size displayed in the UI.
+* `EVENT_STDOUT_MAX_BYTES_DISPLAY`: Maximum amount of `stdout` to display (as measured in bytes). This truncates the size displayed in the UI.
 * `MAX_WEBSOCKET_EVENT_RATE`: Number of events to send to clients per second.
 
 
 *Settings available by using file based settings*:
 
 * `MAX_UI_JOB_EVENTS`: Number of events to display. This setting hides the rest of the events in the list. 
-* `MAX_EVENT_RES_DATA`: The maximum size of the ansible callback event's "res" data structure.The "res" is the full "result" of the module. When the maximum size of ansible callback events is reached, then the remaining output will be truncated. Default value is 700000 bytes.
-* `LOCAL_STDOUT_EXPIRE_TIME`: The amount of time before a stdout file is expired and removed locally.
+* `MAX_EVENT_RES_DATA`: The maximum size of the ansible callback event's "res" data structure. The "res" is the full "result" of the module. When the maximum size of ansible callback events is reached, then the remaining output will be truncated. Default value is 700000 bytes.
+* `LOCAL_STDOUT_EXPIRE_TIME`: The amount of time before a `stdout` file is expired and removed locally.
 
 .Additional resources
 For more information on file based settings, see xref:con-controller-additional-settings[Additional settings for {ControllerName}].
