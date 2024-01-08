@@ -47,7 +47,7 @@ For more information, see xref:ref-projects-galaxy-support[Ansible Galaxy Suppor
 = Inventory support for OpenStack
 Dynamic inventory support is available for OpenStack. This enables you to target any of the virtual machines or images running in your OpenStack cloud.
 
-For more information, see xref:con-controller-rbac[Openstack].
+For more information, see xref:proc-controller-inv-source-openstack[Openstack].
 
 = Remote command execution
 When you want to perform a simple task on a few hosts, whether adding a single user, updating a single security vulnerability, or restarting a misbehaving service, {ControllerName} includes remote command execution.

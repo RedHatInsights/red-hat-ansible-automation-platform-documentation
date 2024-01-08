@@ -26,7 +26,7 @@ Exceptions are noted in the following table.
 - Check: Perform a "dry run" of the playbook and report changes that would be made without actually making them.
 Tasks that do not support check mode are missed and do not not report potential changes.
 
-For more information on job types see the link:http://docs.ansible.com/playbooks_special_topics.html[Playbooks: Special Topics] section of the Ansible documentation.| Yes
+For more information on job types see the link:https://docs.ansible.com/ansible-core/2.16/playbook_guide/index.html[Playbooks: Special Topics] section of the Ansible documentation.| Yes
 | Inventory | Choose the inventory to be used with this job template from the inventories available to the logged in user. 
 
 A System Administrator must grant you or your team permissions to be able to use certain inventories in a job template. | Yes. 
@@ -79,7 +79,7 @@ When a label is removed, it is no longer associated with that particular Job or 
 If a label is deleted from a Job Template, it is also deleted from the Job. a| - If selected, even if a default value is supplied, you are prompted when launching to supply additional labels, if needed.
 - You cannot delete existing labels, selecting image:disassociate.png[Disassociate,10,10] only removes the newly added labels, not existing default labels.
 | Variables a| - Pass extra command line variables to the playbook. 
-This is the "-e" or "-extra-vars" command line parameter for ansible-playbook that is documented in the Ansible documentation at link:http://docs.ansible.com/playbooks_variables.html#passing-variables-on-the-command-line[Passing Variables on the Command Line].
+This is the "-e" or "-extra-vars" command line parameter for ansible-playbook that is documented in the Ansible documentation at link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_variables.html#defining-variables-at-runtime[Defining variables at runtime].
 - Provide key or value pairs using either YAML or JSON. 
 These variables have a maximum value of precedence and overrides other variables specified elsewhere. 
 The following is an example value:
@@ -96,7 +96,7 @@ As with core Ansible:
 * a:b:&c means "in a or b but must be in c"
 * a:!b means "in a, and definitely not in b"
 
-For more information see, link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_patterns.html[Patterns: targeting hosts and groups] in the Ansible documentation. | Yes
+For more information, see link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_patterns.html[Patterns: targeting hosts and groups] in the Ansible documentation. | Yes
 | Verbosity | Control the level of output Ansible produces as the playbook executes.
 Choose the verbosity from Normal to various Verbose or Debug settings.
 This only appears in the *details* report view.
@@ -116,7 +116,7 @@ For more information about job slices, see link:https://docs.ansible.com/automat
 | Show Changes | Enables you to see the changes made by Ansible tasks. | Yes
 | Instance Groups | Choose link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instance-groups[Instance Groups] to associate with this job template.
 If the list is extensive, use the image:examine.png[examine,15,15] icon to narrow the options.
-Job template instance groups contribute to the job scheduling criteria, see link:[Job Runtime Behavior] and link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instance-groups-control-where-job-runs[Control Where a Job Runs] for rules.
+Job template instance groups contribute to the job scheduling criteria, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#job-runtime-behavior[Job Runtime Behavior] and link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instance-groups-control-where-job-runs[Control Where a Job Runs] for rules.
 A System Administrator must grant you or your team permissions to be able to use an instance group in a job template.
 Use of a container group requires admin rights. a| - Yes. 
 
@@ -135,7 +135,7 @@ For more information and examples see link:https://docs.ansible.com/ansible/late
 * *Privilege Escalation*: If checked, you enable this playbook to run as an administrator.
 This is the equivalent of passing the `--become` option to the `ansible-playbook` command.
 * *Provisioning Callbacks*: If checked, you enable a host to call back to {ControllerName} through the REST API and invoke the launch of a job from this job template.
-For more information, see link:https://docs.google.com/document/d/1lzlLLP-4eIRPSs4LsHeRoerKHcVWALvGE5uyIXd_rz4/edit[Provisioning Callbacks].
+For more information, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/job_templates.html#ug-provisioning-callbacks[Provisioning Callbacks].
 * *Enable Webhook*: If checked, you turn on the ability to interface with a predefined SCM system web service that is used to launch a job template.
 GitHub and GitLab are the supported SCM systems.
 ** If you enable webhooks, other fields display, prompting for additional information:
