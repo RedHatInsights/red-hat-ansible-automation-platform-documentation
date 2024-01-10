@@ -46,6 +46,7 @@ include::platform/proc-hub-ingress-options.adoc[leveloffset=+2]
 include::platform/proc-access-hub-operator-ui.adoc[leveloffset=+1]
 include::platform/proc-operator-external-db-hub.adoc[leveloffset=+1]
 include::platform/proc-find-delete-PVCs.adoc[leveloffset=+1]
+include::platform/ref-ocp-additional-configs.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
 == Additional resources

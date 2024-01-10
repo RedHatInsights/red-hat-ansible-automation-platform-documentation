@@ -1,0 +1,16 @@
+:_mod-docs-content-type: REFERENCE
+
+[id="ocp-additional-configs_{context}"]
+= Additional configurations
+
+[role="_abstract"]
+
+A collection download count can help you understand collection usage. To add a collection download count to {HubName}, set the following configuration:
+
+-----
+spec:
+  pulp_settings:
+    ansible_collect_download_count: true 
+-----
+
+When `ansible_collect_download_count` is enabled, {HubName} will display a download count by the collection.

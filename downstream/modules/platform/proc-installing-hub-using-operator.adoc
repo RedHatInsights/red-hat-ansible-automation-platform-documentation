@@ -18,7 +18,7 @@ apiVersion: automationhub.ansible.com/v1beta1
 kind: AutomationHub
 metadata:
   name: private-ah                              <1>
-  namespace: ansible-automation-platform
+  namespace: aap
 spec:
   sso_secret: automation-hub-sso                <2>
   pulp_settings:
