@@ -22,3 +22,13 @@ To keep container images, you can set the *container_keep_images* variable to tr
 ----
 $ ansible-playbook -i inventory ansible.containerized_installer.uninstall -e container_keep_images=true
 ----
+
+To keep postgresql databases, you can set the *postgresql_keep_databases* variable to true.
+----
+$ ansible-playbook -i </path/to/inventory> ansible.containerized_installer.uninstall -e postgresql_keep_databases=true
+----
+
+[NOTE] 
+====
+You will have to use the same django secret key values rather than the auto-generated ones.
+====
