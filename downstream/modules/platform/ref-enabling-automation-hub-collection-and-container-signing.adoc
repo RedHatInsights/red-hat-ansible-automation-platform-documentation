@@ -1,0 +1,24 @@
+:_newdoc-version: 2.15.1
+:_template-generated: 2024-01-12
+
+:_mod-docs-content-type: REFERENCE
+
+[id="enabling-automation-hub-collection-and-container-signing_{context}"]
+= Enabling {HubNameStart} collection and container signing
+
+[role="_abstract"]
+Automation hub allows you to sign ansible collections and container images. This feature is not enabled by default, and you must provide the GPG key.
+
+----
+hub_collection_signing=true
+hub_collection_signing_key=/full/path/to/collections/gpg/key
+hub_container_signing=true
+hub_container_signing_key=/full/path/to/containers/gpg/key
+----
+
+When the GPG key is protected by a passphrase, you must provide the passphrase.
+
+----
+hub_collection_signing_pass=<collections gpg key passphrase>
+hub_container_signing_pass=<containers gpg key passphrase>
+----

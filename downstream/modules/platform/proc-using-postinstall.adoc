@@ -29,6 +29,22 @@ controller_license_file=/full_path_to/manifest_file.zip
 controller_postinstall_repo_url=https://your_cac_scm_repo
 controller_postinstall_dir=/full_path_to_where_you_want_the pulled_content_to_reside
 ----
++
+
+. The controller_postinstall_repo_url variable can be used to define the postinstall repository URL which must include authentication information.
+
++
+----
+http(s)://<host>/<repo>.git (public repository without http(s) authentication)
+http(s)://<user>:<password>@<host>:<repo>.git (private repository with http(s) authentication)
+git@<host>:<repo>.git (public/private repository with ssh authentication)
+----
++
+
+[NOTE]
+====
+When using ssh based authentication, the installer does not configure anything for you, so you must configure everything on the installer node.
+====
 
 Definition files use the link:https://console.redhat.com/ansible/automation-hub/namespaces/infra/[infra certified collections]. The link:https://console.redhat.com/ansible/automation-hub/repo/validated/infra/controller_configuration/[controller_configuration] collection is preinstalled as part of the installation and uses the installation controller credentials you supply in the inventory file for access into the {PlatformNameShort} controller. You simply need to give the YAML configuration files. 
 

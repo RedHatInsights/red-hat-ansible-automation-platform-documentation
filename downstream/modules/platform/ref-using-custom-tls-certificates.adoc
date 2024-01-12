@@ -1,0 +1,48 @@
+:_newdoc-version: 2.15.1
+:_template-generated: 2024-01-12
+
+:_mod-docs-content-type: REFERENCE
+
+[id="using-custom-tls-certificates_{context}"]
+= Using custom TLS certificates
+
+[role="_abstract"]
+
+By default, the installer generates TLS certificates and keys for all services which are signed by a custom Certificate Authority (CA). You can provide a custom TLS certificate/key for each service. If that certificate is signed by a custom CA, you must provide the CA TLS certificate and key.
+
+* Certificate Authority
+----
+ca_tls_cert=/full/path/to/tls/certificate
+ca_tls_key=/full/path/to/tls/key
+----
+
+* Automation Controller
+----
+controller_tls_cert=/full/path/to/tls/certificate
+controller_tls_key=/full/path/to/tls/key
+----
+
+* Automation Hub
+----
+hub_tls_cert=/full/path/to/tls/certificate
+hub_tls_key=/full/path/to/tls/key
+----
+
+* Automation EDA
+----
+eda_tls_cert=/full/path/to/tls/certificate
+eda_tls_key=/full/path/to/tls/key
+----
+
+* Postgresql
+----
+postgresql_tls_cert=/full/path/to/tls/certificate
+postgresql_tls_key=/full/path/to/tls/key
+----
+
+* Receptor
+----
+receptor_tls_cert=/full/path/to/tls/certificate
+receptor_tls_key=/full/path/to/tls/key
+----
+

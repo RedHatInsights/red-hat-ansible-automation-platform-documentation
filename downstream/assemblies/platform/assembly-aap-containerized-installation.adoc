@@ -35,7 +35,7 @@ Your system must meet the following minimum system requirements to install and r
 |======================
 | Memory     | 16Gb RAM
 | CPU        | 4 CPU   
-| Disk space | 40Gb    
+| Disk space | 40Gb  
 | Disk IOPs  | 1500    
 |======================
 
@@ -49,6 +49,10 @@ include::platform/proc-downloading-containerized-aap.adoc[leveloffset=+1]
 include::platform/proc-using-postinstall.adoc[leveloffset=+1]
 include::platform/proc-installing-containerized-aap.adoc[leveloffset=+1]
 include::platform/ref-accessing-control-auto-hub-eda-control.adoc[leveloffset=+1]
+include::platform/ref-using-custom-tls-certificates.adoc[leveloffset=+1]
+include::platform/ref-using-custom-receptor-signing-keys.adoc[leveloffset=+1]
+include::platform/ref-enabling-automation-hub-collection-and-container-signing.adoc[leveloffset=+1]
+include::platform/ref-adding-execution-nodes.adoc[leveloffset=+1]
 include::platform/proc-uninstalling-containerized-aap.adoc[leveloffset=+1]
 
 

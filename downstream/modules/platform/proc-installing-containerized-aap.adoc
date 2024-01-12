@@ -16,7 +16,7 @@ For convenience an example inventory file is provided, that you can copy and mod
 There is no default database choice given in the inventory file. You must follow the instructions in the inventory file to make the appropriate choice between an internally provided postgres, or provide your own externally managed and supported database option.
 ====
 
-* Edit the inventory file by replacing the `< >` placeholders with your specific variables, and uncommenting any lines specific to your needs.
+Edit the inventory file by replacing the `< >` placeholders with your specific variables, and uncommenting any lines specific to your needs.
 
 
 ----
@@ -25,7 +25,6 @@ There is no default database choice given in the inventory file. You must follow
 # For all optional variables please consult the included README.md
 
 # This section is for your AAP Controller host(s)
-# If one of these components is not being installed, comment out the <fqdn> line.
 # -------------------------------------------------
 [automationcontroller]
 fqdn_of_your_rhel_host ansible_connection=local
@@ -39,6 +38,11 @@ fqdn_of_your_rhel_host ansible_connection=local
 # -----------------------------------------------------
 [automationeda]
 fqdn_of_your_rhel_host ansible_connection=local
+
+# This section is for your AAP Execution host(s)
+# ------------------------------------------------
+#[execution_nodes]
+#fqdn_of_your_rhel_host
 
 # This section is for the AAP database(s)
 # -----------------------------------------
@@ -59,21 +63,40 @@ registry_username=<your RHN username>
 registry_password=<your RHN password>
 # If using the bundled installer, you need to alter defaults by using:
 #bundle_install=true
-#bundle_dir=</path/to/ansible-automation-platform-containerized-setup-bundle-2.4-1-<arch name>/bundle>
+# The bundle directory must include /bundle in the path
+#bundle_dir=<full path to the bundle directory>
+# To add more decision environment images you need to set the de_extra_images variable
+#de_extra_images=[{'name': 'Custom decision environment', 'image': '<registry>/<namespace>/<image>:<tag>'}]
+# To add more execution environment images you need to set the ee_extra_images variable
+#ee_extra_images=[{'name': 'Custom execution environment', 'image': '<registry>/<namespace>/<image>:<tag>'}]
+# To use custom TLS CA certificate/key you need to set these variables
+#ca_tls_cert=<full path to your TLS CA certificate file>
+#ca_tls_key=<full path to your TLS CA key file>
+
+# AAP Database - optional
+# --------------------------
+# To use custom TLS certificate/key you need to set these variables
+#postgresql_tls_cert=<full path to your TLS certificate file>
+#postgresql_tls_key=<full path to your TLS key file>
 
 # AAP Controller - mandatory
-# ------------------------------
+# --------------------------
 controller_admin_password=<set your own>
 controller_pg_host=fqdn_of_your_rhel_host
 controller_pg_password=<set your own>
 
 # AAP Controller - optional
-# ------------------------------
+# -------------------------
 # To use the postinstall feature you need to set these variables
 #controller_postinstall=true
 #controller_license_file=<full path to your manifest .zip file>
 #controller_postinstall_dir=<full path to your config-as-code directory>
-#controller_postinstall_repo_url=<git based config-as-code source URL>
+# When using config-as-code in a git repository
+#controller_postinstall_repo_url=<url to your config-as-code git repository>
+#controller_postinstall_repo_ref=main
+# To use custom TLS certificate/key you need to set these variables
+#controller_tls_cert=<full path to your TLS certificate file>
+#controller_tls_key=<full path to your TLS key file>
 
 # AAP Automation Hub - mandatory
 # ------------------------------
@@ -83,6 +106,23 @@ hub_pg_password=<set your own>
 
 # AAP Automation Hub - optional
 # -----------------------------
+# To use the postinstall feature you need to set these variables
+#hub_postinstall=true
+#hub_postinstall_dir=<full path to your config-as-code directory>
+# When using config-as-code in a git repository
+#hub_postinstall_repo_url=<url to your config-as-code git repository>
+#hub_postinstall_repo_ref=main
+# To customize the number of worker containers
+#hub_workers=2
+# To use the collection signing feature you need to set these variables
+#hub_collection_signing=true
+#hub_collection_signing_key=<full path to your gpg key file>
+# To use the container signing feature you need to set these variables
+#hub_container_signing=true
+#hub_container_signing_key=<full path to your gpg key file>
+# To use custom TLS certificate/key you need to set these variables
+#hub_tls_cert=<full path to your TLS certificate file>
+#hub_tls_key=<full path to your TLS key file>
 
 # AAP EDA Controller - mandatory
 # ------------------------------
@@ -92,6 +132,25 @@ eda_pg_password=<set your own>
 
 # AAP EDA Controller - optional
 # -----------------------------
+# When using an external controller node unmanaged by the installer.
+#controller_main_url=https://fqdn_of_your_rhel_host
+# To customize the number of default/activation worker containers
+#eda_workers=2
+#eda_activation_workers=2
+# To use custom TLS certificate/key you need to set these variables
+#eda_tls_cert=<full path to your TLS certificate file>
+#eda_tls_key=<full path to your TLS key file>
+
+# AAP Execution Nodes - optional
+# -----------------------------
+#receptor_port=27199
+#receptor_protocol=tcp
+# To use custom TLS certificate/key you need to set these variables
+#receptor_tls_cert=<full path to your TLS certificate file>
+#receptor_tls_key=<full path to your TLS key file>
+# To use custom RSA key pair you need to set these variables
+#receptor_signing_private_key=<full path to your RSA private key file>
+#receptor_signing_public_key=<full path to your RSA public key file>
 ----
 
 Use the following command to install containerized {PlatformNameShort}:

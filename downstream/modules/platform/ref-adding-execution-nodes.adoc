@@ -1,0 +1,30 @@
+:_newdoc-version: 2.15.1
+:_template-generated: 2024-01-12
+
+:_mod-docs-content-type: REFERENCE
+
+[id="adding-execution-nodes_{context}"]
+= Adding execution nodes
+
+[role="_abstract"]
+
+The containerized installer can deploy remote execution nodes. This is handled by the execution_nodes group in the ansible inventory file.
+
+----
+[execution_nodes]
+fqdn_of_your_execution_host
+----
+
+An execution node is by default configured as an execution type running on port 27199 (TCP).
+This can be changed by the following variables:
+
+* receptor_port=27199
+* receptor_protocol=tcp
+* receptor_type=hop
+
+Receptor type value can be either execution or hop, while the protocol is either TCP or UDP. By default, the nodes in the `execution_nodes` group will be added as peers for the controller node. However, you can change the peers configuration by using the `receptor_peers` variable.
+----
+[execution_nodes]
+fqdn_of_your_execution_host
+fqdn_of_your_hop_host receptor_type=hop receptor_peers=’[“fqdn_of_your_execution_host”]’
+----
