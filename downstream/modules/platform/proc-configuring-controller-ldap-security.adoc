@@ -4,7 +4,30 @@
 Use this procedure to configure LDAP security for your {ControllerName}.
 
 .Procedure
-. Under *LDAP Certificate Authority Trust Bundle* click the drop-down menu and select a secret.
+. If you do not have a `ldap_cacert_secret`, you can create one with the following command:
++
+----
+$ oc create secret generic <resourcename>-custom-certs \
+    --from-file=ldap-ca.crt=<PATH/TO/YOUR/CA/PEM/FILE>  \ <1>
+----
+<1> Modify this to point to where your CA cert is stored.
++
+This will create a secret that looks like this:
++
+----
+$ oc get secret/mycerts -o yaml
+apiVersion: v1
+data:
+  ldap-ca.crt: <mysecret> <1>
+kind: Secret
+metadata:
+  name: mycerts
+  namespace: awx
+type: Opaque
+----
+<1> Automation controller looks for the data field `ldap-ca.crt` in the specified secret when using the `ldap_cacert_secret`.
++
+. Under *LDAP Certificate Authority Trust Bundle* click the drop-down menu and select your `ldap_cacert_secret`.
 . Under *LDAP Password Secret*, click the drop-down menu and select a secret.
 . Under *EE Images Pull Credentials Secret*, click the drop-down menu and select a secret.
 . Under *Bundle Cacert Secret*, click the drop-down menu and select a secret.
