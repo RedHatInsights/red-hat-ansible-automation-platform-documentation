@@ -26,7 +26,7 @@ Exceptions are noted in the following table.
 - Check: Perform a "dry run" of the playbook and report changes that would be made without actually making them.
 Tasks that do not support check mode are missed and do not not report potential changes.
 
-For more information on job types see the link:https://docs.ansible.com/ansible-core/2.16/playbook_guide/index.html[Playbooks: Special Topics] section of the Ansible documentation.| Yes
+For more information on job types see the link:https://docs.ansible.com/ansible/latest/playbook_guide/index.html[Playbooks] section of the Ansible documentation.| Yes
 | Inventory | Choose the inventory to be used with this job template from the inventories available to the logged in user. 
 
 A System Administrator must grant you or your team permissions to be able to use certain inventories in a job template. | Yes. 
@@ -37,7 +37,7 @@ Inventory prompts show up as its own step in a subsequent prompt window.
 Specify the overriding branch to use in your job run. 
 If left blank, the specified SCM branch (or commit hash or tag) from the project is used.
 
-For more information, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#ug-job-branching[Job branch overriding]. | Yes
+For more information, see xref:controller-job-branch-overriding[Job branch overriding]. | Yes
 | Execution Environment | Select the container image to be used to run this job.
 A project must be selected before you can select an execution environment. | Yes. 
 
@@ -106,7 +106,7 @@ Debug logging is exceedingly verbose and includes information on SSH operations 
 Verbosity `5` causes {ControllerName} to block heavily when jobs are running, which could delay reporting that the job has finished (even though it has) and can cause the browser tab to lock up.| Yes
 | Job Slicing | Specify the number of slices you want this job template to run.
 Each slice runs the same tasks against a portion of the inventory.
-For more information about job slices, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/job_slices.html#ug-job-slice[Job Slicing]. | Yes
+For more information about job slices, see xref:controller-job-slicing[Job Slicing]. | Yes
 | Timeout a| This enables you to specify the length of time (in seconds) that the job may run before it is canceled. Consider the following for setting the timeout value:
 
 - There is a global timeout defined in the settings which defaults to 0, indicating no timeout.
@@ -114,9 +114,9 @@ For more information about job slices, see link:https://docs.ansible.com/automat
 - A timeout of 0 on a job template defaults the job to the global timeout (which is no timeout by default).
 - A positive timeout sets the timeout for that job template. | Yes
 | Show Changes | Enables you to see the changes made by Ansible tasks. | Yes
-| Instance Groups | Choose link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instance-groups[Instance Groups] to associate with this job template.
+| Instance Groups | Choose link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_administration_guide/controller-instance-and-container-groups[Instance and Container Groups] to associate with this job template.
 If the list is extensive, use the image:examine.png[examine,15,15] icon to narrow the options.
-Job template instance groups contribute to the job scheduling criteria, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#job-runtime-behavior[Job Runtime Behavior] and link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instance-groups-control-where-job-runs[Control Where a Job Runs] for rules.
+Job template instance groups contribute to the job scheduling criteria, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_administration_guide/controller-instance-and-container-groups#controller-job-runtime-behavior[Job Runtime Behavior] and link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_administration_guide/controller-instance-and-container-groups#controller-control-job-run[Control Where a Job Runs] for rules.
 A System Administrator must grant you or your team permissions to be able to use an instance group in a job template.
 Use of a container group requires admin rights. a| - Yes. 
 
