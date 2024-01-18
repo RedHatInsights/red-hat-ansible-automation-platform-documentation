@@ -1,0 +1,19 @@
+[id="ref-ldap-referrals"]
+
+== LDAP referrals
+
+If your LDAP servers return referrals, you might have to disable referrals to successfully authenticate using LDAP on {PrivateHubName}.
+
+If not, the following message is returned:
+
+----
+Operation unavailable without authentication
+----
+
+To disable the LDAP REFERRALS lookup, set:
+
+----
+GALAXY_LDAP_DISABLE_REFERRALS = true
+----
+
+This sets `AUTH_LDAP_CONNECTIONS_OPTIONS` to the correct option.
