@@ -2,8 +2,8 @@
 
 = Users - Roles
 
-From the *Users > Details* page, select *Organizations* tab to display the set of roles assigned to this user. 
-These provide the ability to read, modify, and administer projects, inventories, job templates, and other elements.
+From the *Users > Details* page, select the *Roles* tab to display the set of roles assigned to this user. 
+These offer the ability to read, change, and administer projects, inventories, job templates, and other elements.
 
 You can sort or search the list by *Name*, *Type*, or *Role*.
 
