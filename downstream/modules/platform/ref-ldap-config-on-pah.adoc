@@ -45,38 +45,39 @@ automationhub_ldap_group_search_base_dn = "ou=people,dc=ansible,dc=com"
 The following variables will be set with default values, unless you set them with other options.
 
 -----
-auth_ldap_user_search_scope= `SUBTREE'
-auth_ldap_user_search_filter= `(uid=%(user)s)`
+auth_ldap_user_search_scope= 'SUBTREE'
+auth_ldap_user_search_filter= '(uid=%(user)s)'
 auth_ldap_group_search_scope= 'SUBTREE'
-auth_ldap_group_search_filter= '(objectClass=Group)`
+auth_ldap_group_search_filter= '(objectClass=Group)'
 auth_ldap_group_type_class= 'django_auth_ldap.config:GroupOfNamesType'
 -----
 
 ====
 
-. Optional: Set up extra parameters in your {PrivateHubName} such as user groups, super user access, or mirroring. Go to xref:ref-ldap-config-on-pah_platform-install-scenario#configuring_extra_ldap_parameters[Configuring extra LDAP parameters] to complete this optional step.
+. Optional: Set up extra parameters in your {PrivateHubName} such as user groups, superuser access, or mirroring. Go to xref:ref-ldap-config-on-pah_platform-install-scenario#configuring_extra_ldap_parameters[Configuring extra LDAP parameters] to complete this optional step.
 
 
 == Configuring extra LDAP parameters
 
-If you plan to set up super user access, user groups, mirroring or other extra parameters, you can create a yaml file that comprises them in your `ldap_extra_settings` dictionary.
+If you plan to set up superuser access, user groups, mirroring or other extra parameters, you can create a YAML file that comprises them in your `ldap_extra_settings` dictionary.
 
 .Procedure
 
-. Create a yaml file that contains `ldap_extra_settings`. 
+. Create a YAML file that contains `ldap_extra_settings`. 
 * Example:
 +
 ----
 #ldapextras.yml
 ---
 ldap_extra_settings:
-  AUTH_LDAP_USER_ATTR_MAP: '{"first_name": "givenName", "last_name": "sn", "email": "mail"}'
+ <LDAP_parameter>: <Values>
+
 ...
 ----
 +
-Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
+. Add any parameters that you require for your setup. The following examples  describe the LDAP parameters that you can set in `ldap_extra_settings`:
 
-. Use this example to set up a superuser flag based on membership in an LDAP group.
+* Use this example to set up a superuser flag based on membership in an LDAP group.
 +
 ----
 #ldapextras.yml
@@ -86,9 +87,8 @@ ldap_extra_settings:
 ...
 ----
 +
-Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
 
-. Use this example to set up superuser access.
+* Use this example to set up superuser access.
 +
 ----
 #ldapextras.yml
@@ -98,9 +98,7 @@ ldap_extra_settings:
 ...
 ----
 +
-Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
-
-. Use this example to mirror all LDAP groups you belong to.
+* Use this example to mirror all LDAP groups you belong to.
 +
 ----
 #ldapextras.yml
@@ -110,9 +108,7 @@ ldap_extra_settings:
 ...
 ----
 +
-Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
-
-. Use this example to map LDAP user attributes (such as first name, last name, and email address of the user).
+* Use this example to map LDAP user attributes (such as first name, last name, and email address of the user).
 +
 ----
 #ldapextras.yml
@@ -122,10 +118,17 @@ ldap_extra_settings:
 ...
 ----
 +
-Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
-
-. Use the following examples to grant or deny access based on LDAP group membership:
-.. To grant {PrivateHubName} access (for example, members of the `cn=pah-nosoupforyou,ou=groups,dc=example,dc=com` group):
+* Use the following examples to grant or deny access based on LDAP group membership:
+** To grant {PrivateHubName} access (for example, members of the `cn=pah-nosoupforyou,ou=groups,dc=example,dc=com` group):
++
+----
+#ldapextras.yml
+---
+ldap_extra_settings:
+  AUTH_LDAP_REQUIRE_GROUP: 'cn=pah-nosoupforyou,ou=groups,dc=example,dc=com'
+...
+----
+** To deny {PrivateHubName} access (for example, members of the `cn=pah-nosoupforyou,ou=groups,dc=example,dc=com` group):
 +
 ----
 #ldapextras.yml
@@ -134,19 +137,7 @@ ldap_extra_settings:
   AUTH_LDAP_DENY_GROUP: 'cn=pah-nosoupforyou,ou=groups,dc=example,dc=com'
 ...
 ----
-.. To deny {PrivateHubName} access (for example, members of the `cn=pah-nosoupforyou,ou=groups,dc=example,dc=com` group):
-+
-----
-#ldapextras.yml
----
-ldap_extra_settings:
-  AUTH_LDAP_DENY_GROUP: 'cn=pah-nosoupforyou,ou=groups,dc=example,dc=com'
-...
-----
-+
-.. Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
-
-. Use this example to enable LDAP debug logging.
+* Use this example to enable LDAP debug logging.
 +
 ----
 #ldapextras.yml
@@ -156,14 +147,11 @@ ldap_extra_settings:
 ...
 ----
 +
-Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
-+
 [NOTE]
 ====
 If it is not practical to re-run `setup.sh` or if debug logging is enabled for a short time, you can add a line containing `GALAXY_LDAP_LOGGING: True` manually to the `/etc/pulp/settings.py` file on {PrivateHubName}. Restart both `pulpcore-api.service` and `nginx.service` for the changes to take effect. To avoid failures due to human error, use this method only when necessary.
 ====
-+
-. Use this example to configure LDAP caching by setting the variable `AUTH_LDAP_CACHE_TIMEOUT`.
+* Use this example to configure LDAP caching by setting the variable `AUTH_LDAP_CACHE_TIMEOUT`.
 +
 ----
 #ldapextras.yml
@@ -172,8 +160,6 @@ ldap_extra_settings:
   AUTH_LDAP_CACHE_TIMEOUT: 3600
 ...
 ----
-+
-Then run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
-
+. Run `setup.sh -e @ldapextras.yml` during {PrivateHubName} installation.
 .Verification
 To verify you have set up correctly, confirm you can view all of your settings in the `/etc/pulp/settings.py` file on your {PrivateHubName}.
