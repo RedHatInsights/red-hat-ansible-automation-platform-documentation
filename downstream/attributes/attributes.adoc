@@ -25,6 +25,8 @@
 // Automation Mesh
 :AutomationMesh: automation mesh
 :AutomationMeshStart: Automation mesh
+:ReceptorRpm: receptor rpm/container
+:RunnerRpm: Ansible-runner rpm/container
 
 // Operators
 :OperatorPlatform: Ansible Automation Platform Operator
@@ -77,10 +79,7 @@
 :ControllerAG: Automation controller Administration Guide
 :Analytics: Automation Analytics
 
-// Automation Mesh
-:MeshName: automation mesh
-:ReceptorRpm: receptor rpm/container
-:RunnerRpm: Ansible-runner rpm/container
+
 
 // Execution environments
 :ExecEnvNameStart: Automation execution environments
