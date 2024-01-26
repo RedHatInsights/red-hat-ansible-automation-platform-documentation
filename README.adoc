@@ -20,15 +20,25 @@ Documentation follows a link:https://redhat-documentation.github.io/modular-docs
 ....
 .
 |
-├── common
 ├── downstream
+│   ├── aap-common
+│   │   ├── assembly-aap-common.adoc
+│   │   ├── external-site-disclaimer.adoc
+│   │   ├── making-open-source-more-inclusive.adoc
+│   │   └── providing-feedback.adoc
+│   ├── archive
+│   │   ├── archived-aap-common
+│   │   ├── archived-assemblies
+│   │   ├── archived-images
+│   │   ├── archived-modules
+│   │   └── archived-titles
 │   ├── assemblies
 │   │   ├── platform-component1
 │   │   └── platform-component2
-│   │        ├── assembly-title-1.adoc
-│   │        ├── assembly-title-2.adoc
-│   │        └── modules -> ../modules/
+│   │       ├── assembly-title-1.adoc
+│   │       └── assembly-title-2.adoc
 │   ├── attributes
+│   │   └── attributes.adoc
 │   ├── images
 │   │   ├── image-1.png
 │   │   └── image-2.png
@@ -37,32 +47,37 @@ Documentation follows a link:https://redhat-documentation.github.io/modular-docs
 │   │   └── platform-component2
 │   │       ├── module-title-1.adoc
 │   │       └── module-title-2.adoc
+|   ├── snippets
+|   ├── templates
 |   ├── titles
 │   │   ├── platform-component1
 │   │   └── platform-component2
 │   │        ├── title-1.adoc
-│   │        ├── title-2.adoc
-│   │        └── modules -> ../modules/
-├── release-notes
+│   │        └── title-2.adoc
+├── titles/release-notes-gcp
+├── LICENSE.txt
 └── README.adoc
+
 ....
 
-Top-level directories are:
-
-* `common`: Contains modules and attributes that are shared across Red Hat Ansible Automation branches.
-You should modify content in the `common` folder on the `main` branch only.
+The top-level directories are:
 
 * `downstream`: Contains Red Hat Ansible Automation Platform modules, assemblies, and titles in these sub-folders:
 
-** `attributes`: A common directory for attribute files.
+** `aap-common`: Contains modules and attributes that are shared across Red Hat Ansible Automation branches.
+You should modify content in the `common` folder on the `main` branch only.
+** `archive`: A directory for archived files and images.
 ** `assemblies`: A directory for all assemblies, each in its own AsciiDoc file.
 Assemblies are collections of modules linked together.
 Platform assemblies are grouped by component.
+** `attributes`: A common directory for attribute files.
 ** `images`: A directory for all images and other digital content.
 ** `modules`: A directory for all modules, each one in its own AsciiDoc file.
 Platform modules are grouped by component.
+** `snippets`: A directory for all snippets created.
+** `templates`: A directory for templates used by controller, hub, and operator. 
 ** `titles`: A directory for titles (information units, e.g, install guide, user guide).
-Contains `master.adoc` files that and symbolic links to the `assemblies` and `modules` directories.
+Contains `master.adoc` files and symbolic links to the `assemblies` and `modules` directories.
 Platform titles are grouped by component or feature.
 
 * `release-notes`: Contains release note content.
