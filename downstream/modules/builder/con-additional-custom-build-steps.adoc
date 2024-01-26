@@ -2,9 +2,9 @@
 
 = Additional custom build steps
 
-You can specify custom build commands for any build phase in the `additional_build_steps` section of the definition file.
+You can specify custom build commands for any build phase in the `additional_build_steps` section of the definition file. This allows fine-grained control over the build phases.
 
-Use `prepend_` and `append_` commands to add commands to the `Containerfile` which will run either before or after the main build steps are executed. The commands must conform to any rules required for the runtime system.
+Use the `prepend_` and `append_` commands to add directives to the `Containerfile` that run either before or after the main build steps are executed. The commands must conform to any rules required for the runtime system.
 
 See the following table for a list of values that can be used in `additional_build_steps`:
 
@@ -25,10 +25,10 @@ See the following table for a list of values that can be used in `additional_bui
 | Allows you to insert after building the galaxy image.
 
 | `prepend_builder`
-| Allows you to insert commands before building the builder image.
+| Allows you to insert commands before building the Python builder image.
 
 | `append_builder`
-| Allows you to insert commands after building the builder image.
+| Allows you to insert commands after building the Python builder image.
 
 | `prepend_final`
 | Allows you to insert before building the final image.
@@ -38,10 +38,8 @@ See the following table for a list of values that can be used in `additional_bui
 
 |===
 
-The syntax for `additional_build_steps` supports both of the following:
+The syntax for `additional_build_steps` supports both multi-line strings and lists. See the following examples:
 
-* a multi-line string
-+
 .A multi-line string entry
 [example]
 ====
@@ -52,8 +50,6 @@ prepend_final: |
 ----
 ====
 
-* a list
-+
 .A list entry
 [example]
 ====

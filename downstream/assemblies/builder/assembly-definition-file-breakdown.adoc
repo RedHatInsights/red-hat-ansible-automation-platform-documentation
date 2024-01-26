@@ -19,4 +19,4 @@ include::builder/con-additional-custom-build-steps.adoc[leveloffset=+1]
 [role="_additional-resources"]
 == Additional resources
 
-* For example definition files for common scenarios, see link:https://ansible.readthedocs.io/projects/builder/en/latest/scenario_guides/scenario_copy/[Common scenarios section] of the _Ansible Builder Documentation_
+* For example definition files for common scenarios, see the link:https://ansible.readthedocs.io/projects/builder/en/latest/scenario_guides/scenario_copy/[Common scenarios section] of the _Ansible Builder Documentation_
