@@ -18,7 +18,7 @@ Use this procedure to back up a deployment of the controller, including jobs, in
 . Select the *Automation Controller Backup* tab.
 . Click btn:[Create AutomationControllerBackup].
 . Enter a *Name* for the backup.
-. Enter the *Deployment name* of the deployed {PlatformNameShort} instance being backed up. 
+. Enter the *Deployment name* of the deployed {PlatformNameShort} instance being backed up.
 For example, if your {ControllerName} must be backed up and the deployment name is `aap-controller`, enter 'aap-controller' in the *Deployment name* field.
 . If you want to use a custom, pre-created pvc:
 .. Optionally enter the name of the *Backup persistant volume claim*.
@@ -41,3 +41,16 @@ $ df -h | grep "/var/lib/pgsql/data"
 . Click btn:[Create].
 +
 A backup tarball of the specified deployment is created and available for data recovery or deployment rollback. Future backups are stored in separate tar files on the same pvc.
+
+.Verification
+. Log in to Red Hat *{OCP}*
+. Navigate to menu:Operators[Installed Operators].
+. Select the {OperatorPlatform} installed on your project namespace.
+. Select the *AutomationControllerBackup* tab.
+. Select the backup resource you want to verify.
+. Scroll to *Conditions* and check that the *Successful* status is `True`.
++
+[NOTE]
+====
+If *Successful* is `False`, the backup has failed. Check the {ControllerName} operator logs for the error to fix the issue.
+====

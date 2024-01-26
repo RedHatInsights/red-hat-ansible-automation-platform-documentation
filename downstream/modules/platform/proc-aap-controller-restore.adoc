@@ -35,3 +35,17 @@ This should be different from the original deployment name.
 . Click btn:[Create].
 +
 A new deployment is created and your backup is restored to it. This can take approximately 5 to 15 minutes depending on the size of your database.
+
+
+.Verification
+. Log in to Red Hat *{OCP}*
+. Navigate to menu:Operators[Installed Operators].
+. Select the {OperatorPlatform} installed on your project namespace.
+. Select the *AutomationControllerRestore* tab.
+. Select the restore resource you want to verify.
+. Scroll to *Conditions* and check that the *Successful* status is `True`.
++
+[NOTE]
+====
+If *Successful* is `False`, the recovery has failed. Check the {ControllerName} operator logs for the error to fix the issue.
+====
