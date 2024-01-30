@@ -1,0 +1,37 @@
+:_newdoc-version: 2.15.0
+:_template-generated: 2024-1-30
+:_mod-docs-content-type: PROCEDURE
+
+[id="config-ldap-hub-ocp_{context}"]
+= Configuring LDAP authentication for {HubNameMain} on {OCPShort}
+
+Configure LDAP authentication settings for {PlatformNameShort} on {OCPShort} in the spec section of your Hub instance configuration file.   
+
+.Procedure
+
+* Use the following example to configure LDAP in your {HubName} instance. For any blank fields, enter ````.
++
+----
+spec:
+    pulp_settings:
+      auth_ldap_user_attr_map:
+        email: "mail"
+        first_name: "givenName"
+        last_name: "sn"
+      auth_ldap_group_search_base_dn: 'cn=groups,cn=accounts,dc=example,dc=com'
+      auth_ldap_bind_dn: ' '  
+      auth_ldap_bind_password: ' '
+      auth_ldap_group_search_filter: (objectClass=posixGroup)
+      auth_ldap_user_search_scope: SUBTREE
+      auth_ldap_server_uri: 'ldap://ldapserver:389'
+      authentication_backend_preset: ldap
+      auth_ldap_mirror_groups: 'True'
+      auth_ldap_user_search_base_dn: 'cn=users,cn=accounts,dc=example,dc=com'
+      auth_ldap_bind_password: 'ldappassword'
+      auth_ldap_user_search_filter: (uid=%(user)s)
+      auth_ldap_group_search_scope: SUBTREE
+      auth_ldap_user_flags_by_group: '@json {"is_superuser": "cn=tower-admin,cn=groups,cn=accounts,dc=example,dc=com"}' 
+----
+
+
+
