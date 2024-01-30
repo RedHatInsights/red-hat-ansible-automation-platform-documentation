@@ -3,20 +3,62 @@
 
 = Deploying your system for container signing
 
-{HubNameStart} implements image signing to provided better security for the {ExecEnvShort} container images.
+{HubNameStart} implements image signing to provide better security for the execution environment container images.
 
-To deploy your system so that it is ready for container signing, you must confirm if an {ExecEnvShort} or container is already signed or use the proper tools to sign and verify the signature yourself. 
+To deploy your system so that it is ready for container signing, create a signing script.
+
+[NOTE]
+==== 
+Installer looks for the script and key on the same server where installer is located.
+====
 
 .Procedure
-. Deploy your system with support for container signing activated.
+. From a terminal, create create a signing script, and pass the script path as an installer parameter.
++
+*Example*:
++
+-----
+#!/usr/bin/env bash
 
-    _automation_hub:
-        automationhub_create_default_container_signing_service: true
-        automationhub_container_signing_service_key: _path/to/gpg.key_
-        automationhub_container_signing_service_script: _path/to/executable_
+# pulp_container SigningService will pass the next 4 variables to the script.
+MANIFEST_PATH=$1
+FINGERPRINT="$PULP_SIGNING_KEY_FINGERPRINT"
+IMAGE_REFERENCE="$REFERENCE"
+SIGNATURE_PATH="$SIG_PATH"
 
+# Create container signature using skopeo
+skopeo standalone-sign \
+  $MANIFEST_PATH \
+  $IMAGE_REFERENCE \
+  $FINGERPRINT \
+  --output $SIGNATURE_PATH
 
-. Navigate to {HubName}.
+# Optionally pass the passphrase to the key if password protected.
+# --passphrase-file /path/to/key_password.txt
+
+# Check the exit status
+STATUS=$?
+if [ $STATUS -eq 0 ]; then
+  echo {\"signature_path\": \"$SIGNATURE_PATH\"}
+else
+  exit $STATUS
+fi
+-----
++
+. Review the {PlatformNameShort} installer inventory file for options for container signing that begin with `automationhub_*`. 
++
+-----
+[all:vars]
+.
+.
+.
+
+automationhub_create_default_container_signing_service = True
+automationhub_container_signing_service_key = /absolute/path/to/key/to/sign
+automationhub_container_signing_service_script = /absolute/path/to/script/that/signs
+-----
++
+. Once installation is complete, navigate to your {HubName}.
 
 . From the navigation panel, select menu:Signature Keys[].
 

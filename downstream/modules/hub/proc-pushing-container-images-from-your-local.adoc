@@ -3,49 +3,46 @@
 
 = Pushing container images from your local environment
 
+Use the following procedure to sign images on a local system and push those signed images to the {HubName} registry. 
+
 .Procedure
 . From a terminal, log into podman, or any container client currently in use:
 +
 ----
-> podman pull <__container-name__>
+> podman pull <container-name>
 ----
 +
-. After the image is pulled, add tags:
+. After the image is pulled, add tags (for example: latest, rc, beta, or version numbers, such as 1.0; 2.3, and so on):
 +
 ----
-> podman tag <container-name> _<server-address>_/<container-name>:<tag name>
+> podman tag <container-name> <server-address>/<container-name>:<tag name>
 ----
 +
-. Sign the image after changes have been made, and push it back up:
+. Sign the image after changes have been made, and push it back up to the {HubName} registry:
 +
 ----
-> podman push _<server-address>_/<container-name>:<tag name>
---tls-verify=false --sign-by<reference to the gpg key on your local>
+> podman push <server-address>/<container-name>:<tag name> --tls-verify=false --sign-by <reference to the gpg key on your local>
 ----
 +
-If the image is not signed, it can only be pushed with any current signature embedded.
-
-. Push the image without signing it:
+If the image is not signed, it can only be pushed with any current signature embedded. Alternatively, you can use the following script to push the image without signing it:
 +
 ----
-> podman push _<server-address>_/<container-name>:<tag name>
---tls-verify=false
+> podman push <server-address>/<container-name>:<tag name> --tls-verify=false
 ----
 +
-. Navigate to {HubName}. 
+. Once the image has been pushed, navigate to your {HubName}.
 
 . From the navigation panel, select menu:Execution Environments[Execution Environments].
 
 . To display the new {ExecEnvShort}, click the *Refresh* icon.
 
-. Click the name of the image.
+. Click the name of the image  to view your pushed image.
 
 .Troubleshooting
 
-The details page displays whether or not the image has been signed. 
-If it displays *Unsigned* you can sign the image from {HubName} with the following steps:
+The details page in {HubName} indicates whether or not an image has been signed. If the details page indicates that an image is *Unsigned*, you can sign the image from {HubName}  using the following steps: 				
 
-. Click the image name to open the details page.
+. Click the image name to navigate to the details page.
 
 . Click the btn:[More Actions] icon *{MoreActionsIcon}*.
 Three options are available:
