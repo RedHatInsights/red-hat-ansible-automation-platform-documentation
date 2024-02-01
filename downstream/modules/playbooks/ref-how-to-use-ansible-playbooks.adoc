@@ -1,0 +1,25 @@
+[id="ref-how-to-use-ansible-playbooks"]
+
+= How do I use Ansible Playbooks?
+
+Ansible uses the YAML syntax. 
+YAML is a human-readable language that enables you to create playbooks without having to learn a complicated coding language.
+
+For more information on YAML, see YAML Syntax and consider installing an add-on for your text editor, see link:https://docs.ansible.com/ansible/latest/community/other_tools_and_programs.html#other-tools-and-programs[Other Tools and Programs] to help you write clean YAML syntax in your playbooks.
+
+There are two ways of using Ansible Playbooks: 
+
+* From the _command line interface_ (CLI) 
+* Using {PlatformName}'s push-button deployments.
+
+== From the CLI
+After installing the open source Ansible project or {PlatformName} by using
+
+----
+$ sudo dnf install ansible
+----
+in the {RHEL} CLI, you can use the `ansible-playbook` command to run Ansible Playbooks.
+
+== From within the platform
+The {PlatformName} user interface offers push-button Ansible Playbook deployments that can be used as part of larger jobs or job templates. 
+These deployments come with additional safeguards that are particularly helpful to users who are newer to IT automation, or those without as much experience working in the CLI.

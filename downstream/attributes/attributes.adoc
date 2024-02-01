@@ -10,6 +10,7 @@
 :AnsibleCoreVers: 2.15
 :AnsibleInstallVers: 2.4-1
 :PlatformDownloadUrl: https://access.redhat.com/downloads/content/480/ver=2.4/rhel---9/2.4/x86_64/product-software
+:BaseURL: https://access.redhat.com/documentation/en-us
 
 // Event-Driven Ansible
 :EDAName: Event-Driven Ansible

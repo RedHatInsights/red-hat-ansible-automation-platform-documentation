@@ -1,0 +1,32 @@
+[id="ref-create-variables"]
+
+= Create variables
+Variables set values for managed nodes, such as the IP address, FQDN, operating system, and SSH user, so you do not need to pass them when running Ansible commands.
+
+Variables can apply to specific hosts.
+
+----
+webservers:
+  hosts:
+    webserver01:
+      ansible_host: 192.0.2.140
+      http_port: 80
+    webserver02:
+      ansible_host: 192.0.2.150
+      http_port: 443
+----
+
+Variables can also apply to all hosts in a group.
+----
+webservers:
+  hosts:
+    webserver01:
+      ansible_host: 192.0.2.140
+      http_port: 80
+    webserver02:
+      ansible_host: 192.0.2.150
+      http_port: 443
+  vars:
+    ansible_user: my_server_user
+----
+For more information about Inventories and Ansible Inventory variables, see link:{BaseURL}/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/about_the_installer_inventory_file[About the Installer Inventory file] and link:{BaseURL}/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars[Inventory file variables].

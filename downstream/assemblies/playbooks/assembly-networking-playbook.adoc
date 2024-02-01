@@ -1,0 +1,17 @@
+[id="assembly-networking-playbook"]
+
+= Use a Playbook to establish a connection to a managed node
+
+To confirm your credentials, you can connect to a network device manually and retrieve its configuration. Replace the sample user and device name with your real credentials. 
+
+For example, for a VyOS router:
+
+----
+ssh my_vyos_user@vyos.example.net
+show config
+exit
+----
+
+include::playbooks/ref-run-network-command.adoc[leveloffset=+1]
+include::playbooks/proc-run-ansible-network-playbook.adoc[leveloffset=+1]
+include::playbooks/ref-gathering-facts.adoc[leveloffset=+1]

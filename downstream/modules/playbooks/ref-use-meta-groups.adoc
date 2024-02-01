@@ -1,0 +1,46 @@
+[id="ref-use-meta-groups"]
+
+= Use metagroups
+Create a metagroup that organizes multiple groups in your inventory with the following syntax:
+
+----
+metagroupname:
+  children:
+----
+
+The following inventory illustrates a basic structure for a data center. 
+This example inventory contains a network metagroup that includes all network devices and a datacenter metagroup that includes the network group and all webservers.
+
+
+----
+leafs:
+  hosts:
+    leaf01:
+      ansible_host: 192.0.2.100
+    leaf02:
+      ansible_host: 192.0.2.110
+
+spines:
+  hosts:
+    spine01:
+      ansible_host: 192.0.2.120
+    spine02:
+      ansible_host: 192.0.2.130
+
+network:
+  children:
+    leafs:
+    spines:
+
+webservers:
+  hosts:
+    webserver01:
+      ansible_host: 192.0.2.140
+    webserver02:
+      ansible_host: 192.0.2.150
+
+datacenter:
+  children:
+    network:
+    webservers:
+----

@@ -1,0 +1,21 @@
+[id="assembly-intro-to-playbooks"]
+
+= Introduction
+
+An Ansible Playbook is a blueprint for automation tasks, which are actions executed with limited manual effort across an inventory of solutions. 
+Playbooks tell Ansible what to do on which devices.
+Instead of manually applying the same action to hundreds or thousands of similar technologies across IT environments, executing a playbook automatically completes the same action for the specified type of inventory—such as a set of routers. 
+
+Playbooks are regularly used to automate IT infrastructure—such as operating systems and Kubernetes platforms—networks, security systems, and code repositories like GitHub.
+You can use playbooks to program applications, services, server nodes, and other devices, without the manual overhead of creating everything from scratch.
+Playbooks, and the conditions, variables, and tasks within them, can be saved, shared, or reused indefinitely. 
+This makes it easier for you to codify operational knowledge and ensure that the same actions are performed consistently.
+
+include::playbooks/ref-how-do-playbooks-work.adoc[leveloffset=+1]
+include::playbooks/ref-how-to-use-ansible-playbooks.adoc[leveloffset=+1]
+include::playbooks/proc-starting-automation.adoc[leveloffset=+1]
+include::playbooks/proc-build-an-inventory.adoc[leveloffset=+1]
+include::playbooks/ref-use-meta-groups.adoc[leveloffset=+2]
+include::playbooks/ref-create-variables.adoc[leveloffset=+1]
+include::playbooks/proc-creating-a-playbook.adoc[leveloffset=+1]
+

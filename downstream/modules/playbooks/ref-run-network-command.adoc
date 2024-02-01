@@ -1,0 +1,30 @@
+[id="ref-run-network-command"]
+
+= Run a network Ansible command
+Instead of manually connecting and running a command on the network device, you can retrieve its configuration with a single Ansible command.
+
+----
+ansible all -i vyos.example.net, -c ansible.netcommon.network_cli -u \
+my_vyos_user -k -m vyos.vyos.vyos_facts -e \ 
+ansible_network_os=vyos.vyos.vyos
+----
+
+The flags in this command set seven values:
+
+* the host group(s) to which the command should apply (in this case, `all`)
+* the inventory (`-i`, the device or devices to target - without the trailing comma `-i` points to an inventory file)
+* the connection method (`-c`, the method for connecting and executing ansible)
+* the user (`-u`, the username for the SSH connection)
+* the SSH connection method (-`k`, prompt for the password)
+* the module (`-m`, the Ansible module to run, using the fully qualified collection name (FQCN))
+* an extra variable ( `-e`, in this case, setting the network OS value)
+
+[NOTE]
+====
+If you use `ssh-agent` with ssh keys, Ansible loads them automatically. 
+You can omit the `-k` flag.
+
+If you are running Ansible in a virtual environment, you must also add the variable `ansible_python_interpreter=/path/to/venv/bin/python`.
+====
+
+

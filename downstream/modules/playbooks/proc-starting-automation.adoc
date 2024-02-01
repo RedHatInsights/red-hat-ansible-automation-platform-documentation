@@ -1,0 +1,19 @@
+[id="proc-starting-automation"]
+
+= Starting automation with Ansible
+Get started with Ansible by creating an automation project, building an inventory, and creating a `Hello World` playbook.
+
+.Prerequisites
+* The Ansible package must be installed. 
+
+
+.Procedure
+
+* Create a project folder on your filesystem.
+
+----
+mkdir ansible_quickstart
+cd ansible_quickstart
+----
+
+Using a single directory structure makes it easier to add to source control, and reuse and share automation content.

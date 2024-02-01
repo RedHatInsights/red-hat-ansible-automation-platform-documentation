@@ -1,0 +1,89 @@
+[id="proc-build-an-inventory"]
+
+= Building an inventory
+
+Inventories organize managed nodes in centralized files that provide Ansible with system information and network locations. Using an inventory file, Ansible can manage a large number of hosts with a single command.
+To complete the following steps, you need the IP address or fully qualified domain name (FQDN) of at least one host system. For demonstration purposes, the host could be running locally in a container or a virtual machine. 
+
+You must also ensure that your public SSH key is added to the `authorized_keys` file on each host.
+Use the following procedure to build an inventory.
+
+.Procedure
+Create a file named `inventory.ini` in the `ansible_quickstart` directory that you created.
+Add a new `[myhosts]` group to the inventory.ini file and specify the IP address or fully qualified domain name (FQDN) of each host system.
+
+----
+[myhosts]
+192.0.2.50
+192.0.2.51
+192.0.2.52
+----
+
+Verify your inventory, using:
+
+----
+ansible-inventory -i inventory.ini --list
+----
+
+Ping the `myhosts` group in your inventory, using:
+
+----
+ansible myhosts -m ping -i inventory.ini
+----
+
+Pass the `-u` option with the Ansible command if the username is different on the control node and the managed node(s).
+
+----
+192.0.2.50 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+192.0.2.51 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+192.0.2.52 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+----
+
+You have successfully built an inventory.
+
+== Inventories in INI or YAML format
+You can create inventories in either INI files or in YAML. 
+In most cases, such as the preceding example, INI files are straightforward and easy to read for a small number of managed nodes.
+Creating an inventory in YAML format becomes a sensible option as the number of managed nodes increases. 
+
+For example, the following is an equivalent of the `inventory.ini` that declares unique names for managed nodes and uses the `ansible_host` field:
+
+----
+myhosts:
+  hosts:
+    my_host_01:
+      ansible_host: 192.0.2.50
+    my_host_02:
+      ansible_host: 192.0.2.51
+    my_host_03:
+      ansible_host: 192.0.2.52
+----
+
+== Tips for building inventories
+
+* Ensure that group names are meaningful and unique. 
+* Group names are also case sensitive.
+* Do not use spaces, hyphens, or preceding numbers (use floor_19, not 19th_floor) in group names.
+* Group hosts in your inventory logically according to their What, Where, and When:
+
+** What: Group hosts according to the topology, for example: db, web, leaf, spine.
+** Where: Group hosts by geographic location, for example: datacenter, region, floor, building.
+** When: Group hosts by stage, for example: development, test, staging, production.
