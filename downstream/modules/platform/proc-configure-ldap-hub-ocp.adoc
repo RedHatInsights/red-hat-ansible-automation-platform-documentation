@@ -33,5 +33,11 @@ spec:
       auth_ldap_user_flags_by_group: '@json {"is_superuser": "cn=tower-admin,cn=groups,cn=accounts,dc=example,dc=com"}' 
 ----
 
+[NOTE]
 
+====
+
+Do not leave any fields empty. For fields with no variable, enter ```` to indicate a default value.
+
+====
 
