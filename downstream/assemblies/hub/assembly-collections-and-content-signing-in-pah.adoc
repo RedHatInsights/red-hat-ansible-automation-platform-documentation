@@ -14,3 +14,4 @@ include::hub/proc-using-content-signing-services-in-pah.adoc[leveloffset=+1]
 include::hub/proc-downloading-signature-public-keys.adoc[leveloffset=+1]
 
 include::hub/proc-configure-ansible-galaxy-cli-verify.adoc[leveloffset=+1]
+ 

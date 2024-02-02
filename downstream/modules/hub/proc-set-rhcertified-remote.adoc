@@ -23,7 +23,8 @@ For more information on permissions, see link:https://access.redhat.com/document
 .Procedure
 
 . Log in to your {PrivateHubName}.
-. From the navigation panel, select menu:Collections[Remotes].
+include::snippets/snip_menu-top-ac.adoc[]
+*{MenuACAdminRemotes}*.
 . In the *rh-certified* remote repository, click the btn:[More Actions] icon *{MoreActionsIcon}* and click btn:[Edit].
 . In the *URL* field, paste the *Sync URL*.
 . In the *Token* field, paste the token you acquired from {Console}.

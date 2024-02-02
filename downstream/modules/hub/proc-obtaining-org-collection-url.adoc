@@ -9,10 +9,9 @@ The API token is a secret token used to protect your content.
 * You have organization administrator permissions to create the synclist on {Console}.
 
 .Procedure
-
+// ddacosta I don't know if a change will be needed here for Gateway as this is referring to the Console version of Hub. Will console pull in nav changes?
 . Log in to `{Console}` as an organization administrator.
 . Navigate to menu:Automation Hub[Connect to Hub].
 . Under *Offline token*, click btn:[Load token].
 . Click btn:[Copy to clipboard] to copy the API token.
 . Paste the API token into a file and store in a secure location.
-

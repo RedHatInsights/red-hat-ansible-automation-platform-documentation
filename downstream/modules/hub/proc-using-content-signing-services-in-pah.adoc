@@ -14,9 +14,9 @@ You can use content signing on {PrivateHubName} in the following scenarios:
 
 .Procedure
 
-. Log in to your {PrivateHubName} instance in the {HubName} UI.
-
-. From the navigation panel, select menu:Collections[Approval].
+. Log in to your {PlatformNameShort}.
+include::snippets/snip_menu-top-ac.adoc[]
+*{MenuACAdminCollectionApproval}*.
 The Approval dashboard opens and displays a list of collections.
 
 . Click btn:[Sign and approve] for each collection that you want to sign.

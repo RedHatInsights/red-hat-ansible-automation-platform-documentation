@@ -26,7 +26,7 @@ The following domain names must be in the allow list:
 * SSL inspection is disabled either when using self signed certificates or for the Red Hat domains.
 
 .Procedure
-
+// ddacosta I don't know if a change will be needed here for Gateway as this is referring to the Console version of Hub. Will console pull in nav changes?
 . Log in to `{Console}`.
 . Navigate to menu:Automation Hub[Collections > Collections].
 . Set the toggle switch on each collection to exclude or include it on your synclist.

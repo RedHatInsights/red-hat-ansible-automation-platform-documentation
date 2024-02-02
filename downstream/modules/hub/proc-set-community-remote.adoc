@@ -23,8 +23,9 @@ collections:
 -----
 
 .Procedure
-. Log in to your {HubNameMain}.
-. Navigate to menu:Automation Hub[Collections > Remotes].
+. Log in to {PlatformNameShort}.
+include::snippets/snip_menu-top-ac.adoc[]
+*{MenuACAdminRemotes}*.
 . In the *Community* remote, click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Edit*.
 . In the *YAML requirements* field, click btn:[Browse] and locate the `requirements.yml` file on your local machine.
 . Click btn:[Save].

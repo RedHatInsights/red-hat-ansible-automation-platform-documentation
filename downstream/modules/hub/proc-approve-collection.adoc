@@ -12,7 +12,8 @@ You can approve collections uploaded to individual namespaces for internal publi
 
 .Procedure
 
-. From the navigation panel, select menu:Collections[Approval].
+include::snippets/snip_menu-top-ae.adoc[]
+*{MenuACAdminCollectionApproval}*.
 Collections requiring approval have the status *Needs review*.
 . Select a collection to review.
 . Click the *Version* to view the contents of the collection.

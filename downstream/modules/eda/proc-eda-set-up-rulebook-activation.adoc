@@ -10,10 +10,10 @@
 * You have set up an {ControllerName} token.
 
 .Procedure
-
+// ddacosta I'm not sure whether there will be an EDA specific dashboard in the gateway. Step 1 might need to change to something like "Log in to AAP".
 . Navigate to the {EDAcontroller} Dashboard.
-. From the navigation panel, select menu:Rulebook Activations[Create rulebook activation].
-. Insert the following: 
+. From the navigation panel, select *{MenuADRulebookActivations}*.
+. Insert the following:
 +
 Name:: Insert the name.
 Description:: This field is optional.
@@ -23,7 +23,7 @@ Decision environment:: Decision environments are a container image to run Ansibl
 +
 [NOTE]
 ====
-In {EDAcontroller}, you cannot customize the pull policy of the decision environment. 
+In {EDAcontroller}, you cannot customize the pull policy of the decision environment.
 By default, it follows the behavior of the *always* policy.
 Every time an activation is started, the system tries to pull the most recent version of the image.
 ====
@@ -33,12 +33,12 @@ Restart policy:: This is a policy to decide when to restart a rulebook.
 ... Never: Never restarts a rulebook when it finishes
 ... On failure: Only restarts when it fails
 Rulebook activation enabled?:: This automatically enables the rulebook activation to run.
-Variables:: The variables for the rulebook are in a JSON/YAML format. 
+Variables:: The variables for the rulebook are in a JSON/YAML format.
 The content would be equivalent to the file passed through the `--vars` flag of ansible-rulebook command.
 
 . Click btn:[Create rulebook activation].
 
 Your rulebook activation is now created and can be managed in the *Rulebook Activations* screen.
 
-After saving the new rulebook activation, the rulebook activation's details page is displayed. 
+After saving the new rulebook activation, the rulebook activation's details page is displayed.
 From there or the *Rulebook Activations* list view you can edit or delete it.
