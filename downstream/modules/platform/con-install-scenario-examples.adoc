@@ -2,7 +2,6 @@
 
 = Inventory file examples based on installation scenarios
 
-
 [role="_abstract"]
-Red Hat supports several installation scenarios for {PlatformNameShort}. Review the following examples and select those suitable for your preferred installation scenario.
+Red Hat supports several installation scenarios for {PlatformNameShort}. You can develop your own inventory files using the example files as a basis, or you can use the example closest to your preferred installation scenario.
  

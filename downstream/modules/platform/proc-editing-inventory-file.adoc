@@ -29,7 +29,7 @@ $ cd ansible-automation-platform-setup-<latest-version>
 -----
 +
 . Open the `inventory` file with a text editor.
-. Edit `inventory` file parameters to specify your installation scenario. Use one of the supported xref:con-install-scenario-examples[Installation scenario examples] to update your `inventory` file.
+. Edit `inventory` file parameters to specify your installation scenario. You can use one of the supported xref:con-install-scenario-examples[Installation scenario examples] as the basis for your `inventory` file.
 
 [role="_additional-resources"]
 .Additional resources

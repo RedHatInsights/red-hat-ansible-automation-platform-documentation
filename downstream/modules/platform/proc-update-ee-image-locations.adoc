@@ -3,7 +3,7 @@
 
 :_content-type: PROCEDURE
 
-[id="updating-ee-image-locations_{context}"]
+[id="updating-ee-image-locations"]
 
 = Updating execution environment image locations
 

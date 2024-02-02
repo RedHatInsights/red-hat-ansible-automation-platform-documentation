@@ -1,4 +1,4 @@
-// [id="con-why-migrate-ansible-29_{context}"]
+[id="con-why-migrate-ansible-29"]
 
 = Migrating to Ansible Engine 2.9 images using {Builder}
 

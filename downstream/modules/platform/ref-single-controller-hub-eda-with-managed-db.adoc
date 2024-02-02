@@ -1,0 +1,105 @@
+[id="ref-single-controller-hub-eda-with-managed-db"]
+
+=  Single {ControllerName}, single {HubName}, and single {EDAController} node with external (installer managed ) database
+
+[role="_abstract"]
+Use this example to populate the inventory file to deploy single instances of {ControllerName}, {HubName}, and {EDAController} with an external (installer managed) database.
+
+[IMPORTANT]
+====
+* This scenario requires a minimum of {ControllerName} 2.4 for successful deployment of {EDAcontroller}.
+
+* {EDAController} must be installed on a separate server and cannot be installed on the same host as {HubName} and {ControllerName}.
+====
+
+-----
+[automationcontroller]
+controller.example.com
+
+[automationhub]
+automationhub.example.com
+
+[automationedacontroller]
+automationedacontroller.example.com
+
+[database]
+data.example.com
+
+[all:vars]
+admin_password='<password>'
+pg_host='data.example.com'
+pg_port='5432'
+pg_database='awx'
+pg_username='awx'
+pg_password='<password>'
+pg_sslmode='prefer'  # set to 'verify-full' for client-side enforced SSL
+
+registry_url='registry.redhat.io'
+registry_username='<registry username>'
+registry_password='<registry password>'
+
+# {HubNameStart} configuration
+
+automationhub_admin_password= <PASSWORD>
+
+automationhub_pg_host='data.example.com'
+automationhub_pg_port=5432
+
+automationhub_pg_database='automationhub'
+automationhub_pg_username='automationhub'
+automationhub_pg_password=<PASSWORD>
+automationhub_pg_sslmode='prefer'
+
+# Automation {EDAController} configuration
+
+automationedacontroller_admin_password='<eda-password>'
+
+automationedacontroller_pg_host='data.example.com'
+automationedacontroller_pg_port=5432
+
+automationedacontroller_pg_database='automationedacontroller'
+automationedacontroller_pg_username='automationedacontroller'
+automationedacontroller_pg_password='<password>'
+
+# Keystore file to install in SSO node
+# sso_custom_keystore_file='/path/to/sso.jks'
+
+# This install will deploy SSO with sso_use_https=True
+# Keystore password is required for https enabled SSO
+sso_keystore_password=''
+
+# This install will deploy a TLS enabled Automation Hub.
+# If for some reason this is not the behavior wanted one can
+# disable TLS enabled deployment.
+#
+# automationhub_disable_https = False
+# The default install will generate self-signed certificates for the Automation
+# Hub service. If you are providing valid certificate via automationhub_ssl_cert
+# and automationhub_ssl_key, one should toggle that value to True.
+#
+# automationhub_ssl_validate_certs = False
+# SSL-related variables
+# If set, this will install a custom CA certificate to the system trust store.
+# custom_ca_cert=/path/to/ca.crt
+# Certificate and key to install in Automation Hub node
+# automationhub_ssl_cert=/path/to/automationhub.cert
+# automationhub_ssl_key=/path/to/automationhub.key
+
+# Certificate and key to install in nginx for the web UI and API
+# web_server_ssl_cert=/path/to/tower.cert
+# web_server_ssl_key=/path/to/tower.key
+# Server-side SSL settings for PostgreSQL (when we are installing it).
+# postgres_use_ssl=False
+# postgres_ssl_cert=/path/to/pgsql.crt
+# postgres_ssl_key=/path/to/pgsql.key
+
+# Boolean flag used to verify Automation Controller's
+# web certificates when making calls from Automation EDA Controller.
+#
+# automationedacontroller_controller_verify_ssl = true
+
+# Certificate and key to install in Automation Hub node
+# automationhub_ssl_cert=/path/to/automationhub.cert
+# automationhub_ssl_key=/path/to/automationhub.key
+
+-----

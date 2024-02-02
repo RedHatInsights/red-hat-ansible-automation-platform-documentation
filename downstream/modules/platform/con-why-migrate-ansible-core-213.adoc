@@ -1,4 +1,4 @@
-// [id="con-why-migrate-ansible-core-213_{context}"]
+[id="con-why-migrate-ansible-core-213"]
 
 = Migrating to Ansible Core 2.13
 

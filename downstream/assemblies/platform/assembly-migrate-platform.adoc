@@ -1,6 +1,6 @@
 ifdef::context[:parent-context: {context}]
 
-// [id="assembly-migrate-platform_{context}"]
+[id="assembly-migrate-platform"]
 = Steps to migrate data to {PlatformNameShort} {PlatformVers}
 
 For platform administrators looking to complete an upgrade to the {PlatformNameShort} {PlatformVers}, there may be additional steps needed to migrate data to a new instance:

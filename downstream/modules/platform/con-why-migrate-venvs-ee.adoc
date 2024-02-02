@@ -1,4 +1,4 @@
-// [id="con-why-migrate-venvs-ee_{context}"]
+[id="con-why-migrate-venvs-ee"]
 
 = Migrating from legacy virtual environments (venvs) to {ExecEnvName}
 

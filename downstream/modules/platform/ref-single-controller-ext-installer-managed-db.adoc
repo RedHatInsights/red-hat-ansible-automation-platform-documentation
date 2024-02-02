@@ -1,5 +1,5 @@
 
-[id="ref-single-controller-ext-installer-managed-db_{context}"]
+[id="ref-single-controller-ext-installer-managed-db"]
 
 = Single {ControllerName} with external (installer managed) database
 

@@ -1,12 +1,13 @@
-[id="ref-standlone-hub-ext-database-inventory_{context}"]
+[id="ref-single-controller-hub-ext-database-inventory"]
 
-= Single {HubName} with external (installer managed) database
+= Single {ControllerName} and single {HubName} with external (installer managed) database
 
 [role="_abstract"]
-Use this example to populate the inventory file to deploy a single instance of {HubName} with an external (installer managed) database.
+Use this example to populate the inventory file to deploy single instances of {ControllerName} and {HubName} with an external (installer managed) database.
 
 -----
 [automationcontroller]
+controller.example.com
 
 [automationhub]
 automationhub.example.com
@@ -15,6 +16,14 @@ automationhub.example.com
 data.example.com
 
 [all:vars]
+admin_password='<password>'
+pg_host='data.example.com'
+pg_port='5432'
+pg_database='awx'
+pg_username='awx'
+pg_password='<password>'
+pg_sslmode='prefer'  # set to 'verify-full' for client-side enforced SSL
+
 registry_url='registry.redhat.io'
 registry_username='<registry username>'
 registry_password='<registry password>'
@@ -45,4 +54,12 @@ automationhub_pg_sslmode='prefer'
 # Certificate and key to install in Automation Hub node
 # automationhub_ssl_cert=/path/to/automationhub.cert
 # automationhub_ssl_key=/path/to/automationhub.key
+
+# Certificate and key to install in nginx for the web UI and API
+# web_server_ssl_cert=/path/to/tower.cert
+# web_server_ssl_key=/path/to/tower.key
+# Server-side SSL settings for PostgreSQL (when we are installing it).
+# postgres_use_ssl=False
+# postgres_ssl_cert=/path/to/pgsql.crt
+# postgres_ssl_key=/path/to/pgsql.key
 -----

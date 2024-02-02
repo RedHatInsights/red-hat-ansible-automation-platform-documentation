@@ -1,5 +1,5 @@
 
-[id="event-driven-ansible-controller_{context}"]
+[id="event-driven-ansible-controller"]
 = {EDAcontroller} variables
 
 [cols="50%,50%",options="header"]

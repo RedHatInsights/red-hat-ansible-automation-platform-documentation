@@ -1,4 +1,4 @@
-// [id="con-why-automation-mesh_{context}"]
+[id="con-why-automation-mesh"]
 
 = Benefits of {AutomationMesh}
 

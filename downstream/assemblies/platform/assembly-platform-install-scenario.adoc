@@ -12,39 +12,48 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 {PlatformNameShort} is a modular platform. You can deploy {ControllerName} with other automation platform components, such as {HubName} and {EDAcontroller}. For more information about the components provided with {PlatformNameShort}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/planning-installation#ref-platform-components[{PlatformName} components] in the {PlatformName} Planning Guide.
 
-There are several supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario by using one of the following examples:
+There are several supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario. You can use one of the following as a basis for your own inventory file:
 
-* xref:ref-standlone-platform-inventory_platform-install-scenario[Standalone automation controller with internal database]
-* xref:ref-single-controller-ext-installer-managed-db_platform-install-scenario[Single {ControllerName} with external (installer managed) database]
-* xref:ref-single-controller-ext-customer-managed-db_platform-install-scenario[Single {ControllerName} with external (customer provided) database]
-* xref:ref-standlone-platform-ext-database-inventory_platform-install-scenario[{PlatformNameShort} with an external (installer managed) database]
-* xref:ref-example-platform-ext-database-customer-provided_platform-install-scenario[{PlatformNameShort} with an external (customer provided) database]
-* xref:ref-single-eda-controller-with-internal-db_platform-install-scenario[Single {EDAcontroller} node with internal database]
-* xref:ref-standlone-hub-inventory_platform-install-scenario[Standalone {HubName} with internal database]
-* xref:ref-standlone-hub-ext-database-inventory_platform-install-scenario[Single {HubName} with external (installer managed) database]
-* xref:ref-standalone-hub-ext-database-customer-provided_platform-install-scenario[Single {HubName} with external (customer provided) database]
-* xref:ref-ldap-config-on-pah_platform-install-scenario[LDAP configuration on {PrivateHubName}]
+//[ifowler] Removed for AAP-18700 Install Guide Scenario Consolidation  
+//* xref:ref-standlone-platform-inventory_platform-install-scenario[Standalone automation controller with external (installer managed) database]
+* xref:ref-single-controller-ext-installer-managed-db[Single {ControllerName} with external (installer managed) database]
+//[ifowler] Removed for AAP-18700 Install Guide Scenario Consolidation  
+//* xref:ref-single-controller-ext-customer-managed-db_platform-install-scenario[Single {ControllerName} with external (customer provided) database]
+//* xref:ref-standlone-platform-ext-database-inventory_platform-install-scenario[{PlatformNameShort} with an external (installer managed) database]
+//* xref:ref-example-platform-ext-database-customer-provided_platform-install-scenario[{PlatformNameShort} with an external (customer provided) database]
+//* xref:ref-single-eda-controller-with-internal-db_platform-install-scenario[Single {EDAcontroller} node with internal database]
+//* xref:ref-standlone-hub-inventory_platform-install-scenario[Standalone {HubName} with internal database]
+* xref:ref-single-controller-hub-ext-database-inventory[Single {ControllerName} with external (installer managed) database]
+//[ifowler] Removed for AAP-18700 Install Guide Scenario Consolidation  
+//* xref:ref-standalone-hub-ext-database-customer-provided_platform-install-scenario[Single {HubName} with external (customer provided) database]
+// xref:ref-ldap-config-on-pah_platform-install-scenario[LDAP configuration on {PrivateHubName}]
+* xref:ref-single-controller-hub-eda-with-managed-db[Single {ControllerName}, single {HubName}, and single event-driven ansible controller node with external (installer managed ) database]
 
 
 include::platform/proc-editing-inventory-file.adoc[leveloffset=+1]
-include::platform/con-install-scenario-examples.adoc[leveloffset=+2]
-include::platform/con-install-scenario-recommendations.adoc[leveloffset=+3]
-include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=+3]
+include::platform/con-install-scenario-examples.adoc[leveloffset=+1]
+include::platform/con-install-scenario-recommendations.adoc[leveloffset=+2]
+//[ifowler] Removed for AAP-18700 Install Guide Scenario Consolidation  
+//include::platform/ref-platform-non-inst-database-inventory.adoc[leveloffset=+3]
 include::platform/ref-single-controller-ext-installer-managed-db.adoc[leveloffset=+3]
-include::platform/ref-single-controller-ext-customer-managed-db.adoc[leveloffset=+3]
-include::platform/ref-example-platform-ext-database-inventory.adoc[leveloffset=+3]
-include::platform/ref-example-platform-ext-database-customer-provided.adoc[leveloffset=+3]
-include::platform/ref-single-eda-controller-with-internal-db.adoc[leveloffset=+3]
-include::platform/ref-standalone-hub-inventory.adoc[leveloffset=+3]
-include::platform/con-ha-hub-installation.adoc[leveloffset=+3]
+//[ifowler] Removed for AAP-18700 Install Guide Scenario Consolidation  
+//include::platform/ref-single-controller-ext-customer-managed-db.adoc[leveloffset=+3]
+//include::platform/ref-example-platform-ext-database-inventory.adoc[leveloffset=+3]
+//include::platform/ref-example-platform-ext-database-customer-provided.adoc[leveloffset=+3]
+//include::platform/ref-single-eda-controller-with-internal-db.adoc[leveloffset=+3]
+//include::platform/ref-standalone-hub-inventory.adoc[leveloffset=+3]
+include::platform/ref-standalone-controller-hub-ext-database-inventory.adoc[leveloffset=+3]
+include::platform/ref-connect-hub-to-rhsso.adoc[leveloffset=+4]
+include::platform/con-ha-hub-installation.adoc[leveloffset=+4]
 include::platform/proc-install-ha-hub-selinux.adoc[leveloffset=+4]
-include::platform/proc-apply-selinux-context.adoc[leveloffset=+5]
-include::platform/proc-configure-pulpcore-serivce.adoc[leveloffset=+5]
-include::platform/ref-standalone-hub-ext-database-inventory.adoc[leveloffset=+3]
-include::platform/ref-standalone-hub-ext-database-customer-provided.adoc[leveloffset=+3]
+include::platform/proc-configure-pulpcore-service.adoc[leveloffset=+4]
+include::platform/proc-apply-selinux-context.adoc[leveloffset=+4]
 include::hub/hub/proc-configure-content-signing-on-pah.adoc[leveloffset=+3]
 include::platform/ref-ldap-config-on-pah.adoc[leveloffset=+3]
 include::platform/ref-ldap-referrals.adoc[leveloffset=+3]
+include::platform/ref-single-controller-hub-eda-with-managed-db.adoc[leveloffset=+3]
+//[ifowler] Removed for AAP-18700 Install Guide Scenario Consolidation  
+//include::platform/ref-standalone-hub-ext-database-customer-provided.adoc[leveloffset=+3]
 // dcdacosta - removed this assembly because the modules are included above. include::assembly-installing-high-availability-hub.adoc[leveloffset=+3]
 include::platform/proc-running-setup-script.adoc[leveloffset=+1]
 include::platform/proc-verify-controller-installation.adoc[leveloffset=+1]
@@ -52,7 +61,8 @@ include::platform/ref-controller-configs.adoc[leveloffset=+2]
 include::platform/proc-verify-hub-installation.adoc[leveloffset=+1]
 include::platform/ref-hub-configs.adoc[leveloffset=+2]
 include::platform/proc-verify-eda-controller-installation.adoc[leveloffset=+1]
-include::assembly-platform-whats-next.adoc[leveloffset=+1]
+//[ifowler] Removed for AAP-18700 Install Guide Scenario Consolidation moved to Operations Guide
+//include::assembly-platform-whats-next.adoc[leveloffset=+1]
 
 
 ifdef::parent-context[:context: {parent-context}]

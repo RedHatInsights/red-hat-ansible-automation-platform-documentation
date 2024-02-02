@@ -17,6 +17,7 @@ This example does not have a host under the database group. This indicates to th
 controller.example.com
 
 [database]
+data.example.com
 
 [all:vars]
 admin_password='<password>'
