@@ -34,7 +34,7 @@ additional_build_steps: <5>
     - RUN echo This is a prepend base command!
 
   prepend_galaxy:
-      # Environment variables used for Galaxy client configurations
+    # Environment variables used for Galaxy client configurations
     - ENV ANSIBLE_GALAXY_SERVER_LIST=automation_hub
     - ENV ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_URL=https://console.redhat.com/api/automation-hub/content/xxxxxxx-synclist/
     - ENV ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_AUTH_URL=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token

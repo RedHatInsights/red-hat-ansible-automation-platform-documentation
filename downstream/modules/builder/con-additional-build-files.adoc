@@ -13,4 +13,4 @@ Each list item must be a dictionary containing the following required keys:
 Absolute paths can not include a regular expression. If `src` is a directory, the entire contents of that directory are copied to `dest`.
 ====
 
-`dest`:: Specifies a subdirectory path underneath the `_build` subdirectory of the build context directory that contains the source files (for example, `files/configs`). This can not be an absolute path or contain `..` within the path. Builder creates this directory for you if it does not already exist.
+`dest`:: Specifies a subdirectory path underneath the `_build` subdirectory of the build context directory that contains the source files (for example, `files/configs`). This can not be an absolute path or contain `..` within the path. {Builder} creates this directory for you if it does not already exist.
