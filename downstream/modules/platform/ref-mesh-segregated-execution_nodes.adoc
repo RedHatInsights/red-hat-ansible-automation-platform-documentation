@@ -23,7 +23,7 @@ peers=instance_group_local
 [execution_nodes]
 aap_e_1.example.com
 aap_e_2.example.com
-aap_h_1.example.com
+aap_h_1.example.com node_type=hop
 aap_e_3.example.com
 
 [instance_group_local]

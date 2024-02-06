@@ -25,7 +25,7 @@ peers=execution_nodes
 
 [execution_nodes]
 aap_e_1.example.com
-aap_e_1.example.com
+aap_e_2.example.com
 
 -----
 
