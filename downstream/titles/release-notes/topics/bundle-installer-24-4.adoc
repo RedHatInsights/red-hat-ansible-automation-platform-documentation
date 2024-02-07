@@ -1,4 +1,4 @@
-// This is the release notes file for AAP 2.4 bundle installer release x.x-x.x dated <month date, year>
+// This is the release notes file for AAP 2.4 bundle installer release 2.4-4 dated January 11, 2024
 [id="bundle-installer-24-4"]
 
 = Bundle installer release 2.4-4 - January 11, 2024
@@ -14,13 +14,13 @@ link:https://access.redhat.com/errata/RHBA-2024:0104[RHBA-2024:0104 - Bug Fix Ad
 
 .Security fixes
 
-* Fixed conditional code statements to align with changes from ansible-core issue #82295 (AAP-19099)
-
 * ansible-core: Template Injection (link:https://access.redhat.com/security/cve/cve-2023-5764[CVE-2023-5764])
 
 * python3-galaxy-importer/python39-galaxy-importer: insecure galaxy-importer tarfile extraction (link:https://access.redhat.com/security/cve/cve-2023-5189[CVE-2023-5189])
 
 .Bug fixes
+
+* Fixed conditional code statements to align with changes from ansible-core issue #82295 (AAP-19099)
 
 * Fixed an issue which caused the 'update-ca-trust' handler to be skipped for execution nodes in controller (AAP-18911)
 
