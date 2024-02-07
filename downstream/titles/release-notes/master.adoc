@@ -24,6 +24,8 @@ include::topics/docs-24.adoc[leveloffset=+1]
 
 == Asynchronous updates
 
+include::topics/bundle-installer-24-4.adoc[leveloffset=+2]
+
 include::topics/bundle-installer-24-3.adoc[leveloffset=+2]
 
 include::topics/bundle-installer-24-24.adoc[leveloffset=+2]

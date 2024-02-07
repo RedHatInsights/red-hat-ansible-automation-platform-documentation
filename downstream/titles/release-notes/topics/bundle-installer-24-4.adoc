@@ -1,0 +1,48 @@
+// This is the release notes file for AAP 2.4 bundle installer release x.x-x.x dated <month date, year>
+[id="bundle-installer-24-4"]
+
+= Bundle installer release 2.4-4 - January 11, 2024
+
+link:https://access.redhat.com/errata/RHBA-2024:0104[RHBA-2024:0104 - Bug Fix Advisory]
+
+//Ansible Automation Platform
+== {PlatformNameShort}
+
+.New features and enhancements
+
+* Improved the error pages for {ControllerName} (AAP-18840)
+
+.Security fixes
+
+* Fixed conditional code statements to align with changes from ansible-core issue #82295 (AAP-19099)
+
+* ansible-core: Template Injection (link:https://access.redhat.com/security/cve/cve-2023-5764[CVE-2023-5764])
+
+* python3-galaxy-importer/python39-galaxy-importer: insecure galaxy-importer tarfile extraction (link:https://access.redhat.com/security/cve/cve-2023-5189[CVE-2023-5189])
+
+.Bug fixes
+
+* Fixed an issue which caused the 'update-ca-trust' handler to be skipped for execution nodes in controller (AAP-18911)
+
+* Implemented 'libffi' fix to avoid 'uWSGI' core dumps on failed import (AAP-18196)
+
+* Fixed an issue with checking the license type following an upgrade caused by earlier incomplete upgrade (AAP-17615)
+
+* Postgres certificates are now temporarily copied when checking the Postgres version for SSL mode 'verify-full' (AAP-15374)
+
+//Automation controller
+== {ControllerNameStart}
+
+.New features and enhancements
+
+* Added peering support in the *Edit Instance* and *Add New Instance* forms in the {ControllerName} UI (AAP-15507)
+
+* Added 'max_connections' guidelines to the {PlatformName} Installation Guide (AAP-12883)
+
+* Reduced database connections in {ControllerName} to improve performance (AAP-11222)
+
+.Bug fixes
+
+* Fixed a concurrency bug that caused WebSockets to disconnect and the UI not to refresh on the cluster node (AAP-18748)
+
+* Updated the 'credential_type' parameter as it is required for the credential module (AAP-18186)
