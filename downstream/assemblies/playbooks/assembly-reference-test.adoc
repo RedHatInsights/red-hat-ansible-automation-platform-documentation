@@ -1,0 +1,3 @@
+[id=assembly-reference-test]
+
+= This is a test
