@@ -4,15 +4,29 @@
 
 When *HashiCorp Vault Signed SSH* is selected for *Credential Type*, provide the following metadata to configure your lookup:
 
-* *Server URL* (required): provide the URL used for communicating with HashiCorp Signed SSH's secret management system
-* *Token*: specify the access token used to authenticate HashiCorp's server
-* *CA Certificate*: specify the CA certificate used to verify HashiCorp's server
-* *Approle Role_ID*: specify the ID for Approle authentication
-* *Approle Secret_ID*: specify the corresponding secret ID for Approle authentication
-* *Path to Approle Auth*: specify a path if other than the default path of `/approle`
-
-For more information about Approle and its fields, see the link:https://www.vaultproject.io/docs/auth/approle[Vault documentation for Approle Auth Method].
+* *Server URL* (required): provide the URL used for communicating with HashiCorp Signed SSH's secret management system.
+* *Token*: specify the access token used to authenticate HashiCorp's server.
+* *CA Certificate*: specify the CA certificate used to verify HashiCorp's server.
+* *Approle Role_ID*: specify the ID for Approle authentication.
+* *Approle Secret_ID*: specify the corresponding secret ID for Approle authentication.
+* *Client Certificate*: specify a PEM-encoded client certificate when using the TLS authentication method, including any required intermediate certificates expected by Hashicorp Vault.
+* *Client Certificate Key*: specify a PEM-encoded certificate private key when using the TLS authentication method.
+* *TLS Authentication Role*: specify the role or certificate name in Hashicorp Vault that corresponds to your client certificate when using the TLS authentication method. 
+If it is not provided, Hashicorp Vault attempts to match the certificate automatically. 
+* *Namespace name*: specify the Namespace name (Hashicorp Vault enterprise only).
+* *Kubernetes role*: specify the role name when using Kubernetes authentication.
+* *Username*: enter the username of the user to be used to authenticate this service.
+* *Password*: enter the password associated with the user to be used to authenticate this service.
+* *Path to Auth*: specify a path if other than the default path of `/approle`.
 
 The following is an example of a configured HashiCorp SSH Secrets Engine credential.
 
 image:credentials-create-hashicorp-ssh-credential.png[HashiCorp SSH Secrets Engine credential]
+
+.Additional resources
+
+For more information about Approle authentication method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/approle[Vault documentation for Approle Auth Method].
+
+For more information about the Kubernetes authtication method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/kubernetes[Vault documentation for Kubernetes auth method].
+
+For more information about the TLS certificate auth method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/cert[Vault documentation for TLS certificates auth method].
