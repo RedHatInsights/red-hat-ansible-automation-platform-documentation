@@ -1,26 +1,18 @@
 // This is the release notes file for AAP 2.4 bundle installer release 2.4-1.4 dated September 12, 2023
 
-= Bundle installer release 2.4-1.4 - September 12, 2023
+= RHBA-2023:5140 - bundle installer release 2.4-1.4 - September 12, 2023
 
-link:https://access.redhat.com/errata/RHBA-2023:5140[Red Hat Errata Advisory]
+link:https://access.redhat.com/errata/RHBA-2023:5140[RHBA-2023:5140]
 
 //Automation controller
 == {ControllerNameStart}
 
-.New features and enhancements
+* Fixed a bug that caused a deadlock on shutdown when Redis was unavailable (AAP-14203)
 
-* automation-controller has been updated to 4.4.3.
+* The login form no longer supports autocomplete on the password field due to security concerns (AAP-15545)
 
-.Security fixes
+* automation-controller: cryptography: memory corruption via immutable objects (link:https://access.redhat.com/security/cve/CVE-2023-23931[CVE-2023-23931])
 
-* automation-controller: cryptography: memory corruption via immutable objects (CVE-2023-23931)
+* automation-controller: GitPython: Insecure non-multi options in clone and clone_from is not blocked (link:https://access.redhat.com/security/cve/CVE-2023-40267[CVE-2023-40267])
 
-* automation-controller: GitPython: Insecure non-multi options in clone and clone_from is not blocked (CVE-2023-40267)
-
-* python3-gitpython/python39-gitpython: Insecure non-multi options in clone and clone_from is not blocked (CVE-2023-40267)
-
-.Bug fixes
-
-* Fixed a bug that caused a deadlock on shutdown when Redis was unavailable.
-
-* The login form no longer supports autocomplete on the password field due to security concerns.
+* python3-gitpython/python39-gitpython: Insecure non-multi options in clone and clone_from is not blocked (link:https://access.redhat.com/security/cve/CVE-2023-40267[CVE-2023-40267])

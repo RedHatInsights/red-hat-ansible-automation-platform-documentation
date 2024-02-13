@@ -1,52 +1,22 @@
 // This is the release notes file for AAP 2.4 bundle installer release 2.4-2.1 dated October 10, 2023
 
-= Bundle installer release 2.4-2.1 - October 10, 2023
+= RHBA-2023:5653 - bundle installer release 2.4-2.1 - October 10, 2023
 
-link:https://access.redhat.com/errata/RHBA-2023:5653[Red Hat Errata Advisory]
+link:https://access.redhat.com/errata/RHBA-2023:5653[RHBA-2023:5653]
 
-//Ansible Automation Platform
-== {PlatformNameShort}
+== General
 
-.New features and enhancements
-
-* Updated amazon.aws certified collection to 6.4.0. 
-
-.Bug fixes
-
-* Fixed ansible-compat dependency issue with ansible-lint. 
+* Updated ansible-lint to include an offline mode, which is enabled by default, to prevent outbound network calls (AAH-2606)
 
 //Automation controller
 == {ControllerNameStart}
 
-.New features and enhancements
+* Fixed settings lookup to no longer leave some services in a `supervisord` `FATAL` unresponsive state (AAP-16460)
 
-* automation-controller has been updated to 4.4.5. 
+* Replaced the SQL commands for creating a partition with the use of `ATTACH PARTITION` to avoid exclusive table lock on event tables (AAP-16350)
 
-.Bug fixes
+* Fixed settings to allow simultaneous use of `SOCIAL_AUTH_SAML_ORGANIZATION_ATTR` and `SOCIAL_AUTH_SAML_ORGANIZATION_MAP` for a given organization (AAP-16183)
 
-* Fixed settings lookup to no longer leave some services in a `supervisord` `FATAL` unresponsive state. 
+* Fixed Content Security Policy (CSP) to enable Pendo retrieval (AAP-16057)
 
-* Replaced the SQL commands for creating a partition with the use of `ATTACH PARTITION` to avoid exclusive table lock on event tables. 
-
-* Fixed settings to allow simultaneous use of `SOCIAL_AUTH_SAML_ORGANIZATION_ATTR` and `SOCIAL_AUTH_SAML_ORGANIZATION_MAP` for a given organization. 
-
-* Fixed Content Security Policy (CSP) to enable Pendo retrieval. 
-
-* Updated the Thycotic DevOps Secrets Vault credential plugin to allow for filtering based on `secret_field`. 
-
-//Automation hub
-== {HubNameStart}
-
-.New features and enhancements
-
-* python3-galaxy-importer/python39-galaxy-importer has been updated to 0.4.13. 
-
-* Added `Event-Driven Ansible Content` to the list of predefined tags.
-
-* python3-pulp-ansible/python39-pulp-ansible has been updated to 0.17.5. 
-
-.Bug fixes
-
-* Updated ansible-lint to include an offline mode, which is enabled by default, to prevent outbound network calls.
-
-* The `users` field in namespace data is now ignored during sync.
+* Updated the Thycotic DevOps Secrets Vault credential plugin to allow for filtering based on `secret_field` (AAP-15695)

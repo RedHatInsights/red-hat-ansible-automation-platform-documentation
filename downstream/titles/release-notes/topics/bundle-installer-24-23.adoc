@@ -1,20 +1,16 @@
 // This is the release notes file for AAP 2.4 bundle installer release 2.4-2.3 dated October 19, 2023
 
-= Bundle installer release 2.4-2.3 - October 19, 2023
+= RHBA-2023:5886 - bundle installer release 2.4-2.3 - October 19, 2023
 
-link:https://access.redhat.com/errata/RHBA-2023:5886[Red Hat Errata Advisory]
+link:https://access.redhat.com/errata/RHBA-2023:5886[RHBA-2023:5886]
 
-//Ansible Automation Platform
-== {PlatformNameShort}
+== General
 
-.New features and enhancements
+* receptor: golang: net/http, x/net/http2: rapid stream resets can cause excessive work (CVE-2023-44487) (link:https://access.redhat.com/security/cve/CVE-2023-39325[CVE-2023-39325])
 
-* receptor has been updated to 1.4.2.
+* receptor: golang: crypto/tls: slow verification of certificate chains containing large RSA keys (link:https://access.redhat.com/security/cve/CVE-2023-29409[CVE-2023-29409])
 
-.Security fixes
+//Automation controller
+== {ControllerNameStart}
 
-* receptor: golang: net/http, x/net/http2: rapid stream resets can cause excessive work [CVE-2023-44487] (CVE-2023-39325)
-
-* receptor: HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) (CVE-2023-44487)
-
-* receptor: golang: crypto/tls: slow verification of certificate chains containing large RSA keys (CVE-2023-29409)
+* receptor: HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (Rapid Reset Attack) (link:https://access.redhat.com/security/cve/CVE-2023-44487[CVE-2023-44487])

@@ -1,41 +1,18 @@
 // This is the release notes file for AAP 2.4 bundle installer release 2.4-2.2 dated October 17, 2023
 
-= Bundle installer release 2.4-2.2 - October 17, 2023
+= RHBA-2023:5812 - bundle installer release 2.4-2.2 - October 17, 2023
 
-link:https://access.redhat.com/errata/RHBA-2023:5812[Red Hat Errata Advisory]
+link:https://access.redhat.com/errata/RHBA-2023:5812[RHBA-2023:5812]
 
-//Ansible Automation Platform
-== {PlatformNameShort}
+== General
 
-.New features and enhancements
+* ansible-core: malicious role archive can cause ansible-galaxy to overwrite arbitrary files (link:https://access.redhat.com/security/cve/CVE-2023-5115[CVE-2023-5115])
 
-* ansible-core has been updated to 2.15.5.
-
-* python3-django/python39-django has been updated to 3.2.22.
-
-* galaxy-importer has been updated to 0.4.13. 
-
-* Updated amazon.aws collection to 6.4.0 in ee-supported. 
-
-.Security fixes
-
-* ansible-core: malicious role archive can cause ansible-galaxy to overwrite arbitrary files (CVE-2023-5115)
-
-* python3-django/python39-django: Denial-of-service possibility in django.utils.text.Truncator (CVE-2023-43665)
-
-.Bug fixes
-
-* Fixed ansible-compat dependency issue with ansible-lint. 
+* python3-django/python39-django: Denial-of-service possibility in django.utils.text.Truncator (link:https://access.redhat.com/security/cve/cve-2023-43665[CVE-2023-43665])
 
 //Automation controller
 == {ControllerNameStart}
 
-.New features and enhancements
+* Added a new *Subscription Usage* page to the controller UI to view historical usage of licenses (AAP-16983)
 
-* automation-controller has been updated to 4.4.6.
-
-* Added a new *Subscription Usage* page to the controller UI to view historical usage of licenses. 
-
-.Security fixes
-
-* automation-controller: Django: Potential denial of service vulnerability in django.utils.encoding.uri_to_iri() (CVE-2023-41164)
+* automation-controller: Django: Potential denial of service vulnerability in django.utils.encoding.uri_to_iri() (link:https://access.redhat.com/security/cve/CVE-2023-41164[CVE-2023-41164])

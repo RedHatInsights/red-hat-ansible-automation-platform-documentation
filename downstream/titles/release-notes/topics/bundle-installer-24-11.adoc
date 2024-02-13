@@ -1,27 +1,10 @@
 // This is the release notes file for AAP 2.4 bundle installer release 2.4-1.1 dated July 26, 2023
 
-= Bundle installer release 2.4-1.1 - July 26, 2023
+= RHBA-2023:4288 - bundle installer release 2.4-1.1 - July 26, 2023
 
-link:https://access.redhat.com/errata/RHBA-2023:4288[Red Hat Errata Advisory]
-
-//Ansible Automation Platform
-== {PlatformNameShort}
-
-.New features and enhancements
-
-* Initial release of aap-metrics-utility.
-
-.Bug fixes
-
-* Fixed file permissions in setup bundle.
+link:https://access.redhat.com/errata/RHBA-2023:4288[RHBA-2023:4288]
 
 //Automation hub
 == {HubNameStart}
 
-.New features and enhancements
-
-* automation-hub has been updated to 4.7.1-2.
-
-.Bug fixes
-
-* Fixed issue using gpg key with passphrase for signing services.
+* Fixed issue using gpg key with passphrase for signing services (AAH-2445)

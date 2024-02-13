@@ -1,0 +1,28 @@
+// This is the release notes file for AAP 2.4 async installer release 2.4-5 dated February 07, 2024
+
+[id="installer-24-5"]
+
+= RHSA-2024:0733 - installer release 2.4-5 - February 07, 2024
+
+link:https://access.redhat.com/errata/RHSA-2024:0733[RHSA-2024:0733]
+
+//Automation controller
+== {ControllerNameStart}
+
+* Fixed an error that caused `rsyslogd` to stop sending events to Splunk HTTP Collector (AAP-19069)
+
+//Automation hub
+== {HubNameStart}
+
+* {HubNameStart} now uses system crypto-policies in nginx (AAP-18974)
+
+// Event-Driven Ansible
+== {EDAName}
+
+* Fixed an error that caused a manual installation failure when pinning {EDAName} to an older version (AAP-19399)
+
+== Related RPM and container releases for bundle installer
+
+* link:https://access.redhat.com/errata/RHSA-2024:0322[RHSA-2024:0322]
+
+* link:https://access.redhat.com/errata/RHBA-2023:7863[RHBA-2023:7863]

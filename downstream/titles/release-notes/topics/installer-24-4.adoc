@@ -1,0 +1,29 @@
+// This is the release notes file for AAP 2.4 async installer release 2.4-4 dated January 11, 2024
+
+[id="installer-24-4"]
+
+= RHBA-2024:0104 - installer release 2.4-4 - January 11, 2024
+
+link:https://access.redhat.com/errata/RHBA-2024:0104[RHBA-2024:0104]
+
+== General
+
+* Fixed conditional code statements to align with changes from ansible-core issue #82295 (AAP-19099)
+
+* Fixed an issue which caused the 'update-ca-trust' handler to be skipped for execution nodes in controller (AAP-18911)
+
+* Improved the error pages for {ControllerName} (AAP-18840)
+
+* Implemented 'libffi' fix to avoid 'uWSGI' core dumps on failed import (AAP-18196)
+
+* Fixed an issue with checking the license type following an upgrade caused by earlier incomplete upgrade (AAP-17615)
+
+* Postgres certificates are now temporarily copied when checking the Postgres version for SSL mode 'verify-full' (AAP-15374)
+
+== Related RPM and container releases for bundle installer
+
+* link:https://access.redhat.com/errata/RHSA-2023:7773[RHSA-2023:7773]
+
+* link:https://access.redhat.com/errata/RHBA-2023:7728[RHBA-2023:7728]
+
+* link:https://access.redhat.com/errata/RHBA-2023:7863[RHBA-2023:7863]
