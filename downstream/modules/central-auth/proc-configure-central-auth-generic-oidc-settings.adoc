@@ -25,13 +25,13 @@ NOTE: If you have an existing realm you may go to step 6.
 
 . In the Web origins field, enter your {PlatformNameShort} server IP or hostname. If not in production, set to *.
 +
-. Click on the *Credentials* tab.
+. Click the *Credentials* tab.
 +
 NOTE: Keep track of the Secret to be used later.
 +
 . Log in to {PlatformNameShort} Controller as admin.
-. Click on Settings.
-. Click on Generic OIDC settings.
+. Click Settings.
+. Click Generic OIDC settings.
 . Click btn:[Edit].
 . In the OIDC Key field, enter the name of your client from step 5.
 . In the OIDC Secret field, enter the secret saved from step 8.
