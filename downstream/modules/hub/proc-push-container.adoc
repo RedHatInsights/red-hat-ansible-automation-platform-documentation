@@ -23,6 +23,11 @@ You can push tagged container images to {PrivateHubName} to create new container
 $ podman login -u=__<username>__ -p=__<password>__ __<automation_hub_url>__
 -----
 +
+[WARNING]
+====
+Let Podman prompt you for your password when you log in. Entering your password at the same time as your username can expose your password to the shell history.
+====
++
 . Push your container image to your {HubName} container registry:
 +
 [subs="+quotes"]
