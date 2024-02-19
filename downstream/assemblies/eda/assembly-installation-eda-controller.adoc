@@ -11,6 +11,11 @@ Similar to the {ControllerName} and {HubName} components, the setup for {EDAcont
 {EDAcontroller} must be installed on a separate server and cannot be installed on the same host as {HubName} and {ControllerName}.
 ====
 
+[NOTE]
+====
+If you are running {RHEL} 8 and want to set your memory limits, you must have cgroup v2 enabled before you install {EDAName}. For specific instructions, see the Knowledge-Centered Support (KCS) article, link:https://access.redhat.com/solutions/7054905[Ansible Automation Platform Event-Driven Ansible controller for {RHEL} 8 requires cgroupv2].
+====
+
 include::eda/ref-installing-eda-controller-on-aap.adoc[leveloffset=+1]
 include::eda/ref-deploy-eda-controller-with-aap-operator-on-ocp.adoc[leveloffset=+1]
 
