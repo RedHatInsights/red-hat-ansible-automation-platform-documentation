@@ -10,12 +10,12 @@ You can sort the inventory list by name and searched type, organization, descrip
 ** {ControllerNameStart} provides a demonstration inventory for you to use as you learn how the controller works. 
 You can use it as it is or edit it later.
 You can create another inventory, if necessary. 
-. To add another inventory, see link:https://docs.ansible.com/automation-controller/4.4/html/userguide/inventories.html#ug-inventories-add[Add a new inventory] in the Automation Controller User Guide for more information.
+. To add another inventory, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-adding-new-inventory[Add a new inventory] in the _{ControllerUG}_ for more information.
 . Click btn:[Demo Inventory] to view its details.
 
 image::controller-inventories-demo-details.png[Demo inventory]
 
 As with organizations, inventories also have associated users and teams that you can view through the *Access* tab.
-For more information, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/inventories.html[Inventories] in the Automation Controller User Guide.
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-inventories[Inventories] in the _{ControllerUG}_.
 
 A user with the role of *System Administrator* has been automatically populated for this.

@@ -2,11 +2,11 @@
 
 = Importing a subscription
 
-After you have obtained an authorized {PlatformNameShort} subscription, you must first import it into the {ControllerName} system before you can begin using it.
+After you have obtained an authorized {PlatformNameShort} subscription, you must first import it into the {ControllerName} system before you can use it.
 
 .Prerequisites
 
-* You have obtained a subscriptions manifest. For more information, see link:http://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#obtain-sub-manifest[Obtaining a subscriptions manifest] in the Automation Controller User Guide.
+* You have obtained a subscriptions manifest. For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest] in the _{ControllerUG}_.
 
 .Procedure
 
@@ -15,7 +15,7 @@ The *Subscription Management* screen is displayed.
 +
 image::controller-gs-subscription-management.png[Subscription Management]
 +
-. Retrieve and and import your subscription by completing either of the following steps:
+. Retrieve and import your subscription by completing either of the following steps:
 .. If you have link:https://access.redhat.com/management/subscription_allocations[obtained a subscription manifest], upload it by navigating to the location where the file is saved (the subscription manifest is the complete .zip file, and not only its component parts).
 +
 [NOTE]
@@ -30,22 +30,22 @@ Use your Satellite username or password if your {ControllerName} cluster nodes a
 After you enter your credentials, click btn:[Get Subscriptions].
 +
 {ControllerNameStart} retrieves your configured subscription service. 
-Then, it prompts you to choose the subscription that you want to run and applies that metadata to {ControllerName}. 
+Then, it prompts you to select the subscription that you want to run and applies that metadata to {ControllerName}. 
 You can log in over time and retrieve new subscriptions if you have renewed.
 +
 . Click btn:[Next] to proceed to *Tracking and Insights*. 
 Tracking and insights collect data to help Red Hat improve the product and deliver a better user experience. 
-For more information about data collection, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/usability_data_collection.html#usability-data-collection[Usability Analytics and Data Collection]. 
+For more information about data collection, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-usability-analytics-data-collection[Usability Analytics and Data Collection]. 
 This option is checked by default, but you can opt out of any of the following:
 .. *User analytics*. Collects data from the controller UI.
 .. *Insights Analytics*. Provides a high level analysis of your automation with {ControllerName}. 
 It helps you to identify trends and anomalous use of the controller. 
 For opt-in of Automation Analytics to be effective, your instance of {ControllerName} must be running on Red Hat Enterprise Linux. 
-For more information, see the link:http://docs.ansible.com/automation-controller/4.4/html/administration/usability_data_collection.html#user-data-insights[Automation Analytics] section.
+For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-automation-analytics[Automation Analytics] section.
 +
 [NOTE]
 ====
-You can change your analytics data collection preferences at any time, as described in the link:https://docs.ansible.com/automation-controller/4.4/html/administration/usability_data_collection.html#usability-data-collection[Usability Analytics and Data Collection] section.
+You can change your analytics data collection preferences at any time, as described in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-usability-analytics-data-collection[Usability Analytics and Data Collection] section.
 ====
 +
 . After you have specified your tracking and Insights preferences, click btn:[Next] to proceed to the End User Agreement.
@@ -80,5 +80,5 @@ For more information, see the link:https://access.redhat.com/documentation/en-us
 
 [NOTE]
 ====
-The *System Administrator* role is not equivalent to the *Administrator* user checkbox, and does not provide sufficient permissions to access the subscriptions API page.
+The *System Administrator* role is not equal to the *Administrator* user checkbox, and does not offer enough permissions to access the subscriptions API page.
 ====

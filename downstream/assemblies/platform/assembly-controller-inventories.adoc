@@ -13,8 +13,8 @@ Organizations are assigned to inventories, while permissions to launch playbooks
 
 For more information, see the following documentation:
 
-* link:http://docs.ansible.com/automation-controller/4.4/html/userguide/users.html#ug-users-permissions[Inventories, Users - Permissions] 
-* link:http://docs.ansible.com/automation-controller/4.4/html/userguide/teams.html#ug-teams-permissions[Teams - Permissions] 
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-user-permissions[Adding and removing user permissions] 
+* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-team-add-user[Adding or removing a user] 
 * link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#about_the_installer_inventory_file[About the installer inventory file]
 
 include::platform/proc-controller-create-inventory.adoc[leveloffset=+1]
@@ -29,7 +29,7 @@ By using an inventory file, Ansible can manage a large number of hosts with a si
 Inventories also help you use Ansible more efficiently by reducing the number of command line options you have to specify.
 Inventories are divided into groups and these groups contain the hosts.
 
-Groups may be sourced manually, by entering host names into {Controllername}, or from one of its supported cloud providers.
+Groups may be sourced manually, by entering host names into {ControllerName}, or from one of its supported cloud providers.
 
 [NOTE]
 ====

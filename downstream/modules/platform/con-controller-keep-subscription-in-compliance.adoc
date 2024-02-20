@@ -51,5 +51,5 @@ These are soft-deleted, meaning their records are not removed, but are not being
 endif::controller-UG,controller-AG[]
 
 ifdef::controller-GS,controller-AG[]
-For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/userguide/import_license.html#subscription-compliance[Subscription compliance] in the _{ControllerUG}_.
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-keep-subscription-in-compliance[Troubleshooting: Keeping your subscription in compliance] in the _{ControllerUG}_.
 endif::controller-GS,controller-AG[]
