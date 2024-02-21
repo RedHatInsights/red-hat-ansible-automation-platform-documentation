@@ -8,11 +8,11 @@
 
 The *Automation Calculator* produces its default total savings figure based on estimates for each variable.
 
-You can tune this calculation by providing more specific organizational cost information, as well as adjusting the time values for each of the top templates. The total savings will update dynamically as each field is edited.
+You can tune this calculation by providing more specific organizational cost information and adjusting the time values for each of the top templates. The total savings will update dynamically as you edit each field.
 
 [NOTE]
 ====
-Automation savings calculations are not saved in Red Hat Automation Analytics.
+Automation savings calculations are not saved in Red Hat {Analytics}.
 ====
 
 To calculate your automation savings:
@@ -24,4 +24,4 @@ To calculate your automation savings:
 .. Adjust time values for top templates to provide time to manually perform each task that the template automates.
 
 
-*Total savings* will update based on the information you provide in each field.
+*Total savings* will update based on the information you enter in each field.
