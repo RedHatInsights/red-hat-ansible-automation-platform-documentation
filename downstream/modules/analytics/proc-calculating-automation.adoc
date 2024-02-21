@@ -8,7 +8,7 @@
 
 The *Automation Calculator* produces its default total savings figure based on estimates for each variable.
 
-You can tune this calculation by providing more specific organizational cost information and adjusting the time values for each of the top templates. The total savings will update dynamically as you edit each field.
+You can tune this calculation by providing more specific organizational cost information and adjusting the time values for each of the top templates. The total savings updates dynamically as you edit each field.
 
 [NOTE]
 ====
@@ -24,4 +24,4 @@ To calculate your automation savings:
 .. Adjust time values for top templates to provide time to manually perform each task that the template automates.
 
 
-*Total savings* will update based on the information you enter in each field.
+*Total savings* updates based on the information you enter in each field.
