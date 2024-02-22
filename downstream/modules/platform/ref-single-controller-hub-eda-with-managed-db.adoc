@@ -94,12 +94,11 @@ sso_keystore_password=''
 # postgres_ssl_key=/path/to/pgsql.key
 
 # Boolean flag used to verify Automation Controller's
-# web certificates when making calls from Automation EDA Controller.
-#
+# web certificates when making calls from Automation {EDAcontroller}.
 # automationedacontroller_controller_verify_ssl = true
-
-# Certificate and key to install in Automation Hub node
-# automationhub_ssl_cert=/path/to/automationhub.cert
-# automationhub_ssl_key=/path/to/automationhub.key
+#
+# Certificate and key to install in Automation {EDAcontroller} node
+# automationedacontroller_ssl_cert=/path/to/automationeda.crt
+# automationedacontroller_ssl_key=/path/to/automationeda.key
 
 -----
