@@ -9,6 +9,11 @@
 
 The following architectural diagram is an example of a fully deployed {PlatformNameShort} with all possible components.
 
+[NOTE]
+====
+In some of the following use cases, hop nodes are used instead of a direct link from an execution node. Hop nodes are an option for connecting control and execution nodes. Hop nodes use minimal CPU and memory, so vertically scaling hop nodes does not impact system capacity.
+====
+
 .{PlatformNameShort} Network ports and protocols 
 image::aap-network-ports-protocols-314.png[Interaction of Ansible Automation Platform components on the network with information about the ports and protocols that are used.]
 
