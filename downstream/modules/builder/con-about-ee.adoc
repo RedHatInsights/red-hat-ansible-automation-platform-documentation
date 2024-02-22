@@ -4,13 +4,13 @@
 
 [role="_abstract"]
 
-{ExecEnvNameStart} are container images on which all automation in {PlatformName} is run.
-{ExecEnvNameStart} create a common language for communicating automation dependencies, and provide a standard way to build and distribute the automation environment.
+All automation in {PlatformName} runs on container images called {ExecEnvName}.
+{ExecEnvNameStart} create a common language for communicating automation dependencies, and offer a standard way to build and distribute the automation environment.
 
-An {ExecEnvNameSing} is expected to contain the following:
+An {ExecEnvNameSing} should contain the following:
 
 * Ansible 2.9 or Ansible Core 2.11-2.15
 * Python 3.8-3.11
-* Ansible Runner
+* {Runner}
 * Ansible content collections and their dependencies
 * System dependencies

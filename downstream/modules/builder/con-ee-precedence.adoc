@@ -10,9 +10,9 @@ Project updates will always use the control plane {ExecEnvName} by default, howe
 . The `default_environment` defined on the organization of the inventory the job uses.
 . The current `DEFAULT_EXECUTION_ENVIRONMENT` setting (configurable at `api/v2/settings/jobs/`)
 . Any image from the `GLOBAL_JOB_EXECUTION_ENVIRONMENTS` setting.
-. Any other global execution environment.
+. Any other global {ExecEnvShort}.
 
 [NOTE]
 ====
-If more than one execution environment fits a criteria (applies for 6 and 7), the most recently created one is used.
+If more than one {ExecEnvShort} fits a criteria (applies for 6 and 7), the most recently created one is used.
 ====

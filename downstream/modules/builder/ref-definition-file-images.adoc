@@ -4,14 +4,14 @@
 
 The `images` section of the definition file identifies the base image. Verification of signed container images is supported with the `podman` container runtime.
 
-See the following table for a list of values that can be used in `images`:
+See the following table for a list of values that you can use in `images`:
 
 [cols="a,a"]
 |===
 | Value | Description
 
 | `base_image`
-| Specifies the parent image for the {ExecEnvNameSing}, enabling a new image to be built that is based on an already-existing image. This is typically a supported execution environment base image like _ee-minimal_ or _ee-supported_, but it can also be an execution environment image that you've created previously and want to customize further.
+| Specifies the parent image for the {ExecEnvNameSing} which enables a new image to be built that is based on an existing image. This is typically a supported {ExecEnvShort} base image such as _ee-minimal_ or _ee-supported_, but it can also be an {ExecEnvShort} image that you have created and want to customize further.
 
 A `name` key is required for the container image to use. Specify the `signature _original_name` key if the image is mirrored within your repository, but is signed with the image's original signature key. Image names must contain a tag, such as `:latest`.
 

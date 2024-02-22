@@ -2,10 +2,10 @@
 
 = Customizing an existing {ExecEnvName} image
 
-Ansible Controller ships with three default execution environments:
+Ansible Controller includes three default execution environments:
 
-* `Ansible 2.9` - no collections are installed other than Controller modules
-* `Minimal` - contains the latest Ansible 2.15 release along with Ansible Runner, but contains no collections or other additional content
+* `Ansible 2.9` - Includes Controller modules only
+* `Minimal` - Includes the latest Ansible 2.15 release along with {Runner}, but does not include collections or other content
 * `EE Supported` - Minimal, plus all Red Hat-supported collections and dependencies
 
 While these environments cover many automation use cases, you can add additional items to customize these containers for your specific needs. The following procedure adds the `kubernetes.core` collection to the `ee-minimal` default image:
@@ -16,13 +16,13 @@ While these environments cover many automation use cases, you can add additional
 ----
 $ podman login -u="[username]" -p="[token/hash]" registry.redhat.io
 ----
-. Ensure that you can pull the desired {ExecEnvNameSing} base image:
+. Ensure that you can pull the required {ExecEnvNameSing} base image:
 +
 -----
 podman pull registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel8:latest
 -----
 +
-. Configure your {Builder} files to specify the desired base image and any additional content to add to the new execution environment image.
+. Configure your {Builder} files to specify the required base image and any additional content to add to the new {ExecEnvShort} image.
 .. For example, to add the link:https://galaxy.ansible.com/kubernetes/core[Kubernetes Core Collection from Galaxy] to the image, use the Galaxy entry:
 +
 ====
@@ -31,7 +31,7 @@ collections:
   - kubernetes.core
 ----
 ====
-.. For more information on definition files and their content, refer to <<assembly-definition-file-breakdown,to definition file breakdown section>>.
+.. For more information about definition files and their content, see the <<assembly-definition-file-breakdown,definition file breakdown section>>.
 . In the {ExecEnvShort} definition file, specify the original `ee-minimal` container's URL and tag in the `EE_BASE_IMAGE` field. In doing so, your final `execution-environment.yml` file will look like the following:
 +
 .A customized `execution-environment.yml` file
@@ -54,7 +54,7 @@ dependencies:
 ====
 Since this example uses the community version of `kubernetes.core` and not a certified collection from {HubName}, we do not need to create an `ansible.cfg` file or reference that in our definition file.
 ====
-. Build the new {ExecEnvShort} image using the following command:
+. Build the new {ExecEnvShort} image by using the following command:
 +
 [subs=+quotes]
 ----
@@ -92,7 +92,7 @@ $ podman tag [username]/new-ee [automation-hub-IP-address]/[username]/new-ee
 +
 [NOTE]
 =====
-You must have `admin` or appropriate container repository permissions for {HubName} to push a container. See _Managing containers in private automation hub_ in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform[Red Hat Ansible Automation Platform documentation] for more information.
+You must have `admin` or appropriate container repository permissions for {HubName} to push a container. For more information, see the _Manage containers in {PrivateHubName}_ section in link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html-single/managing_content_in_automation_hub/index#managing-containers-hub[Managing content in automation hub].
 =====
 +
 -----
@@ -106,7 +106,7 @@ $ podman push [automation-hub-IP-address]/[username]/new-ee
 ----
 +
 . Pull your new image into your {ControllerName} instance:
-.. Navigate to {ControllerName}.
+.. Go to {ControllerName}.
 .. From the navigation panel, click menu:Administration[Execution Environments].
 .. Click btn:[Add].
 .. Enter the appropriate information then click btn:[Save] to pull in the new image.
