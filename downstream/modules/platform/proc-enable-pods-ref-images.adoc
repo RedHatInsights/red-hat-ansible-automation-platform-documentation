@@ -5,7 +5,7 @@
 If a container group uses a container from a secured registry that requires a credential, you can associate a Container Registry credential with the Execution Environment that is assigned to the job template. 
 {ControllerNameStart} uses this to create an `ImagePullSecret` for you in the {OCPShort} namespace where the container group job runs, and cleans it up after the job is done.
 
-Alternatively, if the `ImagePullSecret` already exists in the container group namespace, you can specify the `ImagePullSecret` in the custom pod specification for the ContainerGroup.
+Alternatively, if the `ImagePullSecret` already exists in the container group namespace, you can specify the `ImagePullSecret` in the custom pod specification for the `ContainerGroup`.
 
 Note that the image used by a job running in a container group is always overridden by the Execution Environment associated with the job.
 
@@ -64,7 +64,7 @@ $ oc secrets link builder <pull_secret_name>
 + 
 . Optional: For builds, you must also reference the secret as the pull secret from within your build configuration.
 
-When the container group is successfully created, the *Details* tab of the newly created container group remains, which allows you to review and edit your container group information. 
+When the container group is successfully created, the *Details* tab of the newly created container group remains. This allows you to review and edit your container group information. 
 This is the same menu that is opened if you click the btn:[Edit] icon *&#9998;* from the *Instance Group* link. 
 You can also edit instances and review jobs associated with this instance group.
 

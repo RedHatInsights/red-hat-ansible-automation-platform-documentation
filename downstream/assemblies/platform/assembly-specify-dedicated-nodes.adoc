@@ -5,7 +5,7 @@ ifdef::context[:parent-context: {context}]
 [id="assembly-specify-dedicted-nodes"]
 = Specifying dedicated nodes
 
-A kubernetes cluster runs on top of multiple Virtual Machines or nodes (generally anywhere between 2 and 20 nodes). 
+A Kubernetes cluster runs on top of many Virtual Machines or nodes (generally anywhere between 2 and 20 nodes). 
 Pods can be scheduled on any of these nodes. 
 When you create or schedule a new pod, use the `topology_spread_constraints` setting to configure how new pods are distributed across the underlying nodes when scheduled or created. 
 

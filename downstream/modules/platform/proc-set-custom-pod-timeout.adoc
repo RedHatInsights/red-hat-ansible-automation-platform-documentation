@@ -1,7 +1,7 @@
 [id="proc-set-custom-pod-timeout"]
 
 .Extra settings
-With `extra_settings`, you can pass multiple custom settings using the awx-operator. 
+With `extra_settings`, you can pass many custom settings by using the awx-operator. 
 The parameter `extra_settings` is appended to `/etc/tower/settings.py` and can be an alternative to the `extra_volumes` parameter.
 
 [cols="20%,20%,20%",options="header"]
@@ -30,9 +30,9 @@ The parameter `extra_settings` is appended to `/etc/tower/settings.py` and can b
 
 A container group job in {ControllerName} transitions to the `running` state just before you submit the pod to the Kubernetes API. 
 {ControllerNameStart} then expects the pod to enter the `Running` state before `AWX_CONTAINER_GROUP_POD_PENDING_TIMEOUT` seconds has elapsed. 
-You can set `AWX_CONTAINER_GROUP_POD_PENDING_TIMEOUT` to a higher value if you want {ControllerName} to wait for longer before cancelling jobs that fail to enter the `Running` state.
+You can set `AWX_CONTAINER_GROUP_POD_PENDING_TIMEOUT` to a higher value if you want {ControllerName} to wait for longer before canceling jobs that fail to enter the `Running` state.
 `AWX_CONTAINER_GROUP_POD_PENDING_TIMEOUT` is how long {ControllerName} waits from creation of a pod until the Ansible work begins in the pod. 
-You can also extend the time if the pod cannot be scheduled becaus of resource constraints. 
+You can also extend the time if the pod cannot be scheduled because of resource constraints. 
 You can do this using `extra_settings` on the {Controllername} specification.
 The default value is two hours. 
 

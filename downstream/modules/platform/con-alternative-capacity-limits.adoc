@@ -2,7 +2,7 @@
 
 = Alternative capacity limiting with {ControllerName} settings
 
-The capacity of a control node in Openshift is determined by the memory and CPU limits. 
+The capacity of a control node in OpenShift is determined by the memory and CPU limits. 
 However, if these are not set then the capacity is determined by the memory and CPU detected by the pod on the filesystem, which are actually the CPU and memory of the underlying Kubernetes node.
 
 This can lead to issues with overwhelming the underlying Kubernetes pod if the {ControllerName} pod is not the only pod on that node. 
@@ -14,5 +14,5 @@ SYSTEM_TASK_ABS_MEM = 3gi
 SYSTEM_TASK_ABS_CPU = 750m
 ----
 
-This acts as a soft limit within the application that enables {ControllerName} to control how much work it attempts to run, while not risking any CPU throttling from Kubernetes itself, or being reaped if memory usage peaks above the desired limit. 
-These settings accept the same format accepted by resource requests and limits in the kubernetes resource definition.
+This acts as a soft limit within the application that enables {ControllerName} to control how much work it attempts to run, while not risking any CPU throttling from Kubernetes itself, or being reaped if memory usage peaks above the required limit. 
+These settings accept the same format accepted by resource requests and limits in the Kubernetes resource definition.

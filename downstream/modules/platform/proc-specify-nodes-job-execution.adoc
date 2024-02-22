@@ -25,7 +25,7 @@ The output is similar to this (shown here in a table):
 | `worker2` | Ready | <none> | 1d | v1.13.0 | `...,kubernetes.io/hostname=worker2`
 |====
 +
-. Choose one of your nodes, and add a label to it using the following command:
+. Choose one of your nodes, and add a label to it by using the following command:
 +
 [options="nowrap" subs="+quotes,attributes"]
 ----

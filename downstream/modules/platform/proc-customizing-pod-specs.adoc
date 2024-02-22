@@ -9,7 +9,7 @@ You can use the following procedure to customize the pod.
 . Check btn:[Customize pod specification].
 . In the *Pod Spec Override* field, specify the namespace by using the toggle to enable and expand the *Pod Spec Override* field.
 . Click btn:[Save].
-. Optional: Click btn:[Expand] to view the entire customization window if you wish to provide additional customizations.
+. Optional: Click btn:[Expand] to view the entire customization window if you want to provide additional customizations.
 
 The image used at job launch time is determined by the execution environment associated with the job. 
 If a Container Registry credential is associated with the execution environment, then {ControllerName} uses `ImagePullSecret` to pull the image. 

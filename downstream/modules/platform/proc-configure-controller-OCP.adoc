@@ -38,7 +38,7 @@ spec:
 termination_grace_period_seconds: <time to wait for job to finish>
 -----
 +
-. Configure `podAntiAffinity` for web and task pod to spread out the deployment in AutomationController specification:
+. Configure `podAntiAffinity` for web and task the pod to spread out the deployment in AutomationController specification:
 +
 -----
 task_affinity:

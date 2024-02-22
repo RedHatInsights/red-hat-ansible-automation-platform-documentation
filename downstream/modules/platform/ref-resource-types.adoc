@@ -10,7 +10,7 @@ Memory is specified in units of bytes.
 CPU and memory are collectively referred to as compute resources, or resources.
 Compute resources are measurable quantities that can be requested, allocated, and consumed.
 They are distinct from API resources.
-API resources, such as Pods and Services, are objects that can be read and modified through the Kubernetes API server.
+API resources, such as pods and services, are objects that can be read and modified through the Kubernetes API server.
 
 == Specifying resource requests and limits for pods and containers
 For each container, you can specify resource limits and requests, including the following:
@@ -23,14 +23,14 @@ spec.containers[].resources.requests.cpu
 spec.containers[].resources.requests.memory
 ----
 
-Although you can only specify requests and limits for individual containers, it is also useful to think about the overall resource requests and limits for a Pod.
-For a particular resource, a Pod resource request/limit is the sum of the resource requests/limits of that type for each container in the Pod.
+Although you can only specify requests and limits for individual containers, it is also useful to think about the overall resource requests and limits for a pod.
+For a particular resource, a pod resource request or limit is the sum of the resource requests or limits of that type for each container in the pod.
 
 == Resource units in Kubernetes
 
 .CPU resource units
 Limits and requests for CPU resources are measured in CPU units.
-In Kubernetes, 1 CPU unit is equivalent to 1 physical processor core, or 1 virtual core, depending on whether the node is a physical host or a virtual machine running inside a physical machine.
+In Kubernetes, one CPU unit is equal to one physical processor core, or one virtual core, depending on whether the node is a physical host or a virtual machine running inside a physical machine.
 
 Fractional requests are allowed.
 When you define a container with `spec.containers[].resources.requests.cpu` set to `0.5`, you are requesting half as much CPU time compared to if you asked for 1.0 CPU.
@@ -76,19 +76,19 @@ spec:
 ----
 
 {ControllerNameStart} will not schedule jobs that use more resources than the limit set.
-If the task pod does use more resources than the limit set, the container is OOMKilled by kubernetes and restarted.
+If the task pod does use more resources than the limit set, the container is OOMKilled by Kubernetes and restarted.
 
 == Size recommendations for resource requests
 
-All jobs that use a container group use the same Pod Specification.
-The Pod Specification includes the resource requests for the pod that runs the job.
+All jobs that use a container group use the same pod specification.
+The pod specification includes the resource requests for the pod that runs the job.
 
 All jobs use the same resource requests.
 The specified resource requests for your particular job on the pod specification affect how Kubernetes schedules the job pod based on resources available on worker nodes.
 These are the default values.
 
 * One fork typically requires 100Mb of memory.
-This is set using `system_task_forks_mem`.
+This is set by using `system_task_forks_mem`.
 If your jobs have five forks, the job pod specification must request 500Mb of memory.
 * For job templates that have a particularly high forks value or otherwise need larger resource requests, you should create a separate container group with a different pod spec that indicates larger resource requests.
 Then you can assign it to the job template.
