@@ -8,7 +8,7 @@
 
 [role="_abstract"]
 
-An Ansible Content Collection is a ready-to-use toolkit for automation. It includes multiple types of content such as playbooks, roles, modules, and plugins all in one place. The diagram below shows the basic structure of a collection:
+An Ansible Content Collection is a ready-to-use toolkit for automation. It includes several types of content such as playbooks, roles, modules, and plugins all in one place. The following diagram shows the basic structure of a collection:
 
 ....
 collection/
@@ -39,4 +39,4 @@ collection/
     └── unit/
 ....
 
-In {PlatformName}, {HubName} serves as the source for Ansible Certified Content Collections.
+In {PlatformName}, {HubName} serves as the source for {CertifiedName}.

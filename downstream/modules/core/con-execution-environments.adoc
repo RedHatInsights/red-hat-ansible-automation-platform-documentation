@@ -5,7 +5,7 @@
 The `context` attribute enables module reuse. Every module ID includes {context}, which ensures that the module has a unique ID so you can include it multiple times in the same guide.
 ////
 
-= About Execution Environments
+= About execution environments
 
 
 [role="_abstract"]
@@ -15,15 +15,15 @@ The `context` attribute enables module reuse. Every module ID includes {context}
 {ExecEnvNameStart} contain:
 
 * Ansible Core
-* Ansible Runner
+* {Runner}
 * Ansible Collections
 * Python libraries
 * System dependencies
 * Custom user needs
 
-You can define and create an automation execution environment using {Builder}.
+You can define and create an {ExecEnvNameSing} using {Builder}.
 
 [role="_additional-resources"]
 .Additional resources
 
-* For more information on {Builder}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments].
+* For more information about {Builder}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments].
