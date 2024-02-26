@@ -3,16 +3,19 @@
 :toclevels: 1
 
 :experimental:
+:mesh-VM:
 
 include::attributes/attributes.adoc[]
 
 
 // Book Title
-= {PlatformName} automation mesh guide
+= Red Hat Ansible Automation Platform Automation Mesh Guide for VM-based installations
 
-Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
+Thank you for your interest in {PlatformName}. 
+{PlatformNameShort} is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
 
-This guide helps you to understand the installation requirements and processes behind installing {PlatformNameShort}. This document has been updated to include information for the latest release of {PlatformNameShort}.
+This guide helps you to understand the requirements and processes behind setting up an automation mesh on a VM-based installation of {PlatformName}. 
+This document has been updated to include information for the latest release of {PlatformNameShort}.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]

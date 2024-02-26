@@ -20,7 +20,7 @@ The *execution plane* consists of execution nodes that execute automation on beh
 
 * *Execution nodes* - Execution nodes run jobs under `ansible-runner` with `podman` isolation. This node type is similar to isolated nodes. This is the default node type for execution plane nodes.
 
-* *Hop nodes* - similar to a jump host, hop nodes will route traffic to other execution nodes. Hop nodes cannot execute automation.
+* *Hop nodes* - similar to a jump host, hop nodes route traffic to other execution nodes. Hop nodes cannot execute automation.
 
 == Peers
 

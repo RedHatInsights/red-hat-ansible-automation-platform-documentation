@@ -5,13 +5,13 @@ ifdef::context[:parent-context: {context}]
 
 
 [id="assembly-planning-mesh"]
-= Planning for automation mesh in your {PlatformName} environment
+= Planning for automation mesh in your VM-based {PlatformName} environment
 
 :context: planning-mesh
 
 
 [role="_abstract"]
-The following topics contain information to help plan an automation mesh deployment in your {PlatformNameShort} environment. The subsequent sections explain the concepts that comprise automation mesh in addition to providing examples on how you can design automation mesh topologies. Simple to complex topology examples are included to illustrate the various ways you can deploy automation mesh.
+The following topics contain information to help plan an automation mesh deployment in your VM-based {PlatformNameShort} environment. The subsequent sections explain the concepts that comprise automation mesh in addition to providing examples on how you can design automation mesh topologies. Simple to complex topology examples are included to illustrate the various ways you can deploy automation mesh.
 
 
 include::platform/con-about-automation-mesh.adoc[leveloffset=+1]
