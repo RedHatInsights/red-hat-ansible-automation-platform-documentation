@@ -5,24 +5,24 @@
 = Creating roles
 
 [role="_abstract"]
-You can create roles using the Ansible Galaxy CLI tool. Role-specific commands can be accessed from the `roles` subcommand.
+You can create roles by using the {Galaxy} CLI tool. You can access Role-specific commands from the `roles` subcommand.
 
 -----
 ansible-galaxy role init <role_name>
 -----
 
-Standalone roles outside of Collections are still supported, but new roles should be created inside of a Collection to take advantage of all the features {PlatformNameShort} has to offer.
+Standalone roles outside of Collections are still supported, but create new roles inside of a Collection to take advantage of all the features {PlatformNameShort} has to offer.
 
 .Procedure
 
-. In your terminal, navigate to the `roles` directory inside a collection.
-. Create a role called `role_name` inside the collection created previously:
+. In your terminal, go to the `roles` directory inside a collection.
+. Create a role called `role_name` inside the collection:
 +
 -----
 $ ansible-galaxy role init my_role
 -----
 +
-The collection now contains a role named `my_role` inside the `roles` directory:
+The collection now includes a role named `my_role` inside the `roles` directory:
 +
 -----
     ~/.ansible/collections/ansible_collections/<my_namespace>/<my_collection_name>
@@ -48,7 +48,7 @@ The collection now contains a role named `my_role` inside the `roles` directory:
                 └── main.yml
 -----
 +
-. A custom role skeleton directory can be supplied using the `--role-skeleton` argument. This allows organizations to create standardized templates for new roles to suit their needs.
+. A custom role skeleton directory can be supplied by using the `--role-skeleton` argument. This allows organizations to create standardized templates for new roles to suit their needs.
 
     ansible-galaxy role init my_role --role-skeleton ~/role_skeleton
 
@@ -58,4 +58,4 @@ This will create a role named `my_role` by copying the contents of `~/role_skele
 [role="_additional-resources"]
 .Additional resources
 
-* For more information on creating roles, see link:https://galaxy.ansible.com/docs/contributing/creating_role.html[Creating roles] in the Ansible Galaxy documentation.
+* For more information about creating roles, see link:https://galaxy.ansible.com/docs/contributing/creating_role.html[Creating roles] in the {Galaxy} documentation.
