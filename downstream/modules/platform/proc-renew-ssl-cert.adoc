@@ -14,3 +14,16 @@ aap_service_regen_cert=true
 ----
 . Run the installer.
 
+.Verification
+
+* Validate the CA file and server.crt file on {ControllerName}:
+----
+openssl verify -CAfile ansible-automation-platform-managed-ca-cert.crt /etc/tower/tower.cert
+openssl s_client -connect <AUTOMATION_HUB_URL>:443
+----
+
+* Validate the CA file and server.crt file on {HubName}:
+----
+openssl verify -CAfile ansible-automation-platform-managed-ca-cert.crt /etc/pulp/certs/pulp_webserver.crt
+openssl s_client -connect <AUTOMATION_CONTROLLER_URL>:443
+----
