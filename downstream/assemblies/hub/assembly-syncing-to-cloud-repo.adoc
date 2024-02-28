@@ -48,3 +48,5 @@ include::hub/proc-obtaining-org-collection-url.adoc[leveloffset=+1]
 include::hub/proc-set-rhcertified-remote.adoc[leveloffset=+1]
 
 include::hub/proc-set-community-remote.adoc[leveloffset=+1]
+
+include::hub/proc-configure-proxy-remote.adoc[leveloffset=+1]
