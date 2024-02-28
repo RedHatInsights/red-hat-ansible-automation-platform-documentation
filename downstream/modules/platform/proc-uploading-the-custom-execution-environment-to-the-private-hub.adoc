@@ -1,0 +1,30 @@
+//Used in downstream/titles/aap-installation-guide/platform/assembly-disconnected-installation.adoc
+
+:_newdoc-version: 2.15.1
+:_template-generated: 2024-02-05
+:_mod-docs-content-type: PROCEDURE
+
+[id="uploading-the-custom-execution-environment-to-the-private-hub_{context}"]
+= Uploading the custom {ExecEnvShort} to the private hub
+
+[role="_abstract"]
+
+Before the new {ExecEnvShort} image can be used for automation jobs, it must be uploaded to the {PrivateHubName}.  
+
+First, verify that the {ExecEnvShort} image can be seen in the local podman cache:
+
+----
+$ podman images --format "table {{.ID}} {{.Repository}} {{.Tag}}"
+IMAGE ID	    REPOSITORY					              TAG
+b38e3299a65e	private-hub.example.com/custom-ee     	  latest
+8e38be53b486	private-hub.example.com/ee-minimal-rhel8  latest
+----
+
+Then log in to the {PrivateHubName}'s container registry and push the image to make it available for use with job templates and workflows:
+
+----
+$ podman login private-hub.example.com -u admin
+Password:
+Login Succeeded!
+$ podman push private-hub.example.com/custom-ee:latest
+----

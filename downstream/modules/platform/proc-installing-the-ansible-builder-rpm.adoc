@@ -1,234 +1,55 @@
+//Used in downstream/titles/aap-installation-guide/platform/assembly-disconnected-installation.adoc
+
+
 [id="installing-the-ansible-builder-rpm_{context}"]
 
-= Installing the ansible-builder RPM
+= Installing the {Builder} RPM
 
 [role="_abstract"]
 
-To create custom {ExecEnvShort} images in a disconnected environment, you must have a working copy of ansible-builder installed. On a RHEL system there are several ways to do this.
 
-* Subscribe the RHEL box to a Satellite on the disconnected network.
-* Attach the {PlatformNameShort} subscription and enable the {PlatformNameShort} repo.
+On the RHEL system where custom {ExecEnvShort}s will be built, you will install the {Builder} RPM using a Satellite server that already exists in the environment. This method is preferred because the {ExecEnvShort} images can use any RHEL content from the pre-existing Satellite if required.
+
+
+.Procedure
+
+. Install the {Builder} RPM from the {PlatformNameShort} repository.  
+
+.. Subscribe the RHEL system to a Satellite on the disconnected network.
+
+.. Attach the {PlatformNameShort} subscription and enable the AAP repository.  The repository name will either be `ansible-automation-platform-2.4-for-rhel-8-x86_64-rpms` or `ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms` depending on the version of RHEL used on the underlying system.
+
+.. Install the {Builder} RPM.  The version of the {Builder} RPM must be 3.0.0 or later in order for the examples below to work properly.
+
+. Install the {Builder} RPM from the {PlatformNameShort} setup bundle.  Use this method if a Satellite server is not available on your disconnected network.
+
+.. Unarchive the {PlatformNameShort} setup bundle.
+
+.. Install the {Builder} RPM and its dependencies from the included content.
+
+----
+$ tar -xzvf ansible-automation-platform-setup-bundle-2.4-3-x86_64.tar.gz
+$ cd ansible-automation-platform-setup-bundle-2.4-3-x86_64/bundle/packages/el8/repos/
+$ sudo dnf install ansible-builder-3.0.0-2.el8ap.noarch.rpm \
+    python39-requirements-parser-0.2.0-4.el8ap.noarch.rpm \
+    python39-bindep-2.10.2-3.el8ap.noarch.rpm \
+    python39-jsonschema-4.16.0-1.el8ap.noarch.rpm \
+    python39-pbr-5.8.1-2.el8ap.noarch.rpm \
+    python39-distro-1.6.0-3.el8pc.noarch.rpm \
+    python39-packaging-21.3-2.el8ap.noarch.rpm \
+    python39-parsley-1.3-2.el8pc.noarch.rpm \
+    python39-attrs-21.4.0-2.el8pc.noarch.rpm \
+    python39-pyrsistent-0.18.1-2.el8ap.x86_64.rpm \
+    python39-pyparsing-3.0.9-1.el8ap.noarch.rpm
+----
 
 [NOTE]
 ====
-This is preferred if a Satellite exists because the {ExecEnvShort} images can use RHEL content from the Satellite if the underlying build host is registered.
+The specific versions may be slightly different depending on the version of the setup bundle being used.
 ====
 
-.Prerequisites
 
-* Any collection required must already be uploaded into your {PrivateHubName}.
+[role="_additional-resources"]
+.Additional resources
 
-
-.Procedure
-
-. Unarchive the {PlatformNameShort} setup bundle.
-. Install the ansible-builder RPM and its dependencies from the included content:
-+
-----
-$ tar -xzvf ansible-automation-platform-setup-bundle-2.4-1.tar.gz
-$ cd ansible-automation-platform-setup-bundle-2.4/bundle/el8/repos/
-$ sudo yum install ansible-builder-1.0.1-2.el8ap.noarch.rpm
-python38-requirements-parser-0.2.0-3.el8ap.noarch.rpm
-----
-+
-. Create a directory for your custom {ExecEnvShort} build artifacts.
-+
-----
-$ mkdir custom-ee
-$ cd custom-ee/
-----
-+
-. Create an __execution-environment.yml__ file that defines the requirements for your custom {ExecEnvShort} following the documentation at
-https://ansible-builder.readthedocs.io/en/stable/definition/. Override the `base_image` to point to the {ExecEnvShort} available in your {PrivateHubName}.
-+
-----
-$ cat execution-environment.yml
----
-version: 3
-images:
-  base_image:
-    name:'<hub_fqdn>/ee-supported-rhel9:latest'
-
-dependencies:
-  python: requirements.txt
-  galaxy: requirements.yml
-----
-+
-. Create an __ansible.cfg__ file that points to your {PrivateHubName} and contains credentials that allow uploading, such as an admin user token.
-+
-----
-$ cat ansible.cfg
-[galaxy]
-server_list = private_hub
-
-[galaxy_server.private_hub]
-url=https://<hub_fqdn>/api/galaxy/
-token=<admin_token>
-----
-+
-. Create a __ubi.repo__ file that points to your disconnected UBI repo mirror (this could be your Satellite if the UBI content is hosted there).
-+
-This is an example output where `reposync` was used to mirror the UBI repos.
-+
-----
-$ cat ubi.repo
-[ubi-8-baseos]
-name = Red Hat Universal Base Image 8 (RPMs) - BaseOS
-baseurl = http://<ubi_mirror_fqdn>/repos/ubi-8-baseos
-enabled = 1
-gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-gpgcheck = 1
-
-[ubi-8-appstream]
-name = Red Hat Universal Base Image 8 (RPMs) - AppStream
-baseurl = http://<ubi_mirror_fqdn>/repos/ubi-8-appstream
-enabled = 1
-gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-gpgcheck = 1
-----
-
-. Add the CA certificate used to sign the {PrivateHubName} web server certificate.
-
-.. For self-signed certificates (the installer default), make a copy of the file __/etc/pulp/certs/root.crt__ from your {PrivateHubName} and name it *hub-root.crt*.
-
-.. If you used an internal certificate authority to request and sign the {PrivateHubName} web server certificate, make a copy of that CA certificate called *hub-root.crt*.
-
-. Create your python requirements.txt and ansible collection requirements.yml with the content needed for your custom {ExecEnvShort} image.
-
-. Use ansible-builder to create the context directory used to build the {ExecEnvShort} image.
-+
-----
-$ ansible-builder create
-Complete! The build context can be found at: /home/cloud-user/custom-ee/context
-$ ls -1F
-ansible.cfg
-context/
-execution-environment.yml
-hub-root.crt
-pip.conf
-requirements.txt
-requirements.yml
-ubi.repo
-----
-
-. Copy the files used to override the internet-facing defaults into the context directory.
-+
-----
-$ cp ansible.cfg hub-root.crt pip.conf ubi.repo context/
-----
-+
-. Edit the file *context/Containerfile* and add the following modifications.
-
-.. In the first *EE_BASE_IMAGE* build section, add the *ansible.cfg* and *hub-root.crt* files and run the `update-ca-trust` command.
-
-.. In the *EE_BUILDER_IMAGE* build section, add the *ubi.repo* and *pip.conf* files.
-
-.. In the final *EE_BASE_IMAGE* build section, add the *ubi.repo* and pip.conf files.
-+
-----
-$ cat context/Containerfile
-ARG EE_BASE_IMAGE=<hub_fqdn>/ee-supported-rhel8:latest
-ARG EE_BUILDER_IMAGE=<hub_fqdn>/ansible-builder-rhel8:latest
-
-FROM $EE_BASE_IMAGE as galaxy
-ARG ANSIBLE_GALAXY_CLI_COLLECTION_OPTS=
-USER root
-
-ADD _build /build
-WORKDIR /build
-
-# this section added
-ADD ansible.cfg /etc/ansible/ansible.cfg
-ADD hub-root.crt /etc/pki/ca-trust/source/anchors/hub-root.crt
-RUN update-ca-trust
-# end additions
-RUN ansible-galaxy role install -r requirements.yml \
-    --roles-path /usr/share/ansible/roles
-RUN ansible-galaxy collection install \
-    $ANSIBLE_GALAXY_CLI_COLLECTION_OPTS -r requirements.yml \
-    --collections-path /usr/share/ansible/collections
-
-FROM $EE_BUILDER_IMAGE as builder
-
-COPY --from=galaxy /usr/share/ansible /usr/share/ansible
-
-ADD _build/requirements.txt requirements.txt
-RUN ansible-builder introspect --sanitize \
-    --user-pip=requirements.txt \
-    --write-bindep=/tmp/src/bindep.txt \
-    --write-pip=/tmp/src/requirements.txt
-# this section added
-ADD ubi.repo /etc/yum.repos.d/ubi.repo
-ADD pip.conf /etc/pip.conf
-# end additions
-RUN assemble
-
-FROM $EE_BASE_IMAGE
-USER root
-
-COPY --from=galaxy /usr/share/ansible /usr/share/ansible
-# this section added
-ADD ubi.repo /etc/yum.repos.d/ubi.repo
-ADD pip.conf /etc/pip.conf
-# end additions
-
-COPY --from=builder /output/ /output/
-RUN /output/install-from-bindep && rm -rf /output/wheels
-----
-+
-. Create the {ExecEnvShort} image in the local podman cache by using the `podman` command.
-+
-----
-$ podman build -f context/Containerfile \
-    -t <hub_fqdn>/custom-ee:latest
-----
-+
-. After the custom {ExecEnvShort} image builds successfully, push it to the {PrivateHubName}.
-+
-----
-$ podman push <hub_fqdn>/custom-ee:latest
-----
-
-== Upgrading between minor {PlatformNameShort} releases
-
-To upgrade between minor releases of {PlatformNameShort} 2, use this general workflow.
-
-.Procedure
-
-. Download and unarchive the latest {PlatformNameShort} 2 setup bundle.
-
-. Create a backup of the existing installation.
-
-. Copy the existing installation inventory file into the new setup bundle directory.
-
-. Run `./setup.sh` to upgrade the installation.
-
-For example, to upgrade from version 2.2.0-7 to 2.3-1.2, make sure that both setup bundles are on the initial controller node where the installation occurred:
-
-----
-    $ ls -1F
-ansible-automation-platform-setup-bundle-2.2.0-7/
-ansible-automation-platform-setup-bundle-2.2.0-7.tar.gz
-ansible-automation-platform-setup-bundle-2.3-1.2/
-ansible-automation-platform-setup-bundle-2.3-1.2.tar.gz
-----
-
-Back up the 2.2.0-7 installation:
-----
-$ cd ansible-automation-platform-setup-bundle-2.2.0-7
-$ sudo ./setup.sh -b
-$ cd ..
-----
-
-Copy the 2.2.0-7 inventory file into the 2.3-1.2 bundle directory:
-----
-$ cd ansible-automation-platform-setup-bundle-2.2.0-7
-$ cp inventory ../ansible-automation-platform-setup-bundle-2.3-1.2/
-$ cd ..
-----
-
-Upgrade from 2.2.0-7 to 2.3-1.2 with the setup.sh script:
-----
-$ cd ansible-automation-platform-setup-bundle-2.3-1.2
-$ sudo ./setup.sh
-----
+* For details on creating a Satellite environment on a disconnected network see link:https://access.redhat.com/documentation/en-us/red_hat_satellite/6.14/html/installing_satellite_server_in_a_disconnected_network_environment/index[Installing Satellite Server in a Disconnected Network Environment]. 

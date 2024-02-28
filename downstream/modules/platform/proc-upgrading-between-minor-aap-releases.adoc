@@ -1,0 +1,52 @@
+//Used in downstream/titles/aap-installation-guide/platform/assembly-disconnected-installation.adoc
+
+:_newdoc-version: 2.15.1
+:_template-generated: 2024-02-05
+:_mod-docs-content-type: PROCEDURE
+
+[id="upgrading-between-minor-aap-releases_{context}"]
+= Upgrading between minor {PlatformNameShort} releases
+
+[role="_abstract"]
+
+To upgrade between minor releases of {PlatformNameShort} 2, use this general workflow.
+
+.Procedure
+
+. Download and unarchive the latest {PlatformNameShort} 2 setup bundle.
+
+. Create a backup of the existing installation.
+
+. Copy the existing installation inventory file into the new setup bundle directory.
+
+. Run `./setup.sh` to upgrade the installation.
+
+For example, to upgrade from version 2.2.0-7 to 2.3-1.2, make sure that both setup bundles are on the initial controller node where the installation occurred:
+
+----
+    $ ls -1F
+ansible-automation-platform-setup-bundle-2.2.0-7/
+ansible-automation-platform-setup-bundle-2.2.0-7.tar.gz
+ansible-automation-platform-setup-bundle-2.3-1.2/
+ansible-automation-platform-setup-bundle-2.3-1.2.tar.gz
+----
+
+Back up the 2.2.0-7 installation:
+----
+$ cd ansible-automation-platform-setup-bundle-2.2.0-7
+$ sudo ./setup.sh -b
+$ cd ..
+----
+
+Copy the 2.2.0-7 inventory file into the 2.3-1.2 bundle directory:
+----
+$ cd ansible-automation-platform-setup-bundle-2.2.0-7
+$ cp inventory ../ansible-automation-platform-setup-bundle-2.3-1.2/
+$ cd ..
+----
+
+Upgrade from 2.2.0-7 to 2.3-1.2 with the setup.sh script:
+----
+$ cd ansible-automation-platform-setup-bundle-2.3-1.2
+$ sudo ./setup.sh
+----
