@@ -18,14 +18,18 @@ Generate a token by taking the following steps:
 . Choose "Collections" from the left-hand menu.
 
 . Choose the"API token" under the "Collections" section of the menu.
++
 
 . Once you have the token, set the following environment variable so that {Builder} can access the token:
+
 +
 ----
 $ export ANSIBLE_GALAXY_SERVER_PRIVATE_HUB_TOKEN=<your_token>
 ----
 +
+
 . Create the custom {ExecEnvShort} by using the command:
+
 +
 ----
 $ cd $HOME/custom-ee
