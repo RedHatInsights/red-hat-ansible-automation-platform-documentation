@@ -26,6 +26,8 @@ include::topics/docs-24.adoc[leveloffset=+1]
 
 === Installer releases
 
+include::topics/installer-24-6.adoc[leveloffset=+2]
+
 include::topics/installer-24-5.adoc[leveloffset=+3]
 
 include::topics/installer-24-4.adoc[leveloffset=+3]

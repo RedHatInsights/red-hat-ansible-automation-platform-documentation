@@ -25,8 +25,6 @@
 
 * Podman pods must be executed with memory limits.
 
-* Long running activations with loads of events can cause an out of disk space issue.
-
 * Users can add multiple tokens even when only the first AWX token is used. 
 
 * A race condition occurs when creating and rapidly deleting an activation causes multiple errors. 
@@ -50,6 +48,8 @@
 * Bulk deletion of rulebook activation lists is not consistent, and the deletion can be either successful or unsuccessful.
 
 * When users access the detail screen of a rule audit, the related rulebook activation link is broken. 
+
+* Long running activations with loads of events can cause an out of disk space issue. Resolved in xref:installer-24-6[installer release 2.4-6].
 
 * Certain characters, such as hyphen (-), forward slash (/), and period (.), are not supported in the event keys. Resolved in xref:installer-24-3[installer release 2.4-3].
 
