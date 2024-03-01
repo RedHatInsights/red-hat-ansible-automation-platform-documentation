@@ -25,7 +25,7 @@ On the RHEL system where custom {ExecEnvShort}s will be built, you will install 
 
 .. Unarchive the {PlatformNameShort} setup bundle.
 
-.. Install the {Builder} RPM and its dependencies from the included content.
+. Install the {Builder} RPM and its dependencies from the included content.
 
 ----
 $ tar -xzvf ansible-automation-platform-setup-bundle-2.4-3-x86_64.tar.gz
