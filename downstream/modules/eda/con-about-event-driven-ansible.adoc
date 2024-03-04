@@ -7,12 +7,12 @@
 {EDAName} is designed for simplicity and flexibility. With these enhancements, you can:
 
 * Automate decision making
-* Use numerous event sources
+* Use many event sources
 * Implement event-driven automation within and across multiple IT use cases
 * Achieve new milestones in efficiency, service delivery excellence and cost savings
 
 {EDAName} minimizes human error and automates processes to increase efficiency in troubleshooting and information gathering.
 
-This guide helps you get started with {EDAName} by providing links to information on understanding, installing, and using Event-Driven Ansible controller. 
+This guide helps you get started with {EDAName} by providing links to information about understanding, installing, and using {EDAcontroller}. 
 
 

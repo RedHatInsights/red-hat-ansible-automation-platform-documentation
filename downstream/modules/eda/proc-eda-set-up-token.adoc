@@ -10,7 +10,7 @@
 
 .Procedure
 
-. Navigate to the {EDAcontroller} Dashboard.
+. Go to the {EDAcontroller} Dashboard.
 . From the top navigation panel, select your profile.
 . Go to *User details*.
 . Select menu:Controller Tokens[Create controller token].
@@ -19,7 +19,7 @@
 Name:: Insert the name.
 Description:: This field is optional.
 Token:: Create the token in {ControllerName}. 
-For more information on creating the token, refer to the link:https://docs.ansible.com/automation-controller/latest/html/userguide/users.html#users-tokens[Users - Tokens] section of the Automation controller User Guide.
+For more information about creating the token, see the link:https://docs.ansible.com/automation-controller/latest/html/userguide/users.html#users-tokens[Users - Tokens] section of the {ControllerUG}.
 +
 [NOTE]
 ====
