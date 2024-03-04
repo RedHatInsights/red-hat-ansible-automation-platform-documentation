@@ -25,6 +25,15 @@ Default = 443
 Default = 63072000 seconds, or two years.
 | *`nginx_tls_protocols`* | Defines support for `ssl_protocols` in Nginx.
 
+Values available `TLSv1`, `TLSv1.1, `TLSv1.2`, `TLSv1.3`
+
+The TLSv1.1 and TLSv1.2 parameters only work when OpenSSL 1.0.1 or higher is used.
+
+The TLSv1.3 parameter only works when OpenSSL 1.1.1 or higher is used.
+
+If `nginx_tls-protocols = ['TLSv1.3']` only TLSv1.3  is enabled.
+To set more than one protocol use `nginx_tls_protocols = ['TLSv1.2', 'TLSv.1.3']`
+
 Default = `TLSv1.2`.
 | *`nginx_user_headers`* | List of nginx headers for the {ControllerName} web server.
 
