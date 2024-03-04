@@ -1,0 +1,11 @@
+<title>Red Hat Ansible Automation Platform Automation Mesh for operator-based installations</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>2.4</productnumber>
+<subtitle>Automate at scale in a cloud-native way</subtitle>
+<abstract>
+<para>This guide shows how to deploy automation mesh as part of your operator-based Ansible Automation Platform environment.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

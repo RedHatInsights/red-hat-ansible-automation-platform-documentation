@@ -1,0 +1,20 @@
+[id="proc-run-jobs-on-execution-nodes"]
+
+= Running jobs on execution nodes
+
+You must specify where jobs are run, or they default to running in the control cluster.
+
+To do this, set up a Job Template.
+
+For more information on Job Templates, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-job-templates[Job Templates] in the _{ControllerUG}_.
+
+.Procedure
+
+. The *Templates* list view shows job templates that are currently available.
+From this screen you can launch image:rightrocket.png[Launch,15,15], edit image:leftpencil.png[Edoit,15,15], and copy image:copy.png[Copy,15,15] a workflow job template. 
+. Select the job you want and click the image:rightrocket.png[Launch,15,15] icon.
+. Select the *Instance Group* on which you want to run the job. 
+Note that a System Administrator must grant you or your team permissions to be able to use an instance group in a job template. 
+If you select multiple jobs templates, the order in which you select them sets the execution precedence.
+. Click btn:[Next].
+. Click btn:[Launch].

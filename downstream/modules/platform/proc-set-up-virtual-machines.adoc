@@ -1,0 +1,62 @@
+[id="proc-set-up-virtual-machines"]
+
+= Setting up Virtual Machines for use in an {AutomationMesh}
+
+.Procedure
+
+. SSH into each of the RHEL instances and perform the following steps. 
+Depending on your network access and controls, SSH proxies or other access models might be required. 
++
+Use the following command:
++
+----
+ssh [username]@[host_ip_address]
+----
++
+For example, for an {PlatformNameShort} instance running on {AWS}.
++
+----
+ssh ec2-user@10.0.0.6
+----
+
+. Create or copy an SSH key that can be used to connect from the hop node to the execution node in later steps. 
+This can be a temporary key used just for the automation mesh configuration, or a long-lived key. 
+The SSH user and key are used in later steps.
+
+. Enable your RHEL subscription with `baseos` and `appstream` repositories. 
+{PlatformNameShort} RPM repositories are only available through subscription-manager, not the _Red Hat Update Infrastructure_ (RHUI).  
+If you attempt to use any other Linux footprint, including RHEL with RHUI, this causes errors. 
++
+----
+sudo subscription-manager register --auto-attach
+----
++
+If Simple Content Access is enabled for your account, use:
++
+----
+sudo subscription-manager register
+----
++
+For more information about Simple Content Access, see link:https://access.redhat.com/articles/simple-content-access[Simple Content Access].
+
+. Enable {PlatfromNameShort} subscriptions and the proper {PlatformName} channel:
++
+----
+# subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-8-x86_64-rpms for RHEL 8
+
+# subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-9-x86_64-rpms for RHEL 9
+----
+
+. Ensure the packages are up to date:
++
+---- 
+sudo dnf upgrade -y
+----
+
+. Install the ansible-core packages:
++
+----
+sudo dnf install -y ansible-core
+----
+
+

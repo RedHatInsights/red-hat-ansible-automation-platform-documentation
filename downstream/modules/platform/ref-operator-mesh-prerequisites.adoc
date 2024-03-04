@@ -1,0 +1,17 @@
+[id="ref-operator-mesh-prerequisites"]
+
+= Prerequisites
+
+The automation mesh is dependent on hop and execution nodes running on {RHEL} (RHEL). 
+Your {PlatformName} subscription grants you ten {RHEL} licenses that can be used for running components of {PlatformNameShort}. 
+The following steps prepare the RHEL instances for deployment of the automation mesh.
+
+. You require a {RHEL} operating system. 
+This machine requires a static IP address, or a resolvable DNS hostname that {ControllerName} can access. 
+. Ensure that you have the minimum requirements for the RHEL virtual machine before proceeding. 
+For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[Red Hat Ansible Automation Platform system requirements].
+. Deploy the RHEL instances within the remote networks where communication is required.
+For information about creating virtual machines, see link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_virtualization/assembly_creating-virtual-machines_configuring-and-managing-virtualization[Creating Virtual Machines] in the _{RHEL}_ documentation. Remember to scale the capacity of your virtual machines sufficiently so that your proposed tasks can run on them.
+
+** RHEL ISOs can be obtained from access.redhat.com. 
+** RHEL cloud images can be built using Image Builder from {Console}.

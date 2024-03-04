@@ -1,0 +1,154 @@
+[id="proc-define-mesh-node-types"]
+
+= Defining {AutomationMesh} node types
+
+To expand job capacity, create a standalone *execution node* that can be added to run alongside a deployment of {ControllerName}. 
+These execution nodes are not part of the {ControllerName} Kubernetes cluster. 
+The control nodes run in the cluster connect and submit work to the execution nodes through Receptor. 
+These execution nodes are registered in {ControllerName} as type `execution` instances, meaning they are only used to run jobs, not dispatch work or handle web requests as control nodes do.
+
+*Hop nodes* can be added to sit between the control plane of {ControllerName} and standalone execution nodes. 
+These hop nodes are not part of the Kubernetes cluster and are registered in {ControllerName} as an instance of type `hop`, meaning they only handle inbound and outbound traffic for otherwise unreachable nodes in different or more strict networks.
+
+The following procedure demonstrates how to set the node type for the hosts.
+
+.Procedure
+
+. From the navigation panel of {ControllerName}, select menu:Instances[].
+. On the *Instances* list page, click btn:[Add]. 
+The *Create new Instance* window opens.
++
+image::instances_create_new.png[Create new Instance]
++
+An instance requires the following attributes:
+
+* *Host Name*: (required) Enter a fully qualified domain name (public DNS) or IP address for your instance. This field is equivalent to `hostname` for installer-based deployments.  
++
+[NOTE]
+==== 
+If the instance uses private DNS that cannot be resolved from the control cluster, DNS lookup routing fails, and the generated SSL certificates is invalid. 
+Use the IP address instead.
+====
++
+* Optional: *Description*: Enter a description for the instance.
+* *Instance State*: This field is auto-populated, indicating that it is being installed, and cannot be modified.
+* *Listener Port*: This port is used for the receptor to listen on for incoming connections. 
+You can set the port to one that is appropriate for your configuration. 
+This field is equivalent to `listener_port` in the API. 
+The default value is 27199, though you can set your own port value.
+* *Instance Type*: Only `execution` and `hop` nodes can be created. 
+Operator based deployments do not support Control or Hybrid nodes.
++
+Options:
+
+** *Enable Instance*: Check this box to make it available for jobs to run on an execution node.
+** Check the *Managed by Policy* box to enable policy to dictate how the instance is assigned.
+** Check the *Peers from control nodes* box to enable control nodes to peer to this instance automatically. For hop nodes, check the *Peers from Control* nodes box to create a direct communication link between the hop node and {ControllerName}. 
+For execution nodes that communicate with hop nodes, do not check this box.
+** To peer an execution node with a hop node, click the image:search.png[Search,15,15] icon next to the *Peers* field.
++
+The Select Peers window is displayed.
++
+Peer the execution node to the hop node.
+
+. Click btn:[Save].
++
+image::instances_create_details.png[Create Instance details]
+
+. To view a graphical representation of your updated topology, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/assembly-controller-topology-viewer[Topology viewer].
++
+[NOTE]
+====
+Execute the following steps from any computer that has SSH access to the newly created instance. 
+====
+
+. Click the image:download.png[Download,15,15] icon next to *Install Bundle* to download the tar file that includes this new instance and the files necessary to install the created node into the {AutomationMesh}.
++
+image::instances_install_bundle.png[Install instance]
++
+The install bundle contains TLS certificates and keys, a certificate authority, and a proper Receptor configuration file.
++
+---- 
+receptor-ca.crt
+work-public-key.pem
+receptor.key
+install_receptor.yml
+inventory.yml
+group_vars/all.yml
+requirements.yml
+----
+
+. Extract the downloaded `tar.gz` Install Bundle from the location where you downloaded it. 
+To ensure that these files are in the correct location on the remote machine, the install bundle includes the `install_receptor.yml` playbook. 
+The playbook requires the Receptor collection. 
+Run the following command to download the collection:
++
+----
+ansible-galaxy collection install -r requirements.yml
+----
+
+. Before running the `ansible-playbook` command, edit the following fields in the `inventory.yml` file:
++
+----
+all:
+  hosts:
+    remote-execution:
+      ansible_host: 10.0.0.6
+      ansible_user: <username> # user provided
+  ansible_ssh_private_key_file: ~/.ssh/<id_rsa>
+----
+
+* Ensure `ansible_host` is set to the IP address or DNS of the node.
+* Set `ansible_user` to the username running the installation.
+* Set `ansible_ssh_private_key_file` to contain the filename of the private key used to connect to the instance.
+* The content of the `inventory.yml` file serves as a template and contains variables for roles that are applied during the installation and configuration of a receptor node in a mesh topology. 
+You can modify some of the other fields, or replace the file in its entirety for advanced scenarios. 
+For more information, see link:https://github.com/ansible/receptor-collection/blob/main/README.md[Role Variables].
+. For a node that uses a private DNS, add the following line to `inventory.yml`:
++
+----
+ ansible_ssh_common_args: <your ssh ProxyCommand setting>
+----
++
+This instructs the `install-receptor.yml` playbook to use the proxy command to connect through the local DNS node to the private node.
+
+. When the attributes are configured, click btn:[Save].
+The *Details* page of the created instance opens.
+
+. Save the file to continue.
+. The system that is going to run the install bundle to setup the remote node and run `ansible-playbook` requires the `ansible.receptor` collection to be installed:
++
+----
+ansible-galaxy collection install ansible.receptor
+----
++
+or 
++
+----
+ansible-galaxy install -r requirements.yml
+----
++
+* Installing the receptor collection dependency from the `requirements.yml` file consistently retrieves the receptor version specified there. 
+Additionally, it retrieves any other collection dependencies that might be needed in the future.
+* Install the receptor collection on all nodes where your playbook will run, otherwise an error occurs.
+
+. If receptor_listener_port is defined, the machine also requires an available open port on which to establish inbound TCP connections, for example, 27199. 
+Run the following command to open port 27199 for receptor communication:
++
+----
+sudo firewall-cmd --permanent --zone=public --add-port=27199/tcp
+----
+ 
+. Run the following playbook on the machine where you want to update your automation mesh:
++
+----
+ansible-playbook -i inventory.yml install_receptor.yml
+----
++
+After this playbook runs, your automation mesh is configured.
++
+image::instances_list_view2.png[Instances list view]
+
+
+
+

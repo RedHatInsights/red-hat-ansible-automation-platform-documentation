@@ -1,0 +1,33 @@
+[id="ref-removing-instances"]
+
+= Removing Instances
+
+From the *Add Instances page*, you can add, remove or run health checks on your nodes.
+
+[NOTE]
+====
+You must follow the procedures for installing RHEL packages for any additional nodes you create. 
+If you peer this additional node to an existing hop node, you must also install the Install Bundle on each node.
+====
+
+Use the check boxes next to an instance to select it to remove it, or run a health check against it. 
+
+[NOTE]
+====,
+* If a node is removed using the UI, then the node is "removed" and  does not show a status. 
+If you delete the VM of the node before it is removed in the UI, it will show an error.  
+* You only need to reinstall the Install Bundle if the topology changes the communication pattern, that is, hop nodes change or you add nodes.
+====
+
+When a button is disabled, you do not have permission for that particular action. 
+Contact your Administrator to grant you the required level of access. 
+
+If you are able to remove an instance, you receive a prompt for confirmation.
+
+image::instances_delete_prompt.png[Instances delete prompt]
+
+[NOTE]
+====
+You can still remove an instance even if it is active and jobs are running on it. 
+{ControllerNameStart} waits for jobs running on this node to complete before removing it.
+====

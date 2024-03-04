@@ -1,0 +1,33 @@
+[id="assembly-automation-mesh-operator-aap"]
+
+= {AutomationMeshStart} for operator-based {PlatformName}
+
+Scaling your automation mesh is available on OpenShift deployments of {PlatformName} and is possible through adding or removing nodes from your cluster dynamically, using the *Instances* resource of the {ControllerName} UI, without running the installation script.
+
+Instances serve as nodes in your mesh topology. 
+{AutomationMeshStart} enables you to extend the footprint of your automation. 
+The location where you launch a job can be different from the location where the ansible-playbook runs.
+
+To manage instances from the {ControllerName} UI, you must have System Administrator or System Auditor permissions.
+
+In general, the more processor cores (CPU) and memory (RAM) a node has, the more jobs that can be scheduled to run on that node at once. 
+
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-jobs#controller-capacity-determination[Automation controller capacity determination and job impact]. 
+
+include::platform/ref-operator-mesh-prerequisites.adoc[leveloffset=+1]
+include::platform/proc-set-up-virtual-machines.adoc[leveloffset=+1]
+include::platform/proc-define-mesh-node-types.adoc[leveloffset=+1]
+include::platform/ref-removing-instances.adoc[leveloffset=+2]
+include::platform/proc-controller-create-instance-group.adoc[leveloffset=+1]
+include::platform/proc-controller-associate-instances-to-instance-group.adoc[leveloffset=+1]
+include::platform/proc-run-jobs-on-execution-nodes.adoc[leveloffset=+1]
+include::platform/proc-connecting-nodes-through-mesh-ingress.adoc[leveloffset=+1]
+include::platform/proc-pulling-the-secret.adoc[leveloffset=+1]
+
+
+
+
+
+
+
+
