@@ -115,7 +115,7 @@ Default = `awx`.
 | *`postgres_use_ssl`* | Use this variable if postgreSQL uses SSL.
 // The postgres_max_connections variable is for Controller v4.5: Do not include it until v4.5 is released.
 // | *`postgres_max_connections`* | Max database connections setting to apply if you are using installer-managed postgreSQL. See the administration guide for help selecting a value.
-| *`receptor_listener_port`* | Port to use for recptor connection.
+| *`receptor_listener_port`* | Port to use for receptor connection.
 
 Default = 27199
 | *`supervisor_start_retry_count`* | When specified, it adds `startretries = <value specified>` to the supervisor config file (/etc/supervisord.d/tower.ini).
