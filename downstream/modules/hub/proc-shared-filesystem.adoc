@@ -2,7 +2,7 @@
 
 = Setting up the shared filesystem
 
-You must mount the shared file system on each automation hub node:
+You must mount the shared file system on each {HubName} node:
 
 .Procedure
 

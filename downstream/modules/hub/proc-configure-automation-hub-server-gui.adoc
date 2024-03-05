@@ -30,7 +30,7 @@ Creating a new token revokes any previous tokens generated for {HubName}. Update
 .. Click btn:[Edit].
 .. Under Galaxy Credentials, click the btn:[Search] icon.
 .. Select the credential that you created for {HubName}, and place it at the beginning of the list.
-.. Optional: If you have a secondary source of content, such as Ansible Galaxy, place this credential after the credential that you created for {HubName}.
+.. Optional: If you have a secondary source of content, such as {Galaxy}, place this credential after the credential that you created for {HubName}.
 .. Click btn:[Select].
 .. Click btn:[Save].
 
@@ -48,5 +48,5 @@ You have now configured {HubName} as your primary server. You can begin to downl
 
 [role="_additional-resources"]
 .Additional resources
-* For more information about server list configuration options and using Ansible Galaxy as an Ansible content source, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
+* For more information about server list configuration options and using {Galaxy} as an Ansible content source, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#configuring-the-ansible-galaxy-client[Ansible Galaxy User Guide].
 * For more information about creating and using credentials, see the link:https://docs.ansible.com/automation-controller/4.2.1/html/userguide/credentials.html[Credentials] section of Automation Controller User Guide v4.2.1.

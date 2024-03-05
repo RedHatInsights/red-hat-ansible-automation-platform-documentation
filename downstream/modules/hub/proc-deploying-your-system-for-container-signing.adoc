@@ -3,7 +3,7 @@
 
 = Deploying your system for container signing
 
-{HubNameStart} implements image signing to provide better security for the execution environment container images.
+{HubNameStart} implements image signing to offer better security for the {ExecEnvShort} container images.
 
 To deploy your system so that it is ready for container signing, create a signing script.
 
@@ -13,7 +13,7 @@ Installer looks for the script and key on the same server where installer is loc
 ====
 
 .Procedure
-. From a terminal, create create a signing script, and pass the script path as an installer parameter.
+. From a terminal, create a signing script, and pass the script path as an installer parameter.
 +
 *Example*:
 +

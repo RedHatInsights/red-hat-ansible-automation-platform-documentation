@@ -1,7 +1,7 @@
 // Module included in the following assemblies:
 // obtaining-token/master.adoc
 [id="proc-create-api-token"]
-= Creating the API token in automation hub
+= Creating the API token in {HubName}
 
 In {HubName}, you can create an API token by using *Token management*. The API token is a secret token used to protect your content.
 

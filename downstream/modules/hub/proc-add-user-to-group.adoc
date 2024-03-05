@@ -6,4 +6,4 @@
 
 You can add users to groups when you create a group. But, you can also manually add users to existing groups.
 
-For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/getting_started_with_automation_hub/index#proc-add-users-to-group[Adding users to existing groups] in the Getting started with automation hub guide.
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/getting_started_with_automation_hub/index#proc-add-users-to-group[Adding users to existing groups] in the Getting started with {HubName} guide.

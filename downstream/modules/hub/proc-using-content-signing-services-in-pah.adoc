@@ -1,6 +1,6 @@
 [id="proc-using-content-signing-services-in-pah"]
 
-= Using content signing services in private automation hub
+= Using content signing services in {PrivateHubName}
 
 After you have configured content signing on your {PrivateHubName}, you can manually sign a new collection or replace an existing signature with a new one.
 When users download a specific collection, this signature indicates that the collection is for them and has not been modified after certification.
