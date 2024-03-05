@@ -1,0 +1,5 @@
+[id="controller-api-tools"]
+
+= Available tools with the API
+
+include::platform/ref-controller-api-tools.adoc[leveloffset=+1]

@@ -1,0 +1,8 @@
+[id="controller-api-browsing-api"]
+
+= Browsing with the API
+
+REST APIs give access to resources (data entities) through URI paths.
+
+
+

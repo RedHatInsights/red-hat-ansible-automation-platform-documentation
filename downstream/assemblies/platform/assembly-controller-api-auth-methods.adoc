@@ -1,0 +1,10 @@
+[id="controller-api-auth-methods"]
+
+= Authentication methods using the API
+
+You can use the following authentication methods in the API:
+
+* Session authentication
+* Basic authentication
+* OAuth 2 token authentication
+* Single Sign-On authentication

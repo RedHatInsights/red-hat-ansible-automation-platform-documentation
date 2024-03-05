@@ -1,0 +1,5 @@
+[id="controller-api-readonly-fields"]
+
+= Read-only fields
+
+Certain fields in the REST API are marked read-only.

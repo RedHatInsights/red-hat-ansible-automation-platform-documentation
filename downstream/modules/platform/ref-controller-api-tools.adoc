@@ -1,0 +1,18 @@
+[id="ref-controller-api-tools"]
+
+Representational State Transfer (REST) relies on a stateless, client-server, and cacheable communications protocol, usually the HTTP protocol.
+
+You might find it helpful to see which API calls the user interface makes in sequence. 
+To do this, you can use the UI from Firebug or Chrome with developer plugins.
+
+Another option is to use link:http://www.charlesproxy.com/[Charles Proxy]. 
+This offers a visualizer that you might find helpful. 
+While it is commercial software, it can insert itself as an operating system X proxy and intercept both requests from web browsers, curl and other API consumers.
+
+Further options include the following:
+
+* link:http://www.telerik.com/fiddler[Fiddler]
+* link:https://mitmproxy.org/[mitmproxy]
+* link:https://addons.mozilla.org/en-US/firefox/addon/live-http-headers/[Live HTTP headers FireFox extension]
+* link:http://sourceforge.net/projects/paros/[Paros]
+

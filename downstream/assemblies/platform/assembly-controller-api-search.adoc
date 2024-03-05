@@ -1,0 +1,5 @@
+[id="controller-api-search"]
+
+= Using the search query string parameter
+
+Use the search query string parameter to perform a non-case-sensitive search within all designated text fields of a model.

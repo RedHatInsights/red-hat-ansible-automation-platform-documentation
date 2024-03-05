@@ -1,0 +1,7 @@
+[id="controller-api-sorting"]
+
+= Sorting in the API
+
+To give examples that are easy to follow, we use the following URL throughout this guide:
+
+http://<server name>/api/v2/groups/

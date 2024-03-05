@@ -17,3 +17,14 @@ The {ControllerName} API Guide focuses on helping you understand the {Controller
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]
+
+include::platform/assembly-controller-api-tools.adoc[leveloffset=+1]
+include::platform/assembly-controller-api-browsing-api.adoc[leveloffset=+1]
+include::platform/assembly-controller-api-conventions.adoc[leveloffset=+1]
+include::platform/assembly-controller-api-sorting.adoc[leveloffset=+1]
+include::platform/assembly-controller-api-search.adoc[leveloffset=+1]
+include::platform/assembly-controller-api-filter.adoc[leveloffset=+1]
+include::platform/assembly-controller-api-pagination.adoc[leveloffset=+1]
+include::platform/assembly-controller-api-access-resources.adoc[leveloffset=+1]
+include::platform/assembly-controller-api-readonly-fields.adoc[leveloffset=+1]
+include::platform/assembly-controller-api-auth-methods.adoc[leveloffset=+1]

@@ -1,0 +1,5 @@
+[id="controller-api-conventions"]
+
+= Use conventions in the API
+
+{ControllerNameStart} uses a standard REST API, rooted at `/api/` on the server.

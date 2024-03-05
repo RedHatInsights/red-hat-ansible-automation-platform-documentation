@@ -1,0 +1,7 @@
+[id="controller-api-pagination"]
+
+= Using pagination in the API
+
+Responses for collections in the API are paginated. 
+This means that while a collection might contain tens or hundreds of thousands of objects, in each web request, only a limited number of results are returned for API performance reasons.
+
