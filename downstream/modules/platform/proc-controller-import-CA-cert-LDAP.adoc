@@ -2,7 +2,7 @@
 
 = Importing a certificate authority in {ControllerName} for LDAPS integration
 
-You can authenticate to the {ControllerName} server using LDAP, but if you change to using LDAPS (LDAP over SSL) to authenticate, it fails with one of the following errors:
+You can authenticate to the {ControllerName} server by using LDAP, but if you change to using LDAPS (LDAP over SSL/TLS) to authenticate, it fails with one of the following errors:
 
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -18,72 +18,24 @@ You can authenticate to the {ControllerName} server using LDAP, but if you chang
 ====
 By default, `django_auth_ldap` verifies SSL connections before starting an LDAPS transaction.
 When you receive a `certificate verify failed` error, this means that the `django_auth_ldap` could not verify the certificate. 
-When the SSL connection cannot be verified, the connection attempt is halted.
+When the SSL/TLS connection cannot be verified, the connection attempt is halted.
 ====
 
 .Procedure
 
-. Log in to {ControllerName}.
-. Create a file called `ldap.py` in your `/etc/tower/conf.d` directory with the following:
+* To import an LDAP CA, run the following commands:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
-AUTH_LDAP_GLOBAL_OPTIONS = {
-    ldap.OPT_X_TLS_REQUIRE_CERT: True,
-    ldap.OPT_X_TLS_CACERTFILE: "<PATH_TO_LDAPS_SERVER_CERT>"
-}
+cp ldap_server-CA.crt /etc/pki/ca-trust/source/anchors/
 ----
-+
-. Change the permission and group ownership of the file as follows:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
-# chmod 640 /etc/tower/conf.d/ldap.py
-
-# chown root:awx /etc/tower/conf.d/ldap.py      [i.e. -rw-r----- 1 root awx   309 Dec 13 21:23 ldap.py]
-----
-+
-. To disable SSL certificate verification, change the `ldap.py` file with the following content, keeping the permissions the same as in the previous steps:
-+
-[literal, options="nowrap" subs="+attributes"]
-----
-AUTH_LDAP_GLOBAL_OPTIONS = {
-    ldap.OPT_X_TLS_REQUIRE_CERT: False
-    }
-----
-+
-. When you have created the `ldap.py` file with the required content, restart {ControllerName}:
-+
-[literal, options="nowrap" subs="+attributes"]
-----
-# automation-controller-service restart
+update-ca-trust
 ----
 
-.Troubleshooting
-
-For {ControllerName} <= 3.5
-
-.Procedure
-
-. Enable LDAP debugging by creating a file called `ldap.py` in `/etc/tower/conf.d` with the following information:
-
-+
-[literal, options="nowrap" subs="+attributes"]
-----
-LOGGING['handlers']['tower_warnings']['level'] =  'DEBUG'
-----
-+
-. Restart {ControllerName}:
-+
-[literal, options="nowrap" subs="+attributes"]
-----
-# automation-controller-service restart
-----
-
-For {ControllerName} => 3.6
-
-.Procedure
-
-. Enable logging for LDAP.
-For more information, see xref:controller-enable-logging-LDAP[Enabling logging for LDAP].
-. Check for errors in `var/log/tower/tower.log`.
+[NOTE]
+====
+Run these two commands on all {ControllerName} nodes in a clustered setup.
+====
