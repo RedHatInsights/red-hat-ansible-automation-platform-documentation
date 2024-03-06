@@ -1,0 +1,17 @@
+[id="controller-api-browsing"]
+
+.Procedure
+
+. Go to the {ControllerName} REST API in a web browser at: 
++
+\https://<server name>/api/
++
+. Click the **"v2"** link next to **"current versions"** or **"available versions"**.
+{ControllerNameStart} supports version 2 of the API.
+. Perform a `GET` with just the `/api/` end point to get the `current_version`, which is the recommended version.
+. Click the image:api-questionmark.png[Copy,15,15] icon on the navigation menu, for documentation on the access methods for that particular API endpoint and what data is returned when using those methods.
+
+Use the `PUT` and `POST` verbs on the specific API pages by formatting JSON in the various text fields.
+
+You can also view changed settings from factory defaults at `/api/v2/settings/changed/` endpoint. 
+It reflects changes you made in the API browser, not changed settings that come from static settings files.
