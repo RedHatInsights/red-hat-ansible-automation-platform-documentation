@@ -13,7 +13,7 @@ If you peer this additional node to an existing hop node, you must also install 
 Use the check boxes next to an instance to select it to remove it, or run a health check against it. 
 
 [NOTE]
-====,
+====
 * If a node is removed using the UI, then the node is "removed" and  does not show a status. 
 If you delete the VM of the node before it is removed in the UI, it will show an error.  
 * You only need to reinstall the Install Bundle if the topology changes the communication pattern, that is, hop nodes change or you add nodes.
