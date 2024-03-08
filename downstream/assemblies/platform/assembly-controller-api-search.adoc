@@ -2,4 +2,18 @@
 
 = Using the search query string parameter
 
-Use the search query string parameter to perform a non-case-sensitive search within all designated text fields of a model.
+.Procedure
+
+* Use the search query string parameter to perform a non-case-sensitive search within all designated text fields of a model:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+https://<server name>/api/v2/model_verbose_name?search=findme
+----
+
+* To search across related fields, use the following:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+https://<server name>/api/v2/model_verbose_name?related__search=findme
+----

@@ -1,0 +1,19 @@
+[id="controller-api-conventions-in-API"]
+
+The API is versioned for compatibility reasons. 
+You can see what API versions are available by querying `/api/`.
+
+You might have to specify the content or type on `POST` or `PUT` requests:
+
+* `PUT`: Update a specific resource (by an identifier) or a collection of resources. 
+You can also use `PUT` to create a specific resource if you know the resource identifier before-hand.
+* `POST`: Create a new resource. 
+Also acts as a catch-all verb for operations that do not fit into the other categories.
+
+All URIs not ending with "/" receive a 301 redirect.
+
+[NOTE]
+====
+The formatting of `extra_vars` attached to Job Template records is preserved. 
+YAML is returned as YAML with formatting and comments preserved, and JSON is returned as JSON.
+====
