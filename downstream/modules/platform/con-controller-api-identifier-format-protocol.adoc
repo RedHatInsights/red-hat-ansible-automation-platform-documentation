@@ -1,0 +1,38 @@
+[id="controller-api-identifier-format-protocol"]
+
+= Identifier format protocol
+
+Resources are identifiable by their unique keys, which are tuples of resource fields. 
+Every resource is guaranteed to have its primary key number alone as a unique key, but there might be many other unique keys. 
+A resource can generate an identifier format and, therefore, have a named URL if it has at least one unique key that satisfies the following rules:
+
+. The key must contain only fields that are either the `name` field, or text fields with a finite number of possible choices (such as credential type resource's `kind` field).
+. The only permitted exceptional fields that breaks the preceding rule is a many-to-one related field relating to a resource other than itself, which is also allowed to have a slug.
+
+If there are resources `Foo` and `Bar`, both `Foo` and `Bar` contain a name field and a choice field that can only have value "yes" or "no". 
+Additionally, resource `Foo` has a many-to-one field (a foreign key) relating to `Bar`, for example `fk`. 
+`Foo` has a unique key tuple (`name`, `choice`, `fk`) and `Bar` has a unique key tuple (`name`, `choice`). 
+`Bar` can have named URL because it satisfies the preceding first rule. 
+`Foo` can also have named URL, even though it breaks the first rule, the extra field breaking rule number one is the `fk` field, which is many-to-one-related to `Bar` and `Bar` can have named URL.
+
+For resources satisfying the rule number one, their human-readable unique identifiers are combinations of foreign key fields, delimited by `+`. 
+In specific, resource `Bar` in the preceding example has slug format `<name>+<choice>`. 
+Note that the field order matters in slug format and the `name` field always comes first if present, followed by the remaining fields arranged in lexicographic order of field name. 
+For example, if `Bar` also has an `a_choice` field satisfying rule one and the unique key becomes (`name`, `choice`, `a_choice`), its slug format becomes `<name>+<a_choice>+<choice>`.
+
+For resources satisfying rule number two, if traced back through the extra foreign key fields, the result is a tree of resources that identify objects of that resource. 
+To generate the identifier format, each resource in the traceback tree generates its own part of standalone format, using all fields but the foreign keys. 
+Finally, all parts are combined by `++` in the following order:
+
+* Put standalone format as the first identifier part.
+* Recursively generate unique identifiers for each resource. 
+The underlying resource is pointing to using a foreign key (a child of a traceback tree node).
+* Treat generated unique identifiers as the rest of the identifier components. 
+Sort them in lexicographic order of corresponding foreign keys.
+* Combine all components together using `++` to generate the final identifier format.
+
+When generating an identifier format for resource `Foo`, {ControllerName} generates the standalone formats, `<name>+<choice>` for `Foo` and `<fk.name>+<fk.choice>` for `Bar`, then combines them together to be `<name>+<choice>++<fk.name>+<fk.choice>`.
+
+When generating identifiers according to the given identifier format, there are cases where a foreign key might point to nowhere. 
+In this case, {ControllerName} substitutes the part of the format corresponding to the resource the foreign key should point to with an empty string. 
+For example, if a `Foo` object has the `name ="alice"`, `choice ="yes",` but `fk field = None`, its resulting identifier is `alice+yes++`.

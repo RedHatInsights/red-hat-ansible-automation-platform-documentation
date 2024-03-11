@@ -3,3 +3,5 @@
 = Read-only fields
 
 Certain fields in the REST API are marked read-only.
+
+include::platform/con-controller-api-readonly-fields.adoc[leveloffset=+1]

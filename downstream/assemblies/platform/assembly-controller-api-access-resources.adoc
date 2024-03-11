@@ -11,3 +11,5 @@ The following example shows the named URL path where you can access a resource o
 /api/v2/hosts/host_name++inv_name++org_name/
 ----
 
+include::platform/ref-controller-api-config-settings.adoc[leveloffset=+1]
+include::platform/con-controller-api-identifier-format-protocol.adoc[leveloffset=+1]
