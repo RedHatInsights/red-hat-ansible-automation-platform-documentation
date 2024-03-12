@@ -129,10 +129,10 @@ To submit an update:
    $ git fetch upstream
    -----
 
-. Check out a branch from upstream/master
+. Check out a branch from upstream/main
 
 -----
-$ git checkout -b <new-branch> upstream/master
+$ git checkout -b <new-branch> upstream/main
 -----
 
 . Make your edits.
