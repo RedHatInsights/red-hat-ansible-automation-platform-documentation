@@ -6,9 +6,9 @@
 = Building an {ExecEnvShort} in a disconnected environment
 
 
-link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/creating_and_consuming_execution_environments/index[Creating execution environments] for AAP is a common task which works differently in disconnected environments. When building a custom execution environment, the ansible-builder tool defaults to downloading content from the following locations on the internet:
+link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/creating_and_consuming_execution_environments/index[Creating execution environments] for {PlatformNameShort} is a common task which works differently in disconnected environments. When building a custom {ExecEnvShort}, the ansible-builder tool defaults to downloading content from the following locations on the internet:
 
-* Red Hat {HubNameStart} (console.redhat.com) or Ansible Galaxy (galaxy.ansible.com) for any Ansible content collections added to the execution environment image.
+* Red Hat {HubNameStart} ({Console}) or {Galaxy} (galaxy.ansible.com) for any Ansible content collections added to the {ExecEnvShort} image.
 
 * PyPI (pypi.org) for any python packages required as collection dependencies.
 
@@ -16,11 +16,26 @@ link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_pl
 
 * registry.redhat.io for access to the base container images.
 
-Mirrored PyPI content once transferred into the disconnected network can be made available using a web server or an artifact repository like Nexus.  The RHEL and UBI repository content can be exported from an internet-facing Red Hat Satellite server, copied into the disconnected environment, then imported into a disconnected Satellite so it is available for building custom execution environments.  See link:https://access.redhat.com/documentation/en-us/red_hat_satellite/6.14/html-single/installing_satellite_server_in_a_disconnected_network_environment/index#iss_export_sync_in_an_air_gapped_scenario[ISS Export Sync in an Air-Gapped Scenario] for details.
+* Red Hat does not have an IP list for the container registry domains or cdn-ubi.redhat.com as for cdn.redhat.com. 
+To firewall off the registry and/or UBI repositories, use a proxy (e.g. squid) and allow-list the following domains:
 
-The default base container image, ee-minimal-rhel8, is used to create custom execution environment images and is included with the bundled installer. This image  will be added to the private automation hub at install time.  If a different base container image such as ee-minimal-rhel9 is required, it will need to be imported to the disconnected network and added to the private automation hub container registry.
+//* `registry.access.redhat.com`
+* `registry.redhat.io`
+//* `registry.connect.redhat.com`
+* `sso.redhat.com`
+* `cdn-ubi.redhat.com`
+* `cdn.quay.io`
+* `cdn01.quay.io`
+* `cdn02.quay.io`
+* `cdn03.quay.io`
 
-Once all of the prerequisites are available on the disconnected network, the ansible-builder command can be used to create custom execution environment images.
+For additional information, see link:https://access.redhat.com/articles/1525183[Public CIDR Lists for Red Hat].
+
+Mirrored PyPI content once transferred into the disconnected network can be made available using a web server or an artifact repository like Nexus.  The RHEL and UBI repository content can be exported from an internet-facing Red Hat Satellite server, copied into the disconnected environment, then imported into a disconnected Satellite so it is available for building custom {ExecEnvShort}s.  See link:https://access.redhat.com/documentation/en-us/red_hat_satellite/6.14/html-single/installing_satellite_server_in_a_disconnected_network_environment/index#iss_export_sync_in_an_air_gapped_scenario[ISS Export Sync in an Air-Gapped Scenario] for details.
+
+The default base container image, ee-minimal-rhel8, is used to create custom {ExecEnvShort} images and is included with the bundled installer. This image is added to the {PrivateHubName} at install time.  If a different base container image such as ee-minimal-rhel9 is required, it must be imported to the disconnected network and added to the {PrivateHubName} container registry.
+
+Once all of the prerequisites are available on the disconnected network, the ansible-builder command can be used to create custom {ExecEnvShort} images.
 
 
 
