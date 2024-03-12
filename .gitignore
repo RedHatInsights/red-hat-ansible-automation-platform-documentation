@@ -10,6 +10,7 @@ master.html
 .idea
 # VSCode stuff
 .vscode
+.vscode/
 # virtual environments
 venv
 #ignores output from ./scripts/buildGuides.sh
