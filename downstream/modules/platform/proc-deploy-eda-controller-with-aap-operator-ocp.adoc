@@ -16,7 +16,26 @@
 
 . Under *Provided APIs*, locate the {EDAName} modal and click *Create instance*. 
 +
-This takes you to the Form View to customize your installation.
+This takes you to the Form View to customize your installation. 
++
+[IMPORTANT]
+====
+To ensure that you can run concurrent {EDAName} activations efficiently, you must set your maximum number of activations in proportion to the resources available on your cluster. You can do this by adjusting your {EDAName} settings in the YAML view. 
+
+When you activate an {EDAName} rulebook under standard conditions, it uses approximately 250 MB of memory. However, the actual memory consumption can vary significantly based on the complexity of your rules and the volume and size of the events processed. In scenarios where a large number of events are anticipated or the rulebook complexity is high, conduct a preliminary assessment of resource usage in a staging environment. This ensures that your maximum number of activations is based on the capacity of your resources. 
+====
++
+. Click btn:[YAML view] to update your YAML key values. 
+
+. Copy and paste the following string at the end of the `spec` key value section:
++
+----
+extra_settings:
+  - setting: EDA_MAX_RUNNING_ACTIVATIONS
+    value: '12'
+----
++
+. Click btn[Reload] and btn[Save]. Return to the Form view.
 
 . In the *Name* field, enter the name you want for your new {EDAcontroller} deployment. 
 +

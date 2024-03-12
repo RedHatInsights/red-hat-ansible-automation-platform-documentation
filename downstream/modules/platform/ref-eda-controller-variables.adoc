@@ -40,6 +40,9 @@ Default = empty list
 | *`automationedacontroller_gunicorn_workers`* | Number of workers for the API served through gunicorn.
 
 Default = (# of cores or threads) * 2 + 1
+| *`automationedacontroller_max_running_activations`* | The number of maximum activations running concurrently per node.
+
+Default = 12
 | *`automationedacontroller_pg_database`* | The Postgres database used by {EDAController}.
 
 Default = `automtionedacontroller`.
