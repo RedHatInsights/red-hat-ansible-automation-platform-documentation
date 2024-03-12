@@ -89,6 +89,7 @@
 :ExecEnvNameStart: Automation execution environments
 :ExecEnvName: automation execution environments
 :ExecEnvNameSing: automation execution environment
+:ExecEnvNameStartSing: Automation execution environment
 :ExecEnvShort: execution environment
 :RHEL8: RHEL 8 UBI
 :RHEL9: RHEL 9 UBI

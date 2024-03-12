@@ -3,7 +3,7 @@ ifdef::context[:parent-context: {context}]
 :imagesdir: images
 
 [id="assembly-review-ee-navigator_{context}"]
-= Reviewing {ExecEnvNameStart} with {Navigator}
+= Reviewing {ExecEnvName} with {Navigator}
 
 :context: review-ee-navigator
 

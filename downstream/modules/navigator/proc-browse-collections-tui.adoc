@@ -28,7 +28,7 @@ $ ansible-navigator
 $ :collections
 ----
 +
-image::navigator-collection-list.png[A list of Ansible collections shown in the Automation content navigator]
+image::navigator-collection-list.png[A list of Ansible collections shown in the {Navigator}]
 
 . Type the number of the collection you want to explore.
 +
@@ -36,7 +36,7 @@ image::navigator-collection-list.png[A list of Ansible collections shown in the 
 :4
 ----
 +
-image::navigator-plugin-list.png[A collection shown in the Automation content navigator]
+image::navigator-plugin-list.png[A collection shown in the {Navigator}]
 
 . Type the number corresponding to the module you want to delve into.
 +

@@ -3,15 +3,15 @@
 
 
 
-= Reviewing {ExecEnvNameStart} from {Navigator}
+= Reviewing {ExecEnvName} from {Navigator}
 
 [role="_abstract"]
 
-You can review your {ExecEnvNameStart} with the {Navigator} text-based user interface.
+You can review your {ExecEnvName} with the {Navigator} text-based user interface.
 
 .Prerequisites
 
-* {ExecEnvName}
+* {ExecEnvNameStart}
 
 .Procedure
 
@@ -21,11 +21,11 @@ You can review your {ExecEnvNameStart} with the {Navigator} text-based user inte
 $ ansible-navigator images
 ----
 +
-image::navigator-images-list.png[List of automation execution environments]
+image::navigator-images-list.png[List of {ExecEnvName}]
 
 . Type the number of the {ExecEnvNameSing} you want to delve into for more details.
 +
-image::navigator-image-details.png[Automation execution environment details]
+image::navigator-image-details.png[{ExecEnvNameStartSing} details]
 +
 You can review the packages and versions of each installed {ExecEnvNameSing} and the Ansible version any included collections.
 
@@ -41,4 +41,4 @@ $ ansible-navigator images --eei registry.example.com/example-enterprise-ee:late
 
 * Review the {ExecEnvNameSing} output.
 +
-image::navigator-image-details.png[Automation execution environment output]
+image::navigator-image-details.png[{ExecEnvNameStartSing} output]

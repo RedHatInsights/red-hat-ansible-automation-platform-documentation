@@ -11,4 +11,4 @@ SHADOWED:: Indicates that an additional copy of the collection is higher in the 
 TYPE:: Shows if the collection is contained within an {ExecEnvNameSing} or volume mounted on onto the {ExecEnvNameSing} as a `bind_mount`.
 PATH:: Reflects the collections location within the {ExecEnvNameSing} or local file system based on the collection TYPE field.
 
-image::navigator-collections-shadow.png[Automation content navigator collections display]
+image::navigator-collections-shadow.png[{Navigator} collections display]
