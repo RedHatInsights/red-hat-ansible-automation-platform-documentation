@@ -14,7 +14,7 @@ The following specifications are required for the nodes involved in the {Platfor
 * 40 GB+ disk space for non-database nodes.
 * DHCP reservations use infinite leases to deploy the cluster with static IP addresses.
 * DNS records for all nodes.
-* Red Hat Enterprise Linux 8 or later 64-bit (x86) installed for all nodes.
+* {RHEL} 8 or later 64-bit (x86) installed for all nodes.
 * Chrony configured for all nodes.
 * Python 3.9 or later for all content dependencies.
 
@@ -66,7 +66,7 @@ Before you upgrade {PlatformNameShort}, it is recommended to create a non-root u
 * Passwordless authentication during installation.
 * Privilege escalation (sudo) permissions.
 
-The following example uses `ansible` to name this user. On all nodes used in the upgraded {PlatformNameShort} cluster, create a non-root user named `ansible` and generate an ssh key:
+The following example uses `ansible` to name this user. On all nodes used in the upgraded {PlatformNameShort} cluster, create a non-root user named `ansible` and generate an SSH key:
 
 . Create a non-root user:
 +
@@ -102,7 +102,7 @@ $ ssh-copy-id ansible@node-1.example.com
 NOTE: If running within a cloud provider, you might need to instead create an `~/.ssh/authorized_keys` file containing the public key for the `ansible` user on all your nodes and set the permissions to the `authorized_keys` file to only the owner (`ansible`) having read and write access (permissions 600).
 
 .Configuring firewall settings
-Configure the firewall settings on all the nodes used in the upgraded {PlatformNameShort} cluster to permit access to the appropriate services and ports for a successful {PlatformNameShort} upgrade. For Red Hat Enterprise Linux 8 or later, enable the `firewalld` daemon to enable the access needed for all nodes:
+Configure the firewall settings on all the nodes used in the upgraded {PlatformNameShort} cluster to allow access to the appropriate services and ports for a successful {PlatformNameShort} upgrade. For {RHEL} 8 or later, enable the `firewalld` daemon to enable the access needed for all nodes:
 
 . Install the `firewalld` package:
 +
@@ -126,7 +126,7 @@ The following {PlatformNameShort} configurations are required before you proceed
 
 .Configuring firewall settings for execution and hop nodes
 
-After upgrading your {PlatformName} instance, add the automation mesh port on the mesh nodes (execution and hop nodes) to enable automation mesh functionality. The default port used for the mesh networks on all nodes is `27199/tcp`. You can configure the mesh network to use a different port by specifying `recptor_listener_port` as the variable for each node within your inventory file.
+After upgrading your {PlatformName} instance, add the {AutomationMesh} port on the mesh nodes (execution and hop nodes) to enable {AutomationMesh} functionality. The default port used for the mesh networks on all nodes is `27199/tcp`. You can configure the mesh network to use a different port by specifying `recptor_listener_port` as the variable for each node within your inventory file.
 
 Within your hop and execution node set the `firewalld` port to be used for installation.
 

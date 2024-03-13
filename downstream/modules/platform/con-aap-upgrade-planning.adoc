@@ -11,7 +11,7 @@ Before you begin the upgrade process, review the following considerations to pla
 == {ControllerNameStart}
 
 * Even if you have a valid license from a previous version, you must provide your credentials or a subscriptions manifest upon upgrading to the latest version of {ControllerName}.
-* If you need to upgrade Red Hat Enterprise Linux and {ControllerName}, you must first backup and restore your {ControllerName} data.
+* If you need to upgrade {RHEL} and {ControllerName}, you must first backup and restore your {ControllerName} data.
 * Clustered upgrades require special attention to instance and instance groups before upgrading.
 
 [role="_additional-resources"]

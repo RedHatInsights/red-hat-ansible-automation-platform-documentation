@@ -2,7 +2,7 @@
 
 = Why upgrade to {ExecEnvName}?
 
-{PlatformName} {PlatformVers} introduces {ExecEnvName}. {ExecEnvNameStart} are container images that allow for easier administration of Ansible by including everything needed to run Ansible automation within a single container. Automation execution environments include:
+{PlatformName} {PlatformVers} introduces {ExecEnvName}. {ExecEnvNameStart} are container images that allow for easier administration of Ansible by including everything needed to run Ansible automation within a single container. {ExecEnvNameStart} include:
 
 * RHEL UBI 8
 * Ansible 2.9 or Ansible Core 2.13

@@ -4,7 +4,7 @@
 
 = Single {EDAcontroller} node with internal database
 
-This scenario includes installation of {EDAcontroller} on a single machine with an internal database. It installs an installer managed PostgreSQL that is similar to the automation controller installation scenario.
+This scenario includes installation of {EDAcontroller} on a single machine with an internal database. It installs an installer managed PostgreSQL that is similar to the {ControllerName} installation scenario.
 
 [IMPORTANT]
 ====

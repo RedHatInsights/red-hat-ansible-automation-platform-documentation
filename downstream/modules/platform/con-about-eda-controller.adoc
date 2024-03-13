@@ -1,9 +1,9 @@
 [id="about-event-driven-ansible-controller_{context}"]
 
-= Event-Driven Ansible controller
+= {EDAcontroller}
 
 [role="_abstract"]
-The Event-Driven Ansible controller is the interface for event-driven automation and introduces automated resolution of IT requests. This component helps you connect to sources of events and act on those events using rulebooks. This technology improves IT speed and agility, and enables consistency and resilience. With Event-Driven Ansible, you can: 
+The {EDAcontroller} is the interface for event-driven automation and introduces automated resolution of IT requests. {EDAcontroller} helps you connect to sources of events and act on those events by using rulebooks. This technology improves IT speed and agility, and enables consistency and resilience. With {EDAName}, you can: 
 
 * Automate decision making
 * Use numerous event sources
