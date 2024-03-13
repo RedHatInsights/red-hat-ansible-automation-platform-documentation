@@ -41,7 +41,7 @@ You can access specified resource objects by using accurately generated named UR
 This the object and its related URLs. 
 For example, if `/api/v2/res_name/obj_slug/` is valid, `/api/v2/res_name/obj_slug/related_res_name/` is also valid.
 
-`NAMED_URL_FORMATS` are instructive enough to compose human-readable unique identifier and named URL themselves. 
+`NAMED_URL_FORMATS` are instructive enough to compose human-readable unique identifiers and named URLs themselves. 
 For ease-of-use, every object of a resource that can have named URL has a related field `named_url` that displays that object's named URL. 
 You can copy and paste that field for your own custom use. 
 For more information, see the help text of the API browser if a resource object has named URL.
@@ -54,10 +54,10 @@ If you have the `name` field with value `Foo`, then the first part of the unique
 * The second part of the format is double pluses "++". 
 That is the delimiter that separates different parts of a unique identifier. 
 Append them to the unique identifier to get `Foo++`.
-* The third part of the format is `<organization.name>`, which indicates that field is not in the current label object under investigation, but in an organization that the label object points to. 
+* The third part of the format is `<organization.name>`, which indicates that the field is not in the current label object under investigation, but in an organization that the label object points to. 
 As the format indicates, look up the organization in the related field of the current returned JSON. 
 That field might not exist. 
-If it exists, follow the URL given in that field, for example, `/api/v2/organizations/3/`, to get the details of the specific organization, extract its name field, for example, "Default", and append it to the current unique identifier. Since `<organizations.name>` is the last part of format, it generates the following named URL: `/api/v2/labels/Foo++Default/`.
+If it exists, follow the URL given in that field, for example, `/api/v2/organizations/3/`, to get the details of the specific organization, extract its name field, for example, "Default", and append it to the current unique identifier. Since `<organizations.name>` is the last part of the format, it generates the following named URL: `/api/v2/labels/Foo++Default/`.
 +
 In the case where an organization does not exist in the related field of the label object detail, append an empty string instead. 
 This does not alter the current identifier. 

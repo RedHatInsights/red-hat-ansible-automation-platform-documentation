@@ -27,7 +27,7 @@ The following field lookups are supported:
 * lte: Less than or equal to comparison.
 * isnull: Check whether the given field or related object is null; expects a boolean value.
 * in: Check whether the given field's value is present in the list provided; expects a list of items.
-* You can specify boolean values can as `True` or `1` for true, `False` or `0` for false (both case-insensitive).
+* You can specify boolean values as `True` or `1` for true, `False` or `0` for false (both case-insensitive).
 
 For example, `?created__gte=2023-01-01` provides a list of items created after 1/1/2023.
 

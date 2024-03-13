@@ -45,5 +45,5 @@ To use this, prefix the query string parameter with `chain__`:
 ?chain__not__related__field=value&chain__related__field2=othervalue
 ----
 
-If the first query were written as `?related__field=value&related__field2=othervalue`, it would return only the primary objects where the same related object satisfied both conditions. 
+If you write the first query as `?related__field=value&related__field2=othervalue`, it returns only the primary objects where the same related object satisfied both conditions. 
 As written by using the chain filter, it would return the intersection of primary objects matching each condition.

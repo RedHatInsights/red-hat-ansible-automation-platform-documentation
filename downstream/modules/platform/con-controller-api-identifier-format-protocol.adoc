@@ -7,9 +7,9 @@ Every resource is guaranteed to have its primary key number alone as a unique ke
 A resource can generate an identifier format and, therefore, have a named URL if it has at least one unique key that satisfies the following rules:
 
 . The key must contain only fields that are either the `name` field, or text fields with a finite number of possible choices (such as credential type resource's `kind` field).
-. The only permitted exceptional fields that breaks the preceding rule is a many-to-one related field relating to a resource other than itself, which is also allowed to have a slug.
+. The only permitted exceptional field that breaks the preceding rule is a many-to-one related field relating to a resource other than itself, which is also allowed to have a slug.
 
-If there are resources `Foo` and `Bar`, both `Foo` and `Bar` contain a name field and a choice field that can only have value "yes" or "no". 
+If there are resources `Foo` and `Bar`, both `Foo` and `Bar` contain a name field and a choice field that can only have values "yes" or "no". 
 Additionally, resource `Foo` has a many-to-one field (a foreign key) relating to `Bar`, for example `fk`. 
 `Foo` has a unique key tuple (`name`, `choice`, `fk`) and `Bar` has a unique key tuple (`name`, `choice`). 
 `Bar` can have named URL because it satisfies the preceding first rule. 
@@ -21,7 +21,7 @@ Note that the field order matters in slug format and the `name` field always com
 For example, if `Bar` also has an `a_choice` field satisfying rule one and the unique key becomes (`name`, `choice`, `a_choice`), its slug format becomes `<name>+<a_choice>+<choice>`.
 
 For resources satisfying rule number two, if traced back through the extra foreign key fields, the result is a tree of resources that identify objects of that resource. 
-To generate the identifier format, each resource in the traceback tree generates its own part of standalone format, using all fields but the foreign keys. 
+To generate the identifier format, each resource in the traceback tree generates its own part of the standalone format, using all fields but the foreign keys. 
 Finally, all parts are combined by `++` in the following order:
 
 * Put standalone format as the first identifier part.

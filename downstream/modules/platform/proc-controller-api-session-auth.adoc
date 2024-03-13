@@ -5,7 +5,7 @@
 You can use session authentication when logging in directly to the {ControllerName}'s API or UI to manually create resources, such as inventories, projects, and job templates and start jobs in the browser. 
 With this method, you can remain logged in for a prolonged period of time, not just for that HTTP request. 
 For example, when browsing the API or UI in a browser such as Chrome or Mozilla Firefox. 
-When a user logs in, a session cookie is created, this means that the they can remain logged in when navigating to different pages within {ControllerName}. 
+When a user logs in, a session cookie is created, this means that they can remain logged in when navigating to different pages within {ControllerName}. 
 The following image represents the communication that occurs between the client and server in a session:
 
 image::session-auth-architecture.png[Session authentication architecture]
