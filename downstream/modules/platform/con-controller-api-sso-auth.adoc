@@ -1,0 +1,15 @@
+[id="controller-api-sso-auth"]
+
+= Single sign-on authentication
+
+Single sign-on (SSO) authentication methods are different from other methods because the authentication of the user happens external to {ControllerName}, such as Google SSO, {Azure} SSO, SAML, or GitHub. 
+For example, with GitHub SSO, GitHub is the single source of truth, which verifies your identity based on the username and password you gave {ControllerName}.
+
+You can configure SSO authentication by using {ControllerName} inside a large organization with a central Identity Provider. 
+Once you have configured an SSO method in {ControllerName}, an option for that SSO is available on the login screen. 
+If you click that option, it redirects you to the Identity Provider, in this case GitHub, where you present your credentials. If the Identity Provider verifies you successfully, {ControllerName} makes a user linked to your GitHub user (if this is your first time logging in with this SSO method), and logs you in.
+
+.Additional resources
+
+For the various types of supported SSO authentication methods, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#assembly-controller-set-up-social-authentication[Setting up social authentication] and link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-set-up-enterprise-authentication[Setting up enterprise authentication] in the _{ControllerAG}_.
+

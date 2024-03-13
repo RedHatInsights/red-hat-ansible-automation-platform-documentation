@@ -2,4 +2,4 @@
 
 = Available tools with the API
 
-include::platform/ref-controller-api-tools.adoc[leveloffset=+1]
+include::platform/con-controller-api-tools.adoc[leveloffset=+1]

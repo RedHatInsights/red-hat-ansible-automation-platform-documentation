@@ -8,12 +8,12 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Automation Controller API Guide
+= Automation Controller API Overview
 
 Thank you for your interest in {PlatformName}. 
 {PlatformNameShort} helps teams manage complex multitiered deployments by adding control, knowledge, and delegation to Ansible-powered environments.
 
-The {ControllerName} API Guide focuses on helping you understand the {ControllerName} API.
+The {ControllerName} API Overview focuses on helping you understand the {ControllerName} API.
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]

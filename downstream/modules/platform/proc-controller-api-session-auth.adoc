@@ -1,0 +1,75 @@
+[id="controller-api-session-auth"]
+
+= Using session authentication
+
+You can use session authentication when logging in directly to the {ControllerName}'s API or UI to manually create resources, such as inventories, projects, and job templates and start jobs in the browser. 
+With this method, you can remain logged in for a prolonged period of time, not just for that HTTP request. 
+For example, when browsing the API or UI in a browser such as Chrome or Mozilla Firefox. 
+When a user logs in, a session cookie is created, this means that the they can remain logged in when navigating to different pages within {ControllerName}. 
+The following image represents the communication that occurs between the client and server in a session:
+
+image::session-auth-architecture.png[Session authentication architecture]
+
+Use the curl tool to see the activity that occurs when you log in to {ControllerName}.
+
+.Procedure
+
+. Use `GET` to go to the `/api/login/` endpoint to get the `csrftoken` cookie:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -k -c - https://<controller-host>/api/login/
+
+localhost       FALSE   /       FALSE   0   csrftoken
+AswSFn5p1qQvaX4KoRZN6A5yer0Pq0VG2cXMTzZnzuhaY0L4tiidYqwf5PXZckuj
+----
++
+. `POST` to the `/api/login/` endpoint with username, password, and `X-CSRFToken=<token-value>`:
++
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' \
+--referer https://<awx-host>/api/login/ \
+-H 'X-CSRFToken: K580zVVm0rWX8pmNylz5ygTPamgUJxifrdJY0UDtMMoOis5Q1UOxRmV9918BUBIN' \
+--data 'username=root&password=reverse' \
+--cookie 'csrftoken=K580zVVm0rWX8pmNylz5ygTPamgUJxifrdJY0UDtMMoOis5Q1UOxRmV9918BUBIN' \
+https://<awx-host>/api/login/ -k -D - -o /dev/null
+----
+
+All of this is done by {ControllerName} when you log in to the UI or API in the browser, and you must only use it when authenticating in the browser. 
+For programmatic integration with {ControllerName}, see xref:controller-api-oauth2-token[OAuth2 token authentication].
+
+The following is an example of a typical response:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+Server: nginx
+Date: <current date>
+Content-Type: text/html; charset=utf-8
+Content-Length: 0
+Connection: keep-alive
+Location: /accounts/profile/
+X-API-Session-Cookie-Name: awx_sessionid
+Expires: <date>
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate, private
+Vary: Cookie, Accept-Language, Origin
+Session-Timeout: 1800
+Content-Language: en
+X-API-Total-Time: 0.377s
+X-API-Request-Id: 700826696425433fb0c8807cd40c00a0
+Access-Control-Expose-Headers: X-API-Request-Id
+Set-Cookie: userLoggedIn=true; Path=/
+Set-Cookie: current_user=<user cookie data>; Path=/
+Set-Cookie: csrftoken=<csrftoken>; Path=/; SameSite=Lax
+Set-Cookie: awx_sessionid=<your session id>; expires=<date>; HttpOnly; Max-Age=1800; Path=/; SameSite=Lax
+Strict-Transport-Security: max-age=15768000
+----
+
+When a user is successfully authenticated with this method, the server responds with a header called `X-API-Session-Cookie-Name`, indicating the configured name of the session cookie. 
+The default value is `awx_session_id` which you can see later in the `Set-Cookie` headers.
+
+[NOTE]
+====
+You can change the session expiration time by specifying it in the `SESSION_COOKIE_AGE` parameter. 
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-work-with-session-limits[Working with session limits].
+====

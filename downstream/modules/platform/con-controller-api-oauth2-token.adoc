@@ -1,0 +1,102 @@
+[id="controller-api-oauth2-token"]
+
+= OAuth 2 token authentication
+
+OAuth (Open Authorization) is an open standard for token-based authentication and authorization. 
+OAuth 2 authentication is commonly used when interacting with the {ControllerName} API programmatically. 
+Similar to Basic authentication, you are given an OAuth 2 token with each API request through the Authorization header. 
+Unlike Basic authentication, OAuth 2 tokens have a configurable timeout and are scopable. 
+Tokens have a configurable expiration time and can be easily revoked for one user or for the entire {ControllerName} system by an administrator if needed. 
+You can do this with the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-revoke-oauth2-token[revoke_oauth2_tokens] management command, or by using the API as explained in link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-revoke-access-token[Revoke an access token].
+
+The different methods for obtaining OAuth2 access tokens in {ControllerName} include the following:
+
+* Personal access tokens (PAT)
+* Application token: Password grant type
+* Application token: Implicit grant type
+* Application token: Authorization Code grant type
+
+A user needs to create an OAuth 2 token in the API or in the *Users* > *Tokens* tab of the {ControllerName} UI.
+For more information about creating tokens through the UI, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-user-tokens[Users - Tokens].
+
+For the purpose of this example, use the PAT method for creating a token in the API.
+After you create it, you can set the scope.
+
+[NOTE]
+====
+You can configure the expiration time of the token system-wide.
+For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-use-oauth2-token-system[Using OAuth 2 Token System for Personal Access Tokens].
+====
+
+Token authentication is best used for any programmatic use of the {ControllerName} API, such as Python scripts or tools such as curl.
+
+.Curl example
+
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -u user:password -k -X POST https://<controller-host>/api/v2/tokens/
+----
+
+This call returns JSON data with the following:
+
+image::api_oauth2_json_returned_token_value.png[API OAuth2 JSON]
+
+You can use the value of the `token` property to perform a `GET` request for an {ControllerName} resource, such as Hosts:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -k -X POST \
+  -H “Content-Type: application/json”
+  -H “Authorization: Bearer <oauth2-token-value>” \
+  https://<controller-host>/api/v2/hosts/
+----
+
+You can also run a job by making a `POST` to the job template that you want to start:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+curl -k -X POST \
+  -H "Authorization: Bearer <oauth2-token-value>" \
+  -H "Content-Type: application/json" \
+  --data '{"limit" : "ansible"}' \
+  https://<controller-host>/api/v2/job_templates/14/launch/
+----
+
+.Python example
+
+link:https://pypi.org/project/awxkit/[awxkit] is an open source tool that makes it easy to use HTTP requests to access the {ControllerName} API. 
+You can have awxkit get a PAT on your behalf by using the awxkit login command. 
+For more information, see link:https://docs.ansible.com/automation-controller/latest/html/controllercli/index.html[AWX Command Line Interface].
+
+If you need to write custom requests, you can write a Python script by using Python library requests, such as the following example:
+
+[literal, options="nowrap" subs="+attributes"]
+----
+import requests
+oauth2_token_value = 'y1Q8ye4hPvT61aQq63Da6N1C25jiA'   # your token value from controller
+url = 'https://<controller-host>/api/v2/users/'
+payload = {}
+headers = {'Authorization': 'Bearer ' + oauth2_token_value,}
+
+# makes request to controller user endpoint
+response = requests.request('GET', url, headers=headers, data=payload,
+allow_redirects=False, verify=False)
+
+# prints json returned from controller with formatting
+print(json.dumps(response.json(), indent=4, sort_keys=True))
+----
+
+.Additional resources
+
+For more information about obtaining OAuth2 access tokens and how to use OAuth 2 in the context of external applications, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#assembly-controller-token-based-authentication[Token-Based Authentication] in the _{ControllerAG}_.
+
+[discrete]
+== Enabling external users to create OAuth 2 tokens
+
+By default, external users such as those created by single sign-on are not able to generate OAuth tokens for security purposes.
+
+.Procedure
+
+. From the navigation panel, select btn:[Settings].
+. From the *System* tab, select *Miscellaneous Authentication settings*.
+. Enable the option to *Allow External Users to Create OAuth2 Tokens*.
