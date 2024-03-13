@@ -121,9 +121,9 @@ gpgcheck = 1
 +
 . Add the CA certificate used to sign the private automation hub web server certificate. If the private automation hub uses self-signed certificates provided by the installer:
 +
-.. Copy the file `/etc/pulp/certs/pulp_webserver.`crt` from your private automation hub and name it `hub-ca.crt`.
+.. Copy the file `/etc/pulp/certs/pulp_webserver.crt` from your private automation hub and name it `hub-ca.crt`.
 
-.. Add the `hub-ca.crt` file to the `files/`` subdirectory.
+.. Add the `hub-ca.crt` file to the `files/` subdirectory.
 +
 
 . If the {PrivateHubName} uses user-provided certificates signed by a certificate authority:
