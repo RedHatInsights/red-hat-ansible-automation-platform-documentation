@@ -7,7 +7,7 @@ Your {PlatformName} subscription grants you ten {RHEL} licenses that can be used
 The following steps prepare the RHEL instances for deployment of the automation mesh.
 
 . You require a {RHEL} operating system. 
-This machine requires a static IP address, or a resolvable DNS hostname that {ControllerName} can access. 
+Each node in the mesh requires a static IP address, or a resolvable DNS hostname that {ControllerName} can access. 
 . Ensure that you have the minimum requirements for the RHEL virtual machine before proceeding. 
 For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[Red Hat Ansible Automation Platform system requirements].
 . Deploy the RHEL instances within the remote networks where communication is required.

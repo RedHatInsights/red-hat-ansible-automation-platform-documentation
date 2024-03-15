@@ -1,6 +1,11 @@
 [id="proc-define-mesh-node-types"]
 
+ifdef::controller-AG[]
+= Managing instances
+endif::controller-AG[]
+ifdef::operator-mesh[]
 = Defining {AutomationMesh} node types
+endif::operator-mesh[]
 
 To expand job capacity, create a standalone *execution node* that can be added to run alongside a deployment of {ControllerName}. 
 These execution nodes are not part of the {ControllerName} Kubernetes cluster. 
@@ -55,7 +60,12 @@ Peer the execution node to the hop node.
 +
 image::instances_create_details.png[Create Instance details]
 
+ifdef::operator-mesh[]
 . To view a graphical representation of your updated topology, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/assembly-controller-topology-viewer[Topology viewer].
+endif::operator-mesh[]
+ifdef::controller-AG[]
+. To view a graphical representation of your updated topology, see xref:assembly-controller-topology-viewer[Topology viewer].
+endif::controller-AG[]
 +
 [NOTE]
 ====
@@ -132,7 +142,7 @@ ansible-galaxy install -r requirements.yml
 Additionally, it retrieves any other collection dependencies that might be needed in the future.
 * Install the receptor collection on all nodes where your playbook will run, otherwise an error occurs.
 
-. If receptor_listener_port is defined, the machine also requires an available open port on which to establish inbound TCP connections, for example, 27199. 
+. If `receptor_listener_port` is defined, the machine also requires an available open port on which to establish inbound TCP connections, for example, 27199. 
 Run the following command to open port 27199 for receptor communication:
 +
 ----

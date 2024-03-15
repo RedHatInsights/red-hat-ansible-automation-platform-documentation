@@ -39,7 +39,7 @@ sudo subscription-manager register
 +
 For more information about Simple Content Access, see link:https://access.redhat.com/articles/simple-content-access[Simple Content Access].
 
-. Enable {PlatfromNameShort} subscriptions and the proper {PlatformName} channel:
+. Enable {PlatformNameShort} subscriptions and the proper {PlatformName} channel:
 +
 ----
 # subscription-manager repos --enable ansible-automation-platform-2.4-for-rhel-8-x86_64-rpms for RHEL 8
