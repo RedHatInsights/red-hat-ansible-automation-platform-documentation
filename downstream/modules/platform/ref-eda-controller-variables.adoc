@@ -61,4 +61,14 @@ Default = `automationedacontroller`.
 | *`automationedacontroller_rq_workers`* | Number of Redis Queue (RQ) workers used by {EDAcontroller}. RQ workers are Python processes that run in the background.
 
 Default =  (# of cores or threads) * 2 + 1
+| *`automationedacontroller_ssl_cert`* | _Optional_
+
+`/root/ssl_certs/eda._<example>_.com.crt`
+
+Same as `automationhub_ssl_cert` but for {EDAcontroller} UI and API.
+| *`automationedacontroller_ssl_key`* | _Optional_
+
+`/root/ssl_certs/eda._<example>_.com.key`
+
+Same as `automationhub_server_ssl_key` but for {EDAcontroller} UI and API.
 |====
