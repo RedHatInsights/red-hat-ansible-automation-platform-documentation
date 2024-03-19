@@ -40,8 +40,8 @@ This option is checked by default, but you can opt out of any of the following:
 .. *User analytics*. Collects data from the controller UI.
 .. *Insights Analytics*. Provides a high level analysis of your automation with {ControllerName}. 
 It helps you to identify trends and anomalous use of the controller. 
-For opt-in of Automation Analytics to be effective, your instance of {ControllerName} must be running on Red Hat Enterprise Linux. 
-For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-automation-analytics[Automation Analytics] section.
+For opt-in of {Analytics} to be effective, your instance of {ControllerName} must be running on {RHEL}. 
+For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-automation-analytics[{Analytics}] section.
 +
 [NOTE]
 ====

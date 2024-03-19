@@ -3,13 +3,13 @@
 = Verifying installation of {ControllerName}
 
 [role="_abstract"]
-Verify that you installed automation controller successfully by logging in with the admin credentials you inserted in the `inventory` file.
+Verify that you installed {ControllerName} successfully by logging in with the admin credentials you inserted in the `inventory` file.
 
 .Prerequisite
 * Port 443 is available
 
 .Procedure
-. Navigate to the IP address specified for the {ControllerName} node in the `inventory` file.
+. Go to the IP address specified for the {ControllerName} node in the `inventory` file.
 . Log in with the user ID `admin` and the password credentials you set in the `inventory` file.
 
 [NOTE]

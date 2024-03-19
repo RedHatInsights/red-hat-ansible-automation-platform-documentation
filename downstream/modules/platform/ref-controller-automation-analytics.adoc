@@ -1,6 +1,6 @@
 [id="ref-controller-automation-analytics"]
 
-= Automation Analytics
+= {Analytics}
 
 When you imported your license for the first time, you were given options related to the collection of data that powers {Analytics}, a cloud service that is part of the {PlatformNameShort} subscription. 
 

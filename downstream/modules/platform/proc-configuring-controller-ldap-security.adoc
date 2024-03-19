@@ -25,7 +25,7 @@ metadata:
   namespace: awx
 type: Opaque
 ----
-<1> Automation controller looks for the data field `ldap-ca.crt` in the specified secret when using the `ldap_cacert_secret`.
+<1> {ControllerNameStart} looks for the data field `ldap-ca.crt` in the specified secret when using the `ldap_cacert_secret`.
 +
 . Under *LDAP Certificate Authority Trust Bundle* click the drop-down menu and select your `ldap_cacert_secret`.
 . Under *LDAP Password Secret*, click the drop-down menu and select a secret.

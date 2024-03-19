@@ -20,7 +20,7 @@ $ tar xvzf ansible-automation-platform-setup-<latest-version>.tar.gz
 
 .RPM install
 
-. Install Ansible Automation Platform Installer Package
+. Install {PlatformNameShort} Installer Package
 +
 v.{PlatformVers} for RHEL 8 for x86_64
 +

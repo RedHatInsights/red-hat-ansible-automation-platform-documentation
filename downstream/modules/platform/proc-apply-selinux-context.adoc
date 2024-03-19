@@ -2,7 +2,7 @@
 
 = Applying the SELinux context
 
-After you have configured the inventory file, you must now apply the context to enable the high availability (HA) deployment of automation hub on SELinux.
+After you have configured the inventory file, you must now apply the context to enable the high availability (HA) deployment of {HubName} on SELinux.
 
 .Procedure 
 

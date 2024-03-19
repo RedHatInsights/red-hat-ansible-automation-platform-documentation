@@ -28,4 +28,4 @@ The following is an example of a configuration file:
 
 image:ug-host-metrics-awx-manage-config.png[Configuration file]
 
-This JSON file is what gets sent to and consumed by Automation Analytics.
+{Analytics} receives and consumes the JSON file.

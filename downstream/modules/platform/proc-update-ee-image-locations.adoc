@@ -5,13 +5,13 @@
 
 [id="updating-ee-image-locations"]
 
-= Updating execution environment image locations
+= Updating {ExecEnvShort} image locations
 
 [role="_abstract"]
-If you installed {PrivateHubName} separately from {PlatformNameShort}, you can update your execution environment image locations to point to your {PrivateHubName}.
+If you installed {PrivateHubName} separately from {PlatformNameShort}, you can update your {ExecEnvShort} image locations to point to your {PrivateHubName}.
 
 .Procedure
-. Navigate to the directory that contains `setup.sh`
+. Go to the directory that contains `setup.sh`
 . Create `./group_vars/automationcontroller` by running the following command: 
 +
 ----
@@ -47,9 +47,9 @@ $ ./setup.sh
 
 .Verification
 
-. Log into {PlatformNameShort} as a user with system administrator access. 
-. Navigate to menu:Administration[Execution Environments].
-. In the *Image* column, confirm that the execution environment image location has changed from the default value of `<registry url>/ansible-automation-platform-<version>/<image name>:<tag>` to `<automation hub url>/<image name>:<tag>`. 
+. Log in to {PlatformNameShort} as a user with system administrator access. 
+. Go to menu:Administration[Execution Environments].
+. In the *Image* column, confirm that the {ExecEnvShort} image location has changed from the default value of `<registry url>/ansible-automation-platform-<version>/<image name>:<tag>` to `<automation hub url>/<image name>:<tag>`. 
 
 
 

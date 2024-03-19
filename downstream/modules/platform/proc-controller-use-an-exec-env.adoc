@@ -1,6 +1,6 @@
 [id="proc-controller-use-an-exec-env"]
 
-= Using an execution environment in jobs
+= Using an {ExecEnvShort} in jobs
 
 .Prerequisites
 
@@ -28,7 +28,7 @@ The image name requires its full location (repo), the registry, image name, and 
 * Optional: *Organization*: Assign the organization to specifically use this {ExecEnvShort}. To make the {ExecEnvShort} available for use across multiple organizations, leave this field blank.
 * *Registry credential*: If the image has a protected container registry, provide the credential to access it.
 +
-image:ee-new-ee-form-filled.png[New execution environment]
+image:ee-new-ee-form-filled.png[New {ExecEnvShort}]
 
 . Click btn:[Save].
 

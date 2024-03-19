@@ -1,6 +1,6 @@
 [id="controller-amazon-web-services"]
 
-= Amazon Web Services EC2
+= {AWS} EC2
 
 [literal, options="nowrap" subs="+attributes"]
 ----

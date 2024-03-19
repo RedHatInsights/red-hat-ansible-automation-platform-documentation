@@ -1,8 +1,8 @@
 [id="controller-aws-cloud"]
 
-= Amazon Web Services
+= {AWS}
 
-Amazon Web Services (AWS) cloud credentials are exposed as the following environment variables during playbook execution (in the job template, choose the cloud credential needed for your setup):
+{AWS} (AWS) cloud credentials are exposed as the following environment variables during playbook execution (in the job template, choose the cloud credential needed for your setup):
 
 * `AWS_ACCESS_KEY_ID`
 * `AWS-SECRET_ACCESS_KEY`

@@ -1,6 +1,6 @@
 [id="proc-update-rhsso-client_{context}"]
 
-= Updating the Red Hat Single Sign-On client
+= Updating the {RHSSO} client
 
 When {HubName} is installed and you know the URL of the instance, you must update the {RHSSO} to set the Valid Redirect URIs and Web Origins settings.
 

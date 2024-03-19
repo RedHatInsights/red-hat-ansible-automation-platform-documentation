@@ -63,7 +63,7 @@ This file creates a `Subscription` object called `_ansible-automation-platform_`
 +
 It then creates an `AutomationController` object called `_example_` in the `ansible-automation-platform` namespace.
 +
-To change the Automation controller name from `_example_`, edit the _name_ field in the `kind: AutomationController` section of [filename]`sub.yaml` and replace `_<automation_controller_name>_` with the name you want to use:
+To change the {ControllerName} name from `_example_`, edit the _name_ field in the `kind: AutomationController` section of [filename]`sub.yaml` and replace `_<automation_controller_name>_` with the name you want to use:
 +
 [subs="+quotes"]
 -----
