@@ -6,6 +6,8 @@ The topology viewer enables you to view node type, node health, and specific det
 
 To access the topology viewer from the {ControllerName} UI, you must have *System Administrator* or *System Auditor* permissions. 
 
-For more information about {AutomationMesh}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[Red Hat Ansible Automation Platform automation mesh guide].
+For more information about {AutomationMesh} on a VM-based installation, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide_for_vm-based_installations/index[{PlatformName} {AutomationMesh} guide for VM-based installations].
+
+For more information about {AutomationMesh} on an operator-based installation, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_for_operator-based_installations/index[{PlatformName} {AutomationMesh} for operator-based installations].
 
 include::platform/proc-controller-access-topology-viewer.adoc[leveloffset=+1]

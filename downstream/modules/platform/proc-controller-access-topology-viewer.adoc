@@ -20,7 +20,13 @@ image:topology-viewer-zoomed-view.png[image]
 +
 To reset the view to its default view, click the *Reset zoom* (image:reset.png[Reset,12,12]) icon.
 
-. Refer to the *Legend* to identify the type of nodes that are represented. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/assembly-planning-mesh#con-automation-mesh-node-types[Control and execution planes] for more information on each type of node.
+. Refer to the *Legend* to identify the type of nodes that are represented. 
++
+For VM-based installations, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide_for_vm-based_installations/assembly-planning-mesh#con-automation-mesh-node-types[Control and execution planes] 
++
+For operator-based installations, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_for_operator-based_installations/assembly-planning-mesh#con-automation-mesh-node-types[Control and execution planes] 
++
+for more information on each type of node.
 +
 [NOTE]
 ====

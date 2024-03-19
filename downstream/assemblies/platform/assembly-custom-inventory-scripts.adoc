@@ -6,21 +6,23 @@
 ====
 Inventory scripts have been discontinued. 
 
-For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-inventories#ref-controller-export-old-scripts[Export old inventory scripts] in the _{ControllerUG}_.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-inventories#ref-controller-export-old-scripts[Export old inventory scripts] in the _{ControllerUG}_.
 ====
 
 If you use custom inventory scripts, migrate to sourcing these scripts from a project.
-For more information, see xref:assembly-inventory-file-importing[Inventory File Importing], and link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-inventories#ref-controller-inventory-sources[Inventory sources] in the _{ControllerUG}_.
+For more information, see xref:assembly-inventory-file-importing[Inventory File Importing], and link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-inventories#ref-controller-inventory-sources[Inventory sources] in the _{ControllerUG}_.
 
-If you are setting up an inventory file, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/assembly-platform-install-scenario#proc-editing-installer-inventory-file_platform-install-scenario[Editing the Red Hat Ansible Automation Platform installer inventory file] and find examples specific to your setup.
+If you are setting up an inventory file, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/assembly-platform-install-scenario#proc-editing-installer-inventory-file_platform-install-scenario[Editing the Red Hat Ansible Automation Platform installer inventory file] and find examples specific to your setup.
 
 If you are migrating to {ExecEnvShort}s, see:
 
 * link:https://docs.ansible.com/automation-controller/4.4/html/upgrade-migration-guide/upgrade_to_ees.html#upgrade-venv[Upgrading to {ExecEnvShort}s].
-* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/creating_and_consuming_execution_environments/index[Creating and consuming execution environments].
-* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_automation_mesh_guide/design-patterns[Automation mesh design patterns].
+* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and consuming execution environments].
+* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide_for_vm-based_installations/design-patterns[Automation mesh design patterns].
 * link:https://docs.ansible.com/automation-controller/4.4/html/upgrade-migration-guide/upgrade_to_ees.html#mesh-topology-ee[Mesh Topology] in the _Ansible Automation Platform Upgrade and Migration Guide_ to validate your topology.
 
-For more information on automation mesh, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[Red Hat Ansible Automation Mesh Guide].
+For more information about {AutomationMesh} on a VM-based installation, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide_for_vm-based_installations/index[{PlatformName} {AutomationMesh} guide for VM-based installations].
+
+For more information about {AutomationMesh} on an operator-based installation, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_for_operator-based_installations/index[{PlatformName} {AutomationMesh} for operator-based installations].
 
 If you already have a mesh topology set up and want to view node type, node health, and specific details about each node, see xref:assembly-controller-topology-viewer[Topology Viewer].
