@@ -27,7 +27,7 @@ The default value is `dumb-init==1.2.5`.
 * *package_manager_path*: string with the path to the package manager (dnf or microdnf) to use. 
 The default is `/usr/bin/dnf`. 
 This value is used to install a Python interpreter, if specified in `dependencies`, and during the build phase by the `assemble` script.
-* *skip_ansible_check*: This boolean value controls whether or not the check for an installation of Ansible and Ansible Runner is performed on the final image. 
+* *skip_ansible_check*: This boolean value controls whether or not the check for an installation of Ansible and {Runner} is performed on the final image. 
 +
 Set this value to `True` to not perform this check. 
 +

@@ -4,7 +4,7 @@
 
 Use the configuration YAML keys listed here in your v3 definition file. 
 
-The Ansible Builder 3.x {ExecEnvShort} definition file accepts seven top-level sections:
+The {Builder} 3.x {ExecEnvShort} definition file accepts seven top-level sections:
 
 * xref:ref-controller-additional-build-files[additional_build_files]
 * xref:ref-controller-additional-build-steps[additional_build_steps]

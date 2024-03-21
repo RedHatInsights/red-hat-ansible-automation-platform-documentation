@@ -9,7 +9,7 @@ Use the following recommendations for node sizing:
 
 [NOTE]
 ====
-On control and hybrid nodes, allocate a minimum of 20 GB to `/var/lib/awx` for execution environment storage.
+On control and hybrid nodes, allocate a minimum of 20 GB to `/var/lib/awx` for {ExecEnvShort} storage.
 ====
 
 *Execution nodes* 

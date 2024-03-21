@@ -7,7 +7,7 @@ Ansible-builder is used to create an {ExecEnvShort}.
 An {ExecEnvShort} is expected to contain:
 
 * Ansible
-* Ansible Runner
+* {Runner}
 * Ansible Collections
 * Python and system dependencies of:
 ** modules or plugins in collections

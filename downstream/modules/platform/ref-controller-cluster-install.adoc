@@ -55,7 +55,7 @@ hostC routable_hostname=10.1.0.4
 routable_hostname
 ----
 
-For more information on `routable_hostname`, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-genera-inventory-variables[General variables] in the _Red Hat Ansible Automation Platform Installation Guide_.
+For more information about `routable_hostname`, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-genera-inventory-variables[General variables] in the _{PlatformName} Installation Guide_.
 
 [IMPORTANT]
 ====

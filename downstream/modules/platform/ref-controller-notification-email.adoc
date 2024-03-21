@@ -2,9 +2,9 @@
 
 = Email
 
-The email notification type supports a wide variety of SMTP servers and has support for TLS/SSL connections.
+The {email} type supports a wide variety of SMTP servers and has support for SSL/TLS connections.
 
-Provide the following details to set up an email notification:
+Provide the following details to set up an {email}:
 
 * *Host*
 * *Recipient list*

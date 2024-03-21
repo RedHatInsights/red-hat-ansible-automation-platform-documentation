@@ -12,7 +12,7 @@ Valid keys for this section are:
 
 [cols="15%,40%"]
 |====
-| *base_image* | A dictionary defining the parent image for the execution environment.
+| *base_image* | A dictionary defining the parent image for the {ExecEnvShort}.
 
 A `name` key must be supplied with the container image to use. 
 Use the `signature_original_name` key if the image is mirrored within your repository, but signed with the original image's signature key.

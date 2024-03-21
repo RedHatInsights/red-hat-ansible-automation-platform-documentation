@@ -6,4 +6,4 @@ An integer value that sets the schema version of the {ExecEnvShort} definition f
 
 Defaults to `1`. 
 
-The value must be `3` if you are using Ansible Builder 3.x.
+The value must be `3` if you are using {Builder} 3.x.

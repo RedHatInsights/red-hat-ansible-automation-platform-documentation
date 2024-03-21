@@ -7,7 +7,7 @@
 = Enabling {HubNameStart} collection and container signing
 
 [role="_abstract"]
-Automation hub allows you to sign ansible collections and container images. This feature is not enabled by default, and you must provide the GPG key.
+{HubNameStart} allows you to sign Ansible collections and container images. This feature is not enabled by default, and you must provide the GPG key.
 
 ----
 hub_collection_signing=true

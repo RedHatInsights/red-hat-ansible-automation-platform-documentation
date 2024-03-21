@@ -175,7 +175,7 @@ Set value to `true` if {HubName} must validate certificates when requesting itse
 Default = `false`.
 | *`automationhub_upgrade`* | *Deprecated*
 
-For Ansible Automation Platform 2.2.1 and later, the value of this has been fixed at true.
+For {PlatformNameShort} 2.2.1 and later, the value of this has been fixed at `true`.
 
 {HubNameStart} always updates with the latest packages.
 | *`automationhub_user_headers`* | List of nginx headers for {HubNameMain}'s web server. 
@@ -183,11 +183,11 @@ For Ansible Automation Platform 2.2.1 and later, the value of this has been fixe
 Each element in the list is provided to the web server's nginx configuration as a separate line. 
 
 Default = empty list
-| *`ee_from_hub_only`* | When deployed with {HubName} the installer pushes execution environment images to {HubName} and configures {ControllerName} to pull images from the {HubName} registry.
+| *`ee_from_hub_only`* | When deployed with {HubName} the installer pushes {ExecEnvShort} images to {HubName} and configures {ControllerName} to pull images from the {HubName} registry.
 
-To make {HubName} the only registry to pull execution environment images from, set this variable to `true`.
+To make {HubName} the only registry to pull {ExecEnvShort} images from, set this variable to `true`.
 
-If set to `false`, execution environment images are also taken directly from Red Hat.
+If set to `false`, {ExecEnvShort} images are also taken directly from Red Hat.
 
 Default = `true` when the bundle installer is used.
 | *`generate_automationhub_token`* a| If upgrading from {PlatformName} 2.0 or earlier, choose one of the following options:

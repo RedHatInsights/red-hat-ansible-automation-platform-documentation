@@ -4,7 +4,7 @@
 
 A definition file is a `.yml` file that is required to build an image for an {ExecEnvShort}. 
 The following is a sample version 3 {ExecEnvShort} definition schema file. 
-To use Ansible Builder 3.x, you must specify the schema version. 
+To use {Builder} 3.x, you must specify the schema version. 
 If your {ExecEnvShort} file does not specify version 3, version 1 is supplied.
 
 [literal, options="nowrap" subs="+attributes"]
