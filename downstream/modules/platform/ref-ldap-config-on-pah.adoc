@@ -26,7 +26,7 @@ When you configure your {PrivateHubName} with LDAP authentication, you must set 
 
 .Procedure
 
-. Access your inventory file according to the procedure in link:hhttps://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.3/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-editing-installer-inventory-file_platform-install-scenario[Editing the {PlatformName} installer inventory file].
+. Access your inventory file according to the procedure in link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-editing-installer-inventory-file_platform-install-scenario[Editing the {PlatformName} installer inventory file].
 
 . Use the following example as a guide to set up your {PlatformNameShort} inventory file:
 +

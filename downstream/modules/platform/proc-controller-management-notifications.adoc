@@ -9,7 +9,7 @@ Use the following procedure to review or set notifications associated with a man
 
 image:management-job-notifications.png[Notifications]
 
-If none exist, for more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-notifications[Notifications] in the _{ControllerUG}_.
+If none exist, for more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-notifications[Notifications] in the _{ControllerUG}_.
 
 image:management-job-notifications-empty.png[No notifications set]
 

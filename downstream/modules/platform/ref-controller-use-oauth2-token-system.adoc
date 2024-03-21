@@ -28,6 +28,6 @@ These special OAuth 2 endpoints only support use of the `x-www-form-urlencoded` 
 You can also request tokens using the `/api/o/token` endpoint by specifying `null` for the application type.
 ====
 
-Alternatively, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/assembly-controller-applications#ref-controller-apps-add-tokens[Adding tokens] for users through the UI , and configuring the expiration of an access token and its associated refresh token (if applicable).
+Alternatively, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/assembly-controller-applications#ref-controller-apps-add-tokens[Adding tokens] for users through the UI, and configuring the expiration of an access token and its associated refresh token (if applicable).
 
 image:configure-controller-system-misc-sys-token-expire.png[image]

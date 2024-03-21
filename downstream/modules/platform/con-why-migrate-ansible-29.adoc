@@ -6,4 +6,4 @@ To migrate Ansible Engine 2.9 images for use with {PlatformNameShort} {PlatformV
 
 [role="_additional-resources"]
 .Additional resources
-* See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments] for more information about using {Builder} to build execution environments.
+* See link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments] for more information about using {Builder} to build execution environments.

@@ -38,6 +38,6 @@ image:projects-create-scm-project-branch-override-checked.png[Override options]
 Using a GitHub link is an easy way to use a playbook. 
 To help get you started, use the `helloworld.yml` file available link:https://github.com/ansible/tower-example.git[here].
 
-This link offers a very similar playbook to the one created manually in the instructions found in link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_automation_controller/index[Getting Started with Automation Controller]. 
+This link offers a very similar playbook to the one created manually in the instructions found in link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/getting_started_with_automation_controller/index[Getting Started with Automation Controller]. 
 Using it will not alter or harm your system in any way.
 ====

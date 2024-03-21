@@ -7,6 +7,6 @@ To ensure successful installation of {OperatorPlatform}, you must provision your
 
 .Procedure
 
-. Click link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.10/html-single/storage/index#persistent-storage-nfs-provisioning_persistent-storage-nfs[Provisioning] to update the access mode.
+. Click link:{BaseURL}/openshift_container_platform/4.10/html-single/storage/index#persistent-storage-nfs-provisioning_persistent-storage-nfs[Provisioning] to update the access mode.
 . In the first step, update the `accessModes` from the default `ReadWriteOnce` to `ReadWriteMany`.
 . Complete the additional steps in this section to create the persistent volume claim (PVC).

@@ -115,6 +115,9 @@
 :Valid: Ansible validated content
 :Console: console.redhat.com
 
+// Satellite attributes
+:SatelliteVers: 6.14
+
 // OpenShift attributes
 :OCP: Red Hat OpenShift Container Platform
 :OCPShort: OpenShift Container Platform

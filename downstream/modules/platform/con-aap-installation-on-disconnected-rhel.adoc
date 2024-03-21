@@ -8,7 +8,7 @@ You can install {PlatformNameShort} {ControllerName} and {PrivateHubName} withou
 
 == System requirements for disconnected installation
 
-Ensure that your system has all the hardware requirements before performing a disconnected installation of {PlatformNameShort}. For more information about hardware requirements, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html-single/red_hat_ansible_automation_platform_installation_guide/index#platform-system-requirements[Chapter 2. System requirements].
+Ensure that your system has all the hardware requirements before performing a disconnected installation of {PlatformNameShort}. For more information about hardware requirements, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/red_hat_ansible_automation_platform_installation_guide/index#platform-system-requirements[Chapter 2. System requirements].
 
 == RPM Source
 
@@ -24,4 +24,4 @@ The RHEL Binary DVD method requires the DVD for supported versions of RHEL, incl
 ====
 
 .Additional Resources
-* link:https://access.redhat.com/documentation/en-us/red_hat_satellite/6.11/html/installing_satellite_server_in_a_disconnected_network_environment/index[Satellite]
+* link:{BaseURL}/red_hat_satellite/{SatelliteVers}/html/installing_satellite_server_in_a_disconnected_network_environment/index[Satellite]

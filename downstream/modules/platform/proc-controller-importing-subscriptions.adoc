@@ -6,7 +6,7 @@ After you have obtained an authorized {PlatformNameShort} subscription, you must
 
 .Prerequisites
 
-* You have obtained a subscriptions manifest. For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest] in the _{ControllerUG}_.
+* You have obtained a subscriptions manifest. For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest] in the _{ControllerUG}_.
 
 .Procedure
 
@@ -35,17 +35,17 @@ You can log in over time and retrieve new subscriptions if you have renewed.
 +
 . Click btn:[Next] to proceed to *Tracking and Insights*. 
 Tracking and insights collect data to help Red Hat improve the product and deliver a better user experience. 
-For more information about data collection, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-usability-analytics-data-collection[Usability Analytics and Data Collection]. 
+For more information about data collection, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-usability-analytics-data-collection[Usability Analytics and Data Collection]. 
 This option is checked by default, but you can opt out of any of the following:
 .. *User analytics*. Collects data from the controller UI.
 .. *Insights Analytics*. Provides a high level analysis of your automation with {ControllerName}. 
 It helps you to identify trends and anomalous use of the controller. 
 For opt-in of {Analytics} to be effective, your instance of {ControllerName} must be running on {RHEL}. 
-For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-automation-analytics[{Analytics}] section.
+For more information, see the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-automation-analytics[{Analytics}] section.
 +
 [NOTE]
 ====
-You can change your analytics data collection preferences at any time, as described in the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-usability-analytics-data-collection[Usability Analytics and Data Collection] section.
+You can change your analytics data collection preferences at any time, as described in the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-usability-analytics-data-collection[Usability Analytics and Data Collection] section.
 ====
 +
 . After you have specified your tracking and Insights preferences, click btn:[Next] to proceed to the End User Agreement.
@@ -76,7 +76,7 @@ The following Satellite roles grant proper access:
 * Manager
 
 Use the *Custom* role for your {ControllerName} integration, as it is the most restrictive. 
-For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_satellite/6.13/html/administering_red_hat_satellite/managing_users_and_roles_admin#Creating_and_Managing_Roles_admin[Satellite documentation] on managing users and roles.
+For more information, see the link:{BaseURL}/red_hat_satellite/6.13/html/administering_red_hat_satellite/managing_users_and_roles_admin#Creating_and_Managing_Roles_admin[Satellite documentation] on managing users and roles.
 
 [NOTE]
 ====

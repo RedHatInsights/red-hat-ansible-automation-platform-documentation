@@ -6,7 +6,7 @@ You must specify where jobs are run, or they default to running in the control c
 
 To do this, set up a Job Template.
 
-For more information on Job Templates, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-job-templates[Job Templates] in the _{ControllerUG}_.
+For more information on Job Templates, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-job-templates[Job Templates] in the _{ControllerUG}_.
 
 .Procedure
 

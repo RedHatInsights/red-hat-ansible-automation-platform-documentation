@@ -9,5 +9,5 @@ To migrate your venvs to execution environments, you must use the `awx-manage` c
 [role="_additional-resources"]
 .Additional resources
 
-* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/upgrading-to-ees[Upgrading to Automation Execution Environments guide]
-* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments].
+* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/upgrading-to-ees[Upgrading to Automation Execution Environments guide]
+* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/index[Creating and Consuming Execution Environments].

@@ -9,9 +9,9 @@ The following procedure describes how to change the SSL certificate and key in t
 
 . Copy the new SSL certificates and keys to a path relative to the {PlatformNameShort} installer.
 . Add the absolute paths of the SSL certificates and keys to the inventory file. 
-Refer to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index#ref-hub-variables[{ControllerNameStart} variables], 
-link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index#ref-controller-variables[{HubNameStart} variables], and link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#event-driven-ansible-controller[{EDAcontroller} variables] sections of the 
-link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} Installation Guide]
+Refer to the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index#ref-hub-variables[{ControllerNameStart} variables], 
+link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index#ref-controller-variables[{HubNameStart} variables], and link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#event-driven-ansible-controller[{EDAcontroller} variables] sections of the 
+link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} Installation Guide]
 for guidance on setting these variables.
 +
 --

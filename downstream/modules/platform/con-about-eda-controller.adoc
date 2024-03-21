@@ -16,5 +16,5 @@ The {EDAcontroller} is the interface for event-driven automation and introduces 
 The following link will not work until published.
 ////
 
-* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_event-driven_ansible_guide/index[Getting Started with Event-Driven Ansible Guide].
+* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_event-driven_ansible_guide/index[Getting Started with Event-Driven Ansible Guide].
 

@@ -54,7 +54,7 @@ You can specify multiple LDAP servers by separating each with spaces or commas. 
 ====
 +
 . Enter the password to use for the binding user in the *LDAP Bind Password* text field. 
-For more information about LDAP variables, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-hub-variables[Ansible automation hub variables].
+For more information about LDAP variables, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-hub-variables[Ansible automation hub variables].
 . Click to select a group type from the *LDAP Group Type* menu.
 +
 The LDAP group types that are supported by {ControllerName} use the underlying link:https://django-auth-ldap.readthedocs.io/en/latest/groups.html#types-of-groups[django-auth-ldap library].

@@ -38,4 +38,4 @@ For this example, for a workload on 300 managed hosts, executing 1000 tasks per 
 
 * For more information on workloads with high levels of API interaction, see link:https://www.ansible.com/blog/scaling-automation-controller-for-api-driven-workloads[Scaling Automation Controller for API Driven Workloads]. 
 * For more information on managing capacity with instances, see xref:assembly-controller-instances[Managing Capacity With Instances].
-* For more information on operator-based deployments, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_performance_considerations_for_operator_based_installations/index[Red Hat Ansible Automation Platform Performance Considerations for Operator Based Installations].
+* For more information on operator-based deployments, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_performance_considerations_for_operator_based_installations/index[Red Hat Ansible Automation Platform Performance Considerations for Operator Based Installations].

@@ -43,7 +43,7 @@ It is beyond the scope of this document to provide designs for all possible scen
 The following is one example {AutomationMesh} design.
 ====
 //Remove comment and add to the above note once 2.2 version of the docs are published.
-// Review the full https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[{PlatformNameShort} automation mesh guide] for information on designing it for your needs.
+// Review the full {BaseURL}/red_hat_ansible_automation_platform/2.1/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[{PlatformNameShort} automation mesh guide] for information on designing it for your needs.
 +
 .Example inventory file with a standard control plane consisting of three nodes utilizing hop nodes:
 ----
@@ -95,7 +95,7 @@ $ ./setup.sh -i inventory.new.ini -e @credentials.yml -- --ask-vault-pass
 . Once the installation completes, verify that your {PlatformNameShort} has been installed successfully by logging in to the {PlatformNameShort} dashboard UI across all {ControllerName} nodes.
 
 .Additional resources
-* For general information about using the {PlatformNameShort} installer, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} installation guide].
+* For general information about using the {PlatformNameShort} installer, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} installation guide].
 // Remove comments once 2.2 version of the docs are published.
-//* For more information about automation mesh, see the https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[{PlatformNameShort} automation mesh guide]
+//* For more information about automation mesh, see the {BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_automation_mesh_guide/index[{PlatformNameShort} automation mesh guide]
 

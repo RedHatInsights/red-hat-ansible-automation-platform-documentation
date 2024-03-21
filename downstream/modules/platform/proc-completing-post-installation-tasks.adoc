@@ -5,7 +5,6 @@
 [role="_abstract"]
 After you have completed the installation of {PlatformNameShort}, ensure that {HubName} and {ControllerName} deploy properly.
 
-// the section on adding a controller subscription duplicates content in https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_automation_controller/controller-managing-subscriptions#doc-wrapper
 
 == Adding a controller subscription
 

@@ -20,4 +20,4 @@ image::ug-instance-groups_list_view.png[Instance Groups list view]
 
 .Additional resources
 
-For more information, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-instance-groups[Managing Instance Groups] section of the _{ControllerUG}_.
+For more information, see the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-instance-groups[Managing Instance Groups] section of the _{ControllerUG}_.

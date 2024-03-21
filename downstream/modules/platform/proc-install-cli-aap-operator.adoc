@@ -85,5 +85,5 @@ To verify that the namespace has been successfully subscribed to the `ansible-au
 $ oc get subs -n ansible-automation-platform
 -----
 
-For further information about subscribing namespaces to operators, see link:https://access.redhat.com/documentation/en-us/openshift_container_platform/{OCPLatest}/html/operators/user-tasks#olm-installing-operator-from-operatorhub-using-cli_olm-installing-operators-in-namespace[Installing from OperatorHub using the CLI] in the {OCP} _Operators_ guide.
+For further information about subscribing namespaces to operators, see link:{BaseURL}/openshift_container_platform/{OCPLatest}/html/operators/user-tasks#olm-installing-operator-from-operatorhub-using-cli_olm-installing-operators-in-namespace[Installing from OperatorHub using the CLI] in the {OCP} _Operators_ guide.
 

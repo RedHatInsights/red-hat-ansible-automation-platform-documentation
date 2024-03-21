@@ -17,7 +17,7 @@ Additionally:
 * In cases where you have a large project (around 10 GB), disk space on `/tmp` can be an issue.
 
 You can specify a location manually in the {ControllerName} UI from the *Create Inventory Source* page. 
-Refer to link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-add-source[Adding a source] for instructions on creating an inventory source.
+Refer to link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-add-source[Adding a source] for instructions on creating an inventory source.
 
 When you update a project, refresh the listing to use the latest SCM information. 
 If no inventory sources use a project as an SCM inventory source, then the inventory listing might not be refreshed on update.

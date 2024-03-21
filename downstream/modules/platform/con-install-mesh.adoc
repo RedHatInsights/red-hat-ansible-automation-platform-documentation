@@ -7,5 +7,5 @@ To provide {PlatformNameShort} with details about the nodes, groups, and peer re
 
 [role="_additional-resources"]
 .Additional Resources
-* link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} Installation Guide]
+* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformName} Installation Guide]
 * <<design-patterns, Automation Mesh Design Patterns>>

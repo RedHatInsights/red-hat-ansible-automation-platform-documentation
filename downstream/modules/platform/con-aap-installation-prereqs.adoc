@@ -15,4 +15,4 @@ WARNING: To prevent errors, upgrade your RHEL nodes fully before installing {Pla
 
 [role="_additional-resources"]
 .Additional resources
-For more information about obtaining a platform installer or system requirements, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[{PlatformName} system requirements] in the _{PlatformName} Planning Guide_.
+For more information about obtaining a platform installer or system requirements, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements[{PlatformName} system requirements] in the _{PlatformName} Planning Guide_.

@@ -15,4 +15,4 @@ Container groups upgraded from versions prior to {ControllerName} 4.0 revert bac
 ====
 
 Container groups are different from {ExecEnvShort}s in that {ExecEnvShort}s are container images and do not use a virtual environment. 
-For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#assembly-controller-execution-environments[Execution environments] in the _{ControllerUG}_.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#assembly-controller-execution-environments[Execution environments] in the _{ControllerUG}_.

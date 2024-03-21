@@ -50,14 +50,14 @@ oc get secret $(echo ${SA_SECRET}) -o json | jq '.data.token' | xargs | base64 -
 oc get secret $SA_SECRET -o json | jq '.data["ca.crt"]' | xargs | base64 --decode > containergroup-ca.crt
 ----
 +
-. Use the contents of `containergroup-sa.token` and `containergroup-ca.crt` to provide the information for the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#ref-controller-credential-openShift[OpenShift or Kubernetes API Bearer Token] required for the container group.
+. Use the contents of `containergroup-sa.token` and `containergroup-ca.crt` to provide the information for the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#ref-controller-credential-openShift[OpenShift or Kubernetes API Bearer Token] required for the container group.
 
 To create a container group:
 
 .Procedure 
 
-. Use the {ControllerName} UI to create an link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#ref-controller-credential-openShift[OpenShift or Kubernetes API Bearer Token] credential to use with your container group.
-For more information, see https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-getting-started-create-credential[Creating a credential] in the _{ControllerUG}_.
+. Use the {ControllerName} UI to create an link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#ref-controller-credential-openShift[OpenShift or Kubernetes API Bearer Token] credential to use with your container group.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-getting-started-create-credential[Creating a credential] in the _{ControllerUG}_.
 . From the navigation panel select menu:Administration[Instance Groups].
 . Click btn:[Add] and select *Create Container Group*.
 . Enter a name for your new container group and select the credential previously created to associate it to the container group.
