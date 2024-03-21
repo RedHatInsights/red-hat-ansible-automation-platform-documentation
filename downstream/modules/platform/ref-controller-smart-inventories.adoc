@@ -51,14 +51,13 @@ Organization administrators have implicit "admin" access to all inventories insi
 Administrators of the Smart Inventory can grant other users (who are not also admins of your organization) permissions such as "use" and "adhoc" to the smart inventory. 
 These permit the actions indicated by the role, as with other standard inventories. 
 However, this does not grant any special permissions to hosts (which live in a different inventory).
-It does not permit direct read permission to hosts, or permit them to see additional hosts under `/#/hosts/`, although they can still view
-the hosts under the smart inventory host list.
+It does not permit direct read permission to hosts, or permit them to see additional hosts under `/#/hosts/`, although they can still view the hosts under the smart inventory host list.
 
 In some situations, you can modify the following:
 
-* A new Host created manually on Inventory with Inventory sources, in Groups that were created as a result of inventory source synchronizations.
-* Variables on Hosts and Groups.
+* A new Host created manually on Inventory with Inventory sources. 
+* Groups that were created as a result of inventory source synchronizations.
+* Variables on Host and Group are not changeable, even as the local System Administrator.
 
 Hosts associated with the Smart Inventory are manifested at view time.
-If the results of a Smart Inventory contains more than one host with identical hostnames, only one of the matching hosts is included as
-part of the Smart Inventory, ordered by Host ID.
+If the results of a Smart Inventory contains more than one host with identical hostnames, only one of the matching hosts is included as part of the Smart Inventory, ordered by Host ID.
