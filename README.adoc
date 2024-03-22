@@ -8,7 +8,7 @@ This repository also contains content from the former AAP repository in the RedH
 
 ## Contributing
 
-We welcome contributions to the Red Hat Ansible Automation Platform documentation. You can either link:https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation/issues[open an issue] for discussion, or submit an update using the steps below. This section describes the workflow and provides resources for Red Hat style and documentation architecture conventions.
+We welcome contributions to the Red Hat Ansible Automation Platform documentation. You can either link:https://github.com/ansible/aap-docs/issues[open an issue] for discussion, or submit an update using the steps below. This section describes the workflow and provides resources for Red Hat style and documentation architecture conventions.
 
 ### Authoring modularly structured documentation
 
@@ -103,7 +103,7 @@ The first time you contribute:
 
 . Fork the repository.
 
-   From the main page of the link:https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation[GitHub repository], click btn[Fork] in the upper right corner.
+   From the main page of the link:https://github.com/ansible/aap-docs[GitHub repository], click btn[Fork] in the upper right corner.
 
 . Clone the forked repository locally.
 
@@ -118,7 +118,7 @@ $ git clone git@github.com:<username>/red-hat-ansible-automation-platform-docume
 . Set the upstream remote repository.
 
  -----
- $ git remote add -f upstream git@github.com:RedHatInsights/red-hat-ansible-automation-platform-documentation.git
+ $ git remote add -f upstream git@github.com:ansible/aap-docs.git
  -----
 
 To submit an update:
@@ -159,7 +159,7 @@ $ git push origin HEAD
 
 . Open a pull request.
 
-   Typically the previous command gives the URL to open a pull request. If not, you can open one from the link:https://github.com/RedHatInsights/red-hat-ansible-automation-platform-documentation/pulls[Pull requests] tab of the GitHub UI.
+   Typically the previous command gives the URL to open a pull request. If not, you can open one from the link:https://github.com/ansible/aap-docs/pulls[Pull requests] tab of the GitHub UI.
 
 After you submit a pull request, it will be reviewed by members of this project.
 
