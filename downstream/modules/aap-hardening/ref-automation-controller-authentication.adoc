@@ -3,7 +3,7 @@
 
 [id="ref-automation-controller-authentication_{context}"]
 
-= Automation controller authentication
+= {ControllerNameStart} authentication
 
 [role="_abstract"]
 

@@ -12,7 +12,7 @@ A critical capability of logging is the ability for the {ControllerName} to dete
 
 To verify the rsyslog configuration for each {ControllerName} host, complete the following steps for each {ControllerName}:
 
-The administrator must check the rsyslog configuration for each automation controller host to verify the log rollover against a organizationally defined log capture size. To do this, use the following steps, and correct using the configuration steps as required:
+The administrator must check the rsyslog configuration for each {ControllerName} host to verify the log rollover against a organizationally defined log capture size. To do this, use the following steps, and correct using the configuration steps as required:
 
 . Check the `LOG_AGGREGATOR_MAX_DISK_USAGE_GB` field in the {ControllerName} configuration. On the host, execute:
 +
@@ -78,7 +78,7 @@ To set up logging to any of the aggregator types, read the documentation on link
 * Loggers to Send Data to the Log Aggregator Form: All four types of data are pre-populated by default. Click the tooltip icon next to the field for additional information on each data type. Delete the data types you do not want.
 * Log Format For API 4XX Errors: Configure a specific error message.
 . Click btn:[Save] to apply the settings or btn:[Cancel] to abandon the changes.
-. To verify if your configuration is set up correctly, btn:[Save] first then click btn:[Test]. This sends a test log message to the log aggregator using the current logging configuration in the automation controller. You should check to make sure this test message was received by your external log aggregator.
+. To verify if your configuration is set up correctly, btn:[Save] first then click btn:[Test]. This sends a test log message to the log aggregator using the current logging configuration in the {ControllerName}. You should check to make sure this test message was received by your external log aggregator.
 
 A {ControllerName} account is automatically created for any user who logs in with an LDAP username and password. These users can automatically be placed into organizations as regular users or organization administrators. This means that logging should be turned on when LDAP integration is in use. You can enable logging messages for the SAML adapter the same way you can enable logging for LDAP.
 

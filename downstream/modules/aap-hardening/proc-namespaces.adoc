@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-The Red Hat Enterprise Linux 8 STIG requires that the kernel setting `user.max_user_namespaces` is set to "0", but only if Linux containers are not in use. Because {PlatformNameShort} uses containers as part of its execution environment capability, this STIG control does not apply to the {ControllerName}.
+The {RHEL} 8 STIG requires that the kernel setting `user.max_user_namespaces` is set to "0", but only if Linux containers are not in use. Because {PlatformNameShort} uses containers as part of its {ExecEnvShort} capability, this STIG control does not apply to the {ControllerName}.
 
 To check the `user.max_user_namespaces` kernel setting, complete the following steps:
 

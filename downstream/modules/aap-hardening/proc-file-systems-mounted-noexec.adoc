@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-The Red Hat Enterprise Linux 8 STIG requires that a number of file systems are mounted with the `noexec` option to prevent execution of binaries located in these file systems. The {PlatformNameShort} installer runs a preflight check that will fail if any of the following file systems are mounted with the `noexec` option:
+The {RHEL} 8 STIG requires that a number of file systems are mounted with the `noexec` option to prevent execution of binaries located in these file systems. The {PlatformNameShort} installer runs a preflight check that will fail if any of the following file systems are mounted with the `noexec` option:
 
 * `/tmp`
 * `/var`

@@ -97,7 +97,7 @@ As a System Administrator for each {ControllerName} nginx web server, perform th
 
 . Reinstall {ControllerName} if no nginx users exist in `/etc/passwd`
 
-. Review all users enumerated in `/etc/passwd`, and remove any that are not attributable to Red Hat Enterprise Linux or {ControllerName} and/or organizationally disallowed.
+. Review all users enumerated in `/etc/passwd`, and remove any that are not attributable to {RHEL} or {ControllerName} and/or organizationally disallowed.
 
 The {ControllerName} nginx web server is configured to check for and install security-relevant software updates from an authoritative source within an organizationally identified time period from the availability of the update. By default, this time period will be every 24 hours.
 

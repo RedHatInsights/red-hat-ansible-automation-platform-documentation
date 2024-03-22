@@ -22,7 +22,7 @@ The following table lists a number of security-relevant variables and their reco
 
 | `nginx_disable_https` | false | If set to "true", this variable disables HTTPS connections to the controller. The default is "false", so if this variable is absent from the installer inventory it is effectively the same as explicitly defining the variable to "false".
 
-| `automationhub_disable_https` | false | If set to "true", this variable disables HTTPS connections to the private automation hub. The default is "false", so if this variable is absent from the installer inventory it is effectively the same as explicitly defining the variable to "false".
+| `automationhub_disable_https` | false | If set to "true", this variable disables HTTPS connections to the {PrivateHubName}. The default is "false", so if this variable is absent from the installer inventory it is effectively the same as explicitly defining the variable to "false".
 
 | `automationedacontroller_disable_https` | false | If set to "true", this variable disables HTTPS connections to the {EDAcontroller}. The default is "false", so if this variable is absent from the installer inventory it is effectively the same as explicitly defining the variable to "false".
 |===
