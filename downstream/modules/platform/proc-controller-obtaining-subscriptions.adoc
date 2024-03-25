@@ -3,17 +3,17 @@
 = Obtaining an authorized Ansible {ControllerName} subscription
 
 If you already have a subscription to a Red Hat product, you can acquire an {ControllerName} subscription through that subscription.
-If not, you can request a link:https://www.redhat.com/en/technologies/management/ansible/try-it[trial subscription].
+If you do not have a subscription to {PlatformName} and Red Hat Satellite, you can request a trial subscription.
 
 .Procedure
 
 ifdef::controller-UG[]
-* If you already have a {PlatformName} subscription, use your Red Hat customer credentials when you launch the {ControllerName} to access your subscription information.
+* If you have a {PlatformName} subscription, use your Red Hat customer credentials when you launch the {ControllerName} to access your subscription information.
 See xref:controller-importing-subscriptions[Importing a subscription].
 endif::controller-UG[]
 ifdef::controller-GS,controller-AG[]
-* If you already have a {PlatformName} subscription, use your Red Hat customer credentials when you launch the {ControllerName} to access your subscription information.
-See link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-importing-subscriptions[Importing a subscription].
+* If you have a {PlatformName} subscription, use your Red Hat customer credentials when you launch the {ControllerName} to access your subscription information.
+See link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#controller-importing-subscriptions[Importing a subscription].
 endif::controller-GS,controller-AG[]
 
 * If you have a non-Ansible Red Hat or Satellite subscription, access {ControllerName} with one of these methods:
@@ -33,6 +33,6 @@ ifdef::controller-GS,controller-AG[]
 To understand what is supported with your subscription, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#assembly-controller-licensing[{ControllerNameStart} licensing, updates and support].
 endif::controller-GS,controller-AG[]
 ifdef::controller-UG[]
-To understand what is supported with your subscription, see xref:assembly-controller-licensing[{ControllerNameStart} licensing, updates and support].
+* To understand what is supported with your subscription, see xref:assembly-controller-licensing[{ControllerNameStart} licensing, updates and support].
 endif::controller-UG[]
-If you have issues with your subscription, contact your Sales Account Manager or Red Hat Customer Service at: https://access.redhat.com/support/contact/customerService/.
+* If you have issues with your subscription, contact your Sales Account Manager or Red Hat Customer Service at: https://access.redhat.com/support/contact/customerService/.

@@ -15,7 +15,7 @@ Thank you for your interest in {PlatformName} {ControllerName}.
 {ControllerNameStart} helps teams manage complex multitiered deployments by adding control, knowledge, and delegation to Ansible-powered environments.
 
 The {ControllerNameStart} User Guide describes all of the functionality available in {ControllerName}.
-It assumes moderate familiarity with Ansible, including concepts such as Playbooks, Variables, and Tags.
+It assumes moderate familiarity with Ansible, including concepts such as playbooks, variables, and tags.
 For more information about these and other Ansible concepts, see the link:https://docs.ansible.com/[Ansible documentation].
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]

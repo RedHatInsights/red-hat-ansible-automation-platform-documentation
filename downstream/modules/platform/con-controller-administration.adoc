@@ -5,15 +5,15 @@
 The *Administration* menu provides access to the administrative options of {ControllerName}. 
 From here, you can create, view, and edit:
 
-* xref:assembly-controller-custom-credentials[Credential_types]
+* xref:assembly-controller-custom-credentials[Credential types]
 * xref:controller-notifications[Notifications]
 * Management_jobs
-* xref:controller-instance-groups[Instance_groups]
+* xref:controller-instance-groups[Instance groups]
 * Instances
 * xref:assembly-controller-applications[Applications]
-* xref:assembly-controller-execution-environments[Execution_environments]
+* xref:assembly-controller-execution-environments[Execution environments]
 //Topology View is in the Admin Guide
-* Topology_view
+* Topology view
 //Next version includes
 //* Instance Groups
 //* Instances

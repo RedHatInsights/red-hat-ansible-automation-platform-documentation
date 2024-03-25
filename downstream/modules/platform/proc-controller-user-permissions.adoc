@@ -5,24 +5,24 @@
 To add permissions to a particular user:
 
 .Procedure
-. From the *Users* list view, click on the desired user.
+. From the *Users* list view, click on the name of a user.
 . On the *Details* page, click btn:[Add]. 
-This opens the *Add Permissions* wizard.
+This opens the *Add user permissions* wizard.
 +
 image:users-add-permissions-form.png[Add Permissions Form]
-. Select the object for which the user will have access.
+. Select the object to a assign permissions, for which the user will have access.
 . Click btn:[Next].
-. Click to select the resource to assign team roles and click btn:[Next].
+. Select the resource to assign team roles and click btn:[Next].
 +
 image:users-permissions-IG-select.png[image]
 
-. Click the checkbox beside the role to assign that role to your chosen type of resource. 
+. Select the resource you want to assign permissions to. 
 Different resources have different options available.
 +
 image:users-permissions-IG-roles.png[image]
 
 . Click btn:[Save].
-. The *Roles* page displays the updated profile for the user with the roles assigned for each selected resource.
+. The *Roles* page displays the updated profile for the user with the permissions assigned for each selected resource.
 
 [NOTE]
 ====

@@ -4,35 +4,31 @@
 
 To upload a subscriptions manifest, first set up your subscription allocations:
 
-[discrete]
-== Setting up a subscription allocation
-
 .Procedure
 . Navigate to https://access.redhat.com/management/subscription_allocations.
 The *Subscriptions Allocations* page contains no subscriptions until you create one.
-+
-image::subscription-allocations-empty.png[Subscriptions allocation]
-+
-. Click btn:[Create New subscription allocation] to create a new subscription allocation.
+//+
+//image::subscription-allocations-empty.png[Subscriptions allocation]
+//+
+. Click btn:[Create New subscription allocation].
 +
 [NOTE]
 ====
-If *Create New subscription allocation* is not present, or disabled, you do not have the proper permissions to create subscription allocations. 
+If *Create New subscription allocation* does not display, or is disabled, you do not have the proper permissions to create subscription allocations. 
 To create a subscription allocation, you must either be an Administrator on the Customer Portal, or have the Manage Your Subscriptions role. 
 Contact an `access.redhat.com` administrator, or organization administrator who can grant you permission to manage subscriptions.
 ====
 
-. Enter a *Name* for your subscription and select *Satellite 6.13* from the *Type* drop-down menu.
+. Enter a *Name* for your subscription and select *{SatelliteVers}* from the *Type* drop-down menu.
 +
 image::subscription-allocations-create.png[Create a Subscriptions Allocation]
 +
 . Click btn:[Create].
-. When your subscriptions manifest is successfully created, the relevant information is displayed. 
-The number indicated next to *Entitlements* indicates the number of entitlements associated with your subscription.
++
+When your subscriptions manifest is successfully created, the number indicated next to *Entitlements* indicates the number of entitlements associated with your subscription.
 +
 image::subscription-allocations-details-bottom.png[Details of subscription allocations]
 
-[discrete]
 == Setting up a subscriptions manifest
 
 To obtain a subscriptions manifest, you must add an entitlement to your subscriptions through the *Subscriptions* tab.
@@ -56,7 +52,8 @@ Similarly, a subset of a subscription can be applied by only allocating a portio
 ====
 
 . Click btn:[Submit].
-. The allocations you specified, when successfully added, are displayed in the *Subscriptions* tab.
++
+The allocations you specified, when successfully added, are displayed in the *Subscriptions* tab.
 . Click the *Details* tab to access the subscription manifest file.
 . Click btn:[Export Manifest] to export the manifest file for this subscription.
 A folder pre-pended with `manifest_` is downloaded to your local drive. 

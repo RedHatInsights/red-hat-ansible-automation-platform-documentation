@@ -5,10 +5,9 @@ ifdef::context[:parent-context: {context}]
 
 :context: overview-controller
 
-Thank you for your interest in {PlatformName}. 
-{PlatformNameShort} makes it possible for users across an organization to share, vet, and manage automation content by means of a simple, powerful, and agentless technical implementation. 
+With {PlatformNameShort} users across an organization can share, vet, and manage automation content by means of a simple, powerful, and agentless technical implementation. 
 IT managers can provide guidelines on how automation is applied to individual teams. 
-Meanwhile, automation developers retain the freedom to write tasks that use existing knowledge, without the operational overhead of conforming to complex tools and frameworks. 
+Automation developers can write tasks that use existing knowledge, without the operational overhead of conforming to complex tools and frameworks. 
 It is a more secure and stable foundation for deploying end-to-end automation solutions, from hybrid cloud to the edge.
 
 {PlatformNameShort} includes {ControllerName}, which enables users to define, operate, scale, and delegate automation across their enterprise.

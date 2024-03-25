@@ -11,7 +11,7 @@ The navigation panel provides quick access to {ControllerName} resources, such a
 
 [NOTE]
 ====
-The {ControllerName} UI is available for technical preview and is subject to change in future releases. 
+The {ControllerName} UI is also available as a technical preview and is subject to change in future releases. 
 To preview the new UI, click the *Enable Preview of New User Interface* toggle to *On* from the *Miscellaneous System* option of the *Settings* menu.
 
 //image:configure-tower-system-misc-preview-newui.png[image]

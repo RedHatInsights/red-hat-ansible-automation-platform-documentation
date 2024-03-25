@@ -1,8 +1,10 @@
 [id="proc-controller-adding-subscription-manually"]
 
-= Adding a subscription manually
+= Add a subscription manually
 
-If you are unable to apply or update the subscription information using the user interface, you can upload the subscriptions manifest manually in an Ansible playbook using the license module in the `ansible.controller` collection:
+If you are unable to apply or update the subscription information by using the {ControllerName} user interface, you can upload the subscriptions manifest manually in an Ansible playbook.
+
+Use the license module in the `ansible.controller` collection:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

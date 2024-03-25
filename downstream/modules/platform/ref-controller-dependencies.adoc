@@ -1,10 +1,15 @@
 [id="ref-controller-dependencies"]
 
-= dependencies
+= Dependencies
 
+<<<<<<< HEAD
 Specifies dependencies to install into the final image, including `ansible-core`, `ansible-runner`, Python packages, system packages, and
 Ansible Collections. 
 {Builder} automatically installs dependencies for any Ansible Collections you install.
+=======
+Specifies dependencies to install into the final image, including `ansible-core`, `ansible-runner`, Python packages, system packages, and Ansible Collections. 
+Ansible Builder automatically installs dependencies for any Ansible Collections you install.
+>>>>>>> 84dc985e (Editorial changes to Chaps 1-8 Controller UG)
 
 In general, you can use standard syntax to constrain package versions.
 Use the same syntax you would pass to `dnf`, `pip`, `ansible-galaxy`, or any other package management utility. 
@@ -29,7 +34,12 @@ ansible_core:
 ansible_core:
     package_pip: https://github.com/example_user/ansible/archive/refs/heads/ansible.tar.gz
 ----
+<<<<<<< HEAD
 | *ansible_runner* a| The version of the {Runner} Python package to be installed. 
+=======
+| *ansible_runner* a| The version of the Ansible Runner Python package to be installed. 
+
+>>>>>>> 84dc985e (Editorial changes to Chaps 1-8 Controller UG)
 This value is a dictionary with a single key, `package_pip`. 
 The `package_pip` value is passed directly to pip for installation and can be in any format that pip supports. 
 The following are some example values:

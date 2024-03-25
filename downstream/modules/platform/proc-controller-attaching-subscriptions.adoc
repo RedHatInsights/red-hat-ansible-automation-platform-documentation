@@ -2,7 +2,7 @@
 
 = Attaching Subscriptions
 
-You *must* have valid subscriptions attached before installing {PlatformNameShort}.
+You *must* have valid {PlatformNameShort} subscriptions attached before installing {PlatformNameShort}.
 
 [NOTE]
 ====
@@ -10,17 +10,15 @@ Attaching subscriptions is unnecessary if your Red Hat account has enabled link:
 However, you must register to _Red Hat Subscription Management_ (RHSM) or Red Hat Satellite before installing {PlatformNameShort}.
 ====
 
-Use the following method to attach your subscription:
-
 .Procedure
-. To find out the `pool_id` of your subscription, enter the following command:
+. To find the `pool_id` of your subscription, enter the following command:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
 # subscription-manager list --available --all | grep "Ansible Automation Platform" -B 3 -A 6
 ----
-
-. The command returns the following:
++
+The command returns the following:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -43,7 +41,7 @@ Suggested: 1
 # subscription-manager attach --pool=<pool_id>
 ----
 +
-If this is correct, and all nodes have attached, then the repositories are found.
+If all nodes have attached, then the repositories are found.
 +
 . To check whether the subscription attached successfully, enter the following command:
 +

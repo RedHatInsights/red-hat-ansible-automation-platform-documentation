@@ -2,7 +2,7 @@
 
 = Trial and evaluation
 You require a license to run {ControllerName}. 
-However, there is no fee for a trial license.
+You can start by using a free trial license.
 
 * Trial licenses for {PlatformNameShort} are available at: http://ansible.com/license
 

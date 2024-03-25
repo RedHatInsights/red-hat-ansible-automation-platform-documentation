@@ -6,7 +6,7 @@ ifdef::controller-GS[]
 After you install {ControllerName}, you must log in to the Dashboard.
 endif::controller-GS[]
 ifdef::controller-UG[]
-=  Logging into the {ControllerName} after installation
+=  Logging into {ControllerName} after installation
 
 After you install {ControllerName}, you must log in.
 endif::controller-UG[]

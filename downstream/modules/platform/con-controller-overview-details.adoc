@@ -2,7 +2,7 @@
 
 = Real-time playbook output and exploration
 {ControllerNameStart} enables you to watch playbooks run in real time, seeing each host as they check in.
-You can go back and explore the results for specific tasks and hosts in great detail; search for specific plays or hosts and see just those results, or locate errors that need to be corrected.
+You can go back and explore the results for specific tasks and hosts in great detail, search for specific plays or hosts and see just those results, or locate errors that need to be corrected.
 
 = "Push Button" automation
 {ControllerNameStart} enables you to access your favorite projects and re-trigger execution from the web interface.
@@ -11,22 +11,23 @@ You can go back and explore the results for specific tasks and hosts in great de
 = Simplified role-based access control and auditing
 {ControllerNameStart} enables you to:
 
-* Grant permissions to perform a specific task (such as to view, create, or modify a file) to different teams or explicit users through _role-based access control_ (RBAC).
+* Grant permissions to perform a specific task to different teams or explicit users through _role-based access control_ (RBAC).
+Example tasks include viewing, creating, or modifying a file.
 * Keep some projects private, while enabling some users to edit inventories, and others to run playbooks against certain systems, either in check (dry run) or live mode.
 * Enable certain users to use credentials without exposing the credentials to them.
 
-Regardless of what you do, {ControllerName} records the history of operations and who made them, including objects edited and jobs launched.
+{ControllerNameStart} records the history of operations and who made them, including objects edited and jobs launched.
 
 If you want to give any user or team permissions to use a job template, you can assign permissions directly on the job template. Credentials are full objects in the {ControllerName} RBAC system, and can be assigned to multiple users or teams for use.
 
-{ControllerNameStart} includes an _Auditor_ type. For those that need a system-level auditor, it can see all aspects of the systems automation. 
-It does not have permission to run or change automation.
-This can also be useful for a service account that scrapes automation information from the REST API.
+{ControllerNameStart} includes an _auditor_ type. A system-level auditor can see all aspects of the systems automation, but does not have permission to run or change automation.
+An auditor is useful for a service account that scrapes automation information from the REST API.
 
-For more information, see xref:con-controller-rbac[Role-Based Access Controls].
+.Additional resources
+* For more information about user roles, see xref:con-controller-rbac[Role-Based Access Controls].
 
 = Cloud and autoscaling flexibility
-{ControllerNameStart} features a powerful optional provisioning callback feature that enables nodes to request configuration on demand.
+{ControllerNameStart} includes a powerful optional provisioning callback feature that enables nodes to request configuration on demand.
 This is an ideal solution for a cloud auto-scaling scenario and includes the following features:
 
 * It integrates with provisioning servers like Cobbler and deals with managed systems with unpredictable uptimes.
@@ -47,18 +48,18 @@ For more information, see xref:ref-projects-galaxy-support[Ansible Galaxy Suppor
 = Inventory support for OpenStack
 Dynamic inventory support is available for OpenStack. This enables you to target any of the virtual machines or images running in your OpenStack cloud.
 
-For more information, see xref:proc-controller-inv-source-openstack[Openstack].
+For more information, see xref:ref-controller-credential-openstack[Openstack].
 
 = Remote command execution
-When you want to perform a simple task on a few hosts, whether adding a single user, updating a single security vulnerability, or restarting a misbehaving service, {ControllerName} includes remote command execution.
+Use remote command execution to perform a simple tasks, such as adding a single user, updating a single security vulnerability, or restarting a failing service.
 Any task that you can describe as a single Ansible play can be run on a host or group of hosts in your inventory, enabling you to manage your systems quickly and easily.
-Plus, it is all backed by an RBAC engine and detailed audit logging, removing any questions regarding who has done what to what machines.
+Because of an RBAC engine and detailed audit logging, you know which user has completed a specific task.
 
 = System tracking
 You can collect facts using the fact caching feature. For more information, see xref:controller-fact-caching[Fact Caching].
 
 = Integrated notifications
-{ControllerNameStart} enables you to easily keep track of the status of your automation.
+Keep track of the status of your automation.
 
 You can configure the following notifications:
 
@@ -79,22 +80,20 @@ The following notification sources are supported:
 
 You can also customize notification messages for each of the preceding notification types.
 
-= Red Hat Satellite integration
-Dynamic inventory sources for Red Hat Satellite 6 are supported.
+= Integrations
+
+{ControllerNameStart} supports the following integrations:
+
+* Dynamic inventory sources for Red Hat Satellite 6.
 
 For more information, see xref:proc-controller-inv-source-satellite[Red Hat Satellite 6].
 
-= Red Hat Insights integration
-{ControllerNameStart} supports integration with Red Hat Insights, enabling Insights playbooks to be used as an {PlatformNameShort} project.
+* Red Hat Insights integration, enabling Insights playbooks to be used as an {PlatformNameShort} project.
 
 For more information, see xref:controller-setting-up-insights[Setting up Insights Remediations].
 
-= User Interface
-The user interface is organized with intuitive navigational elements.
-Information is displayed at-a-glance, so you can find and use the automation you need.
-Compact and expanded viewing modes show and hide information as required, and built-in attributes make it easy to sort.
+* {HubNameStart} acts as a content provider for {ControllerName}, requiring both an {ControllerName} deployment and an {HubName} deployment running alongside each other.
 
-For more information,see xref:assembly-controller-user-interface[The User Interface].
 
 = Custom Virtual Environments
 Custom Ansible environment support enables you to have different Ansible environments and specify custom paths for different teams and jobs.
@@ -113,9 +112,6 @@ Token-based authentication permits authentication of third-party tools and servi
 = Cluster management
 Run-time management of cluster groups enables configurable scaling.
 
-= Container platform support
-{PlatformNameShort} is available as a containerized pod service for {OCP} that you can scale up and down as required.
-
 = Workflow enhancements
 To model your complex provisioning, deployment, and orchestration workflows, you can use {ControllerName} expanded workflows in several ways:
 
@@ -131,8 +127,10 @@ This makes it possible to pause workflows in between playbooks so that a user ca
 For more information, see xref:controller-workflows[Workflows in {ControllerName}]
 
 = Job distribution
-{ControllerNameStart} offers the ability to take a fact gathering or configuration job running across thousands of machines and divide it into slices that can be distributed across your automation controller cluster for increased reliability, faster job completion, and improved cluster use.
-If you need to change a parameter across 15,000 switches at scale, or gather information across your multi-thousand-node RHEL estate, automation controller provides the means.
+
+Take a fact gathering or configuration job running across thousands of machines and divide it into slices that can be distributed across your {ControllerName} cluster for increased reliability, faster job completion, and improved cluster use.
+
+For example, you can change a parameter across 15,000 switches at scale, or gather information across your multi-thousand-node RHEL estate.
 
 For more information, see xref:controller-job-slicing[Job Slicing].
 
@@ -147,7 +145,7 @@ Inventory updates fail if an inventory synchronization brings an organization ou
 Additionally, superusers are able to over-allocate their licenses, with a warning.
 
 = Inventory plugins
-Beginning with Ansible 2.9, the following inventory plugins are used from upstream collections:
+The following inventory plugins are used from upstream collections:
 
 * `amazon.aws.aws_ec2`
 * `community.vmware.vmware_vm_inventory`
@@ -160,6 +158,3 @@ Beginning with Ansible 2.9, the following inventory plugins are used from upstre
 
 = Secret management system
 With a secret management system, external credentials are stored and supplied for use in {ControllerName} so you need not provide them directly.
-
-= Automation hub integration
-{HubNameStart} acts as a content provider for {ControllerName}, requiring both an {ControllerName} deployment and an {HubName} deployment running alongside each other.

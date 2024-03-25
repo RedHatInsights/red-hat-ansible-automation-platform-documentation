@@ -2,25 +2,26 @@
 
 = Importing a subscription
 
-After you have obtained an authorized {PlatformNameShort} subscription, you must first import it into the {ControllerName} system before you can use it.
-
+After you have obtained an authorized {PlatformNameShort} subscription, you must import it into the {ControllerName} system before you can use {ControllerName}.
 .Prerequisites
 
-* You have obtained a subscriptions manifest. For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest] in the _{ControllerUG}_.
+* You have obtained a subscriptions manifest. 
+For more information, see xref:proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest].
 
 .Procedure
 
-. Launch controller for the first time. 
+. Launch {ControllerName} for the first time. 
 The *Subscription Management* screen is displayed.
 +
 image::controller-gs-subscription-management.png[Subscription Management]
 +
 . Retrieve and import your subscription by completing either of the following steps:
-.. If you have link:https://access.redhat.com/management/subscription_allocations[obtained a subscription manifest], upload it by navigating to the location where the file is saved (the subscription manifest is the complete .zip file, and not only its component parts).
+.. If you have obtained a subscription manifest, upload it by navigating to the location where the file is saved.
+The subscription manifest is the complete `.zip` file, and not only its component parts.
 +
 [NOTE]
 ====
-If the *Browse* option in the subscription manifest option is disabled, clear the username and password fields to enable it.
+If the *Browse* option in the *Subscription manifest* option is disabled, clear the *username* and *password* fields to enable it.
 ====
 +
 The subscription metadata is then retrieved from the RHSM/Satellite API, or from the manifest provided. 
@@ -33,32 +34,37 @@ After you enter your credentials, click btn:[Get Subscriptions].
 Then, it prompts you to select the subscription that you want to run and applies that metadata to {ControllerName}. 
 You can log in over time and retrieve new subscriptions if you have renewed.
 +
-. Click btn:[Next] to proceed to *Tracking and Insights*. 
+. Click btn:[Next] to proceed to the *Tracking and Insights* page. 
++
 Tracking and insights collect data to help Red Hat improve the product and deliver a better user experience. 
-For more information about data collection, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-usability-analytics-data-collection[Usability Analytics and Data Collection]. 
+For more information about data collection, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-usability-analytics-data-collection[Usability Analytics and Data Collection] of the _{ControllerAG}_.
++ 
 This option is checked by default, but you can opt out of any of the following:
-.. *User analytics*. Collects data from the controller UI.
-.. *Insights Analytics*. Provides a high level analysis of your automation with {ControllerName}. 
+
+* *User analytics*. Collects data from the controller UI.
+* *Insights Analytics*. Provides a high level analysis of your automation with {ControllerName}. 
 It helps you to identify trends and anomalous use of the controller. 
 For opt-in of {Analytics} to be effective, your instance of {ControllerName} must be running on {RHEL}. 
 For more information, see the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-automation-analytics[{Analytics}] section.
 +
 [NOTE]
 ====
-You can change your analytics data collection preferences at any time, as described in the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-usability-analytics-data-collection[Usability Analytics and Data Collection] section.
+You can change your analytics data collection preferences at any time.
 ====
 +
 . After you have specified your tracking and Insights preferences, click btn:[Next] to proceed to the End User Agreement.
 . Review and check the *I agree to the End User License Agreement* checkbox and click btn:[Submit].
-
++
 After your subscription is accepted, {ControllerName} displays the subscription details and opens the Dashboard. 
 To return to the Subscription settings screen from the Dashboard, select menu:Settings[Subscription settings] from the btn:[Subscription] option in the navigation panel.
 
+. Optional: To return to the Subscription settings screen from the Dashboard, select menu:Settings[Subscription settings] option in tthe navigation panel.
++
 image::controller-gs-licenseaccepted.png[Subscription Details]
 
-.Troubleshooting
+.Troubleshooting your subscription
 
-When your subscription expires (you can check this in the Subscription details of the Subscription settings window), you must renew it in {ControllerName} by one of the preceding two methods.
+When your subscription expires (you can check this in the Subscription details of the Subscription settings window), you must renew it in {ControllerName} by either importing a new subcription, or seeting up a new subscription.
 
 If you encounter the "Error fetching licenses" message, check that you have the proper permissions required for the Satellite user. 
 The {ControllerName} administrator requires this to apply a subscription.

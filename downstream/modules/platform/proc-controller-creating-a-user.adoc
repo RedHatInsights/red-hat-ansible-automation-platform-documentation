@@ -2,11 +2,12 @@
 
 = Creating a user
 
-To create a new user:
+To create new users in {ControllerName} and assign them a role.
 
 .Procedure
 . On the *Users* page, click btn:[Add].
-. The *Create User* dialog opens.
++
+The *Create User* dialog opens.
 . Enter the appropriate details about your new user.
 Fields marked with an asterisk (*) are required.
 +
@@ -26,7 +27,7 @@ image:users-create-user-form-types.png[User Types]
 +
 [NOTE]
 ====
-A default administrator with the role of *System Administrator* is automatically created by the installation process and is available to all users of {ControllerName}.
+A default administrator with the role of *System Administrator* is automatically created during the installation process and is available to all users of {ControllerName}.
 One *System Administrator* must always exist.
 To delete the *System Administrator* account, you must first create another *System Administrator* account.
 ====

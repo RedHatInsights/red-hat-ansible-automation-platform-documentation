@@ -1,10 +1,8 @@
 [id="ref-controller-user-teams"]
 
-= Users - Teams
+= Displaying a user's teams
 
 From the *Users > Details* page, select the *Teams* tab to display the list of teams of which that user is a member. 
-
-You can search this list by *Team Name* or *Description*. 
 
 [NOTE]
 ====

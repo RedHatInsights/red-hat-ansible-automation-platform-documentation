@@ -1,14 +1,13 @@
 [id="proc-controller-user-tokens"]
 
-= Users - Tokens
+= Creating tokens for a user
 
-The *Tokens* tab is only present for your user (yourself). 
+The *Tokens* tab is only present for the user you created for yourself. 
+
 Before you add a token for your user, you might want to link:https://docs.ansible.com/automation-controller/latest/html/userguide/applications_auth.html#ug-applications-auth-create[Create an application] if you want to
 associate your token with it. 
 
 You can also create a _Personal Access Token_ (PAT) without associating it with any application. 
-
-Use the following method to create a token for your user:
 
 .Procedure
 . Select your user from the *Users* list view to configure your OAuth 2 tokens.
@@ -29,7 +28,9 @@ Leave this field blank if you want to create a PAT that is not linked to any app
 +
 image:users-token-information-example.png[User -token information]
 +
+[IMPORTANT]
+====
 This is the only time the token value and associated refresh token value are ever shown.
-In the user's profile, the application to which it is assigned and its expiration are displayed in the token list view.
-+
-image:users-token-assignment-example.png[Token assignment]
+====
+//+
+//image:users-token-assignment-example.png[Token assignment]

@@ -4,7 +4,7 @@
 
 The API lists only non-deleted records and are sortable by `last_automation` and `used_in_inventories` columns.
 
-Alternatively, you can use the host metric API endpoint,`api/v2/host_metric` to soft-delete hosts:
+You can use the host metric API endpoint,`api/v2/host_metric` to soft delete hosts:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

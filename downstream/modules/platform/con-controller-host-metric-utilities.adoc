@@ -2,13 +2,9 @@
 
 = Host metric utilities
 
-{ControllerNameStart} provides a way to generate a CSV output of the host metric data and host metric summary through the Command Line Interface (CLI) and to soft delete hosts in bulk through the API.
+{ControllerNameStart} provides a way to generate a CSV output of the host metric data and host metric summary through the Command Line Interface (CLI).
+You can also soft delete hosts in bulk through the API.
 
 ifdef::controller-GS,controller-AG[]
 For more information, see the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-host-metric-utilities[Host metrics utilities] section of the _{ControllerUG}_.
 endif::controller-GS,controller-AG[]
-
-ifdef::controller-UG[]
-include::proc-controller-awx-manage-utility.adoc[leveloffset=+1]
-include::proc-controller-api-endpoint-functions.adoc[leveloffset=+1]
-endif::controller-UG[]

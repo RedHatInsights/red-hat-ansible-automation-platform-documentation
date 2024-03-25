@@ -1,6 +1,6 @@
 [id="ref-controller-licenses"]
 
-= {PlatformNameShort} component licenses
+= Component licenses
 
 To view the license information for the components included in {ControllerName}, refer to `/usr/share/doc/automation-controller-<version>/README`.
 
