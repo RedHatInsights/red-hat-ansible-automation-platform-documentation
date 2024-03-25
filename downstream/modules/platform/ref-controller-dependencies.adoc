@@ -2,14 +2,9 @@
 
 = Dependencies
 
-<<<<<<< HEAD
 Specifies dependencies to install into the final image, including `ansible-core`, `ansible-runner`, Python packages, system packages, and
 Ansible Collections. 
 {Builder} automatically installs dependencies for any Ansible Collections you install.
-=======
-Specifies dependencies to install into the final image, including `ansible-core`, `ansible-runner`, Python packages, system packages, and Ansible Collections. 
-Ansible Builder automatically installs dependencies for any Ansible Collections you install.
->>>>>>> 84dc985e (Editorial changes to Chaps 1-8 Controller UG)
 
 In general, you can use standard syntax to constrain package versions.
 Use the same syntax you would pass to `dnf`, `pip`, `ansible-galaxy`, or any other package management utility. 
