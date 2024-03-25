@@ -121,7 +121,7 @@
 // OpenShift attributes
 :OCP: Red Hat OpenShift Container Platform
 :OCPShort: OpenShift Container Platform
-:OCPLatest: 4.12
+:OCPLatest: 4.15
 :ODF: Red Hat OpenShift Data Foundation
 :ODFShort: OpenShift Data Foundation
 
