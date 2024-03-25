@@ -12,7 +12,7 @@ To manage instances from the {ControllerName} UI, you must have System Administr
 
 In general, the more processor cores (CPU) and memory (RAM) a node has, the more jobs that can be scheduled to run on that node at once. 
 
-For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-jobs#controller-capacity-determination[Automation controller capacity determination and job impact]. 
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-jobs#controller-capacity-determination[Automation controller capacity determination and job impact]. 
 
 include::platform/ref-operator-mesh-prerequisites.adoc[leveloffset=+1]
 include::platform/proc-set-up-virtual-machines.adoc[leveloffset=+1]

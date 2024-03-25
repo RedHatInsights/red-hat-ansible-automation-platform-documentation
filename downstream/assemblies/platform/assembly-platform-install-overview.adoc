@@ -27,7 +27,7 @@ xref:proc-verify-eda-controller-installation_platform-install-scenario[Verifying
 
 [role="_additional-resources"]
 .Additional resources
-For more information about the supported installation scenarios, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/index[{PlatformName} Planning Guide].
+For more information about the supported installation scenarios, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/index[{PlatformName} Planning Guide].
 
 include::platform/con-aap-installation-prereqs.adoc[leveloffset=+1]
 

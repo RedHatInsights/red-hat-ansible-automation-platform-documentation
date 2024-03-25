@@ -10,7 +10,7 @@ ifdef::context[:parent-context: {context}]
 :context: platform-install-scenario
 
 [role="_abstract"]
-{PlatformNameShort} is a modular platform. You can deploy {ControllerName} with other automation platform components, such as {HubName} and {EDAcontroller}. For more information about the components provided with {PlatformNameShort}, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/planning-installation#ref-platform-components[{PlatformName} components] in the {PlatformName} Planning Guide.
+{PlatformNameShort} is a modular platform. You can deploy {ControllerName} with other automation platform components, such as {HubName} and {EDAcontroller}. For more information about the components provided with {PlatformNameShort}, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/planning-installation#ref-platform-components[{PlatformName} components] in the {PlatformName} Planning Guide.
 
 There are several supported installation scenarios for {PlatformName}. To install {PlatformName}, you must edit the inventory file parameters to specify your installation scenario. You can use one of the following as a basis for your own inventory file:
 

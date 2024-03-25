@@ -12,7 +12,7 @@ However, you must use the most recent minor version of a release to backup or re
 For example, if the current {PlatformNameShort} version you are on is 2.0.x, use only the latest 2.0 installer.
 
 Backup and restore only works on PostgreSQL versions supported by your current platform version. 
-For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#red_hat_ansible_automation_platform_system_requirements[{PlatformName} system requirements] in the _{PlatformName} Installation Guide_.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/red_hat_ansible_automation_platform_installation_guide/index#red_hat_ansible_automation_platform_system_requirements[{PlatformName} system requirements] in the _{PlatformName} Installation Guide_.
 ====
 
 The {PlatformNameShort} setup playbook is invoked as `setup.sh` from the path where you unpacked the platform installer tarball. 
