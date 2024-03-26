@@ -1,4 +1,4 @@
-:_content-type: PROCEDURE
+:_mod-docs-content-type: PROCEDURE
 
 [id="ppah-install-ha_{context}"]
 = Installing a production {HubName}

@@ -1,9 +1,9 @@
-:_content-type: PROCEDURE
+:_mod-docs-content-type: PROCEDURE
 
 [id="ppah-download-aap_{context}"]
 = Downloading {PlatformNameShort}
 
-:_content-type: PROCEDURE
+:_mod-docs-content-type: PROCEDURE
 
 .Procedure
 

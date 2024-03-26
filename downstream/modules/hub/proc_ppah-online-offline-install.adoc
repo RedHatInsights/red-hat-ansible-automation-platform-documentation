@@ -1,4 +1,4 @@
-:_content-type: PROCEDURE
+:_mod-docs-content-type: PROCEDURE
 
 [id="ppah-online-offline-install_{context}"]
 = Online and offline installation

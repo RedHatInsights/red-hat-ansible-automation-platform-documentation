@@ -1,4 +1,4 @@
-:_content-type: PROCEDURE
+:_mod-docs-content-type: PROCEDURE
 
 [id="proc-sync-image-adoc_{context}"]
 = Syncing images from a container repository

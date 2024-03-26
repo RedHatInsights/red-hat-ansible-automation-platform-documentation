@@ -1,4 +1,4 @@
-:_content-type: PROCEDURE
+:_mod-docs-content-type: PROCEDURE
 
 [id="ppah-install-ansible-core_{context}"]
 = Installing ansible-core

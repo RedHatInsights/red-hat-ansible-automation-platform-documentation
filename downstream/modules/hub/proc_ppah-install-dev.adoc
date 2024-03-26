@@ -1,4 +1,4 @@
-:_content-type: PROCEDURE
+:_mod-docs-content-type: PROCEDURE
 
 [id="ppah-install-dev_{context}"]
 = Installing {HubName} for development

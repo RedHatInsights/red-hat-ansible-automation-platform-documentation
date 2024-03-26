@@ -1,4 +1,4 @@
-:_content-type: PROCEDURE
+:_mod-docs-content-type: PROCEDURE
 
 [id="ppah-prepare-rhel-host_{context}"]
 = Preparing the RHEL host for containerized installation

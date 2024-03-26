@@ -1,4 +1,4 @@
-:_content-type: CONCEPT
+:_mod-docs-content-type: CONCEPT
 
 [id="single-eda-controller-with-internal-database"]
 

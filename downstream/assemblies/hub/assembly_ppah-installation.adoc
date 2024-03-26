@@ -1,6 +1,6 @@
 ifdef::context[:parent-context: {context}]
 
-:_content-type: ASSEMBLY
+:_mod-docs-content-type: ASSEMBLY
 
 [id="ppah-installation_{context}"]
 

@@ -1,7 +1,7 @@
 // Module included in the following assemblies: 
 // assembly-platform-whats-next.adoc
 
-:_content-type: PROCEDURE
+:_mod-docs-content-type: PROCEDURE
 
 [id="updating-ee-image-locations"]
 

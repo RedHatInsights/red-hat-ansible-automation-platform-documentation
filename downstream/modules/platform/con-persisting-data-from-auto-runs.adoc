@@ -1,6 +1,6 @@
 //Can be found in /platform/asssemlbly/converting-playbooks-for-AAP2
 
-:_content-type: CONCEPT
+:_mod-docs-content-type: CONCEPT
 
 [id="persisting-data-from-auto-runs_{context}"]
 = Persisting data from auto runs

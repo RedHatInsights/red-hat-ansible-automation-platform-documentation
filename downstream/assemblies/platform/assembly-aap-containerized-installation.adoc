@@ -1,6 +1,6 @@
 ifdef::context[:parent-context-of-aap-containerized-installation: {context}]
 
-:_content-type: ASSEMBLY
+:_mod-docs-content-type: ASSEMBLY
 
 ifndef::context[]
 [id="aap-containerized-installation"]

@@ -1,4 +1,4 @@
-:_content-type: CONCEPT
+:_mod-docs-content-type: CONCEPT
 // This module is included in assembly-aap-architecture.adoc
 [id='aap_example_architecture_{context}']
 = Example {PlatformNameShort} architecture
