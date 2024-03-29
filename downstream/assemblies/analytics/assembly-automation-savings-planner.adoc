@@ -4,11 +4,11 @@ ifdef::context[:parent-context: {context}]
 
 :context: assembly-automation-savings-planner-ctxt
 
-The automation savings planner allows you to scope the size of your automation work by creating automation savings plans. You can create an automation savings plan by outlining a list of steps needed to fully automate your work. Each savings plan also provides tangible metrics, such as estimated job duration or completed tasks, for you to better understand and compare your automation job.
+= About the {planner}
 
-The following procedures introduces the ways to get started with your automation savings plans by creating new plans or managing existing plans for your automation needs.
+An automation savings plan gives you the ability to plan, track, and analyze the potential efficiency and cost savings of your automation initiatives. Use {InsightsName} to create an automation savings plan by defining a list of tasks needed to complete an automation job. You can then link your automation savings plans to an Ansible job template in order to accurately measure the time and cost savings upon completion of an automation job. 
 
-include::analytics/con-automation-savings-plan.adoc[leveloffset=+1]
+To create an automation savings plan, you can utilize the {planner} to prioritize the various automation jobs throughout your organization and understand the potential time and cost savings for your automation initiatives.
 
 include::analytics/proc-create-savings-plan.adoc[leveloffset=+1]
 
@@ -19,3 +19,6 @@ include::analytics/proc-link-plan-job-template.adoc[leveloffset=+1]
 include::analytics/con-review-savings-calculations.adoc[leveloffset=+1]
 
 include::analytics/proc-filter-plans.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
