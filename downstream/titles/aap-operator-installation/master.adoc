@@ -39,3 +39,5 @@ include::platform/assembly-using-rhsso-operator-with-automation-hub.adoc[levelof
 include::platform/assembly-aap-migration.adoc[leveloffset=+1]
 
 include::platform/assembly-operator-upgrade.adoc[leveloffset=+1]
+
+include::platform/assembly-operator-add-execution-nodes.adoc[leveloffset=+1]

@@ -1,0 +1,48 @@
+[id="add-operator-execution-nodes_{context}"]
+
+.Prerequisites
+* An {ControllerName} instance
+* The receptor collection package is installed
+* The `ansible-runner` package is installed
+
+.Procedure
+. Log in to {PlatformName}.
+. In the navigation panel, select menu:Administration[Instances].
+. Click btn:[Add].
+. Input the VM name in the *Host Name* field.
+. Optional: Input the port number in the *Listner Port* field.
+. Click btn:[Save].
+. Click the download icon image:download.png[download]next to *Install Bundle*. This will start a download, take note of where you save the file
+. Untar the gz file.
++
+[NOTE]
+====
+To run the `install_receptor.yml` playbook you need to install  the receptor collection from {Galaxy}:
+`Ansible-galaxy collection install -r requirements.txt`
+====
+. Update the playbook with your user name and SSH private key file. Note that `ansible_host` pre-populates with the hostname you input earlier.
++
+----
+all:
+   hosts:
+      remote-execution:
+	        ansible_host: example_host_name
+	        ansible_user: <username> #user provided
+	        Ansible_ssh_private_key_file: ~/.ssh/id_example
+----
+. Open your terminal, and navigate to the directory where you saved the playbook.
+. To install the bundle run:
++
+----
+ansible-playbook install_receptor.yml -i inventory
+----
+. When installed you can now upgrade your execution node by downloading and re-running the playbook for the instance you created
+
+.Verification 
+To verify if your playbook runs correctly on your new node run the following command:
+====
+watch podman ps
+====
+
+.Additional resources
+* For more information about managing instance groups see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-instance-groups[Managing Instance Groups] section of the Automation Controller User Guide.

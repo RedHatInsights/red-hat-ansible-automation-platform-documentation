@@ -1,0 +1,15 @@
+ifdef::context[:parent-context: {context}]
+
+[id="operator-add-execution-nodes_{context}"]
+
+= Adding execution nodes to {PlatformNameShort} Operator
+
+:context: operator-upgrade
+
+You can enable the {PlatformNameShort} (AAP) Operator with execution nodes by downloading and installing the install bundle. The steps outlined in this document are also applicable to virtual machines (VMs).  
+
+
+include::platform/proc-add-operator-execution-nodes.adoc[][leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
