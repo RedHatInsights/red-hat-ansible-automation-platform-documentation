@@ -2,13 +2,13 @@
 
 = additional_build_steps
 
-These specify custom build commands for any build phase. 
+The build steps specify custom build commands for any build phase. 
 These commands are inserted directly into the build instruction file for the container runtime, for example, Containerfile or Dockerfile. The commands must conform to any rules required by the containerization tool.
 
 You can add build steps before or after any stage of the image creation process. 
 For example, if you need `git` to be installed before you install your dependencies, you can add a build step at the end of the base build stage.
 
-The following are the valid keys for this section. 
+The following are the valid keys. 
 Each supports either a multi-line string, or a list of strings.
 
 [cols="10%,40%"]

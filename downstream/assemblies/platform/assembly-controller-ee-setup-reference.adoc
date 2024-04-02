@@ -11,7 +11,7 @@ This file tells Ansible Builder how to create the build instruction file (Contai
 ====
 The definition schema for Ansible Builder 3.x is documented here. 
 If you are running an older version of Ansible Builder, you need an older schema version. 
-For more information, refer to older versions of link:https://ansible.readthedocs.io/projects/builder/en/latest/[this] documentation. 
+For more information, see older versions of link:https://ansible.readthedocs.io/projects/builder/en/latest/[this] documentation. 
 We recommend using version 3, which offers substantially more configurable options and functionality than previous versions.
 ====
 

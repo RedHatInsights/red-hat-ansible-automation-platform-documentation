@@ -1,0 +1,12 @@
+[id="con-controller-ee-mount-options"]
+
+= Execution environment mount options
+
+Rebuilding an {ExecEnvShort} is one way to add certificates, but inheriting certificates from the host provides a more convenient solution. 
+For VM-based installations, {ControllerName} automatically mounts the system truststore in the {ExecEnvShort} when jobs run.
+
+You can customize {ExecEnvShort} mount options and mount paths in the *Paths to expose to isolated jobs* field of the *Job Settings* page, where Podman-style volume mount syntax is supported. 
+
+.Additional resources
+
+For more information, see the link:https://docs.podman.io/en/latest/markdown/podman-run.1.html#volume-v-source-volume-host-dir-container-dir-options[Podman documentation].

@@ -2,7 +2,7 @@
 
 = Adding a new project
 
-Use the following procedure to create a new project:
+You can manage projects for {ControllerName} in the menu:Resources[] section of the UI.
 
 .Procedure
 . From the navigation panel, select menu:Resources[Projects].
@@ -23,7 +23,7 @@ For more information, see xref:proc-projects-manage-playbooks-manually[Manage pl
 * Optional: *Content Signature Validation Credential*: Use this field to enable content verification. 
 Specify the GPG key to use for validating content signature during project synchronization. 
 If the content has been tampered with, the job will not run. 
-Fro more information, see xref:assembly-controller-project-signing[Project signing and verification].
+For more information, see xref:assembly-controller-project-signing[Project signing and verification].
 . Click btn:[Save].
 
 .Additional resources

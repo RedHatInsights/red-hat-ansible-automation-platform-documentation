@@ -2,10 +2,9 @@
 
 = CyberArk Conjur Secrets Manager Lookup
 
-With a Conjur Cloud tenant available to target, configure the CyberArk Conjur Secrets Lookup external management system credential plugin as
-shown.
+With a Conjur Cloud tenant available to target, configure the CyberArk Conjur Secrets Lookup external management system credential plugin.
 
-When *CyberArk Conjur Secrets Manager Lookup* is selected for *Credential Type*, provide the following metadata to configure your lookup:
+When you select *CyberArk Conjur Secrets Manager Lookup* for *Credential Type*, give the following metadata to configure your lookup:
 
 * *Conjur URL* (required): provide the URL used for communicating with CyberArk Conjur's secret management system. 
 This must include the URL scheme, such as http or https.

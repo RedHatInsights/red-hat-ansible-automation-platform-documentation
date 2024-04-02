@@ -3,12 +3,12 @@
 = Execution environments
 
 Unlike legacy virtual environments, {ExecEnvShort}s are container images that make it possible to incorporate system-level dependencies and collection-based content. 
-Each {ExecEnvShort} enables you to have a customized image to run jobs, and each of them contain only what is necessary when running the job, nothing more.
+Each {ExecEnvShort} enables you to have a customized image to run jobs and contains only what is necessary when running the job.
 
 include::platform/ref-controller-build-exec-envs.adoc[leveloffset=+1]
 include::platform/ref-controller-install-builder.adoc[leveloffset=+2]
 include::platform/ref-controller-building-exec-env.adoc[leveloffset=+2]
 include::platform/ref-controller-run-the-builder.adoc[leveloffset=+2]
-include::platform/proc-controller-ee-mount-options.adoc[leveloffset=+2]
-
+include::platform/con-controller-ee-mount-options.adoc[leveloffset=+2]
+include::platform/proc-controller-troubleshoot-ee-mount.adoc[leveloffset=+3]
 include::platform/proc-controller-use-an-exec-env.adoc[leveloffset=+1]

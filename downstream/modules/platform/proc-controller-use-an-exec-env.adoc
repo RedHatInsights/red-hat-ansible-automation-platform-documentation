@@ -1,6 +1,6 @@
 [id="proc-controller-use-an-exec-env"]
 
-= Using an {ExecEnvShort} in jobs
+= Adding an {ExecEnvShort} to a job template
 
 .Prerequisites
 
@@ -10,8 +10,6 @@ When an {ExecEnvShort} has been created, you can use it to run jobs. Use the {Co
 Execution environments tied to an organization require Organization administrators to be able to run jobs with those {ExecEnvShort}s.
 * Before running a job or job template that uses an {ExecEnvShort} that has a credential assigned to it, be sure that the credential contains a username, host, and password.
 
-To use an {ExecEnvShort} in a job, use the following procedure:
-
 .Procedure
 . From the navigation panel, select menu:Administration[Execution Environments].
 . Click btn:[Add] to add an {ExecEnvShort}.
@@ -19,7 +17,7 @@ To use an {ExecEnvShort} in a job, use the following procedure:
 
 * *Name* (required): Enter a name for the {ExecEnvShort}.
 * *Image* (required): Enter the image name. 
-The image name requires its full location (repo), the registry, image name, and version tag in the example format of `quay.io/ansible/awx-ee:latestrepo/project/image-name:tag`.
+The image name requires its full location (repository), the registry, image name, and version tag in the example format of `quay.io/ansible/awx-ee:latestrepo/project/image-name:tag`.
 * Optional: *Pull*: Choose the type of pull when running jobs:
 ** *Always pull container before running*: Pulls the latest image file for the container.
 ** *Only pull the image if not present before running*: Only pulls the latest image if none is specified.
@@ -31,10 +29,10 @@ The image name requires its full location (repo), the registry, image name, and 
 image:ee-new-ee-form-filled.png[New {ExecEnvShort}]
 
 . Click btn:[Save].
-
++
 Your newly added {ExecEnvShort} is ready to be used in a job template. 
-
-To add an {ExecEnvShort} to a job template, specify it in the *Execution Environment* field of the job template, as shown in the following example:
++
+. To add an {ExecEnvShort} to a job template, specify it in the *Execution Environment* field of the job template, as shown in the following example:
 
 image:job-template-with-example-ee-selected.png[Execution Environment added]
 

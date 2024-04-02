@@ -1,11 +1,11 @@
 [id="ref-controller-run-the-builder"]
 
-= Run the builder
+= Example YAML file to build an image
 
 The `ansible-builder build` command takes an {ExecEnvShort} definition as an input. 
 It outputs the build context necessary for building an {ExecEnvShort} image, and then builds that image. 
 The image can be re-built with the build context elsewhere, and produces the same result. 
-By default, it searches for a file named `execution-environment.yml` in the current directory.
+By default, the builder searches for a file named `execution-environment.yml` in the current directory.
 
 The following example `execution-environment.yml` file can be used as a starting point:
 
@@ -37,7 +37,9 @@ STEP 7: COMMIT my-awx-ee
 Complete! The build context can be found at: context
 ----
 
-In addition to producing a ready-to-use container image, the build context is preserved, which can be rebuilt at a different time or
-location with the tooling of your choice, such as `docker build` or `podman build`.
+In addition to producing a ready-to-use container image, the build context is preserved. 
+This can be rebuilt at a different time or location with the tools of your choice, such as `docker build` or `podman build`.
 
-For additional information about the `ansible-builder build` command, refer to Ansible's link:https://ansible.readthedocs.io/projects/builder/en/latest/usage/#cli-usage[CLI Usage] documentation.
+.Additional resources
+
+For additional information about the `ansible-builder build` command, see Ansible's link:https://ansible.readthedocs.io/projects/builder/en/latest/usage/#cli-usage[CLI Usage] documentation.

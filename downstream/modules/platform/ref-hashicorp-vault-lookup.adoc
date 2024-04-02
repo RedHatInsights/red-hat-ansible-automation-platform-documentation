@@ -2,9 +2,9 @@
 
 = HashiCorp Vault Secret Lookup
 
-When *HashiCorp Vault Secret Lookup* is selected for *Credential Type*, provide the following metadata to configure your lookup:
+When you select *HashiCorp Vault Secret Lookup* for *Credential Type*, give the following metadata to configure your lookup:
 
-* *Server URL* (required): provide the URL used for communicating with HashiCorp Vault's secret management system.
+* *Server URL* (required): give the URL used for communicating with HashiCorp Vault's secret management system.
 * *Token*: specify the access token used to authenticate HashiCorp's server.
 * *CA Certificate*: specify the CA certificate used to verify HashiCorp's server.
 * *Approle Role_ID*: specify the ID if using Appprole for authentication.
@@ -24,14 +24,14 @@ LDAP authentication requires LDAP to be configured in HashiCorp's Vault UI and a
 Cubbyhole is the name of the default secret mount. 
 If you have proper permissions, you can create other mounts and write key values to those. 
 
-The following is an example of a configured HashiCorp Vault Secret Lookup credential for LDAP.
+//The following is an example of a configured HashiCorp Vault Secret Lookup credential for LDAP.
 
-image:credentials-create-hashicorp-kv-credential.png[HashiCopt vault credential]
+//image:credentials-create-hashicorp-kv-credential.png[HashiCopt vault credential]
 
 To test the lookup, create another credential that uses Hashicorp Vault lookup.
-The following example shows the metadata for a machine credential configured to look up hashicorp Vault secret credentials.
+//The following example shows the metadata for a machine credential configured to look up hashicorp Vault secret credentials.
 
-image:credentials-machine-test-hashicorp-metadata.png[Example machine lookup for hashicorp Vault]
+//image:credentials-machine-test-hashicorp-metadata.png[Example machine lookup for hashicorp Vault]
 
 .Additional resources
 For more detail about the LDAP authentication method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/ldap[Vault documentation for LDAP auth method].

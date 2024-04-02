@@ -6,11 +6,11 @@ This specifies the default values for build arguments as a dictionary.
 
 This is an alternative to using the `--build-arg` CLI flag.
 
-The following are build arguments used by `ansible-builder`:
+{Builder} uses the following build arguments:
 
 [cols="25%,40%"]
 |====
-| *ANSIBLE_GALAXY_CLI_COLLECTION_OPTS* | Enables the user to pass the `-pre` flag (or others) to enable the installation of pre-release collections.
+| *ANSIBLE_GALAXY_CLI_COLLECTION_OPTS* | Enables the user to pass the `-pre` flag and other flags to enable the installation of pre-release collections.
 | *ANSIBLE_GALAXY_CLI_ROLE_OPTS* | This enables the user to pass any flags, such as `--no-deps`, to the role installation.
 | *PKGMGR_PRESERVE_CACHE* | This controls how often the package manager cache is cleared during the image build process. 
 
@@ -21,5 +21,4 @@ Any other value forces the cache to be cleared only after the system dependencie
 
 {Builder} hard-codes values given inside of `build_arg_defaults` into the build instruction file, so they persist if you run your container build manually.
 
-If you specify the same variable in the definition and at the command line with the CLI `build-arg` flag, the CLI value takes higher
-precedence, that is, the CLI value overrides the value in the definition.
+If you specify the same variable in the definition and at the command line with the CLI `build-arg` flag, the CLI value overrides the value in the definition.

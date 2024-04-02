@@ -1,11 +1,11 @@
 [id="ref-controller-api-considerations"]
 
-= Backwards-Compatible API Considerations
+= Backwards-Compatible API considerations
 
-Support for version 2 of the API (`api/v2/`) means a one-to-many relationship for Job Templates to credentials (including multi-cloud
+Support for version 2 of the API (`api/v2/`) means a one-to-many relationship for job templates to credentials (including multicloud
 support). 
 
-Credentials can be filtered using the v2 API:
+You can filter credentials the v2 API:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

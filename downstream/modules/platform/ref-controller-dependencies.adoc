@@ -3,14 +3,14 @@
 = Dependencies
 
 Specifies dependencies to install into the final image, including `ansible-core`, `ansible-runner`, Python packages, system packages, and
-Ansible Collections. 
-{Builder} automatically installs dependencies for any Ansible Collections you install.
+collections. 
+{Builder} automatically installs dependencies for any Ansible collections you install.
 
 In general, you can use standard syntax to constrain package versions.
 Use the same syntax you would pass to `dnf`, `pip`, `ansible-galaxy`, or any other package management utility. 
 You can also define your packages or collections in separate files and reference those files in the `dependencies` section of your definition file.
 
-The following keys are valid for this section:
+The following keys are valid:
 
 [cols="20%,40%"]
 |====
@@ -29,12 +29,8 @@ ansible_core:
 ansible_core:
     package_pip: https://github.com/example_user/ansible/archive/refs/heads/ansible.tar.gz
 ----
-<<<<<<< HEAD
-| *ansible_runner* a| The version of the {Runner} Python package to be installed. 
-=======
 | *ansible_runner* a| The version of the Ansible Runner Python package to be installed. 
 
->>>>>>> 84dc985e (Editorial changes to Chaps 1-8 Controller UG)
 This value is a dictionary with a single key, `package_pip`. 
 The `package_pip` value is passed directly to pip for installation and can be in any format that pip supports. 
 The following are some example values:
@@ -48,7 +44,7 @@ ansible_runner:
 ansible_runner:
     package_pip: https://github.com/example_user/ansible-runner/archive/refs/heads/ansible-runner.tar.gz
 ----
-| *galaxy* | Ansible Collections to be installed from Galaxy. 
+| *galaxy* | Collections to be installed from Ansible Galaxy. 
 
 This can be a filename, a dictionary, or a multi-line string representation of an Ansible Galaxy `requirements.yml` file. 
 For more information about the requirements file format, see the link:https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file[Galaxy User Guide].
@@ -58,18 +54,18 @@ This can be a filename, or a list of requirements.
 {Builder} combines all the Python requirements files from all collections into a single file using the `requirements-parser` library. 
 
 This library supports complex syntax, including references to other files. 
-If multiple collections require the same _package name_, {Builder} combines them into a single entry and combines the constraints.
+If many collections require the same _package name_, {Builder} combines them into a single entry and combines the constraints.
 
-Certain package names are specifically _ignored_ by `ansible-builder`, meaning that {Builder} does not include them in the combined
-file of Python dependencies, even if a collection lists them as dependencies. These include test packages and packages that provide
-Ansible itself. The full list can is available under `EXCLUDE_REQUIREMENTS` in `src/ansible_builder/_target_scripts/introspect.py`. 
+{Builder} excludes some packages in the combined file of Python dependencies even if a collection lists them as dependencies. 
+These include test packages and packages that provide Ansible itself. 
+The full list can is available under `EXCLUDE_REQUIREMENTS` in `src/ansible_builder/_target_scripts/introspect.py`. 
 
-If you need to include one of these ignored package names, use the `--user-pip` option of the `introspect` command to list it in the user requirements file. 
+If you need to include one of these excluded package names, use the `--user-pip` option of the `introspect` command to list it in the user requirements file. 
 
 Packages supplied this way are not processed against the list of excluded Python packages.
 | *python_interpreter* | A dictionary that defines the Python system package name to be installed by dnf (`package_system`) or a path to the Python interpreter to be used (`python_path)`.
 | *system* | The system packages to be installed, in bindep format. 
-This can be a filename, or a list of requirements.
+This can be a filename or a list of requirements.
 
 For more information about bindep, see the link:https://docs.opendev.org/opendev/bindep/latest/readme.html[OpenDev documentation]. 
 
@@ -77,7 +73,7 @@ For system packages, use the `bindep` format to specify cross-platform requireme
 Collections must specify necessary requirements for `[platform:rpm]`. 
 {Builder} combines system package entries from multiple collections into a single file. 
 Only requirements with no profiles (runtime requirements) are installed to the image. 
-Entries from multiple collections which are outright duplicates of each other can be consolidated in the combined file.
+Entries from many collections which are duplicates of each other can be consolidated in the combined file.
 |====
 
 The following example uses filenames that contain the various dependencies:
@@ -122,9 +118,9 @@ dependencies:
 
 [NOTE]
 ====
-If any of these dependency files (`requirements.txt, bindep.txt, and requirements.yml`) are in the `build_ignore` of the collection, it does not work correctly.
+If any of these dependency files (`requirements.txt, bindep.txt, and requirements.yml`) are in the `build_ignore` of the collection, the build fails.
 
-Collection maintainers can verify that ansible-builder recognizes the requirements they expect by using the `introspect` command, for example:
+Collection maintainers can verify that ansible-builder recognizes the requirements they expect by using the `introspect` command:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

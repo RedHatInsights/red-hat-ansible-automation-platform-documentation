@@ -2,7 +2,7 @@
 
 = Configuration options
 
-Use the configuration YAML keys listed here in your v3 definition file. 
+Use the following configuration YAML keys in your definition file. 
 
 The {Builder} 3.x {ExecEnvShort} definition file accepts seven top-level sections:
 

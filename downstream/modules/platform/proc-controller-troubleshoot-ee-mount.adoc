@@ -1,22 +1,16 @@
-[id="proc-controller-ee-mount-options"]
+[id="proc-controller-ee-troubleshoot-mount"]
 
-= Execution environment mount options
-
-Rebuilding an {ExecEnvShort} is one way to add certificates, but inheriting certificates from the host provides a more convenient solution. 
-For VM-based installs, {ControllerName} automatically mounts the system trust store in the {ExecEnvShort} when jobs run.
-
-Additionally, you can customize {ExecEnvShort} mount options and mount paths in the *Paths to expose to isolated jobs* field of the *Job Settings* page, where it supports podman-style volume mount syntax. 
-
-For more information, see the link:https://docs.podman.io/en/latest/markdown/podman-run.1.html#volume-v-source-volume-host-dir-container-dir-options[Podman documentation].
+= Troubleshooting {ExecEnvShort} mount options
 
 In some cases where the `/etc/ssh/*` files were added to the {ExecEnvShort} image due to customization of an {ExecEnvShort}, an SSH error can occur. 
 For example, exposing the `/etc/ssh/ssh_config.d:/etc/ssh/ssh_config.d:O` path enables the container to be mounted, but the ownership permissions are not mapped correctly.
 
-Use the following procedure if you encounter this error, or have upgraded from an older version of {ControllerName}:
+Use the following procedure if you meet this error, or have upgraded from an older version of {ControllerName}:
 
 .Procedure
 . Change the container ownership on the mounted volume to `root`.
-. In the *Paths to expose to isolated jobs* field of the Job Settings page, using the current example, expose the path as follows:
+. From the navigation panel, select menu:Job Settings[].
+. Expose the path in the *Paths to expose to isolated jobs* field, using the current example:
 +
 image:settings-paths2expose-iso-jobs.png[Paths]
 +
@@ -27,8 +21,8 @@ Be as detailed as possible, especially when specifying system paths.
 Mounting `/etc` or `/usr` directly has an impact that makes it difficult to troubleshoot.
 ====
 +
-This informs Podman to run a command similar to the following example, where the configuration is mounted and the `ssh` command works as expected.
-
+This informs Podman to run a command similar to the following example, where the configuration is mounted and the `ssh` command works as expected:
++
 [literal, options="nowrap" subs="+attributes"]
 ----
 podman run -v /ssh_config:/etc/ssh/ssh_config.d/:O ...

@@ -1,0 +1,16 @@
+[id="controller-credential-add-users-job-templates"]
+
+= Adding new users and job templates to existing credentials
+
+.Procedure
+
+. From the navigation panel, select menu:Resources[Credentials].
+. Select the credential that you want to assign to additional users.
+. Click the *Access* tab. 
+You can see users and teams associated with this credential and their roles.
+. Choose a user and click btn:[Add].
+If no users exist, add them from the *Users* menu.
+For more information, see xref:assembly-controller-users[Users].
+. Select *Job Templates* to display the job templates associated with this credential, and which jobs have run recently by using this credential.
+. Choose a job template and click btn:[Add] to assign the credential to additional job templates.
+For more information about creating new job templates, see the xref:controller-job-templates[Job templates] section.

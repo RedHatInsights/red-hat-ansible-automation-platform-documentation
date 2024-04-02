@@ -2,17 +2,16 @@
 
 = Updating projects from source control
 
-Use the following procedure to update a project:
-
 .Procedure
-. In the *Projects* page, select the project you want to update and click the image:sync.png[Sync,15,15] icon.
+. From the navigation panel, select menu:Resources[Projects].
+. Click the sync image:sync.png[Sync,15,15] icon next to the project that you want to update.
 +
 [NOTE]
 ====
-Immediately after adding a project setup to use source control, a "Sync" starts that fetches the project details from the
-configured source control.
+Immediately after adding a project setup to use source control, a sync starts that fetches the project details from the configured source control.
 ====
 
-. Click on the project's status under the *Status* column for further information about the update process.
+** Click the project's status under the *Status* column for further information about the update process.
+This brings you to the *Output* tab of the menu:Jobs[] section.
 +
-image:projects-update-status.png[Project -update status]
+image:projects-update-status.png[Project-update status]
