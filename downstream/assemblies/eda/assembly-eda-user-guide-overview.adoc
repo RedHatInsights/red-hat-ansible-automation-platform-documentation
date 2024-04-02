@@ -12,3 +12,11 @@ The following procedures form the user configuration:
 * xref:eda-set-up-new-decision-environment[Setting up a new decision environment]
 * xref:eda-set-up-token[Setting up a token to authenticate to {PlatformNameShort} Controller]
 * xref:eda-set-up-rulebook-activation[Setting up a rulebook activation]
+
+[NOTE]
+
+====
+
+API documentation for {EDAcontroller} is available at https://<eda-server-host>/api/eda/v1/docs
+
+====
