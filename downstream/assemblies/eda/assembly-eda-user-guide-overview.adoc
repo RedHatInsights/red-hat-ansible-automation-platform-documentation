@@ -17,6 +17,6 @@ The following procedures form the user configuration:
 
 ====
 
-API documentation for {EDAcontroller} is available at https://<eda-server-host>/api/eda/v1/docs
+API documentation for {EDAcontroller} is available at \https://<eda-server-host>/api/eda/v1/docs
 
 ====
