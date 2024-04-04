@@ -1,0 +1,73 @@
+// This is the release notes file for AAP 2.4 async installer release 2.4-6.1 dated April 4, 2024
+
+[id="bundle-installer-24-61"]
+
+= RHBA-2024:1672 - bundle installer release 2.4-6.1 - April 4, 2024
+
+link:https://access.redhat.com/errata/RHBA-2024:1672[RHBA-2024:1672]
+
+== General
+
+* Fixed an issue where worker nodes became unavailable and stuck in a running state (AAP-21828)
+
+// AAP-21240
+* automation-controller: axios: Exposure of confidential data stored in cookies (link:https://access.redhat.com/security/cve/CVE-2023-45857[CVE-2023-45857])
+
+// AAP-21132
+* python-django: Potential regular expression denial-of-service in `django.utils.text.Truncator.words()` (link:https://access.redhat.com/security/cve/CVE-2024-27351[CVE-2024-27351])
+
+// AAP-20325
+* receptor: golang-fips/openssl: Memory leaks in code encrypting and decrypting RSA payloads (link:https://access.redhat.com/security/cve/CVE-2024-1394[CVE-2024-1394])
+
+// AAP-20073
+* automation-controller: python-aiohttp: HTTP request smuggling (link:https://access.redhat.com/security/cve/CVE-2024-23829[CVE-2024-23829])
+
+// AAP-20071
+* python-aiohttp: HTTP request smuggling (link:https://access.redhat.com/security/cve/CVE-2024-23829[CVE-2024-23829])
+
+// AAP-20064
+* automation-controller: aiohttp: `follow_symlinks` directory traversal vulnerability (link:https://access.redhat.com/security/cve/CVE-2024-23334[CVE-2024-23334])
+
+// AAP-20061 
+* python3x-aiohttp: aiohttp: `follow_symlinks` directory traversal vulnerability (link:https://access.redhat.com/security/cve/CVE-2024-23334[CVE-2024-23334])
+
+// AAP-20060
+* python-aiohttp: aiohttp: `follow_symlinks` directory traversal vulnerability (link:https://access.redhat.com/security/cve/CVE-2024-23334[CVE-2024-23334])
+
+// AAP-20057
+* automation-controller: Django: denial of service in `intcomma` template filter (link:https://access.redhat.com/security/cve/CVE-2024-24680[CVE-2024-24680])
+
+// AAP-19433
+* automation-controller: jinja2: HTML attribute injection when passing user input as keys to `xmlattr` filter (link:https://access.redhat.com/security/cve/CVE-2024-22195[CVE-2024-22195])
+
+// AAP-19154
+* automation-controller: python-cryptography: NULL-dereference when loading PKCS7 certificates (link:https://access.redhat.com/security/cve/CVE-2023-49083[CVE-2023-49083])
+
+// AAP-18863
+* receptor: golang: net/http/internal: Denial of service by resource consumption through HTTP requests (link:https://access.redhat.com/security/cve/CVE-2023-39326[CVE-2023-39326])
+
+// AAP-18266
+* automation-controller: python-aiohttp: Issues in HTTP parser with header parsing (link:https://access.redhat.com/security/cve/CVE-2023-47627[CVE-2023-47627])
+
+// AAP-17710
+* automation-controller: GitPython: Blind local file inclusion (link:https://access.redhat.com/security/cve/CVE-2023-41040[CVE-2023-41040])
+
+// AAP-17652
+* automation-controller: python-twisted: Disordered HTTP pipeline response in `twisted.web` (link:https://access.redhat.com/security/cve/CVE-2023-46137[CVE-2023-46137])
+
+
+//Automation controller
+== {ControllerNameStart}
+
+* The update {ExecEnvShort} image no longer fails with jobs that use the previous image (AAP-21733)
+
+* Replaced string validation of English literals with error codes to allow for universal validation and comparison (AAP-21721)
+
+* The dispatcher now appropriately ends child processes when the dispatcher terminates (AAP-21049)
+
+* Fixed a bug where schedule prompted variables and survey answers were reset in edit mode when changing one of the basic form fields (AAP-20967)
+
+* The upgrade from Ansible Tower 3.8.6 to {PlatformNameShort} 2.4 no longer fails after a database schema migration (AAP-19738)
+
+* Fixed a bug in {OCPShort} deployments that caused the controller task container to restart (AAP-21308)
+

@@ -38,6 +38,8 @@ include::topics/installer-24-2.adoc[leveloffset=+3]
 
 === Bundle installer releases
 
+include::topics/bundle-installer-24-61.adoc[leveloffset=+3]
+
 include::topics/bundle-installer-24-6.adoc[leveloffset=+3]
 
 include::topics/bundle-installer-24-24.adoc[leveloffset=+3]
