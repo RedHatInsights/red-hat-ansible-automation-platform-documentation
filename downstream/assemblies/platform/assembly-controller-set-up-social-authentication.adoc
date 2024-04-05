@@ -2,23 +2,25 @@
 
 = Setting up social authentication
 
-Authentication methods simplify logins for end users, offering single sign-ons using existing login information to sign into a third party website rather than creating a new login account specifically for that website.
+Authentication methods simplify logins for end users, offering single sign-ons by using existing login information to sign in to a third party website rather than creating a new login account specifically for that website.
 
-Account authentication can be configured in the User Interface and saved to the PostgreSQL database. 
+You can configure account authentication in the User Interface and save it to the PostgreSQL database. 
 
-For more information, see the xref:controller-config[Controller configuration] section.
+You can configure account authentication in {ControllerName} to centrally use OAuth2, while you can configure enterprise-level account authentication for xref:controller-set-up-SAML[SAML], xref:controller-set-up-radius[RADIUS], or even xref:controller-LDAP-authentication[LDAP] as a source for authentication information.
 
-Account authentication in {ControllerName} can be configured to centrally use OAuth2, while enterprise-level account authentication can be configured for SAML, RADIUS, or even LDAP as a source for authentication information.
-See xref:controller-set-up-enterprise-authentication[Set up enterprise authentication].
+For websites, such as {Azure}, Google, or GitHub, which give account information, account information is often implemented by using the OAuth standard. 
 
-For websites, such as {Azure}, Google, or GitHub, that provide account information, account information is often implemented using the OAuth standard. 
-
-OAuth is a secure authorization protocol which is commonly used in conjunction with account authentication to grant third
-party applications a "session token" allowing them to make API calls to providers on the user's behalf.
+OAuth is a secure authorization protocol.
+It is commonly used in conjunction with account authentication to grant third party applications a "session token" allowing them to make API calls to providers on the user's behalf.
 
 _Security Assertion Markup Language_ (SAML) is an XML-based, open-standard data format for exchanging account authentication and authorization data between an identity provider and a service provider.
 
-The RADIUS distributed client/server system enables you to secure networks against unauthorized access and can be implemented in network environments requiring high levels of security while maintaining network access for remote users.
+The RADIUS distributed client/server system enables you to secure networks against unauthorized access. 
+You can implement this in network environments requiring high levels of security while maintaining network access for remote users.
+
+.Additional resources
+
+For more information, see the xref:controller-config[{ControllerNameStart} configuration] section.
 
 include::platform/proc-controller-github-settings.adoc[leveloffset=+1]
 include::platform/proc-controller-github-organization-setttings.adoc[leveloffset=+2]
@@ -29,6 +31,3 @@ include::platform/proc-controller-github-enterprise-team-settings.adoc[leveloffs
 include::platform/proc-controller-google-oauth2-settings.adoc[leveloffset=+1]
 include::platform/ref-controller-organization-mapping.adoc[leveloffset=+1]
 include::platform/ref-controller-team-mapping.adoc[leveloffset=+1]
-
-
-
