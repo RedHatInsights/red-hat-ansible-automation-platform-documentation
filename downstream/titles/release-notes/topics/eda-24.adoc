@@ -3,13 +3,11 @@
 [[eda-24-intro]]
 = {EDAName}
 
-{EDAName} is the newest capability of {PlatformNameShort} that is designed to enable automated response with user-defined, rules-based workflows. {EDAName} works by receiving events from third party tools, deciding on the actions to take, and acting automatically.
-
-{EDAName} is included in {PlatformNameShort}, making the platform even more capable as a single enterprise automation solution. Using {EDAName}, domain experts can easily create end-to-end fully automated Ops As Code scenarios for a broad array of use cases across the IT landscape. By eliminating high-volume routine tasks and automatically responding to changing conditions, teams are free to innovate more efficiently, and act consistently and accurately at scale.
+{EDAName} is a new way to enhance and expand automation by improving IT speed and agility while enabling consistency and resilience. This feature is designed for simplicity and flexibility.
 
 .Known issues
 
-* Both contributor and editor roles cannot set the AWX token. The AWX token can be set by users with administrator roles only. 
+* Both contributor and editor roles cannot set the AWX token. Only users with administrator roles can set the AWX token. 
 
 * Activation-job pods do not have request limits.
 
@@ -17,17 +15,17 @@
 
 * Users cannot filter through a list of tokens under the *Controller Token* tab. 
 
-* Only the users with administrator rights can set or modify their passwords. 
+* Only the users with administrator rights can set or change their passwords. 
 
 * If there is a failure, an activation with restart policy set to `Always` is unable to restart the failed activation. 
 
 * Disabling and enabling an activation causes the restart count to increase by one count. This behavior results in an incorrect `restart` count. 
 
-* Podman pods must be executed with memory limits.
+* You must run Podman pods with memory limits.
 
 * Users can add multiple tokens even when only the first AWX token is used. 
 
-* A race condition occurs when creating and rapidly deleting an activation causes multiple errors. 
+* A race condition occurs when creating and rapidly deleting an activation causes errors. 
 
 * When users filter any list, only the items that are on the list get filtered. 
 

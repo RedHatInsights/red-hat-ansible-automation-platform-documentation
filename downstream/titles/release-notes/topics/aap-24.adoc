@@ -3,15 +3,38 @@
 //Only include release note types that have updates for a given release. For example, if there are no Technology previews for the release, remove that section from this file.
 
 
-= {PlatformNameShort} 2.4
+= Overview of the {PlatformNameShort} 2.4 release 
 
-{PlatformName} simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across many IT domains including operations, networking, security, development, and across diverse hybrid environments. Simple to adopt, use, and understand, {PlatformName} provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
+== Technology Preview
+
+include::../snippets/technology-preview.adoc[]
+
+The following are Technology Preview features: 
+
+* Starting with {PlatformNameShort} 2.4, the Platform Resource Operator can be used to create the following resources in {ControllerName} by applying YAML to your OpenShift cluster:
+** Inventories
+** Projects
+** Instance Groups
+** Credentials
+** Schedules
+** Workflow Job Templates
+** Launch Workflows
+
+You can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the `tower_auth_secret` parameter. This change is compatible with earlier versions, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
+
+[role="_additional-resources"]
+.Additional resources
+
+* For the most recent list of Technology Preview features, see link:https://access.redhat.com/articles/ansible-automation-platform-preview-features[Ansible Automation Platform - Preview Features].
+
+* For information about execution node enhancements on OpenShift deployments, see link:https://docs.ansible.com/automation-controller/latest/html/administration/instances.html[Managing Capacity With Instances].
+
 
 == New features and enhancements
 
-This release of {PlatformNameShort} features the following enhancements:
+{PlatformNameShort} 2.4 includes the following enhancements:
 
-* Before this update, the {ExecEnvShort} container images were based on RHEL 8 only. With {PlatformNameShort} 2.4 onwards, the {ExecEnvShort} container images are now also available on RHEL 9. 
+* Previously, the {ExecEnvShort} container images were based on RHEL 8 only. With {PlatformNameShort} 2.4 onwards, the {ExecEnvShort} container images are now also available on RHEL 9. 
 The {ExecEnvShort} includes the following container images:
 ** ansible-python-base
 ** ansible-python-toolkit
@@ -29,36 +52,37 @@ You can use the following configuration YAML keys with {Builder} version 3:
 ** options
 ** version
 
-For more information about using {Builder} version 3, see 
-link:https://ansible.readthedocs.io/projects/builder/en/stable/[Ansible Builder Documentation] and link:https://docs.ansible.com/automation-controller/latest/html/userguide/ee_reference.html[Execution Environment Setup Reference].
-
-* {PlatformNameShort} 2.4 and later versions can now be run on ARM platforms, including both the control plane and the execution environments.
+* {PlatformNameShort} 2.4 and later versions can now run on ARM platforms, including both the control plane and the execution environments.
 
 * Added an option to configure the SSO logout URL for {HubName} if you need to change it from the default value.
 
 * Updated the ansible-lint RPM package to version 6.14.3.
 
-* Updated Django for potential denial-of-service vulnerability in file uploads (CVE-2023-24580).
+* Updated Django for potential denial-of-service vulnerability in file uploads (link:https://access.redhat.com/security/cve/CVE-2023-24580[CVE-2023-24580]).
 
-* Updated sqlparse for ReDOS vulnerability (CVE-2023-30608).
+* Updated sqlparse for ReDOS vulnerability (link:https://access.redhat.com/security/cve/CVE-2023-30608[CVE-2023-30608]).
 
-* Updated Django for potential denial-of-service in Accept-Language headers (CVE-2023-23969).
+* Updated Django for potential denial-of-service in Accept-Language headers (link:https://access.redhat.com/security/cve/CVE-2023-23969[CVE-2023-23969]).
 
-* {PlatformNameShort} 2.4 adds the ability to install automation controller, automation hub, and {EDAName} on IBM Power (ppc64le), IBM Z (s390x), and IBM® LinuxONE (s390x) architectures.
+* {PlatformNameShort} 2.4 adds the ability to install {ControllerName}, {HubName}, and {EDAName} on IBM Power (ppc64le), IBM Z (s390x), and IBM® LinuxONE (s390x) architectures.
+
+.Additional resources
+
+* For more information about using {Builder} version 3, see link:https://ansible.readthedocs.io/projects/builder/en/stable/[{Builder} Documentation] and link:https://docs.ansible.com/automation-controller/latest/html/userguide/ee_reference.html[Execution Environment Setup Reference].
 
 == Deprecated and removed features
 
-Some features available in earlier releases have been deprecated or removed. Deprecated functionality is still included in {PlatformNameShort} and continues to be supported. However, it will be removed in a future release of this product and is not recommended for new deployments. 
+include::../snippets/deprecated-features.adoc[]
 
-The following is a list of major functionality deprecated and removed within {PlatformNameShort} 2.4:
+The following functionality was deprecated and removed in {PlatformNameShort} 2.4:
 
 * On-premise component {CatalogName} is now removed from {PlatformNameShort} 2.4 onwards.
 
-* With the {PlatformNameShort} 2.4 release, the {ExecEnvShort} container image for Ansible 2.9 (*ee-29-rhel-8*) is no longer loaded into the Automation Controller configuration by default.
+* With the {PlatformNameShort} 2.4 release, the {ExecEnvShort} container image for Ansible 2.9 (*ee-29-rhel-8*) is no longer loaded into the {ControllerName} configuration by default.
 
 * Although you can still synchronize content, the use of synclists is deprecated and will be removed in a later release. Instead, {PrivateHubName} administrators can upload manually-created requirements files from the `rh-certified` remote.
 
-* You can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the old `tower_auth_secret` parameter. This change is compatible with earlier versions, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
+* You can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the `tower_auth_secret` parameter. This change is compatible with earlier versions, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
 
 * Smart inventories have been deprecated in favor of constructed inventories and will be removed in a future release.
 
@@ -66,7 +90,7 @@ The following is a list of major functionality deprecated and removed within {Pl
 
 The following bugs were fixed in this release of {PlatformNameShort}:
 
-* The installer now ensures that collection auto signing cannot be enabled without enabling the collection signing service.
+* Updated the installation program to ensure that collection auto signing cannot be enabled without enabling the collection signing service.
 
 * Fixed an issue with restoring backups when the installed {ControllerName} version is different from the backup version.
 
@@ -86,37 +110,10 @@ The following bugs were fixed in this release of {PlatformNameShort}:
 
 * Added a FQDN check for the {HubName} hostname required to run the Skopeo commands.
 
-* Fixed an issue such that the front end URL for Red Hat Single Sign On (SSO) is now properly configured after you specify the `sso_redirect_host` variable.
+* Fixed the front end URL for Red Hat Single Sign On (SSO) so it is now properly configured after you specify the `sso_redirect_host` variable.
 
 * Fixed the variable precedence for all component `nginx_tls_files_remote` variables.
 
 * Fixed the *setup.sh* script to escalate privileges if necessary for installing {PlatformNameShort}. 
 
 * Fixed an issue when restoring a backup to an {HubName} with a different hostname.
-
-== Technology Preview
-
-Some features in this release are currently classified as Technology Preview. Technology Preview features offer early access to upcoming product features, enabling customers to test functionality and give feedback during the development process. Note that Red Hat does not recommend using Technology Preview features for production, and Red Hat SLAs do not support Technology Preview functions.
-
-The following are Technology Preview features: 
-
-* Starting with {PlatformNameShort} 2.4, the Platform Resource Operator can be used to create the following resources in {ControllerName} by applying YAML to your OpenShift cluster:
-** Inventories
-** Projects
-** Instance Groups
-** Credentials
-** Schedules
-** Workflow Job Templates
-** Launch Workflows
-
-One notable change is that you can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the old `tower_auth_secret` parameter. This change is compatible with earlier versions, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
-
-[role="_additional-resources"]
-.Additional resources
-
-* For the most recent list of Technology Preview features, see link:https://access.redhat.com/articles/ansible-automation-platform-preview-features[Ansible Automation Platform - Preview Features].
-
-* For more information about support for Technology Preview features, see link:https://access.redhat.com/support/offerings/techpreview[Red Hat Technology Preview Features Support Scope].
-
-* For information regarding execution node enhancements on OpenShift deployments, see link:https://docs.ansible.com/automation-controller/latest/html/administration/instances.html[Managing Capacity With Instances].
-

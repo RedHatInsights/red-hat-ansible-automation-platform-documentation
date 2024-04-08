@@ -3,6 +3,6 @@
 [[controller-440-intro]]
 = {ControllerNameStart}
 
-{ControllerNameStart} provides a standardized way to define, operate and delegate automation across the enterprise. It also introduces new, exciting technologies and an enhanced architecture that enables automation teams to scale and deliver automation rapidly to meet ever-growing business demand.
+{ControllerNameStart} helps teams manage complex multitiered deployments by adding control, knowledge, and delegation to Ansible-powered environments.
 
 See link:https://docs.ansible.com/automation-controller/latest/html/release-notes/relnotes.html#release-notes-for-4-x[Automation Controller Release Notes for 4.x] for a full list of new features and enhancements.

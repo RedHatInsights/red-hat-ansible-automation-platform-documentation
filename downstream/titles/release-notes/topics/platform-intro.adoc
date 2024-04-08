@@ -1,14 +1,16 @@
 [[platform-introduction]]
-= Overview
+= Overview of {PlatformName}
 
-Red Hat Ansible Automation Platform simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles. It works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments. Simple to adopt, use, and understand, Red Hat Ansible Automation Platform provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
+{PlatformName} simplifies the development and operation of automation workloads for managing enterprise application infrastructure lifecycles.
+{PlatformNameShort} works across multiple IT domains including operations, networking, security, and development, as well as across diverse hybrid environments.
+Simple to adopt, use, and understand, {PlatformNameShort} provides the tools needed to rapidly implement enterprise-wide automation, no matter where you are in your automation journey.
 
 [[whats-included]]
-== What's included in Ansible Automation Platform
+== What is included in {PlatformNameShort}
 
 [cols="a,a,a,a,a"]
 |===
-| Ansible Automation Platform | Automation controller | Automation hub | Event-Driven Ansible controller | Insights for Ansible Automation Platform
+| {PlatformNameShort} | {ControllerNameStart} | {HubNameStart} | {EDAcontroller} | {InsightsShort}
 
 |2.4 | 4.4|
 * 4.7
@@ -20,21 +22,15 @@ Red Hat Ansible Automation Platform simplifies the development and operation of 
 
 == {PlatformName} life cycle
 
-Red Hat publishes a product life cycle page that identifies the levels of maintenance for each {PlatformNameShort} release.
-Refer to link:https://access.redhat.com/support/policy/updates/ansible-automation-platform[Red Hat Ansible Automation Platform Life Cycle].
+Red Hat provides different levels of maintenance for each {PlatformNameShort} release. For more information, see link:https://access.redhat.com/support/policy/updates/ansible-automation-platform[{PlatformName} Life Cycle].
 
 == Upgrading {PlatformNameShort}
 
-Use the installer to perform upgrades to maintenance versions of {PlatformNameShort}. The installer performs all necessary actions required to upgrade to the latest versions of {PlatformNameShort}, including {ControllerName} and {PrivateHubName}.
-
-[IMPORTANT]
-====
-Do not use `yum update` to run upgrades. Use the installer instead.
-====
+When upgrading, do not use `yum update`. Use the installation program instead. The installation program performs all of the necessary actions required to upgrade to the latest versions of {PlatformNameShort}, including {ControllerName} and {PrivateHubName}.
 
 .Additional resources
-* Refer to the table in xref:whats-included[What's included in Ansible Automation Platform] for information on maintenance releases of {PlatformNameShort}.
+* For information about the components included in {PlatformNameShort}, see the table in xref:whats-included[What is included in {PlatformNameShort}].
 
-* For more information on upgrading your {PlatformNameShort}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[Red Hat Ansible Automation Platform Upgrade and Migration Guide].
+* For more information about upgrading {PlatformNameShort}, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[{PlatformName} Upgrade and Migration Guide].
 
-* For procedures related to using the {PlatformNameShort} installer, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide].
+* For procedures related to using the {PlatformNameShort} installer, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformNameShort} Installation Guide].
