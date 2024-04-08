@@ -10,9 +10,9 @@
 . In the navigation panel, select menu:Administration[Instances].
 . Click btn:[Add].
 . Input the VM name in the *Host Name* field.
-. Optional: Input the port number in the *Listner Port* field.
+. Optional: Input the port number in the *Listener Port* field.
 . Click btn:[Save].
-. Click the download icon image:download.png[download]next to *Install Bundle*. This will start a download, take note of where you save the file
+. Click the download icon image:download.png[download,15,15]next to *Install Bundle*. This starts a download, take note of where you save the file
 . Untar the gz file.
 +
 [NOTE]
@@ -40,9 +40,9 @@ ansible-playbook install_receptor.yml -i inventory
 
 .Verification 
 To verify if your playbook runs correctly on your new node run the following command:
-====
+----
 watch podman ps
-====
+----
 
 .Additional resources
 * For more information about managing instance groups see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-instance-groups[Managing Instance Groups] section of the Automation Controller User Guide.
