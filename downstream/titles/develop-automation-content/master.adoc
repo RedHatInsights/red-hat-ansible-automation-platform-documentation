@@ -1,0 +1,22 @@
+:imagesdir: images
+:numbered:
+:toclevels: 1
+
+:experimental:
+
+include::attributes/attributes.adoc[]
+
+
+// Book Title
+= Developing Ansible automation content
+
+Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
+
+This guide describes how to develop Ansible automation content and how to use it to run automation jobs from {PlatformName}.
+This document has been updated to include information for the latest release of {PlatformNameShort}.
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
+
+include::dev-guide/assembly-introduction.adoc[leveloffset=+1]
+
