@@ -7,4 +7,4 @@
 You can create and assign permissions to a group in {PrivateHubName} that enables users to access specified features in the system.
 By default, the *Admin* group in the {HubName} has all permissions assigned and is available on initial login. Use the credentials created when installing {PrivateHubName}.
 
-For more information, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/getting_started_with_automation_hub/index#proc-create-group[Creating a new group in {PrivateHubName}] in the Getting started with {HubName} guide.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/getting_started_with_automation_hub/index#proc-create-group[Creating a new group in {PrivateHubName}] in the Getting started with {HubName} guide.

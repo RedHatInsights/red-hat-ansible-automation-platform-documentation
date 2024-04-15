@@ -11,7 +11,7 @@ If your {PrivateHubName} is behind a network proxy, you can configure proxy sett
 .Prerequisites
 
 * You have valid *Modify Ansible repo content* permissions.
-For more information on permissions, see link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/assembly-user-access[Configuring user access for your {PrivateHubName}].
+For more information on permissions, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/assembly-user-access[Configuring user access for your {PrivateHubName}].
 * You have a proxy URL and credentials from your local network administrator. 
 
 .Procedure

@@ -8,7 +8,7 @@ Use the following example to customize the default definition file to pass {HubN
 
 .Prerequisites
 
-* You have link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/hub-create-api-token[created an {HubName} API token] and stored it in a secure location, for example in a file named `token.txt`.
+* You have link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/hub-create-api-token[created an {HubName} API token] and stored it in a secure location, for example in a file named `token.txt`.
 * Define a build argument that gets populated with the {HubName} API token:
 ----
 export ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_TOKEN=$(cat <token.txt>)

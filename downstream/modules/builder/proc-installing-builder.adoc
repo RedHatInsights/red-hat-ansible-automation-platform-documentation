@@ -4,7 +4,7 @@
 
 .Prerequisites
 * You have installed the Podman container runtime.
-* You have valid subscriptions attached on the host. Doing so allows you to access the subscription-only resources needed to install `ansible-builder`, and ensures that the necessary repository for `ansible-builder` is automatically enabled. See link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#proc-attaching-subscriptions_planning[Attaching your Red Hat {PlatformNameShort} subscription] for more information. 
+* You have valid subscriptions attached on the host. Doing so allows you to access the subscription-only resources needed to install `ansible-builder`, and ensures that the necessary repository for `ansible-builder` is automatically enabled. See link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#proc-attaching-subscriptions_planning[Attaching your Red Hat {PlatformNameShort} subscription] for more information. 
 
 .Procedure
 

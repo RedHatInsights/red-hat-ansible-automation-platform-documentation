@@ -20,10 +20,10 @@ rhel-9-for-x86_64-baseos-rpms                              Red Hat Enterprise Li
 ----
 +
 . Ensure that these repos and only these repos are available to the host OS. If you need to know how to do this use this guide:
-link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/managing_software_with_the_dnf_tool/assembly_managing-custom-software-repositories_managing-software-with-the-dnf-tool[Chapter 10. Managing custom software repositories Red Hat Enterprise Linux]
+link:{BaseURL}/red_hat_enterprise_linux/9/html/managing_software_with_the_dnf_tool/assembly_managing-custom-software-repositories_managing-software-with-the-dnf-tool[Chapter 10. Managing custom software repositories Red Hat Enterprise Linux]
 
 . Ensure that the host has DNS configured and can resolve hostnames and IPs using a fully qualified domain name (FQDN). This is essential to ensure services can talk to one another.
 +
-To configure unbound DNS refer to link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/managing_networking_infrastructure_services/assembly_setting-up-an-unbound-dns-server_networking-infrastructure-services[Chapter 2. Setting up an unbound DNS server Red Hat Enterprise Linux 9].
+To configure unbound DNS refer to link:{BaseURL}/red_hat_enterprise_linux/9/html/managing_networking_infrastructure_services/assembly_setting-up-an-unbound-dns-server_networking-infrastructure-services[Chapter 2. Setting up an unbound DNS server Red Hat Enterprise Linux 9].
 +
-To configure DNS using BIND refer to link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/managing_networking_infrastructure_services/assembly_setting-up-and-configuring-a-bind-dns-server_networking-infrastructure-services[Chapter 1. Setting up and configuring a BIND DNS server Red Hat Enterprise Linux 9].
+To configure DNS using BIND refer to link:{BaseURL}/red_hat_enterprise_linux/9/html/managing_networking_infrastructure_services/assembly_setting-up-and-configuring-a-bind-dns-server_networking-infrastructure-services[Chapter 1. Setting up and configuring a BIND DNS server Red Hat Enterprise Linux 9].

@@ -7,7 +7,7 @@
 
 [role="_abstract"]
 
-The installation inventory file defines the architecture of the {PlatformNameShort} infrastructure, and provides a number of variables that can be used to modify the initial configuration of the infrastructure components. For more information on the installer inventory, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-editing-installer-inventory-file_platform-install-scenario[Ansible Automation Platform Installation Guide].
+The installation inventory file defines the architecture of the {PlatformNameShort} infrastructure, and provides a number of variables that can be used to modify the initial configuration of the infrastructure components. For more information on the installer inventory, see the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#proc-editing-installer-inventory-file_platform-install-scenario[Ansible Automation Platform Installation Guide].
 
 The following table lists a number of security-relevant variables and their recommended values for creating the installation inventory.
 

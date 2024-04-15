@@ -7,12 +7,12 @@
 
 [role="_abstract"]
 
-{PlatformNameShort} requires access to a network to integrate to external auxiliary services and to manage target environments and resources such as hosts, other network devices, applications, cloud services. The link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#ref-network-ports-protocols_planning[network ports and protocols] section of the {PlatformNameShort} planning guide describes how {PlatformNameShort} components interact on the network as well as which ports and protocols are used, as shown in the following diagram:
+{PlatformNameShort} requires access to a network to integrate to external auxiliary services and to manage target environments and resources such as hosts, other network devices, applications, cloud services. The link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#ref-network-ports-protocols_planning[network ports and protocols] section of the {PlatformNameShort} planning guide describes how {PlatformNameShort} components interact on the network as well as which ports and protocols are used, as shown in the following diagram:
 
 .{PlatformNameShort} Network ports and protocols
 image::aap-network-ports-protocols-314.png[Interaction of {PlatformNameShort} components on the network with information about the ports and protocols that are used.]
 
-When planning firewall or cloud network security group configurations related to {PlatformNameShort}, see the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#ref-network-ports-protocols_planning[Network ports and protocols] section of the {PlatformNameShort} Planning Guide to understand what network ports need to be opened on a firewall or security group.
+When planning firewall or cloud network security group configurations related to {PlatformNameShort}, see the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_planning_guide/index#ref-network-ports-protocols_planning[Network ports and protocols] section of the {PlatformNameShort} Planning Guide to understand what network ports need to be opened on a firewall or security group.
 
 For more information on using a load balancer, and for outgoing traffic requirements for services compatible with {PlatformNameShort}. Consult the Red Hat Knowledgebase article link:https://access.redhat.com/solutions/6756251[What ports need to be opened in the firewall for {PlatformNameShort} 2 Services?]. For internet-connected systems, this article also defines the outgoing traffic requirements for services that {PlatformNameShort} can be configured to use, such as {HubNameMain}, {InsightsName}, {Galaxy}, the registry.redhat.io container image registry, and so on.
 

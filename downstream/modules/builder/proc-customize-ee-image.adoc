@@ -92,7 +92,7 @@ $ podman tag [username]/new-ee [automation-hub-IP-address]/[username]/new-ee
 +
 [NOTE]
 =====
-You must have `admin` or appropriate container repository permissions for {HubName} to push a container. For more information, see the _Manage containers in {PrivateHubName}_ section in link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/{PlatformVers}/html-single/managing_content_in_automation_hub/index#managing-containers-hub[Managing content in automation hub].
+You must have `admin` or appropriate container repository permissions for {HubName} to push a container. For more information, see the _Manage containers in {PrivateHubName}_ section in link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/managing_content_in_automation_hub/index#managing-containers-hub[Managing content in automation hub].
 =====
 +
 -----
