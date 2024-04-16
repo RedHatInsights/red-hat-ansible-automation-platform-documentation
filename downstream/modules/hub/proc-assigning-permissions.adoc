@@ -9,4 +9,4 @@ You can assign permissions to groups in {PrivateHubName} that enable users to ac
 
 You can add permissions when first creating a group or edit an existing group to add or remove permissions
 
-For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/getting_started_with_automation_hub/index#proc-assigning-permissions[Assigning permissions to groups] in the Getting started with {HubName} guide.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/getting_started_with_automation_hub/index#proc-assigning-permissions[Assigning permissions to groups] in the Getting started with {HubName} guide.

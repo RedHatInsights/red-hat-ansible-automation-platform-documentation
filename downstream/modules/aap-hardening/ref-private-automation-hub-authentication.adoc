@@ -15,7 +15,7 @@
 For production use, LDAP is the preferred external authentication mechanism for {PrivateHubName}. {PlatformNameShort} {CentralAuth} is an option that can be deployed with the {PlatformNameShort} installer, but it only deploys one {CentralAuth} server instance, making it a potential single point of failure. Standalone mode for {PlatformNameShort} {CentralAuth} is not recommended in a production environment. However, if you already have the separate {RHSSO} (RHSSO) product deployed in your production environment, it can be used as an external authentication source for {PrivateHubName}.
 
 
-The {PlatformNameShort} Installer configures LDAP authentication for {PrivateHubName} during installation. For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_installation_guide/index#ref-ldap-config-on-pah_platform-install-scenario[LDAP configuration on a {PrivateHubName}].
+The {PlatformNameShort} Installer configures LDAP authentication for {PrivateHubName} during installation. For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/red_hat_ansible_automation_platform_installation_guide/index#ref-ldap-config-on-pah_platform-install-scenario[LDAP configuration on a {PrivateHubName}].
 
 
 The following installer inventory file variables must be filled out prior to installation:
