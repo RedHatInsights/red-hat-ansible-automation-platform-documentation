@@ -15,7 +15,7 @@ In some of the following use cases, hop nodes are used instead of a direct link 
 ====
 
 .{PlatformNameShort} Network ports and protocols 
-image::aap-network-ports-protocols-314.png[Interaction of Ansible Automation Platform components on the network with information about the ports and protocols that are used.]
+image::aap-network-ports-protocols.png[Interaction of Ansible Automation Platform components on the network with information about the ports and protocols that are used.]
 
 The following tables show the default {PlatformName} destination ports required for each application.
 
@@ -117,6 +117,13 @@ ALLOW connection from controller(s) to Receptor port
 |Inbound and Outbound
 |`ansible_port`
 |Installation
+
+|80/443
+|TCP
+|SSH
+|Inbound and Outbound
+|Fixed value (maps to Table 5.7 {HubNameStart}'s "User interface" port)
+|Allows execution nodes to pull the {ExecEnvShort} image from {HubName}
 
 |27199
 |TCP
