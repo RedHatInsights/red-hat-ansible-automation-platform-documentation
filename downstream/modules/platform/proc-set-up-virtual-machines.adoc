@@ -37,7 +37,7 @@ If Simple Content Access is enabled for your account, use:
 sudo subscription-manager register
 ----
 +
-For more information about Simple Content Access, see link:https://access.redhat.com/articles/simple-content-access[Simple Content Access].
+For more information about Simple Content Access, see link:{BaseURL}/subscription_central/1-latest/html/getting_started_with_simple_content_access/index[Getting started with simple content access].
 
 . Enable {PlatformNameShort} subscriptions and the proper {PlatformName} channel:
 +

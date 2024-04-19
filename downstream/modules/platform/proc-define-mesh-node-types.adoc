@@ -48,8 +48,13 @@ Options:
 
 ** *Enable Instance*: Check this box to make it available for jobs to run on an execution node.
 ** Check the *Managed by Policy* box to enable policy to dictate how the instance is assigned.
-** Check the *Peers from control nodes* box to enable control nodes to peer to this instance automatically. For hop nodes, check the *Peers from Control* nodes box to create a direct communication link between the hop node and {ControllerName}. 
-For execution nodes that communicate with hop nodes, do not check this box.
+** Check the *Peers from control nodes* box to enable control nodes to peer to this instance automatically. 
+For nodes connected to {ControllerName}, check the *Peers from Control* nodes box to create a direct communication link between that node and {ControllerName}. 
+For all other nodes:
+
+*** If you are not adding a hop node, make sure *Peers from Control* is checked. 
+*** If you are adding a hop node, make sure *Peers from Control* is not checked.
+*** For execution nodes that communicate with hop nodes, do not check this box.
 ** To peer an execution node with a hop node, click the image:search.png[Search,15,15] icon next to the *Peers* field.
 +
 The Select Peers window is displayed.
@@ -158,6 +163,8 @@ ansible-playbook -i inventory.yml install_receptor.yml
 After this playbook runs, your automation mesh is configured.
 +
 image::instances_list_view2.png[Instances list view]
+
+To remove an instance from the mesh, see xref:ref-removing-instances[Removing instances].
 
 
 
