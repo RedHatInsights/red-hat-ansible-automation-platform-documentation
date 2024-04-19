@@ -1,0 +1,72 @@
+[id="proc-setup-postgresql-ext-database"]
+
+= Setting up an external (customer supported) database
+
+[IMPORTANT]
+====
+Red Hat does not support the use of external (customer supported) databases, however they are used by customers. 
+The following guidance on inital configuration, from a product installation perspective only, is provided to avoid related support requests.
+====  
+
+To create a database, user and password on an external PostgreSQL compliant database for use with {ControllerName}, use the following procedure.
+
+.Procedure
+. Install and then connect to a PostgreSQL compliant database server with superuser privileges.
++
+----
+# psql -h <db.example.com> -U superuser -p 5432 -d postgres <Password for user superuser>:
+----
++
+Where:
++
+----
+-h hostname
+--host=hostname
+----
++
+Specifies the host name of the machine on which the server is running. 
+If the value begins with a slash, it is used as the directory for the Unix-domain socket.
++
+----
+-d dbname
+--dbname=dbname 
+----
++
+Specifies the name of the database to connect to. 
+This is equivalent to specifying `dbname` as the first non-option argument on the command line. 
+The `dbname` can be a connection string. 
+If so, connection string parameters override any conflicting command line options.
++
+----
+-U username
+--username=username 
+----
++
+Connect to the database as the user `username` instead of the default. (You must have permission to do so.)
+
+. Create the user, database, and password with the `createDB` or administrator role assigned to the user. 
+For further information, see link:https://www.postgresql.org/docs/13/user-manag.html[Database Roles].
+. Add the database credentials and host details to the {ControllerName} inventory file as an external database. 
++
+The default values are used in the following example.
++
+----
+[database] 
+pg_host='db.example.com' 
+pg_port=5432 
+pg_database='awx' 
+pg_username='awx' 
+pg_password='redhat'
+----
+
+. Run the installer.
++
+If you are using a PostgreSQL database with {ControllerName}, the database is owned by the connecting user and must have a `createDB` or administrator role assigned to it.
+. Check that you are able to connect to the created database with the user, password and database name.
+. Check the permission of the user, the user should have the `createDB` or administrator role.
+
+[NOTE]
+====
+During this procedure, you must check the External Database coverage. For further information, see https://access.redhat.com/articles/4010491
+====
+

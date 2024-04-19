@@ -19,6 +19,7 @@ include::platform/ref-automation-hub-requirements.adoc[leveloffset=+1]
 include::platform/ref-ha-hub-reqs.adoc[leveloffset=+2]
 include::platform/ref-eda-system-requirements.adoc[leveloffset=+1]
 include::platform/ref-postgresql-requirements.adoc[leveloffset=+1]
+include::platform/proc-setup-postgresql-ext-database.adoc[leveloffset=+2]
 include::platform/proc-enable-hstore-extension.adoc[leveloffset=+2]
 include::platform/proc-benchmark-postgresql.adoc[leveloffset=+2]
 
