@@ -6,4 +6,4 @@ You can further configure your {PlatformName} installation by including addition
 These configurations add optional features for managing your {PlatformName}. 
 Add these variables by editing the inventory file using a text editor.
 
-A table of predefined values for inventory file variables can be found in link:{BaseURL}/red_hat_ansible_automation_platform/2.3/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars[Inventory File Variables] in the _{PlatformName} Installation Guide_.
+A table of predefined values for inventory file variables can be found in link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars[Inventory file variables] in the _{PlatformName} Installation Guide_.

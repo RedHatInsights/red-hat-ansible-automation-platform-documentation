@@ -36,7 +36,7 @@ If you use one value in `[database]` and both {ControllerName} and {HubNameMain}
 .Clustered installations
 * When upgrading an existing cluster, you can also reconfigure your cluster to omit existing instances or instance groups. 
 Omitting the instance or the instance group from the inventory file is not enough to remove them from the cluster. 
-In addition to omitting instances or instance groups from the inventory file, you must also deprovision instances or instance groups before starting the upgrade. See xref:ref-deprovisioning[Deprovisioning nodes or groups]. 
+In addition to omitting instances or instance groups from the inventory file, you must also deprovision instances or instance groups before starting the upgrade. For more information, see xref:ref-deprovisioning[Deprovisioning nodes or groups]. 
 Otherwise, omitted instances or instance groups continue to communicate with the cluster, which can cause issues with {ControllerName} services during the upgrade.
 * If you are creating a clustered installation setup, you must replace `[localhost]` with the hostname or IP address of all instances. 
 Installers for {ControllerName} and {HubName} do not accept `[localhost]`

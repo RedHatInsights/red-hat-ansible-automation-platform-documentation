@@ -18,7 +18,7 @@ Unlike host lines, `:vars` sections accept only a single entry per line, so ever
 Host lines accept multiple `key=value` parameters per line. 
 Therefore they need a way to indicate that a space is part of a value rather than a separator. 
 Values that contain whitespace can be quoted (single or double). 
-See the link:https://docs.python.org/3/library/shlex.html#parsing-rules[Python shlex parsing rules] for details.
+For more information, see link:https://docs.python.org/3/library/shlex.html#parsing-rules[Python shlex parsing rules].
 
 If a variable value set in an INI inventory must be a certain type (for example, a string or a boolean value), always specify the type with a filter in your task. 
 Do not rely on types set in INI inventories when consuming variables.

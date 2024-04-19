@@ -2,7 +2,7 @@
 
 = Benchmarking storage performance for the {PlatformNameShort} PostgreSQL database
 
-Check whether the minimum {PlatformNameShort} PostgreSQL database requirements are met by using the Flexible I/O Tester (fio) tool. Fio is a tool used to benchmark write/read IOPS performance of the storage system.
+Check whether the minimum {PlatformNameShort} PostgreSQL database requirements are met by using the Flexible I/O Tester (FIO) tool. FIO is a tool used to benchmark read and write IOPS performance of the storage system.
 
 .Prerequisites
  * You have installed the Flexible I/O Tester (`fio`) storage performance benchmarking tool. 

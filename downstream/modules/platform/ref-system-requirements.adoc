@@ -33,7 +33,7 @@ The following are necessary for you to work with project updates and collections
 [NOTE]
 ====
 The requirements for systems managed by {PlatformNameShort} are the same as for Ansible.
-See link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#prerequisites[Installing Ansible] in the Ansible documentation database.
+See link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#prerequisites[Installing Ansible] in the Ansible Community Documentation.
 ====
 
 .Additional notes for {PlatformName} requirements

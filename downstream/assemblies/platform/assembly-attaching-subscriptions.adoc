@@ -5,9 +5,9 @@
 = Attaching your {PlatformName} subscription
 
 [role="_abstract"]
-You *must* have valid subscriptions attached on all nodes before installing {PlatformName}. Attaching your {PlatformNameShort} subscription allows you to access subcription-only resources necessary to proceed with the installation.
+You *must* have valid subscriptions attached on all nodes before installing {PlatformName}. Attaching your {PlatformNameShort} subscription provides access to subscription-only resources necessary to proceed with the installation.
 
-NOTE: Attaching a subscription is unnecessary if you have enabled link:https://access.redhat.com/articles/simple-content-access[Simple Content Access Mode] on your Red Hat account. Once enabled, you will need to register your systems to either Red Hat Subscription Management (RHSM) or Satellite before installing the {PlatformNameShort}. See link:https://access.redhat.com/articles/simple-content-access[Simple Content Access Mode] for more information.
+NOTE: Attaching a subscription is unnecessary if you have enabled Simple Content Access Mode on your Red Hat account. Once enabled, you will need to register your systems to either Red Hat Subscription Management (RHSM) or Satellite before installing the {PlatformNameShort}. For more information, see link:https://access.redhat.com/articles/simple-content-access[Simple Content Access].
 
 .Procedure
 
@@ -55,7 +55,7 @@ You have now attached your {PlatformName} subscriptions to all nodes.
 
 .Troubleshooting
 
-* If you are unable to locate certain packages that came bundled with the {PlatformNameShort} installer, or if you are seeing a `_Repositories disabled by configuration_` message, try enabling the repository using the command:
+* If you are unable to locate certain packages that came bundled with the {PlatformNameShort} installer, or if you are seeing a `_Repositories disabled by configuration_` message, try enabling the repository by using the command:
 +
 {PlatformName} {PlatformVers} for RHEL 8
 +

@@ -14,10 +14,10 @@ h|Requirement | Required | Notes
 
 * 8 GB RAM (minimum and recommended for Vagrant trial installations)
 * 8 GB RAM (minimum for external standalone PostgreSQL databases)
-* For capacity based on forks in your configuration, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#automation-controller-capacity-determination-and-job-impact[Automation Controller Capacity Determination and Job Impact].
+* For capacity based on forks in your configuration, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-jobs#controller-capacity-determination[{ControllerNameStart} capacity determination and job impact].
 | *CPUs* | 2 minimum |
 
-For capacity based on forks in your configuration, see link:https://docs.ansible.com/automation-controller/latest/html/userguide/jobs.html#automation-controller-capacity-determination-and-job-impact[Automation Controller Capacity Determination and Job Impact].
+For capacity based on forks in your configuration, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-jobs#controller-capacity-determination[{ControllerNameStart} capacity determination and job impact].
 | *Local disk* | 60 GB disk | Dedicate a minimum of 40GB to `/var` for collection storage.
 
 |===
@@ -28,10 +28,10 @@ For capacity based on forks in your configuration, see link:https://docs.ansible
 
 If you install {PrivateHubname} from an internal address, and have a certificate which only encompasses the external address, this can result in an installation which cannot be used as container registry without certificate issues.
 
-To avoid this, use the `automationhub_main_url` inventory variable with a value like \https://pah.example.com linking to the {PrivateHubName} node in the installation inventory file.
+To avoid this, use the `automationhub_main_url` inventory variable with a value such as \https://pah.example.com linking to the {PrivateHubName} node in the installation inventory file.
 
 This adds the external address to `/etc/pulp/settings.py`.
 This implies that you only want to use the external address.
 
-For information on inventory file variables, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars[Inventory File Variables] in the _{PlatformName} Installation Guide_.
+For information about inventory file variables, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars[Inventory file variables] in the _{PlatformName} Installation Guide_.
 ====

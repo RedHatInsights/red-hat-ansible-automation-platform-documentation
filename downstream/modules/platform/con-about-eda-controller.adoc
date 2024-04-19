@@ -6,8 +6,8 @@
 The {EDAcontroller} is the interface for event-driven automation and introduces automated resolution of IT requests. {EDAcontroller} helps you connect to sources of events and act on those events by using rulebooks. This technology improves IT speed and agility, and enables consistency and resilience. With {EDAName}, you can: 
 
 * Automate decision making
-* Use numerous event sources
-* Implement event-driven automation within and across multiple IT use cases
+* Use many event sources
+* Implement event-driven automation within and across many IT use cases
 
 [role="_additional-resources"]
 .Additional resources

@@ -2,7 +2,7 @@ ifdef::context[:parent-context: {context}]
 
 [id="ref-aap-components"]
 
-= {PlatformName} platform components
+= {PlatformName} components
 
 :context: planning
 

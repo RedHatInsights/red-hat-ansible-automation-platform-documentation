@@ -23,7 +23,7 @@ Execution nodes run automation. Increase memory and CPU to increase capacity for
 * Recommended RAM and CPU node sizes are not supplied.
 The required RAM or CPU depends directly on the number of jobs you are running in that environment.
 
-For further information on required RAM and CPU levels, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/automation_controller_administration_guide/assembly-controller-improving-performance[Performance tuning for automation controller].
+For further information about required RAM and CPU levels, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/assembly-controller-improving-performance[Performance tuning for automation controller].
 ====
 
 .Execution nodes
@@ -68,7 +68,7 @@ h| Requirement | Minimum required
 |===
 
 * Actual RAM requirements vary based on how many hosts {ControllerName} will manage simultaneously (which is controlled by the `forks` parameter in the job template or the system `ansible.cfg` file).
-To avoid possible resource conflicts, Ansible recommends 1 GB of memory per 10 forks + 2 GB reservation for {ControllerName}, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-jobs#controller-capacity-determination[Automation controller Capacity Determination and Job Impact] for further details. If `forks` is set to 400, 42 GB of memory is recommended.
+To avoid possible resource conflicts, Ansible recommends 1 GB of memory per 10 forks and 2 GB reservation for {ControllerName}. For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-jobs#controller-capacity-determination[{ControllerNameStart} capacity determination and job impact]. If `forks` is set to 400, 42 GB of memory is recommended.
 * {ControllerNameStart} hosts check if `umask` is set to 0022. If not, the setup fails. Set `umask=0022` to avoid this error.
 * A larger number of hosts can be addressed, but if the fork number is less than the total host count, more passes across the hosts are required. You can avoid these RAM limitations by using any of the following approaches:
 ** Use rolling updates.
@@ -78,5 +78,5 @@ To avoid possible resource conflicts, Ansible recommends 1 GB of memory per 10 f
 [role="_additional-resources"]
 .Additional resources
 
-* For more information about obtaining an {ControllerName} subscription, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/controller-managing-subscriptions#controller-importing-subscriptions[Import a subscription].
-* For questions, contact Ansible support through the link:https://access.redhat.com/[Red Hat Customer portal].
+* For more information about obtaining an {ControllerName} subscription, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-managing-subscriptions#controller-importing-subscriptions[Importing a subscription].
+* For questions, contact Ansible support through the link:https://access.redhat.com/[Red Hat Customer Portal].

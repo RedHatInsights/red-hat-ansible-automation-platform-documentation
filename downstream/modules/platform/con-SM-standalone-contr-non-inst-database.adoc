@@ -4,4 +4,4 @@
 = Standalone {ControllerName} with a database on the same node, or a non-installer managed database
 
 [role="_abstract"]
-This scenario includes installation of {ControllerName}, including the web frontend, REST API backend, and database on a single machine. It installs PostgreSQL, and configures the {ControllerName} to use that as its database. This is considered the standard {ControllerName} installation scenario.
+This scenario includes installation of {ControllerName}, including the web front end, REST API backend, and database on a single machine. It installs PostgreSQL, and configures the {ControllerName} to use that as its database. This is considered the standard {ControllerName} installation scenario.
