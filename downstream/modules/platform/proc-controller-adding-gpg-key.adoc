@@ -2,7 +2,7 @@
 
 = Adding a GPG key to {ControllerName}
 
-To use the GPG key for content singing and validation in {ControllerName}, add it by running the following command in the CLI:
+To use the GPG key for content signing and validation in {ControllerName}, add it by running the following command in the CLI:
 
 [literal, options="nowrap" subs="+attributes"]
 ----
