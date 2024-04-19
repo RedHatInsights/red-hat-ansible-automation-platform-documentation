@@ -39,4 +39,4 @@ Set the permissions as `777` at this time.
 
 .Additional resources
 
-For more information about mount volumes, see the link:https://docs.podman.io/en/v4.4/markdown/options/volumes-from.html[--volumes-from=CONTAINER[:OPTIONS]] section of the Podman documentation.
+For more information about mount volumes, see the link:https://docs.podman.io/en/stable/markdown/podman-run.1.html#volume-v-source-volume-host-dir-container-dir-options[--volume option of the podman-run(1)] section of the Podman documentation.
