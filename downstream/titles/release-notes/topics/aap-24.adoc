@@ -88,7 +88,7 @@ The following functionality was deprecated and removed in {PlatformNameShort} 2.
 
 == Bug fixes
 
-The following bugs were fixed in this release of {PlatformNameShort}:
+{PlatformNameShort} 2.4 includes the following bug fixes:
 
 * Updated the installation program to ensure that collection auto signing cannot be enabled without enabling the collection signing service.
 
