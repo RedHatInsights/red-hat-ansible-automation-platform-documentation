@@ -8,35 +8,35 @@ link:https://access.redhat.com/errata/RHBA-2023:5347[RHBA-2023:5347]
 
 == General
 
-* The installer will now properly generate a new `SECRET_KEY` for controller when running `setup.sh` with the `-k` option (AAP-15565)
+* The installer will now properly generate a new `SECRET_KEY` for controller when running `setup.sh` with the `-k` option (AAP-15565).
 
-* Added temporary file cleanup for Podman to prevent `cannot re-exec process` error during job execution (AAP-15248)
+* Added temporary file cleanup for Podman to prevent `cannot re-exec process` error during job execution (AAP-15248).
 
-* Added new variables for additional nginx configurations per component (AAP-15124)
+* Added new variables for additional nginx configurations per component (AAP-15124).
 
-* The installer now correctly enforces only 1 {EDAName} host per {PlatformNameShort} installation (AAP-15122)
+* The installer now correctly enforces only one {EDAName} host per {PlatformNameShort} installation (AAP-15122).
 
-* You are now able to sync {ExecEnvShort} images in {HubName} to {ControllerName} on upgrade (AAP-15121)
+* You are now able to sync {ExecEnvShort} images in {HubName} to {ControllerName} on upgrade (AAP-15121).
 
-* *awx* user configuration now supports rootless Podman (AAP-15072)
+* *awx* user configuration now supports rootless Podman (AAP-15072).
 
-* You can now mount the `/var/lib/awx` directory as a separate filesystem on execution nodes (AAP-15065)
+* You can now mount the `/var/lib/awx` directory as a separate filesystem on execution nodes (AAP-15065).
 
-* Fixed the linger configuration for an {EDAName} user (AAP-14745)
+* Fixed the linger configuration for an {EDAName} user (AAP-14745).
 
-* Fixed the values used for signing installer managed certificates for internal postgres installations (AAP-14236)
+* Fixed the values used for signing installer managed certificates for internal postgres installations (AAP-14236).
 
-* Subject alt names for component hosts will now only be checked for signing certificates when https is enabled (AAP-14235)
+* Subject alt names for component hosts will now only be checked for signing certificates when https is enabled (AAP-14235).
 
-* Fixed postgres sslmode for `verify-full` that affected external postgres and postgres signed for 127.0.0.1 for internally managed postgres (AAP-13962)
+* Fixed postgres sslmode for `verify-full` that affected external postgres and postgres signed for 127.0.0.1 for internally managed postgres (AAP-13962).
 
-* Updated the inventory file to include SSL key and cert parameters for provided SSL web certificates (AAP-13854)
+* Updated the inventory file to include SSL key and cert parameters for provided SSL web certificates (AAP-13854).
 
-* Fixed an issue with the `awx-rsyslogd` process where it starts with the wrong user (AAP-13664)
+* Fixed an issue with the `awx-rsyslogd` process where it starts with the wrong user (AAP-13664).
 
-* Fixed an issue where the restore process failed to stop `pulpcore-worker` services on RHEL 9 (AAP-13297)
+* Fixed an issue where the restore process failed to stop `pulpcore-worker` services on RHEL 9 (AAP-13297).
 
-* Podman configurations are now correctly aligned to the {EDAName} home directory (AAP-13289)
+* Podman configurations are now correctly aligned to the {EDAName} home directory (AAP-13289).
 
 == Related RPM and container releases for bundle installer
 

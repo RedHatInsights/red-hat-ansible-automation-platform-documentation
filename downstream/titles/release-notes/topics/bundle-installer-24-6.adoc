@@ -50,4 +50,4 @@ link:https://access.redhat.com/errata/RHBA-2024:1158[RHBA-2024:1158]
 == {EDAName}
 
 // (AAP-21018)
-* event_driven: {PlatformNameShort}: Insecure WebSocket used when interacting with {EDAName} server (link:https://access.redhat.com/security/cve/CVE-2024-1657[CVE-2024-1657])
+* event_driven: {PlatformNameShort}: Insecure WebSocket used when interacting with {EDAName} server (link:https://access.redhat.com/security/cve/CVE-2024-1657[CVE-2024-1657]).

@@ -13,4 +13,4 @@ link:https://access.redhat.com/errata/RHBA-2023:6831[RHBA-2023:6831]
 
 * automation-controller: Django: Denial-of-service possibility in django.utils.text.Truncator (link:https://access.redhat.com/security/cve/cve-2023-43665[CVE-2023-43665])
 
-* Customers using the `infra.controller_configuration` collection (which uses `ansible.controller` collection) to update their {PlatformNameShort} environment no longer receive an HTTP 499 response (AAP-17422)
+* Customers using the `infra.controller_configuration` collection (which uses `ansible.controller` collection) to update their {PlatformNameShort} environment no longer receive an HTTP 499 response (AAP-17422).

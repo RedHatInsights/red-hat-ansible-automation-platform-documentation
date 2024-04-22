@@ -7,9 +7,9 @@ link:https://access.redhat.com/errata/RHBA-2023:5140[RHBA-2023:5140]
 //Automation controller
 == {ControllerNameStart}
 
-* Fixed a bug that caused a deadlock on shutdown when Redis was unavailable (AAP-14203)
+* Fixed a bug that caused a deadlock on shutdown when Redis was unavailable (AAP-14203).
 
-* The login form no longer supports autocomplete on the password field due to security concerns (AAP-15545)
+* The login form no longer supports autocomplete on the password field due to security concerns (AAP-15545).
 
 * automation-controller: cryptography: memory corruption via immutable objects (link:https://access.redhat.com/security/cve/CVE-2023-23931[CVE-2023-23931])
 

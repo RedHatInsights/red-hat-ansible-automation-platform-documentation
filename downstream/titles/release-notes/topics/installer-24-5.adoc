@@ -9,17 +9,17 @@ link:https://access.redhat.com/errata/RHSA-2024:0733[RHSA-2024:0733]
 //Automation controller
 == {ControllerNameStart}
 
-* Fixed an error that caused `rsyslogd` to stop sending events to Splunk HTTP Collector (AAP-19069)
+* Fixed an error that caused `rsyslogd` to stop sending events to Splunk HTTP Collector (AAP-19069).
 
 //Automation hub
 == {HubNameStart}
 
-* {HubNameStart} now uses system crypto-policies in nginx (AAP-18974)
+* {HubNameStart} now uses system crypto-policies in nginx (AAP-18974).
 
 // Event-Driven Ansible
 == {EDAName}
 
-* Fixed an error that caused a manual installation failure when pinning {EDAName} to an older version (AAP-19399)
+* Fixed an error that caused a manual installation failure when pinning {EDAName} to an older version (AAP-19399).
 
 == Related RPM and container releases for bundle installer
 

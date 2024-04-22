@@ -6,17 +6,17 @@ link:https://access.redhat.com/errata/RHBA-2023:5653[RHBA-2023:5653]
 
 == General
 
-* Updated ansible-lint to include an offline mode, which is enabled by default, to prevent outbound network calls (AAH-2606)
+* Updated ansible-lint to include an offline mode, which is enabled by default, to prevent outbound network calls (AAH-2606).
 
 //Automation controller
 == {ControllerNameStart}
 
-* Fixed settings lookup to no longer leave some services in a `supervisord` `FATAL` unresponsive state (AAP-16460)
+* Fixed settings lookup to no longer leave some services in a `supervisord` `FATAL` unresponsive state (AAP-16460).
 
-* Replaced the SQL commands for creating a partition with the use of `ATTACH PARTITION` to avoid exclusive table lock on event tables (AAP-16350)
+* Replaced the SQL commands for creating a partition with the use of `ATTACH PARTITION` to avoid exclusive table lock on event tables (AAP-16350).
 
-* Fixed settings to allow simultaneous use of `SOCIAL_AUTH_SAML_ORGANIZATION_ATTR` and `SOCIAL_AUTH_SAML_ORGANIZATION_MAP` for a given organization (AAP-16183)
+* Fixed settings to allow simultaneous use of `SOCIAL_AUTH_SAML_ORGANIZATION_ATTR` and `SOCIAL_AUTH_SAML_ORGANIZATION_MAP` for a given organization (AAP-16183).
 
-* Fixed Content Security Policy (CSP) to enable Pendo retrieval (AAP-16057)
+* Fixed Content Security Policy (CSP) to enable Pendo retrieval (AAP-16057).
 
-* Updated the Thycotic DevOps Secrets Vault credential plugin to allow for filtering based on `secret_field` (AAP-15695)
+* Updated the Thycotic DevOps Secrets Vault credential plugin to allow for filtering based on `secret_field` (AAP-15695).

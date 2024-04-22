@@ -8,7 +8,7 @@ link:https://access.redhat.com/errata/RHBA-2024:1672[RHBA-2024:1672]
 
 == General
 
-* Fixed an issue where worker nodes became unavailable and stuck in a running state (AAP-21828)
+* Fixed an issue where worker nodes became unavailable and stuck in a running state (AAP-21828).
 
 // AAP-21240
 * automation-controller: axios: Exposure of confidential data stored in cookies (link:https://access.redhat.com/security/cve/CVE-2023-45857[CVE-2023-45857])
@@ -59,15 +59,15 @@ link:https://access.redhat.com/errata/RHBA-2024:1672[RHBA-2024:1672]
 //Automation controller
 == {ControllerNameStart}
 
-* The update {ExecEnvShort} image no longer fails with jobs that use the previous image (AAP-21733)
+* The update {ExecEnvShort} image no longer fails with jobs that use the previous image (AAP-21733).
 
-* Replaced string validation of English literals with error codes to allow for universal validation and comparison (AAP-21721)
+* Replaced string validation of English literals with error codes to allow for universal validation and comparison (AAP-21721).
 
-* The dispatcher now appropriately ends child processes when the dispatcher terminates (AAP-21049)
+* The dispatcher now appropriately ends child processes when the dispatcher terminates (AAP-21049).
 
-* Fixed a bug where schedule prompted variables and survey answers were reset in edit mode when changing one of the basic form fields (AAP-20967)
+* Fixed a bug where schedule prompted variables and survey answers were reset in edit mode when changing one of the basic form fields (AAP-20967).
 
-* The upgrade from Ansible Tower 3.8.6 to {PlatformNameShort} 2.4 no longer fails after a database schema migration (AAP-19738)
+* The upgrade from Ansible Tower 3.8.6 to {PlatformNameShort} 2.4 no longer fails after a database schema migration (AAP-19738).
 
-* Fixed a bug in {OCPShort} deployments that caused the controller task container to restart (AAP-21308)
+* Fixed a bug in {OCPShort} deployments that caused the controller task container to restart (AAP-21308).
 

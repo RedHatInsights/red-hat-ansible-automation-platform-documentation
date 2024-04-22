@@ -3,7 +3,7 @@
 [[hub-464-intro]]
 = {HubNameStart}
 
-{HubNameStart} allows you to discover and use new certified automation content from Red Hat Ansible and Certified Partners. On {HubNameMain}, you can discover and manage Ansible Collections, which is supported automation content developed by both partners and Red Hat for use cases such as cloud automation, network automation, security automation, and more.
+{HubNameStart} enables you to discover and use new certified automation content, such as Ansible Collections, from Red Hat Ansible and Certified Partners.
 
 .New features and enhancements
 

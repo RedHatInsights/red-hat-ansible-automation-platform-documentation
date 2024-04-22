@@ -9,32 +9,32 @@ link:https://access.redhat.com/errata/RHBA-2023:4621[RHBA-2023:4621]
 
 * automation controller: Html injection in custom login info (link:https://access.redhat.com/security/cve/CVE-2023-3971[CVE-2023-3971])
 
-* Organization admin users are no longer shown an error on the Instances list (AAP-11195)
+* Organization admin users are no longer shown an error on the Instances list (AAP-11195).
 
-* Fixed the workflow job within the workflow approval to display the correct details (AAP-11433)
+* Fixed the workflow job within the workflow approval to display the correct details (AAP-11433).
 
-* Credential name search in the ad hoc commands prompt no longer requires case-sensitive input (AAP-11442)
+* Credential name search in the ad hoc commands prompt no longer requires case-sensitive input (AAP-11442).
 
-* The *Back to list* button in the controller UI now maintains previous search filters (AAP-11527)
+* The *Back to list* button in the controller UI now maintains previous search filters (AAP-11527).
 
-* *Topology view* and *Instances* are only available as sidebar menu options to System Administrators and System Auditors (AAP-11585)
+* *Topology view* and *Instances* are only available as sidebar menu options to System Administrators and System Auditors (AAP-11585).
 
-* Fixed the frequency of the scheduler to run on the correct day of the week as specified by the user (AAP-11776)
+* Fixed the frequency of the scheduler to run on the correct day of the week as specified by the user (AAP-11776).
 
-* Fixed an issue with slow database UPDATE statements when using nested tasks (include_tasks) causing task manager timeout (AAP-12586)
+* Fixed an issue with slow database UPDATE statements when using nested tasks (include_tasks) causing task manager timeout (AAP-12586).
 
-* Added the ability to add execution and hop nodes to VM-based controller installations from the UI (AAP-12849)
+* Added the ability to add execution and hop nodes to VM-based controller installations from the UI (AAP-12849).
 
-* Added the `awx-manage` command for creating future events table partitions (AAP-12907)
+* Added the `awx-manage` command for creating future events table partitions (AAP-12907).
 
-* Re-enabled Pendo support by providing the correct Pendo API key (AAP-13415)
+* Re-enabled Pendo support by providing the correct Pendo API key (AAP-13415).
 
-* Added the ability to filter teams by using partial names in the dialog for granting teams access to a resource (AAP-13557)
+* Added the ability to filter teams by using partial names in the dialog for granting teams access to a resource (AAP-13557).
 
-* Fixed a bug where a weekly rrule string without a BYDAY value would result in the UI throwing a TypeError (AAP-13670)
+* Fixed a bug where a weekly rrule string without a BYDAY value would result in the UI throwing a TypeError (AAP-13670).
 
-* Fixed a server error that happened when deleting workflow jobs ran before event partitioning migration (AAP-13806)
+* Fixed a server error that happened when deleting workflow jobs ran before event partitioning migration (AAP-13806).
 
-* Added API reference documentation for the new bulk API endpoint (AAP-13980)
+* Added API reference documentation for the new bulk API endpoint (AAP-13980).
 
-* Fixed an issue where related items were not visible in some cases. For example, job template instance groups, organization galaxy credentials, and organization instance groups (AAP-14057)
+* Fixed an issue where related items were not visible in some cases. For example, job template instance groups, organization galaxy credentials, and organization instance groups (AAP-14057).

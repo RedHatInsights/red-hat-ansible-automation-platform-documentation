@@ -8,26 +8,26 @@ link:https://access.redhat.com/errata/RHBA-2023:7460[RHBA-2023:7460]
 
 == General
 
-* Fixed an error which caused the incorrect target database to be selected when restoring {EDAName} from a backup (AAP-18151)
+* Fixed an error which caused the incorrect target database to be selected when restoring {EDAName} from a backup (AAP-18151).
 
-* Postgres tasks which create users in FIPS environments now use `scram-sha-256` (AAP-17516)
+* Postgres tasks which create users in FIPS environments now use `scram-sha-256` (AAP-17516).
 
-* All {EDAName} services are enabled after installation is complete (AAP-17426)
+* All {EDAName} services are enabled after installation is complete (AAP-17426).
 
-* Ensure all backup and restore staged files and directories are cleaned up before running a backup or restore. You must also mark the files for deletion after a backup or restore (AAP-16101)
+* Ensure all backup and restore staged files and directories are cleaned up before running a backup or restore. You must also mark the files for deletion after a backup or restore (AAP-16101).
 
-* Updated nginx to 1.22 (AAP-15962)
+* Updated nginx to 1.22 (AAP-15962).
 
-* Added a task to VMs that will run the `awx-manage` command to pre-create events table partitions before executing `pg_dump` and added a variable for the default number of hours to pre-create (AAP-15920)
+* Added a task to VMs that will run the `awx-manage` command to pre-create events table partitions before executing `pg_dump` and added a variable for the default number of hours to pre-create (AAP-15920).
 
 // Event-Driven Ansible
 == {EDAName}
 
-* Fixed the {ControllerName} URL check when installing {EDAName} without controller (AAP-18169)
+* Fixed the {ControllerName} URL check when installing {EDAName} without controller (AAP-18169).
 
-* Added a separate worker queue for {EDAName} activations to not interfere with application tasks such as project updates (AAP-14743)
+* Added a separate worker queue for {EDAName} activations to not interfere with application tasks such as project updates (AAP-14743).
 
-== Related RPM and container releases for bundle installer
+== Related RPM and container releases for bundle installer.
 
 * link:https://access.redhat.com/errata/RHSA-2023:7517[RHSA-2023:7517]
 * link:https://access.redhat.com/errata/RHBA-2023:7460[RHBA-2023:7460]

@@ -7,4 +7,4 @@ link:https://access.redhat.com/errata/RHBA-2023:4288[RHBA-2023:4288]
 //Automation hub
 == {HubNameStart}
 
-* Fixed issue using gpg key with passphrase for signing services (AAH-2445)
+* Fixed issue by using `gpg` key with passphrase for signing services (AAH-2445).

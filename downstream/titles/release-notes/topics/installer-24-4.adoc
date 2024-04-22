@@ -8,17 +8,17 @@ link:https://access.redhat.com/errata/RHBA-2024:0104[RHBA-2024:0104]
 
 == General
 
-* Fixed conditional code statements to align with changes from ansible-core issue #82295 (AAP-19099)
+* Fixed conditional code statements to align with changes from ansible-core issue #82295 (AAP-19099).
 
-* Fixed an issue which caused the 'update-ca-trust' handler to be skipped for execution nodes in controller (AAP-18911)
+* Fixed an issue which caused the `update-ca-trust` handler to be skipped for execution nodes in controller (AAP-18911).
 
-* Improved the error pages for {ControllerName} (AAP-18840)
+* Improved the error pages for {ControllerName} (AAP-18840).
 
-* Implemented 'libffi' fix to avoid 'uWSGI' core dumps on failed import (AAP-18196)
+* Implemented `libffi` fix to avoid `uWSGI` core dumps on failed import (AAP-18196).
 
-* Fixed an issue with checking the license type following an upgrade caused by earlier incomplete upgrade (AAP-17615)
+* Fixed an issue with checking the license type following an upgrade caused by earlier incomplete upgrade (AAP-17615).
 
-* Postgres certificates are now temporarily copied when checking the Postgres version for SSL mode 'verify-full' (AAP-15374)
+* Postgres certificates are now temporarily copied when checking the Postgres version for SSL mode `verify-full` (AAP-15374).
 
 == Related RPM and container releases for bundle installer
 

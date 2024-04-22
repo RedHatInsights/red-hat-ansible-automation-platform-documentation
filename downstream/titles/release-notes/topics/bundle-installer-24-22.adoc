@@ -13,6 +13,6 @@ link:https://access.redhat.com/errata/RHBA-2023:5812[RHBA-2023:5812]
 //Automation controller
 == {ControllerNameStart}
 
-* Added a new *Subscription Usage* page to the controller UI to view historical usage of licenses (AAP-16983)
+* Added a new *Subscription Usage* page to the controller UI to view historical usage of licenses (AAP-16983).
 
 * automation-controller: Django: Potential denial of service vulnerability in django.utils.encoding.uri_to_iri() (link:https://access.redhat.com/security/cve/CVE-2023-41164[CVE-2023-41164])

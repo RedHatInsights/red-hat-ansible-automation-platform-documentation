@@ -11,33 +11,33 @@ link:https://access.redhat.com/errata/RHBA-2023:4782[RHBA-2023:4782]
 
 * automation-controller: python-django: Potential denial-of-service vulnerability in file uploads (link:https://access.redhat.com/security/cve/CVE-2023-24580[CVE-2023-24580])
 
-* Changing credential types by using the drop-down list in the *Launch prompt* window no longer causes the screen to disappear (AAP-11444)
+* Changing credential types by using the drop-down list in the *Launch prompt* window no longer causes the screen to disappear (AAP-11444).
 
-* Upgraded python dependencies which include upgrades from Django 3.2 to 4.2.3, psycopg2 to psycopg3, and additional libraries as needed. Also added a new setting in the UI exposing the `CSRF_TRUSTED_ORIGIN` settings (AAP-12345)
+* Upgraded python dependencies which include upgrades from Django 3.2 to 4.2.3, psycopg2 to psycopg3, and additional libraries as needed. Also added a new setting in the UI exposing the `CSRF_TRUSTED_ORIGIN` settings (AAP-12345).
 
-* Fixed slow database UPDATE statements on the job events table which could cause a task manager timeout (AAP-12586)
+* Fixed slow database UPDATE statements on the job events table which could cause a task manager timeout (AAP-12586).
 
-* Fixed an issue where adding a new label to a job through the *Prompt On Launch* option would not add the label to the job details (AAP-14204)
+* Fixed an issue where adding a new label to a job through the *Prompt On Launch* option would not add the label to the job details (AAP-14204).
 
-* Added `noopener` and `noreferrer` attributes to controller UI links that were missing these attributes (AAP-14345)
+* Added `noopener` and `noreferrer` attributes to controller UI links that were missing these attributes (AAP-14345).
 
-* Fixed the broken *User Guide* link in the *Edit Subscription Details* page (AAP-14375)
+* Fixed the broken *User Guide* link in the *Edit Subscription Details* page (AAP-14375).
 
-* Turned off auto-complete on the remaining controller UI forms that were missing that attribute (AAP-14442)
+* Turned off auto-complete on the remaining controller UI forms that were missing that attribute (AAP-14442).
 
-* The *Add* button on the credentials page is now accessible for users with the correct permissions (AAP-14525)
+* The *Add* button on the credentials page is now accessible for users with the correct permissions (AAP-14525).
 
-* Fixed an unexpected error that occurred when adding a new host while using a manifest with size 10 (AAP-14675)
+* Fixed an unexpected error that occurred when adding a new host while using a manifest with size 10 (AAP-14675).
 
-* Applied environment variables from the `AWX_TASK_ENV` setting when running credential lookup plugins (AAP-14683)
+* Applied environment variables from the `AWX_TASK_ENV` setting when running credential lookup plugins (AAP-14683).
 
-* Interrupted jobs (such as canceled jobs) no longer clear facts from hosts if the job ran on an execution node (AAP-14878)
+* Interrupted jobs (such as canceled jobs) no longer clear facts from hosts if the job ran on an execution node (AAP-14878).
 
-* Using a license that is missing a `usage` attribute no longer returns a 400 error (AAP-14880)
+* Using a license that is missing a `usage` attribute no longer returns a 400 error (AAP-14880).
 
-* Fixed sub-keys under `data` from HashiCorp Vault Secret Lookup responses to check for secrets, if found (AAP-14946)
+* Fixed sub-keys under `data` from HashiCorp Vault Secret Lookup responses to check for secrets, if found (AAP-14946).
 
-* Fixed Ansible facts to retry saving to hosts if there is a database deadlock (AAP-15021)
+* Fixed Ansible facts to retry saving to hosts if there is a database deadlock (AAP-15021).
 
 //Event-Driven Ansible
 == {EDAName}
@@ -48,40 +48,40 @@ link:https://access.redhat.com/errata/RHBA-2023:4782[RHBA-2023:4782]
 
 * python3-requests/python39-requests: Unintended leak of Proxy-Authorization header (link:https://access.redhat.com/security/cve/CVE-2023-32681[CVE-2023-32681])
 
-* Contributor and editor roles now have permissions to access users and set the AWX token (AAP-11573)
+* Contributor and editor roles now have permissions to access users and set the AWX token (AAP-11573).
 
-* The onboarding wizard now requests controller token creation (AAP-11907)
+* The onboarding wizard now requests controller token creation (AAP-11907).
 
-* Corrected the filtering capability of the *Rule Audit* screens so that a search yields results with the `starts with` function (AAP-11987)
+* Corrected the filtering capability of the *Rule Audit* screens so that a search yields results with the `starts with` function (AAP-11987).
 
-* Enabling or disabling rulebook activation no longer increases the restarts counter by 1 (AAP-12042)
+* Enabling or disabling rulebook activation no longer increases the restarts counter by 1 (AAP-12042).
 
-* Filtering by a text string now displays all applicable items in the UI, including those that are not visible in the list at that time (AAP-12446)
+* Filtering by a text string now displays all applicable items in the UI, including those that are not visible in the list at that time (AAP-12446).
 
-* Audit records are no longer missing when running activations with multiple jobs (AAP-12522)
+* Audit records are no longer missing when running activations with multiple jobs (AAP-12522).
 
-* The event payload is no longer missing key attributes when a job template fails (AAP-12529)
+* The event payload is no longer missing key attributes when a job template fails (AAP-12529).
 
-* Fixed the Git token leak that occurs when importing a project fails (AAP-12767)
+* Fixed the Git token leak that occurs when importing a project fails (AAP-12767).
 
-* The restart policy in Kubernetes (k8s) now restarts a successful activation that is incorrectly marked as failed (AAP-12862)
+* The restart policy in Kubernetes (k8s) now restarts a successful activation that is incorrectly marked as failed (AAP-12862).
 
-* Activation statuses are now reported correctly, whether you are disabling or enabling them (AAP-12896)
+* Activation statuses are now reported correctly, whether you are disabling or enabling them (AAP-12896).
 
-* When the `run_job_template` action fails, ansible-rulebook prints an error log in the activation output and creates an entry in rule audit so the user is alerted that the rule has failed (AAP-12909)
+* When the `run_job_template` action fails, ansible-rulebook prints an error log in the activation output and creates an entry in rule audit so the user is alerted that the rule has failed (AAP-12909).
 
-* When a user tries to bulk delete rulebook activations from the list, the request now completes successfully and consistently (AAP-13093)
+* When a user tries to bulk delete rulebook activations from the list, the request now completes successfully and consistently (AAP-13093).
 
-* The *Rulebook Activation* link now functions correctly in the *Rule Audit Detail* UI (AAP-13182)
+* The *Rulebook Activation* link now functions correctly in the *Rule Audit Detail* UI (AAP-13182).
 
-* The ansible-rulebook now only connects to the controller if the rulebook being processed has a `run_job_template` action.(AAP-13209)
+* The ansible-rulebook now only connects to the controller if the rulebook being processed has a `run_job_template` action (AAP-13209).
 
-* Fixed a bug where some audit rule records had the wrong rulebook link (AAP-13844)
+* Fixed a bug where some audit rule records had the wrong rulebook link (AAP-13844).
 
-* Fixed a bug where only the first 10 audit rules had the right link (AAP-13845)
+* Fixed a bug where only the first 10 audit rules had the right link (AAP-13845).
 
-* Before this update, project credentials could not be updated if there was a change to the credential used in the project. With this update credentials can be updated in a project with a new or different credential (AAP-13983)
+* Before this update, project credentials could not be updated if there was a change to the credential used in the project. With this update, credentials can be updated in a project with a new or different credential (AAP-13983).
 
-* The *User Access* section of the navigation panel no longer disappears after creating a decision environment (AAP-14273)
+* The *User Access* section of the navigation panel no longer disappears after creating a decision environment (AAP-14273).
 
-* Fixed a bug where filtering for audit rules did not work properly on {OCPShort} (AAP-14512)
+* Fixed a bug where filtering for audit rules did not work properly on {OCPShort} (AAP-14512).

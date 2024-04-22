@@ -3,7 +3,7 @@
 [[docs-2.4-intro]]
 = {PlatformNameShort} Documentation
 
-The documentation set for {PlatformName} 2.4 has had significant updates to improve the experience for our customers and the Ansible community.
+{PlatformName} 2.4 documentation includes significant feature updates as well as documentation enhancements and offers an improved user experience. 
 
 .New features and enhancements
 
