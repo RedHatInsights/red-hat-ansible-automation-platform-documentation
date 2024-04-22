@@ -16,7 +16,7 @@ Use the acl_manager role to create a new firewall rule for blocking a source IP 
 
 .Prerequisites
 
-* You have installed Ansible 2.9 or later
+* You have installed the latest version of ansible-core.
 * You have access to the Check Point Management server to enforce the new policies
 
 .Procedure

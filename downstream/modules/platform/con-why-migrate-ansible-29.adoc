@@ -1,8 +1,8 @@
 [id="con-why-migrate-ansible-29"]
 
-= Migrating to Ansible Engine 2.9 images using {Builder}
+= Migrating Ansible Engine images using {Builder}
 
-To migrate Ansible Engine 2.9 images for use with {PlatformNameShort} {PlatformVers}, use the `ansible-builder` tool to automate the process of rebuilding images (including its custom plugins and dependencies) for use with {ExecEnvName}.
+To migrate previous Ansible Engine images for use with {PlatformNameShort} {PlatformVers}, use the `ansible-builder` tool to automate the process of rebuilding images (including its custom plugins and dependencies) for use with {ExecEnvName}.
 
 [role="_additional-resources"]
 .Additional resources

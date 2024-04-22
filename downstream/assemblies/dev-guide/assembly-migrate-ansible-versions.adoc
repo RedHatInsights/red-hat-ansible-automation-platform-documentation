@@ -11,7 +11,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-Migrating between versions of Ansible Core requires you to update your playbooks, plugins and other parts of your Ansible infrastructure to ensure they work with the latest version. This process requires that changes are validated against the updates made to each successive version of Ansible Core. If you intend to migrate from Ansible 2.9 to Ansible 2.11, you first need to verify that you meet the requirements of Ansible 2.10, and from there make updates to 2.11.
+Migrating between versions of Ansible Core requires you to update your playbooks, plugins and other parts of your Ansible infrastructure to ensure they work with the latest version. This process requires that changes are validated against the updates made to each successive version of Ansible Core. If you intend to migrate from earlier versions of Ansible to Ansible-core 2.15, you first need to verify that you meet the requirements of the Ansible version that follows your version, and from there make successive updates to 2.15.
 
 == Ansible Porting Guides
 

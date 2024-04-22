@@ -16,7 +16,7 @@ h| Subscription | Valid {PlatformName} |
 
 h| OS | {RHEL} 8.6 or later 64-bit (x86, ppc64le, s390x, aarch64) |{PlatformName} is also supported on OpenShift, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform] for more information.
 
-h| Ansible | version 2.9 | {PlatformNameShort} ships with execution environments that contain ansible-core {AnsibleCoreVers}.
+h| Ansible | version 2.15 | {PlatformNameShort} ships with execution environments that contain ansible-core {AnsibleCoreVers}.
 
 h| Python | 3.9 or later |
 

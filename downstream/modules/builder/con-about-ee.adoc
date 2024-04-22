@@ -9,7 +9,7 @@ All automation in {PlatformName} runs on container images called {ExecEnvName}.
 
 An {ExecEnvNameSing} should contain the following:
 
-* Ansible 2.9 or Ansible Core 2.11-2.15
+* Ansible Core 2.15 or later
 * Python 3.8-3.11
 * {Runner}
 * Ansible content collections and their dependencies

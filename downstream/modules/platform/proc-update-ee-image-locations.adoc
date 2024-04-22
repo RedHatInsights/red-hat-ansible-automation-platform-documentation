@@ -33,8 +33,6 @@ control_plane_execution_environment: 'automationhub.example.org/ee-supported-rhe
 global_job_execution_environments:
   - name: "Default execution environment"
     image: "automationhub.example.org/ee-supported-rhel8:latest"
-  - name: "Ansible Engine 2.9 execution environment"
-    image: "automationhub.example.org/ee-29-rhel8:latest"
   - name: "Minimal execution environment"
     image: "automationhub.example.org/ee-minimal-rhel8:latest"
 ----

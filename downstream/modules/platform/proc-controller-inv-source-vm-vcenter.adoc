@@ -19,7 +19,7 @@ For more information on these variables, see the link:https://github.com/ansible
 
 [NOTE]
 ====
-From Ansible 2.9 VMWare properties have changed from lower case to camelCase. 
+VMWare properties have changed from lower case to camelCase. 
 {ControllerNameStart} provides aliases for the top-level keys, but lower case keys in nested properties have been discontinued.
 For a list of valid and supported properties, refer to link:https://docs.ansible.com/ansible/latest/collections/community/vmware/docsite/vmware_scenarios/vmware_inventory_vm_attributes.html[Using Virtual machine attributes in VMware dynamic inventory plugin].
 ====

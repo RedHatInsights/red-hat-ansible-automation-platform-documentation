@@ -10,7 +10,7 @@ You can create your own Collections locally with the {Galaxy} CLI tool. You can 
 
 .Prerequisites
 
-* You have Ansible version 2.9 or newer installed in your development environment.
+* You have Ansible-core version 2.15 or newer installed in your development environment.
 
 
 .Procedure
