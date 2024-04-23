@@ -2,7 +2,7 @@
 // For each release, make a copy of assembly-rn-template.adoc, rename and save as instructed in the template and add an include statement to this file.
 include::attributes/attributes.adoc[]
 
-= {PlatformName} 2.4 Release Notes
+= {PlatformName} Release Notes
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
