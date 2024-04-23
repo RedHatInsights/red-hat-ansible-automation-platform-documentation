@@ -9,7 +9,6 @@ The data can be used to analyze events in the infrastructure, monitor for anomal
 The types of data that are most useful to {ControllerName} are job fact data, job events or job runs, activity stream data, and log messages. 
 The data is sent in JSON format over a HTTP connection using minimal service-specific adjustments engineered in a custom handler or through an imported library.
 
-Installing {ControllerName} installs a newer version of `rsyslog`, which replaces the version that comes with the RHEL base. 
 The version of `rsyslog` that is installed by {ControllerName} does not include the following `rsyslog` modules:
 
 * rsyslog-udpspoof.x86_64
@@ -19,12 +18,7 @@ After installing {ControllerName}, you must only use the {ControllerName} provid
 
 If you already use `rsyslog` for logging system logs on the {ControllerName} instances, you can continue to use `rsyslog` to handle logs from outside of {ControllerName} by running a separate `rsyslog` process (using the same version of rsyslog that {ControllerName} uses), and pointing it to a separate `/etc/rsyslog.conf` file.
 
-[NOTE]
-====
-For systems that use `rsyslog` outside of {ControllerName} (on the {ControllerName} VM or machine), you must also consider any conflict that might arise from also using the new version of `rsyslog` that comes with {ControllerName}.
-====
-
-Use the  `/api/v2/settings/logging/` endpoint to configure how the {ControllerName} `rsyslog` process handles messages that have not yet been sent in the event that your external logger goes offline:
+Use the `/api/v2/settings/logging/` endpoint to configure how the {ControllerName} `rsyslog` process handles messages that have not yet been sent in the event that your external logger goes offline:
 
 * `LOG_AGGREGATOR_MAX_DISK_USAGE_GB`: Specifies the amount of data to store (in gigabytes) during an outage of the external log aggregator (defaults to 1). 
 Equivalent to the `rsyslogd queue.maxdiskspace` setting.
