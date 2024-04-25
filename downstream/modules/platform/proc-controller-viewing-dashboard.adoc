@@ -60,7 +60,7 @@ The *Settings* page allows administrators to configure the following settings:
 * System-level attributes
 * Customize the UI, and product license information
 
-For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-config[{ControllerNameStart} Configuration] in the _{ControllerAG}_.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#controller-config[{ControllerNameStart} Configuration] in the _{ControllerAG}_.
 
 [NOTE]
 ====

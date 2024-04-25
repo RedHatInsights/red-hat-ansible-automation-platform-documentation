@@ -8,4 +8,4 @@ include::eda/ref-eda-controller-tasks.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
 .Next steps
-* For further details on using Event-Driven Ansible controller, see the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/event-driven_ansible_controller_user_guide/index[Event-Driven Ansible controller User's Guide].
+* For further details on using Event-Driven Ansible controller, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/event-driven_ansible_controller_user_guide/index[Event-Driven Ansible controller User's Guide].

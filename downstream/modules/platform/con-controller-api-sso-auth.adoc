@@ -11,5 +11,5 @@ If you click that option, it redirects you to the Identity Provider, in this cas
 
 .Additional resources
 
-For the various types of supported SSO authentication methods, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#assembly-controller-set-up-social-authentication[Setting up social authentication] and link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-set-up-enterprise-authentication[Setting up enterprise authentication] in the _{ControllerAG}_.
+For the various types of supported SSO authentication methods, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#assembly-controller-set-up-social-authentication[Setting up social authentication] and link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#controller-set-up-enterprise-authentication[Setting up enterprise authentication] in the _{ControllerAG}_.
 

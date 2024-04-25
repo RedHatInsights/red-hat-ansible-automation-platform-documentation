@@ -71,5 +71,5 @@ The default value is `awx_session_id` which you can see later in the `Set-Cookie
 [NOTE]
 ====
 You can change the session expiration time by specifying it in the `SESSION_COOKIE_AGE` parameter. 
-For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#controller-work-with-session-limits[Working with session limits].
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#controller-work-with-session-limits[Working with session limits].
 ====

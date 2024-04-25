@@ -7,7 +7,7 @@ OAuth 2 authentication is commonly used when interacting with the {ControllerNam
 Similar to Basic authentication, you are given an OAuth 2 token with each API request through the Authorization header. 
 Unlike Basic authentication, OAuth 2 tokens have a configurable timeout and are scopable. 
 Tokens have a configurable expiration time and can be easily revoked for one user or for the entire {ControllerName} system by an administrator if needed. 
-You can do this with the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-revoke-oauth2-token[revoke_oauth2_tokens] management command, or by using the API as explained in link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-revoke-access-token[Revoke an access token].
+You can do this with the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#ref-controller-revoke-oauth2-token[revoke_oauth2_tokens] management command, or by using the API as explained in link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#ref-controller-revoke-access-token[Revoke an access token].
 
 The different methods for obtaining OAuth2 access tokens in {ControllerName} include the following:
 
@@ -17,7 +17,7 @@ The different methods for obtaining OAuth2 access tokens in {ControllerName} inc
 * Application token: Authorization Code grant type
 
 A user needs to create an OAuth 2 token in the API or in the *Users* > *Tokens* tab of the {ControllerName} UI.
-For more information about creating tokens through the UI, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-user-tokens[Users - Tokens].
+For more information about creating tokens through the UI, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-user-tokens[Users - Tokens].
 
 For the purpose of this example, use the PAT method for creating a token in the API.
 After you create it, you can set the scope.
@@ -25,7 +25,7 @@ After you create it, you can set the scope.
 [NOTE]
 ====
 You can configure the expiration time of the token system-wide.
-For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#ref-controller-use-oauth2-token-system[Using OAuth 2 Token System for Personal Access Tokens].
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#ref-controller-use-oauth2-token-system[Using OAuth 2 Token System for Personal Access Tokens].
 ====
 
 Token authentication is best used for any programmatic use of the {ControllerName} API, such as Python scripts or tools such as curl.
@@ -88,7 +88,7 @@ print(json.dumps(response.json(), indent=4, sort_keys=True))
 
 .Additional resources
 
-For more information about obtaining OAuth2 access tokens and how to use OAuth 2 in the context of external applications, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#assembly-controller-token-based-authentication[Token-Based Authentication] in the _{ControllerAG}_.
+For more information about obtaining OAuth2 access tokens and how to use OAuth 2 in the context of external applications, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#assembly-controller-token-based-authentication[Token-Based Authentication] in the _{ControllerAG}_.
 
 [discrete]
 == Enabling external users to create OAuth 2 tokens

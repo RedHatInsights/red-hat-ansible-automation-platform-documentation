@@ -48,5 +48,5 @@ automationedacontroller_controller_verify_ssl = true
 
 [role="_additional-resources"]
 .Additional resources
-* For more details on {EDAName}, see the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/getting_started_with_event-driven_ansible_guide/index[Getting Started with Event-Driven Ansible Guide].
+* For more details on {EDAName}, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_event-driven_ansible_guide/index[Getting Started with Event-Driven Ansible Guide].
 

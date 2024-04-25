@@ -87,7 +87,7 @@ $ curl -O https://raw.githubusercontent.com/mkanoor/receptor_catalog_installer_s
 You can use the included `install.sh` to register your system through Red Hat Subscription Manager and install required versions of Ansible, Python, and the Ansible Role.
 
 .Prerequisites
-The `install.sh` script requires a valid Red Hat username and password. See https://access.redhat.com/documentation/en-us/red_hat_subscription_management/1/[Red Hat Subscription Management] documentation for more information on registering a system.
+The `install.sh` script requires a valid Red Hat username and password. See {BaseURL}/red_hat_subscription_management/1/[Red Hat Subscription Management] documentation for more information on registering a system.
 
 [NOTE]
 ====

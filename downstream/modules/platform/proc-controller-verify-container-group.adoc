@@ -7,7 +7,7 @@ To verify the deployment and termination of your container:
 .Procedure
 
 . Create a mock inventory and associate the container group to it by populating the name of the container group in the *Instance Group* field. 
-For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-adding-new-inventory[Add a new inventory] in the _{ControllerUG}_.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-adding-new-inventory[Add a new inventory] in the _{ControllerUG}_.
 +
 image::ag-inventories-create-new-test-inventory.png[Create test inventory]
 +

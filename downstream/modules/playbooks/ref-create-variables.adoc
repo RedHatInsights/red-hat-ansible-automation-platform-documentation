@@ -29,4 +29,4 @@ webservers:
   vars:
     ansible_user: my_server_user
 ----
-For more information about inventories and Ansible inventory variables, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/about_the_installer_inventory_file[About the Installer Inventory file] and link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars[Inventory file variables].
+For more information about inventories and Ansible inventory variables, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/about_the_installer_inventory_file[About the Installer Inventory file] and link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars[Inventory file variables].

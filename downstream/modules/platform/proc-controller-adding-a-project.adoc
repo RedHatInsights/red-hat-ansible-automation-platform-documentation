@@ -16,7 +16,7 @@ image:projects-create-new-project.png[Projects- create new project]
 * Optional: *Description*
 * *Organization* (required): A project must have at least one organization. Select one organization now to create the project. When the project is created you can add additional organizations.
 * Optional: *Execution Environment*: Enter the name of the {ExecEnvShort} or search from a list of existing ones to run this project.
-For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/upgrading-to-ees[ Migrating to Execution Environments] in the _Red Hat Ansible Automation Platform Upgrade and Migration Guide_.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/upgrading-to-ees[ Migrating to Execution Environments] in the _Red Hat Ansible Automation Platform Upgrade and Migration Guide_.
 * *Source Control Type* (required): Select an SCM type associated with this project from the menu. 
 Options in the following sections become available depending on the type chosen. 
 For more information, see xref:proc-projects-manage-playbooks-manually[Manage playbooks manually] or xref:ref-projects-manage-playbooks-with-source-control[Manage playbooks using source control].

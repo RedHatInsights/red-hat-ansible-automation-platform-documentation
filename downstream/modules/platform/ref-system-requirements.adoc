@@ -27,7 +27,7 @@ h| Database | PostgreSQL version 13 |
 
 The following are necessary for you to work with project updates and collections:
 
-* Ensure that the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/ref-network-ports-protocols_planning[network ports and protocols] listed in _Table 5.9. Automation Hub_ are available for successful connection and download of collections from {HubName} or {Galaxy} server.
+* Ensure that the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/ref-network-ports-protocols_planning[network ports and protocols] listed in _Table 5.9. Automation Hub_ are available for successful connection and download of collections from {HubName} or {Galaxy} server.
 * Disable SSL inspection either when using self-signed certificates or for the Red Hat domains.
 
 [NOTE]

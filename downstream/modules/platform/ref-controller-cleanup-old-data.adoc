@@ -17,4 +17,4 @@ This permanently deletes the job details and job output for jobs older than a sp
 awx-manage cleanup_activitystream [--help]
 ----
 
-This permanently deletes any link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/automation_controller_user_guide/assembly-controller-user-interface#proc-controller-activity-stream[Activity stream] data older than a specific number of days.
+This permanently deletes any link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/assembly-controller-user-interface#proc-controller-activity-stream[Activity stream] data older than a specific number of days.

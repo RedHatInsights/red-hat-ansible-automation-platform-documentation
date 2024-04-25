@@ -11,7 +11,7 @@ The *Jobs* tab enables you to configure the types of modules that can be used by
 Set the configurable options from the fields provided. 
 Click the tooltip image:question_circle.png[Tool tip,15,15] icon next to the field that you need additional information about. 
 +
-For more information about configuring Galaxy settings, see the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#ref-projects-galaxy-support[Ansible Galaxy Support] section of the _{ControllerUG}_.
+For more information about configuring Galaxy settings, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#ref-projects-galaxy-support[Ansible Galaxy Support] section of the _{ControllerUG}_.
 +
 [NOTE]
 ====

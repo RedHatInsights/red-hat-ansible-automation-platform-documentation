@@ -20,4 +20,4 @@ You can use the default organization as it is initially set up and edit it later
 Only Enterprise or Premium licenses can add new organizations.
 ====
 
-Enterprise and Premium license users who want to add a new organization should see the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#assembly-controller-organizations[Organizations] section in the _{ControllerUG}_.
+Enterprise and Premium license users who want to add a new organization should see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#assembly-controller-organizations[Organizations] section in the _{ControllerUG}_.

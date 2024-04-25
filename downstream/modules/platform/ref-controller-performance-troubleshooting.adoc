@@ -27,7 +27,7 @@
 * Size of projects can impact how long it takes to start the job, as the project is updated on the control node and transferred to the execution node.
 Internal cluster routing can impact network performance. For more information, see xref:ref-controller-internal-cluster-routing[Internal cluster routing].
 * Container pull settings can impact job start time. The {ExecEnvShort} is a container that is used to run jobs within it. Container pull settings can be set to “Always”, “Never” or “If not present”. If the container is always pulled, this can cause delays.
-* Ensure that all cluster nodes, including execution, control, and the database, have been deployed in instances with storage rated to the minimum required IOPS, because the manner in which {ControllerName} runs ansible and caches event data implicates significant disk I/O. For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.3/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements#red_hat_ansible_automation_platform_system_requirements[Red Hat Ansible Automation Platform system requirements].
+* Ensure that all cluster nodes, including execution, control, and the database, have been deployed in instances with storage rated to the minimum required IOPS, because the manner in which {ControllerName} runs ansible and caches event data implicates significant disk I/O. For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/platform-system-requirements#red_hat_ansible_automation_platform_system_requirements[Red Hat Ansible Automation Platform system requirements].
 
 *Database storage does not stop growing.*
 

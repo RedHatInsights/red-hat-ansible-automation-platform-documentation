@@ -117,9 +117,9 @@ For more information about job slices, see xref:controller-job-slicing[Job Slici
 - A timeout of 0 on a job template defaults the job to the global timeout (which is no timeout by default).
 - A positive timeout sets the timeout for that job template. | Yes
 | Show Changes | Enables you to see the changes made by Ansible tasks. | Yes
-| Instance Groups | Choose link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/automation_controller_administration_guide/controller-instance-and-container-groups[Instance and Container Groups] to associate with this job template.
+| Instance Groups | Choose link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-instance-and-container-groups[Instance and Container Groups] to associate with this job template.
 If the list is extensive, use the image:examine.png[examine,15,15] icon to narrow the options.
-Job template instance groups contribute to the job scheduling criteria, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/automation_controller_administration_guide/controller-instance-and-container-groups#controller-job-runtime-behavior[Job Runtime Behavior] and link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/automation_controller_administration_guide/controller-instance-and-container-groups#controller-control-job-run[Control where a job runs] for rules.
+Job template instance groups contribute to the job scheduling criteria, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-instance-and-container-groups#controller-job-runtime-behavior[Job Runtime Behavior] and link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-instance-and-container-groups#controller-control-job-run[Control where a job runs] for rules.
 A System Administrator must grant you or your team permissions to be able to use an instance group in a job template.
 Use of a container group requires admin rights. a| - Yes. 
 
@@ -156,7 +156,7 @@ See xref:ref-controller-credential-types[Credential Types] to create one.
 * *Concurrent Jobs*: If checked, you are allowing jobs in the queue to run simultaneously if not dependent on one another. Check this box if you want to run job slices simultaneously. For more information, see xref:controller-capacity-determination[{ControllerNameStart} capacity determination and job impact].
 * *Enable Fact Storage*: If checked, {ControllerName} stores gathered facts for all hosts in an inventory related to the job running.
 * *Prevent Instance Group Fallback*: Check this option to allow only the instance groups listed in the *Instance Groups* field to run the job.
-If clear, all available instances in the execution pool are used based on the hierarchy described in link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index[Control where a job runs].
+If clear, all available instances in the execution pool are used based on the hierarchy described in link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index[Control where a job runs].
 . Click btn:[Save], when you have completed configuring the details of the job template.
 
 Saving the template does not exit the job template page but advances to the *Job Template Details* tab.

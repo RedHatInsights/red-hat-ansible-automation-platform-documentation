@@ -20,7 +20,7 @@ endif::controller-GS,controller-AG[]
 ** Enter your username and password on the license page.
 ** Obtain a subscriptions manifest from the link:https://access.redhat.com/management/subscription_allocations[Subscription Allocations] page on the Red Hat Customer Portal.
 ifdef::controller-GS,controller-AG[]
-For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest] in the _{ControllerUG}_.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest] in the _{ControllerUG}_.
 endif::controller-GS,controller-AG[]
 ifdef::controller-UG[]
 For more information, see xref:proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest].
@@ -30,7 +30,7 @@ endif::controller-UG[]
 .Additional resources
 
 ifdef::controller-GS,controller-AG[]
-To understand what is supported with your subscription, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#assembly-controller-licensing[{ControllerNameStart} licensing, updates and support].
+To understand what is supported with your subscription, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#assembly-controller-licensing[{ControllerNameStart} licensing, updates and support].
 endif::controller-GS,controller-AG[]
 ifdef::controller-UG[]
 * To understand what is supported with your subscription, see xref:assembly-controller-licensing[{ControllerNameStart} licensing, updates and support].

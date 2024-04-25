@@ -30,4 +30,4 @@ For container groups, using the `max_forks` value is useful given that all jobs 
 The default `pod_spec` sets requests and not limits, so the pods can "burst" above their requested value without being throttled or reaped. 
 By setting the `max_forks value`, you can help prevent a scenario where too many jobs with large forks values get scheduled concurrently and cause the OpenShift nodes to be oversubscribed with multiple pods using more resources than their requested value.
 
-To set the maximum values for the concurrent jobs and forks in an instance group, see link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html-single/automation_controller_user_guide/index#controller-create-instance-group[Creating an instance group] in the _{ControllerUG}_.
+To set the maximum values for the concurrent jobs and forks in an instance group, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#controller-create-instance-group[Creating an instance group] in the _{ControllerUG}_.

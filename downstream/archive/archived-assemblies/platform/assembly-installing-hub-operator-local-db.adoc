@@ -89,7 +89,7 @@ If you did not specify an administrator password during configuration, one was a
 [role="_additional-resources"]
 == Additional resources
 
-* See link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.2/html/operators/index[Working with Operators in OpenShift Container Platform] for more information on running operators on OpenShift Container Platform.
+* See link:{BaseURL}/openshift_container_platform/4.2/html/operators/index[Working with Operators in OpenShift Container Platform] for more information on running operators on OpenShift Container Platform.
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

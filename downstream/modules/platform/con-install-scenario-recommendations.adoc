@@ -7,7 +7,7 @@ Before selecting your installation method for {PlatformNameShort}, review the fo
 
 * For {PlatformName} or {HubName}: Add an {HubName} host in the `[automationhub]` group.
 // Removed for AAP-20847 and until such time as a decision is made regarding database support.
-//* Internal databases `[database]` are not supported. See the link:{BaseURL}/red_hat_ansible_automation_platform/2.4/html/containerized_ansible_automation_platform_installation_guide/index[Containerized {PlatformName} Installation Guide] for further information on using the containerized installer for environments requiring a monolithc deployment. 
+//* Internal databases `[database]` are not supported. See the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/containerized_ansible_automation_platform_installation_guide/index[Containerized {PlatformName} Installation Guide] for further information on using the containerized installer for environments requiring a monolithc deployment. 
 * Do not install {ControllerName} and {HubName} on the same node for versions of {PlatformNameShort} in a production or customer environment.
 This can cause contention issues and heavy resource use.
 * Provide a reachable IP address or fully qualified domain name (FQDN) for the `[automationhub]` and `[automationcontroller]` hosts to ensure users can sync and install content from {HubName} from a different node.

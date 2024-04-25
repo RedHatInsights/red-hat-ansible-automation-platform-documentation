@@ -11,12 +11,12 @@
 
 * The following documents are created to help you install and use {EDAName}, the newest capability of {PlatformNameShort}:
 
-** link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/getting_started_with_event-driven_ansible_guide/index[Getting Started with Event-Driven Ansible]
+** link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_event-driven_ansible_guide/index[Getting Started with Event-Driven Ansible]
 
-** link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/event-driven_ansible_controller_user_guide/index[Event Driven Ansible User Guide]
+** link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/event-driven_ansible_controller_user_guide/index[Event Driven Ansible User Guide]
 
-In addition, sections of the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_planning_guide/index[Ansible Automation Platform Planning Guide]
-and the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide] are updated to include instructions for planning and installing {EDAName}.
+In addition, sections of the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_planning_guide/index[Ansible Automation Platform Planning Guide]
+and the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[Ansible Automation Platform Installation Guide] are updated to include instructions for planning and installing {EDAName}.
 
 * The {HubName} documentation has had significant reorganization to combine the content spread across 9 separate documents into the following documents:
 
@@ -29,8 +29,8 @@ Use this guide to understand how to create and manage collections, content and r
 _Red Hat Ansible Automation Platform Installation Guide_::
 Use this guide to learn how to install {PlatformNameShort} based on supported installation scenarios.
 
-* The _Managing Red Hat Certified and Ansible Galaxy collections in automation hub guide_ has been moved to the link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/managing_content_in_automation_hub/index#managing-cert-valid-content[_Red Hat Certified, validated, and Ansible Galaxy content in automation hub_] topic in the _Managing content in automation hub_ guide.
+* The _Managing Red Hat Certified and Ansible Galaxy collections in automation hub guide_ has been moved to the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/managing_content_in_automation_hub/index#managing-cert-valid-content[_Red Hat Certified, validated, and Ansible Galaxy content in automation hub_] topic in the _Managing content in automation hub_ guide.
 
 * The {PlatformNameShort} 2.4 Release Notes are restructured to improve the experience for our customers and the Ansible Community. Users can now view the latest updates based on the {PlatformNameShort} versions, instead of their release timeline.
 
-* The topic link:https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/managing_content_in_automation_hub/index#repo-management[Repository management with automation hub] is created to help you create and manage custom repositories in {HubName}. This topic is found in the _Managing content in automation hub_ guide.
+* The topic link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/managing_content_in_automation_hub/index#repo-management[Repository management with automation hub] is created to help you create and manage custom repositories in {HubName}. This topic is found in the _Managing content in automation hub_ guide.
