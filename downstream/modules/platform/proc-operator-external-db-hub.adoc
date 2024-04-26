@@ -60,7 +60,7 @@ $ oc create -f external-postgres-configuration-secret.yml
 . When creating your `AutomationHub` custom resource object, specify the secret on your spec, following the example below:
 +
 ----
-apiVersion: awx.ansible.com/v1beta1
+apiVersion: automationhub.ansible.com/v1beta1
 kind: AutomationHub
 metadata:
   name: hub-dev

@@ -27,7 +27,7 @@ The external database must be a PostgreSQL database that is the version supporte
 
 .Procedure
 
-The external postgres instance credentials and connection information will need to be stored in a secret, which will then be set on the {ControllerName} spec.
+The external postgres instance credentials and connection information must be stored in a secret, which is then set on the {ControllerName} spec.
 
 . Create a `postgres_configuration_secret` .yaml file, following the template below:
 +
@@ -60,7 +60,7 @@ $ oc create -f external-postgres-configuration-secret.yml
 . When creating your `AutomationController` custom resource object, specify the secret on your spec, following the example below:
 +
 ----
-apiVersion: awx.ansible.com/v1beta1
+apiVersion: automationcontroller.ansible.com/v1beta1
 kind: AutomationController
 metadata:
   name: controller-dev
