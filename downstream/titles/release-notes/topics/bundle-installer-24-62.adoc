@@ -1,0 +1,14 @@
+// This is the release notes file for AAP 2.4 async installer release 2.4-6.2 dated April 25, 2024
+
+[id="bundle-installer-24-62"]
+
+= RHBA-2024:2074 - bundle installer release 2.4-6.2 - April 25, 2024
+
+link:https://access.redhat.com/errata/RHBA-2024:2074[RHBA-2024:2074]
+
+== General
+* Resolved a race condition that occurred when there were many nearly simultaneous uploads of the same collection. (AAH-2699)
+
+//Automation controller
+== {ControllerNameStart}
+* Fixed a database connection leak that occurred when the `wsrelay` main `asyncio` loop crashes. (AAP-22938)
