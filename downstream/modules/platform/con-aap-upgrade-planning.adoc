@@ -17,7 +17,7 @@ Before you begin the upgrade process, review the following considerations to pla
 [role="_additional-resources"]
 .Additional resources
 * link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-managing-subscriptions#controller-importing-subscriptions[Importing a subscription]
-* link:{BaseURL/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-backup-and-restore[Backup and restore]
+* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-backup-and-restore[Backup and restore]
 * link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-clustering[Clustering]
 
 [discrete]
