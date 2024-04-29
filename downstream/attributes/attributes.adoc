@@ -116,7 +116,7 @@
 :Console: console.redhat.com
 
 // Satellite attributes
-:SatelliteVers: 6.14
+:SatelliteVers: 6.15
 
 // OpenShift attributes
 :OCP: Red Hat OpenShift Container Platform
