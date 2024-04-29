@@ -42,18 +42,17 @@ There are two approaches to this, both shown in YAML format. The first one sugge
 
 . *Construct 2 groups, limit to intersection*:
 +
-[literal, options="nowrap" subs="+attributes"]
-----
-source_vars:
+`source_vars`:
 +
+----
 plugin: constructed
 strict: true
 groups:
   is_shutdown: state | default("running") == "shutdown"
   product_dev: account_alias == "product_dev"
-
-limit: is_shutdown:&product_dev
 ----
++
+`limit`: `is_shutdown:&product_dev`
 +
 This constructed inventory input creates a group for both categories and uses the `limit` (host pattern) to only return hosts that
 are in the intersection of those two groups, which is documented in link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_patterns.html[Patterns:targeting hosts and groups].
@@ -64,18 +63,17 @@ This helps with debugging, as described in xref:ref-controller-inv-debugging-tip
 +
 . *Construct 1 group, limit to group*:
 +
-[literal, options="nowrap" subs="+attributes"]
-----
-source_vars:
+`source_vars`:
 +
+----
 plugin: constructed
 strict: true
 groups:
   shutdown_in_product_dev: state | default("running") == "shutdown" and account_alias == "product_dev"
-
-limit: shutdown_in_product_dev
 ----
++
+`limit`: `shutdown_in_product_dev`
 +
 This input creates one group that only includes hosts that match both criteria. 
 The limit is then just the group name by itself, returning *host2*. 
-The same as the previous approach.
+The same as the earlier approach.

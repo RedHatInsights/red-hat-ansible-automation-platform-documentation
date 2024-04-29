@@ -3,7 +3,7 @@
 = Execution environments
 
 Unlike legacy virtual environments, {ExecEnvShort}s are container images that make it possible to incorporate system-level dependencies and collection-based content. 
-Each {ExecEnvShort} enables you to have a customized image to run jobs and contains only what is necessary when running the job.
+Each {ExecEnvShort} enables you to have a customized image to run jobs and has only what is necessary when running the job.
 
 include::platform/ref-controller-build-exec-envs.adoc[leveloffset=+1]
 include::platform/ref-controller-install-builder.adoc[leveloffset=+2]

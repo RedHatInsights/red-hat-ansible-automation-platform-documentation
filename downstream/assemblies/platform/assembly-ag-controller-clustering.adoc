@@ -4,18 +4,18 @@
 
 Clustering is sharing load between hosts. 
 Each instance must be able to act as an entry point for UI and API access. 
-This must enable the {ControllerName} administrators to use load balancers in front of as many instances as they wish and maintain good data visibility.
+This must enable the {ControllerName} administrators to use load balancers in front of as many instances as they want and keep good data visibility.
 
 [NOTE]
 ====
 Load balancing is optional, and it is entirely possible to have ingress on one or all instances as needed.
 ====
 
-Each instance must be able to join the {ControllerName} cluster and expand its ability to execute jobs. 
+Each instance must be able to join the {ControllerName} cluster and expand its ability to run jobs. 
 This is a simple system where jobs can run anywhere rather than be directed on where to run. 
-Also, clustered instances can be grouped into different pools or queues, called xref:controller-instance-groups[Instance groups].
+Also, you can group clustered instances into different pools or queues, called xref:controller-instance-groups[Instance groups].
 
-{PlatformNameShort} supports container-based clusters using Kubernetes, meaning you can install new {ControllerName} instances on this platform without any variation or diversion in functionality. 
+{PlatformNameShort} supports container-based clusters by using Kubernetes, meaning you can install new {ControllerName} instances on this platform without any variation or diversion in functionality. 
 You can create instance groups to point to a Kubernetes container. 
 For more information, see the xref:controller-instance-and-container-groups[Container and instance groups] section.
 
@@ -23,7 +23,7 @@ For more information, see the xref:controller-instance-and-container-groups[Cont
 
 The following operating systems are supported for establishing a clustered environment:
 
-* Red Hat Enterprise Linux 7 or later (RHEL8 recommended, can be either RHEL 7 or Centos 7 instances)
+* Red Hat Enterprise Linux 8 or later 
 
 [NOTE]
 ====

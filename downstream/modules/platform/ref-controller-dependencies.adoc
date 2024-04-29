@@ -124,7 +124,7 @@ Collection maintainers can verify that ansible-builder recognizes the requiremen
 
 [literal, options="nowrap" subs="+attributes"]
 ----
-$ ansible-builder introspect --sanitize ~/.ansible/collections/
+ansible-builder introspect --sanitize ~/.ansible/collections/
 ----
 ====
 

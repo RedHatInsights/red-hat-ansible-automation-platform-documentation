@@ -6,12 +6,12 @@ After you have obtained an authorized {PlatformNameShort} subscription, you must
 .Prerequisites
 
 * You have obtained a subscriptions manifest. 
-For more information, see xref:proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest].
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-obtaining-subscriptions-manifest[Obtaining a subscriptions manifest].
 
 .Procedure
 
 . Launch {ControllerName} for the first time. 
-The *Subscription Management* screen is displayed.
+The *Subscription Management* screen displays.
 +
 image::controller-gs-subscription-management.png[Subscription Management]
 +
@@ -25,7 +25,7 @@ If the *Browse* option in the *Subscription manifest* option is disabled, clear 
 ====
 +
 The subscription metadata is then retrieved from the RHSM/Satellite API, or from the manifest provided. 
-If multiple subscription counts were applied in a single installation, {ControllerName} combines the counts but uses the earliest expiration date as the expiry (at which point you must refresh your subscription).
+If many subscription counts were applied in a single installation, {ControllerName} combines the counts but uses the earliest expiration date as the expiry (at which point you must refresh your subscription).
 .. If you are using your Red Hat customer credentials, enter your username and password on the license page. 
 Use your Satellite username or password if your {ControllerName} cluster nodes are registered to Satellite with Subscription Manager. 
 After you enter your credentials, click btn:[Get Subscriptions].
@@ -58,15 +58,16 @@ You can change your analytics data collection preferences at any time.
 After your subscription is accepted, {ControllerName} displays the subscription details and opens the Dashboard. 
 To return to the Subscription settings screen from the Dashboard, select menu:Settings[Subscription settings] from the btn:[Subscription] option in the navigation panel.
 
-. Optional: To return to the Subscription settings screen from the Dashboard, select menu:Settings[Subscription settings] option in tthe navigation panel.
+. Optional: To return to the Subscription settings screen from the Dashboard, select menu:Settings[Subscription settings] option in the navigation panel.
 +
 image::controller-gs-licenseaccepted.png[Subscription Details]
 
 .Troubleshooting your subscription
 
-When your subscription expires (you can check this in the Subscription details of the Subscription settings window), you must renew it in {ControllerName} by either importing a new subcription, or seeting up a new subscription.
+When your subscription expires (you can check this in the Subscription details of the Subscription settings window), you must renew it in {ControllerName}. 
+You can do this by either importing a new subscription, or setting up a new subscription.
 
-If you encounter the "Error fetching licenses" message, check that you have the proper permissions required for the Satellite user. 
+If you meet the "Error fetching licenses" message, check that you have the proper permissions required for the Satellite user. 
 The {ControllerName} administrator requires this to apply a subscription.
 
 The Satellite username and password is used to query the Satellite API for existing subscriptions. 

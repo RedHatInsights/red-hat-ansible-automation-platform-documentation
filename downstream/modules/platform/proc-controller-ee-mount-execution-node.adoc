@@ -27,11 +27,23 @@ The allowed paths are `z`, `O`, `ro`, and `rw`.
 For example, to mount the `/foo` directory, complete the following commands:
 +
 ----
-$ sudo su 
-# mkdir /foo 
-# chmod 777 /foo 
-# semanage fcontext -a -t container_file_t "/foo(/.*)?" 
-# restorecon -vvFR /foo
+sudo su
+----
++
+---- 
+mkdir /foo 
+----
++
+----
+chmod 777 /foo 
+----
++
+----
+semanage fcontext -a -t container_file_t "/foo(/.*)?" 
+----
++
+----
+restorecon -vvFR /foo
 ----
 
 The `awx` user must be permitted to read or write in this directory at least. 

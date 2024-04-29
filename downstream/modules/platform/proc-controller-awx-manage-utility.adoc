@@ -6,7 +6,7 @@ The `awx-manage` utility supports the following options:
 
 [literal, options="nowrap" subs="+attributes"]
 ----
-$ awx-manage host_metric --csv
+awx-manage host_metric --csv
 ----
 
 This command produces host metric data, a host metrics summary file, and a cluster info file. 
@@ -14,18 +14,18 @@ To package all the files into a single tarball for distribution and sharing use:
 
 [literal, options="nowrap" subs="+attributes"]
 ----
-$ awx-manage host_metric --tarball
+awx-manage host_metric --tarball
 ----
 
 To specify the number of rows (`<n>`) to output to each file:
 
 [literal, options="nowrap" subs="+attributes"]
 ----
-$ awx-manage host_metric --tarball --rows_per_file <n>
+awx-manage host_metric --tarball --rows_per_file <n>
 ----
 
 The following is an example of a configuration file:
 
 image:ug-host-metrics-awx-manage-config.png[Configuration file]
 
-{Analytics} receives and consumes the JSON file.
+{Analytics} receives and uses the JSON file.
