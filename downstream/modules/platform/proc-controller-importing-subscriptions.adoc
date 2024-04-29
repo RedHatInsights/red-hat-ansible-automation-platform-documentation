@@ -83,7 +83,7 @@ The following Satellite roles grant proper access:
 * Manager
 
 Use the *Custom* role for your {ControllerName} integration, as it is the most restrictive. 
-For more information, see the link:{BaseURL}/red_hat_satellite/6.13/html/administering_red_hat_satellite/managing_users_and_roles_admin#Creating_and_Managing_Roles_admin[Satellite documentation] on managing users and roles.
+For more information, see the link:{BaseURL}/red_hat_satellite/{SatelliteVers}/html/administering_red_hat_satellite/managing_users_and_roles_admin#Creating_and_Managing_Roles_admin[Satellite documentation] on managing users and roles.
 
 [NOTE]
 ====
