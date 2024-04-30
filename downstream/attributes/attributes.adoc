@@ -146,28 +146,33 @@
 :MenuAM: Access Management
 
 // Automation Controller
+//The following selections will eventually become tertiary in the unified platform and require that you preface them with the snip_menu-top-ae.adoc snippet with 'include::snippets/snip_menu-top-ae.adoc[]' on one line and the attribute following on a line below the include statement.
+:MenuInfrastructureTopology: menu:Administration[Topology View]
+:MenuInfrastructureInventories: menu:Resoures[Inventories]
+:MenuInfrastructureHosts: menu:Resources[Hosts]
+:MenuInfrastructureInstanceGroups: menu:Administration[Instance Groups]
+:MenuInfrastructureInstances: menu:Administration[Instances]
+:MenuInfrastructureExecEnvironments: menu:Administration[Execution Environments]
+:MenuAMCredentials: menu:Resources[Credentials]
+:MenuAMCredentialType: menu:Administration[Credential Types]
+:MenuAEAdminActivityStream: menu:Views[Activity Stream]
+:MenuAEAdminWorkflowApprovals: menu:Views[Workflow Approvals]
+:MenuAEAdminJobNotifications: menu:Administration[Notifications]
+:MenuAEAdminManageJobs: menu:Administration[Management Jobs]
+:MenuAEAdminOauthApps: menu:Administration[OAuth Applications]
+//end of tertiary menu selections for controller
+
+//The following menu selections will fall under directly under Automation Execution in version 2.5 and do not need the snip_menu-top-ae.adoc snippet included.
 :MenuViewsDashboard: menu:Views[Dashboard]
 :MenuAEJobs: menu:Views[Jobs]
 :MenuAESchedules: menu:Views[Schedules]
-:MenuAEAdminActivityStream: menu:Views[Activity Stream]
-:MenuAEAdminWorkflowApprovals: menu:Views[Workflow Approvals]
 :MenuAETemplates: menu:Resources[Templates]
-:MenuAMCredentials: menu:Resources[Credentials]
 :MenuAEProjects: menu:Resources[Projects]
-:MenuInfrastructureInventories: menu:Resoures[Inventories]
-:MenuInfrastructureHosts: menu:Resources[Hosts]
+
 // The following Access selections will be centrally managed in the gateway in a future scoped version of the unified platform; 2.5-next or later and will need to be changed to the attributes currently defined in the Access Management selections below.
 :MenuControllerOrganizations: menu:Access[Organizations]
 :MenuControllerUsers: menu:Access[Users]
 :MenuControllerTeams: menu:Access[Teams]
-:MenuAMCredentialType: menu:Administration[Credential Types]
-:MenuAEAdminJobNotifications: menu:Administration[Notifications]
-:MenuAEAdminManageJobs: menu:Administration[Management Jobs]
-:MenuInfrastructureInstanceGroups: menu:Administration[Instance Groups]
-:MenuInfrastructureInstances: menu:Administration[Instances]
-:MenuAEAdminOauthApps: menu:Administration[Applications]
-:MenuInfrastructureExecEnvironments: menu:Administration[Execution Environments]
-:MenuInfrastructureTopology: menu:Administration[Topology View]
 :MenuAEAdminSettings: menu:Settings[]
 
 // Event Driven Ansible
@@ -181,7 +186,6 @@
 // Access Management menu selections
 // I'm not sure that EDA had these settings for 2.4 but I'm including anyway, just in case.
 // These will be the attributes for the 2.5 unified platform.
-// First include Access Management attribute
 :MenuAMAuthentication: menu:{MenuAM}[Authentication]
 :MenuAMOrganizations: menu:{MenuAM}[Organizations]
 :MenuAMTeams: menu:{MenuAM}[Teams]
@@ -191,17 +195,21 @@
 :MenuAMCredentialType: menu:{MenuAM}[Credential Types]
 
 // Automation Hub
+//The following selections will become tertiary in the future unified platform and require that you preface them with the snip_menu-top-ac.adoc snippet with 'include::snippets/snip_menu-top-ac.adoc[]' on one line and the attribute following on a line below the include statement.
+:MenuACAdminSignatureKeys: menu:Signature Keys[]
+:MenuACAdminRepositories: menu:Collection[Repositories]
+:MenuACAdminRemoteRegistries: menu:Execution Environments[Remote Registries]
+:MenuACAdminTasks: menu:Task Management[]
+:MenuACAdminCollectionApproval: menu:Collections[Approval]
+:MenuACAdminRemotes: menu:Collections[Remotes]
+//end of tertiary menu selections for hub
+
 :MenuACCollections: menu:Collections[Collections]
 :MenuACNamespaces: menu:Collections[Namespaces]
-:MenuACAdminRepositories: menu:Collection[Repositories]
-:MenuACAdminRemotes: menu:Collections[Remotes]
 :MenuACAPIToken: menu:Collections[API token]
-:MenuACAdminCollectionApproval: menu:Collections[Approval]
 :MenuACExecEnvironments: menu:Execution Environments[Execution Environments]
-:MenuACAdminRemoteRegistries: menu:Execution Environments[Remote Registries]
-:MenuACAdminTasks: menu:Task Management
-:MenuACAdminSignatureKeys: menu:Signature Keys
 :MenuHubDoc: menu:Documentation[]
+
 // The following Access selections will be centrally managed in the gateway in a future scoped version of the unified platform; 2.5-next or later and will need to be changed to the attributes currently defined in the Access Management selections below.
 :MenuHubUsers: menu:User Access[Users]
 :MenuHubGroups: menu:User Access[Groups]
