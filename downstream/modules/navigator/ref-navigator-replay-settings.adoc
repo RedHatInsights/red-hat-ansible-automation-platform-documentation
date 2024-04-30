@@ -1,12 +1,12 @@
 [id="ref-navigator-replay-settings_{context}"]
 
-= {Navigator} `replay` subcommand settings
+= {NavigatorStart} `replay` subcommand settings
 
 [role="_abstract"]
 
 The following table describes each parameter and setting options for the {Navigator} `replay` subcommand.
 
-.{Navigator} `replay` subcommand parameters settings
+.{NavigatorStart} `replay` subcommand parameters settings
 [options="header"]
 [cols='1,1a,1a']
 |====

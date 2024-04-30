@@ -9,7 +9,7 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 
-As a content developer, you can review your {ExecEnvNameSing} with {Navigator} and display the packages and collections included in the {ExecEnvName}. {Navigator} runs a playbook to extract and display the results.
+As a content developer, you can review your {ExecEnvNameSing} with {Navigator} and display the packages and collections included in the {ExecEnvName}. {NavigatorStart} runs a playbook to extract and display the results.
 
 include::navigator/proc-review-ee-tui.adoc[leveloffset=+1]
 

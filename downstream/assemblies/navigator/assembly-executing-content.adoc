@@ -10,7 +10,7 @@ ifdef::context[:parent-context: {context}]
 
 
 [role="_abstract"]
-Now that you have your {ExecEnvName} built, you can use automation content navigator to validate that the content will be run in the same manner as the automation controller will run it.
+Now that you have your {ExecEnvName} built, you can use {Navigator} to validate that the content will run in the same manner as the {ControllerName} will run it.
 
 
 // include::navigator/con-about-ansible-navigator.adoc[leveloffset=+1]

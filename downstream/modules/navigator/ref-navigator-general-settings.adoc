@@ -1,12 +1,12 @@
 [id="ref-navigator-general-settings_{context}"]
 
-= {Navigator} general settings
+= {NavigatorStart} general settings
 
 [role="_abstract"]
 
 The following table describes each general parameter and setting options for {Navigator}.
 
-.{Navigator} general parameters settings
+.{NavigatorStart} general parameters settings
 [options="header"]
 [cols='1,1a,1a']
 |====

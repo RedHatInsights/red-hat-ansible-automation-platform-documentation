@@ -9,7 +9,7 @@ You can alter the default {Navigator} settings through:
 * Within a settings file
 * As an environment variable
 
-{Navigator} checks for a settings file in the following order and uses the first match:
+{NavigatorStart} checks for a settings file in the following order and uses the first match:
 
 * `ANSIBLE_NAVIGATOR_CONFIG` - The settings file path environment variable if set.
 * `./ansible-navigator.<ext>` - The settings file within the current project directory, with no dot in the file name.

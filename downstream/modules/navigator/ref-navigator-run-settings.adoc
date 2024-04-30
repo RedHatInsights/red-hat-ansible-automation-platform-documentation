@@ -1,12 +1,12 @@
 [id="ref-navigator-run-settings_{context}"]
 
-= {Navigator} `run` subcommand settings
+= {NavigatorStart} `run` subcommand settings
 
 [role="_abstract"]
 
 The following table describes each parameter and setting options for the {Navigator} `run` subcommand.
 
-.{Navigator} `run` subcommand parameters settings
+.{NavigatorStart} `run` subcommand parameters settings
 [options="header"]
 [cols='1,1a,1a']
 |====

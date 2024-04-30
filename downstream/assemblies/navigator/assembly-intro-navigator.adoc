@@ -15,7 +15,7 @@ As a content creator, you can use {Navigator} to develop Ansible playbooks, coll
 * Local development machines
 * {ExecEnvNameStart}
 
-{Navigator} also produces an artifact file you can use to help you develop your playbooks and troubleshoot problem areas.
+{NavigatorStart} also produces an artifact file you can use to help you develop your playbooks and troubleshoot problem areas.
 
 include::navigator/con-about-ansible-navigator.adoc[leveloffset=+1]
 include::navigator/con-navigator-modes.adoc[leveloffset=+1]

@@ -1,12 +1,12 @@
 [id="ref-navigator-config-settings_{context}"]
 
-= {Navigator} `config` subcommand settings
+= {NavigatorStart} `config` subcommand settings
 
 [role="_abstract"]
 
 The following table describes each parameter and setting options for the {Navigator} `config` subcommand.
 
-.{Navigator} `config` subcommand parameters settings
+.{NavigatorStart} `config` subcommand parameters settings
 [options="header"]
 [cols='1,1a,1a']
 |====

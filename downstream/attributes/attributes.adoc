@@ -101,7 +101,8 @@
 :ToolsName: Ansible developer tools
 :Test: Ansible-test
 :Builder: Ansible Builder
-:Navigator: Automation content navigator
+:Navigator: automation content navigator
+:NavigatorStart: Automation content navigator
 :IDEplugin: Ansible IDE plugins
 :IDEcollection: Ansible IDE collection explorer
 :IDElanguage: Ansible IDE language server

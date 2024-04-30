@@ -6,7 +6,7 @@
 
 [role="_abstract"]
 
-{Navigator} is a command line, content-creator-focused tool with a text-based user interface. You can use {Navigator} to:
+{NavigatorStart} is a command line, content-creator-focused tool with a text-based user interface. You can use {Navigator} to:
 
 * Launch and watch jobs and playbooks.
 * Share stored, completed playbook and job run artifacts in JSON format.
