@@ -1,0 +1,28 @@
+[id="devtools-components_context"]
+
+= {ToolsName} components
+
+[role="_abstract"]
+
+The {ToolsName} can be grouped into three categories, according to the stages in the development process where they are used: build, test, and deployment. 
+
+== Build
+
+* Ansible {VSCode} extension: This is not packaged with the {ProductName} RPM package, but it is an integral part of the automation creation process. From the Ansible {VSCode} extension, you can run ansible-creator to scaffold a collection, and execute playbooks with ansible-navigator or ansible-playbook. 
+* ansible-creator: a content and collection scaffolding tool that can generate baseline file structures, configuration files, code, tests, and docs for an Ansible content project. The primary function of ansible-creator is to simplify the process of creating a new Ansible Collection or a new playbook project. You can run it from within the Ansible {VSCode} extension, or from a terminal line using the ansible-creator command. 
+** If you scaffold a new collection, it is stored in your ~/.ansible/collections/ansible_collections directory.
+** If you scaffold a playbook project, it is stored in the directory you have opened in {VSCode}.
+* ansible-navigator: a text-based user interface (TUI) for developing and troubleshooting Ansible content with execution environments.  
+* ansible-dev-environment: a utility for building and managing a virtual environment for Ansible content development.
+* ansible-lint; a tool for Ansible users to lint (automated checking of source code for programmatic and stylistic errors) playbooks, roles, and collections. 
+The {VSCode} Ansible extension supports ansible-lint. Alternatively, you can run it from the command line.
+
+== Test
+
+* Molecule: A tool designed to aid in developing and testing Ansible playbooks, roles, and collections. It provides support for functional testing of Ansible content across multiple instances, operating systems and distributions, virtualization providers, test frameworks, and testing scenarios. Molecule helps Ansible content creators consistently deliver automation content that is scalable, repeatable, and compatible with the latest Ansible versions.
+* ansible-builder: a utility for building Ansible execution environments.
+
+== Deploy
+
+ansible-sign: a utility for signing and verifying Ansible content.
+

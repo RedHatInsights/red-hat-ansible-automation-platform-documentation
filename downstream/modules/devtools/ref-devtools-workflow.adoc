@@ -1,0 +1,22 @@
+[id="devtools-workflow_context"]
+
+= Workflow
+
+[role="_abstract"]
+
+In the build stage, you create a new playbook project within a virtual environment, using {Vscode}. The following is a typical workflow:
+
+. Install and run the Ansible extension in {Vscode}.
+. Create or open a workspace for your playbooks directory in {Vscode}.
+. Create a Python virtual environment for your workspace and select it in {Vscode}.
+. Scaffold a playbook project from {Vscode}.
+. Add the collection names that your playbook uses to the requirements file.
+// . Use ansible-dev-environment to create a virtual environment for your project. This installs any dependencies from the requirements file.
+. Edit your playbook. Ansible-lint suggests corrections.
+. Add roles in the roles directory.
+. Create an execution environment that reflects the environment that your {PlatformName} uses.
+. Run your playbooks from the Ansible extension, using ansible-navigator or ansible-playbook.
+// . As you develop your playbooks and roles, you can incorporate new dependencies into your virtual environment by re-running ansible-dev-environment.
+
+Use ansible-molecule to test your playbooks. Create one scenario for every playbook in your project.
+
