@@ -1,0 +1,10 @@
+[id="installing-vscode_context"]
+
+= Installing {VSCode}
+
+[role="_abstract"]
+
+VS Code is a free open-source code editor available on Linux, Mac, and Windows.
+
+To install VS Code, follow the instructions on the link:https://code.visualstudio.com/download[Download Visual Studio Code page] in the Visual Studio Code documentation.
+

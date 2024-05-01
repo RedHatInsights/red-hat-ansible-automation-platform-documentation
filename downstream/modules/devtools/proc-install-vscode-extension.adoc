@@ -1,0 +1,29 @@
+[id="install-vscode-extension"]
+
+= Installing the Ansible {VSCode} extension
+
+[role="_abstract"]
+
+The Ansible extension adds language support for Ansible to {VSCode}.
+It incorporates {ToolsName} to facilitate creating and running automation content.
+
+For a full description of the Ansible extension, see the link:https://marketplace.visualstudio.com/items?itemName=redhat.ansible[Visual Studio Code Marketplace].
+
+// See link:URL[Learning path - Getting Started with the Ansible {VSCode} Extension] for interactive training on working with the extension.
+
+To install the Ansible {VSCode} extension:
+
+. Click the *Extensions* icon in the {VSCode} Activity Bar, or select menu:View[Extensions], to display the *Extensions* view.
+. In the search field in the *Extensions* view, type "Ansible Red Hat". 
+. Select the Ansible extension and click btn:[Install].
+
+The Ansible extension becomes active when you open a workspace or directory that contains one of the following files:
+* Files with a `.yml`, `.yaml`, `.ansible.yml` or `.ansible.yaml` extension.
+* Common YAML filenames recognized by Ansible, such as `site.yml`
+* YAML files whose names contain "playbook".
+
+Open a `.yml` file in your workspace. The language identified for the file is displayed in the Status bar.
+
+When the language for a file is recognized as Ansible, the Ansible extension provides features for creating Ansible Playbooks and task files, such as auto-completion, hover, diagnostics, and goto.
+
+

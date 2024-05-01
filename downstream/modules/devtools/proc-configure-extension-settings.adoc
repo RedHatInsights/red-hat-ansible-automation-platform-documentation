@@ -1,0 +1,35 @@
+[id="configure-extension-settings"]
+
+= Configuring Ansible extension settings
+
+[role="_abstract"]
+
+The Ansible {VSCode} extension supports multiple configuration options.
+You can configure the settings for the extension on a user level, on a workspace level, or for a particular directory.
+Workspace settings are stored within your workspace and only apply when the current workspace is opened.
+
+It is useful to configure settings at the workspace level for the following reasons:
+
+* If you define and maintain configurations specific to your playbook project, you can customize your Ansible development environment for individual projects without altering your preferred setup for other work.
+* You can have different settings for a Python project, an Ansible project, and a C++ project, each optimized for the respective stack without the need to manually reconfigure settings each time you switch projects.
+* If you include workspace settings when setting up version control for a project you want to share with your team, everyone uses the same configuration for that project.
+
+.Procedure
+
+. To open the Ansible extension settings, click the *Extensions* icon in the activity bar.
+. Select the Ansible extension, and click the *Manage* icon ({SettingsIcon}) and then btn:[Extension Settings] to display the extension settings.
++
+Alternatively, select menu:Code[Settings > Settings] to open the *Settings* page.
+Enter `Ansible` in the search bar to display the extension settings.
+. Select the *Workspace* tab to configure your settings for the current {VSCode} workspace.
+
+The Ansible extension settings are pre-populated.
+
+* Check the *Ansible > Validation > Lint: Enabled* box to enable ansible-lint.
+* Check the *Ansible Execution Environment: Enabled* box to use an execution environment.
+* Specify the execution environment image you want to use in the *Ansible > Execution Environment: image* field.
+* To use Ansible Lightspeed, check the *Ansible > Lightspeed: Enabled* box, and enter the URL for Lightspeed.
+
+// The settings are documented on the link:https://marketplace.visualstudio.com/items?itemName=redhat.ansible[Ansible VS Code Extension by Red Hat page] in the VisualStudio marketplace documentation.
+
+

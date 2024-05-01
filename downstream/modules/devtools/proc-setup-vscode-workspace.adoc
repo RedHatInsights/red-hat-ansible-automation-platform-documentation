@@ -1,0 +1,15 @@
+[id="setup-vscode-workspace"]
+
+= Setting up a {VSCode} workspace
+
+[role="_abstract"]
+
+A {VSCode} workspace is a project that consists of one or more directories that are opened simultaneously in a {VSCode} window.
+The workspace stores project-level configurations, including settings and extension settings for the project.
+
+. Open your playbook directory in {VSCode}.
+. To create a workspace, select menu:File[Save Workspace As] and enter a name for your workspace.
+. Store the workspace file in your playbooks directory.
+
+To open a workspace in {VSCode}, select menu:File[Open Workspace from File] and select your workspace file.
+

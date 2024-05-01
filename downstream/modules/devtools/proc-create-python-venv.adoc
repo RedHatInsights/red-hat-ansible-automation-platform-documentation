@@ -1,0 +1,41 @@
+[id="create-python-venv"]
+
+= Creating a Python virtual environment
+
+[role="_abstract"]
+Set up a virtual environment for your project inside the project workspace. The python interpreter that you use to initialize the virtual environment must match the system default.
+
+. In the terminal in VS Code, run the following command from your playbooks directory:
++
+----
+$ python -m venv system-venv -system-site-packages
+----
++
+The `–system-site-packages` flag specifies that the RPM files that you have installed are to be included in the virtual environment.
+. To verify that the virtual environment contains the {ToolsName} packages, run the following command:
++
+----
+$ pip freeze | grep -e ansible -e molecule
+----
++
+The following example shows the output when the virtual environment has been set up correctly:
++
+----
+(system-venv) [user]$ pip freeze | grep -e ansible -e molecule
+
+ansible-builder==3.1.0
+ansible-compat==4.1.11
+ansible-core==2.16.5.post0
+ansible-creator==24.4.1
+ansible-dev-environment==24.1.0
+ansible-lint==6.14.3
+ansible-navigator==3.4.1
+ansible-runner==2.4.0
+ansible-sign==0.1.1
+molecule==6.0.2
+pytest-ansible==24.1.2
+tox-ansible==24.2.0
+----
+. Click the Python interpreter in the Status bar in {VSCode} to open the *Select Interpreter* menu.
+. Select the Python interpreter from your virtual environment.
+

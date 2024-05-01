@@ -7,7 +7,12 @@ ifdef::context[:parent-context: {context}]
 :context: devtools-setup
 [role="_abstract"]
 
-//include::devtools/proc.adoc[leveloffset=+1]
+include::devtools/proc-installing-vscode.adoc[leveloffset=+1]
+include::devtools/proc-directory-setup.adoc[leveloffset=+1]
+include::devtools/proc-setup-vscode-workspace.adoc[leveloffset=+1]
+include::devtools/proc-install-vscode-extension.adoc[leveloffset=+1]
+include::devtools/proc-configure-extension-settings.adoc[leveloffset=+1]
+include::devtools/proc-create-python-venv.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]
