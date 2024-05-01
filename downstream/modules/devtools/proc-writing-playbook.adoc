@@ -1,0 +1,34 @@
+[id="writing-playbook"]
+
+= Writing your first playbook
+
+[role="_abstract"]
+The instructions below describe how {ToolsName} help you to create and run your first playbook in {VSCode}.
+
+.Prerequisites
+
+.You have installed and opened the Ansible {VSCode} extension. 
+.You have installed `ansible-devtools`.
+.You have set up and activated a Python virtual environment in {VSCode}.
+.You have opened a terminal in {VSCode}.
+
+.Procedure
+
+. Open a YAML file in {VSCode} for your playbook.
+You can create a new file or use the empty placeholder YAML file that you set up when you created the directory and playbook.
+. Add the following example code into the playbook file and save the file.
+The playbook consists of a single play that executes a ping to your local machine. 
++
+----
+- name: My first play
+ hosts: localhost
+ tasks:
+  - name: Ping my hosts
+    ansible.builtin.ping:
+
+----
++
+`Ansible-lint` runs in the background and displays errors in the *Problems* tab of the terminal.
+There are no errors in this playbook:
+
+image::ansible-lint-no-errors.png[Ansible-lint showing no errors in a playbook]

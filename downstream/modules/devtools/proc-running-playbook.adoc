@@ -1,0 +1,36 @@
+[id="running-playbook"]
+
+= Running your playbook
+
+[role="_abstract"]
+
+The Ansible {VSCode} extension provides two options to run your playbook:
+
+* `ansible-playbook` runs the playbook on your local machine using Ansible Core.
+* `ansible-navigator` runs the playbook in an execution environment in the same manner that {PlatformNameShort} runs an automation job.
+You specify the base image for the execution environment in the Ansible extension settings.
+
+== Running your playbook with `ansible-playbook`
+
+.Procedure
+
+* To run a playbook, right-click the playbook name in the Explorer pane, then select menu:Run Ansible Playbook via[Run playbook via `ansible-playbook`].
+
+image:ansible-playbook-run.png[Run playbook via ansible-playbook]
+
+The output is displayed in the *Terminal* tab of the {VSCode} terminal.
+The `ok=2` and `failed=0` messages indicate that the playbook ran successfully.
+
+image:ansible-playbook-success.png[Success message for ansible-playbook execution]
+
+== Running your playbook with `ansible-navigator`
+
+.Prerequisites
+
+* In the Ansible extension settings, enable the use of an execution environment in Ansible Execution Environment > Enabled.
+* Enter the path or URL for the execution environment image in Ansible > Execution Environment: Image.
+
+.Procedure
+
+* To run a playbook, right-click the playbook name in the Explorer pane, then select menu:Run Ansible Playbook via[Run playbook via ansible-navigator run].
+

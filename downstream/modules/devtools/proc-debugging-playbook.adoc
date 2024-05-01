@@ -1,0 +1,47 @@
+[id="debugging-playbook"]
+
+= Debugging your playbook
+
+[role="_abstract"]
+The Ansible extension  provides syntax highlighting and assists you with indentation in `.yml` files.
+
+The following rules apply for playbook files:
+
+* Every playbook file must finish with a blank line.
+* Trailing spaces at the end of lines are not allowed.
+* Every playbook and every play require an identifier (name).
+
+== Inline help
+
+* If you hover your mouse over a keyword or a module name, the Ansible extension provides documentation:
++
+image::ansible-lint-keyword-help.png[Ansible-lint showing no errors in a playbook]
+* If you begin to type the name of a module, for example `ansible.builtin.ping`, the extension provides a list of suggestions.
+Select one of the suggestions to autocomplete the line.
++
+image::ansible-lint-module-completion.png[Ansible-lint showing no errors in a playbook]
+
+== Error messages
+
+The following playbook contains multiple errors:
+
+----
+- name:
+  hosts: localhost 
+  tasks:
+   - name: 
+     ansible.builtin.ping:
+----
+
+The errors are indicated with a wavy underline in {VSCode}.
+Hover your mouse over an error to view the details:
+
+image::ansible-lint-errors.png[Popup message explaining a playbook error]
+
+The errors are listed in the *Problems* tab of the {VSCode} terminal.
+Playbook files that contain errors are indicated with a number in the Explorer pane:
+
+image::ansible-lint-errors-explorer.png[Playbook errors shown in Problems tab and explorer list]
+
+`$[0].tasks[0].name None is not of type 'string'` indicates that the playbook does not have a label.  
+
