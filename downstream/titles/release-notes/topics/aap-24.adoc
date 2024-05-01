@@ -5,31 +5,6 @@
 
 = Overview of the {PlatformNameShort} 2.4 release 
 
-== Technology Preview
-
-include::../snippets/technology-preview.adoc[]
-
-The following are Technology Preview features: 
-
-* Starting with {PlatformNameShort} 2.4, the Platform Resource Operator can be used to create the following resources in {ControllerName} by applying YAML to your OpenShift cluster:
-** Inventories
-** Projects
-** Instance Groups
-** Credentials
-** Schedules
-** Workflow Job Templates
-** Launch Workflows
-
-You can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the `tower_auth_secret` parameter. This change is compatible with earlier versions, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
-
-[role="_additional-resources"]
-.Additional resources
-
-* For the most recent list of Technology Preview features, see link:https://access.redhat.com/articles/ansible-automation-platform-preview-features[Ansible Automation Platform - Preview Features].
-
-* For information about execution node enhancements on OpenShift deployments, see link:https://docs.ansible.com/automation-controller/latest/html/administration/instances.html[Managing Capacity With Instances].
-
-
 == New features and enhancements
 
 {PlatformNameShort} 2.4 includes the following enhancements:
@@ -69,6 +44,30 @@ You can use the following configuration YAML keys with {Builder} version 3:
 .Additional resources
 
 * For more information about using {Builder} version 3, see link:https://ansible.readthedocs.io/projects/builder/en/stable/[{Builder} Documentation] and link:https://docs.ansible.com/automation-controller/latest/html/userguide/ee_reference.html[Execution Environment Setup Reference].
+
+== Technology Preview
+
+include::../snippets/technology-preview.adoc[]
+
+The following are Technology Preview features: 
+
+* Starting with {PlatformNameShort} 2.4, the Platform Resource Operator can be used to create the following resources in {ControllerName} by applying YAML to your OpenShift cluster:
+** Inventories
+** Projects
+** Instance Groups
+** Credentials
+** Schedules
+** Workflow Job Templates
+** Launch Workflows
+
+You can now configure the Controller Access Token for each resource with the `connection_secret` parameter, rather than the `tower_auth_secret` parameter. This change is compatible with earlier versions, but the `tower_auth_secret` parameter is now deprecated and will be removed in a future release.
+
+[role="_additional-resources"]
+.Additional resources
+
+* For the most recent list of Technology Preview features, see link:https://access.redhat.com/articles/ansible-automation-platform-preview-features[Ansible Automation Platform - Preview Features].
+
+* For information about execution node enhancements on OpenShift deployments, see link:https://docs.ansible.com/automation-controller/latest/html/administration/instances.html[Managing Capacity With Instances].
 
 == Deprecated and removed features
 
