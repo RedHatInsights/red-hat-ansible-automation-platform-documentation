@@ -19,6 +19,14 @@
 :EDAName: Event-Driven Ansible
 :EDAcontroller: Event-Driven Ansible controller
 
+// Ansible Lightspeed
+:LightspeedFullName: Red Hat Ansible Lightspeed with IBM watsonx Code Assistant
+:LightspeedShortName: Red Hat Ansible Lightspeed
+:LightspeedTechPreview: Ansible Lightspeed Technical Preview
+:AnsibleCodeBot: Ansible code bot
+:AnsibleContentParser: content parser tool
+:ibmwatsonxcodeassistant: IBM watsonx Code Assistant
+
 // AAP on Clouds
 :AAPonAzureName: Red Hat Ansible Automation Platform on Microsoft Azure
 :AAPonAzureNameShort: Ansible Automation Platform on Microsoft Azure
