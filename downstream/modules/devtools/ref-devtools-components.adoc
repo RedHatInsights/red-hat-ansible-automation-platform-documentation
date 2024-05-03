@@ -8,7 +8,7 @@ The {ToolsName} can be grouped into three categories, according to the stages in
 
 == Build
 
-* Ansible {VSCode} extension: This is not packaged with the {ProductName} RPM package, but it is an integral part of the automation creation process. From the Ansible {VSCode} extension, you can run ansible-creator to scaffold a collection, and execute playbooks with ansible-navigator or ansible-playbook. 
+* Ansible {VSCode} extension: This is not packaged with the {PlatformNameShort} RPM package, but it is an integral part of the automation creation process. From the Ansible {VSCode} extension, you can run ansible-creator to scaffold a collection, and execute playbooks with ansible-navigator or ansible-playbook. 
 * ansible-creator: a content and collection scaffolding tool that can generate baseline file structures, configuration files, code, tests, and docs for an Ansible content project. The primary function of ansible-creator is to simplify the process of creating a new Ansible Collection or a new playbook project. You can run it from within the Ansible {VSCode} extension, or from a terminal line using the ansible-creator command. 
 ** If you scaffold a new collection, it is stored in your ~/.ansible/collections/ansible_collections directory.
 ** If you scaffold a playbook project, it is stored in the directory you have opened in {VSCode}.

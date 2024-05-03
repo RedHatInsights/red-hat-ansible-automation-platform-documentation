@@ -4,9 +4,9 @@
 
 [role="_abstract"]
 
-{ToolsName} is bundled in the {ProductName} RPM (Red Hat Package Manager) package.
-// As an {ProductName} administrator, you can install {ToolsName} when you are installing {ProductName}.
-Refer to the {ProductName} guide for more information on installing {ProductName}.
+{ToolsName} is bundled in the {PlatformNameShort} RPM (Red Hat Package Manager) package.
+// As an {PlatformNameShort} administrator, you can install {ToolsName} when you are installing {PlatformNameShort}.
+Refer to the {PlatformNameShort} guide for more information on installing {PlatformNameShort}.
 
 .Prerequisites
 * You have installed RHEL
