@@ -114,7 +114,7 @@
 :IDEplugin: Ansible IDE plugins
 :IDEcollection: Ansible IDE collection explorer
 :IDElanguage: Ansible IDE language server
-:VsCode: VSCode
+:VsCode: VS Code
 
 // Content Collections
 :CertifiedName: Ansible Certified Content Collections

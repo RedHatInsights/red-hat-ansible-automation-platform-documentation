@@ -1,12 +1,12 @@
 ifdef::context[:parent-context: {context}]
 [id="scaffolding-playbook-directory"]
 
-= Scaffolding a playbook directory
+= Scaffolding a playbook project
 
 :context: scaffolding-playbook-directory
 [role="_abstract"]
 
-//include::devtools/proc.adoc[leveloffset=+1]
+include::devtools/proc-scaffolding-playbook-directory.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]
 ifndef::parent-context[:!context:]

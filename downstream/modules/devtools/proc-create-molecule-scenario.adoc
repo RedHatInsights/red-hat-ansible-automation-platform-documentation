@@ -1,0 +1,64 @@
+[id="create-molcule-scenario"]
+
+= Creating a molecule scenario
+
+[role="_abstract"]
+
+. Navigate to the top level directory of your playbook project.
+. Initialize a Molecule scenario:
++
+----
+molecule init scenario
+----
++
+The command generates the following outpit:
++
+----
+$ molecule init scenario
+INFO     Initializing new scenario default...
+
+PLAY [Create a new molecule scenario] ******************************************
+
+TASK [Check if destination folder exists] **************************************
+changed: [localhost]
+
+TASK [Check if destination folder is empty] ************************************
+ok: [localhost]
+
+TASK [Fail if destination folder is not empty] *********************************
+skipping: [localhost]
+
+TASK [Expand templates] ********************************************************
+changed: [localhost] => (item=molecule/default/destroy.yml)
+changed: [localhost] => (item=molecule/default/molecule.yml)
+changed: [localhost] => (item=molecule/default/converge.yml)
+changed: [localhost] => (item=molecule/default/create.yml)
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
+
+INFO     Initialized scenario in /Users/ariordan/devtools/new_project/extensions/molecule/default successfully.
+----
+
+The `molecule init scenario` command creates a molecule directory, and adds a scenario directory called `default/`.
+----
+$ tree molecule
+molecule
+└── default
+    ├── converge.yml
+    ├── create.yml
+    ├── destroy.yml
+    └── molecule.yml
+----
+
+== Creating scenarios for every playbook
+
+Create a separate scenario for every playbook in your project. 
+
+. If you have already created a scenario, rename the `default/` scenario directory so that it is clear which playbook you intend to use it for.
++
+For example, if your playbook is called `playbook1.yml`, name the scenario `playbook1`.
+. Generate a new scenario with the `molecule init scenario` command.
+This new scenario is now called `default`. Rename this directory to indicate which playbook you will use it for.
+. Repeat step 2 until you have generated a scenario for every playbook in your project.
+

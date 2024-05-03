@@ -22,4 +22,5 @@ include::devtools/assembly-devtools-install.adoc[leveloffset=+1]
 include::devtools/assembly-devtools-setup.adoc[leveloffset=+1]
 include::devtools/assembly-writing-running-playbook.adoc[leveloffset=+1]
 include::devtools/assembly-scaffolding-playbook-directory.adoc[leveloffset=+1]
+include::devtools/assembly-testing-playbooks.adoc[leveloffset=+1]
 
