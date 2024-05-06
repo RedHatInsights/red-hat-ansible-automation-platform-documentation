@@ -14,7 +14,7 @@ You can delete repositories from the {PlatformName} interface in the *Container 
 
 .Procedure
 . Navigate to {HubName}.
-. From the navigation panel, select menu:Execution Environments[Execution Environments].
+. From the navigation panel, select {MenuACExecEnvironments}.
 . On the container repository that you want to delete, click the btn:[More Actions] icon *{MoreActionsIcon}*, and click btn:[Delete].
 . When the confirmation message is displayed, click the checkbox and click btn:[Delete].
 

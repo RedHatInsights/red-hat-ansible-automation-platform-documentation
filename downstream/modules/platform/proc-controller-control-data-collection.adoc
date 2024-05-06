@@ -5,12 +5,13 @@
 Use the following procedure to set your participation level for data collection.
 
 .Procedure
-. From the navigation panel, select menu:Settings[User Interface Settings].
+. From the navigation panel, select {MenuAEAdminSettings}.
+. Select *User Interface settings* from the *User Interface* option.
 . Click btn:[Edit].
 +
 image:configure-controller-ui-tracking_state.png[UI tracking state]
 
-. Select the desired level of data collection from the *User Analytics Tracking State* menu:
+. Select the desired level of data collection from the *User Analytics Tracking State* list:
 
 * *Off*: Prevents any data collection.
 * *Anonymous*: Enables data collection without your specific user data.

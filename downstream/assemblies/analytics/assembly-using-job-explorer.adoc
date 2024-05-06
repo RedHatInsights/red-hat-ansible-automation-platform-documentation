@@ -6,7 +6,7 @@ ifdef::context[:parent-context: {context}]
 
 = About the Job Explorer
 
-The *Job Explorer* provides a detailed view of jobs run on Ansible Tower clusters across your organizations. You can access the *Job Explorer* by directly clicking on the navigation tab or using the drill-down view available across each of the application's charts.
+The *Job Explorer* provides a detailed view of jobs run on Ansible Tower clusters across your organizations. You can access the *Job Explorer* by selecting {MenuAAJobExplorer} from the navigation panel or using the drill-down view available across each of the application's charts.
 
 Using the *Job Explorer* you can:
 

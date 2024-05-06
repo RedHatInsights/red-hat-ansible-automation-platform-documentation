@@ -184,6 +184,6 @@ $ ./setup.sh
 You can verify a successful upgrade to your {PrivateHubName} by reviewing the *Server version* information.
 
 . Log in to your {PrivateHubName}.
-. Click the *?* icon in the navigation bar.
+. Click the *?* icon in the navigation panel.
 . Click btn:[About].
 . Verify that the *server version* matches the version you upgraded to.

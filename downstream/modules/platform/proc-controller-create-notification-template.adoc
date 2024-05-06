@@ -6,7 +6,7 @@ Use the following procedure to create a notification template.
 
 .Procedure
 
-. From the navigation panel, select menu:Administration[Notifications].
+. From the navigation panel, select {MenuAEAdminJobNotifications}.
 . Click btn:[Add].
 . Complete the following fields:
 

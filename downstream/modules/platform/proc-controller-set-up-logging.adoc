@@ -5,7 +5,8 @@
 Use the following procedure to set up logging to any of the aggregator types.
 
 .Procedure
-. From the navigation panel, select menu:Settings[Logging settings].
+. From the navigation panel, select {MenuAEAdminSettings}.
+. Select *Logging settings* from the list of *System* options.
 . On the *Logging settings* screen, click btn:[Edit].
 . Set the following configurable options:
 
@@ -15,31 +16,31 @@ Use the following procedure to set up logging to any of the aggregator types.
 +
 [NOTE]
 ====
-When the connection type is HTTPS, you can enter the hostname as a URL with a port number, after which, you are not required to enter the port again. 
-However, TCP and UDP connections are determined by the hostname and port number combination, rather than URL. 
-Therefore, in the case of a TCP or UDP connection, supply the port in the specified field. 
+When the connection type is HTTPS, you can enter the hostname as a URL with a port number, after which, you are not required to enter the port again.
+However, TCP and UDP connections are determined by the hostname and port number combination, rather than URL.
+Therefore, in the case of a TCP or UDP connection, supply the port in the specified field.
 If a URL is entered in the *Logging Aggregator* field instead, its hostname portion is extracted as the hostname.
 ====
-* *Logging Aggregator Type*: Click to select the aggregator service from the menu:
+* *Logging Aggregator Type*: Click to select the aggregator service from the list:
 +
 image:configure-controller-system-logging-types.png[Logging types]
 
 * *Logging Aggregator Username*: Enter the username of the logging aggregator if required.
 * *Logging Aggregator Password/Token*: Enter the password of the logging aggregator if required.
 * *Log System Tracking Facts Individually*: Click the tooltip image:question_circle.png[Help,15,15] icon for additional information, such as whether or not you want to turn it on, or leave it off by default.
-* *Logging Aggregator Protocol*: Click to select a connection type (protocol) to communicate with the log aggregator. 
+* *Logging Aggregator Protocol*: Click to select a connection type (protocol) to communicate with the log aggregator.
 Subsequent options vary depending on the selected protocol.
 * *Logging Aggregator Level Threshold*: Select the level of severity you want the log handler to report.
 * *TCP Connection Timeout*: Specify the connection timeout in seconds.
 This option is only applicable to HTTPS and TCP log aggregator protocols.
-* *Enable/disable HTTPS certificate verification*: Certificate verification is enabled by default for the HTTPS log protocol. 
+* *Enable/disable HTTPS certificate verification*: Certificate verification is enabled by default for the HTTPS log protocol.
 Set the toggle to *OFF* if you do not want the log handler to verify the HTTPS certificate sent by the external log aggregator before establishing a connection.
-* *Loggers to Send Data to the Log Aggregator Form*: All four types of data are pre-populated by default. 
-Click the tooltip image:question_circle.png[Help,15,15] icon next to the field for additional information on each data type. 
+* *Loggers to Send Data to the Log Aggregator Form*: All four types of data are pre-populated by default.
+Click the tooltip image:question_circle.png[Help,15,15] icon next to the field for additional information on each data type.
 Delete the data types you do not want.
 * *Log Format For API 4XX Errors*: Configure a specific error message. For more information, see xref:proc-controller-api-4xx-error-config[API 4XX Error Configuration].
 
-. Review your entries for your chosen logging aggregation. 
+. Review your entries for your chosen logging aggregation.
 The following example is set up for Splunk:
 +
 image:configure-controller-system-logging-splunk-example.png[Splunk logging example]
@@ -48,7 +49,7 @@ image:configure-controller-system-logging-splunk-example.png[Splunk logging exam
 
 //Following not in published version
 //.Verification
-//. To verify if your configuration is set up correctly, click btn:[Save] then click btn:[Test]. 
+//. To verify if your configuration is set up correctly, click btn:[Save] then click btn:[Test].
 //. This sends a test log message to the log aggregator using the current logging configuration in .
 //You should check to make sure this test message was received by your external log aggregator.
 

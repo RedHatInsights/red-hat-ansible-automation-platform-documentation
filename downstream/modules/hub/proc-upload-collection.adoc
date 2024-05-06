@@ -17,8 +17,7 @@ You can upload the collection by using either the {HubName} user interface or th
 
 Using the {HubName} user interface:
 
-. Log in to {PlatformName}.
-. From the navigation panel, select menu:Automation Hub[Collections > Namespaces].
+. From the navigation panel, select {MenuACNamespaces}.
 . On the *My namespaces* tab, locate the namespace to which you want to upload a collection.
 . Click *View collections* and click btn:[Upload collection].
 . In the *New collection* modal, click btn:[Select file]. Locate the file on your system.

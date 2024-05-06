@@ -8,8 +8,7 @@
 After you create your repository, you can begin adding automation content collections to it.
 
 .Procedure
-. Log in to {PlatformName}.
-. From the navigation panel, select menu:Collections[Repositories].
+. From the navigation panel, select {MenuACAdminRepositories}.
 . Locate your repository in the list and click the btn:[More Actions] icon *{MoreActionsIcon}*, then select *Edit*.
 . Select the *Collections version* tab.
 . Click btn:[Add Collection] and select the collections that you want to add to your repository.

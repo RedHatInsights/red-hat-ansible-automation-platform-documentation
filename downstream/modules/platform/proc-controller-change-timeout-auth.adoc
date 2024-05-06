@@ -6,7 +6,7 @@ You can change the default length of time, in seconds, that your supplied token 
 
 .Procedure
 
-. From the navigation panel, select menu:Settings[].
+. From the navigation panel, select {MenuAEAdminSettings}.
 . Select *Miscellaneous Authentication settings* from the list of *System* options.
 . Click btn:[Edit].
 . Enter the timeout period in seconds in the *Idle Time Force Log Out* text field.
@@ -14,7 +14,7 @@ You can change the default length of time, in seconds, that your supplied token 
 
 [NOTE]
 ====
-If you access {ControllerName} and have trouble logging in, clear your web browser's cache. 
-In situations such as this, it is common for the authentication token to be cached during the browser session. 
+If you access {ControllerName} and have trouble logging in, clear your web browser's cache.
+In situations such as this, it is common for the authentication token to be cached during the browser session.
 You must clear it to continue.
 ====

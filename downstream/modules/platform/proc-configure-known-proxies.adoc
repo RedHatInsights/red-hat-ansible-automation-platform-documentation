@@ -8,8 +8,8 @@
 To configure a list of known proxies for your {ControllerName}, add the proxy IP addresses to the *PROXY_IP_ALLOWED_LIST* field in the settings page for your {ControllerName}.
 
 .Procedure
-
-. On your {ControllerName}, navigate to menu:Settings[Miscellaneous System].
+//[ddacosta] Need to verify that in 2.5 this is Settings[System]...
+. On your {ControllerName}, navigate to {MenuAEAdminSettings} and select *Miscellaneous System settings* from the list of *System* options.
 . In the *PROXY_IP_ALLOWED_LIST* field, enter IP addresses that are allowed to connect to your {ControllerName}, following the syntax in the example below:
 +
 .Example *PROXY_IP_ALLOWED_LIST* entry

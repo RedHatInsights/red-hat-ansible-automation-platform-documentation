@@ -4,9 +4,9 @@
 
 .Procedure
 
-. From the navigation panel, select menu:Resources[Credentials].
+. From the navigation panel, select {MenuAMCredentials}.
 . Select the credential that you want to assign to additional users.
-. Click the *Access* tab. 
+. Click the *Access* tab.
 You can see users and teams associated with this credential and their roles.
 . Choose a user and click btn:[Add].
 If no users exist, add them from the *Users* menu.

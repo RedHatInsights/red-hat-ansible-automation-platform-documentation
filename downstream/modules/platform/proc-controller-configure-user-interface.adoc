@@ -6,6 +6,6 @@ The *User Interface* tab enables you to set {ControllerName} analytics settings,
 
 .Procedure
 
-. From the navigation panel, select menu:Settings[].
-. Select *User Interface settings* from the *User Interface* tab. 
+. From the navigation panel, select {MenuAEAdminSettings}.
+. Select *User Interface settings* from the *User Interface* option. 
 . Click btn:[Edit] to configure your preferences.

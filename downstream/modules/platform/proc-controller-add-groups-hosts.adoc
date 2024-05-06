@@ -2,13 +2,15 @@
 
 = Adding new groups and hosts
 
-Groups are only applicable to standard inventories and are not configurable directly through a Smart Inventory. 
-You can associate an existing group through hosts that are used with standard inventories. 
-For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-add-groups[Adding groups to inventories] in the _{ControllerUG}_. 
+Groups are only applicable to standard inventories and are not configurable directly through a Smart Inventory.
+You can associate an existing group through hosts that are used with standard inventories.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-add-groups[Adding groups to inventories] in the _{ControllerUG}_.
 
 .Procedure
-. To add new groups, select menu:Groups[Add].
-. To add new hosts to groups, select menu:Hosts[Add].
+//[ddacosta] Need to verify this is the correct flow. The original content identified menus that don't exist.
+. From the navigation panel, select {MenuInfrastructureInventories}.
+. To add new groups, select the *Groups* tab and click btn:[Add].
+. To add new hosts to groups, select the *Hosts* tab and click btn:[Add].
 
 As part of the initial setup and to test that {ControllerName} is set up properly, a local host is added for your use.
 

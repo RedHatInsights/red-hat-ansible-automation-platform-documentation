@@ -2,10 +2,10 @@
 
 = Management Jobs
 
-*Management Jobs* assist in the cleaning of old data from {ControllerName}, including system tracking information, tokens, job histories, and activity streams. 
-You can use this if you have specific retention policies or need to decrease the storage used by your {ControllerName} database. 
+*Management Jobs* assist in the cleaning of old data from {ControllerName}, including system tracking information, tokens, job histories, and activity streams.
+You can use this if you have specific retention policies or need to decrease the storage used by your {ControllerName} database.
 
-From the navigation panel, select menu:Management Jobs[].
+From the navigation panel, select {MenuAEAdminManageJobs}.
 
 image:management-jobs.png[Management jobs]
 

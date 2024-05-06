@@ -13,12 +13,13 @@
 . Go to the {EDAcontroller} Dashboard.
 . From the top navigation panel, select your profile.
 . Go to *User details*.
+//[ddacosta] I don't see Controller Tokens in the test environment, need to verify where this lives and whether it changes in 2.5
 . Select menu:Controller Tokens[Create controller token].
-. Insert the following: 
+. Insert the following:
 +
 Name:: Insert the name.
 Description:: This field is optional.
-Token:: Create the token in {ControllerName}. 
+Token:: Create the token in {ControllerName}.
 For more information about creating the token, see the link:https://docs.ansible.com/automation-controller/latest/html/userguide/users.html#users-tokens[Users - Tokens] section of the {ControllerUG}.
 +
 [NOTE]

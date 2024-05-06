@@ -5,9 +5,9 @@ When ensuring a signature is signed by specific signatures, the signature must b
 
 .Procedure
 
-. From the navigation panel, select menu:Signature Keys[].
+. From the navigation panel, select {MenuACAdminSignatureKeys}.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}* next to the signature that you are using.
-. Select *Download key* from the drop-down menu. 
+. Select *Download key* from the drop-down menu.
 A new window opens.
 . In the *Name* field, enter the name of the key.
 . Click btn:[Save].

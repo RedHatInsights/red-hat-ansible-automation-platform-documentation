@@ -7,8 +7,8 @@ If you want to fetch the latest changes in a project, you can manually start an 
 .Procedure
 
 . Open the project to update the SCM-based demo project by using one of these methods:
-** Go to menu:Details[Sync].
-** From the navigation panel, select menu:Projects[Sync Project].
+** Go to the project Details page and click btn:[Sync].
+** From the navigation panel, select {MenuAEProjects} and click btn:[Sync Project].
 
 image::controller-gs-demo-project-sync-icon-hover.png[Project sync]
 

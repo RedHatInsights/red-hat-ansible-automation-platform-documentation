@@ -8,7 +8,7 @@ Before importing a collection, you must first create a namespace for the collect
 
 . Log in to the link:https://console.redhat.com/ansible/automation-hub/[{HubName} Hybrid Cloud Console].
 
-. From the navigation panel, select *menu:Collections[Namespaces]*.
+. From the navigation panel, select {MenuACNamespaces}.
 
 . Click *btn:[Create]*.
 
@@ -24,7 +24,7 @@ Once the namespace has been created, you can import the collection by using the 
 
 . Log in to link:https://console.redhat.com/ansible/automation-hub/[{HubName} Hybrid Cloud Console].
 
-. From the navigation panel, select *menu:Collections[Namespaces]*.
+. From the navigation panel, select {MenuACNamespaces}.
 
 . Click *btn:[View collections]* next to the namespace you will be importing the collection into.
 

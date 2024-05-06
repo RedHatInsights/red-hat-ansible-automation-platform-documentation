@@ -8,8 +8,9 @@
 When you use {PlatformName} to create a repository, you can configure the repository to be private or hide it from search results.
 
 .Procedure
-. Log in to {PlatformName}.
-. From the navigation panel, select menu:Collections[Repositories].
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
+. Log in to {HubName}.
+. From the navigation panel, select {MenuACAdminRepositories}.
 . Click btn:[Add repository].
 . Enter a *Repository name*.
 . In the *Description* field, describe the purpose of the repository.

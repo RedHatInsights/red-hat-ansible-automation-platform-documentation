@@ -2,14 +2,14 @@
 
 = Generic OIDC authentication
 
-OpenID Connect (OIDC) uses the OAuth 2.0 framework. 
-It enables third-party applications to verify the identity and obtain basic end-user information. 
-The main difference between OIDC and SAML is that SAML has a service provider (SP)-to-IdP trust relationship, whereas OIDC establishes the trust with the channel (HTTPS) that is used to obtain the security token. 
+OpenID Connect (OIDC) uses the OAuth 2.0 framework.
+It enables third-party applications to verify the identity and obtain basic end-user information.
+The main difference between OIDC and SAML is that SAML has a service provider (SP)-to-IdP trust relationship, whereas OIDC establishes the trust with the channel (HTTPS) that is used to obtain the security token.
 To obtain the credentials needed to set up OIDC with {ControllerName}, see the documentation from the IdP of your choice that has OIDC support.
 
 .Procedure
 
-. From the navigation panel, select menu:Settings[].
+. From the navigation panel, select {MenuAEAdminSettings}.
 . Select *Generic OIDC settings* from the list of *Authentication* options.
 . Click btn:[Edit] and enter the following information:
 * *OIDC Key*: The client ID from your third-party IdP.
@@ -20,11 +20,11 @@ To obtain the credentials needed to set up OIDC with {ControllerName}, see the d
 +
 [NOTE]
 ====
-Team and organization mappings for OIDC are currently not supported. 
-The OIDC adapter does authentication only and not authorization. 
-It is only capable of authenticating whether this user is who they say they are. 
+Team and organization mappings for OIDC are currently not supported.
+The OIDC adapter does authentication only and not authorization.
+It is only capable of authenticating whether this user is who they say they are.
 It does not authorize what this user is enabled to do.
-Configuring generic OIDC creates the UserID appended with an ID or key to differentiate the same user ID originating from two different sources and therefore, considered different users. 
+Configuring generic OIDC creates the UserID appended with an ID or key to differentiate the same user ID originating from two different sources and therefore, considered different users.
 So you get an ID of just the user name and the second is the username-<random number>.
 ====
 

@@ -6,19 +6,19 @@
 = Configuring proxy settings
 
 [role="_abstract"]
-If your {PrivateHubName} is behind a network proxy, you can configure proxy settings on the remote to sync content located outside of your local network. 
+If your {PrivateHubName} is behind a network proxy, you can configure proxy settings on the remote to sync content located outside of your local network.
 
 .Prerequisites
 
 * You have valid *Modify Ansible repo content* permissions.
 For more information on permissions, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/assembly-user-access[Configuring user access for your {PrivateHubName}].
-* You have a proxy URL and credentials from your local network administrator. 
+* You have a proxy URL and credentials from your local network administrator.
 
 .Procedure
-. Log in to {PlatformNameShort}.
-include::snippets/snip_menu-top-ac.adoc[]
-*{MenuACAdminRemotes}*.
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
+. Log in to {PrivateHubName}.
+. From the navigation panel, select {MenuACAdminRemotes}.
 . In either the *rh-certified* or *Community* remote, click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Edit*.
 . Expand the *Show advanced options* drop-down menu.
-. Enter your proxy URL, proxy username, and proxy password in the appropriate fields. 
+. Enter your proxy URL, proxy username, and proxy password in the appropriate fields.
 . Click btn:[Save].

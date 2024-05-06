@@ -2,18 +2,19 @@
 
 = Mounting the directory in the execution node to the {ExecEnvShort} container
 
-With {PlatformNameShort} 2.1.2, only `O` and `z` options were available. 
-Since {PlatformNameShort} 2.2, further options such as `rw` are available. 
+With {PlatformNameShort} 2.1.2, only `O` and `z` options were available.
+Since {PlatformNameShort} 2.2, further options such as `rw` are available.
 This is useful when using NFS storage.
 
 .Procedure
 
-. From the navigation panel, select menu:Settings[Job Settings].
+. From the navigation panel, select {MenuAEAdminSettings}.
+. Select *Jobs settings* from the *Jobs* option.
 . Edit the *Paths to expose to isolated jobs* field:
 ** Enter a list of paths that volumes are mounted from the execution node or the hybrid node to the container.
 ** Enter one path per line.
-** The supported format is `HOST-DIR[:CONTAINER-DIR[:OPTIONS]`. 
-The allowed paths are `z`, `O`, `ro`, and `rw`. 
+** The supported format is `HOST-DIR[:CONTAINER-DIR[:OPTIONS]`.
+The allowed paths are `z`, `O`, `ro`, and `rw`.
 +
 .Example
 
@@ -23,30 +24,30 @@ The allowed paths are `z`, `O`, `ro`, and `rw`.
 ]
 ----
 +
-** For the `rw` option, configure the SELinux label correctly. 
+** For the `rw` option, configure the SELinux label correctly.
 For example, to mount the `/foo` directory, complete the following commands:
 +
 ----
 sudo su
 ----
 +
----- 
-mkdir /foo 
+----
+mkdir /foo
 ----
 +
 ----
-chmod 777 /foo 
+chmod 777 /foo
 ----
 +
 ----
-semanage fcontext -a -t container_file_t "/foo(/.*)?" 
+semanage fcontext -a -t container_file_t "/foo(/.*)?"
 ----
 +
 ----
 restorecon -vvFR /foo
 ----
 
-The `awx` user must be permitted to read or write in this directory at least. 
+The `awx` user must be permitted to read or write in this directory at least.
 Set the permissions as `777` at this time.
 
 .Additional resources

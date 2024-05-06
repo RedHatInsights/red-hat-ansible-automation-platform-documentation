@@ -5,7 +5,7 @@
 Manage the permissions that users and teams have to access a project.
 
 .Procedure
-. From the navigation panel, select  menu:Resources[Projects] page. 
+. From the navigation panel, select  {MenuAEProjects}. 
 . Select the project that you want to update and click the *Access* tab.
 . Click btn:[Add].
 . Select a user or team to add and click btn:[Next].
@@ -16,8 +16,8 @@ Manage the permissions that users and teams have to access a project.
 //In this example, two users have been selected.
 
 . Click btn:[Next].
-. Select the roles you want the selected users or teams to have. 
-Be sure to scroll down for a complete list of roles. 
+. Select the roles you want the selected users or teams to have.
+Be sure to scroll down for a complete list of roles.
 Different resources have different options available.
 +
 image:organizations-add-users-roles.png[Add user roles]
@@ -26,4 +26,3 @@ image:organizations-add-users-roles.png[Add user roles]
 The updated roles assigned for each user and team are displayed.
 +
 image:permissions-tab-roles-assigned.png[Permissions assigned]
-

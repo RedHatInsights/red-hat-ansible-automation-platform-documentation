@@ -4,7 +4,7 @@
 
 Your subscription has two possible statuses:
 
-* *Compliant*: Indicates that your subscription is appropriate for the number of hosts that you have automated within your subscription count. 
+* *Compliant*: Indicates that your subscription is appropriate for the number of hosts that you have automated within your subscription count.
 * *Out of compliance*: Indicates that you have exceeded the number of hosts in your subscription.
 //image::gs-controller-license-non-compliant.png[Subscription out of compliance]
 
@@ -38,7 +38,9 @@ For example, if you have a subscription capacity of 10 hosts:
 = Viewing the host activity
 
 .Procedure
-. In the navigation panel, select btn:[Host Metrics] to view the activity associated with hosts, such as those that have been automated and deleted. 
+//[ddacosta] I don't see a Host Metrics menu selection off the standalone navigation panel. Should it be Resources > Hosts? If so, add replace with {MenuInfrastructureHosts}
+//[ddacosta] For 2.5 Host Metrics is off the Analytics menu. Use {MenuAAHostMetrics}
+. In the navigation panel, select menu:Host Metrics[] to view the activity associated with hosts, such as those that have been automated and deleted.
 +
 Each unique hostname is listed and sorted by the user's preference.
 +
@@ -49,7 +51,7 @@ image::ug-host-metrics.png[Host metrics]
 A scheduled task automatically updates these values on a weekly basis and deletes jobs with hosts that were last automated more than a year ago.
 ====
 
-. Delete unnecessary hosts directly from the Host Metrics view by selecting the desired hosts and clicking btn:[Delete]. 
+. Delete unnecessary hosts directly from the Host Metrics view by selecting the desired hosts and clicking btn:[Delete].
 +
 These are soft-deleted, meaning their records are not removed, but are not being used and thereby not counted towards your subscription.
 endif::controller-UG,controller-AG[]

@@ -3,7 +3,7 @@
 = Updating projects from source control
 
 .Procedure
-. From the navigation panel, select menu:Resources[Projects].
+. From the navigation panel, select {MenuAEProjects}.
 . Click the sync image:sync.png[Sync,15,15] icon next to the project that you want to update.
 +
 [NOTE]
@@ -12,6 +12,6 @@ Immediately after adding a project setup to use source control, a sync starts th
 ====
 
 ** Click the project's status under the *Status* column for further information about the update process.
-This brings you to the *Output* tab of the menu:Jobs[] section.
+This brings you to the *Output* tab of the *Jobs* section.
 +
 image:projects-update-status.png[Project-update status]

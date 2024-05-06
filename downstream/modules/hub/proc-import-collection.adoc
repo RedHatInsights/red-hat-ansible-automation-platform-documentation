@@ -5,11 +5,12 @@
 
 = Importing an automation content collection in {HubName}
 
-As an automation content creator, you can import a collection to use in a custom repository. To use a collection in your custom repository, you must first import the collection into your namespace so the {HubName} administrator can approve it. 
+As an automation content creator, you can import a collection to use in a custom repository. To use a collection in your custom repository, you must first import the collection into your namespace so the {HubName} administrator can approve it.
 
 .Procedure
-. Log in to {PlatformName}.
-. From the navigation panel, select menu:Collections[Namespaces]. The *Namespaces* page displays all of the namespaces available.
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
+. Log in to {HubName}.
+. From the navigation panel, select {MenuACNamespaces}. The *Namespaces* page displays all of the namespaces available.
 . Click btn:[View Collections].
 . Click btn:[Upload Collection].
 . Navigate to the collection tarball file, select the file and click btn:[Open].

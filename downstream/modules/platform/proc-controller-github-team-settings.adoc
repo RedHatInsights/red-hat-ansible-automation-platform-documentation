@@ -2,21 +2,21 @@
 
 = GitHub Team settings
 
-To set up social authentication for a GitHub Team, you must obtain an OAuth2 key and secret for a web application. 
-To do this, you must first register your team-owned application at `https://github.com/organizations/<yourorg>/settings/applications`. 
-To register the application, you must supply it with your Authorization callback URL, which is the *Callback URL* shown in the *Details* page. 
+To set up social authentication for a GitHub Team, you must obtain an OAuth2 key and secret for a web application.
+To do this, you must first register your team-owned application at `https://github.com/organizations/<yourorg>/settings/applications`.
+To register the application, you must supply it with your Authorization callback URL, which is the *Callback URL* shown in the *Details* page.
 Each key and secret must belong to a unique application and cannot be shared or reused between different authentication
-backends. 
+backends.
 The OAuth2 key (Client ID) and secret (Client Secret) are used to supply the required fields in the UI.
 
 .Procedure
 . Find the numeric team ID using the link:https://fabian-kostadinov.github.io/2015/01/16/how-to-find-a-github-team-id/[GitHub API].
 The Team ID is used to supply a required field in the UI.
-. On the navigation panel, select menu:Settings[].
-. On the *Settings* page, select *GitHub settings* from the list of Authentication options..
+. From the navigation panel, select {MenuAEAdminSettings}.
+. On the *Settings* page, select *GitHub settings* from the list of *Authentication* options.
 . Click the *GitHub Team* tab.
 +
-The *GitHub Team OAuth2 Callback URL* field is already pre-populated and non-editable. 
+The *GitHub Team OAuth2 Callback URL* field is already pre-populated and non-editable.
 When the application is registered, GitHub displays the Client ID and Client Secret.
 
 . Click btn:[Edit] and copy and paste GitHub's Client ID into the *GitHub Team OAuth2 Key* field.

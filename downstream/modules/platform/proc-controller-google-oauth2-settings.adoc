@@ -2,22 +2,22 @@
 
 = Google OAuth2 settings
 
-To set up social authentication for Google, you must obtain an OAuth2 key and secret for a web application. 
-To do this, you must first create a project and set it up with Google. 
+To set up social authentication for Google, you must obtain an OAuth2 key and secret for a web application.
+To do this, you must first create a project and set it up with Google.
 
 For instructions, see link:https://support.google.com/googleapi/answer/6158849[Setting up OAuth 2.0] in the Google API Console Help documentation.
 
 If you have already completed the setup process, you can access those credentials by going to the Credentials section of the
-link:https://console.developers.google.com/[Google API Manager Console]. 
+link:https://console.developers.google.com/[Google API Manager Console].
 The OAuth2 key (Client ID) and secret (Client secret) are used to supply the required fields in the UI.
 
 .Procedure
-. From the navigation panel, select menu:Settings[].
-. On the *Settings* page, select *Google OAuth 2 settings* from the list of Authentication options.
+. From the navigation panel, select {MenuAEAdminSettings}.
+. On the *Settings* page, select *Google OAuth 2 settings* from the list of *Authentication* options.
 +
 The *Google OAuth2 Callback URL* field is already pre-populated and non-editable.
 
-. The following fields are also pre-populated. 
+. The following fields are also pre-populated.
 If not, use the credentials Google supplied during the web application setup process, and look for the values with the same format as the ones shown in the example below:
 
 * Click *Edit* and copy and paste Google's Client ID into the *Google OAuth2 Key* field.

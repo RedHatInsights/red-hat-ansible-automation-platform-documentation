@@ -6,7 +6,7 @@
 
 .Procedure
 
-. To review existing projects, select *Projects* from the navigation panel.
+. To review existing projects, select {MenuAEProjects} from the navigation panel.
 . Click btn:[Demo Project] to view its details.
 
 image::controller-demo-project-details.png[Demo Project]

@@ -2,5 +2,5 @@
 
 = Reasons to create remote configurations
 
-Each remote configuration located in menu:Automation Hub[Remotes] provides information for both the *community* and *rh-certified* repository about when the repository was *last updated*.
-You can add new content to {HubNameMain} at any time using the *Edit* and *Sync* features included on the menu:Automation Hub[Repositories] page.
+Each remote configuration located in {MenuACAdminRemotes} provides information for both the *community* and *rh-certified* repository about when the repository was *last updated*.
+You can add new content to {HubNameMain} at any time using the *Edit* and *Sync* features included on the {MenuACAdminRepositories} page.

@@ -8,8 +8,7 @@ After upgrading your {PlatformName} instance, associate your original instances 
 
 . Log into the new Controller instance.
 . Content from old instance, such as credentials, jobs, inventories should now be visible on your Controller instance.
-. Navigate to menu:Administration[Instance Groups].
+. Navigate to {MenuInfrastructureInstanceGroups}.
 . Associate execution nodes by clicking on an instance group, then click the *Instances* tab.
 . Click btn:[Associate]. Select the node(s) to associate to this instance group, then click btn:[Save].
 . You can also modify the default instance to disassociate your new execution nodes.
-

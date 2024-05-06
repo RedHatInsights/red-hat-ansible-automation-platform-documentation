@@ -16,7 +16,7 @@ Creating a new token revokes any previous tokens generated for {HubName}. Update
 
 . Navigate to your {ControllerName}.
 . Create a new credential.
-.. Navigate to menu:Resources[Credentials].
+.. Navigate to {MenuAMCredentials}.
 .. Click btn:[Add].
 .. Enter the name for your new credential in the *Name* field.
 .. Optional: Enter a description and enter or select the name of the organization with which the credential is associated.
@@ -25,7 +25,7 @@ Creating a new token revokes any previous tokens generated for {HubName}. Update
 .. Under *Type Details*, enter the *Galaxy Server URL*, *Authentication Server URL*, and *API Token* previously created.
 .. Click btn:[Save].
 . Select the credential that you created from the Organization’s *Galaxy Credentials* field.
-.. Navigate to menu:Access[Organizations].
+.. Navigate to {MenuControllerOrganizations}.
 .. Select the organization where want to add your Galaxy credentials.
 .. Click btn:[Edit].
 .. Under Galaxy Credentials, click the btn:[Search] icon.

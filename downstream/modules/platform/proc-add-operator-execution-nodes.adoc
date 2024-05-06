@@ -7,7 +7,7 @@
 
 .Procedure
 . Log in to {PlatformName}.
-. In the navigation panel, select menu:Administration[Instances].
+. In the navigation panel, select {MenuInfrastructureInstances}.
 . Click btn:[Add].
 . Input the VM name in the *Host Name* field.
 . Optional: Input the port number in the *Listener Port* field.
@@ -38,7 +38,7 @@ ansible-playbook install_receptor.yml -i inventory
 ----
 . When installed you can now upgrade your execution node by downloading and re-running the playbook for the instance you created
 
-.Verification 
+.Verification
 To verify if your playbook runs correctly on your new node run the following command:
 ----
 watch podman ps

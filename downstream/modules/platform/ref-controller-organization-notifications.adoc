@@ -2,13 +2,13 @@
 
 = Work with Notifications
 
-Selecting the *Notifications* tab enables you to review any notification integrations you have set up.
+Selecting the *Notifications* tab on the Organization details page enables you to review any notification integrations you have set up.
 
 image:organizations-notifications-samples-list.png[Notifications]
 
-Use the toggles to enable or disable the notifications to use with your particular organization. 
+Use the toggles to enable or disable the notifications to use with your particular organization.
 For more information, see xref:controller-enable-disable-notifications[Enable and Disable Notifications].
 
-If no notifications have been set up, select btn:[Notifications] from the navigation panel.
+If no notifications have been set up, select {MenuAEAdminJobNotifications} from the navigation panel.
 
 For information on configuring notification types, see xref:controller-notification-types[Notification Types].

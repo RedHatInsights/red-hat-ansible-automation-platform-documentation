@@ -15,8 +15,9 @@ Format your collection file name as follows: <my_namespace-my_collection-1.0.0.t
 
 
 .Procedure
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 . Log in to your {PrivateHubName}.
-. From the navigation panel, select menu:Collections[Namespaces] and select a namespace.
+. From the navigation panel, select {MenuACNamespaces} and select a namespace.
 . Click btn:[Upload collection].
 . Click btn:[Select file] from the *New collection* dialog.
 . Select the collection to upload.

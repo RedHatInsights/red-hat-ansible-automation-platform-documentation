@@ -2,14 +2,14 @@
 
 = Creating a new Inventory
 
-The Inventories window displays a list of the inventories that are currently available. 
+The Inventories window displays a list of the inventories that are currently available.
 You can sort the inventory list by name and searched type, organization, description, owners and modifiers of the inventory, or additional criteria.
 
 .Procedure
-. To view existing inventories, select *Inventories* from the navigation panel.
-** {ControllerNameStart} provides a demonstration inventory for you to use as you learn how the controller works. 
+. To view existing inventories, select {MenuInfrastructureInventories} from the navigation panel.
+** {ControllerNameStart} provides a demonstration inventory for you to use as you learn how the controller works.
 You can use it as it is or edit it later.
-You can create another inventory, if necessary. 
+You can create another inventory, if necessary.
 . To add another inventory, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-adding-new-inventory[Add a new inventory] in the _{ControllerUG}_ for more information.
 . Click btn:[Demo Inventory] to view its details.
 

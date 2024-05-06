@@ -11,8 +11,9 @@ You can add information and provide resources for your users to accompany collec
 * You have *Change Namespaces* permissions.
 
 .Procedure
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 . Log in to your {PrivateHubName}.
-. From the navigation panel, select menu:Collections[Namespaces].
+. From the navigation panel, select {MenuACNamespaces}.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Edit namespace*.
 . In the *Edit details* tab, enter information in the fields.
 . Click the *Edit resources* tab to enter markdown in the text field.

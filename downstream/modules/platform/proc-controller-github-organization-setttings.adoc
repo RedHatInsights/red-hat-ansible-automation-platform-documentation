@@ -2,22 +2,22 @@
 
 = GitHub Organization settings
 
-When defining account authentication with either an organization or a team within an organization, you should use the specific organization and team settings. 
+When defining account authentication with either an organization or a team within an organization, you should use the specific organization and team settings.
 Account authentication can be limited by an organization and by a team within an organization.
 
 You can also choose to permit all by specifying non-organization or non-team based settings.
 
 You can limit users who can login to the controller by limiting only those in an organization or on a team within an organization.
- 
-To set up social authentication for a GitHub Organization, you must obtain an OAuth2 key and secret for a web application. To do this, you must first register your organization-owned application at \https://github.com/organizations/<yourorg>/settings/applications. 
 
-To register the application, you must supply it with your Authorization callback URL, which is the *Callback URL* shown in the *Details* page. 
-Each key and secret must belong to a unique application and cannot be shared or reused between different authentication backends. 
+To set up social authentication for a GitHub Organization, you must obtain an OAuth2 key and secret for a web application. To do this, you must first register your organization-owned application at \https://github.com/organizations/<yourorg>/settings/applications.
+
+To register the application, you must supply it with your Authorization callback URL, which is the *Callback URL* shown in the *Details* page.
+Each key and secret must belong to a unique application and cannot be shared or reused between different authentication backends.
 The OAuth2 key (Client ID) and secret (Client Secret) are used to supply the required fields in the UI.
 
 .Procedure
-. On the navigation panel, select menu:Settings[].
-. On the *Settings* page, select *GitHub settings* from the list of Authentication options.
+. From the navigation panel, select {MenuAEAdminSettings}.
+. On the *Settings* page, select *GitHub settings* from the list of *Authentication* options.
 . Select the *GitHub Organization* tab.
 +
 The *GitHub Organization OAuth2 Callback URL* field is already pre-populated and non-editable.
@@ -31,7 +31,7 @@ When the application is registered, GitHub displays the Client ID and Client Sec
 . Click btn:[Save].
 
 .Verification
-To verify that the authentication was configured correctly, logout of {ControllerName}. 
+To verify that the authentication was configured correctly, logout of {ControllerName}.
 The login screen displays the GitHub Organization logo to enable logging in with those credentials.
 
 image:configure-controller-auth-github-orgs-logo.png[image]

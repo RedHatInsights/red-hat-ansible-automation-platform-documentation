@@ -5,11 +5,11 @@ ifdef::context[:parent-context: {context}]
 :context: controller-teams
 = Managing teams
 
-A *Team* is a subdivision of an organization with associated users, projects, credentials, and permissions. 
-Teams offer a means to implement role-based access control schemes and delegate responsibilities across organizations. 
+A *Team* is a subdivision of an organization with associated users, projects, credentials, and permissions.
+Teams offer a means to implement role-based access control schemes and delegate responsibilities across organizations.
 For example, you can grant permissions to a whole team rather than to each user on the team.
 
-From the navigation panel, select menu:Access[Teams].
+From the navigation panel, select {MenuControllerTeams}.
 
 image:organizations-teams-list.png[Teams list]
 

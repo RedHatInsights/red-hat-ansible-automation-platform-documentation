@@ -2,18 +2,18 @@
 
 = GitHub settings
 
-To set up social authentication for GitHub, you must obtain an OAuth2 key and secret for a web application. 
-To do this, you must first register the new application with GitHub at https://github.com/settings/developers. 
+To set up social authentication for GitHub, you must obtain an OAuth2 key and secret for a web application.
+To do this, you must first register the new application with GitHub at https://github.com/settings/developers.
 
-To register the application, you must supply it with your homepage URL, which is the *Callback URL* shown in the *Details* tab of the *GitHub default settings* page. 
+To register the application, you must supply it with your homepage URL, which is the *Callback URL* shown in the *Details* tab of the *GitHub default settings* page.
 The OAuth2 key (Client ID) and secret (Client Secret) are used to supply the required fields in the UI.
 
 .Procedure
-. On the navigation panel, select menu:Settings[].
-. On the *Settings* page, select *GitHub settings* from the list of Authentication options.
+. From the navigation panel, select {MenuAEAdminSettings}.
+. On the *Settings* page, select *GitHub settings* from the list of *Authentication* options.
 . Select the *GitHub Default* tab if not already selected.
 +
-The *GitHub OAuth2 Callback URL* field is already pre-populated and non-editable. 
+The *GitHub OAuth2 Callback URL* field is already pre-populated and non-editable.
 When the application is registered, GitHub displays the Client ID and Client Secret.
 
 . Click btn:[Edit] and copy and paste the GitHub Client ID into the *GitHub OAuth2 Key* field.
@@ -22,7 +22,7 @@ When the application is registered, GitHub displays the Client ID and Client Sec
 . Click btn:[Save].
 
 .Verification
-To verify that the authentication was configured correctly, logout of {ControllerName}.  
+To verify that the authentication was configured correctly, logout of {ControllerName}.
 The login screen now displays the GitHub logo to enable logging in with those credentials.
 
 image:configure-controller-auth-github-logo.png[image]

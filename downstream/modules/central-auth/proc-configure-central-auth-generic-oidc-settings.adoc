@@ -12,16 +12,17 @@ NOTE: If you have an existing realm you may go to step 6.
 
 . Enter Name and click btn:[Create].
 
-. Click the Clients tab.
+. Click the *Clients* tab.
 
 . Enter name and click btn:[Create].
 
-. From the navigation panel, select menu:Client Protocol[openid-connect]. 
-. From the navigation panel, select menu:Access Type[confidential]. 
+. From the navigation panel, select menu:Client Protocol[openid-connect].
 
-. In the Root URL field, enter your {PlatformNameShort} server IP or hostname.
+. From the navigation panel, select menu:Access Type[confidential].
 
-. In the Valid Redirect field, enter your {PlatformNameShort} server IP or hostname. If not in production, set to *.
+. In the *Root URL* field, enter your {PlatformNameShort} server IP or hostname.
+
+. In the *Valid Redirect* field, enter your {PlatformNameShort} server IP or hostname. If not in production, set to *.
 
 . In the Web origins field, enter your {PlatformNameShort} server IP or hostname. If not in production, set to *.
 +
@@ -30,12 +31,12 @@ NOTE: If you have an existing realm you may go to step 6.
 NOTE: Keep track of the Secret to be used later.
 +
 . Log in to {PlatformNameShort} Controller as admin.
-. Click Settings.
-. Click Generic OIDC settings.
+. From the navigation panel, select {MenuAEAdminSettings}.
+. Select *Generic OIDC settings* from the list of *Authentication* options.
 . Click btn:[Edit].
-. In the OIDC Key field, enter the name of your client from step 5.
-. In the OIDC Secret field, enter the secret saved from step 8.
-. In the OIDC Provider URL field, enter your keycloak server URL and port.
+. In the *OIDC Key* field, enter the name of your client from step 5.
+. In the *OIDC Secret* field, enter the secret saved from step 8.
+. In the *OIDC Provider URL* field, enter your keycloak server URL and port.
 . Click btn:[Save].
 
-OIDC should appear as an option for login. Click btn:[Sign in with OIDC] and it will redirect you to the SSO server for login and redirection back to {PlatformNameShort}. 
+OIDC should appear as an option for login. Click btn:[Sign in with OIDC] and it will redirect you to the SSO server for login and redirection back to {PlatformNameShort}.

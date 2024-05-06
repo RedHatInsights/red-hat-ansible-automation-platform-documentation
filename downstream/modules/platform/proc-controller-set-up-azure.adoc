@@ -5,17 +5,17 @@
 To set up enterprise authentication for {Azure} Active Directory (AD), you need to obtain an OAuth2 key and secret by registering your organization-owned application from Azure at:
 https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app.
 
-Each key and secret must belong to a unique application and cannot be shared or reused between different authentication backends. 
+Each key and secret must belong to a unique application and cannot be shared or reused between different authentication backends.
 To register the application, you must supply it with your webpage URL, which is the Callback URL shown in the *Authentication* tab of the *Settings* screen.
 
 .Procedure
 
-. From the navigation panel, select menu:Settings[].
+. From the navigation panel, select {MenuAEAdminSettings}.
 . Select *Azure AD settings* from the list of *Authentication* options.
 +
 [NOTE]
 ====
-The *Azure AD OAuth2 Callback URL* field is already pre-populated and non-editable. 
+The *Azure AD OAuth2 Callback URL* field is already pre-populated and non-editable.
 Once the application is registered, {Azure} displays the Application ID and Object ID.
 ====
 . Click btn:[Edit], copy and paste {Azure}'s Application ID to the *Azure AD OAuth2 Key* field.

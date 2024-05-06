@@ -2,7 +2,7 @@
 
 = Applications - Tokens
 
-Select menu:Tokens[] to display a list of the users that have tokens to access the application.
+Select the *Tokens* tab to display a list of the users that have tokens to access the application.
 
 image:apps-tokens-list-view-examples.png[Applications- tokens list]
 

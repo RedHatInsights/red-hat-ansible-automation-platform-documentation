@@ -6,11 +6,11 @@ The Organizations page displays the existing organizations for your installation
 
 .Procedure
 
-* From the navigation panel, select *Organizations*.
+* From the navigation panel, select {MenuControllerOrganizations}.
 +
 [NOTE]
 ====
-{ControllerNameStart} automatically creates a default organization. 
+{ControllerNameStart} automatically creates a default organization.
 If you have a Self-support level license, you have only the default organization available and must not delete it.
 ====
 You can use the default organization as it is initially set up and edit it later.

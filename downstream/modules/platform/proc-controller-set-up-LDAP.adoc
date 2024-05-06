@@ -5,18 +5,18 @@
 When configured, a user who logs in with an LDAP username and password automatically has an {ControllerName} account created for them.
 They can be automatically placed into organizations as either regular users or organization administrators.
 
-Users created in the user interface (Local) take precedence over those logging into {ControllerName} for their first time with an alternative authentication solution. 
+Users created in the user interface (Local) take precedence over those logging into {ControllerName} for their first time with an alternative authentication solution.
 You must delete the local user if you want to re-use with another authentication method, such as LDAP.
 
-Users created through an LDAP login cannot change their username, given name, surname, or set a local password for themselves. 
+Users created through an LDAP login cannot change their username, given name, surname, or set a local password for themselves.
 You can also configure this to restrict editing of other field names.
 
 [NOTE]
 ====
-If the LDAP server you want to connect to has a certificate that is self-signed or signed by a corporate internal certificate authority (CA), 
-you must add the CA certificate to the system's trusted CAs. 
-Otherwise, connection to the LDAP server results in an error that the certificate issuer is not recognized. 
-For more information, see xref:controller-import-CA-cert-LDAP[Importing a certificate authority in {ControllerName} for LDAPS integration]. 
+If the LDAP server you want to connect to has a certificate that is self-signed or signed by a corporate internal certificate authority (CA),
+you must add the CA certificate to the system's trusted CAs.
+Otherwise, connection to the LDAP server results in an error that the certificate issuer is not recognized.
+For more information, see xref:controller-import-CA-cert-LDAP[Importing a certificate authority in {ControllerName} for LDAPS integration].
 If prompted, use your Red Hat customer credentials to login.
 ====
 
@@ -36,11 +36,11 @@ In this example, `CN=josie,CN=users,DC=website,DC=com` is the distinguished name
 +
 [NOTE]
 ====
-The `ldapsearch` utility is not automatically pre-installed with {ControllerName}. 
+The `ldapsearch` utility is not automatically pre-installed with {ControllerName}.
 However, you can install it from the `openldap-clients` package.
 ====
 +
-. From the navigation panel, select menu:Settings[] in the {ControllerName} UI.
+. From the navigation panel, select {MenuAEAdminSettings} in the {ControllerName} UI.
 . Select *LDAP settings* in the list of *Authentication* options.
 +
 You do not need multiple LDAP configurations per LDAP server, but you can configure many LDAP servers from this page, otherwise, leave the server at *Default*.
@@ -53,21 +53,21 @@ The equivalent API endpoints show `AUTH_LDAP_*` repeated: `AUTH_LDAP_1_*`, `AUTH
 You can specify multiple LDAP servers by separating each with spaces or commas. Click the image:question_circle.png[Tooltip,12,12] icon to comply with the correct syntax and rules.
 ====
 +
-. Enter the password to use for the binding user in the *LDAP Bind Password* text field. 
+. Enter the password to use for the binding user in the *LDAP Bind Password* text field.
 For more information about LDAP variables, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/appendix-inventory-files-vars#ref-hub-variables[Ansible automation hub variables].
-. Click to select a group type from the *LDAP Group Type* menu.
+. Click to select a group type from the *LDAP Group Type* list.
 +
 The LDAP group types that are supported by {ControllerName} use the underlying link:https://django-auth-ldap.readthedocs.io/en/latest/groups.html#types-of-groups[django-auth-ldap library].
 To specify the parameters for the selected group type, see Step 15.
-. The *LDAP Start TLS* is disabled by default. 
+. The *LDAP Start TLS* is disabled by default.
 To enable TLS when the LDAP connection is not using SSL/TLS, set the toggle to *On*.
-. Enter the distinguished name in the *LDAP Bind DN* text field to specify the user that {ControllerName} uses to connect (Bind) to the LDAP server. 
-*  If that name is stored in key `sAMAccountName`, the *LDAP User DN Template* is populated from `(sAMAccountName=%(user)s)`. 
-Active Directory stores the username to `sAMAccountName`. 
+. Enter the distinguished name in the *LDAP Bind DN* text field to specify the user that {ControllerName} uses to connect (Bind) to the LDAP server.
+*  If that name is stored in key `sAMAccountName`, the *LDAP User DN Template* is populated from `(sAMAccountName=%(user)s)`.
+Active Directory stores the username to `sAMAccountName`.
 For OpenLDAP, the key is `uid` and the line becomes `(uid=%(user)s)`.
 . Enter the distinguished group name to enable users within that group to access {ControllerName} in the *LDAP Require Group* field, using the same format as the one shown in the text field, `CN=controller Users,OU=Users,DC=website,DC=com`.
 . Enter the distinguished group name to prevent users within that group from accessing {ControllerName} in the *LDAP Deny Group* field, using the same format as the one shown in the text field.
-. Enter where to search for users while authenticating in the *LDAP User Search* field by using the same format as the one shown in the text field. 
+. Enter where to search for users while authenticating in the *LDAP User Search* field by using the same format as the one shown in the text field.
 In this example, use:
 +
 [literal, options="nowrap" subs="+attributes"]
@@ -79,7 +79,7 @@ In this example, use:
 ]
 ----
 +
-The first line specifies where to search for users in the LDAP tree. 
+The first line specifies where to search for users in the LDAP tree.
 In the earlier example, the users are searched recursively starting from `DC=website,DC=com`.
 +
 The second line specifies the scope where the users should be searched:
@@ -128,7 +128,7 @@ For many search queries, use the following correct syntax:
 * The second line specifies the scope and is the same as that for the user directive.
 * The third line specifies what the `objectClass` of a group object is in the LDAP that you are using.
 +
-. Enter the user attributes in the *LDAP User Attribute Map* the text field. 
+. Enter the user attributes in the *LDAP User Attribute Map* the text field.
 In this example, use:
 +
 [literal, options="nowrap" subs="+attributes"]
@@ -140,12 +140,12 @@ In this example, use:
 }
 ----
 +
-The earlier example retrieves users by surname from the key `sn`. 
+The earlier example retrieves users by surname from the key `sn`.
 You can use the same LDAP query for the user to decide what keys they are stored under.
 +
-Depending on the selected *LDAP Group Type*, different parameters are available in the *LDAP Group Type Parameters* field to account for this. 
-`LDAP_GROUP_TYPE_PARAMS` is a dictionary that is converted by {ControllerName} to `kwargs` and passed to the *LDAP Group Type* class selected. 
-There are two common parameters used by any of the *LDAP Group Type*; `name_attr` and `member_attr`. 
+Depending on the selected *LDAP Group Type*, different parameters are available in the *LDAP Group Type Parameters* field to account for this.
+`LDAP_GROUP_TYPE_PARAMS` is a dictionary that is converted by {ControllerName} to `kwargs` and passed to the *LDAP Group Type* class selected.
+There are two common parameters used by any of the *LDAP Group Type*; `name_attr` and `member_attr`.
 Where `name_attr defaults` to cn and `member_attr` defaults to member:
 +
 [literal, options="nowrap" subs="+attributes"]
@@ -155,7 +155,7 @@ Where `name_attr defaults` to cn and `member_attr` defaults to member:
 +
 To find what parameters a specific *LDAP Group Type* expects, see the link:https://django-auth-ldap.readthedocs.io/en/latest/reference.html#django_auth_ldap.config.LDAPGroupType[django_auth_ldap] documentation around the classes `init` parameters.
 +
-. Enter the user profile flags in the *LDAP User Flags by Group* text field. 
+. Enter the user profile flags in the *LDAP User Flags by Group* text field.
 The following example uses the syntax to set LDAP users as "Superusers" and "Auditors":
 +
 [literal, options="nowrap" subs="+attributes"]
@@ -171,6 +171,6 @@ The following example uses the syntax to set LDAP users as "Superusers" and "Aud
 
 [NOTE]
 ====
-{ControllerNameStart} does not actively synchronize users, but they are created during their initial login. 
+{ControllerNameStart} does not actively synchronize users, but they are created during their initial login.
 To improve performance associated with LDAP authentication, see xref:controller-prevent-LDAP-attributes[Preventing LDAP attributes from updating on each login].
 ====

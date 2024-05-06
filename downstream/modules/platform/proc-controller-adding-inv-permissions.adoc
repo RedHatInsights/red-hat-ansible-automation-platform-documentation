@@ -5,7 +5,7 @@
 Use the following procedure to add permissions to inventories:
 
 .Procedure
-. From the navigation panel, select menu:Resources[Inventories].
+. From the navigation panel, select {MenuInfrastructureInventories}.
 . Select a template, and in the *Access tab*, click btn:[Add].
 . Select a user or team to add and click btn:[Next].
 . Select the check box next to a name to add one or more users or teams from the list as members.
@@ -16,7 +16,7 @@ image:organizations-add-users-for-example-organization.png[image]
 In this example, two users have been selected to be added.
 
 . Select the roles you want the selected users or teams to have.
-Scroll down for a complete list of roles. 
+Scroll down for a complete list of roles.
 Different resources have different options available.
 +
 image:organizations-add-users-roles.png[Add user roles]

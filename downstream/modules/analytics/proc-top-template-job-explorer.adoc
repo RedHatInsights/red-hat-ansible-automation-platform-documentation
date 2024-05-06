@@ -9,8 +9,8 @@ You can view job instances for top templates in a cluster to learn more about in
 
 .Procedure
 
-. Navigate to menu:Clusters[].
-. Select a cluster from the clusters drop-down list. The view will update with that cluster's data.
+. From the navigation panel, select {MenuAAClusters}.
+. Select a cluster from the *Clusters* list. The view will update with that cluster's data.
 . Click on a template name in *Top Templates*.
 . Click btn:[View all jobs] in the modal that appears.
 

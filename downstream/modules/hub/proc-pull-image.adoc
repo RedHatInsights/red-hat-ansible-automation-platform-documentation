@@ -4,7 +4,7 @@
 
 
 [role="_abstract"]
-You can pull images from the {HubName} container registry to make a copy to your local machine. 
+You can pull images from the {HubName} container registry to make a copy to your local machine.
 
 .Prerequisites
 
@@ -12,8 +12,8 @@ You can pull images from the {HubName} container registry to make a copy to your
 
 .Procedure
 
-. If are pulling container images from a password or token-protected registry, xref:proc-create-credential[create a credential in {ControllerName}] before pulling the image. 
-. From the navigation panel, select menu:Execution Environments[Execution Environments].
+. If you are pulling container images from a password or token-protected registry, xref:proc-create-credential[create a credential in {ControllerName}] before pulling the image.
+. From the navigation panel, select {MenuACExecEnvironments}.
 . Select your container repository.
 . In the *Pull this image* entry, click btn:[Copy to clipboard].
 . Paste and run the command in your terminal.

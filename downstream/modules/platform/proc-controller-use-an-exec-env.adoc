@@ -4,20 +4,20 @@
 
 .Prerequisites
 
-* An {ExecEnvShort} must have been created using ansible-builder as described in xref:ref-controller-building-exec-env[Build an {ExecEnvShort}]. 
-When an {ExecEnvShort} has been created, you can use it to run jobs. 
+* An {ExecEnvShort} must have been created using ansible-builder as described in xref:ref-controller-building-exec-env[Build an {ExecEnvShort}].
+When an {ExecEnvShort} has been created, you can use it to run jobs.
 Use the {ControllerName} UI to specify the {ExecEnvShort} to use in your job templates.
-* Depending on whether an {ExecEnvShort} is made available for global use or tied to an organization, you must have the appropriate level of administrator privileges to use an {ExecEnvShort} in a job. 
+* Depending on whether an {ExecEnvShort} is made available for global use or tied to an organization, you must have the appropriate level of administrator privileges to use an {ExecEnvShort} in a job.
 Execution environments tied to an organization require Organization administrators to be able to run jobs with those {ExecEnvShort}s.
 * Before running a job or job template that uses an {ExecEnvShort} that has a credential assigned to it, ensure that the credential contains a username, host, and password.
 
 .Procedure
-. From the navigation panel, select menu:Administration[Execution Environments].
+. From the navigation panel, select {MenuInfrastructureExecEnvironments}.
 . Click btn:[Add] to add an {ExecEnvShort}.
 . Enter the appropriate details into the following fields:
 
 * *Name* (required): Enter a name for the {ExecEnvShort}.
-* *Image* (required): Enter the image name. 
+* *Image* (required): Enter the image name.
 The image name requires its full location (repository), the registry, image name, and version tag in the example format of `quay.io/ansible/awx-ee:latestrepo/project/image-name:tag`.
 * Optional: *Pull*: Choose the type of pull when running jobs:
 
@@ -38,7 +38,7 @@ image:ee-new-ee-form-filled.png[New {ExecEnvShort}]
 
 . Click btn:[Save].
 +
-Your newly added {ExecEnvShort} is ready to be used in a job template. 
+Your newly added {ExecEnvShort} is ready to be used in a job template.
 +
 . To add an {ExecEnvShort} to a job template, specify it in the *Execution Environment* field of the job template, as shown in the following example:
 

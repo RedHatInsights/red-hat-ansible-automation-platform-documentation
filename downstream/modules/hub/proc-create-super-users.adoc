@@ -11,8 +11,9 @@ If you want to spread administration across your team, you can create a super us
 * You must be a *Super user*.
 
 .Procedure
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 . Log in to your {PrivateHubName}.
-. From the navigation panel, select menu:User Access[Users].
+. From the navigation panel, select {MenuHubUsers}.
 . Select the user that you want to make a super user. The *User details* for that user are displayed.
 . Under *User type*, select *Super User*.
 

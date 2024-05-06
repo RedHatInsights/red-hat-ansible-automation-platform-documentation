@@ -209,10 +209,10 @@
 :MenuACAdminCollectionApproval: menu:Collections[Approval]
 :MenuACExecEnvironments: menu:Execution Environments[Execution Environments]
 :MenuACAdminRemoteRegistries: menu:Execution Environments[Remote Registries]
-:MenuACAdminTasks: menu:Task Management
-:MenuACAdminSignatureKeys: menu:Signature Keys
+:MenuACAdminTasks: menu:Task Management[]
+:MenuACAdminSignatureKeys: menu:Signature Keys[]
 :MenuHubDoc: menu:Documentation[]
-// The following Access selections will be centrally managed in the gateway in a future scoped version of the unified platform; 2.5-next or later and will need to be changed to the attributes currently defined in the Access Management selections below.
+// The following Access selections will be centrally managed in the gateway in a futu2re scoped version of the unified platform; 2.5-next or later and will need to be changed to the attributes currently defined in the Access Management selections below.
 :MenuHubUsers: menu:User Access[Users]
 :MenuHubGroups: menu:User Access[Groups]
 :MenuHubRoles: menu:User Access[Roles]
@@ -222,7 +222,7 @@
 :MenuAASavingsPlanner: menu:{MenuAA}[Savings Planner]
 :MenuAAAutomationCalc: menu:{MenuAA}[Automation Calculator]
 :MenuAAOrgStats: menu:{MenuAA}[Organization Statistics]
-:MenuAAJobExplorer: menu:Insights[Job Explorer]
+:MenuAAJobExplorer: menu:{MenuAA}[Job Explorer]
 :MenuAAClusters: menu:{MenuAA}[Clusters]
 :MenuAANotifications: menu:{MenuAA}[Notification]
 //The following currently don't exist in the console but will be included in the 2.5 platform

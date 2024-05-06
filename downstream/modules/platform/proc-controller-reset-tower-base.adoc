@@ -4,15 +4,17 @@
 
 {ControllerNameStart} determines how the base URL (`TOWER_URL_BASE`) is defined by looking at an incoming request and setting the server address based on that incoming request.
 
-{ControllerNameStart} takes settings values from the database first. 
-If no settings values are found, it uses the values from the settings files. 
+{ControllerNameStart} takes settings values from the database first.
+If no settings values are found, it uses the values from the settings files.
 If you post a license by navigating to the {ControllerName} host's IP address, the posted license is written to the settings entry in the database.
 
 Use the following procedure to reset `TOWER_URL_BASE` if the wrong address has been picked up:
 
 .Procedure
 
-. From the navigation panel, select menu:Settings[Miscellaneous System settings].
+. From the navigation panel, select {MenuAEAdminSettings}.
+. Select *Miscellaneous System settings* from the *System* options.
 . Click btn:[Edit].
 . Enter the address in the *Base URL of the service* field for the DNS entry you wish to appear in notifications.
+//[ddacosta] Subscription is not an option from the Settings menu in the controller test environment. Need to verify where this lives and if it changes for 2.5
 . Re-add your license in menu:Settings[Subscription settings].

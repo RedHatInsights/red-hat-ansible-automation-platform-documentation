@@ -10,8 +10,9 @@ When you delete a user account, the name and email of the user are permanently r
 * You have *user* permissions in {PrivateHubName}.
 
 .Procedure
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 . Log in to {PrivateHubName}.
-. From the navigation panel, select menu:User Access[].
+. From the navigation panel, select {MenuHubUsers}.
 . Click btn:[Users] to display a list of the current users.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}* icon beside the user that you want to remove, then click btn:[Delete].
 . Click btn:[Delete] in the warning message to permanently delete the user.

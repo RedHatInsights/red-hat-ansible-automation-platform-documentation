@@ -8,13 +8,13 @@ ifdef::context[:parent-context: {context}]
 = Inventories
 
 ifdef::controller-GS[]
-An inventory is a collection of hosts managed by {ControllerName}. 
-Organizations are assigned to inventories, while permissions to launch playbooks against inventories are controlled at the user or team level. 
+An inventory is a collection of hosts managed by {ControllerName}.
+Organizations are assigned to inventories, while permissions to launch playbooks against inventories are controlled at the user or team level.
 
 For more information, see the following documentation:
 
-* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-user-permissions[Adding and removing user permissions] 
-* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-team-add-user[Adding or removing a user] 
+* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-user-permissions[Adding and removing user permissions]
+* link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#proc-controller-team-add-user[Adding or removing a user]
 * link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/red_hat_ansible_automation_platform_planning_guide/index#about_the_installer_inventory_file[About the installer inventory file]
 
 include::platform/proc-controller-create-inventory.adoc[leveloffset=+1]
@@ -33,13 +33,13 @@ Groups may be sourced manually, by entering host names into {ControllerName}, or
 
 [NOTE]
 ====
-If you have a custom dynamic inventory script, or a cloud provider that is not yet supported natively in {ControllerName}, you can also import that into {ControllerName}. 
+If you have a custom dynamic inventory script, or a cloud provider that is not yet supported natively in {ControllerName}, you can also import that into {ControllerName}.
 
 For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/scm-inv-source.html#ag-inv-import[Inventory file importing] in the _{ControllerAG}_.
 ====
 
-From the navigation panel, select menu:Resources[Inventories].
-The *Inventories* window displays a list of the inventories that are currently available. 
+From the navigation panel, select {MenuInfrastructureInventories}.
+The *Inventories* window displays a list of the inventories that are currently available.
 You can sort the inventory list by *Name*, *Type*, or *Organization*.
 //Can't see how you search for these: description, owners and modifiers of the inventory, or additional criteria as needed.
 
@@ -65,7 +65,7 @@ The statuses are:
 Click the Inventory name to display the *Details* page for the selected inventory, which shows the
 inventory's groups and hosts.
 
-//Smart inventories are deprecated. 
+//Smart inventories are deprecated.
 include::platform/ref-controller-smart-inventories.adoc[leveloffset=+1]
 include::platform/ref-controller-smart-host-filter.adoc[leveloffset=+2]
 include::platform/proc-controller-define-filter-with-facts.adoc[leveloffset=+2]

@@ -58,7 +58,7 @@ You will use a simple playbook to launch the automation with sleep defined to al
 
 ----
 
-In {PlatformNameShort} 2, from the Settings menu, select menu:Job Settings[Jobs].
+From the {PlatformNameShort} 2 navigation panel, select {MenuAEAdminSettings}. Then select *Job settings* from the *Jobs* option.
 
 Paths to expose isolated jobs:
 
@@ -72,7 +72,7 @@ The volume mount is mapped with the same name in the container and has read-writ
 
 The _prompt on launch_ should be set for _extra_vars_ so you can adjust the sleep duration for each run, The default is 30 seconds.
 
-Once launched, and the _wait_for_ module is invoked for the sleep, you can go onto the execution node and look at what is running. 
+Once launched, and the _wait_for_ module is invoked for the sleep, you can go onto the execution node and look at what is running.
 
 To verify the run has completed successfully, run this command to get an output of the job:
 

@@ -2,12 +2,11 @@
 
 = Editing a project
 
-As part of the initial setup you can leave the default *Demo Project* as it is. 
+As part of the initial setup you can leave the default *Demo Project* as it is.
 You can edit it later.
 
 .Procedure
 . Open the project to edit it by using one of these methods:
-** Go to menu:Details[Edit].
-** From the navigation panel, select menu:Projects[Edit Project] next to the project name and edit the appropriate details.
+** Go to the project Details page and click btn:[Edit].
+** From the navigation panel, select {MenuAEProjects}. Click btn:[Edit] next to the project name and edit the appropriate details.
 . Save your changes
-

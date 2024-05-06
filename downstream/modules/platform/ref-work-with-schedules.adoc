@@ -2,7 +2,7 @@
 
 = Work with Schedules
 
-On the *Projects* page, select menu:Schedules[] to enable you to review any schedules set up for this project.
+On the *Projects* page, select the *Schedules* tab to enable you to review any schedules set up for this project.
 
 image:generic-schedules-list-configured.png[Schedules list]
 

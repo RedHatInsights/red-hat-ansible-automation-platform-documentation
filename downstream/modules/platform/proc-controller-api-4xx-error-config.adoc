@@ -2,7 +2,7 @@
 
 = API 4XX Error Configuration
 
-When the API encounters an issue with a request, it typically returns an HTTP error code in the 400 range along with an error. 
+When the API encounters an issue with a request, it typically returns an HTTP error code in the 400 range along with an error.
 When this happens, an error message is generated in the log that follows the following pattern:
 
 [literal, options="nowrap" subs="+attributes"]
@@ -10,15 +10,15 @@ When this happens, an error message is generated in the log that follows the fol
 ' status {status_code} received by user {user_name} attempting to access {url_path} from {remote_addr} '
 ----
 
-These messages can be configured as required. 
+These messages can be configured as required.
 Use the following procedure to modify the default API 4XX errors log message format.
 
 .Procedure
-. From  the navigation panel, select menu:Settings[Logging settings].
+. From  the navigation panel, select {MenuAEAdminSettings} then select *Logging settings*.
 . On the *Logging settings* page, click btn:[Edit].
 . Modify the field *Log Format For API 4XX Errors*.
 
-Items surrounded by `{}` are substituted when the log error is generated. 
+Items surrounded by `{}` are substituted when the log error is generated.
 The following variables can be used:
 
 * *status_code*: The HTTP status code the API is returning.

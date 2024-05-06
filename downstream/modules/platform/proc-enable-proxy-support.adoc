@@ -9,7 +9,8 @@ To enable proxy server support, edit the *REMOTE_HOST_HEADERS* field in the sett
 
 .Procedure
 
-. On your {ControllerName}, navigate to menu:Settings[Miscellaneous System].
+. On your {ControllerName}, navigate to {MenuAEAdminSettings}.
+. Select *Miscellaneous System settings* from the list of *System* options.
 . In the *REMOTE_HOST_HEADERS* field, enter the following values:
 +
 ----

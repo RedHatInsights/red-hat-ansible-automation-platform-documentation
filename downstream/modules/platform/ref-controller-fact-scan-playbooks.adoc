@@ -31,7 +31,7 @@ The `scan_files` fact module is the only module that accepts parameters, passed 
 An omission is the same as a false setting.
 
 Scan job templates should enable `become` and use `credentials` for which `become` is a possibility. 
-You can enable `become` by checking *Privilege Escalation* from the options menu:
+You can enable `become` by checking *Privilege Escalation* from the options list:
 
 image::ug-job-template-become.png[Job template become]
 

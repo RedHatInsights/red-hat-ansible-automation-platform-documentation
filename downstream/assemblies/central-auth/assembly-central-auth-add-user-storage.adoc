@@ -9,14 +9,14 @@
 
 .Procedure
 . Log in to {AAPCentralAuth} as an SSO admin user.
-. From the navigation bar, select menu:Configure section[User Federation].
+. From the navigation panel, select menu:Configure section[User Federation].
 
 [NOTE]
 ====
 When using an LDAP User Federation in {RHSSOshort}, a group mapper must be added to the client configuration, ansible-automation-platform, to expose the identity provider (IDP) groups to the SAML authentication. Refer to link:{BaseURL}/red_hat_single_sign-on/{RHSSOVers}/html-single/server_administration_guide/index#protocol-mappers[OIDC Token and SAML Assertion Mappings] for more information on SAML assertion mappers.
 ====
 
-. Using the dropdown menu labeled _Add provider_, select your LDAP provider to proceed to the LDAP configuration page.
+. From the *Add provider* list, select your LDAP provider to proceed to the LDAP configuration page.
 
 The following table lists the available options for your LDAP configuration:
 [cols="a,a"]

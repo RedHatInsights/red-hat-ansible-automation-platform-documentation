@@ -7,7 +7,7 @@ ifdef::controller-GS[]
 
 * Click the *Menu* icon to hide or display the navigation panel.
 ** On the main dashboard, a summary appears listing your current *Job status*.
-** You can filter the job status within a period of time or by job type. 
+** You can filter the job status within a period of time or by job type.
 ** You can view summaries of *Recent Jobs* and *Recent Templates* in their respective tabs.
 
 image::controller-home-dashboard.png[Dashboard home]
@@ -25,9 +25,9 @@ Use the navigation menu to complete the following tasks:
 
 .Procedure
 
-* From the navigation panel, select btn:[Views] to hide or display the *Views* options.
+* From the navigation panel, select menu:Views[] to hide or display the *Views* options.
 * The dashboard displays a summary of your current *Job status*.
-** You can filter the job status within a period of time or by job type. 
+** You can filter the job status within a period of time or by job type.
 
 image::controller-home-dashboard.png[Dashboard home]
 //New image for next version
@@ -39,19 +39,19 @@ The *Recent Jobs* tab displays which jobs were most recently run, their status, 
 
 image::ug-dashboard-recent-jobs.png[Recent jobs]
 
-The *Recent Templates* tab displays a summary of the most recently used templates. 
-You can also access this summary by selecting btn:[Templates] from the navigation menu.
+The *Recent Templates* tab displays a summary of the most recently used templates.
+You can also access this summary by selecting {MenuAETemplates} from the navigation panel.
 
 image:ug-dashboard-recent-templates.png[Recent templates]
 
 [NOTE]
 ====
-Click btn:[Dashboard] on the navigation panel, or the *{PlatformNameShort}* logo at any time to return to the Dashboard.
+Click {MenuViewsDashboard} on the navigation panel, or the *{PlatformNameShort}* logo at any time to return to the Dashboard.
 ====
 endif::controller-UG[]
 
 ifdef::controller-GS[]
-The last item in the navigation panel is *Settings*, which provides access to {ControllerName} configuration settings.
+The last item in the navigation panel is {MenuAEAdminSettings}, which provides access to {ControllerName} configuration settings.
 
 The *Settings* page allows administrators to configure the following settings:
 
@@ -64,7 +64,7 @@ For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{Pl
 
 [NOTE]
 ====
-To launch a simple playbook, you must set up a number of configuration options. 
+To launch a simple playbook, you must set up a number of configuration options.
 Completing the getting started configuration tasks now ensures that {ControllerName} is configured properly and permits easier executions of more involved playbooks later on.
 ====
 endif::controller-GS[]

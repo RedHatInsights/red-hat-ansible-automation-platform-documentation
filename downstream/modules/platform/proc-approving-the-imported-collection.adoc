@@ -8,7 +8,7 @@ After you have imported collections by using either the GUI or the CLI method, y
 
 . Log in to link:https://console.redhat.com/ansible/automation-hub/[{HubName} Hybrid Cloud Console].
 
-. From the navigation panel, select *menu:Collections[Approval]*.
+. From the navigation panel, select {MenuACAdminCollectionApproval}.
 
 . Click *btn:[Approve]* for the collection you want to approve.
 
@@ -44,7 +44,7 @@ You can build a custom {ExecEnvShort} image on an internet-facing machine. After
 $ podman image save localhost/custom-ee:latest | gzip -c custom-ee-latest.tar.gz
 ----
 +
-Transfer the file across the disconnected boundary by using an existing mechanism such as sneakernet or one-way diode. 
+Transfer the file across the disconnected boundary by using an existing mechanism such as sneakernet or one-way diode.
 +
 . After the image is available on the disconnected side, import it into the local podman cache, tag it, and push it to the disconnected hub:
 

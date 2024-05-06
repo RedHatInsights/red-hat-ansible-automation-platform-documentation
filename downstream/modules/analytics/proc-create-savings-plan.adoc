@@ -12,7 +12,7 @@ Create an automation savings plan by defining the tasks needed to complete an au
 
 .Procedure
 
-. Navigate to menu:Red Hat Insights[Savings Planner].
+. From the navigation panel, select {MenuAASavingsPlanner}.
 . Click btn:[Add Plan].
 . Provide some information about your automation job:
 .. Enter descriptive information, such as a name, description, and type of automation.

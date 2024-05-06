@@ -12,6 +12,7 @@ You must have a Red Hat Subscription Manifest file exported from the Red Hat Cus
 
 . Complete steps to generate and download the manifest file
 . Log in to {PlatformName}.
+//[ddacosta] There is no license setting in the test environment for 2.4? Need to verify this selection. In 2.5, I think it will be Settings[Subscription]...
 . If you are not immediately prompted for a manifest file, go to menu:Settings[License].
 . Make sure the *Username* and *Password* fields are empty.
 . Click btn:[Browse] and select the manifest file.

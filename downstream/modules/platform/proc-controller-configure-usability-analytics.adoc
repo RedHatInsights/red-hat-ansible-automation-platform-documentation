@@ -6,15 +6,16 @@ Usability data collection is included with {ControllerName} to collect data to u
 
 Only users installing a trial of {PlatformName} or a fresh installation of {ControllerName} are opted-in for this data collection.
 
-{ControllerNameStart} collects user data automatically to help improve the product. 
-You can opt out or control the way {ControllerName} collects data by setting your participation level in the *User Interface settings* in the *Settings* menu.
+{ControllerNameStart} collects user data automatically to help improve the product.
+//[ddacosta]Modified this sentence since the procedure explains how to get to the UI settings.
+You can opt out or control the way {ControllerName} collects data by setting your participation level in the *User Interface settings*.
 
 .Procedure
 
-. From the navigation panel, select menu:Settings[].
-. Select *User Interface settings* from the *User Interface* tab.
+. From the navigation panel, select {MenuAEAdminSettings}.
+. Select *User Interface settings* from the *User Interface* options.
 . Click btn:[Edit].
-. Select the desired level of data collection from the *User Analytics Tracking State* menu:
+. Select the desired level of data collection from the *User Analytics Tracking State* list:
 * *Off*: Prevents any data collection.
 * *Anonymous*: Enables data collection without your specific user data.
 * *Detailed*: Enables data collection including your specific user data.

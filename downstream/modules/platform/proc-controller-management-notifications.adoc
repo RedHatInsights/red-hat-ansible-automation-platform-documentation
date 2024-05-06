@@ -5,7 +5,7 @@
 Use the following procedure to review or set notifications associated with a management job:
 
 .Procedure
-* For a particular cleanup job, select the menu:Notifications[] tab.
+* For a particular cleanup job, select the *Notifications* tab.
 
 image:management-job-notifications.png[Notifications]
 

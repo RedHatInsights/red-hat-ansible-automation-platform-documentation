@@ -5,11 +5,12 @@
 
 
 .Procedure
-. Log in to {PlatformName}.
-. From the navigation panel, select menu:Collections[Repositories].
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
+. Log in to {HubName}.
+. From the navigation panel, select {MenuACAdminRepositories}.
 . Locate your repository in the list and click *Sync*.
 +
-All collections in the configured remote are downloaded to your custom repository. To check the status of the collection sync, select menu:Task Management[] from the navigation panel.
+All collections in the configured remote are downloaded to your custom repository. To check the status of the collection sync, select {MenuACAdminTasks} from the navigation panel.
 +
 [NOTE]
 ====

@@ -2,22 +2,23 @@
 
 = Troubleshooting {ExecEnvShort} mount options
 
-In some cases where the `/etc/ssh/*` files were added to the {ExecEnvShort} image due to customization of an {ExecEnvShort}, an SSH error can occur. 
+In some cases where the `/etc/ssh/*` files were added to the {ExecEnvShort} image due to customization of an {ExecEnvShort}, an SSH error can occur.
 For example, exposing the `/etc/ssh/ssh_config.d:/etc/ssh/ssh_config.d:O` path enables the container to be mounted, but the ownership permissions are not mapped correctly.
 
 Use the following procedure if you meet this error, or have upgraded from an older version of {ControllerName}:
 
 .Procedure
 . Change the container ownership on the mounted volume to `root`.
-. From the navigation panel, select menu:Job Settings[].
+. From the navigation panel, select {MenuAEAdminSettings}.
+. Select *Jobs settings* from the *Jobs* option.
 . Expose the path in the *Paths to expose to isolated jobs* field, using the current example:
 +
 image:settings-paths2expose-iso-jobs.png[Paths]
 +
 [NOTE]
 ====
-The `:O` option is only supported for directories. 
-Be as detailed as possible, especially when specifying system paths. 
+The `:O` option is only supported for directories.
+Be as detailed as possible, especially when specifying system paths.
 Mounting `/etc` or `/usr` directly has an impact that makes it difficult to troubleshoot.
 ====
 +
@@ -34,7 +35,7 @@ image:settings-paths2expose-iso-jobs-mount-containers.png[Expose isolated jobs]
 
 Set *Expose host paths for Container Groups* to *On* to enable it.
 
-When the playbook runs, the resulting Pod specification is similar to the following example. 
+When the playbook runs, the resulting Pod specification is similar to the following example.
 Note the details of the `volumeMounts` and `volumes` sections.
 
 image:mount-containers-playbook-run-podspec.png[Pod specification]

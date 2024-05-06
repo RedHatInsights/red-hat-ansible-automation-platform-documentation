@@ -2,10 +2,10 @@
 
 = Viewing private EC2 VPC instances in the {ControllerName} inventory
 
-By default, {ControllerName} only shows instances in a VPC that have an Elastic IP (EIP) associated with them. 
+By default, {ControllerName} only shows instances in a VPC that have an Elastic IP (EIP) associated with them.
 
 .Procedure
-. From the navigation panel, select menu:Resources[Inventories].
+. From the navigation panel, select {MenuInfrastructureInventories}.
 . Select the group that has the *Source* set to *AWS*, and click the *Source* tab.
 In the *Source variables* field, enter:
 +

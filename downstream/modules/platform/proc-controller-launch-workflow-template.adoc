@@ -5,7 +5,7 @@
 .Procedure
 
 * Launch a workflow job template by using one of these methods:
-** From the navigation panel, select menu:Templates[Launch] next to the job template:
+** From the navigation panel, select {MenuAETemplates} and click btn:[Launch] next to the job template:
 +
 image::ug-wf-template-launch.png[Launch workflow template]
 +

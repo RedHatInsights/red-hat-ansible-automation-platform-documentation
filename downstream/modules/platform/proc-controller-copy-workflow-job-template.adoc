@@ -4,13 +4,13 @@
 
 With {ControllerName} you can copy a workflow job template.
 When you copy a workflow job template, it does not copy any associated schedule, notifications, or permissions.
-Schedules and notifications must be recreated by the user or system administrator creating the copy of the workflow template. 
+Schedules and notifications must be recreated by the user or system administrator creating the copy of the workflow template.
 The user copying the workflow template is granted the administrator permission, but no permissions are assigned (copied) to the workflow template.
 
 .Procedure
 
 . Open the workflow job template that you want to copy by using one of these methods:
-** From the navigation panel, select menu:Resources[Templates].
+** From the navigation panel, select {MenuAETemplates}.
 ** In the workflow job template *Details* view, scroll down to access it from a list of templates.
 * Click the copy (image:copy.png[Copy icon,15,15]) icon.
 +
@@ -23,7 +23,7 @@ image::ug-wf-list-view-copy-example.png[Workflow template copy list view]
 
 [NOTE]
 ====
-If a resource has a related resource that you do not have the right level of permission to, you cannot copy the resource. For example, in the case where a project uses a credential that a current user only has Read access. 
-However, for a workflow job template, if any of its nodes use an unauthorized job template, inventory, or credential, the workflow template can still be copied. 
+If a resource has a related resource that you do not have the right level of permission to, you cannot copy the resource. For example, in the case where a project uses a credential that a current user only has Read access.
+However, for a workflow job template, if any of its nodes use an unauthorized job template, inventory, or credential, the workflow template can still be copied.
 But in the copied workflow job template, the corresponding fields in the workflow template node are absent.
 ====

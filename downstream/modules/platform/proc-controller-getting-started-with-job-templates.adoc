@@ -6,7 +6,7 @@ As part of the initial setup, a *Demo Job Template* is created for you.
 
 .Procedure
 
-. To review existing templates, select *Templates* from the navigation panel.
+. To review existing templates, select {MenuAETemplates} from the navigation panel.
 . Click btn:[Demo Job Template] to view its details.
 
 image::controller-job-template-demo-details.png[Job templates]

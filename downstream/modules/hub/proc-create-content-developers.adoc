@@ -11,9 +11,9 @@ To help content developers create a namespace and upload their internally develo
 * You have administrative permissions in {PrivateHubName} and can create groups.
 
 .Procedure
-
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 . Log in to your {PrivateHubName}.
-. From the navigation panel, select menu:User Access[Groups] and click btn:[Create].
+. From the navigation panel, select {MenuHubGroups} and click btn:[Create].
 . Enter *Content Engineering* as a *Name* for the group in the modal and click btn:[Create]. You have created the new group and the *Groups* page opens.
 . On the *Permissions* tab, click btn:[Edit].
 . Under *Namespaces*, add permissions for *Add Namespace*, *Upload to Namespace*, and *Change Namespace*.

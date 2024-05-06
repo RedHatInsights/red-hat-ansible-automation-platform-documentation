@@ -2,8 +2,8 @@
 
 = Schedules
 
-From the navigation panel, click menu:Views[Schedules] to access your configured schedules.
-The schedules list can be sorted by any of the attributes from each column using the directional arrows. 
+From the navigation panel, click {MenuAESchedules} to access your configured schedules.
+The schedules list can be sorted by any of the attributes from each column using the directional arrows.
 You can also search by name, date, or the name of the month in which a schedule runs.
 
 Each schedule has a corresponding *Actions* column that has options to enable or disable that schedule using the *On* or *Off* toggle next to the schedule name.
@@ -11,7 +11,7 @@ Click the Edit image:leftpencil.png[Edit,15,15] icon to edit a schedule.
 
 image::ug-schedules-sample-list.png[Schedules sample list]
 
-If you are setting up a template, a project, or an inventory source, click the *Schedules* tab to configure schedules for these resources. 
+If you are setting up a template, a project, or an inventory source, click the *Schedules* tab to configure schedules for these resources.
 When you create a schedule, they are listed by the following:
 
 Name:: Click the schedule name to open its details.

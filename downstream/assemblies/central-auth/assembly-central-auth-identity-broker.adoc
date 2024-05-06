@@ -11,8 +11,8 @@ Protocol-based providers are those that rely on a specific protocol in order to 
 
 .Procedure
 . Log in to {AAPCentralAuth}as an admin user.
-. Under the _Configure_ section on the side navigation bar, click btn:[Identity Providers].
-. Using the dropdown menu labeled _Add provider_, select your identity provider to proceed to the identity provider configuration page.
+. Under the *Configure* section on the side navigation bar, click btn:[Identity Providers].
+. From the *Add provider* list, select your identity provider to proceed to the identity provider configuration page.
 
 The following table lists the available options for your identity provider configuration:
 

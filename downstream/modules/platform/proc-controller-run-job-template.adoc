@@ -8,7 +8,7 @@ In addition to the playbooks, the template passes the inventory, credentials, ex
 
 .Procedure
 
-* From the navigation panel, select menu:Templates[Launch] next to the job template.
+* From the navigation panel, select {MenuAETemplates} and click btn:[Launch] next to the job template.
 
 image::controller-gs-job-templates-launch.png[Launch template]
 

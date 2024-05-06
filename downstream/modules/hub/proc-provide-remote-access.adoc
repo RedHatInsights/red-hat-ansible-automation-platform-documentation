@@ -8,8 +8,9 @@
 After you create a remote configuration, you must provide access to it before anyone can use it.
 
 .Procedure
-. Log in to {PlatformName}.
-. From the navigation panel, select menu:Collections[Remotes].
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
+. Log in to {PrivateHubName}.
+. From the navigation panel, select {MenuACAdminRemotes}.
 . Locate your repository in the list, click the btn:[More Actions] icon *{MoreActionsIcon}*, and select *Edit*.
 . Select the *Access* tab.
 . Select a group for *Repository owners*. See link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_hub/assembly-user-access[Configuring user access for your {PrivateHubName}] for information about implementing user access.

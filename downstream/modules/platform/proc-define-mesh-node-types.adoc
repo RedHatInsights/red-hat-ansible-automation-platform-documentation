@@ -18,8 +18,8 @@ These hop nodes are not part of the Kubernetes cluster and are registered in {Co
 The following procedure demonstrates how to set the node type for the hosts.
 
 .Procedure
-
-. From the navigation panel of {ControllerName}, select menu:Instances[].
+//[ddacosta]Removed specified panel to simplify changes in the future.
+. From the navigation panel, select {MenuInfrastructureInstances}.
 . On the *Instances* list page, click btn:[Add].
 The *Create new Instance* window opens.
 +

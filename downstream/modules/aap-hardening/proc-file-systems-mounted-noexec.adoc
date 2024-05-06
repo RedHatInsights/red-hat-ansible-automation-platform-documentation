@@ -17,7 +17,8 @@ To install {PlatformNameShort}, you must re-mount these file systems with the `n
 
 . Reapply the `noexec` option to the `/tmp` and `/var/tmp` file systems.
 . Change the {ControllerName} job execution path from `/tmp` to an alternate directory that does not have the `noexec` option enabled.
-. To make this change, log in to the {ControllerName} UI as an administrator, navigate to menu:Settings[Jobs] settings.
+//[ddacosta] The following will need to be rewritten for how this is done in 2.5
+. To make this change, log in to the {ControllerName} UI as an administrator, navigate to {MenuAEAdminSettings} and select *Jobs settings*.
 . Change the "Job execution path" setting to the alternate directory.
 
 During normal operations, the file system which contains the `/var/lib/awx` subdirectory (typically `/var`) must not be mounted with the `noexec` option, or the {ControllerName} cannot run automation jobs in execution environments.

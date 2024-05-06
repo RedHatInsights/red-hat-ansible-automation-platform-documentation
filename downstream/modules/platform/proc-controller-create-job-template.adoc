@@ -4,12 +4,12 @@
 
 .Procedure
 
-. On the *Templates* list view, click menu:Add[Add job template].
+. On the *Templates* list view, select *Add job template* from the *Add* list.
 . Enter the appropriate details in the following fields:
 +
 [NOTE]
 ====
-If a field has the *Prompt on launch* checkbox selected, launching the job prompts you for the value for that field when launching. 
+If a field has the *Prompt on launch* checkbox selected, launching the job prompts you for the value for that field when launching.
 Most prompted values override any values set in the job template.
 Exceptions are noted in the following table.
 ====
@@ -27,19 +27,19 @@ Exceptions are noted in the following table.
 Tasks that do not support check mode are missed and do not report potential changes.
 
 For more information about job types see the link:https://docs.ansible.com/ansible/latest/playbook_guide/index.html[Playbooks] section of the Ansible documentation.| Yes
-| Inventory | Choose the inventory to be used with this job template from the inventories available to the logged in user. 
+| Inventory | Choose the inventory to be used with this job template from the inventories available to the logged in user.
 
-A System Administrator must grant you or your team permissions to be able to use certain inventories in a job template. | Yes. 
+A System Administrator must grant you or your team permissions to be able to use certain inventories in a job template. | Yes.
 
 Inventory prompts show up as its own step in a later prompt window.
 | Project | Select the project to use with this job template from the projects available to the user that is logged in. | N/A
-| SCM branch | This field is only present if you chose a project that allows branch override. 
-Specify the overriding branch to use in your job run. 
+| SCM branch | This field is only present if you chose a project that allows branch override.
+Specify the overriding branch to use in your job run.
 If left blank, the specified SCM branch (or commit hash or tag) from the project is used.
 
 For more information, see xref:controller-job-branch-overriding[Job branch overriding]. | Yes
 | Execution Environment | Select the container image to be used to run this job.
-You must select a project before you can select an {ExecEnvShort}. | Yes. 
+You must select a project before you can select an {ExecEnvShort}. | Yes.
 
 Execution environment prompts show up as its own step in a later prompt window.
 | Playbook | Choose the playbook to be launched with this job template from the available playbooks.
@@ -66,8 +66,8 @@ for the following types in order to proceed: Machine.`
 
 - Use labels to group and filter job templates and completed jobs in the display.
 
-- Labels are created when they are added to the job template. 
-Labels are associated with a single Organization by using the Project that is provided in the job template. 
+- Labels are created when they are added to the job template.
+Labels are associated with a single Organization by using the Project that is provided in the job template.
 Members of the Organization can create labels on a job template if they have edit permissions (such as the admin role).
 
 - Once you save the job template, the labels appear in the *Job Templates* overview in the Expanded view.
@@ -78,13 +78,13 @@ When a label is removed, it is no longer associated with that particular Job or 
 - Jobs inherit labels from the Job Template at the time of launch.
 If you delete a label from a Job Template, it is also deleted from the Job. a| - If selected, even if a default value is supplied, you are prompted when launching to supply additional labels, if needed.
 - You cannot delete existing labels, selecting image:disassociate.png[Disassociate,10,10] only removes the newly added labels, not existing default labels.
-| Variables a| - Pass extra command line variables to the playbook. 
+| Variables a| - Pass extra command line variables to the playbook.
 This is the "-e" or "-extra-vars" command line parameter for ansible-playbook that is documented in the Ansible documentation at link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_variables.html#defining-variables-at-runtime[Defining variables at runtime].
-- Provide key or value pairs by using either YAML or JSON. 
-These variables have a maximum value of precedence and overrides other variables specified elsewhere. 
+- Provide key or value pairs by using either YAML or JSON.
+These variables have a maximum value of precedence and overrides other variables specified elsewhere.
 The following is an example value:
 `git_branch: production
-release_version: 1.5` | Yes. 
+release_version: 1.5` | Yes.
 
 If you want to be able to specify `extra_vars` on a schedule, you must select *Prompt on launch* for Variables on the job template, or enable a survey on the job template. Those answered survey questions become `extra_vars`.
 | Forks | The number of parallel or simultaneous processes to use while executing the playbook.
@@ -96,9 +96,9 @@ As with core Ansible:
 * a:b:&c means "in a or b but must be in c"
 * a:!b means "in a, and definitely not in b"
 
-For more information, see link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_patterns.html[Patterns: targeting hosts and groups] in the Ansible documentation. | Yes 
+For more information, see link:https://docs.ansible.com/ansible/latest/inventory_guide/intro_patterns.html[Patterns: targeting hosts and groups] in the Ansible documentation. | Yes
 
-If not selected, the job template executes against all nodes in the inventory or only the nodes predefined on the *Limit* field. 
+If not selected, the job template executes against all nodes in the inventory or only the nodes predefined on the *Limit* field.
 When running as part of a workflow, the workflow job template limit is used instead.
 | Verbosity | Control the level of output Ansible produces as the playbook executes.
 Choose the verbosity from Normal to various Verbose or Debug settings.
@@ -121,7 +121,7 @@ For more information about job slices, see xref:controller-job-slicing[Job Slici
 If the list is extensive, use the image:examine.png[examine,15,15] icon to narrow the options.
 Job template instance groups contribute to the job scheduling criteria, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-instance-and-container-groups#controller-job-runtime-behavior[Job Runtime Behavior] and link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-instance-and-container-groups#controller-control-job-run[Control where a job runs] for rules.
 A System Administrator must grant you or your team permissions to be able to use an instance group in a job template.
-Use of a container group requires admin rights. a| - Yes. 
+Use of a container group requires admin rights. a| - Yes.
 
 If selected, you are providing the jobs preferred instance groups in order of preference. If the first group is out of capacity, later groups in the list are considered until one with capacity is available, at which point that is selected to run the job.
 
@@ -167,5 +167,5 @@ image::ug-job-template-details.png[Job template details]
 
 .Verification
 
-. From the navigation panel, select menu:Resources[Templates].
+. From the navigation panel, select {MenuAETemplates}.
 . Verify that the newly created template appears on the *Templates* list view.

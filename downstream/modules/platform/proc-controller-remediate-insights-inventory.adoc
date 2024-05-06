@@ -2,13 +2,13 @@
 
 = Remediating a Red Hat Insights inventory
 
-Remediation of a Red Hat Insights inventory enables {ControllerName} to run Red Hat Insights playbooks with a single click. 
+Remediation of a Red Hat Insights inventory enables {ControllerName} to run Red Hat Insights playbooks with a single click.
 You can do this by creating a job template to run the Red Hat Insights remediation.
 
 .Procedure
-. From the navigation menu, select menu:Resources[Templates].
-. On the *Templates* list view, click menu:Add[Add job template].
-. Enter the appropriate details in the following fields. 
+. From the navigation menu, select {MenuAETemplates}.
+. On the *Templates* list view, select *Add* from the *Add job template* list.
+. Enter the appropriate details in the following fields.
 Note that the following fields require specific Red Hat Insights related entries:
 
 * *Name*: Enter the name of your Maintenance Plan.
@@ -18,7 +18,7 @@ Note that the following fields require specific Red Hat Insights related entries
 * *Project*: Select the Red Hat Insights project that you previously created.
 * Optional: *Execution Environment*: The container image to be used for execution.
 * *Playbook*: Select a playbook associated with the Maintenance Plan that you want to run from the playbook list.
-* Optional: *Credentials*: Enter the credential to use for this project or click the search (image:magnify.png[Search,15,15]) icon and select it from the pop-up window. 
+* Optional: *Credentials*: Enter the credential to use for this project or click the search (image:magnify.png[Search,15,15]) icon and select it from the pop-up window.
 The credential does not have to be a Red Hat Insights credential.
 * *Verbosity*: Keep the default setting, or select the desired verbosity from the list.
 +

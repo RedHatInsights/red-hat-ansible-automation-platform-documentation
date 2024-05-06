@@ -14,9 +14,9 @@ Import log:: activities executed during the collection import
 * You have access to a namespace to which you can upload collections.
 
 .Procedure
-
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 . Log in to your {PrivateHubName}.
-. From the navigation panel, select menu:Collections[Namespaces].
+. From the navigation panel, select {MenuACNamespaces}.
 . Select a namespace.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *My imports*.
 . Use the search field or locate an imported collection from the list.

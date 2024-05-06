@@ -12,8 +12,9 @@ You must first ensure that the namespace does not contain a collection with depe
 * You have *Delete namespace* permissions.
 
 .Procedure
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 . Log in to your {PrivateHubName}.
-. From the navigation panel, select menu:Collections[Namespaces].
+. From the navigation panel, select {MenuACNamespaces}.
 . Click the namespace to be deleted.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}*, then click btn:[Delete namespace].
 +

@@ -10,9 +10,9 @@ In {PrivateHubName}, you can create an API token using API token management. The
 * Valid subscription credentials for {PlatformName}.
 
 .Procedure
-
-. Navigate to your {PrivateHubName}.
-. From the navigation panel, select menu:Collections[API token].
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
+. Log in to your {PrivateHubName}.
+. From the navigation panel, select {MenuACAPIToken}.
 . Click btn:[Load Token].
 . To copy the API token, click the btn:[Copy to clipboard] icon.
 . Paste the API token into a file and store in a secure location.
@@ -26,5 +26,5 @@ The API token is now available for configuring {HubName} as your default collect
 
 [NOTE]
 ====
-The API token does not expire. 
+The API token does not expire.
 ====

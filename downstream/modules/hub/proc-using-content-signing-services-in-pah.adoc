@@ -13,10 +13,9 @@ You can use content signing on {PrivateHubName} in the following scenarios:
 * You want to rotate signatures on your collections.
 
 .Procedure
-
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 . Log in to your {PlatformNameShort}.
-include::snippets/snip_menu-top-ac.adoc[]
-*{MenuACAdminCollectionApproval}*.
+. From the navigation panel, select {MenuACAdminCollectionApproval}.
 The Approval dashboard opens and displays a list of collections.
 
 . Click btn:[Sign and approve] for each collection that you want to sign.

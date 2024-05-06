@@ -2,26 +2,26 @@
 
 = GitHub Enterprise Team settings
 
-To set up social authentication for a GitHub Enterprise team, you must obtain a GitHub Enterprise Organization URL, an Organization API URL, an Organization OAuth2 key and secret for a web application. 
+To set up social authentication for a GitHub Enterprise team, you must obtain a GitHub Enterprise Organization URL, an Organization API URL, an Organization OAuth2 key and secret for a web application.
 
-To obtain the URLs, refer to the GitHub documentation on link:https://docs.github.com/en/enterprise-server@3.1/rest/reference/enterprise-admin[GitHub Enterprise administration]. 
+To obtain the URLs, refer to the GitHub documentation on link:https://docs.github.com/en/enterprise-server@3.1/rest/reference/enterprise-admin[GitHub Enterprise administration].
 
-To obtain the key and secret, you must first register your enterprise team-owned application at `https://github.com/organizations/<yourorg>/settings/applications`. 
+To obtain the key and secret, you must first register your enterprise team-owned application at `https://github.com/organizations/<yourorg>/settings/applications`.
 
-To register the application, you must supply it with your Authorization callback URL, which is the *Callback URL* shown in the *Details* page. 
+To register the application, you must supply it with your Authorization callback URL, which is the *Callback URL* shown in the *Details* page.
 Because it is hosted on site and not github.com, you must specify which authentication adapter it communicates with.
 
-Each key and secret must belong to a unique application and cannot be shared or reused between different authentication  backends. 
+Each key and secret must belong to a unique application and cannot be shared or reused between different authentication  backends.
 The OAuth2key (Client ID) and secret (Client Secret) are used to supply the required fields in the UI.
 
 .Procedure
 . Find the numeric team ID using the link:https://fabian-kostadinov.github.io/2015/01/16/how-to-find-a-github-team-id/[GitHub API].
 The Team ID will be used to supply a required field in the UI.
-. From the navigation panel, select menu:Settings[].
-. On the *Settings* page, select *GitHub settings* from the list of Authentication options.
+. From the navigation panel, select {MenuAEAdminSettings}.
+. On the *Settings* page, select *GitHub settings* from the list of *Authentication* options.
 . Click the *GitHub Enterprise Team* tab.
 +
-The *GitHub Enterprise Team OAuth2 Callback URL* field is already pre-populated and non-editable. 
+The *GitHub Enterprise Team OAuth2 Callback URL* field is already pre-populated and non-editable.
 When the application is registered, GitHub displays the Client ID and Client Secret.
 
 . Click btn:[Edit] to configure GitHub Enterprise Team settings.

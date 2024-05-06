@@ -5,7 +5,7 @@
 Use the following procedure to manage instances.
 
 .Procedure
-. From the navigation panel, select menu:Instances[] to access the Instances list.
+. From the navigation panel, select {MenuInfrastructureInstances} to access the Instances list.
 +
 image:instances_list_view.png[Instances list]
 +
@@ -15,7 +15,7 @@ The Instances list displays all the current nodes in your topology, along with r
 * *Status*: Indicates the state of the node:
 
 ** *Installed*: A node that has successfully installed and configured, but has not yet passed the periodic health check.
-** *Ready*: A node that is available to run jobs or route traffic between nodes on the mesh. 
+** *Ready*: A node that is available to run jobs or route traffic between nodes on the mesh.
 This replaces the previously "Healthy" node state used in the mesh topology.
 ** *Provisioning*: A node that is in the process of being added to a current mesh, but is awaiting the job to install all of the packages.
 +
@@ -37,7 +37,7 @@ This is currently not supported and is subject to change in a future release.
 ====
 This is currently not supported and is subject to change in a future release.
 ====
-* *Node Type*: Specifies whether the node is a control, hybrid, hop, or execution node. 
+* *Node Type*: Specifies whether the node is a control, hybrid, hop, or execution node.
 //See `node` for further detail.
 //Can't see this reference.
 * *Capacity Adjustment*: Allows you to adjust the number of forks in your nodes.
@@ -46,9 +46,9 @@ This is currently not supported and is subject to change in a future release.
 +
 From this page, you can add, remove or run health checks on your nodes.
 +
-Use the check boxes next to an instance to select it to remove or run a health check against it. 
-When a button is disabled, you do not have permission for that particular action. 
-Contact your Administrator to grant you the required level of access. 
+Use the check boxes next to an instance to select it to remove or run a health check against it.
+When a button is disabled, you do not have permission for that particular action.
+Contact your Administrator to grant you the required level of access.
 If you are able to remove an instance, you will receive a prompt for confirmation, similar to the following:
 +
 image:instances_delete_prompt.png[Instance delete prompt]
@@ -56,7 +56,7 @@ image:instances_delete_prompt.png[Instance delete prompt]
 [NOTE]
 .Note
 ====
-You can still remove an instance even if it is active and jobs are running on it. 
+You can still remove an instance even if it is active and jobs are running on it.
 {ControllerNameStart} waits for any jobs running on this node to complete removing the instance.
 ====
 
@@ -70,8 +70,8 @@ image:instances_health_check.png[Health Check]
 
 [NOTE]
 ====
-Health checks are run asynchronously, and it can take up to a minute for the instance status to update, even with a refresh. 
-The status might or might not change after the health check. 
+Health checks are run asynchronously, and it can take up to a minute for the instance status to update, even with a refresh.
+The status might or might not change after the health check.
 On the *Details* page, a clock icon displays next to the last known health check date and time stamp, if the health check task is running.
 
 image:instances_health_check_pending.png[Health check pending]

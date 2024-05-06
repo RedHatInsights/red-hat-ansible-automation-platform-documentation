@@ -8,7 +8,7 @@
 To deploy your system so that it is ready for container signing, create a signing script.
 
 [NOTE]
-==== 
+====
 Installer looks for the script and key on the same server where installer is located.
 ====
 
@@ -45,7 +45,7 @@ else
 fi
 -----
 +
-. Review the {PlatformNameShort} installer inventory file for options for container signing that begin with `automationhub_*`. 
+. Review the {PlatformNameShort} installer inventory file for options for container signing that begin with `automationhub_*`.
 +
 -----
 [all:vars]
@@ -58,14 +58,14 @@ automationhub_container_signing_service_key = /absolute/path/to/key/to/sign
 automationhub_container_signing_service_script = /absolute/path/to/script/that/signs
 -----
 +
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 . Once installation is complete, navigate to your {HubName}.
 
-. From the navigation panel, select menu:Signature Keys[].
+. From the navigation panel, select {MenuACAdminSignatureKeys}.
 
 . Ensure that you have a key titled *container-default*, or *container*-_anyname_.
 
 [NOTE]
-==== 
+====
 The `container-default` service is created by the {PlatformNameShort} installer.
 ====
-

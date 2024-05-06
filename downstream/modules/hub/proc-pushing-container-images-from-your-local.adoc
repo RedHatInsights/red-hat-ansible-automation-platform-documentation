@@ -3,7 +3,7 @@
 
 = Pushing container images from your local environment
 
-Use the following procedure to sign images on a local system and push those signed images to the {HubName} registry. 
+Use the following procedure to sign images on a local system and push those signed images to the {HubName} registry.
 
 .Procedure
 . From a terminal, log into podman, or any container client currently in use:
@@ -32,7 +32,7 @@ If the image is not signed, it can only be pushed with any current signature emb
 +
 . Once the image has been pushed, navigate to your {HubName}.
 
-. From the navigation panel, select menu:Execution Environments[Execution Environments].
+. From the navigation panel, select {MenuACExecEnvironments}.
 
 . To display the new {ExecEnvShort}, click the *Refresh* icon.
 
@@ -40,7 +40,7 @@ If the image is not signed, it can only be pushed with any current signature emb
 
 .Troubleshooting
 
-The details page in {HubName} indicates whether or not an image has been signed. If the details page indicates that an image is *Unsigned*, you can sign the image from {HubName}  using the following steps: 				
+The details page in {HubName} indicates whether or not an image has been signed. If the details page indicates that an image is *Unsigned*, you can sign the image from {HubName}  using the following steps:
 
 . Click the image name to navigate to the details page.
 
@@ -52,5 +52,5 @@ Three options are available:
 
 . Click *Sign* from the drop-down menu.
 
-The signing service signs the image. 
+The signing service signs the image.
 After the image is signed, the status changes to "signed".

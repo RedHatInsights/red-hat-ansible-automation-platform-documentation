@@ -5,7 +5,8 @@
 = Creating a synclist of Red Hat {CertifiedName}
 
 You can create a synclist of curated {CertifiedCon} in {HubNameMain} on {Console}.
-Your synclist repository is located under menu:Automation Hub[Repositories], which is updated whenever you manage content within {CertifiedName}.
+//[ddacosta]This needs to be checked. I don't see a Repositories selection in the console verion. I think the way I've rewritten is correct.
+Your synclist repository is located on the {HubName} navigation panel under {MenuACAdminRepositories}, which is updated whenever you manage content within {CertifiedName}.
 
 All {CertifiedName} are included by default in your initial organization synclist.
 
@@ -26,10 +27,10 @@ The following domain names must be in the allow list:
 * SSL inspection is disabled either when using self signed certificates or for the Red Hat domains.
 
 .Procedure
-// ddacosta I don't know if a change will be needed here for Gateway as this is referring to the Console version of Hub. Will console pull in nav changes?
+// ddacosta I don't know if a change will be needed here for Gateway as this is referring to the Console version of Hub. Will console pull in nav changes? Also, there is no repositories selection on the console version right now. 
 . Log in to `{Console}`.
-. Navigate to menu:Automation Hub[Collections > Collections].
+. Navigate to menu:Automation Hub[Collections].
 . Set the toggle switch on each collection to exclude or include it on your synclist.
-. To initiate the remote repository synchronization, navigate to menu:Automation Hub[Repositories].
+. To initiate the remote repository synchronization, navigate to {HubName} and select {MenuACAdminRepositories}.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Sync* to initiate the remote repository synchronization to your {PrivateHubName}.
 . Optional: If your remote repository is already configured, update the collections content that you made available to local users by manually synchronizing Red Hat {CertifiedName} to your {PrivateHubName}.

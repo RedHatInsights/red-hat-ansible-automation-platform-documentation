@@ -17,8 +17,8 @@ The `context` attribute enables module reuse. Every module ID includes {context}
 
 
 [role="_abstract"]
-Add a README to your container repository to provide instructions to your users on how to work with the container. 
-{HubNameStart} container repositories support Markdown for creating a README. 
+Add a README to your container repository to provide instructions to your users on how to work with the container.
+{HubNameStart} container repositories support Markdown for creating a README.
 By default, the README is empty.
 
 .Prerequisites
@@ -26,8 +26,9 @@ By default, the README is empty.
 * You have permissions to change containers.
 
 .Procedure
-
-. From the navigation panel, select menu:Execution Environments[Execution Environments].
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
+. Log in to {HubName}.
+. From the navigation panel, select {MenuACExecEnvironments}.
 . Select your container repository.
 . On the *Detail* tab, click btn:[Add].
 . In the *Raw Markdown* text field, enter your README text in Markdown.

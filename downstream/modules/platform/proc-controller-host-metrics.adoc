@@ -1,8 +1,9 @@
 [id="proc-controller-host-metrics"]
 
 = Host Metrics
-
-* From the navigation panel, select btn:[Host Metrics] to see the activity associated with hosts, which includes counts on those that have been automated, used in inventories, and deleted.
+//[ddacosta] I don't see a Host Metrics menu selection off the standalone navigation panel. Should it be Resources > Hosts? If so, add replace with {MenuInfrastructureHosts}
+//[ddacosta] For 2.5 Host Metrics is off the Analytics menu. Use {MenuAAHostMetrics}
+* From the navigation panel, select menu:Host Metrics[] to see the activity associated with hosts, which includes counts on those that have been automated, used in inventories, and deleted.
 
 image:ug-host-metrics.png[Host Metrics]
 

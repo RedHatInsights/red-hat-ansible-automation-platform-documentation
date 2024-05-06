@@ -5,21 +5,20 @@
 Use the following procedure to configure a Red Hat virtualization-sourced inventory.
 
 .Procedure
-. In the *Create new source* page, select menu:Source[].
-. From the menu, select *Red Hat Virtualization*.
+. In the *Create new source* page, select *Red Hat Virtualization* from the *Source* list.
 . The *Create Source* window expands with the required *Credential* field.
-Choose from an existing GCE Credential. 
+Choose from an existing GCE Credential.
 For more information, see xref:controller-credentials[Credentials].
 . Optional: You can specify the verbosity, host filter, enabled variables or values, and update options as described in xref:proc-controller-add-source[Adding a source].
-. Use the *Source Variables* field to override variables used by the `gcp_compute` inventory plugin. 
-Enter variables using either JSON or YAML syntax. 
-Use the radio button to toggle between the two. 
+. Use the *Source Variables* field to override variables used by the `gcp_compute` inventory plugin.
+Enter variables using either JSON or YAML syntax.
+Use the radio button to toggle between the two.
 For more information on these variables, see link:https://console.redhat.com/ansible/automation-hub/repo/published/redhat/rhv/content/inventory/ovirt[ovirt inventory plugin]
 //+
 //image:inventories-create-source-rhv-example.png[Inventories- create source - RHV example]
 
 [NOTE]
 ====
-Red Hat Virtualization (ovirt) inventory source requests are secure by default. 
+Red Hat Virtualization (ovirt) inventory source requests are secure by default.
 To change this default setting, set the key `ovirt_insecure` to *true* in `source_variables`, which is only available from the API details of the inventory source at the `/api/v2/inventory_sources/N/` endpoint.
 ====

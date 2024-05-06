@@ -10,8 +10,9 @@ You can further manage your collections by deleting unwanted collections, if the
 * You have *Delete Collections* permissions.
 
 .Procedure
-. Log in to {PlatformName}.
-. From the navigation panel, select menu:Automation Hub[Collections].
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
+. Log in to your {PrivateHubName}.
+. From the navigation panel, select {MenuACCollections}.
 . Before deleting the collection, check to see if it has collections that are dependent on it:
 ** Click the *Dependencies* tab for that collection. If it is blank, you will be able to delete the collection. If the *Dependencies* tab is not blank, you must delete these dependencies before you can delete the collection.
 . Click the collection to delete.

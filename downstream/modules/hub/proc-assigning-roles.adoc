@@ -4,7 +4,7 @@
 [id="proc-assigning-roles"]
 
 == Assigning roles to groups
-
+//[ddacosta] This intro needs to be verified against the flow being described. Are Groups and Namespaces actual menus or are they tab selections from within the Roles or Groups details pages?
 You can assign roles to groups, giving users access to specific features in the system, from both the *Groups* menu and the *Namespaces* menu. Roles assigned to a group from the *Groups* menu have a global scope. For example, if a user is assigned a namespace owner role, that permission applies to all namespaces. However, roles assigned to a group from the _Namespaces_ menu will only give a user access to a specific instance of an object.
 
 .Prerequisites
@@ -14,10 +14,11 @@ You can assign roles to groups, giving users access to specific features in the 
 .Procedure
 
 Assigning roles from the *Groups* menu.
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 
 . Log in to your {PrivateHubName}.
-. Navigate to the *User Access* drop-down menu.
-. Click btn:[Groups] and select a group name.
+. From the navigation panel, select {MenuHubGroups}.
+. Select a group from the list of groups displayed.
 . Click btn:[Add roles].
 . Click the checkbox next to the role that you want to add.
 . Click btn:[Next] to preview the role that will be applied to the group.
@@ -31,8 +32,8 @@ Click btn:[Back] to return to the roles menu, or click btn:[Cancel] to return to
 Assigning roles from the *Namespaces* menu.
 
 . Log in to your {PrivateHubName}.
-. Navigate to the *Collections* drop-down menu.
+. From the navigation panel, select {MenuACNamespaces}.
 . Click the *My Namespaces* tab, and select a namespace.
-. Click the *Namespace owners* tab to edit.
+. Click the *Access* tab to edit.
 
 Users can now access features in {HubName} associated with their assigned permissions.

@@ -10,10 +10,11 @@ You can add containers remotely to {HubName} in one of the following two ways:
 * Execution Environment
 
 .Procedure
+//[ddacosta] For 2.5 this will be Log in to Ansible Automation Platform and select Automation Content. Automation hub opens in a new tab. From the navigation ...
 
-. Navigate to {HubName}.
+. Log in to {HubName}.
 
-. From the navigation panel, select menu:Execution Environments[Remote Registries].
+. From the navigation panel, select {MenuACAdminRemoteRegistries}.
 
 . Click btn:[Add remote registry].
 

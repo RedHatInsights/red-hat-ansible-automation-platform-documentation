@@ -6,23 +6,21 @@ To add a subscription to {PlatformNameShort} without an internet connection, cre
 
 .Procedure
 
-. Log in to *access.redhat.com*.
+. Log in to the link:https://access.redhat.com[Red Hat Customer Portal].
 
-. From the navigation panel, select *menu:Subscriptions[Subscriptions]*.
+. From the menu bar, select menu:Subscriptions[] and select the *Subscriptions Allocations* tab .
 
-. Select *menu:Subscription Allocations[Subscription Allocations]*.
-
-. Click *btn:[Create New subscription allocation]*.
+. Click btn:[New subscription allocation].
 
 . Name the new subscription allocation.
 
-. Select menu:Satellite 6.8[Satellite 6.8] as the type.
+. Select *Satellite 6.8* from the *Type* list.
 
 . Click btn:[Create]. The *Details* tab opens for your subscription allocation.
 
-. Select the menu:Subscriptions[Subscriptions] tab.
+. Select the *Subscriptions* tab.
 
-. Click btn:[Add Subscription].
+. Click btn:[Add Subscriptions].
 
 . Find your {PlatformNameShort} subscription, and in the *Entitlements* box, *add* the number of entitlements you want to assign to your environment. A single entitlement is needed for each node that will be managed by {PlatformNameShort}: server, network device, etc.
 

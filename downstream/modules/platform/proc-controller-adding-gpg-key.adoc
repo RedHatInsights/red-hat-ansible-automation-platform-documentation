@@ -11,7 +11,7 @@ $ gpg --export --armour <key fingerprint> > my_public_key.asc
 ----
 
 [arabic]
-. From the navigation panel, select menu:Credentials[].
+. From the navigation panel, select {MenuAMCredentials}.
 . Click btn:[Add].
 . Provide a meaningful name for the new credential, for example, "Infrastructure team public GPG key".
 . In the *Credential Type* field, select *GPG Public Key*.
@@ -27,8 +27,8 @@ synchronizations.
 [NOTE]
 
 ====
-Use the project cache SCM timeout to control how often you want {ControllerName} to re-validate the signed content. 
-When a project is configured to update on launch (of any job template configured to use that project), you can enable the cache timeout setting, which sets it to update after `N` seconds have passed since the last update. 
+Use the project cache SCM timeout to control how often you want {ControllerName} to re-validate the signed content.
+When a project is configured to update on launch (of any job template configured to use that project), you can enable the cache timeout setting, which sets it to update after `N` seconds have passed since the last update.
 If validation is running too frequently, you can slow down how often project updates occur by specifying the time in the *Cache Timeout*
 field of the *Option Details* pane of the project.
 

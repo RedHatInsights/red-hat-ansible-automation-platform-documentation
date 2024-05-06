@@ -2,15 +2,15 @@
 
 = Creating a new application
 
-When integrating an external web application with {ControllerName} the web application might need to create OAuth2 Tokens on behalf of users of the web application. 
+When integrating an external web application with {ControllerName} the web application might need to create OAuth2 Tokens on behalf of users of the web application.
 Creating an application with the Authorization Code grant type is the preferred way to do this for the following reasons:
 
 * External applications can obtain a token for users, using their credentials.
-* Compartmentalized tokens issued for a particular application, enables those tokens to be easily managed. 
+* Compartmentalized tokens issued for a particular application, enables those tokens to be easily managed.
 For example, revoking all tokens associated with that application.
 
 .Procedure
-. From the navigation panel, select menu:Administration[Applications].
+. From the navigation panel, select {MenuAEAdminOauthApps}.
 . Click btn:[Add].
 The *Create New Application* page opens.
 +
@@ -21,7 +21,7 @@ image:apps-create-new.png[Create application]
 * *Name* (required): give a name for the application you want to create
 * Optional: *Description*: give a short description for your application
 * *Organization* (required): give an organization with which this application is associated
-* *Authorization Grant Type* (required): select one of the grant types to use for the user to get tokens for this application. 
+* *Authorization Grant Type* (required): select one of the grant types to use for the user to get tokens for this application.
 For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/oauth2_token_auth.html#ag-oauth2-token-auth-grant-types[Application Functions] in the Applications section of the _{ControllerAG}_.
 * *Redirect URIS*: give a list of allowed URIs, separated by spaces.
 You need this if you specified the grant type to be *Authorization code*.
@@ -35,4 +35,3 @@ The client ID displays in a window.
 
 //include::ref-controller-apps-add-tokens.adoc[leveloffset=+1]
 include::proc-controller-apps-create-tokens.adoc[leveloffset=+1]
-

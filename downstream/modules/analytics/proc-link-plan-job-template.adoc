@@ -9,6 +9,6 @@
 You can associate a job template to a savings plan to allow {InsightsShort} to provide a more accurate time and cost savings estimate for completing this savings plan.
 
 .Procedure
-. Navigate to menu:Red Hat Insights[Savings Planner].
+. From the navigation panel, select {MenuAASavingsPlanner}.
 . Click the btn:[More Actions] icon *{MoreActionsIcon}* and select *Link Template*.
 . Click btn:[Save].
