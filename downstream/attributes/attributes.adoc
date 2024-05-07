@@ -162,15 +162,13 @@
 :MenuAEAdminActivityStream: menu:Views[Activity Stream]
 :MenuAEAdminWorkflowApprovals: menu:Views[Workflow Approvals]
 :MenuAETemplates: menu:Resources[Templates]
-:MenuAMCredentials: menu:Resources[Credentials]
 :MenuAEProjects: menu:Resources[Projects]
-:MenuInfrastructureInventories: menu:Resoures[Inventories]
+:MenuInfrastructureInventories: menu:Resources[Inventories]
 :MenuInfrastructureHosts: menu:Resources[Hosts]
 // The following Access selections will be centrally managed in the gateway in a future scoped version of the unified platform; 2.5-next or later and will need to be changed to the attributes currently defined in the Access Management selections below.
 :MenuControllerOrganizations: menu:Access[Organizations]
 :MenuControllerUsers: menu:Access[Users]
 :MenuControllerTeams: menu:Access[Teams]
-:MenuAMCredentialType: menu:Administration[Credential Types]
 :MenuAEAdminJobNotifications: menu:Administration[Notifications]
 :MenuAEAdminManageJobs: menu:Administration[Management Jobs]
 :MenuInfrastructureInstanceGroups: menu:Administration[Instance Groups]
@@ -197,8 +195,8 @@
 :MenuAMTeams: menu:{MenuAM}[Teams]
 :MenuAMUsers: menu:{MenuAM}[Users]
 :MenuAMRoles: menu:{MenuAM}[Roles]
-:MenuAMCredentials: menu:{MenuAM}[Credentials]
-:MenuAMCredentialType: menu:{MenuAM}[Credential Types]
+:MenuAMCredentials: menu:Resources[Credentials]
+:MenuAMCredentialType: menu:Administration[Credential Types]
 
 // Automation Hub
 :MenuACCollections: menu:Collections[Collections]
