@@ -1,0 +1,48 @@
+[id="proc-controller-inv-source-terraform"]
+
+// This Terraform module is for AAP 2.5
+
+= Terraform State
+
+This inventory source uses the link:https://github.com/ansible-collections/cloud.terraform/blob/main/plugins/inventory/terraform_state.py[terraform_state] inventory plugin from the link:https://github.com/ansible-collections/cloud.terraform[cloud.terraform] collection. 
+The plugin parses a terraform state file and add hosts for AWS EC2, GCE, and {Azure} instances.
+
+.Procedure
+
+. From the navigation panel, select {MenuAEProjects}.
+. On the *Projects* page, click btn:[Create project] to start the *Create Project* window.
+** Enter the appropriate details according to the steps in xref:proc-controller-adding-a-project[Adding a new project].
+. From the navigational panel, select {MenuInfrastructureInventories}.
+. Select the inventory that you want to add a source to.
+. In the *Sources* tab, click btn:[Add Source].
+. From the menu:Source[] menu, select *Terraform State*.
+* The *Add new source* window expands with the required *Credential* field. 
++
+Choose from an existing Terraform backend configuration credential. For more information, see xref:ref-controller-credential-terraform[Terraform backend configuration].
+. Enable the options to *Overwrite* and *Update on Launch*.
+. Use the *Source Variables* field to override variables used by the `terraform_state` inventory plugin. 
+Enter variables by using either JSON or YAML syntax. 
+Use the radio button to toggle between the two. 
+For more information about these variables, see the link:https://github.com/ansible-collections/cloud.terraform/blob/main/plugins/inventory/terraform_state.py[terraform_state] file.
++
+The `backend_type` variable is required by the Terraform State inventory plugin. 
+This should match the remote backend configured in the *Terraform backend credential*.
+The following is an example Amazon S3 backend:
++
+----
+backend_type: s3
+----
++
+//The current 2.5 test environment does not have the following option yet:
+. Select an *Execution Environment* that has a Terraform binary. 
+This is required for the inventory plugin to run the Terraform commands that read inventory data from the Terraform state file.
+
+.Additional resources
+For more information, see the link:https://github.com/ansible-cloud/terraform_ee[Terraform EE] readme that has an example {ExecEnvShort} configuration with a Terraform binary.
+
+== Terraform provider for {PlatformNameShort}
+
+Inventories created this way are managed by Terraform and you must not edit them in {PlatformNameShort} as it can introduce drift to the Terraform deployment.
+
+You can create inventories and hosts within the Terraform configuration by using the Terraform provider for {PlatformNameShort}.
+For more information, see the link:https://registry.terraform.io/providers/ansible/aap/latest/docs[AAP Provider] section of the Terraform documentation. 

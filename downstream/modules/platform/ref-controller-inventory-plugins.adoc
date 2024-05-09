@@ -2,7 +2,7 @@
 
 = Inventory Plugins
 
-Inventory updates use dynamically-generated YAML files which are parsed by their respective inventory plugin. 
+Inventory updates use dynamically-generated YAML files which are parsed by their inventory plugin. 
 In {Controllername} v4.4, you can provide the inventory plugin configuration directly to {ControllerName} using the inventory source `source_vars` for the following inventory sources:
 
 * xref:proc-controller-amazon-ec2[{AWS} EC2]
@@ -20,7 +20,7 @@ If you want your newly created inventory sources to match the output of a legacy
 To ensure backward compatibility, {ControllerName} uses "templates" for each of these sources to force the output of inventory plugins into the legacy
 format. 
 
-For more information on sources and their respective templates, see xref:controller-inventory-templates[Supported inventory plugin templates].
+For more information about sources and their templates, see xref:controller-inventory-templates[Supported inventory plugin templates].
 
 `source_vars` that contain `plugin: foo.bar.baz` as a top-level key are replaced with the fully-qualified inventory plugin name at runtime based on the `InventorySource` source. 
 For example, if ec2 is selected for the `InventorySource` then, at run-time, plugin is  set to `amazon.aws.aws_ec2`.

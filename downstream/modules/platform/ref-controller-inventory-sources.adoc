@@ -14,10 +14,4 @@ Choose a source which matches the inventory type against which a host can be ent
 * xref:proc-controller-inv-source-openstack[OpenStack]
 * xref:proc-controller-inv-source-rh-virt[Red Hat Virtualization]
 * xref:proc-controller-inv-source-aap[{PlatformName}]
-
-
-
-
-
-
-
+* xref:proc-controller-inv-source-terraform[Terraform State]
