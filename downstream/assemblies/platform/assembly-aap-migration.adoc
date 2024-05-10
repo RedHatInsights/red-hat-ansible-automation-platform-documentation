@@ -17,7 +17,6 @@ Use these procedures to migrate any of the following deployments to the {Operato
 
 include::platform/con-aap-migration-considerations.adoc[leveloffset=+1]
 include::platform/con-aap-migration-prepare.adoc[leveloffset=+1]
-include::platform/con-aap-migration-prereqs.adoc[leveloffset=+2]
 include::platform/proc-aap-migration-backup.adoc[leveloffset=+2]
 include::platform/proc-create-secret-key-secret.adoc[leveloffset=+2]
 include::platform/proc-create-postresql-secret.adoc[leveloffset=+2]

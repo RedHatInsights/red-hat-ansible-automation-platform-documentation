@@ -36,7 +36,7 @@ all:
 ----
 ansible-playbook install_receptor.yml -i inventory
 ----
-. When installed you can now upgrade your execution node by downloading and re-running the playbook for the instance you created
+. When installed you can now upgrade your execution node by downloading and re-running the playbook for the instance you created.
 
 .Verification
 To verify if your playbook runs correctly on your new node run the following command:

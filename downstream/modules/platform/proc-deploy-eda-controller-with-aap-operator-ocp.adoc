@@ -35,7 +35,7 @@ extra_settings:
     value: '12'
 ----
 +
-. Click btn[Reload] and btn[Save]. Return to the Form view.
+. Click btn:[Reload] and btn:[Save]. Return to the *Form* view.
 
 . In the *Name* field, enter the name you want for your new {EDAcontroller} deployment. 
 +

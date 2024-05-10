@@ -1,11 +1,28 @@
 [id="aap-migration-backup"]
-
 [role="_abstract"]
+
+= Migrating to Ansible Automation Platform Operator
+
+.Prerequisites
+
+To migrate {PlatformNameShort} deployment to {OperatorPlatform}, you must have the following:
+
+* Secret key secret
+* Postgresql configuration
+* Role-based Access Control for the namespaces on the new OpenShift cluster
+* The new OpenShift cluster must be able to connect to the previous PostgreSQL database
+
+[NOTE]
+====
+You can store the secret key information in the inventory file before the initial {PlatformName} installation. 
+If you are unable to remember your secret key or have trouble locating your inventory file, contact link:https://access.redhat.com/[Ansible support] through the Red Hat Customer portal.
+====
+
 Before migrating your data from {PlatformNameShort} 2.x or earlier, you must back up your data for loss prevention. To backup your data, do the following:
 
 .Procedure
 . Log in to your current deployment project.
-. Run setup.sh to create a backup of your current data/deployment:
+. Run `setup.sh` to create a backup of your current data or deployment:
 +
 For on-prem deployments of version 2.x or earlier:
 +
@@ -13,7 +30,7 @@ For on-prem deployments of version 2.x or earlier:
 $ ./setup.sh -b
 -----
 +
-For OpenShift deployments prior to version 2.0 (non-operator deployments):
+For OpenShift deployments before version 2.0 (non-operator deployments):
 +
 -----
 ./setup_openshift.sh -b

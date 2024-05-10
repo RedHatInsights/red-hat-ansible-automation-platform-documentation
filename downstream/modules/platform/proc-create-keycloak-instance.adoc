@@ -32,7 +32,7 @@ spec:
   instances: 1
 ----
 +
-. Click btn:[Create]
+. Click btn:[Create].
 
 . When deployment is complete, you can use this credential to login to the administrative console.
 
