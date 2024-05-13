@@ -52,10 +52,11 @@ The best way to set up application integrations using the Authorization Code gra
 More generally, you must allowlist the service or application you are integrating with {ControllerName}, for which you want
 to provide access tokens. 
 
-To do this, have your Administrator add this allowlist to their local {ControllerName} settings:
+To do this, have your Administrator add this allowlist to their local {ControllerName} settings in `/etc/tower/conf.d/custom.py`:
 
 [literal, options="nowrap" subs="+attributes"]
 ----
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"http://django-oauth-toolkit.herokuapp.com*",
     r"http://www.example.com*"
