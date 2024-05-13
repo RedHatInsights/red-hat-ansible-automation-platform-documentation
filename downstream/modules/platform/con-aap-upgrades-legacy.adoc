@@ -11,7 +11,7 @@ The following steps provide an overview of the legacy upgrade process:
 * Duplicate your custom virtual environments into {ExecEnvName} by using the `awx-manage` command.
 * Migrate data from isolated legacy nodes to execution nodes by performing a side-by-side upgrade so nodes are compatible with the latest {AutomationMesh} features.
 * Import or generate a new {HubName} API token.
-* Reconfigure your Ansible content to include Fully Qualified Collection Names (FQCN) for compatibility with `ansible-core` {AnsibleCoreVers}.
+* Reconfigure your Ansible content to include Fully Qualified Collection Names (FQCN) for compatibility with `ansible-core` {CoreUseVers}.
 
 [role="_additional-resources"]
 .Additional resources
