@@ -21,7 +21,11 @@ h| Service |Required |Notes
 // | *Each {HubName}* | 60 GB dedicated hard disk space |
 
 //Storage volume must be rated for a minimum baseline of 1500 IOPS.
-| *Database* | 20 GB dedicated hard disk space |
+| *Database* | 
+
+* 20 GB dedicated hard disk space 
+* 4 CPUs 
+* 16 GB RAM |
 
 * 150 GB+ recommended
 * Storage volume must be rated for a high baseline IOPS (1500 or more).
