@@ -30,6 +30,9 @@ In the `/var/log/supervisor/` directory, you can view logfiles captured by:
 * *awx-wsbroadcast.log:* Captures the logs of the websocket service that is used by {ControllerName}.
 * *failure-event-handler.stderr.log:* Captures the standard errors for `/usr/bin/failure-event-handler` supervisord's subprocess.
 * *supervisord.log:* Captures the logs related to `supervisord` itself.
+* *wsrelay.log:* Captures the communication logs within the websocket relay server.
+* *ws_heartbeat.log:* Captures the periodic checks on the health of services running on the host.
+* *rsyslog_configurer.log:* Captures rsyslog configuration activity associated with authenticating with external logging services.
 
 The `/var/log/supervisor/` directory includes `stdout` files for all services as well.
 
