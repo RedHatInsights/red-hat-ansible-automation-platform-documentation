@@ -15,23 +15,24 @@ Filter options include:
 * Job
 * Cluster
 * Organization
+* Inventory
 * Template
 
-You can sort results by a set of parameters by using the *Sort by* options from the filter toolbar.
+You can sort results by any of the parameters from each column using the directional arrows.
 
 .Procedure
 
 . From the navigation panel, select {MenuAAJobExplorer}.
-. In the filter toolbar, click the *Filter by* drop-down menu and select *Job*.
+. In the filter toolbar, select *Job* from the *Filter by* list.
 . In that same toolbar, select a time range. Job Explorer will now display jobs within that time range.
 . To further refine results, return to the filter toolbar and select a different attribute to filter results by, including job status, cluster, or organization.
 
-The *Job Explorer* view will update and present a list of jobs based on the attributes you selected.
+The *Job Explorer* view updates and presents a list of jobs based on the attributes you selected.
 
 == Viewing more information about an individual job
 
 You can click on the arrow icon next to the job *Id/Name* column to view more details related to that job.
 
-== Reviewing job details on Ansible Tower
+== Reviewing job details on {ControllerName}
 
-Click the job in the *Id/Name* column to view the job itself on the Ansible Tower job details page. For more information on viewing job details on Ansible Tower, see _Jobs_ in the Ansible Tower https://docs.ansible.com/ansible-tower/3.4.3/html/userguide/jobs.html[User Guide].
+Click the job in the *Id/Name* column to view the job itself on the {ControllerName} job details page. For more information on viewing job details on {ControllerName}, see _Jobs_ in the {BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-jobs[Automation Controller User Guide].

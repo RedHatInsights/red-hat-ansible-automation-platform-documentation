@@ -11,7 +11,7 @@ You can drill down into cluster data to review more detailed information about s
 //
 // * On the *Clusters* view, click on a section of the graph.
 
-Details on those job templates will appear in the *Job Explorer* view, modified by any filters you selected in the *Clusters* view.
+Details on those job templates will appear in the *Job Explorer* view, modified by any filters you select in the *Clusters* view.
 
 For example, you can drill down to review details for failed jobs in a cluster. See below to learn more.
 

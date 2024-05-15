@@ -4,7 +4,7 @@
 [id="ignoring-nested-workflows"]
 = Ignoring nested workflows and jobs
 
-Use the toggle switch on the *Job Explorer* view to ignore nested workflows and job. Select this option to filter out duplicate workflow and job templates entries and exclude those items from overall totals.
+Select the settings icon on the *Job Explorer* view and use the toggle switch to *Ignore nested workflows and jobs*. This option filters out duplicate workflow and job template entries and excludes those items from overall totals.
 
 [NOTE]
 ====
@@ -12,5 +12,5 @@ Use the toggle switch on the *Job Explorer* view to ignore nested workflows and 
 
 Nested workflows allow you to create workflow job templates that call other workflow job templates. Nested workflows promotes reuse, as modular components, of workflows that include existing business logic and organizational requirements in automating complex processes and operations.
 
-To learn more about nested workflows, see _Workflows_ in the Ansible Tower https://docs.ansible.com/ansible-tower/latest/html/userguide/workflows.html[User Guide].
+To learn more about nested workflows, see _Workflows_ in the {BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-workflows[Automation Controller User Guide].
 ====
