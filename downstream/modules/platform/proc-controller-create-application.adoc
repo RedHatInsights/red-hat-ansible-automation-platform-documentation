@@ -11,23 +11,23 @@ For example, revoking all tokens associated with that application.
 
 .Procedure
 . From the navigation panel, select {MenuAEAdminOauthApps}.
-. Click btn:[Add].
-The *Create New Application* page opens.
+. Click btn:[Create application].
+The *Create Application* page opens.
 +
-image:apps-create-new.png[Create application]
+//image:apps-create-new.png[Create application]
 
 . Enter the following details:
 
 * *Name* (required): give a name for the application you want to create
 * Optional: *Description*: give a short description for your application
 * *Organization* (required): give an organization with which this application is associated
-* *Authorization Grant Type* (required): select one of the grant types to use for the user to get tokens for this application.
-For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/oauth2_token_auth.html#ag-oauth2-token-auth-grant-types[Application Functions] in the Applications section of the _{ControllerAG}_.
+* *Authorization grant type* (required): select one of the grant types to use for the user to get tokens for this application.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#ref-controller-password-grant-type[Application using password grant type] section of the _{ControllerAG}_.
+* *Client Type* (required): select the level of security of the client device.
 * *Redirect URIS*: give a list of allowed URIs, separated by spaces.
 You need this if you specified the grant type to be *Authorization code*.
-* *Client Type* (required): select the level of security of the client device.
 
-. Click btn:[Save], or click btn:[Cancel] to abandon your changes.
+. Click btn:[Create application], or click btn:[Cancel] to abandon your changes.
 +
 The client ID displays in a window.
 

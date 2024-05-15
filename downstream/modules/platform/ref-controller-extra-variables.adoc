@@ -23,9 +23,9 @@ You have a defined variable for an inventory for `debug = true`.
 It is possible that this variable, `debug = true`, can be overridden in a job template survey.
 
 To ensure the variables that you pass are not overridden, ensure they are included by redefining them in the survey.
-Extra variables can be defined at the inventory, group, and host levels.
+You can define extra variables at the inventory, group, and host levels.
 
-If you are specifying the `ALLOW_JINJA_IN_EXTRA_VARS` parameter, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index[Controller Tips and Tricks] section of the _{ControllerAG}_ to configure it in the *Jobs Settings* screen of the controller UI.
+If you are specifying the `ALLOW_JINJA_IN_EXTRA_VARS` parameter, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#ref-controller-allow-jinja-in-extra-vars[The ALLOW_JINJA_IN_EXTRA_VARS variable] section of the _{ControllerAG}_ to configure it.
 
 The job template extra variables dictionary is merged with the survey variables.
 

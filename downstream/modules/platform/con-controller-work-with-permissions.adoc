@@ -2,8 +2,8 @@
 
 = Work with permissions
 
-Click the *Access* tab to review, grand, edit, and remove associated permissions for users as well as team members.
+Click the *Team Access*  or *User Access* tab to review, grand, edit, and remove associated permissions for users along with team members.
 
-image::ug-completed-permissions-view.png[Completed permissions]
+//image::ug-completed-permissions-view.png[Completed permissions]
 
-Click btn:[Add] to create new permissions for this workflow template by following the prompts to assign them accordingly.
+Click btn:[Add roles] to create new permissions for this workflow template by following the prompts to assign them.

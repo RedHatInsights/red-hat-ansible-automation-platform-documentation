@@ -4,11 +4,11 @@
 
 Access the schedules for a particular job template from the *Schedules* tab.
 
-image::ug-job-templates-schedules.png[Job templates schedules]
+//image::ug-job-templates-schedules.png[Job templates schedules]
 
 .Procedure
 
-* To schedule a job template, select the *Schedules* tab, and choose the appropriate method:
+* To schedule a job template, select the *Schedules* tab from the job template, and select the appropriate method:
 ** If schedules are already set up, review, edit, enable or disable your schedule preferences.
 ** If schedules have not been set up, see xref:controller-schedules[Schedules] for more information.
 

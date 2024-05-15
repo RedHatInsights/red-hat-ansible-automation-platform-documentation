@@ -6,13 +6,12 @@
 If you specify a collections requirements file in the SCM at `collections/requirements.yml`, {ControllerName} installs collections in that file in the implicit project synchronization before a job run.
 
 {ControllerNameStart} has a system-wide setting that enables collections to be dynamically downloaded from the `collections/requirements.yml` file for SCM projects. 
-You can turn off this setting in the *Jobs settings* tab of the *Settings* menu by switching the *Enable Collections Download*
+You can turn off this setting in the *Job Settings* screen from the navigation panel {MenuSetJob}, by switching the *Enable Collection(s) Download*
 toggle button to *Off*.
 
-image:configure-controller-jobs-download-collections.png[Download collections]
+//image:configure-controller-jobs-download-collections.png[Download collections]
 
-Roles and collections are locally cached for performance reasons, and you select *Update Revision on Launch* in the project SCM
-Update Options to ensure this:
+Roles and collections are locally cached for performance reasons, and you select *Update Revision on Launch* in the project *Options* to ensure this:
 
 image:projects-scm-update-options-update-on-launch-checked.png[update-on-launch]
 

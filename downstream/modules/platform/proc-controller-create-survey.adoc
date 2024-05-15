@@ -4,7 +4,7 @@
 
 .Procedure
 
-. From the *Survey* tab, click btn:[Add].
+. From the *Survey* tab, click btn:[Create survey question].
 . A survey can consist of any number of questions. 
 For each question, enter the following information:
 
@@ -29,13 +29,13 @@ You can set the minimum and maximum length (in characters) for this answer.
 ** *Float*: A decimal number. 
 You can set the minimum and maximum length (in characters) for this answer.
 * *Required*: Whether or not an answer to this question is required from the user.
-* *Minimum length and Maximum length*: Specify if a certain length in the answer is required.
+* *Minimum length* and *Maximum length*: Specify if a certain length in the answer is required.
 * *Default answer*: The default answer to the question. 
 This value is pre-filled in the interface and is used if the answer is not provided by the user.
 +
-image::ug-job-template-create-survey.png[Job template survey]
+//image::ug-job-template-create-survey.png[Job template survey]
 +
-. Once you have entered the question information, click btn:[Save] to add the question.
+. Once you have entered the question information, click btn:[Create question] to add the question.
 +
 The survey question displays in the *Survey* list. 
 For any question, you can click image:leftpencil.png[Pencil,15,15] to edit it.
@@ -44,6 +44,6 @@ Check the box next to each question and click btn:[Delete] to delete the questio
 +
 If you have more than one survey question, click btn:[Edit Order] to rearrange the order of the questions by clicking and dragging on the grid icon.
 +
-image::ug-job-template-rearrange-survey.png[Rearrange survey]
+//image::ug-job-template-rearrange-survey.png[Rearrange survey]
 +
 . To add more questions, click btn:[Add].

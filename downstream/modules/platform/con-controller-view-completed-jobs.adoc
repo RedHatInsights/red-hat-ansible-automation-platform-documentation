@@ -13,8 +13,8 @@ Click the expand icon next to each job to view the following details:
 
 You can filter the list of completed jobs using any of these criteria.
 
-image::ug-job-template-completed-jobs-view.png[Completed jobs view]
+//image::ug-job-template-completed-jobs-view.png[Completed jobs view]
 
-Sliced jobs that display on this list are labeled accordingly, with the number of sliced jobs that have run:
+Sliced jobs that display on this list are labeled accordingly, with the number of sliced jobs that have run.
 
-image::ug-sliced-job-shown-jobs-list-view.png[Sliced jobs shown]
+//image::ug-sliced-job-shown-jobs-list-view.png[Sliced jobs shown]

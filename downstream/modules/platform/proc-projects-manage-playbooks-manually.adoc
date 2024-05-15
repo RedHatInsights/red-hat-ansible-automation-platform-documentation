@@ -13,5 +13,5 @@
 
 * If you have not added any Ansible Playbook directories to the base project path an error message is displayed. 
 Choose one of the following options to troubleshoot this error:
-** Create the appropriate playbook directories and check out playbooks from your SCM (spell this*).
+** Create the appropriate playbook directories and check out playbooks from your (Source code management) SCM.
 ** Copy playbooks into the appropriate playbook directories.

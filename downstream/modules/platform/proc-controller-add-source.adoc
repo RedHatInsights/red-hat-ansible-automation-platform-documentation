@@ -6,16 +6,14 @@ Inventory sources are not associated with groups.
 Spawned groups are top-level and can still have child groups.
 All of these spawned groups can have hosts.
 Adding a source to an inventory only applies to standard inventories.
-Smart inventories inherit their source from the standard inventories they are associated with.
-
-Use the following procedure to configure the source for the inventory:
+//Smart inventories inherit their source from the standard inventories they are associated with.
 
 .Procedure
-. Select the Inventory name you want to add a source to.
+. Select the inventory name you want to add a source to.
 . In the Inventory *Details* page, select the *Sources* tab.
-. Click btn:[Add]. This opens the *Create Source* window.
+. Click btn:[Add source]. This opens the *Add new source* window.
 +
-image:inventories-create-source.png[Inventories create source]
+//image:inventories-create-source.png[Inventories create source]
 
 . Enter the appropriate details:
 
@@ -23,14 +21,14 @@ image:inventories-create-source.png[Inventories create source]
 * Optional: *Description*: Enter a description as appropriate.
 * Optional: *Execution Environment*: Click the image:search.png[Search,15,15] icon or enter the name of the execution environment with which you want to run your inventory imports. For more information on building an {ExecEnvShort}, see xref:assembly-controller-execution-environments[Execution environments].
 * *Source*: Choose a source for your inventory.
-For more information on sources, and supplying the appropriate information, see xref:ref-controller-inventory-sources[Inventory sources].
+For more information about sources, and supplying the appropriate information, see xref:ref-controller-inventory-sources[Inventory sources].
 
 . When the information for your chosen xref:ref-controller-inventory-sources[Inventory sources] is complete, you can optionally specify other common parameters, such as verbosity, host filters, and variables.
 
 . Use the *Verbosity* menu to select the level of output on any inventory source's update jobs.
 . Use the *Host Filter* field to specify only matching host names to be imported into {ControllerName}.
 . In the *Enabled Variable* field, specify that {ControllerName} retrieves the enabled state from the dictionary of host variables.
-You can specify the enabled variable using dot notation as 'foo.bar', in which case the lookup searches nested dictionaries, equivalent to: `from_dict.get('foo', {}).get('bar', default)`.
+You can specify the enabled variable by using dot notation as 'foo.bar', in which case the lookup searches nested dictionaries, equivalent to: `from_dict.get('foo', {}).get('bar', default)`.
 . If you specified a dictionary of host variables in the *Enabled Variable* field, you can provide a value to enable on import.
 For example, for `enabled_var='status.power_state'` and `'enabled_value='powered_on'` in the following host variables, the host is marked `enabled`:
 +
@@ -88,22 +86,24 @@ This enables you to configure additional details, such as schedules and notifica
 
 Use the following procedure to configure notifications for the source:
 
-. In the Inventory *Details* page, select the *Notifications* tab.
+.Procedure
+
+. In the inventory *Details* page, select the *Notifications* tab.
 +
 [NOTE]
 ====
 The *Notifications* tab is only present when you have saved the newly-created source.
 
-image:inventories-create-source-with-notifications-tab.png[Notification tab]
+//image:inventories-create-source-with-notifications-tab.png[Notification tab]
 ====
 . If notifications are already set up, use the toggles to enable or disable the notifications to use with your particular source.
 For more information, see xref:controller-enable-disable-notifications[Enable and Disable Notifications].
-. If notifications have not been set up, see xref:controller-notifications[Notifications] for more information.
+. If you have not set up notifications, see xref:controller-notifications[Notifications] for more information.
 . Review your entries and selections.
 . Click btn:[Save].
 
-When a source is defined, it is displayed in the list of sources associated with the inventory.
+When you define a source, it is displayed in the list of sources associated with the inventory.
 From the *Sources* tab you can perform a sync on a single source, or sync all of them at once.
 You can also perform additional actions such as scheduling a sync process, and edit or delete the source.
 
-image:inventories-view-sources.png[Inventories view sources]
+//image:inventories-view-sources.png[Inventories view sources]

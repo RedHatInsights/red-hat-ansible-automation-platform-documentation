@@ -1,13 +1,12 @@
 [id="ref-controller-applications-getting-started"]
 
-= Getting Started with Applications
+= Getting started with OAuth Applications
 
 From the navigation panel, select {MenuAEAdminOauthApps}.
-The *Applications* page displays a searchable list of all available Applications currently managed by {ControllerName} and can be
-sorted by *Name*.
+The *OAuth Applications* page displays a searchable list of all available applications currently managed by {PlatformNameShort} and can that you can sort by *Name*.
 
-image:apps-list-view-examples.png[Applications- with example apps]
+//image:apps-list-view-examples.png[Applications- with example apps]
 
-If no applications exist, you are requested to add applications.
+If no applications exist, you are requested to create applications.
 
-image:apps-list-view-empty.png[Add applications]
+//image:apps-list-view-empty.png[Add applications]

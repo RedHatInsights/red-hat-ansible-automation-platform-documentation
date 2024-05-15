@@ -4,7 +4,8 @@
 
 .Procedure
 
-. On the *Templates* list view, select *Add job template* from the *Add* list.
+. From the navigation panel, select {MenuAETemplates}.
+. On the *Templates* list view, select *Create job template* from the *Create template* list.
 . Enter the appropriate details in the following fields:
 +
 [NOTE]
@@ -27,7 +28,7 @@ Exceptions are noted in the following table.
 Tasks that do not support check mode are missed and do not report potential changes.
 
 For more information about job types see the link:https://docs.ansible.com/ansible/latest/playbook_guide/index.html[Playbooks] section of the Ansible documentation.| Yes
-| Inventory | Choose the inventory to be used with this job template from the inventories available to the logged in user.
+| Inventory | Choose the inventory to use with this job template from the inventories available to the logged in user.
 
 A System Administrator must grant you or your team permissions to be able to use certain inventories in a job template. | Yes.
 
@@ -59,7 +60,7 @@ The following is an example this message:
 with one of the same type. Please select a credential
 for the following types in order to proceed: Machine.`
 
-- Alternatively, you can add more credentials as you see fit.
+- You can add more credentials as you see fit.
 
 - Credential prompts show up as its own step in a later prompt window.
 | Labels a| - Optionally supply labels that describe this job template, such as `dev` or `test`.
@@ -134,36 +135,37 @@ For more information and examples see link:https://docs.ansible.com/ansible/late
 For more information and examples see link:https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_tags.html[Tags] in the Ansible documentation. | Yes
 |===
 +
-. Specify the following *Options* for launching this template, if necessary:
-* *Privilege Escalation*: If checked, you enable this playbook to run as an administrator.
-This is the equivalent of passing the `--become` option to the `ansible-playbook` command.
-* *Provisioning Callbacks*: If checked, you enable a host to call back to {ControllerName} through the REST API and start a job from this job template.
+. Specify the following options for launching this template, if necessary:
+* *Privilege escalation*: If checked, you enable this playbook to run as an administrator.
+This is the equal of passing the `--become` option to the `ansible-playbook` command.
+* *Provisioning callback*: If checked, you enable a host to call back to {ControllerName} through the REST API and start a job from this job template.
 For more information, see xref:controller-provisioning-callbacks[Provisioning Callbacks].
-* *Enable Webhook*: If checked, you turn on the ability to interface with a predefined SCM system web service that is used to launch a job template.
+* *Enable webhook*: If checked, you turn on the ability to interface with a predefined SCM system web service that is used to launch a job template.
 GitHub and GitLab are the supported SCM systems.
 ** If you enable webhooks, other fields display, prompting for additional information:
 +
-image::ug-job-templates-options-webhooks.png[Job templates webhooks]
+//image::ug-job-templates-options-webhooks.png[Job templates webhooks]
 +
-** *Webhook Service*: Select which service to listen for webhooks from.
+** *Webhook service*: Select which service to listen for webhooks from.
 ** *Webhook URL*: Automatically populated with the URL for the webhook service to POST requests to.
-** *Webhook Key*: Generated shared secret to be used by the webhook service to sign payloads sent to {ControllerName}.
+** *Webhook key*: Generated shared secret to be used by the webhook service to sign payloads sent to {ControllerName}.
 You must configure this in the settings on the webhook service in order for {ControllerName} to accept webhooks from this service.
-** *Webhook Credential*: Optionally, provide a GitHub or GitLab personal access token (PAT) as a credential to use to send status updates back to the webhook service.
+** *Webhook credential*: Optionally, give a GitHub or GitLab personal access token (PAT) as a credential to use to send status updates back to the webhook service.
 Before you can select it, the credential must exist.
 See xref:ref-controller-credential-types[Credential Types] to create one.
 ** For additional information about setting up webhooks, see xref:controller-work-with-webhooks[Working with Webhooks].
-* *Concurrent Jobs*: If checked, you are allowing jobs in the queue to run simultaneously if not dependent on one another. Check this box if you want to run job slices simultaneously. For more information, see xref:controller-capacity-determination[{ControllerNameStart} capacity determination and job impact].
-* *Enable Fact Storage*: If checked, {ControllerName} stores gathered facts for all hosts in an inventory related to the job running.
-* *Prevent Instance Group Fallback*: Check this option to allow only the instance groups listed in the *Instance Groups* field to run the job.
+* *Concurrent jobs*: If checked, you are allowing jobs in the queue to run simultaneously if not dependent on one another. Check this box if you want to run job slices simultaneously. For more information, see xref:controller-capacity-determination[{ControllerNameStart} capacity determination and job impact].
+* *Enable fact storage*: If checked, {ControllerName} stores gathered facts for all hosts in an inventory related to the job running.
+* *Prevent instance group fallback*: Check this option to allow only the instance groups listed in the *Instance Groups* field to run the job.
 If clear, all available instances in the execution pool are used based on the hierarchy described in link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index[Control where a job runs].
-. Click btn:[Save], when you have completed configuring the details of the job template.
+. Click btn:[Create job template], when you have completed configuring the details of the job template.
 
-Saving the template does not exit the job template page but advances to the *Job Template Details* tab.
-After saving the template, you can click btn:[Launch] to launch the job, or click btn:[Edit] to add or change the attributes of the template, such as permissions, notifications, view completed jobs, and add a survey (if the job type is not a scan).
-You must first save the template before launching, otherwise, btn:[Launch] remains disabled.
+Creating the template does not exit the job template page but advances to the Job Template *Details* tab.
+After saving the template, you can click btn:[Launch template] to start the job.
+You can also click btn:[Edit] to add or change the attributes of the template, such as permissions, notifications, view completed jobs, and add a survey (if the job type is not a scan).
+You must first save the template before launching, otherwise, btn:[Launch template] remains disabled.
 
-image::ug-job-template-details.png[Job template details]
+//image::ug-job-template-details.png[Job template details]
 
 .Verification
 

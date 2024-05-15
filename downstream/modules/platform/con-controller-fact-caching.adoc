@@ -6,13 +6,13 @@
 This behavior is configurable on a per-job template basis.
 Fact caching is turned off by default but can be enabled to serve fact requests for all hosts in an inventory related to the job running.
 This enables you to use job templates with `--limit` while still having access to the entire inventory of host facts.
-A global timeout setting that the plugin enforces per-host, can be specified (in seconds) by going to {MenuAEAdminSettings} and selecting *Job settings* from the *Jobs* option:
+You can specify a global timeout setting that the plugin enforces per-host, (in seconds) from the navigation panel, select {MenuSetJob} and edit the *Per-Host Ansible Fact Cache Timeout* field.
 
-image::ug-jobs-fact-cache-timeout.png[Jobs fact cache]
+//image::ug-jobs-fact-cache-timeout.png[Jobs fact cache]
 
 After launching a job that uses fact cache (`use_fact_cache=True`), each host's `ansible_facts` are all stored by the controller in the job's inventory.
 
-The Ansible Fact Cache plugin that ships with {ControllerName} is enabled on jobs with fact cache enabled (`use_fact_cache=True`).
+The Ansible Fact Cache plugin that includes {ControllerName} is enabled on jobs with fact cache enabled (`use_fact_cache=True`).
 
 When a job that has fact cache enabled (`use_fact_cache=True`) has run, {ControllerName} restores all records for the hosts in the inventory.
 Any records with update times newer than the currently stored facts per-host are updated in the database.

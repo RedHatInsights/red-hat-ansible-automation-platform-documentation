@@ -1,10 +1,10 @@
 [id="ref-controller-constructed-inventories"]
 
 = Constructed Inventories
-//As Smart inventories are deprecated, I'm removing comparisons from the souce text. 
+//As Smart inventories are deprecated, I'm removing comparisons from the source text. 
 You can create a new inventory (called a constructed inventory) from a list of input inventories. 
 
-A constructed inventory contains copies of hosts and groups in its input inventories, permitting jobs to target groups of servers across multiple inventories. 
+A constructed inventory has copies of hosts and groups in its input inventories, permitting jobs to target groups of servers across many inventories. 
 Groups and hostvars can be added to the inventory content, and hosts can be filtered to limit the size of the constructed inventory. 
 
 Constructed inventories use the link:https://docs.ansible.com/ansible/latest/collections/ansible/builtin/constructed_inventory.html#ansible-builtin-constructed-inventory-uses-jinja2-to-construct-vars-and-groups-based-on-existing-inventory[ansible.builtin.constructed inventory] model.
@@ -24,10 +24,10 @@ You can construct groups based on these host properties:
 * Cloud based instances tagged in a certain region
 * other
 
-The following is an example of a constructed inventory details view:
+//The following is an example of a constructed inventory details view:
 
-image:inventories-constructed-inventory-details.png[Constructed inventory details]
+//image:inventories-constructed-inventory-details.png[Constructed inventory details]
 
-The examples described in subsequent sections are organized by the structure of the input inventories.
+The examples described in later sections are organized by the structure of the input inventories.
 
 

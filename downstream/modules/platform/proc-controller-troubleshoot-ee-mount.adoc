@@ -9,11 +9,16 @@ Use the following procedure if you meet this error, or have upgraded from an old
 
 .Procedure
 . Change the container ownership on the mounted volume to `root`.
-. From the navigation panel, select {MenuAEAdminSettings}.
-. Select *Jobs settings* from the *Jobs* option.
+. From the navigation panel, select {MenuSetJob}.
+. Click btn:[Edit].
 . Expose the path in the *Paths to expose to isolated jobs* field, using the current example:
 +
-image:settings-paths2expose-iso-jobs.png[Paths]
+[literal, options="nowrap" subs="+attributes"]
+----
+[
+  "/ssh_config:/etc/ssh/ssh_config.d/:0"
+]
+----
 +
 [NOTE]
 ====
@@ -31,7 +36,16 @@ podman run -v /ssh_config:/etc/ssh/ssh_config.d/:O ...
 
 To expose isolated paths in OpenShift or Kubernetes containers as HostPath, use the following configuration:
 
-image:settings-paths2expose-iso-jobs-mount-containers.png[Expose isolated jobs]
+[literal, options="nowrap" subs="+attributes"]
+----
+[
+  "/mnt2:/mnt2",
+  "/mnt3",
+  "/mnt4:/mnt4:0"
+]
+----
+// Removing following image and added code block above:
+// image:settings-paths2expose-iso-jobs-mount-containers.png[Expose isolated jobs]
 
 Set *Expose host paths for Container Groups* to *On* to enable it.
 

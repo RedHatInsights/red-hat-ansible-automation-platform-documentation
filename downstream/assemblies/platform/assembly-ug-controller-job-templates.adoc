@@ -4,20 +4,20 @@
 
 A job template is a definition and set of parameters for running an Ansible job. 
 Job templates are useful to run the same job many times. 
-They also encourage the reuse of Ansible playbook content and collaboration between teams.
+They also encourage the reuse of Ansible Playbook content and collaboration between teams.
 
 The *Templates* list view shows job templates that are currently available. 
 The default view is collapsed (Compact), showing the template name, template type, and the timestamp of the last job that ran using that template. 
 You can click the arrow image:arrow.png[Arrow,15,15] icon next to each entry to expand and view more information. 
 This list is sorted alphabetically by name, but you can sort by other criteria, or search by various fields and attributes of a template.
 
-image::ug-job-templates-home.png[Job templates home]
+//image::ug-job-templates-home.png[Job templates home]
 
-From this screen you can launch image:rightrocket.png[Rightrocket,15,15], edit image:leftpencil.png[Leftpencil,15,15], and copy image:copy.png[Copy,15,15] a workflow job template. 
+From this screen you can launch image:rightrocket.png[Rightrocket,15,15], edit image:leftpencil.png[Leftpencil,15,15], copy image:copy.png[Copy,15,15] and delete image:delete-button.png[Delete,15.15] a job template. 
 
 [NOTE]
 ====
-Job templates can be used to build a workflow template.
+You can use job templates to build a workflow template.
 Templates that show the *Workflow Visualizer* image:visualizer.png[Visualizer, 15,15] icon next to them are workflow templates.
 Clicking the icon allows you to build a workflow graphically.
 Many parameters in a job template enable you to select *Prompt on Launch* that you can change at the workflow level, and do not affect the values assigned at the job template level. 

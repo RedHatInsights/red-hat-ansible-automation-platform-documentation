@@ -13,6 +13,6 @@ This must include the URL scheme, such as http or https.
 * *Username* (required): the specific authenticated user for this service
 * *Public Key Certificate*: include the `BEGIN CERTIFICATE` and `END CERTIFICATE` lines when pasting the public key, if provided by CyberArk
 
-The following is an example of a configured CyberArk Conjur credential.
+//The following is an example of a configured CyberArk Conjur credential.
 
-image:credentials-create-cyberark-conjur-credential.png[CyberArk Conjur credential]
+//image:credentials-create-cyberark-conjur-credential.png[CyberArk Conjur credential]

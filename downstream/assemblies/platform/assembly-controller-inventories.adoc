@@ -35,40 +35,43 @@ Groups may be sourced manually, by entering host names into {ControllerName}, or
 ====
 If you have a custom dynamic inventory script, or a cloud provider that is not yet supported natively in {ControllerName}, you can also import that into {ControllerName}.
 
-For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/scm-inv-source.html#ag-inv-import[Inventory file importing] in the _{ControllerAG}_.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#assembly-inventory-file-importing[Inventory file importing] in the _{ControllerAG}_.
 ====
 
 From the navigation panel, select {MenuInfrastructureInventories}.
 The *Inventories* window displays a list of the inventories that are currently available.
-You can sort the inventory list by *Name*, *Type*, or *Organization*.
+//You can sort the inventory list by *Name*, *Type*, or *Organization*.
 //Can't see how you search for these: description, owners and modifiers of the inventory, or additional criteria as needed.
 
-image:inventories-home-with-examples.png[Inventories - home]
+//image:inventories-home-with-examples.png[Inventories - home]
 
 The *Inventory details* page includes:
 
 * *Name*: The inventory name.
 // You can also reach this page using the image:leftpencil.png[Edit,15,15] icon. No you can't.
 * *Status*
-
++
 The statuses are:
-
++
 ** *Success*: When the inventory source sync completed successfully
 ** *Disabled*: No inventory source added to the inventory
 ** *Error*: When the inventory source sync completed with error
++
 * *Type*: Identifies whether it is a standard inventory, a Smart inventory, or a constructed inventory.
 * *Organization*: The organization to which the inventory belongs.
-* *Actions*: The following actions are available for the selected inventory:
+//* *Actions*: 
+The following actions are available for the selected inventory:
 ** *Edit* image:leftpencil.png[Edit,15,15]: Edit the properties for the selected inventory
 ** *Copy* image:copy.png[Copy,15,15]: Makes a copy of an existing inventory as a template for creating a new one
+** *Delete inventory*: Delete the selected inventory
 
 Click the Inventory name to display the *Details* page for the selected inventory, which shows the
 inventory's groups and hosts.
 
 //Smart inventories are deprecated.
-include::platform/ref-controller-smart-inventories.adoc[leveloffset=+1]
-include::platform/ref-controller-smart-host-filter.adoc[leveloffset=+2]
-include::platform/proc-controller-define-filter-with-facts.adoc[leveloffset=+2]
+//include::platform/ref-controller-smart-inventories.adoc[leveloffset=+1]
+//include::platform/ref-controller-smart-host-filter.adoc[leveloffset=+2]
+//include::platform/proc-controller-define-filter-with-facts.adoc[leveloffset=+2]
 include::platform/ref-controller-constructed-inventories.adoc[leveloffset=+1]
 
 include::platform/ref-controller-group-name-vars-filtering.adoc[leveloffset=+2]

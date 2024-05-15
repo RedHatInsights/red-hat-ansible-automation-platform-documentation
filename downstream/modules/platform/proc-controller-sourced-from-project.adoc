@@ -8,8 +8,8 @@ For example, if the project's source is from GitHub, then the inventory uses the
 Use the following procedure to configure a project-sourced inventory:
 
 .Procedure
-. In the *Create new source* page, select *Sourced from a Project* from the *Source* list.
-. The Create Source window expands with additional fields. Enter the following details:
+. In the *Add new source* page, select *Sourced from a Project* from the *Source* list.
+. Enter the following details in the additional fields:
 
 * Optional: *Source Control Branch/Tag/Commit*: Enter the SCM branch, tags, commit hashes, arbitrary refs, or revision number (if applicable) from the source control (Git or Subversion) to checkout.
 +
@@ -30,9 +30,9 @@ In addition to a flat file inventory, you can point to a directory or an invento
 image:inventories-create-source-sourced-from-project-filter.png[image]
 
 . Optional: You can specify the verbosity, host filter, enabled variable/value, and update options as described in xref:proc-controller-add-source[Adding a source].
-. Optional: To pass to the custom inventory script, you can set environment variables in the *Environment Variables* field.
+. Optional: To pass to the custom inventory script, you can set environment variables in the *Source Variables* field.
 You can also place inventory scripts in source control and then run it from a project.
-For more information, see link:https://docs.ansible.com/automation-controller/4.4/html/administration/scm-inv-source.html#ag-inv-import[Inventory File Importing] in _{ControllerAG}_.
+For more information, see link:{BaseURL}red_hat_ansible_automation_platform/2.4/html-single/automation_controller_administration_guide/index#assembly-inventory-file-importing[Inventory File Importing] in _{ControllerAG}_.
 //+
 //image:inventories-create-source-sourced-from-project-example.png[Inventories - create source - sourced from project example]
 
@@ -40,5 +40,5 @@ For more information, see link:https://docs.ansible.com/automation-controller/4.
 ====
 If you are executing a custom inventory script from SCM, ensure that you set the execution bit (`chmod +x`) for the script in your upstream source control.
 
-If you do not, {ControllerName} throws a `[Errno 13] Permission denied` error on execution.
+If you do not, {ControllerName} throws a `[Error 13] Permission denied` error on execution.
 ====

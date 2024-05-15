@@ -28,7 +28,7 @@ Use the following procedure to create a new group for an inventory:
 //[ddacosta] Groups is a tab selection and not a menu. Only use the menu and btn macros for those specific elements; otherwise just bold the selection
 . Select the Inventory name you want to add groups to.
 . In the Inventory *Details* page, select the *Groups* tab.
-. Click btn:[Add] to open the *Create Group* window.
+. Click btn:[Create group] to open the *Create new group* window.
 //+
 //image:inventories-add-group-new.png[Inventories_manage_group_add]
 
@@ -37,7 +37,7 @@ Use the following procedure to create a new group for an inventory:
 * *Name*: Required
 * Optional: *Description*: Enter a description as appropriate.
 * *Variables*: Enter definitions and values to be applied to all hosts in this group.
-Enter variables using either JSON or YAML syntax.
+Enter variables by using either JSON or YAML syntax.
 Use the radio button to toggle between the two.
 . Click btn:[Save].
 . When you have added a group to a template, the *Group details* page is displayed.

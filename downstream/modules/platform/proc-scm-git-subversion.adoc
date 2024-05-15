@@ -3,9 +3,9 @@
 = SCM Types - Configuring playbooks to use Git and Subversion
 
 .Procedure
-. In the Project *Details* tab, select the appropriate option (Git or Subversion) from the *SCM Type* menu.
+. In the project *Details* tab, select the appropriate option (Git or Subversion) from the *Source Control Type* menu.
 +
-image:projects-create-scm-project.png[Select scm]
+//image:projects-create-scm-project.png[Select scm]
 
 . Enter the appropriate details into the following fields:
 
@@ -29,13 +29,13 @@ In addition, to avoid job overflows if jobs are spawned faster than the project 
 For more information, see xref:controller-job-branch-overriding[Job branch overriding].
 +
 image:projects-create-scm-project-branch-override-checked.png[Override options]
-. Click *Save* to save your project.
+. Click *Save project* to save your project.
 
 [TIP]
 ====
 Using a GitHub link is an easy way to use a playbook. 
 To help get you started, use the `helloworld.yml` file available link:https://github.com/ansible/tower-example.git[here].
 
-This link offers a very similar playbook to the one created manually in the instructions found in link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_controller/index[{ControllerUG}]. 
+This link offers a very similar playbook to the one created manually in the instructions found in link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/getting_started_with_automation_controller/index[{ControllerGS}]. 
 Using it will not alter or harm your system in any way.
 ====

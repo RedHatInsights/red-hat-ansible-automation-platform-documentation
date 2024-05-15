@@ -8,8 +8,7 @@ This is useful when using NFS storage.
 
 .Procedure
 
-. From the navigation panel, select {MenuAEAdminSettings}.
-. Select *Jobs settings* from the *Jobs* option.
+. From the navigation panel, select {MenuSetJob}.
 . Edit the *Paths to expose to isolated jobs* field:
 ** Enter a list of paths that volumes are mounted from the execution node or the hybrid node to the container.
 ** Enter one path per line.

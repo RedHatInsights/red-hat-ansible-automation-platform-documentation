@@ -9,12 +9,12 @@ This reduces the runtime of jobs against large inventories, including Smart Inve
 
 [NOTE]
 ====
-Do not modify the ansible.cfg file to apply fact caching. 
+Do not change the ansible.cfg file to apply fact caching. 
 Custom fact caching could conflict with the controller's fact caching feature.
-You must use the fact caching module that comes with {ControllerName}.
+You must use the fact caching module that includes {ControllerName}.
 ====
 
-You can choose to use cached facts in your job by enabling it in the *Options* field of the job templates window.
+You can select to use cached facts in your job by checking the *Enable Fact Storage* option when you create or edit a job template.
 
 image::ug-job-templates-options-use-factcache.png[Cached facts]
 

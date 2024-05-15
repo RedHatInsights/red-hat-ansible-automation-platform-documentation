@@ -2,12 +2,12 @@
 
 = Adding tokens
 
-You can view a list of users that have tokens to access an application by selecting the *Tokens* tab Application details page.
+You can view a list of users that have tokens to access an application by selecting the *Tokens* tab in the applications *Details* page.
 
 Configure authentication tokens for your users.
 You can select the application to which the token is associated and the level of access that the token has.
 
-[NOTE]
+[IMPORTANT]
 ====
 You can only create OAuth 2 Tokens for your user through the API or UI, which means you can only access your own user profile to configure or view your tokens.
 ====
@@ -22,29 +22,29 @@ When no tokens are present, the *Tokens* screen prompts you to add them.
 . Enter the following details:
 
 * *Application*: enter the name of the application with which you want to associate your token.
-Alternatively, you can search for it by clicking the image:search.png[Search,15,15] icon.
+You can also search for it by clicking the image:search.png[Search,15,15] icon.
 This opens a separate window that enables you to choose from the available options.
 Use the Search bar to filter by name if the list is extensive.
 Leave this field blank if you want to create a Personal Access Token (PAT) that is not linked to any application.
-* Optional: *Description*: provide a short description for your token.
+* Optional: *Description*: give a short description for your token.
 * *Scope* (required): specify the level of access you want this token to have.
 
 . Click btn:[Save], or click btn:[Cancel] to abandon your changes.
 +
 After you save the token, the newly created token for the user is displayed with the token information and when it expires.
 +
-image:users-token-information-example.png[Token information]
+//image:users-token-information-example.png[Token information]
 
 . To view the application to which the token is associated and the token expiration date, go to the token list view.
 +
-image:users-token-assignment-example.png[Token assignment]
+//image:users-token-assignment-example.png[Token assignment]
 
 .Verification
-To verify that the application now shows the user with the appropriate token, open the *Tokens* tab of the Applications window:
+To verify that the application now shows the user with the appropriate token, open the *Tokens* tab of the Applications window.
 
-image:apps-tokens-list-view-example2.png[image]
+//image:apps-tokens-list-view-example2.png[image]
 
 .Additional resources
 
 If you are a system administrator and have to create or remove tokens for other users, see the revoke and create commands in the
-link:https://docs.ansible.com/automation-controller/4.4/html/administration/tower-manage.html#ag-token-utility[Token and session management] section of the _{ControllerAG}_.
+link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#ref-controller-token-session-management[Token and session management] section of the _{ControllerAG}_.

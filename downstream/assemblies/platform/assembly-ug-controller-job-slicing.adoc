@@ -3,14 +3,15 @@
 = Job slicing 
 
 A sliced job refers to the concept of a distributed job. 
-Distributed jobs are used for running a job across a large number of hosts, enabling you to run multiple ansible-playbooks, each on a subset of an inventory, that can be scheduled in parallel across a cluster.
+Use distributed jobs for running a job across a large number of hosts. 
+You can then run many ansible-playbooks, each on a subset of an inventory that you can be schedule in parallel across a cluster.
 
 By default, Ansible runs jobs from a single control instance. 
-For jobs that do not require cross-host orchestration, job slicing takes advantage of {ControllerName}'s ability to distribute work to multiple nodes in a cluster. 
+For jobs that do not require cross-host orchestration, job slicing takes advantage of {ControllerName}'s ability to distribute work to many nodes in a cluster. 
 
 Job slicing works by adding a Job Template field `job_slice_count`, which specifies the number of jobs into which to slice the Ansible run. 
 When this number is greater than `1`, {ControllerName} generates a workflow from a job template instead of a job.
-The inventory is distributed evenly amongst the slice jobs. 
+The inventory is distributed evenly among the slice jobs. 
 The workflow job is then started, and proceeds as though it were a normal workflow. 
 
 When launching a job, the API returns either a job resource (if job_slice_count = 1) or a workflow job resource. 

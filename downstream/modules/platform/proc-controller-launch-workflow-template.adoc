@@ -5,11 +5,11 @@
 .Procedure
 
 * Launch a workflow job template by using one of these methods:
-** From the navigation panel, select {MenuAETemplates} and click btn:[Launch] next to the job template:
+** From the navigation panel, select {MenuAETemplates} and click the image:rightrocket.png[Launch,15,15] icon next to the job template.
 +
-image::ug-wf-template-launch.png[Launch workflow template]
+//image::ug-wf-template-launch.png[Launch workflow template]
 +
-** Click btn:[Launch] in the *Details* tab of the workflow job template that you want to launch.
+** Click btn:[Launch template] in the *Details* tab of the workflow job template that you want to launch.
 
 Variables added for a workflow job template are automatically added in {ControllerName} when launching, along with any extra variables set in the workflow job template and survey.
 

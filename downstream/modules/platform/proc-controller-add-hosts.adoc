@@ -2,19 +2,17 @@
 
 = Adding hosts to an inventory
 
-You can configure hosts for the inventory as well as for groups and groups within groups.
-
-Use the following procedure to add hosts:
+You can configure hosts for the inventory and for groups and groups within groups.
 
 .Procedure
-. Select the Inventory name you want to add groups to.
+. Select the inventory name you want to add groups to.
 . In the Inventory *Details* page, select the *Hosts* tab.
-. Click btn:[Add].
+. Click btn:[Create host].
 . Select whether to add a host that already exists in your configuration or create a new host.
 . If creating a new host, set the toggle to *On* to include this host while running jobs.
 . Enter the appropriate details:
 
-* *Host Name* (required):
+* *Name* (required):
 * Optional: *Description*: Enter a description as appropriate.
 * *Variables*: Enter definitions and values to be applied to all hosts in this group, as in the following example:
 +
@@ -27,30 +25,30 @@ Use the following procedure to add hosts:
 }
 ----
 +
-Enter variables using either JSON or YAML syntax.
+Enter variables by using either JSON or YAML syntax.
 Use the radio button to toggle between the two.
-. Click btn:[Save].
+. Click btn:[Create host].
 . The *Create Host* window closes and the newly created host is displayed in the list of hosts associated with the group that it was created for.
 +
-image:inventories-add-group-host-added.png[Inventories add group host]
+//image:inventories-add-group-host-added.png[Inventories add group host]
 +
 If you choose to add an existing host, available hosts appear in a separate selection window.
 //+
 //image:inventories-add-existing-host.png[Inventories add existing host]
 +
-When a host is selected, it is displayed in the list of hosts associated with the group.
+When you select a host, it is displayed in the list of hosts associated with the group.
 
 . You can disassociate a host from this screen by selecting the host and clicking the image:disassociate.png[Disassociate,10,10] icon.
 +
 [NOTE]
 ====
 You can also run ad hoc commands from this screen.
-For more information, see [Running ad hoc commands].
+For more information, see xref:proc-controller-run-ad-hoc-commands[Running Ad Hoc commands].
 ====
 
 . To configure additional groups for the host, click the name of the host from the list of hosts.
 +
-image:inventories-add-group-host-added-emphasized.png[Inventories add group host emphasized]
+//image:inventories-add-group-host-added-emphasized.png[Inventories add group host emphasized]
 +
 This opens the *Details* tab of the selected host.
 //+
@@ -60,7 +58,7 @@ This opens the *Details* tab of the selected host.
 . Click btn:[Add] to associate the host with an existing group.
 Available groups appear in a separate selection window.
 +
-image:inventories-add-group-hosts-add-groups.png[image]
+//image:inventories-add-group-hosts-add-groups.png[image]
 
 . Select the groups to associate with the host and click btn:[Save].
 +
@@ -69,11 +67,11 @@ When a group is associated, it is displayed in the list of groups associated wit
 . If a host was used to run a job, you can view details about those jobs in the *Completed Jobs* tab of the host.
 . Click btn:[Expanded] to view details about each job.
 +
-image:inventories-add-host-view-completed-jobs.png[image]
+//image:inventories-add-host-view-completed-jobs.png[image]
 
 [NOTE]
 ====
-You can create hosts in bulk using the newly added endpoint in the API, `/api/v2/bulk/host_create`.
+You can create hosts in bulk by using the newly added endpoint in the API, `/api/v2/bulk/host_create`.
 This endpoint accepts JSON and you can specify the target inventory and a list of hosts to add to the inventory.
 These hosts must be unique within the inventory.
 Either all hosts are added, or an error is returned indicating why the operation was not able to complete.

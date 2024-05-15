@@ -11,7 +11,7 @@ You can configure these tokens as read-only.
 You can create an application that is representative of the external application you are integrating with, then use it to create tokens for the application to use on behalf of its users.
 
 Associating these tokens with an application resource enables you to manage all tokens issued for a particular application. 
-By separating the issue of tokens under *Applications*, you can revoke all tokens based on the Application without having to revoke all tokens in the system.
+By separating the issue of tokens under *OAuth Applications*, you can revoke all tokens based on the Application without having to revoke all tokens in the system.
 
 include::platform/ref-controller-applications-getting-started.adoc[leveloffset=+1]
 include::platform/proc-controller-create-application.adoc[leveloffset=+1]

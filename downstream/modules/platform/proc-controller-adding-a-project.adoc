@@ -6,9 +6,9 @@ You can create a logical collection of playbooks, called projects in {Controller
 
 .Procedure
 . From the navigation panel, select {MenuAEProjects}.
-. On the *Projects* page, click btn:[Add] to launch the *Create Project* window.
+. On the *Projects* page, click btn:[Create project] to launch the *Create Project* window.
 +
-image:projects-create-new-project.png[Projects- create new project]
+//image:projects-create-new-project.png[Projects- create new project]
 
 . Enter the appropriate details into the following required fields:
 
@@ -24,7 +24,7 @@ For more information, see xref:proc-projects-manage-playbooks-manually[Manage pl
 Specify the GPG key to use for validating content signature during project synchronization.
 If the content has been tampered with, the job will not run.
 For more information, see xref:assembly-controller-project-signing[Project signing and verification].
-. Click btn:[Save].
+. Click btn:[Create project].
 
 .Additional resources
 The following describe the ways projects are sourced:

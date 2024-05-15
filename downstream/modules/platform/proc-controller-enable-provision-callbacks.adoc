@@ -4,26 +4,26 @@
 
 .Procedure
 
-* To enable callbacks, check the *Provisioning Callbacks* checkbox in the job template.
-This displays *Provisioning Callback URL* for the job template.
+* To enable callbacks, check the *Provisioning callback* option in the job template.
+This displays *Provisioning callback details* for the job template.
 +
 [NOTE]
 ====
 If you intend to use {ControllerName}'s provisioning callback feature with a dynamic inventory, set *Update on Launch* for the inventory group used in the job template.
 
-image::ug-provisioning-callbacks-config.png[Provisioning Callback details]
+//image::ug-provisioning-callbacks-config.png[Provisioning Callback details]
 ====
 
-Callbacks also require a Host Config Key, to ensure that foreign hosts with the URL cannot request configuration. 
-Provide a custom value for Host Config Key. 
-The host key can be reused across multiple hosts to apply this job template against multiple hosts.
-If you want to control what hosts are able to request configuration, the key may be changed at any time.
+Callbacks also require a host config key, to ensure that foreign hosts with the URL cannot request configuration. 
+Give a custom value for the *Host config key*. 
+The host key can be reused across many hosts to apply this job template against multiple hosts.
+If you want to control what hosts are able to request configuration, you can change the key can at any time.
 
 To callback manually using REST:
 
 .Procedure
 
-. Look at the callback URL in the UI, in the form:
+. Examine the callback URL in the UI, in the form:
 \https://<CONTROLLER_SERVER_NAME>/api/v2/job_templates/7/callback/
 * The "7" in the sample URL is the job template ID in {ControllerName}.
 . Ensure that the request from the host is a POST. 
@@ -42,12 +42,12 @@ If {ControllerName} fails to locate the host either by name or IP address in one
 When running a job template in this way, ensure that the host initiating the playbook run against itself is in the inventory. 
 If the host is missing from the inventory, the job template fails with a *No Hosts Matched* type error message.
 
-If your host is not in the inventory and *Update on Launch* is set for the inventory group {ControllerName} attempts to update cloud based inventory sources before running the callback.
+If your host is not in the inventory and *Update on Launch* is checked for the inventory group, {ControllerName} attempts to update cloud based inventory sources before running the callback.
 
 .Verification
 
 Successful requests result in an entry on the *Jobs* tab, where you can view the results and history.
-You can access the callback using REST, but the suggested method of using the callback is to use one of the example scripts that ships with {ControllerName}:
+You can access the callback by using REST, but the suggested method of using the callback is to use one of the example scripts that includes {ControllerName}:
 
 * `/usr/share/awx/request_tower_configuration.sh` (Linux/UNIX)
 * `/usr/share/awx/request_tower_configuration.ps1` (Windows)

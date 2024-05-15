@@ -13,7 +13,7 @@ Execution environments tied to an organization require Organization administrato
 
 .Procedure
 . From the navigation panel, select {MenuInfrastructureExecEnvironments}.
-. Click btn:[Add] to add an {ExecEnvShort}.
+. Click btn:[Create execution environment] to add an {ExecEnvShort}.
 . Enter the appropriate details into the following fields:
 
 * *Name* (required): Enter a name for the {ExecEnvShort}.
@@ -27,23 +27,23 @@ The image name requires its full location (repository), the registry, image name
 +
 [NOTE]
 ====
-If you do not set a typo for pull, the value defaults to *Only pull the image if not present before running*.
+If you do not set a typing error for pull, the value defaults to *Only pull the image if not present before running*.
 ====
 +
 * Optional: *Description*:
 * Optional: *Organization*: Assign the organization to specifically use this {ExecEnvShort}. To make the {ExecEnvShort} available for use across multiple organizations, leave this field blank.
-* *Registry credential*: If the image has a protected container registry, provide the credential to access it.
+* *Registry Credential*: If the image has a protected container registry, give the credential to access it.
 +
-image:ee-new-ee-form-filled.png[New {ExecEnvShort}]
+//image:ee-new-ee-form-filled.png[New {ExecEnvShort}]
 
 . Click btn:[Save].
 +
 Your newly added {ExecEnvShort} is ready to be used in a job template.
 +
-. To add an {ExecEnvShort} to a job template, specify it in the *Execution Environment* field of the job template, as shown in the following example:
+. To add an {ExecEnvShort} to a job template, specify it in the *Execution Environment* field of the job template.
 
-image:job-template-with-example-ee-selected.png[Execution Environment added]
+//image:job-template-with-example-ee-selected.png[Execution Environment added]
 
 When you have added an {ExecEnvShort} to a job template, those templates are listed in the *Templates* tab of the {ExecEnvShort}:
 
-image:ee-details-templates-list.png[Execution environment templates]
+//image:ee-details-templates-list.png[Execution environment templates]

@@ -29,13 +29,13 @@ Use caution when editing this file, as incorrect settings can disable your insta
 
 The Projects page displays the list of the projects that are currently available. 
 
-{ControllerNameStart} provides you with a *Demo Project* that you can work with initially.
+A *Demo Project* is provided that you can work with initially.
 
-image:projects-list-all.png[Projects - home]
+//image:projects-list-all.png[Projects - home]
 
 The default view is collapsed (*Compact*) with project name and its status, but you can use the image:arrow.png[Arrow,15,15] next to each entry to expand for more information.
 
-image:projects-list-all-expanded.png[Projects - expanded]
+//image:projects-list-all-expanded.png[Projects - expanded]
 
 For each project listed, you can get the latest SCM revision image:sync.png[Refresh,15,15], edit image:leftpencil.png[Edit,15,15] the project, or copy image:copy.png[Copy,15,15] the project attributes, using the icons next to each project. 
 
