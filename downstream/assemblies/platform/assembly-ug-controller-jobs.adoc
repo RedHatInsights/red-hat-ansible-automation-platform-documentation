@@ -14,8 +14,8 @@ image::ug-jobs-list-all-expanded.png[Jobs list expanded]
 From this screen you can complete the following tasks:
 
 * View details and standard output of a particular job 
-* Re-launch image:rightrocket.png[Launch,15,15] jobs
-* Remove selected jobs
+* Relaunch image:rightrocket.png[Launch,15,15] jobs
+* Cancel or Remove selected jobs
 
 The relaunch operation only applies to relaunches of playbook runs and does not apply to project or inventory updates, system jobs, and workflow jobs.
 When a job relaunches, the *Jobs Output* view is displayed.
@@ -23,10 +23,10 @@ Selecting any type of job also takes you to the *Job Output* view for that job, 
 
 image::ug-job-details-view-filters.png[Job details view filters]
 
-* The *Stdout* option is the default display that shows the job processes and output.
-* The *Event* option enables you to filter by the events of interest, such as errors, host failures, host retries, and items skipped. 
+//* The *Stdout* option is the default display that shows the job processes and output.
+* The *Event*  option in the *Search output* list enables you to filter by the events of interest, such as errors, host failures, host retries, and items skipped. 
 You can include as many events in the filter as necessary.
-* The *Advanced* option is a refined search that gives you a combination of including or excluding criteria, searching by key, or by lookup type. 
+//* The *Advanced* option is a refined search that gives you a combination of including or excluding criteria, searching by key, or by lookup type. 
 For more information on using the search, refer to the xref:assembly-controller-search[Search] section.
 
 include::platform/con-controller-inventory-sync-jobs.adoc[leveloffset=+1]

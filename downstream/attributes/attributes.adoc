@@ -188,7 +188,7 @@
 // Automation Execution > Administration
 :MenuAEAdminActivityStream: menu:{MenuTopAE}[Administration > Activity Stream]
 :MenuAEAdminWorkflowApprovals: menu:{MenuTopAE}[Administration > Workflow Approvals]
-:MenuAEAdminJobNotifications: menu:{MenuTopAE}[Administration > Job Notifications]
+:MenuAEAdminJobNotifications: menu:{MenuTopAE}[Administration > Notifiers]
 :MenuAEAdminManageJobs: menu:{MenuTopAE}[Administration > Management Jobs]
 :MenuAEAdminOauthApps: menu:{MenuTopAE}[Administration > OAuth Applications]
 

@@ -22,5 +22,3 @@ All members of a role have all capabilities granted to that role.
 Within an organization, roles are relatively stable, while users and capabilities are both numerous and may change rapidly. 
 * Users can have many roles.
 
-include::con-controller-role-hierarchy.adoc[leveloffset=+1]
-

@@ -4,15 +4,15 @@
 
 .Procedure
 
-. Select the *Instances* tab of the *Instance Groups* window.
-. Click btn:[Associate].
-. Click the checkbox next to one or more available instances from the list to select the instances you want to associate with the instance group:
-+
-image::instance-group-assoc-instances.png[Associate instances]
-+
-. In the following example, the instances added to the instance group displays along with information about their capacity:
-+
+. Select the *Instances* tab on the *Details* page of an Instance Group.
+. Click btn:[Associate instance].
+. Click the checkbox next to one or more available instances from the list to select the instances you want to associate with the instance group and click btn:[Confirm]
+//+
+//image::instance-group-assoc-instances.png[Associate instances]
+//+
+//. In the following example, the instances added to the instance group displays along with information about their capacity:
+//+
 
-image::ug-instances-example-callouts.png[Instances callouts]
+//image::ug-instances-example-callouts.png[Instances callouts]
 
 

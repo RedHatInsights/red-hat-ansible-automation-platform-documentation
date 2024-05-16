@@ -12,9 +12,8 @@ Use the following procedure to reset `TOWER_URL_BASE` if the wrong address has b
 
 .Procedure
 
-. From the navigation panel, select {MenuAEAdminSettings}.
-. Select *Miscellaneous System settings* from the *System* options.
+. From the navigation panel, select menu:{MenuAEAdminSettings}[System].
 . Click btn:[Edit].
 . Enter the address in the *Base URL of the service* field for the DNS entry you wish to appear in notifications.
 //[ddacosta] Subscription is not an option from the Settings menu in the controller test environment. Need to verify where this lives and if it changes for 2.5
-. Re-add your license in menu:Settings[Subscription settings].
+//. Re-add your license in menu:Settings[Subscription settings].

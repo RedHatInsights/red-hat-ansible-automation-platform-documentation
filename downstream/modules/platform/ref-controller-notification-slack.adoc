@@ -8,9 +8,15 @@ Provide the following details to set up a Slack notification:
 
 * A Slack application.
 For more information, see the link:https://api.slack.com/authentication/basics[Quickstart] page of the Slack documentation on how to create one.
-* A token.
+* *Token*: A token.
 For more information, see link:https://api.slack.com/legacy/enabling-bot-users[Legacy bots] and specific details on bot tokens on the link:https://api.slack.com/authentication/token-types#bot[Current token types] documentation page.
-
+* *Destination Channel*: One Slack channel per line. 
+The pound symbol (#) is required for channels. 
+To respond to or start a thread to a specific message add the parent message Id to the channel where the parent message Id is 16 digits.
+ A dot (.) must be manually inserted after the 10th digit. 
+ For example, :#destination-channel, 1231257890.006423.
+* *Notification color*: Specify a notification color. 
+Acceptable colors are hex color code, for example: #3af or #789abc.
 When you have a bot or app set up, you must complete the following steps:
 
 . Navigate to *Apps*.

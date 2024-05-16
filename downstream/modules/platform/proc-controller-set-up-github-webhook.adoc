@@ -12,6 +12,7 @@ If you do not need {ControllerName} to post job statuses back to the webhook ser
 .. In the profile settings of your GitHub account, select *Settings*.
 .. From the navigation panel, select menu:<> Developer Settings[].
 .. On the *Developer Settings* page, select *Personal access tokens*.
+.. Select *Tokens(classic)*
 .. From the *Personal access tokens* screen, click btn:[Generate a personal access token].
 .. When prompted, enter your GitHub account password to continue.
 .. In the *Note* field, enter a brief description about what this PAT is used for.

@@ -6,7 +6,8 @@ You can xref:controller-attributes-custom-notifications[customize the text conte
 
 .Procedure
 
-. On the *Notification Templates* list view click btn:[Add].
+. From the navigation panel, select {MenuAEAdminJobNotifications}.
+. Click btn:[Add notifier].
 . Choose a notification type from the *Type* list.
 . Enable *Customize messages* using the toggle.
 +
@@ -14,23 +15,22 @@ image::ug-notification-template-customize.png[Customize notification]
 +
 . You can provide a custom message for various job events, such as the following:
 
-* *Start message*
-* *Success message body*
-* *Error message*
-* *Workflow approved message*
-* *Workflow denied message*
-* *Workflow running message*
-* *Workflow pending message*
-* *Workflow timed out message*
+* *Start message body*
+* *success message body*
+* *Error message body*
+* *Workflow approved body*
+* *Workflow denied message body*
+* *Workflow pending message body*
+* *Workflow timed out message body*
 
 The message forms vary depending on the type of notification that you are configuring. 
 For example, messages for Email and PagerDuty notifications appear to be a typical email, with a body and a subject, in which case, {ControllerName} displays the fields as *Message* and *Message Body*. 
 Other notification types only expect a *Message* for each type of event.
 
 The *Message* fields are pre-populated with a template containing a top-level variable, `job` coupled with an attribute, such as `id` or `name`. 
-Templates are enclosed in curly brackets and can draw from a fixed set of fields provided by {ControllerName}, as shown in the pre-populated message fields:
+Templates are enclosed in curly brackets and can draw from a fixed set of fields provided by {ControllerName}, shown in the pre-populated message fields:
 
-image::ug-notification-template-customize-simple-syntax.png[Customize notification syntax]
+//image::ug-notification-template-customize-simple-syntax.png[Customize notification syntax]
 
 This pre-populated field suggests commonly displayed messages to a recipient who is notified of an event. 
 You can customize these messages with different criteria by adding your own attributes for the job as needed. 
@@ -95,7 +95,7 @@ If `{{ job_metadata }}` is rendered in a job, it includes the following addition
 *** `extra_vars`
 *** `hosts`
 +
-The resulting dictionary looks like the following:
+The resulting dictionary is similar to the following:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -121,7 +121,7 @@ If `{{ job_metadata }}` is rendered in a workflow job, it includes the following
 +
 *** `body` (This enumerates the nodes in the workflow job and includes a description of the job associated with each node)
 +
-The resulting dictionary looks like the following:
+The resulting dictionary is similar to the following:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -151,6 +151,7 @@ If you save the notifications template without editing the custom message (or ed
 
 .Additional resources
 
-* For more information, see link:https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#using-variables-with-jinja2[Using variables with Jinja2].
+* For more information, see link:https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#using-variables-with-jinja2[Using variables with Jinja2] in the Ansible documentation.
 * {ControllerNameStart} requires valid syntax to retrieve the correct data to display the messages. 
+
 For a list of supported attributes and the proper syntax construction, see the xref:controller-attributes-custom-notifications[Supported Attributes for Custom Notifications] section.

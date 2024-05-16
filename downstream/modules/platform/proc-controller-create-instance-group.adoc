@@ -7,7 +7,7 @@ Use the following procedure to create a new instance group.
 .Procedure
 
 . From the navigation panel, select {MenuInfrastructureInstanceGroups}.
-. Select *Add* from the *Add instance group* list.
+. Click btn:[Create group] and select *Create instance group* from the list.
 . Enter the appropriate details into the following fields:
 
 * *Name*: Names must be unique and must not be named "controller".
@@ -26,13 +26,13 @@ If you do not specify values, then the *Policy instance minimum* and *Policy ins
 [NOTE]
 ====
 The default value of 0 for *Max concurrent jobs* and *Max forks* denotes no limit.
-For more information, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instancegrp-cpacity[Instance group capacity limits] in the _{ControllerAG}_.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-instance-and-container-groups#controller-instance-group-capacity[Instance group capacity limits] in the _{ControllerAG}_.
 ====
-+
-. Click btn:[Save].
 
-When you have successfully created the instance group the *Details* tab of the newly created instance group remains, enabling you to review and edit your instance group information.
-This is the same screen that opens when you click the Edit image:leftpencil.png[Edit,15,15] icon from the *Instance Groups* list view.
+. Click btn:[Create Instance Group], or, if you have edited an existing Instance Group click btn:[Save Instance Group]
+
+When you have successfully created the instance group the *Details* tab of the newly created instance group enables you to review and edit your instance group information.
+
 You can also edit *Instances* and review *Jobs* associated with this instance group:
 
 image::ug-instance-group-created.png[Instance group successfully created]

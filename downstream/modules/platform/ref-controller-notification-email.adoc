@@ -10,6 +10,7 @@ Provide the following details to set up an {email}:
 * *Recipient list*
 * *Sender e-mail*
 * *Port*
-* *Timeout* (in seconds): Enables you to specify up to 120 seconds, the length of time that {ControllerName} attempts to connect to the email server before failure.
+* *Timeout* (in seconds): You can set this up to 120 seconds. 
+This is the length of time that {ControllerName} tries to connect to the email server before failure.
 
 image::ug-notification-template-email.png[Notification template email]

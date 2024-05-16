@@ -8,10 +8,23 @@ All playbooks are executed through the `awx` file system user.
 For running jobs, {ControllerName} offers job isolation through the use of Linux containers. 
 This protection ensures that jobs can only access playbooks, roles, and data from the Project directory for that job template.
 
-For credential security, you can choose to upload locked SSH keys and set the unlock password to "ask". 
-You can also choose to have the system prompt for SSH credentials or sudo passwords rather than having the system store them in the database.
+For credential security, you can upload locked SSH keys and set the unlock password to "ask". 
+You can also have the system prompt you for SSH credentials or sudo passwords rather than having the system store them in the database.
 
 include::platform/con-controller-playbook-access-info-sharing.adoc[leveloffset=+1]
+include::platform/ref-controller-isolation-functionality.adoc[leveloffset=+2]
 include::platform/con-controller-rbac.adoc[leveloffset=+1]
+include::platform/con-controller-role-hierarchy.adoc[leveloffset=+2]
+include::platform/ref-controller-applying-rbac.adoc[leveloffset=+3]
+include::platform/ref-controller-rbac-edit-user.adoc[leveloffset=+4]
+include::platform/ref-controller-rbac-edit-orgs.adoc[leveloffset=+4]
+include::platform/ref-controller-rbac-edit-projects.adoc[leveloffset=+4]
+include::platform/ref-controller-rbac-create-inventory.adoc[leveloffset=+4]
+include::platform/ref-controller-rbac-edit-job-template.adoc[leveloffset=+4]
+include::platform/ref-controller-rbac-user-view.adoc[leveloffset=+4]
+include::platform/ref-controller-rbac-roles.adoc[leveloffset=+3]
+include::platform/ref-controller-rbac-built-in-roles.adoc[leveloffset=+4]
+include::platform/ref-controller-rbac-personas.adoc[levelffset=+3]
+
 include::platform/con-controller-function-of-roles.adoc[leveloffset=+1]
 

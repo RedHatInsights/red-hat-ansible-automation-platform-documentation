@@ -17,4 +17,4 @@ Each job displays the following details:
 
 .Additional resources
 The instances are run in accordance with instance group policies.
-For more information, see link:http://docs.ansible.com/automation-controller/4.4/html/administration/containers_instance_groups.html#ag-instance-group-policies[Instance Group Policies] in the _{ControllerAG}_.
+For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-instance-and-container-groups#controller-instance-group-policies[Instance Group Policies] in the _{ControllerAG}_.

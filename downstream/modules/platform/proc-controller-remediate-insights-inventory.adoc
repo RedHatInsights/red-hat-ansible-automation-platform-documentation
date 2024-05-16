@@ -7,7 +7,7 @@ You can do this by creating a job template to run the Red Hat Insights remediati
 
 .Procedure
 . From the navigation menu, select {MenuAETemplates}.
-. On the *Templates* list view, select *Add* from the *Add job template* list.
+. On the *Templates* list view, click btn:[Create template] and select from the list.
 . Enter the appropriate details in the following fields.
 Note that the following fields require specific Red Hat Insights related entries:
 

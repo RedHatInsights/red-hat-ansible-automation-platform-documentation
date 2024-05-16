@@ -117,7 +117,7 @@ In cases of approval-related notifications, both `url` and `workflow_url` are th
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
-{'url': 'https://towerhost/$/jobs/playbook/13',
+{'url': 'https://automationcontroller.example.com/$/jobs/playbook/13',
  'traceback': '',
  'status': 'running',
  'started': '2019-08-07T21:46:38.362630+00:00',

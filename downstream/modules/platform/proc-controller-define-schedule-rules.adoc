@@ -1,0 +1,29 @@
+[id="proc-controller-define-schedule-rules"]
+
+= Defining rules for the schedule
+
+Enter the following information:
+
+* *Frequency*:  Enter how frequently the schedule runs.
+//* *Interval*: I don't know what this indicates.
+* *Week Start*: Select the day of the week that you want the week to begin.
+* *Weekdays*: Select the days of the week on which to run the schedule.
+* *Months*: Select the months of the year on which to run the schedule
+* *Annual week(s) number*: This field is used to declare numbered weeks of the year that the schedule should run.
+* *Minute(s) of hour*: This field is used to declare minute(s) of the hour that the schedule should run.
+* *Hour of day*: This field is used to declare the hours of day that the schedule should run.
+* *Monthly day(s) number*:  This field is used to declare ordinal days number of the month that the schedule should run.
+* *Annual day(s) number*: This field is used to declare ordinal number days of the year that the schedule should run.
+* *Occurences*: Use this field to filter down indexed rules based on those declared using the form fields in the Rule section. 
+See the `iCalendar RFC for bysetpos` field more information.
+//There's no such field.
+* *Count*: The number of times this rule should be used.
+* *Until*: Use this rule until the specified date and time
+
+Click btn:[Save rule]
+The *Schedule Rules* summary page is displayed.
+
+Click btn:[Add rule] to add additional rules.
+Click btn:[Next].
+
+The *Schedule Exceptions* summary page is displayed.

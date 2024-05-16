@@ -3,13 +3,16 @@
 = Inventory sync jobs
 
 When an inventory synchronization is executed, the results display in the *Output* tab. 
+
+For more information on inventory synchronization, see xref:ref-controller-constructed-inventories[Constructed inventories].
+
 If used, the Ansible CLI displays the same information. 
 This can be useful for debugging.
 The `ANSIBLE_DISPLAY_ARGS_TO_STDOUT` parameter is set to `False` for all playbook runs. 
 This parameter matches Ansible's default behavior and does not display task arguments in task headers in the *Job Detail* interface to avoid leaking certain sensitive module parameters to `stdout`. 
 To restore the previous behavior, set `ANSIBLE_DISPLAY_ARGS_TO_STDOUT` to `True` through the `AWX_TASK_ENV` configuration setting. 
 
-For more information, see link:http://docs.ansible.com/ansible/latest/reference_appendices/config.html#envvar-ANSIBLE_DISPLAY_ARGS_TO_STDOUT[ANSIBLE_DISPLAY_ARGS_TO_STDOUT].
+For more information, see link:http://docs.ansible.com/ansible/latest/reference_appendices/config.html#envvar-ANSIBLE_DISPLAY_ARGS_TO_STDOUT[ANSIBLE_DISPLAY_ARGS_TO_STDOUT] in the ansible documentation.
 
 Use the icons to relaunch image:rightrocket.png[Launch,15,15], download image:download.png[Download,15,15] the job output, or delete image:delete-button.png[Delete,15,15] the job.
 

@@ -7,7 +7,7 @@ Use the following steps to create a new project for use with Red Hat Insights:
 .Procedure
 
 . From the navigation panel, select {MenuAEProjects}.
-. Click btn:[Add].
+. Click btn:[Create project].
 . Enter the appropriate details in the following fields.
 Note that the following fields require specific Red Hat Insights related entries:
 
@@ -24,7 +24,7 @@ For more information about each option click the tooltip image:question_circle.p
 +
 image::ug-insights-create-project-insights-form.png[Insights create project]
 +
-. Click btn:[Save].
+. Click btn:[Create project].
 
 All SCM and project synchronizations occur automatically the first time you save a new project.
 If you want them to be updated to what is current in Red Hat Insights, manually update the SCM-based project by clicking the update image:ug-update-button.png[Update,20,20] icon under the project's available actions.

@@ -2,25 +2,33 @@
 
 = Adding a new schedule
 
-You can only create schedules from a template, project, or inventory source, and not directly on the main *Schedules* screen. 
+You can create schedules from a template, project, or inventory source, as well as directly on the main *Schedules* page. 
 
-To create a new schedule:
+To create a new schedule on the *Schedules* page:
 
 .Procedure
 
-. Click the *Schedules* tab of the resource that you are configuring.
-This can be a template, project, or inventory source.
-. Click btn:[Add]. This opens the *Create New Schedule* window.
+. On the navigation panel, select {MenuAESchedules}.
+. Click btn:[Create schedule]. This opens the *Create Schedule* window.
 +
 image::ug-generic-create-schedule.png[Create schedule]
 +
+
+To create a new schedule from a resource page:
+
+.Procedure
+. Click the *Schedules* tab of the resource that you are configuring.
+This can be a template, project, or inventory source.
+. Click btn:[Create schedule]. This opens the *Create Schedule* window.
+
+.For both procedures
 . Enter the appropriate details into the following fields:
 
-* *Name*: Enter the name.
+* *Schedule name*: Enter the name.
 * Optional: *Description*: Enter a description.
 * *Start date/time*: Enter the date and time to start the schedule.
-* *Local time zone*: The start time that you enter must be in this time zone.
-* *Repeat frequency*: Appropriate scheduling options display depending on the frequency you select.
+* *Time zone*: Select the time zone. The *Start date/time* that you enter must be in this time zone.
+//* *Repeat frequency*: Appropriate scheduling options display depending on the frequency you select.
 +
 The *Schedule Details* display when you establish a schedule, enabling you to review the schedule settings and a list of the scheduled occurrences in the selected *Local Time Zone*.
 +
@@ -32,6 +40,7 @@ The system resolves the local time zone based time to UTC when the schedule is s
 To ensure your schedules are correctly created, set your schedules in UTC time.
 ====
 +
-. Click btn:[Save].
+. Click btn:[Next].
+The *Define rules* page is displayed.
 
-Use the *On* or *Off* toggle to stop an active schedule or activate a stopped schedule.
+//Use the *On* or *Off* toggle to stop an active schedule or activate a stopped schedule.
