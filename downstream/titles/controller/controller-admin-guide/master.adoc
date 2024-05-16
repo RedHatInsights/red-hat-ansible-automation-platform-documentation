@@ -19,7 +19,7 @@ include::{DocumentationFeedback}[leveloffset=+1]
 
 include::platform/assembly-controller-licensing.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-start-stop-controller.adoc[leveloffset=+1]
-include::platform/assembly-custom-inventory-scripts.adoc[leveloffset=+1]
+//include::platform/assembly-custom-inventory-scripts.adoc[leveloffset=+1]
 include::platform/assembly-inventory-file-importing.adoc[leveloffset=+1]
 include::platform/assembly-multi-credential-assignment.adoc[leveloffset=+1]
 include::platform/assembly-controller-management-jobs.adoc[leveloffset=+1]

@@ -2,7 +2,7 @@
 
 = Inventory Import
 
-`awx-manage` is a mechanism by which an {ControllerName} administrator can import inventory directly into {ControllerName}, for those who cannot use Custom Inventory Scripts.
+`awx-manage` is a mechanism by which an {ControllerName} administrator can import inventory directly into {ControllerName}.
 
 To use `awx-manage` properly, you must first create an inventory in {ControllerName} to use as the destination for the import.
 
