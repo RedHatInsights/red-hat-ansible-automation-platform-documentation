@@ -12,6 +12,9 @@
 * Add {HubNameMain} information in the `[automationhub]` group.
 * Do not install {HubNameMain} and {ControllerName} on the same node.
 * Provide a reachable IP address or fully qualified domain name (FQDN) for the `[automationhub]` and `[automationcontroller]` hosts to ensure that users can synchronize and install content from {HubNameMain} and {ControllerName} from a different node. 
++
+The FQDN must not contain either the `-` or the `_` symbols, as it will not be processed correctly.
++
 Do not use `localhost`.
 
 .{PrivateHubNameStart}
