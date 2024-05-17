@@ -3,15 +3,15 @@
 = Rules for searching
 
 These searching tips assume that you are not searching hosts. 
-Most of this section still applies to hosts but with some subtle differences. 
+//Most of this section still applies to hosts but with some subtle differences. 
 
-* The typical syntax of a search consists of a field (left-hand side) and a value (right-hand side). 
+* The typical syntax of a search consists of a field, followed by a value. 
 * A colon is used to separate the field that you want to search from the value. 
 * If the search has no colon (see example 3) it is treated as a simple string search where `?search=foobar` is sent. 
 
 The following are examples of syntax used for searching:
 
-. `name:localhost` In this example, the user is searching for the string `localhost' in the name attribute. 
+. `name:localhost` In this example, the user is searching for the string `localhost` in the name attribute. 
 If that string does not match something from *Fields* or *Related Fields*, the entire search is treated as a string. 
 . `organization.name:Default` This example shows a Related Field Search.
 The period in `organization.name` separates the model from the field. 

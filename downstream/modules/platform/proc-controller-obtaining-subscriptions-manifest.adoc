@@ -6,7 +6,7 @@ To upload a subscriptions manifest, first set up your subscription allocations:
 
 .Procedure
 . Navigate to https://access.redhat.com/management/subscription_allocations.
-The *Subscriptions Allocations* page contains no subscriptions until you create one.
+The *Subscriptions Allocations* page has no subscriptions until you create one.
 //+
 //image::subscription-allocations-empty.png[Subscriptions allocation]
 //+
@@ -15,28 +15,28 @@ The *Subscriptions Allocations* page contains no subscriptions until you create 
 [NOTE]
 ====
 If *Create New subscription allocation* does not display, or is disabled, you do not have the proper permissions to create subscription allocations. 
-To create a subscription allocation, you must either be an Administrator on the Customer Portal, or have the Manage Your Subscriptions role. 
+To create a subscription allocation, you must either be an Administrator on the Red Hat Customer Portal, or have the *Manage Your Subscriptions* role. 
 Contact an `access.redhat.com` administrator, or organization administrator who can grant you permission to manage subscriptions.
 ====
 
 . Enter a *Name* for your subscription and select *{SatelliteVers}* from the *Type* drop-down menu.
 +
-image::subscription-allocations-create.png[Create a Subscriptions Allocation]
+//image::subscription-allocations-create.png[Create a Subscriptions Allocation]
 +
 . Click btn:[Create].
 +
 When your subscriptions manifest is successfully created, the number indicated next to *Entitlements* indicates the number of entitlements associated with your subscription.
 +
-image::subscription-allocations-details-bottom.png[Details of subscription allocations]
+//image::subscription-allocations-details-bottom.png[Details of subscription allocations]
 
 == Setting up a subscriptions manifest
 
 To obtain a subscriptions manifest, you must add an entitlement to your subscriptions through the *Subscriptions* tab.
 
 .Procedure
-. Click the btn:[Subscriptions] tab.
+. Click the *Subscriptions* tab.
 . If there are no subscriptions to display, click btn:[Add Subscriptions].
-. The following screen enables you to select and add entitlements to put in the manifest file. 
+. On the following screen you can select and add entitlements to put in the manifest file. 
 +
 image::aap-subscriptions.png[{PlatformNameShort} subscriptions]
 +
@@ -48,7 +48,7 @@ This enables you to split up a subscription, for example: 400 nodes on a develop
 [NOTE]
 ====
 You can apply multiple subscriptions to a single installation by adding multiple subscriptions of the same type to a manifest file and uploading them. 
-Similarly, a subset of a subscription can be applied by only allocating a portion of the subscription when creating the manifest.
+Similarly, you can apply a subset of a subscription by only allocating a part of the subscription when creating the manifest.
 ====
 
 . Click btn:[Submit].

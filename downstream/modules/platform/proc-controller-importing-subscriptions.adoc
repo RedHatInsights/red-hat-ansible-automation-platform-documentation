@@ -13,7 +13,7 @@ For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{Pl
 . Launch {ControllerName} for the first time. 
 The *Subscription Management* screen displays.
 +
-image::controller-gs-subscription-management.png[Subscription Management]
+//image::controller-gs-subscription-management.png[Subscription Management]
 +
 . Retrieve and import your subscription by completing either of the following steps:
 .. If you have obtained a subscription manifest, upload it by navigating to the location where the file is saved.

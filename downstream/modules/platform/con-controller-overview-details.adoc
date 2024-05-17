@@ -1,15 +1,15 @@
 [id="con-controller-overview-details"]
 
 = Real-time playbook output and exploration
-{ControllerNameStart} enables you to watch playbooks run in real time, seeing each host as they check in.
+With {ControllerName} you can watch playbooks run in real time, seeing each host as they check in.
 You can go back and explore the results for specific tasks and hosts in great detail, search for specific plays or hosts and see just those results, or locate errors that need to be corrected.
 
 = "Push Button" automation
-{ControllerNameStart} enables you to access your favorite projects and re-trigger execution from the web interface.
+Use {ControllerName} to access your favorite projects and re-trigger execution from the web interface.
 {ControllerNameStart} asks for input variables, prompts for your credentials, starts and monitors jobs, and displays results and host history.
 
 = Simplified role-based access control and auditing
-{ControllerNameStart} enables you to:
+With {ControllerName} you can:
 
 * Grant permissions to perform a specific task to different teams or explicit users through _role-based access control_ (RBAC).
 Example tasks include viewing, creating, or modifying a file.
@@ -18,7 +18,7 @@ Example tasks include viewing, creating, or modifying a file.
 
 {ControllerNameStart} records the history of operations and who made them, including objects edited and jobs launched.
 
-If you want to give any user or team permissions to use a job template, you can assign permissions directly on the job template. Credentials are full objects in the {ControllerName} RBAC system, and can be assigned to multiple users or teams for use.
+If you want to give any user or team permissions to use a job template, you can assign permissions directly on the job template. Credentials are full objects in the {ControllerName} RBAC system, and can be assigned to many users or teams for use.
 
 {ControllerNameStart} includes an _auditor_ type. A system-level auditor can see all aspects of the systems automation, but does not have permission to run or change automation.
 An auditor is useful for a service account that scrapes automation information from the REST API.
@@ -27,10 +27,10 @@ An auditor is useful for a service account that scrapes automation information f
 * For more information about user roles, see xref:con-controller-rbac[Role-Based Access Controls].
 
 = Cloud and autoscaling flexibility
-{ControllerNameStart} includes a powerful optional provisioning callback feature that enables nodes to request configuration on demand.
+{ControllerNameStart} includes a powerful optional provisioning callback feature that enables nodes to request configuration on-demand.
 This is an ideal solution for a cloud auto-scaling scenario and includes the following features:
 
-* It integrates with provisioning servers like Cobbler and deals with managed systems with unpredictable uptimes.
+* It integrates with provisioning servers such as Cobbler and deals with managed systems with unpredictable uptimes.
 * It requires no management software to be installed on remote nodes.
 * The callback solution can be triggered by a call to `curl` or `wget`, and can be embedded in `init` scripts, kickstarts, or preseeds.
 * You can control access so that only machines listed in the inventory can request configuration.
@@ -46,13 +46,14 @@ By including an {Galaxy} `requirements.yml` file in your project directory, {Con
 For more information, see xref:ref-projects-galaxy-support[Ansible Galaxy Support].
 
 = Inventory support for OpenStack
-Dynamic inventory support is available for OpenStack. This enables you to target any of the virtual machines or images running in your OpenStack cloud.
+Dynamic inventory support is available for OpenStack. With this you can target any of the virtual machines or images running in your OpenStack cloud.
 
-For more information, see xref:ref-controller-credential-openstack[Openstack].
+For more information, see the xref:ref-controller-credential-openstack[OpenStack credential type] section.
 
 = Remote command execution
 Use remote command execution to perform a simple tasks, such as adding a single user, updating a single security vulnerability, or restarting a failing service.
-Any task that you can describe as a single Ansible play can be run on a host or group of hosts in your inventory, enabling you to manage your systems quickly and easily.
+Any task that you can describe as a single Ansible play can be run on a host or group of hosts in your inventory. 
+You can manage your systems quickly and easily.
 Because of an RBAC engine and detailed audit logging, you know which user has completed a specific task.
 
 = System tracking
@@ -96,7 +97,7 @@ For more information, see xref:controller-setting-up-insights[Setting up Insight
 
 
 = Custom Virtual Environments
-Custom Ansible environment support enables you to have different Ansible environments and specify custom paths for different teams and jobs.
+With Custom Ansible environment support you can have different Ansible environments and specify custom paths for different teams and jobs.
 
 = Authentication enhancements
 Automation controller supports:
@@ -105,30 +106,31 @@ Automation controller supports:
 * SAML
 * token-based authentication
 
-LDAP and SAML support enable you to integrate your enterprise account information in a more flexible manner.
+With LDAP and SAML support you can integrate your enterprise account information in a more flexible manner.
 
 Token-based authentication permits authentication of third-party tools and services with {ControllerName} through integrated OAuth 2 token support.
 
 = Cluster management
-Run-time management of cluster groups enables configurable scaling.
+Run time management of cluster groups enables configurable scaling.
 
 = Workflow enhancements
 To model your complex provisioning, deployment, and orchestration workflows, you can use {ControllerName} expanded workflows in several ways:
 
 * *Inventory overrides for Workflows* You can override an inventory across a workflow at workflow definition time, or at launch time.
-{ControllerNameStart} enables you to define your application deployment workflows, and then re-use them in multiple environments.
-* *Convergence nodes for Workflows* When modeling complex processes, you must sometimes wait for multiple steps to finish before proceeding.
-{ControllerNameStart} workflows can replicate this; workflow steps can wait for any number of previous workflow steps to complete properly before proceeding.
+Use {ControllerName} to define your application deployment workflows, and then re-use them in many environments.
+* *Convergence nodes for Workflows* When modeling complex processes, you must sometimes wait for many steps to finish before proceeding.
+{ControllerNameStart} workflows can replicate this; workflow steps can wait for any number of earlier workflow steps to complete properly before proceeding.
 * *Workflow Nesting* You can re-use individual workflows as components of a larger workflow.
 Examples include combining provisioning and application deployment workflows into a single workflow.
 * *Workflow Pause and Approval* You can build workflows containing approval nodes that require user intervention.
 This makes it possible to pause workflows in between playbooks so that a user can give approval (or denial) for continuing on to the next step in the workflow.
 
-For more information, see xref:controller-workflows[Workflows in {ControllerName}]
+For more information, see xref:controller-workflows[Workflows in {ControllerName}].
 
 = Job distribution
 
-Take a fact gathering or configuration job running across thousands of machines and divide it into slices that can be distributed across your {ControllerName} cluster for increased reliability, faster job completion, and improved cluster use.
+Take a fact gathering or configuration job running across thousands of machines and divide it into slices that can be distributed across your {ControllerName} cluster. 
+This increases reliability, offers faster job completion, and improved cluster use.
 
 For example, you can change a parameter across 15,000 switches at scale, or gather information across your multi-thousand-node RHEL estate.
 
@@ -139,7 +141,7 @@ For more information, see xref:controller-job-slicing[Job Slicing].
 
 = Limit the number of hosts per organization
 Many large organizations have instances shared among many organizations.
-To ensure that one organization cannot use all the licensed hosts, this feature enables superusers to set a specified upper limit on how many licensed hosts can be allocated to each organization.
+To ensure that one organization cannot use all the licensed hosts, this feature enables superusers to set a specified upper limit on how many licensed hosts can that you can allocate to each organization.
 The {ControllerName} algorithm factors changes in the limit for an organization and the number of total hosts across all organizations.
 Inventory updates fail if an inventory synchronization brings an organization out of compliance with the policy.
 Additionally, superusers are able to over-allocate their licenses, with a warning.
