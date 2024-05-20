@@ -3,8 +3,8 @@
 = Install and configure
 
 Provisioning new instances involves updating the `inventory` file and re-running the setup playbook. 
-It is important that the inventory file contains all passwords and information used when installing the cluster or other instances might be reconfigured. 
-The inventory file contains a single inventory group, `automationcontroller`.
+It is important that the inventory file has all passwords and information used when installing the cluster or other instances might be reconfigured. 
+The inventory file has a single inventory group, `automationcontroller`.
 
 [NOTE]
 ====
@@ -43,8 +43,8 @@ hostC
 hostDB
 ----
 
-When a playbook runs on an individual controller instance in a cluster, the output of that playbook is broadcast to all of the other nodes as part of {ControllerName}'s websocket-based streaming output functionality. 
-You must handle this data broadcast using internal addressing by specifying a private routable address for each node in your inventory:
+When a playbook runs on an individual controller instance in a cluster, the output of that playbook is broadcast to all of the other nodes as part of {ControllerName}'s WebSocket-based streaming output functionality. 
+You must handle this data broadcast by using internal addressing by specifying a private routable address for each node in your inventory:
 
 [literal, options="nowrap" subs="+attributes"]
 ----
@@ -59,7 +59,7 @@ For more information about `routable_hostname`, see link:{BaseURL}/red_hat_ansib
 
 [IMPORTANT]
 ====
-Previous versions of {ControllerName} used the variable name `rabbitmq_host`. 
-If you are upgrading from a previous version of the platform, and you previously specified `rabbitmq_host` in your inventory, rename `rabbitmq_host` to `routable_hostname` before upgrading.
+Earlier versions of {ControllerName} used the variable name `rabbitmq_host`. 
+If you are upgrading from an earlier version of the platform, and you previously specified `rabbitmq_host` in your inventory, rename `rabbitmq_host` to `routable_hostname` before upgrading.
 ====
 

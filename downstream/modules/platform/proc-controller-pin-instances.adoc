@@ -2,7 +2,7 @@
 
 = Pinning instances manually to specific groups
 
-If you have a special instance which needs to be exclusively assigned to a specific instance group but do not want it to automatically join other groups by "percentage" or "minimum" policies:
+If you have a special instance which needs to be only assigned to a specific instance group but do not want it to automatically join other groups by "percentage" or "minimum" policies:
 
 .Procedure
 

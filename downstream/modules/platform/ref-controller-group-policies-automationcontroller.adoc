@@ -28,7 +28,7 @@ peers=execution_nodes
 110-addr.tatu.home ansible_host=192.168.111.110 receptor_listener_port=8928
 ----
 
-After you run the installer, the following error appears:
+After you run installation program, the following error appears:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

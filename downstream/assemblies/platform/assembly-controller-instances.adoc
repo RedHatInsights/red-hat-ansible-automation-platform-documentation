@@ -1,6 +1,6 @@
 [id="assembly-controller-instances"]
 
-= Managing Capacity With Instances
+= Managing capacity with Instances
 
 Scaling your {AutomationMesh} is available on OpenShift deployments of {PlatformName} and is possible through adding or removing nodes from your cluster dynamically, using the *Instances* resource of the {ControllerName} UI, without running the installation script.
 

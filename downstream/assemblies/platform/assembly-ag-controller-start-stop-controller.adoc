@@ -2,7 +2,7 @@
 
 = Start, stop, and restart {ControllerName}
 
-{ControllerNameStart} ships with an administrator utility script, `automation-controller-service`.
+{ControllerNameStart} includes an administrator utility script, `automation-controller-service`.
 The script can start, stop, and restart all {ControllerName} services running on the current single {ControllerName} node.
 The script includes the message queue components and the database if it is an integrated installation. 
 

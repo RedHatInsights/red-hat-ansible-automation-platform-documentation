@@ -6,7 +6,7 @@ To remove job history older than a specified number of days, click the launch im
 
 image:management-jobs-cleanup-job-launch.png[management jobs - cleanup job launch]
 
-Enter the number of days of data you would like to save and click btn:[Launch].
+Enter the number of days of data you want to save and click btn:[Launch].
 
 [NOTE]
 ====

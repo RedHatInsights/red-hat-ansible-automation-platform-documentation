@@ -14,7 +14,7 @@ In this case, you can adjust the value for `max_concurrent_jobs`.
 Another parameter available is `max_forks`. 
 This provides additional flexibility for capping the capacity consumed on an instance group or container group. 
 You can use this if jobs with a wide variety of inventory sizes and "forks" values are being run. 
-This enables you to limit an organization to run up to 10 jobs concurrently, but consume no more than 50 forks at a time:
+You can limit an organization to run up to 10 jobs concurrently, but consume no more than 50 forks at a time:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

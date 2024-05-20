@@ -8,15 +8,18 @@ A full list of options can be found in the link:https://docs.openshift.com/onlin
 
 .Procedure
 
-. To customize the pod specification, specify the namespace in the *Pod Spec Override* field by using the toggle to enable and expand the *Pod Spec Override* field.
+. From the navigation panel, select {MenuInfrastructureInstanceGroups}.
+. Click btn:[Create group] and select *Create container group*.
+. Check the option for *Customize pod spec* 
+. Enter a custom Kubernetes or OpenShift Pod specification in the *Pod Spec Override* field.
 +
 image::ag-instance-group-customize-cg-pod.png[Customize pod specification]
 +
-. Click btn:[Save].
+. Click btn:[Create Container Group].
 
-You can provide additional customizations, if needed. Click btn:[Expand] to view the entire customization window:
+//You can give additional customizations, if needed. Click btn:[Expand] to view the entire customization window:
 
-image::ag-instance-group-customize-cg-pod-expanded.png[Customize pod expanded]
+//image::ag-instance-group-customize-cg-pod-expanded.png[Customize pod expanded]
 
 [NOTE]
 ====
@@ -28,7 +31,8 @@ For more information, see the link:https://access.redhat.com/RegistryAuthenticat
 ====
 
 Once you have created the container group successfully, the *Details* tab of the newly created container group remains, which enables you to review and edit your container group information. 
-This is the same menu that is opened if you click the image:leftpencil.png[Edit,15,15] icon from the *Instance Group* link. 
+This is the same menu that is opened if you click the image:leftpencil.png[Edit,15,15] icon from the *Instance Groups* list view. 
+
 You can also edit *Instances* and review *Jobs* associated with this instance group.
 
 image::ag-instance-group-successfully-created.png[Instance group successfully created]

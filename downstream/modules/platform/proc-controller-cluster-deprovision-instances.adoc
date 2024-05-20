@@ -18,7 +18,7 @@ $ awx-manage deprovision_instance --hostname=<name used in inventory file>
 .Example
 [literal, options="nowrap" subs="+attributes"]
 ----
-awx-manage deprovision_instance --hostname=hostB
+$ awx-manage deprovision_instance --hostname=hostB
 ----
 
 Deprovisioning instance groups in {ControllerName} does not automatically deprovision or remove instance groups.

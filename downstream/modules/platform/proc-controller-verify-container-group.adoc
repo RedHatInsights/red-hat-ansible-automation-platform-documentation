@@ -11,14 +11,14 @@ For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{Pl
 +
 image::ag-inventories-create-new-test-inventory.png[Create test inventory]
 +
-. Create the `localhost` host in the inventory with variables:
+. Create the `localhost` host in the inventory with the following variables:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----
 {'ansible_host': '127.0.0.1', 'ansible_connection': 'local'}
 ----
 +
-image::ag-inventories-create-new-test-localhost.png[Create test localhost]
+//image::ag-inventories-create-new-test-localhost.png[Create test localhost]
 +
 . Launch an ad hoc job against the localhost using the _ping_ or _setup_ module. 
 Even though the *Machine Credential* field is required, it does not matter which one is selected for this test:
@@ -26,7 +26,7 @@ Even though the *Machine Credential* field is required, it does not matter which
 image::ag-inventories-launch-adhoc-localhost.png[Launch ad hoc localhost]
 image::ag-inventories-launch-adhoc-localhost2.png[Launch ad hoc localhost 2]
 
-You can see in the *Jobs* details view that the container was reached successfully using one of the ad hoc jobs.
+You can see in the *Jobs* details view that the container was reached successfully by using one of the ad hoc jobs.
 
-If you have an OpenShift UI, you can see pods appear and disappear as they deploy and terminate. 
-Alternatively, you can use the CLI to perform a `get pod` operation on your namespace to watch these same events occurring in real-time.
+If you have an OpenShift UI, you can see pods appear and disappear as they deploy and end. 
+You can also use the CLI to perform a `get pod` operation on your namespace to watch these same events occurring in real-time.

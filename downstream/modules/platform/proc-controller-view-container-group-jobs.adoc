@@ -1,0 +1,14 @@
+[id="controller-view-container-group-jobs"]
+
+= Viewing container group jobs
+
+When you run a job associated with a container group, you can see the details of that job in the *Details* tab.
+You can also view its associated container group and the {ExecEnvShort} that spun up.
+
+.Procedure
+
+. From the navigation panel, select {MenuAEJobs}.
+. Click a job for which you want to view a container group job.
+. Click the *Details* tab.
+
+image::ag-instance-group-job-details.png[Instance group job details]

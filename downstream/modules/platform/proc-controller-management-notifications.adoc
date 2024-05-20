@@ -7,12 +7,12 @@ Use the following procedure to review or set notifications associated with a man
 .Procedure
 * For a particular cleanup job, select the *Notifications* tab.
 
-image:management-job-notifications.png[Notifications]
+//image:management-job-notifications.png[Notifications]
 
-If none exist, for more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-notifications[Notifications] in the _{ControllerUG}_.
+If none exist, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_user_guide/controller-notifications#controller-create-notification-template[Creating a notification template] in the _{ControllerUG}_.
 
 image:management-job-notifications-empty.png[No notifications set]
 
-The following shows an example of a notification with details specified:
+//The following shows an example of a notification with details specified:
 
-image:management-job-add-notification-details.png[New notification template]
+//image:management-job-add-notification-details.png[New notification template]

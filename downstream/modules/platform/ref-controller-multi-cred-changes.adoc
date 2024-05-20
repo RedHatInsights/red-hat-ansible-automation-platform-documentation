@@ -1,6 +1,6 @@
 [id="ref-controller-multi-cred-changes"]
 
-= Important Changes
+= Important changes
 
 All {ControllerName} 4.4 Job templates have a single interface for credential assignment.
 

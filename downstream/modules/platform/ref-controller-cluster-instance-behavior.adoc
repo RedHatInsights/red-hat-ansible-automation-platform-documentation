@@ -4,7 +4,7 @@
 
 Each {ControllerName} instance is made up of the following different services working collaboratively:
 
-HTTP services:: This includes the {ControllerName} application itself as well as external web services.
+HTTP services:: This includes the {ControllerName} application itself and external web services.
 Callback receiver:: Receives job events from running Ansible jobs.
 Dispatcher:: The worker queue that processes and runs all jobs.
 Redis:: This key value store is used as a queue for event data propagated from ansible-playbook to the application.

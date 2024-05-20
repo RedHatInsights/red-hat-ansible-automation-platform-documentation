@@ -14,13 +14,13 @@ The order of preference in determining which instance group to submit the job to
 If you associate instance groups with the job template, and all of these are at capacity, then the job is submitted to instance groups specified on the inventory, and then the organization. 
 Jobs must execute in those groups in preferential order as resources are available.
 
-You can still associate the global `default` group with a resource, like any of the custom instance groups defined in the playbook. 
+You can still associate the global `default` group with a resource, such as any of the custom instance groups defined in the playbook. 
 You can use this to specify a preferred instance group on the job template or inventory, but still enable the job to be submitted to any instance if those are out of capacity.
 
 .Examples
 
 * If you associate `group_a` with a job template and also associate the `default` group with its inventory, you enable the `default` group to be used as a fallback in case `group_a` gets out of capacity.
-* In addition, it is possible to not associate an instance group with one resource but designate another resource as the fallback. 
+* In addition, it is possible to not associate an instance group with one resource but choose another resource as the fallback. 
 For example, not associating an instance group with a job template and having it fall back to the inventory or the organization's instance group.
 
 This presents the following two examples:
@@ -34,7 +34,7 @@ An administrator can assign multiple groups to each organization, similar to the
 +
 * There are three instance groups: _A_, _B_, and _C_. 
 There are two organizations: _Org1_ and _Org2_.
-* The administrator assigns group _A_ to _Org1_, group _B_ to _Org2_ and then assigns group _C_ to both _Org1_ and _Org2_ as an overflow for any extra capacity that may be needed.
+* The administrator assigns group _A_ to _Org1_, group _B_ to _Org2_ and then assigns group _C_ to both _Org1_ and _Org2_ as an overflow for any extra capacity that might be needed.
 * The organization administrators are then free to assign inventory or job templates to whichever group they want, or let them inherit the default order from the organization.
 
 image::ag-instance-groups-scenarios.png[Instance groups scenarios]

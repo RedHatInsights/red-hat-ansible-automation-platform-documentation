@@ -1,9 +1,9 @@
 [id="ref-controller-multi-cred-launch-considerations"]
 
-= Launch Time Considerations
+= Launch time considerations
 
 Before {Controllername} v3.3, job templates used a configurable attribute, `ask_credential_on_launch`. 
-This value was used at launch time to determine which missing credential values were necessary for launch. 
+This value was used at launch time to decide which missing credential values were necessary for launch. 
 This was a way to specify a Machine or SSH credential to satisfy the minimum credential requirement.
 
 Under the unified credential list model, this attribute still exists, but it no longer requires a credential. 
