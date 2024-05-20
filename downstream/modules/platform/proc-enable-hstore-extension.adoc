@@ -53,7 +53,7 @@ dnf install postgresql-contrib
 +
 [options="nowrap" subs="+quotes,attributes"]
 ----
-$ psql -d <{HubName} database> -c "CREATE EXTENSION hstore"
+$ psql -d <{HubName} database> -c "CREATE EXTENSION hstore;"
 ----
 +
 The output of which is:
