@@ -113,8 +113,12 @@ Default = `awx`.
 
 `/path/to/pgsql.key`
 | *`postgres_use_ssl`* | Use this variable if postgreSQL uses SSL.
-// The postgres_max_connections variable is for Controller v4.5: Do not include it until v4.5 is released.
-// | *`postgres_max_connections`* | Max database connections setting to apply if you are using installer-managed postgreSQL. See the administration guide for help selecting a value.
+| *`postgres_max_connections`* | Maximum database connections setting to apply if you are using installer-managed postgreSQL.
+
+See link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#ref-controller-database-settings[PostgreSQL database configuration] in the {ControllerName} administration guide for help selecting a value.
+
+Default for VM-based installations = 200 for a single node 
+and 1024 for a cluster.
 | *`receptor_listener_port`* | Port to use for receptor connection.
 
 Default = 27199
