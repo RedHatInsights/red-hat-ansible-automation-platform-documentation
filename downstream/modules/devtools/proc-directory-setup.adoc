@@ -4,7 +4,7 @@
 
 [role="_abstract"]
 
-Create a directory to store your playbooks.
+Create a directory to store your playbook projects.
 
 You can add a directory using the file explorer in {VSCode}.
 

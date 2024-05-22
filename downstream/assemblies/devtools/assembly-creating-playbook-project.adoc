@@ -1,0 +1,13 @@
+ifdef::context[:parent-context: {context}]
+[id="creating-playbook-project"]
+
+= Creating a playbook project
+
+:context: creating-playbook-project
+[role="_abstract"]
+
+include::devtools/proc-scaffolding-playbook-project.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
+

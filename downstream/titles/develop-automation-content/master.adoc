@@ -17,10 +17,11 @@ This document has been updated to include information for the latest release of 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]
 
+include::devtools/assembly-devtools-intro.adoc[leveloffset=+1]
 include::devtools/assembly-developer-workflow.adoc[leveloffset=+1]
 include::devtools/assembly-devtools-install.adoc[leveloffset=+1]
 include::devtools/assembly-devtools-setup.adoc[leveloffset=+1]
+include::devtools/assembly-creating-playbook-project.adoc[leveloffset=+1]
 include::devtools/assembly-writing-running-playbook.adoc[leveloffset=+1]
-include::devtools/assembly-scaffolding-playbook-directory.adoc[leveloffset=+1]
 include::devtools/assembly-testing-playbooks.adoc[leveloffset=+1]
 

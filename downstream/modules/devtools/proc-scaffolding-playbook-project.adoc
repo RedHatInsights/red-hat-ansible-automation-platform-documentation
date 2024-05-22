@@ -1,0 +1,56 @@
+[id="scaffolding-playbook-project"]
+
+= Scaffolding a playbook project
+
+[role="_abstract"]
+
+The following steps describe the process for scaffolding a new playbook project with the Ansible {VSCode} extension.
+
+. Prerequisites
+
+* You have installed {ToolsName}.
+* You have installed and opened the Ansible {VSCode} extension. 
+* You have identified a directory where you want to save the project. 
+// * You have set up and activated a Python virtual environment in {VSCode}.
+
+.Procedure
+
+. Click the Ansible icon in the {VSCode} activity bar to open the Ansible extension.
+. Type kbd:[Ctrl+Shift+P] to display the VSCode command palette.
+. In the input field, enter `Create new Ansible project`. The **Create Ansible Project** tab opens.
+. Enter a name for the directory where you want to scaffold your new playbook project. 
++
+[NOTE]
+====
+If you enter a current directory name, the scaffolding process will overwrite the contents of that directory.
+====
+. Add an organization name and a project name.
+. Click btn:[Create] to begin creating your project.
+ 
+After the project directory has been created, the following message appears in the Logs pane of the Create Ansible Project tab:
+
+----
+------------------ ansible-creator logs ------------------
+    Note: ansible project created at /Users/username/test_project
+----
+
+The following directories and files are created in your project directory:
+
+----
+├── README.md
+├── ansible-navigator.yml
+├── ansible.cfg
+├── collections
+│   ├── ansible_collections
+│   └── requirements.yml
+├── devfile.yaml
+├── inventory
+│   ├── group_vars
+│   ├── host_vars
+│   └── hosts.yml
+├── linux_playbook.yml
+├── network_playbook.yml
+└── site.yml
+----
+
+// == Navigating the playbook project directory

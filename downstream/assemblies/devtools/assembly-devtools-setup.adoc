@@ -8,7 +8,7 @@ ifdef::context[:parent-context: {context}]
 [role="_abstract"]
 
 include::devtools/proc-installing-vscode.adoc[leveloffset=+1]
-include::devtools/proc-directory-setup.adoc[leveloffset=+1]
+// include::devtools/proc-directory-setup.adoc[leveloffset=+1]
 include::devtools/proc-setup-vscode-workspace.adoc[leveloffset=+1]
 include::devtools/proc-install-vscode-extension.adoc[leveloffset=+1]
 include::devtools/proc-configure-extension-settings.adoc[leveloffset=+1]
