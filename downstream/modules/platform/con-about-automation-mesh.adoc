@@ -6,7 +6,9 @@
 [role="_abstract"]
 {AutomationMeshStart} is an overlay network intended to ease the distribution of work across a large and dispersed collection of workers through nodes that establish peer-to-peer connections with each other using existing networks.
 
-{PlatformName} 2 replaces Ansible Tower and isolated nodes with {ControllerName} and {HubName}. {ControllerNameStart} provides the control plane for automation through its UI, RESTful API, RBAC, workflows and CI/CD integration, while {AutomationMesh} can be used for setting up, discovering, changing or modifying the nodes that form the control and execution layers.
+{PlatformName} 2 replaces Ansible Tower and isolated nodes with {ControllerName} and {HubName}. 
+{ControllerNameStart} provides the control plane for automation through its UI, RESTful API, RBAC, workflows and CI/CD integration, while {AutomationMesh} can be used for setting up, discovering, changing or modifying the nodes that form the control and execution layers.
+
 ifdef::operator-mesh[]
 {AutomationMeshStart} is useful for:
 

@@ -5,7 +5,7 @@
 The automation mesh is dependent on hop and execution nodes running on {RHEL} (RHEL). 
 Your {PlatformName} subscription grants you ten {RHEL} licenses that can be used for running components of {PlatformNameShort}. 
 
-For additional information about {RHEL} subscriptions, see link:{BaseURL}/red_hat_enterprise_linux/9/html/configuring_basic_system_settings/assembly_registering-the-system-and-managing-subscriptions_configuring-basic-system-settings[Registering the system and managing subscriptions] in the {RHEL} documentation.
+For more information about {RHEL} subscriptions, see link:{BaseURL}/red_hat_enterprise_linux/9/html/configuring_basic_system_settings/assembly_registering-the-system-and-managing-subscriptions_configuring-basic-system-settings[Registering the system and managing subscriptions] in the {RHEL} documentation.
 
 The following steps prepare the RHEL instances for deployment of the automation mesh.
 

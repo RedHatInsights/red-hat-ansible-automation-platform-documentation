@@ -24,7 +24,7 @@ Contact your Administrator to grant you the required level of access.
 
 If you are able to remove an instance, you receive a prompt for confirmation.
 
-image::instances_delete_prompt.png[Instances delete prompt]
+//image::instances_delete_prompt.png[Instances delete prompt]
 
 [NOTE]
 ====

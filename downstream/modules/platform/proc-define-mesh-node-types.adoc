@@ -9,7 +9,9 @@ endif::operator-mesh[]
 
 To expand job capacity, create a standalone *execution node* that can be added to run alongside a deployment of {ControllerName}.
 These execution nodes are not part of the {ControllerName} Kubernetes cluster.
+
 The control nodes run in the cluster connect and submit work to the execution nodes through Receptor.
+
 These execution nodes are registered in {ControllerName} as type `execution` instances, meaning they are only used to run jobs, not dispatch work or handle web requests as control nodes do.
 
 *Hop nodes* can be added to sit between the control plane of {ControllerName} and standalone execution nodes.
@@ -20,14 +22,14 @@ The following procedure demonstrates how to set the node type for the hosts.
 .Procedure
 //[ddacosta]Removed specified panel to simplify changes in the future.
 . From the navigation panel, select {MenuInfrastructureInstances}.
-. On the *Instances* list page, click btn:[Add].
-The *Create new Instance* window opens.
+. On the *Instances* list page, click btn:[Add instance].
+The *Add Instance* window opens.
 +
 image::instances_create_new.png[Create new Instance]
 +
 An instance requires the following attributes:
 
-* *Host Name*: (required) Enter a fully qualified domain name (public DNS) or IP address for your instance. This field is equivalent to `hostname` for installer-based deployments.
+* *Host name*: (required) Enter a fully qualified domain name (public DNS) or IP address for your instance. This field is equivalent to `hostname` for installer-based deployments.
 +
 [NOTE]
 ====
@@ -36,18 +38,18 @@ Use the IP address instead.
 ====
 +
 * Optional: *Description*: Enter a description for the instance.
-* *Instance State*: This field is auto-populated, indicating that it is being installed, and cannot be modified.
-* *Listener Port*: This port is used for the receptor to listen on for incoming connections.
+* *Instance state*: This field is auto-populated, indicating that it is being installed, and cannot be modified.
+* *Listener port*: This port is used for the receptor to listen on for incoming connections.
 You can set the port to one that is appropriate for your configuration.
 This field is equivalent to `listener_port` in the API.
 The default value is 27199, though you can set your own port value.
-* *Instance Type*: Only `execution` and `hop` nodes can be created.
+* *Instance type*: Only `execution` and `hop` nodes can be created.
 Operator based deployments do not support Control or Hybrid nodes.
 +
 Options:
 
-** *Enable Instance*: Check this box to make it available for jobs to run on an execution node.
-** Check the *Managed by Policy* box to enable policy to dictate how the instance is assigned.
+** *Enable instance*: Check this box to make it available for jobs to run on an execution node.
+** Check the *Managed by policy* box to enable policy to dictate how the instance is assigned.
 ** Check the *Peers from control nodes* box to enable control nodes to peer to this instance automatically.
 For nodes connected to {ControllerName}, check the *Peers from Control* nodes box to create a direct communication link between that node and {ControllerName}.
 For all other nodes:
@@ -77,9 +79,9 @@ endif::controller-AG[]
 Execute the following steps from any computer that has SSH access to the newly created instance.
 ====
 
-. Click the image:download.png[Download,15,15] icon next to *Install Bundle* to download the tar file that includes this new instance and the files necessary to install the created node into the {AutomationMesh}.
-+
-image::instances_install_bundle.png[Install instance]
+. Click the image:download.png[Download,15,15] icon next to *Download Bundle* to download the tar file that includes this new instance and the files necessary to install the created node into the {AutomationMesh}.
+//+
+//image::instances_install_bundle.png[Install instance]
 +
 The install bundle contains TLS certificates and keys, a certificate authority, and a proper Receptor configuration file.
 +
