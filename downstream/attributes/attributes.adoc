@@ -47,6 +47,7 @@
 :OperatorHub: Ansible Automation Platform Hub Operator
 :OperatorController: Ansible Automation Platform Controller Operator
 :OperatorResource: Ansible Automation Platform Resource Operator
+:OperatorResourceShort: Resource Operator
 
 // Automation services catalog
 :CatalogName: automation services catalog

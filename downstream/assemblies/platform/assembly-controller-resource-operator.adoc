@@ -1,0 +1,13 @@
+ifdef::context[:parent-context: {context}]
+
+:context: performance-considerations
+
+[id="assembly-controller-resource-operator"]
+= {OperatorResource}
+
+include::platform/con-resource-operator-overview.adoc[leveloffset=+1]
+include::platform/proc-use-controller-resource-operator.adoc[leveloffset=+1]
+include::platform/proc-add-controller-access-token.adoc[leveloffset=+1]
+include::platform/proc-create-a-connection-secret.adoc[leveloffset=+1]
+include::platform/proc-create-an-ansiblejob.adoc[leveloffset=+1]
+include::platform/proc-create-a-jobtemplate.adoc[leveloffset=+1]

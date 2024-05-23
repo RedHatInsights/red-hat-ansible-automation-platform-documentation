@@ -1,0 +1,19 @@
+
+[id="proc-create-a-jobtemplate_{context}"]
+
+= Creating a JobTemplate 
+
+* Create a job template on {ControllerName} by creating a JobTemplate resource:
++
+----
+apiVersion: tower.ansible.com/v1alpha1
+kind: JobTemplate
+metadata:
+  name: jobtemplate-4
+spec:
+  connection_secret: controller-access
+  job_template_name: ExampleJobTemplate4
+  job_template_project: Demo Project
+  job_template_playbook: hello_world.yml
+  job_template_inventory: Demo Inventory
+----

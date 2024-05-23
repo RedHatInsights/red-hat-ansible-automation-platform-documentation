@@ -42,3 +42,4 @@ include::platform/assembly-aap-migration.adoc[leveloffset=+1]
 // include::platform/assembly-operator-upgrade.adoc[leveloffset=+1]
 
 include::platform/assembly-operator-add-execution-nodes.adoc[leveloffset=+1]
+include::platform/assembly-controller-resource-operator.adoc[leveloffset=+1]

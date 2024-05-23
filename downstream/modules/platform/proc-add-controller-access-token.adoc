@@ -1,0 +1,26 @@
+[id="proc-add-controller-access-token_{context}"]
+
+= Connecting {OperatorResourceShort} to {ControllerName}
+
+To connect {OperatorResourceShort} with {ControllerName} you need to create a k8s secret with the connection information for your {ControllerName} instance.
+
+.Procedure
+To create an OAuth2 token for your user in the {ControllerName} UI:
+
+. In the navigation panel, select menu:Access[Users].
+. Select the username you want to create a token for.
+. Click on btn:[Tokens], then click btn:[Add].
+. You can leave *Applications* empty. Add a description and select *Read* or *Write* for the *Scope*.
+
+Alternatively, you can create a OAuth2 token at the command-line by using the `create_oauth2_token` manage command:
+
+----
+$ controller-manage create_oauth2_token --user example_user
+New OAuth2 token for example_user: j89ia8OO79te6IAZ97L7E8bMgXCON2
+----
+
+[NOTE]
+====
+Make sure you provide a valid user when creating tokens. 
+Otherwise, you will get an error message that you tried to issue the command without specifying a user, or supplying a username that does not exist.
+====
