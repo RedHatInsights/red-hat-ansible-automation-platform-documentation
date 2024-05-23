@@ -231,7 +231,7 @@ The calendar of dates and times for which a job should run automatically.
 See *Distributed Job*.
 
 [discrete]
-=== Source Credential::
+=== Source Credential
 An external credential that is linked to the field of a target credential.
 
 [discrete]
