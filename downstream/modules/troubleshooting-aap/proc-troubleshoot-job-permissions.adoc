@@ -1,0 +1,20 @@
+[id="troubleshoot-job-permissions"]
+= Issue - Jobs in {PrivateHubName} are failing with "denied: requested access to the resource is denied, unauthorized: Insufficient permissions" error message
+
+Jobs are failing with the error message "denied: requested access to the resource is denied, unauthorized: Insufficient permissions" when using an {ExecEnvShort} in {PrivateHubName}.
+
+This issue happens when your {PrivateHubName} is protected with a password or token and the registry credential is not assigned to the {ExecEnvShort}.
+
+.Procedure
+
+. Go to {ControllerName}.
+. From the navigation panel, select menu:Administration[Execution Environments].
+. Click the {ExecEnvShort} assigned to the job template that is failing.
+. Click btn:[Edit].
+. Assign the appropriate *Registry credential* from your {PrivateHubName} to the {ExecEnvShort}.
+
+[role="_additional-resources"]
+.Additional resources
+
+* For information about creating new credentials in {ControllerName}, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#controller-getting-started-create-credential[Creating new credentials] in the Automation Controller User Guide.
+

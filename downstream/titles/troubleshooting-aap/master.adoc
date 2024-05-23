@@ -1,0 +1,25 @@
+:imagesdir: images
+:toclevels: 4
+:experimental:
+:context: troubleshooting-aap
+
+include::attributes/attributes.adoc[]
+
+// Book Title
+= Troubleshooting Ansible Automation Platform
+
+Use the Troubleshooting {PlatformNameShort} guide to troubleshoot your {PlatformNameShort} installation.
+
+include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]
+
+include::troubleshooting-aap/assembly-diagnosing-the-problem.adoc[leveloffset=+1]
+include::troubleshooting-aap/assembly-troubleshoot-controller.adoc[leveloffset=+1]
+include::troubleshooting-aap/assembly-troubleshoot-backup-recovery.adoc[leveloffset=+1]
+include::troubleshooting-aap/assembly-troubleshoot-execution-environments.adoc[leveloffset=+1]
+include::troubleshooting-aap/assembly-troubleshoot-installation.adoc[leveloffset=+1]
+include::troubleshooting-aap/assembly-troubleshoot-jobs.adoc[leveloffset=+1]
+include::troubleshooting-aap/assembly-troubleshoot-login.adoc[leveloffset=+1]
+include::troubleshooting-aap/assembly-troubleshoot-networking.adoc[leveloffset=+1]
+include::troubleshooting-aap/assembly-troubleshoot-playbooks.adoc[leveloffset=+1]
+include::troubleshooting-aap/assembly-troubleshoot-subscriptions.adoc[leveloffset=+1]

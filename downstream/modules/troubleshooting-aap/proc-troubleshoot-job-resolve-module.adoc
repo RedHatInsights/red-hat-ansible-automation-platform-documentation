@@ -1,0 +1,24 @@
+[id="troubleshoot-job-resolve-module"]
+= Issue - Jobs are failing with “ERROR! couldn’t resolve module/action” error message
+
+Jobs are failing with the error message “ERROR! couldn't resolve module/action 'module name'. This often indicates a misspelling, missing collection, or incorrect module path”.
+
+This error can happen when the collection associated with the module is missing from the {ExecEnvShort}.
+
+The recommended resolution is to create a custom {ExecEnvShort} and add the required collections inside of that {ExecEnvShort}. For more information about creating an {ExecEnvShort}, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/creating_and_consuming_execution_environments/assembly-using-builder[Using {Builder}] in Creating and Consuming Execution Environments.
+
+Alternatively, you can complete the following steps:
+
+.Procedure
+
+. Create a `collections` folder inside of the project repository.
+
+. Add a `requirements.yml` file inside of the `collections` folder and add the collection:
++
+[subs="+quotes"]
+----
+collections: 
+- _<collection_name>_
+----
++
+

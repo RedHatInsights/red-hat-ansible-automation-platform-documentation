@@ -1,0 +1,7 @@
+[id="troubleshoot-sosreport"]
+= Troubleshooting {PlatformNameShort} on VM-based installations by generating an sos report
+
+The `sos` utility collects configuration, diagnostic, and troubleshooting data from your {PlatformNameShort} on a {VMBase}.
+
+For more information about installing and using the `sos` utility, see link:{BaseURL}/red_hat_enterprise_linux/9/html-single/getting_the_most_from_your_support_experience/index#generating-an-sos-report-for-technical-support_getting-the-most-from-your-support-experience[Generating an sos report for technical support].
+

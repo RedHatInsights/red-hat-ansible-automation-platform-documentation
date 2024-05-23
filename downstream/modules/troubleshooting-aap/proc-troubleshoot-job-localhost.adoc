@@ -1,0 +1,5 @@
+[id="troubleshoot-job-localhost"]
+= Issue - Jobs are failing when run against localhost
+
+With {PlatformNameShort} 2 and its containerized execution environments, the usage of localhost has changed. For more information, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/converting-playbooks-for-aap2[Converting playbooks for AAP 2] in the {PlatformName} Upgrade and Migration Guide.
+

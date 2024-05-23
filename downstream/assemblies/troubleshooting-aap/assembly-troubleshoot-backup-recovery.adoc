@@ -1,0 +1,8 @@
+
+[id="troubleshoot-backup-recovery"]
+
+= Backup and recovery
+
+* For information about performing a backup and recovery of {PlatformNameShort}, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/controller-backup-and-restore#doc-wrapper[Backup and restore] in the Automation Controller Administration Guide.  
+
+* For information about troubleshooting backup and recovery for installations of {OperatorPlatform} on {OCPShort}, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_operator_backup_and_recovery_guide/aap-troubleshoot-backup-recover[Troubleshooting] section in the Red{nbsp}Hat {OperatorPlatform} Backup and Recovery Guide.

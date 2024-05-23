@@ -1,0 +1,8 @@
+
+[id="troubleshoot-controller"]
+
+= Resources for troubleshooting {ControllerName}
+
+* For information about troubleshooting {ControllerName}, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#controller-troubleshooting[Troubleshooting automation controller] in the Automation Controller Administration Guide.
+
+* For information about troubleshooting the performance of {ControllerName}, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/assembly-controller-improving-performance#ref-controller-performance-troubleshooting[Performance troubleshooting for automation controller] in the Automation Controller Administration Guide.

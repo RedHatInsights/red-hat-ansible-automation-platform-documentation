@@ -1,0 +1,60 @@
+[id="troubleshoot-must-gather"]
+= Troubleshooting {PlatformNameShort} on {OCPShort} by using the must-gather command
+
+The `oc adm must-gather` command line interface (CLI) command collects information from your {PlatformNameShort} installation deployed on {OCPShort}. It gathers information that is often needed for debugging issues, including resource definitions and service logs.
+
+Running the `oc adm must-gather` CLI command creates a new directory containing the collected data that you can use to troubleshoot or attach to your support case.
+
+If your OpenShift environment does not have access to `registry.redhat.io` and you cannot run the `must-gather` command, then run the `oc adm inspect` command instead.
+
+.Prerequisites
+
+* The OpenShift CLI (`oc`) is installed.
+
+.Procedure
+
+. Log in to your cluster:
++
+[subs="+quotes"]
+----
+oc login _<openshift_url>_
+----
++
+
+. Run one of the following commands based on your level of access in the cluster: 
+
+* Run `must-gather` across the entire cluster:
++
+[subs="+quotes"]
+----
+oc adm must-gather --image=registry.redhat.io/ansible-automation-platform-24/aap-must-gather-rhel8 --dest-dir _<dest_dir>_
+----
++
+** `--image` specifies the image that gathers data
+** `--dest-dir` specifies the directory for the output
+
+* Run `must-gather` for a specific namespace in the cluster:
++
+[subs="+quotes"]
+----
+oc adm must-gather --image=registry.redhat.io/ansible-automation-platform-24/aap-must-gather-rhel8 --dest-dir _<dest_dir>_ – /usr/bin/ns-gather _<namespace>_
+----
++
+** `– /usr/bin/ns-gather` limits the `must-gather` data collection to a specified namespace
+
+. To attach the `must-gather` archive to your support case, create a compressed file from the `must-gather` directory created before and attach it to your support case. 
+* For example, on a computer that uses a Linux operating system, run the following command, replacing `_<must-gather-local.5421342344627712289/>_` with the `must-gather` directory name:
++
+[subs="+quotes"]
+----
+$ tar cvaf must-gather.tar.gz _<must-gather.local.5421342344627712289/>_
+----
++
+
+
+[role="_additional-resources"]
+.Additional resources
+
+* For information about installing the OpenShift CLI (`oc`), see link:https://docs.openshift.com/container-platform/{OCPLatest}/cli_reference/openshift_cli/getting-started-cli.html[Installing the OpenShift CLI] in the {OCPShort} Documentation.
+
+* For information about running the `oc adm inspect` command, see the link:https://docs.openshift.com/container-platform/{OCPLatest}/cli_reference/openshift_cli/administrator-cli-commands.html#oc-adm-inspect[ocm adm inspect] section in the {OCPShort} Documentation.

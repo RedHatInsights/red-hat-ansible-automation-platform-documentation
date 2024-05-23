@@ -1,0 +1,43 @@
+[id="troubleshoot-job-pending"]
+= Issue - Jobs in {ControllerName} are stuck in a pending state
+
+After launching jobs in {ControllerName}, the jobs stay in a pending state and do not start.
+
+There are a few reasons jobs can become stuck in a pending state. For more information about troubleshooting this issue, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#controller-playbook-pending[Playbook stays in pending] in the Automation Controller Administration Guide.
+
+*Cancel all pending jobs*
+
+. Run the following commands to list all of the pending jobs:
++
+----
+# awx-manage shell_plus
+----
++
+----
+>>> UnifiedJob.objects.filter(status='pending')
+----
++
+
+
+. Run the following command to cancel all of the pending jobs:
++
+----
+>>> UnifiedJob.objects.filter(status='pending').update(status='canceled')
+----
++
+
+
+*Cancel a single job by using a job id*
+
+* To cancel a specific job, run the following commands, replacing `_<job_id>_` with the job id to cancel:
++
+[subs="+quotes"]
+----
+# awx-manage shell_plus
+----
++
+----
+>>> UnifiedJob.objects.filter(id=_<job_id>_).update(status='canceled')
+----
++
+

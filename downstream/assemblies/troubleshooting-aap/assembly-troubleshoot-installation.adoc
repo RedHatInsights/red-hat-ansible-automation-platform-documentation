@@ -1,0 +1,9 @@
+
+[id="troubleshoot-installation"]
+
+= Installation
+
+Troubleshoot issues with your installation.
+
+include::troubleshooting-aap/proc-troubleshoot-aap-packages.adoc[leveloffset=+1]
+

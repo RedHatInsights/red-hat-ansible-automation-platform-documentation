@@ -1,0 +1,6 @@
+
+[id="troubleshoot-subscriptions"]
+
+= Subscriptions
+
+For information about keeping your {ControllerName} subscription in compliance, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#controller-keep-subscription-in-compliance[Troubleshooting: Keep your subscription in compliance] in the Automation Controller User Guide.

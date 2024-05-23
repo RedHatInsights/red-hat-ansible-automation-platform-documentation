@@ -1,0 +1,46 @@
+[id="troubleshoot-subnet-conflict"]
+= Issue - The default subnet used in {PlatformNameShort} containers conflicts with the internal network
+
+The default subnet used in {PlatformNameShort} containers conflicts with the internal network resulting in "No route to host" errors.
+
+To resolve this issue, update the default classless inter-domain routing (CIDR) value so it does not conflict with the CIDR used by the default Podman networking plugin.
+
+.Procedure
+
+. In all controller and hybrid nodes, run the following commands to create a file called `custom.py`:
++
+----
+# touch /etc/tower/conf.d/custom.py
+----
++
+----
+# chmod 640 /etc/tower/conf.d/custom.py
+----
++
+----
+# chown root:awx /etc/tower/conf.d/custom.py
+----
++
+
+. Add the following to the `/etc/tower/conf.d/custom.py` file:
++
+----
+DEFAULT_CONTAINER_RUN_OPTIONS = ['--network', 'slirp4netns:enable_ipv6=true,cidr=192.0.2.0/24'] 
+----
++
+
+* `192.0.2.0/24` is the value for the new CIDR in this example.
+
+. Stop and start the {ControllerName} service in all controller and hybrid nodes:
++
+----
+# automation-controller-service stop
+----
++
+----
+# automation-controller-service start
+----
++
+
+All containers will start on the new CIDR.
+
