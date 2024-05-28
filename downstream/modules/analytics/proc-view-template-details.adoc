@@ -11,9 +11,9 @@ You can view detailed information for each template in *Top templates* to learn 
 * Click the *Info* icon for a job template to view template details.
 
 .Top template information is provided for the following:
-* *Total elapsed sum* - total run time of the template
-* *Success elapsed sum* - total run time for successful template runs
-* *Failed elapsed sum* - total run time for failed template runs
-* *Automation percentage* - template accounts for this percentage of automation in your oganization.
-* *Associated organizations* - template runs against these organizations
-* *Associated clusters* - Ansible Tower clusters the template runs on.
+* *Total elapsed sum* - Total run time of the template.
+* *Success elapsed sum* - Total run time for successful template runs.
+* *Failed elapsed sum* - Total run time for failed template runs.
+* *Automation percentage* - The template accounts for this percentage of automation in your organization.
+* *Associated organizations* - The template runs against these organizations.
+* *Associated clusters* - {ControllerNameStart} clusters the template runs on.
