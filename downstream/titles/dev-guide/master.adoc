@@ -7,7 +7,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= {PlatformName} Creator Guide
+= {PlatformName} creator guide
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]

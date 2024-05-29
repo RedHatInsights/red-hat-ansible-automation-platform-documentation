@@ -7,7 +7,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Red Hat Ansible Security Automation Guide
+= Red Hat Ansible security automation guide
 
 include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]
