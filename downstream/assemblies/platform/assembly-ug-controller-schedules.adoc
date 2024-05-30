@@ -20,4 +20,5 @@ Type:: This identifies whether the schedule is associated with a source control 
 Next run:: The next scheduled run of this task.
 
 include::platform/proc-controller-adding-new-schedule.adoc[leveloffset=+1]
-include::platform/proc-controller-define-schedule-rules.adoc[leveloffset=+1]
+include::platform/proc-controller-define-schedule-rules.adoc[leveloffset=+2]
+include::platform/proc-controller-define-schedule-exceptions.adoc[leveloffset=+2]

@@ -15,8 +15,8 @@ Enter the following information:
 * *Monthly day(s) number*:  This field is used to declare ordinal days number of the month that the schedule should run.
 * *Annual day(s) number*: This field is used to declare ordinal number days of the year that the schedule should run.
 * *Occurences*: Use this field to filter down indexed rules based on those declared using the form fields in the Rule section. 
-See the `iCalendar RFC for bysetpos` field more information.
-//There's no such field.
++
+For more information, see the link:https://datatracker.ietf.org/doc/html/rfc5545[link] to the `iCalendar RFC for bysetpos` field in the iCalendar documentation when you have set the rules for the schedule.
 * *Count*: The number of times this rule should be used.
 * *Until*: Use this rule until the specified date and time
 
