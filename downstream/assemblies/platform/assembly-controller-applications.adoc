@@ -15,3 +15,5 @@ By separating the issue of tokens under *OAuth Applications*, you can revoke all
 
 include::platform/ref-controller-applications-getting-started.adoc[leveloffset=+1]
 include::platform/proc-controller-create-application.adoc[leveloffset=+1]
+//include::platform/ref-controller-apps-add-tokens.adoc[leveloffset=+2]
+include::platform/proc-controller-apps-create-tokens.adoc[leveloffset=+2]

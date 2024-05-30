@@ -33,5 +33,3 @@ The client ID displays in a window.
 
 //image:apps-client-id-popup.png[Client ID]
 
-//include::ref-controller-apps-add-tokens.adoc[leveloffset=+1]
-include::proc-controller-apps-create-tokens.adoc[leveloffset=+1]

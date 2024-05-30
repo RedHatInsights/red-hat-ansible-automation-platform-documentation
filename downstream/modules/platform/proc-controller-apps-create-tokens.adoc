@@ -47,4 +47,4 @@ To verify that the application now shows the user with the appropriate token, op
 .Additional resources
 
 If you are a system administrator and have to create or remove tokens for other users, see the revoke and create commands in the
-link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_administration_guide/index#ref-controller-token-session-management[Token and session management] section of the _{ControllerAG}_.
+link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/automation_controller_administration_guide/assembly-controller-awx-manage-utility#ref-controller-token-session-management[Token and session management] section of the _{ControllerAG}_.
