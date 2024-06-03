@@ -1,4 +1,4 @@
-<title>Evaluating your Ansible Tower job runs using the Job Explorer</title>
+<title>Evaluating your automation controller job runs using the jobs explorer</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.4</productnumber>
 <subtitle>Review jobs and templates in greater detail by applying filters and sorting by attributes</subtitle>

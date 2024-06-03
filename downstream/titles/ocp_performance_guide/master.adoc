@@ -8,7 +8,7 @@ include::attributes/attributes.adoc[]
 :context: ocp-performance
 
 // Book Title
-= Red Hat Ansible Automation Platform performance considerations for operator based installations
+= Red Hat Ansible Automation Platform performance considerations for operator-based installations
 
 Deploying applications to a container orchestration platform such as {OCP} provides a number of advantages from an operational perspective. 
 For example, an update to the base image of an application can be made through a simple in-place upgrade with little to no disruption.

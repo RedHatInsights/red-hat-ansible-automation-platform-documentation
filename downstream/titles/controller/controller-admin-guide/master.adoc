@@ -9,7 +9,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Automation Controller Administration Guide
+= Automation controller administration guide
 
 The {ControllerName} Administration Guide describes the administration of {ControllerName} through custom scripts, management jobs, and more. 
 Written for DevOps engineers and administrators, the {ControllerName} Administration Guide assumes a basic understanding of the systems requiring management with {ControllerName}s easy-to-use graphical interface. 

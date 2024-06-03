@@ -1,7 +1,7 @@
 <title>Reference Guide to Ansible Playbooks</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.4</productnumber>
-<subtitle>Reference Guide to Ansible Playbooks</subtitle>
+<subtitle>Reference guide to Ansible Playbooks</subtitle>
 <abstract>
     <para>This guide provides a reference for the differing approaches to the creating of Ansible playbooks. </para>
 </abstract>
