@@ -12,7 +12,7 @@ To use a custom `ansible.cfg` file, place it at the root of your project.
 An `ansible.cfg` file anywhere else in the project is ignored.
 ====
 
-To learn which values you can use in this file, see link:https://docs.ansible.com/ansible/latest/reference_appendices/config.html#generating-a-sample-ansible-cfg-file[Generating a sample ansible.cfg file].
+To learn which values you can use in this file, see link:https://docs.ansible.com/ansible/latest/reference_appendices/config.html#generating-a-sample-ansible-cfg-file[Generating a sample ansible.cfg file] in the Ansible documentation.
 
 Using the defaults are acceptable for starting out, but you can configure the default module path or connection type here, as well as other things.
 

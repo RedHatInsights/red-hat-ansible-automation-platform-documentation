@@ -7,5 +7,5 @@ The following settings impact capacity calculations on the cluster. Set them to 
 * `AWX_CONTROL_NODE_TASK_IMPACT`: Sets the impact of controlling jobs. You can use it when your control plane exceeds desired CPU or memory usage to control the number of jobs that your control plane can run at the same time.
 * `SYSTEM_TASK_FORKS_CPU` and `SYSTEM_TASK_FORKS_MEM`: Influence how many resources are estimated to be consumed by each fork of Ansible. By default, 1 fork of Ansible is estimated to use 0.25 of a CPU and 100 Mb of memory.
 
-.Additional resources
-For information about file-based settings, see xref:con-controller-additional-settings[Additional settings for {ControllerName}].
+//.Additional resources
+//For information about file-based settings, see xref:con-controller-additional-settings[Additional settings for {ControllerName}].

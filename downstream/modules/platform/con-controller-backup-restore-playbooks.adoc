@@ -2,7 +2,7 @@
 
 = Backup and restore playbooks
 
-In addition to the `install.yml` file included with your `setup.sh` setup playbook, there are also `backup.yml` and `restore.yml` files for your backup and restoration needs.
+In addition to the `install.yml` file included with your `setup.sh` setup playbook, there are also `backup.yml` and `restore.yml` files.
 
 These playbooks serve to backup and restore.
 
@@ -19,5 +19,5 @@ If the backup file is not available, your restoration fails.
 
 [NOTE]
 ====
-Ensure that your {ControllerName} hosts are properly set up with SSH keys, user or pass variables in the hosts file, and that the user has `sudo` access.
+Make sure that your {ControllerName} hosts are properly set up with SSH keys, user or pass variables in the hosts file, and that the user has `sudo` access.
 ====

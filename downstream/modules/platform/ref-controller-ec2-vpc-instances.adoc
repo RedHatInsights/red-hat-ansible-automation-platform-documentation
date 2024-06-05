@@ -6,8 +6,8 @@ By default, {ControllerName} only shows instances in a VPC that have an Elastic 
 
 .Procedure
 . From the navigation panel, select {MenuInfrastructureInventories}.
-. Select the group that has the *Source* set to *AWS*, and click the *Source* tab.
-In the *Source variables* field, enter:
+. Select the inventory that has the *Source* set to *Amazon EC2*, and click the *Source* tab.
+In the *Source Variables* field, enter:
 +
 [literal, options="nowrap" subs="+attributes"]
 ----

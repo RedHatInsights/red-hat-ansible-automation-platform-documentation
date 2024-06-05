@@ -2,6 +2,8 @@
 
 = Setting up data collection participation
 
+//This looks like a duplicate of what I added to proc-controller-configure-usability-analytics.adoc
+
 Use the following procedure to set your participation level for data collection.
 
 .Procedure

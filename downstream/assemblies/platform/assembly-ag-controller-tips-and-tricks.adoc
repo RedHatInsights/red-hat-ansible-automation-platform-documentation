@@ -15,7 +15,8 @@
 //* xref:ref-controller-dynamic-inventory[Dynamic Inventory and private IP addresses]
 * xref:ref-controller-filter-instances[Filter instances returned by the dynamic inventory sources in {ControllerName}]
 * xref:ref-controller-use-an-unreleased-module[Use an unreleased module from Ansible source with {ControllerName}]
-* xref:ref-controller-use-callback-plugins[Use callback plugins with {ControllerName}]
+//This field doesn't exist in the Job Settings page.
+//* xref:ref-controller-use-callback-plugins[Use callback plugins with {ControllerName}]
 * xref:ref-controller-connect-with-winrm[Connect to Windows with winrm]
 * xref:ref-controller-import-inventory-files[Import existing inventory files and host/group vars into {ControllerName}]
 

@@ -21,6 +21,7 @@ When a user logs in resulting in other users being logged out, the session limit
 
 .Procedure
 
+//This option doesn't appear to be available at 2.5
 . To make changes to your session limits, from the navigation panel, select {MenuAEAdminSettings}.
 . Select *Miscellaneous Authentication settings* from the list of *System* options.
 . Click btn:[Edit].

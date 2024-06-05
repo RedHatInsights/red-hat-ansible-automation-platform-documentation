@@ -4,7 +4,7 @@
 
 *Users experience many request timeouts (504 or 503 errors), or in general high API latency. In the UI, clients face slow login and long wait times for pages to load. What system is the likely culprit?*
 
-* If these issues occur only on login, and you use external authentication, the problem is likely with the integration of your external authentication provider. See xref:controller-set-up-enterprise-authentication[Setting up enterprise authentication] or seek Red Hat Support.
+* If these issues occur only on login, and you use external authentication, the problem is likely with the integration of your external authentication provider and you should seek Red Hat support.
 * For other issues with timeouts or high API latency, see xref:ref-controller-web-service-tuning[Web server tuning].
 
 *Long wait times for job output to load.*

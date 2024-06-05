@@ -11,7 +11,7 @@ On local systems, you might need `root` or `sudo` access, depending on how crede
 On remote systems, you might need different credentials to grant you access to the remote system you are trying to backup or restore.
 
 Version:: You must always use the most recent minor version of a release to backup or restore your {PlatformNameShort} installation version. 
-For example, if the current platform version you are on is 2.0.x, use only the latest 2.0 installer.
+For example, if the current platform version you are on is 2.0.x, only use the latest 2.0 installer.
 
 File path:: When using `setup.sh` in order to do a restore from the default restore file path, `/var/lib/awx`, `-r` is still required in order to do the restore, but it no longer accepts an argument. 
 If a non-default restore file path is needed, you must provide this as an extra_var (`root@localhost:~# ./setup.sh -e 'restore_backup_file=/path/to/nondefault/backup.tar.gz' -r`).

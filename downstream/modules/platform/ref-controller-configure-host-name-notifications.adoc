@@ -2,9 +2,9 @@
 
 = Configuring the `controllerhost` hostname for notifications
 
-In xref:controller-configure-system[System settings], you can replace `https://controller.example.com` in the *Base URL of The Controller Host* field with your preferred hostname to change the notification hostname.
+From the *System settings* page, you can replace `\https://controller.example.com` in the *Base URL of the Service* field with your preferred hostname to change the notification hostname.
 
-image:configure-controller-system-misc-baseurl.png[Edit base URL]
+//image:configure-controller-system-misc-baseurl.png[Edit base URL]
 
 Refreshing your {ControllerName} license also changes the notification hostname. 
 New installations of {ControllerName} need not set the hostname for notifications.

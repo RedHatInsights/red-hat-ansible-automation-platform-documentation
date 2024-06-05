@@ -16,5 +16,5 @@ If you cannot disable live streaming of events because of their size, reduce the
 * `MAX_EVENT_RES_DATA`: The maximum size of the ansible callback event's "res" data structure. The "res" is the full "result" of the module. When the maximum size of ansible callback events is reached, then the remaining output will be truncated. Default value is 700000 bytes.
 * `LOCAL_STDOUT_EXPIRE_TIME`: The amount of time before a `stdout` file is expired and removed locally.
 
-.Additional resources
-For more information on file based settings, see xref:con-controller-additional-settings[Additional settings for {ControllerName}].
+//.Additional resources
+//For more information on file based settings, see xref:con-controller-additional-settings[Additional settings for {ControllerName}].
