@@ -8,7 +8,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Automation controller API overview
+= Automation Controller API Overview
 
 Thank you for your interest in {PlatformName}. 
 {PlatformNameShort} helps teams manage complex multitiered deployments by adding control, knowledge, and delegation to Ansible-powered environments.
