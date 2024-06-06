@@ -1,0 +1,11 @@
+// This is the release notes for x.x-x bundle installer release
+
+[id="installer-xx-xx"]
+
+= RHSA-XXXX:XXXX - bundle installer release x.x-x - <month date, year>
+
+link:https://access.redhat.com/errata/<errata advisory link>[RHSA-XXXX:XXXX]
+
+== Related RPM releases
+
+* 

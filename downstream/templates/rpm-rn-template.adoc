@@ -1,0 +1,28 @@
+// This is the release notes for x.x-x async installer release
+
+[id="rpm-xx-xx"]
+
+= RHSA-XXXX:XXXX - security advisory - <month date, year>
+
+link:https://access.redhat.com/errata/<errata advisory link>[RHSA-XXXX:XXXX]
+
+== General
+
+With this update, the following CVEs have been addressed:
+
+* 
+
+// Automation controller
+== {ControllerNameStart}
+
+* 
+
+// Automation hub
+== {HubNameStart}
+
+* 
+
+// Event-Driven Ansible
+== {EDAName}
+
+* 
