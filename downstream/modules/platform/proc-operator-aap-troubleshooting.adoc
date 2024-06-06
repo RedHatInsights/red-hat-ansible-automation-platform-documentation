@@ -1,0 +1,3 @@
+[id="operator-aap-troubleshooting_{context}"]
+
+= Troubleshooting AnsibleAutomationPlatform issues  
