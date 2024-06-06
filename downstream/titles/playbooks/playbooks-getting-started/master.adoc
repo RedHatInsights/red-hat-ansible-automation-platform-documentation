@@ -14,7 +14,7 @@ Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commerci
 
 This guide provides an introduction to the use of Ansible Playbooks..
 
-include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]
 
 //include::playbooks/assembly-playbook-gs.adoc[leveloffset=+1]

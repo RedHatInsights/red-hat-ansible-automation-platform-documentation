@@ -4,7 +4,7 @@ include::attributes/attributes.adoc[]
 
 = Red Hat Ansible Automation Platform release notes
 
-include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
 include::{DocumentationFeedback}[leveloffset=+1]
 

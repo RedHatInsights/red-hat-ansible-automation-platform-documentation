@@ -18,7 +18,7 @@ The {ControllerNameStart} User Guide describes all of the functionality availabl
 It assumes moderate familiarity with Ansible, including concepts such as playbooks, variables, and tags.
 For more information about these and other Ansible concepts, see the link:https://docs.ansible.com/[Ansible documentation].
 
-include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]
 
 include::platform/assembly-UG-overview.adoc[leveloffset=+1]

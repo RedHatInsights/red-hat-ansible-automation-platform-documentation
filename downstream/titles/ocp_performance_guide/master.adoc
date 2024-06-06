@@ -19,7 +19,7 @@ Although application and operator developers can provide many options to {OCPSho
 For example, use of node labels in the Openshift cluster can help ensure different workloads are run on specific nodes. 
 This type of configuration must be provided by the user as the {PlatformNameShort} Operator has no way of inferring this.
 
-include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]
 
 include::platform/assembly-pod-spec-modifications.adoc[leveloffset=+1]

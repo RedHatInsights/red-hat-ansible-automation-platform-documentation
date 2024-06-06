@@ -10,7 +10,7 @@ include::attributes/attributes.adoc[]
 
 Use the Troubleshooting {PlatformNameShort} guide to troubleshoot your {PlatformNameShort} installation.
 
-include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]
 
 include::troubleshooting-aap/assembly-diagnosing-the-problem.adoc[leveloffset=+1]

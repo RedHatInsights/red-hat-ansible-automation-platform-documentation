@@ -24,7 +24,7 @@ These subscriptions vary in price and support-levels.
 For more information about subscriptions and features, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#ref-controller-subscription-types[Subscription Types].
 ====
 
-include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
+//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 include::{DocumentationFeedback}[leveloffset=+1]
 
 include::platform/assembly-controller-login.adoc[leveloffset=+1]
