@@ -2,10 +2,14 @@
 
 = Configuring the user interface
 
-The *User Interface* tab enables you to set {ControllerName} analytics settings, and configure custom logos and login messages.
+The *Gateway settings* page enables you to configure custom logos and login messages.
 
 .Procedure
 
-. From the navigation panel, select {MenuAEAdminSettings}.
+. From the navigation panel, select {MenuSetGateway}.
 . Select *User Interface settings* from the *User Interface* option. 
-. Click btn:[Edit] to configure your preferences.
+. On the *Gateway settings* page, click btn:image:leftpencil.png[Edit,15,15][Edit].
+. Set the configurable options from the fields provided.
+Click the tooltip image:question_circle.png[Tool tip,15,15] icon next to the field that you need additional information about.
+. Use the *Custom logo* field to upload a custom logo image.
+. Use the *Custom login info* field to provide custom login messages.

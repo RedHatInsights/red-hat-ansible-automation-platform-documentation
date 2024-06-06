@@ -35,7 +35,7 @@ include::platform/assembly-ag-controller-secret-handling.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-security-best-practices.adoc[leveloffset=+1]
 include::platform/assembly-controller-awx-manage-utility.adoc[leveloffset=+1]
 //Uses Settings menu. Which may be separate documentation.
-//include::platform/assembly-ag-controller-config.adoc[leveloffset=+1]
+include::platform/assembly-ag-controller-config.adoc[leveloffset=+1]
 include::platform/assembly-controller-isolation-function-variables.adoc[leveloffset=+1]
 //include::platform/assembly-controller-token-based-authentication.adoc[leveloffset=+1]
 //include::platform/assembly-controller-set-up-social-authentication.adoc[leveloffset=+1]

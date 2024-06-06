@@ -8,7 +8,8 @@ The *Jobs* tab enables you to configure the types of modules that can be used by
 
 . From the navigation panel, select {MenuAEAdminSettings}.
 . Select *Jobs settings* in the *Jobs* option.
-Set the configurable options from the fields provided.
+. Click btn:[Edit].
+. Set the configurable options from the fields provided.
 Click the tooltip image:question_circle.png[Tool tip,15,15] icon next to the field that you need additional information about.
 +
 For more information about configuring Galaxy settings, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html-single/automation_controller_user_guide/index#ref-projects-galaxy-support[Ansible Galaxy Support] section of the _{ControllerUG}_.
@@ -18,4 +19,4 @@ For more information about configuring Galaxy settings, see the link:{BaseURL}/r
 The values for all timeouts are in seconds.
 ====
 +
-. Click btn:[Save] to apply the settings and btn:[Cancel] to abandon the changes.
+. Click btn:[Save] to apply the settings.
