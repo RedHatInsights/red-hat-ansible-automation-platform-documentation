@@ -9,7 +9,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Getting started with Event-Driven Ansible guide
+= Getting Started with Event-Driven Ansible Guide
 
 Thank you for your interest in {EDAname}. {EDAname} is a new way to enhance and expand automation. It helps teams automate decision-making and improve IT speed and agility.
 

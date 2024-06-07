@@ -9,7 +9,7 @@ include::attributes/attributes.adoc[]
 :analytics_automation_savings:
 
 [[analytics_automation_savings]]
-= Using the automation calculator
+= Using the Automation Calculator
 
 //Downstream only content
 //include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]

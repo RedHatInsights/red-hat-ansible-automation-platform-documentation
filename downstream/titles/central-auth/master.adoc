@@ -7,7 +7,7 @@
 include::attributes/attributes.adoc[]
 
 // Book Title
-= Installing and configuring central authentication for the Ansible Automation Platform
+= Installing and Configuring Central Authentication for the Ansible Automation Platform
 
 {AAPCentralAuth} is a third-party identity provider (idP) solution, allowing for a simplified single sign-on solution that can be used across the {PlatformNameShort}. Platform administrators can utilize {CentralAuth} to test connectivity and authentication, as well as onboard new users and manage user permissions by configuring and assigning them to groups. Along with OpenID Connect-based and LDAP support, {CentralAuth} also provides a supported REST API which can be used to bootstrap customer usage.
 
