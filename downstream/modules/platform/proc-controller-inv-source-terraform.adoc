@@ -4,7 +4,7 @@
 
 = Terraform State
 
-This inventory source uses the link:https://github.com/ansible-collections/cloud.terraform/blob/main/plugins/inventory/terraform_state.py[terraform_state] inventory plugin from the link:https://github.com/ansible-collections/cloud.terraform[cloud.terraform] collection. 
+This inventory source uses the link:https://github.com/ansible-collections/cloud.terraform/blob/main/docs/cloud.terraform.terraform_state_inventory.rst[terraform_state] inventory plugin from the link:https://github.com/ansible-collections/cloud.terraform[cloud.terraform] collection. 
 The plugin parses a terraform state file and add hosts for AWS EC2, GCE, and {Azure} instances.
 
 .Procedure
@@ -23,7 +23,7 @@ Choose from an existing Terraform backend configuration credential. For more inf
 . Use the *Source Variables* field to override variables used by the `terraform_state` inventory plugin. 
 Enter variables by using either JSON or YAML syntax. 
 Use the radio button to toggle between the two. 
-For more information about these variables, see the link:https://github.com/ansible-collections/cloud.terraform/blob/main/plugins/inventory/terraform_state.py[terraform_state] file.
+For more information about these variables, see the link:https://github.com/ansible-collections/cloud.terraform/blob/main/docs/cloud.terraform.terraform_state_inventory.rst[terraform_state] file.
 +
 The `backend_type` variable is required by the Terraform State inventory plugin. 
 This should match the remote backend configured in the *Terraform backend credential*.
