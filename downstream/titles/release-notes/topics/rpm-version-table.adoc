@@ -1,0 +1,18 @@
+// This table contains the component/package versions per each errata advisory
+
+.Component versions per errata advisory
+//cols="a,a" formats the columns as AsciiDoc allowing for AsciiDoc syntax
+[cols="a,a",options="header"]
+|===
+| Errata advisory | Component versions
+
+| xref:rpm-24-7[RHSA-2024:3781] + 
+June 10, 2024  | 
+* `ansible-automation-platform-installer` 2.4-7 
+* `ansible-automation-platform-setup` 2.4-7
+* `ansible-core` 2.15.11
+* {ControllerNameStart} 4.5.7
+* {HubNameStart} 4.9.2
+* {EDAName} 1.0.7
+
+|===

@@ -1,0 +1,31 @@
+// This is the release notes file for 2.4-6 Async installer release 
+
+[id="rpm-24-6"]
+
+= RHSA-2024:1057 - Security Advisory - March 01, 2024
+
+link:https://access.redhat.com/errata/RHSA-2024:1057[RHSA-2024:1057]
+
+//Automation hub
+== {HubNameStart}
+
+* Displays the download count for each collection in {HubName} (AAP-18298).
+
+//Event-Driven Ansible
+== {EDAName}
+
+* Added a parameter to control the number of running activations per {EDAName} worker service (AAP-20672).
+
+* Added `EDA_CSRF_TRUSTED_ORIGINS` which can be set by user input or defined based on the allowed hostnames that are determined by the installer (AAP-20244).
+
+* {EDAName} installation now fails when the pre-existing {ControllerName} version is 4.4.0 or older (AAP-20241).
+
+* Added the `podman_containers_conf_logs_max_size` variable for containers.conf to control the max log size for Podman installations. The default value is 10 MiB (AAP-19775). 
+
+* Setting the {EDAName} debug flag to false now correctly disables Django debug mode (AAP-19577).
+
+* `XDG_RUNTIME_DIR` is now defined when applying {EDAName} linger settings for Podman (AAP-19265).
+
+* Fixed the {EDAName} nginx config when using a custom https port (AAP-19137).
+
+* Some features in this release are classified as Developer Preview, including LDAP authentication functionality for {EDAName}. For more information about these {EDAName} Developer Preview features, see link:https://access.redhat.com/articles/7057663[Event-Driven Ansible - Developer Preview].

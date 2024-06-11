@@ -1,4 +1,4 @@
-// This is the release notes file for AAP 2.4 bundle installer release 2.4-1.1 dated July 26, 2023
+// This is the release notes file for 2.4-1.1 Bundle installer release
 
 = RHBA-2023:4288 - bundle installer release 2.4-1.1 - July 26, 2023
 

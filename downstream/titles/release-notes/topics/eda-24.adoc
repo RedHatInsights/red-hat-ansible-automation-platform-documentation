@@ -47,12 +47,12 @@
 
 * When users access the detail screen of a rule audit, the related rulebook activation link is broken. 
 
-* Long running activations with loads of events can cause an out of disk space issue. Resolved in xref:installer-24-6[installer release 2.4-6].
+* Long running activations with loads of events can cause an out of disk space issue. Resolved in xref:rpm-24-6[installer release 2.4-6].
 
-* Certain characters, such as hyphen (-), forward slash (/), and period (.), are not supported in the event keys. Resolved in xref:installer-24-3[installer release 2.4-3].
+* Certain characters, such as hyphen (-), forward slash (/), and period (.), are not supported in the event keys. Resolved in xref:rpm-24-3[installer release 2.4-3].
 
-* When there are more activations than available workers, disabling the activations incorrectly shows them in running state. Resolved in xref:installer-24-3[installer release 2.4-3].
+* When there are more activations than available workers, disabling the activations incorrectly shows them in running state. Resolved in xref:rpm-24-3[installer release 2.4-3].
 
-* {EDAName} activation pods are running out of memory on RHEL 9. Resolved in xref:installer-24-3[installer release 2.4-3].
+* {EDAName} activation pods are running out of memory on RHEL 9. Resolved in xref:rpm-24-3[installer release 2.4-3].
 
-* When all workers are busy with activation processes, other asynchronous tasks are not executed, such as importing projects. Resolved in xref:installer-24-3[installer release 2.4-3].
+* When all workers are busy with activation processes, other asynchronous tasks are not executed, such as importing projects. Resolved in xref:rpm-24-3[installer release 2.4-3].

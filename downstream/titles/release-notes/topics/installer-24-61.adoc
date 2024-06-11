@@ -1,6 +1,6 @@
-// This is the release notes file for AAP 2.4 async installer release 2.4-6.1 dated April 4, 2024
+// This is the release notes file for 2.4-6.1 Bundle installer release
 
-[id="bundle-installer-24-61"]
+[id="installer-24-61"]
 
 = RHBA-2024:1672 - bundle installer release 2.4-6.1 - April 4, 2024
 

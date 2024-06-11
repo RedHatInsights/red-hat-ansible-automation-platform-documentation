@@ -1,8 +1,8 @@
-// This is the release notes file for AAP 2.4 async installer release 2.4-3 dated November 21, 2023
+// This is the release notes file for 2.4-3 Async installer release
 
-[id="installer-24-3"]
+[id="rpm-24-3"]
 
-= RHBA-2023:7460 - installer release 2.4-3 - November 21, 2023
+= RHBA-2023:7460 - Bug Fix Advisory - November 21, 2023
 
 link:https://access.redhat.com/errata/RHBA-2023:7460[RHBA-2023:7460]
 

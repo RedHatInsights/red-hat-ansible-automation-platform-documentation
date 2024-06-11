@@ -1,0 +1,104 @@
+// This is the release notes file for AAP-24561 - 2.4-7 Async installer release
+
+[id="rpm-24-7"]
+
+= RHSA-2024:3781 - Security Advisory - June 10, 2024
+
+link:https://access.redhat.com/errata/RHSA-2024:3781[RHSA-2024:3781]
+
+== General
+
+* Added the `automation-controller-cli` package to the `ansible-developer` RPM repositories (AAP-23368).
+
+With this update, the following CVEs have been addressed:
+
+//AAP-21782
+* link:https://access.redhat.com/security/cve/CVE-2023-45288[CVE-2023-45288] - unlimited number of CONTINUATION frames causes a denial of service (DoS).
+** Packages updated: `receptor: golang: net/http, x/net/http2`.
+//AAP-21546 
+* link:https://access.redhat.com/security/cve/CVE-2023-45290[CVE-2023-45290] - memory exhaustion in `Request.ParseMultipartForm`.
+** Packages updated: `receptor: golang: net/http`.
+//AAP-19153 & AAP-19156
+* link:https://access.redhat.com/security/cve/CVE-2023-49083[CVE-2023-49083] - null-pointer dereference when loading PKCS7 certificates.
+** Packages updated: `python-cryptography` and `python3x-cryptography: python-cryptography`.
+//AAP-19723 
+* link:https://access.redhat.com/security/cve/CVE-2023-50447[CVE-2023-50447] - arbitrary code execution with the environment parameter.
+** Packages updated: `python-pillow: pillow`.
+//AAP-22945 
+* link:https://access.redhat.com/security/cve/CVE-2024-1135[CVE-2024-1135] - HTTP Request Smuggling due to improper validation of Transfer-Encoding headers.
+** Packages updated: `python-gunicorn`.
+//AAP-21885 & AAP-21886 
+* link:https://access.redhat.com/security/cve/CVE-2024-21503[CVE-2024-21503] - regular expression denial of service (ReDoS) with the `lines_with_leading_tabs_expanded()` function within the `strings.py` file.
+** Packages updated: `python-black: psf/black` and `python3x-black: psf/black`.
+//AAP-21552 
+* link:https://access.redhat.com/security/cve/CVE-2024-24783[CVE-2024-24783] - verify panics on certificates with an unknown public key algorithm.
+** Packages updated: `receptor: golang: crypto/x509`.
+//AAP-21823 
+* link:https://access.redhat.com/security/cve/CVE-2024-26130[CVE-2024-26130] - NULL pointer dereference with `pkcs12.serialize_key_and_certificates` when called with a non-matching certificate and private key and an `hmac_hash` override.
+** Packages updated: `python-cryptography`.
+//AAP-23106 & AAP-23269
+* link:https://access.redhat.com/security/cve/CVE-2024-27306[CVE-2024-27306] - cross-site scripting (XSS) on index pages for static file handling.
+** Packages updated: `python-aiohttp: aiohttp` and `python3x-aiohttp: aiohttp`.
+//AAP-21133 
+* link:https://access.redhat.com/security/cve/CVE-2024-27351[CVE-2024-27351] - potential ReDoS in `django.utils.text.Truncator.words()`.
+** Packages updated: `automation-controller: python-django`.
+//AAP-22332 
+* link:https://access.redhat.com/security/cve/CVE-2024-28219[CVE-2024-28219] - buffer overflow in `_imagingcms.c`.
+** Packages updated: `python-pillow`.
+//AAP-21817 & AAP-21818 & AAP-21816
+* link:https://access.redhat.com/security/cve/CVE-2024-28849[CVE-2024-28849] - possible credential leak.
+** Packages updated: `python-galaxy-ng: follow-redirects`, `python3x-galaxy-ng: follow-redirects`, and `automation-hub: follow-redirects`.
+//AAP-23660 & AAP-23653
+* link:https://access.redhat.com/security/cve/CVE-2024-30251[CVE-2024-30251] - DoS when trying to parse malformed POST requests. 
+** Packages updated: `python-aiohttp: aiohttp` and `automation-controller: aiohttp`.
+//AAP-23393 & AAP-23394
+* link:https://access.redhat.com/security/cve/CVE-2024-32879[CVE-2024-32879] - improper handling of case sensitivity in `social-auth-app-django`.
+** Packages updated: `python-social-auth-app-django: python-social-auth` and `python3x-social-auth-app-django: python-social-auth`.
+//AAP-23795 & AAP-23797
+* link:https://access.redhat.com/security/cve/CVE-2024-34064[CVE-2024-34064] - `xmlattr` filter accepts keys containing non-attribute characters.
+** Packages updated: `python-jinja2: jinja2` and `python3x-jinja2: jinja2`.
+//AAP-24453 
+* link:https://access.redhat.com/security/cve/CVE-2024-35195[CVE-2024-35195] - additional requests to the same host ignore cert verification.
+** Packages updated: `python-requests: requests`.
+//AAP-22832 
+* link:https://access.redhat.com/security/cve/CVE-2024-3651[CVE-2024-3651] - potential DoS with resource consumption through specially crafted inputs to `idna.encode()`.
+** Packages updated: `python-idna`.
+//AAP-22858 & AAP-22857 & AAP-22856
+* link:https://access.redhat.com/security/cve/CVE-2024-3772[CVE-2024-3772] - ReDoS with a crafted email string.
+** Packages updated: `python-pydantic`, `python3x-pydantic: python-pydantic`, and `automation-controller: python-pydantic`.
+//AAP-23574 & AAP-24423
+* link:https://access.redhat.com/security/cve/CVE-2024-4340[CVE-2024-4340] - parsing a heavily nested list leads to a DoS.
+** Packages updated: `python-sqlparse: sqlparse` and `python3x-sqlparse: sqlparse`.
+//AAP-18435 
+* link:https://access.redhat.com/security/cve/CVE-2023-5752[CVE-2023-5752] - Mercurial configuration injection in repository revision when installing with `pip`.
+** Packages updated: `automation-controller: pip`.
+
+//Automation controller
+== {ControllerNameStart}
+
+* Fixed a Redis connection leak on {ControllerName} version 4.5.6 (AAP-24286).
+
+* Fixed the `#!` interpreter directive, also known as shebang, for the Python `uwsgitop` script (AAP-22461).
+
+//Automation hub
+== {HubNameStart}
+
+* With this update, fetching a list of users for a namespace does not include group members (AAH-3121).
+
+* Fixed an issue that caused a "Calculated digest does not equal passed in digest" error when syncing the community repository (AAH-3111). 
+
+* Fixed an issue where syncing a *rh-certified* repository after updating {HubName} to the latest version failed (AAH-3218).
+
+//Event-Driven Ansible
+== {EDAName}
+
+* Added support for the `SAFE_PLUGINS_FOR_PORT_FORWARD` setting for `eda-server` to the installation program (AAP-21620).
+
+* With this update, `eda-server` now opens the ports for a rulebook that has a source plugin that requires inbound connections only if that plugin is allowed in the settings (AAP-17416).
+
+* Fixed an issue where an activation could not be started after reaching a limit of 2048 pods due to a wrong cleanup of volumes (AAP-21065).
+
+* Fixed an issue where some activations failed due a wrong cleanup of volumes (AAP-22132).
+
+* With this release, activation-worker and worker targets now correctly stop worker services independently of other required {EDAName} services (AAP-23735).
+

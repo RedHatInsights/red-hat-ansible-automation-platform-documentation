@@ -1,31 +1,53 @@
-// This is the release notes file for AAP 2.4 async installer release 2.4-6 dated March 01, 2024
+// This is the release notes file for 2.4-6 Bundle installer release
 
 [id="installer-24-6"]
 
-= RHSA-2024:1057 - installer release 2.4-6 - March 01, 2024
+= RHBA-2024:1158 - bundle installer release 2.4-6 - March 6, 2024
 
-link:https://access.redhat.com/errata/RHSA-2024:1057[RHSA-2024:1057]
+link:https://access.redhat.com/errata/RHBA-2024:1158[RHBA-2024:1158]
 
-//Automation hub
-== {HubNameStart}
+== General
+// (AAP-20055)
+* python-django: Django: denial-of-service in intcomma template filter (link:https://access.redhat.com/security/cve/CVE-2024-24680[CVE-2024-24680])
 
-* Displays the download count for each collection in {HubName} (AAP-18298).
+// (AAP-19893)
+* pycryptodomex: pycryptodome: Side-channel leakage for OAEP decryption in PyCryptodome and pycryptodomex (link:https://access.redhat.com/security/cve/CVE-2023-52323[CVE-2023-52323])
+
+// (AAP-19689)
+* python-pygments: pygments: ReDoS in pygments (link:https://access.redhat.com/security/cve/CVE-2022-40896[CVE-2022-40896])
+
+// (AAP-19440)
+* python3x-jinja2: jinja2: HTML attribute injection when passing user input as keys to xmlattr filter (link:https://access.redhat.com/security/cve/CVE-2024-22195[CVE-2024-22195])
+
+// (AAP-19438)
+* python-jinja2: jinja2: HTML attribute injection when passing user input as keys to xmlattr filter (link:https://access.redhat.com/security/cve/CVE-2024-22195[CVE-2024-22195])
+
+// (AAP-18676)
+* python3x-aiohttp: CRLF injection if user controls the HTTP method using aiohttp client (link:https://access.redhat.com/security/cve/CVE-2023-49082[CVE-2023-49082])
+
+// (AAP-18675)
+* python-aiohttp: aiohttp: CRLF injection if user controls the HTTP method using aiohttp client (link:https://access.redhat.com/security/cve/CVE-2023-49082[CVE-2023-49082])
+
+// (AAP-18674)
+* python3x-aiohttp: aiohttp: HTTP request modification (link:https://access.redhat.com/security/cve/CVE-2023-49081[CVE-2023-49081])
+
+// (AAP-18673)
+* python-aiohttp: aiohttp: HTTP request modification (link:https://access.redhat.com/security/cve/CVE-2023-49081[CVE-2023-49081])
+
+// (AAP-18271)
+* python3x-aiohttp: python-aiohttp: Issues in HTTP parser with header parsing (link:https://access.redhat.com/security/cve/CVE-2023-47627[CVE-2023-47627])
+
+// (AAP-18263)
+* python-aiohttp: Issues in HTTP parser with header parsing (link:https://access.redhat.com/security/cve/CVE-2023-47627[CVE-2023-47627])
+
+// (AAP-17909)
+* python3x-pillow: python-pillow: Uncontrolled resource consumption when text length in an `ImageDraw` instance operates on a long text argument (link:https://access.redhat.com/security/cve/CVE-2023-44271[CVE-2023-44271])
+
+// (AAP-17908)
+* python-pillow: Uncontrolled resource consumption when text length in an `ImageDraw` instance operates on a long text argument (link:https://access.redhat.com/security/cve/CVE-2023-44271[CVE-2023-44271])
 
 //Event-Driven Ansible
 == {EDAName}
 
-* Added a parameter to control the number of running activations per {EDAName} worker service (AAP-20672).
-
-* Added `EDA_CSRF_TRUSTED_ORIGINS` which can be set by user input or defined based on the allowed hostnames that are determined by the installer (AAP-20244).
-
-* {EDAName} installation now fails when the pre-existing {ControllerName} version is 4.4.0 or older (AAP-20241).
-
-* Added the `podman_containers_conf_logs_max_size` variable for containers.conf to control the max log size for Podman installations. The default value is 10 MiB (AAP-19775). 
-
-* Setting the {EDAName} debug flag to false now correctly disables Django debug mode (AAP-19577).
-
-* `XDG_RUNTIME_DIR` is now defined when applying {EDAName} linger settings for Podman (AAP-19265).
-
-* Fixed the {EDAName} nginx config when using a custom https port (AAP-19137).
-
-* Some features in this release are classified as Developer Preview, including LDAP authentication functionality for {EDAName}. For more information about these {EDAName} Developer Preview features, see link:https://access.redhat.com/articles/7057663[Event-Driven Ansible - Developer Preview].
+// (AAP-21018)
+* event_driven: {PlatformNameShort}: Insecure WebSocket used when interacting with {EDAName} server (link:https://access.redhat.com/security/cve/CVE-2024-1657[CVE-2024-1657]).
