@@ -47,6 +47,7 @@ include::platform/assembly-controller-isolation-function-variables.adoc[leveloff
 include::platform/assembly-ag-controller-backup-and-restore.adoc[leveloffset=+1]
 //section 28 is a replica of section 18.4.2, so removing it
 //Uses Settings menu. Which may be separate documentation.
+//Usability analytics is no longer supported.
 //include::platform/assembly-ag-controller-usability-analytics.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-troubleshooting.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-tips-and-tricks.adoc[leveloffset=+1]
