@@ -6,7 +6,7 @@
 include::attributes/attributes.adoc[]
 
 // Book Title
-= Containerized Ansible Automation Platform Installation Guide
+= Containerized Ansible Automation Platform installation guide
 
 include::{Boilerplate}[]
 
