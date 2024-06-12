@@ -7,8 +7,8 @@ When you select *HashiCorp Vault Signed SSH* for *Credential Type*, give the fol
 * *Server URL* (required): give the URL used for communicating with HashiCorp Signed SSH's secret management system.
 * *Token*: specify the access token used to authenticate HashiCorp's server.
 * *CA Certificate*: specify the CA certificate used to verify HashiCorp's server.
-* *Approle Role_ID*: specify the ID for Approle authentication.
-* *Approle Secret_ID*: specify the corresponding secret ID for Approle authentication.
+* *AppRole role_id*: specify the ID for AppRole authentication.
+* *AppRole secret_id*: specify the corresponding secret ID for AppRole authentication.
 * *Client Certificate*: specify a PEM-encoded client certificate when using the TLS authentication method, including any required intermediate certificates expected by Hashicorp Vault.
 * *Client Certificate Key*: specify a PEM-encoded certificate private key when using the TLS authentication method.
 * *TLS Authentication Role*: specify the role or certificate name in Hashicorp Vault that corresponds to your client certificate when using the TLS authentication method. 
@@ -25,8 +25,8 @@ If it is not provided, Hashicorp Vault attempts to match the certificate automat
 
 .Additional resources
 
-For more information about Approle authentication method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/approle[Vault documentation for Approle Auth Method].
+For more information about AppRole authentication method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/approle[Vault documentation for AppRole Auth Method].
 
-For more information about the Kubernetes authtication method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/kubernetes[Vault documentation for Kubernetes auth method].
+For more information about the Kubernetes authentication method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/kubernetes[Vault documentation for Kubernetes auth method].
 
 For more information about the TLS certificate auth method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/cert[Vault documentation for TLS certificates auth method].

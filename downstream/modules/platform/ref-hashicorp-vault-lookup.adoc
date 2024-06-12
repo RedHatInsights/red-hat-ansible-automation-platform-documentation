@@ -7,8 +7,8 @@ When you select *HashiCorp Vault Secret Lookup* for *Credential Type*, give the 
 * *Server URL* (required): give the URL used for communicating with HashiCorp Vault's secret management system.
 * *Token*: specify the access token used to authenticate HashiCorp's server.
 * *CA Certificate*: specify the CA certificate used to verify HashiCorp's server.
-* *Approle Role_ID*: specify the ID if using Appprole for authentication.
-* *Approle Secret_ID*: specify the corresponding secret ID for Approle authentication.
+* *AppRole role_id*: specify the ID if using AppRole for authentication.
+* *AppRole secret_id*: specify the corresponding secret ID for AppRole authentication.
 * *Client Certificate*: specify a PEM-encoded client certificate when using the TLS authentication method, including any required intermediate certificates expected by Hashicorp Vault.
 * *Client Certificate Key*: specify a PEM-encoded certificate private key when using the TLS authentication method.
 * *TLS Authentication Role*: specify the role or certificate name in Hashicorp Vault that corresponds to your client certificate when using the TLS authentication method. 
@@ -36,7 +36,7 @@ To test the lookup, create another credential that uses Hashicorp Vault lookup.
 .Additional resources
 For more detail about the LDAP authentication method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/ldap[Vault documentation for LDAP auth method].
 
-For more information about Approle authentication method and its fields, see the
+For more information about AppRole authentication method and its fields, see the
 link:https://developer.hashicorp.com/vault/docs/auth/approle[Vault documentation for AppRole auth method]. 
 
 For more information about the userpass authentication method and its fields, see the link:https://developer.hashicorp.com/vault/docs/auth/userpass[Vault documentation for userpass auth method].

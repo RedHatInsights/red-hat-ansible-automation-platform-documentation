@@ -19,7 +19,7 @@ Depending on how deep or complex the search is, you can have multiple periods in
 . `foobar` This is a simple string (key term) search that finds all instances of the search term using an `icontains` search against the name and description fields. 
 If you use a space between terms, for example `foo bar`, then results that contain both terms are returned. 
 If the terms are wrapped in quotes, for example, `"foo bar"`, {ControllerName} searches for the string with the terms appearing together. 
-
++
 Specific name searches search against the API name. For example, `Management job` in the user interface is `system_job` in the API.
 . `organization:Default` This example shows a Related Field search but without specifying a field to go along with the organization. 
 This is supported by the API and is analogous to a simple string search but carried out against the organization (does an `icontains` search against both the name and description).
