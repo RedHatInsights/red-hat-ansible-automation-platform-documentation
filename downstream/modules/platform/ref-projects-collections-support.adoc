@@ -15,4 +15,9 @@ Roles and collections are locally cached for performance reasons, and you select
 
 image:projects-scm-update-options-update-on-launch-checked.png[update-on-launch]
 
+[NOTE]
+====
+If you also have collections installed in your {ExecEnvShort}, the collections specified in the project's `requirements.yml` file will take precedence when running a job. This precedence applies regardless of the version of the collection. For example, if the collection specified in `requirements.yml` is older than the collection within the {ExecEnvShort}, the collection specified in `requirements.yml` is used.
+====
+
 include::proc-projects-using-collections-with-hub.adoc[leveloffset=+1]
