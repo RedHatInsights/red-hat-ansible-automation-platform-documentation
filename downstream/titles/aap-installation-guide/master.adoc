@@ -6,7 +6,6 @@
 
 include::attributes/attributes.adoc[]
 
-
 // Book Title
 = {PlatformName} Installation Guide
 
@@ -14,8 +13,7 @@ Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commerci
 
 This guide helps you to understand the installation requirements and processes behind installing {PlatformNameShort}. This document has been updated to include information for the latest release of {PlatformNameShort}.
 
-//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::{DocumentationFeedback}[leveloffset=+1]
+include::{Boilerplate}[]
 
 //12/2/22 [dcd: moved following assembly to new planning guide]
 //include::platform/assembly-planning-installation.adoc[leveloffset=+1]

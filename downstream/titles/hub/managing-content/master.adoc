@@ -7,8 +7,7 @@ include::attributes/attributes.adoc[]
 = Managing content in automation hub
 
 
-//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::{DocumentationFeedback}[leveloffset=+1]
+include::{Boilerplate}[]
 
 include::hub/assembly-managing-cert-valid-content.adoc[leveloffset=+1]
 

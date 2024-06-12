@@ -15,8 +15,7 @@ Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commerci
 
 This guide helps you to understand the installation, migration and upgrade requirements for deploying the {OperatorPlatform} on {OCPShort}.
 
-//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::{DocumentationFeedback}[leveloffset=+1]
+include::{Boilerplate}[]
 
 include::platform/assembly-operator-install-planning.adoc[leveloffset=+1]
 

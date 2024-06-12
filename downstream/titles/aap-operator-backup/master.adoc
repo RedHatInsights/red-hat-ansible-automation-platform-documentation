@@ -15,8 +15,7 @@ Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commerci
 Use the procedures in this guide to create backup resources that can be used for recovering your {PlatformName} deployment in the event of a failure.
 
 //Downstream only content
-//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
-include::{DocumentationFeedback}[leveloffset=+1]
+include::{Boilerplate}[]
 
 include::platform/assembly-aap-backup-recovery.adoc[leveloffset=+1]
 

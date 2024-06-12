@@ -1,0 +1,4 @@
+// Removing the following module from AAP docs front matter because the
+// docs.redhat.com site already includes a similar statement.
+// include::making-open-source-more-inclusive.adoc[leveloffset=+1]
+include::{DocumentationFeedback}[leveloffset=+1]

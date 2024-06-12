@@ -4,9 +4,8 @@ include::attributes/attributes.adoc[]
 
 = {PlatformName} Release Notes
 
-//include::aap-common/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
-include::{DocumentationFeedback}[leveloffset=+1]
+include::{Boilerplate}[]
 
 include::topics/platform-intro.adoc[leveloffset=+1]
 
