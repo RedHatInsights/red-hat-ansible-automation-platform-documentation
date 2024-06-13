@@ -2,9 +2,9 @@
 
 [id="installer-xx-xx"]
 
-= RHSA-XXXX:XXXX - bundle installer release x.x-x - <month date, year>
+= RHBA-XXXX:XXXX - bundle installer release x.x-x - <month date, year>
 
-link:https://access.redhat.com/errata/<errata advisory link>[RHSA-XXXX:XXXX]
+link:https://access.redhat.com/errata/<errata advisory link>[RHBA-XXXX:XXXX]
 
 == Related RPM releases
 

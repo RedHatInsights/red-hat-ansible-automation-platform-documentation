@@ -1,0 +1,17 @@
+// This table contains the component/package versions per bundle installer release 
+
+.Component versions per installation bundle
+//cols="a,a" formats the columns as AsciiDoc allowing for AsciiDoc syntax
+[cols="2a,3a", options="header"]
+|===
+| Installation bundle | Component versions
+
+| xref:installer-24-7[2.4-7] + 
+June 12, 2024  | 
+* `ansible-automation-platform-setup` 2.4-7
+* `ansible-core` 2.15.11
+* {ControllerNameStart} 4.5.7
+* {HubNameStart} 4.9.2
+* {EDAName} 1.0.7
+
+|===

@@ -2,7 +2,7 @@
 
 .Component versions per errata advisory
 //cols="a,a" formats the columns as AsciiDoc allowing for AsciiDoc syntax
-[cols="a,a",options="header"]
+[cols="2a,3a", options="header"]
 |===
 | Errata advisory | Component versions
 

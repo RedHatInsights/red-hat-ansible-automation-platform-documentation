@@ -1,0 +1,15 @@
+// This is the release notes for 2.4-7 bundle installer release
+
+[id="installer-24-7"]
+
+= RHBA-2024:3871 - bundle installer release 2.4-7 - June 12, 2024
+
+link:https://access.redhat.com/errata/RHBA-2024:3871[RHBA-2024:3871]
+
+== Related RPM releases
+
+* xref:rpm-24-7[RHSA-2024:3781 - Security Advisory - June 10, 2024]
+
+== Related container releases
+
+* link:https://access.redhat.com/errata/RHBA-2024:3782[RHBA-2024:3782 - Bug Fix Advisory - June 10, 2024]
