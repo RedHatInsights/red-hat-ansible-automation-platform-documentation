@@ -7,7 +7,7 @@ include::attributes/attributes.adoc[]
 :analytics_automation_savings:
 
 [[analytics_automation_savings]]
-= Evaluating your Automation controller job runs using the Job Explorer
+= Evaluating your automation controller job runs using the job explorer
 
 include::{Boilerplate}[]
 

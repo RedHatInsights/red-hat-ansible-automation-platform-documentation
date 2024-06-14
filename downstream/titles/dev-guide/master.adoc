@@ -7,7 +7,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= {PlatformName} Creator Guide
+= Red Hat Ansible Automation Platform creator guide
 
 include::{Boilerplate}[]
 

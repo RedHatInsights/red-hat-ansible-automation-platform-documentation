@@ -9,7 +9,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Automation Controller User Guide
+= Automation controller user guide
 
 Thank you for your interest in {PlatformName} {ControllerName}.
 {ControllerNameStart} helps teams manage complex multitiered deployments by adding control, knowledge, and delegation to Ansible-powered environments.

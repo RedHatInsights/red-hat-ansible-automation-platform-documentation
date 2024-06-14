@@ -8,7 +8,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Red Hat Ansible Automation Platform Operations Guide
+= Red Hat Ansible Automation Platform operations guide
 
 After installing Red Hat Ansible Automation Platform, your system might need extra configuration to ensure your deployment runs smoothly. This guide provides procedures for configuration tasks that you can perform after installing {PlatformName}.
 

@@ -7,7 +7,7 @@ include::attributes/attributes.adoc[]
 
 
 // Book Title
-= Red Hat Ansible Security Automation Guide
+= Red Hat Ansible security automation guide
 
 include::{Boilerplate}[]
 

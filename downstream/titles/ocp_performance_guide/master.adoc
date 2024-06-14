@@ -8,15 +8,15 @@ include::attributes/attributes.adoc[]
 :context: ocp-performance
 
 // Book Title
-= Red Hat Ansible Automation Platform Performance Considerations for Operator Based Installations
+= Red Hat Ansible Automation Platform performance considerations for operator-based installations
 
-Deploying applications to a container orchestration platform such as {OCP} provides a number of advantages from an operational perspective. 
+Deploying applications to a container orchestration platform such as {OCP} provides a number of advantages from an operational perspective.
 For example, an update to the base image of an application can be made through a simple in-place upgrade with little to no disruption.
 Upgrading the required operating system of an application deployed to traditional virtual machines can be a much more disruptive and risky process.
 
-Although application and operator developers can provide many options to {OCPShort} users regarding the deployment of the application, these configurations must be provided by the end user because they are dependent on the configuration of {OCPShort}. 
+Although application and operator developers can provide many options to {OCPShort} users regarding the deployment of the application, these configurations must be provided by the end user because they are dependent on the configuration of {OCPShort}.
 
-For example, use of node labels in the Openshift cluster can help ensure different workloads are run on specific nodes. 
+For example, use of node labels in the Openshift cluster can help ensure different workloads are run on specific nodes.
 This type of configuration must be provided by the user as the {PlatformNameShort} Operator has no way of inferring this.
 
 include::{Boilerplate}[]
@@ -25,4 +25,3 @@ include::platform/assembly-pod-spec-modifications.adoc[leveloffset=+1]
 include::platform/assembly-control-plane-adjustments.adoc[leveloffset=+1]
 include::platform/assembly-specify-dedicated-nodes.adoc[leveloffset=+1]
 include::platform/assembly-configure-controller-OCP.adoc[leveloffset=+1]
-
