@@ -12,6 +12,7 @@ This can lead to playbook failures if the limit is mandatory for the playbook th
 
 .Procedure
 
+. From the navigation panel, select {MenuAETemplates}.
 . On the *Templates* list view, select *Create workflow job template* from the *Create template* list.
 +
 //image::ug-create-new-wf-template.png[Create workflow template]

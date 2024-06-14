@@ -22,10 +22,11 @@ Spawned groups are top-level and can still have child groups.
 All of these spawned groups can have hosts.
 ====
 
-Use the following procedure to create a new group for an inventory:
+//Use the following procedure to create a new group for an inventory:
 
 .Procedure
 //[ddacosta] Groups is a tab selection and not a menu. Only use the menu and btn macros for those specific elements; otherwise just bold the selection
+. From the navigation panel, select {MenuInfrastructureInventories}.
 . Select the Inventory name you want to add groups to.
 . In the Inventory *Details* page, select the *Groups* tab.
 . Click btn:[Create group] to open the *Create new group* window.
@@ -40,4 +41,4 @@ Use the following procedure to create a new group for an inventory:
 Enter variables by using either JSON or YAML syntax.
 Use the radio button to toggle between the two.
 . Click btn:[Save].
-. When you have added a group to a template, the *Group details* page is displayed.
+. When you have added a group to a template, the Group *Details* page is displayed.

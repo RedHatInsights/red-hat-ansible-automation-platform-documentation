@@ -2,7 +2,7 @@
 
 = Getting started with OAuth Applications
 
-From the navigation panel, select {MenuAEAdminOauthApps}.
+From the navigation panel, select {MenuAMAdminOauthApps}.
 The *OAuth Applications* page displays a searchable list of all available applications currently managed by {PlatformNameShort} and can that you can sort by *Name*.
 
 //image:apps-list-view-examples.png[Applications- with example apps]

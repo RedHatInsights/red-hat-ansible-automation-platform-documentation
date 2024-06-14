@@ -6,6 +6,9 @@ Use the following procedure to configure an {Azure} Resource Manager-sourced inv
 
 .Procedure
 //[ddacosta] Rewrote this according to style for drop-down lists; see Usage and highlighting for interface elements in the IBM Style Guide
+. From the navigation panel, select {MenuInfrastructureInventories}.
+. Select the inventory name you want a source to and click the *Sources* tab.
+. Click btn:[Add source].
 . In the *Add new source* page, select *Microsoft Azure Resource Manager* from the *Source* list.
 . The *Add new source* window expands with the required *Credential* field.
 Choose from an existing Azure Credential.

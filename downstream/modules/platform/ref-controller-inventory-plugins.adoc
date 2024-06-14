@@ -14,6 +14,7 @@ In {Controllername} v4.4, you can provide the inventory plugin configuration dir
 * xref:proc-controller-inv-source-openstack[OpenStack]
 * xref:proc-controller-inv-source-rh-virt[Red Hat Virtualization]
 * xref:proc-controller-inv-source-aap[{PlatformName}]
+* xref:proc-controller-inv-source-terraform[Terraform State]
 
 Newly created configurations for inventory sources contain the default plugin configuration values. 
 If you want your newly created inventory sources to match the output of a legacy source, you must apply a specific set of configuration values for that source. 
@@ -23,4 +24,4 @@ format.
 For more information about sources and their templates, see xref:controller-inventory-templates[Supported inventory plugin templates].
 
 `source_vars` that contain `plugin: foo.bar.baz` as a top-level key are replaced with the fully-qualified inventory plugin name at runtime based on the `InventorySource` source. 
-For example, if ec2 is selected for the `InventorySource` then, at run-time, plugin is  set to `amazon.aws.aws_ec2`.
+For example, if you select ec2 for the `InventorySource` then, at run-time, plugin is  set to `amazon.aws.aws_ec2`.

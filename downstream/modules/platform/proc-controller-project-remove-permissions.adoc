@@ -6,6 +6,6 @@ Remove roles for a particular user.
 
 .Procedure
 . From the navigation panel, select  {MenuAEProjects}. 
-. Select the project that you want to update and click the *Access* tab.
+. Select the project that you want to update and click the *User Access* or *Team Access* tab.
 . Click the image:disassociate.png[Disassociate,10,10] icon next to the user role in the *Roles* column.
 . Click btn:[Delete] in the confirmation window to confirm the disassociation.

@@ -2,10 +2,13 @@
 
 = {AWS} EC2
 
-Use the following procedure to configure an AWS EC2-sourced inventory,
+Use the following procedure to configure an AWS EC2-sourced inventory.
 
 .Procedure
 //[ddacosta] Rewrote this according to IBM style: Refer to a drop-down list by its label, followed by list.
+. From the navigation panel, select {MenuInfrastructureInventories}.
+. Select the inventory name you want a source to and click the *Sources* tab.
+. Click btn:[Add source].
 . In the *Add new source* page, select *Amazon EC2* from the *Source* list.
 . The *Add new source* window expands with additional fields.
 Enter the following details:

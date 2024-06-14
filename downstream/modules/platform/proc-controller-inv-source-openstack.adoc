@@ -5,6 +5,9 @@
 Use the following procedure to configure an OpenStack-sourced inventory.
 
 .Procedure
+. From the navigation panel, select {MenuInfrastructureInventories}.
+. Select the inventory name you want a source to and click the *Sources* tab.
+. Click btn:[Add source].
 . In the *Add new source* page, select *OpenStack* from the *Source* list.
 . The *Add new Source* window expands with the required *Credential* field.
 Choose from an existing OpenStack Credential.

@@ -3,7 +3,10 @@
 = SCM Type - Configuring playbooks to use Red Hat Insights
 
 .Procedure
-. In the project *Details* page, select *Red Hat Insights* from the *Source Control Type* menu.
+. From the navigation panel, select {MenuAEProjects}.
+. Click the project name you want to use.
+. In the project *Details* tab, click btn:[Edit project].
+. Select *Red Hat Insights* from the *Source Control Type* menu.
 . In the *Credential* field, select the appropriate credential for use with Insights, as Red Hat Insights requires a credential for authentication. 
 . Optional: In the *Options* field, select the launch behavior, if applicable:
 
@@ -19,4 +22,4 @@ cache previous project synchronizations for a certain number of seconds, to avoi
 +
 //image:projects-create-scm-insights.png[SCM insights]
 
-. Click btn:[Create project].
+. Click btn:[Save project].

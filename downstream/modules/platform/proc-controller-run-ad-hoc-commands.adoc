@@ -10,7 +10,9 @@ Playbooks can also glue many other operations together.
 Use the following procedure to run an ad hoc command:
 
 .Procedure
-. Select an inventory source from the list of hosts or groups. 
+. From the navigation panel, select {MenuInfrastructureInventories}.
+. Select the inventory name you want to run an ad hoc command with.
+. Select an inventory source from the *Hosts* or *Groups* tab. 
 The inventory source can be a single group or host, a selection of many hosts, or a selection of many groups.
 +
 //image:inventories-add-group-host-added.png[ad hoc-commands-inventory-home]

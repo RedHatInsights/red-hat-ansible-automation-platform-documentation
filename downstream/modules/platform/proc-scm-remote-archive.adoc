@@ -6,7 +6,10 @@ Playbooks that use a remote archive enable projects to be based on a build proce
 containing all the requirements for that project in a single archive.
 
 .Procedure
-. In the project *Details* page, select *Remote Archive* from the *Source Control Type* menu.
+. From the navigation panel, select {MenuAEProjects}.
+. Click the project name you want to use.
+. In the project *Details* tab, click btn:[Edit project].
+. Select *Remote Archive* from the *Source Control Type* menu.
 . Enter the appropriate details into the following fields:
 
 * *Source Control URL* - requires a URL to a remote archive, such as a _GitHub Release_ or a build artifact stored in _Artifactory_ and unpacks it into
@@ -28,4 +31,4 @@ update.
 Since this source control type is intended to support the concept of unchanging artifacts, it is advisable to disable Galaxy integration (for roles, at a minimum).
 ====
 
-. Click btn:[Create project].
+. Click btn:[Save project].

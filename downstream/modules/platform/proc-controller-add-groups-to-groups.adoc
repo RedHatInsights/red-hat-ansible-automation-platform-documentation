@@ -2,13 +2,12 @@
 
 = Adding groups within groups
 
-When you have added a group to a template, the *Group details* page is displayed.
+When you have added a group to a template, the Group *Details* page is displayed.
 
 .Procedure
 
 . Select the *Related Groups* tab.
-. Click btn:[Add].
-. Select whether to add a group that already exists in your configuration or create a new group.
+. Click btn:[Existing group] to add a group that already exists in your configuration or btn:[New group] to create a new group.
 . If creating a new group, enter the appropriate details into the required and optional fields:
 
 * *Name* (required):

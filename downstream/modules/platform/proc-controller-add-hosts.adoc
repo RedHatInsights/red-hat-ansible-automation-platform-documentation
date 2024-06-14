@@ -5,6 +5,7 @@
 You can configure hosts for the inventory and for groups and groups within groups.
 
 .Procedure
+. From the navigation panel, select {MenuInfrastructureInventories}.
 . Select the inventory name you want to add groups to.
 . In the Inventory *Details* page, select the *Hosts* tab.
 . Click btn:[Create host].
@@ -32,7 +33,7 @@ Use the radio button to toggle between the two.
 +
 //image:inventories-add-group-host-added.png[Inventories add group host]
 +
-If you choose to add an existing host, available hosts appear in a separate selection window.
+If you select to add an existing host, available hosts appear in a separate selection window.
 //+
 //image:inventories-add-existing-host.png[Inventories add existing host]
 +
@@ -55,16 +56,16 @@ This opens the *Details* tab of the selected host.
 //image:inventories-add-group-host-details.png[Inventories add group host details]
 
 . Select the *Groups* tab to configure groups for the host.
-. Click btn:[Add] to associate the host with an existing group.
+. Click btn:[Associate groups] to associate the host with an existing group.
 Available groups appear in a separate selection window.
 +
 //image:inventories-add-group-hosts-add-groups.png[image]
 
-. Select the groups to associate with the host and click btn:[Save].
+. Select the groups to associate with the host and click btn:[Confirm].
 +
 When a group is associated, it is displayed in the list of groups associated with the host.
 
-. If a host was used to run a job, you can view details about those jobs in the *Completed Jobs* tab of the host.
+. If you used a host to run a job, you can view details about those jobs in the *Completed Jobs* tab of the host.
 . Click btn:[Expanded] to view details about each job.
 +
 //image:inventories-add-host-view-completed-jobs.png[image]

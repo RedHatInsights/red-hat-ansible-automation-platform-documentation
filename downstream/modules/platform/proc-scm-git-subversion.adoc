@@ -3,20 +3,23 @@
 = SCM Types - Configuring playbooks to use Git and Subversion
 
 .Procedure
-. In the project *Details* tab, select the appropriate option (Git or Subversion) from the *Source Control Type* menu.
+. From the navigation panel, select {MenuAEProjects}.
+. Click the project name you want to use.
+. In the project *Details* tab, click btn:[Edit project].
+. Select the appropriate option (Git or Subversion) from the *Source Control Type* menu.
 +
 //image:projects-create-scm-project.png[Select scm]
 
 . Enter the appropriate details into the following fields:
 
-* *SCM URL* - See an example in the tooltip .
-* Optional: *SCM Branch/Tag/Commit*: Enter the SCM branch, tags, commit hashes, arbitrary refs, or revision number (if applicable) from the source control (Git or Subversion) to checkout. 
+* *Source Control URL* - See an example in the tooltip .
+* Optional: *Source Control Branch/Tag/Commit*: Enter the SCM branch, tags, commit hashes, arbitrary refs, or revision number (if applicable) from the source control (Git or Subversion) to checkout. 
 Some commit hashes and references might not be available unless you also provide a custom refspec in the next field. 
 If left blank, the default is `HEAD` which is the last checked out Branch, Tag, or Commit for this project.
-* *SCM Refspec* - This field is an option specific to git source control and only advanced users familiar and comfortable with git should specify which references to download from the remote repository. 
+* *Source Control Refspec* - This field is an option specific to git source control and only advanced users familiar and comfortable with git should specify which references to download from the remote repository. 
 For more information, see xref:controller-job-branch-overriding[Job branch overriding].
-* *Source Control Credential* - If authentication is required, select the appropriate source control credential
-.  Optional: *SCM Update Options* - select the launch behavior, if applicable:
+* *Source Control Credential* - If authentication is required, select the appropriate source control credential.
+.  Optional: *Options* - select the launch behavior, if applicable:
 * *Clean* - Removes any local modifications before performing an update.
 * *Delete* - Deletes the local repository in its entirety before  performing an update. 
 Depending on the size of the repository this can significantly increase the amount of time required to complete an update.
@@ -29,7 +32,7 @@ In addition, to avoid job overflows if jobs are spawned faster than the project 
 For more information, see xref:controller-job-branch-overriding[Job branch overriding].
 +
 image:projects-create-scm-project-branch-override-checked.png[Override options]
-. Click *Save project* to save your project.
+. Click btn:[Save project].
 
 [TIP]
 ====

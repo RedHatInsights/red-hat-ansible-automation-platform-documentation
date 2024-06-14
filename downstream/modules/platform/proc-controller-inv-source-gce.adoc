@@ -2,9 +2,12 @@
 
 = Google Compute Engine
 
-Use the following procedure to configure a Google-sourced inventory.
+Use the following procedure to configure a Google-sourced inventory:
 
 .Procedure
+. From the navigation panel, select {MenuInfrastructureInventories}.
+. Select the inventory name you want a source to and click the *Sources* tab.
+. Click btn:[Add source]
 . In the *Add new source* page, select *Google Compute Engine* from the *Source* list.
 . The *Add new source* window expands with the required *Credential* field.
 Choose from an existing GCE Credential.

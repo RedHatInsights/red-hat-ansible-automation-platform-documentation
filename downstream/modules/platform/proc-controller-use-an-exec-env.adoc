@@ -36,7 +36,7 @@ If you do not set a typing error for pull, the value defaults to *Only pull the 
 +
 //image:ee-new-ee-form-filled.png[New {ExecEnvShort}]
 
-. Click btn:[Save].
+. Click btn:[Create execution environment].
 +
 Your newly added {ExecEnvShort} is ready to be used in a job template.
 +

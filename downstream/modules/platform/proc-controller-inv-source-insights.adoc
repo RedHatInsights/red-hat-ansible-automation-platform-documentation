@@ -5,6 +5,9 @@
 Use the following procedure to configure a Red Hat Insights-sourced inventory.
 
 .Procedure
+. From the navigation panel, select {MenuInfrastructureInventories}.
+. Select the inventory name you want a source to and click the *Sources* tab.
+. Click btn:[Add source].
 . In the *Add new source* page, select *Red Hat Insights* from the *Source* list.
 . The *Add new source* window expands with the required *Credential* field.
 Choose from an existing Red Hat Insights Credential.

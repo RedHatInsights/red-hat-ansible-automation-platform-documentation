@@ -13,7 +13,7 @@ Note that the following fields require specific Red Hat Insights related entries
 
 * *Name*: Enter the name for your Red Hat Insights project.
 * Optional: *Description*: Enter a description for the project.
-* *Organization*: Enter the name of the organization with which the credential is associated, or click the search (image:magnify.png[Search,15,15]) icon and select it from the *Select organization* window.
+* *Organization*: Enter the name of the organization with which the credential is associated, or click the search image:search.png[Search,15,15] icon and select it from the *Select organization* window.
 * Optional: *Execution Environment*: The {ExecEnvShort} that is used for jobs that use this project.
 * *Source Control Type*: Select *Red Hat Insights*.
 * Optional: *Content Signature Validation Credential*: Enable content signing to verify that the content has remained secure when a project is synced.

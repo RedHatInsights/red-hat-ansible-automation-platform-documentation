@@ -10,7 +10,7 @@ Creating an application with the Authorization Code grant type is the preferred 
 For example, revoking all tokens associated with that application.
 
 .Procedure
-. From the navigation panel, select {MenuAEAdminOauthApps}.
+. From the navigation panel, select {MenuAMAdminOauthApps}.
 . Click btn:[Create application].
 The *Create Application* page opens.
 +

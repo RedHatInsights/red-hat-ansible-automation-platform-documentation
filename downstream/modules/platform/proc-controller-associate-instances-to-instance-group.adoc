@@ -5,7 +5,7 @@
 .Procedure
 
 . Select the *Instances* tab on the *Details* page of an Instance Group.
-. Click btn:[Associate instance].
+. Click btn:[Associate].
 . Click the checkbox next to one or more available instances from the list to select the instances you want to associate with the instance group and click btn:[Confirm]
 //+
 //image::instance-group-assoc-instances.png[Associate instances]

@@ -9,6 +9,7 @@ Adding a source to an inventory only applies to standard inventories.
 //Smart inventories inherit their source from the standard inventories they are associated with.
 
 .Procedure
+. From the navigation panel, select {MenuInfrastructureInventories}.
 . Select the inventory name you want to add a source to.
 . In the Inventory *Details* page, select the *Sources* tab.
 . Click btn:[Add source]. This opens the *Add new source* window.
@@ -88,6 +89,8 @@ Use the following procedure to configure notifications for the source:
 
 .Procedure
 
+. From the navigation panel, select {MenuInfrastructureInventories}.
+. Select the inventory name you want to configure notifications for.
 . In the inventory *Details* page, select the *Notifications* tab.
 +
 [NOTE]

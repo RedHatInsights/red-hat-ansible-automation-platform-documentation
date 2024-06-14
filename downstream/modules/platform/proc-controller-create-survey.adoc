@@ -4,6 +4,8 @@
 
 .Procedure
 
+. From the navigation panel, select {MenuAETemplates}.
+. Select the job template you want to create a survey for.
 . From the *Survey* tab, click btn:[Create survey question].
 . A survey can consist of any number of questions. 
 For each question, enter the following information:

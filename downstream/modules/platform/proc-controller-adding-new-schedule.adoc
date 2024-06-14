@@ -2,13 +2,13 @@
 
 = Adding a new schedule
 
-You can create schedules from a template, project, or inventory source, as well as directly on the main *Schedules* page. 
+You can create schedules from a template, project, or inventory source, and directly on the main *Schedules* page. 
 
 To create a new schedule on the *Schedules* page:
 
 .Procedure
 
-. On the navigation panel, select {MenuAESchedules}.
+. From the navigation panel, select {MenuAESchedules}.
 . Click btn:[Create schedule]. This opens the *Create Schedule* window.
 +
 image::ug-generic-create-schedule.png[Create schedule]

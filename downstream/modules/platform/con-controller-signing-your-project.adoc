@@ -34,7 +34,7 @@ Use `.` to indicate the current working directory.
 To sign content, create a `MANIFEST.in` file in the project root directory that tells `ansible-sign` which files to protect. 
 
 Internally, `ansible-sign` uses the `distlib.manifest` module of Python's distlib library, therefore `MANIFEST.in` must follow the syntax that this library specifies. 
-For an explanation of the 'MANIFEST.in` file directives, see the link:https://packaging.python.org/en/latest/guides/using-manifest-in/#manifest-in-commands[Python Packaging User Guide].
+For an explanation of the `MANIFEST.in` file directives, see the link:https://setuptools.pypa.io/en/latest/userguide/miscellaneous.html[Python Packaging User Guide].
 
 In the sample project, two directives are included, resulting in the following `MANIFEST.in` file:
 

@@ -5,7 +5,7 @@
 {ControllerNameStart} supports integration with Red Hat Insights. 
 
 When a host is registered with Red Hat Insights, it is scanned continually for vulnerabilities and known configuration conflicts.
-Each problem identified can have an associated fix in the form of an Ansible playbook. 
+Each problem identified can have an associated fix in the form of an Ansible Playbook. 
 
 Red Hat Insights users create a maintenance plan to group the fixes and can create a playbook to mitigate the problems. 
 {ControllerNameStart} tracks the maintenance plan playbooks through a Red Hat Insights project.

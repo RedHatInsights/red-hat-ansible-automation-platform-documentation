@@ -14,7 +14,7 @@ The plugin parses a terraform state file and add hosts for AWS EC2, GCE, and {Az
 ** Enter the appropriate details according to the steps in xref:proc-controller-adding-a-project[Adding a new project].
 . From the navigational panel, select {MenuInfrastructureInventories}.
 . Select the inventory that you want to add a source to.
-. In the *Sources* tab, click btn:[Add Source].
+. In the *Sources* tab, click btn:[Add source].
 . From the menu:Source[] menu, select *Terraform State*.
 * The *Add new source* window expands with the required *Credential* field. 
 +
