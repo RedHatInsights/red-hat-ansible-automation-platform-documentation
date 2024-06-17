@@ -6,6 +6,6 @@
 [role="_abstract"]
 To upgrade to a newer version of {OperatorPlatform}, it is recommended that you do the following:
 
-* Create AutomationControllerBackup and AutomationHubBackup objects.
+* Create AutomationControllerBackup and AutomationHubBackup objects. For help with this see link:{BaseURL}red_hat_ansible_automation_platform/{PlatformVers}/html-single/red_hat_ansible_automation_platform_operator_backup_and_recovery_guide/index#aap-backup-recommendations[Creating Red Hat Ansible Automation Platform backup resources]
 //See (Backup and Restore) for information on creating backup objects. [add link to new backup and restore doc when complete]
 * Review the release notes for the new {PlatformNameShort} version to which you are upgrading and any intermediate versions.
