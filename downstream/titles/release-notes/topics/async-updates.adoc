@@ -1,0 +1,18 @@
+
+= Asynchronous updates
+
+Security, bug fix, and enhancement updates for {PlatformNameShort} {PlatformVers} are released as asynchronous erratas. All {PlatformNameShort} erratas are available on the link:{PlatformDownloadUrl}[Download {PlatformName}] page in the Customer Portal. 
+
+Red Hat Customer Portal users can enable errata notifications in the account settings for Red Hat Subscription Management (RHSM). When errata notifications are enabled, users are notified through email whenever new erratas relevant to their registered systems are released.
+
+[NOTE]
+====
+Red Hat Customer Portal user accounts must have systems registered and consuming {PlatformNameShort} entitlements for {PlatformNameShort} errata notification emails to generate.
+====
+
+The Asynchronous updates section of the release notes will be updated over time to give notes on enhancements and bug fixes for asynchronous errata releases of {PlatformNameShort} 2.4.
+
+[role="_additional-resources"]
+.Additional resources
+* For more information about asynchronous errata support in {PlatformNameShort}, see link:https://access.redhat.com/support/policy/updates/ansible-automation-platform[{PlatformName} Life Cycle].
+* For information about Common Vulnerabilities and Exposures (CVEs), see link:https://www.redhat.com/en/topics/security/what-is-cve[What is a CVE?] and link:https://access.redhat.com/security/security-updates/cve[Red Hat CVE Database].

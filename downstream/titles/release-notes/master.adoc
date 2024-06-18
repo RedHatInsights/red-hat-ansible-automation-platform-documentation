@@ -21,7 +21,8 @@ include::topics/operator-240.adoc[leveloffset=+1]
 
 include::topics/docs-24.adoc[leveloffset=+1]
 
-== Asynchronous updates
+// == Asynchronous updates
+include::topics/async-updates.adoc[leveloffset=+1]
 
 === RPM releases
 
