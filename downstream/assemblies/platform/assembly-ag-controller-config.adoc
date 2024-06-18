@@ -18,7 +18,7 @@ include::platform/proc-controller-configure-system.adoc[leveloffset=+1]
 //include::platform/proc-controller-configure-user-interface.adoc[leveloffset=+1]
 //This doesn't exisat in the documented form
 //include::platform/proc-controller-configure-usability-analytics.adoc[leveloffset=+2]
-include::platform/con-controller-custom-logos.adoc[leveloffset=+2]
+include::platform/con-controller-custom-logos.adoc[leveloffset=+1]
 include::platform/con-controller-additional-settings.adoc[leveloffset=+1]
 //This should be in Hala's documentation
 //include::platform/proc-controller-obtaining-subscriptions.adoc[leveloffset=+1]

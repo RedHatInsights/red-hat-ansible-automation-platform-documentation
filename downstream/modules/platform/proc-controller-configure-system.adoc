@@ -14,7 +14,7 @@ The *System* tab enables you to complete the following actions:
 
 .Procedure
 
-. From the navigation panel, select {MenuAEAdminSettings}.
+. From the navigation panel, select {MenuSetSystem}.
 . Click btn:[Edit].
 //. Choose from the following *System* options:
 //* *Miscellaneous System settings*: Enable activity streams, specify the default {ExecEnvShort}, define the base URL for the {ControllerName} host, enable {ControllerName} administration alerts, set user visibility, define analytics, specify usernames and passwords, and configure proxies.

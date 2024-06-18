@@ -9,8 +9,8 @@ You might find that you need to customize your playbook runs to expose additiona
 
 To fine tune your use of job isolation, there are certain variables that can be set.
 
-By default, {ControllerName} uses the system's `/tmp` directory as its staging area. 
-You can change this in the *Job Execution Path* field on the *Jobs settings* page, or in the REST API at `/api/v2/settings/jobs`, using:
+On operator-based installations, by default, {ControllerName} uses the system's `/tmp` directory as its staging area. 
+You can change this in the *Job execution path* field on the *Job settings* page, or access it through the REST API at `/api/v2/settings/jobs`, using:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

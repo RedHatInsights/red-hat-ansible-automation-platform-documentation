@@ -2,7 +2,7 @@
 
 = Important changes
 
-All {ControllerName} 4.4 Job templates have a single interface for credential assignment.
+{ControllerNameStart} Job templates have a single interface for credential assignment.
 
 From the API endpoint:
 
@@ -11,7 +11,7 @@ From the API endpoint:
 GET /api/v2/job_templates/N/credentials/
 ----
 
-You can associate and disassociate credentials using `POST` requests, similar to the behavior in the deprecated `extra_credentials` endpoint:
+You can also associate and disassociate credentials using `POST` requests, similar to the behavior in the deprecated `extra_credentials` endpoint:
 
 [literal, options="nowrap" subs="+attributes"]
 ----

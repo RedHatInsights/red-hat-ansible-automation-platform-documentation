@@ -2,7 +2,7 @@
 
 = Install and configure
 
-Provisioning new instances involves updating the `inventory` file and re-running the setup playbook. 
+Provisioning new instances for a VM-based install involves updating the `inventory` file and re-running the setup playbook. 
 It is important that the inventory file has all passwords and information used when installing the cluster or other instances might be reconfigured. 
 The inventory file has a single inventory group, `automationcontroller`.
 

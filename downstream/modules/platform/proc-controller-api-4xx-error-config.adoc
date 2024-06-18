@@ -14,7 +14,7 @@ These messages can be configured as required.
 Use the following procedure to modify the default API 4XX errors log message format.
 
 .Procedure
-. From  the navigation panel, select {MenuAEAdminSettings} then select *Logging settings*.
+. From  the navigation panel, select {MenuSetLogging}.
 . On the *Logging settings* page, click btn:[Edit].
 . Modify the field *Log Format For API 4XX Errors*.
 

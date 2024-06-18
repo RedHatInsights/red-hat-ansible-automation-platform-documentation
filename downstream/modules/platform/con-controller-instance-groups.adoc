@@ -14,7 +14,7 @@ During the execution process, instance groups associated with job templates are 
 Instance groups associated with inventories are checked before those associated with organizations.
 Therefore, instance group assignments for the three resources form the hierarchy: 
 
-Job Template > Inventory > Organization
+*Job Template > Inventory > Organization*
 
 Consider the following when working with instance groups:
 

@@ -2,7 +2,7 @@
 
 = Removing Instances
 
-From the *Add Instances page*, you can add, remove or run health checks on your nodes.
+From the *Add instance* page, you can add, remove or run health checks on your nodes.
 
 [NOTE]
 ====

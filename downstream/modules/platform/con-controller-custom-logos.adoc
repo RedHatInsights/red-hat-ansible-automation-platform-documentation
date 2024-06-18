@@ -3,7 +3,7 @@
 = Custom logos and images
 
 {ControllerNameStart} supports the use of a custom logo.
-You can add a custom logo by uploading an image and supplying a custom login message from the *Gateway settings* page. From the navigation panel, select {MenuSetGateway}.
+You can add a custom logo by uploading an image and supplying a custom login message from the *Platform gateway settings* page. From the navigation panel, select {MenuSetGateway}.
 //image::ag-configure-aap-ui.png[Custom logo]
 
 For the best results, use a `.png` file with a transparent background.

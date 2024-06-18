@@ -11,5 +11,5 @@ Best practices dictate collecting logging and auditing centrally rather than rev
 You must configure {ControllerName} to use standard IDs or logging and auditing (Splunk) in your environment. 
 {ControllerName} includes built-in logging integrations such as Elastic Stack, Splunk, Sumologic, and Loggly. 
 
-.Additional resources
-For more information, see xref:assembly-controller-logging-aggregation[Logging and Aggregation].
+//.Additional resources
+//For more information, see xref:assembly-controller-logging-aggregation[Logging and Aggregation].

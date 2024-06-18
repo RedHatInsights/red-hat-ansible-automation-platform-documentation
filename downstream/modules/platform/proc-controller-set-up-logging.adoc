@@ -5,12 +5,10 @@
 Use the following procedure to set up logging to any of the aggregator types.
 
 .Procedure
-. From the navigation panel, select {MenuAEAdminSettings}.
-. Select *Logging settings* from the list of *System* options.
-. On the *Logging settings* screen, click btn:[Edit].
+. From the navigation panel, select {MenuSetLogging}.
+. On the *Logging settings* page, click btn:[Edit].
 . Set the following configurable options:
 
-* *Enable External Logging*: Click the toggle button to *ON* if you want to send logs to an external log aggregator.
 * *Logging Aggregator*: Enter the hostname or IP address that you want to send logs to.
 * *Logging Aggregator Port*: Specify the port for the aggregator if it requires one.
 +
@@ -27,34 +25,40 @@ image:configure-controller-system-logging-types.png[Logging types]
 
 * *Logging Aggregator Username*: Enter the username of the logging aggregator if required.
 * *Logging Aggregator Password/Token*: Enter the password of the logging aggregator if required.
-* *Log System Tracking Facts Individually*: Click the tooltip image:question_circle.png[Help,15,15] icon for additional information, such as whether or not you want to turn it on, or leave it off by default.
-* *Logging Aggregator Protocol*: Click to select a connection type (protocol) to communicate with the log aggregator.
-Subsequent options vary depending on the selected protocol.
-* *Logging Aggregator Level Threshold*: Select the level of severity you want the log handler to report.
-* *TCP Connection Timeout*: Specify the connection timeout in seconds.
-This option is only applicable to HTTPS and TCP log aggregator protocols.
-* *Enable/disable HTTPS certificate verification*: Certificate verification is enabled by default for the HTTPS log protocol.
-Set the toggle to *OFF* if you do not want the log handler to verify the HTTPS certificate sent by the external log aggregator before establishing a connection.
 * *Loggers to Send Data to the Log Aggregator Form*: All four types of data are pre-populated by default.
 Click the tooltip image:question_circle.png[Help,15,15] icon next to the field for additional information on each data type.
 Delete the data types you do not want.
+* *Cluster wide unique identifier*: Use this to uniquely identify instances.
+* *Logging Aggregator Protocol*: Click to select a connection type (protocol) to communicate with the log aggregator.
+Subsequent options vary depending on the selected protocol.
+* *TCP Connection Timeout*: Specify the connection timeout in seconds.
+This option is only applicable to HTTPS and TCP log aggregator protocols.
+* *Logging Aggregator Level Threshold*: Select the level of severity you want the log handler to report.
+* *Maximum number of messages that can be stored in the log action queue*:Defines how large the `rsyslog` action queue can grow in number of messages stored. 
+This can have an impact on memory use. 
+When the queue reaches 75% of this number, the queue starts writing to disk (`queue.highWatermark` in `rsyslog`). 
+When it reaches 90%, `NOTICE`, `INFO`, and `DEBUG` messages start to be discarded (`queue.discardMark` with `queue.discardSeverity=5`).
+* *Maximum disk persistence for rsyslogd action queuing (in GB)*: The amount of data to store (in gigabytes) if an `rsyslog` action takes time to process an incoming message (defaults to 1). 
+Equivalent to the `rsyslogd queue.maxdiskspace` setting on the action (e.g. `omhttp`). 
+It stores files in the directory specified by `LOG_AGGREGATOR_MAX_DISK_USAGE_PATH`.
+* *File system location for rsyslogd disk persistence*: Location to persist logs that should be retried after an outage of the external log aggregator (defaults to `/var/lib/awx`). 
+Equivalent to the `rsyslogd queue.spoolDirectory` setting.
 * *Log Format For API 4XX Errors*: Configure a specific error message. For more information, see xref:proc-controller-api-4xx-error-config[API 4XX Error Configuration].
+
+Set the following options:
+
+* *Log System Tracking Facts Individually*: Click the tooltip image:question_circle.png[Help,15,15] icon for additional information, such as whether or not you want to turn it on, or leave it off by default.
 
 . Review your entries for your chosen logging aggregation.
 The following example is set up for Splunk:
 +
 image:configure-controller-system-logging-splunk-example.png[Splunk logging example]
 
+* *Enable External Logging*: Select this checkbox if you want to send logs to an external log aggregator.
+* *Enable/disable HTTPS certificate verification*: Certificate verification is enabled by default for the HTTPS log protocol.
+Select this checkbox if yoiu want the log handler to verify the HTTPS certificate sent by the external log aggregator before establishing a connection.
+* *Enable rsyslogd debugging*: Select this checkbox to enable high verbosity debugging for `rsyslogd`. 
+Useful for debugging connection issues for external log aggregation.
+
 . Click btn:[Save] or btn:[Cancel] to abandon the changes.
 
-//Following not in published version
-//.Verification
-//. To verify if your configuration is set up correctly, click btn:[Save] then click btn:[Test].
-//. This sends a test log message to the log aggregator using the current logging configuration in .
-//You should check to make sure this test message was received by your external log aggregator.
-
-//[NOTE]
-//====
-//If btn:[Test] button is disabled, it is an indication that the fields are different than their initial values.
-//Save your changes first, and ensure the *Enable External Logging* toggle is set to ON.
-//====

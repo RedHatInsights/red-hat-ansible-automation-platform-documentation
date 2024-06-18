@@ -6,4 +6,4 @@ This logger also includes the common fields in xref:ref-controller-log-message-s
 
 In addition, this contains a `msg` field with the log message.
 Errors contain a separate `traceback` field.
-From the navigation panel, select {MenuAEAdminSettings}. Then select *Logging settings* from the list of *System* options and use the `ENABLE EXTERNAL LOGGING` option to enable or disable the logging components.
+From the navigation panel, select {MenuSetLogging}. On the *Logging Settings* page click btn:[Edit] and use the *ENABLE EXTERNAL LOGGING* option to enable or disable the logging components.

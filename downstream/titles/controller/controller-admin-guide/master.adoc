@@ -16,17 +16,19 @@ Written for DevOps engineers and administrators, the {ControllerName} Administra
 
 include::{Boilerplate}[]
 
-include::platform/assembly-controller-licensing.adoc[leveloffset=+1]
+//include::platform/assembly-controller-licensing.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-start-stop-controller.adoc[leveloffset=+1]
+//Deprecated
 //include::platform/assembly-custom-inventory-scripts.adoc[leveloffset=+1]
 include::platform/assembly-inventory-file-importing.adoc[leveloffset=+1]
-include::platform/assembly-multi-credential-assignment.adoc[leveloffset=+1]
+//include::platform/assembly-multi-credential-assignment.adoc[leveloffset=+1]
 include::platform/assembly-controller-management-jobs.adoc[leveloffset=+1]
 include::platform/assembly-ag-controller-clustering.adoc[leveloffset=+1]
 include::platform/assembly-ag-instance-and-container-groups.adoc[leveloffset=+1]
 include::platform/assembly-controller-instances.adoc[leveloffset=+1]
 include::platform/assembly-controller-topology-viewer.adoc[leveloffset=+1]
 include::platform/assembly-controller-log-files.adoc[leveloffset=+1]
+//Lizzi's work: Logging removed at 2.5-next
 include::platform/assembly-controller-logging-aggregation.adoc[leveloffset=+1]
 include::platform/assembly-controller-metrics.adoc[leveloffset=+1]
 include::platform/assembly-controller-improving-performance.adoc[leveloffset=+1]
@@ -36,6 +38,7 @@ include::platform/assembly-controller-awx-manage-utility.adoc[leveloffset=+1]
 //Uses Settings menu. Which may be separate documentation.
 include::platform/assembly-ag-controller-config.adoc[leveloffset=+1]
 include::platform/assembly-controller-isolation-function-variables.adoc[leveloffset=+1]
+//Donna's work
 //include::platform/assembly-controller-token-based-authentication.adoc[leveloffset=+1]
 //include::platform/assembly-controller-set-up-social-authentication.adoc[leveloffset=+1]
 //include::platform/assembly-ag-controller-set-up-enterprise-authentication.adoc[leveloffset=+1]
