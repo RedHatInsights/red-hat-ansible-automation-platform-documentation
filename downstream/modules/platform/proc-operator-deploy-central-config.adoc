@@ -1,0 +1,59 @@
+[id="operator-deploy-central-config_{context}"]
+
+= Deploying your central configuration with existing {PlatformNameShort} components
+If you have already installed some components of the {PlatformNameShort}, it is still possible to link these components to a new *AnsibleAutomationPlatform* instance. 
+
+The following procedure simulates a scenario where you have {ControllerName} as an existing component and want to add {HubName} and {EDAName}. 
+
+.Procedure 
+. Log in to {OCP}.
+. Go to to menu:Operators[Installed Operators].
+. Click btn:[Subscriptions] and edit your *Update channel* to *stable-2.5*.
+. Click btn:[Details] and on the *AnsibleAutomationPlatform* tile click btn:[Create instance].
+. From the *Create AnsibleAutomationPlatform* page enter a name for your instance in the *Name* field.
+. Click btn:[YAML view] and copy in the following:
++
+----
+yaml
+apiVersion: aap.ansible.com/v1alpha1
+    kind: AnsibleAutomationPlatform
+    metadata:
+      name: example-aap
+      namespace: aap
+    spec:
+      # Platform
+      image_pull_policy: IfNotPresent
+      # Components
+      controller:
+        disabled: false
+        name: existing-controller-name
+      eda:
+        disabled: false
+      hub:
+        disabled: false
+        ## uncomment if using file storage for Content pod
+        storage_type: file
+        file_storage_storage_class: your-rwx-storage-class
+        file_storage_size: 10Gi
+
+        ## uncomment if using S3 storage for Content pod
+        # storage_type: S3
+        # object_storage_s3_secret: example-galaxy-object-storage
+
+        ## uncomment if using Azure storage for Content pod
+        # storage_type: azure
+        # object_storage_azure_secret: azure-secret-name
+      lightspeed:
+        disabled: true
+----
+.. For new components, if you do not specify a name, a default name generates.
+. Click btn:[Create].
+. To access your new instance, see <<Accessing your central configuration>>.
+
+NOTE: If you have an existing controller with a managed Postgres pod, after creating the *AnsibleAutomationPlatform* resource your {ControllerName} instance will continue to use that original Postgres pod. If you were to do a fresh install you would have a single Postgres managed pod for all instances. 
+
+
+
+
+
+

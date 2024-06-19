@@ -1,3 +1,31 @@
 [id="operator-access-aap_{context}"]
 
-= Accessing your AnsibleAutomationPlatform  
+= Accessing your central configuration  
+You should use the *AnsibleAutomationPlatform* instance as your default. 
+This instance links the {ControllerName}, {HubName}, and {EDAName} deployments to a single interface. 
+
+.Procedure
+
+To access your *AnsibleAutomationPlatform* instance:
+
+. Navigate to menu:Networking[Routes]
+. Click the link under *Location* for *AnsibleAutomationPlatform*.
+. This redirects you to the *AnsibleAutomationPlatform* login page. Enter your username in the *Username* field.
+. For the password you need to:
+.. Go to to menu:Workloads[Secrets].
+.. Click btn:[<your instance name>-admin-password] and copy the password. 
+.. Paste the password into the *Password* field.
+. Click btn:[Login].
+. Apply your subscription:
+.. Click btn:[Subscription manifest] or btn:[Username/password].
+.. Upload your manifest or enter your username and password.
+.. Select  your subscription from the *Subscription* list.
+.. Click btn:[Next]. 
++ This redirects you to the *Analytics* page.
+. Click btn:[Next].
+. Select the *I agree to the terms of the license agreement* checkbox.
+. Click btn:[Next].
+
+You now have access to the central configuration user interface.
+If you cannot access the {PlatformNameShort} see <<Troubleshooting central configuration issues>> for help with troubleshooting and debugging. 
+

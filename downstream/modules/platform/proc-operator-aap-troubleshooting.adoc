@@ -1,3 +1,14 @@
 [id="operator-aap-troubleshooting_{context}"]
 
-= Troubleshooting AnsibleAutomationPlatform issues  
+= Troubleshooting central configuration issues  
+
+* You can follow along in the command line while the operator is reconciling, this can be helpful for debugging.
+** Alternatively you can click into the deployment instance to see the status conditions being updated as the deployment goes on.
+* When troubleshooting you should examine the *AnsibleAutomationPlatform* instance for the main logs and then each individual component (*EDA*, *AutomationHub*, *AutomationController*) for more specific information. 
+* To display status conditions click into the instance, and look under the *Details* or *Events* tab.
+** Alternatively, to display the status conditions you can run the get command:
++
+`oc get automationcontroller <instance-name> -o jsonpath=Pipe "| jq"`
+* To help track the status of the migration or to understand why migration might have failed you can look at the migration logs as they are running. Use the logs command:
++
+`oc logs fresh-install-controller-migration-4.6.0-jwfm6 -f`

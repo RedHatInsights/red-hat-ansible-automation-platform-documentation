@@ -1,3 +1,35 @@
 [id="operator-link-components_{context}"]
 
-= Linking your components to AnsibleAutomationPlatform  
+= Linking your components to the central configuration  
+
+Once you have the {OperatorPlatform} installed in your namespace you can set up your *AnsibleAutomationPlatform* instance.
+Then link all the platform components to a single user interface. 
+
+.Procedure 
+. Go to your {OperatorPlatform} and click btn:[Details]. 
+. On the *AnsibleAutomationPlatform* tile click btn:[Create instance].
+. From the *Create AnsibleAutomationPlatform* page enter a name for your instance in the *Name* field.
+. Click btn:[YAML view] and paste the following:
++
+----
+spec:
+  controller:
+    disabled: false
+
+  eda:
+    disabled: false
+
+  hub:
+    disabled: false
+    storage_type: file
+    file_storage_storage_class: nfs-local-rwx
+    file_storage_size: 10Gi
+
+----
+. Click btn:[Create].
+
+.Verification
+To verify if all instances deployed correctly go to your {OperatorPlatform} deployment and click btn:[All instances].
+Here you will see the *AnsibleAutomationPlatform* instance and the *AutomationController*, *EDA*, and *AutomationHub* instances deployed.
+
+Alternatively you can check by the command line, run: `oc get route` 

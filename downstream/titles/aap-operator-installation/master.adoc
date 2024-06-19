@@ -21,6 +21,9 @@ include::platform/assembly-operator-install-planning.adoc[leveloffset=+1]
 
 include::platform/assembly-install-aap-operator.adoc[leveloffset=+1]
 
+// Part of the 2.5 release commenting out until live
+// include::platform/assembly-configure-aap-operator.adoc[leveloffset=+1]
+
 include::platform/assembly-installing-controller-operator.adoc[leveloffset=+1]
 
 include::platform/assembly-installing-hub-operator.adoc[leveloffset=+1]
