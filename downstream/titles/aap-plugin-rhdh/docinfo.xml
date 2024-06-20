@@ -1,0 +1,11 @@
+<title>Ansible plug-ins for Red Hat Developer Hub</title>
+<productname>Red Hat Ansible Automation Platform</productname>
+<productnumber>2.5</productnumber>
+<subtitle>Install and use Ansible plug-ins for Red Hat Developer Hub</subtitle>
+<abstract>
+    <para>This guide describes how to install and use Ansible plug-ins for Red Hat Developer Hub.</para>
+</abstract>
+<authorgroup>
+    <orgname>Red Hat Customer Content Services </orgname>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

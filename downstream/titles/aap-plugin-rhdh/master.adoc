@@ -1,0 +1,24 @@
+:imagesdir: images
+:numbered:
+:toclevels: 4
+:experimental:
+:context: aap-plugin-rhdh
+
+include::attributes/attributes.adoc[]
+
+// Book Title
+= Ansible plug-ins for Red Hat Developer Hub
+
+Thank you for your interest in {PlatformName}. {PlatformNameShort} is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.
+
+This guide describes how to install and use {AAPRHDH}.
+This document has been updated to include information for the latest release of {PlatformNameShort}.
+
+include::{Boilerplate}[]
+
+include::devtools/assembly-rhdh-intro.adoc[leveloffset=+1]
+include::devtools/assembly-rhdh-planning.adoc[leveloffset=+1]
+include::devtools/assembly-rhdh-install.adoc[leveloffset=+1]
+include::devtools/assembly-rhdh-upgrading-uninstalling.adoc[leveloffset=+1]
+include::devtools/assembly-rhdh-configure.adoc[leveloffset=+1]
+include::devtools/assembly-rhdh-using.adoc[leveloffset=+1]

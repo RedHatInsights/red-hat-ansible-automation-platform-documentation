@@ -1,0 +1,15 @@
+ifdef::context[:parent-context: {context}]
+[id="rhdh-planning_{context}"]
+
+= Planning {AAPRHDH}
+
+:context: rhdh-planning
+[role="_abstract"]
+
+{AAPRHDH} planning placeholder
+
+//include::devtools/ref-devtools-architecture.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
+
