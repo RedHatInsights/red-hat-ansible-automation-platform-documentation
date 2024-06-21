@@ -8,7 +8,7 @@ link:https://access.redhat.com/errata/RHBA-2023:5347[RHBA-2023:5347]
 
 == General
 
-* The installer will now properly generate a new `SECRET_KEY` for controller when running `setup.sh` with the `-k` option (AAP-15565).
+* The installer now properly generates a new `SECRET_KEY` for controller when running `setup.sh` with the `-k` option (AAP-15565).
 
 * Added temporary file cleanup for Podman to prevent `cannot re-exec process` error during job execution (AAP-15248).
 

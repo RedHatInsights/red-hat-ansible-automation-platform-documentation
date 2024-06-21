@@ -3,7 +3,7 @@
 
 Security, bug fix, and enhancement updates for {PlatformNameShort} {PlatformVers} are released as asynchronous erratas. All {PlatformNameShort} erratas are available on the link:{PlatformDownloadUrl}[Download {PlatformName}] page in the Customer Portal. 
 
-Red Hat Customer Portal users can enable errata notifications in the account settings for Red Hat Subscription Management (RHSM). When errata notifications are enabled, users are notified through email whenever new erratas relevant to their registered systems are released.
+As a Red Hat Customer Portal user, you can enable errata notifications in the account settings for Red Hat Subscription Management (RHSM). When errata notifications are enabled, you receive notifications through email whenever new erratas relevant to your registered systems are released.
 
 [NOTE]
 ====

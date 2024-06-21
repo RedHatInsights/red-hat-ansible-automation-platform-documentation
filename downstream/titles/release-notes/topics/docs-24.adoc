@@ -1,7 +1,7 @@
 // This is the release notes for AAP 2.4 documentation, the version number is removed from the topic title as part of the release notes restructuring efforts.
 
 [[docs-2.4-intro]]
-= {PlatformNameShort} Documentation
+= {PlatformNameShort} documentation
 
 {PlatformName} 2.4 documentation includes significant feature updates as well as documentation enhancements and offers an improved user experience. 
 

@@ -31,6 +31,6 @@ When upgrading, do not use `yum update`. Use the installation program instead. T
 .Additional resources
 * For information about the components included in {PlatformNameShort}, see the table in xref:whats-included[What is included in {PlatformNameShort}].
 
-* For more information about upgrading {PlatformNameShort}, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[{PlatformName} Upgrade and Migration Guide].
+* For more information about upgrading {PlatformNameShort}, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_upgrade_and_migration_guide/index[{PlatformName} upgrade and migration guide].
 
-* For procedures related to using the {PlatformNameShort} installer, see the link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformNameShort} Installation Guide].
+* For procedures related to using the {PlatformNameShort} installer, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/red_hat_ansible_automation_platform_installation_guide/index[{PlatformNameShort} installation guide].

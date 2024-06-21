@@ -10,7 +10,7 @@ link:https://access.redhat.com/errata/RHBA-2023:7460[RHBA-2023:7460]
 
 * Fixed an error which caused the incorrect target database to be selected when restoring {EDAName} from a backup (AAP-18151).
 
-* Postgres tasks which create users in FIPS environments now use `scram-sha-256` (AAP-17516).
+* Postgres tasks that create users in FIPS environments now use `scram-sha-256` (AAP-17516).
 
 * All {EDAName} services are enabled after installation is complete (AAP-17426).
 

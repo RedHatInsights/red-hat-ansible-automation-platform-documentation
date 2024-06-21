@@ -16,7 +16,7 @@ link:https://access.redhat.com/errata/RHSA-2024:1057[RHSA-2024:1057]
 
 * Added a parameter to control the number of running activations per {EDAName} worker service (AAP-20672).
 
-* Added `EDA_CSRF_TRUSTED_ORIGINS` which can be set by user input or defined based on the allowed hostnames that are determined by the installer (AAP-20244).
+* Added `EDA_CSRF_TRUSTED_ORIGINS`, which can be set by user input or defined based on the allowed hostnames that are determined by the installer (AAP-20244).
 
 * {EDAName} installation now fails when the pre-existing {ControllerName} version is 4.4.0 or older (AAP-20241).
 
