@@ -1,8 +1,8 @@
 [id="operator-link-components_{context}"]
 
-= Linking your components to the central configuration  
+= Linking your components to the platform gateway  
 
-Once you have the {OperatorPlatform} installed in your namespace you can set up your *AnsibleAutomationPlatform* instance.
+After installing the {OperatorPlatform} in your namespace you can set up your *AnsibleAutomationPlatform* instance.
 Then link all the platform components to a single user interface. 
 
 .Procedure 
@@ -29,7 +29,7 @@ spec:
 . Click btn:[Create].
 
 .Verification
-To verify if all instances deployed correctly go to your {OperatorPlatform} deployment and click btn:[All instances].
-Here you will see the *AnsibleAutomationPlatform* instance and the *AutomationController*, *EDA*, and *AutomationHub* instances deployed.
+Go to your {OperatorPlatform} deployment and click btn:[All instances] to verify if all instances deployed correctly.
+You should see the *AnsibleAutomationPlatform* instance and the deployed *AutomationController*, *EDA*, and *AutomationHub* instances here.
 
 Alternatively you can check by the command line, run: `oc get route` 

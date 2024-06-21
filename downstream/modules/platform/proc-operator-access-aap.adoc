@@ -1,6 +1,6 @@
 [id="operator-access-aap_{context}"]
 
-= Accessing your central configuration  
+= Accessing the platform gateway  
 You should use the *AnsibleAutomationPlatform* instance as your default. 
 This instance links the {ControllerName}, {HubName}, and {EDAName} deployments to a single interface. 
 
@@ -26,6 +26,6 @@ To access your *AnsibleAutomationPlatform* instance:
 . Select the *I agree to the terms of the license agreement* checkbox.
 . Click btn:[Next].
 
-You now have access to the central configuration user interface.
-If you cannot access the {PlatformNameShort} see <<Troubleshooting central configuration issues>> for help with troubleshooting and debugging. 
+You now have access to the platform gateway user interface.
+If you cannot access the {PlatformNameShort} see <<Frequently asked questions on platform gateway>> for help with troubleshooting and debugging. 
 

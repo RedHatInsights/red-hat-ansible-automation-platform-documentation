@@ -1,7 +1,7 @@
 [id="operator-deploy-central-config_{context}"]
 
-= Deploying your central configuration with existing {PlatformNameShort} components
-If you have already installed some components of the {PlatformNameShort}, it is still possible to link these components to a new *AnsibleAutomationPlatform* instance. 
+= Deploying the platform gateway with existing {PlatformNameShort} components
+You can link any components of the {PlatformNameShort}, that you have already installed to a new *AnsibleAutomationPlatform* instance. 
 
 The following procedure simulates a scenario where you have {ControllerName} as an existing component and want to add {HubName} and {EDAName}. 
 
@@ -48,7 +48,7 @@ apiVersion: aap.ansible.com/v1alpha1
 ----
 .. For new components, if you do not specify a name, a default name generates.
 . Click btn:[Create].
-. To access your new instance, see <<Accessing your central configuration>>.
+. To access your new instance, see <<Accessing the platform gateway>>.
 
 NOTE: If you have an existing controller with a managed Postgres pod, after creating the *AnsibleAutomationPlatform* resource your {ControllerName} instance will continue to use that original Postgres pod. If you were to do a fresh install you would have a single Postgres managed pod for all instances. 
 
