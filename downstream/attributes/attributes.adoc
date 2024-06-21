@@ -8,9 +8,9 @@
 :CentralAuth: central authentication
 :PlatformVers: 2.4
 //The Ansible-core version required to install AAP
-:CoreInstVers: 2.14 
+:CoreInstVers: 2.14
 //The Ansible-core version used by the AAP control plane and EEs
-:CoreUseVers: 2.15 
+:CoreUseVers: 2.15
 :PlatformDownloadUrl: https://access.redhat.com/downloads/content/480/ver=2.4/rhel---9/2.4/x86_64/product-software
 :BaseURL: https://docs.redhat.com/en/documentation
 :VMBase: VM-based installation
@@ -187,6 +187,8 @@
 :MenuInfrastructureInstanceGroups: menu:{MenuTopAE}[Infrastructure > Instance Groups]
 :MenuInfrastructureInstances: menu:{MenuTopAE}[Infrastructure > Instances]
 :MenuInfrastructureExecEnvironments: menu:{MenuTopAE}[Infrastructure > Execution Environments]
+:MenuAECredentials: menu:{MenuTopAE}[Infrastructure > Credentials]
+:MenuAECredentialType: menu:{MenuTopAE}[Infrastructure > Credential Types]
 
 // Automation Execution > Administration
 :MenuAEAdminActivityStream: menu:{MenuTopAE}[Administration > Activity Stream]
@@ -206,6 +208,10 @@
 :MenuADProjects: menu:{MenuAD}[Projects]
 :MenuADDecisionEnvironments: menu:{MenuAD}[Decision Environments]
 :MenuADWebhooks: menu:{MenuAD}[Webhooks]
+:MenuADCredentials: menu:{MenuAD}[Infrastructure > Credentials]
+:MenuADCredentialType: menu:{MenuAD}[Infrastructure > Credential Types]
+:MenuAECredentials: menu:{MenuTopAE}[Infrastructure > Credentials]
+:MenuAECredentialType: menu:{MenuTopAE}[Infrastructure > Credential Types]
 
 // Automation Content (aka automation hub menu selections)
 // In 2.5EA the Automation Content selection will open a hub ui instance in a new tab/browser so the menu definitions will not change until 2.5-next
@@ -226,17 +232,17 @@
 :MenuHubGroups: menu:User Access[Groups]
 :MenuHubRoles: menu:User Access[Roles]
 
-// Automation Analytics menu selections - According to mockups, analytics will be included in the Gateway nav but they are currently on the Ansible dashboard on the Hybrid Cloud Console https://console.redhat.com/ansible/ansible-dashboard
+// Automation Analytics menu selections - According to mockups, analytics will be included in the Gateway nav only includes Automation Calculator, Host Metrics and Subscription Usage, other settings are also included on the Ansible dashboard on the Hybrid Cloud Console https://console.redhat.com/ansible/ansible-dashboard
 :MenuAAReports: menu:{MenuAA}[Reports]
 :MenuAASavingsPlanner: menu:{MenuAA}[Savings Planner]
 :MenuAAAutomationCalc: menu:{MenuAA}[Automation Calculator]
+:MenuAAHostMetrics: menu:{MenuAA}[Host Metrics]
 :MenuAAOrgStats: menu:{MenuAA}[Organization Statistics]
 :MenuAAJobExplorer: menu:{MenuAA}[Job Explorer]
 :MenuAAClusters: menu:{MenuAA}[Clusters]
 :MenuAANotifications: menu:{MenuAA}[Notification]
 //The following currently don't exist in the console but may be included in the 2.5 platform
 //:MenuAAActivityStream: menu:{MenuAA}[Activity Stream]
-//:MenuAAHostMetrics: menu:{MenuAA}[Host Metrics]
 //:MenuAAAnalyticsBuilder: menu:{MenuAA}[Analytics builder]
 //:MenuAAHostSubscriptionUse: menu:{MenuAA}[Subscription Usage]
 
@@ -251,14 +257,15 @@
 :MenuAMUsers: menu:{MenuAM}[Users]
 :MenuAMRoles: menu:{MenuAM}[Roles]
 :MenuAMAdminOauthApps: menu:{MenuAM}[OAuth Applications]
-:MenuAMCredentials: menu:{MenuAM}[Credentials]
-:MenuAMCredentialType: menu:{MenuAM}[Credential Types]
+// [ddacosta Credentials will not be centralized until 2.5-next]
+// :MenuAMCredentials: menu:{MenuAM}[Credentials]
+// :MenuAMCredentialType: menu:{MenuAM}[Credential Types]
 
 
 //Settings menu selections
 // --Previously settings was a single menu selection, in 2.5 it's a top level selection with sub selections see above for the attribute {MenuAEAdminSettings}
 :MenuSetSubscription: menu:{MenuAEAdminSettings}[Subscription]
-:MenuSetGateway: menu:{MenuAEAdminSettings}[Gateway]
+:MenuSetGateway: menu:{MenuAEAdminSettings}[Platform gateway]
 :MenuSetUserPref: menu:{MenuAEAdminSettings}[User Preferences]
 :MenuSetSystem: menu:{MenuAEAdminSettings}[System]
 :MenuSetJob: menu:{MenuAEAdminSettings}[Job]
