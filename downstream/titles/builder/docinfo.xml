@@ -1,6 +1,6 @@
 <title>Creating and consuming execution environments</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.4</productnumber>
+<productnumber>2.5</productnumber>
   <subtitle>Create and use execution environments with Ansible Builder</subtitle>
 <abstract>
 <para>This guide shows how to create consistent and reproducible automation execution environments for your Red Hat Ansible Automation Platform.</para>

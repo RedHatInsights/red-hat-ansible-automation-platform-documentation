@@ -1,6 +1,6 @@
 <title>Getting started with automation controller</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.4</productnumber>
+<productnumber>2.5</productnumber>
 <subtitle>Getting started guide for automation controller</subtitle>
 <abstract>
     <para> Learn how to set up a controller application, which  you can then use to launch more sophisticated playbooks. 

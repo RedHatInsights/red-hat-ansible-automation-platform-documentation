@@ -1,6 +1,6 @@
 <title>Developing Ansible automation content</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.4</productnumber>
+<productnumber>2.5</productnumber>
 <subtitle>Install Ansible Automation Platform</subtitle>
 <abstract>
     <para>This guide describes how to develop Ansible automation content and how to use it to run automation jobs from Red Hat Ansible Automation Platforms.</para>

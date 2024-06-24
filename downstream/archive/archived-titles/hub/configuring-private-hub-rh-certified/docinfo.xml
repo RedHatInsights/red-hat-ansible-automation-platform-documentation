@@ -1,6 +1,6 @@
 <title>Managing Red Hat Certified, validated, and Ansible Galaxy content in automation hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.4</productnumber>
+<productnumber>2.5</productnumber>
 <subtitle>Configure and distribute curated collections with automation hub</subtitle>
 <abstract>
 <para>This guide shows how to configure automation hub to deliver curated Red Hat Certified and Ansible Galaxy collections to your users.</para>

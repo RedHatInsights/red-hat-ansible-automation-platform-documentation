@@ -1,6 +1,6 @@
 <title>Automation controller API overview</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.4</productnumber>
+<productnumber>2.5</productnumber>
 <subtitle>Developer overview for the {ControllerName} API</subtitle>
 <abstract>
     <para>Explore the {ControllerName} API Overview for streamlined automation solutions, empowering developers and administrators with efficient infrastructure management.

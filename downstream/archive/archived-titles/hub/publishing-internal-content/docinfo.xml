@@ -1,6 +1,6 @@
 <title>Publishing proprietary content collections in Automation Hub</title>
 <productname>Red Hat Ansible Automation Platform</productname>
-<productnumber>2.4</productnumber>
+<productnumber>2.5</productnumber>
 <subtitle>Publish and distribute content collections with automation hub</subtitle>
 <abstract>
 <para>This guide shows how to use Automation Hub to publish content collections developed within your organization and intended for internal distribution and use.</para>
