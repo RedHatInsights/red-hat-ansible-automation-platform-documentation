@@ -8,6 +8,8 @@ ifdef::context[:parent-context: {context}]
 
 [role="_abstract"]
 If you lose information on your system or issues with an upgrade, you can use the backup resources of your deployment instances. Use these procedures to recover your {ControllerName} and {HubName} deployment files.
+//part of 2.5 release, (AAP-22178) uncomment when publishing [gmurray]
+//include::platform/proc-aap-platform-gateway-restore.adoc[leveloffset=+1]
 
 include::platform/proc-aap-controller-restore.adoc[leveloffset=+1]
 
