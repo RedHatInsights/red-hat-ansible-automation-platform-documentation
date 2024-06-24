@@ -14,15 +14,19 @@ Your system must meet the following minimum system requirements to install and r
 
 h| Subscription | Valid {PlatformName} |
 
-h| OS | {RHEL} 8.6 or later 64-bit (x86, ppc64le, s390x, aarch64) |{PlatformName} is also supported on OpenShift, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform] for more information.
+h| OS | {RHEL} 8.8 or later 64-bit (x86, ppc64le, s390x, aarch64) |{PlatformName} is also supported on OpenShift, see link:{BaseURL}/red_hat_ansible_automation_platform/{PlatformVers}/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/index[Deploying the Red Hat Ansible Automation Platform operator on OpenShift Container Platform] for more information.
 
 h| Ansible-core | Ansible-core version {CoreInstVers} or later | {PlatformNameShort} includes execution environments that contain ansible-core {CoreUseVers}.
 
-h| Python | 3.9 or later |
+h| Python | 3.11 or later |
 
 h| Browser | A currently supported version of Mozilla FireFox or Google Chrome |
 
-h| Database | PostgreSQL version 13 |
+h| Database | PostgreSQL version 15 |
+
+h| RAM  | 16 GB minimum |
+
+h| CPUs | 4 |
 |===
 
 The following are necessary for you to work with project updates and collections:

@@ -8,7 +8,7 @@
 :CentralAuth: central authentication
 :PlatformVers: 2.5
 //The Ansible-core version required to install AAP
-:CoreInstVers: 2.14
+:CoreInstVers: 2.15
 //The Ansible-core version used by the AAP control plane and EEs
 :CoreUseVers: 2.15
 :PlatformDownloadUrl: https://access.redhat.com/downloads/content/480/ver=2.5/rhel---9/2.4/x86_64/product-software
