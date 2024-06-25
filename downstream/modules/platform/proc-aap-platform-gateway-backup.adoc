@@ -1,3 +1,33 @@
 [id="aap-platform-gateway-backup_{context}"]
 
-= Backing up your AnsibleAutomationPlatform resource
+= Backing up your AnsibleAutomationPlatform deployment
+Regularly backing up your *AnsibleAutomationPlatform* deployment is vital to protect against unexpected data loss and application errors. *AnsibleAutomationPlatform* hosts any enabled components (such as, {ControllerName}, {HubName}, {EDAName}, and {LightspeedShortName}), when you back up *AnsibleAutomationPlatform* you also back up these components.
+
+.Prerequisites
+* You must be authenticated on Openshift cluster.
+* The {OperatorPlatform} has been installed on the cluster.
+* The *AnsibleAutomationPlatform* instance is deployed using the {OperatorPlatform}.
+
+.Procedure 
+. Log in to {OCP}.
+. Go to menu:Operators[Installed Operators].
+. Select the {OperatorPlatform} installed on your project namespace.
+. Go to your *All Instances* tab, and click btn:[Create New].
+. Select *Ansible Automation Platform Backup* from the list.
++
+NOTE: When creating the *Ansible Automation Platform Backup* resource it also creates backup resources for each of the nested components that are enabled.
++
+. In the *Name* field, enter a name for the backup.
+. In the *Deployment name* field, enter the name of the deployed {PlatformNameShort} instance being backed up. For example if your {PlatformNameShort} deployment must be backed up and the deployment name is myaap, enter 'myaap' in the *Deployment name* field.
+. Click btn:[Create].
+
+.Verification 
+To verify that your backup was successful you can:
+
+. Log in to {OCP}.
+. Go to menu:Operators[Installed Operators].
+. Select the {OperatorPlatform} installed on your project namespace.
+. Click *All Instances*.
+
+The *All Instances* page displays the main backup and the backups for each component with the name you specified when creating your backup resource. The status for these instances should state *Running* or *Successful*.
+
