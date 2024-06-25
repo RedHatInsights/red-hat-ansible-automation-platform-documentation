@@ -17,215 +17,74 @@ In some of the following use cases, hop nodes are used instead of a direct link 
 .{PlatformNameShort} Network ports and protocols 
 image::aap-network-ports-protocols.png[Interaction of Ansible Automation Platform components on the network with information about the ports and protocols that are used.]
 
-The following tables show the default {PlatformName} destination ports required for each application.
+The following table indicates the destination port and the direction of network traffic:
 
 [NOTE]
 The following default destination ports and installer inventory listed are configurable. If you choose to configure them to suit your environment, you might experience a change in behavior.
 
-
-
-.PostgreSQL
-[options="header"]
+.Network ports and protocols
+[cols="12%,12%,17%,17%,20%,27%,27%",options="header",]
 |===
-|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
-|22
-|TCP
-|SSH
-|Inbound and Outbound
-|`ansible_port`
-|Remote access during installation
-|5432
-|TCP
-|Postgres
-|Inbound and Outbound
-|`pg_port`
-a|Default port
+| Port | Protocol | Service | Source | Destination | Required for | Installer Inventory Variable 
+| 22 | TCP | SSH | Installer node | {HubNameStart} | Installation (temporary) | `ansible_port`
+| 22 | TCP | SSH | Installer node | Controller node | Installation (temporary) | `ansible_port`
+| 22 | TCP | SSH | Installer node | EDA node | Installation (temporary) | `ansible_port`
+| 22 | TCP | SSH | Installer node | Execution node | Installation (temporary) | `ansible_port`
+| 22 | TCP | SSH | Installer node | Hop node | Installation (temporary) | `ansible_port`
+| 22 | TCP | SSH | Installer node | Hybrid node | Installation (temporary) | `ansible_port`
+| 22 | TCP | SSH | Installer node | PostgreSQL database| Remote access during installation (temporary) | `pg_port`
+| 80/443 | TCP | HTTP/HTTPS | Installer node | {HubNameStart} | Allows installer node to push the execution environment image to {HubName} when using the bundle installer. | Fixed value
+| 80/443 | TCP | HTTP/HTTPS | Execution node | {HubNameStart} | Allows execution nodes to pull the execution environment image from {HubName}. | Fixed value
+| 443 | TCP | HTTPS | Controller node | Client | Web UI/API
 
-ALLOW connections from controller(s) to database port
-|===
+This exposes the mesh ingress receptor entry point for inbound connections.| `nginx_https_port`
+| 443 | TCP | HTTPS | Controller node | {OCPShort} |  Only required when using container groups to run jobs. | Host name of OpenShift API server
+| 5432 | TCP | PostgreSQL | Controller node | PostgreSQL database | Open only if the internal database is used along with another component. Otherwise, this port should not be open. | `automationcontroller_pg_port`
+| 5432 | TCP | PostgreSQL | EDA node | PostgreSQL database | Open only if the internal database is used along with another component. Otherwise, this port should not be open. | `automationedacontroller_pg_port`
+| 5432 | TCP | PostgreSQL | {HubNameStart} | PostgreSQL database | Open only if the internal database is used along with another component. Otherwise, this port should not be open. | `automationhub_pg_port`
+| 27199 | TCP | Receptor | Controller node | Execution node | Configurable
 
-.{ControllerNameStart}
-[options="header"]
-|===
-|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
-|22
-|TCP
-|SSH
-|Inbound and Outbound
-|`ansible_port`
-|Installation
+Mesh nodes directly peered to controllers. 
 
-|80
-|TCP
-|HTTP
-|Inbound
-|`nginx_http_port`
-|UI/API
+Direct nodes involved. 
+27199 communication can be both ways (depending on installation inventory) for execution nodes
+| `receptor_listener_port`
 
-|443
-|TCP
-|HTTPS
-|Inbound
-|`nginx_https_port`
-|UI/API
+`peers`
+| 27199 | TCP | Receptor | Controller node | Hop node | Configurable
 
-|5432
-|TCP
-|PostgreSQL
-|Inbound and Outbound
-|`pg_port`
-a|Open *only* if the internal database is used along with another component. Otherwise, this port should not be open
+ENABLE connections from hop nodes to Receptor port if relayed through hop nodes. | `receptor_listener_port`
 
-Hybrid mode in a cluster
+`peers`
+| 27199 | TCP | Receptor | Controller node | Hybrid node | Configurable
 
-|27199
-|TCP
-|Receptor
-|Inbound and Outbound
-|`receptor_listener_port`
-|ALLOW receptor listener port across all controllers for mandatory and automatic control plane clustering
+ENABLE connections from controllers to Receptor port if relayed through non-hop connected nodes. | `receptor_listener_port`
+
+`peers`
+| 27199 | TCP | Receptor | Execution node | Hop node | Configurable
+
+Mesh 27199 communication can be both ways (depending on installation inventory) for execution nodes
+
+ALLOW connection from controller(s) to Receptor port |
+`receptor_listener_port`
+
+`peers`
+| 27199 | TCP | Receptor | Execution node | Controller node | Configurable
+
+Mesh 27199 communication can be both ways (depending on installation inventory) for execution nodes
+
+ALLOW connection from controller(s) to Receptor port |
+`receptor_listener_port`
+
+`peers`
 |===
 
-.Hop Nodes
-[options="header"]
-|===
-|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
-|22
-|TCP
-|SSH
-|Inbound and Outbound
-|`ansible_port`
-|Installation
+[NOTE]
+====
+* Hybrid nodes act as a combination of control and execution nodes, and therefore Hybrid nodes share the connections of both. 
 
-|27199
-|TCP
-|Receptor
-|Inbound and Outbound
-|`receptor_listener_port`
-a|Mesh
-
-ALLOW connection from controller(s) to Receptor port
-|===
-
-.Execution Nodes
-[options="header"]
-|===
-|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
-|22
-|TCP
-|SSH
-|Inbound and Outbound
-|`ansible_port`
-|Installation
-
-|80/443
-|TCP
-|SSH
-|Inbound and Outbound
-|Fixed value (maps to Table 5.7 {HubNameStart}'s "User interface" port)
-|Allows execution nodes to pull the {ExecEnvShort} image from {HubName}
-
-|27199
-|TCP
-|Receptor
-|Inbound and Outbound
-|`receptor_listener_port`
-a|Mesh - Nodes directly peered to controllers. No hop nodes involved. 27199 is bi-directional for the execution nodes
-
-ALLOW connections from controller(s) to Receptor port (non-hop connected nodes)
-
-ALLOW connections from hop node(s) to Receptor port (if relayed through hop nodes)
-|===
-
-.Control Nodes
-[options="header"]
-|===
-|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
-|22
-|TCP
-|SSH
-|Inbound and Outbound
-|`ansible_port`
-|Installation
-
-|27199
-|TCP
-|Receptor
-|Inbound and Outbound
-|`receptor_listener_port`
-a|Mesh - Nodes directly peered to controllers. Direct nodes involved. 27199 is bi-directional for execution nodes
-
-ENABLE connections from controller(s) to Receptor port for non-hop connected nodes
-
-ENABLE connections from hop node(s) to Receptor port if relayed through hop nodes
-|443
-|TCP
-|Podman
-|Inbound
-|`nginx_https_port`
-|UI/API
-|===
-
-.Hybrid Nodes
-[options="header"]
-|===
-|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
-|22
-|TCP
-|SSH
-|Inbound and Outbound
-|`ansible_port`
-|Installation
-
-|27199
-|TCP
-|Receptor
-|Inbound and Outbound
-|`receptor_listener_port`
-a|Mesh - Nodes directly peered to controllers. No hop nodes involved. 27199 is bi-directional for the execution nodes
-
-ENABLE connections from controller(s) to Receptor port for non-hop connected nodes
-
-ENABLE connections from hop node(s) to Receptor port if relayed through hop nodes
-
-|443
-|TCP
-|Podman
-|Inbound
-|`nginx_https_port`
-|UI/API
-|===
-
-.{HubNameStart}
-[options="header"]
-|===
-|Port |Protocol |Service |Direction |Installer Inventory Variable |Required for
-|22
-|TCP
-|SSH
-|Inbound and Outbound
-|`ansible_port`
-|Installation
-
-|80
-|TCP
-|HTTP
-|Inbound
-| Fixed value
-|User interface
-|443
-|TCP
-|HTTPS
-|Inbound
-| Fixed value
-|User interface
-|5432
-|TCP
-|PostgreSQL
-|Inbound and Outbound
-|`automationhub_pg_port`
-a|Open *only* if the internal database is used along with another component. Otherwise, this port should not be open
-|===
+* If `receptor_listener_port` is defined, the machine also requires an available open port on which to establish inbound TCP connections, for example, 27199.
+==== 
 
 .{InsightsName}
 [options="header"]
