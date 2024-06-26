@@ -1,7 +1,7 @@
-<title>Automation controller administration guide</title>
+<title>Configuring automation execution</title>
 <productname>Red Hat Ansible Automation Platform</productname>
 <productnumber>2.5</productnumber>
-<subtitle>Administrator Guide for Automation Controller</subtitle>
+<subtitle>Administrator guide for automation controller</subtitle>
 <abstract>
     <para> Learn how to manage automation controller through custom scripts, management jobs, and more.</para>
 </abstract>
