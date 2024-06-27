@@ -1,7 +1,7 @@
 [id="aap-platform-gateway-backup_{context}"]
 
 = Backing up your AnsibleAutomationPlatform deployment
-Regularly backing up your *AnsibleAutomationPlatform* deployment is vital to protect against unexpected data loss and application errors. *AnsibleAutomationPlatform* hosts any enabled components (such as, {ControllerName}, {HubName}, {EDAName}, and {LightspeedShortName}), when you back up *AnsibleAutomationPlatform* you also back up these components.
+Regularly backing up your *AnsibleAutomationPlatform* deployment is vital to protect against unexpected data loss and application errors. *AnsibleAutomationPlatform* hosts any enabled components (such as, {ControllerName}, {HubName}, and {EDAName}), when you back up *AnsibleAutomationPlatform* the operator will also back up these components.
 
 .Prerequisites
 * You must be authenticated on Openshift cluster.
@@ -18,8 +18,21 @@ Regularly backing up your *AnsibleAutomationPlatform* deployment is vital to pro
 NOTE: When creating the *Ansible Automation Platform Backup* resource it also creates backup resources for each of the nested components that are enabled.
 +
 . In the *Name* field, enter a name for the backup.
-. In the *Deployment name* field, enter the name of the deployed {PlatformNameShort} instance being backed up. For example if your {PlatformNameShort} deployment must be backed up and the deployment name is myaap, enter 'myaap' in the *Deployment name* field.
+. In the *Deployment name* field, enter the name of the deployed {PlatformNameShort} instance being backed up. For example if your {PlatformNameShort} deployment must be backed up and the deployment name is aap, enter 'aap' in the *Deployment name* field.
 . Click btn:[Create].
+
+This results in an *AnsibleAutomationPlatformBackup* resource. The  the resource YAML is similar to the following:
+
+----
+apiVersion: aap.ansible.com/v1alpha1
+kind: AnsibleAutomationPlatformBackup
+metadata:
+  name: backup
+  namespace: aap
+spec:
+  no_log: true
+  deployment_name: aap
+----
 
 .Verification 
 To verify that your backup was successful you can:
@@ -29,5 +42,12 @@ To verify that your backup was successful you can:
 . Select the {OperatorPlatform} installed on your project namespace.
 . Click *All Instances*.
 
-The *All Instances* page displays the main backup and the backups for each component with the name you specified when creating your backup resource. The status for these instances should state *Running* or *Successful*.
+The *All Instances* page displays the main backup and the backups for each component with the name you specified when creating your backup resource. 
+The status for the following instances must be either *Running* or *Successful*:
+
+* AnsibleAutomationPlatformBackup
+* AutomationControllerBackup
+* EDABackup
+* AutomationHubBackup
+
 

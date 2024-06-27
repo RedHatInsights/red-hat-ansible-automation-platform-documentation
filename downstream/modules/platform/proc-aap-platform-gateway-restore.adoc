@@ -1,7 +1,14 @@
 [id="aap-platform-gateway-restore_{context}"]
 
 = Recovering your AnsibleAutomationPlatform deployment
-*AnsibleAutomationPlatform* hosts any enabled components (such as, {ControllerName}, {HubName}, {EDAName}, and {LightspeedShortName}), when you recover *AnsibleAutomationPlatform* you also restore these components.
+*AnsibleAutomationPlatform* manages any enabled components (such as, {ControllerName}, {HubName}, and {EDAName}), when you recover *AnsibleAutomationPlatform* you also restore these components.
+
+In previous versions of the {OperatorPlatform}, it was necessary to create a restore object for each component of the platform. 
+Now, you create a single *AnsibleAutomationPlatformRestore* resource, which  creates and manages the other restore objects: 
+
+* AutomationControllerRestore
+* AutomationHubRestore
+* EDARestore
 
 .Prerequisites
 * You must be authenticated with an Openshift cluster.
